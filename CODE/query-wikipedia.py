@@ -204,6 +204,43 @@ def extract_airlines_destinations_from_html(html_content):
             break
     return airline_dest_map
 
+def extract_iata_icao_from_html(html_content):
+    """
+    Extracts the IATA and ICAO codes from the Wikipedia airport page HTML.
+    Returns a tuple: (IATA, ICAO) or (None, None) if not found.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    infobox = soup.find('table', class_='infobox')
+    iata = None
+    icao = None
+
+    if infobox:
+        for row in infobox.find_all('tr'):
+            cells = row.find_all(['th', 'td'])
+            for idx, cell in enumerate(cells):
+                text = cell.get_text(" ", strip=True).upper()
+                # Look for IATA code
+                if "IATA" in text:
+                    # Try to get the next cell's text if label is in <th>
+                    if idx + 1 < len(cells):
+                        iata_candidate = cells[idx + 1].get_text(" ", strip=True).upper()
+                        if re.fullmatch(r'[A-Z0-9]{3}', iata_candidate):
+                            iata = iata_candidate
+                    # Or extract from the same cell if label and code are together
+                    match = re.search(r'IATA\s*[:\-]?\s*([A-Z0-9]{3})', text)
+                    if match:
+                        iata = match.group(1)
+                # Look for ICAO code
+                if "ICAO" in text:
+                    if idx + 1 < len(cells):
+                        icao_candidate = cells[idx + 1].get_text(" ", strip=True).upper()
+                        if re.fullmatch(r'[A-Z0-9]{4}', icao_candidate):
+                            icao = icao_candidate
+                    match = re.search(r'ICAO\s*[:\-]?\s*([A-Z0-9]{4})', text)
+                    if match:
+                        icao = match.group(1)
+    return (iata, icao)
+
 def get_second_degree_connections(initial_code, delay=1.0):
     """
     Given an initial airport code (IATA/ICAO/Wikipedia URL), lists direct connections,
@@ -232,14 +269,68 @@ def get_second_degree_connections(initial_code, delay=1.0):
 
     return second_degree
 
-# Example usage:
-iata = "YWG"
-html = get_wikipedia_airport_page_html(iata)
-if html:
-    print("Airlines:", extract_airlines_from_html(html))
-    print("Destinations:", extract_destinations_from_html(html))
-    print("Airline → Destinations:", extract_airlines_destinations_from_html(html))
+def extract_airport_information(html_content):
+    """
+    Extracts IATA, ICAO, city/metropolitan area served, location, and coordinates from the Wikipedia airport page HTML.
+    Returns a dictionary with keys: 'iata', 'icao', 'serves', 'location', 'coordinates'.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    infobox = soup.find('table', class_='infobox')
+    info = {'iata': None, 'icao': None, 'serves': None, 'location': None, 'coordinates': None}
 
-second_degree = get_second_degree_connections("YWG")
+    if infobox:
+        for row in infobox.find_all('tr'):
+            header = row.find('th')
+            data = row.find('td')
+            label = header.get_text(" ", strip=True).lower() if header else ""
+            value = data.get_text(" ", strip=True) if data else ""
+
+            # IATA and ICAO: search for them anywhere in the row
+            row_text = row.get_text(" ", strip=True)
+            iata_match = re.search(r'IATA\s*[:\-]?\s*([A-Z0-9]{3})', row_text, re.I)
+            icao_match = re.search(r'ICAO\s*[:\-]?\s*([A-Z0-9]{4})', row_text, re.I)
+            if iata_match:
+                info['iata'] = iata_match.group(1).upper()
+            if icao_match:
+                info['icao'] = icao_match.group(1).upper()
+            # Sometimes codes are in separate rows
+            if "iata" in label and not info['iata']:
+                code = value.strip().upper()
+                if re.fullmatch(r'[A-Z0-9]{3}', code):
+                    info['iata'] = code
+            if "icao" in label and not info['icao']:
+                code = value.strip().upper()
+                if re.fullmatch(r'[A-Z0-9]{4}', code):
+                    info['icao'] = code
+
+            # Serves: look for "serves" or "served" in the label, but ignore if the value is an airline
+            if ("serves" in label or "served" in label or "city" in label) and data:
+                # Heuristic: if value contains "region", "area", or a city name (not an airline)
+                if not re.search(r'airlines?|airways?|westjet|delta|united|lufthansa|air canada|jetblue|easyjet|ryanair', value, re.I):
+                    info['serves'] = value
+
+            # Location: always capture if present
+            if "location" in label and value:
+                info['location'] = value
+
+            # Coordinates: always capture if present
+            if "coordinates" in label and value:
+                info['coordinates'] = value
+
+    return info
+
+# Example usage:
+# iata = "LHR"
+# html = get_wikipedia_airport_page_html(iata)
+# if html:
+#     print("Airlines:", extract_airlines_from_html(html))
+#     print("Destinations:", extract_destinations_from_html(html))
+#     print("Airline → Destinations:", extract_airlines_destinations_from_html(html))
+
+html = get_wikipedia_airport_page_html("CDG")
+info = extract_airport_information(html)
+print(info)
+
+# second_degree = get_second_degree_connections("YWG")
 # for dest, connections in second_degree.items():
 #     print(f"{dest} connects to: {[name for name, url in connections]}")

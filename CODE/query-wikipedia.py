@@ -499,18 +499,7 @@ def get_multi_path_length_connections(initial_code, path_length=2, delay=1.0, cl
         current_generation = to_process
         to_process = []
         for identifier, level in current_generation:
-            # First, try to get the Wikipedia URL without loading the page if possible
-            # For the initial identifier, we have to load the page
-            if isinstance(identifier, str) and identifier.startswith("http"):
-                temp_url = identifier
-            else:
-                temp_url = None
-
-            # If we already have the URL and it's processed, skip loading
-            if temp_url and temp_url in processed_urls:
-                print(f"Already processed {temp_url} in an earlier path, skipping.")
-                continue
-
+            # Always fetch the page to get the Wikipedia URL and info
             html = get_wikipedia_airport_page_html(identifier)
             if not html:
                 print(f"Could not fetch page for {identifier}")
@@ -521,7 +510,6 @@ def get_multi_path_length_connections(initial_code, path_length=2, delay=1.0, cl
             airport_name = airport_info.get('serves') or iata_code
             wikipedia_url = airport_info.get('wikipedia_url')
             if not wikipedia_url:
-                # Try to reconstruct from identifier if not present
                 if isinstance(identifier, str) and identifier.startswith("http"):
                     wikipedia_url = identifier
 
@@ -538,11 +526,7 @@ def get_multi_path_length_connections(initial_code, path_length=2, delay=1.0, cl
             if level < path_length:
                 destinations = extract_destinations_from_html(html)
                 for dest_name, dest_url in destinations:
-                    # Check if this destination URL has already been processed
-                    if dest_url in processed_urls:
-                        print(f"Already processed {dest_url} in an earlier path, skipping.")
-                        continue
-                    # Fetch destination page to get its info and URL
+                    # Always fetch the destination page to get its Wikipedia URL
                     dest_html = get_wikipedia_airport_page_html(dest_url)
                     if not dest_html:
                         continue

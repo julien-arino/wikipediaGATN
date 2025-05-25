@@ -315,7 +315,14 @@ def extract_airport_information(html_content):
 
             # Coordinates: always capture if present
             if "coordinates" in label and value:
-                info['coordinates'] = value
+                # Try to extract the last purely numeric coordinate pair (decimal degrees)
+                # Example: '43°38′06″N 001°22′04″E / 43.63500°N 1.36778°E / 43.63500; 1.36778'
+                matches = re.findall(r'([+-]?\d+\.\d+)\s*;\s*([+-]?\d+\.\d+)', value)
+                if matches:
+                    lat, lon = matches[-1]
+                    info['coordinates'] = f"{lat}, {lon}"
+                else:
+                    info['coordinates'] = value
 
     return info
 
@@ -327,7 +334,7 @@ def extract_airport_information(html_content):
 #     print("Destinations:", extract_destinations_from_html(html))
 #     print("Airline → Destinations:", extract_airlines_destinations_from_html(html))
 
-html = get_wikipedia_airport_page_html("CDG")
+html = get_wikipedia_airport_page_html("YYZ")
 info = extract_airport_information(html)
 print(info)
 

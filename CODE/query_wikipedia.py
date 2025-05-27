@@ -145,47 +145,17 @@ def extract_airlines_from_airport(link):
             break
     return airlines
 
-
-def extract_airlines_from_html(html_content):
+def extract_destinations_from_airport(link):
     """
-    Extracts a list of airlines from the Wikipedia airport page HTML.
-    Looks for a table under a header containing 'Airlines and destinations'.
-    Returns a set of airline names.
-    """
-    soup = BeautifulSoup(html_content, 'html.parser')
-    airlines = set()
-
-    headers = soup.find_all(['h2', 'h3', 'h4'])
-    for header in headers:
-        header_text = header.get_text(strip=True).lower()
-        if 'airlines' in header_text and 'destination' in header_text:
-            next_table = header.find_next('table')
-            if next_table:
-                header_row = next_table.find('tr')
-                ths = [th.get_text(strip=True).lower() for th in header_row.find_all('th')]
-                print("Table headers:", ths)
-                airline_idx = next((i for i, th in enumerate(ths) if 'airline' in th), None)
-                if airline_idx is None:
-                    print("Could not find airline column in:", ths)
-                    continue
-                for row in next_table.find_all('tr')[1:]:
-                    cells = row.find_all(['td', 'th'])
-                    if len(cells) > airline_idx:
-                        airline_cell = cells[airline_idx]
-                        links = airline_cell.find_all('a')
-                        for link in links:
-                            title = link.get('title')
-                            if title:
-                                airlines.add(title)
-            break
-    return airlines
-
-def extract_destinations_from_html(html_content):
-    """
-    Extracts a set of (destination name, Wikipedia link) from the Wikipedia airport page HTML.
-    Looks for a table under a header containing 'Airlines and destinations'.
+    Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
+    then extracts a set of (destination name, Wikipedia link) from the airport's Wikipedia page.
     Returns a set of (name, url) tuples with properly formatted URLs.
     """
+    html_content = get_wikipedia_airport_page_html(link)
+    if not html_content:
+        print(f"Could not fetch HTML for {link}")
+        return set()
+
     soup = BeautifulSoup(html_content, 'html.parser')
     destinations = set()
 
@@ -216,8 +186,7 @@ def extract_destinations_from_html(html_content):
                                     full_url = href
                                 else:
                                     continue
-                                # Decode percent-encoded characters
-                                full_url = urllib.parse.unquote(full_url)
+                                # Do NOT decode percent-encoded characters; keep the URL as in the href
                                 destinations.add((title, full_url))
             break
     return destinations
@@ -397,7 +366,8 @@ def extract_airport_information(link):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
     extracts IATA, ICAO (using extract_iata_icao_from_html), serves, location, coordinates,
-    and returns a dictionary with these fields plus the Wikipedia page URL as 'wikipedia_url'.
+    and also includes 'airlines' (set of airline names) and 'destinations' (set of (name, url) tuples).
+    Returns a dictionary with these fields plus the Wikipedia page URL as 'wikipedia_url'.
     """
     html_content = get_wikipedia_airport_page_html(link)
     if not html_content:
@@ -408,6 +378,8 @@ def extract_airport_information(link):
             'serves': None,
             'location': None,
             'coordinates': None,
+            'airlines': set(),
+            'destinations': set(),
             'wikipedia_url': link
         }
 
@@ -419,6 +391,8 @@ def extract_airport_information(link):
         'serves': None,
         'location': None,
         'coordinates': None,
+        'airlines': set(),
+        'destinations': set(),
         'wikipedia_url': link
     }
 
@@ -472,6 +446,15 @@ def extract_airport_information(link):
             if not info[key_item] and fallback_data.get(key_item):
                 info[key_item] = fallback_data[key_item]
 
+    # Add airlines and destinations using the new functions
+    info['airlines'] = extract_airlines_from_airport(link)
+    info['destinations'] = extract_destinations_from_airport(link)
+
+    # Convert sets to lists before returning
+    if isinstance(info.get('airlines'), set):
+        info['airlines'] = sorted(list(info['airlines']))
+    if isinstance(info.get('destinations'), set):
+        info['destinations'] = sorted(list(info['destinations']))
     return info
 
 def save_airport_info_and_destinations(identifier, level=0):
@@ -676,11 +659,6 @@ if __name__ == '__main__':
     # Example Usages:
     # Ensure the OUTPUT directory is next to this script.
 
-    # Initial airport code can be IATA, ICAO, or full Wikipedia URL
-    initial_airport = "YWG"  # Winnipeg James Armstrong Richardson International Airport
-    # initial_airport = "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
-    # initial_airport = "LHR" # London Heathrow
-
     # --- Simple 0-degree and 1st-degree connections ---
     # This will save initial_airport.0.json and its direct_destinations.1.json files
     # print("Running: Get Length 1 Connections")
@@ -710,12 +688,15 @@ if __name__ == '__main__':
 
 
     # --- Example of how to use extract_airport_information directly ---
-    test_IATA = "YWG"  # Choose some airport
+    test_IATA = "YYC"  # Choose some airport
     test_link = get_wikipedia_airport_page_link(test_IATA)
     if test_link:
         print("\nExtracting airport information for ", test_IATA)
-        test_html = get_wikipedia_airport_page_html(test_link)
-        airport_details = extract_airport_information(test_link)
-        print(json.dumps(airport_details, indent=2))
         airlines = extract_airlines_from_airport(test_link)
         print(f"Airlines operating at {test_link}: {airlines}")
+        destinations = extract_destinations_from_airport(test_link)
+        print(f"Airports outwardly linked to {test_link}: {destinations}")
+        airport_details = extract_airport_information(test_link)
+        print(json.dumps(airport_details, indent=2))
+
+

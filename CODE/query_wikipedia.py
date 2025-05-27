@@ -539,6 +539,34 @@ def save_airport_info_and_destinations(identifier, level=0):
     print(f"Saved data to {output_path}")
     return iata_code  # Return the code for tracking processed airports
 
+def save_airport_info(airport_info, level=0):
+    """
+    Saves the given airport_info dictionary as JSON in CODE/OUTPUT/{IATA}.{level}.json.
+    If IATA is not found, uses the airport name (serves or location, spaces replaced by _) as the filename.
+    """
+    # Use IATA code for filename, fallback to airport name (spaces replaced by _) if not found
+    iata_code = airport_info.get('iata')
+    if not iata_code:
+        # Try to use the airport name (serves or location or fallback to 'unknown')
+        airport_name = airport_info.get('serves') or airport_info.get('location') or "unknown"
+        safe_name = re.sub(r'\s+', '_', airport_name)
+        safe_name = re.sub(r'[^A-Za-z0-9_]', '', safe_name)
+        iata_code = safe_name
+    filename = f"{iata_code}.{level}.json"
+    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, filename)
+
+    # Optionally sort destinations by airport name if present
+    if "destinations" in airport_info and isinstance(airport_info["destinations"], list):
+        airport_info["destinations"].sort(key=lambda x: x[0] if isinstance(x, (list, tuple)) and len(x) > 0 else "")
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(airport_info, f, ensure_ascii=False, indent=2)
+
+    print(f"Saved data to {output_path}")
+    return iata_code  # Return the code for tracking processed airports
+
 def get_length_1_connections(initial_code, delay=1.0, clean_output=False):
     """
     For a given initial airport code (IATA/ICAO/Wikipedia URL), saves info for the initial airport,
@@ -698,5 +726,6 @@ if __name__ == '__main__':
         print(f"Airports outwardly linked to {test_link}: {destinations}")
         airport_details = extract_airport_information(test_link)
         print(json.dumps(airport_details, indent=2))
+        save_airport_info(airport_details, level=0)
 
 

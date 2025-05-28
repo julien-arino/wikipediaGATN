@@ -4,7 +4,10 @@
 # - Getting the Wikipedia page link for an airport based on IATA/ICAO code or wikipedia URL
 # - Extracting HTML content of the airport page
 
+from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
+###
+###
 def get_wikipedia_airport_page_link(identifier, verbose=False):
     """
     Given an IATA/ICAO code or Wikipedia URL, return the Wikipedia page URL for the airport.
@@ -65,6 +68,8 @@ def get_wikipedia_airport_page_link(identifier, verbose=False):
     return f"https://en.wikipedia.org/wiki/{page_title.replace(' ', '_')}"
 
 
+###
+###
 def get_wikipedia_airport_page_html(link, verbose=False):
     """
     Given a Wikipedia page URL, fetches the parsed HTML content of the page.
@@ -111,6 +116,8 @@ def get_wikipedia_airport_page_html(link, verbose=False):
         print(f"Could not parse content for {page_title}")
         return None
 
+###
+###
 def extract_airlines_from_airport(link, verbose=False):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
@@ -154,6 +161,8 @@ def extract_airlines_from_airport(link, verbose=False):
     return airlines
 
 
+###
+###
 def extract_destinations_from_airport(link, verbose=False):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
@@ -200,6 +209,8 @@ def extract_destinations_from_airport(link, verbose=False):
         print(f"Extracted {len(destinations)} destinations from {link}")
     return destinations
 
+###
+###
 def extract_airlines_destinations_from_airport(link, verbose=False):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
@@ -260,6 +271,8 @@ def extract_airlines_destinations_from_airport(link, verbose=False):
         print(f"Extracted airline-destination map for {link} with {len(airline_dest_map)} airlines.")
     return airline_dest_map
 
+###
+###
 def fallback_extract_airport_information(html_content):
     """
     Fallback: Tries to extract airport info from the HTML if the main infobox logic fails.
@@ -296,6 +309,8 @@ def fallback_extract_airport_information(html_content):
 
     return info
 
+###
+###
 def extract_iata_icao_from_html(html_content):
     """
     Extracts the IATA and ICAO codes from the Wikipedia airport page HTML.
@@ -333,6 +348,8 @@ def extract_iata_icao_from_html(html_content):
                         icao = match.group(1)
     return (iata, icao)
 
+###
+###
 def extract_airport_information(link):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
@@ -428,6 +445,8 @@ def extract_airport_information(link):
         info['destinations'] = sorted(list(info['destinations']))
     return info
 
+###
+###
 def save_airport_info(airport_info, level=0, verbose=False, save_progress=True):
     """
     Saves the given airport_info dictionary as JSON in CODE/OUTPUT/{IATA}.{level}.json.

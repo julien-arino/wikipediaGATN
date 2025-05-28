@@ -1,3 +1,12 @@
+## WIKIPEDIA PARSING MODULE
+#
+# This module provides functions to extract airport information from Wikipedia pages,
+# by following links to airport pages and saving the information in JSON files.
+
+from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
+
+###
+###
 def clean_output_directory(levels=None, verbose=False):
     """
     Removes files in the OUTPUT directory matching the pattern .0.json, .1.json, etc.
@@ -33,7 +42,9 @@ def clean_output_directory(levels=None, verbose=False):
 
     if verbose:
         print(f"Removed {removed} file(s) from OUTPUT directory.")
-        
+
+###
+###
 def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
     """
     For all airports with files named XXX.{from_length}.json (where XXX is a 3-letter IATA code),
@@ -84,6 +95,8 @@ def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
             processed_urls.add(dest_url)
             time.sleep(delay)
 
+###
+###
 def check_processed_list(verbose=False):
     """
     Checks the processed_locations.csv file for duplicate URL entries.
@@ -145,6 +158,8 @@ def check_processed_list(verbose=False):
     if verbose:
         print(f"Cleaned processed_locations.csv: {len(cleaned_entries)} unique entries.")
 
+###
+###
 def iterate_search_until_distance_N(seed_iata, dist=1, delay=1.0, verbose=False):
     """
     Starts from seed_iata, extracts and saves airport info, then iteratively calls get_connections_level_N
@@ -168,6 +183,8 @@ def iterate_search_until_distance_N(seed_iata, dist=1, delay=1.0, verbose=False)
             print(f"\nExpanding connections at distance {k+1}...")
         get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
 
+###
+###
 def iterate_search_until_empty(seed_iata, delay=1.0, verbose=False):
     """
     Starts from seed_iata, extracts and saves airport info, then repeatedly calls get_connections_level_N
@@ -201,6 +218,8 @@ def iterate_search_until_empty(seed_iata, delay=1.0, verbose=False):
             break
         k += 1
 
+###
+###
 def continue_existing_search_one_step(delay=1.0, verbose=False):
     """
     Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
@@ -230,6 +249,8 @@ def continue_existing_search_one_step(delay=1.0, verbose=False):
 
     get_connections_level_N(from_length=max_level, delay=delay, verbose=verbose)
 
+###
+###
 def continue_existing_search_until_empty(delay=1.0, verbose=False):
     """
     Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),

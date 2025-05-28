@@ -514,63 +514,14 @@ def clean_output_directory(levels=None, verbose=False):
     if verbose:
         print(f"Removed {removed} file(s) from OUTPUT directory.")
         
-def get_length_1_connections(seed_iata, delay=1.0, clean_output=True, verbose=False):
+def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
     """
-    For a given seed airport IATA code, loads OUTPUT/{IATA}.0.json,
-    then for each direct destination, saves its info (unless already processed).
-    """
-    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Optionally clean OUTPUT directory except for seed file
-    if clean_output:
-        clean_output_directory(levels=[1])
-        if verbose:
-            print("Cleaned OUTPUT directory except for seed.")
-
-    # Load the seed airport info from OUTPUT/{IATA}.0.json
-    seed_json_path = os.path.join(output_dir, f"{seed_iata}.0.json")
-    if not os.path.exists(seed_json_path):
-        print(f"Seed file {seed_json_path} does not exist. Please run extraction for the seed airport first.")
-        return
-
-    with open(seed_json_path, "r", encoding="utf-8") as f:
-        seed_info = json.load(f)
-
-    processed_airports = {seed_iata}
-
-    # Get the list of destinations from the seed airport info
-    destinations = seed_info.get("destinations", [])
-    for dest_name, dest_url in destinations:
-        if verbose:
-            print(f"Processing destination: {dest_name}")
-        dest_info = extract_airport_information(dest_url)
-        dest_iata = dest_info.get('iata') or dest_name
-        if dest_iata in processed_airports:
-            continue
-        filename = f"{dest_iata}.1.json"
-        if not any(f.startswith(f"{dest_iata}.") and f.endswith(".json") for f in os.listdir(output_dir)):
-            save_airport_info(dest_info, level=1)
-        processed_airports.add(dest_iata)
-        time.sleep(delay)
-
-def get_multi_path_length_connections(seed_iata, path_length=2, delay=1.0, clean_output=False, verbose=False):
-    """
-    For a given seed airport IATA code, crawls connections up to path_length.
-    Each airport is saved as {IATA}.{level}.json in CODE/OUTPUT.
-    Only unprocessed airports (by Wikipedia URL) are processed at each step.
+    For all airports with files named XXX.{from_length}.json (where XXX is a 3-letter IATA code),
+    process their destinations and save info for each unprocessed destination as YYY.{from_length+1}.json.
+    Only processes the "next generation" (one step), not recursively.
     """
     output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
     os.makedirs(output_dir, exist_ok=True)
-
-    # Optionally clean OUTPUT directory
-    if clean_output:
-        clean_output_directory(levels=[1,2])
-        if verbose:
-            print("Cleaned OUTPUT directory.")
-
-    # Step 1: Save seed and its direct destinations
-    get_length_1_connections(seed_iata, delay=delay, clean_output=False, verbose=verbose)
 
     # Helper to load processed URLs from CSV
     def get_processed_urls():
@@ -586,35 +537,85 @@ def get_multi_path_length_connections(seed_iata, path_length=2, delay=1.0, clean
                     urls.add(parts[1])
         return urls
 
-    # For each level > 1, process all .{level}.json files
-    for level in range(1, path_length):
-        if verbose:
-            print(f"\nProcessing path length {level+1}...")
-        # Find all .{level}.json files
-        json_files = [f for f in os.listdir(output_dir) if f.endswith(f".{level}.json")]
-        processed_urls = get_processed_urls()
-        for json_file in json_files:
-            json_path = os.path.join(output_dir, json_file)
-            with open(json_path, "r", encoding="utf-8") as f:
-                airport_info = json.load(f)
-            destinations = airport_info.get("destinations", [])
-            for dest_name, dest_url in destinations:
-                if dest_url in processed_urls:
-                    if verbose:
-                        print(f"Skipping already processed: {dest_name}")
-                    continue
-                origin_iata = airport_info.get('iata', 'UNKNOWN')
-                if verbose:
-                    print(f"Processing destination: {dest_name} from {origin_iata}")
-                dest_info = extract_airport_information(dest_url)
-                dest_iata = dest_info.get('iata') or dest_name
-                filename = f"{dest_iata}.{level+1}.json"
-                # Save only if not already present
-                if not os.path.exists(os.path.join(output_dir, filename)):
-                    save_airport_info(dest_info, level=level+1, verbose=verbose)
-                processed_urls.add(dest_url)
-                time.sleep(delay)
+    # Find all files matching pattern XXX.{from_length}.json where XXX is a 3-letter IATA code
+    pattern = re.compile(r"^[A-Z0-9]{{3}}\.{}\.(json)$".format(from_length))
+    json_files = [f for f in os.listdir(output_dir) if pattern.match(f)]
 
+    processed_urls = get_processed_urls()
+    for json_file in json_files:
+        json_path = os.path.join(output_dir, json_file)
+        with open(json_path, "r", encoding="utf-8") as f:
+            airport_info = json.load(f)
+        destinations = airport_info.get("destinations", [])
+        origin_iata = airport_info.get('iata', 'UNKNOWN')
+        for dest_name, dest_url in destinations:
+            if dest_url in processed_urls:
+                if verbose:
+                    print(f"Skipping already processed: {dest_name}")
+                continue
+            if verbose:
+                print(f"Processing destination: {dest_name} from {origin_iata}")
+            dest_info = extract_airport_information(dest_url)
+            dest_iata = dest_info.get('iata') or dest_name
+            filename = f"{dest_iata}.{from_length+1}.json"
+            # Save only if not already present
+            if not os.path.exists(os.path.join(output_dir, filename)):
+                save_airport_info(dest_info, level=from_length+1, verbose=verbose)
+            processed_urls.add(dest_url)
+            time.sleep(delay)
+
+def check_processed_list(verbose=False):
+    """
+    Checks the processed_locations.csv file for duplicate URL entries.
+    If duplicates are found, keeps the entry with a valid IATA code (not "None") if possible.
+    Then sorts the entries by IATA code and overwrites the original file.
+    """
+    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
+    csv_path = os.path.join(output_dir, "processed_locations.csv")
+    if not os.path.exists(csv_path):
+        if verbose:
+            print("processed_locations.csv does not exist.")
+        return
+
+    # Read all entries, skipping header
+    with open(csv_path, "r", encoding="utf-8") as csvfile:
+        lines = [line.strip() for line in csvfile.readlines()]
+    if not lines or lines[0] != "iata,url":
+        if verbose:
+            print("processed_locations.csv is empty or missing header.")
+        return
+
+    entries = []
+    for line in lines[1:]:
+        parts = line.split(",", 1)
+        if len(parts) == 2:
+            iata, url = parts
+            entries.append((iata, url))
+
+    # Remove duplicates by URL, preferring valid IATA
+    url_to_entry = {}
+    for iata, url in entries:
+        if url not in url_to_entry:
+            url_to_entry[url] = (iata, url)
+        else:
+            prev_iata, _ = url_to_entry[url]
+            # Prefer entry with valid IATA (not "None" or empty)
+            if (prev_iata == "None" or not prev_iata) and (iata != "None" and iata):
+                url_to_entry[url] = (iata, url)
+            # Otherwise, keep the existing one
+
+    # Sort by IATA code
+    cleaned_entries = sorted(url_to_entry.values(), key=lambda x: (x[0] if x[0] != "None" else "ZZZ", x[1]))
+
+    # Write back to file
+    with open(csv_path, "w", encoding="utf-8") as csvfile:
+        csvfile.write("iata,url\n")
+        for iata, url in cleaned_entries:
+            csvfile.write(f"{iata},{url}\n")
+
+    if verbose:
+        print(f"Cleaned processed_locations.csv: {len(cleaned_entries)} unique entries.")
+                    
 if __name__ == "__main__":
     # Example: Get Wikipedia link for an airport
     test_IATA = "YWG"
@@ -641,9 +642,7 @@ if __name__ == "__main__":
         airlines_dests_serializable = {k: sorted(list(v)) for k, v in airlines_dests.items()}
         print(f"Airlines/Destinations at {test_IATA}: {json.dumps(airlines_dests_serializable, indent=2, ensure_ascii=False)}")
 
-    # Example: Get length-1 connections
-    # get_length_1_connections(test_IATA, delay=0.5, clean_output=True, verbose=True)
-
-    # Example: Get multi-path-length connections
-    get_multi_path_length_connections(test_IATA, path_length=2, delay=0.5, clean_output=False, verbose=True)
-
+    # Example: Get connections level N
+    # clean_output_directory(levels=[1, 2], verbose=True)
+    get_connections_level_N(from_length=0, delay=0.5, verbose=True)
+    get_connections_level_N(from_length=1, delay=0.5, verbose=True)    

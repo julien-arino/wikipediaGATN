@@ -22,12 +22,13 @@ bibliography: paper.bib
 
 # Summary
 
-The global air transportation network plays an important role in a wide variety of human activities and, consequently, in many areas of research.
+The global air transportation network plays a crucial role in a wide variety of human activities and, consequently, in the many areas of research related to these activities, from geography to sociology, epidemiology, transport, etc.
 
 
 # Statement of need
 
 `wikipediaGATN` is a Python package for deriving the structure of the global air transportation network (GATN) from information publicly available on Wikipedia.
+
 Many commercial entities (IATA, OAG, etc.) have comprehensive datasets detailing the structure and utilisation of the GATN.
 However, these datasets can be prohibitively priced for researchers.
 `wikipediaGATN` seeks to provide middle ground: while not providing any information as to flight volumes, it mines the wikipedia API to infer the structure of the GATN from information on airports available on Wikipedia.
@@ -41,25 +42,15 @@ This will also be of interest to instructors teaching graph or network theory.
 # Methods
 
 Airport information pages on Wikipedia have evolved to become quite standardised entities.
-There is, typically, an infobox that presents summary information about the airport (name, IATA and ICAO codes, city served, geographical coordinates).
-Most pages also contain a table detailing airlines operating out of the airport and the destinations they serve.
+There is, typically, an infobox that presents summary information about the airport (name, IATA and ICAO codes, city served, geographical coordinates); see, for example, the infobox for YWG, the Winnipeg James Armstrong International Airport in \autoref{fig:infobox}.
 
-# Mathematics
+![Infobox for YWG (Winnipeg airport).\label{fig:infobox}](YWG-infobox.png)
 
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
+Most airport pages also contain a table detailing airlines operating out of the airport and the destinations they serve.
 
-Double dollars make self-standing equations:
+![Infobox for YWG (Winnipeg airport).\label{fig:airlines}](YWG-airlines-dests.png)
+and referenced from text using \autoref{fig:example}.
 
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
 
 # Citations
 
@@ -75,17 +66,9 @@ For a quick reference, the following citation commands can be used:
 - `[@author:2001]` -> "(Author et al., 2001)"
 - `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
 
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
 
 # Acknowledgements
 
-We acknowledge discussions with Stephanie Portet and Erin Rees concerning the project. JA acknowledges years of fruitful collaboration with Kamran Khan, CEO of Bluedot.global, through whom he had access to much more extensive data.
+We acknowledge discussions with Stephanie Portet. JA acknowledges years of fruitful collaboration with Kamran Khan, CEO of Bluedot.global, through whom he had access to much more extensive data.
 
 # References

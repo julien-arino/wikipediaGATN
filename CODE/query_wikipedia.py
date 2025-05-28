@@ -716,7 +716,7 @@ if __name__ == '__main__':
 
 
     # --- Example of how to use extract_airport_information directly ---
-    test_IATA = "YYC"  # Choose some airport
+    test_IATA = "YWG"  # Choose some airport
     test_link = get_wikipedia_airport_page_link(test_IATA)
     if test_link:
         print("\nExtracting airport information for ", test_IATA)

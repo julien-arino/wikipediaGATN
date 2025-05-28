@@ -567,11 +567,12 @@ def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
 def check_processed_list(verbose=False):
     """
     Checks the processed_locations.csv file for duplicate URL entries.
-    If duplicates are found, keeps the entry with a valid IATA code (not "None") if possible.
-    Then sorts the entries by IATA code and overwrites the original file.
+    Exports all entries with iata == "None" to failed_lookups.csv (sorted by URL).
+    Then discards all entries with iata == "None", sorts the rest by IATA code, and overwrites the original file.
     """
     output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
     csv_path = os.path.join(output_dir, "processed_locations.csv")
+    failed_csv_path = os.path.join(output_dir, "failed_lookups.csv")
     if not os.path.exists(csv_path):
         if verbose:
             print("processed_locations.csv does not exist.")
@@ -592,20 +593,28 @@ def check_processed_list(verbose=False):
             iata, url = parts
             entries.append((iata, url))
 
-    # Remove duplicates by URL, preferring valid IATA
-    url_to_entry = {}
-    for iata, url in entries:
-        if url not in url_to_entry:
-            url_to_entry[url] = (iata, url)
-        else:
-            prev_iata, _ = url_to_entry[url]
-            # Prefer entry with valid IATA (not "None" or empty)
-            if (prev_iata == "None" or not prev_iata) and (iata != "None" and iata):
-                url_to_entry[url] = (iata, url)
-            # Otherwise, keep the existing one
+    # Export all entries with iata == "None" to failed_lookups.csv, sorted by url
+    failed_entries = sorted([entry for entry in entries if entry[0] == "None"], key=lambda x: x[1])
+    with open(failed_csv_path, "w", encoding="utf-8") as failedfile:
+        failedfile.write("iata,url\n")
+        for iata, url in failed_entries:
+            failedfile.write(f"{iata},{url}\n")
+    if verbose:
+        print(f"Exported {len(failed_entries)} failed lookups to {failed_csv_path}")
+
+    # Discard all entries with iata == "None"
+    valid_entries = [entry for entry in entries if entry[0] != "None"]
+
+    # Remove duplicates by URL (keep the first occurrence)
+    seen_urls = set()
+    unique_entries = []
+    for iata, url in valid_entries:
+        if url not in seen_urls:
+            unique_entries.append((iata, url))
+            seen_urls.add(url)
 
     # Sort by IATA code
-    cleaned_entries = sorted(url_to_entry.values(), key=lambda x: (x[0] if x[0] != "None" else "ZZZ", x[1]))
+    cleaned_entries = sorted(unique_entries, key=lambda x: (x[0], x[1]))
 
     # Write back to file
     with open(csv_path, "w", encoding="utf-8") as csvfile:
@@ -615,6 +624,129 @@ def check_processed_list(verbose=False):
 
     if verbose:
         print(f"Cleaned processed_locations.csv: {len(cleaned_entries)} unique entries.")
+
+def iterate_search_until_distance_N(seed_iata, dist=1, delay=1.0, verbose=False):
+    """
+    Starts from seed_iata, extracts and saves airport info, then iteratively calls get_connections_level_N
+    for from_length=0 up to dist-1. Stops after generating files for distance dist.
+    """
+    # Step 1: Get seed link and info
+    link = get_wikipedia_airport_page_link(seed_iata, verbose=verbose)
+    if not link:
+        print(f"Could not find Wikipedia page for {seed_iata}")
+        return
+    airport_details = extract_airport_information(link)
+    if not airport_details.get("destinations"):
+        print(f"No connection information found for {seed_iata}")
+        save_airport_info(airport_details, level=0, verbose=verbose)
+        return
+    save_airport_info(airport_details, level=0, verbose=verbose)
+
+    # Step 2: Iteratively expand connections up to distance N
+    for k in range(dist):
+        if verbose:
+            print(f"\nExpanding connections at distance {k+1}...")
+        get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
+
+def iterate_search_until_empty(seed_iata, delay=1.0, verbose=False):
+    """
+    Starts from seed_iata, extracts and saves airport info, then repeatedly calls get_connections_level_N
+    until no new results are generated.
+    """
+    # Step 1: Get seed link and info
+    link = get_wikipedia_airport_page_link(seed_iata, verbose=verbose)
+    if not link:
+        print(f"Could not find Wikipedia page for {seed_iata}")
+        return
+    airport_details = extract_airport_information(link)
+    if not airport_details.get("destinations"):
+        print(f"No connection information found for {seed_iata}")
+        save_airport_info(airport_details, level=0, verbose=verbose)
+        return
+    save_airport_info(airport_details, level=0, verbose=verbose)
+
+    # Step 2: Expand until no new results
+    k = 0
+    while True:
+        if verbose:
+            print(f"\nExpanding connections at distance {k+1}...")
+        output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
+        before = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
+        after = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        new_files = after - before
+        if not new_files:
+            if verbose:
+                print(f"No new connections found at distance {k+1}. Stopping.")
+            break
+        k += 1
+
+def continue_existing_search_one_step(delay=1.0, verbose=False):
+    """
+    Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
+    and runs one iteration of get_connections_level_N(from_length=N, ...).
+    """
+    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
+    if not os.path.exists(output_dir):
+        print("OUTPUT directory does not exist.")
+        return
+
+    # Find all files matching pattern XXX.N.json where XXX is a 3-letter IATA code and N is an integer
+    pattern = re.compile(r"^[A-Z0-9]{3}\.(\d+)\.json$")
+    max_level = -1
+    for fname in os.listdir(output_dir):
+        match = pattern.match(fname)
+        if match:
+            level = int(match.group(1))
+            if level > max_level:
+                max_level = level
+
+    if max_level == -1:
+        print("No valid airport connection files found in OUTPUT.")
+        return
+
+    if verbose:
+        print(f"Continuing search from level {max_level} to level {max_level+1}...")
+
+    get_connections_level_N(from_length=max_level, delay=delay, verbose=verbose)
+
+def continue_existing_search_until_empty(delay=1.0, verbose=False):
+    """
+    Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
+    and repeatedly runs get_connections_level_N(from_length=N, ...) until no new results are generated.
+    """
+    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
+    if not os.path.exists(output_dir):
+        print("OUTPUT directory does not exist.")
+        return
+
+    # Find all files matching pattern XXX.N.json where XXX is a 3-letter IATA code and N is an integer
+    pattern = re.compile(r"^[A-Z0-9]{3}\.(\d+)\.json$")
+    max_level = -1
+    for fname in os.listdir(output_dir):
+        match = pattern.match(fname)
+        if match:
+            level = int(match.group(1))
+            if level > max_level:
+                max_level = level
+
+    if max_level == -1:
+        print("No valid airport connection files found in OUTPUT.")
+        return
+
+    k = max_level
+    while True:
+        if verbose:
+            print(f"Continuing search from level {k} to level {k+1}...")
+        before = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
+        after = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        new_files = after - before
+        if not new_files:
+            if verbose:
+                print(f"No new connections found at level {k+1}. Stopping.")
+            break
+        k += 1
 
 if __name__ == "__main__":
     # Example: Get Wikipedia link for an airport
@@ -646,5 +778,5 @@ if __name__ == "__main__":
     # clean_output_directory(levels=[1, 2], verbose=True)
     # get_connections_level_N(from_length=0, delay=0.5, verbose=True)
     # get_connections_level_N(from_length=1, delay=0.5, verbose=True)    
-    get_connections_level_N(from_length=2, delay=0.5, verbose=True)    
-    
+    # get_connections_level_N(from_length=2, delay=0.5, verbose=True)
+    get_connections_level_N(from_length=3)

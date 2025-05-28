@@ -565,7 +565,7 @@ def get_multi_path_length_connections(seed_iata, path_length=2, delay=1.0, clean
 
     # Optionally clean OUTPUT directory
     if clean_output:
-        clean_output_directory(verbose=verbose)
+        clean_output_directory(levels=[1,2])
         if verbose:
             print("Cleaned OUTPUT directory.")
 
@@ -603,8 +603,9 @@ def get_multi_path_length_connections(seed_iata, path_length=2, delay=1.0, clean
                     if verbose:
                         print(f"Skipping already processed: {dest_name}")
                     continue
+                origin_iata = airport_info.get('iata', 'UNKNOWN')
                 if verbose:
-                    print(f"Processing destination: {dest_name}")
+                    print(f"Processing destination: {dest_name} from {origin_iata}")
                 dest_info = extract_airport_information(dest_url)
                 dest_iata = dest_info.get('iata') or dest_name
                 filename = f"{dest_iata}.{level+1}.json"

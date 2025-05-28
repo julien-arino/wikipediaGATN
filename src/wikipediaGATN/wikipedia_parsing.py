@@ -3,6 +3,14 @@
 # This module provides functions to extract airport information from Wikipedia pages,
 # by following links to airport pages and saving the information in JSON files.
 
+import requests
+from bs4 import BeautifulSoup
+import re
+import time
+import os
+import json
+import urllib.parse
+
 from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
 ###

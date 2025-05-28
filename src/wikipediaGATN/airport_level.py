@@ -4,6 +4,14 @@
 # - Getting the Wikipedia page link for an airport based on IATA/ICAO code or wikipedia URL
 # - Extracting HTML content of the airport page
 
+import requests
+from bs4 import BeautifulSoup
+import re
+import time
+import os
+import json
+import urllib.parse
+
 from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
 ###

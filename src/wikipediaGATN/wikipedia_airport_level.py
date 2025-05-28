@@ -13,6 +13,7 @@ import time
 import os
 import json
 import urllib.parse
+from geopy.point import Point
 
 from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
@@ -376,9 +377,12 @@ def extract_airport_information(link):
             'serves': None,
             'location': None,
             'coordinates': None,
+            'latitude': None,
+            'longitude': None,
+            'wikipedia_url': link,
             'airlines': [],
             'destinations': [],
-            'wikipedia_url': link
+            'airlines_destinations': []
         }
 
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -389,9 +393,12 @@ def extract_airport_information(link):
         'serves': None,
         'location': None,
         'coordinates': None,
+        'latitude': None,
+        'longitude': None,
+        'wikipedia_url': link,
         'airlines': set(),
         'destinations': set(),
-        'wikipedia_url': link
+        'airlines_destinations': set()
     }
 
     # Use the robust extractor for IATA/ICAO
@@ -416,25 +423,25 @@ def extract_airport_information(link):
 
             # Coordinates: extract only decimal degrees
             if "coordinates" in label and value:
-                decimal_matches = re.findall(r'(-?\d+\.\d+)', value)
-                if len(decimal_matches) >= 2:
-                    info['coordinates'] = f"{decimal_matches[0]}, {decimal_matches[1]}"
-                elif decimal_matches:
-                    info['coordinates'] = decimal_matches[0]
-                else:
-                    info['coordinates'] = None
-                # Also check for span.geo if not found
-                if not info['coordinates'] and data:
+                # Prefer the full value (which may be DMS with N/S/E/W)
+                info['coordinates'] = value.strip()
+                # Also check for span.geo if not found or value is empty
+                if (not info['coordinates'] or info['coordinates'].lower() == "none") and data:
                     span_geo = data.find('span', class_='geo')
                     if span_geo and span_geo.get_text():
-                        coords_from_span = span_geo.get_text(" ", strip=True).split(';')
-                        if len(coords_from_span) == 2:
-                            try:
-                                lat = float(coords_from_span[0].strip())
-                                lon = float(coords_from_span[1].strip())
-                                info['coordinates'] = f"{lat:.6f}, {lon:.6f}"
-                            except ValueError:
-                                pass
+                        info['coordinates'] = span_geo.get_text(" ", strip=True)
+            # Also check for span.geo if not found
+            if not info['coordinates'] and data:
+                span_geo = data.find('span', class_='geo')
+                if span_geo and span_geo.get_text():
+                    coords_from_span = span_geo.get_text(" ", strip=True).split(';')
+                    if len(coords_from_span) == 2:
+                        try:
+                            lat = float(coords_from_span[0].strip())
+                            lon = float(coords_from_span[1].strip())
+                            info['coordinates'] = f"{lat:.6f}, {lon:.6f}"
+                        except ValueError:
+                            pass
 
     # Fallback logic: Trigger if essential codes are missing or if most other info is also missing.
     if (not info['iata'] or not info['icao']) or \
@@ -444,15 +451,27 @@ def extract_airport_information(link):
             if not info[key_item] and fallback_data.get(key_item):
                 info[key_item] = fallback_data[key_item]
 
+    coords = info.get("coordinates", "")
+    lat, lon = "", ""
+    if isinstance(coords, str) and coords:
+        lat, lon = parse_lat_lon_from_string(coords)
+    info['latitude'] = lat
+    info['longitude'] = lon
+
     # Add airlines and destinations using the new functions
     info['airlines'] = extract_airlines_from_airport(link)
     info['destinations'] = extract_destinations_from_airport(link)
+    airlines_destinations = extract_airlines_destinations_from_airport(link)
 
     # Convert sets to lists before returning
     if isinstance(info.get('airlines'), set):
         info['airlines'] = sorted(list(info['airlines']))
     if isinstance(info.get('destinations'), set):
         info['destinations'] = sorted(list(info['destinations']))
+    if isinstance(airlines_destinations, dict):
+        # Convert dict of sets to dict of sorted lists
+        info['airlines_destinations'] = {k: sorted(list(v)) for k, v in airlines_destinations.items()}
+
     return info
 
 ###
@@ -505,4 +524,19 @@ def save_airport_info(airport_info, level=0, verbose=False, save_progress=True):
     if verbose:
         print(f"Saved data to {output_path}")
     return iata_code  # Return the code for tracking processed airports
+
+###
+###
+def parse_lat_lon_from_string(coord_string):
+    """
+    Uses geopy to robustly parse latitude and longitude from a coordinate string.
+    Returns (latitude, longitude) as strings (decimal degrees).
+    """
+    try:
+        point = Point(coord_string)
+        lat = f"{point.latitude:.6f}"
+        lon = f"{point.longitude:.6f}"
+        return lat, lon
+    except Exception:
+        return "", ""
 

@@ -21,17 +21,17 @@ if __name__ == "__main__":
         print(json.dumps(airport_details, indent=2, ensure_ascii=False))
 
     # Example: Extract airlines and destinations
-    if test_link:
-        airlines = extract_airlines_from_airport(test_link)
-        print(f"Airlines at {test_IATA}: {sorted(list(airlines))}")
+    # if test_link:
+    #     airlines = extract_airlines_from_airport(test_link)
+    #     print(f"Airlines at {test_IATA}: {sorted(list(airlines))}")
 
-        destinations = extract_destinations_from_airport(test_link)
-        print(f"Destinations at {test_IATA}: {sorted(list(destinations))}")
+    #     destinations = extract_destinations_from_airport(test_link)
+    #     print(f"Destinations at {test_IATA}: {sorted(list(destinations))}")
 
-        airlines_dests = extract_airlines_destinations_from_airport(test_link)
-        # Convert sets to lists for pretty printing
-        airlines_dests_serializable = {k: sorted(list(v)) for k, v in airlines_dests.items()}
-        print(f"Airlines/Destinations at {test_IATA}: {json.dumps(airlines_dests_serializable, indent=2, ensure_ascii=False)}")
+    #     airlines_dests = extract_airlines_destinations_from_airport(test_link)
+    #     # Convert sets to lists for pretty printing
+    #     airlines_dests_serializable = {k: sorted(list(v)) for k, v in airlines_dests.items()}
+    #     print(f"Airlines/Destinations at {test_IATA}: {json.dumps(airlines_dests_serializable, indent=2, ensure_ascii=False)}")
 
     # Example: Get connections level N
     # clean_output_directory(levels=[1, 2], verbose=True)

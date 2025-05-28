@@ -1,8 +1,10 @@
 ## AIRPORT LEVEL FUNCTIONS
 #
-# Functions that interact with Wikipedia to fetch airport information, including:
-# - Getting the Wikipedia page link for an airport based on IATA/ICAO code or wikipedia URL
-# - Extracting HTML content of the airport page
+# Functions that interact with Wikipedia to fetch airport-level information, including:
+# - Wikipedia page link for an airport based on IATA/ICAO code or wikipedia URL
+# - Extracting HTML content of the airport page:
+#    - Extracting airlines and destinations from the airport page
+#    - Extracting IATA/ICAO codes, serves, location, coordinates, airlines, and destinations
 
 import requests
 from bs4 import BeautifulSoup

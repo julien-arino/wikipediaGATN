@@ -6,9 +6,10 @@ import os
 import json
 import urllib.parse
 
-def get_wikipedia_airport_page_link(identifier):
+def get_wikipedia_airport_page_link(identifier, verbose=False):
     """
     Given an IATA/ICAO code or Wikipedia URL, return the Wikipedia page URL for the airport.
+    If verbose is True, prints the found page title; otherwise, is silent on success.
     """
     if isinstance(identifier, str) and identifier.startswith("http"):
         # Already a Wikipedia URL
@@ -60,10 +61,12 @@ def get_wikipedia_airport_page_link(identifier):
         print(f"No Wikipedia page title found for {identifier}.")
         return None
 
-    print(f"Found page title for {identifier}: {page_title}")
+    if verbose:
+        print(f"Found page title for {identifier}: {page_title}")
     return f"https://en.wikipedia.org/wiki/{page_title.replace(' ', '_')}"
 
-def get_wikipedia_airport_page_html(link):
+
+def get_wikipedia_airport_page_html(link, verbose=False):
     """
     Given a Wikipedia page URL, fetches the parsed HTML content of the page.
     """
@@ -79,7 +82,8 @@ def get_wikipedia_airport_page_html(link):
         print("Invalid Wikipedia URL.")
         return None
     page_title = urllib.parse.unquote(match.group(1)).replace('_', ' ')
-    print(f"Extracted page title from URL: {page_title}")
+    if verbose:
+        print(f"Extracted page title from URL: {page_title}")
 
     # Fetch the parsed HTML content of the page
     parse_params = {
@@ -95,7 +99,8 @@ def get_wikipedia_airport_page_html(link):
         page_data = response.json()
         if page_data.get("parse", {}).get("text"):
             html_content = page_data["parse"]["text"]
-            print(f"Successfully fetched HTML for {page_title}")
+            if verbose:
+                print(f"Successfully fetched HTML for {page_title}")
             return html_content
         else:
             print(f"Could not retrieve HTML content for {page_title}")
@@ -107,12 +112,12 @@ def get_wikipedia_airport_page_html(link):
         print(f"Could not parse content for {page_title}")
         return None
 
-def extract_airlines_from_airport(link):
+def extract_airlines_from_airport(link, verbose=False):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
     then extracts a set of airline names from the airport's Wikipedia page.
     """
-    html_content = get_wikipedia_airport_page_html(link)
+    html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
     if not html_content:
         print(f"Could not fetch HTML for {link}")
         return set()
@@ -128,10 +133,12 @@ def extract_airlines_from_airport(link):
             if next_table:
                 header_row = next_table.find('tr')
                 ths = [th.get_text(strip=True).lower() for th in header_row.find_all('th')]
-                print("Table headers:", ths)
+                if verbose:
+                    print("Table headers:", ths)
                 airline_idx = next((i for i, th in enumerate(ths) if 'airline' in th), None)
                 if airline_idx is None:
-                    print("Could not find airline column in:", ths)
+                    if verbose:
+                        print("Could not find airline column in:", ths)
                     continue
                 for row in next_table.find_all('tr')[1:]:
                     cells = row.find_all(['td', 'th'])
@@ -143,15 +150,18 @@ def extract_airlines_from_airport(link):
                             if title:
                                 airlines.add(title)
             break
+    if verbose:
+        print(f"Extracted {len(airlines)} airlines from {link}")
     return airlines
 
-def extract_destinations_from_airport(link):
+
+def extract_destinations_from_airport(link, verbose=False):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
     then extracts a set of (destination name, Wikipedia link) from the airport's Wikipedia page.
     Returns a set of (name, url) tuples with properly formatted URLs.
     """
-    html_content = get_wikipedia_airport_page_html(link)
+    html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
     if not html_content:
         print(f"Could not fetch HTML for {link}")
         return set()
@@ -179,60 +189,29 @@ def extract_destinations_from_airport(link):
                             title = link.get('title')
                             href = link.get('href')
                             if title and href:
-                                # Ensure full Wikipedia URL and decode it
                                 if href.startswith('/wiki/'):
                                     full_url = f"https://en.wikipedia.org{href}"
                                 elif href.startswith('http'):
                                     full_url = href
                                 else:
                                     continue
-                                # Do NOT decode percent-encoded characters; keep the URL as in the href
                                 destinations.add((title, full_url))
             break
+    if verbose:
+        print(f"Extracted {len(destinations)} destinations from {link}")
     return destinations
 
-def fallback_extract_airport_information(html_content):
+def extract_airlines_destinations_from_airport(link, verbose=False):
     """
-    Fallback: Tries to extract airport info from the HTML if the main infobox logic fails.
-    Returns a dictionary with keys: 'iata', 'icao', 'serves', 'location', 'coordinates', 'wikipedia_url'.
-    """
-    soup = BeautifulSoup(html_content, 'html.parser')
-    info = {'iata': None, 'icao': None, 'serves': None, 'location': None, 'coordinates': None, 'wikipedia_url': None}
-
-    # Try to find any 3-letter/4-letter codes in the whole page
-    text = soup.get_text(" ", strip=True)
-    iata_match = re.search(r'\bIATA[:\s\-]*([A-Z0-9]{3})\b', text)
-    icao_match = re.search(r'\bICAO[:\s\-]*([A-Z0-9]{4})\b', text)
-    if iata_match:
-        info['iata'] = iata_match.group(1).upper()
-    if icao_match:
-        info['icao'] = icao_match.group(1).upper()
-
-    # Try to find a plausible airport name (first h1 or h2)
-    title_tag = soup.find(['h1', 'h2'])
-    if title_tag:
-        info['serves'] = title_tag.get_text(" ", strip=True)
-
-    # Try to find coordinates in decimal format anywhere in the text
-    decimal_matches = re.findall(r'(-?\d+\.\d+)', text)
-    if len(decimal_matches) >= 2:
-        info['coordinates'] = f"{decimal_matches[0]}, {decimal_matches[1]}"
-    elif decimal_matches:
-        info['coordinates'] = decimal_matches[0]
-
-    # Try to find a location string (look for "Location" in the text)
-    location_match = re.search(r'Location[:\s\-]*([^\n]+)', text)
-    if location_match:
-        info['location'] = location_match.group(1).strip()
-
-    return info
-
-def extract_airlines_destinations_from_html(html_content):
-    """
-    Extracts a mapping of airlines to their destinations from the Wikipedia airport page HTML.
-    Looks for a table under a header containing 'Airlines and destinations'.
+    Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
+    then extracts a mapping of airlines to their destinations from the airport's Wikipedia page.
     Returns a dictionary where keys are airline names and values are sets of destination names.
     """
+    html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
+    if not html_content:
+        print(f"Could not fetch HTML for {link}")
+        return {}
+
     soup = BeautifulSoup(html_content, 'html.parser')
     airline_dest_map = {}
 
@@ -278,7 +257,45 @@ def extract_airlines_destinations_from_html(html_content):
                                     airline_dest_map[airline] = set()
                                 airline_dest_map[airline].update(dest_names)
             break
+    if verbose:
+        print(f"Extracted airline-destination map for {link} with {len(airline_dest_map)} airlines.")
     return airline_dest_map
+
+def fallback_extract_airport_information(html_content):
+    """
+    Fallback: Tries to extract airport info from the HTML if the main infobox logic fails.
+    Returns a dictionary with keys: 'iata', 'icao', 'serves', 'location', 'coordinates', 'wikipedia_url'.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    info = {'iata': None, 'icao': None, 'serves': None, 'location': None, 'coordinates': None, 'wikipedia_url': None}
+
+    # Try to find any 3-letter/4-letter codes in the whole page
+    text = soup.get_text(" ", strip=True)
+    iata_match = re.search(r'\bIATA[:\s\-]*([A-Z0-9]{3})\b', text)
+    icao_match = re.search(r'\bICAO[:\s\-]*([A-Z0-9]{4})\b', text)
+    if iata_match:
+        info['iata'] = iata_match.group(1).upper()
+    if icao_match:
+        info['icao'] = icao_match.group(1).upper()
+
+    # Try to find a plausible airport name (first h1 or h2)
+    title_tag = soup.find(['h1', 'h2'])
+    if title_tag:
+        info['serves'] = title_tag.get_text(" ", strip=True)
+
+    # Try to find coordinates in decimal format anywhere in the text
+    decimal_matches = re.findall(r'(-?\d+\.\d+)', text)
+    if len(decimal_matches) >= 2:
+        info['coordinates'] = f"{decimal_matches[0]}, {decimal_matches[1]}"
+    elif decimal_matches:
+        info['coordinates'] = decimal_matches[0]
+
+    # Try to find a location string (look for "Location" in the text)
+    location_match = re.search(r'Location[:\s\-]*([^\n]+)', text)
+    if location_match:
+        info['location'] = location_match.group(1).strip()
+
+    return info
 
 def extract_iata_icao_from_html(html_content):
     """
@@ -317,51 +334,6 @@ def extract_iata_icao_from_html(html_content):
                         icao = match.group(1)
     return (iata, icao)
 
-def get_second_degree_connections(initial_code, delay=1.0):
-    """
-    Given an initial airport code (IATA/ICA/Wikipedia URL), lists direct connections,
-    then lists all second-degree connections (destinations from each direct destination).
-    For each airport considered, calls save_airport_info_and_destinations unless the file already exists in CODE/OUTPUT.
-    Returns a dict: { direct_destination_name: set((name, url), ...) }
-    """
-    # Ensure OUTPUT directory exists as a subdirectory of CODE
-    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
-    os.makedirs(output_dir, exist_ok=True)
-
-    # First degree: direct destinations from the initial airport
-    html = get_wikipedia_airport_page_html(initial_code)
-    if not html:
-        print(f"Could not fetch page for {initial_code}")
-        return {}
-
-    # Save info for the initial airport if not already present
-    initial_info = extract_airport_information(html)
-    iata_code = initial_info.get('iata') or str(initial_code)
-    initial_filename = os.path.join(output_dir, f"{iata_code}.json")
-    if not os.path.exists(initial_filename):
-        save_airport_info_and_destinations(initial_code)
-
-    direct_destinations = extract_destinations_from_html(html)
-    print(f"Direct destinations from {initial_code}: {[name for name, url in direct_destinations]}")
-
-    second_degree = {}
-    for dest_name, dest_url in direct_destinations:
-        dest_html = get_wikipedia_airport_page_html(dest_url)
-        if dest_html:
-            dest_info = extract_airport_information(dest_html)
-            dest_iata = dest_info.get('iata') or dest_name
-            dest_filename = os.path.join(output_dir, f"{dest_iata}.json")
-            if not os.path.exists(dest_filename):
-                save_airport_info_and_destinations(dest_url)
-            dest_connections = extract_destinations_from_html(dest_html)
-            second_degree[dest_name] = dest_connections
-        else:
-            print(f"Could not fetch page for {dest_name}")
-            second_degree[dest_name] = set()
-        time.sleep(delay)  # Be polite to Wikipedia's servers
-
-    return second_degree
-
 def extract_airport_information(link):
     """
     Given a Wikipedia page URL (link), loads the HTML using get_wikipedia_airport_page_html(link),
@@ -378,8 +350,8 @@ def extract_airport_information(link):
             'serves': None,
             'location': None,
             'coordinates': None,
-            'airlines': set(),
-            'destinations': set(),
+            'airlines': [],
+            'destinations': [],
             'wikipedia_url': link
         }
 
@@ -457,97 +429,14 @@ def extract_airport_information(link):
         info['destinations'] = sorted(list(info['destinations']))
     return info
 
-def save_airport_info_and_destinations(identifier, level=0):
-    """
-    For a given identifier (IATA/ICAO code or Wikipedia URL), fetches the Wikipedia page,
-    extracts airport information and destinations, and saves the result as JSON in CODE/OUTPUT/{IATA}.{level}.json.
-    Adds a field 'num_destinations' to airport_info and 'wikipedia_url' with the page address.
-    If IATA is not found, uses the airport name (spaces replaced by _) as the filename.
-    """
-    html = get_wikipedia_airport_page_html(identifier)
-    if not html:
-        print(f"Could not fetch Wikipedia page for {identifier}")
-        return None
-
-    airport_info = extract_airport_information(html)
-    destinations = list(extract_destinations_from_html(html))  # Convert set to list for JSON serialization
-
-    # Sort destinations by airport name
-    destinations.sort(key=lambda x: x[0] if isinstance(x, (list, tuple)) and len(x) > 0 else "")
-
-    # Add number of destinations to airport_info
-    airport_info['num_destinations'] = len(destinations)
-
-    # Add Wikipedia page address to airport_info
-    if isinstance(identifier, str) and identifier.startswith("http"):
-        airport_info['wikipedia_url'] = identifier
-    else:
-        # Try to reconstruct the Wikipedia URL from the page title
-        session = requests.Session()
-        api_url = "https://en.wikipedia.org/w/api.php"
-        headers = {
-            "User-Agent": "MyCoolBot/1.0 (myemail@example.com) PythonRequestsLibrary/1.0"
-        }
-        if re.fullmatch(r'[A-Za-z]{3}', identifier):
-            search_term = f"{identifier.upper()} airport"
-        elif re.fullmatch(r'[A-Za-z]{4}', identifier):
-            search_term = f"{identifier.upper()} airport"
-        else:
-            search_term = identifier
-        search_params = {
-            "action": "query",
-            "format": "json",
-            "list": "search",
-            "srsearch": search_term,
-            "formatversion": "2"
-        }
-        page_title = None
-        try:
-            response = session.get(url=api_url, params=search_params, headers=headers)
-            response.raise_for_status()
-            search_data = response.json()
-            if search_data.get("query", {}).get("search"):
-                page_title = search_data["query"]["search"][0]["title"]
-        except Exception:
-            page_title = None
-        if page_title:
-            airport_info['wikipedia_url'] = f"https://en.wikipedia.org/wiki/{page_title.replace(' ', '_')}"
-        else:
-            airport_info['wikipedia_url'] = None
-
-    # Use IATA code for filename, fallback to airport name (spaces replaced by _) if not found
-    iata_code = airport_info.get('iata')
-    if not iata_code:
-        # Try to use the airport name (serves or location or fallback to identifier)
-        airport_name = airport_info.get('serves') or airport_info.get('location') or str(identifier)
-        safe_name = re.sub(r'\s+', '_', airport_name)
-        safe_name = re.sub(r'[^A-Za-z0-9_]', '', safe_name)
-        iata_code = safe_name
-    filename = f"{iata_code}.{level}.json"
-    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
-    os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, filename)
-
-    result = {
-        "airport_info": airport_info,
-        "destinations": destinations
-    }
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
-    print(f"Saved data to {output_path}")
-    return iata_code  # Return the code for tracking processed airports
-
-def save_airport_info(airport_info, level=0):
+def save_airport_info(airport_info, level=0, verbose=False, save_progress=True):
     """
     Saves the given airport_info dictionary as JSON in CODE/OUTPUT/{IATA}.{level}.json.
     If IATA is not found, uses the airport name (serves or location, spaces replaced by _) as the filename.
+    Optionally tracks progress in processed_locations.csv (IATA and Wikipedia URL).
     """
-    # Use IATA code for filename, fallback to airport name (spaces replaced by _) if not found
     iata_code = airport_info.get('iata')
     if not iata_code:
-        # Try to use the airport name (serves or location or fallback to 'unknown')
         airport_name = airport_info.get('serves') or airport_info.get('location') or "unknown"
         safe_name = re.sub(r'\s+', '_', airport_name)
         safe_name = re.sub(r'[^A-Za-z0-9_]', '', safe_name)
@@ -557,175 +446,203 @@ def save_airport_info(airport_info, level=0):
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, filename)
 
-    # Optionally sort destinations by airport name if present
     if "destinations" in airport_info and isinstance(airport_info["destinations"], list):
         airport_info["destinations"].sort(key=lambda x: x[0] if isinstance(x, (list, tuple)) and len(x) > 0 else "")
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(airport_info, f, ensure_ascii=False, indent=2)
 
-    print(f"Saved data to {output_path}")
+    if save_progress:
+        csv_path = os.path.join(output_dir, "processed_locations.csv")
+        iata = airport_info.get('iata', '')
+        url = airport_info.get('wikipedia_url', '')
+
+        # Read existing entries if file exists, else start with header
+        rows = []
+        if os.path.exists(csv_path):
+            with open(csv_path, "r", encoding="utf-8") as csvfile:
+                lines = [line.strip() for line in csvfile.readlines()]
+            # Skip header
+            rows = [tuple(line.split(",", 1)) for line in lines[1:] if "," in line]
+        else:
+            # Add header if file does not exist
+            with open(csv_path, "w", encoding="utf-8") as csvfile:
+                csvfile.write("iata,url\n")
+
+        # Only add if not already present
+        if (iata, url) not in rows:
+            with open(csv_path, "a", encoding="utf-8") as csvfile:
+                csvfile.write(f"{iata},{url}\n")
+
+    if verbose:
+        print(f"Saved data to {output_path}")
     return iata_code  # Return the code for tracking processed airports
 
-def get_length_1_connections(initial_code, delay=1.0, clean_output=False):
+def clean_output_directory(levels=None, verbose=False):
     """
-    For a given initial airport code (IATA/ICAO/Wikipedia URL), saves info for the initial airport,
+    Removes files in the OUTPUT directory matching the pattern .0.json, .1.json, etc.
+    Also removes processed_locations.csv if present.
+    If levels is None, removes all files matching .<number>.json.
+    If levels is a list of integers, only removes files matching those levels.
+    """
+    output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
+    if not os.path.exists(output_dir):
+        if verbose:
+            print("OUTPUT directory does not exist.")
+        return
+
+    removed = 0
+    for fname in os.listdir(output_dir):
+        if levels is None:
+            if re.match(r".*\.\d+\.json$", fname):
+                os.remove(os.path.join(output_dir, fname))
+                removed += 1
+        else:
+            for lvl in levels:
+                if fname.endswith(f".{lvl}.json"):
+                    os.remove(os.path.join(output_dir, fname))
+                    removed += 1
+                    break
+
+    # Remove processed_locations.csv if present
+    csv_path = os.path.join(output_dir, "processed_locations.csv")
+    if os.path.exists(csv_path):
+        os.remove(csv_path)
+        if verbose:
+            print("Removed processed_locations.csv from OUTPUT directory.")
+
+    if verbose:
+        print(f"Removed {removed} file(s) from OUTPUT directory.")
+        
+def get_length_1_connections(seed_iata, delay=1.0, clean_output=True, verbose=False):
+    """
+    For a given seed airport IATA code, loads OUTPUT/{IATA}.0.json,
     then for each direct destination, saves its info (unless already processed).
     """
     output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
     os.makedirs(output_dir, exist_ok=True)
 
-    # Optionally clean OUTPUT directory
+    # Optionally clean OUTPUT directory except for seed file
     if clean_output:
-        for fname in os.listdir(output_dir):
-            if fname.endswith(".json"):
-                os.remove(os.path.join(output_dir, fname))
-        print("Cleaned OUTPUT directory.")
+        clean_output_directory(levels=[1])
+        if verbose:
+            print("Cleaned OUTPUT directory except for seed.")
 
-    processed_airports = set()
-
-    # Save info for the initial airport
-    html = get_wikipedia_airport_page_html(initial_code)
-    if not html:
-        print(f"Could not fetch page for {initial_code}")
+    # Load the seed airport info from OUTPUT/{IATA}.0.json
+    seed_json_path = os.path.join(output_dir, f"{seed_iata}.0.json")
+    if not os.path.exists(seed_json_path):
+        print(f"Seed file {seed_json_path} does not exist. Please run extraction for the seed airport first.")
         return
 
-    initial_info = extract_airport_information(html)
-    iata_code = initial_info.get('iata') or str(initial_code)
-    filename = f"{iata_code}.0.json"
-    if not any(f.startswith(f"{iata_code}.") and f.endswith(".json") for f in os.listdir(output_dir)):
-        save_airport_info_and_destinations(initial_code, level=0)
-    processed_airports.add(iata_code)
+    with open(seed_json_path, "r", encoding="utf-8") as f:
+        seed_info = json.load(f)
 
-    # Save info for each direct destination
-    direct_destinations = extract_destinations_from_html(html)
-    for dest_name, dest_url in direct_destinations:
-        dest_html = get_wikipedia_airport_page_html(dest_url)
-        if not dest_html:
-            print(f"Could not fetch page for {dest_name}")
-            continue
-        dest_info = extract_airport_information(dest_html)
+    processed_airports = {seed_iata}
+
+    # Get the list of destinations from the seed airport info
+    destinations = seed_info.get("destinations", [])
+    for dest_name, dest_url in destinations:
+        if verbose:
+            print(f"Processing destination: {dest_name}")
+        dest_info = extract_airport_information(dest_url)
         dest_iata = dest_info.get('iata') or dest_name
         if dest_iata in processed_airports:
             continue
         filename = f"{dest_iata}.1.json"
         if not any(f.startswith(f"{dest_iata}.") and f.endswith(".json") for f in os.listdir(output_dir)):
-            save_airport_info_and_destinations(dest_url, level=1)
+            save_airport_info(dest_info, level=1)
         processed_airports.add(dest_iata)
         time.sleep(delay)
 
-def get_multi_path_length_connections(initial_code, path_length=2, delay=1.0, clean_output=False):
+def get_multi_path_length_connections(seed_iata, path_length=2, delay=1.0, clean_output=False, verbose=False):
     """
-    For a given initial airport code, crawls connections up to path_length.
-    Each airport is saved as {AIRPORT_ID}.{level}.json in CODE/OUTPUT.
-    Only unprocessed airports (by IATA and Wikipedia URL) are processed at each step.
+    For a given seed airport IATA code, crawls connections up to path_length.
+    Each airport is saved as {IATA}.{level}.json in CODE/OUTPUT.
+    Only unprocessed airports (by Wikipedia URL) are processed at each step.
     """
     output_dir = os.path.join(os.path.dirname(__file__), "OUTPUT")
     os.makedirs(output_dir, exist_ok=True)
 
     # Optionally clean OUTPUT directory
     if clean_output:
-        for fname in os.listdir(output_dir):
-            if fname.endswith(".json"):
-                os.remove(os.path.join(output_dir, fname))
-        print("Cleaned OUTPUT directory.")
+        clean_output_directory(verbose=verbose)
+        if verbose:
+            print("Cleaned OUTPUT directory.")
 
-    processed_airports = set()  # (iata_code, wikipedia_url)
-    to_process = [(initial_code, 0)]
+    # Step 1: Save seed and its direct destinations
+    get_length_1_connections(seed_iata, delay=delay, clean_output=False, verbose=verbose)
 
-    for level in range(path_length + 1):
-        print(f"\nProcessing path length {level} ({len(to_process)} airports)...")
-        next_to_process = []
-        for identifier, current_level in to_process:
-            # Always save info for this airport at this level
-            iata_code = save_airport_info_and_destinations(identifier, level=current_level)
-            if not iata_code:
-                continue
+    # Helper to load processed URLs from CSV
+    def get_processed_urls():
+        csv_path = os.path.join(output_dir, "processed_locations.csv")
+        urls = set()
+        if os.path.exists(csv_path):
+            with open(csv_path, "r", encoding="utf-8") as csvfile:
+                lines = [line.strip() for line in csvfile.readlines()]
+            # Skip header
+            for line in lines[1:]:
+                parts = line.split(",", 1)
+                if len(parts) == 2:
+                    urls.add(parts[1])
+        return urls
 
-            # Load the just-saved JSON to get info and destinations
-            json_filename = f"{iata_code}.{current_level}.json"
-            json_path = os.path.join(output_dir, json_filename)
-            if not os.path.exists(json_path):
-                print(f"File {json_path} not found after saving, skipping.")
-                continue
-
+    # For each level > 1, process all .{level}.json files
+    for level in range(1, path_length):
+        if verbose:
+            print(f"\nProcessing path length {level+1}...")
+        # Find all .{level}.json files
+        json_files = [f for f in os.listdir(output_dir) if f.endswith(f".{level}.json")]
+        processed_urls = get_processed_urls()
+        for json_file in json_files:
+            json_path = os.path.join(output_dir, json_file)
             with open(json_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            airport_info = data.get("airport_info", {})
-            destinations = data.get("destinations", [])
+                airport_info = json.load(f)
+            destinations = airport_info.get("destinations", [])
+            for dest_name, dest_url in destinations:
+                if dest_url in processed_urls:
+                    if verbose:
+                        print(f"Skipping already processed: {dest_name}")
+                    continue
+                if verbose:
+                    print(f"Processing destination: {dest_name}")
+                dest_info = extract_airport_information(dest_url)
+                dest_iata = dest_info.get('iata') or dest_name
+                filename = f"{dest_iata}.{level+1}.json"
+                # Save only if not already present
+                if not os.path.exists(os.path.join(output_dir, filename)):
+                    save_airport_info(dest_info, level=level+1, verbose=verbose)
+                processed_urls.add(dest_url)
+                time.sleep(delay)
 
-            # Track processed airports by (iata_code, wikipedia_url)
-            wikipedia_url = airport_info.get("wikipedia_url")
-            processed_airports.add((iata_code, wikipedia_url))
+if __name__ == "__main__":
+    # Example: Get Wikipedia link for an airport
+    test_IATA = "YWG"
+    test_link = get_wikipedia_airport_page_link(test_IATA, verbose=True)
+    print(f"Wikipedia link for {test_IATA}: {test_link}")
 
-            # If not at last level, queue up next destinations
-            if current_level < path_length:
-                for dest_name, dest_url in destinations:
-                    # Fetch info for destination to get its IATA and Wikipedia URL
-                    dest_html = get_wikipedia_airport_page_html(dest_url)
-                    if not dest_html:
-                        continue
-                    dest_info = extract_airport_information(dest_html)
-                    dest_iata = dest_info.get('iata') or dest_name
-                    dest_wiki_url = dest_info.get('wikipedia_url') or dest_url
-                    if (dest_iata, dest_wiki_url) in processed_airports:
-                        continue
-                    # Check if file already exists for this airport at any level
-                    already_saved = any(
-                        fname.startswith(f"{dest_iata}.") and fname.endswith(".json")
-                        for fname in os.listdir(output_dir)
-                    )
-                    if already_saved:
-                        processed_airports.add((dest_iata, dest_wiki_url))
-                        continue
-                    next_to_process.append((dest_url, current_level + 1))
-                    time.sleep(delay)
-        to_process = next_to_process
-
-
-if __name__ == '__main__':
-    # Example Usages:
-    # Ensure the OUTPUT directory is next to this script.
-
-    # --- Simple 0-degree and 1st-degree connections ---
-    # This will save initial_airport.0.json and its direct_destinations.1.json files
-    # print("Running: Get Length 1 Connections")
-    # get_length_1_connections(initial_airport, delay=0.2, clean_output=True)
-    # print("-" * 50)
-
-    # --- Multi-path length connections ---
-    # This will crawl up to path_length, creating {AIRPORT_ID}.{level}.json for each
-    # Example: initial_airport.0.json, then its destinations as .1.json, then their destinations as .2.json
-    # print("Running: Get Multi-Path Length Connections")
-    # get_multi_path_length_connections(initial_airport, path_length=1, delay=0.2, clean_output=True)
-    # # For a deeper crawl, increase path_length (e.g., path_length=2).
-    # Be mindful of the number of requests and disk space.
-    # get_multi_path_length_connections(initial_airport, path_length=2, delay=0.2, clean_output=False) # Append to previous run
-
-    # print("\nScript finished.")
-
-    # --- Example of how to use extract_airlines_destinations_from_html ---
-    # test_html = get_wikipedia_airport_page_html("LHR")
-    # if test_html:
-    #     print("\nExtracting airlines and destinations map for LHR:")
-    #     ad_map = extract_airlines_destinations_from_html(test_html)
-    #     for airline, dests in list(ad_map.items())[:5]: # Print first 5 airlines
-    #         print(f"  Airline: {airline}")
-    #         for d_name, d_url in list(dests)[:3]: # Print first 3 destinations for that airline
-    #             print(f"    Destination: {d_name} ({d_url})")
-
-
-    # --- Example of how to use extract_airport_information directly ---
-    test_IATA = "YWG"  # Choose some airport
-    test_link = get_wikipedia_airport_page_link(test_IATA)
+    # Example: Extract airport information and save it
     if test_link:
-        print("\nExtracting airport information for ", test_IATA)
-        airlines = extract_airlines_from_airport(test_link)
-        print(f"Airlines operating at {test_link}: {airlines}")
-        destinations = extract_destinations_from_airport(test_link)
-        print(f"Airports outwardly linked to {test_link}: {destinations}")
         airport_details = extract_airport_information(test_link)
-        print(json.dumps(airport_details, indent=2))
-        save_airport_info(airport_details, level=0)
+        print("Airport details:")
+        print(json.dumps(airport_details, indent=2, ensure_ascii=False))
+        save_airport_info(airport_details, level=0, verbose=True)
 
+    # Example: Extract airlines and destinations
+    if test_link:
+        airlines = extract_airlines_from_airport(test_link)
+        print(f"Airlines at {test_IATA}: {sorted(list(airlines))}")
+
+        destinations = extract_destinations_from_airport(test_link)
+        print(f"Destinations at {test_IATA}: {sorted(list(destinations))}")
+
+        airlines_dests = extract_airlines_destinations_from_airport(test_link)
+        # Convert sets to lists for pretty printing
+        airlines_dests_serializable = {k: sorted(list(v)) for k, v in airlines_dests.items()}
+        print(f"Airlines/Destinations at {test_IATA}: {json.dumps(airlines_dests_serializable, indent=2, ensure_ascii=False)}")
+
+    # Example: Get length-1 connections
+    # get_length_1_connections(test_IATA, delay=0.5, clean_output=True, verbose=True)
+
+    # Example: Get multi-path-length connections
+    get_multi_path_length_connections(test_IATA, path_length=2, delay=0.5, clean_output=False, verbose=True)
 

@@ -28,7 +28,8 @@ def export_all_airport_data(verbose=False):
                 iata = data.get("iata", "")
                 icao = data.get("icao", "")
                 coords = data.get("coordinates", "")
-                name = data.get("name", data.get("serves", ""))
+                # Prefer "name", fallback to "serves", fallback to ""
+                name = data.get("name") or data.get("serves", "")
                 wiki_url = data.get("wikipedia_url", "")
                 destinations = data.get("destinations", [])
                 outdegree = len(destinations)
@@ -48,9 +49,10 @@ def export_all_airport_data(verbose=False):
     output_csv = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
         fieldnames = ["iata", "icao", "coordinates", "name", "wikipedia_url", "outdegree"]
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
         writer.writeheader()
         for row in rows:
             writer.writerow(row)
     if verbose:
         print(f"Exported {len(rows)} airports to {output_csv}")
+

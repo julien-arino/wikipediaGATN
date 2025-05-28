@@ -13,7 +13,7 @@ from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 ###
 def export_all_airport_data(verbose=False):
     """
-    Browses all XYZ.n.json files in TEMP_RESULTS_DIR, extracts IATA, ICAO, coordinates,
+    Browses all XYZ.n.json files in TEMP_RESULTS_DIR, extracts IATA, ICAO, latitude, longitude,
     airport name, Wikipedia URL, and number of destinations (outdegree).
     Exports this as a CSV to PUBLIC_DATA_DIR/airports_information.csv.
     """
@@ -28,7 +28,11 @@ def export_all_airport_data(verbose=False):
                 iata = data.get("iata", "")
                 icao = data.get("icao", "")
                 coords = data.get("coordinates", "")
-                # Prefer "name", fallback to "serves", fallback to ""
+                # Split coordinates into latitude and longitude
+                if isinstance(coords, str) and "," in coords:
+                    lat, lon = [c.strip() for c in coords.split(",", 1)]
+                else:
+                    lat, lon = "", ""
                 name = data.get("name") or data.get("serves", "")
                 wiki_url = data.get("wikipedia_url", "")
                 destinations = data.get("destinations", [])
@@ -36,7 +40,8 @@ def export_all_airport_data(verbose=False):
                 rows.append({
                     "iata": iata,
                     "icao": icao,
-                    "coordinates": coords,
+                    "latitude": lat,
+                    "longitude": lon,
                     "name": name,
                     "wikipedia_url": wiki_url,
                     "outdegree": outdegree
@@ -48,7 +53,7 @@ def export_all_airport_data(verbose=False):
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
     output_csv = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
-        fieldnames = ["iata", "icao", "coordinates", "name", "wikipedia_url", "outdegree"]
+        fieldnames = ["iata", "icao", "latitude", "longitude", "name", "wikipedia_url", "outdegree"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
         writer.writeheader()
         for row in rows:

@@ -1,6 +1,6 @@
 import json
 
-from wikipediaGATN.airport_level import (
+from wikipediaGATN.wikipedia_airport_level import (
     get_wikipedia_airport_page_link,
     extract_airport_information,
     extract_airlines_from_airport,
@@ -10,7 +10,7 @@ from wikipediaGATN.airport_level import (
 
 if __name__ == "__main__":
     # Example: Get Wikipedia link for an airport
-    test_IATA = "YWG"
+    test_IATA = "JNB"
     test_link = get_wikipedia_airport_page_link(test_IATA, verbose=True)
     print(f"Wikipedia link for {test_IATA}: {test_link}")
 

@@ -11,16 +11,19 @@ from wikipediaGATN.wikipedia_airport_level import (
 )
 
 if __name__ == "__main__":
-    # Example: Get Wikipedia link for an airport
-    test_IATA = "JNB"
+    # Set the airport we want to play with.
+    test_IATA = "YQT"  # Thunder Bay Airport, Canada
+
+    # Example: get information by first grabbing a wikipedia link for an airport using its IATA code
     test_link = get_wikipedia_airport_page_link(test_IATA, verbose=True)
     print(f"Wikipedia link for {test_IATA}: {test_link}")
 
     # Example: Extract airport information
     if test_link:
-        airport_details = extract_airport_information(test_link)
+        airport_details = extract_airport_information(link=test_link)
         print("Airport details:")
         print(json.dumps(airport_details, indent=2, ensure_ascii=False))
+
 
     # Example: Extract airlines and destinations
     # if test_link:
@@ -35,9 +38,5 @@ if __name__ == "__main__":
     #     airlines_dests_serializable = {k: sorted(list(v)) for k, v in airlines_dests.items()}
     #     print(f"Airlines/Destinations at {test_IATA}: {json.dumps(airlines_dests_serializable, indent=2, ensure_ascii=False)}")
 
-    # Example: Get connections level N
-    # clean_output_directory(levels=[1, 2], verbose=True)
-    # get_connections_level_N(from_length=0, delay=0.5, verbose=True)
-    # get_connections_level_N(from_length=1, delay=0.5, verbose=True)    
-    # get_connections_level_N(from_length=2, delay=0.5, verbose=True)    
-    
+    # Get information using a IATA code directly
+    airport_details = extract_airport_information(identifier=test_IATA, verbose=True)    

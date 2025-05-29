@@ -70,7 +70,6 @@ def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
     Only processes the "next generation" (one step), not recursively.
     """
     output_dir = TEMP_RESULTS_DIR
-    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     os.makedirs(output_dir, exist_ok=True)
 
     # Helper to load processed URLs from CSV
@@ -105,7 +104,7 @@ def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
                 continue
             if verbose:
                 print(f"From {origin_iata} to {dest_name}: processing destination")
-            dest_info = extract_airport_information(dest_url)
+            dest_info = extract_airport_information(dest_url, verbose=verbose)
             dest_iata = dest_info.get('iata') or dest_name
             filename = f"{dest_iata}.{from_length+1}.json"
             # Save only if not already present
@@ -190,7 +189,7 @@ def iterate_search_until_distance_N(seed_iata, dist=1, delay=1.0, verbose=False)
     if not link:
         print(f"Could not find Wikipedia page for {seed_iata}")
         return
-    airport_details = extract_airport_information(link)
+    airport_details = extract_airport_information(link, verbose=verbose)
     if not airport_details.get("destinations"):
         print(f"No connection information found for {seed_iata}")
         save_airport_info(airport_details, level=0, verbose=verbose)
@@ -278,9 +277,10 @@ def continue_existing_search_until_empty(delay=1.0, verbose=False):
     """
     Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
     and repeatedly runs get_connections_level_N(from_length=N, ...) until no new results are generated.
+    Before using this function, ensure the current level is complete (i.e., all connections for level N 
+    have been processed).
     """
     output_dir = TEMP_RESULTS_DIR
-    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     if not os.path.exists(output_dir):
         print("OUTPUT directory does not exist.")
         return

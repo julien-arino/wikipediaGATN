@@ -14,6 +14,7 @@ import os
 import json
 import urllib.parse
 from geopy.point import Point
+import spacy
 
 from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
@@ -21,27 +22,47 @@ from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 ###
 def get_wikipedia_airport_page_link(identifier, verbose=False):
     """
-    Given an IATA/ICAO code or Wikipedia URL, return the Wikipedia page URL for the airport.
-    If verbose is True, prints the found page title; otherwise, is silent on success.
+    Given an IATA/ICAO code, Wikipedia URL, or airport name, return the Wikipedia page URL for the airport.
+    Tries, in order:
+      1. If identifier is a Wikipedia URL, extract the page title and search for that.
+      2. If identifier is IATA/ICAO, search for "<code> airport".
+      3. Otherwise, search for the identifier as a name.
     """
-    if isinstance(identifier, str) and identifier.startswith("http"):
-        # Already a Wikipedia URL
-        return identifier
     session = requests.Session()
     api_url = "https://en.wikipedia.org/w/api.php"
     headers = {
         "User-Agent": "MyCoolBot/1.0 (myemail@example.com) PythonRequestsLibrary/1.0"
     }
-    # Determine if it's IATA (3 letters) or ICAO (4 letters)
-    if re.fullmatch(r'[A-Za-z]{3}', identifier):
+
+    # 1. If identifier is a Wikipedia URL, extract the page title and search for it
+    if isinstance(identifier, str) and identifier.startswith("http"):
+        match = re.search(r'/wiki/([^#?]+)', identifier)
+        if match:
+            page_title = urllib.parse.unquote(match.group(1)).replace('_', ' ')
+            if verbose:
+                print(f"Extracted page title from URL: {page_title}")
+            search_term = page_title
+        else:
+            print("Invalid Wikipedia URL.")
+            return None
+    # 2. If identifier is IATA or ICAO code
+    elif re.fullmatch(r'[A-Za-z]{3}', identifier):
         search_term = f"{identifier.upper()} airport"
     elif re.fullmatch(r'[A-Za-z]{4}', identifier):
         search_term = f"{identifier.upper()} airport"
+    # 3. Otherwise, treat as a name and search for it directly
     else:
-        print("Identifier must be a 3-letter IATA, 4-letter ICAO code, or Wikipedia URL.")
-        return None
+        # If "airport" is not in the identifier (case-insensitive), add it as a suffix
+        if "airport" not in identifier.lower():
+            search_term = f"{identifier} airport"
+        else:
+            search_term = identifier
 
-    # Search for the Wikipedia page title using the code
+    # Provide some info if requested
+    if verbose:
+        print(f"Searching for Wikipedia page with term: {search_term}")
+
+    # Search for the Wikipedia page title using the search_term
     search_params = {
         "action": "query",
         "format": "json",
@@ -54,15 +75,15 @@ def get_wikipedia_airport_page_link(identifier, verbose=False):
         response = session.get(url=api_url, params=search_params, headers=headers)
         response.raise_for_status()
         search_data = response.json()
-        if search_data.get("query", {}).get("search"):
-            page_title = search_data["query"]["search"][0]["title"]
-        else:  # Fallback: try just the code
-            search_params["srsearch"] = identifier.upper()
-            response = session.get(url=api_url, params=search_params, headers=headers)
-            response.raise_for_status()
-            search_data = response.json()
-            if search_data.get("query", {}).get("search"):
-                page_title = search_data["query"]["search"][0]["title"]
+        # After getting search_data["query"]["search"]
+        search_results = search_data.get("query", {}).get("search", [])
+        for result in search_results:
+            if "airport" in result["title"].lower():
+                page_title = result["title"]
+                break
+        if not page_title and search_results:
+            # fallback: use the first result
+            page_title = search_results[0]["title"]
     except requests.exceptions.RequestException as e:
         print(f"Error during search: {e}")
         return None
@@ -125,6 +146,57 @@ def get_wikipedia_airport_page_html(link, verbose=False):
         return None
     except KeyError:
         print(f"Could not parse content for {page_title}")
+        return None
+
+###
+###
+def get_wikipedia_airport_page_wikitext(link, verbose=False):
+    """
+    Given a Wikipedia page URL, fetches the wikitext (markdown-like source) of the page.
+    """
+    session = requests.Session()
+    api_url = "https://en.wikipedia.org/w/api.php"
+    headers = {
+        "User-Agent": "MyCoolBot/1.0 (myemail@example.com) PythonRequestsLibrary/1.0"
+    }
+
+    # Extract the page title from the URL and decode it
+    match = re.search(r'/wiki/([^#?]+)', link)
+    if not match:
+        print("Invalid Wikipedia URL.")
+        return None
+    page_title = urllib.parse.unquote(match.group(1)).replace('_', ' ')
+    if verbose:
+        print(f"Extracted page title from URL: {page_title}")
+
+    # Fetch the wikitext content of the page
+    params = {
+        "action": "query",
+        "format": "json",
+        "prop": "revisions",
+        "titles": page_title,
+        "rvslots": "*",
+        "rvprop": "content"
+    }
+    try:
+        response = session.get(url=api_url, params=params, headers=headers)
+        response.raise_for_status()
+        data = response.json()
+        pages = data.get("query", {}).get("pages", {})
+        for page in pages.values():
+            revisions = page.get("revisions")
+            if revisions:
+                wikitext = revisions[0].get("slots", {}).get("main", {}).get("*")
+                if verbose:
+                    print(f"Successfully fetched wikitext for {page_title} (first 500 chars):\n{wikitext[:500]}")
+                return wikitext
+        print(f"Could not retrieve wikitext content for {page_title}")
+        return None
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching wikitext content: {e}")
+        return None
+    except KeyError:
+        print(f"Could not parse wikitext content for {page_title}")
         return None
 
 ###
@@ -301,6 +373,17 @@ def extract_airlines_destinations_from_airport(identifier="YWG", link=None, html
             break
     if verbose:
         print(f"Extracted airline-destination map with {len(airline_dest_map)} airlines.")
+
+    # Fallback: If nothing found, try NLP-based extraction
+    if not airline_dest_map:
+        if verbose:
+            print("No airline-destination pairs found with table extraction, trying NLP fallback...")
+        fallback_pairs = fallback_nlp_extract_airlines_destinations(html_content, verbose=verbose)
+        # Convert fallback_pairs to the same dict format
+        for org, gpe in fallback_pairs:
+            if org not in airline_dest_map:
+                airline_dest_map[org] = set()
+            airline_dest_map[org].add(gpe)
     return airline_dest_map
 
 ###
@@ -602,4 +685,111 @@ def parse_lat_lon_from_string(coord_string):
         return lat, lon
     except Exception:
         return "", ""
+
+###
+###
+def fallback_nlp_extract_airlines_destinations(html_content, verbose=False):
+    """
+    Fallback: Use spaCy NER to extract possible airlines and destinations from the Wikipedia HTML.
+    Returns a set of (ORG, GPE) pairs found in the 'Airlines and destinations' section.
+    """
+    nlp = spacy.load("en_core_web_sm")
+    soup = BeautifulSoup(html_content, 'html.parser')
+    section = soup.find(lambda tag: tag.name in ['h2', 'h3', 'h4'] and 'airline' in tag.get_text(strip=True).lower())
+    section_text = ""
+    if section:
+        section_text += section.get_text(" ", strip=True)
+        next_table = section.find_next('table')
+        if next_table:
+            section_text += "\n" + next_table.get_text(" ", strip=True)
+    else:
+        section_text = soup.get_text(" ", strip=True)
+    doc = nlp(section_text)
+    orgs = set(ent.text for ent in doc.ents if ent.label_ == "ORG")
+    gpes = set(ent.text for ent in doc.ents if ent.label_ == "GPE")
+    results = set()
+    for org in orgs:
+        for gpe in gpes:
+            results.add((org, gpe))
+    if verbose:
+        print(f"spaCy fallback found {len(results)} (airline, destination) pairs.")
+    return results
+
+###
+###
+def parse_infobox_from_wikitext(wikitext, verbose=False):
+    """
+    Parses the infobox content from the given Wikipedia wikitext.
+    For airports, looks for a template starting with '{{Infobox airport' or '{{Infobox Airport'.
+    Returns a dictionary of key-value pairs from the infobox.
+    """
+    if not wikitext:
+        return {}
+
+    # Find the start of the infobox
+    match = re.search(r'\{\{[Ii]nfobox airport.*?(\n|\|)', wikitext)
+    if not match:
+        if verbose:
+            print("No Infobox airport found in wikitext.")
+        return {}
+
+    start = match.start()
+    # Now, extract the full template (handle nested braces)
+    brace_count = 2  # for the initial {{
+    end = start + 2
+    while end < len(wikitext):
+        if wikitext[end:end+2] == '{{':
+            brace_count += 2
+            end += 2
+        elif wikitext[end:end+2] == '}}':
+            brace_count -= 2
+            end += 2
+            if brace_count == 0:
+                break
+        else:
+            end += 1
+    infobox_text = wikitext[start:end]
+
+    # Parse key-value parts
+    infobox_data = {}
+    for line in infobox_text.split('\n'):
+        if line.startswith('|'):
+            parts = line[1:].split('=', 1)
+            if len(parts) == 2:
+                key = parts[0].strip()
+                value = parts[1].strip()
+                infobox_data[key] = value
+    if verbose:
+        print(f"Parsed infobox keys: {list(infobox_data.keys())}")
+    return infobox_data
+
+def extract_airlines_destinations_from_wikitext(wikitext):
+    """
+    Uses mwparserfromhell to extract airlines and destinations from the Airport-dest-list template.
+    Returns a dict: { airline: [destination1, destination2, ...], ... }
+    """
+    import mwparserfromhell
+
+    wikicode = mwparserfromhell.parse(wikitext)
+    airlines_dest = {}
+
+    for template in wikicode.filter_templates():
+        if template.name.lower().startswith("airport-dest-list"):
+            # Each param is an airline/dest row
+            for param in template.params:
+                # Each param value is: airline|dest1, dest2, ...
+                parts = str(param.value).split('|', 1)
+                if len(parts) != 2:
+                    continue
+                airline_raw, dests_raw = parts
+                # Clean airline name
+                airline = mwparserfromhell.parse(airline_raw).strip_code().strip()
+                # Destinations: extract all wikilinks, or fallback to comma split
+                dest_wikicode = mwparserfromhell.parse(dests_raw)
+                dest_links = [link.title.strip_code().strip() for link in dest_wikicode.filter_wikilinks()]
+                if not dest_links:
+                    dest_links = [d.strip() for d in dests_raw.split(',') if d.strip()]
+                airlines_dest[airline] = dest_links
+    return airlines_dest
+
 

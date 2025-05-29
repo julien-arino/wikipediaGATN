@@ -1,6 +1,5 @@
 # This tests whether the code works as expected when malformed urls are present:
-# out of YWG, there is an issue with MSP and YUL. Running length 1 should have them
-# both present in the results.
+# out of YWG, there is an issue with MSP and YUL
 
 import json
 
@@ -21,15 +20,17 @@ from wikipediaGATN.wikipedia_network_level import (
 )
 
 if __name__ == "__main__":
-    # Define verbosity
-    verbose = True
     # Example: Get Wikipedia link for an airport, which we use as seed later
     test_IATA = "YWG"
-    test_link = get_wikipedia_airport_page_link(test_IATA, verbose=verbose)
+    test_link = get_wikipedia_airport_page_link(test_IATA, verbose=True)
 
-    # Start clean: wipe everything in the output directory
-    clean_output_directory(verbose=verbose)
+    # Check that the link was found
+    if test_link:
+        airport_details = extract_airport_information(test_link)
+        print("Airport details:")
+        print(json.dumps(airport_details, indent=2, ensure_ascii=False))
 
-    # Now run for a distance of 1
-    print("Running for a distance of 1...")
-    iterate_search_until_distance_N(seed_iata=test_IATA, dist=1, delay=0.5, verbose=verbose)
+        # Start clean
+        clean_output_directory(levels=[1, 2, 3], verbose=True)
+        get_connections_level_N(from_length=0, delay=0.5, verbose=True)
+    

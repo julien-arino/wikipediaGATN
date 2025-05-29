@@ -490,6 +490,7 @@ def save_airport_info(airport_info, level=0, verbose=False, save_progress=True):
         iata_code = safe_name
     filename = f"{iata_code}.{level}.json"
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
+    output_dir = TEMP_RESULTS_DIR
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, filename)
 

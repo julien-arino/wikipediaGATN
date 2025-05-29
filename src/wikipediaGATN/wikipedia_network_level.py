@@ -13,6 +13,15 @@ import urllib.parse
 
 from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
+from .wikipedia_airport_level import (
+    get_wikipedia_airport_page_link,
+    extract_airport_information,
+    extract_airlines_from_airport,
+    extract_destinations_from_airport,
+    extract_airlines_destinations_from_airport,
+    save_airport_info
+)
+
 ###
 ###
 def clean_output_directory(levels=None, verbose=False):
@@ -22,6 +31,7 @@ def clean_output_directory(levels=None, verbose=False):
     If levels is None, removes all files matching .<number>.json.
     If levels is a list of integers, only removes files matching those levels.
     """
+    output_dir = TEMP_RESULTS_DIR 
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     if not os.path.exists(output_dir):
         if verbose:
@@ -59,6 +69,7 @@ def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
     process their destinations and save info for each unprocessed destination as YYY.{from_length+1}.json.
     Only processes the "next generation" (one step), not recursively.
     """
+    output_dir = TEMP_RESULTS_DIR
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     os.makedirs(output_dir, exist_ok=True)
 
@@ -90,10 +101,10 @@ def get_connections_level_N(from_length=0, delay=1.0, verbose=False):
         for dest_name, dest_url in destinations:
             if dest_url in processed_urls:
                 if verbose:
-                    print(f"Skipping already processed: {dest_name}")
+                    print(f"From {origin_iata} to {dest_name}: skipping - already processed")
                 continue
             if verbose:
-                print(f"Processing destination: {dest_name} from {origin_iata}")
+                print(f"From {origin_iata} to {dest_name}: processing destination")
             dest_info = extract_airport_information(dest_url)
             dest_iata = dest_info.get('iata') or dest_name
             filename = f"{dest_iata}.{from_length+1}.json"
@@ -111,6 +122,7 @@ def check_processed_list(verbose=False):
     Exports all entries with iata == "None" to failed_lookups.csv (sorted by URL).
     Then discards all entries with iata == "None", sorts the rest by IATA code, and overwrites the original file.
     """
+    output_dir = TEMP_RESULTS_DIR
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     csv_path = os.path.join(output_dir, "processed_locations.csv")
     failed_csv_path = os.path.join(output_dir, "failed_lookups.csv")
@@ -216,9 +228,10 @@ def iterate_search_until_empty(seed_iata, delay=1.0, verbose=False):
         if verbose:
             print(f"\nExpanding connections at distance {k+1}...")
         os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
-        before = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        output_dir = TEMP_RESULTS_DIR
+        before = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{{3}}\.{}\.(json)$".format(k+1), f))
         get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
-        after = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        after = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{{3}}\.{}\.(json)$".format(k+1), f))
         new_files = after - before
         if not new_files:
             if verbose:
@@ -233,6 +246,7 @@ def continue_existing_search_one_step(delay=1.0, verbose=False):
     Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
     and runs one iteration of get_connections_level_N(from_length=N, ...).
     """
+    output_dir = TEMP_RESULTS_DIR
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     if not os.path.exists(output_dir):
         print("OUTPUT directory does not exist.")
@@ -264,6 +278,7 @@ def continue_existing_search_until_empty(delay=1.0, verbose=False):
     Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
     and repeatedly runs get_connections_level_N(from_length=N, ...) until no new results are generated.
     """
+    output_dir = TEMP_RESULTS_DIR
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     if not os.path.exists(output_dir):
         print("OUTPUT directory does not exist.")
@@ -287,9 +302,9 @@ def continue_existing_search_until_empty(delay=1.0, verbose=False):
     while True:
         if verbose:
             print(f"Continuing search from level {k} to level {k+1}...")
-        before = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        before = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{{3}}\.{}\.(json)$".format(k+1), f))
         get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
-        after = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{3}\.{}\.(json)$".format(k+1), f))
+        after = set(f for f in os.listdir(output_dir) if re.match(r"^[A-Z0-9]{{3}}\.{}\.(json)$".format(k+1), f))
         new_files = after - before
         if not new_files:
             if verbose:

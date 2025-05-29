@@ -12,7 +12,7 @@ source /path/to/venv/bin/activate
 If running before deploying the package, you need to run stuff from the top directory in the repo. Set
 
 ```
-PYTHONPATH=src
+export PYTHONPATH=src
 ```
 
 and then call the code using, e.g.,

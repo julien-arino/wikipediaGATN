@@ -15,6 +15,8 @@ import json
 import urllib.parse
 from geopy.point import Point
 import spacy
+import mwparserfromhell
+import pycountry
 
 from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
@@ -717,12 +719,47 @@ def fallback_nlp_extract_airlines_destinations(html_content, verbose=False):
 
 ###
 ###
+def clean_infobox_value(value):
+    """
+    Cleans infobox value by:
+    - Unwrapping {{nowrap|...}} to just ...
+    - Flattening {{Unbulleted list|...}} to comma-separated items
+    - Converting {{URL|...}} to just the URL
+    - Stripping wikitext formatting but preserving wikilinks as [[X]]
+    """
+    wikicode = mwparserfromhell.parse(value)
+    # Handle templates
+    for template in wikicode.filter_templates(recursive=True):
+        name = template.name.strip().lower()
+        if name == "nowrap" and template.params:
+            # Replace the template with its first parameter
+            value = str(template.params[0].value)
+            wikicode = mwparserfromhell.parse(value)
+        elif name == "unbulleted list":
+            # Join all parameters, preserving wikilinks
+            items = []
+            for param in template.params:
+                item = str(param.value).strip()
+                items.append(item)
+            value = ", ".join(items)
+            wikicode = mwparserfromhell.parse(value)
+        elif name == "url" and template.params:
+            # Replace the template with its first parameter (the URL)
+            value = str(template.params[0].value)
+            wikicode = mwparserfromhell.parse(value)
+    # Return cleaned value as string, preserving wikilinks
+    return str(wikicode).strip()
+
 def parse_infobox_from_wikitext(wikitext, verbose=False):
     """
     Parses the infobox content from the given Wikipedia wikitext.
     For airports, looks for a template starting with '{{Infobox airport' or '{{Infobox Airport'.
-    Returns a dictionary of key-value pairs from the infobox.
+    Returns a dictionary of key-value pairs from the infobox, excluding image, footnote, owner, operator fields,
+    and any field whose value is just "{{ubl|class=nowrap".
+    Cleans up nowrap and unbulleted list templates.
+    Adds lat, lon, region, and (if region is present and valid) country/subdivision info.
     """
+    import re
     if not wikitext:
         return {}
 
@@ -752,44 +789,130 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
 
     # Parse key-value parts
     infobox_data = {}
+    region = None  # <-- define before the loop
     for line in infobox_text.split('\n'):
         if line.startswith('|'):
             parts = line[1:].split('=', 1)
             if len(parts) == 2:
                 key = parts[0].strip()
                 value = parts[1].strip()
+                lowered = key.lower()
+                if (
+                    "image" in lowered
+                    or "footnote" in lowered
+                    or "owner" in lowered
+                    or "operator" in lowered
+                ):
+                    continue
+                # Remove any field whose value is exactly "{{ubl|class=nowrap" (ignoring whitespace)
+                if value.replace(" ", "") == "{{ubl|class=nowrap":
+                    continue
+                # Clean value for nowrap and unbulleted list
+                value = clean_infobox_value(value)
+                # Clean coordinates field if needed
+                if lowered == "coordinates":
+                    # Remove all occurrences of "|display=inline,title" (with or without leading/trailing spaces)
+                    value = re.sub(r'\| *display *= *inline,title *', '', value, flags=re.IGNORECASE)
+                    value = value.strip()
+                    # Try to extract DMS and region from the coord template
+                    coord_match = re.search(
+                        r'\{\{[Cc]oord\|([0-9]+)\|([0-9]+)\|([0-9]+)\|([NS])\|([0-9]+)\|([0-9]+)\|([0-9]+)\|([EW])(?:\|region:([A-Za-z0-9\-]+))?',
+                        value
+                    )
+                    if coord_match:
+                        lat_deg = int(coord_match.group(1))
+                        lat_min = int(coord_match.group(2))
+                        lat_sec = int(coord_match.group(3))
+                        lat_dir = coord_match.group(4)
+                        lon_deg = int(coord_match.group(5))
+                        lon_min = int(coord_match.group(6))
+                        lon_sec = int(coord_match.group(7))
+                        lon_dir = coord_match.group(8)
+                        region = coord_match.group(9) if coord_match.lastindex >= 9 else None
+
+                        # Convert DMS to decimal
+                        lat = lat_deg + lat_min / 60 + lat_sec / 3600
+                        if lat_dir.upper() == 'S':
+                            lat = -lat
+                        lon = lon_deg + lon_min / 60 + lon_sec / 3600
+                        if lon_dir.upper() == 'W':
+                            lon = -lon
+
+                        infobox_data['lat'] = f"{lat:.6f}"
+                        infobox_data['lon'] = f"{lon:.6f}"
+                        if region:
+                            infobox_data['region'] = region
                 infobox_data[key] = value
+
+    # Add ISO 3166-2 country/subdivision info if region is present and valid
+    if region:
+        iso_info = parse_iso3166_2(region)
+        if iso_info:
+            infobox_data.update(iso_info)
+
     if verbose:
         print(f"Parsed infobox keys: {list(infobox_data.keys())}")
+    # Remove all fields with empty string values or where value is an HTML comment
+    infobox_data = {
+        k: v for k, v in infobox_data.items()
+        if v != "" and not (v.strip().startswith("<!--") and v.strip().endswith("-->"))
+    }
     return infobox_data
 
 def extract_airlines_destinations_from_wikitext(wikitext):
     """
     Uses mwparserfromhell to extract airlines and destinations from the Airport-dest-list template.
-    Returns a dict: { airline: [destination1, destination2, ...], ... }
+    Only keeps destinations that are Wikipedia wikilinks ([[X]] or [[X|Y]]).
+    Returns a dict: { airline: [ {name, wikipedia_url}, ... ], ... }
     """
     import mwparserfromhell
+    import re
 
     wikicode = mwparserfromhell.parse(wikitext)
     airlines_dest = {}
 
     for template in wikicode.filter_templates():
         if template.name.lower().startswith("airport-dest-list"):
-            # Each param is an airline/dest row
             for param in template.params:
-                # Each param value is: airline|dest1, dest2, ...
                 parts = str(param.value).split('|', 1)
                 if len(parts) != 2:
                     continue
                 airline_raw, dests_raw = parts
+
                 # Clean airline name
                 airline = mwparserfromhell.parse(airline_raw).strip_code().strip()
-                # Destinations: extract all wikilinks, or fallback to comma split
+                airline = re.sub(r'<ref.*?</ref>', '', airline, flags=re.DOTALL).strip()
+
+                # Destinations: only keep wikilinks
                 dest_wikicode = mwparserfromhell.parse(dests_raw)
-                dest_links = [link.title.strip_code().strip() for link in dest_wikicode.filter_wikilinks()]
-                if not dest_links:
-                    dest_links = [d.strip() for d in dests_raw.split(',') if d.strip()]
-                airlines_dest[airline] = dest_links
+                dest_objs = []
+                for link in dest_wikicode.filter_wikilinks():
+                    title = link.title.strip_code().strip()
+                    display = link.text.strip_code().strip() if link.text else title
+                    url_title = title.replace(" ", "_")
+                    wikipedia_url = f"https://en.wikipedia.org/wiki/{url_title}"
+                    dest_objs.append({"name": display, "wikipedia_url": wikipedia_url})
+                # Only add airline if there are valid wikilink destinations
+                if dest_objs:
+                    airlines_dest[airline] = dest_objs
     return airlines_dest
 
-
+def parse_iso3166_2(region_code):
+    """
+    Given an ISO 3166-2 region code (e.g., 'US-MN'), returns a dict with country and subdivision info.
+    Returns None if not found or invalid.
+    """
+    try:
+        country_code, sub_code = region_code.split('-')
+        country = pycountry.countries.get(alpha_2=country_code)
+        subdivision = pycountry.subdivisions.get(code=region_code)
+        return {
+            "country_alpha2": country.alpha_2 if country else None,
+            "country_alpha3": country.alpha_3 if country else None,
+            "country_name": country.name if country else None,
+            "subdivision_code": subdivision.code if subdivision else None,
+            "subdivision_name": subdivision.name if subdivision else None,
+            "subdivision_type": subdivision.type if subdivision else None
+        }
+    except Exception:
+        return None

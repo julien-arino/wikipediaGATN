@@ -1,5 +1,7 @@
 import json
 
+from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
+
 from wikipediaGATN.result_processing import (
     export_all_airport_data
 )

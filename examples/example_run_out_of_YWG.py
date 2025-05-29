@@ -1,5 +1,7 @@
 import json
 
+from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
+
 from wikipediaGATN.wikipedia_airport_level import (
     get_wikipedia_airport_page_link,
     extract_airport_information,
@@ -13,8 +15,6 @@ from wikipediaGATN.wikipedia_network_level import (
     continue_existing_search_one_step,
     continue_existing_search_until_empty
 )
-
-from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 
 if __name__ == "__main__":
     # Example: Get Wikipedia link for an airport, which we use as seed later

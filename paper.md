@@ -6,10 +6,11 @@ tags:
   - global air transportation network
 authors:
   - name: Julien Arino
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0001-6409-5027
     equal-contrib: true
     affiliation: 1
   - name: Adriana-Stefania Ciupeanu
+    orcid: 0000-0003-0833-2176
     equal-contrib: true
     affiliation: 1
 affiliations:
@@ -23,6 +24,7 @@ bibliography: paper.bib
 # Summary
 
 The global air transportation network plays a crucial role in a wide variety of human activities and, consequently, in the many areas of research related to these activities, from geography to sociology, epidemiology, transport, etc.
+This package scrapes Wikipedia data to build a snapshot of the architecture of the global air transportation network.
 
 
 # Statement of need
@@ -46,10 +48,11 @@ There is, typically, an infobox that presents summary information about the airp
 
 ![Infobox for YWG (Winnipeg airport).\label{fig:infobox}](YWG-infobox.png)
 
-Most airport pages also contain a table detailing airlines operating out of the airport and the destinations they serve.
+Most airport pages also contain a table detailing airlines operating out of the airport and the destinations they serve (\autoref{fig:airlines}).
 
 ![Infobox for YWG (Winnipeg airport).\label{fig:airlines}](YWG-airlines-dests.png)
-and referenced from text using \autoref{fig:example}.
+
+This homogeneisation of resources means that it is reasonably easy to use web scraping tools to gather information.
 
 
 # Citations

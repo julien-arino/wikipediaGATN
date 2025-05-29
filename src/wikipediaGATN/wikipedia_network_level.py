@@ -244,7 +244,8 @@ def iterate_search_until_empty(seed_iata, delay=1.0, verbose=False):
 def continue_existing_search_one_step(delay=1.0, verbose=False):
     """
     Finds the highest level N of files named XXX.N.json in OUTPUT (where XXX is a 3-letter IATA code),
-    and runs one iteration of get_connections_level_N(from_length=N, ...).
+    and runs one iteration of get_connections_level_N(from_length=N-1, ...). (Go back one level because
+    the previous level might not be entirely done.)
     """
     output_dir = TEMP_RESULTS_DIR
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
@@ -269,7 +270,7 @@ def continue_existing_search_one_step(delay=1.0, verbose=False):
     if verbose:
         print(f"Continuing search from level {max_level} to level {max_level+1}...")
 
-    get_connections_level_N(from_length=max_level, delay=delay, verbose=verbose)
+    get_connections_level_N(from_length=max_level-1, delay=delay, verbose=verbose)
 
 ###
 ###

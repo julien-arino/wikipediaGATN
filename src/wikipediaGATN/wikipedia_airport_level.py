@@ -479,15 +479,19 @@ def extract_airport_information(link):
 def save_airport_info(airport_info, level=0, verbose=False, save_progress=True):
     """
     Saves the given airport_info dictionary as JSON in CODE/OUTPUT/{IATA}.{level}.json.
-    If IATA is not found, uses the airport name (serves or location, spaces replaced by _) as the filename.
+    If IATA is not found, uses the Wikipedia page name as the filename (e.g., wiki/Lanseria_International_Airport.N.json).
     Optionally tracks progress in processed_locations.csv (IATA and Wikipedia URL).
     """
     iata_code = airport_info.get('iata')
     if not iata_code:
-        airport_name = airport_info.get('serves') or airport_info.get('location') or "unknown"
-        safe_name = re.sub(r'\s+', '_', airport_name)
-        safe_name = re.sub(r'[^A-Za-z0-9_]', '', safe_name)
-        iata_code = safe_name
+        # Extract the base Wikipedia page name from the URL
+        wiki_url = airport_info.get('wikipedia_url', '')
+        match = re.search(r'/wiki/([^/#?]+)', wiki_url)
+        if match:
+            base_name = f"wiki_{match.group(1)}"
+        else:
+            base_name = "unknown"
+        iata_code = base_name
     filename = f"{iata_code}.{level}.json"
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
     output_dir = TEMP_RESULTS_DIR

@@ -20,17 +20,10 @@ from wikipediaGATN.wikipedia_network_level import (
 )
 
 if __name__ == "__main__":
-    # Example: Get Wikipedia link for an airport, which we use as seed later
+    # Define the IATA code for the airport we want to start from
     test_IATA = "YWG"
-    test_link = get_wikipedia_airport_page_link(test_IATA, verbose=True)
-
-    # Check that the link was found
-    if test_link:
-        airport_details = extract_airport_information(test_link)
-        print("Airport details:")
-        print(json.dumps(airport_details, indent=2, ensure_ascii=False))
-
-        # Start clean
-        clean_output_directory(levels=[1, 2, 3], verbose=True)
-        get_connections_level_N(from_length=0, delay=0.5, verbose=True)
+    # Start clean
+    clean_output_directory(verbose=True)
+    # Find all airports within a distance of 2 from YWG
+    iterate_search_until_distance_N(seed_iata=test_IATA, dist=2, delay=0.33, verbose=True)
     

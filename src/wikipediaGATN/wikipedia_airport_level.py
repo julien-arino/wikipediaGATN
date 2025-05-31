@@ -861,7 +861,7 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
     }
     return infobox_data
 
-def extract_airlines_destinations_from_wikitext(wikitext):
+def extract_airlines_destinations_from_wikitext(wikitext, verbose=False):
     """
     Uses mwparserfromhell to extract airlines and destinations from the Airport-dest-list template.
     Only keeps destinations that are Wikipedia wikilinks ([[X]] or [[X|Y]]).
@@ -884,9 +884,9 @@ def extract_airlines_destinations_from_wikitext(wikitext):
         if template.name.lower().startswith("airport-dest-list"):
             print(f"\nFound Airport-dest-list template: {template}")
             for param in template.params:
-                # print(f"\nRaw param: {param}")
+                print(f"\nRaw param: {param}")
                 parts = str(param.value).split('|', 1)
-                # print(f"Split parts: {parts}")
+                print(f"Split parts: {parts}")
                 if len(parts) != 2:
                     # print("Skipping param (does not split into 2 parts).")
                     continue
@@ -894,37 +894,14 @@ def extract_airlines_destinations_from_wikitext(wikitext):
                 print(f"airline_raw: {repr(airline_raw)}")
                 print(f"dests_raw: {repr(dests_raw)}")
 
-    #             # Remove references
-    #             airline_clean = re.sub(r'<ref.*?</ref>', '', airline_raw, flags=re.DOTALL).strip()
-    #             print(f"airline_clean: {repr(airline_clean)}")
-    #             # Parse with mwparserfromhell to handle wikilinks
-    #             airline_wikicode = mwparserfromhell.parse(airline_clean)
-    #             wikilinks = airline_wikicode.filter_wikilinks()
-    #             print(f"Airline wikilinks: {wikilinks}")
-    #             if wikilinks:
-    #                 # Use the display text if present, otherwise the title
-    #                 airline = wikilinks[0].text.strip_code().strip() if wikilinks[0].text else wikilinks[0].title.strip_code().strip()
-    #             else:
-    #                 # Fallback: plain text
-    #                 airline = airline_wikicode.strip_code().strip()
-    #             print(f"Final airline: {repr(airline)}")
-
-    #             # Destinations: only keep wikilinks
-    #             dest_wikicode = mwparserfromhell.parse(dests_raw)
-    #             dest_objs = []
-    #             for link in dest_wikicode.filter_wikilinks():
-    #                 title = link.title.strip_code().strip()
-    #                 display = link.text.strip_code().strip() if link.text else title
-    #                 url_title = title.replace(" ", "_")
-    #                 wikipedia_url = f"https://en.wikipedia.org/wiki/{url_title}"
-    #                 dest_objs.append({"name": display, "wikipedia_url": wikipedia_url})
-    #             # Print debug information
-    #             if verbose:
-    #                 print(f"Extracted destinations: {dest_objs}")
-    #             # Only add airline if there are valid wikilink destinations
-    #             if airline and dest_objs:
-    #                 airlines_dest[airline] = dest_objs
-    # return airlines_dest
+                # Only add airline if there are valid wikilink destinations
+                if airline_raw and dests_raw:
+                    print("Processing airline and destinations...")
+                    airlines_dest[airline_raw] = dests_raw
+            for airline_raw, dests_raw in template.params:
+                print(f"airline_raw: {repr(airline_raw)}")
+                print(f"dests_raw: {repr(dests_raw)}")
+    return airlines_dest
 
 def parse_iso3166_2(region_code):
     """

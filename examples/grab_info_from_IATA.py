@@ -8,9 +8,6 @@ from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 from wikipediaGATN.wikipedia_airport_level import (
     get_wikipedia_airport_page_link,
     extract_airport_information,
-    extract_airlines_from_airport,
-    extract_destinations_from_airport,
-    extract_airlines_destinations_from_airport,
     get_wikipedia_airport_page_wikitext,
     parse_infobox_from_wikitext,
     extract_airlines_destinations_from_wikitext

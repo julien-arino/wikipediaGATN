@@ -813,10 +813,8 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
                 value = clean_infobox_value(value)
                 # Clean coordinates field if needed
                 if lowered == "coordinates":
-                    # Remove all occurrences of "|display=inline,title" (with or without leading/trailing spaces)
                     value = re.sub(r'\| *display *= *inline,title *', '', value, flags=re.IGNORECASE)
                     value = value.strip()
-                    # Try to extract DMS and region from the coord template
                     coord_match = re.search(
                         r'\{\{[Cc]oord\|([0-9]+)\|([0-9]+)\|([0-9]+)\|([NS])\|([0-9]+)\|([0-9]+)\|([0-9]+)\|([EW])(?:\|region:([A-Za-z0-9\-]+))?',
                         value

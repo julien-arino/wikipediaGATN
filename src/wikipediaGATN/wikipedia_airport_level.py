@@ -190,7 +190,7 @@ def get_wikipedia_airport_page_wikitext(link, verbose=False):
             if revisions:
                 wikitext = revisions[0].get("slots", {}).get("main", {}).get("*")
                 if verbose:
-                    print(f"Successfully fetched wikitext for {page_title} (first 500 chars):\n{wikitext[:500]}")
+                    print(f"Successfully fetched wikitext for {page_title}")
                 return wikitext
         print(f"Could not retrieve wikitext content for {page_title}")
         return None
@@ -487,120 +487,119 @@ def extract_iata_icao(identifier="YWG", link=None, html_content=None, verbose=Fa
 
 ###
 ###
-def extract_airport_information(identifier="YWG", link=None, html_content=None, verbose=False):
+def extract_airport_information(identifier="YWG", link=None, verbose=False):
     """
     Extracts airport information (IATA, ICAO, serves, location, coordinates, airlines, destinations, etc.)
     Accepts:
       - identifier: IATA/ICAO code or Wikipedia page title (default "YWG")
       - link: Wikipedia page URL
-      - html_content: HTML content of the Wikipedia page
-    The function will fetch missing information as needed.
+    The function will fetch missing information as needed: the infobox is parsed from the wikitext content,
+    the connections are (by default) parsed from the html_content of the Wikipedia page.
     Returns a dictionary with these fields plus the Wikipedia page URL as 'wikipedia_url'.
     """
     empty_airport_info = {
         'iata': None,
         'icao': None,
-        'serves': None,
+        'city-served': None,
         'location': None,
-        'coordinates': None,
-        'latitude': None,
-        'longitude': None,
+        'lat': None,
+        'lon': None,
+        'altitude': None,
+        'region': None,
+        'country_alpha3': None,
+        'country_name': None,
+        'subdivision_code': None,
         'wikipedia_url': None,
         'airlines': [],
         'destinations': [],
         'airlines_destinations': []
     }
 
-    # Fetch html_content if not provided
-    if html_content is None:
-        if link is None:
-            link = get_wikipedia_airport_page_link(identifier, verbose=verbose)
-        if not link:
-            print("No valid link or identifier provided.")
-            return empty_airport_info.copy()
-        html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
-        if not html_content:
-            print(f"Could not fetch HTML for {link}")
-            info = empty_airport_info.copy()
-            info['wikipedia_url'] = link
-            return info
-    else:
-        # If html_content is provided but link is not, try to set link from identifier if it's a URL
-        if link is None and isinstance(identifier, str) and identifier.startswith("http"):
-            link = identifier
+    # Fetch html_content and wikitext
+    if link is None:
+        link = get_wikipedia_airport_page_link(identifier, verbose=verbose)
+    if not link:
+        print("No valid link or identifier provided.")
+        return empty_airport_info.copy()
+    html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
+    if not html_content:
+        print(f"Could not fetch HTML for {link}")
+        info = empty_airport_info.copy()
+        info['wikipedia_url'] = link
+        return info
+    wikitext_content = get_wikipedia_airport_page_wikitext(link, verbose=verbose)
+    if not wikitext_content:
+        print(f"Could not fetch wikitext for {link}")
+        info = empty_airport_info.copy()
+        info['wikipedia_url'] = link
+        return info
 
     soup = BeautifulSoup(html_content, 'html.parser')
     infobox = soup.find('table', class_='infobox')
     info = {
         'iata': None,
         'icao': None,
-        'serves': None,
+        'city-served': None,
         'location': None,
-        'coordinates': None,
-        'latitude': None,
-        'longitude': None,
+        'lat': None,
+        'lon': None,
+        'altitude': None,
+        'region': None,
+        'country_alpha3': None,
+        'country_name': None,
+        'subdivision_code': None,
         'wikipedia_url': link,
         'airlines': set(),
         'destinations': set(),
         'airlines_destinations': set()
     }
 
-    # Use the robust extractor for IATA/ICAO
-    iata, icao = extract_iata_icao(html_content=html_content, verbose=verbose)
-    info['iata'] = iata
-    info['icao'] = icao
+    # Get the content of the infobox from wikitext_content
+    infobox = parse_infobox_from_wikitext(wikitext_content, verbose=verbose)
+    if not infobox:
+        print(f"Could not parse infobox from wikitext for {link}")
+        info = empty_airport_info.copy()
+        info['wikipedia_url'] = link
+        return info
 
-    if infobox:
-        for row in infobox.find_all('tr'):
-            header = row.find('th')
-            data = row.find('td')
-            label = header.get_text(" ", strip=True).lower() if header else ""
-            value = data.get_text(" ", strip=True) if data else ""
-
-            # Serves
-            if ("serves" in label or "served" in label or "city" in label) and data:
-                info['serves'] = value
-
-            # Location
-            if "location" in label and value:
-                info['location'] = value
-
-            # Coordinates: extract only decimal degrees
-            if "coordinates" in label and value:
-                # Prefer the full value (which may be DMS with N/S/E/W)
-                info['coordinates'] = value.strip()
-                # Also check for span.geo if not found or value is empty
-                if (not info['coordinates'] or info['coordinates'].lower() == "none") and data:
-                    span_geo = data.find('span', class_='geo')
-                    if span_geo and span_geo.get_text():
-                        info['coordinates'] = span_geo.get_text(" ", strip=True)
-            # Also check for span.geo if not found
-            if not info['coordinates'] and data:
-                span_geo = data.find('span', class_='geo')
-                if span_geo and span_geo.get_text():
-                    coords_from_span = span_geo.get_text(" ", strip=True).split(';')
-                    if len(coords_from_span) == 2:
-                        try:
-                            lat = float(coords_from_span[0].strip())
-                            lon = float(coords_from_span[1].strip())
-                            info['coordinates'] = f"{lat:.6f}, {lon:.6f}"
-                        except ValueError:
-                            pass
-
-    # Fallback logic: Trigger if essential codes are missing or if most other info is also missing.
-    if (not info['iata'] or not info['icao']) or \
-       (not info['serves'] and not info['location'] and not info['coordinates']):
-        fallback_data = fallback_extract_airport_information(html_content)
-        for key_item in ['iata', 'icao', 'serves', 'location', 'coordinates']:
-            if not info[key_item] and fallback_data.get(key_item):
-                info[key_item] = fallback_data[key_item]
-
-    coords = info.get("coordinates", "")
-    lat, lon = "", ""
-    if isinstance(coords, str) and coords:
-        lat, lon = parse_lat_lon_from_string(coords)
-    info['latitude'] = lat
-    info['longitude'] = lon
+    ## Get data from the infobox
+    # IATA and ICAO codes
+    if 'IATA' in infobox:
+        info['iata'] = infobox['IATA']
+    if 'ICAO' in infobox:
+        info['icao'] = infobox['ICAO']
+    # Serves
+    if "city-served" in infobox:
+        info['city-served'] = infobox['city-served']
+    # Location
+    if "location" in infobox:
+        info['location'] = infobox['location']
+    # latitude and longitude
+    if "lat" in infobox:
+        info['lat'] = infobox['lat']
+    if "lon" in infobox:
+        info['lon'] = infobox['lon']
+    # Altitude
+    if "elevation-m" in infobox:
+        info['altitude'] = infobox['elevation-m']
+    elif "elevation-f" in infobox:
+        try:
+            # Convert feet to meters (1 ft = 0.3048 m)
+            feet = float(re.sub(r"[^\d.]", "", infobox['elevation-f']))
+            meters = round(feet * 0.3048, 2)
+            info['altitude'] = str(meters)
+        except Exception:
+            info['altitude'] = infobox['elevation-f']    # Region
+    if "region" in infobox:
+        info['region'] = infobox['region']
+    # Country and country code
+    if "country_alpha3" in infobox:
+        info['country_alpha3'] = infobox['country_alpha3']
+    if "country_name" in infobox:
+        info['country_name'] = infobox['country_name']
+    # Country subdivision code
+    if "subdivision_code" in infobox:
+        info['subdivision_code'] = infobox['subdivision_code']
 
     # Add airlines and destinations using the new functions
     info['airlines'] = extract_airlines_from_airport(link=link, html_content=html_content, verbose=verbose)
@@ -797,13 +796,14 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
                 key = parts[0].strip()
                 value = parts[1].strip()
                 lowered = key.lower()
+                # List of fields we ignore
                 if (
                     "image" in lowered
                     or "footnote" in lowered
                     or "owner" in lowered
                     or "operator" in lowered
-                    or lowered == "mapframe"
-                    or lowered.startswith("pushpin")
+                    or "mapframe" in lowered
+                    or "pushpin" in lowered
                 ):
                     continue
                 # Remove any field whose value is exactly "{{ubl|class=nowrap" (ignoring whitespace)
@@ -855,7 +855,7 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
     # Remove all fields with empty string values or where value is an HTML comment
     infobox_data = {
         k: v for k, v in infobox_data.items()
-        if v != "" and not (v.strip().startswith("<!--") and v.strip().endswith("-->"))
+        if v and not (v.strip().startswith("<!--") and v.strip().endswith("-->"))
     }
     return infobox_data
 
@@ -868,51 +868,78 @@ def extract_airlines_destinations_from_wikitext(wikitext):
     import mwparserfromhell
     import re
 
-    wikicode = mwparserfromhell.parse(wikitext)
+    # Remove all <ref>...</ref> tags (including multiline)
+    wikitext_clean = re.sub(r'<ref.*?</ref>', '', wikitext, flags=re.DOTALL)
+    # Remove {{nowrap|...}} and similar wrappers, keeping only the inner content
+    wikitext_clean = re.sub(r'\{\{nowrap\|([^\{\}]+?)\}\}', r'\1', wikitext_clean, flags=re.IGNORECASE)
+    # Replace [[Page|Display]] with [[Page]]
+    wikitext_clean = re.sub(r'\[\[([^\]|]+)\|[^\]]+\]\]', r'[[\1]]', wikitext_clean)
+    
+    wikicode = mwparserfromhell.parse(wikitext_clean)
     airlines_dest = {}
 
     for template in wikicode.filter_templates():
         if template.name.lower().startswith("airport-dest-list"):
+            print(f"\nFound Airport-dest-list template: {template}")
             for param in template.params:
+                # print(f"\nRaw param: {param}")
                 parts = str(param.value).split('|', 1)
+                # print(f"Split parts: {parts}")
                 if len(parts) != 2:
+                    # print("Skipping param (does not split into 2 parts).")
                     continue
                 airline_raw, dests_raw = parts
+                print(f"airline_raw: {repr(airline_raw)}")
+                print(f"dests_raw: {repr(dests_raw)}")
 
-                # Clean airline name
-                airline = mwparserfromhell.parse(airline_raw).strip_code().strip()
-                airline = re.sub(r'<ref.*?</ref>', '', airline, flags=re.DOTALL).strip()
+    #             # Remove references
+    #             airline_clean = re.sub(r'<ref.*?</ref>', '', airline_raw, flags=re.DOTALL).strip()
+    #             print(f"airline_clean: {repr(airline_clean)}")
+    #             # Parse with mwparserfromhell to handle wikilinks
+    #             airline_wikicode = mwparserfromhell.parse(airline_clean)
+    #             wikilinks = airline_wikicode.filter_wikilinks()
+    #             print(f"Airline wikilinks: {wikilinks}")
+    #             if wikilinks:
+    #                 # Use the display text if present, otherwise the title
+    #                 airline = wikilinks[0].text.strip_code().strip() if wikilinks[0].text else wikilinks[0].title.strip_code().strip()
+    #             else:
+    #                 # Fallback: plain text
+    #                 airline = airline_wikicode.strip_code().strip()
+    #             print(f"Final airline: {repr(airline)}")
 
-                # Destinations: only keep wikilinks
-                dest_wikicode = mwparserfromhell.parse(dests_raw)
-                dest_objs = []
-                for link in dest_wikicode.filter_wikilinks():
-                    title = link.title.strip_code().strip()
-                    display = link.text.strip_code().strip() if link.text else title
-                    url_title = title.replace(" ", "_")
-                    wikipedia_url = f"https://en.wikipedia.org/wiki/{url_title}"
-                    dest_objs.append({"name": display, "wikipedia_url": wikipedia_url})
-                # Only add airline if there are valid wikilink destinations
-                if dest_objs:
-                    airlines_dest[airline] = dest_objs
-    return airlines_dest
+    #             # Destinations: only keep wikilinks
+    #             dest_wikicode = mwparserfromhell.parse(dests_raw)
+    #             dest_objs = []
+    #             for link in dest_wikicode.filter_wikilinks():
+    #                 title = link.title.strip_code().strip()
+    #                 display = link.text.strip_code().strip() if link.text else title
+    #                 url_title = title.replace(" ", "_")
+    #                 wikipedia_url = f"https://en.wikipedia.org/wiki/{url_title}"
+    #                 dest_objs.append({"name": display, "wikipedia_url": wikipedia_url})
+    #             # Print debug information
+    #             if verbose:
+    #                 print(f"Extracted destinations: {dest_objs}")
+    #             # Only add airline if there are valid wikilink destinations
+    #             if airline and dest_objs:
+    #                 airlines_dest[airline] = dest_objs
+    # return airlines_dest
 
 def parse_iso3166_2(region_code):
     """
-    Given an ISO 3166-2 region code (e.g., 'US-MN'), returns a dict with country and subdivision info.
-    Returns None if not found or invalid.
+    Parses an ISO 3166-2 region code and returns a dictionary with country and subdivision info.
+    Example: 'CA-MB' -> {'country_alpha3': 'CAN', 'country_name': 'Canada', 'subdivision_code': 'MB'}
     """
     try:
-        country_code, sub_code = region_code.split('-')
-        country = pycountry.countries.get(alpha_2=country_code)
-        subdivision = pycountry.subdivisions.get(code=region_code)
+        if '-' not in region_code:
+            return None
+        country_code, subdivision_code = region_code.split('-', 1)
+        country = pycountry.countries.get(alpha_2=country_code.upper())
+        if not country:
+            return None
         return {
-            "country_alpha2": country.alpha_2 if country else None,
-            "country_alpha3": country.alpha_3 if country else None,
-            "country_name": country.name if country else None,
-            "subdivision_code": subdivision.code if subdivision else None,
-            "subdivision_name": subdivision.name if subdivision else None,
-            "subdivision_type": subdivision.type if subdivision else None
+            'country_alpha3': country.alpha_3,
+            'country_name': country.name,
+            'subdivision_code': subdivision_code.upper()
         }
     except Exception:
         return None

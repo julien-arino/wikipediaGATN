@@ -9,6 +9,8 @@ from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 from wikipediaGATN.wikipedia_airport_level import (
     get_wikipedia_airport_page_link,
     extract_airport_information,
+    get_wikipedia_airport_page_wikitext,
+    parse_infobox_from_wikitext
 )
 from wikipediaGATN.wikipedia_network_level import (
     clean_output_directory,
@@ -17,7 +19,8 @@ from wikipediaGATN.wikipedia_network_level import (
     iterate_search_until_distance_N,
     iterate_search_until_empty,
     continue_existing_search_one_step,
-    continue_existing_search_until_empty
+    continue_existing_search_until_empty,
+    convert_sets_to_lists
 )
 
 if __name__ == "__main__":
@@ -33,3 +36,6 @@ if __name__ == "__main__":
     # Now run for a distance of 1
     print("Running for a distance of 1...")
     iterate_search_until_distance_N(seed_iata=test_IATA, dist=1, delay=0.5, verbose=verbose)
+
+    airport_info = convert_sets_to_lists(airport_info)
+    json.dump(airport_info, f, ensure_ascii=False, indent=2)

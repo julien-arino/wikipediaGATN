@@ -1,3 +1,4 @@
+import sys
 import json
 
 import mwparserfromhell
@@ -10,14 +11,19 @@ from wikipediaGATN.wikipedia_airport_level import (
     extract_airport_information,
     get_wikipedia_airport_page_wikitext,
     parse_infobox_from_wikitext,
-    extract_airlines_destinations_from_wikitext
+    extract_airlines_destinations_from_wikitext,
+    extract_airlines_from_airlines_dest_dict,
+    extract_destinations_from_airlines_dest_dict,
+    convert_sets_to_lists
 )
 
 
 if __name__ == "__main__":
     # Set the airport we want to play with.
-    test_IATA = "YWG"
-    # test_IATA = "Shamattawa"  
+    if len(sys.argv) > 1:
+        test_IATA = sys.argv[1]
+    else:
+        test_IATA = "YWG"
 
     # Example: get information by first grabbing a wikipedia link for an airport using its IATA code
     test_link = get_wikipedia_airport_page_link(test_IATA, verbose=False)
@@ -27,24 +33,9 @@ if __name__ == "__main__":
     if test_link:
         airport_details = extract_airport_information(link=test_link)
         print("Airport details:")
+        airport_details = convert_sets_to_lists(airport_details)  # <-- Add this line
         print(json.dumps(airport_details, indent=2, ensure_ascii=False))
 
-
-    # Example: Extract airlines and destinations
-    # if test_link:
-    #     airlines = extract_airlines_from_airport(test_link)
-    #     print(f"Airlines at {test_IATA}: {sorted(list(airlines))}")
-
-    #     destinations = extract_destinations_from_airport(test_link)
-    #     print(f"Destinations at {test_IATA}: {sorted(list(destinations))}")
-
-    #     airlines_dests = extract_airlines_destinations_from_airport(test_link)
-    #     # Convert sets to lists for pretty printing
-    #     airlines_dests_serializable = {k: sorted(list(v)) for k, v in airlines_dests.items()}
-    #     print(f"Airlines/Destinations at {test_IATA}: {json.dumps(airlines_dests_serializable, indent=2, ensure_ascii=False)}")
-
-    # Get information using a IATA code directly
-    # airport_details = extract_airport_information(identifier=test_IATA, verbose=False)    
 
     # Go the wikitext way
     if test_link:
@@ -53,10 +44,17 @@ if __name__ == "__main__":
         print(wikitext)
 
         infobox = parse_infobox_from_wikitext(wikitext, verbose=False)
-    #     print("\n\nParsed infobox from wikitext:")
+        print("\n\nParsed infobox from wikitext:")
         print(json.dumps(infobox, indent=2, ensure_ascii=False))
 
         # Get airlines and destinations from wikitext
-        airlines_dest = extract_airlines_destinations_from_wikitext(wikitext)
-        print("\nAirlines and destinations from wikitext:")
+        airlines_dest = extract_airlines_destinations_from_wikitext(wikitext, verbose=False)
+        print("\n\nAirlines and destinations from wikitext:")
         print(json.dumps(airlines_dest, indent=2, ensure_ascii=False))
+        airlines = extract_airlines_from_airlines_dest_dict(airlines_dest)
+        dests = extract_destinations_from_airlines_dest_dict(airlines_dest)
+        print("\nAirlines from wikitext:")
+        print(json.dumps(airlines, indent=2, ensure_ascii=False))
+        print("\nDestinations from wikitext:")
+        dests  = convert_sets_to_lists(dests)
+        print(json.dumps(dests, indent=2, ensure_ascii=False))

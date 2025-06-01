@@ -892,23 +892,51 @@ def extract_airlines_destinations_from_wikitext(wikitext, verbose=False):
             template_body = re.sub(r'^\{\{[Aa]irport-dest-list\s*\|?', '', template_str)
             template_body = re.sub(r'\}\}$', '', template_body).strip()
 
+            # # Try to split by <!-- --> first
+            # if '<!--' in template_body:
+            #     pairs = [p.strip() for p in re.split(r'<!--\s*-->', template_body) if p.strip()]
+            # else:
+            #     # Remove the first pipe only if not using the divider
+            #     template_body = template_body.lstrip('|').lstrip()
+            #     # No divider: split by pipe, group every two as a pair
+            #     fields = [f.strip() for f in template_body.split('|') if f.strip()]
+            #     pairs = ['|'.join(fields[i:i+2]) for i in range(0, len(fields), 2) if len(fields[i:i+2]) == 2]
+            #     print(pairs)
+
             # Try to split by <!-- --> first
             if '<!--' in template_body:
-                pairs = [p.strip() for p in re.split(r'<!--\s*-->', template_body) if p.strip()]
-            else:
-                # Remove the first pipe only if not using the divider
-                template_body = template_body.lstrip('|').lstrip()
-                # No divider: split by pipe, group every two as a pair
-                fields = [f.strip() for f in template_body.split('|') if f.strip()]
-                pairs = ['|'.join(fields[i:i+2]) for i in range(0, len(fields), 2) if len(fields[i:i+2]) == 2]
+                # Split by comment, then for each part, extract airline/destinations as a tuple
+                raw_pairs = [p.strip() for p in re.split(r'<!--\s*-->', template_body) if p.strip()]
+                pairs = []
+                for raw_pair in raw_pairs:
+                    # Mask pipes in templates to avoid splitting inside templates
+                    masked_pair = mask_pipes_in_templates(raw_pair)
+                    split_pair = masked_pair.strip().lstrip('|').rstrip('|').split('|', 1)
+                    split_pair = [unmask_pipes(p).strip() for p in split_pair]
+                    if len(split_pair) == 2:
+                        pairs.append((split_pair[0], split_pair[1]))
                 print(pairs)
-
+            else:
+                # Use mwparserfromhell to get params in order, in pairs
+                params = template.params
+                pairs = []
+                i = 0
+                while i < len(params) - 1:
+                    airline_raw = str(params[i].value).strip()
+                    dests_raw = str(params[i + 1].value).strip()
+                    pairs.append((airline_raw, dests_raw))
+                    i += 2
+                print(pairs)
+        
             for pair in pairs:
+            # for airline, destinations in pairs:
                 # Before splitting, normalize all wikilinks in the pair to [[X]]
                 def normalise_wikilinks(text):
                     # Replace [[X|Y]] with [[X]]
                     return re.sub(r'\[\[([^\]|]+)\|[^\]]+\]\]', r'[[\1]]', text)
                 pair = normalise_wikilinks(pair)
+                print(pair)
+
 
                 # Now split on the first pipe only
                 masked_pair = mask_pipes_in_templates(pair)

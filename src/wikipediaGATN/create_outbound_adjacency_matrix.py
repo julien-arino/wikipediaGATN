@@ -15,7 +15,7 @@ def create_outbound_adjacency_matrix(symmetric=False, verbose=False):
     """
     import pandas as pd
     import numpy as np
-    from scipy.sparse import csr_matrix, save_npz
+    from scipy.sparse import csr_matrix, save_npz #this is scipy package 
     import os
     from .paths import PUBLIC_DATA_DIR
 

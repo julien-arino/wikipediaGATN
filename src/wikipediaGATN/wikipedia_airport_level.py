@@ -604,23 +604,15 @@ def extract_airport_information(identifier="YWG", link=None, verbose=False):
     # Add airlines and destinations using the new functions
     info['airlines'] = extract_airlines_from_airport(link=link, html_content=html_content, verbose=verbose)
     info['destinations'] = extract_destinations_from_airport(link=link, html_content=html_content, verbose=verbose)
-
-    # Fallback to wikitext extraction if either field is empty
-    if not info['airlines'] or not info['destinations']:
-        airlines_dest_dict = extract_airlines_destinations_from_wikitext(wikitext_content, verbose=verbose)
-        if not info['airlines']:
-            info['airlines'] = extract_airlines_from_airlines_dest_dict(airlines_dest_dict)
-        if not info['destinations']:
-            info['destinations'] = extract_destinations_from_airlines_dest_dict(airlines_dest_dict)
-
+    airlines_destinations = extract_airlines_destinations_from_airport(link=link, html_content=html_content, verbose=verbose)
 
     # Convert sets to lists before returning
     if isinstance(info.get('airlines'), set):
         info['airlines'] = sorted(list(info['airlines']))
     if isinstance(info.get('destinations'), set):
         info['destinations'] = sorted(list(info['destinations']))
-    # if isinstance(airlines_destinations, dict):
-    #     info['airlines_destinations'] = {k: sorted(list(v)) for k, v in airlines_destinations.items()}
+    if isinstance(airlines_destinations, dict):
+        info['airlines_destinations'] = {k: sorted(list(v)) for k, v in airlines_destinations.items()}
 
     return info
 
@@ -652,7 +644,6 @@ def save_airport_info(airport_info, level=0, verbose=False, save_progress=True):
         airport_info["destinations"].sort(key=lambda x: x[0] if isinstance(x, (list, tuple)) and len(x) > 0 else "")
 
     with open(output_path, "w", encoding="utf-8") as f:
-        airport_info = convert_sets_to_lists(airport_info)
         json.dump(airport_info, f, ensure_ascii=False, indent=2)
 
     if save_progress:
@@ -822,8 +813,10 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
                 value = clean_infobox_value(value)
                 # Clean coordinates field if needed
                 if lowered == "coordinates":
+                    # Remove all occurrences of "|display=inline,title" (with or without leading/trailing spaces)
                     value = re.sub(r'\| *display *= *inline,title *', '', value, flags=re.IGNORECASE)
                     value = value.strip()
+                    # Try to extract DMS and region from the coord template
                     coord_match = re.search(
                         r'\{\{[Cc]oord\|([0-9]+)\|([0-9]+)\|([0-9]+)\|([NS])\|([0-9]+)\|([0-9]+)\|([0-9]+)\|([EW])(?:\|region:([A-Za-z0-9\-]+))?',
                         value
@@ -837,7 +830,7 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
                         lon_min = int(coord_match.group(6))
                         lon_sec = int(coord_match.group(7))
                         lon_dir = coord_match.group(8)
-                        region = coord_match.group(9) if coord_match.lastindex >= 9 else None;
+                        region = coord_match.group(9) if coord_match.lastindex >= 9 else None
 
                         # Convert DMS to decimal
                         lat = lat_deg + lat_min / 60 + lat_sec / 3600
@@ -868,127 +861,70 @@ def parse_infobox_from_wikitext(wikitext, verbose=False):
     }
     return infobox_data
 
-def extract_airlines_destinations_from_wikitext(wikitext, verbose=False):
+def extract_airlines_destinations_from_wikitext(wikitext):
     """
-    Extracts airlines and their destination wikilinks from the Airport-dest-list template.
-    Uses <!-- --> as a delimiter for each airline/destinations pair.
-    For each destination, includes a 'seasonal' field: "seasonal" if after '''Seasonal:''' marker, else "".
-    Returns a dict: { airline: [ {"airport": "[[wikilink]]", "seasonal": "seasonal"/"" }, ... ], ... }
+    Uses mwparserfromhell to extract airlines and destinations from the Airport-dest-list template.
+    Only keeps destinations that are Wikipedia wikilinks ([[X]] or [[X|Y]]).
+    Returns a dict: { airline: [ {name, wikipedia_url}, ... ], ... }
     """
     import mwparserfromhell
     import re
 
-    if verbose:
-        print("\n=== RAW WIKITEXT FROM API ===")
-        print(wikitext)
-
-    wikicode = mwparserfromhell.parse(wikitext)
+    # Remove all <ref>...</ref> tags (including multiline)
+    wikitext_clean = re.sub(r'<ref.*?</ref>', '', wikitext, flags=re.DOTALL)
+    # Remove {{nowrap|...}} and similar wrappers, keeping only the inner content
+    wikitext_clean = re.sub(r'\{\{nowrap\|([^\{\}]+?)\}\}', r'\1', wikitext_clean, flags=re.IGNORECASE)
+    # Replace [[Page|Display]] with [[Page]]
+    wikitext_clean = re.sub(r'\[\[([^\]|]+)\|[^\]]+\]\]', r'[[\1]]', wikitext_clean)
+    
+    wikicode = mwparserfromhell.parse(wikitext_clean)
     airlines_dest = {}
 
     for template in wikicode.filter_templates():
         if template.name.lower().startswith("airport-dest-list"):
-            template_str = str(template)
-            # Remove the template name and trailing braces
-            template_body = re.sub(r'^\{\{[Aa]irport-dest-list\s*\|?', '', template_str)
-            template_body = re.sub(r'\}\}$', '', template_body).strip()
-
-            # # Try to split by <!-- --> first
-            # if '<!--' in template_body:
-            #     pairs = [p.strip() for p in re.split(r'<!--\s*-->', template_body) if p.strip()]
-            # else:
-            #     # Remove the first pipe only if not using the divider
-            #     template_body = template_body.lstrip('|').lstrip()
-            #     # No divider: split by pipe, group every two as a pair
-            #     fields = [f.strip() for f in template_body.split('|') if f.strip()]
-            #     pairs = ['|'.join(fields[i:i+2]) for i in range(0, len(fields), 2) if len(fields[i:i+2]) == 2]
-            #     print(pairs)
-
-            # Try to split by <!-- --> first
-            if '<!--' in template_body:
-                # Split by comment, then for each part, extract airline/destinations as a tuple
-                raw_pairs = [p.strip() for p in re.split(r'<!--\s*-->', template_body) if p.strip()]
-                pairs = []
-                for raw_pair in raw_pairs:
-                    # Mask pipes in templates to avoid splitting inside templates
-                    masked_pair = mask_pipes_in_templates(raw_pair)
-                    split_pair = masked_pair.strip().lstrip('|').rstrip('|').split('|', 1)
-                    split_pair = [unmask_pipes(p).strip() for p in split_pair]
-                    if len(split_pair) == 2:
-                        pairs.append((split_pair[0], split_pair[1]))
-                print(pairs)
-            else:
-                # Use mwparserfromhell to get params in order, in pairs
-                params = template.params
-                pairs = []
-                i = 0
-                while i < len(params) - 1:
-                    airline_raw = str(params[i].value).strip()
-                    dests_raw = str(params[i + 1].value).strip()
-                    pairs.append((airline_raw, dests_raw))
-                    i += 2
-                print(pairs)
-        
-            for pair in pairs:
-            # for airline, destinations in pairs:
-                # Before splitting, normalize all wikilinks in the pair to [[X]]
-                def normalise_wikilinks(text):
-                    # Replace [[X|Y]] with [[X]]
-                    return re.sub(r'\[\[([^\]|]+)\|[^\]]+\]\]', r'[[\1]]', text)
-                pair = normalise_wikilinks(pair)
-                print(pair)
-
-
-                # Now split on the first pipe only
-                masked_pair = mask_pipes_in_templates(pair)
-                split_pair = masked_pair.strip().lstrip('|').rstrip('|').split('|', 1)
-                if len(split_pair) != 2:
-                    continue  # skip malformed
-                airline, destinations = [unmask_pipes(p).strip() for p in split_pair]
-
-                airline = airline.strip()
-                destinations = destinations.strip()
-                if not airline or not destinations:
+            print(f"\nFound Airport-dest-list template: {template}")
+            for param in template.params:
+                # print(f"\nRaw param: {param}")
+                parts = str(param.value).split('|', 1)
+                # print(f"Split parts: {parts}")
+                if len(parts) != 2:
+                    # print("Skipping param (does not split into 2 parts).")
                     continue
+                airline_raw, dests_raw = parts
+                print(f"airline_raw: {repr(airline_raw)}")
+                print(f"dests_raw: {repr(dests_raw)}")
 
-                # Now clean airline and destinations fields
-                # Extract the first wikilink and normalize to [[X]]
-                airline_str = str(airline)
-                match = re.search(r'\[\[([^\]]+)\]\]', airline_str)
-                if match:
-                    airline = f"[[{match.group(1)}]]"
-                else:
-                    airline = airline_str.strip()
+    #             # Remove references
+    #             airline_clean = re.sub(r'<ref.*?</ref>', '', airline_raw, flags=re.DOTALL).strip()
+    #             print(f"airline_clean: {repr(airline_clean)}")
+    #             # Parse with mwparserfromhell to handle wikilinks
+    #             airline_wikicode = mwparserfromhell.parse(airline_clean)
+    #             wikilinks = airline_wikicode.filter_wikilinks()
+    #             print(f"Airline wikilinks: {wikilinks}")
+    #             if wikilinks:
+    #                 # Use the display text if present, otherwise the title
+    #                 airline = wikilinks[0].text.strip_code().strip() if wikilinks[0].text else wikilinks[0].title.strip_code().strip()
+    #             else:
+    #                 # Fallback: plain text
+    #                 airline = airline_wikicode.strip_code().strip()
+    #             print(f"Final airline: {repr(airline)}")
 
-                destinations = re.sub(r'<ref.*?</ref>', '', destinations, flags=re.DOTALL)
-                destinations = re.sub(r'<ref\b[^/>]*/>', '', destinations)
-                destinations = re.sub(r'\{\{nowrap\|([^\{\}]+?)\}\}', r'\1', destinations, flags=re.IGNORECASE)
-                destinations = re.sub(r'\[\[([^\]|]+)\|[^\]]+\]\]', r'[[\1]]', destinations)
-                destinations = destinations.strip()
-
-                # Split by <br /> and handle seasonal marker
-                dests = []
-                seasonal = ""
-                dest_lines = re.split(r'<br\s*/?>', destinations)
-                for line in dest_lines:
-                    line = line.strip()
-                    # Check for seasonal marker
-                    if "'''Seasonal:'''" in line:
-                        seasonal = "seasonal"
-                        line = line.replace("'''Seasonal:'''", "").strip()
-                    # Split by commas, but only if there are multiple destinations
-                    for dest in re.split(r',(?![^\[]*\])', line):
-                        dest = dest.strip()
-                        wikilinks = re.findall(r'(\[\[[^\[\]]+?\]\])', dest)
-                        for wikilink in wikilinks:
-                            # Create a new dict for each destination
-                            dests.append({
-                                "airport": wikilink,
-                                "seasonal": seasonal
-                            })
-                if airline and dests:
-                    airlines_dest[airline] = dests
-            break  # Only process the first Airport-dest-list
-    return airlines_dest
+    #             # Destinations: only keep wikilinks
+    #             dest_wikicode = mwparserfromhell.parse(dests_raw)
+    #             dest_objs = []
+    #             for link in dest_wikicode.filter_wikilinks():
+    #                 title = link.title.strip_code().strip()
+    #                 display = link.text.strip_code().strip() if link.text else title
+    #                 url_title = title.replace(" ", "_")
+    #                 wikipedia_url = f"https://en.wikipedia.org/wiki/{url_title}"
+    #                 dest_objs.append({"name": display, "wikipedia_url": wikipedia_url})
+    #             # Print debug information
+    #             if verbose:
+    #                 print(f"Extracted destinations: {dest_objs}")
+    #             # Only add airline if there are valid wikilink destinations
+    #             if airline and dest_objs:
+    #                 airlines_dest[airline] = dest_objs
+    # return airlines_dest
 
 def parse_iso3166_2(region_code):
     """
@@ -1009,67 +945,3 @@ def parse_iso3166_2(region_code):
         }
     except Exception:
         return None
-
-import re
-import mwparserfromhell
-
-def mask_pipes_in_templates(text):
-    wikicode = mwparserfromhell.parse(text)
-    for template in wikicode.filter_templates(recursive=True):
-        # Replace all pipes in the template's string representation
-        tpl_str = str(template)
-        masked = tpl_str.replace('|', '␟')
-        text = text.replace(tpl_str, masked)
-    return text
-
-def unmask_pipes(text):
-    return text.replace('␟', '|')
-
-import urllib.parse
-
-def wikilink_to_url(wikilink):
-    # Extract the page name from [[X]]
-    page = wikilink.strip('[]')
-    # Remove any leading/trailing brackets in case of malformed input
-    if page.startswith('['):
-        page = page[1:]
-    if page.endswith(']'):
-        page = page[:-1]
-    # Remove any display text after a pipe (shouldn't be present if normalized)
-    page = page.split('|')[0]
-    # Replace spaces with underscores
-    page = page.replace(' ', '_')
-    # URL-encode
-    page = urllib.parse.quote(page)
-    return f"https://en.wikipedia.org/wiki/{page}"
-
-def extract_airlines_from_airlines_dest_dict(airlines_dest_dict):
-    """
-    Given the dict from extract_airlines_destinations_from_wikitext,
-    return a sorted list of unique airline names (keys).
-    """
-    return sorted(airlines_dest_dict.keys())
-
-def extract_destinations_from_airlines_dest_dict(airlines_dest_dict):
-    """
-    Given the dict from extract_airlines_destinations_from_wikitext,
-    return a sorted list of unique destination wikilinks (values).
-    """
-    destinations = set()
-    for dest_list in airlines_dest_dict.values():
-        for dest in dest_list:
-            airport = dest.get("airport")
-            if airport:
-                destinations.add(airport)
-    return sorted(destinations)
-
-def convert_sets_to_lists(obj):
-    if isinstance(obj, set):
-        return list(obj)
-    elif isinstance(obj, dict):
-        return {k: convert_sets_to_lists(v) for k, v in obj.items()}
-    elif isinstance(obj, list):
-        return [convert_sets_to_lists(i) for i in obj]
-    else:
-        return obj
-

@@ -4,8 +4,8 @@ from .paths import PUBLIC_DATA_DIR
 import plotly.graph_objects as go
 
 def visualize_graph_plotly():
-    matrix_path = PUBLIC_DATA_DIR + "/adjacency_matrix.npz"
-    nodes_path = PUBLIC_DATA_DIR + "/nodes.txt"
+    matrix_path = PUBLIC_DATA_DIR + "/adjacency_matrix_sym.npz"
+    nodes_path = PUBLIC_DATA_DIR + "/nodes_sym.txt"
 
     matrix = load_npz(matrix_path)
 
@@ -63,7 +63,7 @@ def visualize_graph_plotly():
                         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
                         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
                    )
-    output_file = PUBLIC_DATA_DIR + "/airport_graph_plotly.html"
+    output_file = PUBLIC_DATA_DIR + "/airport_graph_plotly_sym.html"
     fig.write_html(output_file)
     print(f"Interactive Plotly graph saved to {output_file}")
 

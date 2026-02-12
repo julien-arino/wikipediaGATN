@@ -19,8 +19,7 @@ from .wikipedia_airport_level import (
     extract_airlines_from_airport,
     extract_destinations_from_airport,
     extract_airlines_destinations_from_airport,
-    save_airport_info,
-    convert_sets_to_lists
+    save_airport_info
 )
 
 ###

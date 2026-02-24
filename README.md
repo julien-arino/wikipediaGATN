@@ -23,5 +23,8 @@ python -m examples.grab_info_from_IATA
 
 Note the nonstandard call: `-m`, `.` instead of `/` to indicate a subdirectory and no `.py` extension.
 
+python -m spacy download en_core_web_sm
+
+
 ## Example uses
 

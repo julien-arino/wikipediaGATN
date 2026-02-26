@@ -1,387 +1,358 @@
 """
-Tests for the extract_iata_from_wikipedia module.
+Tests for :mod:`wikipediaGATN.extract_iata_from_wikipedia`.
 
-This module tests functions that extract IATA codes from Wikipedia pages
-and create manual airport mappings.
+HTTP calls are intercepted via ``@patch`` at the correct module-level
+namespace.  All filesystem I/O uses ``tmp_path`` fixtures.
+
+Patch target for ``requests.get``:
+    ``'wikipediaGATN.extract_iata_from_wikipedia.requests.get'``
+    NOT ``'requests.get'`` — the latter patches the global namespace and
+    has no effect on code that has already bound ``import requests`` locally.
 """
 
-import pytest
-from unittest.mock import Mock, patch, mock_open
-import os
 import csv
+import os
 import tempfile
+
+import pytest
+import requests
+import requests.exceptions
+from unittest.mock import Mock, patch
+
 from wikipediaGATN.extract_iata_from_wikipedia import (
     _extract_iata_from_wikipedia_page,
     extract_iata_from_unmapped_destinations,
     create_manual_mapping_from_scraped_data,
 )
 
+# Correct patch target — must match the ``import requests`` binding inside
+# the module under test, not the global requests namespace.
+_REQUESTS_GET = "wikipediaGATN.extract_iata_from_wikipedia.requests.get"
+
+
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
+def _make_response(html_bytes: bytes) -> Mock:
+    """Return a mock response that returns *html_bytes* and does not raise."""
+    r = Mock()
+    r.content = html_bytes
+    r.raise_for_status = Mock()
+    return r
+
+
+def _write_unmapped_csv(path, rows):
+    """Write rows to *path* as a valid unmapped_destinations CSV."""
+    with open(path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(
+            fh, fieldnames=["url", "count", "iata", "name", "source"]
+        )
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+# ---------------------------------------------------------------------------
+# _extract_iata_from_wikipedia_page
+# ---------------------------------------------------------------------------
 
 class TestExtractIataFromWikipediaPage:
-    """Tests for extracting IATA from Wikipedia page content."""
 
-    @patch('requests.get')
-    def test_extract_iata_standard_format(self, mock_get):
-        """Test extraction from standard Wikipedia format."""
-        # Setup mock response
-        mock_response = Mock()
-        mock_response.content = b'''
-            <html>
-                <body>
-                    <p>Toronto Pearson International Airport (IATA: YYZ, ICAO: CYYZ)</p>
-                </body>
-            </html>
-        '''
-        mock_response.raise_for_status = Mock()
-        mock_get.return_value = mock_response
+    @patch(_REQUESTS_GET)
+    def test_standard_infobox_format(self, mock_get):
+        """Extracts IATA from ``(IATA: YYZ, ICAO: CYYZ)`` format."""
+        mock_get.return_value = _make_response(
+            b"<p>Toronto Pearson International Airport (IATA: YYZ, ICAO: CYYZ)</p>"
+        )
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/T")
+        assert result["iata"] == "YYZ"
+        assert result["confidence"] >= 0.9
 
-        # Execute
-        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/Toronto_Pearson")
-
-        # Assert
-        assert result['iata'] == 'YYZ'
-        assert result['confidence'] >= 0.9
-        mock_get.assert_called_once()
-
-    @patch('requests.get')
-    def test_extract_iata_with_icao(self, mock_get):
-        """Test that ICAO code is also extracted."""
-        mock_response = Mock()
-        mock_response.content = b'<p>Airport (IATA: YYZ, ICAO: CYYZ)</p>'
-        mock_response.raise_for_status = Mock()
-        mock_get.return_value = mock_response
-
+    @patch(_REQUESTS_GET)
+    def test_icao_also_extracted(self, mock_get):
+        """ICAO code is extracted alongside IATA."""
+        mock_get.return_value = _make_response(
+            b"<p>Airport (IATA: YYZ, ICAO: CYYZ)</p>"
+        )
         result = _extract_iata_from_wikipedia_page("https://example.com")
+        assert result["iata"] == "YYZ"
+        assert result["icao"] == "CYYZ"
 
-        assert result['iata'] == 'YYZ'
-        assert result['icao'] == 'CYYZ'
-
-    @patch('requests.get')
-    def test_extract_iata_not_found(self, mock_get):
-        """Test when IATA code is not found."""
-        mock_response = Mock()
-        mock_response.content = b'<p>No airport code here</p>'
-        mock_response.raise_for_status = Mock()
-        mock_get.return_value = mock_response
-
+    @patch(_REQUESTS_GET)
+    def test_iata_not_found_returns_none(self, mock_get):
+        """Returns iata=None and confidence=0 when no code is present."""
+        mock_get.return_value = _make_response(
+            b"<p>This page has no airport codes at all.</p>"
+        )
         result = _extract_iata_from_wikipedia_page("https://example.com")
+        assert result["iata"] is None
+        assert result["confidence"] == 0.0
 
-        assert result['iata'] is None
-        assert result['confidence'] == 0
-
-    @patch('requests.get')
-    def test_extract_iata_network_error(self, mock_get):
-        """Test handling of network errors."""
-        mock_get.side_effect = Exception("Connection timeout")
-
+    @patch(_REQUESTS_GET)
+    def test_network_error_returns_error_dict(self, mock_get):
+        """``requests.exceptions.ConnectionError`` is caught; returns error dict."""
+        mock_get.side_effect = requests.exceptions.ConnectionError("timeout")
         result = _extract_iata_from_wikipedia_page("https://example.com")
+        assert result["iata"] is None
+        assert result["error"] is not None
 
-        assert result['iata'] is None
-        assert 'error' in result
-
-    @patch('requests.get')
-    def test_extract_iata_http_error(self, mock_get):
-        """Test handling of HTTP errors."""
-        mock_response = Mock()
-        mock_response.raise_for_status.side_effect = Exception("404 Not Found")
-        mock_get.return_value = mock_response
-
+    @patch(_REQUESTS_GET)
+    def test_http_error_returns_error_dict(self, mock_get):
+        """``requests.exceptions.HTTPError`` from raise_for_status is caught."""
+        r = Mock()
+        r.raise_for_status.side_effect = requests.exceptions.HTTPError("404")
+        mock_get.return_value = r
         result = _extract_iata_from_wikipedia_page("https://example.com/missing")
+        assert result["iata"] is None
+        assert result["error"] is not None
 
-        assert result['iata'] is None
-        assert result['error'] is not None
-
-    @patch('requests.get')
-    def test_extract_iata_multiple_paragraphs(self, mock_get):
-        """Test extraction from first 5 paragraphs."""
-        mock_response = Mock()
-        mock_response.content = b'''
-            <html>
-                <p>First paragraph</p>
-                <p>Second paragraph</p>
-                <p>Third (IATA: YUL, ICAO: CYUL)</p>
-            </html>
-        '''
-        mock_response.raise_for_status = Mock()
-        mock_get.return_value = mock_response
-
+    @patch(_REQUESTS_GET)
+    def test_extracts_from_third_paragraph(self, mock_get):
+        """Scans multiple paragraphs — finds code in paragraph 3."""
+        mock_get.return_value = _make_response(b"""
+            <html><body>
+                <p>First paragraph, no code.</p>
+                <p>Second paragraph, no code.</p>
+                <p>Third paragraph (IATA: YUL, ICAO: CYUL)</p>
+            </body></html>
+        """)
         result = _extract_iata_from_wikipedia_page("https://example.com")
+        assert result["iata"] == "YUL"
 
-        # Should find it in third paragraph
-        assert result['iata'] == 'YUL' or result['iata'] is None
-
-    @patch('requests.get')
-    def test_extract_iata_invalid_code(self, mock_get):
-        """Test that invalid codes are rejected."""
-        mock_response = Mock()
-        mock_response.content = b'<p>(IATA: TOOLONG)</p>'
-        mock_response.raise_for_status = Mock()
-        mock_get.return_value = mock_response
-
+    @patch(_REQUESTS_GET)
+    def test_four_letter_token_not_accepted_as_iata(self, mock_get):
+        """IATA codes must be exactly 3 letters — 4-letter tokens are rejected."""
+        mock_get.return_value = _make_response(
+            b"<p>(IATA: LONG)</p>"
+        )
         result = _extract_iata_from_wikipedia_page("https://example.com")
+        assert result["iata"] != "LONG"
 
-        # TOOLONG is not 3 letters, should be rejected
-        assert result['iata'] != 'TOOLONG'
+    @patch(_REQUESTS_GET)
+    def test_disambiguation_page_skipped(self, mock_get):
+        """Pages whose text includes 'may refer to' yield no extraction."""
+        mock_get.return_value = _make_response(
+            b"<p>This article may refer to multiple airports including YYZ.</p>"
+        )
+        result = _extract_iata_from_wikipedia_page("https://example.com")
+        # Disambiguation guard should prevent a confident extraction
+        assert result["iata"] is None or result["confidence"] < 0.9
 
+    @patch(_REQUESTS_GET)
+    def test_result_keys_always_present(self, mock_get):
+        """Result dict always contains all expected keys regardless of outcome."""
+        mock_get.return_value = _make_response(b"<p>no code</p>")
+        result = _extract_iata_from_wikipedia_page("https://example.com")
+        for key in ("iata", "icao", "confidence", "extracted_text", "error"):
+            assert key in result
+
+
+# ---------------------------------------------------------------------------
+# extract_iata_from_unmapped_destinations
+# ---------------------------------------------------------------------------
 
 class TestExtractIataFromUnmappedDestinations:
-    """Tests for extracting IATA from unmapped destinations CSV."""
 
-    def test_extract_iata_from_csv_basic(self):
-        """Test extraction from CSV with unmapped URLs."""
-        # Create temporary CSV file
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            writer.writerow({
-                'url': 'https://en.wikipedia.org/wiki/Example',
-                'count': '5',
-                'iata': '',
-                'name': '',
-                'source': 'to_be_scraped'
-            })
-            csv_path = f.name
-
-        try:
-            # Mock the Wikipedia extraction
-            with patch('wikipediaGATN.extract_iata_from_wikipedia._extract_iata_from_wikipedia_page') as mock_extract:
-                mock_extract.return_value = {
-                    'iata': 'YYZ',
-                    'confidence': 0.95,
-                    'error': None
-                }
-
-                result = extract_iata_from_unmapped_destinations(
-                    csv_path=csv_path,
-                    batch_size=50,
-                    delay=0.1,
-                    verbose=False
-                )
-
-                assert result['total'] == 1
-                # May or may not succeed depending on mock setup
-
-        finally:
-            os.unlink(csv_path)
-
-    def test_extract_iata_skip_existing(self):
-        """Test that existing IATA codes are skipped."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            writer.writerow({
-                'url': 'https://en.wikipedia.org/wiki/Toronto',
-                'count': '10',
-                'iata': 'YYZ',  # Already has IATA
-                'name': 'Toronto Pearson',
-                'source': 'manual'
-            })
-            csv_path = f.name
-
-        try:
-            result = extract_iata_from_unmapped_destinations(
-                csv_path=csv_path,
-                batch_size=50,
-                delay=0.1,
-                verbose=False
-            )
-
-            # Should count this as successful (already has IATA)
-            assert result['total'] == 1
-
-        finally:
-            os.unlink(csv_path)
-
-    def test_extract_iata_empty_csv(self):
-        """Test with empty CSV file."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            csv_path = f.name
-
-        try:
-            result = extract_iata_from_unmapped_destinations(
-                csv_path=csv_path,
-                batch_size=50,
-                delay=0.1,
-                verbose=False
-            )
-
-            assert result['total'] == 0
-            assert result['successful'] == 0
-
-        finally:
-            os.unlink(csv_path)
-
-    def test_extract_iata_csv_not_found(self):
-        """Test with non-existent CSV file."""
+    def test_raises_when_csv_missing(self):
+        """FileNotFoundError when the CSV path does not exist."""
         with pytest.raises(FileNotFoundError):
             extract_iata_from_unmapped_destinations(
-                csv_path='/nonexistent/path/file.csv',
-                verbose=False
+                csv_path="/nonexistent/path/file.csv"
             )
 
+    def test_empty_csv_returns_zero_counts(self, tmp_path):
+        """An empty (header-only) CSV yields all-zero summary counts."""
+        csv_path = tmp_path / "unmapped.csv"
+        _write_unmapped_csv(csv_path, [])
+        result = extract_iata_from_unmapped_destinations(
+            csv_path=str(csv_path), delay=0.0, verbose=False
+        )
+        assert result["total"]      == 0
+        assert result["successful"] == 0
+        assert result["skipped"]    == 0
+        assert result["failed"]     == 0
+
+    def test_existing_iata_counted_as_skipped(self, tmp_path):
+        """A row that already has an IATA code is counted as skipped, not fetched."""
+        csv_path = tmp_path / "unmapped.csv"
+        _write_unmapped_csv(csv_path, [{
+            "url":    "https://en.wikipedia.org/wiki/Toronto",
+            "count":  "10",
+            "iata":   "YYZ",
+            "name":   "Toronto Pearson",
+            "source": "manual",
+        }])
+        result = extract_iata_from_unmapped_destinations(
+            csv_path=str(csv_path), delay=0.0, verbose=False
+        )
+        assert result["total"]   == 1
+        assert result["skipped"] == 1
+        assert result["successful"] == 0
+
+    @patch(_REQUESTS_GET)
+    def test_successful_extraction_increments_successful(self, mock_get, tmp_path):
+        """A row without IATA that yields a code increments ``successful``."""
+        mock_get.return_value = _make_response(
+            b"<p>Airport (IATA: YYZ, ICAO: CYYZ)</p>"
+        )
+        csv_path = tmp_path / "unmapped.csv"
+        _write_unmapped_csv(csv_path, [{
+            "url":    "https://en.wikipedia.org/wiki/Toronto_Pearson",
+            "count":  "5",
+            "iata":   "",
+            "name":   "",
+            "source": "to_be_scraped",
+        }])
+        result = extract_iata_from_unmapped_destinations(
+            csv_path=str(csv_path), delay=0.0, verbose=False
+        )
+        assert result["total"]      == 1
+        assert result["successful"] == 1
+        assert result["skipped"]    == 0
+
+    @patch(_REQUESTS_GET)
+    def test_failed_extraction_increments_failed(self, mock_get, tmp_path):
+        """A row without IATA where the page has no code increments ``failed``."""
+        mock_get.return_value = _make_response(b"<p>No code here.</p>")
+        csv_path = tmp_path / "unmapped.csv"
+        _write_unmapped_csv(csv_path, [{
+            "url":    "https://en.wikipedia.org/wiki/SomeOtherPage",
+            "count":  "1",
+            "iata":   "",
+            "name":   "",
+            "source": "to_be_scraped",
+        }])
+        result = extract_iata_from_unmapped_destinations(
+            csv_path=str(csv_path), delay=0.0, verbose=False
+        )
+        assert result["total"]  == 1
+        assert result["failed"] == 1
+
+    def test_return_dict_has_expected_keys(self, tmp_path):
+        """Summary dict always contains all documented keys."""
+        csv_path = tmp_path / "unmapped.csv"
+        _write_unmapped_csv(csv_path, [])
+        result = extract_iata_from_unmapped_destinations(
+            csv_path=str(csv_path), delay=0.0, verbose=False
+        )
+        for key in ("total", "successful", "skipped", "failed", "csv_path"):
+            assert key in result
+
+
+# ---------------------------------------------------------------------------
+# create_manual_mapping_from_scraped_data
+# ---------------------------------------------------------------------------
 
 class TestCreateManualMappingFromScrapedData:
-    """Tests for creating manual mappings from scraped data."""
 
-    def test_create_mapping_basic(self):
-        """Test creating mapping from CSV with extracted data."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            writer.writerow({
-                'url': 'https://en.wikipedia.org/wiki/Toronto',
-                'count': '10',
-                'iata': 'YYZ',
-                'name': 'Toronto Pearson',
-                'source': 'scraped (conf: 0.95)'
-            })
-            unmapped_csv = f.name
+    def test_raises_when_unmapped_csv_missing(self, tmp_path):
+        """FileNotFoundError when unmapped_destinations.csv is absent."""
+        with pytest.raises(FileNotFoundError):
+            create_manual_mapping_from_scraped_data(
+                unmapped_csv=str(tmp_path / "nonexistent.csv"),
+                output_csv=str(tmp_path / "out.csv"),
+            )
 
-        with tempfile.TemporaryDirectory() as tmpdir:
-            output_csv = os.path.join(tmpdir, 'mapping.csv')
+    def test_raises_on_invalid_confidence(self, tmp_path):
+        """ValueError when min_confidence is outside [0, 1]."""
+        csv_path = tmp_path / "unmapped.csv"
+        _write_unmapped_csv(csv_path, [])
+        with pytest.raises(ValueError, match="min_confidence"):
+            create_manual_mapping_from_scraped_data(
+                unmapped_csv=str(csv_path),
+                output_csv=str(tmp_path / "out.csv"),
+                min_confidence=1.5,
+            )
 
-            try:
-                count = create_manual_mapping_from_scraped_data(
-                    unmapped_csv=unmapped_csv,
-                    output_csv=output_csv,
-                    min_confidence=0.7,
-                    verbose=False
-                )
+    def test_high_confidence_entry_included(self, tmp_path):
+        """Entry with conf >= threshold is written to the output file."""
+        csv_path   = tmp_path / "unmapped.csv"
+        output_csv = tmp_path / "mapping.csv"
+        _write_unmapped_csv(csv_path, [{
+            "url":    "https://example.com/1",
+            "count":  "1",
+            "iata":   "YYZ",
+            "name":   "Toronto Pearson",
+            "source": "scraped (conf: 0.95)",
+        }])
+        count = create_manual_mapping_from_scraped_data(
+            unmapped_csv=str(csv_path),
+            output_csv=str(output_csv),
+            min_confidence=0.70,
+            verbose=False,
+        )
+        assert count == 1
+        assert output_csv.exists()
+        with open(output_csv, encoding="utf-8") as fh:
+            rows = list(csv.DictReader(fh))
+        assert rows[0]["iata"] == "YYZ"
 
-                assert count == 1
-                assert os.path.exists(output_csv)
+    def test_low_confidence_entry_excluded(self, tmp_path):
+        """Entry with conf < threshold is NOT written."""
+        csv_path   = tmp_path / "unmapped.csv"
+        output_csv = tmp_path / "mapping.csv"
+        _write_unmapped_csv(csv_path, [
+            {"url": "https://example.com/1", "count": "1", "iata": "YYZ",
+             "name": "Toronto", "source": "scraped (conf: 0.95)"},   # pass
+            {"url": "https://example.com/2", "count": "1", "iata": "ABC",
+             "name": "Unknown", "source": "scraped (conf: 0.50)"},   # fail
+        ])
+        count = create_manual_mapping_from_scraped_data(
+            unmapped_csv=str(csv_path),
+            output_csv=str(output_csv),
+            min_confidence=0.70,
+            verbose=False,
+        )
+        assert count == 1
 
-                # Verify output CSV has correct structure
-                with open(output_csv) as f:
-                    reader = csv.DictReader(f)
-                    rows = list(reader)
-                    assert len(rows) == 1
-                    assert rows[0]['iata'] == 'YYZ'
+    def test_empty_iata_skipped(self, tmp_path):
+        """Rows with an empty IATA value are not written."""
+        csv_path   = tmp_path / "unmapped.csv"
+        output_csv = tmp_path / "mapping.csv"
+        _write_unmapped_csv(csv_path, [{
+            "url":    "https://example.com/1",
+            "count":  "1",
+            "iata":   "",
+            "name":   "Unknown",
+            "source": "failed",
+        }])
+        count = create_manual_mapping_from_scraped_data(
+            unmapped_csv=str(csv_path),
+            output_csv=str(output_csv),
+            verbose=False,
+        )
+        assert count == 0
 
-            finally:
-                if os.path.exists(unmapped_csv):
-                    os.unlink(unmapped_csv)
+    def test_multiple_valid_entries(self, tmp_path):
+        """All entries above threshold are written."""
+        csv_path   = tmp_path / "unmapped.csv"
+        output_csv = tmp_path / "mapping.csv"
+        _write_unmapped_csv(csv_path, [
+            {"url": f"https://example.com/{i}", "count": str(i),
+             "iata": code, "name": f"Airport {i}",
+             "source": "scraped (conf: 0.95)"}
+            for i, code in enumerate(["YYZ", "YUL", "YVR"], 1)
+        ])
+        count = create_manual_mapping_from_scraped_data(
+            unmapped_csv=str(csv_path),
+            output_csv=str(output_csv),
+            verbose=False,
+        )
+        assert count == 3
 
-    def test_create_mapping_low_confidence_filter(self):
-        """Test that low confidence entries are filtered."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            writer.writerow({
-                'url': 'https://example.com/1',
-                'count': '1',
-                'iata': 'YYZ',
-                'name': 'Toronto',
-                'source': 'scraped (conf: 0.95)'  # High confidence
-            })
-            writer.writerow({
-                'url': 'https://example.com/2',
-                'count': '1',
-                'iata': 'ABC',
-                'name': 'Unknown',
-                'source': 'scraped (conf: 0.50)'  # Low confidence
-            })
-            unmapped_csv = f.name
-
-        with tempfile.TemporaryDirectory() as tmpdir:
-            output_csv = os.path.join(tmpdir, 'mapping.csv')
-
-            try:
-                count = create_manual_mapping_from_scraped_data(
-                    unmapped_csv=unmapped_csv,
-                    output_csv=output_csv,
-                    min_confidence=0.7,  # Filter out 0.50
-                    verbose=False
-                )
-
-                # Should only include the high-confidence one
-                assert count == 1
-
-            finally:
-                if os.path.exists(unmapped_csv):
-                    os.unlink(unmapped_csv)
-
-    def test_create_mapping_empty_iata(self):
-        """Test that empty IATA codes are skipped."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            writer.writerow({
-                'url': 'https://example.com/1',
-                'count': '1',
-                'iata': '',  # Empty
-                'name': 'Unknown',
-                'source': 'failed'
-            })
-            unmapped_csv = f.name
-
-        with tempfile.TemporaryDirectory() as tmpdir:
-            output_csv = os.path.join(tmpdir, 'mapping.csv')
-
-            try:
-                count = create_manual_mapping_from_scraped_data(
-                    unmapped_csv=unmapped_csv,
-                    output_csv=output_csv,
-                    verbose=False
-                )
-
-                # Should not include empty IATA
-                assert count == 0
-
-            finally:
-                if os.path.exists(unmapped_csv):
-                    os.unlink(unmapped_csv)
-
-
-class TestExtractIataIntegration:
-    """Integration tests combining extraction functions."""
-
-    @patch('requests.get')
-    def test_extraction_through_pipeline(self, mock_get):
-        """Test full extraction pipeline."""
-        # Setup
-        mock_response = Mock()
-        mock_response.content = b'<p>Toronto (IATA: YYZ)</p>'
-        mock_response.raise_for_status = Mock()
-        mock_get.return_value = mock_response
-
-        # Execute
-        result = _extract_iata_from_wikipedia_page("https://example.com")
-
-        # Assert
-        assert result['iata'] is not None
-        assert result['confidence'] > 0
-
-    def test_mapping_creation_with_valid_data(self):
-        """Test creating mapping with valid scraped data."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.csv', delete=False) as f:
-            writer = csv.DictWriter(f, fieldnames=['url', 'count', 'iata', 'name', 'source'])
-            writer.writeheader()
-            for i, code in enumerate(['YYZ', 'YUL', 'YVR'], 1):
-                writer.writerow({
-                    'url': f'https://example.com/{i}',
-                    'count': str(i),
-                    'iata': code,
-                    'name': f'Airport {i}',
-                    'source': 'scraped (conf: 0.95)'
-                })
-            unmapped_csv = f.name
-
-        with tempfile.TemporaryDirectory() as tmpdir:
-            output_csv = os.path.join(tmpdir, 'mapping.csv')
-
-            try:
-                count = create_manual_mapping_from_scraped_data(
-                    unmapped_csv=unmapped_csv,
-                    output_csv=output_csv,
-                    verbose=False
-                )
-
-                assert count == 3
-                assert os.path.exists(output_csv)
-
-            finally:
-                if os.path.exists(unmapped_csv):
-                    os.unlink(unmapped_csv)
+    def test_output_csv_fieldnames(self, tmp_path):
+        """Output CSV has exactly the expected column headers."""
+        csv_path   = tmp_path / "unmapped.csv"
+        output_csv = tmp_path / "mapping.csv"
+        _write_unmapped_csv(csv_path, [{
+            "url": "https://example.com/1", "count": "1",
+            "iata": "YYZ", "name": "Toronto", "source": "scraped (conf: 0.95)",
+        }])
+        create_manual_mapping_from_scraped_data(
+            unmapped_csv=str(csv_path),
+            output_csv=str(output_csv),
+            verbose=False,
+        )
+        with open(output_csv, encoding="utf-8") as fh:
+            headers = csv.DictReader(fh).fieldnames
+        assert set(headers) == {"url", "iata", "name", "source"}

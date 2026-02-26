@@ -15,7 +15,7 @@ For more information, see: https://github.com/jarino/wikipediaGATN
 
 __version__ = "0.1.0"
 __author__ = "Julien Arino and Adriana-Stefania Ciupeanu"
-__author_email__ = "jarino@umanitoba.ca, ciupeanu@umanitoba.ca"
+__author_email__ = "julien.arino@umanitoba.ca, Adriana-Stefania.Ciupeanu@umanitoba.ca"
 __license__ = "MIT"
 
 # Import main public functions

@@ -1,16 +1,22 @@
 """
-Tests for the connections module.
+Tests for :mod:`wikipediaGATN.connections`.
 
-This module tests functions that handle airport connection data extraction,
-URL normalization, and IATA code mapping.
+Pure-function helpers (``_normalize_url``, ``_extract_airport_name_from_url``,
+``_fuzzy_match_iata``) are tested directly.  Functions that read the
+filesystem (``_build_url_to_iata_mapping``, ``create_outbound_connections_list``)
+use real temp-directory fixtures populated with minimal CSV/JSON files, and
+both ``TEMP_RESULTS_DIR`` and ``PUBLIC_DATA_DIR`` are monkeypatched at the
+module level so no real data directory is touched.
 """
 
-import pytest
-from unittest.mock import Mock, patch, mock_open
-import os
+import csv
 import json
-import tempfile
-from src.wikipediaGATN.connections import (
+import os
+from pathlib import Path
+
+import pytest
+
+from wikipediaGATN.connections import (
     _normalize_url,
     _extract_airport_name_from_url,
     _fuzzy_match_iata,
@@ -19,241 +25,349 @@ from src.wikipediaGATN.connections import (
 )
 
 
+# ---------------------------------------------------------------------------
+# Fixtures
+# ---------------------------------------------------------------------------
+
+@pytest.fixture()
+def data_dirs(tmp_path, monkeypatch):
+    """
+    Create tmp_results/ and public/ sub-directories, monkeypatch both
+    module-level path constants, and return (tmp_results, public).
+    """
+    tmp_results = tmp_path / "tmp_results"
+    public      = tmp_path / "public"
+    tmp_results.mkdir()
+    public.mkdir()
+    monkeypatch.setattr("wikipediaGATN.connections.TEMP_RESULTS_DIR", tmp_results)
+    monkeypatch.setattr("wikipediaGATN.connections.PUBLIC_DATA_DIR",  public)
+    return tmp_results, public
+
+
+def _write_airport_json(tmp_results: Path, iata: str, level: int,
+                        destinations: list = None) -> Path:
+    """Write a minimal airport JSON fixture and return its path."""
+    data = {
+        "iata":         iata,
+        "wikipedia_url": f"https://en.wikipedia.org/wiki/{iata}_Airport",
+        "destinations": destinations or [],
+    }
+    path = tmp_results / f"{iata}.{level}.json"
+    path.write_text(json.dumps(data), encoding="utf-8")
+    return path
+
+
+def _write_airports_csv(public: Path, rows: list) -> Path:
+    """Write a minimal airports_information.csv."""
+    path = public / "airports_information.csv"
+    with open(path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["iata", "wikipedia_url", "name"])
+        writer.writeheader()
+        writer.writerows(rows)
+    return path
+
+
+# ---------------------------------------------------------------------------
+# _normalize_url
+# ---------------------------------------------------------------------------
+
 class TestNormalizeUrl:
-    """Tests for URL normalization function."""
 
-    def test_normalize_url_basic(self):
-        """Test basic URL is converted to lowercase."""
+    def test_basic_lowercased(self):
         url = "https://en.wikipedia.org/wiki/Toronto_Pearson"
-        result = _normalize_url(url)
-        assert result == "https://en.wikipedia.org/wiki/toronto_pearson"
+        assert _normalize_url(url) == "https://en.wikipedia.org/wiki/toronto_pearson"
 
-    def test_normalize_url_trailing_slash_removed(self):
-        """Test that trailing slashes are removed."""
-        url = "https://en.wikipedia.org/wiki/Toronto/"
-        result = _normalize_url(url)
-        assert "toronto/" not in result
-        assert result.endswith("toronto")
+    def test_trailing_slash_removed(self):
+        result = _normalize_url("https://en.wikipedia.org/wiki/Toronto/")
+        assert not result.endswith("/")
 
-    def test_normalize_url_empty_string(self):
-        """Test that empty string returns empty string."""
+    def test_empty_string_returns_empty(self):
         assert _normalize_url("") == ""
 
-    def test_normalize_url_none(self):
-        """Test that None returns empty string."""
+    def test_none_returns_empty(self):
         assert _normalize_url(None) == ""
 
-    def test_normalize_url_uppercase(self):
-        """Test uppercase URLs are lowercased."""
+    def test_already_lowercase_unchanged(self):
+        url = "https://en.wikipedia.org/wiki/example"
+        assert _normalize_url(url) == url
+
+    def test_percent_encoding_decoded(self):
+        # %C3%A9 is é
+        result = _normalize_url("https://en.wikipedia.org/wiki/Montr%C3%A9al")
+        assert "%" not in result
+
+    def test_result_is_always_lowercase(self):
         url = "HTTPS://EN.WIKIPEDIA.ORG/WIKI/EXAMPLE"
-        result = _normalize_url(url)
-        assert result == result.lower()
+        assert _normalize_url(url) == _normalize_url(url).lower()
 
-    def test_normalize_url_special_chars(self):
-        """Test URLs with special characters."""
-        url = "https://en.wikipedia.org/wiki/Café"
-        result = _normalize_url(url)
-        assert isinstance(result, str)
 
+# ---------------------------------------------------------------------------
+# _extract_airport_name_from_url
+# ---------------------------------------------------------------------------
 
 class TestExtractAirportNameFromUrl:
-    """Tests for extracting airport names from URLs."""
 
-    def test_extract_airport_name_basic(self):
-        """Test extracting simple airport name from URL."""
+    def test_basic_extraction(self):
         url = "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
         result = _extract_airport_name_from_url(url)
         assert result is not None
+        # The URL title should contribute to the name
         assert "Toronto" in result or "Pearson" in result
 
-    def test_extract_airport_name_removes_airport_suffix(self):
-        """Test that 'Airport' suffix is removed."""
+    def test_airport_suffix_stripped(self):
         url = "https://en.wikipedia.org/wiki/Example_Airport"
         result = _extract_airport_name_from_url(url)
         if result:
             assert "airport" not in result.lower()
 
-    def test_extract_airport_name_empty_url(self):
-        """Test empty URL returns None."""
-        assert _extract_airport_name_from_url("") is None
-
-    def test_extract_airport_name_none(self):
-        """Test None URL returns None."""
-        assert _extract_airport_name_from_url(None) is None
-
-    def test_extract_airport_name_invalid_url(self):
-        """Test URL without /wiki/ returns None."""
-        url = "https://en.wikipedia.org/notawiki/Example"
+    def test_international_suffix_stripped(self):
+        url = "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
         result = _extract_airport_name_from_url(url)
-        assert result is None
+        if result:
+            assert "international" not in result.lower()
 
-    def test_extract_airport_name_with_underscores(self):
-        """Test URL with underscores are converted to spaces."""
+    def test_underscores_replaced_with_spaces(self):
         url = "https://en.wikipedia.org/wiki/Los_Angeles_International"
         result = _extract_airport_name_from_url(url)
         if result:
-            assert "_" not in result  # Underscores should be spaces
+            assert "_" not in result
 
+    def test_no_wiki_segment_returns_none(self):
+        assert _extract_airport_name_from_url(
+            "https://en.wikipedia.org/notawiki/Example"
+        ) is None
+
+    def test_empty_string_returns_none(self):
+        assert _extract_airport_name_from_url("") is None
+
+    def test_none_returns_none(self):
+        assert _extract_airport_name_from_url(None) is None
+
+
+# ---------------------------------------------------------------------------
+# _fuzzy_match_iata
+# ---------------------------------------------------------------------------
 
 class TestFuzzyMatchIata:
-    """Tests for fuzzy matching IATA codes."""
 
-    def test_fuzzy_match_exact_match(self):
-        """Test exact match has high confidence."""
+    def test_exact_match_returns_code_and_high_ratio(self):
         iata_dict = {"Toronto Pearson": "YYZ"}
-        match, ratio = _fuzzy_match_iata("Toronto Pearson", iata_dict)
-        assert match == "YYZ"
+        code, ratio = _fuzzy_match_iata("Toronto Pearson", iata_dict)
+        assert code == "YYZ"
         assert ratio >= 0.95
 
-    def test_fuzzy_match_partial_match(self):
-        """Test partial match has moderate confidence."""
-        iata_dict = {"Toronto Pearson International": "YYZ"}
-        match, ratio = _fuzzy_match_iata("Toronto", iata_dict)
-        # Should either match or have low confidence
-        assert match is not None or ratio < 0.7
-
-    def test_fuzzy_match_no_match(self):
-        """Test poor match returns None."""
+    def test_below_threshold_returns_none(self):
         iata_dict = {"Toronto Pearson": "YYZ"}
-        match, ratio = _fuzzy_match_iata("xyz", iata_dict)
-        assert match is None
-        assert ratio < 0.6
+        code, ratio = _fuzzy_match_iata("Completely Different", iata_dict)
+        assert code is None
 
-    def test_fuzzy_match_empty_name(self):
-        """Test empty airport name returns None."""
-        iata_dict = {"Toronto": "YYZ"}
-        match, ratio = _fuzzy_match_iata("", iata_dict)
-        assert match is None
+    def test_empty_name_returns_none(self):
+        code, ratio = _fuzzy_match_iata("", {"Toronto": "YYZ"})
+        assert code is None
+        assert ratio == 0.0
 
-    def test_fuzzy_match_empty_dict(self):
-        """Test empty IATA dictionary returns None."""
-        match, ratio = _fuzzy_match_iata("Toronto", {})
-        assert match is None
+    def test_empty_dict_returns_none(self):
+        code, ratio = _fuzzy_match_iata("Toronto Pearson", {})
+        assert code is None
+        assert ratio == 0.0
 
-    def test_fuzzy_match_case_insensitive(self):
-        """Test matching is case-insensitive."""
-        iata_dict = {"Toronto Pearson": "YYZ"}
-        match_upper, ratio_upper = _fuzzy_match_iata("TORONTO PEARSON", iata_dict)
-        match_lower, ratio_lower = _fuzzy_match_iata("toronto pearson", iata_dict)
-        # Both should find the match
-        assert (match_upper == "YYZ" or ratio_upper >= 0.95)
-        assert (match_lower == "YYZ" or ratio_lower >= 0.95)
+    def test_matching_is_case_insensitive(self):
+        iata_dict = {"toronto pearson": "YYZ"}
+        code_upper, _ = _fuzzy_match_iata("TORONTO PEARSON", iata_dict)
+        code_lower, _ = _fuzzy_match_iata("toronto pearson", iata_dict)
+        assert code_upper == "YYZ"
+        assert code_lower == "YYZ"
 
+    def test_returns_best_among_multiple_candidates(self):
+        iata_dict = {
+            "Montreal Trudeau":   "YUL",
+            "Montreal Downtown":  "YMQ",
+        }
+        code, ratio = _fuzzy_match_iata("Montreal Trudeau", iata_dict)
+        assert code == "YUL"
+
+    def test_ratio_is_float(self):
+        _, ratio = _fuzzy_match_iata("test", {"test airport": "TST"})
+        assert isinstance(ratio, float)
+
+
+# ---------------------------------------------------------------------------
+# _build_url_to_iata_mapping
+# ---------------------------------------------------------------------------
 
 class TestBuildUrlToIataMapping:
-    """Tests for building URL-to-IATA mapping."""
 
-    @patch('os.path.exists')
-    @patch('pandas.read_csv')
-    def test_build_mapping_from_csv(self, mock_read_csv, mock_exists):
-        """Test building mapping from CSV file."""
-        # Setup mocks
-        mock_exists.return_value = True
-        mock_df = Mock()
-        mock_df.columns = ['wikipedia_url', 'iata', 'name']
-        mock_df.dropna.return_value = mock_df
-        mock_df.iterrows.return_value = [
-            (0, Mock(wikipedia_url="https://example.com/YYZ", iata="YYZ", name="Toronto"))
-        ]
-        mock_read_csv.return_value = mock_df
-
-        # Execute
+    def test_returns_two_dicts(self, data_dirs):
+        """Function always returns exactly two dicts."""
         url_to_iata, name_to_iata = _build_url_to_iata_mapping(verbose=False)
-
-        # Assert - should return dictionaries
         assert isinstance(url_to_iata, dict)
         assert isinstance(name_to_iata, dict)
 
-    @patch('os.path.exists')
-    def test_build_mapping_no_files(self, mock_exists):
-        """Test building mapping when no files exist."""
-        mock_exists.return_value = False
-
+    def test_empty_when_no_source_files(self, data_dirs):
+        """Both dicts are empty when no source CSVs exist."""
         url_to_iata, name_to_iata = _build_url_to_iata_mapping(verbose=False)
+        assert url_to_iata == {}
+        assert name_to_iata == {}
 
-        # Should return empty dictionaries
-        assert isinstance(url_to_iata, dict)
-        assert isinstance(name_to_iata, dict)
+    def test_loads_airports_information_csv(self, data_dirs):
+        """Entries from airports_information.csv are returned."""
+        _, public = data_dirs
+        _write_airports_csv(public, [
+            {"iata": "YYZ",
+             "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson",
+             "name": "Toronto Pearson"},
+        ])
+        url_to_iata, name_to_iata = _build_url_to_iata_mapping(verbose=False)
+        # URL is normalised (lowercased, slash-stripped)
+        normalized = "https://en.wikipedia.org/wiki/toronto_pearson"
+        assert url_to_iata.get(normalized) == "YYZ"
 
+    def test_name_mapping_populated(self, data_dirs):
+        """Name-to-IATA dict is populated from the name column."""
+        _, public = data_dirs
+        _write_airports_csv(public, [
+            {"iata": "YUL",
+             "wikipedia_url": "https://en.wikipedia.org/wiki/Montreal_YUL",
+             "name": "Montreal Trudeau"},
+        ])
+        _, name_to_iata = _build_url_to_iata_mapping(verbose=False)
+        assert "Montreal Trudeau" in name_to_iata
+        assert name_to_iata["Montreal Trudeau"] == "YUL"
+
+    def test_manual_mapping_overrides_airports_csv(self, data_dirs):
+        """manual_airport_mapping.csv (highest priority) overrides airports_information.csv."""
+        tmp_results, public = data_dirs
+        # airports_information.csv has the "wrong" code
+        _write_airports_csv(public, [
+            {"iata": "OLD",
+             "wikipedia_url": "https://en.wikipedia.org/wiki/Some_Airport",
+             "name": "Some Airport"},
+        ])
+        # manual mapping has the correct override
+        manual_path = tmp_results / "manual_airport_mapping.csv"
+        with open(manual_path, "w", newline="", encoding="utf-8") as fh:
+            writer = csv.DictWriter(fh, fieldnames=["url", "iata", "name", "source"])
+            writer.writeheader()
+            writer.writerow({
+                "url":    "https://en.wikipedia.org/wiki/Some_Airport",
+                "iata":   "NEW",
+                "name":   "Some Airport",
+                "source": "manual",
+            })
+        url_to_iata, _ = _build_url_to_iata_mapping(verbose=False)
+        normalized = "https://en.wikipedia.org/wiki/some_airport"
+        assert url_to_iata.get(normalized) == "NEW"
+
+
+# ---------------------------------------------------------------------------
+# create_outbound_connections_list
+# ---------------------------------------------------------------------------
 
 class TestCreateOutboundConnectionsList:
-    """Tests for creating outbound connections list."""
 
-    @patch('os.listdir')
-    @patch('os.path.exists')
-    @patch('builtins.open', new_callable=mock_open)
-    @patch('wikipediaGATN.connections._build_url_to_iata_mapping')
-    def test_create_connections_basic(self, mock_mapping, mock_file, mock_exists, mock_listdir):
-        """Test basic connection list creation."""
-        # Setup mocks
-        mock_listdir.return_value = []
-        mock_exists.return_value = True
-        mock_mapping.return_value = ({}, {})
-
-        # Execute
-        output_csv, unmapped_csv = create_outbound_connections_list(
-            verbose=False, export_unmapped=True
+    def test_raises_when_tmp_results_dir_missing(self, tmp_path, monkeypatch):
+        """FileNotFoundError when TEMP_RESULTS_DIR does not exist."""
+        monkeypatch.setattr(
+            "wikipediaGATN.connections.TEMP_RESULTS_DIR",
+            tmp_path / "nonexistent",
         )
-
-        # Assert
-        assert output_csv is not None
-        assert isinstance(output_csv, str)
-        assert "outbound_connections.csv" in output_csv
-
-    @patch('os.listdir')
-    @patch('os.path.exists')
-    @patch('builtins.open', new_callable=mock_open)
-    @patch('wikipediaGATN.connections._build_url_to_iata_mapping')
-    def test_create_connections_with_unmapped(self, mock_mapping, mock_file, mock_exists, mock_listdir):
-        """Test that unmapped destinations are exported."""
-        # Setup mocks
-        mock_listdir.return_value = []
-        mock_exists.return_value = True
-        mock_mapping.return_value = ({}, {})
-
-        # Execute
-        output_csv, unmapped_csv = create_outbound_connections_list(
-            verbose=False, export_unmapped=True
+        monkeypatch.setattr(
+            "wikipediaGATN.connections.PUBLIC_DATA_DIR",
+            tmp_path / "public",
         )
+        with pytest.raises(FileNotFoundError):
+            create_outbound_connections_list(verbose=False)
 
-        # Assert unmapped CSV is returned
-        assert unmapped_csv is not None or unmapped_csv is None  # Depends on data
-        assert isinstance(output_csv, str)
+    def test_returns_tuple_of_two_strings(self, data_dirs):
+        """Returns ``(connections_csv_path, unmapped_csv_path_or_None)``."""
+        tmp_results, _ = data_dirs
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[])
+        result = create_outbound_connections_list(verbose=False, export_unmapped=False)
+        assert isinstance(result, tuple) and len(result) == 2
+        assert isinstance(result[0], str)
 
-    @patch('os.listdir')
-    @patch('os.path.exists')
-    @patch('builtins.open', new_callable=mock_open)
-    @patch('wikipediaGATN.connections._build_url_to_iata_mapping')
-    def test_create_connections_no_unmapped_export(self, mock_mapping, mock_file, mock_exists, mock_listdir):
-        """Test with export_unmapped=False."""
-        # Setup mocks
-        mock_listdir.return_value = []
-        mock_exists.return_value = True
-        mock_mapping.return_value = ({}, {})
+    def test_connections_csv_created(self, data_dirs):
+        """outbound_connections.csv is written to PUBLIC_DATA_DIR."""
+        tmp_results, public = data_dirs
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[])
+        csv_path, _ = create_outbound_connections_list(verbose=False)
+        assert os.path.exists(csv_path)
+        assert "outbound_connections.csv" in csv_path
 
-        # Execute
-        output_csv, unmapped_csv = create_outbound_connections_list(
+    def test_connections_csv_contains_origin(self, data_dirs):
+        """The origin IATA code appears in outbound_connections.csv."""
+        tmp_results, public = data_dirs
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[])
+        csv_path, _ = create_outbound_connections_list(verbose=False)
+        with open(csv_path, encoding="utf-8") as fh:
+            content = fh.read()
+        assert "YWG" in content
+
+    def test_destinations_resolved_via_airports_csv(self, data_dirs):
+        """A destination whose URL is in airports_information.csv is resolved."""
+        tmp_results, public = data_dirs
+        dest_url = "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+        # Seed airport points to YYZ's URL
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[
+            ["Toronto Pearson", dest_url],
+        ])
+        # airports_information.csv maps that URL to YYZ
+        _write_airports_csv(public, [
+            {"iata":          "YYZ",
+             "wikipedia_url": dest_url,
+             "name":          "Toronto Pearson"},
+        ])
+        csv_path, _ = create_outbound_connections_list(verbose=False)
+        with open(csv_path, encoding="utf-8") as fh:
+            content = fh.read()
+        assert "YYZ" in content
+
+    def test_unmapped_csv_none_when_export_false(self, data_dirs):
+        """unmapped_csv is None when export_unmapped=False."""
+        tmp_results, _ = data_dirs
+        _write_airport_json(tmp_results, "YWG", 0)
+        _, unmapped = create_outbound_connections_list(
             verbose=False, export_unmapped=False
         )
+        assert unmapped is None
 
-        # Assert unmapped not exported
-        assert output_csv is not None
+    def test_unmapped_csv_written_when_destinations_unresolved(self, data_dirs):
+        """unmapped_destinations.csv is written when URLs cannot be resolved."""
+        tmp_results, _ = data_dirs
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[
+            ["Unknown Airport", "https://en.wikipedia.org/wiki/Nowhere"],
+        ])
+        _, unmapped = create_outbound_connections_list(
+            verbose=False, export_unmapped=True
+        )
+        # The URL had no mapping, so unmapped file should exist
+        assert unmapped is not None
+        assert os.path.exists(unmapped)
 
+    def test_lower_distance_file_wins_over_higher(self, data_dirs):
+        """When both YWG.0.json and YWG.1.json exist, the level-0 data is used."""
+        tmp_results, public = data_dirs
+        dest_url = "https://en.wikipedia.org/wiki/Some_Airport"
+        # Level 0: has a destination
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[
+            ["Some Airport", dest_url],
+        ])
+        # Level 1: no destinations
+        _write_airport_json(tmp_results, "YWG", 1, destinations=[])
+        _write_airports_csv(public, [
+            {"iata": "YYZ", "wikipedia_url": dest_url, "name": "Some Airport"},
+        ])
+        csv_path, _ = create_outbound_connections_list(verbose=False)
+        with open(csv_path, encoding="utf-8") as fh:
+            content = fh.read()
+        # Destination resolved from level-0 file
+        assert "YYZ" in content
 
-class TestConnectionsIntegration:
-    """Integration tests combining multiple functions."""
-
-    def test_url_normalize_then_extract_name(self):
-        """Test normalizing URL then extracting name."""
-        url = "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
-        normalized = _normalize_url(url)
-        assert normalized == normalized.lower()
-
-    def test_name_extraction_with_normalization(self):
-        """Test that extracted names work with fuzzy matching."""
-        url = "https://en.wikipedia.org/wiki/Toronto_International"
-        name = _extract_airport_name_from_url(url)
-        if name:
-            # Name should be usable for matching
-            assert isinstance(name, str)
-            assert len(name) > 0
+    def test_corrupt_json_skipped_without_crash(self, data_dirs):
+        """A corrupt JSON file is skipped with a warning; valid files still processed."""
+        tmp_results, _ = data_dirs
+        (tmp_results / "BAD.0.json").write_text("{not valid json}", encoding="utf-8")
+        _write_airport_json(tmp_results, "YWG", 0, destinations=[])
+        # Should not raise
+        csv_path, _ = create_outbound_connections_list(verbose=False)
+        assert os.path.exists(csv_path)

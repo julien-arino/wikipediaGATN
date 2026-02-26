@@ -1,370 +1,404 @@
 """
-Processing functions to generate GATN (Global Air Transportation Network) graph.
+Orchestration functions for GATN (Global Air Transportation Network) generation.
 
-This module orchestrates the transformation of raw airport data (JSON files from
-Wikipedia scraping) into structured network representations. It provides functions
-for extracting airport metadata and generating network connectivity data.
+This module transforms raw airport JSON files (produced by Wikipedia scraping)
+into structured network representations.  Functions are designed to be called
+in the order shown below, but each can also be called independently.
 
-Functions in this module build upon each other:
-1. export_all_airport_data() - Extract airport metadata from JSON files
-2. check_duplicated_iata_codes() - Clean up duplicate airport records
-3. create_outbound_connections_list() - Generate airport connections list (Pass 1)
-4. extract_iata_from_unmapped_destinations() - Scrape Wikipedia for IATA codes (Pass 2)
-5. create_manual_mapping_from_scraped_data() - Create manual mapping file (Pass 3)
-6. create_outbound_adjacency_matrix() - Create sparse adjacency matrices (Pass 4)
+Pipeline
+--------
+1. :func:`export_all_airport_data`              – extract airport metadata → CSV
+2. :func:`check_duplicated_iata_codes`          – deduplicate JSON files
+3. :func:`~.connections.create_outbound_connections_list`
+                                                – build connections CSV (Pass 1)
+4. :func:`~.extract_iata_from_wikipedia.extract_iata_from_unmapped_destinations`
+                                                – scrape Wikipedia for IATA codes (Pass 2)
+5. :func:`~.extract_iata_from_wikipedia.create_manual_mapping_from_scraped_data`
+                                                – build manual mapping CSV (Pass 3)
+6. :func:`~.connections.create_outbound_connections_list`
+                                                – re-run with enriched data (Pass 4)
+7. :func:`~.adjacency.create_outbound_adjacency_matrix`
+                                                – build sparse adjacency matrices
 """
 
+import csv
+import json
+import logging
 import os
 import re
-import json
-import csv
+import traceback
+import warnings
 
-from src.wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
-from src.wikipediaGATN.connections import create_outbound_connections_list
-from src.wikipediaGATN.adjacency import create_outbound_adjacency_matrix
-from src.wikipediaGATN.extract_iata_from_wikipedia import (
+from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
+from .connections import create_outbound_connections_list
+from .adjacency import create_outbound_adjacency_matrix
+from .extract_iata_from_wikipedia import (
     extract_iata_from_unmapped_destinations,
-    create_manual_mapping_from_scraped_data
+    create_manual_mapping_from_scraped_data,
 )
 
+logger = logging.getLogger(__name__)
+
+# Matches both IATA-style (e.g. YWG.0.json) and wiki-prefixed
+# (e.g. wiki_Winnipeg.1.json) filenames produced by the scraper.
+_FNAME_RE = re.compile(r"^(?:[A-Z]{3}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
+
+
 ###############################################################################
-# AIRPORT DATA EXTRACTION FUNCTIONS
+# AIRPORT DATA EXTRACTION
 ###############################################################################
 
-def export_all_airport_data(verbose=False):
+def export_all_airport_data(verbose: bool = False) -> str:
     """
-    Extract metadata from all airport JSON files and export to CSV.
+    Extract metadata from all airport JSON files and write to CSV.
 
-    Browses all XYZ.n.json files in TEMP_RESULTS_DIR and extracts airport
-    metadata including IATA code, ICAO code, location, name, Wikipedia URL,
-    and outdegree (number of connections).
+    Scans every ``<IATA>.<distance>.json`` and ``wiki_*.<distance>.json`` file
+    in ``TEMP_RESULTS_DIR`` and collects airport metadata into a single
+    ``airports_information.csv``.
 
     Parameters
     ----------
     verbose : bool, optional
-        If True, prints status messages (default: False)
+        If True, prints per-file status and a final summary.  Default: False.
 
     Returns
     -------
     str
-        Path to the output CSV file (data/public/airports_information.csv)
+        Absolute path to ``data/public/airports_information.csv``.
 
-    Output CSV Format
-    -----------------
-    Columns: iata, icao, latitude, longitude, name, wikipedia_url, outdegree
+    Raises
+    ------
+    FileNotFoundError
+        If ``TEMP_RESULTS_DIR`` does not exist.
 
     Notes
     -----
-    - Outdegree is the number of destination airports listed for each airport
-    - Some airports may have missing fields, which appear as empty strings
-    - This function is typically run before create_outbound_connections_list()
+    * ``outdegree`` is the number of destination airports listed for each
+      airport in its JSON file, not the verified network degree.
+    * Fields absent from the JSON file are written as empty strings.
+    * Run this function before
+      :func:`~.connections.create_outbound_connections_list` so that
+      ``airports_information.csv`` is available for URL→IATA mapping.
     """
-    pattern = re.compile(r"^[A-Z0-9]{3}\.\d+\.json$")
+    if not os.path.isdir(TEMP_RESULTS_DIR):
+        raise FileNotFoundError(
+            f"Temporary results directory not found: {TEMP_RESULTS_DIR}\n"
+            "Run the Wikipedia scraping step first."
+        )
+
     rows = []
+    skipped = 0
 
-    for fname in os.listdir(TEMP_RESULTS_DIR):
-        if pattern.match(fname):
-            fpath = os.path.join(TEMP_RESULTS_DIR, fname)
-            try:
-                with open(fpath, "r", encoding="utf-8") as f:
-                    data = json.load(f)
+    for fname in sorted(os.listdir(TEMP_RESULTS_DIR)):
+        if not _FNAME_RE.match(fname):
+            continue
 
-                iata = data.get("iata", "")
-                icao = data.get("icao", "")
-                lat = data.get("latitude", "")
-                lon = data.get("longitude", "")
-                name = data.get("name") or data.get("serves", "")
-                wiki_url = data.get("wikipedia_url", "")
-                destinations = data.get("destinations", [])
-                outdegree = len(destinations)
+        fpath = os.path.join(TEMP_RESULTS_DIR, fname)
+        try:
+            with open(fpath, "r", encoding="utf-8") as fh:
+                data = json.load(fh)
+        except json.JSONDecodeError as exc:
+            warnings.warn(f"Skipping {fname}: invalid JSON — {exc}", UserWarning, stacklevel=2)
+            skipped += 1
+            continue
+        except OSError as exc:
+            warnings.warn(f"Skipping {fname}: cannot read — {exc}", UserWarning, stacklevel=2)
+            skipped += 1
+            continue
 
-                rows.append({
-                    "iata": iata,
-                    "icao": icao,
-                    "latitude": lat,
-                    "longitude": lon,
-                    "name": name,
-                    "wikipedia_url": wiki_url,
-                    "outdegree": outdegree
-                })
-            except Exception as e:
-                if verbose:
-                    print(f"Failed to process {fname}: {e}")
+        rows.append({
+            "iata":          data.get("iata",         ""),
+            "icao":          data.get("icao",         ""),
+            # Store as plain strings; let downstream tools cast to float.
+            "latitude":      data.get("latitude",     ""),
+            "longitude":     data.get("longitude",    ""),
+            "name":          data.get("name") or data.get("serves", ""),
+            "wikipedia_url": data.get("wikipedia_url", ""),
+            "outdegree":     len(data.get("destinations", [])),
+        })
 
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
     output_csv = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
 
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
-        fieldnames = ["iata", "icao", "latitude", "longitude", "name", "wikipedia_url", "outdegree"]
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
+        fieldnames = [
+            "iata", "icao", "latitude", "longitude",
+            "name", "wikipedia_url", "outdegree",
+        ]
+        # QUOTE_ALL avoids ambiguity: lat/lon stay as strings here and
+        # downstream code that needs floats should cast them explicitly.
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
-        for row in rows:
-            writer.writerow(row)
+        writer.writerows(rows)
 
     if verbose:
-        print(f"Exported {len(rows)} airports to {output_csv}")
+        print(f"Exported {len(rows):,} airports to {os.path.abspath(output_csv)}")
+        if skipped:
+            print(f"Skipped {skipped} unreadable files (see warnings above)")
 
     return output_csv
 
 
-def check_duplicated_iata_codes(verbose=False):
-    """
-    Check for and remove duplicate IATA code files, keeping the lowest distance version.
+###############################################################################
+# DEDUPLICATION
+###############################################################################
 
-    For each IATA code, if there are files with different distance levels
-    (e.g., YWG.0.json and YWG.1.json), removes the higher-level files and keeps
-    only the lowest level. This ensures each airport appears only once.
+def check_duplicated_iata_codes(verbose: bool = False) -> int:
+    """
+    Remove duplicate airport JSON files, keeping the lowest-distance version.
+
+    When the scraper revisits an airport at a greater distance from the seed
+    (e.g. both ``YWG.0.json`` and ``YWG.1.json`` exist), the higher-distance
+    file is deleted because the lower-distance file was scraped closer to the
+    seed and is considered more accurate.
 
     Parameters
     ----------
     verbose : bool, optional
-        If True, prints status messages (default: False)
+        If True, prints the name of each removed file.  Default: False.
+
+    Returns
+    -------
+    int
+        Number of duplicate files removed.
+
+    Raises
+    ------
+    FileNotFoundError
+        If ``TEMP_RESULTS_DIR`` does not exist.
 
     Notes
     -----
-    - This function modifies the file system by deleting files
-    - It's recommended to run this after Wikipedia scraping is complete
-    - Lower distance levels generally have more accurate data (closer to seed)
+    This function **modifies the filesystem** by deleting files.  Run it after
+    Wikipedia scraping is complete and before any processing steps.
     """
-    pattern = re.compile(r"^([A-Z0-9]{3})\.(\d+)\.json$")
-    files_by_iata = {}
+    if not os.path.isdir(TEMP_RESULTS_DIR):
+        raise FileNotFoundError(
+            f"Temporary results directory not found: {TEMP_RESULTS_DIR}\n"
+            "Run the Wikipedia scraping step first."
+        )
 
-    # Collect all files by IATA code
+    pattern = re.compile(r"^([A-Z]{3})\.(\d+)\.json$")
+    files_by_iata: dict = {}
+
     for fname in os.listdir(TEMP_RESULTS_DIR):
-        match = pattern.match(fname)
-        if match:
-            iata, level = match.group(1), int(match.group(2))
-            if iata not in files_by_iata:
-                files_by_iata[iata] = []
-            files_by_iata[iata].append((level, fname))
+        m = pattern.match(fname)
+        if m:
+            iata  = m.group(1)
+            level = int(m.group(2))
+            files_by_iata.setdefault(iata, []).append((level, fname))
 
-    removed_files = []
+    removed = 0
     for iata, files in files_by_iata.items():
-        if len(files) > 1:
-            # Sort by level, keep the lowest, remove the rest
-            files.sort()
-            to_remove = [fname for _, fname in files[1:]]
-            for fname in to_remove:
-                fpath = os.path.join(TEMP_RESULTS_DIR, fname)
-                try:
-                    os.remove(fpath)
-                    removed_files.append(fname)
-                    if verbose:
-                        print(f"Removed duplicate: {fname}")
-                except Exception as e:
-                    if verbose:
-                        print(f"Failed to remove {fname}: {e}")
+        if len(files) <= 1:
+            continue
+
+        files.sort()                                      # ascending by level
+        to_remove = [fname for _, fname in files[1:]]    # keep files[0]
+
+        for fname in to_remove:
+            fpath = os.path.join(TEMP_RESULTS_DIR, fname)
+            try:
+                os.remove(fpath)
+                removed += 1
+                if verbose:
+                    print(f"  Removed duplicate: {fname}")
+            except OSError as exc:
+                warnings.warn(
+                    f"Could not remove {fname}: {exc}",
+                    UserWarning, stacklevel=2,
+                )
 
     if verbose:
-        if removed_files:
-            print(f"Removed {len(removed_files)} duplicate files.")
+        if removed:
+            print(f"Removed {removed} duplicate file(s).")
         else:
             print("No duplicate IATA code files found.")
 
+    return removed
+
 
 ###############################################################################
-# TWO-PASS WORKFLOW FUNCTIONS
+# TWO-PASS WORKFLOW
 ###############################################################################
 
-def run_two_pass_iata_extraction(batch_size=50, delay=0.5, verbose=False):
+def run_two_pass_iata_extraction(
+    batch_size: int = 50,
+    delay: float = 0.5,
+    verbose: bool = False,
+) -> dict:
     """
-    Execute the two-pass workflow to maximize IATA code recovery.
+    Execute Passes 2 and 3 of the IATA recovery workflow.
 
-    This performs Passes 2 and 3 of the complete workflow:
-    - Pass 2: Scrape Wikipedia for unmapped destination URLs
-    - Pass 3: Create manual mapping file from scraped data
+    Assumes Pass 1 (:func:`~.connections.create_outbound_connections_list`)
+    has already been run and ``unmapped_destinations.csv`` exists.
 
-    Assumes Pass 1 (create_outbound_connections_list) has already been run.
+    Pass 2
+        Fetches each unmapped Wikipedia URL and extracts the IATA code.
+    Pass 3
+        Filters successful extractions by confidence and writes
+        ``manual_airport_mapping.csv`` for use in the next
+        :func:`~.connections.create_outbound_connections_list` call.
 
     Parameters
     ----------
     batch_size : int, optional
-        Number of URLs to process before pausing (default: 50)
+        Number of HTTP requests before a longer pause is inserted to respect
+        Wikipedia's servers.  Default: 50.
     delay : float, optional
-        Delay in seconds between requests (default: 0.5)
+        Per-request delay in seconds.  Default: 0.5.
     verbose : bool, optional
-        If True, prints detailed progress (default: False)
+        If True, prints detailed per-URL progress.  Default: False.
 
     Returns
     -------
     dict
-        Summary of extraction results:
-        - 'extraction_result': Result from extract_iata_from_unmapped_destinations()
-        - 'mapping_count': Number of entries in manual_airport_mapping.csv
+        ``{'extraction_result': dict, 'mapping_count': int}``
+
+        *extraction_result* is the dict returned by
+        :func:`~.extract_iata_from_wikipedia.extract_iata_from_unmapped_destinations`
+        (keys: ``total``, ``successful``, ``skipped``, ``failed``, ``csv_path``).
+
+        *mapping_count* is the number of entries written to
+        ``manual_airport_mapping.csv``.
     """
-
     if verbose:
-        print("\n" + "=" * 70)
+        print(f"\n{'=' * 70}")
         print("TWO-PASS IATA EXTRACTION WORKFLOW")
-        print("=" * 70)
-
-    # Pass 2: Scrape Wikipedia for IATA codes
-    if verbose:
-        print("\n[PASS 2] Scraping Wikipedia for unmapped IATA codes...")
-        print("(This takes ~15 minutes for 1,500+ URLs)\n")
+        print(f"{'=' * 70}")
+        print("\n[PASS 2] Scraping Wikipedia for unmapped IATA codes…")
+        print("(Allow ~15 minutes for 1 500+ URLs)\n")
 
     extraction_result = extract_iata_from_unmapped_destinations(
         batch_size=batch_size,
         delay=delay,
-        verbose=verbose
+        verbose=verbose,
     )
 
-    # Pass 3: Create manual mapping from scraped data
     if verbose:
-        print("\n[PASS 3] Creating manual_airport_mapping.csv...")
+        print("\n[PASS 3] Creating manual_airport_mapping.csv…")
 
     mapping_count = create_manual_mapping_from_scraped_data(
-        min_confidence=0.7,
-        verbose=verbose
+        min_confidence=0.70,
+        verbose=verbose,
     )
 
     return {
-        'extraction_result': extraction_result,
-        'mapping_count': mapping_count
+        "extraction_result": extraction_result,
+        "mapping_count":     mapping_count,
     }
 
 
 ###############################################################################
-# CONVENIENCE IMPORTS
+# Public surface
 ###############################################################################
 
+# Re-export the pipeline functions that live in sibling modules so that
+# callers can do `from wikipediaGATN.result_processing import *` and get
+# everything they need.  __init__.py is the canonical public API; the list
+# here mirrors it for completeness.
 __all__ = [
-    'export_all_airport_data',
-    'check_duplicated_iata_codes',
-    'create_outbound_connections_list',
-    'extract_iata_from_unmapped_destinations',
-    'create_manual_mapping_from_scraped_data',
-    'create_outbound_adjacency_matrix',
-    'run_two_pass_iata_extraction',
+    "export_all_airport_data",
+    "check_duplicated_iata_codes",
+    "run_two_pass_iata_extraction",
+    # Re-exported from sibling modules:
+    "create_outbound_connections_list",
+    "extract_iata_from_unmapped_destinations",
+    "create_manual_mapping_from_scraped_data",
+    "create_outbound_adjacency_matrix",
 ]
 
 
 ###############################################################################
-# MAIN EXECUTION
+# Command-line entry point
 ###############################################################################
 
-if __name__ == "__main__":
-    """
-    Complete pipeline for GATN generation with two-pass IATA extraction.
-    
-    Runs all 4+ passes:
-    1. Export airport metadata
-    2. Create initial connections list (identifies unmapped URLs)
-    3. Scrape Wikipedia for unmapped IATA codes
-    4. Create manual mapping from scraped data
-    5. Re-run connections with enriched data
-    6. Create adjacency matrices
-    """
+def _run_pipeline() -> None:
+    # Complete pipeline for GATN generation with two-pass IATA extraction.
+    #
+    # Steps:
+    #   1. Export airport metadata
+    #   2. Initial connections list  (Pass 1 — identifies unmapped URLs)
+    #   3. Scrape Wikipedia for unmapped IATA codes  (Pass 2)
+    #   4. Build manual mapping from scraped data    (Pass 3)
+    #   5. Re-run connections with enriched mappings (Pass 4)
+    #   6–7. Build asymmetric and symmetric adjacency matrices
+
     print("=" * 70)
     print("GLOBAL AIR TRANSPORTATION NETWORK (GATN)")
-    print("Complete Processing Pipeline with Two-Pass IATA Extraction")
+    print("Complete Processing Pipeline")
     print("=" * 70)
 
-    # Step 1: Export airport metadata
-    print("\n[STEP 1] Exporting airport metadata...")
-    export_csv = export_all_airport_data(verbose=True)
+    # Step 1 ----------------------------------------------------------------
+    print("\n[STEP 1] Exporting airport metadata…")
+    export_all_airport_data(verbose=True)
 
-    # Step 2: Create initial connections list (Pass 1 of two-pass workflow)
-    print("\n" + "=" * 70)
-    print("[STEP 2] Creating initial outbound connections list (Pass 1)...")
+    # Step 2 ----------------------------------------------------------------
+    print(f"\n{'=' * 70}")
+    print("[STEP 2] Creating initial outbound connections list…")
     connections_csv, unmapped_csv = create_outbound_connections_list(
         verbose=True,
-        export_unmapped=True
+        export_unmapped=True,
     )
 
-    # Step 3 & 4: Run two-pass IATA extraction
-    print("\n" + "=" * 70)
-    print("[STEPS 3-4] Running two-pass IATA extraction...")
-    print("(This will take approximately 20 minutes)")
+    # Steps 3–4 -------------------------------------------------------------
+    print(f"\n{'=' * 70}")
+    print("[STEPS 3–4] Running two-pass IATA extraction…")
+    print("(Approximately 20 minutes for a full global dataset)")
 
     try:
-        two_pass_result = run_two_pass_iata_extraction(
+        two_pass = run_two_pass_iata_extraction(
             batch_size=50,
             delay=0.5,
-            verbose=True
+            verbose=True,
         )
+        extraction    = two_pass["extraction_result"]
+        mapping_count = two_pass["mapping_count"]
 
-        extraction = two_pass_result['extraction_result']
-        mapping_count = two_pass_result['mapping_count']
-
-        if extraction['successful'] > 0:
-            # Step 5: Re-run connections with enriched data
-            print("\n" + "=" * 70)
-            print("[STEP 5] Re-running connections with enriched data...")
+        # Proceed to re-run whenever there was anything to process at all —
+        # even if all codes were already resolved from a prior run.
+        if extraction["total"] > 0:
+            # Step 5 --------------------------------------------------------
+            print(f"\n{'=' * 70}")
+            print("[STEP 5] Re-running connections with enriched mappings…")
             connections_csv, unmapped_csv = create_outbound_connections_list(
                 verbose=True,
-                export_unmapped=True
+                export_unmapped=True,
             )
-
-            # Step 6: Create adjacency matrices
-            print("\n" + "=" * 70)
-            print("[STEP 6] Creating adjacency matrix (non-symmetric)...")
-            matrix_npz, nodes_txt = create_outbound_adjacency_matrix(
-                symmetric=False,
-                verbose=True
-            )
-
-            print("\n" + "=" * 70)
-            print("[STEP 7] Creating adjacency matrix (symmetric)...")
-            matrix_sym_npz, nodes_sym_txt = create_outbound_adjacency_matrix(
-                symmetric=True,
-                verbose=True
-            )
-
-            print("\n" + "=" * 70)
-            print("✓ ALL PROCESSING COMPLETE!")
-            print("=" * 70)
-            print(f"\nTwo-Pass IATA Extraction Summary:")
-            print(f"  Successfully extracted: {extraction['successful']}/{extraction['total']}")
-            print(f"  Success rate: {extraction['successful']/extraction['total']*100:.1f}%")
-            print(f"  Manual mappings created: {mapping_count}")
-            print(f"\nOutput Files:")
-            print(f"  Connections: {connections_csv}")
-            print(f"  Matrix (asymmetric): {matrix_npz}")
-            print(f"  Matrix (symmetric): {matrix_sym_npz}")
         else:
-            print("\n⚠️ No unmapped URLs to extract. Skipping two-pass workflow.")
-            print("This is fine if you already have complete mappings.")
+            print("\n⚠️  unmapped_destinations.csv is empty — skipping re-run.")
+            print("    This is expected if all destinations were already resolved.")
 
-    except ImportError as e:
-        print(f"\n⚠️ Missing dependencies for two-pass extraction: {e}")
-        print("Install with: pip install requests beautifulsoup4")
-        print("\nContinuing with standard pipeline (steps 6-7)...")
+    except Exception:  # noqa: BLE001
+        # Print the full traceback so the user knows exactly what went wrong,
+        # then fall through to still produce the adjacency matrices from
+        # whatever connections data is already on disk.
+        print("\n✗ Two-pass extraction failed — see traceback below.")
+        traceback.print_exc()
+        print("\nContinuing with existing connections data…")
 
-        # Still create adjacency matrices with current connections
-        print("\n" + "=" * 70)
-        print("[STEP 6] Creating adjacency matrix (non-symmetric)...")
-        matrix_npz, nodes_txt = create_outbound_adjacency_matrix(
-            symmetric=False,
-            verbose=True
-        )
+    # Steps 6–7 -------------------------------------------------------------
+    print(f"\n{'=' * 70}")
+    print("[STEP 6] Creating adjacency matrix (directed)…")
+    matrix_npz, nodes_txt = create_outbound_adjacency_matrix(
+        symmetric=False,
+        verbose=True,
+    )
 
-        print("\n" + "=" * 70)
-        print("[STEP 7] Creating adjacency matrix (symmetric)...")
-        matrix_sym_npz, nodes_sym_txt = create_outbound_adjacency_matrix(
-            symmetric=True,
-            verbose=True
-        )
+    print(f"\n{'=' * 70}")
+    print("[STEP 7] Creating adjacency matrix (symmetric)…")
+    matrix_sym_npz, nodes_sym_txt = create_outbound_adjacency_matrix(
+        symmetric=True,
+        verbose=True,
+    )
 
-        print("\n" + "=" * 70)
-        print("✓ STANDARD PIPELINE COMPLETE")
-        print("=" * 70)
+    print(f"\n{'=' * 70}")
+    print("✓ PIPELINE COMPLETE")
+    print(f"{'=' * 70}")
+    print(f"\n  Connections CSV   : {connections_csv}")
+    print(f"  Matrix (directed) : {matrix_npz}")
+    print(f"  Matrix (symmetric): {matrix_sym_npz}")
 
-    except Exception as e:
-        print(f"\n✗ Error during two-pass extraction: {e}")
-        print("Continuing with standard pipeline...")
 
-        # Still create adjacency matrices
-        print("\n" + "=" * 70)
-        print("[STEP 6] Creating adjacency matrix (non-symmetric)...")
-        matrix_npz, nodes_txt = create_outbound_adjacency_matrix(
-            symmetric=False,
-            verbose=True
-        )
-
-        print("\n" + "=" * 70)
-        print("[STEP 7] Creating adjacency matrix (symmetric)...")
-        matrix_sym_npz, nodes_sym_txt = create_outbound_adjacency_matrix(
-            symmetric=True,
-            verbose=True
-        )
+if __name__ == "__main__":
+    _run_pipeline()

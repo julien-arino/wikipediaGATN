@@ -17,7 +17,6 @@ from scipy.sparse import load_npz
 
 from wikipediaGATN.adjacency import create_outbound_adjacency_matrix
 
-
 # ---------------------------------------------------------------------------
 # Fixtures
 # ---------------------------------------------------------------------------
@@ -206,6 +205,20 @@ class TestDirectedMatrix:
             symmetric=False, verbose=False
         )
         assert "ZZZ" in _load_nodes(nodes_path)
+
+    def test_single_self_loop_node(self, public_dir):
+        """A single node with only a self-loop is included in nodes but has no edges."""
+        _write_connections(public_dir, [
+            {"origin": "YWG", "nb_outlinks": 1, "outlinks": "YWG"},
+        ])
+        matrix_path, nodes_path = create_outbound_adjacency_matrix(
+            symmetric=False, verbose=False
+        )
+        nodes = _load_nodes(nodes_path)
+        assert nodes == ["YWG"]
+        matrix = load_npz(matrix_path)
+        assert matrix.shape == (1, 1)
+        assert matrix.nnz == 0
 
 
 # ---------------------------------------------------------------------------

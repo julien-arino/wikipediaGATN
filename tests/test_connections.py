@@ -17,13 +17,12 @@ from pathlib import Path
 import pytest
 
 from wikipediaGATN.connections import (
-    _normalize_url,
+    _build_url_to_iata_mapping,
     _extract_airport_name_from_url,
     _fuzzy_match_iata,
-    _build_url_to_iata_mapping,
+    _normalize_url,
     create_outbound_connections_list,
 )
-
 
 # ---------------------------------------------------------------------------
 # Fixtures

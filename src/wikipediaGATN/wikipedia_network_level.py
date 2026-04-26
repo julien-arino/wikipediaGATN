@@ -34,8 +34,8 @@ import warnings
 
 from .paths import TEMP_RESULTS_DIR
 from .wikipedia_airport_level import (
-    get_wikipedia_airport_page_link,
     extract_airport_information,
+    get_wikipedia_airport_page_link,
     save_airport_info,
 )
 

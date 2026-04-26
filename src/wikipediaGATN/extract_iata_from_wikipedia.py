@@ -18,6 +18,7 @@ import os
 import re
 import time
 import warnings
+from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -74,6 +75,23 @@ _SKIP_PHRASES = frozenset({
 # Private helpers
 # ---------------------------------------------------------------------------
 
+def _is_safe_wikipedia_url(url: str) -> bool:
+    """
+    Ensure the URL is a valid Wikipedia URL.
+
+    Checks that the scheme is 'https' and the domain is 'wikipedia.org'
+    or a subdomain of it (e.g., 'en.wikipedia.org', 'fr.wikipedia.org').
+    """
+    try:
+        parsed = urlparse(url)
+        if parsed.scheme != "https":
+            return False
+        domain = parsed.netloc.lower()
+        return domain == "wikipedia.org" or domain.endswith(".wikipedia.org")
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
     """
     Fetch a Wikipedia page and extract the airport's IATA code.
@@ -112,6 +130,12 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
         "extracted_text": None,
         "error":          None,
     }
+
+    if not _is_safe_wikipedia_url(url):
+        result["error"] = f"Invalid or unsafe URL: {url}"
+        if verbose:
+            print(f"    Validation failed: {url}")
+        return result
 
     try:
         response = requests.get(

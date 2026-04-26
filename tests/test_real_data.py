@@ -14,17 +14,15 @@ or run explicitly on a machine that has the data:
 
 import csv
 import os
-from pathlib import Path
 
 import pytest
 
-from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
-from wikipediaGATN.result_processing import (
-    export_all_airport_data,
-    check_duplicated_iata_codes,
-)
 from wikipediaGATN.connections import create_outbound_connections_list
-
+from wikipediaGATN.paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+from wikipediaGATN.result_processing import (
+    check_duplicated_iata_codes,
+    export_all_airport_data,
+)
 
 # ---------------------------------------------------------------------------
 # Module-level skip: all tests in this file require real scraped data.

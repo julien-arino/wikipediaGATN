@@ -30,6 +30,11 @@ logger = logging.getLogger(__name__)
 _FNAME_IATA_RE  = re.compile(r"^([A-Z]{3})\.(\d+)\.json$")
 _FNAME_WIKI_RE  = re.compile(r"^(wiki_[A-Za-z0-9_]+)\.(\d+)\.json$")
 
+# Patterns for extracting airport names from Wikipedia URLs
+_WIKI_PATH_RE   = re.compile(r"/wiki/(.+?)(?:\?|$)")
+_CLEAN_NAME_RE  = re.compile(r"[_\-\u2013\u2014]")
+_AIRPORT_SUFFIX_RE = re.compile(r"\s+(?:International\s+|National\s+)?Airport$", re.IGNORECASE)
+
 
 # ---------------------------------------------------------------------------
 # Private helpers
@@ -81,15 +86,13 @@ def _extract_airport_name_from_url(url: str):
     if not url:
         return None
 
-    m = re.search(r"/wiki/(.+?)(?:\?|$)", url)
+    m = _WIKI_PATH_RE.search(url)
     if not m:
         return None
 
     name = unquote(m.group(1))
-    name = re.sub(r"[_\-\u2013\u2014]", " ", name)   # –, —, -, _
-    name = re.sub(r"\s+International\s+Airport$", "", name, flags=re.IGNORECASE)
-    name = re.sub(r"\s+National\s+Airport$",      "", name, flags=re.IGNORECASE)
-    name = re.sub(r"\s+Airport$",                 "", name, flags=re.IGNORECASE)
+    name = _CLEAN_NAME_RE.sub(" ", name)
+    name = _AIRPORT_SUFFIX_RE.sub("", name)
 
     name = name.strip()
     return name if name else None

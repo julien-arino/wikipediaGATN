@@ -1,15 +1,25 @@
-import sys
-from unittest.mock import MagicMock
+"""
+Pytest configuration and shared fixtures for wikipediaGATN tests.
 
-# Global mocking of dependencies to allow import in this environment
-mock_mods = [
-    "pandas", "numpy", "scipy", "scipy.sparse", "requests",
-    "bs4", "mwparserfromhell", "pycountry", "geopy", "geopy.point"
-]
-for mod in mock_mods:
-    sys.modules[mod] = MagicMock()
-if "requests.exceptions" not in sys.modules:
-    sys.modules["requests.exceptions"] = MagicMock()
+Custom markers
+--------------
+network
+    Tests that require a live internet connection or real scraped data on disk.
+    Skip them in CI with:
+
+        pytest -m "not network"
+
+    Run them explicitly with:
+
+        pytest -m network
+
+Isolation
+---------
+The ``public_dir`` and ``tmp_results_dir`` fixtures in the individual test
+modules monkeypatch the module-level ``PUBLIC_DATA_DIR`` and
+``TEMP_RESULTS_DIR`` path constants so that no test ever touches the real
+``data/`` directory.
+"""
 
 import pytest
 

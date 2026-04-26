@@ -19,15 +19,15 @@ __author_email__ = "julien.arino@umanitoba.ca, Adriana-Stefania.Ciupeanu@umanito
 __license__ = "MIT"
 
 # Import main public functions
-from .connections import create_outbound_connections_list
 from .adjacency import create_outbound_adjacency_matrix
+from .connections import create_outbound_connections_list
 from .extract_iata_from_wikipedia import (
-    extract_iata_from_unmapped_destinations,
     create_manual_mapping_from_scraped_data,
+    extract_iata_from_unmapped_destinations,
 )
 from .result_processing import (
-    export_all_airport_data,
     check_duplicated_iata_codes,
+    export_all_airport_data,
     run_two_pass_iata_extraction,
 )
 

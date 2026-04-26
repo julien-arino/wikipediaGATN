@@ -17,7 +17,6 @@ from scipy.sparse import load_npz
 
 from wikipediaGATN.adjacency import create_outbound_adjacency_matrix
 
-
 # ---------------------------------------------------------------------------
 # Fixtures
 # ---------------------------------------------------------------------------

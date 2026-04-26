@@ -21,6 +21,7 @@ modules monkeypatch the module-level ``PUBLIC_DATA_DIR`` and
 ``data/`` directory.
 """
 
+import pytest
 
 
 def pytest_configure(config):

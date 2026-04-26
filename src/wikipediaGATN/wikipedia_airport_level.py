@@ -312,6 +312,7 @@ def extract_airlines_from_airport(
     link=None,
     html_content=None,
     verbose: bool = False,
+    soup=None,
 ) -> set:
     """
     Extract airline names from an airport's Wikipedia page.
@@ -326,17 +327,20 @@ def extract_airlines_from_airport(
         Pre-fetched HTML (fetched automatically if absent).
     verbose : bool, optional
         Print progress.  Default: False.
+    soup : BeautifulSoup or None, optional
+        Pre-parsed BeautifulSoup object.  Default: None.
 
     Returns
     -------
     set of str
         Airline names extracted from the *Airlines and destinations* table.
     """
-    link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
-    if not html_content:
-        return set()
+    if soup is None:
+        link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
+        if not html_content:
+            return set()
+        soup = BeautifulSoup(html_content, 'html.parser')
 
-    soup     = BeautifulSoup(html_content, 'html.parser')
     airlines = set()
 
     for header in soup.find_all(['h2', 'h3', 'h4']):
@@ -377,6 +381,7 @@ def extract_destinations_from_airport(
     link=None,
     html_content=None,
     verbose: bool = False,
+    soup=None,
 ) -> set:
     """
     Extract destination (name, Wikipedia URL) pairs from an airport page.
@@ -391,17 +396,20 @@ def extract_destinations_from_airport(
         Pre-fetched HTML (fetched automatically if absent).
     verbose : bool, optional
         Print progress.  Default: False.
+    soup : BeautifulSoup or None, optional
+        Pre-parsed BeautifulSoup object.  Default: None.
 
     Returns
     -------
     set of tuple[str, str]
         ``(destination_name, wikipedia_url)`` pairs.
     """
-    link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
-    if not html_content:
-        return set()
+    if soup is None:
+        link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
+        if not html_content:
+            return set()
+        soup = BeautifulSoup(html_content, 'html.parser')
 
-    soup         = BeautifulSoup(html_content, 'html.parser')
     destinations = set()
 
     for header in soup.find_all(['h2', 'h3', 'h4']):
@@ -447,6 +455,7 @@ def extract_airlines_destinations_from_airport(
     link=None,
     html_content=None,
     verbose: bool = False,
+    soup=None,
 ) -> dict:
     """
     Extract an airline to destinations mapping from an airport's Wikipedia page.
@@ -464,17 +473,20 @@ def extract_airlines_destinations_from_airport(
         Pre-fetched HTML (fetched automatically if absent).
     verbose : bool, optional
         Print progress.  Default: False.
+    soup : BeautifulSoup or None, optional
+        Pre-parsed BeautifulSoup object.  Default: None.
 
     Returns
     -------
     dict[str, set[str]]
         ``{airline_name: {destination_name, ...}, ...}``
     """
-    link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
-    if not html_content:
-        return {}
+    if soup is None:
+        link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
+        if not html_content:
+            return {}
+        soup = BeautifulSoup(html_content, 'html.parser')
 
-    soup             = BeautifulSoup(html_content, 'html.parser')
     airline_dest_map: dict = {}
 
     for header in soup.find_all(['h2', 'h3', 'h4']):
@@ -533,7 +545,9 @@ def extract_airlines_destinations_from_airport(
     if not airline_dest_map:
         if verbose:
             print("No table data found — trying NLP fallback...")
-        for org, gpe in fallback_nlp_extract_airlines_destinations(html_content, verbose=verbose):
+        for org, gpe in fallback_nlp_extract_airlines_destinations(
+            html_content, verbose=verbose, soup=soup
+        ):
             airline_dest_map.setdefault(org, set()).add(gpe)
 
     return airline_dest_map
@@ -636,12 +650,14 @@ def extract_airport_information(
         'airlines_destinations': set(),
     }
 
+    soup = BeautifulSoup(html_content, 'html.parser') if html_content else None
+
     info['airlines']     = extract_airlines_from_airport(
-        link=link, html_content=html_content, verbose=verbose)
+        link=link, html_content=html_content, verbose=verbose, soup=soup)
     info['destinations'] = extract_destinations_from_airport(
-        link=link, html_content=html_content, verbose=verbose)
+        link=link, html_content=html_content, verbose=verbose, soup=soup)
     ad_map               = extract_airlines_destinations_from_airport(
-        link=link, html_content=html_content, verbose=verbose)
+        link=link, html_content=html_content, verbose=verbose, soup=soup)
 
     # Normalise to JSON-serialisable types
     if isinstance(info['airlines'], set):
@@ -779,6 +795,7 @@ def parse_lat_lon_from_string(coord_string: str):
 def fallback_nlp_extract_airlines_destinations(
     html_content: str,
     verbose: bool = False,
+    soup=None,
 ) -> set:
     """
     Use spaCy NER to extract (airline, destination) pairs as a last resort.
@@ -789,6 +806,8 @@ def fallback_nlp_extract_airlines_destinations(
         Parsed HTML of the airport Wikipedia page.
     verbose : bool, optional
         Print match counts.  Default: False.
+    soup : BeautifulSoup or None, optional
+        Pre-parsed BeautifulSoup object.  Default: None.
 
     Returns
     -------
@@ -811,7 +830,9 @@ def fallback_nlp_extract_airlines_destinations(
         )
         return set()
 
-    soup    = BeautifulSoup(html_content, 'html.parser')
+    if soup is None:
+        soup = BeautifulSoup(html_content, 'html.parser')
+
     section = soup.find(
         lambda tag: tag.name in ['h2', 'h3', 'h4']
         and 'airline' in tag.get_text(strip=True).lower()

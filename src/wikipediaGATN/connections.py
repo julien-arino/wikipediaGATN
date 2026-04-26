@@ -7,6 +7,7 @@ URLs to a CSV for later processing via web scraping.
 """
 
 import csv
+import functools
 import json
 import logging
 import os
@@ -23,23 +24,26 @@ from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
-# Filename patterns for the two allowed JSON file shapes:
-#   - Standard IATA:  YWG.0.json
-#   - Wiki-prefixed:  wiki_Winnipeg_Richardson.0.json
+# Pre-compiled regular expressions for performance
 # ---------------------------------------------------------------------------
+# Filename patterns for the two allowed JSON file shapes
 _FNAME_IATA_RE  = re.compile(r"^([A-Z]{3})\.(\d+)\.json$")
 _FNAME_WIKI_RE  = re.compile(r"^(wiki_[A-Za-z0-9_]+)\.(\d+)\.json$")
 
-# Patterns for extracting airport names from Wikipedia URLs
+# URL and airport name extraction patterns
 _WIKI_PATH_RE   = re.compile(r"/wiki/(.+?)(?:\?|$)")
-_CLEAN_NAME_RE  = re.compile(r"[_\-\u2013\u2014]")
-_AIRPORT_SUFFIX_RE = re.compile(r"\s+(?:International\s+|National\s+)?Airport$", re.IGNORECASE)
+_CLEAN_CHARS_RE = re.compile(r"[_\-\u2013\u2014]")
+_AIRPORT_SUFFIX_RE = re.compile(
+    r"\s+(?:(?:International|National)\s+)?Airport$",
+    flags=re.IGNORECASE
+)
 
 
 # ---------------------------------------------------------------------------
 # Private helpers
 # ---------------------------------------------------------------------------
 
+@functools.lru_cache(maxsize=1024)
 def _normalize_url(url: str) -> str:
     """
     Normalize a Wikipedia URL for consistent dictionary lookup.
@@ -91,14 +95,16 @@ def _extract_airport_name_from_url(url: str):
         return None
 
     name = unquote(m.group(1))
-    name = _CLEAN_NAME_RE.sub(" ", name)
+    name = _CLEAN_CHARS_RE.sub(" ", name)
+    # Combine suffix removals into a single pass
     name = _AIRPORT_SUFFIX_RE.sub("", name)
 
     name = name.strip()
     return name if name else None
 
 
-def _fuzzy_match_iata(airport_name: str, name_to_iata: dict):
+@functools.lru_cache(maxsize=1024)
+def _fuzzy_match_iata(airport_name: str, name_to_iata_items: frozenset):
     """
     Find the best IATA code for *airport_name* using fuzzy string matching.
 
@@ -114,8 +120,8 @@ def _fuzzy_match_iata(airport_name: str, name_to_iata: dict):
     ----------
     airport_name : str
         Human-readable airport name extracted from a URL.
-    name_to_iata : dict
-        Mapping of ``{airport_name_lower: iata_code}``.
+    name_to_iata_items : frozenset
+        Frozenset of ``(airport_name_lower, iata_code)`` tuples.
 
     Returns
     -------
@@ -123,7 +129,7 @@ def _fuzzy_match_iata(airport_name: str, name_to_iata: dict):
         ``(best_iata_code, best_ratio)`` if a match above threshold is found,
         ``(None, best_ratio)`` otherwise.
     """
-    if not airport_name or not name_to_iata:
+    if not airport_name or not name_to_iata_items:
         return None, 0.0
 
     # Threshold raised from 0.6 → 0.75 to reduce false-positive matches
@@ -133,7 +139,7 @@ def _fuzzy_match_iata(airport_name: str, name_to_iata: dict):
     best_ratio = 0.0
     query      = airport_name.lower()
 
-    for stored_name, iata in name_to_iata.items():
+    for stored_name, iata in name_to_iata_items:
         ratio = SequenceMatcher(None, query, stored_name.lower()).ratio()
         if ratio > best_ratio:
             best_ratio = ratio
@@ -195,16 +201,23 @@ def _load_csv_mapping(path: str, url_col: str, iata_col: str, name_col: str = No
 
     df = df.dropna(subset=[url_col, iata_col])
 
-    # Single pass — build both dicts at once
-    for _, row in df.iterrows():
-        url  = _normalize_url(str(row[url_col]))
-        iata = str(row[iata_col]).strip().upper()
-        if url and iata:
-            url_to_iata[url] = iata
-        if name_col and name_col in df.columns and pd.notna(row.get(name_col)):
-            name = str(row[name_col]).strip()
-            if name and iata:
-                name_to_iata[name] = iata
+    # Single pass — build both dicts at once using zip() for speed
+    if name_col and name_col in df.columns:
+        for url_val, iata_val, name_val in zip(df[url_col], df[iata_col], df[name_col]):
+            url  = _normalize_url(str(url_val))
+            iata = str(iata_val).strip().upper()
+            if url and iata:
+                url_to_iata[url] = iata
+            if pd.notna(name_val):
+                name = str(name_val).strip()
+                if name and iata:
+                    name_to_iata[name] = iata
+    else:
+        for url_val, iata_val in zip(df[url_col], df[iata_col]):
+            url  = _normalize_url(str(url_val))
+            iata = str(iata_val).strip().upper()
+            if url and iata:
+                url_to_iata[url] = iata
 
     if verbose:
         print(f"  {label}: loaded {len(url_to_iata):,} URL mappings"
@@ -406,6 +419,9 @@ def create_outbound_connections_list(
         print(f"  Total name mappings: {len(name_to_iata):,}\n")
         print("Processing airport JSON files...")
 
+    # Optimization: Convert name mapping to a frozenset once for cached matching
+    name_to_iata_items = frozenset(name_to_iata.items())
+
     # ------------------------------------------------------------------
     # Process each JSON file
     # ------------------------------------------------------------------
@@ -454,7 +470,7 @@ def create_outbound_connections_list(
             or []
         )
 
-        outlinks: list = []
+        outlinks: set = set()
         for dest in destinations:
             dest_url = None
 
@@ -473,20 +489,16 @@ def create_outbound_connections_list(
             if not dest_iata:
                 airport_name = _extract_airport_name_from_url(dest_url)
                 if airport_name:
-                    dest_iata, _ = _fuzzy_match_iata(airport_name, name_to_iata)
+                    dest_iata, _ = _fuzzy_match_iata(airport_name, name_to_iata_items)
 
             if dest_iata:
-                outlinks.append(dest_iata)
+                outlinks.add(dest_iata)
             else:
                 unmapped_destinations[dest_url] += 1
 
-        # Deduplicate and sort destination codes
-        outlinks = sorted(set(outlinks))
-
         airport_connections[origin_iata] = {
             "origin"      : origin_iata,
-            "nb_outlinks" : len(outlinks),
-            "outlinks"    : " ".join(outlinks),
+            "outlinks"    : outlinks,
             "_distance"   : distance,
         }
 
@@ -523,10 +535,18 @@ def create_outbound_connections_list(
         )
         writer.writeheader()
         for row in connections:
-            writer.writerow({k: v for k, v in row.items() if not k.startswith("_")})
+            # Finalize outlinks: sort the set and join with spaces
+            outlinks_sorted = sorted(row["outlinks"])
+
+            # Prepare row for CSV: exclude internal fields but include processed outlinks
+            csv_row = {k: v for k, v in row.items() if not k.startswith("_")}
+            csv_row["nb_outlinks"] = len(outlinks_sorted)
+            csv_row["outlinks"]    = " ".join(outlinks_sorted)
+
+            writer.writerow(csv_row)
 
     if verbose:
-        total = sum(c["nb_outlinks"] for c in connections)
+        total = sum(len(c["outlinks"]) for c in connections)
         print(f"\n{'=' * 70}")
         print(" CONNECTIONS EXPORT COMPLETE")
         print(f"{'=' * 70}")

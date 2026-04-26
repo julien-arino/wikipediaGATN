@@ -29,6 +29,7 @@ import csv
 import json
 import os
 import re
+import logging
 import urllib.parse
 import warnings
 
@@ -39,6 +40,8 @@ from bs4 import BeautifulSoup
 from geopy.point import Point
 
 from .paths import TEMP_RESULTS_DIR
+
+logger = logging.getLogger(__name__)
 
 __all__ = [
     "get_wikipedia_airport_page_link",
@@ -150,12 +153,10 @@ def get_wikipedia_airport_page_link(identifier: str, verbose: bool = False):
         response.raise_for_status()
         results = response.json().get("query", {}).get("search", [])
     except requests.exceptions.RequestException as exc:
-        warnings.warn(f"Wikipedia search failed for {identifier!r}: {exc}",
-                      UserWarning, stacklevel=2)
+        logger.warning("Wikipedia search failed for %r", identifier, exc_info=exc)
         return None
     except (KeyError, ValueError) as exc:
-        warnings.warn(f"Could not parse search response for {identifier!r}: {exc}",
-                      UserWarning, stacklevel=2)
+        logger.warning("Could not parse search response for %r", identifier, exc_info=exc)
         return None
 
     if not results:
@@ -220,11 +221,10 @@ def get_wikipedia_airport_page_html(link: str, verbose: bool = False):
             print(f"Fetched HTML for {page_title!r} ({len(html):,} chars)")
         return html
     except requests.exceptions.RequestException as exc:
-        warnings.warn(f"Error fetching HTML for {link!r}: {exc}", UserWarning, stacklevel=2)
+        logger.warning("Error fetching HTML for %r", link, exc_info=exc)
         return None
     except (KeyError, ValueError) as exc:
-        warnings.warn(f"Could not parse HTML response for {page_title!r}: {exc}",
-                      UserWarning, stacklevel=2)
+        logger.warning("Could not parse HTML response for %r", page_title, exc_info=exc)
         return None
 
 
@@ -275,11 +275,10 @@ def get_wikipedia_airport_page_wikitext(link: str, verbose: bool = False):
                       UserWarning, stacklevel=2)
         return None
     except requests.exceptions.RequestException as exc:
-        warnings.warn(f"Error fetching wikitext for {link!r}: {exc}", UserWarning, stacklevel=2)
+        logger.warning("Error fetching wikitext for %r", link, exc_info=exc)
         return None
     except (KeyError, ValueError) as exc:
-        warnings.warn(f"Could not parse wikitext response for {page_title!r}: {exc}",
-                      UserWarning, stacklevel=2)
+        logger.warning("Could not parse wikitext response for %r", page_title, exc_info=exc)
         return None
 
 

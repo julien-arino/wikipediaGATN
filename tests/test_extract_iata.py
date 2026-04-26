@@ -11,18 +11,16 @@ Patch target for ``requests.get``:
 """
 
 import csv
-import os
-import tempfile
+from unittest.mock import Mock, patch
 
 import pytest
 import requests
 import requests.exceptions
-from unittest.mock import Mock, patch
 
 from wikipediaGATN.extract_iata_from_wikipedia import (
     _extract_iata_from_wikipedia_page,
-    extract_iata_from_unmapped_destinations,
     create_manual_mapping_from_scraped_data,
+    extract_iata_from_unmapped_destinations,
 )
 
 # Correct patch target — must match the ``import requests`` binding inside

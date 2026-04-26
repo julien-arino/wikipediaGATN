@@ -19,7 +19,7 @@ from urllib.parse import unquote
 
 import pandas as pd
 
-from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
+from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 
 logger = logging.getLogger(__name__)
 

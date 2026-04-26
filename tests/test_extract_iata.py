@@ -11,18 +11,16 @@ Patch target for ``requests.get``:
 """
 
 import csv
-import os
-import tempfile
+from unittest.mock import Mock, patch
 
 import pytest
 import requests
 import requests.exceptions
-from unittest.mock import Mock, patch
 
 from wikipediaGATN.extract_iata_from_wikipedia import (
     _extract_iata_from_wikipedia_page,
-    extract_iata_from_unmapped_destinations,
     create_manual_mapping_from_scraped_data,
+    extract_iata_from_unmapped_destinations,
 )
 
 # Correct patch target — must match the ``import requests`` binding inside
@@ -74,7 +72,7 @@ class TestExtractIataFromWikipediaPage:
         mock_get.return_value = _make_response(
             b"<p>Airport (IATA: YYZ, ICAO: CYYZ)</p>"
         )
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         assert result["iata"] == "YYZ"
         assert result["icao"] == "CYYZ"
 
@@ -84,7 +82,7 @@ class TestExtractIataFromWikipediaPage:
         mock_get.return_value = _make_response(
             b"<p>This page has no airport codes at all.</p>"
         )
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         assert result["iata"] is None
         assert result["confidence"] == 0.0
 
@@ -92,7 +90,7 @@ class TestExtractIataFromWikipediaPage:
     def test_network_error_returns_error_dict(self, mock_get):
         """``requests.exceptions.ConnectionError`` is caught; returns error dict."""
         mock_get.side_effect = requests.exceptions.ConnectionError("timeout")
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         assert result["iata"] is None
         assert result["error"] is not None
 
@@ -102,7 +100,7 @@ class TestExtractIataFromWikipediaPage:
         r = Mock()
         r.raise_for_status.side_effect = requests.exceptions.HTTPError("404")
         mock_get.return_value = r
-        result = _extract_iata_from_wikipedia_page("https://example.com/missing")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/missing")
         assert result["iata"] is None
         assert result["error"] is not None
 
@@ -116,7 +114,7 @@ class TestExtractIataFromWikipediaPage:
                 <p>Third paragraph (IATA: YUL, ICAO: CYUL)</p>
             </body></html>
         """)
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         assert result["iata"] == "YUL"
 
     @patch(_REQUESTS_GET)
@@ -125,7 +123,7 @@ class TestExtractIataFromWikipediaPage:
         mock_get.return_value = _make_response(
             b"<p>(IATA: LONG)</p>"
         )
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         assert result["iata"] != "LONG"
 
     @patch(_REQUESTS_GET)
@@ -134,7 +132,7 @@ class TestExtractIataFromWikipediaPage:
         mock_get.return_value = _make_response(
             b"<p>This article may refer to multiple airports including YYZ.</p>"
         )
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         # Disambiguation guard should prevent a confident extraction
         assert result["iata"] is None or result["confidence"] < 0.9
 
@@ -142,9 +140,15 @@ class TestExtractIataFromWikipediaPage:
     def test_result_keys_always_present(self, mock_get):
         """Result dict always contains all expected keys regardless of outcome."""
         mock_get.return_value = _make_response(b"<p>no code</p>")
-        result = _extract_iata_from_wikipedia_page("https://example.com")
+        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         for key in ("iata", "icao", "confidence", "extracted_text", "error"):
             assert key in result
+
+    def test_unsafe_url_returns_validation_error(self):
+        """An unsafe URL should be rejected before any network request."""
+        result = _extract_iata_from_wikipedia_page("http://example.com")
+        assert result["iata"] is None
+        assert "Invalid or unsafe URL" in result["error"]
 
 
 # ---------------------------------------------------------------------------

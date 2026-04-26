@@ -29,13 +29,13 @@ import re
 import traceback
 import warnings
 
-from .paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
-from .connections import create_outbound_connections_list
 from .adjacency import create_outbound_adjacency_matrix
+from .connections import create_outbound_connections_list
 from .extract_iata_from_wikipedia import (
-    extract_iata_from_unmapped_destinations,
     create_manual_mapping_from_scraped_data,
+    extract_iata_from_unmapped_destinations,
 )
+from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 
 logger = logging.getLogger(__name__)
 
@@ -352,7 +352,7 @@ def _run_pipeline() -> None:
             delay=0.5,
             verbose=True,
         )
-        extraction = two_pass["extraction_result"]
+        extraction    = two_pass["extraction_result"]
 
         # Proceed to re-run whenever there was anything to process at all —
         # even if all codes were already resolved from a prior run.

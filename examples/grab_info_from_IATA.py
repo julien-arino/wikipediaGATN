@@ -1,22 +1,16 @@
-import sys
 import json
-
-import mwparserfromhell
-import wikitextparser as wtp
-
-from wikipediaGATN.paths import TEMP_RESULTS_DIR, PUBLIC_DATA_DIR
+import sys
 
 from wikipediaGATN.wikipedia_airport_level import (
-    get_wikipedia_airport_page_link,
-    extract_airport_information,
-    get_wikipedia_airport_page_wikitext,
-    parse_infobox_from_wikitext,
+    convert_sets_to_lists,
     extract_airlines_destinations_from_wikitext,
     extract_airlines_from_airlines_dest_dict,
+    extract_airport_information,
     extract_destinations_from_airlines_dest_dict,
-    convert_sets_to_lists
+    get_wikipedia_airport_page_link,
+    get_wikipedia_airport_page_wikitext,
+    parse_infobox_from_wikitext,
 )
-
 
 if __name__ == "__main__":
     # Set the airport we want to play with.

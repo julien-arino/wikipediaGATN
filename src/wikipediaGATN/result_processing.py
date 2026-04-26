@@ -352,8 +352,7 @@ def _run_pipeline() -> None:
             delay=0.5,
             verbose=True,
         )
-        extraction    = two_pass["extraction_result"]
-        mapping_count = two_pass["mapping_count"]
+        extraction = two_pass["extraction_result"]
 
         # Proceed to re-run whenever there was anything to process at all —
         # even if all codes were already resolved from a prior run.

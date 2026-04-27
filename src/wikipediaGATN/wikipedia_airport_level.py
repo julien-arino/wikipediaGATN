@@ -210,6 +210,7 @@ def get_wikipedia_airport_page_html(link: str, verbose: bool = False):
         "prop":          "text",
         "format":        "json",
         "formatversion": "2",
+        "redirects":     1,
     }
     try:
         response = _SESSION.get(_API_URL, params=params, timeout=20)
@@ -260,6 +261,7 @@ def get_wikipedia_airport_page_wikitext(link: str, verbose: bool = False):
         "titles":   page_title,
         "rvslots":  "*",
         "rvprop":   "content",
+        "redirects": 1,
     }
     try:
         response = _SESSION.get(_API_URL, params=params, timeout=20)

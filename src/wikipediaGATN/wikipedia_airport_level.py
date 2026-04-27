@@ -127,6 +127,7 @@ def get_wikipedia_airport_page_link(identifier: str, verbose: bool = False):
         search_term = urllib.parse.unquote(m.group(1)).replace('_', ' ')
         if verbose:
             print(f"Extracted page title from URL: {search_term}")
+        return f"https://en.wikipedia.org/wiki/{search_term.replace(' ', '_')}"
     # 2. IATA (3-letter) or ICAO (4-letter)
     elif re.fullmatch(r'[A-Za-z]{3,4}', identifier):
         search_term = f"{identifier.upper()} airport"
@@ -909,6 +910,7 @@ def clean_infobox_value(value: str) -> str:
     str
         Cleaned string with wikilinks preserved as ``[[X]]``.
     """
+    value = re.sub(r'<!--.*?-->', '', value, flags=re.DOTALL)
     wikicode = mwparserfromhell.parse(value)
     for template in wikicode.filter_templates(recursive=True):
         name = template.name.strip().lower()
@@ -974,9 +976,10 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
     region: str | None = None
 
     for line in infobox_text.split('\n'):
-        if not line.startswith('|'):
+        line_stripped = line.strip()
+        if not line_stripped.startswith('|'):
             continue
-        parts = line[1:].split('=', 1)
+        parts = line_stripped[1:].split('=', 1)
         if len(parts) != 2:
             continue
         key, value = parts[0].strip(), parts[1].strip()
@@ -1077,6 +1080,7 @@ def extract_airlines_destinations_from_wikitext(wikitext: str) -> dict:
                 continue
 
             # Resolve destinations — only accept wikilinks
+            dests_raw = re.sub(r'<ref.*?</ref>', '', dests_raw, flags=re.DOTALL).strip()
             dest_wikicode = mwparserfromhell.parse(dests_raw)
             dest_objs = [
                 {

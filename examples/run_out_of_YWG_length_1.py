@@ -9,7 +9,6 @@ from wikipediaGATN.wikipedia_airport_level import (
 )
 from wikipediaGATN.wikipedia_network_level import (
     clean_output_directory,
-    convert_sets_to_lists,
     iterate_search_until_distance_N,
 )
 
@@ -27,5 +26,3 @@ if __name__ == "__main__":
     print("Running for a distance of 1...")
     iterate_search_until_distance_N(seed_iata=test_IATA, dist=1, delay=0.5, verbose=verbose)
 
-    airport_info = convert_sets_to_lists(airport_info)
-    json.dump(airport_info, f, ensure_ascii=False, indent=2)

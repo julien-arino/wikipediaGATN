@@ -346,7 +346,13 @@ def extract_airlines_from_airport(
         header_text = header.get_text(strip=True).lower()
         if 'airlines' not in header_text or 'destination' not in header_text:
             continue
-        table = header.find_next('table')
+        table = None
+        for tbl in header.find_all_next('table'):
+            classes = tbl.get('class', [])
+            if any('ambox' in c or 'box' in c for c in classes):
+                continue
+            table = tbl
+            break
         if not table:
             break
         header_row = table.find('tr')
@@ -415,7 +421,13 @@ def extract_destinations_from_airport(
         header_text = header.get_text(strip=True).lower()
         if 'airlines' not in header_text or 'destination' not in header_text:
             continue
-        table = header.find_next('table')
+        table = None
+        for tbl in header.find_all_next('table'):
+            classes = tbl.get('class', [])
+            if any('ambox' in c or 'box' in c for c in classes):
+                continue
+            table = tbl
+            break
         if not table:
             break
         header_row = table.find('tr')
@@ -492,7 +504,13 @@ def extract_airlines_destinations_from_airport(
         header_text = header.get_text(strip=True).lower()
         if 'airlines' not in header_text or 'destination' not in header_text:
             continue
-        table = header.find_next('table')
+        table = None
+        for tbl in header.find_all_next('table'):
+            classes = tbl.get('class', [])
+            if any('ambox' in c or 'box' in c for c in classes):
+                continue
+            table = tbl
+            break
         if not table:
             break
         header_row = table.find('tr')
@@ -649,21 +667,34 @@ def extract_airport_information(
         'airlines_destinations': set(),
     }
 
-    soup = BeautifulSoup(html_content, 'html.parser') if html_content else None
+    ad_map_wikitext = extract_airlines_destinations_from_wikitext(wikitext)
+    if ad_map_wikitext:
+        info['airlines'] = sorted(ad_map_wikitext.keys())
+        info['destinations'] = sorted({
+            (d["name"], d["wikipedia_url"])
+            for dests in ad_map_wikitext.values()
+            for d in dests
+        })
+        info['airlines_destinations'] = {
+            airline: sorted({d["name"] for d in dests})
+            for airline, dests in ad_map_wikitext.items()
+        }
+    else:
+        soup = BeautifulSoup(html_content, 'html.parser') if html_content else None
 
-    info['airlines']     = extract_airlines_from_airport(
-        link=link, html_content=html_content, verbose=verbose, soup=soup)
-    info['destinations'] = extract_destinations_from_airport(
-        link=link, html_content=html_content, verbose=verbose, soup=soup)
-    ad_map               = extract_airlines_destinations_from_airport(
-        link=link, html_content=html_content, verbose=verbose, soup=soup)
+        info['airlines']     = extract_airlines_from_airport(
+            link=link, html_content=html_content, verbose=verbose, soup=soup)
+        info['destinations'] = extract_destinations_from_airport(
+            link=link, html_content=html_content, verbose=verbose, soup=soup)
+        ad_map               = extract_airlines_destinations_from_airport(
+            link=link, html_content=html_content, verbose=verbose, soup=soup)
 
-    # Normalise to JSON-serialisable types
-    if isinstance(info['airlines'], set):
-        info['airlines'] = sorted(info['airlines'])
-    if isinstance(info['destinations'], set):
-        info['destinations'] = sorted(info['destinations'])
-    info['airlines_destinations'] = {k: sorted(v) for k, v in ad_map.items()}
+        # Normalise to JSON-serialisable types
+        if isinstance(info['airlines'], set):
+            info['airlines'] = sorted(info['airlines'])
+        if isinstance(info['destinations'], set):
+            info['destinations'] = sorted(info['destinations'])
+        info['airlines_destinations'] = {k: sorted(v) for k, v in ad_map.items()}
 
     return info
 
@@ -1013,23 +1044,19 @@ def extract_airlines_destinations_from_wikitext(wikitext: str) -> dict:
     dict[str, list[dict]]
         ``{airline_name: [{"name": str, "wikipedia_url": str}, ...], ...}``
     """
-    # Pre-clean: strip refs, unwrap {{nowrap|...}}, normalise piped wikilinks
-    clean = re.sub(r'<ref[^/].*?</ref>', '', wikitext, flags=re.DOTALL)
-    clean = re.sub(r'\{\{nowrap\|([^{}]+?)\}\}', r'\1', clean, flags=re.I)
-    clean = re.sub(r'\[\[([^\]|]+)\|[^\]]+\]\]', r'[[\1]]', clean)
-
-    wikicode      = mwparserfromhell.parse(clean)
+    wikicode      = mwparserfromhell.parse(wikitext)
     airlines_dest: dict = {}
 
     for template in wikicode.filter_templates():
         if not template.name.lower().strip().startswith("airport-dest-list"):
             continue
 
-        for param in template.params:
-            parts = str(param.value).split('|', 1)
-            if len(parts) != 2:
-                continue
-            airline_raw, dests_raw = parts
+        positional = [p for p in template.params if str(p.name).strip().isdigit()]
+        positional.sort(key=lambda p: int(str(p.name).strip()))
+        
+        for i in range(0, len(positional) - 1, 2):
+            airline_raw = str(positional[i].value)
+            dests_raw = str(positional[i+1].value)
 
             # Resolve airline name
             airline_wikicode = mwparserfromhell.parse(

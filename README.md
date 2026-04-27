@@ -29,7 +29,7 @@ export PYTHONPATH=src
 and then call the code using, e.g.,
 
 ```
-python -m examples.grab_info_from_IATA
+python -m scripts.grab_info_from_IATA
 ```
 
 Note the nonstandard call: `-m`, `.` instead of `/` to indicate a subdirectory and no `.py` extension.

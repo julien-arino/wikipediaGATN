@@ -22,6 +22,7 @@ Pipeline
 """
 
 import csv
+import datetime
 import json
 import logging
 import os
@@ -144,6 +145,21 @@ def export_all_airport_data(verbose: bool = False) -> str:
         print(f"Exported {len(rows):,} airports to {os.path.abspath(output_csv)}")
         if skipped:
             print(f"Skipped {skipped} unreadable files (see warnings above)")
+
+    # Update README.md with the processing date
+    readme_path = os.path.join(PUBLIC_DATA_DIR, "README.md")
+    if os.path.exists(readme_path):
+        today_str = datetime.date.today().isoformat()
+        with open(readme_path, "r", encoding="utf-8") as f:
+            content = f.read()
+            
+        if "Data extracted on" in content:
+            content = re.sub(r"Data extracted on \d{4}-\d{2}-\d{2}", f"Data extracted on {today_str}", content)
+        else:
+            content = content.rstrip() + f"\n\nData extracted on {today_str}.\n"
+            
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write(content)
 
     return output_csv
 

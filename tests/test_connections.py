@@ -151,29 +151,29 @@ class TestFuzzyMatchIata:
 
     def test_exact_match_returns_code_and_high_ratio(self):
         iata_dict = {"Toronto Pearson": "YYZ"}
-        code, ratio = _fuzzy_match_iata("Toronto Pearson", iata_dict)
+        code, ratio = _fuzzy_match_iata("Toronto Pearson", frozenset(iata_dict.items()))
         assert code == "YYZ"
         assert ratio >= 0.95
 
     def test_below_threshold_returns_none(self):
         iata_dict = {"Toronto Pearson": "YYZ"}
-        code, ratio = _fuzzy_match_iata("Completely Different", iata_dict)
+        code, ratio = _fuzzy_match_iata("Completely Different", frozenset(iata_dict.items()))
         assert code is None
 
     def test_empty_name_returns_none(self):
-        code, ratio = _fuzzy_match_iata("", {"Toronto": "YYZ"})
+        code, ratio = _fuzzy_match_iata("", frozenset({"Toronto": "YYZ"}.items()))
         assert code is None
         assert ratio == 0.0
 
     def test_empty_dict_returns_none(self):
-        code, ratio = _fuzzy_match_iata("Toronto Pearson", {})
+        code, ratio = _fuzzy_match_iata("Toronto Pearson", frozenset({}.items()))
         assert code is None
         assert ratio == 0.0
 
     def test_matching_is_case_insensitive(self):
         iata_dict = {"toronto pearson": "YYZ"}
-        code_upper, _ = _fuzzy_match_iata("TORONTO PEARSON", iata_dict)
-        code_lower, _ = _fuzzy_match_iata("toronto pearson", iata_dict)
+        code_upper, _ = _fuzzy_match_iata("TORONTO PEARSON", frozenset(iata_dict.items()))
+        code_lower, _ = _fuzzy_match_iata("toronto pearson", frozenset(iata_dict.items()))
         assert code_upper == "YYZ"
         assert code_lower == "YYZ"
 
@@ -182,11 +182,11 @@ class TestFuzzyMatchIata:
             "Montreal Trudeau":   "YUL",
             "Montreal Downtown":  "YMQ",
         }
-        code, ratio = _fuzzy_match_iata("Montreal Trudeau", iata_dict)
+        code, ratio = _fuzzy_match_iata("Montreal Trudeau", frozenset(iata_dict.items()))
         assert code == "YUL"
 
     def test_ratio_is_float(self):
-        _, ratio = _fuzzy_match_iata("test", {"test airport": "TST"})
+        _, ratio = _fuzzy_match_iata("test", frozenset({"test airport": "TST"}.items()))
         assert isinstance(ratio, float)
 
 

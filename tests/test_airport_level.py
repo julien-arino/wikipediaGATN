@@ -87,24 +87,24 @@ def test_get_wikipedia_airport_page_link_freetext_has_airport(mock_get):
     assert result == "https://en.wikipedia.org/wiki/London_Heathrow_Airport"
 
 @mock.patch("wikipediaGATN.wikipedia_airport_level._SESSION.get")
-def test_get_wikipedia_airport_page_link_request_exception(mock_get):
+def test_get_wikipedia_airport_page_link_request_exception(mock_get, caplog):
     import requests
     mock_get.side_effect = requests.exceptions.RequestException("Network error")
 
-    with pytest.warns(UserWarning, match="Wikipedia search failed"):
-        result = wal.get_wikipedia_airport_page_link("YWG")
+    result = wal.get_wikipedia_airport_page_link("YWG")
 
+    assert "Wikipedia search failed" in caplog.text
     assert result is None
 
 @mock.patch("wikipediaGATN.wikipedia_airport_level._SESSION.get")
-def test_get_wikipedia_airport_page_link_json_error(mock_get):
+def test_get_wikipedia_airport_page_link_json_error(mock_get, caplog):
     mock_response = mock.MagicMock()
     mock_response.json.side_effect = ValueError("Invalid JSON")
     mock_get.return_value = mock_response
 
-    with pytest.warns(UserWarning, match="Could not parse search response"):
-        result = wal.get_wikipedia_airport_page_link("YWG")
+    result = wal.get_wikipedia_airport_page_link("YWG")
 
+    assert "Could not parse search response" in caplog.text
     assert result is None
 
 @mock.patch("wikipediaGATN.wikipedia_airport_level._SESSION.get")

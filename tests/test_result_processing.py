@@ -4,13 +4,6 @@ import sys
 from pathlib import Path
 from unittest.mock import MagicMock
 
-# Mock missing dependencies in sys.modules to allow importing the module under test
-sys.modules["pandas"] = MagicMock()
-sys.modules["numpy"] = MagicMock()
-sys.modules["scipy"] = MagicMock()
-sys.modules["scipy.sparse"] = MagicMock()
-sys.modules["requests"] = MagicMock()
-sys.modules["bs4"] = MagicMock()
 
 import pytest
 from wikipediaGATN.result_processing import export_all_airport_data

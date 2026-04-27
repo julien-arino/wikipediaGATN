@@ -235,7 +235,7 @@ def create_outbound_adjacency_matrix(
     matrix = csr_matrix((data, (rows_arr, cols_arr)), shape=(n, n))
 
     # Verify no stray values > 1 survived (sanity check)
-    if matrix.data.max() > 1:  # pragma: no cover
+    if matrix.nnz > 0 and matrix.data.max() > 1:  # pragma: no cover
         warnings.warn(
             "Adjacency matrix contains entries > 1 after deduplication. "
             "Check outbound_connections.csv for duplicate rows.",

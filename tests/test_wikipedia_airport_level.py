@@ -61,12 +61,12 @@ class TestGetWikipediaAirportPageHtml:
         assert result is None
 
     @patch(_SESSION_GET)
-    def test_get_html_request_exception(self, mock_get):
+    def test_get_html_request_exception(self, mock_get, caplog):
         """Verify handling of requests exceptions."""
         mock_get.side_effect = requests.exceptions.RequestException("Network error")
         link = "https://en.wikipedia.org/wiki/YWG"
-        with pytest.warns(UserWarning, match="Error fetching HTML for"):
-            result = get_wikipedia_airport_page_html(link)
+        result = get_wikipedia_airport_page_html(link)
+        assert "Error fetching HTML for" in caplog.text
         assert result is None
 
     @patch(_SESSION_GET)
@@ -83,7 +83,7 @@ class TestGetWikipediaAirportPageHtml:
         assert result is None
 
     @patch(_SESSION_GET)
-    def test_get_html_json_error(self, mock_get):
+    def test_get_html_json_error(self, mock_get, caplog):
         """Verify handling of malformed JSON or ValueErrors."""
         mock_response = Mock()
         mock_response.json.side_effect = ValueError("Malformed JSON")
@@ -91,6 +91,6 @@ class TestGetWikipediaAirportPageHtml:
         mock_get.return_value = mock_response
 
         link = "https://en.wikipedia.org/wiki/YWG"
-        with pytest.warns(UserWarning, match="Could not parse HTML response"):
-            result = get_wikipedia_airport_page_html(link)
+        result = get_wikipedia_airport_page_html(link)
+        assert "Could not parse HTML response" in caplog.text
         assert result is None

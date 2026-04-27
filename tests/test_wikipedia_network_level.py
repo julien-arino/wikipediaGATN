@@ -9,20 +9,6 @@ import re
 import sys
 from unittest.mock import MagicMock
 
-# We need to mock these before importing wikipediaGATN.wikipedia_network_level
-# because it and its dependencies (wikipedia_airport_level, connections)
-# import them at the module level.
-# To avoid polluting the global state for other tests, we only do this
-# if they are not already present (which would be the case in a real environment).
-# In this specific offline environment, they are missing.
-
-_MOCK_MODULES = [
-    "pandas", "numpy", "scipy", "scipy.sparse", "requests", "requests.exceptions",
-    "bs4", "mwparserfromhell", "pycountry", "geopy", "geopy.point", "geopy.distance"
-]
-for mod in _MOCK_MODULES:
-    if mod not in sys.modules:
-        sys.modules[mod] = MagicMock()
 
 import warnings
 from pathlib import Path

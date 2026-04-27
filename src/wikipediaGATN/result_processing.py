@@ -26,6 +26,7 @@ import json
 import logging
 import os
 import re
+import shutil
 import traceback
 import warnings
 
@@ -41,7 +42,7 @@ logger = logging.getLogger(__name__)
 
 # Matches both IATA-style (e.g. YWG.0.json) and wiki-prefixed
 # (e.g. wiki_Winnipeg.1.json) filenames produced by the scraper.
-_FNAME_RE = re.compile(r"^(?:[A-Z]{3}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
+_FNAME_RE = re.compile(r"^([A-Z]{3,4}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
 
 
 ###############################################################################
@@ -90,7 +91,8 @@ def export_all_airport_data(verbose: bool = False) -> str:
     skipped = 0
 
     for fname in sorted(os.listdir(TEMP_RESULTS_DIR)):
-        if not _FNAME_RE.match(fname):
+        m = _FNAME_RE.match(fname)
+        if not m:
             continue
 
         fpath = os.path.join(TEMP_RESULTS_DIR, fname)
@@ -116,6 +118,13 @@ def export_all_airport_data(verbose: bool = False) -> str:
             "wikipedia_url": data.get("wikipedia_url", ""),
             "outdegree":     len(data.get("destinations", [])),
         })
+
+        # Copy the JSON file to public/airport_data, stripping the level
+        airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
+        os.makedirs(airport_data_dir, exist_ok=True)
+        identifier = m.group(1)
+        public_json_path = os.path.join(airport_data_dir, f"{identifier}.json")
+        shutil.copy2(fpath, public_json_path)
 
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
     output_csv = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")

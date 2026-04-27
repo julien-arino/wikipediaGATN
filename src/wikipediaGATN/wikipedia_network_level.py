@@ -230,11 +230,16 @@ def get_connections_level_N(
 
             dest_info = extract_airport_information(dest_url, verbose=verbose)
             dest_iata = dest_info.get('iata') or dest_name
-            out_path  = os.path.join(output_dir, f"{dest_iata}.{from_length + 1}.json")
+            
+            # Check if this IATA was already processed at any level (e.g. via a different URL alias)
+            existing_files = [f for f in os.listdir(output_dir) if f.startswith(f"{dest_iata}.")]
 
-            if not os.path.exists(out_path):
+            if not existing_files:
                 save_airport_info(dest_info, level=from_length + 1, verbose=verbose)
                 written += 1
+            else:
+                if verbose:
+                    print(f"  {dest_iata} already processed at a different level, skipping save.")
 
             processed_urls.add(dest_url)
             time.sleep(delay)

@@ -48,16 +48,16 @@ class TestCheckProcessedList:
         """Test that duplicate URLs are removed and output is sorted by (iata, url)."""
         csv_path = os.path.join(tmp_results_dir, "processed_locations.csv")
         entries = [
-            ("YWG", "url1"),
-            ("YYZ", "url2"),
-            ("YVR", "url3"),
-            ("YWG", "url1"),  # Duplicate
-            ("YUL", "url2"),  # Duplicate URL, different IATA (first one is kept by algorithm)
+            ("YWG", "url1", ""),
+            ("YYZ", "url2", "YWG"),
+            ("YVR", "url3", "YYZ"),
+            ("YWG", "url1", "YUL"),  # Duplicate
+            ("YUL", "url2", "YYZ"),  # Duplicate URL, different IATA (first one is kept by algorithm)
         ]
 
         with open(csv_path, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["iata", "url"])
+            writer.writerow(["iata", "url", "iata_from"])
             writer.writerows(entries)
 
         check_processed_list(verbose=True)
@@ -65,13 +65,13 @@ class TestCheckProcessedList:
         with open(csv_path, "r", encoding="utf-8", newline="") as f:
             reader = csv.reader(f)
             headers = next(reader)
-            assert headers == ["iata", "url"]
+            assert headers == ["iata", "url", "iata_from"]
             results = list(reader)
 
         expected = [
-            ["YVR", "url3"],
-            ["YWG", "url1"],
-            ["YYZ", "url2"],
+            ["YVR", "url3", "YYZ"],
+            ["YWG", "url1", ""],
+            ["YYZ", "url2", "YWG"],
         ]
         assert results == expected
 
@@ -79,16 +79,16 @@ class TestCheckProcessedList:
         """Test that entries with iata == 'None' are exported to failed_lookups.csv and removed."""
         csv_path = os.path.join(tmp_results_dir, "processed_locations.csv")
         entries = [
-            ("YWG", "url1"),
-            ("None", "url2"),
-            ("None", "url3"),
-            ("YYZ", "url4"),
-            ("None", "url2"),
+            ("YWG", "url1", ""),
+            ("None", "url2", "YWG"),
+            ("None", "url3", "YWG"),
+            ("YYZ", "url4", "YWG"),
+            ("None", "url2", "YWG"),
         ]
 
         with open(csv_path, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["iata", "url"])
+            writer.writerow(["iata", "url", "iata_from"])
             writer.writerows(entries)
 
         check_processed_list(verbose=True)
@@ -99,13 +99,13 @@ class TestCheckProcessedList:
         with open(failed_csv_path, "r", encoding="utf-8", newline="") as f:
             reader = csv.reader(f)
             headers = next(reader)
-            assert headers == ["iata", "url"]
+            assert headers == ["iata", "url", "iata_from"]
             results = list(reader)
 
         expected_failed = [
-            ["None", "url2"],
-            ["None", "url2"],
-            ["None", "url3"],
+            ["None", "url2", "YWG"],
+            ["None", "url2", "YWG"],
+            ["None", "url3", "YWG"],
         ]
         assert results == expected_failed
 
@@ -115,8 +115,8 @@ class TestCheckProcessedList:
             main_results = list(reader)
 
         expected_main = [
-            ["YWG", "url1"],
-            ["YYZ", "url4"],
+            ["YWG", "url1", ""],
+            ["YYZ", "url4", "YWG"],
         ]
         assert main_results == expected_main
 
@@ -127,12 +127,12 @@ class TestCheckProcessedList:
         """Test that if there are no None lookups, failed_lookups.csv is not created."""
         csv_path = os.path.join(tmp_results_dir, "processed_locations.csv")
         entries = [
-            ("YWG", "url1"),
+            ("YWG", "url1", ""),
         ]
 
         with open(csv_path, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["iata", "url"])
+            writer.writerow(["iata", "url", "iata_from"])
             writer.writerows(entries)
 
         check_processed_list(verbose=True)

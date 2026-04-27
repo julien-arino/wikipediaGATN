@@ -711,6 +711,7 @@ def save_airport_info(
     level: int = 0,
     verbose: bool = False,
     save_progress: bool = True,
+    iata_from: str = "",
 ) -> str:
     """
     Persist an airport info dictionary to ``TEMP_RESULTS_DIR/<CODE>.<level>.json``.
@@ -761,6 +762,7 @@ def save_airport_info(
             output_dir,
             airport_info.get('iata', ''),
             airport_info.get('wikipedia_url', ''),
+            iata_from,
         )
 
     if verbose:
@@ -769,10 +771,10 @@ def save_airport_info(
     return iata_code
 
 
-def _record_progress(output_dir: str, iata: str, url: str) -> None:
-    """Append an (iata, url) row to processed_locations.csv if not already present."""
+def _record_progress(output_dir: str, iata: str, url: str, iata_from: str = "") -> None:
+    """Append an (iata, url, iata_from) row to processed_locations.csv if not already present."""
     csv_path   = os.path.join(output_dir, "processed_locations.csv")
-    fieldnames = ["iata", "url"]
+    fieldnames = ["iata", "url", "iata_from"]
 
     existing: set = set()
     if os.path.exists(csv_path):
@@ -788,7 +790,7 @@ def _record_progress(output_dir: str, iata: str, url: str) -> None:
         writer = csv.DictWriter(fh, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         if write_header:
             writer.writeheader()
-        writer.writerow({"iata": iata, "url": url})
+        writer.writerow({"iata": iata, "url": url, "iata_from": iata_from})
 
 
 # ---------------------------------------------------------------------------

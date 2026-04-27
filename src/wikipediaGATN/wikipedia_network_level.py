@@ -235,7 +235,7 @@ def get_connections_level_N(
             existing_files = [f for f in os.listdir(output_dir) if f.startswith(f"{dest_iata}.")]
 
             if not existing_files:
-                save_airport_info(dest_info, level=from_length + 1, verbose=verbose)
+                save_airport_info(dest_info, level=from_length + 1, verbose=verbose, iata_from=origin_iata)
                 written += 1
             else:
                 if verbose:
@@ -275,15 +275,15 @@ def check_processed_list(verbose: bool = False) -> None:
     entries: list = []
     with open(csv_path, "r", encoding="utf-8", newline="") as fh:
         reader = csv.DictReader(fh)
-        if reader.fieldnames != ["iata", "url"]:
+        if reader.fieldnames not in (["iata", "url"], ["iata", "url", "iata_from"]):
             if verbose:
                 print("processed_locations.csv is empty or has unexpected headers.")
             return
         for row in reader:
-            entries.append((row.get("iata", "").strip(), row.get("url", "").strip()))
+            entries.append((row.get("iata", "").strip(), row.get("url", "").strip(), row.get("iata_from", "").strip()))
 
     failed_entries = sorted(
-        [(iata, url) for iata, url in entries if iata == "None"],
+        [(iata, url, iata_from) for iata, url, iata_from in entries if iata == "None"],
         key=lambda x: x[1],
     )
 
@@ -291,7 +291,7 @@ def check_processed_list(verbose: bool = False) -> None:
     if failed_entries:
         with open(failed_csv_path, "w", encoding="utf-8", newline="") as fh:
             writer = csv.writer(fh, quoting=csv.QUOTE_ALL)
-            writer.writerow(["iata", "url"])
+            writer.writerow(["iata", "url", "iata_from"])
             writer.writerows(failed_entries)
         if verbose:
             print(f"Exported {len(failed_entries)} failed lookups to {failed_csv_path}")
@@ -301,16 +301,16 @@ def check_processed_list(verbose: bool = False) -> None:
     # Deduplicate valid entries by URL, then sort.
     seen_urls: set = set()
     unique_entries = []
-    for iata, url in entries:
+    for iata, url, iata_from in entries:
         if iata != "None" and url not in seen_urls:
-            unique_entries.append((iata, url))
+            unique_entries.append((iata, url, iata_from))
             seen_urls.add(url)
     cleaned_entries = sorted(unique_entries, key=lambda x: (x[0], x[1]))
 
     # Write cleaned file using csv module.
     with open(csv_path, "w", encoding="utf-8", newline="") as fh:
         writer = csv.writer(fh, quoting=csv.QUOTE_ALL)
-        writer.writerow(["iata", "url"])
+        writer.writerow(["iata", "url", "iata_from"])
         writer.writerows(cleaned_entries)
 
     if verbose:

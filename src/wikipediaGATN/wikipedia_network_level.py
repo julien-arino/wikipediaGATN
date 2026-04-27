@@ -229,8 +229,14 @@ def get_connections_level_N(
                 print(f"  {origin_iata} -> {dest_name}: fetching...")
 
             dest_info = extract_airport_information(dest_url, verbose=verbose)
-            dest_iata = dest_info.get('iata') or dest_name
-            
+            dest_iata = dest_info.get('iata') or dest_info.get('icao')
+
+            if not dest_iata:
+                if verbose:
+                    print(f"  {dest_name} has no IATA/ICAO code (likely not an airport), skipping.")
+                processed_urls.add(dest_url)
+                continue
+
             # Check if this IATA was already processed at any level (e.g. via a different URL alias)
             existing_files = [f for f in os.listdir(output_dir) if f.startswith(f"{dest_iata}.")]
 

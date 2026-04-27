@@ -451,6 +451,8 @@ def extract_destinations_from_airport(
                 if not title:
                     continue
                 if href.startswith('/wiki/'):
+                    if href.split(':', 1)[0] in ('/wiki/Wikipedia', '/wiki/Help', '/wiki/File', '/wiki/Category', '/wiki/Template', '/wiki/Portal'):
+                        continue
                     full_url = f"https://en.wikipedia.org{href}"
                 elif href.startswith('http'):
                     full_url = href
@@ -532,13 +534,13 @@ def extract_airlines_destinations_from_airport(
                 for cell in cells:
                     cell_text = cell.get_text(" ", strip=True)
                     if re.search(r'airline', cell_text, re.I):
-                        airline_names.update(
-                            a.get('title') for a in cell.find_all('a') if a.get('title')
-                        )
+                        for a in cell.find_all('a'):
+                            if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:')):
+                                airline_names.add(a.get('title'))
                     if re.search(r'destination', cell_text, re.I):
-                        dest_names.update(
-                            a.get('title') for a in cell.find_all('a') if a.get('title')
-                        )
+                        for a in cell.find_all('a'):
+                            if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:')):
+                                dest_names.add(a.get('title'))
                 for airline in airline_names:
                     airline_dest_map.setdefault(airline, set()).update(dest_names)
         else:
@@ -548,11 +550,11 @@ def extract_airlines_destinations_from_airport(
                     continue
                 airline_names = [
                     a.get('title') for a in cells[airline_idx].find_all('a')
-                    if a.get('title')
+                    if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:'))
                 ]
                 dest_names = [
                     a.get('title') for a in cells[dest_idx].find_all('a')
-                    if a.get('title')
+                    if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:'))
                 ]
                 for airline in airline_names:
                     airline_dest_map.setdefault(airline, set()).update(dest_names)
@@ -649,9 +651,15 @@ def extract_airport_information(
         warnings.warn(f"Could not parse infobox for {link!r}.", UserWarning, stacklevel=2)
         return {**_EMPTY, 'wikipedia_url': link}
 
+    iata_raw = infobox.get('IATA')
+    iata_clean = re.search(r'[A-Za-z]{3}', str(iata_raw)).group(0).upper() if iata_raw and re.search(r'[A-Za-z]{3}', str(iata_raw)) else None
+    
+    icao_raw = infobox.get('ICAO')
+    icao_clean = re.search(r'[A-Za-z]{4}', str(icao_raw)).group(0).upper() if icao_raw and re.search(r'[A-Za-z]{4}', str(icao_raw)) else None
+
     info: dict = {
-        'iata':                  infobox.get('IATA'),
-        'icao':                  infobox.get('ICAO'),
+        'iata':                  iata_clean,
+        'icao':                  icao_clean,
         'city-served':           infobox.get('city-served'),
         'location':              infobox.get('location'),
         'lat':                   infobox.get('lat'),
@@ -734,6 +742,8 @@ def save_airport_info(
         filename prefix.
     """
     iata_code = airport_info.get('iata')
+    if not iata_code:
+        iata_code = airport_info.get('icao')
     if not iata_code:
         wiki_url  = airport_info.get('wikipedia_url', '')
         m         = re.search(r'/wiki/([^/#?]+)', wiki_url)

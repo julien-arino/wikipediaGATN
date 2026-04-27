@@ -979,6 +979,9 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
 
     # Strip HTML comments that may obscure parameter definitions on the same line
     infobox_text = re.sub(r'<!--.*?-->', '', infobox_text, flags=re.DOTALL)
+    # Strip citations (which can span multiple lines) before line-by-line parsing
+    infobox_text = re.sub(r'<ref.*?</ref>', '', infobox_text, flags=re.DOTALL | re.IGNORECASE)
+    infobox_text = re.sub(r'<ref[^>]*/>', '', infobox_text, flags=re.IGNORECASE)
 
     for line in infobox_text.split('\n'):
         line_stripped = line.strip()

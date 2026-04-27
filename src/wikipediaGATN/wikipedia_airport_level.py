@@ -949,10 +949,10 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
     if not wikitext:
         return {}
 
-    m = re.search(r'\{\{[Ii]nfobox airport.*?(\n|\|)', wikitext)
+    m = re.search(r'\{\{[Ii]nfobox[ \t]+(?:airport|military).*?(\n|\|)', wikitext, flags=re.IGNORECASE)
     if not m:
         if verbose:
-            print("No Infobox airport found in wikitext.")
+            print("No suitable Infobox (airport/military) found in wikitext.")
         return {}
 
     # Extract full template text by matching brace pairs.
@@ -976,6 +976,9 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
     _IGNORED     = re.compile(r'image|footnote|owner|operator|mapframe|pushpin', re.I)
     infobox_data: dict = {}
     region: str | None = None
+
+    # Strip HTML comments that may obscure parameter definitions on the same line
+    infobox_text = re.sub(r'<!--.*?-->', '', infobox_text, flags=re.DOTALL)
 
     for line in infobox_text.split('\n'):
         line_stripped = line.strip()

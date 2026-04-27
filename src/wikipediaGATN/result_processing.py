@@ -153,8 +153,8 @@ def export_all_airport_data(verbose: bool = False) -> str:
         with open(readme_path, "r", encoding="utf-8") as f:
             content = f.read()
             
-        if "Data extracted on" in content:
-            content = re.sub(r"Data extracted on \d{4}-\d{2}-\d{2}", f"Data extracted on {today_str}", content)
+        if "extracted on" in content:
+            content = re.sub(r"\(extracted on \d{4}-\d{2}-\d{2}\)", f"(extracted on {today_str})", content)
         else:
             content = content.rstrip() + f"\n\nData extracted on {today_str}.\n"
             

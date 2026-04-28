@@ -37,7 +37,7 @@ However, these datasets can be prohibitively priced for researchers.
 
 An earlier version of `wikipediaGATN` was used by the authors and collaborators during the early stages of the COVID-19 pandemic, when Arino was working under contract with the Public Health Agency of Canada to create daily summaries of the likely next ISO-3166-1 level places to report cases of COVID-19. 
 It was used in the preparation of (confidential) report [@Pearson:2017] and is being used in a scientific publication under preparation on the subject. 
-It will also be used in Arino's Mathematics of Data Science course, where techniques of social network analysis are being presented.
+The new data will also be used in Arino's Mathematics of Data Science course, where techniques of social network analysis are being presented.
 There is no doubt that other researchers working on topics touching on the GATN will benefit from the package.
 This will also be of interest to instructors teaching graph or network theory.
 
@@ -53,6 +53,13 @@ Most airport pages also contain a table detailing airlines operating out of the 
 ![Infobox for YWG (Winnipeg airport).\label{fig:airlines}](YWG-airlines-dests.png)
 
 This homogeneisation of resources means that it is reasonably easy to use web scraping tools to gather information.
+In order not to overwhelm Wikipedia servers, rate limitation is used, so the process takes a few hours.
+
+Starting from a seed airport (taken as YWG, where the authors are based), the process gathers information on the airport including its localisation, geographical coordinates (if available) as well as airlines operating out of the airport and the Wikipedia links to served destinations. This is level 0 of the network.
+The process then repeats, assessing all first degree connections out of the seed.
+The same information is collected as in the seed for these first level airports.
+The process continues until no new airports are found (this is typically reached at level 10), with
+around 4,000 airports in the graph.
 
 
 # Citations

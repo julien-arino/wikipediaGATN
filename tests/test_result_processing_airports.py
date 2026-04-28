@@ -6,7 +6,7 @@ from unittest.mock import MagicMock
 
 
 import pytest
-from wikipediaGATN.result_processing import export_all_airport_data
+from wikipediaGATN.result_processing_airports import export_all_airport_data
 
 @pytest.fixture()
 def data_dirs(tmp_path, monkeypatch):
@@ -18,8 +18,8 @@ def data_dirs(tmp_path, monkeypatch):
     public      = tmp_path / "public"
     tmp_results.mkdir()
     public.mkdir()
-    monkeypatch.setattr("wikipediaGATN.result_processing.TEMP_RESULTS_DIR", tmp_results)
-    monkeypatch.setattr("wikipediaGATN.result_processing.PUBLIC_DATA_DIR",  public)
+    monkeypatch.setattr("wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR", tmp_results)
+    monkeypatch.setattr("wikipediaGATN.result_processing_airports.PUBLIC_DATA_DIR",  public)
     return tmp_results, public
 
 def test_export_all_airport_data_invalid_json(data_dirs):
@@ -61,7 +61,7 @@ def test_export_all_airport_data_invalid_json(data_dirs):
 def test_export_all_airport_data_missing_dir(tmp_path, monkeypatch):
     """Test FileNotFoundError when TEMP_RESULTS_DIR is missing."""
     monkeypatch.setattr(
-        "wikipediaGATN.result_processing.TEMP_RESULTS_DIR",
+        "wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR",
         tmp_path / "nonexistent"
     )
     with pytest.raises(FileNotFoundError):

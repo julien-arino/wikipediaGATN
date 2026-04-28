@@ -186,16 +186,28 @@ def export_all_airport_data(verbose: bool = False) -> str:
         lat = data.get("lat") or data.get("latitude")
         lon = data.get("lon") or data.get("longitude")
         if not lat or not lon:
-            try:
-                title = urllib.parse.unquote(data.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
-                if title:
-                    time.sleep(1) # Geopy Nominatim requires 1 sec sleep
-                    loc = geolocator.geocode(title)
+            queries = []
+            if data.get("iata"): queries.append(f'{data.get("iata")} airport')
+            if data.get("name"): queries.append(f'{data.get("name")} airport')
+            
+            title = urllib.parse.unquote(data.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
+            if title: queries.append(title)
+                
+            if data.get("city-served"): queries.append(f'{data.get("city-served")} airport')
+            if data.get("location"): queries.append(data.get("location"))
+            if data.get("icao"): queries.append(f'{data.get("icao")} airport')
+            
+            for query in queries:
+                if not query.strip(): continue
+                try:
+                    time.sleep(1.5) # Geopy Nominatim limits to 1 req/s
+                    loc = geolocator.geocode(query, timeout=5)
                     if loc:
                         lat, lon = str(loc.latitude), str(loc.longitude)
                         data["lat"], data["lon"] = lat, lon
-            except Exception:
-                pass
+                        break
+                except Exception:
+                    pass
         
         # Check if we need to infer location data
         needs_inference = not all([

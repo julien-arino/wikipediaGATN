@@ -1011,28 +1011,37 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
         value = clean_infobox_value(value)
 
         if key.lower() == "coordinates":
-            value  = re.sub(r'\| *display *= *inline,title *', '', value, flags=re.I).strip()
-            coord_m = re.search(
-                r'\{\{[Cc]oord\|(\d+)\|(\d+)\|(\d+)\|([NS])\|(\d+)\|(\d+)\|(\d+)\|([EW])'
-                r'(?:\|region:([A-Za-z0-9\-]+))?',
-                value,
-            )
+            coord_m = re.search(r'\{\{[Cc]oord\|(.*?)\}\}', value)
             if coord_m:
-                lat = (int(coord_m.group(1))
-                       + int(coord_m.group(2)) / 60
-                       + int(coord_m.group(3)) / 3600)
-                if coord_m.group(4).upper() == 'S':
-                    lat = -lat
-                lon = (int(coord_m.group(5))
-                       + int(coord_m.group(6)) / 60
-                       + int(coord_m.group(7)) / 3600)
-                if coord_m.group(8).upper() == 'W':
-                    lon = -lon
-                infobox_data['lat'] = f"{lat:.6f}"
-                infobox_data['lon'] = f"{lon:.6f}"
-                region = coord_m.group(9)
-                if region:
-                    infobox_data['region'] = region
+                inner = coord_m.group(1)
+                
+                region_m = re.search(r'region:([A-Za-z0-9\-]+)', inner)
+                if region_m:
+                    infobox_data['region'] = region_m.group(1)
+                    
+                args = [arg.strip() for arg in inner.split('|') 
+                        if '=' not in arg and 'region:' not in arg.lower() and arg.strip()]
+                
+                try:
+                    lat, lon = None, None
+                    if len(args) >= 8:
+                        lat = (float(args[0]) + float(args[1])/60 + float(args[2])/3600) * (1 if args[3].upper() == "N" else -1)
+                        lon = (float(args[4]) + float(args[5])/60 + float(args[6])/3600) * (1 if args[7].upper() == "E" else -1)
+                    elif len(args) >= 6:
+                        lat = (float(args[0]) + float(args[1])/60) * (1 if args[2].upper() == "N" else -1)
+                        lon = (float(args[3]) + float(args[4])/60) * (1 if args[5].upper() == "E" else -1)
+                    elif len(args) >= 4:
+                        lat = float(args[0]) * (1 if args[1].upper() == "N" else -1)
+                        lon = float(args[2]) * (1 if args[3].upper() == "E" else -1)
+                    elif len(args) >= 2:
+                        lat, lon = float(args[0]), float(args[1])
+                        
+                    if lat is not None and lon is not None:
+                        infobox_data['lat'] = f"{lat:.6f}"
+                        infobox_data['lon'] = f"{lon:.6f}"
+                except ValueError:
+                    pass
+
 
         infobox_data[key] = value
 

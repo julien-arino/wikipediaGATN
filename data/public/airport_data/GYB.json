@@ -21,24 +21,41 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Kens Bore",
-      "https://en.wikipedia.org/wiki/Kens_Bore_Airport",
-      "KYB",
-      "YKBA"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Kens Bore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kens_Bore_Airport",
+      "codes": [
+        "KYB",
+        "YKBA"
+      ],
+      "airlines": [
+        "MinRes Air",
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "MinRes Air",
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "MinRes Air": [
@@ -52,5 +69,7 @@
       "Brisbane",
       "Kens Bore"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:39Z",
+  "date-time-wikidata": "2026-03-30T10:38:32Z"
 }

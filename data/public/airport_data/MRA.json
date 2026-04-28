@@ -30,72 +30,143 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Alexandria",
-      "https://en.wikipedia.org/wiki/Borg_El_Arab_International_Airport",
-      "HBE",
-      "HEAX"
-    ],
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Benghazi",
-      "https://en.wikipedia.org/wiki/Benina_International_Airport",
-      "BEN",
-      "HLLB"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Malta",
-      "https://en.wikipedia.org/wiki/Malta_International_Airport",
-      "MLA",
-      "LMML"
-    ],
-    [
-      "Sfax",
-      "https://en.wikipedia.org/wiki/Sfax_Thyna_International_Airport",
-      "SFA",
-      "DTTX"
-    ],
-    [
-      "Sfax",
-      "https://en.wikipedia.org/wiki/Sfax–Thyna_International_Airport",
-      "SFA",
-      "DTTX"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis-Carthage_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Alexandria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Borg_El_Arab_International_Airport",
+      "codes": [
+        "HBE",
+        "HEAX"
+      ],
+      "airlines": [
+        "Berniq Airways"
+      ]
+    },
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Benghazi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benina_International_Airport",
+      "codes": [
+        "BEN",
+        "HLLB"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Berniq Airways",
+        "Global Air"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Berniq Airways",
+        "Egyptair",
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Berniq Airways",
+        "MNG Airlines",
+        "MedSky Airways",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Fly Oya",
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Malta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_International_Airport",
+      "codes": [
+        "MLA",
+        "LMML"
+      ],
+      "airlines": [
+        "MedSky Airways",
+        "Medavia"
+      ]
+    },
+    {
+      "city": "Sfax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sfax_Thyna_International_Airport",
+      "codes": [
+        "SFA",
+        "DTTX"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Sfax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sfax–Thyna_International_Airport",
+      "codes": [
+        "SFA",
+        "DTTX"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis-Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Berniq Airways",
+        "Libyan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afriqiyah Airways": [
@@ -147,5 +218,7 @@
     "MNG Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:30Z",
+  "date-time-wikidata": "2026-04-02T00:21:52Z"
 }

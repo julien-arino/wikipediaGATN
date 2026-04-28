@@ -19,23 +19,35 @@
     "Air Côte d'Ivoire"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Man",
-      "https://en.wikipedia.org/wiki/Man_Airport",
-      "MJC",
-      "DIMN"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Man",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Man_Airport",
+      "codes": [
+        "MJC",
+        "DIMN"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
       "Abidjan",
       "Man"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:19Z",
+  "date-time-wikidata": "2024-12-03T14:51:18Z"
 }

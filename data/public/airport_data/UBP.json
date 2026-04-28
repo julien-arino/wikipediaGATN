@@ -23,18 +23,31 @@
     "Thai VietJet Air"
   ],
   "destinations": [
-    [
-      "Don Mueang International Airport",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Suvarnabhumi Airport",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ]
+    {
+      "city": "Don Mueang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Nok Air",
+        "Thai AirAsia",
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Suvarnabhumi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Thai Airways International",
+        "Thai VietJet Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nok Air": [
@@ -52,5 +65,7 @@
     "Thai VietJet Air": [
       "Suvarnabhumi Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:42Z",
+  "date-time-wikidata": "2026-04-16T20:30:47Z"
 }

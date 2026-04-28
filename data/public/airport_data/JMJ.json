@@ -21,24 +21,40 @@
     "Lucky Air"
   ],
   "destinations": [
-    [
-      "Dehong Mangshi International Airport",
-      "https://en.wikipedia.org/wiki/Dehong_Mangshi_International_Airport",
-      "LUM",
-      "ZPMS"
-    ],
-    [
-      "Guiyang Longdongbao International Airport",
-      "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
-      "KWE",
-      "ZUGY"
-    ],
-    [
-      "Kunming Changshui International Airport",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
-      "KMG",
-      "ZPPP"
-    ]
+    {
+      "city": "Dehong Mangshi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dehong_Mangshi_International_Airport",
+      "codes": [
+        "LUM",
+        "ZPMS"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Guiyang Longdongbao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
+      "codes": [
+        "KWE",
+        "ZUGY"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Kunming Changshui International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP"
+      ],
+      "airlines": [
+        "China Eastern Airlines",
+        "Lucky Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
@@ -51,5 +67,7 @@
     "Lucky Air": [
       "Kunming Changshui International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:24Z",
+  "date-time-wikidata": "2025-10-27T08:48:46Z"
 }

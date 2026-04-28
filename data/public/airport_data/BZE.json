@@ -31,180 +31,327 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Baltimore",
-      "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Caye Caulker",
-      "https://en.wikipedia.org/wiki/Caye_Caulker_Airport",
-      "CUK",
-      "MZCK"
-    ],
-    [
-      "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Corozal",
-      "https://en.wikipedia.org/wiki/Corozal_Airport",
-      "CZH",
-      "MZCZ"
-    ],
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Dangriga",
-      "https://en.wikipedia.org/wiki/Dangriga_Airport",
-      "DGA",
-      "MZPB"
-    ],
-    [
-      "Denver",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Fort Lauderdale",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Guatemala City",
-      "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-      "GUA",
-      "MGGT"
-    ],
-    [
-      "Houston–Hobby",
-      "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
-      "HOU",
-      "KHOU"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Minneapolis/St. Paul",
-      "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Newark",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Punta Gorda",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Belize)",
-      "PND",
-      "MZPG"
-    ],
-    [
-      "Roatán",
-      "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
-      "RTB",
-      "MHRO"
-    ],
-    [
-      "San Francisco",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "San Pedro",
-      "https://en.wikipedia.org/wiki/John_Greif_II_Airport",
-      "SPR",
-      "MZSP"
-    ],
-    [
-      "San Pedro Sula",
-      "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
-      "SAP",
-      "MHLM"
-    ],
-    [
-      "Seattle/Tacoma",
-      "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Baltimore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
+      "codes": [
+        "BWI",
+        "KBWI"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Caye Caulker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caye_Caulker_Airport",
+      "codes": [
+        "CUK",
+        "MZCK"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Corozal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corozal_Airport",
+      "codes": [
+        "CZH",
+        "MZCZ"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Dangriga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dangriga_Airport",
+      "codes": [
+        "DGA",
+        "MZPB"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Guatemala City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "TAG Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Rouge"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Punta Gorda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Belize)",
+      "codes": [
+        "PND",
+        "MZPG"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Roatán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
+      "codes": [
+        "RTB",
+        "MHRO"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "San Pedro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Greif_II_Airport",
+      "codes": [
+        "SPR",
+        "MZSP"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "San Pedro Sula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
+      "codes": [
+        "SAP",
+        "MHLM"
+      ],
+      "airlines": [
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Rouge",
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Rouge": [
@@ -264,5 +411,7 @@
       "Calgary",
       "Toronto–Pearson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:41Z",
+  "date-time-wikidata": "2026-04-20T23:10:58Z"
 }

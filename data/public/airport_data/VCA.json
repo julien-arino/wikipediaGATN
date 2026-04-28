@@ -21,42 +21,74 @@
     "Vietnam Airlines"
   ],
   "destinations": [
-    [
-      "Con Dao",
-      "https://en.wikipedia.org/wiki/Con_Dao_Airport",
-      "VCS",
-      "VVCS"
-    ],
-    [
-      "Da Nang",
-      "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
-      "DAD",
-      "VVDN"
-    ],
-    [
-      "Ha Long",
-      "https://en.wikipedia.org/wiki/Van_Don_International_Airport",
-      "VDO",
-      "VVVD"
-    ],
-    [
-      "Hanoi",
-      "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
-      "HAN",
-      "VVNB"
-    ],
-    [
-      "Phu Quoc",
-      "https://en.wikipedia.org/wiki/Phu_Quoc_International_Airport",
-      "PQC",
-      "VVPQ"
-    ],
-    [
-      "Vinh",
-      "https://en.wikipedia.org/wiki/Vinh_Airport",
-      "VII",
-      "VVVH"
-    ]
+    {
+      "city": "Con Dao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Con_Dao_Airport",
+      "codes": [
+        "VCS",
+        "VVCS"
+      ],
+      "airlines": [
+        "Bamboo Airways"
+      ]
+    },
+    {
+      "city": "Da Nang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
+      "codes": [
+        "DAD",
+        "VVDN"
+      ],
+      "airlines": [
+        "VietJet Air"
+      ]
+    },
+    {
+      "city": "Ha Long",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Don_International_Airport",
+      "codes": [
+        "VDO",
+        "VVVD"
+      ],
+      "airlines": [
+        "VietJet Air"
+      ]
+    },
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "VietJet Air",
+        "Vietnam Airlines"
+      ]
+    },
+    {
+      "city": "Phu Quoc",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phu_Quoc_International_Airport",
+      "codes": [
+        "PQC",
+        "VVPQ"
+      ],
+      "airlines": [
+        "Bamboo Airways",
+        "Vietnam Airlines"
+      ]
+    },
+    {
+      "city": "Vinh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vinh_Airport",
+      "codes": [
+        "VII",
+        "VVVH"
+      ],
+      "airlines": [
+        "VietJet Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bamboo Airways": [
@@ -73,5 +105,7 @@
       "Hanoi",
       "Phu Quoc"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:00Z",
+  "date-time-wikidata": "2026-04-13T08:21:09Z"
 }

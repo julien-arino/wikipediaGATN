@@ -19,23 +19,35 @@
     "Conviasa"
   ],
   "destinations": [
-    [
-      "Canaima",
-      "https://en.wikipedia.org/wiki/Canaima_Airport",
-      "CAJ",
-      "SVCN"
-    ],
-    [
-      "Ciudad Guayana",
-      "https://en.wikipedia.org/wiki/Manuel_Carlos_Piar_Guayana_Airport",
-      "CGU",
-      "SVPR"
-    ]
+    {
+      "city": "Canaima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canaima_Airport",
+      "codes": [
+        "CAJ",
+        "SVCN"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Ciudad Guayana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manuel_Carlos_Piar_Guayana_Airport",
+      "codes": [
+        "CGU",
+        "SVPR"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Conviasa": [
       "Canaima",
       "Ciudad Guayana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:10Z",
+  "date-time-wikidata": "2026-01-24T21:33:19Z"
 }

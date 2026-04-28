@@ -21,48 +21,83 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Halifax",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Moncton",
-      "https://en.wikipedia.org/wiki/Greater_Moncton_Roméo_LeBlanc_International_Airport",
-      "YQM",
-      "CYQM"
-    ],
-    [
-      "Montreal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Halifax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Moncton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Moncton_Roméo_LeBlanc_International_Airport",
+      "codes": [
+        "YQM",
+        "CYQM"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Montreal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Transat": [
@@ -78,5 +113,7 @@
       "Calgary",
       "Montreal–Trudeau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:45Z",
+  "date-time-wikidata": "2026-04-26T23:02:42Z"
 }

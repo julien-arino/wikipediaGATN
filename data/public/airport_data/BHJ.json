@@ -20,18 +20,29 @@
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ]
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -41,5 +52,7 @@
     "Alliance Air": [
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:29Z",
+  "date-time-wikidata": "2026-01-31T06:19:43Z"
 }

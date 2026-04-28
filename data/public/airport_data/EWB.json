@@ -19,24 +19,39 @@
     "Cape Air"
   ],
   "destinations": [
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Martha's Vineyard Airport",
-      "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
-      "MVY",
-      "KMVY"
-    ],
-    [
-      "Nantucket Memorial Airport",
-      "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
-      "ACK",
-      "KACK"
-    ]
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Martha's Vineyard Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
+      "codes": [
+        "MVY",
+        "KMVY"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Nantucket Memorial Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
+      "codes": [
+        "ACK",
+        "KACK"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cape Air": [
@@ -44,5 +59,7 @@
       "Martha's Vineyard Airport",
       "Nantucket Memorial Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:27Z",
+  "date-time-wikidata": "2026-01-18T13:56:23Z"
 }

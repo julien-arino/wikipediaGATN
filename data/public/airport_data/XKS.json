@@ -19,23 +19,35 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Webequie",
-      "https://en.wikipedia.org/wiki/Webequie_Airport",
-      "YWP",
-      "CYWP"
-    ]
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Webequie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Webequie_Airport",
+      "codes": [
+        "YWP",
+        "CYWP"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wasaya Airways": [
       "Sioux Lookout",
       "Webequie"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:20Z",
+  "date-time-wikidata": "2025-09-28T07:13:05Z"
 }

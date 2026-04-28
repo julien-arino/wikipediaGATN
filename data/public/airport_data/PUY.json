@@ -32,192 +32,361 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "East Midlands",
-      "https://en.wikipedia.org/wiki/East_Midlands_Airport",
-      "EMA",
-      "EGNX"
-    ],
-    [
-      "Edinburgh",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "EDI",
-      "EGPH"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gothenburg",
-      "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
-      "GOT",
-      "ESGG"
-    ],
-    [
-      "Hanover",
-      "https://en.wikipedia.org/wiki/Hannover_Airport",
-      "HAJ",
-      "EDDV"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Poznań",
-      "https://en.wikipedia.org/wiki/Poznań–Ławica_Airport",
-      "POZ",
-      "EPPO"
-    ],
-    [
-      "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Stockholm-Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Arlanda_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
-      "STR",
-      "EDDS"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ],
-    [
-      "Zadar",
-      "https://en.wikipedia.org/wiki/Zadar_Airport",
-      "ZAD",
-      "LDZD"
-    ],
-    [
-      "Zagreb",
-      "https://en.wikipedia.org/wiki/Zagreb_Airport",
-      "ZAG",
-      "LDZA"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zürich_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "East Midlands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Edinburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Gothenburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
+      "codes": [
+        "GOT",
+        "ESGG"
+      ],
+      "airlines": [
+        "Ryanair",
+        "TUI fly Nordic"
+      ]
+    },
+    {
+      "city": "Hanover",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "codes": [
+        "HAJ",
+        "EDDV"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet",
+        "Jet2.com",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet",
+        "Jet2.com",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Air Dolomiti",
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Poznań",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poznań–Ławica_Airport",
+      "codes": [
+        "POZ",
+        "EPPO"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Rotterdam/The Hague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Stockholm-Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "TUI fly Nordic"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "TUI fly Nordic"
+      ]
+    },
+    {
+      "city": "Stuttgart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Zadar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zadar_Airport",
+      "codes": [
+        "ZAD",
+        "LDZD"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Zagreb",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
+      "codes": [
+        "ZAG",
+        "LDZA"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zürich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Dolomiti": [
@@ -286,5 +455,7 @@
       "Gothenburg",
       "Stockholm–Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:51Z",
+  "date-time-wikidata": "2026-04-12T18:19:30Z"
 }

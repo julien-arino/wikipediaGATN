@@ -31,36 +31,76 @@
     "Varesh Airlines"
   ],
   "destinations": [
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kish",
-      "https://en.wikipedia.org/wiki/Kish_International_Airport",
-      "KIH",
-      "OIBK"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Kish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kish_International_Airport",
+      "codes": [
+        "KIH",
+        "OIBK"
+      ],
+      "airlines": [
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Caspian Airlines",
+        "Chabahar Airlines",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Karun Airlines",
+        "Mahan Air",
+        "Pouya Air",
+        "Qeshm Air",
+        "Varesh Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ATA Airlines": [
@@ -109,5 +149,7 @@
       "Mashhad",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:18Z",
+  "date-time-wikidata": "2025-11-24T02:09:48Z"
 }

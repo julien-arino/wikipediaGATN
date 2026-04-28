@@ -19,24 +19,39 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Bora Bora",
-      "https://en.wikipedia.org/wiki/Bora_Bora_Airport",
-      "BOB",
-      "NTTB"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Raiatea",
-      "https://en.wikipedia.org/wiki/Raiatea_Airport",
-      "RFP",
-      "NTTR"
-    ]
+    {
+      "city": "Bora Bora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bora_Bora_Airport",
+      "codes": [
+        "BOB",
+        "NTTB"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Raiatea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raiatea_Airport",
+      "codes": [
+        "RFP",
+        "NTTR"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
@@ -44,5 +59,7 @@
       "Papeete",
       "Raiatea"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:16Z",
+  "date-time-wikidata": "2025-04-01T22:04:02Z"
 }

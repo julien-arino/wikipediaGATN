@@ -19,23 +19,35 @@
     "Air Rarotonga"
   ],
   "destinations": [
-    [
-      "Mitiaro",
-      "https://en.wikipedia.org/wiki/Mitiaro_Airport",
-      "MOI",
-      "NCMR"
-    ],
-    [
-      "Rarotonga",
-      "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
-      "RAR",
-      "NCRG"
-    ]
+    {
+      "city": "Mitiaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiaro_Airport",
+      "codes": [
+        "MOI",
+        "NCMR"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    },
+    {
+      "city": "Rarotonga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
+      "codes": [
+        "RAR",
+        "NCRG"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Rarotonga": [
       "Mitiaro",
       "Rarotonga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:24Z",
+  "date-time-wikidata": "2025-09-11T22:25:44Z"
 }

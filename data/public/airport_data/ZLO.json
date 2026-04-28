@@ -7,6 +7,7 @@
   "lat": "19.1447539",
   "lon": "-104.5580307",
   "altitude": null,
+  "continent": "North America",
   "region": "Jalisco",
   "country_alpha3": "MEX",
   "country_name": "Mexico",
@@ -23,42 +24,73 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary International Airport",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "George Bush Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Mexico City International Airport",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "Calgary International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "George Bush Intercontinental Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Mexico City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -81,5 +113,6 @@
       "Calgary International Airport"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:13:41Z",
+  "date-time-wikidata": "2026-04-03T15:21:21Z"
 }

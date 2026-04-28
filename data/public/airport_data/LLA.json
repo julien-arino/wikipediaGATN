@@ -25,42 +25,74 @@
     "Zimex Aviation"
   ],
   "destinations": [
-    [
-      "Gothenburg",
-      "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
-      "GOT",
-      "ESGG"
-    ],
-    [
-      "Pajala",
-      "https://en.wikipedia.org/wiki/Pajala_Airport",
-      "PJA",
-      "ESUP"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Umeå",
-      "https://en.wikipedia.org/wiki/Umeå_Airport",
-      "UME",
-      "ESNU"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Gothenburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
+      "codes": [
+        "GOT",
+        "ESGG"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Pajala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pajala_Airport",
+      "codes": [
+        "PJA",
+        "ESUP"
+      ],
+      "airlines": [
+        "Jonair"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Umeå",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umeå_Airport",
+      "codes": [
+        "UME",
+        "ESNU"
+      ],
+      "airlines": [
+        "Zimex Aviation"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Edelweiss Air": [
@@ -85,5 +117,7 @@
     "Zimex Aviation": [
       "Umeå"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:20Z",
+  "date-time-wikidata": "2026-01-25T15:06:21Z"
 }

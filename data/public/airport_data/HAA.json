@@ -19,23 +19,35 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Hammerfest",
-      "https://en.wikipedia.org/wiki/Hammerfest_Airport",
-      "HFT",
-      "ENHF"
-    ],
-    [
-      "Tromsø",
-      "https://en.wikipedia.org/wiki/Tromsø_Airport",
-      "TOS",
-      "ENTC"
-    ]
+    {
+      "city": "Hammerfest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hammerfest_Airport",
+      "codes": [
+        "HFT",
+        "ENHF"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Tromsø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tromsø_Airport",
+      "codes": [
+        "TOS",
+        "ENTC"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Widerøe": [
       "Hammerfest",
       "Tromsø"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:43Z",
+  "date-time-wikidata": "2026-01-25T20:29:13Z"
 }

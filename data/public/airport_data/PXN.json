@@ -20,30 +20,51 @@
     "Star Air (India)"
   ],
   "destinations": [
-    [
-      "Ahmedabad Airport",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Netaji Subhas Chandra Bose International Airport",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Rajiv Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ]
+    {
+      "city": "Ahmedabad Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Star Air (India)"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Netaji Subhas Chandra Bose International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo",
+        "Star Air (India)"
+      ]
+    },
+    {
+      "city": "Rajiv Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -55,5 +76,7 @@
       "Ahmedabad Airport",
       "Netaji Subhas Chandra Bose International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:11Z",
+  "date-time-wikidata": "2026-03-11T20:34:22Z"
 }

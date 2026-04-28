@@ -21,174 +21,323 @@
     "SEARCA"
   ],
   "destinations": [
-    [
-      "Acandí",
-      "https://en.wikipedia.org/wiki/Alcides_Fernández_Airport",
-      "ACD",
-      "SKAD"
-    ],
-    [
-      "Apartadó",
-      "https://en.wikipedia.org/wiki/Antonio_Roldán_Betancourt_Airport",
-      "APO",
-      "SKLC"
-    ],
-    [
-      "Armenia",
-      "https://en.wikipedia.org/wiki/El_Edén_International_Airport",
-      "AXM",
-      "SKAR"
-    ],
-    [
-      "Bahía Solano",
-      "https://en.wikipedia.org/wiki/José_Celestino_Mutis_Airport",
-      "BSC",
-      "SKBS"
-    ],
-    [
-      "Barranquilla",
-      "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
-      "BAQ",
-      "SKBQ"
-    ],
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Bucaramanga",
-      "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
-      "BGA",
-      "SKBG"
-    ],
-    [
-      "Buenaventura",
-      "https://en.wikipedia.org/wiki/Gerardo_Tobar_López_Airport",
-      "BUN",
-      "SKBU"
-    ],
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragon_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Capurganá",
-      "https://en.wikipedia.org/wiki/Capurganá_Airport",
-      "CPB",
-      "SKCA"
-    ],
-    [
-      "Caucasia",
-      "https://en.wikipedia.org/wiki/Juan_H._White_Airport",
-      "CAQ",
-      "SKCU"
-    ],
-    [
-      "Condoto",
-      "https://en.wikipedia.org/wiki/Mandinga_Airport",
-      "COG",
-      "SKCD"
-    ],
-    [
-      "Corozal",
-      "https://en.wikipedia.org/wiki/Las_Brujas_Airport_(Colombia)",
-      "CZU",
-      "SKCZ"
-    ],
-    [
-      "Cúcuta",
-      "https://en.wikipedia.org/wiki/Camilo_Daza_International_Airport",
-      "CUC",
-      "SKCC"
-    ],
-    [
-      "Ibague",
-      "https://en.wikipedia.org/wiki/Perales_Airport",
-      "IBE",
-      "SKIB"
-    ],
-    [
-      "Manizales",
-      "https://en.wikipedia.org/wiki/La_Nubia_Airport",
-      "MZL",
-      "SKMZ"
-    ],
-    [
-      "Mompox",
-      "https://en.wikipedia.org/wiki/San_Bernardo_Airport",
-      "MMP",
-      "SKMP"
-    ],
-    [
-      "Montería",
-      "https://en.wikipedia.org/wiki/Los_Garzones_Airport",
-      "MTR",
-      "SKMR"
-    ],
-    [
-      "Neiva",
-      "https://en.wikipedia.org/wiki/Benito_Salas_Airport",
-      "NVA",
-      "SKNV"
-    ],
-    [
-      "Ocaña",
-      "https://en.wikipedia.org/wiki/Aguas_Claras_Airport",
-      "OCV",
-      "SKOC"
-    ],
-    [
-      "Paipa",
-      "https://en.wikipedia.org/wiki/Juan_José_Rondón_Airport",
-      "RON",
-      "SKPA"
-    ],
-    [
-      "Pereira",
-      "https://en.wikipedia.org/wiki/Matecaña_International_Airport",
-      "PEI",
-      "SKPE"
-    ],
-    [
-      "Quibdó",
-      "https://en.wikipedia.org/wiki/El_Caraño_Airport",
-      "UIB",
-      "SKUI"
-    ],
-    [
-      "San Gil",
-      "https://en.wikipedia.org/wiki/Los_Pozos_Airport",
-      "LPZ",
-      "SKSG"
-    ],
-    [
-      "Tolu",
-      "https://en.wikipedia.org/wiki/Golfo_de_Morrosquillo_Airport",
-      "TLU",
-      "SKTL"
-    ],
-    [
-      "Tolú",
-      "https://en.wikipedia.org/wiki/Golfo_de_Morrosquillo_Airport",
-      "TLU",
-      "SKTL"
-    ],
-    [
-      "Valledupar",
-      "https://en.wikipedia.org/wiki/Alfonso_López_Pumarejo_Airport",
-      "VUP",
-      "SKVP"
-    ],
-    [
-      "Villavicencio",
-      "https://en.wikipedia.org/wiki/Vanguardia_Airport",
-      "VVC",
-      "SKVV"
-    ]
+    {
+      "city": "Acandí",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alcides_Fernández_Airport",
+      "codes": [
+        "ACD",
+        "SKAD"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Apartadó",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_Roldán_Betancourt_Airport",
+      "codes": [
+        "APO",
+        "SKLC"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Armenia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Edén_International_Airport",
+      "codes": [
+        "AXM",
+        "SKAR"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Bahía Solano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Celestino_Mutis_Airport",
+      "codes": [
+        "BSC",
+        "SKBS"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Barranquilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
+      "codes": [
+        "BAQ",
+        "SKBQ"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bucaramanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
+      "codes": [
+        "BGA",
+        "SKBG"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Buenaventura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gerardo_Tobar_López_Airport",
+      "codes": [
+        "BUN",
+        "SKBU"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragon_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Capurganá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capurganá_Airport",
+      "codes": [
+        "CPB",
+        "SKCA"
+      ],
+      "airlines": [
+        "SEARCA"
+      ]
+    },
+    {
+      "city": "Caucasia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_H._White_Airport",
+      "codes": [
+        "CAQ",
+        "SKCU"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Condoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mandinga_Airport",
+      "codes": [
+        "COG",
+        "SKCD"
+      ],
+      "airlines": [
+        "SATENA",
+        "SEARCA"
+      ]
+    },
+    {
+      "city": "Corozal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Brujas_Airport_(Colombia)",
+      "codes": [
+        "CZU",
+        "SKCZ"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Cúcuta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Camilo_Daza_International_Airport",
+      "codes": [
+        "CUC",
+        "SKCC"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Ibague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perales_Airport",
+      "codes": [
+        "IBE",
+        "SKIB"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Manizales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Nubia_Airport",
+      "codes": [
+        "MZL",
+        "SKMZ"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Mompox",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Bernardo_Airport",
+      "codes": [
+        "MMP",
+        "SKMP"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Montería",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Garzones_Airport",
+      "codes": [
+        "MTR",
+        "SKMR"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Neiva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benito_Salas_Airport",
+      "codes": [
+        "NVA",
+        "SKNV"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Ocaña",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aguas_Claras_Airport",
+      "codes": [
+        "OCV",
+        "SKOC"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Paipa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_José_Rondón_Airport",
+      "codes": [
+        "RON",
+        "SKPA"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Pereira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matecaña_International_Airport",
+      "codes": [
+        "PEI",
+        "SKPE"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Quibdó",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Caraño_Airport",
+      "codes": [
+        "UIB",
+        "SKUI"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA",
+        "SEARCA"
+      ]
+    },
+    {
+      "city": "San Gil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Pozos_Airport",
+      "codes": [
+        "LPZ",
+        "SKSG"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Tolu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golfo_de_Morrosquillo_Airport",
+      "codes": [
+        "TLU",
+        "SKTL"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Tolú",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golfo_de_Morrosquillo_Airport",
+      "codes": [
+        "TLU",
+        "SKTL"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Valledupar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_López_Pumarejo_Airport",
+      "codes": [
+        "VUP",
+        "SKVP"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Villavicencio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vanguardia_Airport",
+      "codes": [
+        "VVC",
+        "SKVV"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Clic": [
@@ -234,5 +383,7 @@
       "Condoto",
       "Quibdó"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:20Z",
+  "date-time-wikidata": "2026-04-19T17:52:04Z"
 }

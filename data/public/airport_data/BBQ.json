@@ -7,6 +7,7 @@
   "lat": "17.6215904",
   "lon": "-61.7979415",
   "altitude": null,
+  "continent": "North America",
   "region": "Barbuda",
   "country_alpha3": "ATG",
   "country_name": "Antigua and Barbuda",
@@ -22,18 +23,32 @@
     "Liat Air"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V.C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Montserrat",
-      "https://en.wikipedia.org/wiki/John_A._Osborne_Airport",
-      "MNI",
-      "TRPG"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V.C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "BMN Air",
+        "CalvinAir Helicopters",
+        "Caribbean Helicopters",
+        "FlyMontserrat",
+        "Liat Air"
+      ]
+    },
+    {
+      "city": "Montserrat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_A._Osborne_Airport",
+      "codes": [
+        "MNI",
+        "TRPG"
+      ],
+      "airlines": [
+        "FlyMontserrat"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BMN Air": [
@@ -53,5 +68,6 @@
       "Antigua"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:14:19Z",
+  "date-time-wikidata": "2026-04-09T03:38:23Z"
 }

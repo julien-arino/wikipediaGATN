@@ -4,7 +4,7 @@
   "city-served": "Redcliffe Peninsula",
   "city-served-wikipedia": "[[Redcliffe Peninsula]], [[Queensland]], Australia",
   "location": "[[Rothwell, Queensland|Rothwell]]",
-  "lat": "-27.2064581",
+  "lat": "-27.206458",
   "lon": "153.0690327",
   "altitude": "2.13",
   "continent": "Oceania",
@@ -19,34 +19,50 @@
     "Seair Pacific (page does not exist)"
   ],
   "destinations": [
-    [
-      "Bundaberg Airport",
-      "https://en.wikipedia.org/wiki/Bundaberg_Airport",
-      "BDB",
-      "YBUD"
-    ],
-    [
-      "Charleville Airport",
-      "https://en.wikipedia.org/wiki/Charleville_Airport",
-      "CTL",
-      "YBCV"
-    ],
-    [
-      "Lady Elliot Island",
-      "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Roma Airport",
-      "https://en.wikipedia.org/wiki/Roma_Airport",
-      "RMA",
-      "YROM"
-    ]
+    {
+      "city": "Bundaberg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bundaberg_Airport",
+      "codes": [
+        "BDB",
+        "YBUD"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Charleville Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleville_Airport",
+      "codes": [
+        "CTL",
+        "YBCV"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Lady Elliot Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Seair Pacific (page does not exist)"
+      ]
+    },
+    {
+      "city": "Roma Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roma_Airport",
+      "codes": [
+        "RMA",
+        "YROM"
+      ],
+      "airlines": []
+    }
   ],
   "airlines_destinations": {
     "Seair Pacific (page does not exist)": [
       "Lady Elliot Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:41Z",
+  "date-time-wikidata": "2025-12-26T23:27:34Z"
 }

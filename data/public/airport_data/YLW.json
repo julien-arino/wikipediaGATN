@@ -34,120 +34,236 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Comox",
-      "https://en.wikipedia.org/wiki/CFB_Comox",
-      "YQQ",
-      "CYQQ"
-    ],
-    [
-      "Cranbrook",
-      "https://en.wikipedia.org/wiki/Cranbrook/Canadian_Rockies_International_Airport",
-      "YXC",
-      "CYXC"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Fort McMurray",
-      "https://en.wikipedia.org/wiki/Fort_McMurray_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Fort St. John",
-      "https://en.wikipedia.org/wiki/Fort_St._John_Airport",
-      "YXJ",
-      "CYXJ"
-    ],
-    [
-      "Kamloops",
-      "https://en.wikipedia.org/wiki/Kamloops_Airport",
-      "YKA",
-      "CYKA"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Mazatlán",
-      "https://en.wikipedia.org/wiki/Mazatlán_International_Airport",
-      "MZT",
-      "MMMZ"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Nanaimo",
-      "https://en.wikipedia.org/wiki/Nanaimo_Airport",
-      "YCD",
-      "CYCD"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Prince George",
-      "https://en.wikipedia.org/wiki/Prince_George_Airport",
-      "YXS",
-      "CYXS"
-    ],
-    [
-      "Seattle/Tacoma",
-      "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Victoria",
-      "https://en.wikipedia.org/wiki/Victoria_International_Airport",
-      "YYJ",
-      "CYYJ"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Carson Air",
+        "Flair Airlines",
+        "WestJet",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Comox",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CFB_Comox",
+      "codes": [
+        "YQQ",
+        "CYQQ"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Cranbrook",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cranbrook/Canadian_Rockies_International_Airport",
+      "codes": [
+        "YXC",
+        "CYXC"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Flair Airlines",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Fort McMurray",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_McMurray_Airport",
+      "codes": [
+        "YMM",
+        "CYMM"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Fort St. John",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_St._John_Airport",
+      "codes": [
+        "YXJ",
+        "CYXJ"
+      ],
+      "airlines": [
+        "North Cariboo Air"
+      ]
+    },
+    {
+      "city": "Kamloops",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamloops_Airport",
+      "codes": [
+        "YKA",
+        "CYKA"
+      ],
+      "airlines": [
+        "Canadian North",
+        "Carson Air",
+        "KF Cargo",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Mazatlán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazatlán_International_Airport",
+      "codes": [
+        "MZT",
+        "MMMZ"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    },
+    {
+      "city": "Nanaimo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanaimo_Airport",
+      "codes": [
+        "YCD",
+        "CYCD"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Prince George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_George_Airport",
+      "codes": [
+        "YXS",
+        "CYXS"
+      ],
+      "airlines": [
+        "Central Mountain Air",
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Rouge",
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Air Canada Rouge",
+        "Air North",
+        "Canadian North",
+        "Carson Air",
+        "Central Mountain Air",
+        "Flair Airlines",
+        "KF Cargo",
+        "North Cariboo Air",
+        "SkyLink Express",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Victoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
+      "codes": [
+        "YYJ",
+        "CYYJ"
+      ],
+      "airlines": [
+        "North Cariboo Air",
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -222,5 +338,7 @@
       "Kamloops",
       "Vancouver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:21Z",
+  "date-time-wikidata": "2026-04-14T17:09:40Z"
 }

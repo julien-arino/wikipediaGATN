@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Belo Horizonte–Confins",
-      "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Salvador da Bahia",
-      "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
-      "SSA",
-      "SBSV"
-    ]
+    {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Salvador da Bahia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
+      "codes": [
+        "SSA",
+        "SBSV"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Belo Horizonte–Confins",
       "Salvador da Bahia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:31Z",
+  "date-time-wikidata": "2025-12-18T22:01:49Z"
 }

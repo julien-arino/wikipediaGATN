@@ -21,18 +21,30 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Brisbane Airport",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Sunshine Coast Airport",
-      "https://en.wikipedia.org/wiki/Sunshine_Coast_Airport",
-      "MCY",
-      "YBSU"
-    ]
+    {
+      "city": "Brisbane Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Sunshine Coast Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sunshine_Coast_Airport",
+      "codes": [
+        "MCY",
+        "YBSU"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -45,5 +57,7 @@
     "Virgin Australia": [
       "Brisbane Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:17Z",
+  "date-time-wikidata": "2025-01-11T12:02:19Z"
 }

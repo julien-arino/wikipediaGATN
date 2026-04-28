@@ -20,18 +20,29 @@
     "Emirates SkyCargo"
   ],
   "destinations": [
-    [
-      "Dubai–Al Maktoum",
-      "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "DWC",
-      "OMDW"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ]
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Emirates SkyCargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Astral Aviation": [
@@ -41,5 +52,7 @@
       "Dubai–Al Maktoum",
       "Nairobi–Jomo Kenyatta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:22Z",
+  "date-time-wikidata": "2026-01-17T20:35:02Z"
 }

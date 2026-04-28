@@ -25,48 +25,85 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Juba",
-      "https://en.wikipedia.org/wiki/Juba_International_Airport",
-      "JUB",
-      "HJJJ"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair",
+        "Sudan Airways"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Sudan Airways"
+      ]
+    },
+    {
+      "city": "Juba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juba_International_Airport",
+      "codes": [
+        "JUB",
+        "HJJJ"
+      ],
+      "airlines": [
+        "Badr Airlines"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir",
+        "Tarco Aviation"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Sudan Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Badr Airlines": [
@@ -92,5 +129,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:13Z",
+  "date-time-wikidata": "2026-04-25T20:45:12Z"
 }

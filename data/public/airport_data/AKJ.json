@@ -22,24 +22,40 @@
     "Tigerair Taiwan"
   ],
   "destinations": [
-    [
-      "Haneda Airport",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Narita International Airport",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Taoyuan International Airport",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ]
+    {
+      "city": "Haneda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Air Do",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Narita International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Jetstar Japan"
+      ]
+    },
+    {
+      "city": "Taoyuan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "Tigerair Taiwan"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Do": [
@@ -54,5 +70,7 @@
     "Tigerair Taiwan": [
       "Taoyuan International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:55Z",
+  "date-time-wikidata": "2026-03-23T20:48:48Z"
 }

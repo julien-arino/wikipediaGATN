@@ -30,138 +30,250 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Bastia",
-      "https://en.wikipedia.org/wiki/Bastia_–_Poretta_Airport",
-      "BIA",
-      "LFKB"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Figari",
-      "https://en.wikipedia.org/wiki/Figari_Sud-Corse_Airport",
-      "FSC",
-      "LFKF"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Nice",
-      "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zürich_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Bastia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia_–_Poretta_Airport",
+      "codes": [
+        "BIA",
+        "LFKB"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Figari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Figari_Sud-Corse_Airport",
+      "codes": [
+        "FSC",
+        "LFKF"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "Swiss International Air Lines"
+      ]
+    },
+    {
+      "city": "Lille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air France",
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Transavia",
+        "Twin Jet"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zürich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air France": [
@@ -212,5 +324,7 @@
     "Volotea": [
       "Lille"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:05Z",
+  "date-time-wikidata": "2026-04-09T21:04:41Z"
 }

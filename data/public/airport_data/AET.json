@@ -19,24 +19,39 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Bettles Airport",
-      "https://en.wikipedia.org/wiki/Bettles_Airport",
-      "BTT",
-      "PABT"
-    ],
-    [
-      "Fairbanks International Airport",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Hughes Airport (Alaska)",
-      "https://en.wikipedia.org/wiki/Hughes_Airport_(Alaska)",
-      "HUS",
-      "PAHU"
-    ]
+    {
+      "city": "Bettles Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bettles_Airport",
+      "codes": [
+        "BTT",
+        "PABT"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fairbanks International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Hughes Airport (Alaska)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hughes_Airport_(Alaska)",
+      "codes": [
+        "HUS",
+        "PAHU"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
@@ -44,5 +59,7 @@
       "Fairbanks International Airport",
       "Hughes Airport (Alaska)"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:20Z",
+  "date-time-wikidata": "2025-06-23T09:56:33Z"
 }

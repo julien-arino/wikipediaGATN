@@ -20,12 +20,18 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Nepal Airlines",
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nepal Airlines": [
@@ -34,5 +40,7 @@
     "Tara Air": [
       "Kathmandu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:54Z",
+  "date-time-wikidata": "2026-01-09T17:23:45Z"
 }

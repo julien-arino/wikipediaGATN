@@ -20,24 +20,41 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Koyuk",
-      "https://en.wikipedia.org/wiki/Koyuk_Alfred_Adams_Airport",
-      "KKA",
-      "PAKK"
-    ],
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Unalakleet",
-      "https://en.wikipedia.org/wiki/Unalakleet_Airport",
-      "UNK",
-      "PAUN"
-    ]
+    {
+      "city": "Koyuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koyuk_Alfred_Adams_Airport",
+      "codes": [
+        "KKA",
+        "PAKK"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Unalakleet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unalakleet_Airport",
+      "codes": [
+        "UNK",
+        "PAUN"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -49,5 +66,7 @@
       "Koyuk",
       "Unalakleet"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:09Z",
+  "date-time-wikidata": "2026-03-13T00:21:13Z"
 }

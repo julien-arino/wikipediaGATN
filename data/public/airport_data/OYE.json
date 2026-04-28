@@ -20,18 +20,30 @@
     "Nationale Regionale Transport"
   ],
   "destinations": [
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Léon-Mba_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Port-Gentil",
-      "https://en.wikipedia.org/wiki/Port-Gentil_International_Airport",
-      "POG",
-      "FOOG"
-    ]
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Léon-Mba_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "AfriJet",
+        "Nationale Regionale Transport"
+      ]
+    },
+    {
+      "city": "Port-Gentil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port-Gentil_International_Airport",
+      "codes": [
+        "POG",
+        "FOOG"
+      ],
+      "airlines": [
+        "AfriJet",
+        "Nationale Regionale Transport"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AfriJet": [
@@ -42,5 +54,7 @@
       "Libreville",
       "Port-Gentil"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:53Z",
+  "date-time-wikidata": "2025-09-13T22:24:01Z"
 }

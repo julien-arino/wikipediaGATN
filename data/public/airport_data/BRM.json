@@ -24,36 +24,67 @@
     "Venezolana"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Del_Caribe_\"Santiago_Mariño\"_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "San Antonio del Táchira",
-      "https://en.wikipedia.org/wiki/Juan_Vicente_Gómez_International_Airport",
-      "SVZ",
-      "SVSA"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Avior Airlines",
+        "Conviasa",
+        "RUTACA Airlines",
+        "Venezolana"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines",
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Del_Caribe_\"Santiago_Mariño\"_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Conviasa",
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Air Century"
+      ]
+    },
+    {
+      "city": "San Antonio del Táchira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Vicente_Gómez_International_Airport",
+      "codes": [
+        "SVZ",
+        "SVSA"
+      ],
+      "airlines": [
+        "Conviasa",
+        "RUTACA Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Century": [
@@ -79,5 +110,7 @@
     "Venezolana": [
       "Caracas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:57Z",
+  "date-time-wikidata": "2026-04-04T11:55:13Z"
 }

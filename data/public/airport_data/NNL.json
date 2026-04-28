@@ -19,23 +19,35 @@
     "Iliamna Air Taxi"
   ],
   "destinations": [
-    [
-      "Iliamna",
-      "https://en.wikipedia.org/wiki/Iliamna_Airport",
-      "ILI",
-      "PAIL"
-    ],
-    [
-      "Port Alsworth",
-      "https://en.wikipedia.org/wiki/Port_Alsworth_Airport",
-      "PTA",
-      "PALJ"
-    ]
+    {
+      "city": "Iliamna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iliamna_Airport",
+      "codes": [
+        "ILI",
+        "PAIL"
+      ],
+      "airlines": [
+        "Iliamna Air Taxi"
+      ]
+    },
+    {
+      "city": "Port Alsworth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Alsworth_Airport",
+      "codes": [
+        "PTA",
+        "PALJ"
+      ],
+      "airlines": [
+        "Iliamna Air Taxi"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iliamna Air Taxi": [
       "Iliamna",
       "Port Alsworth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:02Z",
+  "date-time-wikidata": "2025-05-31T02:30:38Z"
 }

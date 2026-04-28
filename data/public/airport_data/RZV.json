@@ -24,60 +24,108 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ],
-    [
-      "Gassim",
-      "https://en.wikipedia.org/wiki/Prince_Naif_bin_Abdulaziz_International_Airport",
-      "ELQ",
-      "OEGS"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Izmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Gassim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Naif_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "ELQ",
+        "OEGS"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Izmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flynas",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flynas",
+        "Turkish Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -104,5 +152,7 @@
       "Jeddah",
       "Riyadh"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:57Z",
+  "date-time-wikidata": "2026-04-10T16:06:20Z"
 }

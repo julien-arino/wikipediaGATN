@@ -21,30 +21,50 @@
     "Rossiya Airlines"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Mirny",
-      "https://en.wikipedia.org/wiki/Mirny_Airport",
-      "MJZ",
-      "UERR"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Mirny",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mirny_Airport",
+      "codes": [
+        "MJZ",
+        "UERR"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ALROSA": [
@@ -57,5 +77,7 @@
     "Rossiya Airlines": [
       "Krasnoyarsk–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:12Z",
+  "date-time-wikidata": "2025-11-06T21:51:57Z"
 }

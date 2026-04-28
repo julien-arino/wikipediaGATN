@@ -1,8 +1,8 @@
 {
   "iata": "YSK",
   "icao": "CYSK",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Sanikiluaq",
+  "city-served-wikipedia": "[[Sanikiluaq]], [[Nunavut]]",
   "location": "[[Sanikiluaq]], [[Nunavut]]",
   "lat": "56.536944",
   "lon": "-79.250000",
@@ -11,7 +11,7 @@
   "region": "CA-NU",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "NU",
+  "subdivision_code": "Nord-du-Quebec",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sanikiluaq_Airport",
   "number_airlines": 2,
   "outdegree": 3,
@@ -20,24 +20,39 @@
     "Calm Air"
   ],
   "destinations": [
-    [
-      "Kuujjuarapik",
-      "https://en.wikipedia.org/wiki/Kuujjuarapik_Airport",
-      "YGW",
-      "CYGW"
-    ],
-    [
-      "Umiujaq",
-      "https://en.wikipedia.org/wiki/Umiujaq_Airport",
-      "YUD",
-      "CYMU"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Kuujjuarapik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuujjuarapik_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Umiujaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umiujaq_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Calm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Inuit": [
@@ -47,5 +62,7 @@
     "Calm Air": [
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:31Z",
+  "date-time-wikidata": "2025-12-26T23:26:39Z"
 }

@@ -7,6 +7,7 @@
   "lat": "27.4854679",
   "lon": "95.0170764",
   "altitude": "109.73",
+  "continent": "Asia",
   "region": "Assam",
   "country_alpha3": "IND",
   "country_name": "India",
@@ -20,48 +21,87 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Agartala",
-      "https://en.wikipedia.org/wiki/Agartala_Airport",
-      "IXA",
-      "VEAT"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Siliguri",
-      "https://en.wikipedia.org/wiki/Bagdogra_Airport",
-      "IXB",
-      "VEBD"
-    ]
+    {
+      "city": "Agartala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Agartala_Airport",
+      "codes": [
+        "IXA",
+        "VEAT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Siliguri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bagdogra_Airport",
+      "codes": [
+        "IXB",
+        "VEBD"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -82,5 +122,6 @@
       "Kolkata"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:05:08Z",
+  "date-time-wikidata": "2026-02-12T09:12:33Z"
 }

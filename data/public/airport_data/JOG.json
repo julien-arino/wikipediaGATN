@@ -21,24 +21,40 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Bandung–Sastranegara",
-      "https://en.wikipedia.org/wiki/Husein_Sastranegara_Airport",
-      "BDO",
-      "WICC"
-    ],
-    [
-      "Jakarta–Halim Perdanakusuma",
-      "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
-      "HLP",
-      "WIHH"
-    ],
-    [
-      "Karimunjawa",
-      "https://en.wikipedia.org/wiki/Dewadaru_Airport",
-      "KWB",
-      "WAHU"
-    ]
+    {
+      "city": "Bandung–Sastranegara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Husein_Sastranegara_Airport",
+      "codes": [
+        "BDO",
+        "WICC"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Halim Perdanakusuma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
+      "codes": [
+        "HLP",
+        "WIHH"
+      ],
+      "airlines": [
+        "Citilink",
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Karimunjawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dewadaru_Airport",
+      "codes": [
+        "KWB",
+        "WAHU"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Citilink": [
@@ -51,5 +67,7 @@
       "Bandung–Sastranegara",
       "Karimunjawa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:27Z",
+  "date-time-wikidata": "2026-04-28T04:31:26Z"
 }

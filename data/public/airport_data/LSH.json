@@ -19,23 +19,35 @@
     "Mingalar Aviation Services"
   ],
   "destinations": [
-    [
-      "Heho",
-      "https://en.wikipedia.org/wiki/Heho_Airport",
-      "HEH",
-      "VYHH"
-    ],
-    [
-      "Yangon",
-      "https://en.wikipedia.org/wiki/Yangon_Airport",
-      "RGN",
-      "VYYY"
-    ]
+    {
+      "city": "Heho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heho_Airport",
+      "codes": [
+        "HEH",
+        "VYHH"
+      ],
+      "airlines": [
+        "Mingalar Aviation Services"
+      ]
+    },
+    {
+      "city": "Yangon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangon_Airport",
+      "codes": [
+        "RGN",
+        "VYYY"
+      ],
+      "airlines": [
+        "Mingalar Aviation Services"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Mingalar Aviation Services": [
       "Heho",
       "Yangon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:03Z",
+  "date-time-wikidata": "2024-08-05T10:57:50Z"
 }

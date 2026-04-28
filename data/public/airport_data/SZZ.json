@@ -21,48 +21,83 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Bergen",
-      "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "Liverpool",
-      "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
-      "LPL",
-      "EGGP"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Bergen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Liverpool",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
+      "codes": [
+        "LPL",
+        "EGGP"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LOT Polish Airlines": [
@@ -78,5 +113,7 @@
       "Bergen",
       "Oslo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:01Z",
+  "date-time-wikidata": "2026-02-07T01:12:15Z"
 }

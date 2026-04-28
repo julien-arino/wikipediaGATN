@@ -19,23 +19,35 @@
     "Sunrise Airways"
   ],
   "destinations": [
-    [
-      "Cap-Haïtien",
-      "https://en.wikipedia.org/wiki/Cap-Haïtien_International_Airport",
-      "CAP",
-      "MTCH"
-    ],
-    [
-      "Port-au-Prince",
-      "https://en.wikipedia.org/wiki/Toussaint_Louverture_International_Airport",
-      "PAP",
-      "MTPP"
-    ]
+    {
+      "city": "Cap-Haïtien",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cap-Haïtien_International_Airport",
+      "codes": [
+        "CAP",
+        "MTCH"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Port-au-Prince",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toussaint_Louverture_International_Airport",
+      "codes": [
+        "PAP",
+        "MTPP"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sunrise Airways": [
       "Cap-Haïtien",
       "Port-au-Prince"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:59Z",
+  "date-time-wikidata": "2026-03-25T07:06:52Z"
 }

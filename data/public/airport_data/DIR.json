@@ -19,24 +19,39 @@
     "Ethiopian Airlines"
   ],
   "destinations": [
-    [
-      "Bole International Airport",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Djibouti-Ambouli International Airport",
-      "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
-      "JIB",
-      "HDAM"
-    ],
-    [
-      "Gode Airport",
-      "https://en.wikipedia.org/wiki/Gode_Airport",
-      "GDE",
-      "HAGO"
-    ]
+    {
+      "city": "Bole International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Djibouti-Ambouli International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
+      "codes": [
+        "JIB",
+        "HDAM"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Gode Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gode_Airport",
+      "codes": [
+        "GDE",
+        "HAGO"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ethiopian Airlines": [
@@ -44,5 +59,7 @@
       "Djibouti-Ambouli International Airport",
       "Gode Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:10Z",
+  "date-time-wikidata": "2026-04-10T14:45:25Z"
 }

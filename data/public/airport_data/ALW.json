@@ -7,6 +7,7 @@
   "lat": "46.0940857",
   "lon": "-118.2912192",
   "altitude": "363.93",
+  "continent": "North America",
   "region": "Washington",
   "country_alpha3": "USA",
   "country_name": "United States",
@@ -18,17 +19,23 @@
     "Alaska Airlines"
   ],
   "destinations": [
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ]
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
       "Seattle–Tacoma International Airport"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:03:25Z",
+  "date-time-wikidata": "2025-12-02T16:28:01Z"
 }

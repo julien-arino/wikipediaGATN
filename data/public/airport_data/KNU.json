@@ -19,30 +19,50 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Mumbai-Shivaji",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai-Shivaji",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -51,5 +71,7 @@
       "Hyderabad",
       "Mumbai-Shivaji"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:58Z",
+  "date-time-wikidata": "2026-01-31T17:10:27Z"
 }

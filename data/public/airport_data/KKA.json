@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Shaktoolik",
-      "https://en.wikipedia.org/wiki/Shaktoolik_Airport",
-      "SKK",
-      "PFSH"
-    ],
-    [
-      "Unalakleet",
-      "https://en.wikipedia.org/wiki/Unalakleet_Airport",
-      "UNK",
-      "PAUN"
-    ]
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Shaktoolik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shaktoolik_Airport",
+      "codes": [
+        "SKK",
+        "PFSH"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Unalakleet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unalakleet_Airport",
+      "codes": [
+        "UNK",
+        "PAUN"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -48,5 +64,7 @@
     "Ryan Air": [
       "Unalakleet"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:53Z",
+  "date-time-wikidata": "2025-08-27T18:23:19Z"
 }

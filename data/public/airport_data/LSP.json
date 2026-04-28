@@ -22,18 +22,30 @@
     "Venezolana"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Curaçao",
-      "https://en.wikipedia.org/wiki/Curaçao_International_Airport",
-      "CUR",
-      "TNCC"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Avior Airlines",
+        "Conviasa",
+        "Venezolana"
+      ]
+    },
+    {
+      "city": "Curaçao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Curaçao_International_Airport",
+      "codes": [
+        "CUR",
+        "TNCC"
+      ],
+      "airlines": [
+        "Albatros Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avior Airlines": [
@@ -48,5 +60,7 @@
     "Venezolana": [
       "Caracas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:03Z",
+  "date-time-wikidata": "2026-03-12T07:13:30Z"
 }

@@ -21,54 +21,95 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Gisborne",
-      "https://en.wikipedia.org/wiki/Gisborne_Airport",
-      "GIS",
-      "NZGS"
-    ],
-    [
-      "Hamilton",
-      "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
-      "HLZ",
-      "NZHN"
-    ],
-    [
-      "Tauranga",
-      "https://en.wikipedia.org/wiki/Tauranga_Airport",
-      "TRG",
-      "NZTG"
-    ],
-    [
-      "Wairoa",
-      "https://en.wikipedia.org/wiki/Wairoa_Aerodrome",
-      "WIR",
-      "NZWO"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_International_Airport",
-      "WLG",
-      "NZWN"
-    ],
-    [
-      "Whakatāne",
-      "https://en.wikipedia.org/wiki/Whakatāne_Airport",
-      "WHK",
-      "NZWK"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Gisborne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gisborne_Airport",
+      "codes": [
+        "GIS",
+        "NZGS"
+      ],
+      "airlines": [
+        "Air Napier",
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
+      "codes": [
+        "HLZ",
+        "NZHN"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Tauranga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tauranga_Airport",
+      "codes": [
+        "TRG",
+        "NZTG"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Wairoa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wairoa_Aerodrome",
+      "codes": [
+        "WIR",
+        "NZWO"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_International_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Whakatāne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whakatāne_Airport",
+      "codes": [
+        "WHK",
+        "NZWK"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Napier": [
@@ -86,5 +127,7 @@
       "Wairoa",
       "Whakatāne"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:04Z",
+  "date-time-wikidata": "2026-01-14T00:49:37Z"
 }

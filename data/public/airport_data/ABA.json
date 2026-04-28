@@ -24,72 +24,127 @@
     "S7 Airlines"
   ],
   "destinations": [
-    [
-      "Adler-Sochi International Airport",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Alykel Airport",
-      "https://en.wikipedia.org/wiki/Alykel_Airport",
-      "NSK",
-      "UOOO"
-    ],
-    [
-      "International Airport Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Kadala Airport",
-      "https://en.wikipedia.org/wiki/Kadala_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Koltsovo Airport",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Krasnoyarsk Cheremshanka Airport",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
-      "KCY",
-      "UNKM"
-    ],
-    [
-      "Krasnoyarsk International Airport",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow Domodedovo Airport",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Pulkovo Airport",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sheremetyevo International Airport",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Tolmachevo Airport",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ]
+    {
+      "city": "Adler-Sochi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Alykel Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alykel_Airport",
+      "codes": [
+        "NSK",
+        "UOOO"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "International Airport Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Kadala Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kadala_Airport",
+      "codes": [
+        "HTA",
+        "UIAA"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Koltsovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk Cheremshanka Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
+      "codes": [
+        "KCY",
+        "UNKM"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Moscow Domodedovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Pulkovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Sheremetyevo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Tolmachevo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -115,5 +170,7 @@
       "Moscow Domodedovo Airport",
       "Tolmachevo Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:15Z",
+  "date-time-wikidata": "2026-04-11T19:06:36Z"
 }

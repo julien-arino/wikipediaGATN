@@ -27,150 +27,283 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Adelaide",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Avalon",
-      "https://en.wikipedia.org/wiki/Avalon_Airport",
-      "AVV",
-      "YMAV"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Canberra",
-      "https://en.wikipedia.org/wiki/Canberra_Airport",
-      "CBR",
-      "YSCB"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Denpasar",
-      "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
-      "DPS",
-      "WADD"
-    ],
-    [
-      "Dunedin",
-      "https://en.wikipedia.org/wiki/Dunedin_Airport",
-      "DUD",
-      "NZDN"
-    ],
-    [
-      "Hamilton",
-      "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
-      "HLZ",
-      "NZHN"
-    ],
-    [
-      "Hervey Bay",
-      "https://en.wikipedia.org/wiki/Hervey_Bay_Airport",
-      "HVB",
-      "YHBA"
-    ],
-    [
-      "Hobart",
-      "https://en.wikipedia.org/wiki/Hobart_Airport",
-      "HBA",
-      "YMHB"
-    ],
-    [
-      "Lady Elliot Island",
-      "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Lord Howe Island",
-      "https://en.wikipedia.org/wiki/Lord_Howe_Island_Airport",
-      "LDH",
-      "YLHI"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Newcastle",
-      "https://en.wikipedia.org/wiki/Newcastle_Airport,_New_South_Wales",
-      "NTL",
-      "YWLM"
-    ],
-    [
-      "Newcastle",
-      "https://en.wikipedia.org/wiki/Newcastle_Airport_(New_South_Wales)",
-      "NTL",
-      "YWLM"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Port Macquarie",
-      "https://en.wikipedia.org/wiki/Port_Macquarie_Airport",
-      "PQQ",
-      "YPMQ"
-    ],
-    [
-      "Queenstown",
-      "https://en.wikipedia.org/wiki/Queenstown_Airport",
-      "ZQN",
-      "NZQN"
-    ],
-    [
-      "Redcliffe",
-      "https://en.wikipedia.org/wiki/Redcliffe_Airport_(Queensland)",
-      "iata code not found",
-      "YRED"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Avalon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Avalon_Airport",
+      "codes": [
+        "AVV",
+        "YMAV"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Canberra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
+      "codes": [
+        "CBR",
+        "YSCB"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Dunedin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dunedin_Airport",
+      "codes": [
+        "DUD",
+        "NZDN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
+      "codes": [
+        "HLZ",
+        "NZHN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Hervey Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hervey_Bay_Airport",
+      "codes": [
+        "HVB",
+        "YHBA"
+      ],
+      "airlines": [
+        "Seair Pacific"
+      ]
+    },
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Lady Elliot Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Seair Pacific"
+      ]
+    },
+    {
+      "city": "Lord Howe Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lord_Howe_Island_Airport",
+      "codes": [
+        "LDH",
+        "YLHI"
+      ],
+      "airlines": [
+        "Eastern Air Services"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Newcastle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_Airport,_New_South_Wales",
+      "codes": [
+        "NTL",
+        "YWLM"
+      ],
+      "airlines": [
+        "FlyPelican",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Newcastle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_Airport_(New_South_Wales)",
+      "codes": [
+        "NTL",
+        "YWLM"
+      ],
+      "airlines": [
+        "FlyPelican",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Port Macquarie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Macquarie_Airport",
+      "codes": [
+        "PQQ",
+        "YPMQ"
+      ],
+      "airlines": [
+        "Eastern Air Services"
+      ]
+    },
+    {
+      "city": "Queenstown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queenstown_Airport",
+      "codes": [
+        "ZQN",
+        "NZQN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Redcliffe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Redcliffe_Airport_(Queensland)",
+      "codes": [
+        "iata code not found",
+        "YRED"
+      ],
+      "airlines": [
+        "Seair Pacific"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Qantas Freight",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -226,5 +359,7 @@
     "Qantas Freight": [
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:20Z",
+  "date-time-wikidata": "2026-04-01T11:17:48Z"
 }

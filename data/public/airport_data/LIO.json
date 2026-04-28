@@ -19,24 +19,39 @@
     "Sansa Airlines"
   ],
   "destinations": [
-    [
-      "Bocas del Toro",
-      "https://en.wikipedia.org/wiki/José_Ezequiel_Hall_International_Airport",
-      "BOC",
-      "MPBO"
-    ],
-    [
-      "San José–Juan Santamaría",
-      "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
-      "SJO",
-      "MROC"
-    ],
-    [
-      "Tortuguero",
-      "https://en.wikipedia.org/wiki/Tortuguero_Airport",
-      "TTQ",
-      "MRBT"
-    ]
+    {
+      "city": "Bocas del Toro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Ezequiel_Hall_International_Airport",
+      "codes": [
+        "BOC",
+        "MPBO"
+      ],
+      "airlines": [
+        "Sansa Airlines"
+      ]
+    },
+    {
+      "city": "San José–Juan Santamaría",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Sansa Airlines"
+      ]
+    },
+    {
+      "city": "Tortuguero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tortuguero_Airport",
+      "codes": [
+        "TTQ",
+        "MRBT"
+      ],
+      "airlines": [
+        "Sansa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sansa Airlines": [
@@ -44,5 +59,7 @@
       "San José–Juan Santamaría",
       "Tortuguero"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:00Z",
+  "date-time-wikidata": "2025-12-07T01:24:36Z"
 }

@@ -21,24 +21,39 @@
     "Delta Connection"
   ],
   "destinations": [
-    [
-      "Austin–Bergstrom International Airport",
-      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
-      "AUS",
-      "KAUS"
-    ],
-    [
-      "LaGuardia Airport",
-      "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "LGA",
-      "KLGA"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "Austin–Bergstrom International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "LaGuardia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Airlines": [
@@ -50,5 +65,7 @@
     "Delta Connection": [
       "Austin–Bergstrom International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:36Z",
+  "date-time-wikidata": "2026-04-22T17:32:57Z"
 }

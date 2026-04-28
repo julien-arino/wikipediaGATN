@@ -20,18 +20,30 @@
     "Vieques Air Link"
   ],
   "destinations": [
-    [
-      "Antonio Rivera Rodríguez Airport",
-      "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodr%C3%ADguez_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Benjamín Rivera Noriega Airport",
-      "https://en.wikipedia.org/wiki/Benjam%C3%ADn_Rivera_Noriega_Airport",
-      "CPX",
-      "TJCP"
-    ]
+    {
+      "city": "Antonio Rivera Rodríguez Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodr%C3%ADguez_Airport",
+      "codes": [
+        "VQS",
+        "TJVQ"
+      ],
+      "airlines": [
+        "Air Flamenco",
+        "Vieques Air Link"
+      ]
+    },
+    {
+      "city": "Benjamín Rivera Noriega Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benjam%C3%ADn_Rivera_Noriega_Airport",
+      "codes": [
+        "CPX",
+        "TJCP"
+      ],
+      "airlines": [
+        "Air Flamenco",
+        "Vieques Air Link"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Flamenco": [
@@ -42,5 +54,7 @@
       "Antonio Rivera Rodríguez Airport",
       "Benjamín Rivera Noriega Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:00Z",
+  "date-time-wikidata": "2026-04-03T23:19:21Z"
 }

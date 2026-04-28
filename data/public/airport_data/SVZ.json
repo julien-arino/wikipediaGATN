@@ -22,30 +22,55 @@
     "Turpial Airlines"
   ],
   "destinations": [
-    [
-      "Barquisimeto",
-      "https://en.wikipedia.org/wiki/Jacinto_Lara_International_Airport",
-      "BRM",
-      "SVBM"
-    ],
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "Valencia (VE)",
-      "https://en.wikipedia.org/wiki/Arturo_Michelena_International_Airport",
-      "VLN",
-      "SVVA"
-    ]
+    {
+      "city": "Barquisimeto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacinto_Lara_International_Airport",
+      "codes": [
+        "BRM",
+        "SVBM"
+      ],
+      "airlines": [
+        "Conviasa",
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Aerolíneas Estelar",
+        "Conviasa",
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Aerolíneas Estelar"
+      ]
+    },
+    {
+      "city": "Valencia (VE)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Michelena_International_Airport",
+      "codes": [
+        "VLN",
+        "SVVA"
+      ],
+      "airlines": [
+        "Conviasa",
+        "RUTACA Airlines",
+        "Turpial Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Estelar": [
@@ -65,5 +90,7 @@
     "Turpial Airlines": [
       "Valencia (VE)"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:15Z",
+  "date-time-wikidata": "2026-03-07T23:27:17Z"
 }

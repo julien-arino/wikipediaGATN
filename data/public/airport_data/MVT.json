@@ -19,23 +19,35 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Rangiroa",
-      "https://en.wikipedia.org/wiki/Rangiroa_Airport",
-      "RGI",
-      "NTTG"
-    ]
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Rangiroa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rangiroa_Airport",
+      "codes": [
+        "RGI",
+        "NTTG"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
       "Papeete",
       "Rangiroa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:26Z",
+  "date-time-wikidata": "2025-04-01T22:03:29Z"
 }

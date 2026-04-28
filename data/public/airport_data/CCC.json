@@ -21,60 +21,109 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Fredericton International Airport",
-      "https://en.wikipedia.org/wiki/Fredericton_International_Airport",
-      "YFC",
-      "CYFC"
-    ],
-    [
-      "Halifax Stanfield International Airport",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "José Martí International Airport",
-      "https://en.wikipedia.org/wiki/Jos%C3%A9_Mart%C3%AD_International_Airport",
-      "HAV",
-      "MUHA"
-    ],
-    [
-      "London International Airport",
-      "https://en.wikipedia.org/wiki/London_International_Airport",
-      "YXU",
-      "CYXU"
-    ],
-    [
-      "Montréal–Pierre Elliott Trudeau International Airport",
-      "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Ottawa Macdonald–Cartier International Airport",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald%E2%80%93Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Québec City Jean Lesage International Airport",
-      "https://en.wikipedia.org/wiki/Qu%C3%A9bec_City_Jean_Lesage_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Toronto Pearson International Airport",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Winnipeg James Armstrong Richardson International Airport",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Fredericton International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fredericton_International_Airport",
+      "codes": [
+        "YFC",
+        "CYFC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Halifax Stanfield International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "José Martí International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mart%C3%AD_International_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "Aerogaviota"
+      ]
+    },
+    {
+      "city": "London International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_International_Airport",
+      "codes": [
+        "YXU",
+        "CYXU"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Montréal–Pierre Elliott Trudeau International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Ottawa Macdonald–Cartier International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald%E2%80%93Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Québec City Jean Lesage International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qu%C3%A9bec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Toronto Pearson International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Winnipeg James Armstrong Richardson International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerogaviota": [
@@ -96,5 +145,7 @@
       "Toronto Pearson International Airport",
       "Winnipeg James Armstrong Richardson International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:00Z",
+  "date-time-wikidata": "2026-04-26T22:55:19Z"
 }

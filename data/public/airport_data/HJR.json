@@ -20,18 +20,30 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Lal Bahadur Shastri Airport",
-      "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
-      "VNS",
-      "VEBN"
-    ]
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Lal Bahadur Shastri Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "codes": [
+        "VNS",
+        "VEBN"
+      ],
+      "airlines": [
+        "IndiGo",
+        "SpiceJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -42,5 +54,7 @@
       "Indira Gandhi International Airport",
       "Lal Bahadur Shastri Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:44Z",
+  "date-time-wikidata": "2026-01-31T06:11:30Z"
 }

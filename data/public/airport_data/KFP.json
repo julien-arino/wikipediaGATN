@@ -19,23 +19,35 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Cold Bay Airport",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
-      "CDB",
-      "PACD"
-    ],
-    [
-      "King Cove Airport",
-      "https://en.wikipedia.org/wiki/King_Cove_Airport",
-      "KVC",
-      "PAVC"
-    ]
+    {
+      "city": "Cold Bay Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "King Cove Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Cove_Airport",
+      "codes": [
+        "KVC",
+        "PAVC"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
       "Cold Bay Airport",
       "King Cove Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:20Z",
+  "date-time-wikidata": "2026-03-23T20:43:33Z"
 }

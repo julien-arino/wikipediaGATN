@@ -20,30 +20,50 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Gold Coast Airport",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Newcastle Airport, New South Wales",
-      "https://en.wikipedia.org/wiki/Newcastle_Airport,_New_South_Wales",
-      "NTL",
-      "YWLM"
-    ],
-    [
-      "Port Macquarie Airport",
-      "https://en.wikipedia.org/wiki/Port_Macquarie_Airport",
-      "PQQ",
-      "YPMQ"
-    ],
-    [
-      "Sydney Airport",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Gold Coast Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Eastern Air Services"
+      ]
+    },
+    {
+      "city": "Newcastle Airport, New South Wales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_Airport,_New_South_Wales",
+      "codes": [
+        "NTL",
+        "YWLM"
+      ],
+      "airlines": [
+        "Eastern Air Services"
+      ]
+    },
+    {
+      "city": "Port Macquarie Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Macquarie_Airport",
+      "codes": [
+        "PQQ",
+        "YPMQ"
+      ],
+      "airlines": [
+        "Eastern Air Services"
+      ]
+    },
+    {
+      "city": "Sydney Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Eastern Air Services": [
@@ -54,5 +74,7 @@
     "Skytrans Australia": [
       "Sydney Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:56Z",
+  "date-time-wikidata": "2026-02-20T23:46:21Z"
 }

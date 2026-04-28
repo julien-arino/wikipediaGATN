@@ -21,42 +21,73 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Tirupati",
-      "https://en.wikipedia.org/wiki/Tirupati_Airport",
-      "TIR",
-      "VOTP"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Fly91",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Tirupati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirupati_Airport",
+      "codes": [
+        "TIR",
+        "VOTP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -72,5 +103,7 @@
       "Hyderabad",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:46Z",
+  "date-time-wikidata": "2026-04-18T13:27:56Z"
 }

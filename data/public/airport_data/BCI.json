@@ -7,6 +7,7 @@
   "lat": "-23.5676383",
   "lon": "145.3016509",
   "altitude": "268.22",
+  "continent": "Oceania",
   "region": "Queensland",
   "country_alpha3": "AUS",
   "country_name": "Australia",
@@ -18,18 +19,28 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Longreach",
-      "https://en.wikipedia.org/wiki/Longreach_Airport",
-      "LRE",
-      "YLRE"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Longreach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Longreach_Airport",
+      "codes": [
+        "LRE",
+        "YLRE"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -37,5 +48,6 @@
       "Longreach"
     ]
   },
-  "continent": "Oceania"
+  "date-time-parse": "2026-04-28T22:14:21Z",
+  "date-time-wikidata": "2026-01-18T02:32:11Z"
 }

@@ -22,36 +22,63 @@
     "Scandinavian Airlines"
   ],
   "destinations": [
-    [
-      "Murmansk",
-      "https://en.wikipedia.org/wiki/Murmansk_Airport",
-      "MMK",
-      "ULMM"
-    ],
-    [
-      "Ny-Ålesund",
-      "https://en.wikipedia.org/wiki/Ny-Ålesund_Airport,_Hamnerabben",
-      "QEN",
-      "ENAS"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Sveagruva",
-      "https://en.wikipedia.org/wiki/Svea_Airport",
-      "iata code not found",
-      "ENSA"
-    ],
-    [
-      "Tromsø",
-      "https://en.wikipedia.org/wiki/Tromsø_Airport,_Langnes",
-      "TOS",
-      "ENTC"
-    ]
+    {
+      "city": "Murmansk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murmansk_Airport",
+      "codes": [
+        "MMK",
+        "ULMM"
+      ],
+      "airlines": [
+        "Arktikugol"
+      ]
+    },
+    {
+      "city": "Ny-Ålesund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ny-Ålesund_Airport,_Hamnerabben",
+      "codes": [
+        "QEN",
+        "ENAS"
+      ],
+      "airlines": [
+        "Lufttransport"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Sveagruva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Svea_Airport",
+      "codes": [
+        "iata code not found",
+        "ENSA"
+      ],
+      "airlines": [
+        "Lufttransport"
+      ]
+    },
+    {
+      "city": "Tromsø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tromsø_Airport,_Langnes",
+      "codes": [
+        "TOS",
+        "ENTC"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Arktikugol": [
@@ -69,5 +96,7 @@
       "Oslo",
       "Tromsø"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:10Z",
+  "date-time-wikidata": "2026-04-11T20:27:00Z"
 }

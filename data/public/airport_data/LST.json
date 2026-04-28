@@ -20,18 +20,29 @@
     "Team Global Express"
   ],
   "destinations": [
-    [
-      "Hobart",
-      "https://en.wikipedia.org/wiki/Hobart_Airport",
-      "HBA",
-      "YMHB"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ]
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Team Global Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Qantas Freight": [
@@ -41,5 +52,7 @@
     "Team Global Express": [
       "Melbourne"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:04Z",
+  "date-time-wikidata": "2026-04-01T11:07:36Z"
 }

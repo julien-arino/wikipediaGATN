@@ -21,30 +21,53 @@
     "Coastal Aviation"
   ],
   "destinations": [
-    [
-      "Arusha",
-      "https://en.wikipedia.org/wiki/Arusha_Airport",
-      "ARK",
-      "HTAR"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Pemba",
-      "https://en.wikipedia.org/wiki/Pemba_Airport_(Tanzania)",
-      "PMA",
-      "HTPE"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
-      "ZNZ",
-      "HTZA"
-    ]
+    {
+      "city": "Arusha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arusha_Airport",
+      "codes": [
+        "ARK",
+        "HTAR"
+      ],
+      "airlines": [
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Pemba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pemba_Airport_(Tanzania)",
+      "codes": [
+        "PMA",
+        "HTPE"
+      ],
+      "airlines": [
+        "As Salaam Air",
+        "Auric Air",
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Coastal Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "As Salaam Air": [
@@ -60,5 +83,7 @@
       "Pemba",
       "Zanzibar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:24Z",
+  "date-time-wikidata": "2026-04-19T18:35:33Z"
 }

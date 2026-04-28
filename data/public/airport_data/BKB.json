@@ -20,12 +20,18 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ]
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -34,5 +40,7 @@
     "IndiGo": [
       "Delhi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:09Z",
+  "date-time-wikidata": "2026-02-07T03:22:18Z"
 }

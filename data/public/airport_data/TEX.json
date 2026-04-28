@@ -19,23 +19,35 @@
     "Denver Air Connection"
   ],
   "destinations": [
-    [
-      "Denver",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Phoenix–Sky Harbor",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Denver Air Connection": [
       "Denver",
       "Phoenix–Sky Harbor"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:28Z",
+  "date-time-wikidata": "2026-04-03T15:32:11Z"
 }

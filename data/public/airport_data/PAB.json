@@ -19,24 +19,39 @@
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhash_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Prayagraj",
-      "https://en.wikipedia.org/wiki/Prayagraj_Airport",
-      "IXD",
-      "VEAB"
-    ]
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhash_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Prayagraj",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prayagraj_Airport",
+      "codes": [
+        "IXD",
+        "VEAB"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -44,5 +59,7 @@
       "Kolkata",
       "Prayagraj"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:33Z",
+  "date-time-wikidata": "2026-04-11T04:27:31Z"
 }

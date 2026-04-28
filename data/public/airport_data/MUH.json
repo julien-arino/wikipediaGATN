@@ -21,60 +21,105 @@
     "Smartwings"
   ],
   "destinations": [
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport",
-      "BTS",
-      "LZIB"
-    ],
-    [
-      "Brno",
-      "https://en.wikipedia.org/wiki/Brno–Tuřany_Airport",
-      "BRQ",
-      "LKTB"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Ostrava",
-      "https://en.wikipedia.org/wiki/Leoš_Janáček_Airport_Ostrava",
-      "OSR",
-      "LKMT"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Prague_Airport",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ]
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Brno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brno–Tuřany_Airport",
+      "codes": [
+        "BRQ",
+        "LKTB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Ostrava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leoš_Janáček_Airport_Ostrava",
+      "codes": [
+        "OSR",
+        "LKMT"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Airport",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Serbia": [
@@ -92,5 +137,7 @@
       "Ostrava",
       "Prague"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:24Z",
+  "date-time-wikidata": "2026-04-15T09:44:46Z"
 }

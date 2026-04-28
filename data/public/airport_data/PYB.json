@@ -19,23 +19,35 @@
     "IndiaOne Air"
   ],
   "destinations": [
-    [
-      "Bhubaneswar",
-      "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
-      "BBI",
-      "VEBS"
-    ],
-    [
-      "Visakhapatnam",
-      "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
-      "VTZ",
-      "VOVZ"
-    ]
+    {
+      "city": "Bhubaneswar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
+      "codes": [
+        "BBI",
+        "VEBS"
+      ],
+      "airlines": [
+        "IndiaOne Air"
+      ]
+    },
+    {
+      "city": "Visakhapatnam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
+      "codes": [
+        "VTZ",
+        "VOVZ"
+      ],
+      "airlines": [
+        "IndiaOne Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiaOne Air": [
       "Bhubaneswar",
       "Visakhapatnam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:11Z",
+  "date-time-wikidata": "2026-01-31T12:41:53Z"
 }

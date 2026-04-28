@@ -19,23 +19,35 @@
     "Air Côte d'Ivoire"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Bamako",
-      "https://en.wikipedia.org/wiki/Bamako-Sénou_International_Airport",
-      "BKO",
-      "GABS"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Bamako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bamako-Sénou_International_Airport",
+      "codes": [
+        "BKO",
+        "GABS"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
       "Abidjan",
       "Bamako"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:40Z",
+  "date-time-wikidata": "2025-09-16T06:54:26Z"
 }

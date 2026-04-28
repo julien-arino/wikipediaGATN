@@ -36,162 +36,319 @@
     "Zambia Airways"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Gaborone",
-      "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
-      "GBE",
-      "FBSK"
-    ],
-    [
-      "Harare",
-      "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
-      "HRE",
-      "FVRG"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O.R._Tambo_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Kasama",
-      "https://en.wikipedia.org/wiki/Kasama_Airport",
-      "KAA",
-      "FLKS"
-    ],
-    [
-      "Kigali",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "Lilongwe",
-      "https://en.wikipedia.org/wiki/Kamuzu_International_Airport",
-      "LLW",
-      "FWKI"
-    ],
-    [
-      "Lilongwe",
-      "https://en.wikipedia.org/wiki/Lilongwe_International_Airport",
-      "LLW",
-      "FWKI"
-    ],
-    [
-      "Livingstone",
-      "https://en.wikipedia.org/wiki/Harry_Mwanga_Nkumbula_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Livingstone",
-      "https://en.wikipedia.org/wiki/Livingstone_Airport",
-      "LVI",
-      "FLHN"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Mansa",
-      "https://en.wikipedia.org/wiki/Mansa_Airport",
-      "MNS",
-      "FLMA"
-    ],
-    [
-      "Mfuwe",
-      "https://en.wikipedia.org/wiki/Mfuwe_Airport",
-      "MFU",
-      "FLMF"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Ndola",
-      "https://en.wikipedia.org/wiki/Simon_Mwansa_Kapwepwe_International_Airport",
-      "NLA",
-      "FLSK"
-    ],
-    [
-      "Solwezi",
-      "https://en.wikipedia.org/wiki/Solwezi_Airport",
-      "SLI",
-      "FLSW"
-    ],
-    [
-      "Windhoek–Hosea Kutako",
-      "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
-      "WDH",
-      "FYWH"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Martinair"
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Gaborone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
+      "codes": [
+        "GBE",
+        "FBSK"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Harare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
+      "codes": [
+        "HRE",
+        "FVRG"
+      ],
+      "airlines": [
+        "Emirates",
+        "Fastjet Zimbabwe",
+        "Malawi Airlines",
+        "Qatar Airways",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O.R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "Astral Aviation",
+        "Proflight Zambia",
+        "RwandAir",
+        "South African Airways",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "Astral Aviation",
+        "Proflight Zambia",
+        "RwandAir",
+        "South African Airways",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "Astral Aviation",
+        "Proflight Zambia",
+        "RwandAir",
+        "South African Airways",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Kasama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kasama_Airport",
+      "codes": [
+        "KAA",
+        "FLKS"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Lilongwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamuzu_International_Airport",
+      "codes": [
+        "LLW",
+        "FWKI"
+      ],
+      "airlines": [
+        "Malawi Airlines",
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Lilongwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lilongwe_International_Airport",
+      "codes": [
+        "LLW",
+        "FWKI"
+      ],
+      "airlines": [
+        "Malawi Airlines",
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Livingstone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Mwanga_Nkumbula_International_Airport",
+      "codes": [
+        "LVI",
+        "FLHN"
+      ],
+      "airlines": [
+        "Proflight Zambia",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Livingstone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Livingstone_Airport",
+      "codes": [
+        "LVI",
+        "FLHN"
+      ],
+      "airlines": [
+        "Proflight Zambia",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    },
+    {
+      "city": "Mansa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mansa_Airport",
+      "codes": [
+        "MNS",
+        "FLMA"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Mfuwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mfuwe_Airport",
+      "codes": [
+        "MFU",
+        "FLMF"
+      ],
+      "airlines": [
+        "Proflight Zambia",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Kenya Airways",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Ndola",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simon_Mwansa_Kapwepwe_International_Airport",
+      "codes": [
+        "NLA",
+        "FLSK"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Solwezi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Solwezi_Airport",
+      "codes": [
+        "SLI",
+        "FLSW"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Windhoek–Hosea Kutako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
+      "codes": [
+        "WDH",
+        "FYWH"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Botswana": [
@@ -267,5 +424,7 @@
     "Martinair": [
       "Amsterdam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:08Z",
+  "date-time-wikidata": "2026-04-28T12:52:55Z"
 }

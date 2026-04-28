@@ -20,18 +20,28 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Tromsø",
-      "https://en.wikipedia.org/wiki/Tromsø_Airport",
-      "TOS",
-      "ENTC"
-    ]
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Tromsø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tromsø_Airport",
+      "codes": [
+        "TOS",
+        "ENTC"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norwegian Air Shuttle": [
@@ -40,5 +50,7 @@
     "Widerøe": [
       "Tromsø"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:19Z",
+  "date-time-wikidata": "2026-01-25T21:58:35Z"
 }

@@ -19,23 +19,35 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Christmas Island",
-      "https://en.wikipedia.org/wiki/Christmas_Island_Airport",
-      "XCH",
-      "YPXM"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Christmas Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christmas_Island_Airport",
+      "codes": [
+        "XCH",
+        "YPXM"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
       "Christmas Island",
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:01Z",
+  "date-time-wikidata": "2025-11-28T14:15:09Z"
 }

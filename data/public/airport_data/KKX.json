@@ -19,23 +19,35 @@
     "Japan Air Commuter"
   ],
   "destinations": [
-    [
-      "Amami Ōshima",
-      "https://en.wikipedia.org/wiki/Amami_Airport",
-      "ASJ",
-      "RJKA"
-    ],
-    [
-      "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
-      "KOJ",
-      "RJFK"
-    ]
+    {
+      "city": "Amami Ōshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amami_Airport",
+      "codes": [
+        "ASJ",
+        "RJKA"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Kagoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "codes": [
+        "KOJ",
+        "RJFK"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Japan Air Commuter": [
       "Amami Ōshima",
       "Kagoshima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-wikidata": "2026-02-19T01:53:06Z"
 }

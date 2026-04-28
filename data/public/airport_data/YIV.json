@@ -1,8 +1,8 @@
 {
   "iata": "YIV",
   "icao": "CYIV",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Island Lake, Manitoba",
+  "city-served-wikipedia": "[[Island Lake, Manitoba]]",
   "location": "[[Island Lake, Manitoba]]",
   "lat": "53.857222",
   "lon": "-94.653611",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Island_Lake_Airport",
   "number_airlines": 2,
   "outdegree": 4,
@@ -20,30 +20,51 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Red Sucker Lake",
-      "https://en.wikipedia.org/wiki/Red_Sucker_Lake_Airport",
-      "YRS",
-      "CYRS"
-    ],
-    [
-      "St. Theresa Point",
-      "https://en.wikipedia.org/wiki/St._Theresa_Point_Airport",
-      "YST",
-      "CYST"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ],
-    [
-      "Winnipeg/St. Andrews",
-      "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
-      "iata code not found",
-      "CYAV"
-    ]
+    {
+      "city": "Red Sucker Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Sucker_Lake_Airport",
+      "codes": [
+        "YRS",
+        "CYRS"
+      ],
+      "airlines": [
+        "Northway Aviation",
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "St. Theresa Point",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Theresa_Point_Airport",
+      "codes": [
+        "YST",
+        "CYST"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg/St. Andrews",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
+      "codes": [
+        "iata code not found",
+        "CYAV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Northway Aviation": [
@@ -55,5 +76,7 @@
       "Red Sucker Lake",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:11Z",
+  "date-time-wikidata": "2025-12-20T18:46:19Z"
 }

@@ -20,24 +20,40 @@
     "Vietnam Airlines"
   ],
   "destinations": [
-    [
-      "Can Tho",
-      "https://en.wikipedia.org/wiki/Can_Tho_International_Airport",
-      "VCA",
-      "VVCT"
-    ],
-    [
-      "Hanoi",
-      "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
-      "HAN",
-      "VVNB"
-    ],
-    [
-      "Tan Son Nhat",
-      "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
-      "SGN",
-      "VVTS"
-    ]
+    {
+      "city": "Can Tho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Can_Tho_International_Airport",
+      "codes": [
+        "VCA",
+        "VVCT"
+      ],
+      "airlines": [
+        "Vietnam Airlines"
+      ]
+    },
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "VietJet Air"
+      ]
+    },
+    {
+      "city": "Tan Son Nhat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
+      "codes": [
+        "SGN",
+        "VVTS"
+      ],
+      "airlines": [
+        "VietJet Air",
+        "Vietnam Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "VietJet Air": [
@@ -48,5 +64,7 @@
       "Can Tho",
       "Tan Son Nhat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:00Z",
+  "date-time-wikidata": "2026-01-01T07:52:02Z"
 }

@@ -20,12 +20,18 @@
     "Petroleum Air Services"
   ],
   "destinations": [
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ]
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair",
+        "Petroleum Air Services"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Egyptair": [
@@ -34,5 +40,7 @@
     "Petroleum Air Services": [
       "Cairo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:57Z",
+  "date-time-wikidata": "2025-08-28T00:55:40Z"
 }

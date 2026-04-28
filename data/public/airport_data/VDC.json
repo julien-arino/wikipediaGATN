@@ -21,24 +21,41 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Belo Horizonte–Confins",
-      "https://en.wikipedia.org/wiki/Tancredo_Neves_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Salvador da Bahia",
-      "https://en.wikipedia.org/wiki/Salvador_International_Airport",
-      "SSA",
-      "SBSV"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tancredo_Neves_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Salvador da Bahia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_International_Airport",
+      "codes": [
+        "SSA",
+        "SBSV"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -52,5 +69,7 @@
     "LATAM Brasil": [
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:00Z",
+  "date-time-wikidata": "2026-03-04T00:44:46Z"
 }

@@ -34,132 +34,244 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Bishkek",
-      "https://en.wikipedia.org/wiki/Manas_International_Airport",
-      "BSZ",
-      "UCFM"
-    ],
-    [
-      "Dubai-Al Maktoum",
-      "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "DWC",
-      "OMDW"
-    ],
-    [
-      "Dushanbe",
-      "https://en.wikipedia.org/wiki/Dushanbe_International_Airport",
-      "DYU",
-      "UTDD"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Norilsk",
-      "https://en.wikipedia.org/wiki/Alykel_Airport",
-      "NSK",
-      "UOOO"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Osh",
-      "https://en.wikipedia.org/wiki/Osh_Airport",
-      "OSS",
-      "UCFO"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Simferopol",
-      "https://en.wikipedia.org/wiki/Simferopol_Airport",
-      "SIP",
-      "UKFF"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Yerevan",
-      "https://en.wikipedia.org/wiki/Zvartnots_International_Airport",
-      "EVN",
-      "UDYZ"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Nordwind Airlines",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Bishkek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manas_International_Airport",
+      "codes": [
+        "BSZ",
+        "UCFM"
+      ],
+      "airlines": [
+        "Avia Traffic Company"
+      ]
+    },
+    {
+      "city": "Dubai-Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Dushanbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dushanbe_International_Airport",
+      "codes": [
+        "DYU",
+        "UTDD"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Pobeda",
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Norilsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alykel_Airport",
+      "codes": [
+        "NSK",
+        "UOOO"
+      ],
+      "airlines": [
+        "NordStar Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Osh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osh_Airport",
+      "codes": [
+        "OSS",
+        "UCFO"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda",
+        "RusLine",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Simferopol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simferopol_Airport",
+      "codes": [
+        "SIP",
+        "UKFF"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "NordStar Airlines",
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines",
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines",
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Yerevan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zvartnots_International_Airport",
+      "codes": [
+        "EVN",
+        "UDYZ"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -220,5 +332,7 @@
     "Uzbekistan Airways": [
       "Tashkent"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:44Z",
+  "date-time-wikidata": "2026-03-01T00:25:48Z"
 }

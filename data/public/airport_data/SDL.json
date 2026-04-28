@@ -22,42 +22,74 @@
     "West Air Sweden"
   ],
   "destinations": [
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Malmö",
-      "https://en.wikipedia.org/wiki/Malmö_Airport",
-      "MMX",
-      "ESMS"
-    ],
-    [
-      "Stockholm-Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Umeå",
-      "https://en.wikipedia.org/wiki/Umeå_Airport",
-      "UME",
-      "ESNU"
-    ]
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "TUI fly Nordic"
+      ]
+    },
+    {
+      "city": "Malmö",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malmö_Airport",
+      "codes": [
+        "MMX",
+        "ESMS"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Stockholm-Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "West Air Sweden"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "PopulAir",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "PopulAir",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Umeå",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umeå_Airport",
+      "codes": [
+        "UME",
+        "ESNU"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Scandinavian Airlines": [
@@ -74,5 +106,7 @@
     "West Air Sweden": [
       "Stockholm-Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:02Z",
+  "date-time-wikidata": "2026-02-05T07:36:18Z"
 }

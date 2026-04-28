@@ -21,30 +21,52 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -59,5 +81,7 @@
     "Astral Aviation": [
       "Nairobi–Jomo Kenyatta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:06Z",
+  "date-time-wikidata": "2025-09-02T09:44:14Z"
 }

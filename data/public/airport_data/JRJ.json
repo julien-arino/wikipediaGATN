@@ -21,24 +21,39 @@
     "Jiangxi Air"
   ],
   "destinations": [
-    [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Zunyi–Xinzhou",
-      "https://en.wikipedia.org/wiki/Zunyi_Xinzhou_Airport",
-      "ZYI",
-      "ZUZY"
-    ]
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Zunyi–Xinzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zunyi_Xinzhou_Airport",
+      "codes": [
+        "ZYI",
+        "ZUZY"
+      ],
+      "airlines": [
+        "Jiangxi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -50,5 +65,7 @@
     "Jiangxi Air": [
       "Zunyi–Xinzhou"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:29Z",
+  "date-time-wikidata": "2025-11-15T02:16:21Z"
 }

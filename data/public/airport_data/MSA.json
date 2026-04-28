@@ -20,24 +20,39 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Bearskin Lake",
-      "https://en.wikipedia.org/wiki/Bearskin_Lake_Airport",
-      "XBE",
-      "icao code not found"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
-      "YQT",
-      "CYQT"
-    ]
+    {
+      "city": "Bearskin Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bearskin_Lake_Airport",
+      "codes": [
+        "XBE",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North Star Air": [
@@ -47,5 +62,7 @@
       "Bearskin Lake",
       "Sioux Lookout"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:33Z",
+  "date-time-wikidata": "2025-12-20T18:45:43Z"
 }

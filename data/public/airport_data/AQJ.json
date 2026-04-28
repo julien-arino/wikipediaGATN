@@ -7,6 +7,7 @@
   "lat": "29.6099965",
   "lon": "35.018937",
   "altitude": "53",
+  "continent": "Asia",
   "region": "Aqaba",
   "country_alpha3": "JOR",
   "country_name": "Jordan",
@@ -20,30 +21,50 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Minsk",
-      "https://en.wikipedia.org/wiki/Minsk_National_Airport",
-      "MSQ",
-      "UMMS"
-    ]
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Minsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minsk_National_Airport",
+      "codes": [
+        "MSQ",
+        "UMMS"
+      ],
+      "airlines": [
+        "Belavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Belavia": [
@@ -57,5 +78,6 @@
       "Istanbul"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:10:49Z",
+  "date-time-wikidata": "2026-04-01T05:33:48Z"
 }

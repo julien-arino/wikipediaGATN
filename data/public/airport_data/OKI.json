@@ -20,18 +20,28 @@
     "Japan Air Commuter"
   ],
   "destinations": [
-    [
-      "Izumo",
-      "https://en.wikipedia.org/wiki/Izumo_Airport",
-      "IZO",
-      "RJOC"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Osaka_International_Airport",
-      "ITM",
-      "RJOO"
-    ]
+    {
+      "city": "Izumo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Izumo_Airport",
+      "codes": [
+        "IZO",
+        "RJOC"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osaka_International_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "J-Air": [
@@ -40,5 +50,7 @@
     "Japan Air Commuter": [
       "Izumo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:32Z",
+  "date-time-wikidata": "2026-02-19T02:09:49Z"
 }

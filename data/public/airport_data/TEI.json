@@ -19,30 +19,50 @@
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/LGBI_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Imphal_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Itanagar",
-      "https://en.wikipedia.org/wiki/Hollongi_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Jorhat",
-      "https://en.wikipedia.org/wiki/Jorhat_Airport",
-      "JRH",
-      "VEJT"
-    ]
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LGBI_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Itanagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollongi_Airport",
+      "codes": [
+        "HGI",
+        "VEHO"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Jorhat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorhat_Airport",
+      "codes": [
+        "JRH",
+        "VEJT"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -51,5 +71,7 @@
       "Itanagar",
       "Jorhat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:26Z",
+  "date-time-wikidata": "2026-01-31T06:12:57Z"
 }

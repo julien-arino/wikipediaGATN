@@ -20,18 +20,29 @@
     "Southern Airlines"
   ],
   "destinations": [
-    [
-      "Devonport",
-      "https://en.wikipedia.org/wiki/Devonport_Airport",
-      "DPO",
-      "YDPO"
-    ],
-    [
-      "King Island",
-      "https://en.wikipedia.org/wiki/King_Island_Airport",
-      "KNS",
-      "YKII"
-    ]
+    {
+      "city": "Devonport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Devonport_Airport",
+      "codes": [
+        "DPO",
+        "YDPO"
+      ],
+      "airlines": [
+        "Southern Airlines"
+      ]
+    },
+    {
+      "city": "King Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Island_Airport",
+      "codes": [
+        "KNS",
+        "YKII"
+      ],
+      "airlines": [
+        "King Island Airlines",
+        "Southern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "King Island Airlines": [
@@ -41,5 +52,7 @@
       "Devonport",
       "King Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:17Z",
+  "date-time-wikidata": "2026-02-17T03:07:27Z"
 }

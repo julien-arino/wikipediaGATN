@@ -22,84 +22,153 @@
     "Southwest Airlines"
   ],
   "destinations": [
-    [
-      "Austin–Bergstrom International Airport",
-      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
-      "AUS",
-      "KAUS"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Hollywood Burbank Airport",
-      "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
-      "BUR",
-      "KBUR"
-    ],
-    [
-      "John Wayne Airport",
-      "https://en.wikipedia.org/wiki/John_Wayne_Airport",
-      "SNA",
-      "KSNA"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Ontario International Airport",
-      "https://en.wikipedia.org/wiki/Ontario_International_Airport",
-      "ONT",
-      "KONT"
-    ],
-    [
-      "Palm Springs International Airport",
-      "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
-      "PSP",
-      "KPSP"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
-      "SAN",
-      "KSAN"
-    ],
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ]
+    {
+      "city": "Austin–Bergstrom International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Hollywood Burbank Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "John Wayne Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Ontario International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Palm Springs International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
+      "codes": [
+        "PSP",
+        "KPSP"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Portland International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "San Diego International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
@@ -127,5 +196,7 @@
       "Hollywood Burbank Airport",
       "San Diego International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:53Z",
+  "date-time-wikidata": "2026-04-14T03:59:17Z"
 }

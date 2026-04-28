@@ -21,30 +21,50 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ]
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -57,5 +77,7 @@
       "Delhi",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:37Z",
+  "date-time-wikidata": "2026-04-24T15:33:06Z"
 }

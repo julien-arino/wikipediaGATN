@@ -21,54 +21,95 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Hartsfield-Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "LaGuardia Airport",
-      "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "LGA",
-      "KLGA"
-    ],
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Newark Liberty International Airport",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
-      "PHL",
-      "KPHL"
-    ],
-    [
-      "Reagan National Airport",
-      "https://en.wikipedia.org/wiki/Reagan_National_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Hartsfield-Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "LaGuardia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Newark Liberty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Philadelphia International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Reagan National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reagan_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -86,5 +127,7 @@
       "Newark Liberty International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:41Z",
+  "date-time-wikidata": "2026-04-13T22:50:20Z"
 }

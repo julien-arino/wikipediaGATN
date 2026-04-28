@@ -20,30 +20,50 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Gisborne",
-      "https://en.wikipedia.org/wiki/Gisborne_Airport",
-      "GIS",
-      "NZGS"
-    ],
-    [
-      "Hamilton",
-      "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
-      "HLZ",
-      "NZHN"
-    ],
-    [
-      "Napier",
-      "https://en.wikipedia.org/wiki/Hawke's_Bay_Airport",
-      "NPE",
-      "NZNR"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air Chathams"
+      ]
+    },
+    {
+      "city": "Gisborne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gisborne_Airport",
+      "codes": [
+        "GIS",
+        "NZGS"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
+      "codes": [
+        "HLZ",
+        "NZHN"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Napier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawke's_Bay_Airport",
+      "codes": [
+        "NPE",
+        "NZNR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Chathams": [
@@ -54,5 +74,7 @@
       "Hamilton",
       "Napier"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:10Z",
+  "date-time-wikidata": "2026-04-14T23:35:29Z"
 }

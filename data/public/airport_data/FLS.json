@@ -20,24 +20,40 @@
     "Sharp Airlines"
   ],
   "destinations": [
-    [
-      "Hobart",
-      "https://en.wikipedia.org/wiki/Hobart_Airport",
-      "HBA",
-      "YMHB"
-    ],
-    [
-      "Launceston",
-      "https://en.wikipedia.org/wiki/Launceston_Airport",
-      "LST",
-      "YMLT"
-    ],
-    [
-      "Melbourne–Essendon",
-      "https://en.wikipedia.org/wiki/Essendon_Airport",
-      "MEB",
-      "YMEN"
-    ]
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Launceston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
+      "codes": [
+        "LST",
+        "YMLT"
+      ],
+      "airlines": [
+        "Airlines of Tasmania",
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne–Essendon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Essendon_Airport",
+      "codes": [
+        "MEB",
+        "YMEN"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlines of Tasmania": [
@@ -48,5 +64,7 @@
       "Launceston",
       "Melbourne–Essendon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:44Z",
+  "date-time-wikidata": "2024-03-26T01:30:46Z"
 }

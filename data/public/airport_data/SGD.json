@@ -19,24 +19,39 @@
     "Alsie Express"
   ],
   "destinations": [
-    [
-      "Bornholm",
-      "https://en.wikipedia.org/wiki/Bornholm_Airport",
-      "RNN",
-      "EKRN"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Jersey",
-      "https://en.wikipedia.org/wiki/Jersey_Airport",
-      "PRO",
-      "PROP"
-    ]
+    {
+      "city": "Bornholm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bornholm_Airport",
+      "codes": [
+        "RNN",
+        "EKRN"
+      ],
+      "airlines": [
+        "Alsie Express"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Alsie Express"
+      ]
+    },
+    {
+      "city": "Jersey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jersey_Airport",
+      "codes": [
+        "PRO",
+        "PROP"
+      ],
+      "airlines": [
+        "Alsie Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alsie Express": [
@@ -44,5 +59,7 @@
       "Copenhagen",
       "Jersey"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:34Z",
+  "date-time-wikidata": "2026-02-05T07:35:55Z"
 }

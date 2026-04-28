@@ -24,48 +24,85 @@
     "Yamato Transport"
   ],
   "destinations": [
-    [
-      "Cheongju",
-      "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
-      "CJJ",
-      "RKTU"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ]
+    {
+      "city": "Cheongju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
+      "codes": [
+        "CJJ",
+        "RKTU"
+      ],
+      "airlines": [
+        "Aero K"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Yamato Transport"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Jin Air",
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "StarFlyer"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines",
+        "StarFlyer"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Yamato Transport"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero K": [
@@ -89,5 +126,7 @@
       "Naha",
       "Tokyo–Narita"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-wikidata": "2026-02-26T21:59:48Z"
 }

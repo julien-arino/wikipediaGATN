@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Chevak",
-      "https://en.wikipedia.org/wiki/Chevak_Airport",
-      "VAK",
-      "PAVA"
-    ],
-    [
-      "Hooper Bay",
-      "https://en.wikipedia.org/wiki/Hooper_Bay_Airport",
-      "HPB",
-      "PAHP"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Chevak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chevak_Airport",
+      "codes": [
+        "VAK",
+        "PAVA"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Hooper Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hooper_Bay_Airport",
+      "codes": [
+        "HPB",
+        "PAHP"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "Chevak",
       "Hooper Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:32Z",
+  "date-time-wikidata": "2025-09-12T05:07:43Z"
 }

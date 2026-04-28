@@ -23,48 +23,87 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Oran",
-      "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
-      "ORN",
-      "DAOO"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Lille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Oran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
+      "codes": [
+        "ORN",
+        "DAOO"
+      ],
+      "airlines": [
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Transavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -86,5 +125,7 @@
       "Lyon",
       "Marseille"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:36Z",
+  "date-time-wikidata": "2026-03-27T21:19:12Z"
 }

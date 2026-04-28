@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Aripuanã",
-      "https://en.wikipedia.org/wiki/Aripuanã_Airport",
-      "AIR",
-      "SSOU"
-    ],
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ]
+    {
+      "city": "Aripuanã",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aripuanã_Airport",
+      "codes": [
+        "AIR",
+        "SSOU"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Aripuanã",
       "Cuiabá"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:15Z",
+  "date-time-wikidata": "2023-11-20T11:12:36Z"
 }

@@ -22,54 +22,94 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Bournemouth",
-      "https://en.wikipedia.org/wiki/Bournemouth_Airport",
-      "BOH",
-      "EGHH"
-    ],
-    [
-      "Leeds/Bradford",
-      "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
-      "LBA",
-      "EGNM"
-    ],
-    [
-      "Liverpool",
-      "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
-      "LPL",
-      "EGGP"
-    ],
-    [
-      "London–City",
-      "https://en.wikipedia.org/wiki/London_City_Airport",
-      "LCY",
-      "EGLC"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ]
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Bournemouth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bournemouth_Airport",
+      "codes": [
+        "BOH",
+        "EGHH"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Leeds/Bradford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
+      "codes": [
+        "LBA",
+        "EGNM"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Liverpool",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
+      "codes": [
+        "LPL",
+        "EGGP"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_City_Airport",
+      "codes": [
+        "LCY",
+        "EGLC"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Rotterdam/The Hague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "British Airways": [
@@ -88,5 +128,7 @@
     "Transavia": [
       "Rotterdam/The Hague"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:46Z",
+  "date-time-wikidata": "2025-10-31T10:49:16Z"
 }

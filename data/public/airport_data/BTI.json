@@ -20,18 +20,29 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Deadhorse/Prudhoe Bay",
-      "https://en.wikipedia.org/wiki/Deadhorse_Airport",
-      "SCC",
-      "PASC"
-    ],
-    [
-      "Fairbanks",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ]
+    {
+      "city": "Deadhorse/Prudhoe Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deadhorse_Airport",
+      "codes": [
+        "SCC",
+        "PASC"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fairbanks",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Everts Air",
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Everts Air": [
@@ -41,5 +52,7 @@
       "Deadhorse/Prudhoe Bay",
       "Fairbanks"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:04Z",
+  "date-time-wikidata": "2025-08-27T18:24:50Z"
 }

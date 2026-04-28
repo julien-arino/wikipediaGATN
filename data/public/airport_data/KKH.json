@@ -19,23 +19,35 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Tuntutuliak",
-      "https://en.wikipedia.org/wiki/Tuntutuliak_Airport",
-      "WTL",
-      "icao code not found"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Tuntutuliak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuntutuliak_Airport",
+      "codes": [
+        "WTL",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
       "Bethel",
       "Tuntutuliak"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-wikidata": "2025-08-24T15:09:21Z"
 }

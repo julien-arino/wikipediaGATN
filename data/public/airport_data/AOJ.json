@@ -24,48 +24,85 @@
     "Korean Air"
   ],
   "destinations": [
-    [
-      "Haneda Airport",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Incheon International Airport",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Itami Airport",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Kobe Airport",
-      "https://en.wikipedia.org/wiki/Kobe_Airport",
-      "UKB",
-      "RJBE"
-    ],
-    [
-      "Nagoya Airfield",
-      "https://en.wikipedia.org/wiki/Nagoya_Airfield",
-      "NKM",
-      "RJNA"
-    ],
-    [
-      "New Chitose Airport",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Taoyuan International Airport",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ]
+    {
+      "city": "Haneda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Incheon International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air"
+      ]
+    },
+    {
+      "city": "Itami Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Kobe Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_Airport",
+      "codes": [
+        "UKB",
+        "RJBE"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Nagoya Airfield",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nagoya_Airfield",
+      "codes": [
+        "NKM",
+        "RJNA"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "New Chitose Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Taoyuan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "EVA Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ANA Wings": [
@@ -89,5 +126,7 @@
     "Korean Air": [
       "Incheon International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:30Z",
+  "date-time-wikidata": "2026-01-25T10:01:47Z"
 }

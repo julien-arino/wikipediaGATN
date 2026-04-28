@@ -21,18 +21,29 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Recife",
-      "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
-      "REC",
-      "SBRF"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -44,5 +55,7 @@
     "LATAM Brasil": [
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:39Z",
+  "date-time-wikidata": "2025-12-19T23:16:46Z"
 }

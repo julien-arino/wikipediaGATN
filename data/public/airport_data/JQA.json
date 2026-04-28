@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Ilulissat",
-      "https://en.wikipedia.org/wiki/Ilulissat_Airport",
-      "JAV",
-      "BGJN"
-    ],
-    [
-      "Uummannaq",
-      "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
-      "UMD",
-      "BGUM"
-    ]
+    {
+      "city": "Ilulissat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ilulissat_Airport",
+      "codes": [
+        "JAV",
+        "BGJN"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Uummannaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
+      "codes": [
+        "UMD",
+        "BGUM"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Ilulissat",
       "Uummannaq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:28Z",
+  "date-time-wikidata": "2025-09-16T21:45:12Z"
 }

@@ -19,23 +19,35 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Savoonga",
-      "https://en.wikipedia.org/wiki/Savoonga_Airport",
-      "SVA",
-      "PASA"
-    ]
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Savoonga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Savoonga_Airport",
+      "codes": [
+        "SVA",
+        "PASA"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
       "Nome",
       "Savoonga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:27Z",
+  "date-time-wikidata": "2026-03-07T13:01:17Z"
 }

@@ -20,30 +20,51 @@
     "Guna Airlines"
   ],
   "destinations": [
-    [
-      "Gautam Buddha Airport",
-      "https://en.wikipedia.org/wiki/Gautam_Buddha_Airport",
-      "BWA",
-      "VNBW"
-    ],
-    [
-      "Pokhara Airport",
-      "https://en.wikipedia.org/wiki/Pokhara_Airport",
-      "PKR",
-      "VNPK"
-    ],
-    [
-      "Pokhara International Airport",
-      "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
-      "PHH",
-      "VNPR"
-    ],
-    [
-      "Tribhuvan International Airport",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ]
+    {
+      "city": "Gautam Buddha Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gautam_Buddha_Airport",
+      "codes": [
+        "BWA",
+        "VNBW"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    },
+    {
+      "city": "Pokhara Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_Airport",
+      "codes": [
+        "PKR",
+        "VNPK"
+      ],
+      "airlines": [
+        "Guna Airlines"
+      ]
+    },
+    {
+      "city": "Pokhara International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
+      "codes": [
+        "PHH",
+        "VNPR"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    },
+    {
+      "city": "Tribhuvan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Buddha Air",
+        "Guna Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Buddha Air": [
@@ -55,5 +76,7 @@
       "Pokhara Airport",
       "Tribhuvan International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:01Z",
+  "date-time-wikidata": "2026-01-11T09:06:23Z"
 }

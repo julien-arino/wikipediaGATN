@@ -19,24 +19,39 @@
     "Compagnie Africaine d'Aviation"
   ],
   "destinations": [
-    [
-      "Bukavu",
-      "https://en.wikipedia.org/wiki/Kavumu_Airport",
-      "BKY",
-      "FZMA"
-    ],
-    [
-      "Goma",
-      "https://en.wikipedia.org/wiki/Goma_International_Airport",
-      "GOM",
-      "FZNA"
-    ],
-    [
-      "Kalemie",
-      "https://en.wikipedia.org/wiki/Kalemie_Airport",
-      "FMI",
-      "FZRF"
-    ]
+    {
+      "city": "Bukavu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kavumu_Airport",
+      "codes": [
+        "BKY",
+        "FZMA"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Goma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Goma_International_Airport",
+      "codes": [
+        "GOM",
+        "FZNA"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Kalemie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalemie_Airport",
+      "codes": [
+        "FMI",
+        "FZRF"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Compagnie Africaine d'Aviation": [
@@ -44,5 +59,7 @@
       "Goma",
       "Kalemie"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:00Z",
+  "date-time-wikidata": "2025-02-13T21:04:01Z"
 }

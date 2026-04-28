@@ -7,6 +7,7 @@
   "lat": "56.0880752",
   "lon": "47.3382761",
   "altitude": "171",
+  "continent": "Europe",
   "region": "Chuvashia",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
@@ -22,36 +23,62 @@
     "S7 Airlines"
   ],
   "destinations": [
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ]
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Nordwind Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -71,5 +98,6 @@
       "Novosibirsk"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:11:06Z",
+  "date-time-wikidata": "2026-03-25T18:01:27Z"
 }

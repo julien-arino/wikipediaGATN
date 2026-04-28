@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Leticia",
-      "https://en.wikipedia.org/wiki/Alfredo_Vásquez_Cobo_International_Airport",
-      "LET",
-      "SKLT"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Leticia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfredo_Vásquez_Cobo_International_Airport",
+      "codes": [
+        "LET",
+        "SKLT"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "Bogotá",
       "Leticia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:04Z",
+  "date-time-wikidata": "2024-10-25T04:20:44Z"
 }

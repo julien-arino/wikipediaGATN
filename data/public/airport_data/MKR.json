@@ -21,18 +21,30 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Mount Magnet Airport",
-      "https://en.wikipedia.org/wiki/Mount_Magnet_Airport",
-      "MMG",
-      "YMOG"
-    ],
-    [
-      "Perth Airport",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Mount Magnet Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Magnet_Airport",
+      "codes": [
+        "MMG",
+        "YMOG"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Perth Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Airnorth",
+        "National Jet Express",
+        "Skippers Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -45,5 +57,7 @@
       "Mount Magnet Airport",
       "Perth Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:23Z",
+  "date-time-wikidata": "2025-10-28T14:12:09Z"
 }

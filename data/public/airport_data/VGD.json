@@ -19,24 +19,39 @@
     "Vologda Aviation Enterprise"
   ],
   "destinations": [
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Velikiy Ustyug",
-      "https://en.wikipedia.org/wiki/Velikiy_Ustyug_Airport",
-      "VUS",
-      "ULWU"
-    ]
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Vologda Aviation Enterprise"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Vologda Aviation Enterprise"
+      ]
+    },
+    {
+      "city": "Velikiy Ustyug",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velikiy_Ustyug_Airport",
+      "codes": [
+        "VUS",
+        "ULWU"
+      ],
+      "airlines": [
+        "Vologda Aviation Enterprise"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Vologda Aviation Enterprise": [
@@ -44,5 +59,7 @@
       "Saint Petersburg",
       "Velikiy Ustyug"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:18Z",
+  "date-time-wikidata": "2025-12-21T01:07:52Z"
 }

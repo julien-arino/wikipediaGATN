@@ -1,8 +1,8 @@
 {
   "iata": "ZPB",
   "icao": "CZPB",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Sachigo Lake First Nation",
+  "city-served-wikipedia": "[[Sachigo Lake First Nation]]",
   "location": "[[Sachigo Lake First Nation]]",
   "lat": "53.891111",
   "lon": "-92.196389",
@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport",
   "number_airlines": 3,
   "outdegree": 4,
@@ -21,30 +21,53 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Sandy Lake",
-      "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
-      "ZSJ",
-      "CZSJ"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Sandy Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
+      "codes": [
+        "ZSJ",
+        "CZSJ"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "North Star Air",
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -60,5 +83,7 @@
       "Sioux Lookout",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:29Z",
+  "date-time-wikidata": "2026-01-06T17:10:22Z"
 }

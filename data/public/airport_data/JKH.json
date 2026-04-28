@@ -21,42 +21,74 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Lemnos",
-      "https://en.wikipedia.org/wiki/Lemnos_International_Airport",
-      "LXS",
-      "LGLM"
-    ],
-    [
-      "Mytilene",
-      "https://en.wikipedia.org/wiki/Mytilene_International_Airport",
-      "MJT",
-      "LGMT"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Samos",
-      "https://en.wikipedia.org/wiki/Samos_International_Airport",
-      "SMI",
-      "LGSM"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Lemnos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lemnos_International_Airport",
+      "codes": [
+        "LXS",
+        "LGLM"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Mytilene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mytilene_International_Airport",
+      "codes": [
+        "MJT",
+        "LGMT"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Samos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samos_International_Airport",
+      "codes": [
+        "SMI",
+        "LGSM"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Olympic Air",
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -73,5 +105,7 @@
       "Samos",
       "Thessaloniki"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:17Z",
+  "date-time-wikidata": "2025-03-26T02:59:38Z"
 }

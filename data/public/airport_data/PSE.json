@@ -20,12 +20,18 @@
     "JetBlue"
   ],
   "destinations": [
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ]
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Frontier Airlines",
+        "JetBlue"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Frontier Airlines": [
@@ -34,5 +40,7 @@
     "JetBlue": [
       "Orlando International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:33Z",
+  "date-time-wikidata": "2026-04-20T01:38:17Z"
 }

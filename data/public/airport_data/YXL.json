@@ -1,8 +1,8 @@
 {
   "iata": "YXL",
   "icao": "CYXL",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Sioux Lookout",
+  "city-served-wikipedia": "[[Sioux Lookout]], [[Ontario]]",
   "location": "[[Sioux Lookout]], [[Ontario]]",
   "lat": "50.113611",
   "lon": "-91.905556",
@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
   "number_airlines": 4,
   "outdegree": 11,
@@ -22,72 +22,132 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Bearskin Lake",
-      "https://en.wikipedia.org/wiki/Bearskin_Lake_Airport",
-      "XBE",
-      "icao code not found"
-    ],
-    [
-      "Cat Lake",
-      "https://en.wikipedia.org/wiki/Cat_Lake_Airport",
-      "YAC",
-      "CYAC"
-    ],
-    [
-      "Deer Lake",
-      "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
-      "YVZ",
-      "CYVZ"
-    ],
-    [
-      "North Spirit Lake",
-      "https://en.wikipedia.org/wiki/North_Spirit_Lake_Airport",
-      "YNO",
-      "icao code not found"
-    ],
-    [
-      "Pikangikum",
-      "https://en.wikipedia.org/wiki/Pikangikum_Airport",
-      "YPM",
-      "CYPM"
-    ],
-    [
-      "Poplar Hill",
-      "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
-      "YHP",
-      "icao code not found"
-    ],
-    [
-      "Sachigo Lake",
-      "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport",
-      "ZPB",
-      "CZPB"
-    ],
-    [
-      "Sandy Lake",
-      "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
-      "ZSJ",
-      "CZSJ"
-    ],
-    [
-      "Slate Falls",
-      "https://en.wikipedia.org/wiki/Slate_Falls_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Weagamow",
-      "https://en.wikipedia.org/wiki/Round_Lake_(Weagamow_Lake)_Airport",
-      "ZRJ",
-      "CZRJ"
-    ]
+    {
+      "city": "Bearskin Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bearskin_Lake_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Cat Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cat_Lake_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Slate Falls Airways"
+      ]
+    },
+    {
+      "city": "Deer Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
+      "codes": [
+        "YVZ",
+        "CYVZ"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "North Spirit Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Spirit_Lake_Airport",
+      "codes": [
+        "YNO",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Pikangikum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pikangikum_Airport",
+      "codes": [
+        "YPM",
+        "CYPM"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Poplar Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Sachigo Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport",
+      "codes": [
+        "ZPB",
+        "CZPB"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Sandy Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
+      "codes": [
+        "ZSJ",
+        "CZSJ"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Slate Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Slate_Falls_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Slate Falls Airways"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Weagamow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Round_Lake_(Weagamow_Lake)_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North Star Air": [
@@ -114,5 +174,7 @@
     "Wasaya Airways": [
       "Thunder Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:34Z",
+  "date-time-wikidata": "2026-02-03T17:29:01Z"
 }

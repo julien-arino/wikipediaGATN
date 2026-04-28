@@ -21,60 +21,105 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Elcho Island",
-      "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
-      "ELC",
-      "YELD"
-    ],
-    [
-      "Groote Eylandt",
-      "https://en.wikipedia.org/wiki/Groote_Eylandt_Airport",
-      "GTE",
-      "YGTE"
-    ],
-    [
-      "Lake Evella",
-      "https://en.wikipedia.org/wiki/Lake_Evella_Airport",
-      "LEL",
-      "YLEV"
-    ],
-    [
-      "Milingimbi",
-      "https://en.wikipedia.org/wiki/Milingimbi_Airport",
-      "MGT",
-      "YMGB"
-    ],
-    [
-      "Ramingining",
-      "https://en.wikipedia.org/wiki/Ramingining_Airport",
-      "RAM",
-      "YRNG"
-    ],
-    [
-      "Wessel Islands",
-      "https://en.wikipedia.org/wiki/Wessel_Islands",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Elcho Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
+      "codes": [
+        "ELC",
+        "YELD"
+      ],
+      "airlines": [
+        "Mission Aviation Fellowship"
+      ]
+    },
+    {
+      "city": "Groote Eylandt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Groote_Eylandt_Airport",
+      "codes": [
+        "GTE",
+        "YGTE"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Lake Evella",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Evella_Airport",
+      "codes": [
+        "LEL",
+        "YLEV"
+      ],
+      "airlines": [
+        "Mission Aviation Fellowship"
+      ]
+    },
+    {
+      "city": "Milingimbi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milingimbi_Airport",
+      "codes": [
+        "MGT",
+        "YMGB"
+      ],
+      "airlines": [
+        "Mission Aviation Fellowship"
+      ]
+    },
+    {
+      "city": "Ramingining",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramingining_Airport",
+      "codes": [
+        "RAM",
+        "YRNG"
+      ],
+      "airlines": [
+        "Mission Aviation Fellowship"
+      ]
+    },
+    {
+      "city": "Wessel Islands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wessel_Islands",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -92,5 +137,7 @@
     "QantasLink": [
       "Brisbane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:35Z",
+  "date-time-wikidata": "2026-03-31T11:17:43Z"
 }

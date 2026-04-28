@@ -21,24 +21,42 @@
     "US-Bangla Airlines"
   ],
   "destinations": [
-    [
-      "Chattogram",
-      "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
-      "CGP",
-      "VGEG"
-    ],
-    [
-      "Cox's Bazar",
-      "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
-      "CXB",
-      "VGCB"
-    ],
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ]
+    {
+      "city": "Chattogram",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
+      "codes": [
+        "CGP",
+        "VGEG"
+      ],
+      "airlines": [
+        "Biman Bangladesh Airlines",
+        "US-Bangla Airlines"
+      ]
+    },
+    {
+      "city": "Cox's Bazar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
+      "codes": [
+        "CXB",
+        "VGCB"
+      ],
+      "airlines": [
+        "Easy Fly Express",
+        "US-Bangla Airlines"
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Biman Bangladesh Airlines",
+        "US-Bangla Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Biman Bangladesh Airlines": [
@@ -53,5 +71,7 @@
     "Easy Fly Express": [
       "Cox's Bazar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:41Z",
+  "date-time-wikidata": "2025-09-13T19:14:24Z"
 }

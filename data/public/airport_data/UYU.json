@@ -19,24 +19,39 @@
     "Boliviana de Aviación"
   ],
   "destinations": [
-    [
-      "Cochabamba",
-      "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
-      "CBB",
-      "SLCB"
-    ],
-    [
-      "Cusco",
-      "https://en.wikipedia.org/wiki/Cusco_International_Airport",
-      "CUZ",
-      "SPZO"
-    ],
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
-      "LPB",
-      "SLLP"
-    ]
+    {
+      "city": "Cochabamba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
+      "codes": [
+        "CBB",
+        "SLCB"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Cusco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cusco_International_Airport",
+      "codes": [
+        "CUZ",
+        "SPZO"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
+      "codes": [
+        "LPB",
+        "SLLP"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -44,5 +59,7 @@
       "Cusco",
       "La Paz"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:57Z",
+  "date-time-wikidata": "2026-04-10T04:50:17Z"
 }

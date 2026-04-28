@@ -20,18 +20,28 @@
     "Nolinor Aviation"
   ],
   "destinations": [
-    [
-      "Meadowbank",
-      "https://en.wikipedia.org/wiki/Meadowbank_Aerodrome",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Rankin Inlet",
-      "https://en.wikipedia.org/wiki/Rankin_Inlet_Airport",
-      "YRT",
-      "CYRT"
-    ]
+    {
+      "city": "Meadowbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meadowbank_Aerodrome",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Nolinor Aviation"
+      ]
+    },
+    {
+      "city": "Rankin Inlet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rankin_Inlet_Airport",
+      "codes": [
+        "YRT",
+        "CYRT"
+      ],
+      "airlines": [
+        "Calm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Calm Air": [
@@ -40,5 +50,7 @@
     "Nolinor Aviation": [
       "Meadowbank"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:27Z",
+  "date-time-wikidata": "2025-12-20T18:38:44Z"
 }

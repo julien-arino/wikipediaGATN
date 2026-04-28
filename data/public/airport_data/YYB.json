@@ -23,54 +23,96 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Rouyn-Noranda",
-      "https://en.wikipedia.org/wiki/Rouyn-Noranda_Airport",
-      "YUY",
-      "CYUY"
-    ],
-    [
-      "Sault Ste. Marie",
-      "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
-      "YAM",
-      "CYAM"
-    ],
-    [
-      "Sudbury",
-      "https://en.wikipedia.org/wiki/Sudbury_Airport",
-      "YSB",
-      "CYSB"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
-      "YTZ",
-      "CYTZ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Rouyn-Noranda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rouyn-Noranda_Airport",
+      "codes": [
+        "YUY",
+        "CYUY"
+      ],
+      "airlines": [
+        "Propair"
+      ]
+    },
+    {
+      "city": "Sault Ste. Marie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
+      "codes": [
+        "YAM",
+        "CYAM"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Sudbury",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "codes": [
+        "YSB",
+        "CYSB"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "Bearskin Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Billy Bishop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "codes": [
+        "YTZ",
+        "CYTZ"
+      ],
+      "airlines": [
+        "Propair"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -93,5 +135,7 @@
       "Sault Ste. Marie",
       "Sudbury"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:50Z",
+  "date-time-wikidata": "2026-03-29T17:07:35Z"
 }

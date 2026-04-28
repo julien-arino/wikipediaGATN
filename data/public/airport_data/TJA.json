@@ -19,24 +19,39 @@
     "Boliviana de Aviación"
   ],
   "destinations": [
-    [
-      "Cochabamba",
-      "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
-      "CBB",
-      "SLCB"
-    ],
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
-      "LPB",
-      "SLLP"
-    ],
-    [
-      "Santa Cruz de la Sierra–Viru Viru",
-      "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
-      "VVI",
-      "SLVR"
-    ]
+    {
+      "city": "Cochabamba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
+      "codes": [
+        "CBB",
+        "SLCB"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
+      "codes": [
+        "LPB",
+        "SLLP"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Santa Cruz de la Sierra–Viru Viru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
+      "codes": [
+        "VVI",
+        "SLVR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -44,5 +59,7 @@
       "La Paz",
       "Santa Cruz de la Sierra–Viru Viru"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:29Z",
+  "date-time-wikidata": "2026-01-18T20:26:06Z"
 }

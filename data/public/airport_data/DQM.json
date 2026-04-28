@@ -19,23 +19,35 @@
     "SalamAir"
   ],
   "destinations": [
-    [
-      "Masirah",
-      "https://en.wikipedia.org/wiki/RAFO_Masirah",
-      "MSH",
-      "OOMA"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ]
+    {
+      "city": "Masirah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/RAFO_Masirah",
+      "codes": [
+        "MSH",
+        "OOMA"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SalamAir": [
       "Masirah",
       "Muscat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:06Z",
+  "date-time-wikidata": "2025-08-18T04:39:11Z"
 }

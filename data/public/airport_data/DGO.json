@@ -22,54 +22,94 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Felipe Ángeles International Airport",
-      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Guadalajara International Airport",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Mexico City International Airport",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Midway International Airport",
-      "https://en.wikipedia.org/wiki/Midway_International_Airport",
-      "MDW",
-      "KMDW"
-    ],
-    [
-      "Monterrey International Airport",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Querétaro Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/Quer%C3%A9taro_Intercontinental_Airport",
-      "QRO",
-      "MMQT"
-    ],
-    [
-      "Tijuana International Airport",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ]
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Felipe Ángeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Guadalajara International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Midway International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Monterrey International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Querétaro Intercontinental Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quer%C3%A9taro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Tijuana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico Connect": [
@@ -88,5 +128,7 @@
       "Querétaro Intercontinental Airport",
       "Tijuana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:06Z",
+  "date-time-wikidata": "2026-02-20T15:34:54Z"
 }

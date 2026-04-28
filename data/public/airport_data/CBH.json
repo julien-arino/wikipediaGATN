@@ -7,6 +7,7 @@
   "lat": "31.6457786",
   "lon": "-2.2655544",
   "altitude": "811",
+  "continent": "Africa",
   "region": "Bechar",
   "country_alpha3": "DZA",
   "country_name": "Algeria",
@@ -19,30 +20,52 @@
     "Tassili Airlines"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Constantine",
-      "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
-      "CZL",
-      "DABC"
-    ],
-    [
-      "Oran",
-      "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
-      "ORN",
-      "DAOO"
-    ],
-    [
-      "Tindouf",
-      "https://en.wikipedia.org/wiki/Tindouf_Airport",
-      "TIN",
-      "DAOF"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Constantine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
+      "codes": [
+        "CZL",
+        "DABC"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Oran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
+      "codes": [
+        "ORN",
+        "DAOO"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Tindouf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tindouf_Airport",
+      "codes": [
+        "TIN",
+        "DAOF"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -56,5 +79,6 @@
       "Oran"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:09:59Z",
+  "date-time-wikidata": "2025-05-08T00:33:36Z"
 }

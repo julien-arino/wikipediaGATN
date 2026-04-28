@@ -20,18 +20,29 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Adelaide",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ]
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -41,5 +52,7 @@
       "Adelaide",
       "Melbourne"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:39Z",
+  "date-time-wikidata": "2026-04-14T03:09:35Z"
 }

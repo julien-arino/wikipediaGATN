@@ -23,72 +23,130 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Barimunya",
-      "https://en.wikipedia.org/wiki/Barimunya_Airport",
-      "BYP",
-      "YBRY"
-    ],
-    [
-      "Boolgeeda",
-      "https://en.wikipedia.org/wiki/Boolgeeda_Airport",
-      "OCM",
-      "YBGD"
-    ],
-    [
-      "Christmas Creek",
-      "https://en.wikipedia.org/wiki/Graeme_Rowley_Aerodrome",
-      "CKW",
-      "YCHK"
-    ],
-    [
-      "Coondewanna",
-      "https://en.wikipedia.org/wiki/Coondewanna_Airport",
-      "CJF",
-      "YCWA"
-    ],
-    [
-      "Geraldton",
-      "https://en.wikipedia.org/wiki/Geraldton_Airport",
-      "GET",
-      "YGEL"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Newman",
-      "https://en.wikipedia.org/wiki/Newman_Airport",
-      "ZNE",
-      "YNWN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Solomon",
-      "https://en.wikipedia.org/wiki/Solomon_Airport",
-      "SLJ",
-      "YSOL"
-    ],
-    [
-      "Thunderbox Gold Mine",
-      "https://en.wikipedia.org/wiki/Thunderbox_Gold_Mine",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "West Angelas",
-      "https://en.wikipedia.org/wiki/West_Angelas_mine",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Barimunya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barimunya_Airport",
+      "codes": [
+        "BYP",
+        "YBRY"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Boolgeeda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boolgeeda_Airport",
+      "codes": [
+        "OCM",
+        "YBGD"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Christmas Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Graeme_Rowley_Aerodrome",
+      "codes": [
+        "CKW",
+        "YCHK"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Coondewanna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coondewanna_Airport",
+      "codes": [
+        "CJF",
+        "YCWA"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Geraldton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geraldton_Airport",
+      "codes": [
+        "GET",
+        "YGEL"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Newman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newman_Airport",
+      "codes": [
+        "ZNE",
+        "YNWN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "QantasLink",
+        "Skippers Aviation",
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Solomon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Solomon_Airport",
+      "codes": [
+        "SLJ",
+        "YSOL"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Thunderbox Gold Mine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunderbox_Gold_Mine",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "West Angelas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/West_Angelas_mine",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -115,5 +173,7 @@
       "Perth",
       "West Angelas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:17Z",
+  "date-time-wikidata": "2026-04-15T06:03:05Z"
 }

@@ -21,24 +21,42 @@
     "FlySafair"
   ],
   "destinations": [
-    [
-      "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "George",
-      "https://en.wikipedia.org/wiki/George_Airport",
-      "GRJ",
-      "FAGG"
-    ],
-    [
-      "Johannesburg–O.R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ]
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Airport",
+      "codes": [
+        "GRJ",
+        "FAGG"
+      ],
+      "airlines": [
+        "CemAir"
+      ]
+    },
+    {
+      "city": "Johannesburg–O.R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -53,5 +71,7 @@
     "FlySafair": [
       "Cape Town"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:15Z",
+  "date-time-wikidata": "2026-03-10T13:26:07Z"
 }

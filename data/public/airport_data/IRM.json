@@ -19,23 +19,35 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Khanty-Mansiysk",
-      "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
-      "HMA",
-      "USHH"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roschino_Airport",
-      "TJM",
-      "USTR"
-    ]
+    {
+      "city": "Khanty-Mansiysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
+      "codes": [
+        "HMA",
+        "USHH"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roschino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Utair": [
       "Khanty-Mansiysk",
       "Tyumen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:06Z",
+  "date-time-wikidata": "2026-01-20T21:14:35Z"
 }

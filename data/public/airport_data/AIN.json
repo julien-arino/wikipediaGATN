@@ -19,23 +19,35 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Atqasuk",
-      "https://en.wikipedia.org/wiki/Atqasuk_Edward_Burnell_Sr._Memorial_Airport",
-      "ATK",
-      "PATQ"
-    ],
-    [
-      "Utqiagvik",
-      "https://en.wikipedia.org/wiki/Wiley_Post-Will_Rogers_Memorial_Airport",
-      "BRW",
-      "PABR"
-    ]
+    {
+      "city": "Atqasuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Atqasuk_Edward_Burnell_Sr._Memorial_Airport",
+      "codes": [
+        "ATK",
+        "PATQ"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Utqiagvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wiley_Post-Will_Rogers_Memorial_Airport",
+      "codes": [
+        "BRW",
+        "PABR"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
       "Atqasuk",
       "Utqiagvik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:05Z",
+  "date-time-wikidata": "2026-04-12T22:21:21Z"
 }

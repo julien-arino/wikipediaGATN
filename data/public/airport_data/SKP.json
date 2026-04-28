@@ -34,204 +34,374 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Adana/Mersin",
-      "https://en.wikipedia.org/wiki/Çukurova_International_Airport",
-      "COV",
-      "LTDB"
-    ],
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bari",
-      "https://en.wikipedia.org/wiki/Bari_Airport",
-      "BRI",
-      "LIBD"
-    ],
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Bodrum",
-      "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
-      "BJV",
-      "LTFE"
-    ],
-    [
-      "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport",
-      "BTS",
-      "LZIB"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Dortmund",
-      "https://en.wikipedia.org/wiki/Dortmund_Airport",
-      "DTM",
-      "EDLW"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Leipzig/Halle",
-      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "LEJ",
-      "EDDP"
-    ],
-    [
-      "Ljubljana",
-      "https://en.wikipedia.org/wiki/Ljubljana_Airport",
-      "LJU",
-      "LJLJ"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Nuremberg",
-      "https://en.wikipedia.org/wiki/Nuremberg_Airport",
-      "NUE",
-      "EDDN"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Palermo_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Prague_Airport",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Rome-Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Sandefjord",
-      "https://en.wikipedia.org/wiki/Sandefjord_Airport,_Torp",
-      "TRF",
-      "ENTO"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ],
-    [
-      "Zagreb",
-      "https://en.wikipedia.org/wiki/Zagreb_Airport",
-      "ZAG",
-      "LDZA"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ],
-    [
-      "İzmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ]
+    {
+      "city": "Adana/Mersin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Çukurova_International_Airport",
+      "codes": [
+        "COV",
+        "LTDB"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Bari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari_Airport",
+      "codes": [
+        "BRI",
+        "LIBD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Dortmund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
+      "codes": [
+        "DTM",
+        "EDLW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ljubljana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ljubljana_Airport",
+      "codes": [
+        "LJU",
+        "LJLJ"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Nuremberg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuremberg_Airport",
+      "codes": [
+        "NUE",
+        "EDDN"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Airport",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Rome-Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Sandefjord",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandefjord_Airport,_Torp",
+      "codes": [
+        "TRF",
+        "ENTO"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    },
+    {
+      "city": "Zagreb",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
+      "codes": [
+        "ZAG",
+        "LDZA"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Chair Airlines",
+        "Edelweiss Air"
+      ]
+    },
+    {
+      "city": "İzmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -302,5 +472,7 @@
     "DHL Aviation": [
       "Leipzig/Halle"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:09Z",
+  "date-time-wikidata": "2026-04-25T21:41:23Z"
 }

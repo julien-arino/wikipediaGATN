@@ -14,7 +14,7 @@
   "subdivision_code": "Politischer Bezirk Innsbruck Land",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Innsbruck_Airport",
   "number_airlines": 17,
-  "outdegree": 34,
+  "outdegree": 33,
   "airlines": [
     "Aegean Airlines",
     "Air Baltic",
@@ -35,210 +35,381 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Billund",
-      "https://en.wikipedia.org/wiki/Billund_Airport",
-      "BLL",
-      "EKBI"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Bristol",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Calvi",
-      "https://en.wikipedia.org/wiki/Calvi–Sainte-Catherine_Airport",
-      "CLY",
-      "LFKC"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Edinburgh",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "EDI",
-      "EGPH"
-    ],
-    [
-      "Eindhoven",
-      "https://en.wikipedia.org/wiki/Eindhoven_Airport",
-      "EIN",
-      "EHEH"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Kalamata",
-      "https://en.wikipedia.org/wiki/Kalamata_International_Airport",
-      "KLX",
-      "LGKL"
-    ],
-    [
-      "Kos",
-      "https://en.wikipedia.org/wiki/Kos_International_Airport",
-      "KGS",
-      "LGKO"
-    ],
-    [
-      "Lamezia Terme",
-      "https://en.wikipedia.org/wiki/Lamezia_Terme_International_Airport",
-      "SUF",
-      "LICA"
-    ],
-    [
-      "London–City",
-      "https://en.wikipedia.org/wiki/London_City_Airport",
-      "LCY",
-      "EGLC"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Newcastle upon Tyne",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
-      "NCL",
-      "EGNT"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Preveza/Lefkada",
-      "https://en.wikipedia.org/wiki/Aktion_National_Airport",
-      "PVK",
-      "LGPZ"
-    ],
-    [
-      "Reykjavík–Keflavík",
-      "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
-      "KEF",
-      "BIKF"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Riga",
-      "https://en.wikipedia.org/wiki/Riga_International_Airport",
-      "RIX",
-      "EVRA"
-    ],
-    [
-      "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Austrian Airlines",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Billund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billund_Airport",
+      "codes": [
+        "BLL",
+        "EKBI"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "TUI Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Bristol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "TUI Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Austrian Airlines",
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Marathon Airlines"
+      ]
+    },
+    {
+      "city": "Calvi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calvi–Sainte-Catherine_Airport",
+      "codes": [
+        "CLY",
+        "LFKC"
+      ],
+      "airlines": [
+        "Avanti Air"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Austrian Airlines",
+        "Eurowings",
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Edinburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "TUI Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Eindhoven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eindhoven_Airport",
+      "codes": [
+        "EIN",
+        "EHEH"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Air Dolomiti"
+      ]
+    },
+    {
+      "city": "Hamburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Kalamata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalamata_International_Airport",
+      "codes": [
+        "KLX",
+        "LGKL"
+      ],
+      "airlines": [
+        "Marathon Airlines"
+      ]
+    },
+    {
+      "city": "Kos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kos_International_Airport",
+      "codes": [
+        "KGS",
+        "LGKO"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Lamezia Terme",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lamezia_Terme_International_Airport",
+      "codes": [
+        "SUF",
+        "LICA"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "London–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_City_Airport",
+      "codes": [
+        "LCY",
+        "EGLC"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "TUI Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Newcastle upon Tyne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "codes": [
+        "NCL",
+        "EGNT"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Preveza/Lefkada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktion_National_Airport",
+      "codes": [
+        "PVK",
+        "LGPZ"
+      ],
+      "airlines": [
+        "Marathon Airlines"
+      ]
+    },
+    {
+      "city": "Reykjavík–Keflavík",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
+      "codes": [
+        "KEF",
+        "BIKF"
+      ],
+      "airlines": [
+        "Icelandair"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "Air Baltic"
+      ]
+    },
+    {
+      "city": "Rotterdam/The Hague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Eurowings",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -314,12 +485,13 @@
       "Birmingham",
       "Bristol",
       "Edinburgh",
-      "London–Stansted",
       "Manchester",
       "Newcastle upon Tyne"
     ],
     "TUI fly Belgium": [
       "Brussels"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:47Z",
+  "date-time-wikidata": "2026-04-28T11:47:31Z"
 }

@@ -19,24 +19,39 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Lhasa Gonggar International Airport",
-      "https://en.wikipedia.org/wiki/Lhasa_Gonggar_International_Airport",
-      "LXA",
-      "ZULS"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Lhasa Gonggar International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lhasa_Gonggar_International_Airport",
+      "codes": [
+        "LXA",
+        "ZULS"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sichuan Airlines": [
@@ -44,5 +59,7 @@
       "Lhasa Gonggar International Airport",
       "Xi'an Xianyang International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:38Z",
+  "date-time-wikidata": "2026-01-29T05:19:14Z"
 }

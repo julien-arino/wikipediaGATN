@@ -20,30 +20,50 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Benbecula",
-      "https://en.wikipedia.org/wiki/Benbecula_Airport",
-      "BEB",
-      "EGPL"
-    ],
-    [
-      "Edinburgh",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "EDI",
-      "EGPH"
-    ],
-    [
-      "Glasgow",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "GLA",
-      "EGPF"
-    ],
-    [
-      "Inverness",
-      "https://en.wikipedia.org/wiki/Inverness_Airport",
-      "INV",
-      "EGPE"
-    ]
+    {
+      "city": "Benbecula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benbecula_Airport",
+      "codes": [
+        "BEB",
+        "EGPL"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    },
+    {
+      "city": "Edinburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Glasgow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Inverness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inverness_Airport",
+      "codes": [
+        "INV",
+        "EGPE"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hebridean Air Services": [
@@ -54,5 +74,7 @@
       "Glasgow",
       "Inverness"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:58Z",
+  "date-time-wikidata": "2025-11-02T21:44:01Z"
 }

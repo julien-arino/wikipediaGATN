@@ -22,60 +22,105 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Mammoth Yosemite Airport",
-      "https://en.wikipedia.org/wiki/Mammoth_Yosemite_Airport",
-      "MMH",
-      "KMMH"
-    ],
-    [
-      "Oakland San Francisco Bay Airport",
-      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "OAK",
-      "KOAK"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Reno–Tahoe International Airport",
-      "https://en.wikipedia.org/wiki/Reno%E2%80%93Tahoe_International_Airport",
-      "RNO",
-      "KRNO"
-    ],
-    [
-      "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Scottsdale Airport",
-      "https://en.wikipedia.org/wiki/Scottsdale_Airport",
-      "SCF",
-      "KSDL"
-    ],
-    [
-      "Taos Regional Airport",
-      "https://en.wikipedia.org/wiki/Taos_Regional_Airport",
-      "TSM",
-      "KSKX"
-    ]
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Mammoth Yosemite Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mammoth_Yosemite_Airport",
+      "codes": [
+        "MMH",
+        "KMMH"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Oakland San Francisco Bay Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Reno–Tahoe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reno%E2%80%93Tahoe_International_Airport",
+      "codes": [
+        "RNO",
+        "KRNO"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "San Francisco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Scottsdale Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scottsdale_Airport",
+      "codes": [
+        "SCF",
+        "KSDL"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Taos Regional Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taos_Regional_Airport",
+      "codes": [
+        "TSM",
+        "KSKX"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Advanced Air": [
@@ -95,5 +140,7 @@
       "Denver International Airport",
       "San Francisco International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:47Z",
+  "date-time-wikidata": "2026-04-15T18:03:52Z"
 }

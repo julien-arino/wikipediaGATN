@@ -19,24 +19,39 @@
     "Myanmar National Airlines"
   ],
   "destinations": [
-    [
-      "Sittwe",
-      "https://en.wikipedia.org/wiki/Sittwe_Airport",
-      "AKY",
-      "VYSW"
-    ],
-    [
-      "Thandwe",
-      "https://en.wikipedia.org/wiki/Thandwe_Airport",
-      "SNW",
-      "VYTD"
-    ],
-    [
-      "Yangon",
-      "https://en.wikipedia.org/wiki/Yangon_Airport",
-      "RGN",
-      "VYYY"
-    ]
+    {
+      "city": "Sittwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sittwe_Airport",
+      "codes": [
+        "AKY",
+        "VYSW"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Thandwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thandwe_Airport",
+      "codes": [
+        "SNW",
+        "VYTD"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Yangon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangon_Airport",
+      "codes": [
+        "RGN",
+        "VYYY"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Myanmar National Airlines": [
@@ -44,5 +59,7 @@
       "Thandwe",
       "Yangon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:13Z",
+  "date-time-wikidata": "2023-05-19T03:55:02Z"
 }

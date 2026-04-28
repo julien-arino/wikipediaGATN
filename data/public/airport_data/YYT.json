@@ -1,8 +1,8 @@
 {
   "iata": "YYT",
   "icao": "CYYT",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "St. John's",
+  "city-served-wikipedia": "[[St. John's, Newfoundland and Labrador|St. John's]], [[Newfoundland and Labrador]], [[Canada]]",
   "location": "[[St. John's, Newfoundland and Labrador|St. John's]], [[Newfoundland and Labrador]], [[Canada]]",
   "lat": "47.618611",
   "lon": "-52.752500",
@@ -11,7 +11,7 @@
   "region": "CA-NL",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "NL",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/St._John's_International_Airport",
   "number_airlines": 8,
   "outdegree": 25,
@@ -26,156 +26,285 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancun",
-      "https://en.wikipedia.org/wiki/Cancun_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Churchill Falls",
-      "https://en.wikipedia.org/wiki/Churchill_Falls_Airport",
-      "ZUM",
-      "CZUM"
-    ],
-    [
-      "Deer Lake",
-      "https://en.wikipedia.org/wiki/Deer_Lake_Regional_Airport",
-      "YDF",
-      "CYDF"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Gander",
-      "https://en.wikipedia.org/wiki/Gander_International_Airport",
-      "YQX",
-      "CYQX"
-    ],
-    [
-      "Goose Bay",
-      "https://en.wikipedia.org/wiki/CFB_Goose_Bay",
-      "YYR",
-      "CYYR"
-    ],
-    [
-      "Halifax",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Hebron–Ben Nevis",
-      "https://en.wikipedia.org/wiki/Hebron-Ben_Nevis_oil_field",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Hibernia",
-      "https://en.wikipedia.org/wiki/Hibernia_(oil_field)",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Montego Bay",
-      "https://en.wikipedia.org/wiki/Sangster_International_Airport",
-      "MBJ",
-      "MKJS"
-    ],
-    [
-      "Montréal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
-      "YHU",
-      "CYHU"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Orlando",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "Saint-Pierre",
-      "https://en.wikipedia.org/wiki/Saint-Pierre_Airport",
-      "FSP",
-      "LFVP"
-    ],
-    [
-      "SeaRose",
-      "https://en.wikipedia.org/wiki/SeaRose_FPSO",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "St. Anthony",
-      "https://en.wikipedia.org/wiki/St._Anthony_Airport",
-      "YAY",
-      "CYAY"
-    ],
-    [
-      "Terra Nova",
-      "https://en.wikipedia.org/wiki/Terra_Nova_FPSO",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Wabush",
-      "https://en.wikipedia.org/wiki/Wabush_Airport",
-      "YWK",
-      "CYWK"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Cancun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancun_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Churchill Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Churchill_Falls_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Deer Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Lake_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Gander",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gander_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Goose Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CFB_Goose_Bay",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Halifax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Hebron–Ben Nevis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hebron-Ben_Nevis_oil_field",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cougar Helicopters"
+      ]
+    },
+    {
+      "city": "Hibernia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hibernia_(oil_field)",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cougar Helicopters"
+      ]
+    },
+    {
+      "city": "Montego Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sangster_International_Airport",
+      "codes": [
+        "MBJ",
+        "MKJS"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Montréal–Saint-Hubert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
+      "codes": [
+        "YHU",
+        "CYHU"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Saint-Pierre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Pierre_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Saint-Pierre"
+      ]
+    },
+    {
+      "city": "SeaRose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/SeaRose_FPSO",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cougar Helicopters"
+      ]
+    },
+    {
+      "city": "St. Anthony",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Anthony_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Terra Nova",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terra_Nova_FPSO",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cougar Helicopters"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Flair Airlines",
+        "Porter Airlines",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Wabush",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wabush_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -223,5 +352,7 @@
       "SeaRose",
       "Terra Nova"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:34Z",
+  "date-time-wikidata": "2026-04-23T19:52:01Z"
 }

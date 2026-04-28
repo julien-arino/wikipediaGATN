@@ -28,96 +28,174 @@
     "azimuth"
   ],
   "destinations": [
-    [
-      "Chita",
-      "https://en.wikipedia.org/wiki/Kadala_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Krasnoyarsk-International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Krasnoyarsk–Cheremshanka",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
-      "KCY",
-      "UNKM"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow-Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Perm",
-      "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
-      "PEE",
-      "USPP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_International_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "UFA",
-      "UWUU"
-    ],
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Chita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kadala_Airport",
+      "codes": [
+        "HTA",
+        "UIAA"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Nordwind Airlines",
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk-International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–Cheremshanka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
+      "codes": [
+        "KCY",
+        "UNKM"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Moscow-Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
+      "codes": [
+        "PEE",
+        "USPP"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Nordwind Airlines",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "KrasAvia",
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -158,5 +236,7 @@
       "Perm",
       "Ulan-Ude"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:35Z",
+  "date-time-wikidata": "2026-04-11T19:10:28Z"
 }

@@ -19,24 +19,39 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
@@ -44,5 +59,7 @@
       "London–Stansted",
       "Málaga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:47Z",
+  "date-time-wikidata": "2026-03-26T22:44:46Z"
 }

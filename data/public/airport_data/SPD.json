@@ -20,12 +20,18 @@
     "Novoair"
   ],
   "destinations": [
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ]
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Air Astra",
+        "Novoair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Astra": [
@@ -34,5 +40,7 @@
     "Novoair": [
       "Dhaka"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:13Z",
+  "date-time-wikidata": "2025-12-15T07:58:01Z"
 }

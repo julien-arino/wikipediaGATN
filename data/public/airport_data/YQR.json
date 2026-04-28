@@ -11,7 +11,7 @@
   "region": "CA-SK",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "SK",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Regina_International_Airport",
   "number_airlines": 5,
   "outdegree": 15,
@@ -23,96 +23,175 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary International Airport",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancún International Airport",
-      "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Edmonton International Airport",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Halifax Stanfield International Airport",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Kelowna International Airport",
-      "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
-      "YLW",
-      "CYLW"
-    ],
-    [
-      "Licenciado Gustavo Díaz Ordaz International Airport",
-      "https://en.wikipedia.org/wiki/Licenciado_Gustavo_D%C3%ADaz_Ordaz_International_Airport",
-      "PVR",
-      "MMPR"
-    ],
-    [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "Montréal–Pierre Elliott Trudeau International Airport",
-      "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Saskatoon John G. Diefenbaker International Airport",
-      "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
-      "YXE",
-      "CYXE"
-    ],
-    [
-      "Toronto Pearson International Airport",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver International Airport",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Winnipeg International Airport",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Calgary International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Cancún International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Edmonton International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Halifax Stanfield International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Kelowna International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Licenciado Gustavo Díaz Ordaz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_D%C3%ADaz_Ordaz_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Minneapolis–Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Montréal–Pierre Elliott Trudeau International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Saskatoon John G. Diefenbaker International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
+      "codes": [
+        "YXE",
+        "CYXE"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Toronto Pearson International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Vancouver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Canada Express",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Winnipeg International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -144,5 +223,7 @@
       "Minneapolis–Saint Paul International Airport",
       "Winnipeg International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:28Z",
+  "date-time-wikidata": "2026-01-19T00:07:09Z"
 }

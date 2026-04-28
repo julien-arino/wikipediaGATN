@@ -20,36 +20,61 @@
     "LATAM Chile"
   ],
   "destinations": [
-    [
-      "Punta Arenas",
-      "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
-      "PUQ",
-      "SCCI"
-    ],
-    [
-      "Rio Gallegos",
-      "https://en.wikipedia.org/wiki/Piloto_Civil_Norberto_Fernández_International_Airport",
-      "RGL",
-      "SAWG"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "Stanley",
-      "https://en.wikipedia.org/wiki/Port_Stanley_Airport",
-      "PSY",
-      "SFAL"
-    ],
-    [
-      "other settlements",
-      "https://en.wikipedia.org/wiki/List_of_airports_in_the_Falkland_Islands",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Punta Arenas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
+      "codes": [
+        "PUQ",
+        "SCCI"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Rio Gallegos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piloto_Civil_Norberto_Fernández_International_Airport",
+      "codes": [
+        "RGL",
+        "SAWG"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Stanley",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Stanley_Airport",
+      "codes": [
+        "PSY",
+        "SFAL"
+      ],
+      "airlines": [
+        "FIGAS"
+      ]
+    },
+    {
+      "city": "other settlements",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_airports_in_the_Falkland_Islands",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FIGAS"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LATAM Chile": [
@@ -61,5 +86,7 @@
       "Stanley",
       "other settlements"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:28Z",
+  "date-time-wikidata": "2026-02-12T18:49:51Z"
 }

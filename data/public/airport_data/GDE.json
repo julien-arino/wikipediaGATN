@@ -19,24 +19,39 @@
     "Ethiopian Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Dire Dawa",
-      "https://en.wikipedia.org/wiki/Aba_Tenna_Dejazmach_Yilma_International_Airport",
-      "DIR",
-      "HADR"
-    ],
-    [
-      "Jijiga",
-      "https://en.wikipedia.org/wiki/Jijiga_Airport",
-      "JIJ",
-      "HAJJ"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Dire Dawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aba_Tenna_Dejazmach_Yilma_International_Airport",
+      "codes": [
+        "DIR",
+        "HADR"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Jijiga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jijiga_Airport",
+      "codes": [
+        "JIJ",
+        "HAJJ"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ethiopian Airlines": [
@@ -44,5 +59,7 @@
       "Dire Dawa",
       "Jijiga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:50Z",
+  "date-time-wikidata": "2026-04-17T02:51:21Z"
 }

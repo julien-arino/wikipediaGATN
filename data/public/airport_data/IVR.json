@@ -19,23 +19,35 @@
     "Link Airways"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Link Airways": [
       "Brisbane",
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:12Z",
+  "date-time-wikidata": "2026-01-15T18:40:49Z"
 }

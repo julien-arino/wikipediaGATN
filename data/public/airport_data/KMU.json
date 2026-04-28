@@ -20,18 +20,27 @@
     "Jubba Airways"
   ],
   "destinations": [
-    [
-      "Aden Adde International Airport",
-      "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
-      "MGQ",
-      "HCMM"
-    ],
-    [
-      "Jomo Kenyatta International Airport",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ]
+    {
+      "city": "Aden Adde International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
+      "codes": [
+        "MGQ",
+        "HCMM"
+      ],
+      "airlines": [
+        "African Express Airways",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Jomo Kenyatta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": []
+    }
   ],
   "airlines_destinations": {
     "African Express Airways": [
@@ -40,5 +49,7 @@
     "Jubba Airways": [
       "Aden Adde International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:57Z",
+  "date-time-wikidata": "2026-02-15T13:15:53Z"
 }

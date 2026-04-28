@@ -21,30 +21,53 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Calicut International Airport",
-      "https://en.wikipedia.org/wiki/Calicut_International_Airport",
-      "CCJ",
-      "VOCL"
-    ],
-    [
-      "Cochin International Airport",
-      "https://en.wikipedia.org/wiki/Cochin_International_Airport",
-      "COK",
-      "VOCI"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Manohar International Airport",
-      "https://en.wikipedia.org/wiki/Manohar_International_Airport",
-      "GOX",
-      "VOGA"
-    ]
+    {
+      "city": "Calicut International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calicut_International_Airport",
+      "codes": [
+        "CCJ",
+        "VOCL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Cochin International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cochin_International_Airport",
+      "codes": [
+        "COK",
+        "VOCI"
+      ],
+      "airlines": [
+        "Alliance Air (India)",
+        "Fly91",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Alliance Air (India)",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Manohar International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manohar_International_Airport",
+      "codes": [
+        "GOX",
+        "VOGA"
+      ],
+      "airlines": [
+        "Fly91"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air (India)": [
@@ -60,5 +83,7 @@
       "Cochin International Airport",
       "Kempegowda International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:02Z",
+  "date-time-wikidata": "2026-02-27T08:52:13Z"
 }

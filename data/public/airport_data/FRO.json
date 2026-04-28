@@ -21,48 +21,83 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Bergen",
-      "https://en.wikipedia.org/wiki/Bergen_Airport",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Deepsea Stavanger",
-      "https://en.wikipedia.org/wiki/Deepsea_Stavanger",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Gjøa",
-      "https://en.wikipedia.org/wiki/Gjøa_oilfield",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Snorre A and B",
-      "https://en.wikipedia.org/wiki/Snorre_oil_field",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Trondheim",
-      "https://en.wikipedia.org/wiki/Trondheim_Airport",
-      "TRD",
-      "ENVA"
-    ],
-    [
-      "Visund",
-      "https://en.wikipedia.org/wiki/Visund",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Bergen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Deepsea Stavanger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deepsea_Stavanger",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bristow Helicopters"
+      ]
+    },
+    {
+      "city": "Gjøa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gjøa_oilfield",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bristow Helicopters"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Snorre A and B",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Snorre_oil_field",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bristow Helicopters"
+      ]
+    },
+    {
+      "city": "Trondheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trondheim_Airport",
+      "codes": [
+        "TRD",
+        "ENVA"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Visund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visund",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bristow Helicopters"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bristow Helicopters": [
@@ -78,5 +113,7 @@
       "Bergen",
       "Trondheim"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:31Z",
+  "date-time-wikidata": "2026-01-25T20:26:10Z"
 }

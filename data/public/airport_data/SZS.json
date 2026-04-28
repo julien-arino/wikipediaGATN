@@ -20,18 +20,28 @@
     "Stewart Island Flights"
   ],
   "destinations": [
-    [
-      "Invercargill",
-      "https://en.wikipedia.org/wiki/Invercargill_Airport",
-      "IVC",
-      "NZNV"
-    ],
-    [
-      "Queenstown",
-      "https://en.wikipedia.org/wiki/Queenstown_Airport",
-      "ZQN",
-      "NZQN"
-    ]
+    {
+      "city": "Invercargill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Invercargill_Airport",
+      "codes": [
+        "IVC",
+        "NZNV"
+      ],
+      "airlines": [
+        "Stewart Island Flights"
+      ]
+    },
+    {
+      "city": "Queenstown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queenstown_Airport",
+      "codes": [
+        "ZQN",
+        "NZQN"
+      ],
+      "airlines": [
+        "Glenorchy Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Glenorchy Air": [
@@ -40,5 +50,7 @@
     "Stewart Island Flights": [
       "Invercargill"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:00Z",
+  "date-time-wikidata": "2025-07-18T16:08:25Z"
 }

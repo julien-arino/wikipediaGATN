@@ -21,30 +21,52 @@
     "YTO Cargo Airlines"
   ],
   "destinations": [
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ]
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Central Airlines",
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Central Airlines",
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Central Airlines"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "My Freighter Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Central Airlines": [
@@ -59,5 +81,7 @@
       "Manila",
       "Seoul–Incheon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:21Z",
+  "date-time-wikidata": "2026-04-28T21:06:40Z"
 }

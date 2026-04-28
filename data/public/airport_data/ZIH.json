@@ -30,108 +30,196 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Minneapolis/St. Paul",
-      "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Montreal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Phoenix–Sky Harbor",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Querétaro",
-      "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
-      "QRO",
-      "MMQT"
-    ],
-    [
-      "San Francisco",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Tijuana",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico Connect",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Mexicana de Aviación",
+        "Viva"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Montreal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Querétaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico Connect": [
@@ -178,5 +266,7 @@
     "WestJet": [
       "Calgary"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:41Z",
+  "date-time-wikidata": "2026-04-03T13:43:06Z"
 }

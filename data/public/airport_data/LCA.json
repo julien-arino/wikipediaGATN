@@ -27,120 +27,224 @@
     "UPS Airlines"
   ],
   "destinations": [
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Brescia",
-      "https://en.wikipedia.org/wiki/Brescia_Airport",
-      "VBS",
-      "LIPO"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "CGN",
-      "EDDK"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Leipzig/Halle",
-      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "LEJ",
-      "EDDP"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Maastricht/Aachen",
-      "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
-      "MST",
-      "EHBK"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Ostend/Bruges",
-      "https://en.wikipedia.org/wiki/Ostend-Bruges_International_Airport",
-      "OST",
-      "EBOS"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Pisa",
-      "https://en.wikipedia.org/wiki/Pisa_International_Airport",
-      "PSA",
-      "LIRP"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Tel Aviv",
-      "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
-      "TLV",
-      "LLBG"
-    ],
-    [
-      "Venice",
-      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-      "VCE",
-      "LIPZ"
-    ]
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "Lufthansa Cargo",
+        "Swiftair"
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Challenge Airlines IL"
+      ]
+    },
+    {
+      "city": "Brescia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brescia_Airport",
+      "codes": [
+        "VBS",
+        "LIPO"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "EgyptAir Cargo"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Challenge Airlines IL",
+        "FedEx Express",
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Maastricht/Aachen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
+      "codes": [
+        "MST",
+        "EHBK"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "DHL Aviation",
+        "Lufthansa Cargo",
+        "Poste Air Cargo"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Challenge Airlines IL"
+      ]
+    },
+    {
+      "city": "Ostend/Bruges",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostend-Bruges_International_Airport",
+      "codes": [
+        "OST",
+        "EBOS"
+      ],
+      "airlines": [
+        "EgyptAir Cargo"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Pisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_International_Airport",
+      "codes": [
+        "PSA",
+        "LIRP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "Poste Air Cargo"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "codes": [
+        "TLV",
+        "LLBG"
+      ],
+      "airlines": [
+        "Challenge Airlines IL",
+        "Poste Air Cargo",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Venice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "codes": [
+        "VCE",
+        "LIPZ"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Challenge Airlines IL": [
@@ -189,5 +293,7 @@
       "Istanbul",
       "Tel Aviv"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:54Z",
+  "date-time-wikidata": "2026-04-23T18:20:41Z"
 }

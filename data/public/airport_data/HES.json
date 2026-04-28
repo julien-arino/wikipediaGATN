@@ -19,23 +19,35 @@
     "Ameriflight"
   ],
   "destinations": [
-    [
-      "La Grande",
-      "https://en.wikipedia.org/wiki/La_Grande/Union_County_Airport",
-      "LGD",
-      "KLGD"
-    ],
-    [
-      "Portland, OR",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ]
+    {
+      "city": "La Grande",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Grande/Union_County_Airport",
+      "codes": [
+        "LGD",
+        "KLGD"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Portland, OR",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ameriflight": [
       "La Grande",
       "Portland, OR"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:17Z",
+  "date-time-wikidata": "2026-01-01T00:32:25Z"
 }

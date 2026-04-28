@@ -20,24 +20,39 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Claris",
-      "https://en.wikipedia.org/wiki/Great_Barrier_Aerodrome",
-      "GBZ",
-      "NZGB"
-    ],
-    [
-      "Tauranga",
-      "https://en.wikipedia.org/wiki/Tauranga_Airport",
-      "TRG",
-      "NZTG"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Barrier Air"
+      ]
+    },
+    {
+      "city": "Claris",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Barrier_Aerodrome",
+      "codes": [
+        "GBZ",
+        "NZGB"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Tauranga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tauranga_Airport",
+      "codes": [
+        "TRG",
+        "NZTG"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Barrier Air": [
@@ -47,5 +62,7 @@
       "Claris",
       "Tauranga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:25Z",
+  "date-time-wikidata": "2025-09-15T06:29:11Z"
 }

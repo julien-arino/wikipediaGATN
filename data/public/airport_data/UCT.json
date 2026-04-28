@@ -20,24 +20,39 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Moscow-Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow-Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ]
+    {
+      "city": "Moscow-Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Severstal Air Company"
+      ]
+    },
+    {
+      "city": "Moscow-Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Severstal Air Company"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Severstal Air Company": [
@@ -47,5 +62,7 @@
     "Utair": [
       "Moscow-Vnukovo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:43Z",
+  "date-time-wikidata": "2025-11-02T20:43:58Z"
 }

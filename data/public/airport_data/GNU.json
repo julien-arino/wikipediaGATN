@@ -19,23 +19,35 @@
     "Yute Commuter Service"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Platinum",
-      "https://en.wikipedia.org/wiki/Platinum_Airport",
-      "PTU",
-      "PAPM"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    },
+    {
+      "city": "Platinum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Platinum_Airport",
+      "codes": [
+        "PTU",
+        "PAPM"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Yute Commuter Service": [
       "Bethel",
       "Platinum"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:31Z",
+  "date-time-wikidata": "2025-05-31T00:06:08Z"
 }

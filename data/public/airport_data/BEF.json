@@ -19,24 +19,39 @@
     "La Costeña"
   ],
   "destinations": [
-    [
-      "Corn Island",
-      "https://en.wikipedia.org/wiki/Corn_Island_Airport",
-      "RNI",
-      "MNCI"
-    ],
-    [
-      "Managua",
-      "https://en.wikipedia.org/wiki/Augusto_C._Sandino_International_Airport",
-      "MGA",
-      "MNMG"
-    ],
-    [
-      "Puerto Cabezas",
-      "https://en.wikipedia.org/wiki/Puerto_Cabezas_Airport",
-      "PUZ",
-      "MNPC"
-    ]
+    {
+      "city": "Corn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corn_Island_Airport",
+      "codes": [
+        "RNI",
+        "MNCI"
+      ],
+      "airlines": [
+        "La Costeña"
+      ]
+    },
+    {
+      "city": "Managua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Augusto_C._Sandino_International_Airport",
+      "codes": [
+        "MGA",
+        "MNMG"
+      ],
+      "airlines": [
+        "La Costeña"
+      ]
+    },
+    {
+      "city": "Puerto Cabezas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puerto_Cabezas_Airport",
+      "codes": [
+        "PUZ",
+        "MNPC"
+      ],
+      "airlines": [
+        "La Costeña"
+      ]
+    }
   ],
   "airlines_destinations": {
     "La Costeña": [
@@ -44,5 +59,7 @@
       "Managua",
       "Puerto Cabezas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:47Z",
+  "date-time-wikidata": "2026-03-18T21:51:34Z"
 }

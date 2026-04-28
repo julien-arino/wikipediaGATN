@@ -7,6 +7,7 @@
   "lat": "48.4428197",
   "lon": "126.1373899",
   "altitude": "300",
+  "continent": "Asia",
   "region": "Heilongjiang Sheng",
   "country_alpha3": "CHN",
   "country_name": "China",
@@ -18,24 +19,39 @@
     "Chengdu Airlines"
   ],
   "destinations": [
-    [
-      "Harbin Taiping International Airport",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
-      "HRB",
-      "ZYHB"
-    ],
-    [
-      "Heihe Aihui Airport",
-      "https://en.wikipedia.org/wiki/Heihe_Aihui_Airport",
-      "HEK",
-      "ZYHE"
-    ],
-    [
-      "Mohe Gulian Airport",
-      "https://en.wikipedia.org/wiki/Mohe_Gulian_Airport",
-      "OHE",
-      "ZYMH"
-    ]
+    {
+      "city": "Harbin Taiping International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "codes": [
+        "HRB",
+        "ZYHB"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Heihe Aihui Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heihe_Aihui_Airport",
+      "codes": [
+        "HEK",
+        "ZYHE"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Mohe Gulian Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohe_Gulian_Airport",
+      "codes": [
+        "OHE",
+        "ZYMH"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chengdu Airlines": [
@@ -44,5 +60,6 @@
       "Mohe Gulian Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:15:11Z",
+  "date-time-wikidata": "2026-01-15T10:39:01Z"
 }

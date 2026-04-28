@@ -7,6 +7,7 @@
   "lat": "41.0038038",
   "lon": "28.9738309",
   "altitude": "588",
+  "continent": "Asia",
   "region": "Istanbul",
   "country_alpha3": "TUR",
   "country_name": "Türkiye",
@@ -19,30 +20,50 @@
     "FlyBig"
   ],
   "destinations": [
-    [
-      "Bilasa Devi Kevat Airport",
-      "https://en.wikipedia.org/wiki/Bilasa_Devi_Kevat_Airport",
-      "PAB",
-      "VEBU"
-    ],
-    [
-      "Delhi Airport",
-      "https://en.wikipedia.org/wiki/Delhi_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Kolkata Airport",
-      "https://en.wikipedia.org/wiki/Kolkata_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Swami Vivekananda Airport",
-      "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
-      "RPR",
-      "VERP"
-    ]
+    {
+      "city": "Bilasa Devi Kevat Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilasa_Devi_Kevat_Airport",
+      "codes": [
+        "PAB",
+        "VEBU"
+      ],
+      "airlines": [
+        "FlyBig"
+      ]
+    },
+    {
+      "city": "Delhi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air (India)"
+      ]
+    },
+    {
+      "city": "Kolkata Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kolkata_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Alliance Air (India)"
+      ]
+    },
+    {
+      "city": "Swami Vivekananda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
+      "codes": [
+        "RPR",
+        "VERP"
+      ],
+      "airlines": [
+        "FlyBig"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air (India)": [
@@ -54,5 +75,6 @@
       "Swami Vivekananda Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:14:03Z",
+  "date-time-wikidata": "2026-04-12T16:34:32Z"
 }

@@ -21,30 +21,50 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Ajaccio Napoleon Bonaparte Airport",
-      "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Edinburgh Airport",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "EDI",
-      "EGPH"
-    ],
-    [
-      "London Stansted Airport",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Lyon–Saint-Exupéry Airport",
-      "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint-Exup%C3%A9ry_Airport",
-      "LYS",
-      "LFLL"
-    ]
+    {
+      "city": "Ajaccio Napoleon Bonaparte Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Edinburgh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London Stansted Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Lyon–Saint-Exupéry Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint-Exup%C3%A9ry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air France": [
@@ -57,5 +77,7 @@
     "Volotea": [
       "Lyon–Saint-Exupéry Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:43Z",
+  "date-time-wikidata": "2025-11-14T15:13:10Z"
 }

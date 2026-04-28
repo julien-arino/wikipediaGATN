@@ -19,23 +19,35 @@
     "Warbelow's Air Ventures"
   ],
   "destinations": [
-    [
-      "Fairbanks International Airport",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Minto Al Wright Airport",
-      "https://en.wikipedia.org/wiki/Minto_Al_Wright_Airport",
-      "MNT",
-      "icao code not found"
-    ]
+    {
+      "city": "Fairbanks International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Warbelow's Air Ventures"
+      ]
+    },
+    {
+      "city": "Minto Al Wright Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minto_Al_Wright_Airport",
+      "codes": [
+        "MNT",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Warbelow's Air Ventures"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Warbelow's Air Ventures": [
       "Fairbanks International Airport",
       "Minto Al Wright Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:44Z",
+  "date-time-wikidata": "2025-06-15T06:04:28Z"
 }

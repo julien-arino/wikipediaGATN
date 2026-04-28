@@ -23,54 +23,94 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary International Airport",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ],
-    [
-      "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
-      "SAN",
-      "KSAN"
-    ],
-    [
-      "Van Nuys Airport",
-      "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
-      "VNY",
-      "KVNY"
-    ],
-    [
-      "Vancouver International Airport",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Calgary International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Minneapolis–Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "San Diego International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Van Nuys Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
+      "codes": [
+        "VNY",
+        "KVNY"
+      ],
+      "airlines": [
+        "Aero (American airline)"
+      ]
+    },
+    {
+      "city": "Vancouver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero (American airline)": [
@@ -91,5 +131,7 @@
       "Calgary International Airport",
       "Vancouver International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:47Z",
+  "date-time-wikidata": "2026-04-28T05:15:33Z"
 }

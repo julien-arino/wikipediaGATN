@@ -24,48 +24,83 @@
     "Kenya Airways"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Dzaoudzi",
-      "https://en.wikipedia.org/wiki/Dzaoudzi–Pamandzi_International_Airport",
-      "DZA",
-      "FMCZ"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Mahé",
-      "https://en.wikipedia.org/wiki/Seychelles_International_Airport",
-      "SEZ",
-      "FSIA"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Saint-Denis de la Réunion",
-      "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
-      "RUN",
-      "FMEE"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Dzaoudzi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dzaoudzi–Pamandzi_International_Airport",
+      "codes": [
+        "DZA",
+        "FMCZ"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Mahé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seychelles_International_Airport",
+      "codes": [
+        "SEZ",
+        "FSIA"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Saint-Denis de la Réunion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
+      "codes": [
+        "RUN",
+        "FMEE"
+      ],
+      "airlines": [
+        "Corsair International"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -87,5 +122,7 @@
     "Kenya Airways": [
       "Nairobi–Jomo Kenyatta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:08Z",
+  "date-time-wikidata": "2026-04-24T00:00:52Z"
 }

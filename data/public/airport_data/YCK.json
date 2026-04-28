@@ -19,24 +19,39 @@
     "North-Wright Airways"
   ],
   "destinations": [
-    [
-      "Fort Good Hope",
-      "https://en.wikipedia.org/wiki/Fort_Good_Hope_Airport",
-      "YGH",
-      "CYGH"
-    ],
-    [
-      "Norman Wells",
-      "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
-      "YVQ",
-      "CYVQ"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Fort Good Hope",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Good_Hope_Airport",
+      "codes": [
+        "YGH",
+        "CYGH"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Norman Wells",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
+      "codes": [
+        "YVQ",
+        "CYVQ"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North-Wright Airways": [
@@ -44,5 +59,7 @@
       "Norman Wells",
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:25Z",
+  "date-time-wikidata": "2024-03-09T15:17:11Z"
 }

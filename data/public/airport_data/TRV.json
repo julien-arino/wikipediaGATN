@@ -34,162 +34,308 @@
     "SriLankan Airlines"
   ],
   "destinations": [
-    [
-      "Abu Dhabi International Airport",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Ahmedabad Airport",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Bahrain International Airport",
-      "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
-      "BAH",
-      "OBBI"
-    ],
-    [
-      "Bandaranaike International Airport",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Chennai International Airport",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Cochin International Airport",
-      "https://en.wikipedia.org/wiki/Cochin_International_Airport",
-      "COK",
-      "VOCI"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Hanimaadhoo International Airport",
-      "https://en.wikipedia.org/wiki/Hanimaadhoo_International_Airport",
-      "HAQ",
-      "VRMH"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Kannur International Airport",
-      "https://en.wikipedia.org/wiki/Kannur_International_Airport",
-      "CNN",
-      "VOKN"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "King Fahd International Airport",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Kuala Lumpur International Airport",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kuwait International Airport",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Male Airport",
-      "https://en.wikipedia.org/wiki/Male_Airport",
-      "MLE",
-      "VRMM"
-    ],
-    [
-      "Mangaluru International Airport",
-      "https://en.wikipedia.org/wiki/Mangaluru_International_Airport",
-      "IXE",
-      "VOML"
-    ],
-    [
-      "Muscat International Airport",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Pune Airport",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ],
-    [
-      "Rajiv Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Sharjah International Airport",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Singapore Changi International Airport",
-      "https://en.wikipedia.org/wiki/Singapore_Changi_International_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Tiruchirapalli International Airport",
-      "https://en.wikipedia.org/wiki/Tiruchirapalli_International_Airport",
-      "TRZ",
-      "VOTR"
-    ],
-    [
-      "Velana International Airport",
-      "https://en.wikipedia.org/wiki/Velana_International_Airport",
-      "MLE",
-      "VRMM"
-    ]
+    {
+      "city": "Abu Dhabi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air India Express",
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Ahmedabad Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bahrain International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Gulf Air"
+      ]
+    },
+    {
+      "city": "Bandaranaike International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "SriLankan Airlines"
+      ]
+    },
+    {
+      "city": "Chennai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chhatrapati Shivaji Maharaj International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Cochin International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cochin_International_Airport",
+      "codes": [
+        "COK",
+        "VOCI"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Emirates (airline)"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Hanimaadhoo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanimaadhoo_International_Airport",
+      "codes": [
+        "HAQ",
+        "VRMH"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kannur International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kannur_International_Airport",
+      "codes": [
+        "CNN",
+        "VOKN"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "King Fahd International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Kuwait International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways",
+        "Kuwait Airways"
+      ]
+    },
+    {
+      "city": "Male Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Male_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mangaluru International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mangaluru_International_Airport",
+      "codes": [
+        "IXE",
+        "VOML"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Muscat International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Oman Air"
+      ]
+    },
+    {
+      "city": "Pune Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rajiv Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Sharjah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Singapore Changi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Changi_International_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Tiruchirapalli International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiruchirapalli_International_Airport",
+      "codes": [
+        "TRZ",
+        "VOTR"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Velana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -266,5 +412,7 @@
     "SriLankan Airlines": [
       "Bandaranaike International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:40Z",
+  "date-time-wikidata": "2026-04-27T01:58:15Z"
 }

@@ -19,30 +19,50 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Eday",
-      "https://en.wikipedia.org/wiki/Eday_Airport",
-      "EOI",
-      "EGED"
-    ],
-    [
-      "Kirkwall",
-      "https://en.wikipedia.org/wiki/Kirkwall_Airport",
-      "KOI",
-      "EGPA"
-    ],
-    [
-      "Papa Westray",
-      "https://en.wikipedia.org/wiki/Papa_Westray_Airport",
-      "PPW",
-      "EGEP"
-    ],
-    [
-      "Sanday",
-      "https://en.wikipedia.org/wiki/Sanday_Airport",
-      "NDY",
-      "EGES"
-    ]
+    {
+      "city": "Eday",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eday_Airport",
+      "codes": [
+        "EOI",
+        "EGED"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Kirkwall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kirkwall_Airport",
+      "codes": [
+        "KOI",
+        "EGPA"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Papa Westray",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Papa_Westray_Airport",
+      "codes": [
+        "PPW",
+        "EGEP"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Sanday",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sanday_Airport",
+      "codes": [
+        "NDY",
+        "EGES"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Loganair": [
@@ -51,5 +71,7 @@
       "Papa Westray",
       "Sanday"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:05Z",
+  "date-time-wikidata": "2026-02-07T12:28:21Z"
 }

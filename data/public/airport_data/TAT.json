@@ -19,23 +19,35 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ]
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wizz Air": [
       "Gdańsk",
       "London–Luton"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:04Z",
+  "date-time-wikidata": "2026-03-22T10:54:46Z"
 }

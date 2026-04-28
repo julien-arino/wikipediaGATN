@@ -20,18 +20,28 @@
     "Viva"
   ],
   "destinations": [
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ]
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Airlines": [
@@ -40,5 +50,7 @@
     "Viva": [
       "Cancún"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:59Z",
+  "date-time-wikidata": "2026-02-18T05:15:01Z"
 }

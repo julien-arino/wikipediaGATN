@@ -28,132 +28,239 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Josep_Tarradellas_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Beauvais",
-      "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
-      "BVA",
-      "LFOB"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "Pescara",
-      "https://en.wikipedia.org/wiki/Abruzzo_Airport",
-      "PSR",
-      "LIBP"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Prague_Airport",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ],
-    [
-      "Turin",
-      "https://en.wikipedia.org/wiki/Turin_Airport",
-      "TRN",
-      "LIMF"
-    ],
-    [
-      "Valencia",
-      "https://en.wikipedia.org/wiki/Valencia_Airport",
-      "VLC",
-      "LEVC"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Josep_Tarradellas_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
+      "codes": [
+        "BVA",
+        "LFOB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Animawings",
+        "TAROM"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "HiSky"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Animawings",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "SkyUp Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Pescara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abruzzo_Airport",
+      "codes": [
+        "PSR",
+        "LIBP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Airport",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "SkyUp Airlines"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Animawings"
+      ]
+    },
+    {
+      "city": "Turin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turin_Airport",
+      "codes": [
+        "TRN",
+        "LIMF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Valencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
+      "codes": [
+        "VLC",
+        "LEVC"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -199,5 +306,7 @@
       "Turin",
       "Valencia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:59Z",
+  "date-time-wikidata": "2026-04-19T11:53:45Z"
 }

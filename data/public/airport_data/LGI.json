@@ -20,24 +20,40 @@
     "Southern Air Charter"
   ],
   "destinations": [
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ],
-    [
-      "San Salvador",
-      "https://en.wikipedia.org/wiki/San_Salvador_Airport",
-      "ZSA",
-      "MYSM"
-    ],
-    [
-      "Stella Maris",
-      "https://en.wikipedia.org/wiki/Stella_Maris_Airport",
-      "SML",
-      "MYLS"
-    ]
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair",
+        "Southern Air Charter"
+      ]
+    },
+    {
+      "city": "San Salvador",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Salvador_Airport",
+      "codes": [
+        "ZSA",
+        "MYSM"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "Stella Maris",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stella_Maris_Airport",
+      "codes": [
+        "SML",
+        "MYLS"
+      ],
+      "airlines": [
+        "Southern Air Charter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bahamasair": [
@@ -48,5 +64,7 @@
       "Nassau",
       "Stella Maris"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:02Z",
+  "date-time-wikidata": "2025-12-29T20:02:59Z"
 }

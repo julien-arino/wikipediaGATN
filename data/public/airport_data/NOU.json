@@ -23,78 +23,140 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Lifou",
-      "https://en.wikipedia.org/wiki/Lifou_Airport",
-      "LIF",
-      "NWWL"
-    ],
-    [
-      "Maré",
-      "https://en.wikipedia.org/wiki/Maré_Airport",
-      "MEE",
-      "NWWR"
-    ],
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Ouvéa",
-      "https://en.wikipedia.org/wiki/Ouvéa_Airport",
-      "UVE",
-      "NWWV"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Port Vila",
-      "https://en.wikipedia.org/wiki/Bauerfield_International_Airport",
-      "VLI",
-      "NVVV"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Île-des-Pins",
-      "https://en.wikipedia.org/wiki/Île_des_Pins_Airport",
-      "ILP",
-      "NWWE"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Aircalin"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Aircalin"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Aircalin",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Lifou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lifou_Airport",
+      "codes": [
+        "LIF",
+        "NWWL"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Maré",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maré_Airport",
+      "codes": [
+        "MEE",
+        "NWWR"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Aircalin"
+      ]
+    },
+    {
+      "city": "Ouvéa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouvéa_Airport",
+      "codes": [
+        "UVE",
+        "NWWV"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Aircalin"
+      ]
+    },
+    {
+      "city": "Port Vila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bauerfield_International_Airport",
+      "codes": [
+        "VLI",
+        "NVVV"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Aircalin"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Île-des-Pins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Île_des_Pins_Airport",
+      "codes": [
+        "ILP",
+        "NWWE"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Calédonie": [
@@ -121,5 +183,7 @@
     "QantasLink": [
       "Brisbane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:04Z",
+  "date-time-wikidata": "2026-03-20T07:07:18Z"
 }

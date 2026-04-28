@@ -20,18 +20,29 @@
     "Flybondi"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Córdoba (AR)",
-      "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
-      "COR",
-      "SACO"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -41,5 +52,7 @@
     "Flybondi": [
       "Buenos Aires–Aeroparque"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:46Z",
+  "date-time-wikidata": "2025-12-26T19:34:52Z"
 }

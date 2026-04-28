@@ -7,6 +7,7 @@
   "lat": "28.3386637",
   "lon": "46.12358",
   "altitude": "358",
+  "continent": "Asia",
   "region": "Eastern Province",
   "country_alpha3": "SAU",
   "country_name": "Saudi Arabia",
@@ -20,30 +21,50 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Hail International Airport",
-      "https://en.wikipedia.org/wiki/Hail_International_Airport",
-      "HAS",
-      "OEHL"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Hail International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hail_International_Airport",
+      "codes": [
+        "HAS",
+        "OEHL"
+      ],
+      "airlines": [
+        "Nesma Airlines"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Flydubai": [
@@ -57,5 +78,6 @@
       "King Khalid International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:10:49Z",
+  "date-time-wikidata": "2026-03-11T16:49:52Z"
 }

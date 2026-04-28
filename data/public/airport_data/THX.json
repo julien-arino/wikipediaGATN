@@ -21,30 +21,50 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Igarka",
-      "https://en.wikipedia.org/wiki/Igarka_Airport",
-      "IAA",
-      "UOII"
-    ],
-    [
-      "Krasnoyarsk–Yemelyanovo",
-      "https://en.wikipedia.org/wiki/Yemelyanovo_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Podkamennaya Tunguska",
-      "https://en.wikipedia.org/wiki/Podkamennaya_Tunguska_Airport",
-      "TGP",
-      "UNIP"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
-      "TJM",
-      "USTR"
-    ]
+    {
+      "city": "Igarka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Igarka_Airport",
+      "codes": [
+        "IAA",
+        "UOII"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–Yemelyanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yemelyanovo_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Podkamennaya Tunguska",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Podkamennaya_Tunguska_Airport",
+      "codes": [
+        "TGP",
+        "UNIP"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KrasAvia": [
@@ -57,5 +77,7 @@
       "Igarka",
       "Tyumen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:26Z",
+  "date-time-wikidata": "2025-11-03T20:04:51Z"
 }

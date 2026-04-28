@@ -19,23 +19,35 @@
     "SalamAir"
   ],
   "destinations": [
-    [
-      "Duqm",
-      "https://en.wikipedia.org/wiki/Duqm_Airport",
-      "DQM",
-      "OODQ"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ]
+    {
+      "city": "Duqm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Duqm_Airport",
+      "codes": [
+        "DQM",
+        "OODQ"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SalamAir": [
       "Duqm",
       "Muscat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:33Z",
+  "date-time-wikidata": "2025-12-22T18:48:57Z"
 }

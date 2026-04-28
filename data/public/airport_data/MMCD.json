@@ -19,23 +19,35 @@
     "Aéreo Servicio Guerrero"
   ],
   "destinations": [
-    [
-      "Ensenada Airport",
-      "https://en.wikipedia.org/wiki/Ensenada_Airport",
-      "ESE",
-      "MMES"
-    ],
-    [
-      "Guerrero Negro Airport",
-      "https://en.wikipedia.org/wiki/Guerrero_Negro_Airport",
-      "GUB",
-      "MMGR"
-    ]
+    {
+      "city": "Ensenada Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ensenada_Airport",
+      "codes": [
+        "ESE",
+        "MMES"
+      ],
+      "airlines": [
+        "Aéreo Servicio Guerrero"
+      ]
+    },
+    {
+      "city": "Guerrero Negro Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guerrero_Negro_Airport",
+      "codes": [
+        "GUB",
+        "MMGR"
+      ],
+      "airlines": [
+        "Aéreo Servicio Guerrero"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aéreo Servicio Guerrero": [
       "Ensenada Airport",
       "Guerrero Negro Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:44Z",
+  "date-time-wikidata": "2026-02-12T17:03:06Z"
 }

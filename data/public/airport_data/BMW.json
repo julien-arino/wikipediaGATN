@@ -19,23 +19,35 @@
     "Air Algérie"
   ],
   "destinations": [
-    [
-      "Adrar",
-      "https://en.wikipedia.org/wiki/Touat-Cheikh_Sidi_Mohamed_Belkebir_Airport",
-      "AZR",
-      "DAUA"
-    ],
-    [
-      "Tamanrasset",
-      "https://en.wikipedia.org/wiki/Aguenar_–_Hadj_Bey_Akhamok_Airport",
-      "TMR",
-      "DAAT"
-    ]
+    {
+      "city": "Adrar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Touat-Cheikh_Sidi_Mohamed_Belkebir_Airport",
+      "codes": [
+        "AZR",
+        "DAUA"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Tamanrasset",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aguenar_–_Hadj_Bey_Akhamok_Airport",
+      "codes": [
+        "TMR",
+        "DAAT"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
       "Adrar",
       "Tamanrasset"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:31Z",
+  "date-time-wikidata": "2023-07-19T01:46:59Z"
 }

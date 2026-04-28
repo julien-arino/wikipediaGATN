@@ -20,18 +20,29 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Yakutsk",
-      "https://en.wikipedia.org/wiki/Yakutsk_Airport",
-      "YKS",
-      "UEEE"
-    ]
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Yakutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakutsk_Airport",
+      "codes": [
+        "YKS",
+        "UEEE"
+      ],
+      "airlines": [
+        "Polar Airlines",
+        "Yakutia Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Polar Airlines": [
@@ -41,5 +52,7 @@
       "Moscow–Vnukovo",
       "Yakutsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:00Z",
+  "date-time-wikidata": "2025-08-28T07:38:37Z"
 }

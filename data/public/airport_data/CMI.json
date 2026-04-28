@@ -20,18 +20,29 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "DFW",
-      "KDFW"
-    ]
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle": [
@@ -41,5 +52,7 @@
     "United Express": [
       "Chicago–O'Hare"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:58Z",
+  "date-time-wikidata": "2026-04-06T06:20:24Z"
 }

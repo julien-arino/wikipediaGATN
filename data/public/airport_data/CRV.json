@@ -20,42 +20,72 @@
     "Sky Alps"
   ],
   "destinations": [
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
-      "BLQ",
-      "LIPE"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Treviso",
-      "https://en.wikipedia.org/wiki/Treviso_Airport",
-      "TSF",
-      "LIPH"
-    ],
-    [
-      "Turin",
-      "https://en.wikipedia.org/wiki/Turin_Airport",
-      "TRN",
-      "LIMF"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ]
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Sky Alps"
+      ]
+    },
+    {
+      "city": "Treviso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Treviso_Airport",
+      "codes": [
+        "TSF",
+        "LIPH"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Turin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turin_Airport",
+      "codes": [
+        "TRN",
+        "LIMF"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
@@ -68,5 +98,7 @@
     "Sky Alps": [
       "Rome–Fiumicino"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:56Z",
+  "date-time-wikidata": "2026-03-17T11:56:21Z"
 }

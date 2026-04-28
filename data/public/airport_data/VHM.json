@@ -19,24 +19,39 @@
     "PopulAir"
   ],
   "destinations": [
-    [
-      "Arvidsjaur",
-      "https://en.wikipedia.org/wiki/Arvidsjaur_Airport",
-      "AJR",
-      "ESNX"
-    ],
-    [
-      "Lycksele",
-      "https://en.wikipedia.org/wiki/Lycksele_Airport",
-      "LYC",
-      "ESNL"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ]
+    {
+      "city": "Arvidsjaur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arvidsjaur_Airport",
+      "codes": [
+        "AJR",
+        "ESNX"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Lycksele",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lycksele_Airport",
+      "codes": [
+        "LYC",
+        "ESNL"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PopulAir": [
@@ -44,5 +59,7 @@
       "Lycksele",
       "Stockholm–Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:18Z",
+  "date-time-wikidata": "2026-03-19T18:14:49Z"
 }

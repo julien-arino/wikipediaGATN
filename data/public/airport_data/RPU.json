@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Carauari",
-      "https://en.wikipedia.org/wiki/Carauari_Airport",
-      "CAF",
-      "SWCA"
-    ],
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ]
+    {
+      "city": "Carauari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carauari_Airport",
+      "codes": [
+        "CAF",
+        "SWCA"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Carauari",
       "Manaus"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:56Z",
+  "date-time-wikidata": "2026-04-12T11:35:04Z"
 }

@@ -21,30 +21,50 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ],
-    [
-      "Bursa",
-      "https://en.wikipedia.org/wiki/Bursa_Yenişehir_Airport",
-      "YEI",
-      "LTBR"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ]
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Bursa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bursa_Yenişehir_Airport",
+      "codes": [
+        "YEI",
+        "LTBR"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -57,5 +77,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:19Z",
+  "date-time-wikidata": "2026-04-11T12:20:45Z"
 }

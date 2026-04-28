@@ -20,24 +20,39 @@
     "Vueling"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iberia": [
@@ -47,5 +62,7 @@
     "Vueling": [
       "Barcelona"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:46Z",
+  "date-time-wikidata": "2026-03-28T17:04:35Z"
 }

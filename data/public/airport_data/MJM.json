@@ -22,36 +22,61 @@
     "Ethiopian Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Kananga",
-      "https://en.wikipedia.org/wiki/Kananga_Airport",
-      "KGA",
-      "FZUA"
-    ],
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "Kolwezi",
-      "https://en.wikipedia.org/wiki/Kolwezi_Airport",
-      "KWZ",
-      "FZQM"
-    ],
-    [
-      "Lubumbashi",
-      "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
-      "FBM",
-      "FZQA"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Kananga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kananga_Airport",
+      "codes": [
+        "KGA",
+        "FZUA"
+      ],
+      "airlines": [
+        "Air Congo"
+      ]
+    },
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Congo"
+      ]
+    },
+    {
+      "city": "Kolwezi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kolwezi_Airport",
+      "codes": [
+        "KWZ",
+        "FZQM"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Lubumbashi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
+      "codes": [
+        "FBM",
+        "FZQA"
+      ],
+      "airlines": [
+        "Congo Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Congo": [
@@ -67,5 +92,7 @@
     "Ethiopian Airlines": [
       "Addis Ababa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:21Z",
+  "date-time-wikidata": "2026-03-03T12:55:00Z"
 }

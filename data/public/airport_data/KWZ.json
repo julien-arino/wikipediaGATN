@@ -20,18 +20,28 @@
     "Compagnie Africaine d'Aviation"
   ],
   "destinations": [
-    [
-      "Kinshasa-N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_International_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "Lubumbashi",
-      "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
-      "FBM",
-      "FZQA"
-    ]
+    {
+      "city": "Kinshasa-N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_International_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Congo"
+      ]
+    },
+    {
+      "city": "Lubumbashi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
+      "codes": [
+        "FBM",
+        "FZQA"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Congo": [
@@ -40,5 +50,7 @@
     "Compagnie Africaine d'Aviation": [
       "Lubumbashi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:11Z",
+  "date-time-wikidata": "2026-01-26T12:36:24Z"
 }

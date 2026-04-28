@@ -20,24 +20,39 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Jakarta–Halim Perdanakusuma",
-      "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
-      "HLP",
-      "WIHH"
-    ],
-    [
-      "Pangkalan Bun",
-      "https://en.wikipedia.org/wiki/Iskandar_Airport",
-      "PKN",
-      "WAGI"
-    ],
-    [
-      "Pontianak",
-      "https://en.wikipedia.org/wiki/Supadio_International_Airport",
-      "PNK",
-      "WIOO"
-    ]
+    {
+      "city": "Jakarta–Halim Perdanakusuma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
+      "codes": [
+        "HLP",
+        "WIHH"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Pangkalan Bun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iskandar_Airport",
+      "codes": [
+        "PKN",
+        "WAGI"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Pontianak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Supadio_International_Airport",
+      "codes": [
+        "PNK",
+        "WIOO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
@@ -47,5 +62,7 @@
       "Pangkalan Bun",
       "Pontianak"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:46Z",
+  "date-time-wikidata": "2026-04-08T02:32:11Z"
 }

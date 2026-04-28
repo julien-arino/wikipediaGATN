@@ -27,126 +27,228 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bari",
-      "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport",
-      "BRI",
-      "LIBD"
-    ],
-    [
-      "Brindisi",
-      "https://en.wikipedia.org/wiki/Brindisi_Airport",
-      "BDS",
-      "LIBR"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Catania",
-      "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
-      "CTA",
-      "LICC"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Naples",
-      "https://en.wikipedia.org/wiki/Naples_International_Airport",
-      "NAP",
-      "LIRN"
-    ],
-    [
-      "Olbia",
-      "https://en.wikipedia.org/wiki/Olbia_Costa_Smeralda_Airport",
-      "OLB",
-      "LIEO"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Salerno",
-      "https://en.wikipedia.org/wiki/Salerno_Airport",
-      "QSR",
-      "LIRI"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Bari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport",
+      "codes": [
+        "BRI",
+        "LIBD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Brindisi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brindisi_Airport",
+      "codes": [
+        "BDS",
+        "LIBR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
+      "codes": [
+        "CTA",
+        "LICC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Air Dolomiti"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Olbia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olbia_Costa_Smeralda_Airport",
+      "codes": [
+        "OLB",
+        "LIEO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "AeroItalia",
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Salerno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salerno_Airport",
+      "codes": [
+        "QSR",
+        "LIRI"
+      ],
+      "airlines": [
+        "AeroItalia"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroItalia": [
@@ -189,5 +291,7 @@
       "Tirana",
       "Warsaw–Chopin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:32Z",
+  "date-time-wikidata": "2026-04-01T23:15:29Z"
 }

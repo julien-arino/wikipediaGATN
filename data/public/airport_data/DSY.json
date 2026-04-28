@@ -7,6 +7,7 @@
   "lat": "10.9148223",
   "lon": "103.2252649",
   "altitude": null,
+  "continent": "Asia",
   "region": "Preah Sihanouk",
   "country_alpha3": "KHM",
   "country_name": "Cambodia",
@@ -19,12 +20,18 @@
     "Cambodia Airways"
   ],
   "destinations": [
-    [
-      "Phnom Penh",
-      "https://en.wikipedia.org/wiki/Techo_International_Airport_(Cambodia)",
-      "KTI",
-      "VDTI"
-    ]
+    {
+      "city": "Phnom Penh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Techo_International_Airport_(Cambodia)",
+      "codes": [
+        "KTI",
+        "VDTI"
+      ],
+      "airlines": [
+        "Air Cambodia",
+        "Cambodia Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Cambodia": [
@@ -34,5 +41,6 @@
       "Phnom Penh"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:15:09Z",
+  "date-time-wikidata": "2026-03-03T13:14:32Z"
 }

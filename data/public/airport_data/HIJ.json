@@ -30,84 +30,151 @@
     "VietJet Air"
   ],
   "destinations": [
-    [
-      "Beijing–Capital",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Cheongju",
-      "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
-      "CJJ",
-      "RKTU"
-    ],
-    [
-      "Dalian",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ],
-    [
-      "Hanoi",
-      "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
-      "HAN",
-      "VVNB"
-    ],
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Sendai",
-      "https://en.wikipedia.org/wiki/Sendai_Airport",
-      "SDJ",
-      "RJSS"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ]
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Cheongju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
+      "codes": [
+        "CJJ",
+        "RKTU"
+      ],
+      "airlines": [
+        "Aero K"
+      ]
+    },
+    {
+      "city": "Dalian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "VietJet Air"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "HK Express"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Sendai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sendai_Airport",
+      "codes": [
+        "SDJ",
+        "RJSS"
+      ],
+      "airlines": [
+        "Ibex Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Jeju Air"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "China Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Spring Japan"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero K": [
@@ -149,5 +216,7 @@
     "VietJet Air": [
       "Hanoi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:43Z",
+  "date-time-wikidata": "2026-01-25T08:59:46Z"
 }

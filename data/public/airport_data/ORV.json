@@ -19,23 +19,35 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Kiana",
-      "https://en.wikipedia.org/wiki/Bob_Baker_Memorial_Airport",
-      "IAN",
-      "PAIK"
-    ],
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ]
+    {
+      "city": "Kiana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bob_Baker_Memorial_Airport",
+      "codes": [
+        "IAN",
+        "PAIK"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
       "Kiana",
       "Kotzebue"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:45Z",
+  "date-time-wikidata": "2025-05-31T03:15:32Z"
 }

@@ -22,24 +22,40 @@
     "Royhle Air Way"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Dumaguete",
-      "https://en.wikipedia.org/wiki/Sibulan_Airport",
-      "DGT",
-      "RPVD"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Dumaguete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sibulan_Airport",
+      "codes": [
+        "DGT",
+        "RPVD"
+      ],
+      "airlines": [
+        "Royhle Air Way"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
@@ -54,5 +70,7 @@
     "Royhle Air Way": [
       "Dumaguete"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:14Z",
+  "date-time-wikidata": "2025-12-08T15:46:16Z"
 }

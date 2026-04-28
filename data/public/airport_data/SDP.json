@@ -19,23 +19,35 @@
     "Aleutian Airways"
   ],
   "destinations": [
-    [
-      "Anchorage",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "ANC",
-      "PANC"
-    ],
-    [
-      "Cold Bay",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
-      "CDB",
-      "PACD"
-    ]
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Aleutian Airways"
+      ]
+    },
+    {
+      "city": "Cold Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Aleutian Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aleutian Airways": [
       "Anchorage",
       "Cold Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:02Z",
+  "date-time-wikidata": "2025-12-09T17:37:16Z"
 }

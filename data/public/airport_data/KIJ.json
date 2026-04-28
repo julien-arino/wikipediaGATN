@@ -28,78 +28,143 @@
     "Toki Air"
   ],
   "destinations": [
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kobe",
-      "https://en.wikipedia.org/wiki/Kobe_Airport",
-      "UKB",
-      "RJBE"
-    ],
-    [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
-      "NGO",
-      "RJGG"
-    ],
-    [
-      "Nagoya–Komaki",
-      "https://en.wikipedia.org/wiki/Nagoya_Airfield",
-      "NKM",
-      "RJNA"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Sapporo–Okadama",
-      "https://en.wikipedia.org/wiki/Okadama_Airport",
-      "OKD",
-      "RJCO"
-    ],
-    [
-      "Sendai",
-      "https://en.wikipedia.org/wiki/Sendai_Airport",
-      "SDJ",
-      "RJSS"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ]
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines",
+        "Ibex Airlines"
+      ]
+    },
+    {
+      "city": "Kobe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_Airport",
+      "codes": [
+        "UKB",
+        "RJBE"
+      ],
+      "airlines": [
+        "Toki Air"
+      ]
+    },
+    {
+      "city": "Nagoya–Centrair",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "codes": [
+        "NGO",
+        "RJGG"
+      ],
+      "airlines": [
+        "Toki Air"
+      ]
+    },
+    {
+      "city": "Nagoya–Komaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nagoya_Airfield",
+      "codes": [
+        "NKM",
+        "RJNA"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Ibex Airlines",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "Peach"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Sapporo–Okadama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Okadama_Airport",
+      "codes": [
+        "OKD",
+        "RJCO"
+      ],
+      "airlines": [
+        "Toki Air"
+      ]
+    },
+    {
+      "city": "Sendai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sendai_Airport",
+      "codes": [
+        "SDJ",
+        "RJSS"
+      ],
+      "airlines": [
+        "Toki Air"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "Tigerair Taiwan"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -139,5 +204,7 @@
       "Sapporo–Okadama",
       "Sendai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:55Z",
+  "date-time-wikidata": "2026-01-25T09:58:57Z"
 }

@@ -27,174 +27,327 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Bordeaux",
-      "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
-      "BOD",
-      "LFBD"
-    ],
-    [
-      "Brest",
-      "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
-      "BES",
-      "LFRB"
-    ],
-    [
-      "Brive",
-      "https://en.wikipedia.org/wiki/Brive–Souillac_Airport",
-      "BVE",
-      "LFSL"
-    ],
-    [
-      "Caen",
-      "https://en.wikipedia.org/wiki/Caen_–_Carpiquet_Airport",
-      "CFR",
-      "LFRK"
-    ],
-    [
-      "Castres",
-      "https://en.wikipedia.org/wiki/Castres–Mazamet_Airport",
-      "DCM",
-      "LFCK"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Clermont-Ferrand",
-      "https://en.wikipedia.org/wiki/Clermont-Ferrand_Auvergne_Airport",
-      "CFE",
-      "LFLC"
-    ],
-    [
-      "Dole",
-      "https://en.wikipedia.org/wiki/Dole–Jura_Airport",
-      "DLE",
-      "LFGJ"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Montpellier",
-      "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
-      "MPL",
-      "LFMT"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Nantes",
-      "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
-      "NTE",
-      "LFRS"
-    ],
-    [
-      "Nice",
-      "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Poitiers",
-      "https://en.wikipedia.org/wiki/Poitiers–Biard_Airport",
-      "PIS",
-      "LFBI"
-    ],
-    [
-      "Rennes",
-      "https://en.wikipedia.org/wiki/Rennes–Saint-Jacques_Airport",
-      "RNS",
-      "LFRN"
-    ],
-    [
-      "Rodez",
-      "https://en.wikipedia.org/wiki/Rodez–Aveyron_Airport",
-      "RDZ",
-      "LFCR"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Strasbourg",
-      "https://en.wikipedia.org/wiki/Strasbourg_International_Airport",
-      "SXB",
-      "LFST"
-    ],
-    [
-      "Toulouse",
-      "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
-      "TLS",
-      "LFBO"
-    ]
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
+      "codes": [
+        "BOD",
+        "LFBD"
+      ],
+      "airlines": [
+        "EasyJet",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Brest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
+      "codes": [
+        "BES",
+        "LFRB"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Brive",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brive–Souillac_Airport",
+      "codes": [
+        "BVE",
+        "LFSL"
+      ],
+      "airlines": [
+        "Air France",
+        "Amelia International",
+        "Chalair Aviation"
+      ]
+    },
+    {
+      "city": "Caen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caen_–_Carpiquet_Airport",
+      "codes": [
+        "CFR",
+        "LFRK"
+      ],
+      "airlines": [
+        "Air France",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Castres",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Castres–Mazamet_Airport",
+      "codes": [
+        "DCM",
+        "LFCK"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Clermont-Ferrand",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clermont-Ferrand_Auvergne_Airport",
+      "codes": [
+        "CFE",
+        "LFLC"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Dole",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dole–Jura_Airport",
+      "codes": [
+        "DLE",
+        "LFGJ"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Lille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Air France",
+        "Transavia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Air France",
+        "Transavia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Montpellier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
+      "codes": [
+        "MPL",
+        "LFMT"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "Air France",
+        "Transavia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Poitiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poitiers–Biard_Airport",
+      "codes": [
+        "PIS",
+        "LFBI"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Rennes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rennes–Saint-Jacques_Airport",
+      "codes": [
+        "RNS",
+        "LFRN"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Rodez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rodez–Aveyron_Airport",
+      "codes": [
+        "RDZ",
+        "LFCR"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Strasbourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strasbourg_International_Airport",
+      "codes": [
+        "SXB",
+        "LFST"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Toulouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
+      "codes": [
+        "TLS",
+        "LFBO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Corsica": [
@@ -252,5 +405,7 @@
       "Strasbourg",
       "Toulouse"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:06Z",
+  "date-time-wikidata": "2026-03-11T04:57:52Z"
 }

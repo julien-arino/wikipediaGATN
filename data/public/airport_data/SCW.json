@@ -25,66 +25,117 @@
     "azimuth"
   ],
   "destinations": [
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Naryan-Mar",
-      "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
-      "NNM",
-      "ULAM"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Usinsk",
-      "https://en.wikipedia.org/wiki/Usinsk_Airport",
-      "USK",
-      "UUYS"
-    ],
-    [
-      "Ust-Tsilma",
-      "https://en.wikipedia.org/wiki/Ust-Tsilma_Airport",
-      "UTS",
-      "UUYX"
-    ],
-    [
-      "Vorkuta",
-      "https://en.wikipedia.org/wiki/Vorkuta_Airport",
-      "VKT",
-      "UUYW"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Naryan-Mar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
+      "codes": [
+        "NNM",
+        "ULAM"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Rossiya",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Usinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Usinsk_Airport",
+      "codes": [
+        "USK",
+        "UUYS"
+      ],
+      "airlines": [
+        "Komiaviatrans"
+      ]
+    },
+    {
+      "city": "Ust-Tsilma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ust-Tsilma_Airport",
+      "codes": [
+        "UTS",
+        "UUYX"
+      ],
+      "airlines": [
+        "Komiaviatrans"
+      ]
+    },
+    {
+      "city": "Vorkuta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vorkuta_Airport",
+      "codes": [
+        "VKT",
+        "UUYW"
+      ],
+      "airlines": [
+        "Komiaviatrans"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    }
   ],
   "airlines_destinations": {
     "azimuth": [
@@ -112,5 +163,7 @@
     "Utair": [
       "Moscow–Vnukovo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:00Z",
+  "date-time-wikidata": "2025-11-02T20:43:06Z"
 }

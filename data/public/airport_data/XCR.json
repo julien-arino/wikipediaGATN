@@ -19,23 +19,35 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Francisco_Sá_Carneiro_Airport",
-      "OPO",
-      "LPPR"
-    ]
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Sá_Carneiro_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
       "Marrakesh",
       "Porto"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:18Z",
+  "date-time-wikidata": "2026-04-04T18:26:10Z"
 }

@@ -20,24 +20,39 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -47,5 +62,7 @@
     "Sky Express": [
       "Athens"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:41Z",
+  "date-time-wikidata": "2026-02-16T18:06:36Z"
 }

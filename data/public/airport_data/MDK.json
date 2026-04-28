@@ -22,24 +22,43 @@
     "Congo Airways"
   ],
   "destinations": [
-    [
-      "Boende",
-      "https://en.wikipedia.org/wiki/Boende_Airport",
-      "BNB",
-      "FZGN"
-    ],
-    [
-      "Gemena",
-      "https://en.wikipedia.org/wiki/Gemena_Airport",
-      "GMA",
-      "FZFK"
-    ],
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ]
+    {
+      "city": "Boende",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boende_Airport",
+      "codes": [
+        "BNB",
+        "FZGN"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Gemena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gemena_Airport",
+      "codes": [
+        "GMA",
+        "FZFK"
+      ],
+      "airlines": [
+        "Air Congo",
+        "Air Kasaï"
+      ]
+    },
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Congo",
+        "Air Kasaï",
+        "Compagnie Africaine d'Aviation",
+        "Congo Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Congo": [
@@ -57,5 +76,7 @@
     "Congo Airways": [
       "Kinshasa–N'djili"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:14Z",
+  "date-time-wikidata": "2025-11-23T20:53:44Z"
 }

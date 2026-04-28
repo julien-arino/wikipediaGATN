@@ -21,36 +21,62 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Adelaide",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jetstar": [
@@ -65,5 +91,7 @@
     "Virgin Australia": [
       "Brisbane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:25Z",
+  "date-time-wikidata": "2026-04-14T02:33:13Z"
 }

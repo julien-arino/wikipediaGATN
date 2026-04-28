@@ -20,24 +20,40 @@
     "LATAM Cargo Brasil"
   ],
   "destinations": [
-    [
-      "Medellín–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Montevideo",
-      "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
-      "MVD",
-      "SUMU"
-    ]
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Avianca Cargo",
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Montevideo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
+      "codes": [
+        "MVD",
+        "SUMU"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca Cargo": [
@@ -48,5 +64,7 @@
       "Medellín–JMC",
       "Miami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:07Z",
+  "date-time-wikidata": "2026-03-27T23:28:01Z"
 }

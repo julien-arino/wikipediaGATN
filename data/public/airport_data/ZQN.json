@@ -29,60 +29,122 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Gold Coast",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Milford Sound",
-      "https://en.wikipedia.org/wiki/Milford_Sound_Airport",
-      "MFN",
-      "NZMF"
-    ],
-    [
-      "Stewart Island",
-      "https://en.wikipedia.org/wiki/Ryan's_Creek_Aerodrome",
-      "SZS",
-      "NZRC"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_International_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Milford Sound",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milford_Sound_Airport",
+      "codes": [
+        "MFN",
+        "NZMF"
+      ],
+      "airlines": [
+        "Air Fiordland",
+        "Air Milford",
+        "Glacier Southern Lakes Helicopters",
+        "Glenorchy Air",
+        "Milford Flights",
+        "Milford Sound Flightseeing",
+        "True South Flights"
+      ]
+    },
+    {
+      "city": "Stewart Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ryan's_Creek_Aerodrome",
+      "codes": [
+        "SZS",
+        "NZRC"
+      ],
+      "airlines": [
+        "Glenorchy Air"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_International_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Fiordland": [
@@ -133,5 +195,7 @@
       "Melbourne",
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:42Z",
+  "date-time-wikidata": "2026-03-18T05:27:21Z"
 }

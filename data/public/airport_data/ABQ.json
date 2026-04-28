@@ -7,6 +7,7 @@
   "lat": "35.0376695",
   "lon": "-106.6109675",
   "altitude": "1,632",
+  "continent": "North America",
   "region": "New Mexico",
   "country_alpha3": "USA",
   "country_name": "United States",
@@ -28,192 +29,360 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Angel Fire Airport",
-      "https://en.wikipedia.org/wiki/Angel_Fire_Airport",
-      "AXX",
-      "KAXX"
-    ],
-    [
-      "Austin–Bergstrom International Airport",
-      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
-      "AUS",
-      "KAUS"
-    ],
-    [
-      "Baltimore/Washington International Airport",
-      "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Cavern City Air Terminal",
-      "https://en.wikipedia.org/wiki/Cavern_City_Air_Terminal",
-      "CNM",
-      "KCNM"
-    ],
-    [
-      "Dallas Love Field",
-      "https://en.wikipedia.org/wiki/Dallas_Love_Field",
-      "DAL",
-      "KDAL"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "George Bush Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Grant County Airport (New Mexico)",
-      "https://en.wikipedia.org/wiki/Grant_County_Airport_(New_Mexico)",
-      "SVC",
-      "KSVC"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Hollywood Burbank Airport",
-      "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
-      "BUR",
-      "KBUR"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Kansas City International Airport",
-      "https://en.wikipedia.org/wiki/Kansas_City_International_Airport",
-      "MCI",
-      "KMCI"
-    ],
-    [
-      "Las Cruces International Airport",
-      "https://en.wikipedia.org/wiki/Las_Cruces_International_Airport",
-      "LRU",
-      "KLRU"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Midway International Airport",
-      "https://en.wikipedia.org/wiki/Midway_International_Airport",
-      "MDW",
-      "KMDW"
-    ],
-    [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "Nashville International Airport",
-      "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "BNA",
-      "KBNA"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Oakland San Francisco Bay Airport",
-      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "OAK",
-      "KOAK"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ],
-    [
-      "San Antonio International Airport",
-      "https://en.wikipedia.org/wiki/San_Antonio_International_Airport",
-      "SAT",
-      "KSAT"
-    ],
-    [
-      "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
-      "SAN",
-      "KSAN"
-    ],
-    [
-      "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "William P. Hobby Airport",
-      "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
-      "HOU",
-      "KHOU"
-    ]
+    {
+      "city": "Angel Fire Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Angel_Fire_Airport",
+      "codes": [
+        "AXX",
+        "KAXX"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Austin–Bergstrom International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Baltimore/Washington International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
+      "codes": [
+        "BWI",
+        "KBWI"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Cavern City Air Terminal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cavern_City_Air_Terminal",
+      "codes": [
+        "CNM",
+        "KCNM"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Dallas Love Field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Southwest Airlines",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "George Bush Intercontinental Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Grant County Airport (New Mexico)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grant_County_Airport_(New_Mexico)",
+      "codes": [
+        "SVC",
+        "KSVC"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Hollywood Burbank Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Kansas City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansas_City_International_Airport",
+      "codes": [
+        "MCI",
+        "KMCI"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Las Cruces International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Cruces_International_Airport",
+      "codes": [
+        "LRU",
+        "KLRU"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "Delta Connection",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Midway International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Minneapolis–Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Nashville International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
+      "codes": [
+        "BNA",
+        "KBNA"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle (airline brand)",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Oakland San Francisco Bay Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle (airline brand)",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Portland International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "San Antonio International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Antonio_International_Airport",
+      "codes": [
+        "SAT",
+        "KSAT"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "San Diego International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "San Francisco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "William P. Hobby Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Advanced Air": [
@@ -283,5 +452,6 @@
       "San Francisco International Airport"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:03:18Z",
+  "date-time-wikidata": "2026-04-25T09:10:16Z"
 }

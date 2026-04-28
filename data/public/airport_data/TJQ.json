@@ -22,24 +22,41 @@
     "Super Air Jet"
   ],
   "destinations": [
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Pangkal Pinang",
-      "https://en.wikipedia.org/wiki/Depati_Amir_Airport",
-      "PGK",
-      "WIPK"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ]
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Citilink",
+        "Sriwijaya Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Pangkal Pinang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Depati_Amir_Airport",
+      "codes": [
+        "PGK",
+        "WIPK"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Citilink": [
@@ -55,5 +72,7 @@
       "Jakarta–Soekarno-Hatta",
       "Pangkal Pinang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:30Z",
+  "date-time-wikidata": "2026-02-10T22:45:33Z"
 }

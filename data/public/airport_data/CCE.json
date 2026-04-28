@@ -20,24 +20,39 @@
     "Smartwings"
   ],
   "destinations": [
-    [
-      "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport",
-      "BTS",
-      "LZIB"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Prague_Airport",
-      "PRG",
-      "LKPR"
-    ]
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Airport",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Cairo": [
@@ -47,5 +62,7 @@
       "Bratislava",
       "Prague"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:00Z",
+  "date-time-wikidata": "2026-02-01T03:58:06Z"
 }

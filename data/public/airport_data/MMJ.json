@@ -20,30 +20,50 @@
     "Japan Airlines"
   ],
   "destinations": [
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kobe",
-      "https://en.wikipedia.org/wiki/Kobe_Airport",
-      "UKB",
-      "RJBE"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Osaka_Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ]
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Kobe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_Airport",
+      "codes": [
+        "UKB",
+        "RJBE"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osaka_Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fuji Dream Airlines": [
@@ -54,5 +74,7 @@
     "Japan Airlines": [
       "Osaka–Itami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:45Z",
+  "date-time-wikidata": "2026-02-19T02:02:12Z"
 }

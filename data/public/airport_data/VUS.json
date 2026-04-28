@@ -20,18 +20,28 @@
     "Vologda Aviation Enterprise"
   ],
   "destinations": [
-    [
-      "Cherepovets",
-      "https://en.wikipedia.org/wiki/Cherepovets_Airport",
-      "CEE",
-      "ULWC"
-    ],
-    [
-      "Vologda",
-      "https://en.wikipedia.org/wiki/Vologda_Airport",
-      "VGD",
-      "ULWW"
-    ]
+    {
+      "city": "Cherepovets",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherepovets_Airport",
+      "codes": [
+        "CEE",
+        "ULWC"
+      ],
+      "airlines": [
+        "Severstal Avia"
+      ]
+    },
+    {
+      "city": "Vologda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vologda_Airport",
+      "codes": [
+        "VGD",
+        "ULWW"
+      ],
+      "airlines": [
+        "Vologda Aviation Enterprise"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Severstal Avia": [
@@ -40,5 +50,7 @@
     "Vologda Aviation Enterprise": [
       "Vologda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:47Z",
+  "date-time-wikidata": "2025-11-02T20:51:27Z"
 }

@@ -19,30 +19,50 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Kalymnos",
-      "https://en.wikipedia.org/wiki/Kalymnos_Island_National_Airport",
-      "JKL",
-      "LGKY"
-    ],
-    [
-      "Kos",
-      "https://en.wikipedia.org/wiki/Kos_Island_International_Airport",
-      "KGS",
-      "LGKO"
-    ],
-    [
-      "Leros",
-      "https://en.wikipedia.org/wiki/Leros_Island_National_Airport",
-      "LRS",
-      "LGLE"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Kalymnos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalymnos_Island_National_Airport",
+      "codes": [
+        "JKL",
+        "LGKY"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Kos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kos_Island_International_Airport",
+      "codes": [
+        "KGS",
+        "LGKO"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Leros",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leros_Island_National_Airport",
+      "codes": [
+        "LRS",
+        "LGLE"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sky Express": [
@@ -51,5 +71,7 @@
       "Kos",
       "Leros"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:42Z",
+  "date-time-wikidata": "2025-12-28T16:13:40Z"
 }

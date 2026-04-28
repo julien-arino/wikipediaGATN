@@ -19,24 +19,39 @@
     "Clic (airline)"
   ],
   "destinations": [
-    [
-      "El Dorado International Airport",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Enrique Olaya Herrera Airport",
-      "https://en.wikipedia.org/wiki/Enrique_Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ],
-    [
-      "Rafael Nuñez International Airport",
-      "https://en.wikipedia.org/wiki/Rafael_Nu%C3%B1ez_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "El Dorado International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Clic (airline)"
+      ]
+    },
+    {
+      "city": "Enrique Olaya Herrera Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enrique_Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "Clic (airline)"
+      ]
+    },
+    {
+      "city": "Rafael Nuñez International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Nu%C3%B1ez_International_Airport",
+      "codes": [
+        "CTG",
+        "SKCG"
+      ],
+      "airlines": [
+        "Clic (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Clic (airline)": [
@@ -44,5 +59,7 @@
       "Enrique Olaya Herrera Airport",
       "Rafael Nuñez International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:39Z",
+  "date-time-wikidata": "2025-07-10T20:44:23Z"
 }

@@ -21,18 +21,29 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk-International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Yakutsk",
-      "https://en.wikipedia.org/wiki/Yakutsk_Airport",
-      "YKS",
-      "UEEE"
-    ]
+    {
+      "city": "Krasnoyarsk-International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Yakutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakutsk_Airport",
+      "codes": [
+        "YKS",
+        "UEEE"
+      ],
+      "airlines": [
+        "Polar Airlines",
+        "Yakutia Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KrasAvia": [
@@ -44,5 +55,7 @@
     "Yakutia Airlines": [
       "Yakutsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:16Z",
+  "date-time-wikidata": "2025-12-19T01:31:24Z"
 }

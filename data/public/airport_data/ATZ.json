@@ -23,60 +23,106 @@
     "Jazeera Airways"
   ],
   "destinations": [
-    [
-      "Abha",
-      "https://en.wikipedia.org/wiki/Abha_International_Airport",
-      "AHB",
-      "OEAB"
-    ],
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Al Jawf",
-      "https://en.wikipedia.org/wiki/Al_Jawf_International_Airport",
-      "AJF",
-      "OESK"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Tabuk",
-      "https://en.wikipedia.org/wiki/Prince_Sultan_bin_Abdulaziz_Airport",
-      "TUU",
-      "OETB"
-    ]
+    {
+      "city": "Abha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abha_International_Airport",
+      "codes": [
+        "AHB",
+        "OEAB"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Al Jawf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Jawf_International_Airport",
+      "codes": [
+        "AJF",
+        "OESK"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Tabuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Sultan_bin_Abdulaziz_Airport",
+      "codes": [
+        "TUU",
+        "OETB"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -99,5 +145,7 @@
     "Jazeera Airways": [
       "Kuwait City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:54Z",
+  "date-time-wikidata": "2026-01-23T21:12:39Z"
 }

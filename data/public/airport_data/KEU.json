@@ -22,18 +22,30 @@
     "Safarilink"
   ],
   "destinations": [
-    [
-      "Mombasa",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Mombasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "748 Air Services",
+        "Airkenya Express",
+        "Safarilink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "748 Air Services": [
@@ -48,5 +60,7 @@
     "Safarilink": [
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:19Z",
+  "date-time-wikidata": "2025-04-09T12:50:36Z"
 }

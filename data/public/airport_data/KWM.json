@@ -19,23 +19,35 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Pormpuraaw",
-      "https://en.wikipedia.org/wiki/Pormpuraaw_Airport",
-      "EDR",
-      "YPMP"
-    ]
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Pormpuraaw",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pormpuraaw_Airport",
+      "codes": [
+        "EDR",
+        "YPMP"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytrans Australia": [
       "Cairns",
       "Pormpuraaw"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:11Z",
+  "date-time-wikidata": "2026-02-20T23:44:19Z"
 }

@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Mekoryuk",
-      "https://en.wikipedia.org/wiki/Mekoryuk_Airport",
-      "MYU",
-      "PAMY"
-    ],
-    [
-      "Tununak",
-      "https://en.wikipedia.org/wiki/Tununak_Airport",
-      "TNK",
-      "icao code not found"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Mekoryuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mekoryuk_Airport",
+      "codes": [
+        "MYU",
+        "PAMY"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Tununak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tununak_Airport",
+      "codes": [
+        "TNK",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -48,5 +64,7 @@
       "Bethel",
       "Tununak"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:20Z",
+  "date-time-wikidata": "2025-08-24T15:19:17Z"
 }

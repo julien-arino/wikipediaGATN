@@ -21,42 +21,73 @@
     "Tianjin Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Dalian Zhoushuizi International Airport",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ],
-    [
-      "Harbin Taiping International Airport",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
-      "HRB",
-      "ZYHB"
-    ],
-    [
-      "Hulunbeier Hailar Airport",
-      "https://en.wikipedia.org/wiki/Hulunbeier_Hailar_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Mohe Gulian Airport",
-      "https://en.wikipedia.org/wiki/Mohe_Gulian_Airport",
-      "OHE",
-      "ZYMH"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Dalian Zhoushuizi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Harbin Taiping International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "codes": [
+        "HRB",
+        "ZYHB"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Hulunbeier Hailar Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hulunbeier_Hailar_Airport",
+      "codes": [
+        "HLD",
+        "ZBLA"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Mohe Gulian Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohe_Gulian_Airport",
+      "codes": [
+        "OHE",
+        "ZYMH"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chengdu Airlines": [
@@ -72,5 +103,7 @@
     "Tianjin Airlines": [
       "Hulunbeier Hailar Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:21Z",
+  "date-time-wikidata": "2026-02-11T10:22:53Z"
 }

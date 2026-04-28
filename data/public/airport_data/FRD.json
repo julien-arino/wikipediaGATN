@@ -20,48 +20,83 @@
     "San Juan Airlines"
   ],
   "destinations": [
-    [
-      "Anacortes Airport",
-      "https://en.wikipedia.org/wiki/Anacortes_Airport",
-      "OTS",
-      "icao code not found"
-    ],
-    [
-      "Bellingham International Airport",
-      "https://en.wikipedia.org/wiki/Bellingham_International_Airport",
-      "BLI",
-      "KBLI"
-    ],
-    [
-      "Boeing Field",
-      "https://en.wikipedia.org/wiki/Boeing_Field",
-      "BFI",
-      "KBFI"
-    ],
-    [
-      "Lopez Island Airport",
-      "https://en.wikipedia.org/wiki/Lopez_Island_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Orcas Island Airport",
-      "https://en.wikipedia.org/wiki/Orcas_Island_Airport",
-      "ESD",
-      "KORS"
-    ],
-    [
-      "Roche Harbor Airport",
-      "https://en.wikipedia.org/wiki/Roche_Harbor_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Victoria International Airport",
-      "https://en.wikipedia.org/wiki/Victoria_International_Airport",
-      "YYJ",
-      "CYYJ"
-    ]
+    {
+      "city": "Anacortes Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anacortes_Airport",
+      "codes": [
+        "OTS",
+        "icao code not found"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Bellingham International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bellingham_International_Airport",
+      "codes": [
+        "BLI",
+        "KBLI"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Boeing Field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "Kenmore Air"
+      ]
+    },
+    {
+      "city": "Lopez Island Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lopez_Island_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Orcas Island Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orcas_Island_Airport",
+      "codes": [
+        "ESD",
+        "KORS"
+      ],
+      "airlines": [
+        "Kenmore Air"
+      ]
+    },
+    {
+      "city": "Roche Harbor Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roche_Harbor_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Victoria International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
+      "codes": [
+        "YYJ",
+        "CYYJ"
+      ],
+      "airlines": [
+        "Kenmore Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Kenmore Air": [
@@ -75,5 +110,7 @@
       "Lopez Island Airport",
       "Roche Harbor Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:30Z",
+  "date-time-wikidata": "2025-03-23T21:18:00Z"
 }

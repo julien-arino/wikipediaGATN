@@ -37,126 +37,237 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
-      "BGW",
-      "ORBI"
-    ],
-    [
-      "Bahrain",
-      "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
-      "BAH",
-      "OBBI"
-    ],
-    [
-      "Baku",
-      "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
-      "GYD",
-      "UBBB"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Colombo–Bandaranaike",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Islamabad",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Najaf",
-      "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
-      "NJF",
-      "ORNI"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Skardu",
-      "https://en.wikipedia.org/wiki/Skardu_International_Airport",
-      "KDU",
-      "OPSD"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ]
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Fly Baghdad"
+      ]
+    },
+    {
+      "city": "Bahrain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "Fly Jinnah",
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Airblue",
+        "Azerbaijan Airlines",
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Thai Airways International"
+      ]
+    },
+    {
+      "city": "Colombo–Bandaranaike",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "FitsAir"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Airblue"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Fly Jinnah",
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Islamabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Fly Jinnah"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "AirSial"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Iran Airtour",
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Fly Jinnah",
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Najaf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
+      "codes": [
+        "NJF",
+        "ORNI"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "AirSial",
+        "Fly Jinnah",
+        "Flyadeal"
+      ]
+    },
+    {
+      "city": "Skardu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skardu_International_Airport",
+      "codes": [
+        "KDU",
+        "OPSD"
+      ],
+      "airlines": [
+        "Airblue"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "Uzbekistan Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airblue": [
@@ -226,5 +337,7 @@
     "Uzbekistan Airways": [
       "Tashkent"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:05Z",
+  "date-time-wikidata": "2026-04-22T17:50:39Z"
 }

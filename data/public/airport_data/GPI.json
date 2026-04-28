@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Popayán",
-      "https://en.wikipedia.org/wiki/Guillermo_León_Valencia_Airport",
-      "PPN",
-      "SKPP"
-    ]
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Popayán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guillermo_León_Valencia_Airport",
+      "codes": [
+        "PPN",
+        "SKPP"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "Cali",
       "Popayán"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:58Z",
+  "date-time-wikidata": "2025-06-03T17:07:43Z"
 }

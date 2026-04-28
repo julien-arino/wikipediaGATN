@@ -22,30 +22,53 @@
     "Helitours"
   ],
   "destinations": [
-    [
-      "Bandaranaike International Airport",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Colombo International Airport, Ratmalana",
-      "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
-      "RML",
-      "VCCC"
-    ],
-    [
-      "Jaffna International Airport",
-      "https://en.wikipedia.org/wiki/Jaffna_International_Airport",
-      "JAF",
-      "VCCJ"
-    ],
-    [
-      "Mattala Rajapaksa International Airport",
-      "https://en.wikipedia.org/wiki/Mattala_Rajapaksa_International_Airport",
-      "HRI",
-      "VCRI"
-    ]
+    {
+      "city": "Bandaranaike International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "Cinnamon Air"
+      ]
+    },
+    {
+      "city": "Colombo International Airport, Ratmalana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
+      "codes": [
+        "RML",
+        "VCCC"
+      ],
+      "airlines": [
+        "Air Senok",
+        "FitsAir",
+        "Helitours"
+      ]
+    },
+    {
+      "city": "Jaffna International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaffna_International_Airport",
+      "codes": [
+        "JAF",
+        "VCCJ"
+      ],
+      "airlines": [
+        "FitsAir",
+        "Helitours"
+      ]
+    },
+    {
+      "city": "Mattala Rajapaksa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mattala_Rajapaksa_International_Airport",
+      "codes": [
+        "HRI",
+        "VCRI"
+      ],
+      "airlines": [
+        "Helitours"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Senok": [
@@ -63,5 +86,7 @@
       "Jaffna International Airport",
       "Mattala Rajapaksa International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:39Z",
+  "date-time-wikidata": "2026-03-06T22:09:00Z"
 }

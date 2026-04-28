@@ -19,30 +19,50 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Bogota",
-      "https://en.wikipedia.org/wiki/El_Dorado_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Ipiales",
-      "https://en.wikipedia.org/wiki/San_Luis_Airport_(Colombia)",
-      "IPI",
-      "SKIP"
-    ],
-    [
-      "Puerto Leguízamo",
-      "https://en.wikipedia.org/wiki/Caucayá_Airport",
-      "LQM",
-      "SKLG"
-    ]
+    {
+      "city": "Bogota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Ipiales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Luis_Airport_(Colombia)",
+      "codes": [
+        "IPI",
+        "SKIP"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Puerto Leguízamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caucayá_Airport",
+      "codes": [
+        "LQM",
+        "SKLG"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
@@ -51,5 +71,7 @@
       "Ipiales",
       "Puerto Leguízamo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:51Z",
+  "date-time-wikidata": "2023-05-30T18:57:10Z"
 }

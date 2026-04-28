@@ -20,24 +20,39 @@
     "China Express Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Hohhot Baita International Airport",
-      "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
-      "HET",
-      "ZBHH"
-    ],
-    [
-      "Ulanhot Yilelite Airport",
-      "https://en.wikipedia.org/wiki/Ulanhot_Yilelite_Airport",
-      "HLH",
-      "ZBUL"
-    ]
+    {
+      "city": "Beijing Daxing Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    },
+    {
+      "city": "Hohhot Baita International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
+      "codes": [
+        "HET",
+        "ZBHH"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Ulanhot Yilelite Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ulanhot_Yilelite_Airport",
+      "codes": [
+        "HLH",
+        "ZBUL"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Beijing Capital Airlines": [
@@ -47,5 +62,7 @@
       "Hohhot Baita International Airport",
       "Ulanhot Yilelite Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:32Z",
+  "date-time-wikidata": "2025-11-07T18:11:08Z"
 }

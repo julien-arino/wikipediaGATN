@@ -7,6 +7,7 @@
   "lat": "-53.0038091",
   "lon": "-70.8464817",
   "altitude": null,
+  "continent": "South America",
   "region": "Magallanes",
   "country_alpha3": "CHL",
   "country_name": "Chile",
@@ -21,60 +22,111 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Balmaceda",
-      "https://en.wikipedia.org/wiki/Balmaceda_Airport",
-      "BBA",
-      "SCBA"
-    ],
-    [
-      "Concepción",
-      "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
-      "CCP",
-      "SCIE"
-    ],
-    [
-      "Porvenir",
-      "https://en.wikipedia.org/wiki/Capitán_Fuentes_Martínez_Airport",
-      "WPR",
-      "SCFM"
-    ],
-    [
-      "Puerto Montt",
-      "https://en.wikipedia.org/wiki/El_Tepual_Airport",
-      "PMC",
-      "SCTE"
-    ],
-    [
-      "Puerto Natales",
-      "https://en.wikipedia.org/wiki/Teniente_Julio_Gallardo_Airport",
-      "PNT",
-      "SCNT"
-    ],
-    [
-      "Puerto Williams",
-      "https://en.wikipedia.org/wiki/Guardia_Marina_Zañartu_Airport",
-      "WPU",
-      "SCGZ"
-    ],
-    [
-      "Rio Gallegos",
-      "https://en.wikipedia.org/wiki/Piloto_Civil_Norberto_Fernández_International_Airport",
-      "RGL",
-      "SAWG"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "Stanley–Mount Pleasant",
-      "https://en.wikipedia.org/wiki/RAF_Mount_Pleasant",
-      "MPN",
-      "EGYP"
-    ]
+    {
+      "city": "Balmaceda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balmaceda_Airport",
+      "codes": [
+        "BBA",
+        "SCBA"
+      ],
+      "airlines": [
+        "Aerovías DAP"
+      ]
+    },
+    {
+      "city": "Concepción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
+      "codes": [
+        "CCP",
+        "SCIE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Porvenir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capitán_Fuentes_Martínez_Airport",
+      "codes": [
+        "WPR",
+        "SCFM"
+      ],
+      "airlines": [
+        "Aerovías DAP"
+      ]
+    },
+    {
+      "city": "Puerto Montt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tepual_Airport",
+      "codes": [
+        "PMC",
+        "SCTE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Puerto Natales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teniente_Julio_Gallardo_Airport",
+      "codes": [
+        "PNT",
+        "SCNT"
+      ],
+      "airlines": [
+        "Aerovías DAP",
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Puerto Williams",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guardia_Marina_Zañartu_Airport",
+      "codes": [
+        "WPU",
+        "SCGZ"
+      ],
+      "airlines": [
+        "Aerovías DAP"
+      ]
+    },
+    {
+      "city": "Rio Gallegos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piloto_Civil_Norberto_Fernández_International_Airport",
+      "codes": [
+        "RGL",
+        "SAWG"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Stanley–Mount Pleasant",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/RAF_Mount_Pleasant",
+      "codes": [
+        "MPN",
+        "EGYP"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerovías DAP": [
@@ -101,5 +153,6 @@
       "Santiago de Chile"
     ]
   },
-  "continent": "South America"
+  "date-time-parse": "2026-04-28T22:12:50Z",
+  "date-time-wikidata": "2026-01-15T14:45:15Z"
 }

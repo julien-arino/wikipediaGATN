@@ -24,48 +24,89 @@
     "Turpial Airlines"
   ],
   "destinations": [
-    [
-      "Boa Vista",
-      "https://en.wikipedia.org/wiki/Boa_Vista_International_Airport",
-      "BVB",
-      "SBBV"
-    ],
-    [
-      "Canaima",
-      "https://en.wikipedia.org/wiki/Canaima_Airport",
-      "CAJ",
-      "SVCN"
-    ],
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Maracaibo",
-      "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
-      "MAR",
-      "SVMC"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Del_Caribe_\"Santiago_Mariño\"_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "Santa Elena de Urairén",
-      "https://en.wikipedia.org/wiki/Santa_Elena_de_Uairén_Airport",
-      "SNV",
-      "SVSE"
-    ],
-    [
-      "Valencia (VE)",
-      "https://en.wikipedia.org/wiki/Arturo_Michelena_International_Airport",
-      "VLN",
-      "SVVA"
-    ]
+    {
+      "city": "Boa Vista",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boa_Vista_International_Airport",
+      "codes": [
+        "BVB",
+        "SBBV"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Canaima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canaima_Airport",
+      "codes": [
+        "CAJ",
+        "SVCN"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Aerolineas Estelar",
+        "Avior Airlines",
+        "Conviasa",
+        "LASER Airlines",
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Maracaibo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
+      "codes": [
+        "MAR",
+        "SVMC"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Del_Caribe_\"Santiago_Mariño\"_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Conviasa",
+        "LASER Airlines"
+      ]
+    },
+    {
+      "city": "Santa Elena de Urairén",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uairén_Airport",
+      "codes": [
+        "SNV",
+        "SVSE"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Valencia (VE)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Michelena_International_Airport",
+      "codes": [
+        "VLN",
+        "SVVA"
+      ],
+      "airlines": [
+        "Conviasa",
+        "Turpial Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolineas Estelar": [
@@ -93,5 +134,7 @@
       "Boa Vista",
       "Caracas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:03Z",
+  "date-time-wikidata": "2026-03-25T10:00:42Z"
 }

@@ -7,6 +7,7 @@
   "lat": "40.0269624",
   "lon": "124.2817406",
   "altitude": "9.1",
+  "continent": "Asia",
   "region": "Liaoning",
   "country_alpha3": "CHN",
   "country_name": "China",
@@ -20,42 +21,72 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Shanghai Hongqiao International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
-      "SHA",
-      "ZSSS"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shenzhen Bao'an International Airport",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Yangzhou Taizhou International Airport",
-      "https://en.wikipedia.org/wiki/Yangzhou_Taizhou_International_Airport",
-      "YTY",
-      "ZSYA"
-    ]
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Hongqiao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "codes": [
+        "SHA",
+        "ZSSS"
+      ],
+      "airlines": [
+        "Shanghai Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen Bao'an International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Yangzhou Taizhou International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangzhou_Taizhou_International_Airport",
+      "codes": [
+        "YTY",
+        "ZSYA"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Southern Airlines": [
@@ -71,5 +102,6 @@
       "Chengdu Tianfu International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:11:19Z",
+  "date-time-wikidata": "2026-04-17T13:54:39Z"
 }

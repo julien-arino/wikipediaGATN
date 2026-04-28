@@ -25,72 +25,127 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Dortmund",
-      "https://en.wikipedia.org/wiki/Dortmund_Airport",
-      "DTM",
-      "EDLW"
-    ],
-    [
-      "Gothenburg",
-      "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
-      "GOT",
-      "ESGG"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Karlsruhe/Baden-Baden",
-      "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
-      "FKB",
-      "EDSB"
-    ],
-    [
-      "Memmingen",
-      "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "FMM",
-      "EDJA"
-    ],
-    [
-      "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
-      "STR",
-      "EDDS"
-    ],
-    [
-      "Tivat",
-      "https://en.wikipedia.org/wiki/Tivat_Airport",
-      "TIV",
-      "LYTV"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Freebird Airlines"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Dortmund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
+      "codes": [
+        "DTM",
+        "EDLW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Gothenburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
+      "codes": [
+        "GOT",
+        "ESGG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Karlsruhe/Baden-Baden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
+      "codes": [
+        "FKB",
+        "EDSB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Memmingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
+      "codes": [
+        "FMM",
+        "EDJA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Stuttgart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Tivat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tivat_Airport",
+      "codes": [
+        "TIV",
+        "LYTV"
+      ],
+      "airlines": [
+        "Air Montenegro"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -118,5 +173,7 @@
       "Dortmund",
       "Stuttgart"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:33Z",
+  "date-time-wikidata": "2026-04-27T16:55:08Z"
 }

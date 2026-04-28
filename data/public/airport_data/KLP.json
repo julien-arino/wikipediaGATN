@@ -19,23 +19,35 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Banjarmasin",
-      "https://en.wikipedia.org/wiki/Syamsudin_Noor_Airport",
-      "BDJ",
-      "WAOO"
-    ],
-    [
-      "Palangkaraya",
-      "https://en.wikipedia.org/wiki/Tjilik_Riwut_Airport",
-      "PKY",
-      "WAGG"
-    ]
+    {
+      "city": "Banjarmasin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syamsudin_Noor_Airport",
+      "codes": [
+        "BDJ",
+        "WAOO"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Palangkaraya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tjilik_Riwut_Airport",
+      "codes": [
+        "PKY",
+        "WAGG"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Banjarmasin",
       "Palangkaraya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:56Z",
+  "date-time-wikidata": "2026-01-27T21:02:44Z"
 }

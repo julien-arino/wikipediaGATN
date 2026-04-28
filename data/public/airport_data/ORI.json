@@ -17,18 +17,26 @@
   "outdegree": 2,
   "airlines": [],
   "destinations": [
-    [
-      "Kodiak Airport",
-      "https://en.wikipedia.org/wiki/Kodiak_Airport",
-      "ADQ",
-      "PADQ"
-    ],
-    [
-      "Ouzinkie Airport",
-      "https://en.wikipedia.org/wiki/Ouzinkie_Airport",
-      "KOZ",
-      "icao code not found"
-    ]
+    {
+      "city": "Kodiak Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kodiak_Airport",
+      "codes": [
+        "ADQ",
+        "PADQ"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Ouzinkie Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouzinkie_Airport",
+      "codes": [
+        "KOZ",
+        "icao code not found"
+      ],
+      "airlines": []
+    }
   ],
-  "airlines_destinations": {}
+  "airlines_destinations": {},
+  "date-time-parse": "2026-04-28T22:18:23Z",
+  "date-time-wikidata": "2025-07-19T12:46:09Z"
 }

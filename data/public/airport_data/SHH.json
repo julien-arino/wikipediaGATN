@@ -19,23 +19,35 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Wales",
-      "https://en.wikipedia.org/wiki/Wales_Airport_(Alaska)",
-      "WAA",
-      "PAIW"
-    ]
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Wales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wales_Airport_(Alaska)",
+      "codes": [
+        "WAA",
+        "PAIW"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
       "Nome",
       "Wales"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:39Z",
+  "date-time-wikidata": "2025-05-31T03:24:10Z"
 }

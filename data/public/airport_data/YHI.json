@@ -20,24 +20,39 @@
     "Kenn Borek Air"
   ],
   "destinations": [
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
-      "YEV",
-      "CYEV"
-    ],
-    [
-      "Kugluktuk",
-      "https://en.wikipedia.org/wiki/Kugluktuk_Airport",
-      "YCO",
-      "CYCO"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "Kenn Borek Air"
+      ]
+    },
+    {
+      "city": "Kugluktuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kugluktuk_Airport",
+      "codes": [
+        "YCO",
+        "CYCO"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Canadian North": [
@@ -47,5 +62,7 @@
     "Kenn Borek Air": [
       "Inuvik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:30Z",
+  "date-time-wikidata": "2025-12-20T18:41:18Z"
 }

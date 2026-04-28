@@ -19,23 +19,35 @@
     "Denver Air Connection"
   ],
   "destinations": [
-    [
-      "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "DFW",
-      "KDFW"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ]
+    {
+      "city": "Dallas Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Denver Air Connection": [
       "Dallas Fort Worth International Airport",
       "Hartsfield–Jackson Atlanta International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:28Z",
+  "date-time-wikidata": "2025-12-05T09:21:19Z"
 }

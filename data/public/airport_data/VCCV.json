@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "VCCV",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Vavuniya",
+  "city-served-wikipedia": "[[Vavuniya]], [[Sri Lanka]]",
   "location": "[[Vavuniya]], [[Sri Lanka]]",
   "lat": "8.7392743",
   "lon": "80.4967607",
@@ -21,18 +21,29 @@
     "SriLankan Airlines"
   ],
   "destinations": [
-    [
-      "Colombo–Bandaranaike",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Colombo–Ratmalana",
-      "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
-      "RML",
-      "VCCC"
-    ]
+    {
+      "city": "Colombo–Bandaranaike",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "SriLankan Airlines"
+      ]
+    },
+    {
+      "city": "Colombo–Ratmalana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
+      "codes": [
+        "RML",
+        "VCCC"
+      ],
+      "airlines": [
+        "FitsAir",
+        "Helitours"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FitsAir": [
@@ -44,5 +55,7 @@
     "SriLankan Airlines": [
       "Colombo–Bandaranaike"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:00Z",
+  "date-time-wikidata": "2026-03-05T09:19:49Z"
 }

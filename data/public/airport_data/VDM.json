@@ -19,23 +19,35 @@
     "Aerolíneas Argentinas"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "San Carlos de Bariloche",
-      "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
-      "BRC",
-      "SAZS"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "San Carlos de Bariloche",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
+      "codes": [
+        "BRC",
+        "SAZS"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
       "Buenos Aires–Aeroparque",
       "San Carlos de Bariloche"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:01Z",
+  "date-time-wikidata": "2026-01-25T20:22:59Z"
 }

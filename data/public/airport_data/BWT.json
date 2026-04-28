@@ -21,24 +21,41 @@
     "Sharp Airlines"
   ],
   "destinations": [
-    [
-      "King Island",
-      "https://en.wikipedia.org/wiki/King_Island_Airport",
-      "KNS",
-      "YKII"
-    ],
-    [
-      "Launceston",
-      "https://en.wikipedia.org/wiki/Launceston_Airport",
-      "LST",
-      "YMLT"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ]
+    {
+      "city": "King Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Island_Airport",
+      "codes": [
+        "KNS",
+        "YKII"
+      ],
+      "airlines": [
+        "Rex Airlines",
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Launceston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
+      "codes": [
+        "LST",
+        "YMLT"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -52,5 +69,7 @@
       "King Island",
       "Launceston"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:39Z",
+  "date-time-wikidata": "2026-03-26T12:58:15Z"
 }

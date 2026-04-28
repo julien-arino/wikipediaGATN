@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Stebbins",
-      "https://en.wikipedia.org/wiki/Stebbins_Airport",
-      "WBB",
-      "icao code not found"
-    ],
-    [
-      "Unalakleet",
-      "https://en.wikipedia.org/wiki/Unalakleet_Airport",
-      "UNK",
-      "PAUN"
-    ]
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Stebbins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stebbins_Airport",
+      "codes": [
+        "WBB",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Unalakleet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unalakleet_Airport",
+      "codes": [
+        "UNK",
+        "PAUN"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -48,5 +64,7 @@
       "Stebbins",
       "Unalakleet"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:47Z",
+  "date-time-wikidata": "2025-08-24T15:17:25Z"
 }

@@ -20,12 +20,18 @@
     "IBC Airways"
   ],
   "destinations": [
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ]
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International",
+        "IBC Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amerijet International": [
@@ -34,5 +40,7 @@
     "IBC Airways": [
       "Miami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:35Z",
+  "date-time-wikidata": "2026-04-20T14:55:09Z"
 }

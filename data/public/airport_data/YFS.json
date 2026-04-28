@@ -20,18 +20,29 @@
     "Canadian North"
   ],
   "destinations": [
-    [
-      "Hay River",
-      "https://en.wikipedia.org/wiki/Hay_River/Merlyn_Carter_Airport",
-      "YHY",
-      "CYHY"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Hay River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hay_River/Merlyn_Carter_Airport",
+      "codes": [
+        "YHY",
+        "CYHY"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Air Tindi",
+        "Canadian North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tindi": [
@@ -41,5 +52,7 @@
       "Hay River",
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:28Z",
+  "date-time-wikidata": "2025-12-20T18:41:30Z"
 }

@@ -21,54 +21,95 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Arauca",
-      "https://en.wikipedia.org/wiki/Santiago_Pérez_Quiroz_Airport",
-      "AUC",
-      "SKUC"
-    ],
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragon_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "La Macarena",
-      "https://en.wikipedia.org/wiki/La_Macarena_Airport",
-      "LMC",
-      "SKNA"
-    ],
-    [
-      "Medellin–Olaya Herrera",
-      "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ],
-    [
-      "Mitú",
-      "https://en.wikipedia.org/wiki/Fabio_Alberto_León_Bentley_Airport",
-      "MVP",
-      "SKMU"
-    ],
-    [
-      "Puerto Carreño",
-      "https://en.wikipedia.org/wiki/Germán_Olano_Airport",
-      "PCR",
-      "SKPC"
-    ],
-    [
-      "Puerto Inírida",
-      "https://en.wikipedia.org/wiki/Obando_Airport",
-      "PDA",
-      "SKPD"
-    ]
+    {
+      "city": "Arauca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Pérez_Quiroz_Airport",
+      "codes": [
+        "AUC",
+        "SKUC"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca Express",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragon_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "La Macarena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Macarena_Airport",
+      "codes": [
+        "LMC",
+        "SKNA"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Medellin–Olaya Herrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Mitú",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fabio_Alberto_León_Bentley_Airport",
+      "codes": [
+        "MVP",
+        "SKMU"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Puerto Carreño",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Germán_Olano_Airport",
+      "codes": [
+        "PCR",
+        "SKPC"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Puerto Inírida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Obando_Airport",
+      "codes": [
+        "PDA",
+        "SKPD"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca Express": [
@@ -86,5 +127,7 @@
       "Puerto Carreño",
       "Puerto Inírida"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:48Z",
+  "date-time-wikidata": "2026-01-25T21:25:28Z"
 }

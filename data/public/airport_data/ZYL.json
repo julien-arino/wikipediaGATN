@@ -21,24 +21,43 @@
     "SkyAir"
   ],
   "destinations": [
-    [
-      "Cox's Bazar",
-      "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
-      "CXB",
-      "VGCB"
-    ],
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Dhaka_Airport",
-      "DAC",
-      "VGHS"
-    ],
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ]
+    {
+      "city": "Cox's Bazar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
+      "codes": [
+        "CXB",
+        "VGCB"
+      ],
+      "airlines": [
+        "SkyAir"
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dhaka_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Air Astra",
+        "Novoair",
+        "SkyAir"
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Air Astra",
+        "Novoair",
+        "SkyAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Astra": [
@@ -51,5 +70,7 @@
       "Cox's Bazar",
       "Dhaka"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:46Z",
+  "date-time-wikidata": "2026-03-14T06:00:08Z"
 }

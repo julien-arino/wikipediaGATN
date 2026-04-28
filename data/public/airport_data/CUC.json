@@ -24,60 +24,109 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Arauca",
-      "https://en.wikipedia.org/wiki/Santiago_Pérez_Quiroz_Airport",
-      "AUC",
-      "SKUC"
-    ],
-    [
-      "Barranquilla",
-      "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
-      "BAQ",
-      "SKBQ"
-    ],
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Bucaramanga",
-      "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
-      "BGA",
-      "SKBG"
-    ],
-    [
-      "Cartagena",
-      "https://en.wikipedia.org/wiki/Rafael_Núñez_International_Airport",
-      "CTG",
-      "SKCG"
-    ],
-    [
-      "Medellín–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ],
-    [
-      "Medellín–Olaya Herrera",
-      "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ],
-    [
-      "Ocaña",
-      "https://en.wikipedia.org/wiki/Aguas_Claras_Airport",
-      "OCV",
-      "SKOC"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ]
+    {
+      "city": "Arauca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Pérez_Quiroz_Airport",
+      "codes": [
+        "AUC",
+        "SKUC"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Barranquilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
+      "codes": [
+        "BAQ",
+        "SKBQ"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia",
+        "LATAM Colombia"
+      ]
+    },
+    {
+      "city": "Bucaramanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
+      "codes": [
+        "BGA",
+        "SKBG"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Cartagena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Núñez_International_Airport",
+      "codes": [
+        "CTG",
+        "SKCG"
+      ],
+      "airlines": [
+        "JetSmart Colombia"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia"
+      ]
+    },
+    {
+      "city": "Medellín–Olaya Herrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Ocaña",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aguas_Claras_Airport",
+      "codes": [
+        "OCV",
+        "SKOC"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -105,5 +154,7 @@
       "Barranquilla",
       "Ocaña"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:09Z",
+  "date-time-wikidata": "2026-03-14T13:39:34Z"
 }

@@ -22,36 +22,62 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Schiphol_Airport",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Groningen",
-      "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde",
-      "GRQ",
-      "EHGG"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Umeå",
-      "https://en.wikipedia.org/wiki/Umeå_Airport",
-      "UME",
-      "ESNU"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Schiphol_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Groningen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde",
+      "codes": [
+        "GRQ",
+        "EHGG"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Umeå",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umeå_Airport",
+      "codes": [
+        "UME",
+        "ESNU"
+      ],
+      "airlines": [
+        "Jonair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jonair": [
@@ -68,5 +94,7 @@
       "Amsterdam",
       "Groningen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:46Z",
+  "date-time-wikidata": "2026-01-26T18:39:36Z"
 }

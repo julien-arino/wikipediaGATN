@@ -24,54 +24,98 @@
     "UVT Aero"
   ],
   "destinations": [
-    [
-      "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Naryan-Mar",
-      "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
-      "NNM",
-      "ULAM"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ]
+    {
+      "city": "Kaliningrad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Naryan-Mar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
+      "codes": [
+        "NNM",
+        "ULAM"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Ikar",
+        "Nordwind Airlines",
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Ikar",
+        "Nordwind Airlines",
+        "Pobeda"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azimuth": [
@@ -95,5 +139,7 @@
     "UVT Aero": [
       "Kazan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:07Z",
+  "date-time-wikidata": "2025-11-02T21:23:44Z"
 }

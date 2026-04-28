@@ -21,24 +21,42 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas",
+        "Virgin Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Qantas": [
@@ -53,5 +71,7 @@
       "Melbourne",
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:44Z",
+  "date-time-wikidata": "2026-03-27T10:56:15Z"
 }

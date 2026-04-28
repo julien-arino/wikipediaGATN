@@ -20,30 +20,51 @@
     "TAAG Angola Airlines"
   ],
   "destinations": [
-    [
-      "Luanda",
-      "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
-      "LAD",
-      "FNLU"
-    ],
-    [
-      "Lubango",
-      "https://en.wikipedia.org/wiki/Lubango_Airport",
-      "SDD",
-      "FNUB"
-    ],
-    [
-      "Ondjiva",
-      "https://en.wikipedia.org/wiki/Ondjiva_Pereira_Airport",
-      "VPE",
-      "FNGI"
-    ],
-    [
-      "Windhoek–Hosea Kutako",
-      "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
-      "WDH",
-      "FYWH"
-    ]
+    {
+      "city": "Luanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
+      "codes": [
+        "LAD",
+        "FNLU"
+      ],
+      "airlines": [
+        "Fly Angola",
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Lubango",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubango_Airport",
+      "codes": [
+        "SDD",
+        "FNUB"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Ondjiva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ondjiva_Pereira_Airport",
+      "codes": [
+        "VPE",
+        "FNGI"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Windhoek–Hosea Kutako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
+      "codes": [
+        "WDH",
+        "FYWH"
+      ],
+      "airlines": [
+        "Fly Angola"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fly Angola": [
@@ -55,5 +76,7 @@
       "Lubango",
       "Ondjiva"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:00Z",
+  "date-time-wikidata": "2026-02-17T15:08:00Z"
 }

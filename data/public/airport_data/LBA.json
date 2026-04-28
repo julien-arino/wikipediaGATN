@@ -27,204 +27,377 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Agadir",
-      "https://en.wikipedia.org/wiki/Agadir–Al_Massira_Airport",
-      "AGA",
-      "GMAD"
-    ],
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Belfast–City",
-      "https://en.wikipedia.org/wiki/Belfast_City_Airport",
-      "BHD",
-      "EGAC"
-    ],
-    [
-      "Belfast–International",
-      "https://en.wikipedia.org/wiki/Belfast_International_Airport",
-      "BFS",
-      "EGAA"
-    ],
-    [
-      "Bodrum",
-      "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
-      "BJV",
-      "LTFE"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Catania",
-      "https://en.wikipedia.org/wiki/Catania_Airport",
-      "CTA",
-      "LICC"
-    ],
-    [
-      "Chania",
-      "https://en.wikipedia.org/wiki/Chania_International_Airport",
-      "CHQ",
-      "LGSA"
-    ],
-    [
-      "Cluj-Napoca",
-      "https://en.wikipedia.org/wiki/Cluj_International_Airport",
-      "CLJ",
-      "LRCL"
-    ],
-    [
-      "Corfu",
-      "https://en.wikipedia.org/wiki/Corfu_International_Airport",
-      "CFU",
-      "LGKR"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Dubrovnik",
-      "https://en.wikipedia.org/wiki/Dubrovnik_Airport",
-      "DBV",
-      "LDDU"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Girona",
-      "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
-      "GRO",
-      "LEGE"
-    ],
-    [
-      "Guernsey",
-      "https://en.wikipedia.org/wiki/Guernsey_Airport",
-      "GCI",
-      "EGJB"
-    ],
-    [
-      "Ibiza",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport",
-      "IBZ",
-      "LEIB"
-    ],
-    [
-      "Jersey",
-      "https://en.wikipedia.org/wiki/Jersey_Airport",
-      "PRO",
-      "PROP"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "Menorca",
-      "https://en.wikipedia.org/wiki/Menorca_Airport",
-      "MAH",
-      "LEMH"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Poznań",
-      "https://en.wikipedia.org/wiki/Poznań–Ławica_Airport",
-      "POZ",
-      "EPPO"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ],
-    [
-      "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ],
-    [
-      "Wrocław",
-      "https://en.wikipedia.org/wiki/Wrocław_Airport",
-      "WRO",
-      "EPWR"
-    ],
-    [
-      "Zakynthos",
-      "https://en.wikipedia.org/wiki/Zakynthos_International_Airport",
-      "ZTH",
-      "LGZA"
-    ]
+    {
+      "city": "Agadir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Agadir–Al_Massira_Airport",
+      "codes": [
+        "AGA",
+        "GMAD"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Belfast–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "codes": [
+        "BHD",
+        "EGAC"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Belfast–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
+      "codes": [
+        "BFS",
+        "EGAA"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania_Airport",
+      "codes": [
+        "CTA",
+        "LICC"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Chania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_International_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cluj-Napoca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cluj_International_Airport",
+      "codes": [
+        "CLJ",
+        "LRCL"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Dubrovnik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubrovnik_Airport",
+      "codes": [
+        "DBV",
+        "LDDU"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Girona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
+      "codes": [
+        "GRO",
+        "LEGE"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Guernsey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guernsey_Airport",
+      "codes": [
+        "GCI",
+        "EGJB"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Ibiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Jersey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jersey_Airport",
+      "codes": [
+        "PRO",
+        "PROP"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Menorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Menorca_Airport",
+      "codes": [
+        "MAH",
+        "LEMH"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "TUI Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Poznań",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poznań–Ławica_Airport",
+      "codes": [
+        "POZ",
+        "EPPO"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Wrocław",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wrocław_Airport",
+      "codes": [
+        "WRO",
+        "EPWR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Zakynthos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zakynthos_International_Airport",
+      "codes": [
+        "ZTH",
+        "LGZA"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -286,5 +459,7 @@
       "Cluj-Napoca",
       "Warsaw–Chopin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:51Z",
+  "date-time-wikidata": "2026-04-25T16:37:12Z"
 }

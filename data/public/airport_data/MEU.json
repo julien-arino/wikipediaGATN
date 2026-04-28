@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Almeirim",
-      "https://en.wikipedia.org/wiki/Almeirim_Airport",
-      "GGF",
-      "SNYA"
-    ],
-    [
-      "Belém",
-      "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
-      "BEL",
-      "SBBE"
-    ]
+    {
+      "city": "Almeirim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almeirim_Airport",
+      "codes": [
+        "GGF",
+        "SNYA"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Almeirim",
       "Belém"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:37Z",
+  "date-time-wikidata": "2024-04-10T18:20:32Z"
 }

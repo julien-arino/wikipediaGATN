@@ -20,30 +20,51 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Madang",
-      "https://en.wikipedia.org/wiki/Madang_Airport",
-      "MAG",
-      "AYMD"
-    ],
-    [
-      "Mount Hagen",
-      "https://en.wikipedia.org/wiki/Mount_Hagen_Airport",
-      "HGU",
-      "AYMH"
-    ],
-    [
-      "Port Moresby",
-      "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
-      "POM",
-      "AYPY"
-    ],
-    [
-      "Vanimo",
-      "https://en.wikipedia.org/wiki/Vanimo_Airport",
-      "VAI",
-      "AYVN"
-    ]
+    {
+      "city": "Madang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madang_Airport",
+      "codes": [
+        "MAG",
+        "AYMD"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    },
+    {
+      "city": "Mount Hagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Hagen_Airport",
+      "codes": [
+        "HGU",
+        "AYMH"
+      ],
+      "airlines": [
+        "Air Niugini",
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Port Moresby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
+      "codes": [
+        "POM",
+        "AYPY"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    },
+    {
+      "city": "Vanimo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vanimo_Airport",
+      "codes": [
+        "VAI",
+        "AYVN"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Niugini": [
@@ -55,5 +76,7 @@
     "PNG Air": [
       "Mount Hagen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:16Z",
+  "date-time-wikidata": "2025-10-04T01:38:42Z"
 }

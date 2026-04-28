@@ -1,8 +1,8 @@
 {
   "iata": "YNO",
   "icao": null,
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "North Spirit Lake First Nation",
+  "city-served-wikipedia": "[[North Spirit Lake First Nation]]",
   "location": "[[North Spirit Lake First Nation]]",
   "lat": "52.490000",
   "lon": "-92.971111",
@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/North_Spirit_Lake_Airport",
   "number_airlines": 4,
   "outdegree": 3,
@@ -22,24 +22,42 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Red Lake",
-      "https://en.wikipedia.org/wiki/Red_Lake_Airport",
-      "YRL",
-      "CYRL"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Red Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Lake_Airport",
+      "codes": [
+        "YRL",
+        "CYRL"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "North Star Air",
+        "Perimeter Aviation",
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -56,5 +74,7 @@
     "Wasaya Airways": [
       "Sioux Lookout"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:21Z",
+  "date-time-wikidata": "2025-07-23T21:56:15Z"
 }

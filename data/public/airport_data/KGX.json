@@ -19,23 +19,35 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Aniak",
-      "https://en.wikipedia.org/wiki/Aniak_Airport",
-      "ANI",
-      "PANI"
-    ],
-    [
-      "Shageluk",
-      "https://en.wikipedia.org/wiki/Shageluk_Airport",
-      "SHX",
-      "PAHX"
-    ]
+    {
+      "city": "Aniak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aniak_Airport",
+      "codes": [
+        "ANI",
+        "PANI"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Shageluk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shageluk_Airport",
+      "codes": [
+        "SHX",
+        "PAHX"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryan Air": [
       "Aniak",
       "Shageluk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:51Z",
+  "date-time-wikidata": "2025-05-31T00:07:14Z"
 }

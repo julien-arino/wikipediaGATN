@@ -20,18 +20,28 @@
     "Qeshm Air"
   ],
   "destinations": [
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ]
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Caspian Airlines"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Qeshm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caspian Airlines": [
@@ -40,5 +50,7 @@
     "Qeshm Air": [
       "Shiraz"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:41Z",
+  "date-time-wikidata": "2025-11-10T00:31:27Z"
 }

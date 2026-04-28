@@ -19,23 +19,35 @@
     "Reliant Air"
   ],
   "destinations": [
-    [
-      "Martha's Vineyard Airport",
-      "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
-      "MVY",
-      "KMVY"
-    ],
-    [
-      "Nantucket Memorial Airport",
-      "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
-      "ACK",
-      "KACK"
-    ]
+    {
+      "city": "Martha's Vineyard Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
+      "codes": [
+        "MVY",
+        "KMVY"
+      ],
+      "airlines": [
+        "Reliant Air"
+      ]
+    },
+    {
+      "city": "Nantucket Memorial Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
+      "codes": [
+        "ACK",
+        "KACK"
+      ],
+      "airlines": [
+        "Reliant Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Reliant Air": [
       "Martha's Vineyard Airport",
       "Nantucket Memorial Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:13Z",
+  "date-time-wikidata": "2026-03-18T01:49:57Z"
 }

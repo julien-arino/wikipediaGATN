@@ -21,30 +21,52 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Aurukun",
-      "https://en.wikipedia.org/wiki/Aurukun_Airport",
-      "AUU",
-      "YAUR"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Lockhart River",
-      "https://en.wikipedia.org/wiki/Lockhart_River_Airport",
-      "IRG",
-      "YLHR"
-    ]
+    {
+      "city": "Aurukun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aurukun_Airport",
+      "codes": [
+        "AUU",
+        "YAUR"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "QantasLink",
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Lockhart River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lockhart_River_Airport",
+      "codes": [
+        "IRG",
+        "YLHR"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -59,5 +81,7 @@
       "Cairns",
       "Lockhart River"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:09Z",
+  "date-time-wikidata": "2026-02-20T23:42:47Z"
 }

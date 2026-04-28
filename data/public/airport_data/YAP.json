@@ -21,42 +21,75 @@
     "United Airlines"
   ],
   "destinations": [
-    [
-      "Chuuk",
-      "https://en.wikipedia.org/wiki/Chuuk_International_Airport",
-      "TKK",
-      "PTKK"
-    ],
-    [
-      "Fais",
-      "https://en.wikipedia.org/wiki/Fais_Island_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Guam",
-      "https://en.wikipedia.org/wiki/Antonio_B._Won_Pat_International_Airport",
-      "GUM",
-      "PGUM"
-    ],
-    [
-      "Koror",
-      "https://en.wikipedia.org/wiki/Roman_Tmetuchl_International_Airport",
-      "ROR",
-      "PTRO"
-    ],
-    [
-      "Pohnpei",
-      "https://en.wikipedia.org/wiki/Pohnpei_International_Airport",
-      "PNI",
-      "PTPN"
-    ],
-    [
-      "Ulithi",
-      "https://en.wikipedia.org/wiki/Ulithi_Airport",
-      "ULI",
-      "icao code not found"
-    ]
+    {
+      "city": "Chuuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chuuk_International_Airport",
+      "codes": [
+        "TKK",
+        "PTKK"
+      ],
+      "airlines": [
+        "Caroline Islands Air"
+      ]
+    },
+    {
+      "city": "Fais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fais_Island_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Caroline Islands Air",
+        "Pacific Missionary Aviation"
+      ]
+    },
+    {
+      "city": "Guam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_B._Won_Pat_International_Airport",
+      "codes": [
+        "GUM",
+        "PGUM"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Koror",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Tmetuchl_International_Airport",
+      "codes": [
+        "ROR",
+        "PTRO"
+      ],
+      "airlines": [
+        "Caroline Islands Air",
+        "Pacific Missionary Aviation"
+      ]
+    },
+    {
+      "city": "Pohnpei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pohnpei_International_Airport",
+      "codes": [
+        "PNI",
+        "PTPN"
+      ],
+      "airlines": [
+        "Caroline Islands Air"
+      ]
+    },
+    {
+      "city": "Ulithi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ulithi_Airport",
+      "codes": [
+        "ULI",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Caroline Islands Air",
+        "Pacific Missionary Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caroline Islands Air": [
@@ -74,5 +107,7 @@
     "United Airlines": [
       "Guam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:37Z",
+  "date-time-wikidata": "2026-01-03T04:20:42Z"
 }

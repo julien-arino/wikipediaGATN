@@ -22,48 +22,85 @@
     "SriLankan Airlines"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Colombo–Bandaranaike",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Colombo–Bandaranaike",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "SriLankan Airlines"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -83,5 +120,7 @@
     "SriLankan Airlines": [
       "Colombo–Bandaranaike"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:37Z",
+  "date-time-wikidata": "2026-04-11T03:21:16Z"
 }

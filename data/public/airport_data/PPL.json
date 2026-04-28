@@ -22,18 +22,31 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Lukla",
-      "https://en.wikipedia.org/wiki/Tenzing–Hillary_Airport",
-      "LUA",
-      "VNLK"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Nepal Airlines",
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    },
+    {
+      "city": "Lukla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenzing–Hillary_Airport",
+      "codes": [
+        "LUA",
+        "VNLK"
+      ],
+      "airlines": [
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nepal Airlines": [
@@ -49,5 +62,7 @@
       "Kathmandu",
       "Lukla"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:09Z",
+  "date-time-wikidata": "2026-01-01T17:06:22Z"
 }

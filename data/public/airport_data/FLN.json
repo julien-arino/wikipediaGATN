@@ -33,186 +33,354 @@
     "Total Linhas Aéreas"
   ],
   "destinations": [
-    [
-      "Asunción",
-      "https://en.wikipedia.org/wiki/Silvio_Pettirossi_International_Airport",
-      "ASU",
-      "SGAS"
-    ],
-    [
-      "Belo Horizonte–Confins",
-      "https://en.wikipedia.org/wiki/Tancredo_Neves_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Brasília",
-      "https://en.wikipedia.org/wiki/Brasília_International_Airport",
-      "BSB",
-      "SBBR"
-    ],
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Buenos Aires–Ezeiza",
-      "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
-      "EZE",
-      "SAEZ"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Caxias do Sul",
-      "https://en.wikipedia.org/wiki/Caxias_do_Sul_Airport",
-      "CXJ",
-      "SBCX"
-    ],
-    [
-      "Chapecó",
-      "https://en.wikipedia.org/wiki/Chapecó_Airport",
-      "XAP",
-      "SBCH"
-    ],
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ],
-    [
-      "Curitiba",
-      "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
-      "CWB",
-      "SBCT"
-    ],
-    [
-      "Córdoba (AR)",
-      "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
-      "COR",
-      "SACO"
-    ],
-    [
-      "Foz do Iguaçu",
-      "https://en.wikipedia.org/wiki/Foz_do_Iguaçu_International_Airport",
-      "IGU",
-      "SBFI"
-    ],
-    [
-      "Goiânia",
-      "https://en.wikipedia.org/wiki/Goiânia_International_Airport",
-      "GYN",
-      "SBGO"
-    ],
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Montevideo",
-      "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
-      "MVD",
-      "SUMU"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Pelotas",
-      "https://en.wikipedia.org/wiki/Pelotas_International_Airport",
-      "PET",
-      "SBPK"
-    ],
-    [
-      "Porto Alegre",
-      "https://en.wikipedia.org/wiki/Salgado_Filho_Porto_Alegre_International_Airport",
-      "POA",
-      "SBPA"
-    ],
-    [
-      "Rio de Janeiro–Galeão",
-      "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-      "GIG",
-      "SBGL"
-    ],
-    [
-      "Rosario",
-      "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
-      "ROS",
-      "SAAR"
-    ],
-    [
-      "Salta",
-      "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
-      "SLA",
-      "SASA"
-    ],
-    [
-      "Salvador da Bahia",
-      "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
-      "SSA",
-      "SBSV"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "Santo Ângelo",
-      "https://en.wikipedia.org/wiki/Santo_Ângelo_Airport",
-      "GEL",
-      "SBNM"
-    ],
-    [
-      "São Paulo-Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "São Paulo–Congonhas",
-      "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
-      "CGH",
-      "SBSP"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "Uruguaiana",
-      "https://en.wikipedia.org/wiki/Ruben_Berta_International_Airport",
-      "URG",
-      "SBUG"
-    ]
+    {
+      "city": "Asunción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silvio_Pettirossi_International_Airport",
+      "codes": [
+        "ASU",
+        "SGAS"
+      ],
+      "airlines": [
+        "Paranair"
+      ]
+    },
+    {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tancredo_Neves_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Ezeiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Flybondi",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina",
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Caxias do Sul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caxias_do_Sul_Airport",
+      "codes": [
+        "CXJ",
+        "SBCX"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Chapecó",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chapecó_Airport",
+      "codes": [
+        "XAP",
+        "SBCH"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Curitiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
+      "codes": [
+        "CWB",
+        "SBCT"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Total Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "Gol Linhas Aéreas",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Foz do Iguaçu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Foz_do_Iguaçu_International_Airport",
+      "codes": [
+        "IGU",
+        "SBFI"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Goiânia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Goiânia_International_Airport",
+      "codes": [
+        "GYN",
+        "SBGO"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "Sky Airline Peru"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Montevideo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
+      "codes": [
+        "MVD",
+        "SUMU"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Sky Airline Peru"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Pelotas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pelotas_International_Airport",
+      "codes": [
+        "PET",
+        "SBPK"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Alegre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salgado_Filho_Porto_Alegre_International_Airport",
+      "codes": [
+        "POA",
+        "SBPA"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Rio de Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
+      "codes": [
+        "GIG",
+        "SBGL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Rosario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
+      "codes": [
+        "ROS",
+        "SAAR"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Salta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
+      "codes": [
+        "SLA",
+        "SASA"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Salvador da Bahia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
+      "codes": [
+        "SSA",
+        "SBSV"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Santo Ângelo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santo_Ângelo_Airport",
+      "codes": [
+        "GEL",
+        "SBNM"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo-Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Total Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Congonhas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
+      "codes": [
+        "CGH",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Uruguaiana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruben_Berta_International_Airport",
+      "codes": [
+        "URG",
+        "SBUG"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -293,5 +461,7 @@
       "Curitiba",
       "São Paulo-Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:43Z",
+  "date-time-wikidata": "2026-04-11T23:57:49Z"
 }

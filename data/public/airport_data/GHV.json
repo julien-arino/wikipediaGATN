@@ -25,108 +25,201 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya__International_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Dortmund",
-      "https://en.wikipedia.org/wiki/Dortmund_Airport",
-      "DTM",
-      "EDLW"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion__International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca__International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "Memmingen",
-      "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "FMM",
-      "EDJA"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Monastir",
-      "https://en.wikipedia.org/wiki/Monastir__International_Airport",
-      "MIR",
-      "DTMB"
-    ],
-    [
-      "Naples",
-      "https://en.wikipedia.org/wiki/Naples_International_Airport",
-      "NAP",
-      "LIRN"
-    ],
-    [
-      "Nuremberg",
-      "https://en.wikipedia.org/wiki/Nuremberg_Airport",
-      "NUE",
-      "EDDN"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya__International_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Animawings",
+        "HiSky",
+        "Mavi Gök Airlines",
+        "Tailwind Airlines"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Dortmund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
+      "codes": [
+        "DTM",
+        "EDLW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Animawings",
+        "HiSky",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion__International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Animawings",
+        "HiSky",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "Animawings",
+        "HiSky"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca__International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "HiSky"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Memmingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
+      "codes": [
+        "FMM",
+        "EDJA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Monastir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monastir__International_Airport",
+      "codes": [
+        "MIR",
+        "DTMB"
+      ],
+      "airlines": [
+        "Animawings"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Nuremberg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuremberg_Airport",
+      "codes": [
+        "NUE",
+        "EDDN"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "AlbaStar"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AlbaStar": [
@@ -165,5 +258,7 @@
       "Rome–Fiumicino",
       "Warsaw–Chopin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:33Z",
+  "date-time-wikidata": "2026-04-22T21:33:20Z"
 }

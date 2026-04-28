@@ -21,96 +21,171 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Ajaccio Airport",
-      "https://en.wikipedia.org/wiki/Ajaccio_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Barcelona Airport",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Bristol Airport",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "East Midlands Airport",
-      "https://en.wikipedia.org/wiki/East_Midlands_Airport",
-      "EMA",
-      "EGNX"
-    ],
-    [
-      "Leeds Bradford Airport",
-      "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
-      "LBA",
-      "EGNM"
-    ],
-    [
-      "London Stansted Airport",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Lyon–Saint Exupéry Airport",
-      "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint_Exup%C3%A9ry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Malaga Airport",
-      "https://en.wikipedia.org/wiki/Malaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Manchester Airport",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Marrakesh Airport",
-      "https://en.wikipedia.org/wiki/Marrakesh_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Marseille Airport",
-      "https://en.wikipedia.org/wiki/Marseille_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Minorca Airport",
-      "https://en.wikipedia.org/wiki/Minorca_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Orly Airport",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Roma Airport",
-      "https://en.wikipedia.org/wiki/Roma_Airport",
-      "RMA",
-      "YROM"
-    ]
+    {
+      "city": "Ajaccio Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Barcelona Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Bristol Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "East Midlands Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Leeds Bradford Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
+      "codes": [
+        "LBA",
+        "EGNM"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London Stansted Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Lyon–Saint Exupéry Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint_Exup%C3%A9ry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Chalair Aviation"
+      ]
+    },
+    {
+      "city": "Malaga Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Manchester Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Marrakesh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Marseille Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Minorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minorca_Airport",
+      "codes": [
+        "MAH",
+        "LEMH"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Orly Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Roma Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roma_Airport",
+      "codes": [
+        "RMA",
+        "YROM"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chalair Aviation": [
@@ -134,5 +209,7 @@
       "Palma de Mallorca Airport",
       "Roma Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:58Z",
+  "date-time-wikidata": "2026-03-20T09:58:54Z"
 }

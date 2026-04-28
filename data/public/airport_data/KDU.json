@@ -20,30 +20,52 @@
     "Pakistan International Airlines"
   ],
   "destinations": [
-    [
-      "Allama Iqbal International Airport",
-      "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
-      "LHE",
-      "OPLA"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Islamabad International Airport",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Jinnah International Airport",
-      "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
-      "KHI",
-      "OPKC"
-    ]
+    {
+      "city": "Allama Iqbal International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
+      "codes": [
+        "LHE",
+        "OPLA"
+      ],
+      "airlines": [
+        "Airblue",
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Islamabad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Airblue",
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Jinnah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
+      "codes": [
+        "KHI",
+        "OPKC"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airblue": [
@@ -56,5 +78,7 @@
       "Islamabad International Airport",
       "Jinnah International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:23Z",
+  "date-time-wikidata": "2026-03-04T15:42:59Z"
 }

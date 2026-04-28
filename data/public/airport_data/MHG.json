@@ -19,24 +19,39 @@
     "Mannheim City Air"
   ],
   "destinations": [
-    [
-      "Elba",
-      "https://en.wikipedia.org/wiki/Marina_di_Campo_Airport",
-      "EBA",
-      "LIRJ"
-    ],
-    [
-      "Heringsdorf",
-      "https://en.wikipedia.org/wiki/Heringsdorf_Airport",
-      "HDF",
-      "EDAH"
-    ],
-    [
-      "Sylt",
-      "https://en.wikipedia.org/wiki/Sylt_Airport",
-      "GWT",
-      "EDXW"
-    ]
+    {
+      "city": "Elba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_di_Campo_Airport",
+      "codes": [
+        "EBA",
+        "LIRJ"
+      ],
+      "airlines": [
+        "Mannheim City Air"
+      ]
+    },
+    {
+      "city": "Heringsdorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heringsdorf_Airport",
+      "codes": [
+        "HDF",
+        "EDAH"
+      ],
+      "airlines": [
+        "Mannheim City Air"
+      ]
+    },
+    {
+      "city": "Sylt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sylt_Airport",
+      "codes": [
+        "GWT",
+        "EDXW"
+      ],
+      "airlines": [
+        "Mannheim City Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Mannheim City Air": [
@@ -44,5 +59,7 @@
       "Heringsdorf",
       "Sylt"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:41Z",
+  "date-time-wikidata": "2026-03-11T09:35:32Z"
 }

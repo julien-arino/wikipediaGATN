@@ -21,36 +21,62 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Armidale",
-      "https://en.wikipedia.org/wiki/Armidale_Airport",
-      "ARM",
-      "YARM"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Canberra",
-      "https://en.wikipedia.org/wiki/Canberra_Airport",
-      "CBR",
-      "YSCB"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Armidale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armidale_Airport",
+      "codes": [
+        "ARM",
+        "YARM"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Canberra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
+      "codes": [
+        "CBR",
+        "YSCB"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Link Airways": [
@@ -65,5 +91,7 @@
     "Rex Airlines": [
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:35Z",
+  "date-time-wikidata": "2026-02-12T05:54:34Z"
 }

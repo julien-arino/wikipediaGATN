@@ -25,66 +25,128 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Adelaide Airport",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Auckland Airport",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Brisbane Airport",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Canberra Airport",
-      "https://en.wikipedia.org/wiki/Canberra_Airport",
-      "CBR",
-      "YSCB"
-    ],
-    [
-      "Gold Coast Airport",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Melbourne Airport",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Newcastle Airport (New South Wales)",
-      "https://en.wikipedia.org/wiki/Newcastle_Airport_(New_South_Wales)",
-      "NTL",
-      "YWLM"
-    ],
-    [
-      "Perth Airport",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Sydney Airport",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Wilkins Runway",
-      "https://en.wikipedia.org/wiki/Wilkins_Runway",
-      "iata code not found",
-      "YWKS"
-    ]
+    {
+      "city": "Adelaide Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Auckland Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Brisbane Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Canberra Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
+      "codes": [
+        "CBR",
+        "YSCB"
+      ],
+      "airlines": [
+        "Link Airways",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Gold Coast Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Melbourne Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Newcastle Airport (New South Wales)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_Airport_(New_South_Wales)",
+      "codes": [
+        "NTL",
+        "YWLM"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Perth Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Sydney Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Wilkins Runway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilkins_Runway",
+      "codes": [
+        "iata code not found",
+        "YWKS"
+      ],
+      "airlines": [
+        "Skytraders"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -123,5 +185,7 @@
       "Perth Airport",
       "Sydney Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:11Z",
+  "date-time-wikidata": "2026-04-28T03:19:43Z"
 }

@@ -7,6 +7,7 @@
   "lat": "51.7957696",
   "lon": "55.455575",
   "altitude": "118",
+  "continent": "Europe",
   "region": "Orenburg",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
@@ -28,66 +29,119 @@
     "azimuth"
   ],
   "destinations": [
-    [
-      "Baku",
-      "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
-      "GYD",
-      "UBBB"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Ğabdulla_Tuqay_Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Nizhny Novgorod",
-      "https://en.wikipedia.org/wiki/Strigino_Airport",
-      "GOJ",
-      "UWGG"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ğabdulla_Tuqay_Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Nordwind Airlines",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Nizhny Novgorod",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strigino_Airport",
+      "codes": [
+        "GOJ",
+        "UWGG"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Rossiya Airlines",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "AlMasria Universal Airlines"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -126,5 +180,6 @@
       "Nizhny Novgorod"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:10:32Z",
+  "date-time-wikidata": "2026-04-22T17:47:59Z"
 }

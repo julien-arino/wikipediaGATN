@@ -19,30 +19,50 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Brussels–Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "East Midlands",
-      "https://en.wikipedia.org/wiki/East_Midlands_Airport",
-      "EMA",
-      "EGNX"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ]
+    {
+      "city": "Brussels–Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "East Midlands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
@@ -51,5 +71,7 @@
       "East Midlands",
       "London–Stansted"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:00Z",
+  "date-time-wikidata": "2026-02-02T23:12:51Z"
 }

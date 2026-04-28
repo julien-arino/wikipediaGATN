@@ -19,23 +19,35 @@
     "Khabarovsk Airlines"
   ],
   "destinations": [
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Nikolaevsk-on-Amur",
-      "https://en.wikipedia.org/wiki/Nikolayevsk-on-Amur_Airport",
-      "NLI",
-      "UHNN"
-    ]
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Khabarovsk Airlines"
+      ]
+    },
+    {
+      "city": "Nikolaevsk-on-Amur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nikolayevsk-on-Amur_Airport",
+      "codes": [
+        "NLI",
+        "UHNN"
+      ],
+      "airlines": [
+        "Khabarovsk Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Khabarovsk Airlines": [
       "Khabarovsk",
       "Nikolaevsk-on-Amur"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:31Z",
+  "date-time-wikidata": "2025-11-06T21:40:01Z"
 }

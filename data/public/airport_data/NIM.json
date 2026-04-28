@@ -31,108 +31,203 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Bamako",
-      "https://en.wikipedia.org/wiki/Modibo_Keita_International_Airport",
-      "BKO",
-      "GABS"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Cotonou",
-      "https://en.wikipedia.org/wiki/Cadjehoun_Airport",
-      "COO",
-      "DBBB"
-    ],
-    [
-      "Dakar–Diass",
-      "https://en.wikipedia.org/wiki/Blaise_Diagne_International_Airport",
-      "DSS",
-      "GOBD"
-    ],
-    [
-      "Gao",
-      "https://en.wikipedia.org/wiki/Gao_International_Airport",
-      "GAQ",
-      "GAGO"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "N'Djamena",
-      "https://en.wikipedia.org/wiki/N'Djamena_International_Airport",
-      "NDJ",
-      "FTTJ"
-    ],
-    [
-      "Ouagadougou",
-      "https://en.wikipedia.org/wiki/Ouagadougou_Airport",
-      "OUA",
-      "DFFD"
-    ],
-    [
-      "Ouagadougou",
-      "https://en.wikipedia.org/wiki/Thomas_Sankara_International_Airport_Ouagadougou",
-      "OUA",
-      "DFFD"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Tripoli–Mitiga",
-      "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
-      "MJI",
-      "HLLM"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis-Carthage_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Bamako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Modibo_Keita_International_Airport",
+      "codes": [
+        "BKO",
+        "GABS"
+      ],
+      "airlines": [
+        "Air Senegal",
+        "Sky Mali"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Cotonou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cadjehoun_Airport",
+      "codes": [
+        "COO",
+        "DBBB"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Dakar–Diass",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blaise_Diagne_International_Airport",
+      "codes": [
+        "DSS",
+        "GOBD"
+      ],
+      "airlines": [
+        "Air Senegal"
+      ]
+    },
+    {
+      "city": "Gao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gao_International_Airport",
+      "codes": [
+        "GAQ",
+        "GAGO"
+      ],
+      "airlines": [
+        "Sky Mali"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "N'Djamena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'Djamena_International_Airport",
+      "codes": [
+        "NDJ",
+        "FTTJ"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Ouagadougou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouagadougou_Airport",
+      "codes": [
+        "OUA",
+        "DFFD"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Burkina",
+        "Air Côte d'Ivoire",
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Ouagadougou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Sankara_International_Airport_Ouagadougou",
+      "codes": [
+        "OUA",
+        "DFFD"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Burkina",
+        "Air Côte d'Ivoire",
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Tripoli–Mitiga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
+      "codes": [
+        "MJI",
+        "HLLM"
+      ],
+      "airlines": [
+        "Fly Oya",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis-Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Tunisair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -182,5 +277,7 @@
       "Istanbul",
       "N'Djamena"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:24Z",
+  "date-time-wikidata": "2026-04-07T23:08:31Z"
 }

@@ -20,36 +20,62 @@
     "Chengdu Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Harbin Taiping International Airport",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
-      "HRB",
-      "ZYHB"
-    ],
-    [
-      "Jiamusi Dongjiao Airport",
-      "https://en.wikipedia.org/wiki/Jiamusi_Dongjiao_Airport",
-      "JMU",
-      "ZYJM"
-    ],
-    [
-      "Mohe Gulian Airport",
-      "https://en.wikipedia.org/wiki/Mohe_Gulian_Airport",
-      "OHE",
-      "ZYMH"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Harbin Taiping International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "codes": [
+        "HRB",
+        "ZYHB"
+      ],
+      "airlines": [
+        "Air China",
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Jiamusi Dongjiao Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiamusi_Dongjiao_Airport",
+      "codes": [
+        "JMU",
+        "ZYJM"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Mohe Gulian Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohe_Gulian_Airport",
+      "codes": [
+        "OHE",
+        "ZYMH"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -62,5 +88,7 @@
       "Jiamusi Dongjiao Airport",
       "Mohe Gulian Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:25Z",
+  "date-time-wikidata": "2025-09-12T01:47:54Z"
 }

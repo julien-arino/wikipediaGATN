@@ -30,168 +30,304 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Belfast–City",
-      "https://en.wikipedia.org/wiki/Belfast_City_Airport",
-      "BHD",
-      "EGAC"
-    ],
-    [
-      "Bergen",
-      "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Bristol",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Corfu",
-      "https://en.wikipedia.org/wiki/Corfu_International_Airport",
-      "CFU",
-      "LGKR"
-    ],
-    [
-      "Dalaman",
-      "https://en.wikipedia.org/wiki/Dalaman_Airport",
-      "DLM",
-      "LTBS"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Esbjerg",
-      "https://en.wikipedia.org/wiki/Esbjerg_Airport",
-      "EBJ",
-      "EKEB"
-    ],
-    [
-      "Faro",
-      "https://en.wikipedia.org/wiki/Faro_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Krakow",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Norwich",
-      "https://en.wikipedia.org/wiki/Norwich_Airport",
-      "NWI",
-      "EGSH"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Reus",
-      "https://en.wikipedia.org/wiki/Reus_Airport",
-      "REU",
-      "LERS"
-    ],
-    [
-      "Riga",
-      "https://en.wikipedia.org/wiki/Riga_International_Airport",
-      "RIX",
-      "EVRA"
-    ],
-    [
-      "Stavanger",
-      "https://en.wikipedia.org/wiki/Stavanger_Airport",
-      "SVG",
-      "ENZV"
-    ],
-    [
-      "Sumburgh",
-      "https://en.wikipedia.org/wiki/Sumburgh_Airport",
-      "LSI",
-      "EGPB"
-    ],
-    [
-      "Tenerife–South",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "TFS",
-      "GCTS"
-    ],
-    [
-      "Wick",
-      "https://en.wikipedia.org/wiki/Wick_Airport",
-      "WIC",
-      "EGPC"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Belfast–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "codes": [
+        "BHD",
+        "EGAC"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Bergen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Bristol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Dalaman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalaman_Airport",
+      "codes": [
+        "DLM",
+        "LTBS"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Esbjerg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Esbjerg_Airport",
+      "codes": [
+        "EBJ",
+        "EKEB"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Faro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faro_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Krakow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Norwich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norwich_Airport",
+      "codes": [
+        "NWI",
+        "EGSH"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Reus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reus_Airport",
+      "codes": [
+        "REU",
+        "LERS"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "airBaltic"
+      ]
+    },
+    {
+      "city": "Stavanger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stavanger_Airport",
+      "codes": [
+        "SVG",
+        "ENZV"
+      ],
+      "airlines": [
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Sumburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sumburgh_Airport",
+      "codes": [
+        "LSI",
+        "EGPB"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Wick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wick_Airport",
+      "codes": [
+        "WIC",
+        "EGPC"
+      ],
+      "airlines": [
+        "Air Charter Scotland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -246,5 +382,7 @@
     "Wizz Air": [
       "Gdańsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:47Z",
+  "date-time-wikidata": "2026-04-02T08:09:25Z"
 }

@@ -22,30 +22,53 @@
     "Philippines AirAsia"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Davao",
-      "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
-      "DVO",
-      "RPMD"
-    ],
-    [
-      "Iloilo",
-      "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
-      "ILO",
-      "RPVI"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Davao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
+      "codes": [
+        "DVO",
+        "RPMD"
+      ],
+      "airlines": [
+        "Cebu Pacific"
+      ]
+    },
+    {
+      "city": "Iloilo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
+      "codes": [
+        "ILO",
+        "RPVI"
+      ],
+      "airlines": [
+        "Cebu Pacific"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express",
+        "Philippines AirAsia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
@@ -63,5 +86,7 @@
     "Philippines AirAsia": [
       "Manila"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:01Z",
+  "date-time-wikidata": "2026-02-22T09:34:29Z"
 }

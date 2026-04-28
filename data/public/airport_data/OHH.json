@@ -20,18 +20,29 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Yuzhno-Sakhalinsk",
-      "https://en.wikipedia.org/wiki/Yuzhno-Sakhalinsk_Airport",
-      "UUS",
-      "UHSS"
-    ]
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Aurora",
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Yuzhno-Sakhalinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuzhno-Sakhalinsk_Airport",
+      "codes": [
+        "UUS",
+        "UHSS"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora": [
@@ -41,5 +52,7 @@
     "Yakutia Airlines": [
       "Khabarovsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:30Z",
+  "date-time-wikidata": "2025-11-12T21:44:32Z"
 }

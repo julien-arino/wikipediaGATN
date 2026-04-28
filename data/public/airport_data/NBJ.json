@@ -29,156 +29,283 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Bole International Airport",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Cabinda Airport",
-      "https://en.wikipedia.org/wiki/Cabinda_Airport",
-      "CAB",
-      "FNCA"
-    ],
-    [
-      "Cape Town International Airport",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Charles de Gaulle Airport",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Félix-Houphouët-Boigny International Airport",
-      "https://en.wikipedia.org/wiki/F%C3%A9lix-Houphou%C3%ABt-Boigny_International_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Hosea Kutako International Airport",
-      "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
-      "WDH",
-      "FYWH"
-    ],
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jomo Kenyatta International Airport",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "José Martí International Airport",
-      "https://en.wikipedia.org/wiki/Jos%C3%A9_Mart%C3%AD_International_Airport",
-      "HAV",
-      "MUHA"
-    ],
-    [
-      "Lisbon Airport",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Lisbon Portela Airport",
-      "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Lomé–Tokoin International Airport",
-      "https://en.wikipedia.org/wiki/Lom%C3%A9%E2%80%93Tokoin_International_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Maputo International Airport",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Maya-Maya Airport",
-      "https://en.wikipedia.org/wiki/Maya-Maya_Airport",
-      "BZV",
-      "FCBB"
-    ],
-    [
-      "Mohammed V International Airport",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Murtala Muhammed International Airport",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ],
-    [
-      "N'djili Airport",
-      "https://en.wikipedia.org/wiki/N%27djili_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "O. R. Tambo International Airport",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Porto Airport",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "São Paulo/Guarulhos International Airport",
-      "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "São Tomé International Airport",
-      "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Bole International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Cabinda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cabinda_Airport",
+      "codes": [
+        "CAB",
+        "FNCA"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Cape Town International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Charles de Gaulle Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates (airline)"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Félix-Houphouët-Boigny International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%A9lix-Houphou%C3%ABt-Boigny_International_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Hosea Kutako International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
+      "codes": [
+        "WDH",
+        "FYWH"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jomo Kenyatta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "José Martí International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mart%C3%AD_International_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Lisbon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Lisbon Portela Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Lomé–Tokoin International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lom%C3%A9%E2%80%93Tokoin_International_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Maputo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Maya-Maya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maya-Maya_Airport",
+      "codes": [
+        "BZV",
+        "FCBB"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Mohammed V International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Murtala Muhammed International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "N'djili Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N%27djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "O. R. Tambo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Porto Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "São Paulo/Guarulhos International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "São Tomé International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_International_Airport",
+      "codes": [
+        "TMS",
+        "FPST"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air France": [
@@ -230,5 +357,7 @@
     "Turkish Airlines": [
       "Istanbul Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:53Z",
+  "date-time-wikidata": "2026-04-08T12:42:49Z"
 }

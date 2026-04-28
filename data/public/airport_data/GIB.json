@@ -20,36 +20,61 @@
     "EasyJet"
   ],
   "destinations": [
-    [
-      "Birmingham Airport",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Bristol Airport",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Heathrow Airport",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Manchester Airport",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ]
+    {
+      "city": "Birmingham Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Bristol Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Heathrow Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Manchester Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "British Airways": [
@@ -61,5 +86,7 @@
       "Gatwick Airport",
       "Manchester Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:34Z",
+  "date-time-wikidata": "2026-03-31T11:41:33Z"
 }

@@ -21,24 +21,42 @@
     "Qazaq Air"
   ],
   "destinations": [
-    [
-      "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Astana",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ]
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "Air Astana",
+        "Fly Arystan",
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Fly Arystan"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "Fly Arystan",
+        "Qazaq Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Astana": [
@@ -53,5 +71,7 @@
       "Almaty",
       "Astana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:14Z",
+  "date-time-wikidata": "2025-11-18T03:09:46Z"
 }

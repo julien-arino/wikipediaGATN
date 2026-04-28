@@ -19,23 +19,35 @@
     "Hinterland Aviation"
   ],
   "destinations": [
-    [
-      "Horn Island",
-      "https://en.wikipedia.org/wiki/Horn_Island_Airport",
-      "HID",
-      "YHID"
-    ],
-    [
-      "Saibai Island",
-      "https://en.wikipedia.org/wiki/Saibai_Island_Airport",
-      "SBR",
-      "YSII"
-    ]
+    {
+      "city": "Horn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Island_Airport",
+      "codes": [
+        "HID",
+        "YHID"
+      ],
+      "airlines": [
+        "Hinterland Aviation"
+      ]
+    },
+    {
+      "city": "Saibai Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saibai_Island_Airport",
+      "codes": [
+        "SBR",
+        "YSII"
+      ],
+      "airlines": [
+        "Hinterland Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hinterland Aviation": [
       "Horn Island",
       "Saibai Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:34Z",
+  "date-time-wikidata": "2024-06-02T05:45:36Z"
 }

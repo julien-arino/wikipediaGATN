@@ -22,54 +22,95 @@
     "TUI Airways"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Corfu",
-      "https://en.wikipedia.org/wiki/Corfu_International_Airport",
-      "CFU",
-      "LGKR"
-    ],
-    [
-      "Faro",
-      "https://en.wikipedia.org/wiki/Faro_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Guernsey",
-      "https://en.wikipedia.org/wiki/Guernsey_Airport",
-      "GCI",
-      "EGJB"
-    ],
-    [
-      "Jersey",
-      "https://en.wikipedia.org/wiki/Jersey_Airport",
-      "PRO",
-      "PROP"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Faro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faro_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Guernsey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guernsey_Airport",
+      "codes": [
+        "GCI",
+        "EGJB"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Jersey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jersey_Airport",
+      "codes": [
+        "PRO",
+        "PROP"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Ryanair",
+        "TUI Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurigny": [
@@ -89,5 +130,7 @@
     "TUI Airways": [
       "Palma de Mallorca"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:45Z",
+  "date-time-wikidata": "2026-04-27T22:19:34Z"
 }

@@ -19,23 +19,35 @@
     "Saeta Peru"
   ],
   "destinations": [
-    [
-      "Pucallpa",
-      "https://en.wikipedia.org/wiki/Pucallpa_Airport",
-      "PCL",
-      "SPCL"
-    ],
-    [
-      "Tarapoto",
-      "https://en.wikipedia.org/wiki/Tarapoto_Airport",
-      "TPP",
-      "SPST"
-    ]
+    {
+      "city": "Pucallpa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pucallpa_Airport",
+      "codes": [
+        "PCL",
+        "SPCL"
+      ],
+      "airlines": [
+        "Saeta Peru"
+      ]
+    },
+    {
+      "city": "Tarapoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarapoto_Airport",
+      "codes": [
+        "TPP",
+        "SPST"
+      ],
+      "airlines": [
+        "Saeta Peru"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Saeta Peru": [
       "Pucallpa",
       "Tarapoto"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:13Z",
+  "date-time-wikidata": "2025-10-28T14:12:23Z"
 }

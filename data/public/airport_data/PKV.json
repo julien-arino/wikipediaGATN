@@ -19,30 +19,50 @@
     "Azimuth"
   ],
   "destinations": [
-    [
-      "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ]
+    {
+      "city": "Kaliningrad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azimuth": [
@@ -51,5 +71,7 @@
       "Moscow–Vnukovo",
       "Sochi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:46Z",
+  "date-time-wikidata": "2025-09-14T21:40:29Z"
 }

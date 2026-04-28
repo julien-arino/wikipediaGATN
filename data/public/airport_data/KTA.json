@@ -24,30 +24,54 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Broome",
-      "https://en.wikipedia.org/wiki/Broome_Airport",
-      "BME",
-      "YBRM"
-    ],
-    [
-      "Geraldton",
-      "https://en.wikipedia.org/wiki/Geraldton_Airport",
-      "GET",
-      "YGEL"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Port Hedland",
-      "https://en.wikipedia.org/wiki/Port_Hedland_Airport",
-      "PHE",
-      "YPPD"
-    ]
+    {
+      "city": "Broome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broome_Airport",
+      "codes": [
+        "BME",
+        "YBRM"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Geraldton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geraldton_Airport",
+      "codes": [
+        "GET",
+        "YGEL"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia",
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Port Hedland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Hedland_Airport",
+      "codes": [
+        "PHE",
+        "YPPD"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -70,5 +94,7 @@
     "Virgin Australia Regional Airlines": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:46Z",
+  "date-time-wikidata": "2025-09-16T02:15:12Z"
 }

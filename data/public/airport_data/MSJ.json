@@ -21,24 +21,39 @@
     "Japan Airlines"
   ],
   "destinations": [
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Sapporo–Okadama",
-      "https://en.wikipedia.org/wiki/Okadama_Airport",
-      "OKD",
-      "RJCO"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Sapporo–Okadama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Okadama_Airport",
+      "codes": [
+        "OKD",
+        "RJCO"
+      ],
+      "airlines": [
+        "Hokkaido Air System"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hokkaido Air System": [
@@ -50,5 +65,7 @@
     "Japan Airlines": [
       "Tokyo–Haneda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:33Z",
+  "date-time-wikidata": "2026-01-25T09:38:00Z"
 }

@@ -23,84 +23,155 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Agartala",
-      "https://en.wikipedia.org/wiki/Maharaja_Bir_Bikram_Airport",
-      "IXA",
-      "VEAT"
-    ],
-    [
-      "Aizawl",
-      "https://en.wikipedia.org/wiki/Lengpui_Airport",
-      "AJL",
-      "VELP"
-    ],
-    [
-      "Bangalore",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dimapur",
-      "https://en.wikipedia.org/wiki/Dimapur_Airport",
-      "DMU",
-      "VEMR"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mandalay",
-      "https://en.wikipedia.org/wiki/Mandalay_International_Airport",
-      "MDL",
-      "VYMD"
-    ],
-    [
-      "Mumbai-Shivaji",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Shillong",
-      "https://en.wikipedia.org/wiki/Shillong_Airport",
-      "SHL",
-      "VEBI"
-    ],
-    [
-      "Silchar",
-      "https://en.wikipedia.org/wiki/Silchar_Airport",
-      "IXS",
-      "VEKU"
-    ],
-    [
-      "Siliguri",
-      "https://en.wikipedia.org/wiki/Bagdogra_Airport",
-      "IXB",
-      "VEBD"
-    ],
-    [
-      "Tezu",
-      "https://en.wikipedia.org/wiki/Tezu_Airport",
-      "TEI",
-      "VETJ"
-    ]
+    {
+      "city": "Agartala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maharaja_Bir_Bikram_Airport",
+      "codes": [
+        "IXA",
+        "VEAT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Aizawl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lengpui_Airport",
+      "codes": [
+        "AJL",
+        "VELP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Bangalore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dimapur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dimapur_Airport",
+      "codes": [
+        "DMU",
+        "VEMR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Alliance Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Mandalay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mandalay_International_Airport",
+      "codes": [
+        "MDL",
+        "VYMD"
+      ],
+      "airlines": [
+        "Mingalar Aviation Services"
+      ]
+    },
+    {
+      "city": "Mumbai-Shivaji",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Shillong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shillong_Airport",
+      "codes": [
+        "SHL",
+        "VEBI"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Silchar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silchar_Airport",
+      "codes": [
+        "IXS",
+        "VEKU"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Siliguri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bagdogra_Airport",
+      "codes": [
+        "IXB",
+        "VEBD"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Tezu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tezu_Airport",
+      "codes": [
+        "TEI",
+        "VETJ"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -132,5 +203,7 @@
       "Kolkata",
       "Mumbai-Shivaji"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:02Z",
+  "date-time-wikidata": "2026-02-11T02:47:54Z"
 }

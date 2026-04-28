@@ -24,66 +24,123 @@
     "Turpial Airlines"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Havana",
-      "https://en.wikipedia.org/wiki/Havana_Airport",
-      "HAV",
-      "MUHA"
-    ],
-    [
-      "Maracaibo",
-      "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
-      "MAR",
-      "SVMC"
-    ],
-    [
-      "Medellín–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Del_Caribe_\"Santiago_Mariño\"_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "Puerto Ordaz",
-      "https://en.wikipedia.org/wiki/Aeropuerto_Internacional_Manuel_Carlos_Piar",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "San Antonio del Táchira",
-      "https://en.wikipedia.org/wiki/Juan_Vicente_Gómez_International_Airport",
-      "SVZ",
-      "SVSA"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Turpial Airlines"
+      ]
+    },
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Havana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Havana_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Maracaibo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
+      "codes": [
+        "MAR",
+        "SVMC"
+      ],
+      "airlines": [
+        "Turpial Airlines"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Turpial Airlines"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines",
+        "Turpial Airlines"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Del_Caribe_\"Santiago_Mariño\"_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Aeropostal",
+        "Conviasa",
+        "RUTACA Airlines",
+        "Turpial Airlines"
+      ]
+    },
+    {
+      "city": "Puerto Ordaz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeropuerto_Internacional_Manuel_Carlos_Piar",
+      "codes": [
+        "CGU",
+        "SVPR"
+      ],
+      "airlines": [
+        "Conviasa",
+        "Turpial Airlines"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Air Century"
+      ]
+    },
+    {
+      "city": "San Antonio del Táchira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Vicente_Gómez_International_Airport",
+      "codes": [
+        "SVZ",
+        "SVSA"
+      ],
+      "airlines": [
+        "Conviasa",
+        "RUTACA Airlines",
+        "Turpial Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Century": [
@@ -115,5 +172,7 @@
       "Puerto Ordaz",
       "San Antonio del Táchira"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:03Z",
+  "date-time-wikidata": "2026-04-04T12:05:07Z"
 }

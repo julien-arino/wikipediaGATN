@@ -1,8 +1,8 @@
 {
   "iata": "YPM",
   "icao": "CYPM",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Pikangikum First Nation",
+  "city-served-wikipedia": "[[Pikangikum First Nation]]",
   "location": "[[Pikangikum First Nation]]",
   "lat": "51.819722",
   "lon": "-93.973333",
@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Pikangikum_Airport",
   "number_airlines": 3,
   "outdegree": 3,
@@ -21,24 +21,42 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Sandy Lake",
-      "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
-      "ZSJ",
-      "CZSJ"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Sandy Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
+      "codes": [
+        "ZSJ",
+        "CZSJ"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "Perimeter Aviation",
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation",
+        "Wasaya Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -53,5 +71,7 @@
       "Sioux Lookout",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:25Z",
+  "date-time-wikidata": "2025-10-05T17:36:19Z"
 }

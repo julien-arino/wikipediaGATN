@@ -27,84 +27,155 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Bari",
-      "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport",
-      "BRI",
-      "LIBD"
-    ],
-    [
-      "Beauvais",
-      "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
-      "BVA",
-      "LFOB"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "Memmingen",
-      "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "FMM",
-      "EDJA"
-    ],
-    [
-      "Monastir",
-      "https://en.wikipedia.org/wiki/Monastir_Habib_Bourguiba_International_Airport",
-      "MIR",
-      "DTMB"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Animawings",
+        "HiSky"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Bari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport",
+      "codes": [
+        "BRI",
+        "LIBD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
+      "codes": [
+        "BVA",
+        "LFOB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Animawings",
+        "HiSky",
+        "Sky Express",
+        "SkyUp MT"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "Animawings",
+        "Nesma Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Animawings"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Cyprus Airways"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Memmingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
+      "codes": [
+        "FMM",
+        "EDJA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Monastir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monastir_Habib_Bourguiba_International_Airport",
+      "codes": [
+        "MIR",
+        "DTMB"
+      ],
+      "airlines": [
+        "Animawings",
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "AlbaStar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AlbaStar": [
@@ -144,5 +215,7 @@
       "London–Luton",
       "Memmingen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:55Z",
+  "date-time-wikidata": "2026-04-09T12:18:01Z"
 }

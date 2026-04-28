@@ -24,60 +24,108 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Antofagasta",
-      "https://en.wikipedia.org/wiki/Andrés_Sabella_Gálvez_International_Airport",
-      "ANF",
-      "SCFA"
-    ],
-    [
-      "Arica",
-      "https://en.wikipedia.org/wiki/Chacalluta_International_Airport",
-      "ARI",
-      "SCAR"
-    ],
-    [
-      "Asunción",
-      "https://en.wikipedia.org/wiki/Silvio_Pettirossi_International_Airport",
-      "ASU",
-      "SGAS"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Concepción",
-      "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
-      "CCP",
-      "SCIE"
-    ],
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
-      "LPB",
-      "SLLP"
-    ],
-    [
-      "La Serena",
-      "https://en.wikipedia.org/wiki/La_Florida_Airport_(Chile)",
-      "LSC",
-      "SCSE"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "LATAM Cargo Chile"
+      ]
+    },
+    {
+      "city": "Antofagasta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Andrés_Sabella_Gálvez_International_Airport",
+      "codes": [
+        "ANF",
+        "SCFA"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    },
+    {
+      "city": "Arica",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chacalluta_International_Airport",
+      "codes": [
+        "ARI",
+        "SCAR"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Asunción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silvio_Pettirossi_International_Airport",
+      "codes": [
+        "ASU",
+        "SGAS"
+      ],
+      "airlines": [
+        "Paranair"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "LATAM Cargo Chile"
+      ]
+    },
+    {
+      "city": "Concepción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
+      "codes": [
+        "CCP",
+        "SCIE"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    },
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
+      "codes": [
+        "LPB",
+        "SLLP"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "La Serena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Florida_Airport_(Chile)",
+      "codes": [
+        "LSC",
+        "SCSE"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -104,5 +152,7 @@
       "Amsterdam",
       "Campinas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:50Z",
+  "date-time-wikidata": "2026-03-27T23:25:36Z"
 }

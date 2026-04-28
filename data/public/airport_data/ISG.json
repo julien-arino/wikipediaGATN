@@ -29,72 +29,135 @@
     "Tigerair Taiwan"
   ],
   "destinations": [
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Miyako",
-      "https://en.wikipedia.org/wiki/Miyako_Airport",
-      "MMY",
-      "ROMY"
-    ],
-    [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
-      "NGO",
-      "RJGG"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Yonaguni",
-      "https://en.wikipedia.org/wiki/Yonaguni_Airport",
-      "OGN",
-      "ROYN"
-    ]
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Peach"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "HK Express"
+      ]
+    },
+    {
+      "city": "Miyako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miyako_Airport",
+      "codes": [
+        "MMY",
+        "ROMY"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "Ryukyu Air Commuter"
+      ]
+    },
+    {
+      "city": "Nagoya–Centrair",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "codes": [
+        "NGO",
+        "RJGG"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "Japan Transocean Air",
+        "Ryukyu Air Commuter",
+        "Solaseed Air"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Transocean Air",
+        "Peach"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Jin Air"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "China Airlines",
+        "Tigerair Taiwan"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Peach"
+      ]
+    },
+    {
+      "city": "Yonaguni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yonaguni_Airport",
+      "codes": [
+        "OGN",
+        "ROYN"
+      ],
+      "airlines": [
+        "Ryukyu Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -138,5 +201,7 @@
     "Tigerair Taiwan": [
       "Taipei–Taoyuan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:07Z",
+  "date-time-wikidata": "2025-11-30T23:19:35Z"
 }

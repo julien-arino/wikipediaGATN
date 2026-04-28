@@ -19,24 +19,39 @@
     "Southern Airways Express"
   ],
   "destinations": [
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Memorial Field Airport",
-      "https://en.wikipedia.org/wiki/Memorial_Field_Airport",
-      "HOT",
-      "KHOT"
-    ],
-    [
-      "Memphis International Airport",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
-      "MEM",
-      "KMEM"
-    ]
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Memorial Field Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memorial_Field_Airport",
+      "codes": [
+        "HOT",
+        "KHOT"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Memphis International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Southern Airways Express": [
@@ -44,5 +59,7 @@
       "Memorial Field Airport",
       "Memphis International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:28Z",
+  "date-time-wikidata": "2025-10-12T08:30:30Z"
 }

@@ -22,42 +22,73 @@
     "Southern Airlines"
   ],
   "destinations": [
-    [
-      "Burnie",
-      "https://en.wikipedia.org/wiki/Burnie_Airport",
-      "BWT",
-      "YWYY"
-    ],
-    [
-      "Hobart",
-      "https://en.wikipedia.org/wiki/Hobart_Airport",
-      "HBA",
-      "YMHB"
-    ],
-    [
-      "Launceston",
-      "https://en.wikipedia.org/wiki/Launceston_Airport",
-      "LST",
-      "YMLT"
-    ],
-    [
-      "Melbourne–Essendon",
-      "https://en.wikipedia.org/wiki/Essendon_Airport",
-      "MEB",
-      "YMEN"
-    ],
-    [
-      "Melbourne–Moorabbin",
-      "https://en.wikipedia.org/wiki/Moorabbin_Airport",
-      "MBW",
-      "YMMB"
-    ],
-    [
-      "Melbourne–Tullamarine",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ]
+    {
+      "city": "Burnie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burnie_Airport",
+      "codes": [
+        "BWT",
+        "YWYY"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Launceston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
+      "codes": [
+        "LST",
+        "YMLT"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne–Essendon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Essendon_Airport",
+      "codes": [
+        "MEB",
+        "YMEN"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne–Moorabbin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moorabbin_Airport",
+      "codes": [
+        "MBW",
+        "YMMB"
+      ],
+      "airlines": [
+        "King Island Airlines",
+        "Southern Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne–Tullamarine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "King Island Airlines": [
@@ -75,5 +106,7 @@
     "Southern Airlines": [
       "Melbourne–Moorabbin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:58Z",
+  "date-time-wikidata": "2024-03-26T01:31:14Z"
 }

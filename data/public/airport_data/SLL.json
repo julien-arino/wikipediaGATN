@@ -34,132 +34,243 @@
     "Smartwings"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Astana",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport",
-      "BTS",
-      "LZIB"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Kochi",
-      "https://en.wikipedia.org/wiki/Cochin_International_Airport",
-      "COK",
-      "VOCI"
-    ],
-    [
-      "Kozhikode",
-      "https://en.wikipedia.org/wiki/Calicut_International_Airport",
-      "CCJ",
-      "VOCL"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Minsk",
-      "https://en.wikipedia.org/wiki/Minsk_National_Airport",
-      "MSQ",
-      "UMMS"
-    ],
-    [
-      "Moscow-Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Sohar",
-      "https://en.wikipedia.org/wiki/Sohar_Airport",
-      "OHS",
-      "OOSH"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "Air Astana"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "Air Astana"
+      ]
+    },
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways",
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Kochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cochin_International_Airport",
+      "codes": [
+        "COK",
+        "VOCI"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Kozhikode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calicut_International_Airport",
+      "codes": [
+        "CCJ",
+        "VOCL"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways",
+        "Kuwait Airways"
+      ]
+    },
+    {
+      "city": "Minsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minsk_National_Airport",
+      "codes": [
+        "MSQ",
+        "UMMS"
+      ],
+      "airlines": [
+        "Belavia"
+      ]
+    },
+    {
+      "city": "Moscow-Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Oman Air"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Oman Air",
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flynas",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Sohar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sohar_Airport",
+      "codes": [
+        "OHS",
+        "OOSH"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Centrum Air"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Oman Air"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -219,5 +330,7 @@
     "Smartwings": [
       "Bratislava"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:43Z",
+  "date-time-wikidata": "2026-04-12T18:25:08Z"
 }

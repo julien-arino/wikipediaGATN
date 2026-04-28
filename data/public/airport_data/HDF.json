@@ -23,42 +23,72 @@
     "Swiss International Air Lines"
   ],
   "destinations": [
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Friedrichshafen Airport",
-      "https://en.wikipedia.org/wiki/Friedrichshafen_Airport",
-      "FDH",
-      "EDNY"
-    ],
-    [
-      "Kassel Airport",
-      "https://en.wikipedia.org/wiki/Kassel_Airport",
-      "KSF",
-      "EDVK"
-    ],
-    [
-      "Luxembourg Airport",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Mannheim City Airport",
-      "https://en.wikipedia.org/wiki/Mannheim_City_Airport",
-      "MHG",
-      "EDFM"
-    ],
-    [
-      "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Friedrichshafen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Friedrichshafen_Airport",
+      "codes": [
+        "FDH",
+        "EDNY"
+      ],
+      "airlines": [
+        "MHS Aviation (Germany)"
+      ]
+    },
+    {
+      "city": "Kassel Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kassel_Airport",
+      "codes": [
+        "KSF",
+        "EDVK"
+      ],
+      "airlines": [
+        "MHS Aviation (Germany)"
+      ]
+    },
+    {
+      "city": "Luxembourg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Mannheim City Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mannheim_City_Airport",
+      "codes": [
+        "MHG",
+        "EDFM"
+      ],
+      "airlines": [
+        "Mannheim City Air (page does not exist)"
+      ]
+    },
+    {
+      "city": "Zurich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Swiss International Air Lines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Lufthansa": [
@@ -77,5 +107,7 @@
     "Swiss International Air Lines": [
       "Zurich Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:13Z",
+  "date-time-wikidata": "2026-03-11T09:37:02Z"
 }

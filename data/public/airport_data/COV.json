@@ -28,180 +28,339 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Aleppo",
-      "https://en.wikipedia.org/wiki/Aleppo_International_Airport",
-      "ALP",
-      "OSAP"
-    ],
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Baku",
-      "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
-      "GYD",
-      "UBBB"
-    ],
-    [
-      "Beirut",
-      "https://en.wikipedia.org/wiki/Beirut_Airport",
-      "BEY",
-      "OLBA"
-    ],
-    [
-      "Beirut",
-      "https://en.wikipedia.org/wiki/Beirut–Rafic_Hariri_International_Airport",
-      "BEY",
-      "OLBA"
-    ],
-    [
-      "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Bodrum",
-      "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
-      "BJV",
-      "LTFE"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Bursa",
-      "https://en.wikipedia.org/wiki/Yenişehir_Airport",
-      "YEI",
-      "LTBR"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "CGN",
-      "EDDK"
-    ],
-    [
-      "Dalaman",
-      "https://en.wikipedia.org/wiki/Dalaman_Airport",
-      "DLM",
-      "LTBS"
-    ],
-    [
-      "Damascus",
-      "https://en.wikipedia.org/wiki/Damascus_International_Airport",
-      "DAM",
-      "OSDI"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Erbil",
-      "https://en.wikipedia.org/wiki/Erbil_International_Airport",
-      "EBL",
-      "ORER"
-    ],
-    [
-      "Ercan",
-      "https://en.wikipedia.org/wiki/Ercan_International_Airport",
-      "ECN",
-      "LCEN"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Hannover",
-      "https://en.wikipedia.org/wiki/Hannover_Airport",
-      "HAJ",
-      "EDDV"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Nuremberg",
-      "https://en.wikipedia.org/wiki/Nuremberg_Airport",
-      "NUE",
-      "EDDN"
-    ],
-    [
-      "Samsun",
-      "https://en.wikipedia.org/wiki/Samsun-Çarşamba_Airport",
-      "SZF",
-      "LTFH"
-    ],
-    [
-      "Trabzon",
-      "https://en.wikipedia.org/wiki/Trabzon_Airport",
-      "TZX",
-      "LTCG"
-    ],
-    [
-      "Van",
-      "https://en.wikipedia.org/wiki/Van_Ferit_Melen_Airport",
-      "VAN",
-      "LTCI"
-    ],
-    [
-      "İzmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ]
+    {
+      "city": "Aleppo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aleppo_International_Airport",
+      "codes": [
+        "ALP",
+        "OSAP"
+      ],
+      "airlines": [
+        "Fly Cham"
+      ]
+    },
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Azerbaijan Airlines"
+      ]
+    },
+    {
+      "city": "Beirut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beirut_Airport",
+      "codes": [
+        "BEY",
+        "OLBA"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Beirut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beirut–Rafic_Hariri_International_Airport",
+      "codes": [
+        "BEY",
+        "OLBA"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Eurowings",
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Bursa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yenişehir_Airport",
+      "codes": [
+        "YEI",
+        "LTBR"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Corendon Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Dalaman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalaman_Airport",
+      "codes": [
+        "DLM",
+        "LTBS"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Damascus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damascus_International_Airport",
+      "codes": [
+        "DAM",
+        "OSDI"
+      ],
+      "airlines": [
+        "Fly Cham"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Corendon Airlines",
+        "Eurowings",
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Erbil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erbil_International_Airport",
+      "codes": [
+        "EBL",
+        "ORER"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Ercan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ercan_International_Airport",
+      "codes": [
+        "ECN",
+        "LCEN"
+      ],
+      "airlines": [
+        "AJet",
+        "Fly Kıbrıs Airlines",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Hamburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Hannover",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "codes": [
+        "HAJ",
+        "EDDV"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Nuremberg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuremberg_Airport",
+      "codes": [
+        "NUE",
+        "EDDN"
+      ],
+      "airlines": [
+        "Corendon Airlines"
+      ]
+    },
+    {
+      "city": "Samsun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samsun-Çarşamba_Airport",
+      "codes": [
+        "SZF",
+        "LTFH"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Trabzon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trabzon_Airport",
+      "codes": [
+        "TZX",
+        "LTCG"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Van",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Ferit_Melen_Airport",
+      "codes": [
+        "VAN",
+        "LTCI"
+      ],
+      "airlines": [
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "İzmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines",
+        "SunExpress"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -265,5 +424,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:52Z",
+  "date-time-wikidata": "2026-04-14T22:14:24Z"
 }

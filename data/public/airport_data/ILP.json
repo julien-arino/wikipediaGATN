@@ -19,23 +19,35 @@
     "Air Calédonie"
   ],
   "destinations": [
-    [
-      "Nouméa–Magenta",
-      "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
-      "GEA",
-      "NWWM"
-    ],
-    [
-      "Nouméa–Tontouta",
-      "https://en.wikipedia.org/wiki/La_Tontouta_International_Airport",
-      "NOU",
-      "NWWW"
-    ]
+    {
+      "city": "Nouméa–Magenta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
+      "codes": [
+        "GEA",
+        "NWWM"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Nouméa–Tontouta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Tontouta_International_Airport",
+      "codes": [
+        "NOU",
+        "NWWW"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Calédonie": [
       "Nouméa–Magenta",
       "Nouméa–Tontouta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:02Z",
+  "date-time-wikidata": "2026-04-27T23:01:26Z"
 }

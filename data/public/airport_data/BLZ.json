@@ -21,36 +21,63 @@
     "Malawi Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Lilongwe",
-      "https://en.wikipedia.org/wiki/Kamuzu_International_Airport",
-      "LLW",
-      "FWKI"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Lilongwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamuzu_International_Airport",
+      "codes": [
+        "LLW",
+        "FWKI"
+      ],
+      "airlines": [
+        "Malawi Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -64,5 +91,7 @@
       "Johannesburg–O. R. Tambo",
       "Lilongwe"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:58Z",
+  "date-time-wikidata": "2026-02-06T06:50:06Z"
 }

@@ -25,36 +25,68 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Qeshm Air",
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Caspian Airlines"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Asa Jet",
+        "Caspian Airlines",
+        "Chabahar Airlines",
+        "Iran Air",
+        "Qeshm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -83,5 +115,7 @@
       "Dubai–International",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:27Z",
+  "date-time-wikidata": "2026-02-26T12:23:15Z"
 }

@@ -20,18 +20,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Ambon",
-      "https://en.wikipedia.org/wiki/Pattimura_Airport",
-      "AMQ",
-      "WAPP"
-    ],
-    [
-      "Tiakur",
-      "https://en.wikipedia.org/wiki/Jos_Orno_Imsula_Airport",
-      "JIO",
-      "WAPM"
-    ]
+    {
+      "city": "Ambon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pattimura_Airport",
+      "codes": [
+        "AMQ",
+        "WAPP"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Tiakur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jos_Orno_Imsula_Airport",
+      "codes": [
+        "JIO",
+        "WAPM"
+      ],
+      "airlines": [
+        "Smart Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Smart Aviation": [
@@ -40,5 +50,7 @@
     "Wings Air": [
       "Ambon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:18Z",
+  "date-time-wikidata": "2026-04-16T20:03:24Z"
 }

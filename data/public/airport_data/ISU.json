@@ -27,78 +27,142 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
-      "BGW",
-      "ORBI"
-    ],
-    [
-      "Basra",
-      "https://en.wikipedia.org/wiki/Basra_International_Airport",
-      "BSR",
-      "ORMM"
-    ],
-    [
-      "Beirut",
-      "https://en.wikipedia.org/wiki/Beirut_International_Airport",
-      "BEY",
-      "OLBA"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Tehran–Imam Khomeini",
-      "https://en.wikipedia.org/wiki/Imam_Khomeini_International_Airport",
-      "IKA",
-      "OIIE"
-    ],
-    [
-      "Tehran–Imam Khomeini",
-      "https://en.wikipedia.org/wiki/Tehran_Imam_Khomeini_International_Airport",
-      "IKA",
-      "OIIE"
-    ]
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Basra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basra_International_Airport",
+      "codes": [
+        "BSR",
+        "ORMM"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Beirut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beirut_International_Airport",
+      "codes": [
+        "BEY",
+        "OLBA"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Condor"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus"
+      ]
+    },
+    {
+      "city": "Tehran–Imam Khomeini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imam_Khomeini_International_Airport",
+      "codes": [
+        "IKA",
+        "OIIE"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "Mahan Air"
+      ]
+    },
+    {
+      "city": "Tehran–Imam Khomeini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tehran_Imam_Khomeini_International_Airport",
+      "codes": [
+        "IKA",
+        "OIIE"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "Mahan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -133,5 +197,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:10Z",
+  "date-time-wikidata": "2026-04-10T07:53:41Z"
 }

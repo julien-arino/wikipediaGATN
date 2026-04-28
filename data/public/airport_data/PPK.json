@@ -20,30 +20,50 @@
     "SCAT Airlines"
   ],
   "destinations": [
-    [
-      "Almaty International Airport",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Nursultan Nazarbayev International Airport",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Sharm El Sheikh International Airport",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Şymkent International Airport",
-      "https://en.wikipedia.org/wiki/%C5%9Eymkent_International_Airport",
-      "CIT",
-      "UAII"
-    ]
+    {
+      "city": "Almaty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Nursultan Nazarbayev International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Şymkent International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C5%9Eymkent_International_Airport",
+      "codes": [
+        "CIT",
+        "UAII"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Qazaq Air": [
@@ -54,5 +74,7 @@
       "Sharm El Sheikh International Airport",
       "Şymkent International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:09Z",
+  "date-time-wikidata": "2025-07-05T04:42:05Z"
 }

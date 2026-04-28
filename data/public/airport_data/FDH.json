@@ -31,120 +31,215 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Aktion National Airport",
-      "https://en.wikipedia.org/wiki/Aktion_National_Airport",
-      "PVK",
-      "LGPZ"
-    ],
-    [
-      "Alicante–Elche Miguel Hernández Airport",
-      "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Antalya Airport",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Belfast International Airport",
-      "https://en.wikipedia.org/wiki/Belfast_International_Airport",
-      "BFS",
-      "EGAA"
-    ],
-    [
-      "Belgrade Nikola Tesla Airport",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Berlin Brandenburg Airport",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Calvi – Sainte-Catherine Airport",
-      "https://en.wikipedia.org/wiki/Calvi_%E2%80%93_Sainte-Catherine_Airport",
-      "CLY",
-      "LFKC"
-    ],
-    [
-      "Copenhagen Airport",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Elba Airport",
-      "https://en.wikipedia.org/wiki/Elba_Airport",
-      "EBA",
-      "LIRJ"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Hamburg Airport",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Heraklion Airport",
-      "https://en.wikipedia.org/wiki/Heraklion_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Heraklion International Airport",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Heringsdorf Airport",
-      "https://en.wikipedia.org/wiki/Heringsdorf_Airport",
-      "HDF",
-      "EDAH"
-    ],
-    [
-      "Hurghada International Airport",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rhodes International Airport",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Skopje International Airport",
-      "https://en.wikipedia.org/wiki/Skopje_International_Airport",
-      "SKP",
-      "LWSK"
-    ]
+    {
+      "city": "Aktion National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktion_National_Airport",
+      "codes": [
+        "PVK",
+        "LGPZ"
+      ],
+      "airlines": [
+        "Avanti Air"
+      ]
+    },
+    {
+      "city": "Alicante–Elche Miguel Hernández Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Antalya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Air Anka",
+        "Corendon Airlines",
+        "Freebird Airlines"
+      ]
+    },
+    {
+      "city": "Belfast International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
+      "codes": [
+        "BFS",
+        "EGAA"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Belgrade Nikola Tesla Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Berlin Brandenburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Calvi – Sainte-Catherine Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calvi_%E2%80%93_Sainte-Catherine_Airport",
+      "codes": [
+        "CLY",
+        "LFKC"
+      ],
+      "airlines": [
+        "Avanti Air"
+      ]
+    },
+    {
+      "city": "Copenhagen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Copenhagen AirTaxi",
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Elba Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elba_Airport",
+      "codes": [
+        "EBA",
+        "LIRJ"
+      ],
+      "airlines": [
+        "MHS Aviation (Germany)"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Hamburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Heraklion Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Freebird Airlines"
+      ]
+    },
+    {
+      "city": "Heraklion International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Condor (airline)"
+      ]
+    },
+    {
+      "city": "Heringsdorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heringsdorf_Airport",
+      "codes": [
+        "HDF",
+        "EDAH"
+      ],
+      "airlines": [
+        "MHS Aviation (Germany)"
+      ]
+    },
+    {
+      "city": "Hurghada International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "Corendon Airlines"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "AlbaStar",
+        "Condor (airline)",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Rhodes International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Skopje International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skopje_International_Airport",
+      "codes": [
+        "SKP",
+        "LWSK"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Anka": [
@@ -195,5 +290,7 @@
       "Belgrade Nikola Tesla Airport",
       "Skopje International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:38Z",
+  "date-time-wikidata": "2026-04-02T11:48:31Z"
 }

@@ -25,90 +25,161 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Hahn",
-      "https://en.wikipedia.org/wiki/Hahn_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Lublin",
-      "https://en.wikipedia.org/wiki/Lublin_Airport",
-      "LUZ",
-      "EPLB"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Hahn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Hamburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Lublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lublin_Airport",
+      "codes": [
+        "LUZ",
+        "EPLB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Croatia Airlines",
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Swiss International Air Lines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Serbia": [
@@ -140,5 +211,7 @@
       "Katowice",
       "Lublin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:46Z",
+  "date-time-wikidata": "2026-04-11T20:51:15Z"
 }

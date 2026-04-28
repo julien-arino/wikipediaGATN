@@ -7,6 +7,7 @@
   "lat": "10.7082453",
   "lon": "99.3541088",
   "altitude": "5.49",
+  "continent": "Asia",
   "region": "Chumphon",
   "country_alpha3": "THA",
   "country_name": "Thailand",
@@ -19,12 +20,18 @@
     "Thai AirAsia"
   ],
   "destinations": [
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ]
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Nok Air",
+        "Thai AirAsia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nok Air": [
@@ -34,5 +41,6 @@
       "Bangkok–Don Mueang"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:14:56Z",
+  "date-time-wikidata": "2026-01-02T17:48:45Z"
 }

@@ -27,78 +27,145 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport",
-      "MCX",
-      "URML"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Samarqand",
-      "https://en.wikipedia.org/wiki/Samarkand_International_Airport",
-      "SKD",
-      "UZSS"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Türkistan",
-      "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport",
-      "HSA",
-      "UAIT"
-    ],
-    [
-      "Urgench",
-      "https://en.wikipedia.org/wiki/Urgench_International_Airport",
-      "UGC",
-      "UZNU"
-    ],
-    [
-      "Vladivostok",
-      "https://en.wikipedia.org/wiki/Vladivostok_Airport",
-      "VVO",
-      "UHWW"
-    ]
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Makhachkala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "codes": [
+        "MCX",
+        "URML"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Qanot Sharq"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Samarqand",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samarkand_International_Airport",
+      "codes": [
+        "SKD",
+        "UZSS"
+      ],
+      "airlines": [
+        "Centrum Air"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "Silk Avia",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "Silk Avia",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Türkistan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport",
+      "codes": [
+        "HSA",
+        "UAIT"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Urgench",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Urgench_International_Airport",
+      "codes": [
+        "UGC",
+        "UZNU"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vladivostok_Airport",
+      "codes": [
+        "VVO",
+        "UHWW"
+      ],
+      "airlines": [
+        "Centrum Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -135,5 +202,7 @@
       "Tashkent",
       "Urgench"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:29Z",
+  "date-time-wikidata": "2025-12-19T10:36:20Z"
 }

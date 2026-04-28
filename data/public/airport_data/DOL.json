@@ -21,36 +21,61 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Olbia",
-      "https://en.wikipedia.org/wiki/Olbia_Airport",
-      "OLB",
-      "LIEO"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Palermo_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ]
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Olbia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olbia_Airport",
+      "codes": [
+        "OLB",
+        "LIEO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -64,5 +89,7 @@
       "Palermo",
       "Palma de Mallorca"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:12Z",
+  "date-time-wikidata": "2026-01-24T13:13:08Z"
 }

@@ -22,36 +22,63 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Chicago O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/Chicago_O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "LaGuardia Airport",
-      "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "LGA",
-      "KLGA"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Chicago O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "LaGuardia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -69,5 +96,7 @@
       "Chicago O'Hare International Airport",
       "Dulles International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:04Z",
+  "date-time-wikidata": "2026-04-15T15:57:46Z"
 }

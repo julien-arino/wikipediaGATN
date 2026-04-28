@@ -21,36 +21,63 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Brasília",
-      "https://en.wikipedia.org/wiki/Brasília_International_Airport",
-      "BSB",
-      "SBBR"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -64,5 +91,7 @@
       "Brasília",
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:21Z",
+  "date-time-wikidata": "2026-04-15T00:07:21Z"
 }

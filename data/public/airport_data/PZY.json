@@ -20,18 +20,28 @@
     "Cyprus Airways"
   ],
   "destinations": [
-    [
-      "Antalya Airport",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Larnaca International Airport",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ]
+    {
+      "city": "Antalya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Corendon Airlines"
+      ]
+    },
+    {
+      "city": "Larnaca International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Cyprus Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Corendon Airlines": [
@@ -40,5 +50,7 @@
     "Cyprus Airways": [
       "Larnaca International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:13Z",
+  "date-time-wikidata": "2026-02-16T15:10:38Z"
 }

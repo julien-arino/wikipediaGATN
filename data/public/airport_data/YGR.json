@@ -22,42 +22,75 @@
     "Pascan Aviation"
   ],
   "destinations": [
-    [
-      "Bonaventure",
-      "https://en.wikipedia.org/wiki/Bonaventure_Airport",
-      "YVB",
-      "CYVB"
-    ],
-    [
-      "Gaspé",
-      "https://en.wikipedia.org/wiki/Michel-Pouliot_Gaspé_Airport",
-      "YGP",
-      "CYGP"
-    ],
-    [
-      "Montreal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Montréal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/Montréal/Saint-Hubert_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Saint-Pierre",
-      "https://en.wikipedia.org/wiki/Saint-Pierre_Airport",
-      "FSP",
-      "LFVP"
-    ]
+    {
+      "city": "Bonaventure",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bonaventure_Airport",
+      "codes": [
+        "YVB",
+        "CYVB"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Gaspé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Michel-Pouliot_Gaspé_Airport",
+      "codes": [
+        "YGP",
+        "CYGP"
+      ],
+      "airlines": [
+        "PAL Airlines",
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Montreal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Saint-Hubert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal/Saint-Hubert_Airport",
+      "codes": [
+        "YHU",
+        "CYHU"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "PAL Airlines",
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Saint-Pierre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Pierre_Airport",
+      "codes": [
+        "FSP",
+        "LFVP"
+      ],
+      "airlines": [
+        "Air Saint-Pierre"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -77,5 +110,7 @@
       "Montréal–Saint-Hubert",
       "Québec City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:29Z",
+  "date-time-wikidata": "2025-12-20T18:43:46Z"
 }

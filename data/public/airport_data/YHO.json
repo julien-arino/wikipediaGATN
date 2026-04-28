@@ -19,23 +19,35 @@
     "Air Borealis"
   ],
   "destinations": [
-    [
-      "Natuashish",
-      "https://en.wikipedia.org/wiki/Natuashish_Airport",
-      "YNP",
-      "icao code not found"
-    ],
-    [
-      "Postville",
-      "https://en.wikipedia.org/wiki/Postville_Airport",
-      "YSO",
-      "icao code not found"
-    ]
+    {
+      "city": "Natuashish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Natuashish_Airport",
+      "codes": [
+        "YNP",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Borealis"
+      ]
+    },
+    {
+      "city": "Postville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Postville_Airport",
+      "codes": [
+        "YSO",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Borealis"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Borealis": [
       "Natuashish",
       "Postville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:30Z",
+  "date-time-wikidata": "2025-12-10T03:16:33Z"
 }

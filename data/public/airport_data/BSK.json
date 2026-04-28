@@ -21,36 +21,63 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Algiers_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Paris-Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Algiers_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Paris-Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -64,5 +91,7 @@
     "Transavia": [
       "Paris-Orly"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:02Z",
+  "date-time-wikidata": "2025-09-04T10:32:30Z"
 }

@@ -20,18 +20,29 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Kivalina",
-      "https://en.wikipedia.org/wiki/Kivalina_Airport",
-      "KVL",
-      "PAVL"
-    ],
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ]
+    {
+      "city": "Kivalina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kivalina_Airport",
+      "codes": [
+        "KVL",
+        "PAVL"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -41,5 +52,7 @@
     "Ryan Air": [
       "Kotzebue"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:24Z",
+  "date-time-wikidata": "2025-08-24T15:12:46Z"
 }

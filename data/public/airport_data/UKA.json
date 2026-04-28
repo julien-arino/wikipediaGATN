@@ -23,24 +23,41 @@
     "Skyward Express"
   ],
   "destinations": [
-    [
-      "Mombasa",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Mombasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "748 Air",
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Safarilink",
+        "Skyward Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "748 Air": [
@@ -58,5 +75,7 @@
     "Skyward Express": [
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-wikidata": "2026-04-04T01:58:23Z"
 }

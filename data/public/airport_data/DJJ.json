@@ -13,89 +13,197 @@
   "country_name": "Indonesia",
   "subdivision_code": "PA",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Dortheys_Hiyo_Eluay_International_Airport",
-  "number_airlines": 12,
-  "outdegree": 11,
+  "number_airlines": 8,
+  "outdegree": 15,
   "airlines": [
-    "Asia Cargo Airlines",
     "Batik Air",
-    "Cardig Air",
     "Citilink",
     "Garuda Indonesia",
-    "Jayawijaya Dirgantara",
     "Lion Air",
-    "My Indo Airlines",
     "Sriwijaya Air",
     "Susi Air",
     "Trigana Air",
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Biak",
-      "https://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
-      "BIK",
-      "WABB"
-    ],
-    [
-      "Bokondini",
-      "https://en.wikipedia.org/wiki/Bokondini_Airport",
-      "BUI",
-      "WAJB"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ],
-    [
-      "Manado",
-      "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
-      "MDC",
-      "WAMM"
-    ],
-    [
-      "Manokwari",
-      "https://en.wikipedia.org/wiki/Rendani_Airport",
-      "MKW",
-      "WAUU"
-    ],
-    [
-      "Merauke",
-      "https://en.wikipedia.org/wiki/Mopah__Airport",
-      "MKQ",
-      "WAKK"
-    ],
-    [
-      "Nabire",
-      "https://en.wikipedia.org/wiki/Douw_Aturure_Airport",
-      "NBX",
-      "WABI"
-    ],
-    [
-      "Sorong",
-      "https://en.wikipedia.org/wiki/Domine_Eduard_Osok_Airport",
-      "SOQ",
-      "WASS"
-    ],
-    [
-      "Timika",
-      "https://en.wikipedia.org/wiki/Mozes_Kilangin_Airport",
-      "TIM",
-      "WAYY"
-    ],
-    [
-      "Wamena",
-      "https://en.wikipedia.org/wiki/Wamena_Airport",
-      "WMX",
-      "WAVV"
-    ]
+    {
+      "city": "Biak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
+      "codes": [
+        "BIK",
+        "WABB"
+      ],
+      "airlines": [
+        "Lion Air",
+        "Sriwijaya Air"
+      ]
+    },
+    {
+      "city": "Bokondini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bokondini_Airport",
+      "codes": [
+        "BUI",
+        "WAJB"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Dekai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nop_Goliat_Dekai_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink",
+        "Garuda Indonesia",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink",
+        "Lion Air",
+        "Sriwijaya Air"
+      ]
+    },
+    {
+      "city": "Manado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
+      "codes": [
+        "MDC",
+        "WAMM"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Manokwari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rendani_Airport",
+      "codes": [
+        "MKW",
+        "WAUU"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Merauke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mopah__Airport",
+      "codes": [
+        "MKQ",
+        "WAKK"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Nabire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douw_Aturure_Airport",
+      "codes": [
+        "NBX",
+        "WABI"
+      ],
+      "airlines": [
+        "Sriwijaya Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Oksibil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oksibil_Airport",
+      "codes": [
+        "OKL",
+        "WAJO"
+      ],
+      "airlines": [
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Serui",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stevanus_Rumbewas_Airport",
+      "codes": [
+        "ZRI",
+        "WABO"
+      ],
+      "airlines": [
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Sorong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Domine_Eduard_Osok_Airport",
+      "codes": [
+        "SOQ",
+        "WASS"
+      ],
+      "airlines": [
+        "Lion Air",
+        "Sriwijaya Air"
+      ]
+    },
+    {
+      "city": "Tanah Merah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tanah_Merah_Airport",
+      "codes": [
+        "TMH",
+        "WAKT"
+      ],
+      "airlines": [
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Timika",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mozes_Kilangin_Airport",
+      "codes": [
+        "TIM",
+        "WAYY"
+      ],
+      "airlines": [
+        "Garuda Indonesia",
+        "Lion Air",
+        "Sriwijaya Air"
+      ]
+    },
+    {
+      "city": "Wamena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wamena_Airport",
+      "codes": [
+        "WMX",
+        "WAVV"
+      ],
+      "airlines": [
+        "Sriwijaya Air",
+        "Trigana Air",
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Batik Air": [
@@ -132,26 +240,17 @@
       "Bokondini"
     ],
     "Trigana Air": [
+      "Dekai",
+      "Oksibil",
+      "Serui",
+      "Tanah Merah",
       "Wamena"
     ],
     "Wings Air": [
       "Nabire",
       "Wamena"
-    ],
-    "Cardig Air": [
-      "Jakarta–Soekarno-Hatta",
-      "Wamena"
-    ],
-    "Jayawijaya Dirgantara": [
-      "Wamena"
-    ],
-    "My Indo Airlines": [
-      "Jakarta–Soekarno-Hatta",
-      "Wamena"
-    ],
-    "Asia Cargo Airlines": [
-      "Jakarta–Soekarno-Hatta",
-      "Wamena"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:24Z",
+  "date-time-wikidata": "2026-04-28T14:37:01Z"
 }

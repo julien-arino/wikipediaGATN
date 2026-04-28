@@ -20,42 +20,73 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Albany",
-      "https://en.wikipedia.org/wiki/Albany_Airport_(Western_Australia)",
-      "ALH",
-      "YABA"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Busselton",
-      "https://en.wikipedia.org/wiki/Busselton_Margaret_River_Airport",
-      "BQB",
-      "YBLN"
-    ],
-    [
-      "Geraldton",
-      "https://en.wikipedia.org/wiki/Geraldton_Airport",
-      "GET",
-      "YGEL"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "West Angelas",
-      "https://en.wikipedia.org/wiki/West_Angelas_Airport",
-      "WLP",
-      "YANG"
-    ]
+    {
+      "city": "Albany",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albany_Airport_(Western_Australia)",
+      "codes": [
+        "ALH",
+        "YABA"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Busselton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Busselton_Margaret_River_Airport",
+      "codes": [
+        "BQB",
+        "YBLN"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Geraldton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geraldton_Airport",
+      "codes": [
+        "GET",
+        "YGEL"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "West Angelas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/West_Angelas_Airport",
+      "codes": [
+        "WLP",
+        "YANG"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -69,5 +100,7 @@
       "Perth",
       "West Angelas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:14Z",
+  "date-time-wikidata": "2025-12-04T12:27:52Z"
 }

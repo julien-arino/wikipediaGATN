@@ -19,24 +19,39 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Daru",
-      "https://en.wikipedia.org/wiki/Daru_Airport",
-      "DAU",
-      "AYDU"
-    ],
-    [
-      "Kerema",
-      "https://en.wikipedia.org/wiki/Kerema_Airport",
-      "KMA",
-      "AYKM"
-    ],
-    [
-      "Sasereme",
-      "https://en.wikipedia.org/wiki/Sasereme_Airport",
-      "TDS",
-      "AYSS"
-    ]
+    {
+      "city": "Daru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daru_Airport",
+      "codes": [
+        "DAU",
+        "AYDU"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Kerema",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kerema_Airport",
+      "codes": [
+        "KMA",
+        "AYKM"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Sasereme",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sasereme_Airport",
+      "codes": [
+        "TDS",
+        "AYSS"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PNG Air": [
@@ -44,5 +59,7 @@
       "Kerema",
       "Sasereme"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:21Z",
+  "date-time-wikidata": "2024-11-01T18:46:01Z"
 }

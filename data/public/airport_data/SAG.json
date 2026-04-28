@@ -19,36 +19,61 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International__Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Coimbatore",
-      "https://en.wikipedia.org/wiki/Coimbatore_International_Airport",
-      "CJB",
-      "VOCB"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International__Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Coimbatore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coimbatore_International_Airport",
+      "codes": [
+        "CJB",
+        "VOCB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -58,5 +83,7 @@
       "Delhi",
       "Hyderabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:58Z",
+  "date-time-wikidata": "2026-04-18T13:24:08Z"
 }

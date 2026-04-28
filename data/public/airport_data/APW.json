@@ -24,48 +24,85 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Honolulu",
-      "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Pago Pago",
-      "https://en.wikipedia.org/wiki/Pago_Pago_International_Airport",
-      "PPG",
-      "NSTU"
-    ],
-    [
-      "Savai'i",
-      "https://en.wikipedia.org/wiki/Maota_Airport",
-      "MXS",
-      "NSMA"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Pago Pago",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pago_Pago_International_Airport",
+      "codes": [
+        "PPG",
+        "NSTU"
+      ],
+      "airlines": [
+        "Samoa Airways",
+        "Talofa Airways"
+      ]
+    },
+    {
+      "city": "Savai'i",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maota_Airport",
+      "codes": [
+        "MXS",
+        "NSMA"
+      ],
+      "airlines": [
+        "Samoa Airways"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -89,5 +126,7 @@
     "Virgin Australia": [
       "Brisbane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:48Z",
+  "date-time-wikidata": "2026-01-27T22:27:29Z"
 }

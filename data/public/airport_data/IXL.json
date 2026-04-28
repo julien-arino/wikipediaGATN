@@ -20,36 +20,62 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Chandigarh",
-      "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-      "IXC",
-      "VICG"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Jammu",
-      "https://en.wikipedia.org/wiki/Jammu_Airport",
-      "IXJ",
-      "VIJU"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Srinagar",
-      "https://en.wikipedia.org/wiki/Srinagar_Airport",
-      "SXR",
-      "VISR"
-    ]
+    {
+      "city": "Chandigarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
+      "codes": [
+        "IXC",
+        "VICG"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Jammu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jammu_Airport",
+      "codes": [
+        "IXJ",
+        "VIJU"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Srinagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Srinagar_Airport",
+      "codes": [
+        "SXR",
+        "VISR"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -62,5 +88,7 @@
       "Delhi",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:37Z",
+  "date-time-wikidata": "2026-04-09T21:29:15Z"
 }

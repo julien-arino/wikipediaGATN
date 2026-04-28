@@ -20,30 +20,50 @@
     "Uni Air"
   ],
   "destinations": [
-    [
-      "Kinmen",
-      "https://en.wikipedia.org/wiki/Kinmen_Airport",
-      "KNH",
-      "RCBS"
-    ],
-    [
-      "Kumamoto",
-      "https://en.wikipedia.org/wiki/Kumamoto_Airport",
-      "KMJ",
-      "RJFT"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Penghu",
-      "https://en.wikipedia.org/wiki/Penghu_Airport",
-      "MZG",
-      "RCQC"
-    ]
+    {
+      "city": "Kinmen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kinmen_Airport",
+      "codes": [
+        "KNH",
+        "RCBS"
+      ],
+      "airlines": [
+        "Uni Air"
+      ]
+    },
+    {
+      "city": "Kumamoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kumamoto_Airport",
+      "codes": [
+        "KMJ",
+        "RJFT"
+      ],
+      "airlines": [
+        "Tigerair Taiwan"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Tigerair Taiwan"
+      ]
+    },
+    {
+      "city": "Penghu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penghu_Airport",
+      "codes": [
+        "MZG",
+        "RCQC"
+      ],
+      "airlines": [
+        "Uni Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Tigerair Taiwan": [
@@ -54,5 +74,7 @@
       "Kinmen",
       "Penghu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:12Z",
+  "date-time-wikidata": "2026-02-08T02:51:57Z"
 }

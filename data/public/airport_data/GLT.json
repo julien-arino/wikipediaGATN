@@ -20,12 +20,18 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -34,5 +40,7 @@
     "Virgin Australia": [
       "Brisbane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:29Z",
+  "date-time-wikidata": "2026-03-31T11:06:17Z"
 }

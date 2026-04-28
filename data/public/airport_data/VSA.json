@@ -23,60 +23,110 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Minatitlán/Coatzacoalcos",
-      "https://en.wikipedia.org/wiki/Minatitlán_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Mérida",
-      "https://en.wikipedia.org/wiki/Mérida_International_Airport",
-      "MID",
-      "MMMD"
-    ],
-    [
-      "Tampico",
-      "https://en.wikipedia.org/wiki/Tampico_International_Airport",
-      "TAM",
-      "MMTM"
-    ],
-    [
-      "Veracruz",
-      "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
-      "VER",
-      "MMVR"
-    ]
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect",
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Minatitlán/Coatzacoalcos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minatitlán_International_Airport",
+      "codes": [
+        "MTT",
+        "MMMT"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Mérida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mérida_International_Airport",
+      "codes": [
+        "MID",
+        "MMMD"
+      ],
+      "airlines": [
+        "Aerus",
+        "Viva"
+      ]
+    },
+    {
+      "city": "Tampico",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampico_International_Airport",
+      "codes": [
+        "TAM",
+        "MMTM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Veracruz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
+      "codes": [
+        "VER",
+        "MMVR"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -103,5 +153,7 @@
       "Guadalajara",
       "Mexico City–Benito Juárez"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:46Z",
+  "date-time-wikidata": "2026-03-26T08:25:13Z"
 }

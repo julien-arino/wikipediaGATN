@@ -30,108 +30,197 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary International Airport",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Halifax Stanfield International Airport",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "Hartsfield-Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Katowice Airport",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Montréal–Pierre Elliott Trudeau International Airport",
-      "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Newark Liberty International Airport",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Ottawa International Airport",
-      "https://en.wikipedia.org/wiki/Ottawa_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Québec City Jean Lesage International Airport",
-      "https://en.wikipedia.org/wiki/Qu%C3%A9bec_City_Jean_Lesage_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tocumen International Airport",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Toronto Pearson International Airport",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Warsaw Chopin Airport",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ],
-    [
-      "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Calgary International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Condor (airline)"
+      ]
+    },
+    {
+      "city": "Halifax Stanfield International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Hartsfield-Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Katowice Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    },
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Pierre Elliott Trudeau International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Newark Liberty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Ottawa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Québec City Jean Lesage International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qu%C3%A9bec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Tocumen International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Toronto Pearson International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Rouge",
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Warsaw Chopin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    },
+    {
+      "city": "Zurich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -179,5 +268,7 @@
       "Montréal–Pierre Elliott Trudeau International Airport",
       "Toronto Pearson International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:07Z",
+  "date-time-wikidata": "2026-04-03T21:20:15Z"
 }

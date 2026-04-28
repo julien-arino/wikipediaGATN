@@ -21,60 +21,106 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Claris",
-      "https://en.wikipedia.org/wiki/Great_Barrier_Aerodrome",
-      "GBZ",
-      "NZGB"
-    ],
-    [
-      "Gisborne",
-      "https://en.wikipedia.org/wiki/Gisborne_Airport",
-      "GIS",
-      "NZGS"
-    ],
-    [
-      "Mōtītī Island",
-      "https://en.wikipedia.org/wiki/Mōtītī_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Napier",
-      "https://en.wikipedia.org/wiki/Hawke's_Bay_Airport",
-      "NPE",
-      "NZNR"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_International_Airport",
-      "WLG",
-      "NZWN"
-    ],
-    [
-      "Whangarei",
-      "https://en.wikipedia.org/wiki/Whangarei_Airport",
-      "WRE",
-      "NZWR"
-    ],
-    [
-      "Whitianga",
-      "https://en.wikipedia.org/wiki/Whitianga_aerodrome",
-      "WTZ",
-      "NZWT"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Claris",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Barrier_Aerodrome",
+      "codes": [
+        "GBZ",
+        "NZGB"
+      ],
+      "airlines": [
+        "Barrier Air",
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Gisborne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gisborne_Airport",
+      "codes": [
+        "GIS",
+        "NZGS"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Mōtītī Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mōtītī_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Napier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawke's_Bay_Airport",
+      "codes": [
+        "NPE",
+        "NZNR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_International_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Whangarei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whangarei_Airport",
+      "codes": [
+        "WRE",
+        "NZWR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Whitianga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whitianga_aerodrome",
+      "codes": [
+        "WTZ",
+        "NZWT"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -93,5 +139,7 @@
       "Whangarei",
       "Whitianga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:37Z",
+  "date-time-wikidata": "2025-09-29T21:06:18Z"
 }

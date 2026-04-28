@@ -22,72 +22,129 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Airport",
-      "BLQ",
-      "LIPE"
-    ],
-    [
-      "Catania",
-      "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
-      "CTA",
-      "LICC"
-    ],
-    [
-      "Milan–Linate",
-      "https://en.wikipedia.org/wiki/Linate_Airport",
-      "LIN",
-      "LIML"
-    ],
-    [
-      "Milan–Linate",
-      "https://en.wikipedia.org/wiki/Milan_Linate_Airport",
-      "LIN",
-      "LIML"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Palermo_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Perugia",
-      "https://en.wikipedia.org/wiki/Perugia_Airport",
-      "PEG",
-      "LIRZ"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Trapani",
-      "https://en.wikipedia.org/wiki/Trapani_Airport",
-      "TPS",
-      "LICT"
-    ],
-    [
-      "Venice",
-      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-      "VCE",
-      "LIPZ"
-    ],
-    [
-      "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ]
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
+      "codes": [
+        "CTA",
+        "LICC"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Milan–Linate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML"
+      ],
+      "airlines": [
+        "ITA Airways",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Milan–Linate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML"
+      ],
+      "airlines": [
+        "ITA Airways",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Perugia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perugia_Airport",
+      "codes": [
+        "PEG",
+        "LIRZ"
+      ],
+      "airlines": [
+        "HelloFly"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Trapani",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trapani_Airport",
+      "codes": [
+        "TPS",
+        "LICT"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Venice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "codes": [
+        "VCE",
+        "LIPZ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "DAT": [
@@ -109,5 +166,7 @@
       "Venice",
       "Verona"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:29Z",
+  "date-time-wikidata": "2025-12-11T12:33:25Z"
 }

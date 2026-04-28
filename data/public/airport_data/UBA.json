@@ -20,24 +20,39 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Belo Horizonte–Confins",
-      "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Maceió",
-      "https://en.wikipedia.org/wiki/Zumbi_dos_Palmares_International_Airport",
-      "MCZ",
-      "SBMO"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Maceió",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zumbi_dos_Palmares_International_Airport",
+      "codes": [
+        "MCZ",
+        "SBMO"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -47,5 +62,7 @@
     "LATAM Brasil": [
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:41Z",
+  "date-time-wikidata": "2026-01-17T11:35:16Z"
 }

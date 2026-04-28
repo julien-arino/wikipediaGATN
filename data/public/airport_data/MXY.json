@@ -20,18 +20,28 @@
     "Wrangell Mountain Air (page does not exist)"
   ],
   "destinations": [
-    [
-      "Chitina Airport",
-      "https://en.wikipedia.org/wiki/Chitina_Airport",
-      "CXC",
-      "icao code not found"
-    ],
-    [
-      "Gulkana Airport",
-      "https://en.wikipedia.org/wiki/Gulkana_Airport",
-      "GKN",
-      "PAGK"
-    ]
+    {
+      "city": "Chitina Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chitina_Airport",
+      "codes": [
+        "CXC",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Wrangell Mountain Air (page does not exist)"
+      ]
+    },
+    {
+      "city": "Gulkana Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gulkana_Airport",
+      "codes": [
+        "GKN",
+        "PAGK"
+      ],
+      "airlines": [
+        "Copper Valley Air Service (page does not exist)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Copper Valley Air Service (page does not exist)": [
@@ -40,5 +50,7 @@
     "Wrangell Mountain Air (page does not exist)": [
       "Chitina Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:35Z",
+  "date-time-wikidata": "2025-12-10T17:39:43Z"
 }

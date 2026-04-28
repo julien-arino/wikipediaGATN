@@ -23,60 +23,106 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/Houston%E2%80%93Intercontinental",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Nashville International Airport",
-      "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "BNA",
-      "KBNA"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Ronald Reagan Washington National Airport",
-      "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "DCA",
-      "KDCA"
-    ],
-    [
-      "William P. Hobby Airport",
-      "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
-      "HOU",
-      "KHOU"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houston%E2%80%93Intercontinental",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Nashville International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
+      "codes": [
+        "BNA",
+        "KBNA"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Ronald Reagan Washington National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "William P. Hobby Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -99,5 +145,7 @@
     "United Express": [
       "Houston–Intercontinental"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:15Z",
+  "date-time-wikidata": "2026-03-17T09:08:53Z"
 }

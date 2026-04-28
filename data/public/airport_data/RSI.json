@@ -22,42 +22,72 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Milan Malpensa Airport",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Velana International Airport",
-      "https://en.wikipedia.org/wiki/Velana_International_Airport",
-      "MLE",
-      "VRMM"
-    ]
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Milan Malpensa Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "BeOnd"
+      ]
+    },
+    {
+      "city": "Velana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "BeOnd"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BeOnd": [
@@ -74,5 +104,7 @@
       "King Abdulaziz International Airport",
       "King Khalid International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:57Z",
+  "date-time-wikidata": "2026-04-25T13:52:33Z"
 }

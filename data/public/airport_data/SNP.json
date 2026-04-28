@@ -20,30 +20,50 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Anchorage",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "ANC",
-      "PANC"
-    ],
-    [
-      "Cold Bay",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
-      "CDB",
-      "PACD"
-    ],
-    [
-      "St. George",
-      "https://en.wikipedia.org/wiki/St._George_Airport_(Alaska)",
-      "STG",
-      "PAPB"
-    ],
-    [
-      "Unalaska/Dutch Harbor",
-      "https://en.wikipedia.org/wiki/Unalaska_Airport",
-      "DUT",
-      "PADU"
-    ]
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Aleutian Airways"
+      ]
+    },
+    {
+      "city": "Cold Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "St. George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._George_Airport_(Alaska)",
+      "codes": [
+        "STG",
+        "PAPB"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Unalaska/Dutch Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unalaska_Airport",
+      "codes": [
+        "DUT",
+        "PADU"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aleutian Airways": [
@@ -54,5 +74,7 @@
       "St. George",
       "Unalaska/Dutch Harbor"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:10Z",
+  "date-time-wikidata": "2026-01-20T18:40:44Z"
 }

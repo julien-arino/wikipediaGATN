@@ -24,60 +24,105 @@
     "Neos"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Antananarivo",
-      "https://en.wikipedia.org/wiki/Ivato_Airport",
-      "TNR",
-      "FMMI"
-    ],
-    [
-      "Antsiranana",
-      "https://en.wikipedia.org/wiki/Arrachart_Airport",
-      "DIE",
-      "FMNA"
-    ],
-    [
-      "Dzaoudzi",
-      "https://en.wikipedia.org/wiki/Dzaoudzi_Pamandzi_International_Airport",
-      "DZA",
-      "FMCZ"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan–Malpensa",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Poznań",
-      "https://en.wikipedia.org/wiki/Poznań–Ławica_Airport",
-      "POZ",
-      "EPPO"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci-Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Saint-Denis de la Réunion",
-      "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
-      "RUN",
-      "FMEE"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Antananarivo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivato_Airport",
+      "codes": [
+        "TNR",
+        "FMMI"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Antsiranana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arrachart_Airport",
+      "codes": [
+        "DIE",
+        "FMNA"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Dzaoudzi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dzaoudzi_Pamandzi_International_Airport",
+      "codes": [
+        "DZA",
+        "FMCZ"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Poznań",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poznań–Ławica_Airport",
+      "codes": [
+        "POZ",
+        "EPPO"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci-Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Saint-Denis de la Réunion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
+      "codes": [
+        "RUN",
+        "FMEE"
+      ],
+      "airlines": [
+        "Air Austral"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Austral": [
@@ -101,5 +146,7 @@
       "Poznań",
       "Rome–Fiumicino"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:04Z",
+  "date-time-wikidata": "2026-03-05T23:30:31Z"
 }

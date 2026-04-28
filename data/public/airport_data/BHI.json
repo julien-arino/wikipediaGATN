@@ -20,36 +20,61 @@
     "LADE"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Comodoro Rivadavia",
-      "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
-      "CRD",
-      "SAVC"
-    ],
-    [
-      "Mar del Plata",
-      "https://en.wikipedia.org/wiki/Astor_Piazzolla_International_Airport",
-      "MDQ",
-      "SAZM"
-    ],
-    [
-      "Puerto Madryn",
-      "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
-      "PMY",
-      "SAVY"
-    ],
-    [
-      "Trelew",
-      "https://en.wikipedia.org/wiki/Almirante_Marcos_A._Zar_Airport",
-      "REL",
-      "SAVT"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Comodoro Rivadavia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
+      "codes": [
+        "CRD",
+        "SAVC"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Mar del Plata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Astor_Piazzolla_International_Airport",
+      "codes": [
+        "MDQ",
+        "SAZM"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Puerto Madryn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
+      "codes": [
+        "PMY",
+        "SAVY"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Trelew",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almirante_Marcos_A._Zar_Airport",
+      "codes": [
+        "REL",
+        "SAVT"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -61,5 +86,7 @@
       "Comodoro Rivadavia",
       "Puerto Madryn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:29Z",
+  "date-time-wikidata": "2026-02-04T19:42:50Z"
 }

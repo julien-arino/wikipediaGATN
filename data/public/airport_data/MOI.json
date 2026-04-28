@@ -19,23 +19,35 @@
     "Air Rarotonga"
   ],
   "destinations": [
-    [
-      "Mauke",
-      "https://en.wikipedia.org/wiki/Mauke_Airport",
-      "MUK",
-      "NCMK"
-    ],
-    [
-      "Rarotonga",
-      "https://en.wikipedia.org/wiki/Rarotonga_Airport",
-      "RAR",
-      "NCRG"
-    ]
+    {
+      "city": "Mauke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mauke_Airport",
+      "codes": [
+        "MUK",
+        "NCMK"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    },
+    {
+      "city": "Rarotonga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rarotonga_Airport",
+      "codes": [
+        "RAR",
+        "NCRG"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Rarotonga": [
       "Mauke",
       "Rarotonga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:49Z",
+  "date-time-wikidata": "2024-10-29T17:26:41Z"
 }

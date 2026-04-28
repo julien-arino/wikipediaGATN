@@ -19,24 +19,39 @@
     "Airnorth"
   ],
   "destinations": [
-    [
-      "Alice Springs",
-      "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
-      "ASP",
-      "YBAS"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Katherine",
-      "https://en.wikipedia.org/wiki/RAAF_Base_Tindal",
-      "KTR",
-      "YPTN"
-    ]
+    {
+      "city": "Alice Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
+      "codes": [
+        "ASP",
+        "YBAS"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Katherine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/RAAF_Base_Tindal",
+      "codes": [
+        "KTR",
+        "YPTN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -44,5 +59,7 @@
       "Darwin",
       "Katherine"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:23Z",
+  "date-time-wikidata": "2024-03-24T23:08:25Z"
 }

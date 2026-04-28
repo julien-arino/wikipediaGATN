@@ -19,23 +19,35 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Kozani",
-      "https://en.wikipedia.org/wiki/Kozani_National_Airport",
-      "KZI",
-      "LGKZ"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Kozani",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kozani_National_Airport",
+      "codes": [
+        "KZI",
+        "LGKZ"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sky Express": [
       "Athens",
       "Kozani"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:44Z",
+  "date-time-wikidata": "2025-01-04T20:29:39Z"
 }

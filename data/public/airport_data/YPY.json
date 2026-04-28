@@ -20,30 +20,50 @@
     "McMurray Aviation"
   ],
   "destinations": [
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Fort McMurray",
-      "https://en.wikipedia.org/wiki/Fort_McMurray_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Fort Smith",
-      "https://en.wikipedia.org/wiki/Fort_Smith_Airport",
-      "YSM",
-      "CYSM"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Fort McMurray",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_McMurray_Airport",
+      "codes": [
+        "YMM",
+        "CYMM"
+      ],
+      "airlines": [
+        "McMurray Aviation"
+      ]
+    },
+    {
+      "city": "Fort Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Smith_Airport",
+      "codes": [
+        "YSM",
+        "CYSM"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tindi": [
@@ -54,5 +74,7 @@
     "McMurray Aviation": [
       "Fort McMurray"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:39Z",
+  "date-time-wikidata": "2025-12-20T18:46:38Z"
 }

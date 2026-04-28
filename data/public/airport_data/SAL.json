@@ -23,30 +23,54 @@
     "LATAM Cargo"
   ],
   "destinations": [
-    [
-      "Guatemala City",
-      "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-      "GUA",
-      "MGGT"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Quito",
-      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
-      "UIO",
-      "SEQM"
-    ]
+    {
+      "city": "Guatemala City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "DHL Aero Expreso",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International",
+        "Avianca Cargo",
+        "FedEx Feeder",
+        "LATAM Cargo"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "DHL Aero Expreso"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "LATAM Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amerijet International": [
@@ -67,5 +91,7 @@
       "Miami",
       "Quito"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:58Z",
+  "date-time-wikidata": "2026-04-20T17:39:36Z"
 }

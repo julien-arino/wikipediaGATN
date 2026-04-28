@@ -20,48 +20,83 @@
     "Breeze Airways"
   ],
   "destinations": [
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Orlando Sanford International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
-      "SFB",
-      "KSFB"
-    ],
-    [
-      "Punta Gorda Airport (Florida)",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "PGD",
-      "KPGD"
-    ],
-    [
-      "Raleigh-Durham International Airport",
-      "https://en.wikipedia.org/wiki/Raleigh-Durham_International_Airport",
-      "RDU",
-      "KRDU"
-    ],
-    [
-      "Sarasota-Bradenton International Airport",
-      "https://en.wikipedia.org/wiki/Sarasota-Bradenton_International_Airport",
-      "SRQ",
-      "KSRQ"
-    ],
-    [
-      "Southwest Florida International Airport",
-      "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "RSW",
-      "KRSW"
-    ],
-    [
-      "St. Petersburg/Clearwater International Airport",
-      "https://en.wikipedia.org/wiki/St._Petersburg/Clearwater_International_Airport",
-      "PIE",
-      "KPIE"
-    ]
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Orlando Sanford International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "codes": [
+        "SFB",
+        "KSFB"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Punta Gorda Airport (Florida)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "codes": [
+        "PGD",
+        "KPGD"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Raleigh-Durham International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh-Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Sarasota-Bradenton International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota-Bradenton_International_Airport",
+      "codes": [
+        "SRQ",
+        "KSRQ"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Southwest Florida International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "St. Petersburg/Clearwater International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Petersburg/Clearwater_International_Airport",
+      "codes": [
+        "PIE",
+        "KPIE"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -75,5 +110,7 @@
       "Raleigh-Durham International Airport",
       "Southwest Florida International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:34Z",
+  "date-time-wikidata": "2026-04-14T16:59:13Z"
 }

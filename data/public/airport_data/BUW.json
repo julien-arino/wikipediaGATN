@@ -20,12 +20,18 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Super Air Jet",
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Super Air Jet": [
@@ -34,5 +40,7 @@
     "Wings Air": [
       "Makassar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:35Z",
+  "date-time-wikidata": "2026-03-17T23:36:17Z"
 }

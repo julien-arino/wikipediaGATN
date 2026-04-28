@@ -7,6 +7,7 @@
   "lat": "20.7143957",
   "lon": "70.9220463",
   "altitude": "9.45",
+  "continent": "Asia",
   "region": "Daman and Diu",
   "country_alpha3": "IND",
   "country_name": "India",
@@ -20,42 +21,73 @@
     "Star Air (India)"
   ],
   "destinations": [
-    [
-      "Ahmedabad Airport",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Keshod Airport",
-      "https://en.wikipedia.org/wiki/Keshod_Airport",
-      "IXK",
-      "VAKS"
-    ],
-    [
-      "Manohar International Airport",
-      "https://en.wikipedia.org/wiki/Manohar_International_Airport",
-      "GOX",
-      "VOGA"
-    ],
-    [
-      "Navi Mumbai International Airport",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
-      "NMI",
-      "VANM"
-    ],
-    [
-      "Surat International Airport",
-      "https://en.wikipedia.org/wiki/Surat_International_Airport",
-      "STV",
-      "VASU"
-    ]
+    {
+      "city": "Ahmedabad Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo",
+        "Star Air (India)"
+      ]
+    },
+    {
+      "city": "Chhatrapati Shivaji Maharaj International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Alliance Air (India)"
+      ]
+    },
+    {
+      "city": "Keshod Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keshod_Airport",
+      "codes": [
+        "IXK",
+        "VAKS"
+      ],
+      "airlines": [
+        "Alliance Air (India)"
+      ]
+    },
+    {
+      "city": "Manohar International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manohar_International_Airport",
+      "codes": [
+        "GOX",
+        "VOGA"
+      ],
+      "airlines": [
+        "Star Air (India)"
+      ]
+    },
+    {
+      "city": "Navi Mumbai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "codes": [
+        "NMI",
+        "VANM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Surat International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surat_International_Airport",
+      "codes": [
+        "STV",
+        "VASU"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air (India)": [
@@ -72,5 +104,6 @@
       "Manohar International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:05:10Z",
+  "date-time-wikidata": "2026-04-07T19:45:17Z"
 }

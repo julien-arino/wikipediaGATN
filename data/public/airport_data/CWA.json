@@ -21,18 +21,29 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Minneapolis−Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%88%92Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ]
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Minneapolis−Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%88%92Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -44,5 +55,7 @@
     "United Express": [
       "Chicago–O'Hare"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:13Z",
+  "date-time-wikidata": "2026-04-14T13:19:13Z"
 }

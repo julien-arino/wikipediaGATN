@@ -7,6 +7,7 @@
   "lat": "39.9185936",
   "lon": "25.2361242",
   "altitude": "4",
+  "continent": "Europe",
   "region": "North Aegean",
   "country_alpha3": "GRC",
   "country_name": "Greece",
@@ -23,60 +24,107 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Chios",
-      "https://en.wikipedia.org/wiki/Chios_Island_National_Airport",
-      "JKH",
-      "LGHI"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Ikaria",
-      "https://en.wikipedia.org/wiki/Ikaria_Island_National_Airport",
-      "JIK",
-      "LGIK"
-    ],
-    [
-      "Mytilene",
-      "https://en.wikipedia.org/wiki/Mytilene_International_Airport",
-      "MJT",
-      "LGMT"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Samos",
-      "https://en.wikipedia.org/wiki/Samos_International_Airport",
-      "SMI",
-      "LGSM"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Ryanair",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Chios",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chios_Island_National_Airport",
+      "codes": [
+        "JKH",
+        "LGHI"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Ikaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ikaria_Island_National_Airport",
+      "codes": [
+        "JIK",
+        "LGIK"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    },
+    {
+      "city": "Mytilene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mytilene_International_Airport",
+      "codes": [
+        "MJT",
+        "LGMT"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Samos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samos_International_Airport",
+      "codes": [
+        "SMI",
+        "LGSM"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -103,5 +151,6 @@
       "Samos"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:17:32Z",
+  "date-time-wikidata": "2026-03-10T18:20:56Z"
 }

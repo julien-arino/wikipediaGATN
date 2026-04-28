@@ -20,36 +20,61 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Ajaccio",
-      "https://en.wikipedia.org/wiki/Ajaccio_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Bastia",
-      "https://en.wikipedia.org/wiki/Bastia_–_Poretta_Airport",
-      "BIA",
-      "LFKB"
-    ],
-    [
-      "Fès",
-      "https://en.wikipedia.org/wiki/Fes–Saïss_Airport",
-      "FEZ",
-      "GMFF"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Francisco_de_Sá_Carneiro_Airport",
-      "OPO",
-      "LPPR"
-    ]
+    {
+      "city": "Ajaccio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Bastia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia_–_Poretta_Airport",
+      "codes": [
+        "BIA",
+        "LFKB"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Fès",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fes–Saïss_Airport",
+      "codes": [
+        "FEZ",
+        "GMFF"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_de_Sá_Carneiro_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Corsica": [
@@ -61,5 +86,7 @@
       "Marrakesh",
       "Porto"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:25Z",
+  "date-time-wikidata": "2026-01-31T02:27:39Z"
 }

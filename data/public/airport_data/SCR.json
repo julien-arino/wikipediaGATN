@@ -27,90 +27,162 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Aalborg Airport",
-      "https://en.wikipedia.org/wiki/Aalborg_Airport",
-      "AAL",
-      "EKYT"
-    ],
-    [
-      "Aarhus Airport",
-      "https://en.wikipedia.org/wiki/Aarhus_Airport",
-      "AAR",
-      "EKAH"
-    ],
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Brussels Airport",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Copenhagen Airport",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Groningen Airport Eelde",
-      "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde",
-      "GRQ",
-      "EHGG"
-    ],
-    [
-      "London Gatwick Airport",
-      "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London Heathrow Airport",
-      "https://en.wikipedia.org/wiki/London_Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Manchester Airport",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Stockholm Arlanda Airport",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Trollhättan–Vänersborg Airport",
-      "https://en.wikipedia.org/wiki/Trollh%C3%A4ttan%E2%80%93V%C3%A4nersborg_Airport",
-      "THN",
-      "ESGT"
-    ],
-    [
-      "Ängelholm–Helsingborg Airport",
-      "https://en.wikipedia.org/wiki/%C3%84ngelholm%E2%80%93Helsingborg_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Aalborg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aalborg_Airport",
+      "codes": [
+        "AAL",
+        "EKYT"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Aarhus Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aarhus_Airport",
+      "codes": [
+        "AAR",
+        "EKAH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "TUI fly Netherlands",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Brussels Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Copenhagen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "TUI fly Deutschland"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Groningen Airport Eelde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde",
+      "codes": [
+        "GRQ",
+        "EHGG"
+      ],
+      "airlines": [
+        "Braathens Regional Airlines",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "London Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "London Heathrow Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Manchester Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Stockholm Arlanda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Trollhättan–Vänersborg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trollh%C3%A4ttan%E2%80%93V%C3%A4nersborg_Airport",
+      "codes": [
+        "THN",
+        "ESGT"
+      ],
+      "airlines": [
+        "NyxAir"
+      ]
+    },
+    {
+      "city": "Ängelholm–Helsingborg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%84ngelholm%E2%80%93Helsingborg_Airport",
+      "codes": [
+        "AGH",
+        "ESTA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Braathens Regional Airlines": [
@@ -147,5 +219,7 @@
     "TUI fly Netherlands": [
       "Amsterdam Airport Schiphol"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:00Z",
+  "date-time-wikidata": "2026-02-20T19:45:39Z"
 }

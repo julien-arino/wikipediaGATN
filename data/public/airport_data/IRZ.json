@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ],
-    [
-      "Tefé",
-      "https://en.wikipedia.org/wiki/Tefé_Airport",
-      "TFF",
-      "SBTF"
-    ]
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Tefé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tefé_Airport",
+      "codes": [
+        "TFF",
+        "SBTF"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Manaus",
       "Tefé"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:06Z",
+  "date-time-wikidata": "2024-01-09T15:47:12Z"
 }

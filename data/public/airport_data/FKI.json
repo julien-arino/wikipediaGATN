@@ -20,24 +20,40 @@
     "Compagnie Africaine d'Aviation"
   ],
   "destinations": [
-    [
-      "Goma",
-      "https://en.wikipedia.org/wiki/Goma_International_Airport",
-      "GOM",
-      "FZNA"
-    ],
-    [
-      "Kindu",
-      "https://en.wikipedia.org/wiki/Kindu_Airport",
-      "KND",
-      "FZOA"
-    ],
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ]
+    {
+      "city": "Goma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Goma_International_Airport",
+      "codes": [
+        "GOM",
+        "FZNA"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Kindu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kindu_Airport",
+      "codes": [
+        "KND",
+        "FZOA"
+      ],
+      "airlines": [
+        "Air Congo"
+      ]
+    },
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Congo",
+        "Compagnie Africaine d'Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Congo": [
@@ -48,5 +64,7 @@
       "Goma",
       "Kinshasa–N'djili"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:41Z",
+  "date-time-wikidata": "2026-03-03T12:18:30Z"
 }

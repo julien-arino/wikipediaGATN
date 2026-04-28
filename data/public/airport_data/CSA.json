@@ -19,23 +19,35 @@
     "Hebridean Air Services"
   ],
   "destinations": [
-    [
-      "Oban",
-      "https://en.wikipedia.org/wiki/Oban_Airport",
-      "OBN",
-      "EGEO"
-    ],
-    [
-      "Tiree",
-      "https://en.wikipedia.org/wiki/Tiree_Airport",
-      "TRE",
-      "EGPU"
-    ]
+    {
+      "city": "Oban",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oban_Airport",
+      "codes": [
+        "OBN",
+        "EGEO"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    },
+    {
+      "city": "Tiree",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiree_Airport",
+      "codes": [
+        "TRE",
+        "EGPU"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hebridean Air Services": [
       "Oban",
       "Tiree"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:57Z",
+  "date-time-wikidata": "2025-12-01T00:42:29Z"
 }

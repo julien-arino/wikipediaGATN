@@ -21,18 +21,29 @@
     "Mexicana de Aviación (2023–present)"
   ],
   "destinations": [
-    [
-      "Felipe Ángeles International Airport",
-      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Oaxaca International Airport",
-      "https://en.wikipedia.org/wiki/Oaxaca_International_Airport",
-      "OAX",
-      "MMOX"
-    ]
+    {
+      "city": "Felipe Ángeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Aerus (airline)",
+        "Mexicana de Aviación (2023–present)"
+      ]
+    },
+    {
+      "city": "Oaxaca International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oaxaca_International_Airport",
+      "codes": [
+        "OAX",
+        "MMOX"
+      ],
+      "airlines": [
+        "Aerotucán"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerotucán": [
@@ -44,5 +55,7 @@
     "Mexicana de Aviación (2023–present)": [
       "Felipe Ángeles International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:39Z",
+  "date-time-wikidata": "2026-04-20T16:04:49Z"
 }

@@ -21,30 +21,53 @@
     "SVG Air"
   ],
   "destinations": [
-    [
-      "Argyle International Airport",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
-      "SVD",
-      "TVSA"
-    ],
-    [
-      "Canouan Airport",
-      "https://en.wikipedia.org/wiki/Canouan_Airport",
-      "CIW",
-      "TVSC"
-    ],
-    [
-      "J. F. Mitchell Airport",
-      "https://en.wikipedia.org/wiki/J._F._Mitchell_Airport",
-      "BQU",
-      "TVSB"
-    ],
-    [
-      "Union Island Airport",
-      "https://en.wikipedia.org/wiki/Union_Island_Airport",
-      "UNI",
-      "TVSU"
-    ]
+    {
+      "city": "Argyle International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "Grenadine Airways",
+        "Mustique Airways",
+        "SVG Air"
+      ]
+    },
+    {
+      "city": "Canouan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canouan_Airport",
+      "codes": [
+        "CIW",
+        "TVSC"
+      ],
+      "airlines": [
+        "Mustique Airways"
+      ]
+    },
+    {
+      "city": "J. F. Mitchell Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/J._F._Mitchell_Airport",
+      "codes": [
+        "BQU",
+        "TVSB"
+      ],
+      "airlines": [
+        "Mustique Airways",
+        "SVG Air"
+      ]
+    },
+    {
+      "city": "Union Island Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Union_Island_Airport",
+      "codes": [
+        "UNI",
+        "TVSU"
+      ],
+      "airlines": [
+        "Mustique Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grenadine Airways": [
@@ -60,5 +83,7 @@
       "Argyle International Airport",
       "J. F. Mitchell Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:29Z",
+  "date-time-wikidata": "2026-04-04T11:07:02Z"
 }

@@ -21,24 +21,40 @@
     "Spring Airlines"
   ],
   "destinations": [
-    [
-      "Dalian Zhoushuizi International Airport",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ],
-    [
-      "Ningbo Lishe International Airport",
-      "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
-      "NGB",
-      "ZSNB"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ]
+    {
+      "city": "Dalian Zhoushuizi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Ningbo Lishe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
+      "codes": [
+        "NGB",
+        "ZSNB"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines",
+        "Spring Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
@@ -51,5 +67,7 @@
     "Spring Airlines": [
       "Shanghai Pudong International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:54Z",
+  "date-time-wikidata": "2026-04-21T07:20:32Z"
 }

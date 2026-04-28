@@ -7,6 +7,7 @@
   "lat": "45.0026734",
   "lon": "37.3451849",
   "altitude": "53",
+  "continent": "Europe",
   "region": "Krasnodarskiy",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
@@ -30,150 +31,274 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Cheboksary",
-      "https://en.wikipedia.org/wiki/Cheboksary_Airport",
-      "CSY",
-      "UWKS"
-    ],
-    [
-      "Ivanovo",
-      "https://en.wikipedia.org/wiki/Ivanovo_Yuzhny_Airport",
-      "IWA",
-      "UUBI"
-    ],
-    [
-      "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Khanty-Mansiysk",
-      "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
-      "HMA",
-      "USHH"
-    ],
-    [
-      "Lipetsk",
-      "https://en.wikipedia.org/wiki/Lipetsk_Airport",
-      "LPK",
-      "UUOL"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Moscow–Sheremetyevo",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Moscow–Zhukovsky",
-      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
-      "ZIA",
-      "UUBW"
-    ],
-    [
-      "Nizhnevartovsk",
-      "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
-      "NJC",
-      "USNN"
-    ],
-    [
-      "Nizhny Novgorod",
-      "https://en.wikipedia.org/wiki/Strigino_Airport",
-      "GOJ",
-      "UWGG"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Osh",
-      "https://en.wikipedia.org/wiki/Osh_Airport",
-      "OSS",
-      "UCFO"
-    ],
-    [
-      "Petrozavodsk",
-      "https://en.wikipedia.org/wiki/Petrozavodsk_Airport",
-      "PES",
-      "ULPB"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Sovetsky",
-      "https://en.wikipedia.org/wiki/Sovetsky_Airport",
-      "OVS",
-      "USHS"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_International_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Syktyvkar",
-      "https://en.wikipedia.org/wiki/Syktyvkar_Airport",
-      "SCW",
-      "UUYY"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "UFA",
-      "UWUU"
-    ],
-    [
-      "Voronezh",
-      "https://en.wikipedia.org/wiki/Chertovitskoye_Airport",
-      "VOZ",
-      "UUOO"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Yekaterinburg_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Yerevan",
-      "https://en.wikipedia.org/wiki/Zvartnots_Airport",
-      "EVN",
-      "UDYZ"
-    ]
+    {
+      "city": "Cheboksary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheboksary_Airport",
+      "codes": [
+        "CSY",
+        "UWKS"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Ivanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivanovo_Yuzhny_Airport",
+      "codes": [
+        "IWA",
+        "UUBI"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Kaliningrad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Khanty-Mansiysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
+      "codes": [
+        "HMA",
+        "USHH"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Lipetsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lipetsk_Airport",
+      "codes": [
+        "LPK",
+        "UUOL"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Nordstar Airlines",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow–Sheremetyevo",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Moscow–Zhukovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "codes": [
+        "ZIA",
+        "UUBW"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Nizhnevartovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
+      "codes": [
+        "NJC",
+        "USNN"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Nizhny Novgorod",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strigino_Airport",
+      "codes": [
+        "GOJ",
+        "UWGG"
+      ],
+      "airlines": [
+        "Smartavia",
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "Pobeda",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Osh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osh_Airport",
+      "codes": [
+        "OSS",
+        "UCFO"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Petrozavodsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petrozavodsk_Airport",
+      "codes": [
+        "PES",
+        "ULPB"
+      ],
+      "airlines": [
+        "Severstal Air Company"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Sovetsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sovetsky_Airport",
+      "codes": [
+        "OVS",
+        "USHS"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Syktyvkar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syktyvkar_Airport",
+      "codes": [
+        "SCW",
+        "UUYY"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Voronezh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chertovitskoye_Airport",
+      "codes": [
+        "VOZ",
+        "UUOO"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yekaterinburg_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Yerevan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zvartnots_Airport",
+      "codes": [
+        "EVN",
+        "UDYZ"
+      ],
+      "airlines": [
+        "Armenia Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -231,5 +356,6 @@
       "Ufa"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:03:13Z",
+  "date-time-wikidata": "2026-04-23T21:13:45Z"
 }

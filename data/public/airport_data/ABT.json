@@ -21,24 +21,42 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Fahd International Airport",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Fahd International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Flyadeal",
+        "Flynas",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flynas",
+        "Saudia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Flyadeal": [
@@ -53,5 +71,7 @@
       "King Fahd International Airport",
       "King Khalid International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:51Z",
+  "date-time-wikidata": "2026-03-21T04:55:14Z"
 }

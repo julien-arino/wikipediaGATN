@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
   "number_airlines": 4,
   "outdegree": 8,
@@ -22,54 +22,96 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Deer Lake",
-      "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
-      "YVZ",
-      "CYVZ"
-    ],
-    [
-      "Pikangikum",
-      "https://en.wikipedia.org/wiki/Pikangikum_Airport",
-      "YPM",
-      "CYPM"
-    ],
-    [
-      "Poplar Hill",
-      "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
-      "YHP",
-      "icao code not found"
-    ],
-    [
-      "Sachigo Lake",
-      "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport",
-      "ZPB",
-      "CZPB"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ],
-    [
-      "Winnipeg/St. Andrews",
-      "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
-      "iata code not found",
-      "CYAV"
-    ]
+    {
+      "city": "Deer Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
+      "codes": [
+        "YVZ",
+        "CYVZ"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    },
+    {
+      "city": "Pikangikum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pikangikum_Airport",
+      "codes": [
+        "YPM",
+        "CYPM"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Poplar Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    },
+    {
+      "city": "Sachigo Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport",
+      "codes": [
+        "ZPB",
+        "CZPB"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "Perimeter Aviation",
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg/St. Andrews",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
+      "codes": [
+        "iata code not found",
+        "CYAV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -90,5 +132,7 @@
       "Sioux Lookout",
       "Thunder Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:31Z",
+  "date-time-wikidata": "2025-12-20T18:45:55Z"
 }

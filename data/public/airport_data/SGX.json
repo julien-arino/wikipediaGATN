@@ -19,23 +19,35 @@
     "Air Tanzania"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Mtwara",
-      "https://en.wikipedia.org/wiki/Mtwara_Airport",
-      "MYW",
-      "HTMT"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Mtwara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mtwara_Airport",
+      "codes": [
+        "MYW",
+        "HTMT"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
       "Dar es Salaam",
       "Mtwara"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:35Z",
+  "date-time-wikidata": "2026-04-19T18:29:53Z"
 }

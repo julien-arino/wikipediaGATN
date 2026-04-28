@@ -19,23 +19,35 @@
     "KrasAvia"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk–Cheremshanka",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
-      "KCY",
-      "UNKM"
-    ],
-    [
-      "Turukhansk",
-      "https://en.wikipedia.org/wiki/Turukhansk_Airport",
-      "THX",
-      "UOTT"
-    ]
+    {
+      "city": "Krasnoyarsk–Cheremshanka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
+      "codes": [
+        "KCY",
+        "UNKM"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Turukhansk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turukhansk_Airport",
+      "codes": [
+        "THX",
+        "UOTT"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KrasAvia": [
       "Krasnoyarsk–Cheremshanka",
       "Turukhansk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:24Z",
+  "date-time-wikidata": "2025-11-03T20:03:25Z"
 }

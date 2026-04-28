@@ -24,24 +24,44 @@
     "Yeti Airlines"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Pokhara–International",
-      "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
-      "PHH",
-      "VNPR"
-    ],
-    [
-      "Taplejung",
-      "https://en.wikipedia.org/wiki/Taplejung_Airport",
-      "TPJ",
-      "VNTJ"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Buddha Air",
+        "Guna Airlines",
+        "Saurya Airlines",
+        "Shree Airlines",
+        "Sita Air",
+        "Yeti Airlines"
+      ]
+    },
+    {
+      "city": "Pokhara–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
+      "codes": [
+        "PHH",
+        "VNPR"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    },
+    {
+      "city": "Taplejung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taplejung_Airport",
+      "codes": [
+        "TPJ",
+        "VNTJ"
+      ],
+      "airlines": [
+        "Sita Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Buddha Air": [
@@ -64,5 +84,7 @@
     "Yeti Airlines": [
       "Kathmandu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:46Z",
+  "date-time-wikidata": "2026-01-11T09:06:10Z"
 }

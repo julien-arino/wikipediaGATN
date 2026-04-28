@@ -21,24 +21,39 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Burgas",
-      "https://en.wikipedia.org/wiki/Burgas_Airport",
-      "BOJ",
-      "LBBG"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Burgas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burgas_Airport",
+      "codes": [
+        "BOJ",
+        "LBBG"
+      ],
+      "airlines": [
+        "BH Air"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BH Air": [
@@ -50,5 +65,7 @@
     "Uzbekistan Airways": [
       "Tashkent"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:56Z",
+  "date-time-wikidata": "2026-03-24T20:17:42Z"
 }

@@ -21,24 +21,39 @@
     "Sunclass Airlines"
   ],
   "destinations": [
-    [
-      "Ischgl",
-      "https://en.wikipedia.org/wiki/Ischgl",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Monastir",
-      "https://en.wikipedia.org/wiki/Monastir,_Tunisia",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Ischgl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ischgl",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "People’s Airline"
+      ]
+    },
+    {
+      "city": "Monastir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monastir,_Tunisia",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "People’s Airline": [
@@ -50,5 +65,7 @@
     "Sunclass Airlines": [
       "Palma de Mallorca"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:17Z",
+  "date-time-wikidata": "2025-12-19T12:58:33Z"
 }

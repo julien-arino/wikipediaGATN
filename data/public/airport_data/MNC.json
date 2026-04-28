@@ -20,18 +20,28 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Johannesburg–O.R. Tambo",
-      "https://en.wikipedia.org/wiki/O.R._Tambo_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ]
+    {
+      "city": "Johannesburg–O.R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O.R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -40,5 +50,7 @@
     "LAM Mozambique Airlines": [
       "Maputo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:46Z",
+  "date-time-wikidata": "2026-02-02T07:40:18Z"
 }

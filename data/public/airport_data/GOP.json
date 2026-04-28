@@ -22,42 +22,77 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Navi Mumbai",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
-      "NMI",
-      "VANM"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "Alliance Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Navi Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "codes": [
+        "NMI",
+        "VANM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Akasa Air": [
@@ -79,5 +114,7 @@
       "Delhi",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:34Z",
+  "date-time-wikidata": "2026-04-10T20:21:06Z"
 }

@@ -7,6 +7,7 @@
   "lat": "16.1852658",
   "lon": "52.1726842",
   "altitude": "41",
+  "continent": "Asia",
   "region": "Al Mahrah",
   "country_alpha3": "YEM",
   "country_name": "Yemen",
@@ -18,18 +19,28 @@
     "Yemenia"
   ],
   "destinations": [
-    [
-      "Aden International Airport",
-      "https://en.wikipedia.org/wiki/Aden_International_Airport",
-      "ADE",
-      "OYAA"
-    ],
-    [
-      "Socotra Airport",
-      "https://en.wikipedia.org/wiki/Socotra_Airport",
-      "SCT",
-      "OYSQ"
-    ]
+    {
+      "city": "Aden International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_International_Airport",
+      "codes": [
+        "ADE",
+        "OYAA"
+      ],
+      "airlines": [
+        "Yemenia"
+      ]
+    },
+    {
+      "city": "Socotra Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Socotra_Airport",
+      "codes": [
+        "SCT",
+        "OYSQ"
+      ],
+      "airlines": [
+        "Yemenia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Yemenia": [
@@ -37,5 +48,6 @@
       "Socotra Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:12:53Z",
+  "date-time-wikidata": "2025-12-20T00:39:31Z"
 }

@@ -19,23 +19,35 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Deadhorse/Prudhoe Bay",
-      "https://en.wikipedia.org/wiki/Deadhorse_Airport",
-      "SCC",
-      "PASC"
-    ],
-    [
-      "Utqiagvik",
-      "https://en.wikipedia.org/wiki/Wiley_Post-Will_Rogers_Memorial_Airport",
-      "BRW",
-      "PABR"
-    ]
+    {
+      "city": "Deadhorse/Prudhoe Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deadhorse_Airport",
+      "codes": [
+        "SCC",
+        "PASC"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Utqiagvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wiley_Post-Will_Rogers_Memorial_Airport",
+      "codes": [
+        "BRW",
+        "PABR"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
       "Deadhorse/Prudhoe Bay",
       "Utqiagvik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:45Z",
+  "date-time-wikidata": "2025-08-24T15:16:28Z"
 }

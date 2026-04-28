@@ -23,66 +23,119 @@
     "Yamal Airlines"
   ],
   "destinations": [
-    [
-      "Anapa",
-      "https://en.wikipedia.org/wiki/Vityazevo_Airport",
-      "AAQ",
-      "URKA"
-    ],
-    [
-      "Beloyarsky",
-      "https://en.wikipedia.org/wiki/Beloyarsk_Airport",
-      "EYK",
-      "USHQ"
-    ],
-    [
-      "Khanty-Mansiysk",
-      "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
-      "HMA",
-      "USHH"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Nadym",
-      "https://en.wikipedia.org/wiki/Nadym_Airport",
-      "NYM",
-      "USMM"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roschino_Airport",
-      "TJM",
-      "USTR"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Anapa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vityazevo_Airport",
+      "codes": [
+        "AAQ",
+        "URKA"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Beloyarsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beloyarsk_Airport",
+      "codes": [
+        "EYK",
+        "USHQ"
+      ],
+      "airlines": [
+        "Gazpromavia",
+        "Utair"
+      ]
+    },
+    {
+      "city": "Khanty-Mansiysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
+      "codes": [
+        "HMA",
+        "USHH"
+      ],
+      "airlines": [
+        "Orenburzhye"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Yamal Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Nadym",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadym_Airport",
+      "codes": [
+        "NYM",
+        "USMM"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Severstal Air Company"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roschino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Gazpromavia",
+        "Orenburzhye",
+        "Yamal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Gazpromavia": [
@@ -108,5 +161,7 @@
       "Moscow–Domodedovo",
       "Yekaterinburg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:52Z",
+  "date-time-wikidata": "2025-11-03T17:43:07Z"
 }

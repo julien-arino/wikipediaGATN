@@ -22,30 +22,52 @@
     "Tropical Air Gabon"
   ],
   "destinations": [
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Libreville_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Onal",
-      "https://en.wikipedia.org/wiki/Ezanga",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Oyem",
-      "https://en.wikipedia.org/wiki/Oyem_Airport",
-      "OYE",
-      "FOGO"
-    ],
-    [
-      "Pointe-Noire",
-      "https://en.wikipedia.org/wiki/Pointe_Noire_Airport",
-      "PNR",
-      "FCPP"
-    ]
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "Afrijet",
+        "Nationale Regionale Transport",
+        "Tropical Air Gabon"
+      ]
+    },
+    {
+      "city": "Onal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezanga",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Tropical Air Gabon"
+      ]
+    },
+    {
+      "city": "Oyem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oyem_Airport",
+      "codes": [
+        "OYE",
+        "FOGO"
+      ],
+      "airlines": [
+        "Nationale Regionale Transport"
+      ]
+    },
+    {
+      "city": "Pointe-Noire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe_Noire_Airport",
+      "codes": [
+        "PNR",
+        "FCPP"
+      ],
+      "airlines": [
+        "Equaflight"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afrijet": [
@@ -62,5 +84,7 @@
       "Libreville",
       "Onal"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:06Z",
+  "date-time-wikidata": "2024-12-01T02:08:51Z"
 }

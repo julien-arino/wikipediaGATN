@@ -20,24 +20,39 @@
     "Toho Air Service"
   ],
   "destinations": [
-    [
-      "Aogashima",
-      "https://en.wikipedia.org/wiki/Aogashima,_Tokyo",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Mikurajima",
-      "https://en.wikipedia.org/wiki/Mikurajima,_Tokyo",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Aogashima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aogashima,_Tokyo",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Toho Air Service"
+      ]
+    },
+    {
+      "city": "Mikurajima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mikurajima,_Tokyo",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Toho Air Service"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -47,5 +62,7 @@
       "Aogashima",
       "Mikurajima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:44Z",
+  "date-time-wikidata": "2026-04-20T14:16:40Z"
 }

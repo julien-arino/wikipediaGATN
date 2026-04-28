@@ -19,23 +19,35 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Broome",
-      "https://en.wikipedia.org/wiki/Broome_International_Airport",
-      "BME",
-      "YBRM"
-    ],
-    [
-      "Halls Creek",
-      "https://en.wikipedia.org/wiki/Halls_Creek_Airport",
-      "HCQ",
-      "YHLC"
-    ]
+    {
+      "city": "Broome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broome_International_Airport",
+      "codes": [
+        "BME",
+        "YBRM"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Halls Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halls_Creek_Airport",
+      "codes": [
+        "HCQ",
+        "YHLC"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skippers Aviation": [
       "Broome",
       "Halls Creek"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:40Z",
+  "date-time-wikidata": "2025-09-08T14:59:58Z"
 }

@@ -22,24 +22,44 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Bratsk",
-      "https://en.wikipedia.org/wiki/Bratsk_Airport",
-      "BTK",
-      "UIBB"
-    ],
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/Irkutsk_International_Airport",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Yakutsk",
-      "https://en.wikipedia.org/wiki/Yakutsk_Airport",
-      "YKS",
-      "UEEE"
-    ]
+    {
+      "city": "Bratsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratsk_Airport",
+      "codes": [
+        "BTK",
+        "UIBB"
+      ],
+      "airlines": [
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Irkutsk_International_Airport",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "Alrosa Mirny Air Enterprise",
+        "IrAero",
+        "Polar Airlines",
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Yakutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakutsk_Airport",
+      "codes": [
+        "YKS",
+        "UEEE"
+      ],
+      "airlines": [
+        "Alrosa Mirny Air Enterprise",
+        "Polar Airlines",
+        "Yakutia Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alrosa Mirny Air Enterprise": [
@@ -58,5 +78,7 @@
       "Irkutsk",
       "Yakutsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:53Z",
+  "date-time-wikidata": "2025-11-06T21:26:27Z"
 }

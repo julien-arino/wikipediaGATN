@@ -27,126 +27,237 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Detroit Metropolitan Airport",
-      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
-      "DTW",
-      "KDTW"
-    ],
-    [
-      "Detroit Metropolitan Wayne County Airport",
-      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
-      "DTW",
-      "KDTW"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Minneapolis−Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%88%92Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "New York–LaGuardia",
-      "https://en.wikipedia.org/wiki/New_York%E2%80%93LaGuardia",
-      "LGA",
-      "KLGA"
-    ],
-    [
-      "Newark Liberty International Airport",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
-      "PHL",
-      "KPHL"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Raleigh–Durham International Airport",
-      "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
-      "RDU",
-      "KRDU"
-    ],
-    [
-      "Southwest Florida International Airport",
-      "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "RSW",
-      "KRSW"
-    ],
-    [
-      "Tampa International Airport",
-      "https://en.wikipedia.org/wiki/Tampa_International_Airport",
-      "TPA",
-      "KTPA"
-    ],
-    [
-      "Washington–National",
-      "https://en.wikipedia.org/wiki/Washington%E2%80%93National",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Frontier Airlines",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Detroit Metropolitan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Detroit Metropolitan Wayne County Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Minneapolis−Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%88%92Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "New York–LaGuardia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_York%E2%80%93LaGuardia",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Newark Liberty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Philadelphia International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Raleigh–Durham International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Southwest Florida International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Breeze Airways",
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Tampa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Washington%E2%80%93National",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Airlines": [
@@ -198,5 +309,7 @@
       "Denver International Airport",
       "Newark Liberty International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:34Z",
+  "date-time-wikidata": "2026-04-14T23:11:51Z"
 }

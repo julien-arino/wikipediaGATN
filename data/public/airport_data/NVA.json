@@ -22,30 +22,54 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragon_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "San Vicente del Caguan",
-      "https://en.wikipedia.org/wiki/Eduardo_Falla_Solano_Airport",
-      "SVI",
-      "SKSV"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "Clic",
+        "LATAM Colombia"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragon_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "San Vicente del Caguan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Falla_Solano_Airport",
+      "codes": [
+        "SVI",
+        "SKSV"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -62,5 +86,7 @@
       "Cali",
       "San Vicente del Caguan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:06Z",
+  "date-time-wikidata": "2024-10-25T09:15:07Z"
 }

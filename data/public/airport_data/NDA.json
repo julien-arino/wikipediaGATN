@@ -19,23 +19,35 @@
     "Smart Aviation"
   ],
   "destinations": [
-    [
-      "Amahai",
-      "https://en.wikipedia.org/wiki/Amahai_Airport",
-      "AHI",
-      "WAPA"
-    ],
-    [
-      "Ambon",
-      "https://en.wikipedia.org/wiki/Pattimura_Airport",
-      "AMQ",
-      "WAPP"
-    ]
+    {
+      "city": "Amahai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amahai_Airport",
+      "codes": [
+        "AHI",
+        "WAPA"
+      ],
+      "airlines": [
+        "Smart Aviation"
+      ]
+    },
+    {
+      "city": "Ambon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pattimura_Airport",
+      "codes": [
+        "AMQ",
+        "WAPP"
+      ],
+      "airlines": [
+        "Smart Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Smart Aviation": [
       "Amahai",
       "Ambon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:55Z",
+  "date-time-wikidata": "2026-01-17T02:29:03Z"
 }

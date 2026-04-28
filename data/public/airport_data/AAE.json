@@ -23,60 +23,109 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "El Oued",
-      "https://en.wikipedia.org/wiki/Guemar_Airport",
-      "ELU",
-      "DAUO"
-    ],
-    [
-      "Hassi Messaoud",
-      "https://en.wikipedia.org/wiki/Oued_Irara_–_Krim_Belkacem_Airport",
-      "HME",
-      "DAUH"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Oran",
-      "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
-      "ORN",
-      "DAOO"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Paris-Orly_Airport",
-      "ORY",
-      "LFPO"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "El Oued",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guemar_Airport",
+      "codes": [
+        "ELU",
+        "DAUO"
+      ],
+      "airlines": [
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Hassi Messaoud",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oued_Irara_–_Krim_Belkacem_Airport",
+      "codes": [
+        "HME",
+        "DAUH"
+      ],
+      "airlines": [
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Transavia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Oran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
+      "codes": [
+        "ORN",
+        "DAOO"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris-Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -102,5 +151,7 @@
     "Volotea": [
       "Marseille"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:12Z",
+  "date-time-wikidata": "2026-03-27T22:27:23Z"
 }

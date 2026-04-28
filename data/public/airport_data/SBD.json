@@ -19,23 +19,35 @@
     "Breeze Airways"
   ],
   "destinations": [
-    [
-      "Provo Municipal Airport",
-      "https://en.wikipedia.org/wiki/Provo_Municipal_Airport",
-      "PVU",
-      "KPVU"
-    ],
-    [
-      "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ]
+    {
+      "city": "Provo Municipal Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Provo_Municipal_Airport",
+      "codes": [
+        "PVU",
+        "KPVU"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "San Francisco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Breeze Airways": [
       "Provo Municipal Airport",
       "San Francisco International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:28Z",
+  "date-time-wikidata": "2026-04-14T02:06:08Z"
 }

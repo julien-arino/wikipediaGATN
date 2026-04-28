@@ -7,6 +7,7 @@
   "lat": "29.5028857",
   "lon": "81.6685007",
   "altitude": "1,311",
+  "continent": "Asia",
   "region": "Mid Western",
   "country_alpha3": "NPL",
   "country_name": "Nepal",
@@ -21,24 +22,42 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Birendranagar",
-      "https://en.wikipedia.org/wiki/Surkhet_Airport",
-      "SKH",
-      "VNSK"
-    ],
-    [
-      "Dhangadhi",
-      "https://en.wikipedia.org/wiki/Dhangadhi_Airport",
-      "DHI",
-      "VNDH"
-    ],
-    [
-      "Nepalgunj",
-      "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
-      "KEP",
-      "VNNG"
-    ]
+    {
+      "city": "Birendranagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surkhet_Airport",
+      "codes": [
+        "SKH",
+        "VNSK"
+      ],
+      "airlines": [
+        "Summit Air"
+      ]
+    },
+    {
+      "city": "Dhangadhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dhangadhi_Airport",
+      "codes": [
+        "DHI",
+        "VNDH"
+      ],
+      "airlines": [
+        "Nepal Airlines"
+      ]
+    },
+    {
+      "city": "Nepalgunj",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
+      "codes": [
+        "KEP",
+        "VNNG"
+      ],
+      "airlines": [
+        "Nepal Airlines",
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nepal Airlines": [
@@ -56,5 +75,6 @@
       "Nepalgunj"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:04:07Z",
+  "date-time-wikidata": "2026-03-17T13:36:24Z"
 }

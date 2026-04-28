@@ -21,30 +21,53 @@
     "FlySafair"
   ],
   "destinations": [
-    [
-      "Cape Town International Airport",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "King Shaka International Airport",
-      "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
-      "DUR",
-      "FALE"
-    ],
-    [
-      "Lanseria International Airport",
-      "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
-      "HLA",
-      "FALA"
-    ],
-    [
-      "O. R. Tambo International Airport",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ]
+    {
+      "city": "Cape Town International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "CemAir",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "King Shaka International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
+      "codes": [
+        "DUR",
+        "FALE"
+      ],
+      "airlines": [
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Lanseria International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
+      "codes": [
+        "HLA",
+        "FALA"
+      ],
+      "airlines": [
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "O. R. Tambo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -60,5 +83,7 @@
       "Lanseria International Airport",
       "O. R. Tambo International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:16Z",
+  "date-time-wikidata": "2026-04-22T04:52:51Z"
 }

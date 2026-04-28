@@ -19,24 +19,39 @@
     "Air Niugini"
   ],
   "destinations": [
-    [
-      "Lorengau",
-      "https://en.wikipedia.org/wiki/Momote_Airport",
-      "MAS",
-      "AYMO"
-    ],
-    [
-      "Port Moresby",
-      "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
-      "POM",
-      "AYPY"
-    ],
-    [
-      "Rabaul",
-      "https://en.wikipedia.org/wiki/Rabaul_Airport",
-      "RAB",
-      "AYTK"
-    ]
+    {
+      "city": "Lorengau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Momote_Airport",
+      "codes": [
+        "MAS",
+        "AYMO"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    },
+    {
+      "city": "Port Moresby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
+      "codes": [
+        "POM",
+        "AYPY"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    },
+    {
+      "city": "Rabaul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rabaul_Airport",
+      "codes": [
+        "RAB",
+        "AYTK"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Niugini": [
@@ -44,5 +59,7 @@
       "Port Moresby",
       "Rabaul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:07Z",
+  "date-time-wikidata": "2025-10-04T01:34:33Z"
 }

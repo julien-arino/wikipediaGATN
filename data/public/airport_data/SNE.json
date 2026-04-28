@@ -19,24 +19,39 @@
     "Cabo Verde Airlines"
   ],
   "destinations": [
-    [
-      "Praia",
-      "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
-      "RAI",
-      "GVNP"
-    ],
-    [
-      "Sal",
-      "https://en.wikipedia.org/wiki/Amílcar_Cabral_International_Airport",
-      "SID",
-      "GVAC"
-    ],
-    [
-      "São Vicente",
-      "https://en.wikipedia.org/wiki/Cesária_Évora_Airport",
-      "VXE",
-      "GVSV"
-    ]
+    {
+      "city": "Praia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
+      "codes": [
+        "RAI",
+        "GVNP"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines"
+      ]
+    },
+    {
+      "city": "Sal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amílcar_Cabral_International_Airport",
+      "codes": [
+        "SID",
+        "GVAC"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines"
+      ]
+    },
+    {
+      "city": "São Vicente",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cesária_Évora_Airport",
+      "codes": [
+        "VXE",
+        "GVSV"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cabo Verde Airlines": [
@@ -44,5 +59,7 @@
       "Sal",
       "São Vicente"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:09Z",
+  "date-time-wikidata": "2025-11-28T00:40:17Z"
 }

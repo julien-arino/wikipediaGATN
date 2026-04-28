@@ -22,54 +22,94 @@
     "Qantas"
   ],
   "destinations": [
-    [
-      "Auckland Airport",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Kingsford Smith International Airport",
-      "https://en.wikipedia.org/wiki/Kingsford_Smith_International_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Lifuka Island Airport",
-      "https://en.wikipedia.org/wiki/Lifuka_Island_Airport",
-      "HPA",
-      "NFTL"
-    ],
-    [
-      "Nadi International Airport",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Niuafo'ou Airport",
-      "https://en.wikipedia.org/wiki/Niuafo%27ou_Airport",
-      "NFO",
-      "NFTO"
-    ],
-    [
-      "Niuatoputapu Airport",
-      "https://en.wikipedia.org/wiki/Niuatoputapu_Airport",
-      "NTT",
-      "NFTP"
-    ],
-    [
-      "Vavaʻu International Airport",
-      "https://en.wikipedia.org/wiki/Vava%CA%BBu_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "ʻEua Airport",
-      "https://en.wikipedia.org/wiki/%CA%BBEua_Airport",
-      "EUA",
-      "NFTE"
-    ]
+    {
+      "city": "Auckland Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Kingsford Smith International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingsford_Smith_International_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Lifuka Island Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lifuka_Island_Airport",
+      "codes": [
+        "HPA",
+        "NFTL"
+      ],
+      "airlines": [
+        "Lulutai Airlines"
+      ]
+    },
+    {
+      "city": "Nadi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Niuafo'ou Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niuafo%27ou_Airport",
+      "codes": [
+        "NFO",
+        "NFTO"
+      ],
+      "airlines": [
+        "Lulutai Airlines"
+      ]
+    },
+    {
+      "city": "Niuatoputapu Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niuatoputapu_Airport",
+      "codes": [
+        "NTT",
+        "NFTP"
+      ],
+      "airlines": [
+        "Lulutai Airlines"
+      ]
+    },
+    {
+      "city": "Vavaʻu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vava%CA%BBu_International_Airport",
+      "codes": [
+        "VAV",
+        "NFTV"
+      ],
+      "airlines": [
+        "Lulutai Airlines"
+      ]
+    },
+    {
+      "city": "ʻEua Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%CA%BBEua_Airport",
+      "codes": [
+        "EUA",
+        "NFTE"
+      ],
+      "airlines": [
+        "Lulutai Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -88,5 +128,7 @@
     "Qantas": [
       "Kingsford Smith International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:22Z",
+  "date-time-wikidata": "2026-03-10T11:01:38Z"
 }

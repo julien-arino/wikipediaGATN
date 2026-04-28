@@ -20,12 +20,18 @@
     "US-Bangla Airlines"
   ],
   "destinations": [
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ]
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Biman Bangladesh Airlines",
+        "US-Bangla Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Biman Bangladesh Airlines": [
@@ -34,5 +40,7 @@
     "US-Bangla Airlines": [
       "Dhaka"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:46Z",
+  "date-time-wikidata": "2025-10-16T12:25:19Z"
 }

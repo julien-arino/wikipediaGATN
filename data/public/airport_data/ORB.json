@@ -20,36 +20,61 @@
     "Sunclass Airlines"
   ],
   "destinations": [
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "Linköping",
-      "https://en.wikipedia.org/wiki/Linköping_City_Airport",
-      "LPI",
-      "ESSL"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ]
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Lygg"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Linköping",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linköping_City_Airport",
+      "codes": [
+        "LPI",
+        "ESSL"
+      ],
+      "airlines": [
+        "Lygg"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Lygg": [
@@ -61,5 +86,7 @@
       "Larnaca",
       "Rhodes"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:21Z",
+  "date-time-wikidata": "2025-12-20T13:09:42Z"
 }

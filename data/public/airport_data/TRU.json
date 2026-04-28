@@ -22,18 +22,30 @@
     "Sky Airline Peru"
   ],
   "destinations": [
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "JetSmart Perú",
+        "LATAM Perú",
+        "Sky Airline Peru"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Chile": [
@@ -48,5 +60,7 @@
     "Sky Airline Peru": [
       "Lima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:39Z",
+  "date-time-wikidata": "2026-02-19T10:18:21Z"
 }

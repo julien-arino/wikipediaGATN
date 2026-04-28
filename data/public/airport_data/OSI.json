@@ -20,30 +20,50 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Dubrovnik",
-      "https://en.wikipedia.org/wiki/Dubrovnik_Airport",
-      "DBV",
-      "LDDU"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Split",
-      "https://en.wikipedia.org/wiki/Split_Airport",
-      "SPU",
-      "LDSP"
-    ]
+    {
+      "city": "Dubrovnik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubrovnik_Airport",
+      "codes": [
+        "DBV",
+        "LDDU"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Split",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Split_Airport",
+      "codes": [
+        "SPU",
+        "LDSP"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Croatia Airlines": [
@@ -54,5 +74,7 @@
     "Ryanair": [
       "London–Stansted"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:46Z",
+  "date-time-wikidata": "2026-04-11T20:26:57Z"
 }

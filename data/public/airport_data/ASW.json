@@ -22,18 +22,32 @@
     "Petroleum Air Services"
   ],
   "destinations": [
-    [
-      "Abu Simbel",
-      "https://en.wikipedia.org/wiki/Abu_Simbel_Airport",
-      "ABS",
-      "HEBL"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ]
+    {
+      "city": "Abu Simbel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Simbel_Airport",
+      "codes": [
+        "ABS",
+        "HEBL"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Egyptair",
+        "Nile Air",
+        "Petroleum Air Services"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Cairo": [
@@ -50,5 +64,7 @@
     "Petroleum Air Services": [
       "Cairo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:08Z",
+  "date-time-wikidata": "2025-09-25T12:51:46Z"
 }

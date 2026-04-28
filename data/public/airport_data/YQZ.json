@@ -20,18 +20,29 @@
     "Pacific Coastal Airlines"
   ],
   "destinations": [
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Williams Lake",
-      "https://en.wikipedia.org/wiki/Williams_Lake_Airport",
-      "YWL",
-      "CYWL"
-    ]
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Central Mountain Air",
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Williams Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Williams_Lake_Airport",
+      "codes": [
+        "YWL",
+        "CYWL"
+      ],
+      "airlines": [
+        "Central Mountain Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Central Mountain Air": [
@@ -41,5 +52,7 @@
     "Pacific Coastal Airlines": [
       "Vancouver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:40Z",
+  "date-time-wikidata": "2026-04-18T15:34:31Z"
 }

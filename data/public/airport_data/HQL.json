@@ -7,6 +7,7 @@
   "lat": "37.6612713",
   "lon": "75.2910644",
   "altitude": "3,200",
+  "continent": "Asia",
   "region": "Xinjiang Uygur Zizhiqu",
   "country_alpha3": "CHN",
   "country_name": "China",
@@ -18,18 +19,28 @@
     "China Southern Airlines"
   ],
   "destinations": [
-    [
-      "Kashi Laining International Airport",
-      "https://en.wikipedia.org/wiki/Kashi_Laining_International_Airport",
-      "KHG",
-      "ZWSH"
-    ],
-    [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Kashi Laining International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kashi_Laining_International_Airport",
+      "codes": [
+        "KHG",
+        "ZWSH"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi Diwopu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Southern Airlines": [
@@ -37,5 +48,6 @@
       "Ürümqi Diwopu International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:06:25Z",
+  "date-time-wikidata": "2026-02-06T04:47:55Z"
 }

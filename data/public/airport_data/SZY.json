@@ -22,36 +22,61 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Dortmund",
-      "https://en.wikipedia.org/wiki/Dortmund_Airport",
-      "DTM",
-      "EDLW"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Marsa Alam",
-      "https://en.wikipedia.org/wiki/Marsa_Alam_International_Airport",
-      "RMF",
-      "HEMA"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ]
+    {
+      "city": "Dortmund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
+      "codes": [
+        "DTM",
+        "EDLW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Marsa Alam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marsa_Alam_International_Airport",
+      "codes": [
+        "RMF",
+        "HEMA"
+      ],
+      "airlines": [
+        "Air 001"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air 001": [
@@ -67,5 +92,7 @@
     "Wizz Air": [
       "Dortmund"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:01Z",
+  "date-time-wikidata": "2025-12-24T10:38:53Z"
 }

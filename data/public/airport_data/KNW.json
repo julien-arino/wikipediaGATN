@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Dillingham",
-      "https://en.wikipedia.org/wiki/Dillingham_Airport",
-      "DLG",
-      "PADL"
-    ],
-    [
-      "Ekwok",
-      "https://en.wikipedia.org/wiki/Ekwok_Airport",
-      "KEK",
-      "icao code not found"
-    ],
-    [
-      "Koliganek",
-      "https://en.wikipedia.org/wiki/Koliganek_Airport",
-      "KGK",
-      "PAJZ"
-    ]
+    {
+      "city": "Dillingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
+      "codes": [
+        "DLG",
+        "PADL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Ekwok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ekwok_Airport",
+      "codes": [
+        "KEK",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Koliganek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koliganek_Airport",
+      "codes": [
+        "KGK",
+        "PAJZ"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "Ekwok",
       "Koliganek"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:59Z",
+  "date-time-wikidata": "2025-05-31T02:29:35Z"
 }

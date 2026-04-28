@@ -19,23 +19,35 @@
     "SVG Air"
   ],
   "destinations": [
-    [
-      "Grenada",
-      "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
-      "GND",
-      "TGPY"
-    ],
-    [
-      "Union Island",
-      "https://en.wikipedia.org/wiki/Union_Island_Airport",
-      "UNI",
-      "TVSU"
-    ]
+    {
+      "city": "Grenada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+      "codes": [
+        "GND",
+        "TGPY"
+      ],
+      "airlines": [
+        "SVG Air"
+      ]
+    },
+    {
+      "city": "Union Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Union_Island_Airport",
+      "codes": [
+        "UNI",
+        "TVSU"
+      ],
+      "airlines": [
+        "SVG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SVG Air": [
       "Grenada",
       "Union Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:56Z",
+  "date-time-wikidata": "2025-11-18T20:54:10Z"
 }

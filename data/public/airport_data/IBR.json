@@ -20,30 +20,50 @@
     "Skymark Airlines"
   ],
   "destinations": [
-    [
-      "Cheongju",
-      "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
-      "CJJ",
-      "RKTU"
-    ],
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kobe",
-      "https://en.wikipedia.org/wiki/Kobe_Airport",
-      "UKB",
-      "RJBE"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ]
+    {
+      "city": "Cheongju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
+      "codes": [
+        "CJJ",
+        "RKTU"
+      ],
+      "airlines": [
+        "Aero K"
+      ]
+    },
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Kobe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_Airport",
+      "codes": [
+        "UKB",
+        "RJBE"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero K": [
@@ -54,5 +74,7 @@
       "Kobe",
       "Sapporo–Chitose"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:59Z",
+  "date-time-wikidata": "2026-03-23T21:08:25Z"
 }

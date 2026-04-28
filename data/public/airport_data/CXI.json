@@ -21,36 +21,61 @@
     "Nauru Airlines"
   ],
   "destinations": [
-    [
-      "Honolulu",
-      "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Tabuaeran",
-      "https://en.wikipedia.org/wiki/Tabuaeran",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tarawa",
-      "https://en.wikipedia.org/wiki/Bonriki_International_Airport",
-      "TRW",
-      "NGTA"
-    ],
-    [
-      "Teraina",
-      "https://en.wikipedia.org/wiki/Teraina",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Tabuaeran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabuaeran",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Kiribati"
+      ]
+    },
+    {
+      "city": "Tarawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bonriki_International_Airport",
+      "codes": [
+        "TRW",
+        "NGTA"
+      ],
+      "airlines": [
+        "Nauru Airlines"
+      ]
+    },
+    {
+      "city": "Teraina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teraina",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Kiribati"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Kiribati": [
@@ -64,5 +89,7 @@
     "Nauru Airlines": [
       "Tarawa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:58Z",
+  "date-time-wikidata": "2026-04-05T22:19:46Z"
 }

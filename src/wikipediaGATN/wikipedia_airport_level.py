@@ -26,6 +26,7 @@ Helper / fallback functions:
 """
 
 import csv
+from datetime import datetime, timezone
 import json
 import os
 import re
@@ -260,7 +261,7 @@ def get_wikipedia_airport_page_wikitext(link: str, verbose: bool = False):
         "prop":     "revisions",
         "titles":   page_title,
         "rvslots":  "*",
-        "rvprop":   "content",
+        "rvprop":   "content|timestamp",
         "redirects": 1,
     }
     try:
@@ -271,18 +272,19 @@ def get_wikipedia_airport_page_wikitext(link: str, verbose: bool = False):
             revisions = page.get("revisions")
             if revisions:
                 wikitext = revisions[0].get("slots", {}).get("main", {}).get("*")
+                timestamp = revisions[0].get("timestamp")
                 if verbose:
-                    print(f"Fetched wikitext for {page_title!r} ({len(wikitext or ''):,} chars)")
-                return wikitext
+                    print(f"Fetched wikitext for {page_title!r} ({len(wikitext or ''):,} chars, edit: {timestamp})")
+                return wikitext, timestamp
         warnings.warn(f"No wikitext revisions found for {page_title!r}.",
                       UserWarning, stacklevel=2)
-        return None
+        return None, None
     except requests.exceptions.RequestException as exc:
         logger.warning("Error fetching wikitext for %r", link, exc_info=exc)
-        return None
+        return None, None
     except (KeyError, ValueError) as exc:
         logger.warning("Could not parse wikitext response for %r", page_title, exc_info=exc)
-        return None
+        return None, None
 
 
 # ---------------------------------------------------------------------------
@@ -638,18 +640,21 @@ def extract_airport_information(
     if not link:
         return _EMPTY.copy()
 
+    # Capture the exact moment we initiate the extraction (standardized to match Wikipedia's Z format)
+    dt_parse = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
     html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
     if not html_content:
-        return {**_EMPTY, 'wikipedia_url': link}
+        return {**_EMPTY, 'wikipedia_url': link, 'date-time-parse': dt_parse}
 
-    wikitext = get_wikipedia_airport_page_wikitext(link, verbose=verbose)
+    wikitext, dt_wikidata = get_wikipedia_airport_page_wikitext(link, verbose=verbose)
     if not wikitext:
-        return {**_EMPTY, 'wikipedia_url': link}
+        return {**_EMPTY, 'wikipedia_url': link, 'date-time-parse': dt_parse}
 
     infobox = parse_infobox_from_wikitext(wikitext, verbose=verbose)
     if not infobox:
         warnings.warn(f"Could not parse infobox for {link!r}.", UserWarning, stacklevel=2)
-        return {**_EMPTY, 'wikipedia_url': link}
+        return {**_EMPTY, 'wikipedia_url': link, 'date-time-parse': dt_parse, 'date-time-wikidata': dt_wikidata}
 
     iata_raw = infobox.get('IATA')
     iata_clean = re.search(r'[A-Za-z]{3}', str(iata_raw)).group(0).upper() if iata_raw and re.search(r'[A-Za-z]{3}', str(iata_raw)) else None
@@ -676,6 +681,8 @@ def extract_airport_information(
         'airlines':              set(),
         'destinations':          set(),
         'airlines_destinations': set(),
+        'date-time-parse':       dt_parse,
+        'date-time-wikidata':    dt_wikidata,
     }
 
     ad_map_wikitext = extract_airlines_destinations_from_wikitext(wikitext)

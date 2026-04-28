@@ -23,108 +23,195 @@
     "Tibet Airlines"
   ],
   "destinations": [
-    [
-      "Aksu Hongqipo Airport",
-      "https://en.wikipedia.org/wiki/Aksu_Hongqipo_Airport",
-      "AKU",
-      "ZWAK"
-    ],
-    [
-      "Altay Xuedu Airport",
-      "https://en.wikipedia.org/wiki/Altay_Xuedu_Airport",
-      "AAT",
-      "ZWAT"
-    ],
-    [
-      "Bole Alashankou Airport",
-      "https://en.wikipedia.org/wiki/Bole_Alashankou_Airport",
-      "BPL",
-      "ZWBL"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Hami Yizhou Airport",
-      "https://en.wikipedia.org/wiki/Hami_Yizhou_Airport",
-      "HMI",
-      "ZWHM"
-    ],
-    [
-      "Hotan Kungang Airport",
-      "https://en.wikipedia.org/wiki/Hotan_Kungang_Airport",
-      "HTN",
-      "ZWTN"
-    ],
-    [
-      "Kashgar Laining International Airport",
-      "https://en.wikipedia.org/wiki/Kashgar_Laining_International_Airport",
-      "KHG",
-      "ZWSH"
-    ],
-    [
-      "Korla Airport",
-      "https://en.wikipedia.org/wiki/Korla_Airport",
-      "KRL",
-      "ZWKL"
-    ],
-    [
-      "Kuqa Qiuci Airport",
-      "https://en.wikipedia.org/wiki/Kuqa_Qiuci_Airport",
-      "KCA",
-      "ZWKC"
-    ],
-    [
-      "Lanzhou Zhongchuan International Airport",
-      "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
-      "LHW",
-      "ZLLL"
-    ],
-    [
-      "Ngari Gunsa Airport",
-      "https://en.wikipedia.org/wiki/Ngari_Gunsa_Airport",
-      "NGQ",
-      "ZUAL"
-    ],
-    [
-      "Tumushuke Tangwangcheng Airport",
-      "https://en.wikipedia.org/wiki/Tumushuke_Tangwangcheng_Airport",
-      "TWC",
-      "ZWTS"
-    ],
-    [
-      "Turpan Jiaohe Airport",
-      "https://en.wikipedia.org/wiki/Turpan_Jiaohe_Airport",
-      "TLQ",
-      "ZWTP"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ],
-    [
-      "Xining Caojiabao International Airport",
-      "https://en.wikipedia.org/wiki/Xining_Caojiabao_International_Airport",
-      "XNN",
-      "ZLXN"
-    ],
-    [
-      "Yining Airport",
-      "https://en.wikipedia.org/wiki/Yining_Airport",
-      "YIN",
-      "ZWYN"
-    ],
-    [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Aksu Hongqipo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aksu_Hongqipo_Airport",
+      "codes": [
+        "AKU",
+        "ZWAK"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Altay Xuedu Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Altay_Xuedu_Airport",
+      "codes": [
+        "AAT",
+        "ZWAT"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Bole Alashankou Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_Alashankou_Airport",
+      "codes": [
+        "BPL",
+        "ZWBL"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Hami Yizhou Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hami_Yizhou_Airport",
+      "codes": [
+        "HMI",
+        "ZWHM"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Hotan Kungang Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hotan_Kungang_Airport",
+      "codes": [
+        "HTN",
+        "ZWTN"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Kashgar Laining International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kashgar_Laining_International_Airport",
+      "codes": [
+        "KHG",
+        "ZWSH"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Korla Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Korla_Airport",
+      "codes": [
+        "KRL",
+        "ZWKL"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Kuqa Qiuci Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuqa_Qiuci_Airport",
+      "codes": [
+        "KCA",
+        "ZWKC"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Lanzhou Zhongchuan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
+      "codes": [
+        "LHW",
+        "ZLLL"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Ngari Gunsa Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngari_Gunsa_Airport",
+      "codes": [
+        "NGQ",
+        "ZUAL"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Tumushuke Tangwangcheng Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tumushuke_Tangwangcheng_Airport",
+      "codes": [
+        "TWC",
+        "ZWTS"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Turpan Jiaohe Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turpan_Jiaohe_Airport",
+      "codes": [
+        "TLQ",
+        "ZWTP"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Xining Caojiabao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xining_Caojiabao_International_Airport",
+      "codes": [
+        "XNN",
+        "ZLXN"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Yining Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yining_Airport",
+      "codes": [
+        "YIN",
+        "ZWYN"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi Diwopu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chengdu Airlines": [
@@ -156,5 +243,7 @@
       "Ngari Gunsa Airport",
       "Xining Caojiabao International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:37Z",
+  "date-time-wikidata": "2026-04-24T22:37:18Z"
 }

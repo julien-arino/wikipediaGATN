@@ -21,24 +21,40 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Chennai International Airport",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Colombo International Airport, Ratmalana",
-      "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
-      "RML",
-      "VCCC"
-    ],
-    [
-      "Tiruchirappalli International Airport",
-      "https://en.wikipedia.org/wiki/Tiruchirappalli_International_Airport",
-      "TRZ",
-      "VOTR"
-    ]
+    {
+      "city": "Chennai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Colombo International Airport, Ratmalana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
+      "codes": [
+        "RML",
+        "VCCC"
+      ],
+      "airlines": [
+        "Air Senok",
+        "FitsAir"
+      ]
+    },
+    {
+      "city": "Tiruchirappalli International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiruchirappalli_International_Airport",
+      "codes": [
+        "TRZ",
+        "VOTR"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Senok": [
@@ -51,5 +67,7 @@
       "Chennai International Airport",
       "Tiruchirappalli International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:40Z",
+  "date-time-wikidata": "2025-12-12T02:04:20Z"
 }

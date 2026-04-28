@@ -7,6 +7,7 @@
   "lat": "40.1345061",
   "lon": "26.4296904",
   "altitude": "7",
+  "continent": "Asia",
   "region": "Canakkale",
   "country_alpha3": "TUR",
   "country_name": "Türkiye",
@@ -18,17 +19,23 @@
     "AJet"
   ],
   "destinations": [
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ]
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
       "Ankara"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:04:47Z",
+  "date-time-wikidata": "2026-03-21T16:44:14Z"
 }

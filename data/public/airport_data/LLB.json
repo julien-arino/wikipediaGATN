@@ -19,23 +19,35 @@
     "Colorful Guizhou Airlines"
   ],
   "destinations": [
-    [
-      "Xingyi Wanfenglin Airport",
-      "https://en.wikipedia.org/wiki/Xingyi_Wanfenglin_Airport",
-      "ACX",
-      "ZUYI"
-    ],
-    [
-      "Zunyi Maotai Airport",
-      "https://en.wikipedia.org/wiki/Zunyi_Maotai_Airport",
-      "WMT",
-      "ZUMT"
-    ]
+    {
+      "city": "Xingyi Wanfenglin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xingyi_Wanfenglin_Airport",
+      "codes": [
+        "ACX",
+        "ZUYI"
+      ],
+      "airlines": [
+        "Colorful Guizhou Airlines"
+      ]
+    },
+    {
+      "city": "Zunyi Maotai Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zunyi_Maotai_Airport",
+      "codes": [
+        "WMT",
+        "ZUMT"
+      ],
+      "airlines": [
+        "Colorful Guizhou Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Colorful Guizhou Airlines": [
       "Xingyi Wanfenglin Airport",
       "Zunyi Maotai Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:20Z",
+  "date-time-wikidata": "2026-03-01T17:42:39Z"
 }

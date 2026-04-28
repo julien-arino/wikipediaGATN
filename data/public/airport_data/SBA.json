@@ -25,84 +25,155 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Oakland San Francisco Bay Airport",
-      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "OAK",
-      "KOAK"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Sacramento International Airport",
-      "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
-      "SMF",
-      "KSMF"
-    ],
-    [
-      "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ],
-    [
-      "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
-      "SAN",
-      "KSAN"
-    ],
-    [
-      "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ]
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Southwest Airlines",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Oakland San Francisco Bay Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle (airline brand)",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Portland International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Sacramento International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "San Diego International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "San Francisco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
@@ -138,5 +209,7 @@
       "Los Angeles International Airport",
       "San Francisco International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:28Z",
+  "date-time-wikidata": "2026-04-28T05:16:46Z"
 }

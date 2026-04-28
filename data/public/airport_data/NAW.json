@@ -19,23 +19,35 @@
     "Thai AirAsia"
   ],
   "destinations": [
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ]
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Thai AirAsia": [
       "Bangkok–Don Mueang",
       "Bangkok–Suvarnabhumi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:52Z",
+  "date-time-wikidata": "2026-01-02T17:47:56Z"
 }

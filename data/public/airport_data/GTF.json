@@ -23,42 +23,73 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "AZA",
-      "KIWA"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ],
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ]
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Mesa Gateway Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Salt Lake City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
@@ -78,5 +109,7 @@
       "Denver International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:05Z",
+  "date-time-wikidata": "2026-04-11T17:35:34Z"
 }

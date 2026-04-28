@@ -19,24 +19,39 @@
     "Golden Bay Air"
   ],
   "destinations": [
-    [
-      "Karamea",
-      "https://en.wikipedia.org/wiki/Karamea_Aerodrome",
-      "iata code not found",
-      "NZKM"
-    ],
-    [
-      "Nelson",
-      "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
-      "NSN",
-      "NZNS"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Karamea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karamea_Aerodrome",
+      "codes": [
+        "iata code not found",
+        "NZKM"
+      ],
+      "airlines": [
+        "Golden Bay Air"
+      ]
+    },
+    {
+      "city": "Nelson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
+      "codes": [
+        "NSN",
+        "NZNS"
+      ],
+      "airlines": [
+        "Golden Bay Air"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Golden Bay Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Golden Bay Air": [
@@ -44,5 +59,7 @@
       "Nelson",
       "Wellington"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:46Z",
+  "date-time-wikidata": "2023-02-23T00:58:57Z"
 }

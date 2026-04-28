@@ -20,18 +20,28 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ],
-    [
-      "Palu",
-      "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
-      "PLW",
-      "WAFF"
-    ]
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Sriwijaya Air"
+      ]
+    },
+    {
+      "city": "Palu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
+      "codes": [
+        "PLW",
+        "WAFF"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sriwijaya Air": [
@@ -40,5 +50,7 @@
     "Susi Air": [
       "Palu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:34Z",
+  "date-time-wikidata": "2026-03-21T20:59:15Z"
 }

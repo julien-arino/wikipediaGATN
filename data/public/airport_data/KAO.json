@@ -27,78 +27,144 @@
     "airBaltic"
   ],
   "destinations": [
-    [
-      "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Riga",
-      "https://en.wikipedia.org/wiki/Riga_Airport",
-      "RIX",
-      "EVRA"
-    ],
-    [
-      "Rotterdam",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zürich_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Eurowings",
+        "airBaltic"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Hamburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "airBaltic"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "TUI Airways",
+        "airBaltic"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "TUI Airways",
+        "airBaltic"
+      ]
+    },
+    {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "airBaltic"
+      ]
+    },
+    {
+      "city": "Rotterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "TUI fly Netherlands",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zürich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "airBaltic": [
@@ -137,5 +203,7 @@
     "TUI fly Netherlands": [
       "Rotterdam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:31Z",
+  "date-time-wikidata": "2026-03-24T15:51:13Z"
 }

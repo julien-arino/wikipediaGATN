@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Florianópolis",
-      "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-      "FLN",
-      "SBFL"
-    ],
-    [
-      "Porto Alegre",
-      "https://en.wikipedia.org/wiki/Salgado_Filho_Porto_Alegre_International_Airport",
-      "POA",
-      "SBPA"
-    ]
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Alegre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salgado_Filho_Porto_Alegre_International_Airport",
+      "codes": [
+        "POA",
+        "SBPA"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Florianópolis",
       "Porto Alegre"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:48Z",
+  "date-time-wikidata": "2026-02-19T21:58:31Z"
 }

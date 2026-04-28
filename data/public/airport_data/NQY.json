@@ -25,84 +25,151 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Belfast–City",
-      "https://en.wikipedia.org/wiki/Belfast_City_Airport",
-      "BHD",
-      "EGAC"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Faro",
-      "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Glasgow",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "GLA",
-      "EGPF"
-    ],
-    [
-      "Isle of Man",
-      "https://en.wikipedia.org/wiki/Isle_of_Man_Airport",
-      "IOM",
-      "EGNS"
-    ],
-    [
-      "Isles of Scilly",
-      "https://en.wikipedia.org/wiki/St_Mary's_Airport,_Isles_of_Scilly",
-      "ISC",
-      "EGHE"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Newcastle upon Tyne",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
-      "NCL",
-      "EGNT"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Belfast–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "codes": [
+        "BHD",
+        "EGAC"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Faro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Glasgow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Isle of Man",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isle_of_Man_Airport",
+      "codes": [
+        "IOM",
+        "EGNS"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Isles of Scilly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St_Mary's_Airport,_Isles_of_Scilly",
+      "codes": [
+        "ISC",
+        "EGHE"
+      ],
+      "airlines": [
+        "Isles of Scilly Skybus"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Loganair",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Newcastle upon Tyne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "codes": [
+        "NCL",
+        "EGNT"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -134,5 +201,7 @@
       "Faro",
       "Málaga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:05Z",
+  "date-time-wikidata": "2026-04-27T22:22:56Z"
 }

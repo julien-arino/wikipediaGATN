@@ -29,168 +29,309 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Baltimore/Washington International Airport",
-      "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Charleston International Airport",
-      "https://en.wikipedia.org/wiki/Charleston_International_Airport",
-      "CHS",
-      "KCHS"
-    ],
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Concord–Padgett Regional Airport",
-      "https://en.wikipedia.org/wiki/Concord%E2%80%93Padgett_Regional_Airport",
-      "USA",
-      "KJQF"
-    ],
-    [
-      "Detroit Metropolitan Airport",
-      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
-      "DTW",
-      "KDTW"
-    ],
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "LaGuardia Airport",
-      "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "LGA",
-      "KLGA"
-    ],
-    [
-      "Lakeland Linder International Airport",
-      "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
-      "LAL",
-      "KLAL"
-    ],
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Midway International Airport",
-      "https://en.wikipedia.org/wiki/Midway_International_Airport",
-      "MDW",
-      "KMDW"
-    ],
-    [
-      "Myrtle Beach International Airport",
-      "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
-      "MYR",
-      "KMYR"
-    ],
-    [
-      "Nashville International Airport",
-      "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "BNA",
-      "KBNA"
-    ],
-    [
-      "Newark Liberty International Airport",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
-      "PHL",
-      "KPHL"
-    ],
-    [
-      "Punta Gorda Airport (Florida)",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "PGD",
-      "KPGD"
-    ],
-    [
-      "Raleigh-Durham International Airport",
-      "https://en.wikipedia.org/wiki/Raleigh-Durham_International_Airport",
-      "RDU",
-      "KRDU"
-    ],
-    [
-      "Raleigh–Durham International Airport",
-      "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
-      "RDU",
-      "KRDU"
-    ],
-    [
-      "Ronald Reagan Washington National Airport",
-      "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "DCA",
-      "KDCA"
-    ],
-    [
-      "Sarasota–Bradenton International Airport",
-      "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
-      "SRQ",
-      "KSRQ"
-    ],
-    [
-      "Southwest Florida International Airport",
-      "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "RSW",
-      "KRSW"
-    ],
-    [
-      "Tampa International Airport",
-      "https://en.wikipedia.org/wiki/Tampa_International_Airport",
-      "TPA",
-      "KTPA"
-    ]
+    {
+      "city": "Baltimore/Washington International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
+      "codes": [
+        "BWI",
+        "KBWI"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Charleston International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleston_International_Airport",
+      "codes": [
+        "CHS",
+        "KCHS"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Concord–Padgett Regional Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concord%E2%80%93Padgett_Regional_Airport",
+      "codes": [
+        "USA",
+        "KJQF"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Detroit Metropolitan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale–Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Delta Connection",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "LaGuardia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Lakeland Linder International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
+      "codes": [
+        "LAL",
+        "KLAL"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Midway International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Myrtle Beach International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
+      "codes": [
+        "MYR",
+        "KMYR"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Nashville International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
+      "codes": [
+        "BNA",
+        "KBNA"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Newark Liberty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "JetBlue",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Philadelphia International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Punta Gorda Airport (Florida)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "codes": [
+        "PGD",
+        "KPGD"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Raleigh-Durham International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh-Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Raleigh–Durham International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Ronald Reagan Washington National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Sarasota–Bradenton International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "codes": [
+        "SRQ",
+        "KSRQ"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Southwest Florida International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Breeze Airways",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Tampa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Breeze Airways",
+        "Southwest Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -248,5 +389,7 @@
       "Newark Liberty International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:49Z",
+  "date-time-wikidata": "2026-04-23T21:38:01Z"
 }

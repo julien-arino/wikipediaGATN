@@ -20,30 +20,51 @@
     "Jetstar"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Gold Coast",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -55,5 +76,7 @@
       "Auckland",
       "Gold Coast"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:12Z",
+  "date-time-wikidata": "2026-01-24T21:38:28Z"
 }

@@ -7,6 +7,7 @@
   "lat": "2.6464881",
   "lon": "125.4224384",
   "altitude": null,
+  "continent": "Asia",
   "region": "North Sulawesi",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -19,18 +20,30 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Naha Airport (Indonesia)",
-      "https://en.wikipedia.org/wiki/Naha_Airport_(Indonesia)",
-      "NAH",
-      "WAMH"
-    ],
-    [
-      "Sam Ratulangi International Airport",
-      "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
-      "MDC",
-      "WAMM"
-    ]
+    {
+      "city": "Naha Airport (Indonesia)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport_(Indonesia)",
+      "codes": [
+        "NAH",
+        "WAMH"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Sam Ratulangi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
+      "codes": [
+        "MDC",
+        "WAMM"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
@@ -42,5 +55,6 @@
       "Sam Ratulangi International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:04:22Z",
+  "date-time-wikidata": "2025-03-13T13:37:34Z"
 }

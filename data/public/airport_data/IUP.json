@@ -19,23 +19,35 @@
     "Apuí Táxi Aéreo"
   ],
   "destinations": [
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ],
-    [
-      "Manicoré",
-      "https://en.wikipedia.org/wiki/Manicoré_Airport",
-      "MNX",
-      "SBMY"
-    ]
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Apuí Táxi Aéreo"
+      ]
+    },
+    {
+      "city": "Manicoré",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manicoré_Airport",
+      "codes": [
+        "MNX",
+        "SBMY"
+      ],
+      "airlines": [
+        "Apuí Táxi Aéreo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Apuí Táxi Aéreo": [
       "Manaus",
       "Manicoré"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:12Z",
+  "date-time-wikidata": "2025-02-17T16:18:59Z"
 }

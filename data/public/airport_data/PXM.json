@@ -28,66 +28,121 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "DFW",
-      "KDFW"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Oaxaca",
-      "https://en.wikipedia.org/wiki/Oaxaca_International_Airport",
-      "OAX",
-      "MMOX"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect",
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Oaxaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oaxaca_International_Airport",
+      "codes": [
+        "OAX",
+        "MMOX"
+      ],
+      "airlines": [
+        "Aerotucán",
+        "Aerovega"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Rouge"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Rouge"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -125,5 +180,7 @@
     "WestJet": [
       "Calgary"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:10Z",
+  "date-time-wikidata": "2026-04-07T09:45:24Z"
 }

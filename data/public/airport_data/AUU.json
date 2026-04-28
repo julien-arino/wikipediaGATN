@@ -7,6 +7,7 @@
   "lat": "-13.3537491",
   "lon": "141.7202566",
   "altitude": "8.84",
+  "continent": "Oceania",
   "region": "Queensland",
   "country_alpha3": "AUS",
   "country_name": "Australia",
@@ -18,24 +19,39 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Lockhart River",
-      "https://en.wikipedia.org/wiki/Lockhart_River_Airport",
-      "IRG",
-      "YLHR"
-    ],
-    [
-      "Weipa",
-      "https://en.wikipedia.org/wiki/Weipa_Airport",
-      "WEI",
-      "YBWP"
-    ]
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Lockhart River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lockhart_River_Airport",
+      "codes": [
+        "IRG",
+        "YLHR"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Weipa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weipa_Airport",
+      "codes": [
+        "WEI",
+        "YBWP"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytrans Australia": [
@@ -44,5 +60,6 @@
       "Weipa"
     ]
   },
-  "continent": "Oceania"
+  "date-time-parse": "2026-04-28T22:03:36Z",
+  "date-time-wikidata": "2026-02-20T23:42:28Z"
 }

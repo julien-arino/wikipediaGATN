@@ -14,94 +14,127 @@
   "subdivision_code": "Departement des Hautes-Pyrenees",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tarbes–Lourdes–Pyrénées_Airport",
   "number_airlines": 2,
-  "outdegree": 11,
+  "outdegree": 9,
   "airlines": [
     "Ryanair",
     "Volotea"
   ],
   "destinations": [
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Catania",
-      "https://en.wikipedia.org/wiki/Catania_Airport",
-      "CTA",
-      "LICC"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Malta",
-      "https://en.wikipedia.org/wiki/Malta_Airport",
-      "MLA",
-      "LMML"
-    ],
-    [
-      "Naples",
-      "https://en.wikipedia.org/wiki/Naples_International_Airport",
-      "NAP",
-      "LIRN"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rome–Ciampino",
-      "https://en.wikipedia.org/wiki/Ciampino–G._B._Pastine_International_Airport",
-      "CIA",
-      "LIRA"
-    ]
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania_Airport",
+      "codes": [
+        "CTA",
+        "LICC"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Malta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_Airport",
+      "codes": [
+        "MLA",
+        "LMML"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Milan-Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
-      "Bergamo",
-      "Charleroi",
-      "Dublin",
       "London–Stansted",
       "Malta",
-      "Rome–Ciampino"
+      "Milan-Bergamo"
     ],
     "Volotea": [
       "Catania",
       "Lisbon",
       "Naples",
       "Palermo",
-      "Paris–Orly"
+      "Paris–Orly",
+      "Rome–Fiumicino"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:56Z",
+  "date-time-wikidata": "2026-04-27T21:54:59Z"
 }

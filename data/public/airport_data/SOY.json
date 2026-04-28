@@ -19,23 +19,35 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Kirkwall",
-      "https://en.wikipedia.org/wiki/Kirkwall_Airport",
-      "KOI",
-      "EGPA"
-    ],
-    [
-      "Sanday",
-      "https://en.wikipedia.org/wiki/Sanday_Airport",
-      "NDY",
-      "EGES"
-    ]
+    {
+      "city": "Kirkwall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kirkwall_Airport",
+      "codes": [
+        "KOI",
+        "EGPA"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Sanday",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sanday_Airport",
+      "codes": [
+        "NDY",
+        "EGES"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Loganair": [
       "Kirkwall",
       "Sanday"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:12Z",
+  "date-time-wikidata": "2025-10-30T16:41:07Z"
 }

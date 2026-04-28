@@ -14,7 +14,7 @@
   "subdivision_code": "Darjiling",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bagdogra_Airport",
   "number_airlines": 5,
-  "outdegree": 13,
+  "outdegree": 14,
   "airlines": [
     "Air India Express",
     "Akasa Air",
@@ -23,89 +23,177 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Agartala",
-      "https://en.wikipedia.org/wiki/Maharaja_Bir_Bikram_Airport",
-      "IXA",
-      "VEAT"
-    ],
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dibrugarh",
-      "https://en.wikipedia.org/wiki/Dibrugarh_Airport",
-      "DIB",
-      "VEMN"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Imphal_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Paro",
-      "https://en.wikipedia.org/wiki/Paro_Airport",
-      "PBH",
-      "VQPR"
-    ],
-    [
-      "Pune",
-      "https://en.wikipedia.org/wiki/Pune_International_Airport",
-      "PNQ",
-      "VAPO"
-    ]
+    {
+      "city": "Agartala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maharaja_Bir_Bikram_Airport",
+      "codes": [
+        "IXA",
+        "VEAT"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Dibrugarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dibrugarh_Airport",
+      "codes": [
+        "DIB",
+        "VEMN"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Paro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paro_Airport",
+      "codes": [
+        "PBH",
+        "VQPR"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_International_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
       "Agartala",
       "Bengaluru",
+      "Chennai",
       "Delhi",
       "Dibrugarh",
       "Hyderabad",
@@ -137,5 +225,7 @@
       "Kolkata",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:14Z",
+  "date-time-wikidata": "2026-04-28T15:16:58Z"
 }

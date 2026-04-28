@@ -20,18 +20,30 @@
     "Yute Commuter Service"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Quinhagak",
-      "https://en.wikipedia.org/wiki/Quinhagak_Airport",
-      "KWN",
-      "PAQH"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Yute Commuter Service"
+      ]
+    },
+    {
+      "city": "Quinhagak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quinhagak_Airport",
+      "codes": [
+        "KWN",
+        "PAQH"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Yute Commuter Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -42,5 +54,7 @@
       "Bethel",
       "Quinhagak"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:21Z",
+  "date-time-wikidata": "2025-08-24T15:19:07Z"
 }

@@ -20,30 +20,50 @@
     "Yamal Airlines"
   ],
   "destinations": [
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Perm",
-      "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
-      "PEE",
-      "USPP"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
+      "codes": [
+        "PEE",
+        "USPP"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Yamal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Utair": [
@@ -54,5 +74,7 @@
     "Yamal Airlines": [
       "Yekaterinburg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:51Z",
+  "date-time-wikidata": "2025-11-03T17:46:47Z"
 }

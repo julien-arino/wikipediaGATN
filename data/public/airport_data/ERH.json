@@ -21,30 +21,50 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rabat",
-      "https://en.wikipedia.org/wiki/Rabat–Salé_Airport",
-      "RBA",
-      "GMME"
-    ]
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Rabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rabat–Salé_Airport",
+      "codes": [
+        "RBA",
+        "GMME"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Royal Air Maroc": [
@@ -57,5 +77,7 @@
     "Transavia": [
       "Paris–Orly"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:21Z",
+  "date-time-wikidata": "2026-04-02T21:26:01Z"
 }

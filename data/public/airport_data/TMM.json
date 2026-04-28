@@ -20,36 +20,61 @@
     "Madagascar Airlines"
   ],
   "destinations": [
-    [
-      "Antananarivo",
-      "https://en.wikipedia.org/wiki/Ivato_Airport",
-      "TNR",
-      "FMMI"
-    ],
-    [
-      "Maroantsetra",
-      "https://en.wikipedia.org/wiki/Maroantsetra_Airport",
-      "WMN",
-      "FMNR"
-    ],
-    [
-      "Saint-Denis de la Réunion",
-      "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
-      "RUN",
-      "FMEE"
-    ],
-    [
-      "Sainte-Marie",
-      "https://en.wikipedia.org/wiki/Sainte_Marie_Airport",
-      "SMS",
-      "FMMS"
-    ],
-    [
-      "Sambava",
-      "https://en.wikipedia.org/wiki/Sambava_Airport",
-      "SVB",
-      "FMNS"
-    ]
+    {
+      "city": "Antananarivo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivato_Airport",
+      "codes": [
+        "TNR",
+        "FMMI"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Maroantsetra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maroantsetra_Airport",
+      "codes": [
+        "WMN",
+        "FMNR"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Saint-Denis de la Réunion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
+      "codes": [
+        "RUN",
+        "FMEE"
+      ],
+      "airlines": [
+        "Air Austral"
+      ]
+    },
+    {
+      "city": "Sainte-Marie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sainte_Marie_Airport",
+      "codes": [
+        "SMS",
+        "FMMS"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Sambava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sambava_Airport",
+      "codes": [
+        "SVB",
+        "FMNS"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Austral": [
@@ -61,5 +86,7 @@
       "Sainte-Marie",
       "Sambava"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:09Z",
+  "date-time-wikidata": "2024-09-21T15:04:47Z"
 }

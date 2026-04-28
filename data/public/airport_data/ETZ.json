@@ -22,42 +22,72 @@
     "Twin Jet"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Brest",
-      "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
-      "BES",
-      "LFRB"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Casablanca_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Constantine",
-      "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
-      "CZL",
-      "DABC"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Oran",
-      "https://en.wikipedia.org/wiki/Oran_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Brest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
+      "codes": [
+        "BES",
+        "LFRB"
+      ],
+      "airlines": [
+        "Twin Jet"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Casablanca_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Constantine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
+      "codes": [
+        "CZL",
+        "DABC"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Oran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oran_Airport",
+      "codes": [
+        "ORN",
+        "DAOO"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -74,5 +104,7 @@
     "Twin Jet": [
       "Brest"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:24Z",
+  "date-time-wikidata": "2026-03-30T18:22:07Z"
 }

@@ -21,24 +21,40 @@
     "InterCaribbean Airways"
   ],
   "destinations": [
-    [
-      "Grand Turk",
-      "https://en.wikipedia.org/wiki/JAGS_McCartney_International_Airport",
-      "GDT",
-      "MBGT"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Providenciales",
-      "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
-      "PLS",
-      "MBPV"
-    ]
+    {
+      "city": "Grand Turk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/JAGS_McCartney_International_Airport",
+      "codes": [
+        "GDT",
+        "MBGT"
+      ],
+      "airlines": [
+        "Caicos Express Airways"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Providenciales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
+      "codes": [
+        "PLS",
+        "MBPV"
+      ],
+      "airlines": [
+        "Caicos Express Airways",
+        "InterCaribbean Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle": [
@@ -51,5 +67,7 @@
     "InterCaribbean Airways": [
       "Providenciales"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:34Z",
+  "date-time-wikidata": "2026-03-04T16:55:41Z"
 }

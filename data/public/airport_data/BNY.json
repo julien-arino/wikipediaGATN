@@ -19,23 +19,35 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Rennell",
-      "https://en.wikipedia.org/wiki/Rennell/Tingoa_Airport",
-      "RNL",
-      "AGGR"
-    ]
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Rennell",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rennell/Tingoa_Airport",
+      "codes": [
+        "RNL",
+        "AGGR"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
       "Honiara",
       "Rennell"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:34Z",
+  "date-time-wikidata": "2025-09-07T02:19:09Z"
 }

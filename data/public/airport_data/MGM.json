@@ -21,36 +21,61 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "George Bush Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Ronald Reagan Washington National Airport",
-      "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "DCA",
-      "KDCA"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "George Bush Intercontinental Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Ronald Reagan Washington National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -64,5 +89,7 @@
     "United Express": [
       "George Bush Intercontinental Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:39Z",
+  "date-time-wikidata": "2026-04-07T13:55:55Z"
 }

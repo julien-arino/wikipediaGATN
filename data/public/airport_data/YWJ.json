@@ -20,24 +20,40 @@
     "North-Wright Airways"
   ],
   "destinations": [
-    [
-      "Norman Wells",
-      "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
-      "YVQ",
-      "CYVQ"
-    ],
-    [
-      "Tulita",
-      "https://en.wikipedia.org/wiki/Tulita_Airport",
-      "ZFN",
-      "CZFN"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Norman Wells",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
+      "codes": [
+        "YVQ",
+        "CYVQ"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Tulita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tulita_Airport",
+      "codes": [
+        "ZFN",
+        "CZFN"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "North-Wright Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North-Wright Airways": [
@@ -48,5 +64,7 @@
     "Buffalo Airways": [
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:48Z",
+  "date-time-wikidata": "2025-12-20T18:42:13Z"
 }

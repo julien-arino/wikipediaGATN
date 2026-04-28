@@ -20,18 +20,29 @@
     "Star Air"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -41,5 +52,7 @@
     "Star Air": [
       "Bengaluru"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:01Z",
+  "date-time-wikidata": "2025-12-23T06:18:09Z"
 }

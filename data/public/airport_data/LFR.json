@@ -20,18 +20,29 @@
     "LASER Airlines"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Porlamar_Airport",
-      "PMV",
-      "SVMG"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Conviasa",
+        "LASER Airlines"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porlamar_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Conviasa": [
@@ -41,5 +52,7 @@
     "LASER Airlines": [
       "Caracas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:00Z",
+  "date-time-wikidata": "2025-07-13T00:23:34Z"
 }

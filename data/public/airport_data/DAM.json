@@ -35,144 +35,279 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Adana/Mersin",
-      "https://en.wikipedia.org/wiki/Çukurova_International_Airport",
-      "COV",
-      "LTDB"
-    ],
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
-      "BGW",
-      "ORBI"
-    ],
-    [
-      "Benghazi",
-      "https://en.wikipedia.org/wiki/Benina_International_Airport",
-      "BEN",
-      "HLLB"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Erbil",
-      "https://en.wikipedia.org/wiki/Erbil_International_Airport",
-      "EBL",
-      "ORER"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Seeb_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Tripoli–Mitiga",
-      "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
-      "MJI",
-      "HLLM"
-    ],
-    [
-      "İzmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Etihad Airways",
+        "Fly Cham",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Etihad Airways",
+        "Fly Cham",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Adana/Mersin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Çukurova_International_Airport",
+      "codes": [
+        "COV",
+        "LTDB"
+      ],
+      "airlines": [
+        "Fly Cham"
+      ]
+    },
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Air Mediterranean"
+      ]
+    },
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Fly Cham"
+      ]
+    },
+    {
+      "city": "Benghazi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benina_International_Airport",
+      "codes": [
+        "BEN",
+        "HLLB"
+      ],
+      "airlines": [
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Dan Air"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Flynas",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Fly Cham",
+        "Flydubai",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Erbil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erbil_International_Airport",
+      "codes": [
+        "EBL",
+        "ORER"
+      ],
+      "airlines": [
+        "Fly Cham"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flyadeal",
+        "Flynas",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Fly Cham",
+        "Jazeera Airways",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seeb_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Fly Cham",
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flyadeal",
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Fly Cham",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "Tripoli–Mitiga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
+      "codes": [
+        "MJI",
+        "HLLM"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Fly Cham",
+        "Syrian Air"
+      ]
+    },
+    {
+      "city": "İzmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afriqiyah Airways": [
@@ -207,7 +342,8 @@
       "Erbil",
       "Kuwait City",
       "Muscat",
-      "Sharjah"
+      "Sharjah",
+      "Tripoli–Mitiga"
     ],
     "Flydubai": [
       "Dubai–International"
@@ -247,5 +383,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:44Z",
+  "date-time-wikidata": "2026-04-28T16:52:55Z"
 }

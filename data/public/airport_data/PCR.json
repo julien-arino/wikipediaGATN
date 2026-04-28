@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "El Dorado International Airport",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "La Vanguardia Airport",
-      "https://en.wikipedia.org/wiki/La_Vanguardia_Airport",
-      "VVC",
-      "SKVV"
-    ]
+    {
+      "city": "El Dorado International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "La Vanguardia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Vanguardia_Airport",
+      "codes": [
+        "VVC",
+        "SKVV"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "El Dorado International Airport",
       "La Vanguardia Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:39Z",
+  "date-time-wikidata": "2026-01-25T22:10:32Z"
 }

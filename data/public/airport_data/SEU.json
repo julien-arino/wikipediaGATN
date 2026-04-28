@@ -26,54 +26,115 @@
     "Safari Plus"
   ],
   "destinations": [
-    [
-      "Arusha",
-      "https://en.wikipedia.org/wiki/Arusha_Airport",
-      "ARK",
-      "HTAR"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Kilimanjaro",
-      "https://en.wikipedia.org/wiki/Kilimanjaro_International_Airport",
-      "JRO",
-      "HTKJ"
-    ],
-    [
-      "Manyara",
-      "https://en.wikipedia.org/wiki/Lake_Manyara_Airport",
-      "LKY",
-      "HTLM"
-    ],
-    [
-      "Mwanza",
-      "https://en.wikipedia.org/wiki/Mwanza_Airport",
-      "MWZ",
-      "HTMW"
-    ],
-    [
-      "Pemba",
-      "https://en.wikipedia.org/wiki/Pemba_Airport_(Tanzania)",
-      "PMA",
-      "HTPE"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
-      "ZNZ",
-      "HTZA"
-    ]
+    {
+      "city": "Arusha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arusha_Airport",
+      "codes": [
+        "ARK",
+        "HTAR"
+      ],
+      "airlines": [
+        "Air Excel",
+        "As Salaam Air",
+        "Auric Air",
+        "Coastal Aviation",
+        "Flightlink",
+        "Regional Air",
+        "Safari Plus"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "As Salaam Air",
+        "Coastal Aviation",
+        "Flightlink",
+        "Precision Air",
+        "Regional Air"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Kilimanjaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kilimanjaro_International_Airport",
+      "codes": [
+        "JRO",
+        "HTKJ"
+      ],
+      "airlines": [
+        "Coastal Aviation",
+        "Flightlink",
+        "Regional Air"
+      ]
+    },
+    {
+      "city": "Manyara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Manyara_Airport",
+      "codes": [
+        "LKY",
+        "HTLM"
+      ],
+      "airlines": [
+        "Air Excel",
+        "Auric Air",
+        "Coastal Aviation",
+        "Regional Air"
+      ]
+    },
+    {
+      "city": "Mwanza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
+      "codes": [
+        "MWZ",
+        "HTMW"
+      ],
+      "airlines": [
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Pemba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pemba_Airport_(Tanzania)",
+      "codes": [
+        "PMA",
+        "HTPE"
+      ],
+      "airlines": [
+        "As Salaam Air"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "As Salaam Air",
+        "Coastal Aviation",
+        "Flightlink",
+        "Precision Air",
+        "Regional Air",
+        "Safari Plus"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Excel": [
@@ -121,5 +182,7 @@
       "Arusha",
       "Zanzibar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:06Z",
+  "date-time-wikidata": "2025-11-18T09:30:27Z"
 }

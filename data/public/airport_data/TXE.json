@@ -20,12 +20,18 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Medan",
-      "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
-      "KNO",
-      "WIMM"
-    ]
+    {
+      "city": "Medan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
+      "codes": [
+        "KNO",
+        "WIMM"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -34,5 +40,7 @@
     "Wings Air": [
       "Medan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:47Z",
+  "date-time-wikidata": "2025-12-14T22:36:22Z"
 }

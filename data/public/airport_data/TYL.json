@@ -21,12 +21,19 @@
     "Sky Airline Peru"
   ],
   "destinations": [
-    [
-      "Jorge Chávez International Airport",
-      "https://en.wikipedia.org/wiki/Jorge_Ch%C3%A1vez_International_Airport",
-      "LIM",
-      "SPJC"
-    ]
+    {
+      "city": "Jorge Chávez International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Ch%C3%A1vez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "JetSmart Perú",
+        "LATAM Perú",
+        "Sky Airline Peru"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Perú": [
@@ -38,5 +45,7 @@
     "Sky Airline Peru": [
       "Jorge Chávez International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:36Z",
+  "date-time-wikidata": "2025-03-15T07:47:23Z"
 }

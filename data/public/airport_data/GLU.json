@@ -19,23 +19,35 @@
     "Drukair"
   ],
   "destinations": [
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhash_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Paro",
-      "https://en.wikipedia.org/wiki/Paro_International_Airport",
-      "PBH",
-      "VQPR"
-    ]
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhash_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    },
+    {
+      "city": "Paro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paro_International_Airport",
+      "codes": [
+        "PBH",
+        "VQPR"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Drukair": [
       "Kolkata",
       "Paro"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:29Z",
+  "date-time-wikidata": "2026-01-11T06:53:08Z"
 }

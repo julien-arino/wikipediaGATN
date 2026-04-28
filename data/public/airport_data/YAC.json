@@ -21,12 +21,19 @@
     "Slate Falls Airways"
   ],
   "destinations": [
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ]
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Perimeter Aviation",
+        "Slate Falls Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North Star Air": [
@@ -38,5 +45,7 @@
     "Slate Falls Airways": [
       "Sioux Lookout"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:36Z",
+  "date-time-wikidata": "2024-04-22T17:12:20Z"
 }

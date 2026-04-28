@@ -20,18 +20,28 @@
     "InterCaribbean Airways"
   ],
   "destinations": [
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Providenciales International Airport",
-      "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
-      "PLS",
-      "MBPV"
-    ]
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Providenciales International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
+      "codes": [
+        "PLS",
+        "MBPV"
+      ],
+      "airlines": [
+        "InterCaribbean Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -40,5 +50,7 @@
     "InterCaribbean Airways": [
       "Providenciales International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:14Z",
+  "date-time-wikidata": "2025-01-05T06:49:10Z"
 }

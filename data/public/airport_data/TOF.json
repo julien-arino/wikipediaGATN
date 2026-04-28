@@ -27,102 +27,185 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Nha Trang",
-      "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport",
-      "CXR",
-      "VVCR"
-    ],
-    [
-      "Nizhnevartovsk",
-      "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
-      "NJC",
-      "USNN"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Pattaya",
-      "https://en.wikipedia.org/wiki/U-Tapao_Airport",
-      "UTP",
-      "VTBU"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Strezhevoy",
-      "https://en.wikipedia.org/wiki/Strezhevoy_Airport",
-      "SWT",
-      "UNSS"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Nordwind Airlines"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Nha Trang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport",
+      "codes": [
+        "CXR",
+        "VVCR"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Nizhnevartovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
+      "codes": [
+        "NJC",
+        "USNN"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Pattaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/U-Tapao_Airport",
+      "codes": [
+        "UTP",
+        "VTBU"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Nordwind Airlines"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Nordwind Airlines",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Strezhevoy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strezhevoy_Airport",
+      "codes": [
+        "SWT",
+        "UNSS"
+      ],
+      "airlines": [
+        "KrasAvia",
+        "Utair"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines",
+        "RusLine"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -162,5 +245,7 @@
       "Surgut",
       "Tyumen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:32Z",
+  "date-time-wikidata": "2025-11-03T20:06:03Z"
 }

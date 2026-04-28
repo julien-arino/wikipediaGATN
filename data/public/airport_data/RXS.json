@@ -21,12 +21,19 @@
     "Philippines AirAsia"
   ],
   "destinations": [
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express",
+        "Philippines AirAsia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebu Pacific": [
@@ -38,5 +45,7 @@
     "Philippines AirAsia": [
       "Manila"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:56Z",
+  "date-time-wikidata": "2025-11-16T21:52:14Z"
 }

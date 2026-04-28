@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Saattut",
-      "https://en.wikipedia.org/wiki/Saattut_Heliport",
-      "SAE",
-      "BGST"
-    ],
-    [
-      "Uummannaq",
-      "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
-      "UMD",
-      "BGUM"
-    ]
+    {
+      "city": "Saattut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saattut_Heliport",
+      "codes": [
+        "SAE",
+        "BGST"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Uummannaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
+      "codes": [
+        "UMD",
+        "BGUM"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Saattut",
       "Uummannaq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:59Z",
+  "date-time-wikidata": "2025-03-29T21:23:53Z"
 }

@@ -28,72 +28,136 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Abha",
-      "https://en.wikipedia.org/wiki/Abha_International_Airport",
-      "AHB",
-      "OEAB"
-    ],
-    [
-      "Assiut",
-      "https://en.wikipedia.org/wiki/Assiut_Airport",
-      "ATZ",
-      "HEAT"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Sohag",
-      "https://en.wikipedia.org/wiki/Sohag_International_Airport",
-      "HMB",
-      "HESG"
-    ]
+    {
+      "city": "Abha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abha_International_Airport",
+      "codes": [
+        "AHB",
+        "OEAB"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Assiut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Assiut_Airport",
+      "codes": [
+        "ATZ",
+        "HEAT"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air Cairo",
+        "EgyptAir",
+        "Nesma Airlines",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Flynas",
+        "flyadeal"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flynas",
+        "Saudia",
+        "flyadeal"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flynas",
+        "Saudia",
+        "flyadeal"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Sohag",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sohag_International_Airport",
+      "codes": [
+        "HMB",
+        "HESG"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -136,5 +200,7 @@
       "Jeddah",
       "Riyadh"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:44Z",
+  "date-time-wikidata": "2026-04-01T18:43:57Z"
 }

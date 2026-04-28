@@ -20,30 +20,50 @@
     "Starspeed"
   ],
   "destinations": [
-    [
-      "Exeter",
-      "https://en.wikipedia.org/wiki/Exeter_International_Airport",
-      "EXT",
-      "EGTE"
-    ],
-    [
-      "Land's End",
-      "https://en.wikipedia.org/wiki/Land's_End_Airport",
-      "LEQ",
-      "EGHC"
-    ],
-    [
-      "Newquay",
-      "https://en.wikipedia.org/wiki/Newquay_Airport",
-      "NQY",
-      "EGHQ"
-    ],
-    [
-      "Penzance",
-      "https://en.wikipedia.org/wiki/Penzance_Heliport",
-      "PZE",
-      "EGHK"
-    ]
+    {
+      "city": "Exeter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Exeter_International_Airport",
+      "codes": [
+        "EXT",
+        "EGTE"
+      ],
+      "airlines": [
+        "Isles of Scilly Skybus"
+      ]
+    },
+    {
+      "city": "Land's End",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Land's_End_Airport",
+      "codes": [
+        "LEQ",
+        "EGHC"
+      ],
+      "airlines": [
+        "Isles of Scilly Skybus"
+      ]
+    },
+    {
+      "city": "Newquay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newquay_Airport",
+      "codes": [
+        "NQY",
+        "EGHQ"
+      ],
+      "airlines": [
+        "Isles of Scilly Skybus"
+      ]
+    },
+    {
+      "city": "Penzance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penzance_Heliport",
+      "codes": [
+        "PZE",
+        "EGHK"
+      ],
+      "airlines": [
+        "Starspeed"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Isles of Scilly Skybus": [
@@ -54,5 +74,7 @@
     "Starspeed": [
       "Penzance"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:07Z",
+  "date-time-wikidata": "2026-04-28T07:28:11Z"
 }

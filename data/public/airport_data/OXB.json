@@ -25,54 +25,99 @@
     "euroAtlantic Airways"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Dakar–Diass",
-      "https://en.wikipedia.org/wiki/Blaise_Diagne_International_Airport",
-      "DSS",
-      "GOBD"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Portela_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé-Tokoin_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Praia",
-      "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
-      "RAI",
-      "GVNP"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Dakar–Diass",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blaise_Diagne_International_Airport",
+      "codes": [
+        "DSS",
+        "GOBD"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Côte d'Ivoire",
+        "Air Senegal",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "TAP Air Portugal",
+        "euroAtlantic Airways"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portela_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "TAP Air Portugal",
+        "euroAtlantic Airways"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé-Tokoin_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Praia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
+      "codes": [
+        "RAI",
+        "GVNP"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
@@ -100,5 +145,7 @@
       "Dakar–Diass",
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:52Z",
+  "date-time-wikidata": "2026-04-08T23:59:37Z"
 }

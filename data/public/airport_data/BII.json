@@ -19,24 +19,39 @@
     "Air Marshall Islands"
   ],
   "destinations": [
-    [
-      "Kwajalein",
-      "https://en.wikipedia.org/wiki/Bucholz_Army_Airfield",
-      "KWA",
-      "PKWA"
-    ],
-    [
-      "Majuro",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ],
-    [
-      "Rongelap",
-      "https://en.wikipedia.org/wiki/Rongelap_Airport",
-      "RNP",
-      "icao code not found"
-    ]
+    {
+      "city": "Kwajalein",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucholz_Army_Airfield",
+      "codes": [
+        "KWA",
+        "PKWA"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Rongelap",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rongelap_Airport",
+      "codes": [
+        "RNP",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Marshall Islands": [
@@ -44,5 +59,7 @@
       "Majuro",
       "Rongelap"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:04Z",
+  "date-time-wikidata": "2024-12-26T01:36:37Z"
 }

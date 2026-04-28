@@ -22,48 +22,84 @@
     "XiamenAir"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chengdu Shuangliu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
-      "CTU",
-      "ZUUU"
-    ],
-    [
-      "Fuzhou Changle International Airport",
-      "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
-      "FOC",
-      "ZSFZ"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shijiazhuang Zhengding International Airport",
-      "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
-      "SJW",
-      "ZBSJ"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ],
-    [
-      "Yinchuan Hedong International Airport",
-      "https://en.wikipedia.org/wiki/Yinchuan_Hedong_International_Airport",
-      "INC",
-      "ZLIC"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Hebei Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Shuangliu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Fuzhou Changle International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
+      "codes": [
+        "FOC",
+        "ZSFZ"
+      ],
+      "airlines": [
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Shijiazhuang Zhengding International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
+      "codes": [
+        "SJW",
+        "ZBSJ"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Juneyao Air",
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Yinchuan Hedong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yinchuan_Hedong_International_Airport",
+      "codes": [
+        "INC",
+        "ZLIC"
+      ],
+      "airlines": [
+        "Hebei Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chengdu Airlines": [
@@ -82,5 +118,7 @@
       "Fuzhou Changle International Airport",
       "Xi'an Xianyang International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:42Z",
+  "date-time-wikidata": "2025-08-14T11:13:22Z"
 }

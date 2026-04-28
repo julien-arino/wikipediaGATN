@@ -23,108 +23,193 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Asturias",
-      "https://en.wikipedia.org/wiki/Asturias_Airport",
-      "OVD",
-      "LEAS"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Bilbao",
-      "https://en.wikipedia.org/wiki/Bilbao_Airport",
-      "BIO",
-      "LEBB"
-    ],
-    [
-      "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Airport",
-      "BLQ",
-      "LIPE"
-    ],
-    [
-      "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport",
-      "BTS",
-      "LZIB"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Cluj-Napoca",
-      "https://en.wikipedia.org/wiki/Cluj_International_Airport",
-      "CLJ",
-      "LRCL"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ]
+    {
+      "city": "Asturias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Asturias_Airport",
+      "codes": [
+        "OVD",
+        "LEAS"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bilbao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
+      "codes": [
+        "BIO",
+        "LEBB"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cluj-Napoca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cluj_International_Airport",
+      "codes": [
+        "CLJ",
+        "LRCL"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iberia": [
@@ -154,5 +239,7 @@
       "Cluj-Napoca",
       "Rome–Fiumicino"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:31Z",
+  "date-time-wikidata": "2026-01-23T21:09:42Z"
 }

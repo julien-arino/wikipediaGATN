@@ -19,23 +19,35 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Manaoba",
-      "https://en.wikipedia.org/wiki/Manaoba_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Manaoba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manaoba_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
       "Honiara",
       "Manaoba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:08Z",
+  "date-time-wikidata": "2024-11-21T02:18:21Z"
 }

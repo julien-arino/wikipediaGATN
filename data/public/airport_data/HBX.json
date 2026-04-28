@@ -20,42 +20,74 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Mumbai-Navi",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
-      "NMI",
-      "VANM"
-    ],
-    [
-      "Mumbai-Shivaji",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Pune",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Fly91",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Fly91",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai-Navi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "codes": [
+        "NMI",
+        "VANM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai-Shivaji",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -70,5 +102,7 @@
       "Bengaluru",
       "Hyderabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:12Z",
+  "date-time-wikidata": "2026-04-27T15:22:41Z"
 }

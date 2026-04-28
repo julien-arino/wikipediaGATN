@@ -16,36 +16,53 @@
   "number_airlines": 2,
   "outdegree": 3,
   "airlines": [
-    "Alaska Airlines",
-    "Delta Connection"
+    "Delta Air Lines",
+    "Hawaiian Airlines"
   ],
   "destinations": [
-    [
-      "Honolulu",
-      "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Kahului",
-      "https://en.wikipedia.org/wiki/Kahului_Airport",
-      "OGG",
-      "PHOG"
-    ],
-    [
-      "Salt Lake City",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ]
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "Kahului",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahului_Airport",
+      "codes": [
+        "OGG",
+        "PHOG"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    }
   ],
   "airlines_destinations": {
-    "Alaska Airlines": [
+    "Delta Air Lines": [
+      "Salt Lake City"
+    ],
+    "Hawaiian Airlines": [
       "Honolulu",
       "Kahului"
-    ],
-    "Delta Connection": [
-      "Salt Lake City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:02Z",
+  "date-time-wikidata": "2026-04-28T05:59:38Z"
 }

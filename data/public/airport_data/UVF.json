@@ -23,54 +23,95 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Boston",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Dominica–Douglas-Charles",
-      "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
-      "DOM",
-      "TDPD"
-    ],
-    [
-      "Georgetown–Cheddi Jagan",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
-      "GEO",
-      "SYCJ"
-    ],
-    [
-      "Grenada",
-      "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
-      "GND",
-      "TGPY"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Tobago",
-      "https://en.wikipedia.org/wiki/Arthur_Napoleon_Raymond_Robinson_International_Airport",
-      "TAB",
-      "TTCP"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Dominica–Douglas-Charles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
+      "codes": [
+        "DOM",
+        "TDPD"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "Georgetown–Cheddi Jagan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "codes": [
+        "GEO",
+        "SYCJ"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Grenada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+      "codes": [
+        "GND",
+        "TGPY"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Tobago",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arthur_Napoleon_Raymond_Robinson_International_Airport",
+      "codes": [
+        "TAB",
+        "TTCP"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Rouge",
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Rouge": [
@@ -92,5 +133,7 @@
     "Air Cargo Carriers": [
       "Dominica–Douglas-Charles"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:56Z",
+  "date-time-wikidata": "2026-04-11T16:08:05Z"
 }

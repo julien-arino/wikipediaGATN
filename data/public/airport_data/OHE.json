@@ -21,54 +21,96 @@
     "Spring Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Fuyuan Dongji Airport",
-      "https://en.wikipedia.org/wiki/Fuyuan_Dongji_Airport",
-      "FYJ",
-      "ZYFY"
-    ],
-    [
-      "Harbin Taiping International Airport",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
-      "HRB",
-      "ZYHB"
-    ],
-    [
-      "Heihe Aihui Airport",
-      "https://en.wikipedia.org/wiki/Heihe_Aihui_Airport",
-      "HEK",
-      "ZYHE"
-    ],
-    [
-      "Jiagedaqi Airport",
-      "https://en.wikipedia.org/wiki/Jiagedaqi_Airport",
-      "JGD",
-      "ZYJD"
-    ],
-    [
-      "Jixi Xingkaihu Airport",
-      "https://en.wikipedia.org/wiki/Jixi_Xingkaihu_Airport",
-      "JXA",
-      "ZYJX"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Wudalianchi Dedu Airport",
-      "https://en.wikipedia.org/wiki/Wudalianchi_Dedu_Airport",
-      "DTU",
-      "ZYDU"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Fuyuan Dongji Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuyuan_Dongji_Airport",
+      "codes": [
+        "FYJ",
+        "ZYFY"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Harbin Taiping International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "codes": [
+        "HRB",
+        "ZYHB"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Southern Airlines",
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Heihe Aihui Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heihe_Aihui_Airport",
+      "codes": [
+        "HEK",
+        "ZYHE"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Jiagedaqi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiagedaqi_Airport",
+      "codes": [
+        "JGD",
+        "ZYJD"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Jixi Xingkaihu Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jixi_Xingkaihu_Airport",
+      "codes": [
+        "JXA",
+        "ZYJX"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Wudalianchi Dedu Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wudalianchi_Dedu_Airport",
+      "codes": [
+        "DTU",
+        "ZYDU"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chengdu Airlines": [
@@ -87,5 +129,7 @@
       "Harbin Taiping International Airport",
       "Shanghai Pudong International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:30Z",
+  "date-time-wikidata": "2026-02-11T10:23:40Z"
 }

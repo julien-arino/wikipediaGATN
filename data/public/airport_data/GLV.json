@@ -19,23 +19,35 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Elim Airport",
-      "https://en.wikipedia.org/wiki/Elim_Airport",
-      "ELI",
-      "PFEL"
-    ],
-    [
-      "White Mountain Airport",
-      "https://en.wikipedia.org/wiki/White_Mountain_Airport",
-      "WMO",
-      "PAWM"
-    ]
+    {
+      "city": "Elim Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elim_Airport",
+      "codes": [
+        "ELI",
+        "PFEL"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "White Mountain Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/White_Mountain_Airport",
+      "codes": [
+        "WMO",
+        "PAWM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
       "Elim Airport",
       "White Mountain Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:29Z",
+  "date-time-wikidata": "2025-08-24T15:17:13Z"
 }

@@ -22,66 +22,121 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Dawson City",
-      "https://en.wikipedia.org/wiki/Dawson_City_Airport",
-      "YDA",
-      "CYDA"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
-      "YEV",
-      "CYEV"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Victoria",
-      "https://en.wikipedia.org/wiki/Victoria_International_Airport",
-      "YYJ",
-      "CYYJ"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Air North",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Dawson City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dawson_City_Airport",
+      "codes": [
+        "YDA",
+        "CYDA"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Canada Express",
+        "Air North"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Canada Express",
+        "Air North"
+      ]
+    },
+    {
+      "city": "Victoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
+      "codes": [
+        "YYJ",
+        "CYYJ"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -104,5 +159,7 @@
     "WestJet": [
       "Calgary"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:50Z",
+  "date-time-wikidata": "2026-03-11T00:16:34Z"
 }

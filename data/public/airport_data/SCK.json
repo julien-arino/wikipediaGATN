@@ -19,23 +19,35 @@
     "Allegiant Air"
   ],
   "destinations": [
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
       "Harry Reid International Airport",
       "Phoenix Sky Harbor International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:32Z",
+  "date-time-wikidata": "2026-04-16T23:19:50Z"
 }

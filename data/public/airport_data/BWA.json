@@ -22,24 +22,41 @@
     "Yeti Airlines"
   ],
   "destinations": [
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Pokhara",
-      "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
-      "PHH",
-      "VNPR"
-    ]
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Buddha Air",
+        "Shree Airlines",
+        "Yeti Airlines"
+      ]
+    },
+    {
+      "city": "Pokhara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
+      "codes": [
+        "PHH",
+        "VNPR"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Buddha Air": [
@@ -55,5 +72,7 @@
     "Yeti Airlines": [
       "Kathmandu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:37Z",
+  "date-time-wikidata": "2026-04-13T11:00:50Z"
 }

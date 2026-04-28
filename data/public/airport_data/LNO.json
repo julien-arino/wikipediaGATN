@@ -20,18 +20,29 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Laverton",
-      "https://en.wikipedia.org/wiki/Laverton_Airport",
-      "LVO",
-      "YLTN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Laverton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laverton_Airport",
+      "codes": [
+        "LVO",
+        "YLTN"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "National Jet Express",
+        "Skippers Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "National Jet Express": [
@@ -41,5 +52,7 @@
       "Laverton",
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:08Z",
+  "date-time-wikidata": "2025-09-08T15:24:03Z"
 }

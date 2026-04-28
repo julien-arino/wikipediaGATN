@@ -19,24 +19,39 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Awaba",
-      "https://en.wikipedia.org/wiki/Awaba_Airport",
-      "AWB",
-      "AYAW"
-    ],
-    [
-      "Balimo",
-      "https://en.wikipedia.org/wiki/Balimo_Airport",
-      "OPU",
-      "AYBM"
-    ],
-    [
-      "Kerema",
-      "https://en.wikipedia.org/wiki/Kerema_Airport",
-      "KMA",
-      "AYKM"
-    ]
+    {
+      "city": "Awaba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Awaba_Airport",
+      "codes": [
+        "AWB",
+        "AYAW"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Balimo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balimo_Airport",
+      "codes": [
+        "OPU",
+        "AYBM"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Kerema",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kerema_Airport",
+      "codes": [
+        "KMA",
+        "AYKM"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PNG Air": [
@@ -44,5 +59,7 @@
       "Balimo",
       "Kerema"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:25Z",
+  "date-time-wikidata": "2022-01-20T01:32:47Z"
 }

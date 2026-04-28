@@ -21,18 +21,29 @@
     "Scoot"
   ],
   "destinations": [
-    [
-      "Johor Bahru",
-      "https://en.wikipedia.org/wiki/Senai_International_Airport",
-      "JHB",
-      "WMKJ"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ]
+    {
+      "city": "Johor Bahru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
+      "codes": [
+        "JHB",
+        "WMKJ"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Batik Air Malaysia",
+        "Scoot"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -44,5 +55,7 @@
     "Scoot": [
       "Singapore"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:48Z",
+  "date-time-wikidata": "2026-02-09T20:53:39Z"
 }

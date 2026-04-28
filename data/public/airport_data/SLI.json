@@ -20,12 +20,18 @@
     "Zambia Airways"
   ],
   "destinations": [
-    [
-      "Lusaka",
-      "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
-      "LUN",
-      "FLKK"
-    ]
+    {
+      "city": "Lusaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Proflight Zambia",
+        "Zambia Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Proflight Zambia": [
@@ -34,5 +40,7 @@
     "Zambia Airways": [
       "Lusaka"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:43Z",
+  "date-time-wikidata": "2025-09-12T19:21:51Z"
 }

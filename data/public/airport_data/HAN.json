@@ -34,162 +34,306 @@
     "Turkmenistan Airlines"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Anchorage",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "ANC",
-      "PANC"
-    ],
-    [
-      "Ashgabat",
-      "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
-      "ASB",
-      "UTAA"
-    ],
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Chittagong",
-      "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
-      "CGP",
-      "VGEG"
-    ],
-    [
-      "Chongqing",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Hazrat_Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–Al Maktoum",
-      "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "DWC",
-      "OMDW"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Hangzhou",
-      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
-      "HGH",
-      "ZSHC"
-    ],
-    [
-      "Ho Chi Minh City",
-      "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
-      "SGN",
-      "VVTS"
-    ],
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Jakarta–Soekarno–Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Navoi",
-      "https://en.wikipedia.org/wiki/Navoi_International_Airport",
-      "NVI",
-      "UZSA"
-    ],
-    [
-      "Penang",
-      "https://en.wikipedia.org/wiki/Penang_International_Airport",
-      "PEN",
-      "WMKP"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Wuhan",
-      "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
-      "WUH",
-      "ZHHH"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Ashgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "K-Mile Air"
+      ]
+    },
+    {
+      "city": "Chittagong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
+      "codes": [
+        "CGP",
+        "VGEG"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Asiana Cargo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Aerotranscargo",
+        "Atlas Air",
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hazrat_Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Cathay Cargo",
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Aerotranscargo",
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Ho Chi Minh City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
+      "codes": [
+        "SGN",
+        "VVTS"
+      ],
+      "airlines": [
+        "Cathay Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Aerotranscargo",
+        "Atlas Air",
+        "Cathay Cargo",
+        "K-Mile Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno–Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Cardig Air"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo CarGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Navoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navoi_International_Airport",
+      "codes": [
+        "NVI",
+        "UZSA"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Penang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penang_International_Airport",
+      "codes": [
+        "PEN",
+        "WMKP"
+      ],
+      "airlines": [
+        "Cathay Cargo",
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Asiana Cargo",
+        "Atlas Air",
+        "Jeju Air Cargo",
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Cardig Air"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Asiana Cargo",
+        "Atlas Air",
+        "Cathay Cargo"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "Atlas Air",
+        "EVA Air Cargo"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Wuhan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "codes": [
+        "WUH",
+        "ZHHH"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerotranscargo": [
@@ -264,5 +408,7 @@
     "Turkmenistan Airlines": [
       "Ashgabat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:08Z",
+  "date-time-wikidata": "2026-04-28T09:27:13Z"
 }

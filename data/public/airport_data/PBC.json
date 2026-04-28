@@ -21,108 +21,197 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Aguascalientes",
-      "https://en.wikipedia.org/wiki/Aguascalientes_International_Airport",
-      "AGU",
-      "MMAS"
-    ],
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Huatulco",
-      "https://en.wikipedia.org/wiki/Bahías_de_Huatulco_International_Airport",
-      "HUX",
-      "MMBT"
-    ],
-    [
-      "Ixtapa/Zihuatanejo",
-      "https://en.wikipedia.org/wiki/Ixtapa-Zihuatanejo_International_Airport",
-      "ZIH",
-      "MMZH"
-    ],
-    [
-      "León/Bajío",
-      "https://en.wikipedia.org/wiki/Bajío_International_Airport",
-      "BJX",
-      "MMLO"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Mérida",
-      "https://en.wikipedia.org/wiki/Mérida_International_Airport",
-      "MID",
-      "MMMD"
-    ],
-    [
-      "Newark",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Puerto Vallarta",
-      "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
-      "PVR",
-      "MMPR"
-    ],
-    [
-      "San José del Cabo",
-      "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
-      "SJD",
-      "MMSD"
-    ],
-    [
-      "San Luis Potosí",
-      "https://en.wikipedia.org/wiki/San_Luis_Potosí_International_Airport",
-      "SLP",
-      "MMSP"
-    ],
-    [
-      "Tijuana",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ],
-    [
-      "Tuxtla Gutiérrez",
-      "https://en.wikipedia.org/wiki/Tuxtla_Gutiérrez_International_Airport",
-      "TGZ",
-      "MMTG"
-    ],
-    [
-      "Villahermosa",
-      "https://en.wikipedia.org/wiki/Villahermosa_International_Airport",
-      "VSA",
-      "MMVA"
-    ]
+    {
+      "city": "Aguascalientes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aguascalientes_International_Airport",
+      "codes": [
+        "AGU",
+        "MMAS"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Huatulco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahías_de_Huatulco_International_Airport",
+      "codes": [
+        "HUX",
+        "MMBT"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Ixtapa/Zihuatanejo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ixtapa-Zihuatanejo_International_Airport",
+      "codes": [
+        "ZIH",
+        "MMZH"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "León/Bajío",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bajío_International_Airport",
+      "codes": [
+        "BJX",
+        "MMLO"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Mérida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mérida_International_Airport",
+      "codes": [
+        "MID",
+        "MMMD"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Puerto Vallarta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
+      "codes": [
+        "PVR",
+        "MMPR"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "San José del Cabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
+      "codes": [
+        "SJD",
+        "MMSD"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "San Luis Potosí",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Luis_Potosí_International_Airport",
+      "codes": [
+        "SLP",
+        "MMSP"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Tuxtla Gutiérrez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuxtla_Gutiérrez_International_Airport",
+      "codes": [
+        "TGZ",
+        "MMTG"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Villahermosa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Villahermosa_International_Airport",
+      "codes": [
+        "VSA",
+        "MMVA"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
   ],
   "airlines_destinations": {
     "United Express": [
@@ -152,5 +241,7 @@
       "Tuxtla Gutiérrez",
       "Villahermosa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:37Z",
+  "date-time-wikidata": "2026-03-26T08:35:17Z"
 }

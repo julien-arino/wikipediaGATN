@@ -19,24 +19,39 @@
     "Alliance Airlines"
   ],
   "destinations": [
-    [
-      "Adelaide Airport",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Ballera Airport",
-      "https://en.wikipedia.org/wiki/Ballera_Airport",
-      "BBL",
-      "YLLE"
-    ],
-    [
-      "Brisbane Airport",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ]
+    {
+      "city": "Adelaide Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Ballera Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballera_Airport",
+      "codes": [
+        "BBL",
+        "YLLE"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Brisbane Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -44,5 +59,7 @@
       "Ballera Airport",
       "Brisbane Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:50Z",
+  "date-time-wikidata": "2024-06-23T01:23:50Z"
 }

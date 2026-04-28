@@ -20,18 +20,29 @@
     "Safarlink"
   ],
   "destinations": [
-    [
-      "Masai Mara",
-      "https://en.wikipedia.org/wiki/Mara_Serena_Airport",
-      "MRE",
-      "HKMS"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Masai Mara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mara_Serena_Airport",
+      "codes": [
+        "MRE",
+        "HKMS"
+      ],
+      "airlines": [
+        "Airkenya Express"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Airkenya Express",
+        "Safarlink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airkenya Express": [
@@ -41,5 +52,7 @@
     "Safarlink": [
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:41Z",
+  "date-time-wikidata": "2025-03-07T06:26:03Z"
 }

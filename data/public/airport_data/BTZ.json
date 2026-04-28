@@ -7,6 +7,7 @@
   "lat": "5.789387",
   "lon": "101.1497593",
   "altitude": "233",
+  "continent": "Asia",
   "region": "Yala",
   "country_alpha3": "THA",
   "country_name": "Thailand",
@@ -18,17 +19,23 @@
     "EZY Airlines (page does not exist)"
   ],
   "destinations": [
-    [
-      "Hat Yai International Airport",
-      "https://en.wikipedia.org/wiki/Hat_Yai_International_Airport",
-      "HDY",
-      "VTSS"
-    ]
+    {
+      "city": "Hat Yai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hat_Yai_International_Airport",
+      "codes": [
+        "HDY",
+        "VTSS"
+      ],
+      "airlines": [
+        "EZY Airlines (page does not exist)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "EZY Airlines (page does not exist)": [
       "Hat Yai International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:04:24Z",
+  "date-time-wikidata": "2025-08-31T02:42:46Z"
 }

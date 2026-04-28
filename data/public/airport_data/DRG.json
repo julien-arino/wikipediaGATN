@@ -20,30 +20,51 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Buckland",
-      "https://en.wikipedia.org/wiki/Buckland_Airport",
-      "BKC",
-      "PABL"
-    ],
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ],
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Point Hope",
-      "https://en.wikipedia.org/wiki/Point_Hope_Airport",
-      "PHO",
-      "PAPO"
-    ]
+    {
+      "city": "Buckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Buckland_Airport",
+      "codes": [
+        "BKC",
+        "PABL"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Point Hope",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Point_Hope_Airport",
+      "codes": [
+        "PHO",
+        "PAPO"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -55,5 +76,7 @@
       "Buckland",
       "Point Hope"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:06Z",
+  "date-time-wikidata": "2025-09-01T08:24:39Z"
 }

@@ -22,42 +22,74 @@
     "Malaysia Airlines"
   ],
   "destinations": [
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kuching",
-      "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-      "KCH",
-      "WBGG"
-    ],
-    [
-      "Miri",
-      "https://en.wikipedia.org/wiki/Miri_Airport",
-      "MYY",
-      "WBGR"
-    ],
-    [
-      "Mukah",
-      "https://en.wikipedia.org/wiki/Mukah_Airport",
-      "MKM",
-      "WBGK"
-    ],
-    [
-      "Sibu",
-      "https://en.wikipedia.org/wiki/Sibu_Airport",
-      "SBW",
-      "WBGS"
-    ]
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Kuching",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
+      "codes": [
+        "KCH",
+        "WBGG"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Mukah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mukah_Airport",
+      "codes": [
+        "MKM",
+        "WBGK"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Sibu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sibu_Airport",
+      "codes": [
+        "SBW",
+        "WBGS"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -76,5 +108,7 @@
     "Malaysia Airlines": [
       "Kuala Lumpur–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:23Z",
+  "date-time-wikidata": "2026-02-24T01:05:52Z"
 }

@@ -23,42 +23,73 @@
     "WesternAir"
   ],
   "destinations": [
-    [
-      "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Freeport",
-      "https://en.wikipedia.org/wiki/Grand_Bahama_International_Airport",
-      "FPO",
-      "MYGF"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ],
-    [
-      "West Palm Beach",
-      "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
-      "PBI",
-      "KPBI"
-    ]
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Freeport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Bahama_International_Airport",
+      "codes": [
+        "FPO",
+        "MYGF"
+      ],
+      "airlines": [
+        "Flamingo Air"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair",
+        "WesternAir"
+      ]
+    },
+    {
+      "city": "West Palm Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
+      "codes": [
+        "PBI",
+        "KPBI"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle": [
@@ -78,5 +109,7 @@
     "WesternAir": [
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:41Z",
+  "date-time-wikidata": "2026-04-26T02:12:35Z"
 }

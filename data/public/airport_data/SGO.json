@@ -19,30 +19,50 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cunnamulla",
-      "https://en.wikipedia.org/wiki/Cunnamulla_Airport",
-      "CMA",
-      "YCMU"
-    ],
-    [
-      "Thargomindah",
-      "https://en.wikipedia.org/wiki/Thargomindah_Airport",
-      "XTG",
-      "YTGM"
-    ],
-    [
-      "Toowoomba",
-      "https://en.wikipedia.org/wiki/Toowoomba_Wellcamp_Airport",
-      "WTB",
-      "YBWW"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Cunnamulla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cunnamulla_Airport",
+      "codes": [
+        "CMA",
+        "YCMU"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Thargomindah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thargomindah_Airport",
+      "codes": [
+        "XTG",
+        "YTGM"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Toowoomba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toowoomba_Wellcamp_Airport",
+      "codes": [
+        "WTB",
+        "YBWW"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
@@ -51,5 +71,7 @@
       "Thargomindah",
       "Toowoomba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:35Z",
+  "date-time-wikidata": "2023-07-05T18:45:44Z"
 }

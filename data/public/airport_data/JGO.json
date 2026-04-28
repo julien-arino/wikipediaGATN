@@ -19,24 +19,39 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Aasiaat",
-      "https://en.wikipedia.org/wiki/Aasiaat_Airport",
-      "JEG",
-      "BGAA"
-    ],
-    [
-      "Ilulissat",
-      "https://en.wikipedia.org/wiki/Ilulissat_Airport",
-      "JAV",
-      "BGJN"
-    ],
-    [
-      "Qasigiannguit",
-      "https://en.wikipedia.org/wiki/Qasigiannguit_Heliport",
-      "JCH",
-      "BGCH"
-    ]
+    {
+      "city": "Aasiaat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aasiaat_Airport",
+      "codes": [
+        "JEG",
+        "BGAA"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Ilulissat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ilulissat_Airport",
+      "codes": [
+        "JAV",
+        "BGJN"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qasigiannguit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qasigiannguit_Heliport",
+      "codes": [
+        "JCH",
+        "BGCH"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
@@ -44,5 +59,7 @@
       "Ilulissat",
       "Qasigiannguit"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:22Z",
+  "date-time-wikidata": "2025-07-16T20:39:23Z"
 }

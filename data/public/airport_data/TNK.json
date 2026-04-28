@@ -20,12 +20,18 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -34,5 +40,7 @@
     "Ryan Air": [
       "Bethel"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:12Z",
+  "date-time-wikidata": "2025-09-14T00:35:26Z"
 }

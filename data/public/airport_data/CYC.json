@@ -19,23 +19,35 @@
     "Maya Island Air"
   ],
   "destinations": [
-    [
-      "Belize City–International",
-      "https://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
-      "BZE",
-      "MZBZ"
-    ],
-    [
-      "Caye Caulker",
-      "https://en.wikipedia.org/wiki/Caye_Caulker_Airport",
-      "CUK",
-      "MZCK"
-    ]
+    {
+      "city": "Belize City–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
+      "codes": [
+        "BZE",
+        "MZBZ"
+      ],
+      "airlines": [
+        "Maya Island Air"
+      ]
+    },
+    {
+      "city": "Caye Caulker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caye_Caulker_Airport",
+      "codes": [
+        "CUK",
+        "MZCK"
+      ],
+      "airlines": [
+        "Maya Island Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maya Island Air": [
       "Belize City–International",
       "Caye Caulker"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:59Z",
+  "date-time-wikidata": "2026-03-18T15:06:50Z"
 }

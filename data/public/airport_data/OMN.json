@@ -20,18 +20,29 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Samarkand International Airport",
-      "https://en.wikipedia.org/wiki/Samarkand_International_Airport",
-      "SKD",
-      "UZSS"
-    ],
-    [
-      "Tashkent International Airport",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ]
+    {
+      "city": "Samarkand International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samarkand_International_Airport",
+      "codes": [
+        "SKD",
+        "UZSS"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Tashkent International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Silk Avia",
+        "Uzbekistan Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Silk Avia": [
@@ -41,5 +52,7 @@
       "Samarkand International Airport",
       "Tashkent International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:18Z",
+  "date-time-wikidata": "2025-12-17T21:31:09Z"
 }

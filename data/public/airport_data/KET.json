@@ -20,18 +20,30 @@
     "Myanmar National Airlines"
   ],
   "destinations": [
-    [
-      "Heho",
-      "https://en.wikipedia.org/wiki/Heho_Airport",
-      "HEH",
-      "VYHH"
-    ],
-    [
-      "Mandalay",
-      "https://en.wikipedia.org/wiki/Mandalay_Airport",
-      "MDL",
-      "VYMD"
-    ]
+    {
+      "city": "Heho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heho_Airport",
+      "codes": [
+        "HEH",
+        "VYHH"
+      ],
+      "airlines": [
+        "Myanmar Airways International",
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Mandalay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mandalay_Airport",
+      "codes": [
+        "MDL",
+        "VYMD"
+      ],
+      "airlines": [
+        "Myanmar Airways International",
+        "Myanmar National Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Myanmar Airways International": [
@@ -42,5 +54,7 @@
       "Heho",
       "Mandalay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:19Z",
+  "date-time-wikidata": "2025-07-15T23:00:55Z"
 }

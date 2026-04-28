@@ -7,6 +7,7 @@
   "lat": "-10.0500321",
   "lon": "143.0707893",
   "altitude": "3.05",
+  "continent": "Oceania",
   "region": "Western Province",
   "country_alpha3": "PNG",
   "country_name": "Papua New Guinea",
@@ -18,30 +19,50 @@
     "Skytrans Airlines"
   ],
   "destinations": [
-    [
-      "Horn Island",
-      "https://en.wikipedia.org/wiki/Horn_Island_Airport",
-      "HID",
-      "YHID"
-    ],
-    [
-      "Warraber Island",
-      "https://en.wikipedia.org/wiki/Warraber_Island_Airport",
-      "SYU",
-      "YWBS"
-    ],
-    [
-      "Yam Island",
-      "https://en.wikipedia.org/wiki/Yam_Island_Airport",
-      "XMY",
-      "YYMI"
-    ],
-    [
-      "Yorke Island",
-      "https://en.wikipedia.org/wiki/Yorke_Island_Airport",
-      "OKR",
-      "YYKI"
-    ]
+    {
+      "city": "Horn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Island_Airport",
+      "codes": [
+        "HID",
+        "YHID"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Warraber Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warraber_Island_Airport",
+      "codes": [
+        "SYU",
+        "YWBS"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Yam Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yam_Island_Airport",
+      "codes": [
+        "XMY",
+        "YYMI"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Yorke Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yorke_Island_Airport",
+      "codes": [
+        "OKR",
+        "YYKI"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytrans Airlines": [
@@ -51,5 +72,6 @@
       "Yorke Island"
     ]
   },
-  "continent": "Oceania"
+  "date-time-parse": "2026-04-28T22:15:00Z",
+  "date-time-wikidata": "2026-03-11T19:27:57Z"
 }

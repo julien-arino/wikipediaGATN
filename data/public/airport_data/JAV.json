@@ -20,54 +20,94 @@
     "Icelandair"
   ],
   "destinations": [
-    [
-      "Aasiaat",
-      "https://en.wikipedia.org/wiki/Aasiaat_Airport",
-      "JEG",
-      "BGAA"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Ilimanaq",
-      "https://en.wikipedia.org/wiki/Ilimanaq_Heliport",
-      "iata code not found",
-      "BGIL"
-    ],
-    [
-      "Qaanaaq",
-      "https://en.wikipedia.org/wiki/Qaanaaq_Airport",
-      "NAQ",
-      "BGQQ"
-    ],
-    [
-      "Qaarsut",
-      "https://en.wikipedia.org/wiki/Qaarsut_Airport",
-      "JQA",
-      "BGUQ"
-    ],
-    [
-      "Qeqertaq",
-      "https://en.wikipedia.org/wiki/Qeqertaq_Heliport",
-      "PQT",
-      "BGQE"
-    ],
-    [
-      "Qeqertarsuaq",
-      "https://en.wikipedia.org/wiki/Qeqertarsuaq_Heliport",
-      "JGO",
-      "BGGN"
-    ],
-    [
-      "Reykjavik–Keflavík",
-      "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
-      "KEF",
-      "BIKF"
-    ]
+    {
+      "city": "Aasiaat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aasiaat_Airport",
+      "codes": [
+        "JEG",
+        "BGAA"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Ilimanaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ilimanaq_Heliport",
+      "codes": [
+        "iata code not found",
+        "BGIL"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qaanaaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qaanaaq_Airport",
+      "codes": [
+        "NAQ",
+        "BGQQ"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qaarsut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qaarsut_Airport",
+      "codes": [
+        "JQA",
+        "BGUQ"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qeqertaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qeqertaq_Heliport",
+      "codes": [
+        "PQT",
+        "BGQE"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qeqertarsuaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qeqertarsuaq_Heliport",
+      "codes": [
+        "JGO",
+        "BGGN"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Reykjavik–Keflavík",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
+      "codes": [
+        "KEF",
+        "BIKF"
+      ],
+      "airlines": [
+        "Icelandair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
@@ -82,5 +122,7 @@
     "Icelandair": [
       "Reykjavik–Keflavík"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:15Z",
+  "date-time-wikidata": "2026-02-24T16:12:11Z"
 }

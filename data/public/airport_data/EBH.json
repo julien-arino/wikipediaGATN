@@ -19,23 +19,35 @@
     "Air Algérie"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Mécheria",
-      "https://en.wikipedia.org/wiki/Mécheria_Airport",
-      "MZW",
-      "DAAY"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Mécheria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mécheria_Airport",
+      "codes": [
+        "MZW",
+        "DAAY"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
       "Algiers",
       "Mécheria"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:17Z",
+  "date-time-wikidata": "2024-10-24T20:51:18Z"
 }

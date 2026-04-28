@@ -19,23 +19,35 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ]
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "United Express": [
       "Dulles International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:40Z",
+  "date-time-wikidata": "2026-03-15T23:36:45Z"
 }

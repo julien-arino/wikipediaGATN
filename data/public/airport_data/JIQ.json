@@ -19,23 +19,35 @@
     "Spring Airlines"
   ],
   "destinations": [
-    [
-      "Kunming Changshui International Airport",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
-      "KMG",
-      "ZPPP"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ]
+    {
+      "city": "Kunming Changshui International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Spring Airlines": [
       "Kunming Changshui International Airport",
       "Shanghai Pudong International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:16Z",
+  "date-time-wikidata": "2025-12-19T04:40:59Z"
 }

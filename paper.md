@@ -43,7 +43,7 @@ This will also be of interest to instructors teaching graph or network theory.
 
 # Methods
 
-Airport information pages on Wikipedia have evolved to become quite standardised entities.
+Airport information pages on Wikipedia is quite standardised.
 There is, typically, an infobox that presents summary information about the airport (name, IATA and ICAO codes, city served, geographical coordinates); see, for example, the infobox for YWG, the Winnipeg James Armstrong International Airport in \autoref{fig:infobox}.
 
 ![Infobox for YWG (Winnipeg airport).\label{fig:infobox}](YWG-infobox.png)
@@ -58,7 +58,7 @@ In order not to overwhelm Wikipedia servers, rate limitation is used, so the pro
 Starting from a seed airport (taken as YWG, where the authors are based), the process gathers information on the airport including its localisation, geographical coordinates (if available) as well as airlines operating out of the airport and the Wikipedia links to served destinations. This is level 0 of the network.
 The process then repeats, assessing all first degree connections out of the seed.
 The same information is collected as in the seed for these first level airports.
-The process continues until no new airports are found (this is typically reached at level 10), with a little over 4,000 airports in the graph.
+The process continues until no new airports are found (this is typically reached at level 9), with a little over 4,000 airports in the graph.
 
 In a validation step, information about the airports is checked and missing information (such as continent, country, etc.) is obtained using a GIS reverse-lookup package.
 

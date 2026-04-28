@@ -21,60 +21,105 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Aizawl",
-      "https://en.wikipedia.org/wiki/Aizawl_Airport",
-      "AJL",
-      "VELP"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dibrugarh",
-      "https://en.wikipedia.org/wiki/Dibrugarh_Airport",
-      "DIB",
-      "VEMN"
-    ],
-    [
-      "Dimapur",
-      "https://en.wikipedia.org/wiki/Dimapur_Airport",
-      "DMU",
-      "VEMR"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Imphal_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Lilabari",
-      "https://en.wikipedia.org/wiki/Lilabari_Airport",
-      "IXI",
-      "VELR"
-    ],
-    [
-      "Tezpur",
-      "https://en.wikipedia.org/wiki/Tezpur_Airport",
-      "TEZ",
-      "VETZ"
-    ]
+    {
+      "city": "Aizawl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aizawl_Airport",
+      "codes": [
+        "AJL",
+        "VELP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Dibrugarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dibrugarh_Airport",
+      "codes": [
+        "DIB",
+        "VEMN"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dimapur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dimapur_Airport",
+      "codes": [
+        "DMU",
+        "VEMR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Lilabari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lilabari_Airport",
+      "codes": [
+        "IXI",
+        "VELR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Tezpur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tezpur_Airport",
+      "codes": [
+        "TEZ",
+        "VETZ"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -92,5 +137,7 @@
     "SpiceJet": [
       "Delhi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:40Z",
+  "date-time-wikidata": "2026-01-31T11:31:59Z"
 }

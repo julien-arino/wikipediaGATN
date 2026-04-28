@@ -31,162 +31,300 @@
     "Winair"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V.C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Castries",
-      "https://en.wikipedia.org/wiki/George_F.L._Charles_Airport",
-      "SLU",
-      "TLPC"
-    ],
-    [
-      "Curaçao",
-      "https://en.wikipedia.org/wiki/Hato_International_Airport",
-      "CUR",
-      "TNCC"
-    ],
-    [
-      "Dominica–Douglas-Charles",
-      "https://en.wikipedia.org/wiki/Douglas-Charles_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Fort Lauderdale",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Georgetown–Cheddi Jagan",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
-      "GEO",
-      "SYCJ"
-    ],
-    [
-      "Georgetown–Ogle",
-      "https://en.wikipedia.org/wiki/Ogle_International_Airport",
-      "OGL",
-      "SYEC"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental__Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Newark",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Orlando",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Paramaribo",
-      "https://en.wikipedia.org/wiki/Johan_Adolf_Pengel_International_Airport",
-      "PBM",
-      "SMJP"
-    ],
-    [
-      "Pointe-à-Pitre",
-      "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
-      "PTP",
-      "TFFR"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "St. Maarten",
-      "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
-      "SXM",
-      "TNCM"
-    ],
-    [
-      "St. Vincent–Argyle",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
-      "SVD",
-      "TVSA"
-    ],
-    [
-      "Tobago",
-      "https://en.wikipedia.org/wiki/A.N.R._Robinson_International_Airport",
-      "TAB",
-      "TTCP"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Lester_B._Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V.C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "LIAT20"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "InterCaribbean Airways"
+      ]
+    },
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Castries",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F.L._Charles_Airport",
+      "codes": [
+        "SLU",
+        "TLPC"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Curaçao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hato_International_Airport",
+      "codes": [
+        "CUR",
+        "TNCC"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Dominica–Douglas-Charles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas-Charles_Airport",
+      "codes": [
+        "DOM",
+        "TDPD"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Georgetown–Cheddi Jagan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "codes": [
+        "GEO",
+        "SYCJ"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Georgetown–Ogle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ogle_International_Airport",
+      "codes": [
+        "OGL",
+        "SYEC"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental__Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Amerijet International",
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Paramaribo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Johan_Adolf_Pengel_International_Airport",
+      "codes": [
+        "PBM",
+        "SMJP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Pointe-à-Pitre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
+      "codes": [
+        "PTP",
+        "TFFR"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Rutaca Airlines"
+      ]
+    },
+    {
+      "city": "St. Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+      "codes": [
+        "SXM",
+        "TNCM"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "Winair"
+      ]
+    },
+    {
+      "city": "St. Vincent–Argyle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Tobago",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A.N.R._Robinson_International_Airport",
+      "codes": [
+        "TAB",
+        "TTCP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lester_B._Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Caribbean Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -247,5 +385,7 @@
     "Amerijet International": [
       "Miami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:07Z",
+  "date-time-wikidata": "2026-04-18T22:17:01Z"
 }

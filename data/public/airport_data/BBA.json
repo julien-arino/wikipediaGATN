@@ -22,36 +22,64 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Concepcion",
-      "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
-      "CCP",
-      "SCIE"
-    ],
-    [
-      "Puerto Montt",
-      "https://en.wikipedia.org/wiki/El_Tepual_Airport",
-      "PMC",
-      "SCTE"
-    ],
-    [
-      "Punta Arenas",
-      "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
-      "PUQ",
-      "SCCI"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "Temuco",
-      "https://en.wikipedia.org/wiki/La_Araucanía_International_Airport",
-      "ZCO",
-      "SCQP"
-    ]
+    {
+      "city": "Concepcion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
+      "codes": [
+        "CCP",
+        "SCIE"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    },
+    {
+      "city": "Puerto Montt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tepual_Airport",
+      "codes": [
+        "PMC",
+        "SCTE"
+      ],
+      "airlines": [
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Punta Arenas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
+      "codes": [
+        "PUQ",
+        "SCCI"
+      ],
+      "airlines": [
+        "Aerovías DAP"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Temuco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Araucanía_International_Airport",
+      "codes": [
+        "ZCO",
+        "SCQP"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Chile": [
@@ -70,5 +98,7 @@
     "Aerovías DAP": [
       "Punta Arenas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:18Z",
+  "date-time-wikidata": "2026-04-23T04:01:13Z"
 }

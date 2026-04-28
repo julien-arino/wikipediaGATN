@@ -25,60 +25,107 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Praia",
-      "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
-      "RAI",
-      "GVNP"
-    ],
-    [
-      "Sal",
-      "https://en.wikipedia.org/wiki/Amílcar_Cabral_International_Airport",
-      "SID",
-      "GVAC"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines",
+        "TAP Air Portugal",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Praia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
+      "codes": [
+        "RAI",
+        "GVNP"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines"
+      ]
+    },
+    {
+      "city": "Sal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amílcar_Cabral_International_Airport",
+      "codes": [
+        "SID",
+        "GVAC"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cabo Verde Airlines": [
@@ -106,5 +153,7 @@
     "TUI fly Netherlands": [
       "Amsterdam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:06Z",
+  "date-time-wikidata": "2026-04-04T00:26:25Z"
 }

@@ -35,72 +35,158 @@
     "Yazd Airways"
   ],
   "destinations": [
-    [
-      "Ahvaz",
-      "https://en.wikipedia.org/wiki/Qasem_Soleimani_International_Airport",
-      "AWZ",
-      "OIAW"
-    ],
-    [
-      "Bandar Abbas",
-      "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
-      "BND",
-      "OIKB"
-    ],
-    [
-      "Isfahan",
-      "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
-      "IFN",
-      "OIFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kish",
-      "https://en.wikipedia.org/wiki/Kish_International_Airport",
-      "KIH",
-      "OIBK"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Najaf",
-      "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
-      "NJF",
-      "ORNI"
-    ],
-    [
-      "Qeshm",
-      "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
-      "GSM",
-      "OIKQ"
-    ],
-    [
-      "Tabriz",
-      "https://en.wikipedia.org/wiki/Tabriz_Shahid_Madani_International_Airport",
-      "TBZ",
-      "OITT"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Ahvaz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qasem_Soleimani_International_Airport",
+      "codes": [
+        "AWZ",
+        "OIAW"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Bandar Abbas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
+      "codes": [
+        "BND",
+        "OIKB"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Karun Airlines",
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Isfahan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
+      "codes": [
+        "IFN",
+        "OIFM"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Kish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kish_International_Airport",
+      "codes": [
+        "KIH",
+        "OIBK"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Kish Air",
+        "Pars Air",
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Caspian Airlines",
+        "FlyPersia",
+        "Iran Aseman Airlines",
+        "Kish Air",
+        "Pouya Air",
+        "Raimon Airways",
+        "Saha Airlines",
+        "Sepehran Airlines",
+        "Taban Air",
+        "Varesh Airlines",
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Najaf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
+      "codes": [
+        "NJF",
+        "ORNI"
+      ],
+      "airlines": [
+        "Caspian Airlines",
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Qeshm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
+      "codes": [
+        "GSM",
+        "OIKQ"
+      ],
+      "airlines": [
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Tabriz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabriz_Shahid_Madani_International_Airport",
+      "codes": [
+        "TBZ",
+        "OITT"
+      ],
+      "airlines": [
+        "Pars Air",
+        "Pouya Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Asa Jet",
+        "Caspian Airlines",
+        "FlyPersia",
+        "Iran Air",
+        "Iran Aseman Airlines",
+        "Karun Airlines",
+        "Kish Air",
+        "Mahan Air",
+        "Pars Air",
+        "Pouya Air",
+        "Saha Airlines",
+        "Sepehran Airlines",
+        "Yazd Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Asa Jet": [
@@ -179,5 +265,7 @@
       "Qeshm",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:13Z",
+  "date-time-wikidata": "2025-12-18T19:09:34Z"
 }

@@ -20,18 +20,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Banjarmasin",
-      "https://en.wikipedia.org/wiki/Syamsudin_Noor_International_Airport",
-      "BDJ",
-      "WAOO"
-    ]
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Banjarmasin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syamsudin_Noor_International_Airport",
+      "codes": [
+        "BDJ",
+        "WAOO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
@@ -40,5 +50,7 @@
     "Wings Air": [
       "Banjarmasin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:51Z",
+  "date-time-wikidata": "2026-04-08T06:24:07Z"
 }

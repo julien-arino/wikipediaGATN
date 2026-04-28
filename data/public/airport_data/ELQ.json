@@ -34,132 +34,248 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Abha",
-      "https://en.wikipedia.org/wiki/Abha_Regional_Airport",
-      "AHB",
-      "OEAB"
-    ],
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Assiut",
-      "https://en.wikipedia.org/wiki/Assiut_Airport",
-      "ATZ",
-      "HEAT"
-    ],
-    [
-      "Bahrain",
-      "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
-      "BAH",
-      "OBBI"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Ha'il",
-      "https://en.wikipedia.org/wiki/Ha'il_Regional_Airport",
-      "HAS",
-      "OEHL"
-    ],
-    [
-      "Islamabad",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Multan",
-      "https://en.wikipedia.org/wiki/Multan_International_Airport",
-      "MUX",
-      "OPMT"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Rize",
-      "https://en.wikipedia.org/wiki/Rize–Artvin_Airport",
-      "RZV",
-      "LTFO"
-    ],
-    [
-      "Sarajevo",
-      "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
-      "SJJ",
-      "LQSA"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Sohag",
-      "https://en.wikipedia.org/wiki/Sohag_International_Airport",
-      "HMB",
-      "HESG"
-    ],
-    [
-      "Trabzon",
-      "https://en.wikipedia.org/wiki/Trabzon_Airport",
-      "TZX",
-      "LTCG"
-    ]
+    {
+      "city": "Abha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abha_Regional_Airport",
+      "codes": [
+        "AHB",
+        "OEAB"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Assiut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Assiut_Airport",
+      "codes": [
+        "ATZ",
+        "HEAT"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Bahrain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "Gulf Air"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air Cairo",
+        "AlMasria Universal Airlines",
+        "Egyptair",
+        "Nesma Airlines",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Flyadeal",
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Ha'il",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ha'il_Regional_Airport",
+      "codes": [
+        "HAS",
+        "OEHL"
+      ],
+      "airlines": [
+        "Nesma Airlines"
+      ]
+    },
+    {
+      "city": "Islamabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flyadeal",
+        "Flynas",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    },
+    {
+      "city": "Multan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Multan_International_Airport",
+      "codes": [
+        "MUX",
+        "OPMT"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Rize",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rize–Artvin_Airport",
+      "codes": [
+        "RZV",
+        "LTFO"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Sarajevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
+      "codes": [
+        "SJJ",
+        "LQSA"
+      ],
+      "airlines": [
+        "Flyadeal"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Sohag",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sohag_International_Airport",
+      "codes": [
+        "HMB",
+        "HESG"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air Cairo",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Trabzon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trabzon_Airport",
+      "codes": [
+        "TZX",
+        "LTCG"
+      ],
+      "airlines": [
+        "Flyadeal"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -226,5 +342,7 @@
       "Istanbul",
       "Rize"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:15Z",
+  "date-time-wikidata": "2025-10-01T02:05:46Z"
 }

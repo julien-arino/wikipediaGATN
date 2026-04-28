@@ -24,132 +24,240 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Josep_Tarradellas_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
-      "BLQ",
-      "LIPE"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Granada",
-      "https://en.wikipedia.org/wiki/Federico_García_Lorca_Granada_Airport",
-      "GRX",
-      "LEGR"
-    ],
-    [
-      "Granada",
-      "https://en.wikipedia.org/wiki/Granada_Airport",
-      "GRX",
-      "LEGR"
-    ],
-    [
-      "Ibiza",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport",
-      "IBZ",
-      "LEIB"
-    ],
-    [
-      "Jerez de la Frontera",
-      "https://en.wikipedia.org/wiki/Jerez_Airport",
-      "XRY",
-      "LEJR"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Menorca",
-      "https://en.wikipedia.org/wiki/Menorca_Airport",
-      "MAH",
-      "LEMH"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Seville",
-      "https://en.wikipedia.org/wiki/Seville_Airport",
-      "SVQ",
-      "LEZL"
-    ],
-    [
-      "Sofia",
-      "https://en.wikipedia.org/wiki/Sofia_International_Airport",
-      "SOF",
-      "LBSF"
-    ],
-    [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
-      "TFN",
-      "GCXO"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Valencia",
-      "https://en.wikipedia.org/wiki/Valencia_Airport",
-      "VLC",
-      "LEVC"
-    ],
-    [
-      "Vigo",
-      "https://en.wikipedia.org/wiki/Vigo_Airport",
-      "VGO",
-      "LEVX"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Josep_Tarradellas_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Binter Canarias"
+      ]
+    },
+    {
+      "city": "Granada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Federico_García_Lorca_Granada_Airport",
+      "codes": [
+        "GRX",
+        "LEGR"
+      ],
+      "airlines": [
+        "Iberia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Granada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Granada_Airport",
+      "codes": [
+        "GRX",
+        "LEGR"
+      ],
+      "airlines": [
+        "Iberia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Ibiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Jerez de la Frontera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerez_Airport",
+      "codes": [
+        "XRY",
+        "LEJR"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Menorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Menorca_Airport",
+      "codes": [
+        "MAH",
+        "LEMH"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Iberia",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Seville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seville_Airport",
+      "codes": [
+        "SVQ",
+        "LEZL"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Sofia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sofia_International_Airport",
+      "codes": [
+        "SOF",
+        "LBSF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Tenerife–North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
+      "codes": [
+        "TFN",
+        "GCXO"
+      ],
+      "airlines": [
+        "Binter Canarias"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Valencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
+      "codes": [
+        "VLC",
+        "LEVC"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Vigo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vigo_Airport",
+      "codes": [
+        "VGO",
+        "LEVX"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Binter Canarias": [
@@ -186,5 +294,7 @@
       "Sofia",
       "Tirana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:02Z",
+  "date-time-wikidata": "2026-03-11T14:19:59Z"
 }

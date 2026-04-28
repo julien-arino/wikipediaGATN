@@ -20,24 +20,39 @@
     "Tianjin Airlines"
   ],
   "destinations": [
-    [
-      "Aksu",
-      "https://en.wikipedia.org/wiki/Aksu_Hongqipo_Airport",
-      "AKU",
-      "ZWAK"
-    ],
-    [
-      "Karamay",
-      "https://en.wikipedia.org/wiki/Karamay_Guhai_Airport",
-      "KRY",
-      "ZWKM"
-    ],
-    [
-      "Urumqi",
-      "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Aksu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aksu_Hongqipo_Airport",
+      "codes": [
+        "AKU",
+        "ZWAK"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Karamay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karamay_Guhai_Airport",
+      "codes": [
+        "KRY",
+        "ZWKM"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Urumqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Express Airlines": [
@@ -47,5 +62,7 @@
     "Tianjin Airlines": [
       "Urumqi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:53Z",
+  "date-time-wikidata": "2026-02-06T04:47:47Z"
 }

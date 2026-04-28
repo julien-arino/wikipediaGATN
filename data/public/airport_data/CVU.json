@@ -19,23 +19,35 @@
     "SATA Air Açores"
   ],
   "destinations": [
-    [
-      "Flores",
-      "https://en.wikipedia.org/wiki/Flores_Airport",
-      "FLW",
-      "LPFL"
-    ],
-    [
-      "Horta",
-      "https://en.wikipedia.org/wiki/Horta_Airport",
-      "HOR",
-      "LPHR"
-    ]
+    {
+      "city": "Flores",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flores_Airport",
+      "codes": [
+        "FLW",
+        "LPFL"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Horta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horta_Airport",
+      "codes": [
+        "HOR",
+        "LPHR"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATA Air Açores": [
       "Flores",
       "Horta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:13Z",
+  "date-time-wikidata": "2026-03-31T23:15:58Z"
 }

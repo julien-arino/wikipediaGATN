@@ -19,24 +19,39 @@
     "Air New Zealand"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_International_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_International_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -44,5 +59,7 @@
       "Christchurch",
       "Wellington"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:04Z",
+  "date-time-wikidata": "2025-10-15T11:33:12Z"
 }

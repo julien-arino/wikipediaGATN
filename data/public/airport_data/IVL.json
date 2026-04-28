@@ -27,60 +27,106 @@
     "Vueling"
   ],
   "destinations": [
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Helsinki Airport",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Kirkenes Airport, Høybuktmoen",
-      "https://en.wikipedia.org/wiki/Kirkenes_Airport,_H%C3%B8ybuktmoen",
-      "KKN",
-      "ENKR"
-    ],
-    [
-      "Orly Airport",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Vienna Airport",
-      "https://en.wikipedia.org/wiki/Vienna_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Helsinki Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Kirkenes Airport, Høybuktmoen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kirkenes_Airport,_H%C3%B8ybuktmoen",
+      "codes": [
+        "KKN",
+        "ENKR"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Orly Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Vienna Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Zurich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Austrian Airlines": [
@@ -111,5 +157,7 @@
     "Vueling": [
       "Orly Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:12Z",
+  "date-time-wikidata": "2026-04-23T16:55:13Z"
 }

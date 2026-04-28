@@ -19,23 +19,35 @@
     "Amerijet International"
   ],
   "destinations": [
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Puerto Plata",
-      "https://en.wikipedia.org/wiki/Gregorio_Luperón_International_Airport",
-      "POP",
-      "MDPP"
-    ]
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International"
+      ]
+    },
+    {
+      "city": "Puerto Plata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gregorio_Luperón_International_Airport",
+      "codes": [
+        "POP",
+        "MDPP"
+      ],
+      "airlines": [
+        "Amerijet International"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amerijet International": [
       "Miami",
       "Puerto Plata"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:49Z",
+  "date-time-wikidata": "2026-04-26T02:21:32Z"
 }

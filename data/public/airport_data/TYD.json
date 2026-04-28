@@ -19,23 +19,35 @@
     "Aurora"
   ],
   "destinations": [
-    [
-      "Blagoveshchensk",
-      "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
-      "BQS",
-      "UHBB"
-    ],
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ]
+    {
+      "city": "Blagoveshchensk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
+      "codes": [
+        "BQS",
+        "UHBB"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    },
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora": [
       "Blagoveshchensk",
       "Khabarovsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:35Z",
+  "date-time-wikidata": "2025-11-12T21:45:06Z"
 }

@@ -21,30 +21,50 @@
     "Star Air"
   ],
   "destinations": [
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Navi Mumbai",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
-      "NMI",
-      "VANM"
-    ],
-    [
-      "Surat",
-      "https://en.wikipedia.org/wiki/Surat_Airport",
-      "STV",
-      "VASU"
-    ]
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Navi Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "codes": [
+        "NMI",
+        "VANM"
+      ],
+      "airlines": [
+        "Indigo"
+      ]
+    },
+    {
+      "city": "Surat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surat_Airport",
+      "codes": [
+        "STV",
+        "VASU"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -57,5 +77,7 @@
       "Ahmedabad",
       "Surat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:20Z",
+  "date-time-wikidata": "2026-04-22T19:21:33Z"
 }

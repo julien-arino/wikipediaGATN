@@ -19,23 +19,35 @@
     "Southern Airways Express"
   ],
   "destinations": [
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Southern Airways Express": [
       "Los Angeles International Airport",
       "Phoenix Sky Harbor International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:49Z",
+  "date-time-wikidata": "2026-02-23T23:40:14Z"
 }

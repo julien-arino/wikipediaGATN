@@ -20,18 +20,28 @@
     "FedEx Express"
   ],
   "destinations": [
-    [
-      "Fort Worth Alliance Airport",
-      "https://en.wikipedia.org/wiki/Fort_Worth_Alliance_Airport",
-      "AFW",
-      "KAFW"
-    ],
-    [
-      "Memphis International Airport",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
-      "MEM",
-      "KMEM"
-    ]
+    {
+      "city": "Fort Worth Alliance Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Worth_Alliance_Airport",
+      "codes": [
+        "AFW",
+        "KAFW"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    },
+    {
+      "city": "Memphis International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amazon Air": [
@@ -40,5 +50,7 @@
     "FedEx Express": [
       "Memphis International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:22Z",
+  "date-time-wikidata": "2026-04-13T23:54:59Z"
 }

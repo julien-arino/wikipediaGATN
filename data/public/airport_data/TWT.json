@@ -21,18 +21,30 @@
     "Platinum Skies"
   ],
   "destinations": [
-    [
-      "Cotabato Airport",
-      "https://en.wikipedia.org/wiki/Cotabato_Airport",
-      "CBO",
-      "RPMC"
-    ],
-    [
-      "Zamboanga International Airport",
-      "https://en.wikipedia.org/wiki/Zamboanga_International_Airport",
-      "ZAM",
-      "RPMZ"
-    ]
+    {
+      "city": "Cotabato Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cotabato_Airport",
+      "codes": [
+        "CBO",
+        "RPMC"
+      ],
+      "airlines": [
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Zamboanga International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zamboanga_International_Airport",
+      "codes": [
+        "ZAM",
+        "RPMZ"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express",
+        "Platinum Skies"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebu Pacific": [
@@ -45,5 +57,7 @@
     "Platinum Skies": [
       "Zamboanga International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:47Z",
+  "date-time-wikidata": "2025-08-07T18:41:50Z"
 }

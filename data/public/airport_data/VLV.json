@@ -19,23 +19,35 @@
     "Conviasa"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
-      "PMV",
-      "SVMG"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Conviasa": [
       "Caracas",
       "Porlamar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:03Z",
+  "date-time-wikidata": "2026-01-30T21:07:56Z"
 }

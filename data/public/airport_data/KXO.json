@@ -20,18 +20,28 @@
     "BAR Aviation Uganda"
   ],
   "destinations": [
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Kajjansi",
-      "https://en.wikipedia.org/wiki/Kajjansi_Airport",
-      "KJJ",
-      "HUKJ"
-    ]
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Aerolink Uganda"
+      ]
+    },
+    {
+      "city": "Kajjansi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kajjansi_Airport",
+      "codes": [
+        "KJJ",
+        "HUKJ"
+      ],
+      "airlines": [
+        "BAR Aviation Uganda"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolink Uganda": [
@@ -40,5 +50,7 @@
     "BAR Aviation Uganda": [
       "Kajjansi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:12Z",
+  "date-time-wikidata": "2025-09-15T21:48:23Z"
 }

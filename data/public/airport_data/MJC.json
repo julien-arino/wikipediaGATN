@@ -19,23 +19,35 @@
     "Air Côte d'Ivoire"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Odienné",
-      "https://en.wikipedia.org/wiki/Odienné_Airport",
-      "KEO",
-      "DIOD"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Odienné",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Odienné_Airport",
+      "codes": [
+        "KEO",
+        "DIOD"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
       "Abidjan",
       "Odienné"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:19Z",
+  "date-time-wikidata": "2024-09-28T15:38:49Z"
 }

@@ -21,30 +21,52 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Denpasar",
-      "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
-      "DPS",
-      "WADD"
-    ],
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Lombok",
-      "https://en.wikipedia.org/wiki/Lombok_International_Airport",
-      "LOP",
-      "WADL"
-    ],
-    [
-      "Surabaya",
-      "https://en.wikipedia.org/wiki/Juanda_International_Airport",
-      "SUB",
-      "WARR"
-    ]
+    {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD"
+      ],
+      "airlines": [
+        "Batik Air",
+        "NAM Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "NAM Air"
+      ]
+    },
+    {
+      "city": "Lombok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombok_International_Airport",
+      "codes": [
+        "LOP",
+        "WADL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Surabaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "NAM Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Batik Air": [
@@ -59,5 +81,7 @@
       "Denpasar",
       "Lombok"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:08Z",
+  "date-time-wikidata": "2026-03-20T16:48:13Z"
 }

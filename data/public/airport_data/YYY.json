@@ -19,23 +19,35 @@
     "PAL Airlines"
   ],
   "destinations": [
-    [
-      "Moncton",
-      "https://en.wikipedia.org/wiki/Greater_Moncton_Roméo_LeBlanc_International_Airport",
-      "YQM",
-      "CYQM"
-    ],
-    [
-      "Wabush",
-      "https://en.wikipedia.org/wiki/Wabush_Airport",
-      "YWK",
-      "CYWK"
-    ]
+    {
+      "city": "Moncton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Moncton_Roméo_LeBlanc_International_Airport",
+      "codes": [
+        "YQM",
+        "CYQM"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Wabush",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wabush_Airport",
+      "codes": [
+        "YWK",
+        "CYWK"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PAL Airlines": [
       "Moncton",
       "Wabush"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:50Z",
+  "date-time-wikidata": "2026-01-17T10:57:14Z"
 }

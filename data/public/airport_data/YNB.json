@@ -28,54 +28,99 @@
     "flyadeal"
   ],
   "destinations": [
-    [
-      "Alexandria",
-      "https://en.wikipedia.org/wiki/Alexandria_International_Airport_(Egypt)",
-      "HBE",
-      "HEAX"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dammam",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Sohag",
-      "https://en.wikipedia.org/wiki/Sohag_International_Airport",
-      "HMB",
-      "HESG"
-    ]
+    {
+      "city": "Alexandria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria_International_Airport_(Egypt)",
+      "codes": [
+        "HBE",
+        "HEAX"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "AlMasria Universal Airlines",
+        "Nesma Airlines",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Dammam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Flynas",
+        "flyadeal"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Sohag",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sohag_International_Airport",
+      "codes": [
+        "HMB",
+        "HESG"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -111,5 +156,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:22Z",
+  "date-time-wikidata": "2025-12-10T10:20:07Z"
 }

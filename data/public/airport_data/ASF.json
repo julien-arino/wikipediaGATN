@@ -7,6 +7,7 @@
   "lat": "46.2801671",
   "lon": "48.0189072",
   "altitude": "-20",
+  "continent": "Europe",
   "region": "Astrakhan",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
@@ -23,48 +24,86 @@
     "Rossiya Airlines"
   ],
   "destinations": [
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow-Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "St. Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "UFA",
-      "UWUU"
-    ]
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Moscow-Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Pobeda",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Azimuth",
+        "IrAero"
+      ]
+    },
+    {
+      "city": "St. Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -90,5 +129,6 @@
       "Moscow–Sheremetyevo"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:14:06Z",
+  "date-time-wikidata": "2026-01-10T01:12:06Z"
 }

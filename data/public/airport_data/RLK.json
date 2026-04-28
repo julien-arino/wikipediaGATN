@@ -23,60 +23,107 @@
     "Tianjin Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hohhot Baita International Airport",
-      "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
-      "HET",
-      "ZBHH"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Tongliao Airport",
-      "https://en.wikipedia.org/wiki/Tongliao_Airport",
-      "TGO",
-      "ZBTL"
-    ],
-    [
-      "Xilinhot Airport",
-      "https://en.wikipedia.org/wiki/Xilinhot_Airport",
-      "XIL",
-      "ZBXH"
-    ],
-    [
-      "Zhengzhou Xinzheng International Airport",
-      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
-      "CGO",
-      "ZHCC"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hohhot Baita International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
+      "codes": [
+        "HET",
+        "ZBHH"
+      ],
+      "airlines": [
+        "Air China",
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Tongliao Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tongliao_Airport",
+      "codes": [
+        "TGO",
+        "ZBTL"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Xilinhot Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xilinhot_Airport",
+      "codes": [
+        "XIL",
+        "ZBXH"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Zhengzhou Xinzheng International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "codes": [
+        "CGO",
+        "ZHCC"
+      ],
+      "airlines": [
+        "China Southern Airlines",
+        "Juneyao Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -100,5 +147,7 @@
       "Tongliao Airport",
       "Xilinhot Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:15Z",
+  "date-time-wikidata": "2026-03-29T14:20:26Z"
 }

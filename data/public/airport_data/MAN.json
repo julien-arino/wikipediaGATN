@@ -20,12 +20,18 @@
     "FedEx Express"
   ],
   "destinations": [
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ]
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "FedEx Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ASL Airlines France": [
@@ -34,5 +40,7 @@
     "FedEx Express": [
       "Paris–Charles de Gaulle"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:15Z",
+  "date-time-wikidata": "2026-04-27T22:16:21Z"
 }

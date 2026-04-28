@@ -20,24 +20,40 @@
     "SCAT Airlines"
   ],
   "destinations": [
-    [
-      "Aktau Airport",
-      "https://en.wikipedia.org/wiki/Aktau_Airport",
-      "SCO",
-      "UATE"
-    ],
-    [
-      "Almaty International Airport",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Shymkent International Airport",
-      "https://en.wikipedia.org/wiki/Shymkent_International_Airport",
-      "CIT",
-      "UAII"
-    ]
+    {
+      "city": "Aktau Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktau_Airport",
+      "codes": [
+        "SCO",
+        "UATE"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Almaty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "Qazaq Air",
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Shymkent International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shymkent_International_Airport",
+      "codes": [
+        "CIT",
+        "UAII"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Qazaq Air": [
@@ -48,5 +64,7 @@
       "Almaty International Airport",
       "Shymkent International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:01Z",
+  "date-time-wikidata": "2026-02-13T18:37:47Z"
 }

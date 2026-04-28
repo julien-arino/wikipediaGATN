@@ -21,30 +21,52 @@
     "Myanmar National Airlines"
   ],
   "destinations": [
-    [
-      "Kyaukpyu",
-      "https://en.wikipedia.org/wiki/Kyaukpyu_Airport",
-      "KYP",
-      "VYKP"
-    ],
-    [
-      "Naypyidaw",
-      "https://en.wikipedia.org/wiki/Naypyidaw_International_Airport",
-      "NYT",
-      "VYNT"
-    ],
-    [
-      "Pathein",
-      "https://en.wikipedia.org/wiki/Pathein_Airport",
-      "BSX",
-      "VYPN"
-    ],
-    [
-      "Yangon",
-      "https://en.wikipedia.org/wiki/Yangon_International_Airport",
-      "RGN",
-      "VYYY"
-    ]
+    {
+      "city": "Kyaukpyu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kyaukpyu_Airport",
+      "codes": [
+        "KYP",
+        "VYKP"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Naypyidaw",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naypyidaw_International_Airport",
+      "codes": [
+        "NYT",
+        "VYNT"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Pathein",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pathein_Airport",
+      "codes": [
+        "BSX",
+        "VYPN"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Yangon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangon_International_Airport",
+      "codes": [
+        "RGN",
+        "VYYY"
+      ],
+      "airlines": [
+        "Mann Yatanarpon Airlines",
+        "Mingalar Aviation Services",
+        "Myanmar National Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Mann Yatanarpon Airlines": [
@@ -59,5 +81,7 @@
       "Pathein",
       "Yangon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:58Z",
+  "date-time-wikidata": "2025-05-12T20:58:02Z"
 }

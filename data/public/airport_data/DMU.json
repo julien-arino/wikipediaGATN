@@ -21,36 +21,62 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Imphal_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Shillong",
-      "https://en.wikipedia.org/wiki/Shillong_Airport",
-      "SHL",
-      "VEBI"
-    ]
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Shillong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shillong_Airport",
+      "codes": [
+        "SHL",
+        "VEBI"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -65,5 +91,7 @@
       "Guwahati",
       "Kolkata"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:46Z",
+  "date-time-wikidata": "2026-03-31T11:32:37Z"
 }

@@ -20,18 +20,28 @@
     "TAROM"
   ],
   "destinations": [
-    [
-      "Beauvais",
-      "https://en.wikipedia.org/wiki/Beauvais_Airport",
-      "BVA",
-      "LFOB"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ]
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais_Airport",
+      "codes": [
+        "BVA",
+        "LFOB"
+      ],
+      "airlines": [
+        "HiSky"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "TAROM"
+      ]
+    }
   ],
   "airlines_destinations": {
     "HiSky": [
@@ -40,5 +50,7 @@
     "TAROM": [
       "Bucharest–Otopeni"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:17Z",
+  "date-time-wikidata": "2026-03-06T01:16:51Z"
 }

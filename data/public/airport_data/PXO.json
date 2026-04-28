@@ -25,42 +25,76 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Funchal",
-      "https://en.wikipedia.org/wiki/Madeira_Airport",
-      "FNC",
-      "LPMA"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Milan-Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
-      "PRG",
-      "LKPR"
-    ]
+    {
+      "city": "Funchal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeira_Airport",
+      "codes": [
+        "FNC",
+        "LPMA"
+      ],
+      "airlines": [
+        "Binter Canarias"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Smartwings",
+        "TAP Air Portugal",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Milan-Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "AlbaStar"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Privilege Style",
+        "Smartwings",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AlbaStar": [
@@ -87,5 +121,7 @@
     "TAP Air Portugal": [
       "Lisbon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:11Z",
+  "date-time-wikidata": "2026-03-31T19:53:47Z"
 }

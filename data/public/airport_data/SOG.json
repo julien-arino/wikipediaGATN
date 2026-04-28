@@ -19,30 +19,50 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Bergen",
-      "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Sandane",
-      "https://en.wikipedia.org/wiki/Sandane_Airport,_Anda",
-      "SDN",
-      "ENSD"
-    ],
-    [
-      "Ørsta-Volda",
-      "https://en.wikipedia.org/wiki/Ørsta–Volda_Airport,_Hovden",
-      "HOV",
-      "ENOV"
-    ]
+    {
+      "city": "Bergen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Sandane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandane_Airport,_Anda",
+      "codes": [
+        "SDN",
+        "ENSD"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Ørsta-Volda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ørsta–Volda_Airport,_Hovden",
+      "codes": [
+        "HOV",
+        "ENOV"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Widerøe": [
@@ -51,5 +71,7 @@
       "Sandane",
       "Ørsta-Volda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:11Z",
+  "date-time-wikidata": "2026-04-15T07:20:00Z"
 }

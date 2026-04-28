@@ -19,24 +19,39 @@
     "Pascan Aviation"
   ],
   "destinations": [
-    [
-      "Montreal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/Montréal/Saint-Hubert_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Quebec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Îles-de-la-Madeleine",
-      "https://en.wikipedia.org/wiki/Îles-de-la-Madeleine_Airport",
-      "YGR",
-      "CYGR"
-    ]
+    {
+      "city": "Montreal–Saint-Hubert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal/Saint-Hubert_Airport",
+      "codes": [
+        "YHU",
+        "CYHU"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Quebec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Îles-de-la-Madeleine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Îles-de-la-Madeleine_Airport",
+      "codes": [
+        "YGR",
+        "CYGR"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Pascan Aviation": [
@@ -44,5 +59,7 @@
       "Quebec City",
       "Îles-de-la-Madeleine"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:47Z",
+  "date-time-wikidata": "2023-01-13T19:55:54Z"
 }

@@ -21,24 +21,40 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Belo Horizonte International Airport",
-      "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Brasília International Airport",
-      "https://en.wikipedia.org/wiki/Bras%C3%ADlia_International_Airport",
-      "BSB",
-      "SBBR"
-    ],
-    [
-      "São Paulo/Guarulhos International Airport",
-      "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Belo Horizonte International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Brasília International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bras%C3%ADlia_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas Inteligentes"
+      ]
+    },
+    {
+      "city": "São Paulo/Guarulhos International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas Inteligentes",
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -51,5 +67,7 @@
     "LATAM Brasil": [
       "São Paulo/Guarulhos International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:17Z",
+  "date-time-wikidata": "2026-03-27T19:17:24Z"
 }

@@ -7,6 +7,7 @@
   "lat": "3.3908149",
   "lon": "97.8643963",
   "altitude": "4",
+  "continent": "Asia",
   "region": "Aceh",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -18,17 +19,23 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Banda Aceh",
-      "https://en.wikipedia.org/wiki/Sultan_Iskandar_Muda_International_Airport",
-      "BTJ",
-      "WITT"
-    ]
+    {
+      "city": "Banda Aceh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Iskandar_Muda_International_Airport",
+      "codes": [
+        "BTJ",
+        "WITT"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Banda Aceh"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:07:03Z",
+  "date-time-wikidata": "2024-04-15T21:08:17Z"
 }

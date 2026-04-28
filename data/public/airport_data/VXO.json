@@ -23,60 +23,107 @@
     "TUI fly Nordic"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Stockholm–Bromma",
-      "https://en.wikipedia.org/wiki/Stockholm_Bromma_Airport",
-      "BMA",
-      "ESSB"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "TUI fly Nordic"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Stockholm–Bromma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Bromma_Airport",
+      "codes": [
+        "BMA",
+        "ESSB"
+      ],
+      "airlines": [
+        "NyxAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norwegian Air Shuttle": [
@@ -98,5 +145,7 @@
     "TUI fly Nordic": [
       "Gran Canaria"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:06Z",
+  "date-time-wikidata": "2026-02-05T07:36:21Z"
 }

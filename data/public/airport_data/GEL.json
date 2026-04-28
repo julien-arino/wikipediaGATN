@@ -20,24 +20,39 @@
     "Gol Linhas Aéreas"
   ],
   "destinations": [
-    [
-      "Florianópolis",
-      "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-      "FLN",
-      "SBFL"
-    ],
-    [
-      "Porto Alegre",
-      "https://en.wikipedia.org/wiki/Salgado_Filho_International_Airport",
-      "POA",
-      "SBPA"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Alegre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salgado_Filho_International_Airport",
+      "codes": [
+        "POA",
+        "SBPA"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -47,5 +62,7 @@
     "Gol Linhas Aéreas": [
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:53Z",
+  "date-time-wikidata": "2026-01-24T22:52:54Z"
 }

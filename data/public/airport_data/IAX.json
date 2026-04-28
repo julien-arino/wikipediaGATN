@@ -19,23 +19,35 @@
     "SAM Air"
   ],
   "destinations": [
-    [
-      "Melonguane",
-      "https://en.wikipedia.org/wiki/Melangguane_Airport",
-      "MNA",
-      "WAMN"
-    ],
-    [
-      "Tahuna",
-      "https://en.wikipedia.org/wiki/Naha_Airport_(Indonesia)",
-      "NAH",
-      "WAMH"
-    ]
+    {
+      "city": "Melonguane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melangguane_Airport",
+      "codes": [
+        "MNA",
+        "WAMN"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    },
+    {
+      "city": "Tahuna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport_(Indonesia)",
+      "codes": [
+        "NAH",
+        "WAMH"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
       "Melonguane",
       "Tahuna"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:59Z",
+  "date-time-wikidata": "2025-10-26T05:37:10Z"
 }

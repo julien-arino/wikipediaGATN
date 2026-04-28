@@ -19,23 +19,35 @@
     "SCAT Airlines"
   ],
   "destinations": [
-    [
-      "Almaty International Airport",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Nursultan Nazarbayev International Airport",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ]
+    {
+      "city": "Almaty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Nursultan Nazarbayev International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SCAT Airlines": [
       "Almaty International Airport",
       "Nursultan Nazarbayev International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:58Z",
+  "date-time-wikidata": "2025-06-03T03:19:35Z"
 }

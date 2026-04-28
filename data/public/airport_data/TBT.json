@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Eduardo Gomes International Airport",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ],
-    [
-      "Tefé Airport",
-      "https://en.wikipedia.org/wiki/Tef%C3%A9_Airport",
-      "TFF",
-      "SBTF"
-    ]
+    {
+      "city": "Eduardo Gomes International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Tefé Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tef%C3%A9_Airport",
+      "codes": [
+        "TFF",
+        "SBTF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Eduardo Gomes International Airport",
       "Tefé Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:22Z",
+  "date-time-wikidata": "2026-03-21T21:22:33Z"
 }

@@ -21,36 +21,63 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Anchorage",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "ANC",
-      "PANC"
-    ],
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Marshall",
-      "https://en.wikipedia.org/wiki/Marshall_Don_Hunter_Sr._Airport",
-      "MLL",
-      "PADM"
-    ],
-    [
-      "Mountain Village",
-      "https://en.wikipedia.org/wiki/Mountain_Village_Airport",
-      "MOU",
-      "PAMO"
-    ],
-    [
-      "Pilot Station",
-      "https://en.wikipedia.org/wiki/Pilot_Station_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Aleutian Airways"
+      ]
+    },
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Marshall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Don_Hunter_Sr._Airport",
+      "codes": [
+        "MLL",
+        "PADM"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Mountain Village",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mountain_Village_Airport",
+      "codes": [
+        "MOU",
+        "PAMO"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Pilot Station",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pilot_Station_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aleutian Airways": [
@@ -66,5 +93,7 @@
       "Mountain Village",
       "Pilot Station"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:44Z",
+  "date-time-wikidata": "2026-01-31T13:42:14Z"
 }

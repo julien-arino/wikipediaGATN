@@ -19,22 +19,32 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Akutan Seaplane Base",
-      "https://en.wikipedia.org/wiki/Akutan_Seaplane_Base",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Unalaska Airport",
-      "https://en.wikipedia.org/wiki/Unalaska_Airport",
-      "DUT",
-      "PADU"
-    ]
+    {
+      "city": "Akutan Seaplane Base",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akutan_Seaplane_Base",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": []
+    },
+    {
+      "city": "Unalaska Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unalaska_Airport",
+      "codes": [
+        "DUT",
+        "PADU"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
       "Unalaska Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:03Z",
+  "date-time-wikidata": "2025-11-07T13:22:59Z"
 }

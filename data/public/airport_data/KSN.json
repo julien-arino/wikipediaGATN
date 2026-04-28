@@ -23,48 +23,84 @@
     "Sunday Airlines"
   ],
   "destinations": [
-    [
-      "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Astana",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Türkıstan",
-      "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport",
-      "HSA",
-      "UAIT"
-    ],
-    [
-      "Şymkent",
-      "https://en.wikipedia.org/wiki/Şymkent_International_Airport",
-      "CIT",
-      "UAII"
-    ]
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Sunday Airlines"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "FlyArystan",
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Türkıstan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport",
+      "codes": [
+        "HSA",
+        "UAIT"
+      ],
+      "airlines": [
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Şymkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Şymkent_International_Airport",
+      "codes": [
+        "CIT",
+        "UAII"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -85,5 +121,7 @@
     "Sunday Airlines": [
       "Antalya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:44Z",
+  "date-time-wikidata": "2026-03-18T13:32:15Z"
 }

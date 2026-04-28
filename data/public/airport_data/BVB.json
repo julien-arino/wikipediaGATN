@@ -22,36 +22,63 @@
     "RUTACA Airlines"
   ],
   "destinations": [
-    [
-      "Brasília",
-      "https://en.wikipedia.org/wiki/Brasília_International_Airport",
-      "BSB",
-      "SBBR"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ],
-    [
-      "Puerto Ordaz",
-      "https://en.wikipedia.org/wiki/Manuel_Carlos_Piar_Guayana_Airport",
-      "CGU",
-      "SVPR"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Puerto Ordaz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manuel_Carlos_Piar_Guayana_Airport",
+      "codes": [
+        "CGU",
+        "SVPR"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -69,5 +96,7 @@
     "RUTACA Airlines": [
       "Puerto Ordaz"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:36Z",
+  "date-time-wikidata": "2026-04-14T17:44:13Z"
 }

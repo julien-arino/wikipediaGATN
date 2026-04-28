@@ -21,12 +21,19 @@
     "Star Perú"
   ],
   "destinations": [
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ]
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "JetSmart Perú",
+        "LATAM Perú",
+        "Star Perú"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Perú": [
@@ -38,5 +45,7 @@
     "Star Perú": [
       "Lima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:55Z",
+  "date-time-wikidata": "2026-02-28T02:51:18Z"
 }

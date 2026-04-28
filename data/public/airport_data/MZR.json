@@ -22,36 +22,64 @@
     "Meraj Airlines"
   ],
   "destinations": [
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Kabul International Airport",
-      "https://en.wikipedia.org/wiki/Kabul_International_Airport",
-      "KBL",
-      "OAKB"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Mashhad Shahid Hasheminejad International Airport",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Tehran Imam Khomeini International Airport",
-      "https://en.wikipedia.org/wiki/Tehran_Imam_Khomeini_International_Airport",
-      "IKA",
-      "OIIE"
-    ]
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Kabul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kabul_International_Airport",
+      "codes": [
+        "KBL",
+        "OAKB"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad Shahid Hasheminejad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Tehran Imam Khomeini International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tehran_Imam_Khomeini_International_Airport",
+      "codes": [
+        "IKA",
+        "OIIE"
+      ],
+      "airlines": [
+        "Mahan Air",
+        "Meraj Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ariana Afghan Airlines": [
@@ -70,5 +98,7 @@
     "Meraj Airlines": [
       "Tehran Imam Khomeini International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:39Z",
+  "date-time-wikidata": "2026-03-15T09:00:17Z"
 }

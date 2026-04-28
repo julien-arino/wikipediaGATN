@@ -19,24 +19,39 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Hyderabad_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Vijayawada",
-      "https://en.wikipedia.org/wiki/Vijayawada_Airport",
-      "VGA",
-      "VOBZ"
-    ]
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hyderabad_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Vijayawada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vijayawada_Airport",
+      "codes": [
+        "VGA",
+        "VOBZ"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -44,5 +59,7 @@
       "Hyderabad",
       "Vijayawada"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:31Z",
+  "date-time-wikidata": "2026-01-31T05:38:16Z"
 }

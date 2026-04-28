@@ -20,36 +20,61 @@
     "TUM AeroCarga"
   ],
   "destinations": [
-    [
-      "Chihuahua",
-      "https://en.wikipedia.org/wiki/Chihuahua_International_Airport",
-      "CUU",
-      "MMCU"
-    ],
-    [
-      "Ciudad Juárez",
-      "https://en.wikipedia.org/wiki/Ciudad_Juárez_International_Airport",
-      "CJS",
-      "MMCS"
-    ],
-    [
-      "Culiacán",
-      "https://en.wikipedia.org/wiki/Culiacán_International_Airport",
-      "CUL",
-      "MMCL"
-    ],
-    [
-      "Querétaro",
-      "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
-      "QRO",
-      "MMQT"
-    ],
-    [
-      "Toluca/Mexico City",
-      "https://en.wikipedia.org/wiki/Toluca_International_Airport",
-      "TLC",
-      "MMTO"
-    ]
+    {
+      "city": "Chihuahua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chihuahua_International_Airport",
+      "codes": [
+        "CUU",
+        "MMCU"
+      ],
+      "airlines": [
+        "TUM AeroCarga"
+      ]
+    },
+    {
+      "city": "Ciudad Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciudad_Juárez_International_Airport",
+      "codes": [
+        "CJS",
+        "MMCS"
+      ],
+      "airlines": [
+        "TUM AeroCarga"
+      ]
+    },
+    {
+      "city": "Culiacán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Culiacán_International_Airport",
+      "codes": [
+        "CUL",
+        "MMCL"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    },
+    {
+      "city": "Querétaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    },
+    {
+      "city": "Toluca/Mexico City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toluca_International_Airport",
+      "codes": [
+        "TLC",
+        "MMTO"
+      ],
+      "airlines": [
+        "TUM AeroCarga"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeronaves TSM": [
@@ -61,5 +86,7 @@
       "Ciudad Juárez",
       "Toluca/Mexico City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:36Z",
+  "date-time-wikidata": "2026-04-03T16:05:54Z"
 }

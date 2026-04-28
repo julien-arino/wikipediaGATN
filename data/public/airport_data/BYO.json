@@ -21,24 +21,39 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Congonhas-São Paulo Airport",
-      "https://en.wikipedia.org/wiki/Congonhas-S%C3%A3o_Paulo_Airport",
-      "CGH",
-      "SBSP"
-    ],
-    [
-      "São Paulo/Guarulhos International Airport",
-      "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "Viracopos International Airport",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ]
+    {
+      "city": "Congonhas-São Paulo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Congonhas-S%C3%A3o_Paulo_Airport",
+      "codes": [
+        "CGH",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas Inteligentes"
+      ]
+    },
+    {
+      "city": "São Paulo/Guarulhos International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Viracopos International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -50,5 +65,7 @@
     "LATAM Brasil": [
       "São Paulo/Guarulhos International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:41Z",
+  "date-time-wikidata": "2026-03-03T13:51:23Z"
 }

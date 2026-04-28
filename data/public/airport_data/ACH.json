@@ -7,6 +7,7 @@
   "lat": "47.4854147",
   "lon": "9.5606323",
   "altitude": "398.07",
+  "continent": "Europe",
   "region": "Saint Gallen",
   "country_alpha3": "CHE",
   "country_name": "Switzerland",
@@ -19,42 +20,72 @@
     "Private Wings"
   ],
   "destinations": [
-    [
-      "Brač",
-      "https://en.wikipedia.org/wiki/Brač_Airport",
-      "BWK",
-      "LDSB"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Elba",
-      "https://en.wikipedia.org/wiki/Marina_di_Campo_Airport",
-      "EBA",
-      "LIRJ"
-    ],
-    [
-      "Ibiza",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport",
-      "IBZ",
-      "LEIB"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Zadar",
-      "https://en.wikipedia.org/wiki/Zadar_Airport",
-      "ZAD",
-      "LDZD"
-    ]
+    {
+      "city": "Brač",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brač_Airport",
+      "codes": [
+        "BWK",
+        "LDSB"
+      ],
+      "airlines": [
+        "Private Wings"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "People's"
+      ]
+    },
+    {
+      "city": "Elba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_di_Campo_Airport",
+      "codes": [
+        "EBA",
+        "LIRJ"
+      ],
+      "airlines": [
+        "Private Wings"
+      ]
+    },
+    {
+      "city": "Ibiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "People's"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "People's"
+      ]
+    },
+    {
+      "city": "Zadar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zadar_Airport",
+      "codes": [
+        "ZAD",
+        "LDZD"
+      ],
+      "airlines": [
+        "People's"
+      ]
+    }
   ],
   "airlines_destinations": {
     "People's": [
@@ -68,5 +99,6 @@
       "Elba"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:13:49Z",
+  "date-time-wikidata": "2026-03-03T10:39:03Z"
 }

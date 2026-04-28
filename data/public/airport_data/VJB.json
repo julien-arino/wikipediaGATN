@@ -19,23 +19,35 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Chimoio",
-      "https://en.wikipedia.org/wiki/Chimoio_Airport",
-      "VPY",
-      "FQCH"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ]
+    {
+      "city": "Chimoio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chimoio_Airport",
+      "codes": [
+        "VPY",
+        "FQCH"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LAM Mozambique Airlines": [
       "Chimoio",
       "Maputo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:10Z",
+  "date-time-wikidata": "2026-02-23T15:34:47Z"
 }

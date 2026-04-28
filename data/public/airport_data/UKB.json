@@ -30,114 +30,209 @@
     "Toki Air"
   ],
   "destinations": [
-    [
-      "Aomori",
-      "https://en.wikipedia.org/wiki/Aomori_Airport",
-      "AOJ",
-      "RJSA"
-    ],
-    [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Cheongju",
-      "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
-      "CJJ",
-      "RKTU"
-    ],
-    [
-      "Hanamaki",
-      "https://en.wikipedia.org/wiki/Hanamaki_Airport",
-      "HNA",
-      "RJSI"
-    ],
-    [
-      "Ibaraki",
-      "https://en.wikipedia.org/wiki/Ibaraki_Airport",
-      "IBR",
-      "RJAH"
-    ],
-    [
-      "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
-      "KOJ",
-      "RJFK"
-    ],
-    [
-      "Matsumoto",
-      "https://en.wikipedia.org/wiki/Matsumoto_Airport",
-      "MMJ",
-      "RJAF"
-    ],
-    [
-      "Nagasaki",
-      "https://en.wikipedia.org/wiki/Nagasaki_Airport",
-      "NGS",
-      "RJFU"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Nanjing",
-      "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
-      "NKG",
-      "ZSNJ"
-    ],
-    [
-      "Niigata",
-      "https://en.wikipedia.org/wiki/Niigata_Airport",
-      "KIJ",
-      "RJSN"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Sendai",
-      "https://en.wikipedia.org/wiki/Sendai_Airport",
-      "SDJ",
-      "RJSS"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shimojishima",
-      "https://en.wikipedia.org/wiki/Shimojishima_Airport",
-      "SHI",
-      "RORS"
-    ],
-    [
-      "Taichung",
-      "https://en.wikipedia.org/wiki/Taichung_International_Airport",
-      "RMQ",
-      "RCMQ"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Aomori",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aomori_Airport",
+      "codes": [
+        "AOJ",
+        "RJSA"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Cheongju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
+      "codes": [
+        "CJJ",
+        "RKTU"
+      ],
+      "airlines": [
+        "Aero K"
+      ]
+    },
+    {
+      "city": "Hanamaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanamaki_Airport",
+      "codes": [
+        "HNA",
+        "RJSI"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Ibaraki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibaraki_Airport",
+      "codes": [
+        "IBR",
+        "RJAH"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Kagoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "codes": [
+        "KOJ",
+        "RJFK"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Matsumoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matsumoto_Airport",
+      "codes": [
+        "MMJ",
+        "RJAF"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Nagasaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nagasaki_Airport",
+      "codes": [
+        "NGS",
+        "RJFU"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Skymark Airlines",
+        "Solaseed Air"
+      ]
+    },
+    {
+      "city": "Nanjing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "codes": [
+        "NKG",
+        "ZSNJ"
+      ],
+      "airlines": [
+        "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Niigata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niigata_Airport",
+      "codes": [
+        "KIJ",
+        "RJSN"
+      ],
+      "airlines": [
+        "Toki Air"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "Air Do",
+        "All Nippon Airways",
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Sendai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sendai_Airport",
+      "codes": [
+        "SDJ",
+        "RJSS"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air"
+      ]
+    },
+    {
+      "city": "Shimojishima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shimojishima_Airport",
+      "codes": [
+        "SHI",
+        "RORS"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Taichung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taichung_International_Airport",
+      "codes": [
+        "RMQ",
+        "RCMQ"
+      ],
+      "airlines": [
+        "Starlux Airlines"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "EVA Air",
+        "Starlux Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Skymark Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero K": [
@@ -187,5 +282,7 @@
     "Toki Air": [
       "Niigata"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-wikidata": "2026-03-25T12:43:55Z"
 }

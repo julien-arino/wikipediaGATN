@@ -19,23 +19,35 @@
     "Diamond Sky"
   ],
   "destinations": [
-    [
-      "Kuressaare",
-      "https://en.wikipedia.org/wiki/Kuressaare_Airport",
-      "URE",
-      "EEKE"
-    ],
-    [
-      "Ruhnu",
-      "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
-      "iata code not found",
-      "EERU"
-    ]
+    {
+      "city": "Kuressaare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuressaare_Airport",
+      "codes": [
+        "URE",
+        "EEKE"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    },
+    {
+      "city": "Ruhnu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
+      "codes": [
+        "iata code not found",
+        "EERU"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Diamond Sky": [
       "Kuressaare",
       "Ruhnu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:20Z",
+  "date-time-wikidata": "2026-03-28T17:02:05Z"
 }

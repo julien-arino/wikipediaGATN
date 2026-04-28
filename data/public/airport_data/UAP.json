@@ -19,24 +19,39 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Atuona",
-      "https://en.wikipedia.org/wiki/Atuona_Airport",
-      "AUQ",
-      "NTMN"
-    ],
-    [
-      "Nuku Hiva",
-      "https://en.wikipedia.org/wiki/Nuku_Hiva_Airport",
-      "NHV",
-      "NTMD"
-    ],
-    [
-      "Ua Huka",
-      "https://en.wikipedia.org/wiki/Ua_Huka_Airport",
-      "UAH",
-      "NTMU"
-    ]
+    {
+      "city": "Atuona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Atuona_Airport",
+      "codes": [
+        "AUQ",
+        "NTMN"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Nuku Hiva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuku_Hiva_Airport",
+      "codes": [
+        "NHV",
+        "NTMD"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Ua Huka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ua_Huka_Airport",
+      "codes": [
+        "UAH",
+        "NTMU"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
@@ -44,5 +59,7 @@
       "Nuku Hiva",
       "Ua Huka"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:41Z",
+  "date-time-wikidata": "2025-04-01T22:01:21Z"
 }

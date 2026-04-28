@@ -20,24 +20,39 @@
     "Icelandair"
   ],
   "destinations": [
-    [
-      "Nuuk",
-      "https://en.wikipedia.org/wiki/Nuuk_Airport",
-      "GOH",
-      "BGGH"
-    ],
-    [
-      "Reykjavík–Keflavík",
-      "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
-      "KEF",
-      "BIKF"
-    ],
-    [
-      "Tasiilaq",
-      "https://en.wikipedia.org/wiki/Tasiilaq_Heliport",
-      "AGM",
-      "BGAM"
-    ]
+    {
+      "city": "Nuuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuuk_Airport",
+      "codes": [
+        "GOH",
+        "BGGH"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Reykjavík–Keflavík",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
+      "codes": [
+        "KEF",
+        "BIKF"
+      ],
+      "airlines": [
+        "Icelandair"
+      ]
+    },
+    {
+      "city": "Tasiilaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tasiilaq_Heliport",
+      "codes": [
+        "AGM",
+        "BGAM"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
@@ -47,5 +62,7 @@
     "Icelandair": [
       "Reykjavík–Keflavík"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:50Z",
+  "date-time-wikidata": "2026-03-23T18:19:19Z"
 }

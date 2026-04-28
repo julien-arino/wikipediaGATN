@@ -34,204 +34,384 @@
     "YTO Cargo Airlines"
   ],
   "destinations": [
-    [
-      "Adelaide",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Baku",
-      "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
-      "GYD",
-      "UBBB"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Chongqing",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dubai–Al Maktoum",
-      "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "DWC",
-      "OMDW"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Haikou",
-      "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
-      "HAK",
-      "ZJHK"
-    ],
-    [
-      "Hangzhou",
-      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
-      "HGH",
-      "ZSHC"
-    ],
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuching",
-      "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-      "KCH",
-      "WBGG"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Macau",
-      "https://en.wikipedia.org/wiki/Macau_International_Airport",
-      "MFM",
-      "VMMC"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ],
-    [
-      "Miri",
-      "https://en.wikipedia.org/wiki/Miri_Airport",
-      "MYY",
-      "WBGR"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Nanning",
-      "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
-      "NNG",
-      "ZGNN"
-    ],
-    [
-      "Penang",
-      "https://en.wikipedia.org/wiki/Penang_International_Airport",
-      "PEN",
-      "WMKP"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Sibu",
-      "https://en.wikipedia.org/wiki/Sibu_Airport",
-      "SBW",
-      "WBGS"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Sydney–Kingsford Smith",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Zhengzhou",
-      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
-      "CGO",
-      "ZHCC"
-    ]
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "K-Mile Air",
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Haikou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "Air Incheon"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Hong Kong Air Cargo"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "My Indo Airlines",
+        "Raya Airways"
+      ]
+    },
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "World Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Kuching",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
+      "codes": [
+        "KCH",
+        "WBGG"
+      ],
+      "airlines": [
+        "AirAsia",
+        "World Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Macau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
+      "codes": [
+        "MFM",
+        "VMMC"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR"
+      ],
+      "airlines": [
+        "World Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Nanning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
+      "codes": [
+        "NNG",
+        "ZGNN"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Penang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penang_International_Airport",
+      "codes": [
+        "PEN",
+        "WMKP"
+      ],
+      "airlines": [
+        "China Airlines Cargo",
+        "FedEx Express",
+        "Korean Air Cargo",
+        "MASkargo",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Air Incheon",
+        "Korean Air Cargo",
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Jingdong Airlines",
+        "K-Mile Air",
+        "SF Airlines",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Sibu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sibu_Airport",
+      "codes": [
+        "SBW",
+        "WBGS"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Sydney–Kingsford Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "China Airlines Cargo",
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Zhengzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "codes": [
+        "CGO",
+        "ZHCC"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Incheon": [
@@ -314,5 +494,7 @@
       "Hangzhou",
       "Nanning"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:49Z",
+  "date-time-wikidata": "2026-04-26T16:01:57Z"
 }

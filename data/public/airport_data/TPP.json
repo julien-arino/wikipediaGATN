@@ -23,36 +23,64 @@
     "Star Perú"
   ],
   "destinations": [
-    [
-      "Chiclayo",
-      "https://en.wikipedia.org/wiki/FAP_Captain_José_Abelardo_Quiñones_González_International_Airport",
-      "CIX",
-      "SPHI"
-    ],
-    [
-      "Iquitos",
-      "https://en.wikipedia.org/wiki/Crnl._FAP_Francisco_Secada_Vignetta_International_Airport",
-      "IQT",
-      "SPQT"
-    ],
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Pucallpa",
-      "https://en.wikipedia.org/wiki/FAP_Captain_David_Abensur_Rengifo_International_Airport",
-      "PCL",
-      "SPCL"
-    ],
-    [
-      "Rodriguez de Mendoza",
-      "https://en.wikipedia.org/wiki/San_Nicolas_Airport",
-      "RIM",
-      "SPLN"
-    ]
+    {
+      "city": "Chiclayo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/FAP_Captain_José_Abelardo_Quiñones_González_International_Airport",
+      "codes": [
+        "CIX",
+        "SPHI"
+      ],
+      "airlines": [
+        "Star Perú"
+      ]
+    },
+    {
+      "city": "Iquitos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crnl._FAP_Francisco_Secada_Vignetta_International_Airport",
+      "codes": [
+        "IQT",
+        "SPQT"
+      ],
+      "airlines": [
+        "Star Perú"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "JetSmart Perú",
+        "LATAM Perú",
+        "Sky Airline Peru",
+        "Star Perú"
+      ]
+    },
+    {
+      "city": "Pucallpa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/FAP_Captain_David_Abensur_Rengifo_International_Airport",
+      "codes": [
+        "PCL",
+        "SPCL"
+      ],
+      "airlines": [
+        "Saeta Peru"
+      ]
+    },
+    {
+      "city": "Rodriguez de Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Nicolas_Airport",
+      "codes": [
+        "RIM",
+        "SPLN"
+      ],
+      "airlines": [
+        "Saeta Peru"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Perú": [
@@ -73,5 +101,7 @@
       "Pucallpa",
       "Rodriguez de Mendoza"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:35Z",
+  "date-time-wikidata": "2025-08-11T06:04:35Z"
 }

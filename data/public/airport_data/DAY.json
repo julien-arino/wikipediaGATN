@@ -24,78 +24,142 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Myrtle Beach International Airport",
-      "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
-      "MYR",
-      "KMYR"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Orlando Sanford International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
-      "SFB",
-      "KSFB"
-    ],
-    [
-      "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
-      "PHL",
-      "KPHL"
-    ],
-    [
-      "Punta Gorda Airport (Florida)",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "PGD",
-      "KPGD"
-    ],
-    [
-      "Ronald Reagan Washington National Airport",
-      "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "DCA",
-      "KDCA"
-    ],
-    [
-      "St. Pete–Clearwater International Airport",
-      "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
-      "PIE",
-      "KPIE"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Hartsfield–Jackson Atlanta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Myrtle Beach International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
+      "codes": [
+        "MYR",
+        "KMYR"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Orlando Sanford International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "codes": [
+        "SFB",
+        "KSFB"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Philadelphia International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Punta Gorda Airport (Florida)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "codes": [
+        "PGD",
+        "KPGD"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Ronald Reagan Washington National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "St. Pete–Clearwater International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "codes": [
+        "PIE",
+        "KPIE"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -126,5 +190,7 @@
       "Dulles International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:15Z",
+  "date-time-wikidata": "2026-03-30T05:00:31Z"
 }

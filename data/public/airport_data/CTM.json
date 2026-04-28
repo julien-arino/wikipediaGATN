@@ -7,6 +7,7 @@
   "lat": "30.3887696",
   "lon": "-9.5320106",
   "altitude": "12",
+  "continent": "Africa",
   "region": "Oued ed Dahab-Lagouira",
   "country_alpha3": "MAR",
   "country_name": "Morocco",
@@ -22,18 +23,32 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ]
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect",
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Mexicana de Aviación",
+        "Viva"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -53,5 +68,6 @@
       "Mexico City–Benito Juárez"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:11:07Z",
+  "date-time-wikidata": "2026-04-21T01:48:54Z"
 }

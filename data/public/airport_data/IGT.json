@@ -20,18 +20,28 @@
     "Pobeda"
   ],
   "destinations": [
-    [
-      "Moscow–Shermetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ]
+    {
+      "city": "Moscow–Shermetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azimuth": [
@@ -40,5 +50,7 @@
     "Pobeda": [
       "Moscow–Shermetyevo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:35Z",
+  "date-time-wikidata": "2025-12-05T23:48:47Z"
 }

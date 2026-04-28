@@ -20,18 +20,28 @@
     "Copa Airlines"
   ],
   "destinations": [
-    [
-      "Panama City–Gelabert",
-      "https://en.wikipedia.org/wiki/Marcos_A._Gelabert_International_Airport",
-      "PAC",
-      "MPMG"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ]
+    {
+      "city": "Panama City–Gelabert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marcos_A._Gelabert_International_Airport",
+      "codes": [
+        "PAC",
+        "MPMG"
+      ],
+      "airlines": [
+        "Air Panama"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Panama": [
@@ -40,5 +50,7 @@
     "Copa Airlines": [
       "Panama City–Tocumen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:14Z",
+  "date-time-wikidata": "2026-04-21T06:43:56Z"
 }

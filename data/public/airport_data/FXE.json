@@ -19,23 +19,35 @@
     "JSX"
   ],
   "destinations": [
-    [
-      "Teterboro",
-      "https://en.wikipedia.org/wiki/Teterboro_Airport",
-      "TEB",
-      "KTEB"
-    ],
-    [
-      "White Plains",
-      "https://en.wikipedia.org/wiki/Westchester_County_Airport",
-      "HPN",
-      "KHPN"
-    ]
+    {
+      "city": "Teterboro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teterboro_Airport",
+      "codes": [
+        "TEB",
+        "KTEB"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    },
+    {
+      "city": "White Plains",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Westchester_County_Airport",
+      "codes": [
+        "HPN",
+        "KHPN"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JSX": [
       "Teterboro",
       "White Plains"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:25Z",
+  "date-time-wikidata": "2026-02-14T20:43:27Z"
 }

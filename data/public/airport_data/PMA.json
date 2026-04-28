@@ -24,54 +24,115 @@
     "ZanAir"
   ],
   "destinations": [
-    [
-      "Arusha",
-      "https://en.wikipedia.org/wiki/Arusha_Airport",
-      "ARK",
-      "HTAR"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Kilwa",
-      "https://en.wikipedia.org/wiki/Kilwa_Masoko_Airport",
-      "KIY",
-      "HTKI"
-    ],
-    [
-      "Mwanza",
-      "https://en.wikipedia.org/wiki/Mwanza_Airport",
-      "MWZ",
-      "HTMW"
-    ],
-    [
-      "Tanga",
-      "https://en.wikipedia.org/wiki/Tanga_Airport",
-      "TGT",
-      "HTTG"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
-      "ZNZ",
-      "HTZA"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Zanzibar_Airport",
-      "ZNZ",
-      "HTZA"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Zanzibar_International_Airport",
-      "ZNZ",
-      "HTZA"
-    ]
+    {
+      "city": "Arusha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arusha_Airport",
+      "codes": [
+        "ARK",
+        "HTAR"
+      ],
+      "airlines": [
+        "Coastal Aviation",
+        "ZanAir"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "Auric Air",
+        "Coastal Aviation",
+        "ZanAir"
+      ]
+    },
+    {
+      "city": "Kilwa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kilwa_Masoko_Airport",
+      "codes": [
+        "KIY",
+        "HTKI"
+      ],
+      "airlines": [
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Mwanza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
+      "codes": [
+        "MWZ",
+        "HTMW"
+      ],
+      "airlines": [
+        "Auric Air"
+      ]
+    },
+    {
+      "city": "Tanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tanga_Airport",
+      "codes": [
+        "TGT",
+        "HTTG"
+      ],
+      "airlines": [
+        "As Salaam Air",
+        "Auric Air",
+        "Coastal Aviation"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "As Salaam Air",
+        "Auric Air",
+        "Coastal Aviation",
+        "Tropical Air",
+        "ZanAir"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zanzibar_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "As Salaam Air",
+        "Auric Air",
+        "Coastal Aviation",
+        "Tropical Air",
+        "ZanAir"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zanzibar_International_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "As Salaam Air",
+        "Auric Air",
+        "Coastal Aviation",
+        "Tropical Air",
+        "ZanAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
@@ -103,5 +164,7 @@
       "Dar es Salaam",
       "Zanzibar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:25Z",
+  "date-time-wikidata": "2026-04-14T10:32:27Z"
 }

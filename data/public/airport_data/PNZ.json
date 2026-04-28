@@ -21,30 +21,51 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Recife",
-      "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
-      "REC",
-      "SBRF"
-    ],
-    [
-      "Salvador da Bahia",
-      "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
-      "SSA",
-      "SBSV"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Salvador da Bahia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
+      "codes": [
+        "SSA",
+        "SBSV"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -58,5 +79,7 @@
       "Recife",
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:05Z",
+  "date-time-wikidata": "2026-03-29T09:52:22Z"
 }

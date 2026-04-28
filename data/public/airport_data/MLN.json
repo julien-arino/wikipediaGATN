@@ -19,48 +19,83 @@
     "Iberia"
   ],
   "destinations": [
-    [
-      "Almería",
-      "https://en.wikipedia.org/wiki/Almería_Airport",
-      "LEI",
-      "LEAM"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Granada",
-      "https://en.wikipedia.org/wiki/Granada_Airport",
-      "GRX",
-      "LEGR"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North_Airport",
-      "TFN",
-      "GCXO"
-    ]
+    {
+      "city": "Almería",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almería_Airport",
+      "codes": [
+        "LEI",
+        "LEAM"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Granada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Granada_Airport",
+      "codes": [
+        "GRX",
+        "LEGR"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Tenerife–North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North_Airport",
+      "codes": [
+        "TFN",
+        "GCXO"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iberia": [
@@ -72,5 +107,7 @@
       "Palma de Mallorca",
       "Tenerife–North"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:43Z",
+  "date-time-wikidata": "2026-04-02T21:16:38Z"
 }

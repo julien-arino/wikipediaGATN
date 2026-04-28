@@ -20,12 +20,18 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ]
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Air China",
+        "Sichuan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -34,5 +40,7 @@
     "Sichuan Airlines": [
       "Chengdu Tianfu International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:18Z",
+  "date-time-wikidata": "2026-04-12T17:46:39Z"
 }

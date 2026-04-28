@@ -20,24 +20,40 @@
     "Contour Airlines"
   ],
   "destinations": [
-    [
-      "Hawthorne Municipal Airport (California)",
-      "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
-      "HHR",
-      "KHHR"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
-      "LAS",
-      "KLAS"
-    ]
+    {
+      "city": "Hawthorne Municipal Airport (California)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
+      "codes": [
+        "HHR",
+        "KHHR"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "McCarran International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Advanced Air",
+        "Contour Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Advanced Air": [
@@ -48,5 +64,7 @@
       "Los Angeles International Airport",
       "McCarran International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:18Z",
+  "date-time-wikidata": "2026-04-14T02:44:43Z"
 }

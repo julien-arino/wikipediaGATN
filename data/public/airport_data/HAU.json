@@ -22,54 +22,95 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Alicante–Elche Miguel Hernández Airport",
-      "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Bergen Airport",
-      "https://en.wikipedia.org/wiki/Bergen_Airport",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Chania International Airport",
-      "https://en.wikipedia.org/wiki/Chania_International_Airport",
-      "CHQ",
-      "LGSA"
-    ],
-    [
-      "Gdańsk Lech Wałęsa Airport",
-      "https://en.wikipedia.org/wiki/Gda%C5%84sk_Lech_Wa%C5%82%C4%99sa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Gran Canaria Airport",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Málaga Airport",
-      "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Oslo Airport, Gardermoen",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ]
+    {
+      "city": "Alicante–Elche Miguel Hernández Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Bergen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Chania International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_International_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Gdańsk Lech Wałęsa Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gda%C5%84sk_Lech_Wa%C5%82%C4%99sa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Gran Canaria Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Málaga Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Oslo Airport, Gardermoen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norwegian Air Shuttle": [
@@ -89,5 +130,7 @@
     "Wizz Air": [
       "Gdańsk Lech Wałęsa Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:10Z",
+  "date-time-wikidata": "2026-04-16T15:19:07Z"
 }

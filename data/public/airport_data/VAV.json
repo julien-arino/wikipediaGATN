@@ -20,18 +20,28 @@
     "Lulutai Airlines"
   ],
   "destinations": [
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Nuku'alofa",
-      "https://en.wikipedia.org/wiki/Fuaʻamotu_International_Airport",
-      "TBU",
-      "NFTF"
-    ]
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Link"
+      ]
+    },
+    {
+      "city": "Nuku'alofa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuaʻamotu_International_Airport",
+      "codes": [
+        "TBU",
+        "NFTF"
+      ],
+      "airlines": [
+        "Lulutai Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fiji Link": [
@@ -40,5 +50,7 @@
     "Lulutai Airlines": [
       "Nuku'alofa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:59Z",
+  "date-time-wikidata": "2026-03-08T02:45:14Z"
 }

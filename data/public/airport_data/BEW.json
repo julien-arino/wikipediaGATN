@@ -22,48 +22,85 @@
     "Moçambique Expresso"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Chimoio",
-      "https://en.wikipedia.org/wiki/Chimoio_Airport",
-      "VPY",
-      "FQCH"
-    ],
-    [
-      "Johannesburg–O.R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Nampula",
-      "https://en.wikipedia.org/wiki/Nampula_Airport",
-      "APL",
-      "FQNP"
-    ],
-    [
-      "Pemba",
-      "https://en.wikipedia.org/wiki/Pemba_Airport_(Mozambique)",
-      "POL",
-      "FQPB"
-    ],
-    [
-      "Tete",
-      "https://en.wikipedia.org/wiki/Chingozi_Airport",
-      "TET",
-      "FQTT"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Chimoio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chimoio_Airport",
+      "codes": [
+        "VPY",
+        "FQCH"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O.R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines",
+        "Moçambique Expresso"
+      ]
+    },
+    {
+      "city": "Nampula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nampula_Airport",
+      "codes": [
+        "APL",
+        "FQNP"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Pemba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pemba_Airport_(Mozambique)",
+      "codes": [
+        "POL",
+        "FQPB"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Tete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chingozi_Airport",
+      "codes": [
+        "TET",
+        "FQTT"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -83,5 +120,7 @@
     "Moçambique Expresso": [
       "Maputo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:50Z",
+  "date-time-wikidata": "2025-09-25T14:51:04Z"
 }

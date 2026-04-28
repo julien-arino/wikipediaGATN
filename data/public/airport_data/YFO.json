@@ -1,8 +1,8 @@
 {
   "iata": "YFO",
   "icao": "CYFO",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Bakers Narrows",
+  "city-served-wikipedia": "[[Bakers Narrows]], near [[Flin Flon]], [[Manitoba]]",
   "location": "[[Bakers Narrows]], near [[Flin Flon]], [[Manitoba]]",
   "lat": "54.678056",
   "lon": "-101.681944",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Flin_Flon_Airport",
   "number_airlines": 1,
   "outdegree": 2,
@@ -19,23 +19,35 @@
     "Calm Air"
   ],
   "destinations": [
-    [
-      "The Pas",
-      "https://en.wikipedia.org/wiki/The_Pas_Airport",
-      "YQD",
-      "CYQD"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "The Pas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Pas_Airport",
+      "codes": [
+        "YQD",
+        "CYQD"
+      ],
+      "airlines": [
+        "Calm Air"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Calm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Calm Air": [
       "The Pas",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:10Z",
+  "date-time-wikidata": "2026-04-25T20:52:42Z"
 }

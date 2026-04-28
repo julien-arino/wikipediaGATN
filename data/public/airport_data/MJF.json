@@ -19,24 +19,39 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Bodø",
-      "https://en.wikipedia.org/wiki/Bodø_Airport",
-      "BOO",
-      "ENBO"
-    ],
-    [
-      "Mo i Rana",
-      "https://en.wikipedia.org/wiki/Mo_i_Rana_Airport,_Røssvoll",
-      "MQN",
-      "ENRA"
-    ],
-    [
-      "Trondheim",
-      "https://en.wikipedia.org/wiki/Trondheim_Airport,_Værnes",
-      "TRD",
-      "ENVA"
-    ]
+    {
+      "city": "Bodø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bodø_Airport",
+      "codes": [
+        "BOO",
+        "ENBO"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Mo i Rana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mo_i_Rana_Airport,_Røssvoll",
+      "codes": [
+        "MQN",
+        "ENRA"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Trondheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trondheim_Airport,_Værnes",
+      "codes": [
+        "TRD",
+        "ENVA"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Widerøe": [
@@ -44,5 +59,7 @@
       "Mo i Rana",
       "Trondheim"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:20Z",
+  "date-time-wikidata": "2026-02-12T15:47:01Z"
 }

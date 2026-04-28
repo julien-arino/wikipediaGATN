@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Nuuk",
-      "https://en.wikipedia.org/wiki/Nuuk_Airport",
-      "GOH",
-      "BGGH"
-    ],
-    [
-      "Qaqortoq",
-      "https://en.wikipedia.org/wiki/Qaqortoq_Airport",
-      "JJU",
-      "BGQO"
-    ]
+    {
+      "city": "Nuuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuuk_Airport",
+      "codes": [
+        "GOH",
+        "BGGH"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qaqortoq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qaqortoq_Airport",
+      "codes": [
+        "JJU",
+        "BGQO"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Nuuk",
       "Qaqortoq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:20Z",
+  "date-time-wikidata": "2026-04-17T12:53:48Z"
 }

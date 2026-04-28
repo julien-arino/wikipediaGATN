@@ -20,30 +20,50 @@
     "Breeze Airways"
   ],
   "destinations": [
-    [
-      "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
-      "PHL",
-      "KPHL"
-    ]
+    {
+      "city": "Charlotte Douglas International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale–Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Philadelphia International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -54,5 +74,7 @@
       "Fort Lauderdale–Hollywood International Airport",
       "Orlando International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:30Z",
+  "date-time-wikidata": "2026-03-15T23:41:19Z"
 }

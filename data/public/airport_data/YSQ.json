@@ -22,42 +22,72 @@
     "Spring Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hefei Xinqiao International Airport",
-      "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport",
-      "HFE",
-      "ZSOF"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shijiazhuang Zhengding International Airport",
-      "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
-      "SJW",
-      "ZBSJ"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China United Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "9 Air"
+      ]
+    },
+    {
+      "city": "Hefei Xinqiao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport",
+      "codes": [
+        "HFE",
+        "ZSOF"
+      ],
+      "airlines": [
+        "9 Air"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Shijiazhuang Zhengding International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
+      "codes": [
+        "SJW",
+        "ZBSJ"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "9 Air": [
@@ -74,5 +104,7 @@
     "Spring Airlines": [
       "Shanghai Pudong International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:42Z",
+  "date-time-wikidata": "2025-11-10T07:45:58Z"
 }

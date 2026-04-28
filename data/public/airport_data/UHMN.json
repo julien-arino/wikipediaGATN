@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UHMN",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Omolon",
+  "city-served-wikipedia": "[[Omolon (rural locality)|Omolon]]",
   "location": "[[Omolon (rural locality)|Omolon]]",
   "lat": "65.241667",
   "lon": "160.539167",
@@ -21,18 +21,29 @@
     "SiLA (airlines)"
   ],
   "destinations": [
-    [
-      "Keperveyem Airport",
-      "https://en.wikipedia.org/wiki/Keperveyem_Airport",
-      "KPW",
-      "UHMK"
-    ],
-    [
-      "Sokol Airport",
-      "https://en.wikipedia.org/wiki/Sokol_Airport",
-      "GDX",
-      "UHMM"
-    ]
+    {
+      "city": "Keperveyem Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keperveyem_Airport",
+      "codes": [
+        "KPW",
+        "UHMK"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Sokol Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sokol_Airport",
+      "codes": [
+        "GDX",
+        "UHMM"
+      ],
+      "airlines": [
+        "IrAero",
+        "SiLA (airlines)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chukotavia": [
@@ -44,5 +55,7 @@
     "SiLA (airlines)": [
       "Sokol Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:30Z",
+  "date-time-wikidata": "2025-11-06T21:41:16Z"
 }

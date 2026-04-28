@@ -21,30 +21,51 @@
     "Sky Pasada"
   ],
   "destinations": [
-    [
-      "Basco",
-      "https://en.wikipedia.org/wiki/Basco_Airport",
-      "BSO",
-      "RPUO"
-    ],
-    [
-      "Binalonan",
-      "https://en.wikipedia.org/wiki/Binalonan",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Calayan",
-      "https://en.wikipedia.org/wiki/Calayan_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Basco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basco_Airport",
+      "codes": [
+        "BSO",
+        "RPUO"
+      ],
+      "airlines": [
+        "Sky Pasada"
+      ]
+    },
+    {
+      "city": "Binalonan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Binalonan",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Sky Pasada"
+      ]
+    },
+    {
+      "city": "Calayan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calayan_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Sky Pasada"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebu Pacific": [
@@ -58,5 +79,7 @@
       "Binalonan",
       "Calayan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:16Z",
+  "date-time-wikidata": "2025-11-03T10:09:08Z"
 }

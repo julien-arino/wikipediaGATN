@@ -23,48 +23,86 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
-      "ESB",
-      "LTAC"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "CGN",
-      "EDDK"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
-      "STR",
-      "EDDS"
-    ]
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Corendon Airlines"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Corendon Airlines",
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Stuttgart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -87,5 +125,7 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:21Z",
+  "date-time-wikidata": "2026-04-10T15:50:08Z"
 }

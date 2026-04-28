@@ -19,24 +19,39 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Belém",
-      "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
-      "BEL",
-      "SBBE"
-    ],
-    [
-      "Porto de Moz",
-      "https://en.wikipedia.org/wiki/Porto_de_Moz_Airport",
-      "PTQ",
-      "SNMZ"
-    ],
-    [
-      "Santarém",
-      "https://en.wikipedia.org/wiki/Santarém-Maestro_Wilson_Fonseca_Airport",
-      "STM",
-      "SBSN"
-    ]
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Porto de Moz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_de_Moz_Airport",
+      "codes": [
+        "PTQ",
+        "SNMZ"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Santarém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santarém-Maestro_Wilson_Fonseca_Airport",
+      "codes": [
+        "STM",
+        "SBSN"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
@@ -44,5 +59,7 @@
       "Porto de Moz",
       "Santarém"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:37Z",
+  "date-time-wikidata": "2024-04-09T13:48:42Z"
 }

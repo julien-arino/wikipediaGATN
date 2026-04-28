@@ -19,23 +19,35 @@
     "FlyJaya"
   ],
   "destinations": [
-    [
-      "Kendari",
-      "https://en.wikipedia.org/wiki/Kendari_Airport",
-      "KDI",
-      "WAWW"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Kendari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kendari_Airport",
+      "codes": [
+        "KDI",
+        "WAWW"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
       "Kendari",
       "Makassar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:21Z",
+  "date-time-wikidata": "2026-04-18T15:05:54Z"
 }

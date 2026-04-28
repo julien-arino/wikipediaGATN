@@ -20,18 +20,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Batam",
-      "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
-      "BTH",
-      "WIDD"
-    ],
-    [
-      "Tanjung Pinang",
-      "https://en.wikipedia.org/wiki/Raja_Haji_Fisabilillah_Airport",
-      "TNJ",
-      "WIDN"
-    ]
+    {
+      "city": "Batam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
+      "codes": [
+        "BTH",
+        "WIDD"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Tanjung Pinang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raja_Haji_Fisabilillah_Airport",
+      "codes": [
+        "TNJ",
+        "WIDN"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wings Air": [
@@ -40,5 +50,7 @@
     "Susi Air": [
       "Tanjung Pinang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:07Z",
+  "date-time-wikidata": "2026-03-21T22:55:23Z"
 }

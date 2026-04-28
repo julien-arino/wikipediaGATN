@@ -22,42 +22,74 @@
     "RUTACA Airlines"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Maracaibo",
-      "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
-      "MAR",
-      "SVMC"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "San Antonio del Táchira",
-      "https://en.wikipedia.org/wiki/Juan_Vicente_Gómez_International_Airport",
-      "SVZ",
-      "SVSA"
-    ],
-    [
-      "Santo Domingo del Táchira",
-      "https://en.wikipedia.org/wiki/Mayor_Buenaventura_Vivas_Airport",
-      "STD",
-      "SVSO"
-    ],
-    [
-      "Tucupita",
-      "https://en.wikipedia.org/wiki/San_Rafael_Airport_(Venezuela)",
-      "TUV",
-      "SVTC"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Aerolineas Estelar",
+        "Conviasa",
+        "LASER Airlines"
+      ]
+    },
+    {
+      "city": "Maracaibo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
+      "codes": [
+        "MAR",
+        "SVMC"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "San Antonio del Táchira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Vicente_Gómez_International_Airport",
+      "codes": [
+        "SVZ",
+        "SVSA"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Santo Domingo del Táchira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mayor_Buenaventura_Vivas_Airport",
+      "codes": [
+        "STD",
+        "SVSO"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Tucupita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Rafael_Airport_(Venezuela)",
+      "codes": [
+        "TUV",
+        "SVTC"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolineas Estelar": [
@@ -76,5 +108,7 @@
     "RUTACA Airlines": [
       "San Antonio del Táchira"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:25Z",
+  "date-time-wikidata": "2026-01-29T15:50:25Z"
 }

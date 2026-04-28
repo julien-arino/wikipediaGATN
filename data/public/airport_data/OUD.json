@@ -26,144 +26,270 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Agadir",
-      "https://en.wikipedia.org/wiki/Agadir–Al_Massira_Airport",
-      "AGA",
-      "GMAD"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Bastia",
-      "https://en.wikipedia.org/wiki/Bastia–Poretta_Airport",
-      "BIA",
-      "LFKB"
-    ],
-    [
-      "Beauvais",
-      "https://en.wikipedia.org/wiki/Beauvais_Airport",
-      "BVA",
-      "LFOB"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Eindhoven",
-      "https://en.wikipedia.org/wiki/Eindhoven_Airport",
-      "EIN",
-      "EHEH"
-    ],
-    [
-      "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Montpellier",
-      "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
-      "MPL",
-      "LFMT"
-    ],
-    [
-      "Nantes",
-      "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
-      "NTE",
-      "LFRS"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rotterdam",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Strasbourg",
-      "https://en.wikipedia.org/wiki/Strasbourg_Airport",
-      "SXB",
-      "LFST"
-    ],
-    [
-      "Tangier",
-      "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
-      "TNG",
-      "GMTT"
-    ],
-    [
-      "Toulouse",
-      "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
-      "TLS",
-      "LFBO"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ]
+    {
+      "city": "Agadir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Agadir–Al_Massira_Airport",
+      "codes": [
+        "AGA",
+        "GMAD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bastia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia–Poretta_Airport",
+      "codes": [
+        "BIA",
+        "LFKB"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais_Airport",
+      "codes": [
+        "BVA",
+        "LFOB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Brussels Airlines",
+        "Royal Air Maroc",
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Eindhoven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eindhoven_Airport",
+      "codes": [
+        "EIN",
+        "EHEH"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Lille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Air Nostrum"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Montpellier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
+      "codes": [
+        "MPL",
+        "LFMT"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Royal Air Maroc",
+        "TUI fly Belgium",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Rotterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Rotterdam/The Hague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "TUI fly Belgium",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Strasbourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strasbourg_Airport",
+      "codes": [
+        "SXB",
+        "LFST"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    },
+    {
+      "city": "Tangier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
+      "codes": [
+        "TNG",
+        "GMTT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Toulouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
+      "codes": [
+        "TLS",
+        "LFBO"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -216,5 +342,7 @@
       "Paris–Orly",
       "Rotterdam/The Hague"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:50Z",
+  "date-time-wikidata": "2026-04-01T18:53:55Z"
 }

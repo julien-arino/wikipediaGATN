@@ -20,30 +20,50 @@
     "Star Air"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Bengaluru_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Goa–Mopa",
-      "https://en.wikipedia.org/wiki/Manohar_International_Airport",
-      "GOX",
-      "VOGA"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Hyderabad_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Mumbai_Airport",
-      "BOM",
-      "VABB"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bengaluru_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Goa–Mopa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manohar_International_Airport",
+      "codes": [
+        "GOX",
+        "VOGA"
+      ],
+      "airlines": [
+        "Fly91"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hyderabad_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Fly91"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mumbai_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fly91": [
@@ -54,5 +74,7 @@
       "Bengaluru",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:20Z",
+  "date-time-wikidata": "2026-04-12T01:57:02Z"
 }

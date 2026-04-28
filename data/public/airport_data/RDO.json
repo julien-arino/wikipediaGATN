@@ -22,30 +22,51 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Aktion National Airport",
-      "https://en.wikipedia.org/wiki/Aktion_National_Airport",
-      "PVK",
-      "LGPZ"
-    ],
-    [
-      "Antalya Airport",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Larnaca International Airport",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "Tirana International Airport",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport",
-      "TIA",
-      "LATI"
-    ]
+    {
+      "city": "Aktion National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktion_National_Airport",
+      "codes": [
+        "PVK",
+        "LGPZ"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    },
+    {
+      "city": "Antalya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Enter Air",
+        "Mavi Gök Airlines (page does not exist)"
+      ]
+    },
+    {
+      "city": "Larnaca International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Tirana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Enter Air": [
@@ -61,5 +82,7 @@
       "Larnaca International Airport",
       "Tirana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:42Z",
+  "date-time-wikidata": "2026-01-22T14:08:49Z"
 }

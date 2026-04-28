@@ -21,18 +21,29 @@
     "Precision Air"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Dodoma",
-      "https://en.wikipedia.org/wiki/Dodoma_Airport",
-      "DOD",
-      "HTDO"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "Auric Air"
+      ]
+    },
+    {
+      "city": "Dodoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dodoma_Airport",
+      "codes": [
+        "DOD",
+        "HTDO"
+      ],
+      "airlines": [
+        "Precision Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Auric Air": [
@@ -44,5 +55,7 @@
     "Precision Air": [
       "Dodoma"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:05Z",
+  "date-time-wikidata": "2026-01-15T21:40:55Z"
 }

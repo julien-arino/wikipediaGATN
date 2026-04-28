@@ -14,42 +14,52 @@
   "subdivision_code": "Kulu",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kullu–Manali_Airport",
   "number_airlines": 1,
-  "outdegree": 4,
+  "outdegree": 3,
   "airlines": [
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Amritsar",
-      "https://en.wikipedia.org/wiki/Sri_Guru_Ram_Das_Ji_International_Airport",
-      "ATQ",
-      "VIAR"
-    ],
-    [
-      "Dehradun",
-      "https://en.wikipedia.org/wiki/Dehradun_Airport",
-      "DED",
-      "VIDN"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Jaipur",
-      "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
-      "JAI",
-      "VIJP"
-    ]
+    {
+      "city": "Dehradun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dehradun_Airport",
+      "codes": [
+        "DED",
+        "VIDN"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Jaipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
+      "codes": [
+        "JAI",
+        "VIJP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
-      "Amritsar",
       "Dehradun",
       "Delhi",
       "Jaipur"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:51Z",
+  "date-time-wikidata": "2026-04-28T11:42:11Z"
 }

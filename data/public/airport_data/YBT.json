@@ -19,23 +19,35 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Perimeter Aviation": [
       "Thompson",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:38Z",
+  "date-time-wikidata": "2025-09-07T22:05:35Z"
 }

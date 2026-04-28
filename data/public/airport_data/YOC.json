@@ -19,23 +19,35 @@
     "Air North"
   ],
   "destinations": [
-    [
-      "Dawson City",
-      "https://en.wikipedia.org/wiki/Dawson_City_Airport",
-      "YDA",
-      "CYDA"
-    ],
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
-      "YEV",
-      "CYEV"
-    ]
+    {
+      "city": "Dawson City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dawson_City_Airport",
+      "codes": [
+        "YDA",
+        "CYDA"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air North": [
       "Dawson City",
       "Inuvik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:37Z",
+  "date-time-wikidata": "2025-12-20T18:38:31Z"
 }

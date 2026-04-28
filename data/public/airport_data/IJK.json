@@ -23,72 +23,128 @@
     "S7 Airlines"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport",
-      "MCX",
-      "URML"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_International_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Kaliningrad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Makhachkala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "codes": [
+        "MCX",
+        "URML"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Izhavia"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Izhavia",
+        "Red Wings Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ikar": [
@@ -113,5 +169,7 @@
     "S7 Airlines": [
       "Novosibirsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:36Z",
+  "date-time-wikidata": "2025-11-02T21:27:57Z"
 }

@@ -21,30 +21,51 @@
     "United Airlines"
   ],
   "destinations": [
-    [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Newark Liberty International Airport",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ]
+    {
+      "city": "Fort Lauderdale–Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Newark Liberty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Frontier Airlines",
+        "JetBlue"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Frontier Airlines": [
@@ -58,5 +79,7 @@
     "United Airlines": [
       "Newark Liberty International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:18Z",
+  "date-time-wikidata": "2026-04-20T01:30:39Z"
 }

@@ -19,16 +19,23 @@
     "SeaPort Airlines"
   ],
   "destinations": [
-    [
-      "Boeing Field",
-      "https://en.wikipedia.org/wiki/Boeing_Field",
-      "BFI",
-      "KBFI"
-    ]
+    {
+      "city": "Boeing Field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "SeaPort Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SeaPort Airlines": [
       "Boeing Field"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:33Z",
+  "date-time-wikidata": "2026-04-24T18:52:54Z"
 }

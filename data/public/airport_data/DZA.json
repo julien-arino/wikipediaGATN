@@ -22,66 +22,117 @@
     "Kenya Airways"
   ],
   "destinations": [
-    [
-      "Antananarivo",
-      "https://en.wikipedia.org/wiki/Ivato_International_Airport",
-      "TNR",
-      "FMMI"
-    ],
-    [
-      "Antsiranana",
-      "https://en.wikipedia.org/wiki/Arrachart_Airport",
-      "DIE",
-      "FMNA"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Dar_es_Salaam_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Mahajanga",
-      "https://en.wikipedia.org/wiki/Amborovy_Airport",
-      "MJN",
-      "FMNM"
-    ],
-    [
-      "Moroni",
-      "https://en.wikipedia.org/wiki/Moroni_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nosy Be",
-      "https://en.wikipedia.org/wiki/Nosy_Be_Airport",
-      "NOS",
-      "FMNN"
-    ],
-    [
-      "Paris-Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris-Charles_de_Gaulle",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris-Orly",
-      "https://en.wikipedia.org/wiki/Paris-Orly",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Saint-Denis de la Réunion",
-      "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
-      "RUN",
-      "FMEE"
-    ]
+    {
+      "city": "Antananarivo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivato_International_Airport",
+      "codes": [
+        "TNR",
+        "FMMI"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Antsiranana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arrachart_Airport",
+      "codes": [
+        "DIE",
+        "FMNA"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dar_es_Salaam_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Mahajanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amborovy_Airport",
+      "codes": [
+        "MJN",
+        "FMNM"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Moroni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moroni_Airport",
+      "codes": [
+        "HAH",
+        "FMCH"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Nosy Be",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nosy_Be_Airport",
+      "codes": [
+        "NOS",
+        "FMNN"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Paris-Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris-Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air Austral"
+      ]
+    },
+    {
+      "city": "Paris-Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris-Orly",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Corsair International"
+      ]
+    },
+    {
+      "city": "Saint-Denis de la Réunion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
+      "codes": [
+        "RUN",
+        "FMEE"
+      ],
+      "airlines": [
+        "Air Austral",
+        "Corsair International"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Austral": [
@@ -103,5 +154,7 @@
     "Kenya Airways": [
       "Nairobi–Jomo Kenyatta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:14Z",
+  "date-time-wikidata": "2026-04-12T04:14:21Z"
 }

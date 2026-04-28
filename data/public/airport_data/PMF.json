@@ -20,24 +20,39 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Chișinău",
-      "https://en.wikipedia.org/wiki/Chișinău_International_Airport",
-      "RMO",
-      "LUKK"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
-      "PMO",
-      "LICJ"
-    ]
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Chișinău",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chișinău_International_Airport",
+      "codes": [
+        "RMO",
+        "LUKK"
+      ],
+      "airlines": [
+        "FlyOne"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyOne": [
@@ -47,5 +62,7 @@
       "Cagliari",
       "Palermo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:25Z",
+  "date-time-wikidata": "2026-04-22T04:52:47Z"
 }

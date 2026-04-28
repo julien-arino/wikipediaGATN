@@ -19,24 +19,39 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Edward G. Pitka Sr. Airport",
-      "https://en.wikipedia.org/wiki/Edward_G._Pitka_Sr._Airport",
-      "GAL",
-      "PAGA"
-    ],
-    [
-      "Fairbanks International Airport",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Nulato Airport",
-      "https://en.wikipedia.org/wiki/Nulato_Airport",
-      "NUL",
-      "PANU"
-    ]
+    {
+      "city": "Edward G. Pitka Sr. Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_G._Pitka_Sr._Airport",
+      "codes": [
+        "GAL",
+        "PAGA"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fairbanks International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Nulato Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nulato_Airport",
+      "codes": [
+        "NUL",
+        "PANU"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
@@ -44,5 +59,7 @@
       "Fairbanks International Airport",
       "Nulato Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:13Z",
+  "date-time-wikidata": "2026-03-12T20:13:27Z"
 }

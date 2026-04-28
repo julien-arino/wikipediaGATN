@@ -19,24 +19,39 @@
     "Mauritania Airlines"
   ],
   "destinations": [
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Nouakchott",
-      "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
-      "NKC",
-      "GQNO"
-    ],
-    [
-      "Zouérat",
-      "https://en.wikipedia.org/wiki/Tazadit_Airport",
-      "OUZ",
-      "GQPZ"
-    ]
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Nouakchott",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
+      "codes": [
+        "NKC",
+        "GQNO"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Zouérat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tazadit_Airport",
+      "codes": [
+        "OUZ",
+        "GQPZ"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Mauritania Airlines": [
@@ -44,5 +59,7 @@
       "Nouakchott",
       "Zouérat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:55Z",
+  "date-time-wikidata": "2026-04-07T16:39:24Z"
 }

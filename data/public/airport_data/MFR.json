@@ -24,72 +24,129 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "John Wayne Airport",
-      "https://en.wikipedia.org/wiki/John_Wayne_Airport",
-      "SNA",
-      "KSNA"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ],
-    [
-      "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ],
-    [
-      "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
-      "SAN",
-      "KSAN"
-    ],
-    [
-      "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Seattle-Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ]
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "John Wayne Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Portland International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "San Diego International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "San Francisco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Seattle-Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
@@ -117,5 +174,7 @@
       "Denver International Airport",
       "San Francisco International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:38Z",
+  "date-time-wikidata": "2026-04-22T13:59:25Z"
 }

@@ -22,30 +22,50 @@
     "Saudia Cargo"
   ],
   "destinations": [
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ]
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "EgyptAir"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Aerotranscargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerotranscargo": [
@@ -60,5 +80,7 @@
     "Saudia Cargo": [
       "Jeddah"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:31Z",
+  "date-time-wikidata": "2026-03-17T11:09:43Z"
 }

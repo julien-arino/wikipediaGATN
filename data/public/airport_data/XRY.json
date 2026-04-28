@@ -32,150 +32,276 @@
     "Vueling"
   ],
   "destinations": [
-    [
-      "Adolfo Suárez Madrid–Barajas Airport",
-      "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Asturias Airport",
-      "https://en.wikipedia.org/wiki/Asturias_Airport",
-      "OVD",
-      "LEAS"
-    ],
-    [
-      "Berlin Brandenburg Airport",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Bern Airport",
-      "https://en.wikipedia.org/wiki/Bern_Airport",
-      "BRN",
-      "LSZB"
-    ],
-    [
-      "Bilbao Airport",
-      "https://en.wikipedia.org/wiki/Bilbao_Airport",
-      "BIO",
-      "LEBB"
-    ],
-    [
-      "Birmingham Airport",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Brussels Airport",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gran Canaria Airport",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Hamburg Airport",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Hannover Airport",
-      "https://en.wikipedia.org/wiki/Hannover_Airport",
-      "HAJ",
-      "EDDV"
-    ],
-    [
-      "Josep Tarradellas Barcelona–El Prat Airport",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona%E2%80%93El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Keflavík International Airport",
-      "https://en.wikipedia.org/wiki/Keflav%C3%ADk_International_Airport",
-      "KEF",
-      "BIKF"
-    ],
-    [
-      "Leeds Bradford Airport",
-      "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
-      "LBA",
-      "EGNM"
-    ],
-    [
-      "London Stansted Airport",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Luxembourg Airport",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Manchester Airport",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Munich Airport",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Santander Airport",
-      "https://en.wikipedia.org/wiki/Santander_Airport",
-      "SDR",
-      "LEXJ"
-    ],
-    [
-      "Stuttgart Airport",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
-      "STR",
-      "EDDS"
-    ],
-    [
-      "Tenerife North–Ciudad de La Laguna Airport",
-      "https://en.wikipedia.org/wiki/Tenerife_North%E2%80%93Ciudad_de_La_Laguna_Airport",
-      "TFN",
-      "GCXO"
-    ],
-    [
-      "Zürich Airport",
-      "https://en.wikipedia.org/wiki/Z%C3%BCrich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Adolfo Suárez Madrid–Barajas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia (airline)"
+      ]
+    },
+    {
+      "city": "Asturias Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Asturias_Airport",
+      "codes": [
+        "OVD",
+        "LEAS"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Berlin Brandenburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Bern Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bern_Airport",
+      "codes": [
+        "BRN",
+        "LSZB"
+      ],
+      "airlines": [
+        "Chair Airlines"
+      ]
+    },
+    {
+      "city": "Bilbao Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
+      "codes": [
+        "BIO",
+        "LEBB"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Birmingham Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Brussels Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Condor (airline)",
+        "Eurowings",
+        "TUI fly Deutschland"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Condor (airline)",
+        "Discover Airlines",
+        "TUI fly Deutschland"
+      ]
+    },
+    {
+      "city": "Gran Canaria Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Binter Canarias"
+      ]
+    },
+    {
+      "city": "Hamburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Condor (airline)",
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Hannover Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "codes": [
+        "HAJ",
+        "EDDV"
+      ],
+      "airlines": [
+        "TUI fly Deutschland"
+      ]
+    },
+    {
+      "city": "Josep Tarradellas Barcelona–El Prat Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona%E2%80%93El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Keflavík International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflav%C3%ADk_International_Airport",
+      "codes": [
+        "KEF",
+        "BIKF"
+      ],
+      "airlines": [
+        "Icelandair"
+      ]
+    },
+    {
+      "city": "Leeds Bradford Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
+      "codes": [
+        "LBA",
+        "EGNM"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "London Stansted Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Luxembourg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Manchester Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Munich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Discover Airlines",
+        "TUI fly Deutschland"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Santander Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santander_Airport",
+      "codes": [
+        "SDR",
+        "LEXJ"
+      ],
+      "airlines": [
+        "Iberia (airline)"
+      ]
+    },
+    {
+      "city": "Stuttgart Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "TUI fly Deutschland"
+      ]
+    },
+    {
+      "city": "Tenerife North–Ciudad de La Laguna Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North%E2%80%93Ciudad_de_La_Laguna_Airport",
+      "codes": [
+        "TFN",
+        "GCXO"
+      ],
+      "airlines": [
+        "Binter Canarias"
+      ]
+    },
+    {
+      "city": "Zürich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Z%C3%BCrich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Binter Canarias": [
@@ -236,5 +362,7 @@
       "Josep Tarradellas Barcelona–El Prat Airport",
       "Palma de Mallorca Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:34Z",
+  "date-time-wikidata": "2026-04-20T13:19:07Z"
 }

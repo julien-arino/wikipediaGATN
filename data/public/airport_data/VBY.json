@@ -22,30 +22,54 @@
     "Scandinavian Airlines"
   ],
   "destinations": [
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ]
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "PopulAir",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "PopulAir",
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Finnair": [
@@ -61,5 +85,7 @@
     "PopulAir": [
       "Stockholm–Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:00Z",
+  "date-time-wikidata": "2026-03-17T00:23:54Z"
 }

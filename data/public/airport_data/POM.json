@@ -20,18 +20,28 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ]
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Garuda Indonesia Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Garuda Indonesia Cargo": [
@@ -40,5 +50,7 @@
     "Solomon Airlines": [
       "Honiara"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:06Z",
+  "date-time-wikidata": "2026-04-24T04:48:44Z"
 }

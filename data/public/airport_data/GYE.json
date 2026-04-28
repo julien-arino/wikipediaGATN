@@ -33,126 +33,237 @@
     "Spirit Airlines"
   ],
   "destinations": [
-    [
-      "Adolfo Suárez Madrid–Barajas Airport",
-      "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Arturo Merino Benítez International Airport",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Ben%C3%ADtez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "El Dorado International Airport",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "El Salvador International Airport",
-      "https://en.wikipedia.org/wiki/El_Salvador_International_Airport",
-      "SAL",
-      "MSLP"
-    ],
-    [
-      "Fort Lauderdale International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Jorge Chavez International Airport",
-      "https://en.wikipedia.org/wiki/Jorge_Chavez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Jorge Chávez International Airport",
-      "https://en.wikipedia.org/wiki/Jorge_Ch%C3%A1vez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "José María Córdova International Airport",
-      "https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ],
-    [
-      "Juan Santamaría International Airport",
-      "https://en.wikipedia.org/wiki/Juan_Santamar%C3%ADa_International_Airport",
-      "SJO",
-      "MROC"
-    ],
-    [
-      "Mariscal Lamar International Airport",
-      "https://en.wikipedia.org/wiki/Mariscal_Lamar_International_Airport",
-      "CUE",
-      "SECU"
-    ],
-    [
-      "Mariscal Sucre International Airport",
-      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
-      "UIO",
-      "SEQM"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Ministro Pistarini International Airport",
-      "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
-      "EZE",
-      "SAEZ"
-    ],
-    [
-      "Punta Cana International Airport",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "San Cristóbal Airport",
-      "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Airport",
-      "SCY",
-      "SEST"
-    ],
-    [
-      "Seymour Airport",
-      "https://en.wikipedia.org/wiki/Seymour_Airport",
-      "GPS",
-      "SEGS"
-    ],
-    [
-      "Tocumen International Airport",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ]
+    {
+      "city": "Adolfo Suárez Madrid–Barajas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Air Europa",
+        "Iberia (airline)"
+      ]
+    },
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Arturo Merino Benítez International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Ben%C3%ADtez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "El Dorado International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "Avianca Ecuador"
+      ]
+    },
+    {
+      "city": "El Salvador International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Salvador_International_Airport",
+      "codes": [
+        "SAL",
+        "MSLP"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale–Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "JetBlue",
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Jorge Chavez International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chavez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "LATAM Ecuador",
+        "LATAM Perú"
+      ]
+    },
+    {
+      "city": "Jorge Chávez International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Ch%C3%A1vez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "JetSmart Perú"
+      ]
+    },
+    {
+      "city": "José María Córdova International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca Ecuador"
+      ]
+    },
+    {
+      "city": "Juan Santamaría International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamar%C3%ADa_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Avianca Costa Rica"
+      ]
+    },
+    {
+      "city": "Mariscal Lamar International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Lamar_International_Airport",
+      "codes": [
+        "CUE",
+        "SECU"
+      ],
+      "airlines": [
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Mariscal Sucre International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Avianca Ecuador"
+      ]
+    },
+    {
+      "city": "Ministro Pistarini International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Avianca Costa Rica",
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Punta Cana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Arajet"
+      ]
+    },
+    {
+      "city": "San Cristóbal Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Airport",
+      "codes": [
+        "SCY",
+        "SEST"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Seymour Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seymour_Airport",
+      "codes": [
+        "GPS",
+        "SEGS"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Tocumen International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Europa": [
@@ -216,5 +327,7 @@
     "Spirit Airlines": [
       "Fort Lauderdale International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:40Z",
+  "date-time-wikidata": "2026-03-29T12:13:51Z"
 }

@@ -21,24 +21,40 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Dabo",
-      "https://en.wikipedia.org/wiki/Dabo_Airport",
-      "SIQ",
-      "WIDS"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Letung",
-      "https://en.wikipedia.org/wiki/Letung_Airport",
-      "LMU",
-      "WIDL"
-    ]
+    {
+      "city": "Dabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dabo_Airport",
+      "codes": [
+        "SIQ",
+        "WIDS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink"
+      ]
+    },
+    {
+      "city": "Letung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Letung_Airport",
+      "codes": [
+        "LMU",
+        "WIDL"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Batik Air": [
@@ -51,5 +67,7 @@
       "Dabo",
       "Letung"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:12Z",
+  "date-time-wikidata": "2026-04-21T04:53:16Z"
 }

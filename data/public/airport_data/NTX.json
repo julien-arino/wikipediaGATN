@@ -21,18 +21,29 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Batam",
-      "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
-      "BTH",
-      "WIDD"
-    ],
-    [
-      "Letung",
-      "https://en.wikipedia.org/wiki/Letung_Airport",
-      "LMU",
-      "WIDL"
-    ]
+    {
+      "city": "Batam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
+      "codes": [
+        "BTH",
+        "WIDD"
+      ],
+      "airlines": [
+        "NAM Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Letung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Letung_Airport",
+      "codes": [
+        "LMU",
+        "WIDL"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "NAM Air": [
@@ -44,5 +55,7 @@
     "Wings Air": [
       "Batam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:44Z",
+  "date-time-wikidata": "2025-09-15T05:57:21Z"
 }

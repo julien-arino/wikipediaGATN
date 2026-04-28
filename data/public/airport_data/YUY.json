@@ -22,48 +22,85 @@
     "Propair"
   ],
   "destinations": [
-    [
-      "Gatineau",
-      "https://en.wikipedia.org/wiki/Gatineau-Ottawa_Executive_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Kattiniq/Donaldson",
-      "https://en.wikipedia.org/wiki/Kattiniq/Donaldson_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Montreal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Airport",
-      "YTZ",
-      "CYTZ"
-    ],
-    [
-      "Val-d'Or",
-      "https://en.wikipedia.org/wiki/Val-d'Or_Airport",
-      "YVO",
-      "CYVO"
-    ]
+    {
+      "city": "Gatineau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatineau-Ottawa_Executive_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Propair"
+      ]
+    },
+    {
+      "city": "Kattiniq/Donaldson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kattiniq/Donaldson_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Glencore"
+      ]
+    },
+    {
+      "city": "Montreal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Glencore"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Propair"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Propair"
+      ]
+    },
+    {
+      "city": "Toronto–Billy Bishop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Airport",
+      "codes": [
+        "YTZ",
+        "CYTZ"
+      ],
+      "airlines": [
+        "Propair"
+      ]
+    },
+    {
+      "city": "Val-d'Or",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val-d'Or_Airport",
+      "codes": [
+        "YVO",
+        "CYVO"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -83,5 +120,7 @@
       "Québec City",
       "Toronto–Billy Bishop"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:47Z",
+  "date-time-wikidata": "2026-02-17T11:25:37Z"
 }

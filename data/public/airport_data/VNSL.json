@@ -19,23 +19,35 @@
     "Nepal Airlines"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Nepalgunj",
-      "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
-      "KEP",
-      "VNNG"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Nepal Airlines"
+      ]
+    },
+    {
+      "city": "Nepalgunj",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
+      "codes": [
+        "KEP",
+        "VNNG"
+      ],
+      "airlines": [
+        "Nepal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nepal Airlines": [
       "Kathmandu",
       "Nepalgunj"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:04Z",
+  "date-time-wikidata": "2026-04-06T06:25:37Z"
 }

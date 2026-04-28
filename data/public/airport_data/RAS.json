@@ -22,36 +22,61 @@
     "Raimon Airways"
   ],
   "destinations": [
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Najaf",
-      "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
-      "NJF",
-      "ORNI"
-    ],
-    [
-      "Qeshm",
-      "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
-      "GSM",
-      "OIKQ"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Najaf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
+      "codes": [
+        "NJF",
+        "ORNI"
+      ],
+      "airlines": [
+        "Pouya Air"
+      ]
+    },
+    {
+      "city": "Qeshm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
+      "codes": [
+        "GSM",
+        "OIKQ"
+      ],
+      "airlines": [
+        "Asa Jet"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Raimon Airways"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Raimon Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Asa Jet": [
@@ -67,5 +92,7 @@
       "Shiraz",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:39Z",
+  "date-time-wikidata": "2025-11-24T06:46:56Z"
 }

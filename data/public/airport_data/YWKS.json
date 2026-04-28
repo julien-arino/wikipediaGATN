@@ -20,18 +20,28 @@
     "Skytraders"
   ],
   "destinations": [
-    [
-      "Hobart",
-      "https://en.wikipedia.org/wiki/Hobart_Airport",
-      "HBA",
-      "YMHB"
-    ],
-    [
-      "Troll Airfield",
-      "https://en.wikipedia.org/wiki/Troll_Airfield",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Skytraders"
+      ]
+    },
+    {
+      "city": "Troll Airfield",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Troll_Airfield",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Royal Air Force"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytraders": [
@@ -40,5 +50,7 @@
     "Royal Air Force": [
       "Troll Airfield"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:48Z",
+  "date-time-wikidata": "2026-02-22T10:57:00Z"
 }

@@ -19,24 +19,39 @@
     "Cardig Air"
   ],
   "destinations": [
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Gorontalo",
-      "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
-      "GTO",
-      "WAMG"
-    ],
-    [
-      "Palu",
-      "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
-      "PLW",
-      "WAFF"
-    ]
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Cardig Air"
+      ]
+    },
+    {
+      "city": "Gorontalo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
+      "codes": [
+        "GTO",
+        "WAMG"
+      ],
+      "airlines": [
+        "Cardig Air"
+      ]
+    },
+    {
+      "city": "Palu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
+      "codes": [
+        "PLW",
+        "WAFF"
+      ],
+      "airlines": [
+        "Cardig Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cardig Air": [
@@ -44,5 +59,7 @@
       "Gorontalo",
       "Palu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:38Z",
+  "date-time-wikidata": "2026-03-22T12:51:10Z"
 }

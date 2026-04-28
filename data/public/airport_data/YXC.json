@@ -21,24 +21,40 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Kelowna",
-      "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
-      "YLW",
-      "CYLW"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Kelowna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
+      "codes": [
+        "YLW",
+        "CYLW"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "WestJet Encore"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -51,5 +67,7 @@
       "Calgary",
       "Vancouver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:48Z",
+  "date-time-wikidata": "2026-04-28T02:36:00Z"
 }

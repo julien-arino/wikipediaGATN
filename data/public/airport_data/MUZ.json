@@ -20,18 +20,28 @@
     "Precision Air"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Dar_es_Salaam_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Mwanza",
-      "https://en.wikipedia.org/wiki/Mwanza_Airport",
-      "MWZ",
-      "HTMW"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dar_es_Salaam_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Mwanza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
+      "codes": [
+        "MWZ",
+        "HTMW"
+      ],
+      "airlines": [
+        "Auric Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Auric Air": [
@@ -40,5 +50,7 @@
     "Precision Air": [
       "Dar es Salaam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:25Z",
+  "date-time-wikidata": "2025-09-12T18:25:48Z"
 }

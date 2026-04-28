@@ -20,24 +20,42 @@
     "Tropic Air"
   ],
   "destinations": [
-    [
-      "Belize City–International",
-      "https://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
-      "BZE",
-      "MZBZ"
-    ],
-    [
-      "Belize City–Municipal",
-      "https://en.wikipedia.org/wiki/Belize_City_Municipal_Airport",
-      "TZA",
-      "MZBE"
-    ],
-    [
-      "San Pedro",
-      "https://en.wikipedia.org/wiki/John_Greif_II_Airport",
-      "SPR",
-      "MZSP"
-    ]
+    {
+      "city": "Belize City–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
+      "codes": [
+        "BZE",
+        "MZBZ"
+      ],
+      "airlines": [
+        "Maya Island Air",
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Belize City–Municipal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belize_City_Municipal_Airport",
+      "codes": [
+        "TZA",
+        "MZBE"
+      ],
+      "airlines": [
+        "Maya Island Air",
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "San Pedro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Greif_II_Airport",
+      "codes": [
+        "SPR",
+        "MZSP"
+      ],
+      "airlines": [
+        "Maya Island Air",
+        "Tropic Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maya Island Air": [
@@ -50,5 +68,7 @@
       "Belize City–Municipal",
       "San Pedro"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:09Z",
+  "date-time-wikidata": "2026-03-18T15:07:03Z"
 }

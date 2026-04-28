@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ],
-    [
-      "Porto Urucu",
-      "https://en.wikipedia.org/wiki/Porto_Urucu_Airport",
-      "RPU",
-      "SBUY"
-    ]
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Urucu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Urucu_Airport",
+      "codes": [
+        "RPU",
+        "SBUY"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Manaus",
       "Porto Urucu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:56Z",
+  "date-time-wikidata": "2026-04-12T11:30:40Z"
 }

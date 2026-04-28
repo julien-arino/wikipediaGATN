@@ -46,198 +46,444 @@
     "Zagros Airlines"
   ],
   "destinations": [
-    [
-      "Abadan",
-      "https://en.wikipedia.org/wiki/Abadan_Ayatollah_Jami_International_Airport",
-      "ABD",
-      "OIAA"
-    ],
-    [
-      "Aghajari",
-      "https://en.wikipedia.org/wiki/Aghajari_Airport",
-      "AKW",
-      "OIAG"
-    ],
-    [
-      "Ahvaz",
-      "https://en.wikipedia.org/wiki/Qasem_Soleimani_International_Airport",
-      "AWZ",
-      "OIAW"
-    ],
-    [
-      "Asaluyeh",
-      "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
-      "PGU",
-      "OIBP"
-    ],
-    [
-      "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
-      "BGW",
-      "ORBI"
-    ],
-    [
-      "Bahregan",
-      "https://en.wikipedia.org/wiki/Bahregan_Airport",
-      "IAQ",
-      "OIBH"
-    ],
-    [
-      "Bandar Abbas",
-      "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
-      "BND",
-      "OIKB"
-    ],
-    [
-      "Chabahar/Konarak",
-      "https://en.wikipedia.org/wiki/Chabahar_Konarak_Airport",
-      "ZBR",
-      "OIZC"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kerman",
-      "https://en.wikipedia.org/wiki/Ayatollah_Hashemi_Rafsanjani_Airport",
-      "KER",
-      "OIKK"
-    ],
-    [
-      "Kharg",
-      "https://en.wikipedia.org/wiki/Kharg_Airport",
-      "KHK",
-      "OIBQ"
-    ],
-    [
-      "Kish",
-      "https://en.wikipedia.org/wiki/Kish_International_Airport",
-      "KIH",
-      "OIBK"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Lavan",
-      "https://en.wikipedia.org/wiki/Lavan_Airport",
-      "LVP",
-      "OIBV"
-    ],
-    [
-      "Mahshahr",
-      "https://en.wikipedia.org/wiki/Mahshahr_Airport",
-      "MRX",
-      "OIAM"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Najaf",
-      "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
-      "NJF",
-      "ORNI"
-    ],
-    [
-      "Qeshm",
-      "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
-      "GSM",
-      "OIKQ"
-    ],
-    [
-      "Rasht",
-      "https://en.wikipedia.org/wiki/Rasht_Airport",
-      "RAS",
-      "OIGG"
-    ],
-    [
-      "Sari",
-      "https://en.wikipedia.org/wiki/Dasht-e_Naz_Airport",
-      "SRY",
-      "OINZ"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Sirri Island",
-      "https://en.wikipedia.org/wiki/Sirri_Island_Airport",
-      "SXI",
-      "OIBS"
-    ],
-    [
-      "Tabriz",
-      "https://en.wikipedia.org/wiki/Tabriz_Airport",
-      "TBZ",
-      "OITT"
-    ],
-    [
-      "Tabriz",
-      "https://en.wikipedia.org/wiki/Tabriz_Shahid_Madani_International_Airport",
-      "TBZ",
-      "OITT"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ],
-    [
-      "Zahedan",
-      "https://en.wikipedia.org/wiki/Zahedan_Airport",
-      "ZAH",
-      "OIZH"
-    ]
+    {
+      "city": "Abadan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abadan_Ayatollah_Jami_International_Airport",
+      "codes": [
+        "ABD",
+        "OIAA"
+      ],
+      "airlines": [
+        "Asa Jet",
+        "Iran Aseman Airlines"
+      ]
+    },
+    {
+      "city": "Aghajari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aghajari_Airport",
+      "codes": [
+        "AKW",
+        "OIAG"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Ahvaz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qasem_Soleimani_International_Airport",
+      "codes": [
+        "AWZ",
+        "OIAW"
+      ],
+      "airlines": [
+        "Iran Aseman Airlines",
+        "Karun Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Asaluyeh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
+      "codes": [
+        "PGU",
+        "OIBP"
+      ],
+      "airlines": [
+        "Caspian Airlines",
+        "Karun Airlines",
+        "Kish Air",
+        "Mahan Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Saha Airlines"
+      ]
+    },
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Bahregan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahregan_Airport",
+      "codes": [
+        "IAQ",
+        "OIBH"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Bandar Abbas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
+      "codes": [
+        "BND",
+        "OIKB"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Karun Airlines",
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Chabahar/Konarak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chabahar_Konarak_Airport",
+      "codes": [
+        "ZBR",
+        "OIZC"
+      ],
+      "airlines": [
+        "Asa Jet",
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai",
+        "Iran Air",
+        "Qeshm Air"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Iran Airtour",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Kerman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ayatollah_Hashemi_Rafsanjani_Airport",
+      "codes": [
+        "KER",
+        "OIKK"
+      ],
+      "airlines": [
+        "Mahan Air"
+      ]
+    },
+    {
+      "city": "Kharg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kharg_Airport",
+      "codes": [
+        "KHK",
+        "OIBQ"
+      ],
+      "airlines": [
+        "Karun Airlines",
+        "Qeshm Air"
+      ]
+    },
+    {
+      "city": "Kish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kish_International_Airport",
+      "codes": [
+        "KIH",
+        "OIBK"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Caspian Airlines",
+        "FlyPersia",
+        "Kish Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Qeshm Air",
+        "Saha Airlines",
+        "Varesh Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Lavan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lavan_Airport",
+      "codes": [
+        "LVP",
+        "OIBV"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Mahshahr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mahshahr_Airport",
+      "codes": [
+        "MRX",
+        "OIAM"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Asa Jet",
+        "Caspian Airlines",
+        "Chabahar Airlines",
+        "Fly Kish",
+        "FlyPersia",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Karun Airlines",
+        "Kish Air",
+        "Mahan Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Qeshm Air",
+        "Saha Airlines",
+        "Sepehran Airlines",
+        "Taban Air",
+        "Varesh Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Najaf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
+      "codes": [
+        "NJF",
+        "ORNI"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Caspian Airlines",
+        "Iran Air",
+        "Iran Aseman Airlines",
+        "Iraqi Airways",
+        "Kish Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Qeshm Air",
+        "Varesh Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Qeshm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
+      "codes": [
+        "GSM",
+        "OIKQ"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Asa Jet",
+        "FlyPersia",
+        "Meraj Airlines",
+        "Pars Air",
+        "Qeshm Air",
+        "Varesh Airlines",
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Rasht",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rasht_Airport",
+      "codes": [
+        "RAS",
+        "OIGG"
+      ],
+      "airlines": [
+        "Asa Jet",
+        "Iran Aseman Airlines"
+      ]
+    },
+    {
+      "city": "Sari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dasht-e_Naz_Airport",
+      "codes": [
+        "SRY",
+        "OINZ"
+      ],
+      "airlines": [
+        "Iran Aseman Airlines",
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Sirri Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sirri_Island_Airport",
+      "codes": [
+        "SXI",
+        "OIBS"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Tabriz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabriz_Airport",
+      "codes": [
+        "TBZ",
+        "OITT"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Mahan Air"
+      ]
+    },
+    {
+      "city": "Tabriz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabriz_Shahid_Madani_International_Airport",
+      "codes": [
+        "TBZ",
+        "OITT"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Mahan Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Asa Jet",
+        "Caspian Airlines",
+        "Chabahar Airlines",
+        "FlyPersia",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Karun Airlines",
+        "Kish Air",
+        "Mahan Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Pouya Air",
+        "Qeshm Air",
+        "Saha Airlines",
+        "Taban Air",
+        "Varesh Airlines",
+        "Yazd Airways",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Zahedan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zahedan_Airport",
+      "codes": [
+        "ZAH",
+        "OIZH"
+      ],
+      "airlines": [
+        "Mahan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Asa Jet": [
@@ -412,5 +658,7 @@
       "Najaf",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:34Z",
+  "date-time-wikidata": "2026-01-09T22:36:49Z"
 }

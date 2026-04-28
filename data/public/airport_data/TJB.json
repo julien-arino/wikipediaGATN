@@ -19,23 +19,35 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Dabo",
-      "https://en.wikipedia.org/wiki/Dabo_Airport",
-      "SIQ",
-      "WIDS"
-    ],
-    [
-      "Pekanbaru",
-      "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
-      "PKU",
-      "WIBB"
-    ]
+    {
+      "city": "Dabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dabo_Airport",
+      "codes": [
+        "SIQ",
+        "WIDS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Pekanbaru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
+      "codes": [
+        "PKU",
+        "WIBB"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Dabo",
       "Pekanbaru"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:29Z",
+  "date-time-wikidata": "2025-05-14T22:56:01Z"
 }

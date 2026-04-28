@@ -20,36 +20,61 @@
     "PAL Express"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Jolo",
-      "https://en.wikipedia.org/wiki/Jolo_Airport",
-      "JOL",
-      "RPMJ"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ],
-    [
-      "Tawi-Tawi",
-      "https://en.wikipedia.org/wiki/Sanga-Sanga_Airport",
-      "TWT",
-      "RPMN"
-    ],
-    [
-      "Zamboanga",
-      "https://en.wikipedia.org/wiki/Zamboanga_International_Airport",
-      "ZAM",
-      "RPMZ"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Jolo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jolo_Airport",
+      "codes": [
+        "JOL",
+        "RPMJ"
+      ],
+      "airlines": [
+        "Bangsamoro Airways"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Tawi-Tawi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sanga-Sanga_Airport",
+      "codes": [
+        "TWT",
+        "RPMN"
+      ],
+      "airlines": [
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Zamboanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zamboanga_International_Airport",
+      "codes": [
+        "ZAM",
+        "RPMZ"
+      ],
+      "airlines": [
+        "Bangsamoro Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bangsamoro Airways": [
@@ -61,5 +86,7 @@
       "Manila",
       "Tawi-Tawi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:59Z",
+  "date-time-wikidata": "2025-07-24T07:32:34Z"
 }

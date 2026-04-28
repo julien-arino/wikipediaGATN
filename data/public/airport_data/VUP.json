@@ -21,24 +21,40 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Barranquilla",
-      "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
-      "BAQ",
-      "SKBQ"
-    ],
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Medellín–Olaya Herrera",
-      "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ]
+    {
+      "city": "Barranquilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
+      "codes": [
+        "BAQ",
+        "SKBQ"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    },
+    {
+      "city": "Medellín–Olaya Herrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -51,5 +67,7 @@
     "SATENA": [
       "Barranquilla"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:47Z",
+  "date-time-wikidata": "2025-12-11T14:38:44Z"
 }

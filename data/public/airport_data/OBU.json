@@ -19,24 +19,39 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Ambler Airport",
-      "https://en.wikipedia.org/wiki/Ambler_Airport",
-      "ABL",
-      "PAFM"
-    ],
-    [
-      "Ralph Wien Memorial Airport",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ],
-    [
-      "Shungnak Airport",
-      "https://en.wikipedia.org/wiki/Shungnak_Airport",
-      "SHG",
-      "PAGH"
-    ]
+    {
+      "city": "Ambler Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ambler_Airport",
+      "codes": [
+        "ABL",
+        "PAFM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Ralph Wien Memorial Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Shungnak Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shungnak_Airport",
+      "codes": [
+        "SHG",
+        "PAGH"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -44,5 +59,7 @@
       "Ralph Wien Memorial Airport",
       "Shungnak Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:13Z",
+  "date-time-wikidata": "2025-08-24T15:10:04Z"
 }

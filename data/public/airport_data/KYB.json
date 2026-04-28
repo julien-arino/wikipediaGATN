@@ -20,24 +20,40 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Wodgina",
-      "https://en.wikipedia.org/wiki/Wodgina_Airport",
-      "GYB",
-      "YWGA"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "MinRes Air"
+      ]
+    },
+    {
+      "city": "Wodgina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wodgina_Airport",
+      "codes": [
+        "GYB",
+        "YWGA"
+      ],
+      "airlines": [
+        "MinRes Air",
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "MinRes Air": [
@@ -48,5 +64,7 @@
       "Brisbane",
       "Wodgina"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:12Z",
+  "date-time-wikidata": "2026-03-30T10:38:11Z"
 }

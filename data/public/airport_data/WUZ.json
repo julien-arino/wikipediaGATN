@@ -20,24 +20,39 @@
     "Shanghai Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Changsha Huanghua International Airport",
-      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
-      "CSX",
-      "ZGHA"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China United Airlines"
+      ]
+    },
+    {
+      "city": "Changsha Huanghua International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA"
+      ],
+      "airlines": [
+        "Shanghai Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Shanghai Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China United Airlines": [
@@ -47,5 +62,7 @@
       "Changsha Huanghua International Airport",
       "Shanghai Pudong International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:16Z",
+  "date-time-wikidata": "2026-03-29T09:25:59Z"
 }

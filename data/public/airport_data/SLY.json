@@ -22,36 +22,62 @@
     "Yamal Airlines"
   ],
   "destinations": [
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Khanty-Mansiysk",
-      "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
-      "HMA",
-      "USHH"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Novy Urengoy",
-      "https://en.wikipedia.org/wiki/Novy_Urengoy_Airport",
-      "NUX",
-      "USMU"
-    ],
-    [
-      "Tarko-Sale",
-      "https://en.wikipedia.org/wiki/Tarko-Sale_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Yamal Airlines"
+      ]
+    },
+    {
+      "city": "Khanty-Mansiysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
+      "codes": [
+        "HMA",
+        "USHH"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines",
+        "Yamal Airlines"
+      ]
+    },
+    {
+      "city": "Novy Urengoy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Novy_Urengoy_Airport",
+      "codes": [
+        "NUX",
+        "USMU"
+      ],
+      "airlines": [
+        "Yamal Airlines"
+      ]
+    },
+    {
+      "city": "Tarko-Sale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarko-Sale_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Turukhan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "RusLine": [
@@ -68,5 +94,7 @@
       "Novosibirsk",
       "Novy Urengoy"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:45Z",
+  "date-time-wikidata": "2025-11-03T17:43:44Z"
 }

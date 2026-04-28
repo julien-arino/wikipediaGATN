@@ -20,18 +20,28 @@
     "Pegasus Airlines"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LOT Polish Airlines": [
@@ -40,5 +50,7 @@
     "Pegasus Airlines": [
       "Antalya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:33Z",
+  "date-time-wikidata": "2026-04-13T14:52:23Z"
 }

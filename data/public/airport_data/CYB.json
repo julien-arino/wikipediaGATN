@@ -21,24 +21,42 @@
     "Island Air"
   ],
   "destinations": [
-    [
-      "Grand Cayman",
-      "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
-      "GCM",
-      "MWCR"
-    ],
-    [
-      "Little Cayman",
-      "https://en.wikipedia.org/wiki/Edward_Bodden_Airfield",
-      "LYB",
-      "MWCL"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ]
+    {
+      "city": "Grand Cayman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
+      "codes": [
+        "GCM",
+        "MWCR"
+      ],
+      "airlines": [
+        "Cayman Airways",
+        "Cayman Airways Express",
+        "Island Air"
+      ]
+    },
+    {
+      "city": "Little Cayman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Bodden_Airfield",
+      "codes": [
+        "LYB",
+        "MWCL"
+      ],
+      "airlines": [
+        "Cayman Airways Express",
+        "Island Air"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cayman Airways": [
@@ -53,5 +71,7 @@
       "Grand Cayman",
       "Little Cayman"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:59Z",
+  "date-time-wikidata": "2026-03-16T15:16:46Z"
 }

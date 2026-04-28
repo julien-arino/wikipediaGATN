@@ -20,36 +20,61 @@
     "SCAT Airlines"
   ],
   "destinations": [
-    [
-      "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Astana",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Qarağandy",
-      "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
-      "KGF",
-      "UAKK"
-    ],
-    [
-      "Ürjar",
-      "https://en.wikipedia.org/wiki/Ürjar_Airport",
-      "UZR",
-      "UASU"
-    ],
-    [
-      "Şymkent",
-      "https://en.wikipedia.org/wiki/Şymkent_International_Airport",
-      "CIT",
-      "UAII"
-    ]
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Qarağandy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
+      "codes": [
+        "KGF",
+        "UAKK"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Ürjar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürjar_Airport",
+      "codes": [
+        "UZR",
+        "UASU"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Şymkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Şymkent_International_Airport",
+      "codes": [
+        "CIT",
+        "UAII"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyArystan": [
@@ -61,5 +86,7 @@
       "Qarağandy",
       "Ürjar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:25Z",
+  "date-time-wikidata": "2026-02-02T06:57:12Z"
 }

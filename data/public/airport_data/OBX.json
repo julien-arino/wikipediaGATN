@@ -19,23 +19,35 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Lake Murray",
-      "https://en.wikipedia.org/wiki/Lake_Murray_Airport",
-      "LMY",
-      "AYLM"
-    ],
-    [
-      "Suki",
-      "https://en.wikipedia.org/wiki/Suki_Airport",
-      "SKC",
-      "AYSU"
-    ]
+    {
+      "city": "Lake Murray",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Murray_Airport",
+      "codes": [
+        "LMY",
+        "AYLM"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Suki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suki_Airport",
+      "codes": [
+        "SKC",
+        "AYSU"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PNG Air": [
       "Lake Murray",
       "Suki"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:13Z",
+  "date-time-wikidata": "2024-11-01T19:51:28Z"
 }

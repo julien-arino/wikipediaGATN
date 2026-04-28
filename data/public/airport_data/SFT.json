@@ -21,18 +21,29 @@
     "Scandinavian Airlines"
   ],
   "destinations": [
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ]
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norwegian Air Shuttle": [
@@ -44,5 +55,7 @@
     "Scandinavian Airlines": [
       "Stockholm–Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:34Z",
+  "date-time-wikidata": "2025-10-03T00:29:34Z"
 }

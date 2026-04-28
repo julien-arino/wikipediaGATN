@@ -19,23 +19,35 @@
     "Delta Connection"
   ],
   "destinations": [
-    [
-      "Detroit Metropolitan Wayne County Airport",
-      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
-      "DTW",
-      "KDTW"
-    ],
-    [
-      "Minneapolis/St Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis/St_Paul_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Detroit Metropolitan Wayne County Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Minneapolis/St Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis/St_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Delta Connection": [
       "Detroit Metropolitan Wayne County Airport",
       "Minneapolis/St Paul International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:22Z",
+  "date-time-wikidata": "2026-04-15T13:16:46Z"
 }

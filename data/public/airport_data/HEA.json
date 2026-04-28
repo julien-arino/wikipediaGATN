@@ -20,18 +20,29 @@
     "Kam Air"
   ],
   "destinations": [
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kabul",
-      "https://en.wikipedia.org/wiki/Kabul_International_Airport",
-      "KBL",
-      "OAKB"
-    ]
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Kabul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kabul_International_Airport",
+      "codes": [
+        "KBL",
+        "OAKB"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ariana Afghan Airlines": [
@@ -41,5 +52,7 @@
     "Kam Air": [
       "Kabul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:15Z",
+  "date-time-wikidata": "2026-02-15T12:25:40Z"
 }

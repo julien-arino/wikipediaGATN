@@ -1,8 +1,8 @@
 {
   "iata": "ZGI",
   "icao": "CZGI",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Manto Sipi Cree Nation",
+  "city-served-wikipedia": "[[Manto Sipi Cree Nation]]",
   "location": "[[Manto Sipi Cree Nation]]",
   "lat": "54.839722",
   "lon": "-94.078611",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_River_Airport",
   "number_airlines": 1,
   "outdegree": 4,
@@ -19,30 +19,50 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Gods Lake Narrows",
-      "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
-      "YGO",
-      "CYGO"
-    ],
-    [
-      "Shamattawa",
-      "https://en.wikipedia.org/wiki/Shamattawa_Airport",
-      "ZTM",
-      "CZTM"
-    ],
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Gods Lake Narrows",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
+      "codes": [
+        "YGO",
+        "CYGO"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Shamattawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shamattawa_Airport",
+      "codes": [
+        "ZTM",
+        "CZTM"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Perimeter Aviation": [
@@ -51,5 +71,7 @@
       "Thompson",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:13Z",
+  "date-time-wikidata": "2025-09-27T09:14:40Z"
 }

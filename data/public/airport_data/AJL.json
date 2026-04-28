@@ -7,6 +7,7 @@
   "lat": "23.8407048",
   "lon": "92.621057",
   "altitude": "405",
+  "continent": "Asia",
   "region": "Mizoram",
   "country_alpha3": "IND",
   "country_name": "India",
@@ -18,42 +19,72 @@
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Dimapur",
-      "https://en.wikipedia.org/wiki/Dimapur_Airport",
-      "DMU",
-      "VEMR"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Bir_Tikendrajit_International_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Shillong",
-      "https://en.wikipedia.org/wiki/Shillong_Airport",
-      "SHL",
-      "VEBI"
-    ],
-    [
-      "Silchar",
-      "https://en.wikipedia.org/wiki/Silchar_Airport",
-      "IXS",
-      "VEKU"
-    ]
+    {
+      "city": "Dimapur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dimapur_Airport",
+      "codes": [
+        "DMU",
+        "VEMR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bir_Tikendrajit_International_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Shillong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shillong_Airport",
+      "codes": [
+        "SHL",
+        "VEBI"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Silchar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silchar_Airport",
+      "codes": [
+        "IXS",
+        "VEKU"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -65,5 +96,6 @@
       "Silchar"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:13:54Z",
+  "date-time-wikidata": "2026-01-31T11:33:16Z"
 }

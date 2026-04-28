@@ -20,30 +20,50 @@
     "YTO Cargo Airlines"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Colombo–Bandaranaike",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Karachi",
-      "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
-      "KHI",
-      "OPKC"
-    ],
-    [
-      "Lahore",
-      "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
-      "LHE",
-      "OPLA"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Colombo–Bandaranaike",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Karachi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
+      "codes": [
+        "KHI",
+        "OPKC"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Lahore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
+      "codes": [
+        "LHE",
+        "OPLA"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SF Airlines": [
@@ -54,5 +74,7 @@
       "Karachi",
       "Lahore"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:24Z",
+  "date-time-wikidata": "2026-04-21T13:23:28Z"
 }

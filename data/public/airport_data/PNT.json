@@ -21,24 +21,45 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Puerto Montt",
-      "https://en.wikipedia.org/wiki/El_Tepual",
-      "PMC",
-      "SCTE"
-    ],
-    [
-      "Puerto Montt",
-      "https://en.wikipedia.org/wiki/El_Tepual_International_Airport",
-      "PMC",
-      "SCTE"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Puerto Montt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tepual",
+      "codes": [
+        "PMC",
+        "SCTE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Puerto Montt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tepual_International_Airport",
+      "codes": [
+        "PMC",
+        "SCTE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Chile": [
@@ -53,5 +74,7 @@
       "Puerto Montt",
       "Santiago de Chile"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:05Z",
+  "date-time-wikidata": "2026-02-16T12:33:52Z"
 }

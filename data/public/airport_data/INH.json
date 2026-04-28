@@ -19,23 +19,35 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Vilanculos",
-      "https://en.wikipedia.org/wiki/Vilankulo_Airport",
-      "VNX",
-      "FQVL"
-    ]
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Vilanculos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vilankulo_Airport",
+      "codes": [
+        "VNX",
+        "FQVL"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LAM Mozambique Airlines": [
       "Maputo",
       "Vilanculos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:05Z",
+  "date-time-wikidata": "2025-01-19T17:20:49Z"
 }

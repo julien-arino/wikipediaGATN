@@ -19,24 +19,39 @@
     "DAT (airline)"
   ],
   "destinations": [
-    [
-      "Harstad/Narvik Airport, Evenes",
-      "https://en.wikipedia.org/wiki/Harstad/Narvik_Airport,_Evenes",
-      "EVE",
-      "ENEV"
-    ],
-    [
-      "Oslo Airport",
-      "https://en.wikipedia.org/wiki/Oslo_Airport",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Stord Airport",
-      "https://en.wikipedia.org/wiki/Stord_Airport",
-      "SRP",
-      "ENSO"
-    ]
+    {
+      "city": "Harstad/Narvik Airport, Evenes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harstad/Narvik_Airport,_Evenes",
+      "codes": [
+        "EVE",
+        "ENEV"
+      ],
+      "airlines": [
+        "DAT (airline)"
+      ]
+    },
+    {
+      "city": "Oslo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "DAT (airline)"
+      ]
+    },
+    {
+      "city": "Stord Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stord_Airport",
+      "codes": [
+        "SRP",
+        "ENSO"
+      ],
+      "airlines": [
+        "DAT (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "DAT (airline)": [
@@ -44,5 +59,7 @@
       "Oslo Airport",
       "Stord Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:33Z",
+  "date-time-wikidata": "2025-08-18T00:39:07Z"
 }

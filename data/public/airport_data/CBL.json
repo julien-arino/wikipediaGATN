@@ -20,24 +20,39 @@
     "Transmandu"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Porlamar",
-      "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
-      "PMV",
-      "SVMG"
-    ],
-    [
-      "Santa Elena de Uairén",
-      "https://en.wikipedia.org/wiki/Santa_Elena_de_Uairén_Airport",
-      "SNV",
-      "SVSE"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Porlamar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_Mariño_Caribbean_International_Airport",
+      "codes": [
+        "PMV",
+        "SVMG"
+      ],
+      "airlines": [
+        "Transmandu"
+      ]
+    },
+    {
+      "city": "Santa Elena de Uairén",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uairén_Airport",
+      "codes": [
+        "SNV",
+        "SVSE"
+      ],
+      "airlines": [
+        "Transmandu"
+      ]
+    }
   ],
   "airlines_destinations": {
     "RUTACA Airlines": [
@@ -47,5 +62,7 @@
       "Porlamar",
       "Santa Elena de Uairén"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:59Z",
+  "date-time-wikidata": "2025-07-12T23:57:12Z"
 }

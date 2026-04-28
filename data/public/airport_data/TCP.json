@@ -21,42 +21,73 @@
     "Smartwings"
   ],
   "destinations": [
-    [
-      "Brno",
-      "https://en.wikipedia.org/wiki/Brno–Tuřany_Airport",
-      "BRQ",
-      "LKTB"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Brno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brno–Tuřany_Airport",
+      "codes": [
+        "BRQ",
+        "LKTB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines",
+        "Smartwings"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Egyptair": [
@@ -72,5 +103,7 @@
       "Prague",
       "Warsaw–Chopin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:24Z",
+  "date-time-wikidata": "2026-04-01T10:22:52Z"
 }

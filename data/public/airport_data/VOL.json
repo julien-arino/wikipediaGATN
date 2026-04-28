@@ -22,30 +22,50 @@
     "Smartwings"
   ],
   "destinations": [
-    [
-      "Brno",
-      "https://en.wikipedia.org/wiki/Brno-Tuřany_Airport",
-      "BRQ",
-      "LKTB"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport_\"Nikos_Kazantzakis\"",
-      "HER",
-      "LGIR"
-    ]
+    {
+      "city": "Brno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brno-Tuřany_Airport",
+      "codes": [
+        "BRQ",
+        "LKTB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport_\"Nikos_Kazantzakis\"",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Eurowings": [
@@ -60,5 +80,7 @@
     "Smartwings": [
       "Brno"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:44Z",
+  "date-time-wikidata": "2026-03-01T10:29:07Z"
 }

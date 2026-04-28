@@ -22,30 +22,52 @@
     "Pascan Aviation"
   ],
   "destinations": [
-    [
-      "Halifax",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "Montréal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
-      "YHU",
-      "CYHU"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Halifax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Montréal–Saint-Hubert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
+      "codes": [
+        "YHU",
+        "CYHU"
+      ],
+      "airlines": [
+        "Pascan Aviation"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Air Canada Rouge",
+        "Flair Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -62,5 +84,7 @@
       "Halifax",
       "Montréal–Saint-Hubert"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:42Z",
+  "date-time-wikidata": "2026-04-10T14:16:42Z"
 }

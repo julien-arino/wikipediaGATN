@@ -21,18 +21,30 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Birendranagar",
-      "https://en.wikipedia.org/wiki/Surkhet_Airport",
-      "SKH",
-      "VNSK"
-    ],
-    [
-      "Nepalgunj",
-      "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
-      "KEP",
-      "VNNG"
-    ]
+    {
+      "city": "Birendranagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surkhet_Airport",
+      "codes": [
+        "SKH",
+        "VNSK"
+      ],
+      "airlines": [
+        "Summit Air"
+      ]
+    },
+    {
+      "city": "Nepalgunj",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
+      "codes": [
+        "KEP",
+        "VNNG"
+      ],
+      "airlines": [
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sita Air": [
@@ -45,5 +57,7 @@
     "Tara Air": [
       "Nepalgunj"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:04Z",
+  "date-time-wikidata": "2026-01-11T09:09:33Z"
 }

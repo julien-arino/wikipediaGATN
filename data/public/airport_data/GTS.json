@@ -21,30 +21,52 @@
     "Fly Tiwi"
   ],
   "destinations": [
-    [
-      "Alice Springs",
-      "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
-      "ASP",
-      "YBAS"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Alice Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
+      "codes": [
+        "ASP",
+        "YBAS"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth",
+        "Alliance Airlines",
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -59,5 +81,7 @@
     "Fly Tiwi": [
       "Darwin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:35Z",
+  "date-time-wikidata": "2026-04-02T21:34:58Z"
 }

@@ -19,24 +19,39 @@
     "PopulAir"
   ],
   "destinations": [
-    [
-      "Arvidsjaur",
-      "https://en.wikipedia.org/wiki/Arvidsjaur_Airport",
-      "AJR",
-      "ESNX"
-    ],
-    [
-      "Hemavan",
-      "https://en.wikipedia.org/wiki/Hemavan_Airport",
-      "HMV",
-      "ESUT"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ]
+    {
+      "city": "Arvidsjaur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arvidsjaur_Airport",
+      "codes": [
+        "AJR",
+        "ESNX"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Hemavan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hemavan_Airport",
+      "codes": [
+        "HMV",
+        "ESUT"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PopulAir": [
@@ -44,5 +59,7 @@
       "Hemavan",
       "Stockholm–Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:33Z",
+  "date-time-wikidata": "2025-04-14T13:48:21Z"
 }

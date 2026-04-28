@@ -20,24 +20,41 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Chevak",
-      "https://en.wikipedia.org/wiki/Chevak_Airport",
-      "VAK",
-      "PAVA"
-    ],
-    [
-      "Scammon Bay",
-      "https://en.wikipedia.org/wiki/Scammon_Bay_Airport",
-      "SCM",
-      "PACM"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Chevak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chevak_Airport",
+      "codes": [
+        "VAK",
+        "PAVA"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Scammon Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scammon_Bay_Airport",
+      "codes": [
+        "SCM",
+        "PACM"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -49,5 +66,7 @@
       "Bethel",
       "Scammon Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:23Z",
+  "date-time-wikidata": "2025-11-20T21:20:27Z"
 }

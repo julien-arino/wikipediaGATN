@@ -20,18 +20,28 @@
     "Yute Commuter Service"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Dillingham",
-      "https://en.wikipedia.org/wiki/Dillingham_Airport",
-      "DLG",
-      "PADL"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    },
+    {
+      "city": "Dillingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
+      "codes": [
+        "DLG",
+        "PADL"
+      ],
+      "airlines": [
+        "Tucker Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Tucker Aviation": [
@@ -40,5 +50,7 @@
     "Yute Commuter Service": [
       "Bethel"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:48Z",
+  "date-time-wikidata": "2025-05-31T02:44:40Z"
 }

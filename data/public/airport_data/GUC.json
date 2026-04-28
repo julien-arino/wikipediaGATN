@@ -21,36 +21,61 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Dallas Love Field",
-      "https://en.wikipedia.org/wiki/Dallas_Love_Field",
-      "DAL",
-      "KDAL"
-    ],
-    [
-      "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "George Bush Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ]
+    {
+      "city": "Dallas Love Field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "George Bush Intercontinental Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Airlines": [
@@ -64,5 +89,7 @@
       "George Bush Intercontinental Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:36Z",
+  "date-time-wikidata": "2026-03-08T22:31:43Z"
 }

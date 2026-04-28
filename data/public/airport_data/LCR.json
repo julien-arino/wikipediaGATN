@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Araracuara",
-      "https://en.wikipedia.org/wiki/Araracuara_Airport",
-      "ACR",
-      "SKAC"
-    ],
-    [
-      "Leticia",
-      "https://en.wikipedia.org/wiki/Alfredo_Vásquez_Cobo_International_Airport",
-      "LET",
-      "SKLT"
-    ]
+    {
+      "city": "Araracuara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Araracuara_Airport",
+      "codes": [
+        "ACR",
+        "SKAC"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Leticia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfredo_Vásquez_Cobo_International_Airport",
+      "codes": [
+        "LET",
+        "SKLT"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "Araracuara",
       "Leticia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:55Z",
+  "date-time-wikidata": "2025-12-24T20:58:31Z"
 }

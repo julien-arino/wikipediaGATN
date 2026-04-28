@@ -7,6 +7,7 @@
   "lat": "24.4462688",
   "lon": "86.7009191",
   "altitude": null,
+  "continent": "Asia",
   "region": "Jharkhand",
   "country_alpha3": "IND",
   "country_name": "India",
@@ -18,42 +19,72 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Patna",
-      "https://en.wikipedia.org/wiki/Jay_Prakash_Narayan_Airport",
-      "PAT",
-      "VEPT"
-    ],
-    [
-      "Ranchi",
-      "https://en.wikipedia.org/wiki/Birsa_Munda_Airport",
-      "IXR",
-      "VERC"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Patna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jay_Prakash_Narayan_Airport",
+      "codes": [
+        "PAT",
+        "VEPT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Ranchi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birsa_Munda_Airport",
+      "codes": [
+        "IXR",
+        "VERC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -65,5 +96,6 @@
       "Ranchi"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:05:06Z",
+  "date-time-wikidata": "2026-04-06T09:17:25Z"
 }

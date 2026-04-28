@@ -19,24 +19,39 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Aniak",
-      "https://en.wikipedia.org/wiki/Aniak_Airport",
-      "ANI",
-      "PANI"
-    ],
-    [
-      "Grayling",
-      "https://en.wikipedia.org/wiki/Grayling_Airport",
-      "KGX",
-      "PAGX"
-    ],
-    [
-      "Shageluk",
-      "https://en.wikipedia.org/wiki/Shageluk_Airport",
-      "SHX",
-      "PAHX"
-    ]
+    {
+      "city": "Aniak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aniak_Airport",
+      "codes": [
+        "ANI",
+        "PANI"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Grayling",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grayling_Airport",
+      "codes": [
+        "KGX",
+        "PAGX"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Shageluk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shageluk_Airport",
+      "codes": [
+        "SHX",
+        "PAHX"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryan Air": [
@@ -44,5 +59,7 @@
       "Grayling",
       "Shageluk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:29Z",
+  "date-time-wikidata": "2025-08-24T15:09:36Z"
 }

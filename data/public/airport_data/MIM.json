@@ -20,24 +20,41 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Moruya",
-      "https://en.wikipedia.org/wiki/Moruya_Airport",
-      "MYA",
-      "YMRY"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Moruya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moruya_Airport",
+      "codes": [
+        "MYA",
+        "YMRY"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -49,5 +66,7 @@
       "Moruya",
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:19Z",
+  "date-time-wikidata": "2025-10-15T09:55:48Z"
 }

@@ -20,30 +20,50 @@
     "North-Wright Airways"
   ],
   "destinations": [
-    [
-      "Colville Lake",
-      "https://en.wikipedia.org/wiki/Colville_Lake_Airport",
-      "YCK",
-      "CYVL"
-    ],
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_Airport",
-      "YEV",
-      "CYEV"
-    ],
-    [
-      "Norman Wells",
-      "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
-      "YVQ",
-      "CYVQ"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Colville Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colville_Lake_Airport",
+      "codes": [
+        "YCK",
+        "CYVL"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Norman Wells",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
+      "codes": [
+        "YVQ",
+        "CYVQ"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Buffalo Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North-Wright Airways": [
@@ -54,5 +74,7 @@
     "Buffalo Airways": [
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:28Z",
+  "date-time-wikidata": "2025-12-20T18:41:33Z"
 }

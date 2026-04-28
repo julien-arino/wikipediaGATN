@@ -1,16 +1,17 @@
 {
   "iata": null,
   "icao": "UITK",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Kazachinskoye",
+  "city-served-wikipedia": "[[Kazachinskoye, Irkutsk Oblast|Kazachinskoye]]",
   "location": "[[Kazachinskoye, Irkutsk Oblast|Kazachinskoye]]",
-  "lat": "56.27909444",
-  "lon": "107.56788611",
+  "lat": "56.2797144",
+  "lon": "107.5667193",
   "altitude": "457",
-  "region": null,
+  "continent": "Europe",
+  "region": "Irkutsk",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
-  "subdivision_code": null,
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kazachinskoye_Airport",
   "number_airlines": 2,
   "outdegree": 2,
@@ -19,18 +20,29 @@
     "SiLA"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "PANH",
+        "SiLA"
+      ]
+    },
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "PANH"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PANH": [
@@ -40,5 +52,7 @@
     "SiLA": [
       "Irkutsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-wikidata": "2025-11-08T07:34:31Z"
 }

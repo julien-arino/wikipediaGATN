@@ -19,23 +19,35 @@
     "Camair-Co"
   ],
   "destinations": [
-    [
-      "Douala",
-      "https://en.wikipedia.org/wiki/Douala_International_Airport",
-      "DLA",
-      "FKKD"
-    ],
-    [
-      "Yaoundé",
-      "https://en.wikipedia.org/wiki/Yaoundé_Nsimalen_International_Airport",
-      "NSI",
-      "FKYS"
-    ]
+    {
+      "city": "Douala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douala_International_Airport",
+      "codes": [
+        "DLA",
+        "FKKD"
+      ],
+      "airlines": [
+        "Camair-Co"
+      ]
+    },
+    {
+      "city": "Yaoundé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaoundé_Nsimalen_International_Airport",
+      "codes": [
+        "NSI",
+        "FKYS"
+      ],
+      "airlines": [
+        "Camair-Co"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Camair-Co": [
       "Douala",
       "Yaoundé"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:26Z",
+  "date-time-wikidata": "2026-03-11T17:06:11Z"
 }

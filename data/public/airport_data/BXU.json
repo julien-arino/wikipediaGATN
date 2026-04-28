@@ -21,18 +21,31 @@
     "PAL Express"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
@@ -46,5 +59,7 @@
       "Cebu",
       "Manila"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:40Z",
+  "date-time-wikidata": "2025-07-24T07:33:19Z"
 }

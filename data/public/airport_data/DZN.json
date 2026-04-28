@@ -21,36 +21,63 @@
     "Zhezkazgan Air"
   ],
   "destinations": [
-    [
-      "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Astana",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Qarağandy",
-      "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
-      "KGF",
-      "UAKK"
-    ],
-    [
-      "Öskemen",
-      "https://en.wikipedia.org/wiki/Öskemen_Airport",
-      "UKK",
-      "UASK"
-    ],
-    [
-      "Şymkent",
-      "https://en.wikipedia.org/wiki/Şymkent_Airport",
-      "CIT",
-      "UAII"
-    ]
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "Qazaq Air",
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Qarağandy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
+      "codes": [
+        "KGF",
+        "UAKK"
+      ],
+      "airlines": [
+        "Qazaq Air",
+        "Zhezkazgan Air"
+      ]
+    },
+    {
+      "city": "Öskemen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Öskemen_Airport",
+      "codes": [
+        "UKK",
+        "UASK"
+      ],
+      "airlines": [
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Şymkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Şymkent_Airport",
+      "codes": [
+        "CIT",
+        "UAII"
+      ],
+      "airlines": [
+        "Qazaq Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Qazaq Air": [
@@ -66,5 +93,7 @@
     "Zhezkazgan Air": [
       "Qarağandy"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:15Z",
+  "date-time-wikidata": "2026-01-13T12:38:21Z"
 }

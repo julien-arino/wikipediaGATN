@@ -20,24 +20,40 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Denpasar",
-      "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
-      "DPS",
-      "WADD"
-    ],
-    [
-      "Lombok",
-      "https://en.wikipedia.org/wiki/Lombok_International_Airport",
-      "LOP",
-      "WADL"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD"
+      ],
+      "airlines": [
+        "TransNusa",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Lombok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombok_International_Airport",
+      "codes": [
+        "LOP",
+        "WADL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "TransNusa": [
@@ -48,5 +64,7 @@
       "Lombok",
       "Makassar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:30Z",
+  "date-time-wikidata": "2026-04-27T20:42:59Z"
 }

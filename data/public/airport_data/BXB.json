@@ -21,30 +21,51 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Biak",
-      "https://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
-      "BIK",
-      "WABB"
-    ],
-    [
-      "Fakfak",
-      "https://en.wikipedia.org/wiki/Siboru_Airport",
-      "FKQ",
-      "WASF"
-    ],
-    [
-      "Manokwari",
-      "https://en.wikipedia.org/wiki/Rendani_Airport",
-      "MKW",
-      "WAUU"
-    ],
-    [
-      "Sorong",
-      "https://en.wikipedia.org/wiki/Domine_Eduard_Osok_Airport",
-      "SOQ",
-      "WASS"
-    ]
+    {
+      "city": "Biak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
+      "codes": [
+        "BIK",
+        "WABB"
+      ],
+      "airlines": [
+        "Travira Air"
+      ]
+    },
+    {
+      "city": "Fakfak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siboru_Airport",
+      "codes": [
+        "FKQ",
+        "WASF"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Manokwari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rendani_Airport",
+      "codes": [
+        "MKW",
+        "WAUU"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Sorong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Domine_Eduard_Osok_Airport",
+      "codes": [
+        "SOQ",
+        "WASS"
+      ],
+      "airlines": [
+        "Travira Air",
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -58,5 +79,7 @@
     "Wings Air": [
       "Sorong"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:39Z",
+  "date-time-wikidata": "2026-02-18T07:24:21Z"
 }

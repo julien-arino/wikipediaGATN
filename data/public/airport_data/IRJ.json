@@ -19,23 +19,35 @@
     "Aerolíneas Argentinas"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Catamarca",
-      "https://en.wikipedia.org/wiki/Coronel_Felipe_Varela_International_Airport",
-      "CTC",
-      "SANC"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Catamarca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coronel_Felipe_Varela_International_Airport",
+      "codes": [
+        "CTC",
+        "SANC"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
       "Buenos Aires–Aeroparque",
       "Catamarca"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:05Z",
+  "date-time-wikidata": "2025-08-31T02:37:50Z"
 }

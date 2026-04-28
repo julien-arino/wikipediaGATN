@@ -21,42 +21,74 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "North Shore",
-      "https://en.wikipedia.org/wiki/North_Shore_Aerodrome",
-      "iata code not found",
-      "NZNE"
-    ],
-    [
-      "Tauranga",
-      "https://en.wikipedia.org/wiki/Tauranga_Airport",
-      "TRG",
-      "NZTG"
-    ],
-    [
-      "Waiheke Island",
-      "https://en.wikipedia.org/wiki/Waiheke_Island_Aerodrome",
-      "WIK",
-      "NZKE"
-    ],
-    [
-      "Whangarei",
-      "https://en.wikipedia.org/wiki/Whangarei_Airport",
-      "WRE",
-      "NZWR"
-    ],
-    [
-      "Whitianga",
-      "https://en.wikipedia.org/wiki/Whitianga_Aerodrome",
-      "WTZ",
-      "NZWT"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Barrier Air"
+      ]
+    },
+    {
+      "city": "North Shore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Shore_Aerodrome",
+      "codes": [
+        "iata code not found",
+        "NZNE"
+      ],
+      "airlines": [
+        "Barrier Air",
+        "Island Aviation"
+      ]
+    },
+    {
+      "city": "Tauranga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tauranga_Airport",
+      "codes": [
+        "TRG",
+        "NZTG"
+      ],
+      "airlines": [
+        "Barrier Air",
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Waiheke Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waiheke_Island_Aerodrome",
+      "codes": [
+        "WIK",
+        "NZKE"
+      ],
+      "airlines": [
+        "Island Aviation"
+      ]
+    },
+    {
+      "city": "Whangarei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whangarei_Airport",
+      "codes": [
+        "WRE",
+        "NZWR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Whitianga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whitianga_Aerodrome",
+      "codes": [
+        "WTZ",
+        "NZWT"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Barrier Air": [
@@ -73,5 +105,7 @@
       "Whangarei",
       "Whitianga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:49Z",
+  "date-time-wikidata": "2025-05-13T17:44:40Z"
 }

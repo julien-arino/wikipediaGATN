@@ -7,6 +7,7 @@
   "lat": "-17.2444653",
   "lon": "-178.9597325",
   "altitude": null,
+  "continent": "Oceania",
   "region": "Circonscription d'Alo",
   "country_alpha3": "WLF",
   "country_name": "Wallis and Futuna",
@@ -18,17 +19,23 @@
     "Fiji Link"
   ],
   "destinations": [
-    [
-      "Suva",
-      "https://en.wikipedia.org/wiki/Nausori_International_Airport",
-      "SUV",
-      "NFNA"
-    ]
+    {
+      "city": "Suva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nausori_International_Airport",
+      "codes": [
+        "SUV",
+        "NFNA"
+      ],
+      "airlines": [
+        "Fiji Link"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fiji Link": [
       "Suva"
     ]
   },
-  "continent": "Oceania"
+  "date-time-parse": "2026-04-28T22:20:00Z",
+  "date-time-wikidata": "2021-11-13T11:14:05Z"
 }

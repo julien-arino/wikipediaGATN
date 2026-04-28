@@ -21,24 +21,39 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Minneapolis-Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ]
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "McCarran International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Minneapolis-Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Delta Connection": [
@@ -50,5 +65,7 @@
     "United Express": [
       "Denver International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:35Z",
+  "date-time-wikidata": "2026-04-10T03:19:30Z"
 }

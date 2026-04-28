@@ -22,84 +22,152 @@
     "TAP Air Portugal"
   ],
   "destinations": [
-    [
-      "Boston",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Flores",
-      "https://en.wikipedia.org/wiki/Flores_Airport",
-      "FLW",
-      "LPFL"
-    ],
-    [
-      "Funchal",
-      "https://en.wikipedia.org/wiki/Cristiano_Ronaldo_Airport",
-      "FNC",
-      "LPMA"
-    ],
-    [
-      "Graciosa",
-      "https://en.wikipedia.org/wiki/Graciosa_Airport",
-      "GRW",
-      "LPGR"
-    ],
-    [
-      "Horta",
-      "https://en.wikipedia.org/wiki/Horta_Airport",
-      "HOR",
-      "LPHR"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Pico",
-      "https://en.wikipedia.org/wiki/Pico_Airport",
-      "PIX",
-      "LPPI"
-    ],
-    [
-      "Ponta Delgada",
-      "https://en.wikipedia.org/wiki/João_Paulo_II_Airport",
-      "PDL",
-      "LPPD"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Francisco_de_Sá_Carneiro_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "São Jorge",
-      "https://en.wikipedia.org/wiki/São_Jorge_Airport",
-      "SJZ",
-      "LPSJ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Flores",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flores_Airport",
+      "codes": [
+        "FLW",
+        "LPFL"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Funchal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo_Airport",
+      "codes": [
+        "FNC",
+        "LPMA"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Graciosa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Graciosa_Airport",
+      "codes": [
+        "GRW",
+        "LPGR"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Horta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horta_Airport",
+      "codes": [
+        "HOR",
+        "LPHR"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Azores Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Pico",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pico_Airport",
+      "codes": [
+        "PIX",
+        "LPPI"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Ponta Delgada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/João_Paulo_II_Airport",
+      "codes": [
+        "PDL",
+        "LPPD"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_de_Sá_Carneiro_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Azores Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Azores Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "São Jorge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Jorge_Airport",
+      "codes": [
+        "SJZ",
+        "LPSJ"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azores Airlines": [
@@ -124,5 +192,7 @@
       "Lisbon",
       "Porto"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:27Z",
+  "date-time-wikidata": "2026-04-04T00:40:30Z"
 }

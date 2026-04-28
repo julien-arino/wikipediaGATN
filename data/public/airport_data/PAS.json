@@ -22,36 +22,63 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Graz",
-      "https://en.wikipedia.org/wiki/Graz_Airport",
-      "GRZ",
-      "LOWG"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Klagenfurt",
-      "https://en.wikipedia.org/wiki/Klagenfurt_Airport",
-      "KLU",
-      "LOWK"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Olympic Air",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Graz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Graz_Airport",
+      "codes": [
+        "GRZ",
+        "LOWG"
+      ],
+      "airlines": [
+        "Avanti Air"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Klagenfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Klagenfurt_Airport",
+      "codes": [
+        "KLU",
+        "LOWK"
+      ],
+      "airlines": [
+        "Avanti Air"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -69,5 +96,7 @@
       "Athens",
       "Thessaloniki"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:36Z",
+  "date-time-wikidata": "2026-03-11T12:14:45Z"
 }

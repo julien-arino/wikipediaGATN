@@ -19,24 +19,39 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Girona",
-      "https://en.wikipedia.org/wiki/Girona_Costa_Brava_Airport",
-      "GRO",
-      "LEGE"
-    ],
-    [
-      "Tangier",
-      "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
-      "TNG",
-      "GMTT"
-    ]
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Girona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Girona_Costa_Brava_Airport",
+      "codes": [
+        "GRO",
+        "LEGE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Tangier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
+      "codes": [
+        "TNG",
+        "GMTT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
@@ -44,5 +59,7 @@
       "Girona",
       "Tangier"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:48Z",
+  "date-time-wikidata": "2026-04-02T13:41:40Z"
 }

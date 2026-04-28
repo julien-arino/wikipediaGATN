@@ -20,18 +20,29 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Cocos (Keeling) Islands",
-      "https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands_Airport",
-      "CCK",
-      "YPCC"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Cocos (Keeling) Islands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands_Airport",
+      "codes": [
+        "CCK",
+        "YPCC"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia Regional Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -41,5 +52,7 @@
     "Virgin Australia Regional Airlines": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:18Z",
+  "date-time-wikidata": "2026-01-18T23:37:22Z"
 }

@@ -20,30 +20,51 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Inhambane",
-      "https://en.wikipedia.org/wiki/Inhambane_Airport",
-      "INH",
-      "FQIN"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Mbombela",
-      "https://en.wikipedia.org/wiki/Kruger_Mpumalanga_International_Airport",
-      "MQP",
-      "FAKN"
-    ]
+    {
+      "city": "Inhambane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inhambane_Airport",
+      "codes": [
+        "INH",
+        "FQIN"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Mbombela",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kruger_Mpumalanga_International_Airport",
+      "codes": [
+        "MQP",
+        "FAKN"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -55,5 +76,7 @@
       "Johannesburg–O. R. Tambo",
       "Maputo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:05Z",
+  "date-time-wikidata": "2026-03-29T21:25:55Z"
 }

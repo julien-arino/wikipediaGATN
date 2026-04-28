@@ -20,12 +20,18 @@
     "Sky Airline Peru"
   ],
   "destinations": [
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ]
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "LATAM Perú",
+        "Sky Airline Peru"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LATAM Perú": [
@@ -34,5 +40,7 @@
     "Sky Airline Peru": [
       "Lima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:42Z",
+  "date-time-wikidata": "2025-03-15T07:15:09Z"
 }

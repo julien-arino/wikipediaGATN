@@ -25,72 +25,130 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Fitzroy Crossing",
-      "https://en.wikipedia.org/wiki/Fitzroy_Crossing_Airport",
-      "FIZ",
-      "YFTZ"
-    ],
-    [
-      "Geraldton",
-      "https://en.wikipedia.org/wiki/Geraldton_Airport",
-      "GET",
-      "YGEL"
-    ],
-    [
-      "Halls Creek",
-      "https://en.wikipedia.org/wiki/Halls_Creek_Airport",
-      "HCQ",
-      "YHLC"
-    ],
-    [
-      "Karratha",
-      "https://en.wikipedia.org/wiki/Karratha_Airport",
-      "KTA",
-      "YPKA"
-    ],
-    [
-      "Kununurra",
-      "https://en.wikipedia.org/wiki/Kununurra_Airport",
-      "KNX",
-      "YPKU"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Port Hedland",
-      "https://en.wikipedia.org/wiki/Port_Hedland_Airport",
-      "PHE",
-      "YPPD"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "West Angelas",
-      "https://en.wikipedia.org/wiki/West_Angelas_mine",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Fitzroy Crossing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fitzroy_Crossing_Airport",
+      "codes": [
+        "FIZ",
+        "YFTZ"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Geraldton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geraldton_Airport",
+      "codes": [
+        "GET",
+        "YGEL"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Halls Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halls_Creek_Airport",
+      "codes": [
+        "HCQ",
+        "YHLC"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Karratha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karratha_Airport",
+      "codes": [
+        "KTA",
+        "YPKA"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Kununurra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kununurra_Airport",
+      "codes": [
+        "KNX",
+        "YPKU"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia",
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Port Hedland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Hedland_Airport",
+      "codes": [
+        "PHE",
+        "YPPD"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    },
+    {
+      "city": "West Angelas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/West_Angelas_mine",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -121,5 +179,7 @@
       "Perth",
       "West Angelas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:30Z",
+  "date-time-wikidata": "2026-03-21T07:54:12Z"
 }

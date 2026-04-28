@@ -22,54 +22,97 @@
     "Vueling"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Lanzarote",
-      "https://en.wikipedia.org/wiki/Lanzarote_Airport",
-      "ACE",
-      "GCRR"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Santander",
-      "https://en.wikipedia.org/wiki/Santander_Airport",
-      "SDR",
-      "LEXJ"
-    ],
-    [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
-      "TFN",
-      "GCXO"
-    ],
-    [
-      "Valencia",
-      "https://en.wikipedia.org/wiki/Valencia_Airport",
-      "VLC",
-      "LEVC"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Binter Canarias",
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Lanzarote",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzarote_Airport",
+      "codes": [
+        "ACE",
+        "GCRR"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Air Europa",
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Santander",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santander_Airport",
+      "codes": [
+        "SDR",
+        "LEXJ"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Tenerife–North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
+      "codes": [
+        "TFN",
+        "GCXO"
+      ],
+      "airlines": [
+        "Binter Canarias",
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Valencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
+      "codes": [
+        "VLC",
+        "LEVC"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Europa": [
@@ -91,5 +134,7 @@
     "Vueling": [
       "Barcelona"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:18Z",
+  "date-time-wikidata": "2026-04-07T21:20:05Z"
 }

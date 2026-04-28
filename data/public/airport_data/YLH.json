@@ -20,36 +20,62 @@
     "North Star Air"
   ],
   "destinations": [
-    [
-      "Fort Hope/Eabametoong",
-      "https://en.wikipedia.org/wiki/Fort_Hope_Airport",
-      "YFH",
-      "CYFH"
-    ],
-    [
-      "Nakina/Greenstone",
-      "https://en.wikipedia.org/wiki/Nakina_Airport",
-      "YQN",
-      "CYQN"
-    ],
-    [
-      "Ogoki Post",
-      "https://en.wikipedia.org/wiki/Ogoki_Post_Airport",
-      "YOG",
-      "CYKP"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Webequie",
-      "https://en.wikipedia.org/wiki/Webequie_Airport",
-      "YWP",
-      "CYWP"
-    ]
+    {
+      "city": "Fort Hope/Eabametoong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Hope_Airport",
+      "codes": [
+        "YFH",
+        "CYFH"
+      ],
+      "airlines": [
+        "Nakina Air Service"
+      ]
+    },
+    {
+      "city": "Nakina/Greenstone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nakina_Airport",
+      "codes": [
+        "YQN",
+        "CYQN"
+      ],
+      "airlines": [
+        "Nakina Air Service"
+      ]
+    },
+    {
+      "city": "Ogoki Post",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ogoki_Post_Airport",
+      "codes": [
+        "YOG",
+        "CYKP"
+      ],
+      "airlines": [
+        "Nakina Air Service"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "Nakina Air Service",
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Webequie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Webequie_Airport",
+      "codes": [
+        "YWP",
+        "CYWP"
+      ],
+      "airlines": [
+        "Nakina Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nakina Air Service": [
@@ -62,5 +88,7 @@
     "North Star Air": [
       "Thunder Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:21Z",
+  "date-time-wikidata": "2026-02-07T17:39:48Z"
 }

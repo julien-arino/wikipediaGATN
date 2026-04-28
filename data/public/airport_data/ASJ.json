@@ -23,72 +23,129 @@
     "Skymark Airlines"
   ],
   "destinations": [
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
-      "KOJ",
-      "RJFK"
-    ],
-    [
-      "Kikai",
-      "https://en.wikipedia.org/wiki/Kikai_Airport",
-      "KKX",
-      "RJKI"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Okinoerabu",
-      "https://en.wikipedia.org/wiki/Okinoerabu_Airport",
-      "OKE",
-      "RJKB"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Tokunoshima",
-      "https://en.wikipedia.org/wiki/Tokunoshima_Airport",
-      "TKN",
-      "RJKN"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Yoron",
-      "https://en.wikipedia.org/wiki/Yoron_Airport",
-      "RNJ",
-      "RORY"
-    ]
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Kagoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "codes": [
+        "KOJ",
+        "RJFK"
+      ],
+      "airlines": [
+        "J-Air",
+        "Japan Air Commuter",
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Kikai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kikai_Airport",
+      "codes": [
+        "KKX",
+        "RJKI"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Okinoerabu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Okinoerabu_Airport",
+      "codes": [
+        "OKE",
+        "RJKB"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "Peach"
+      ]
+    },
+    {
+      "city": "Tokunoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokunoshima_Airport",
+      "codes": [
+        "TKN",
+        "RJKN"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Peach"
+      ]
+    },
+    {
+      "city": "Yoron",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yoron_Airport",
+      "codes": [
+        "RNJ",
+        "RORY"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "J-Air": [
@@ -114,5 +171,7 @@
     "Skymark Airlines": [
       "Kagoshima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:06Z",
+  "date-time-wikidata": "2026-01-25T08:31:36Z"
 }

@@ -22,84 +22,149 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Dortmund",
-      "https://en.wikipedia.org/wiki/Dortmund_Airport",
-      "DTM",
-      "EDLW"
-    ],
-    [
-      "Hahn",
-      "https://en.wikipedia.org/wiki/Hahn_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Karlsruhe/Baden-Baden",
-      "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
-      "FKB",
-      "EDSB"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Memmingen",
-      "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "FMM",
-      "EDJA"
-    ],
-    [
-      "Nuremberg",
-      "https://en.wikipedia.org/wiki/Nuremberg_Airport",
-      "NUE",
-      "EDDN"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ]
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Dortmund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
+      "codes": [
+        "DTM",
+        "EDLW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Hahn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Karlsruhe/Baden-Baden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
+      "codes": [
+        "FKB",
+        "EDSB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Cyprus Airways"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Memmingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
+      "codes": [
+        "FMM",
+        "EDJA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Nuremberg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuremberg_Airport",
+      "codes": [
+        "NUE",
+        "EDDN"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Austrian Airlines": [
@@ -123,5 +188,7 @@
       "Nuremberg",
       "Rome–Fiumicino"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:30Z",
+  "date-time-wikidata": "2026-04-20T20:24:44Z"
 }

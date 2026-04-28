@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UIUN",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Severobaykalsk",
+  "city-served-wikipedia": "Severobaykalsk",
   "location": "Severobaykalsk",
   "lat": "55.801667",
   "lon": "109.586667",
@@ -19,24 +19,39 @@
     "Ayana"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk–Cheremshanka",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
-      "KCY",
-      "UNKM"
-    ],
-    [
-      "Kyzyl",
-      "https://en.wikipedia.org/wiki/Kyzyl_Airport",
-      "KYZ",
-      "UNKY"
-    ],
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ]
+    {
+      "city": "Krasnoyarsk–Cheremshanka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
+      "codes": [
+        "KCY",
+        "UNKM"
+      ],
+      "airlines": [
+        "Ayana"
+      ]
+    },
+    {
+      "city": "Kyzyl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kyzyl_Airport",
+      "codes": [
+        "KYZ",
+        "UNKY"
+      ],
+      "airlines": [
+        "Ayana"
+      ]
+    },
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "Ayana"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ayana": [
@@ -44,5 +59,7 @@
       "Kyzyl",
       "Ulan-Ude"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-wikidata": "2026-01-09T01:11:40Z"
 }

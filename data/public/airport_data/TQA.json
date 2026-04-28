@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Innaarsuit",
-      "https://en.wikipedia.org/wiki/Innaarsuit_Heliport",
-      "IUI",
-      "BGIN"
-    ],
-    [
-      "Upernavik",
-      "https://en.wikipedia.org/wiki/Upernavik_Airport",
-      "JUV",
-      "BGUK"
-    ]
+    {
+      "city": "Innaarsuit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Innaarsuit_Heliport",
+      "codes": [
+        "IUI",
+        "BGIN"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Upernavik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Upernavik_Airport",
+      "codes": [
+        "JUV",
+        "BGUK"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Innaarsuit",
       "Upernavik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:36Z",
+  "date-time-wikidata": "2025-07-16T19:45:23Z"
 }

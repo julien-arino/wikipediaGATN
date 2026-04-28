@@ -19,23 +19,35 @@
     "Daily Air"
   ],
   "destinations": [
-    [
-      "Kaohsiung",
-      "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
-      "KHH",
-      "RCKH"
-    ],
-    [
-      "Penghu",
-      "https://en.wikipedia.org/wiki/Penghu_Airport",
-      "MZG",
-      "RCQC"
-    ]
+    {
+      "city": "Kaohsiung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
+      "codes": [
+        "KHH",
+        "RCKH"
+      ],
+      "airlines": [
+        "Daily Air"
+      ]
+    },
+    {
+      "city": "Penghu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penghu_Airport",
+      "codes": [
+        "MZG",
+        "RCQC"
+      ],
+      "airlines": [
+        "Daily Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Daily Air": [
       "Kaohsiung",
       "Penghu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:58Z",
+  "date-time-wikidata": "2026-04-12T05:26:48Z"
 }

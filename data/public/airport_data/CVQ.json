@@ -20,18 +20,29 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Monkey Mia",
-      "https://en.wikipedia.org/wiki/Shark_Bay_Airport",
-      "MJK",
-      "YSHK"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Monkey Mia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shark_Bay_Airport",
+      "codes": [
+        "MJK",
+        "YSHK"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "National Jet Express",
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
@@ -41,5 +52,7 @@
     "National Jet Express": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:13Z",
+  "date-time-wikidata": "2025-09-08T15:02:07Z"
 }

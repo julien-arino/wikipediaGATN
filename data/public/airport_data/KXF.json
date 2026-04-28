@@ -20,12 +20,18 @@
     "Northern Air"
   ],
   "destinations": [
-    [
-      "Suva",
-      "https://en.wikipedia.org/wiki/Nausori_International_Airport",
-      "SUV",
-      "NFNA"
-    ]
+    {
+      "city": "Suva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nausori_International_Airport",
+      "codes": [
+        "SUV",
+        "NFNA"
+      ],
+      "airlines": [
+        "Fiji Link",
+        "Northern Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fiji Link": [
@@ -34,5 +40,7 @@
     "Northern Air": [
       "Suva"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:12Z",
+  "date-time-wikidata": "2026-03-15T21:12:27Z"
 }

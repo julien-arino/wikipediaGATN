@@ -19,23 +19,35 @@
     "NordStar"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Yemelyanovo_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ]
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yemelyanovo_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "NordStar": [
       "Krasnoyarsk–International",
       "Novosibirsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:17Z",
+  "date-time-wikidata": "2025-11-08T08:23:00Z"
 }

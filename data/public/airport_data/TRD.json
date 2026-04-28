@@ -30,192 +30,363 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Bergen",
-      "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Bodø",
-      "https://en.wikipedia.org/wiki/Bodø_Airport",
-      "BOO",
-      "ENBO"
-    ],
-    [
-      "Brønnøysund",
-      "https://en.wikipedia.org/wiki/Brønnøysund_Airport,_Brønnøy",
-      "BNN",
-      "ENBN"
-    ],
-    [
-      "Burgas",
-      "https://en.wikipedia.org/wiki/Burgas_Airport",
-      "BOJ",
-      "LBBG"
-    ],
-    [
-      "Chania",
-      "https://en.wikipedia.org/wiki/Chania_International_Airport",
-      "CHQ",
-      "LGSA"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
-      "LCA",
-      "LCLK"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Mosjøen",
-      "https://en.wikipedia.org/wiki/Mosjøen_Airport,_Kjærstad",
-      "MJF",
-      "ENMS"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Namsos",
-      "https://en.wikipedia.org/wiki/Namsos_Airport,_Høknesøra",
-      "OSY",
-      "ENNM"
-    ],
-    [
-      "Nice",
-      "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Riga",
-      "https://en.wikipedia.org/wiki/Riga_International_Airport",
-      "RIX",
-      "EVRA"
-    ],
-    [
-      "Sandnessjøen",
-      "https://en.wikipedia.org/wiki/Sandnessjøen_Airport,_Stokka",
-      "SSJ",
-      "ENST"
-    ],
-    [
-      "Split",
-      "https://en.wikipedia.org/wiki/Split_Airport",
-      "SPU",
-      "LDSP"
-    ],
-    [
-      "Stavanger",
-      "https://en.wikipedia.org/wiki/Stavanger_Airport,_Sola",
-      "SVG",
-      "ENZV"
-    ],
-    [
-      "Tenerife–South",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "TFS",
-      "GCTS"
-    ],
-    [
-      "Tromsø",
-      "https://en.wikipedia.org/wiki/Tromsø_Airport",
-      "TOS",
-      "ENTC"
-    ],
-    [
-      "Varna",
-      "https://en.wikipedia.org/wiki/Varna_Airport",
-      "VAR",
-      "LBWN"
-    ],
-    [
-      "Ålesund",
-      "https://en.wikipedia.org/wiki/Ålesund_Airport,_Vigra",
-      "AES",
-      "ENAL"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Freebird Airlines",
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Bergen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Bodø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bodø_Airport",
+      "codes": [
+        "BOO",
+        "ENBO"
+      ],
+      "airlines": [
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Brønnøysund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brønnøysund_Airport,_Brønnøy",
+      "codes": [
+        "BNN",
+        "ENBN"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Burgas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burgas_Airport",
+      "codes": [
+        "BOJ",
+        "LBBG"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Chania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_International_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Larnaca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "codes": [
+        "LCA",
+        "LCLK"
+      ],
+      "airlines": [
+        "Jettime",
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Mosjøen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mosjøen_Airport,_Kjærstad",
+      "codes": [
+        "MJF",
+        "ENMS"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Namsos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Namsos_Airport,_Høknesøra",
+      "codes": [
+        "OSY",
+        "ENNM"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Amapola Flyg",
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Amapola Flyg",
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Norwegian Air Shuttle",
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Sandnessjøen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandnessjøen_Airport,_Stokka",
+      "codes": [
+        "SSJ",
+        "ENST"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Split",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Split_Airport",
+      "codes": [
+        "SPU",
+        "LDSP"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Stavanger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stavanger_Airport,_Sola",
+      "codes": [
+        "SVG",
+        "ENZV"
+      ],
+      "airlines": [
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Tromsø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tromsø_Airport",
+      "codes": [
+        "TOS",
+        "ENTC"
+      ],
+      "airlines": [
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Varna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Varna_Airport",
+      "codes": [
+        "VAR",
+        "LBWN"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Ålesund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ålesund_Airport,_Vigra",
+      "codes": [
+        "AES",
+        "ENAL"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -286,5 +457,7 @@
     "Amapola Flyg": [
       "Oslo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:37Z",
+  "date-time-wikidata": "2026-03-25T13:29:20Z"
 }

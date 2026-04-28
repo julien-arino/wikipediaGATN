@@ -25,24 +25,44 @@
     "TransNusa"
   ],
   "destinations": [
-    [
-      "Batam",
-      "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
-      "BTH",
-      "WIDD"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ]
+    {
+      "city": "Batam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
+      "codes": [
+        "BTH",
+        "WIDD"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Citilink",
+        "Garuda Indonesia",
+        "Indonesia AirAsia",
+        "Lion Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "Sriwijaya Air",
+        "TransNusa"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Citilink": [
@@ -67,5 +87,7 @@
     "TransNusa": [
       "Kuala Lumpur–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:31Z",
+  "date-time-wikidata": "2026-04-24T05:18:14Z"
 }

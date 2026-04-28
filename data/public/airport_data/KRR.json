@@ -40,156 +40,297 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Batumi",
-      "https://en.wikipedia.org/wiki/Batumi_International_Airport",
-      "BUS",
-      "UGSB"
-    ],
-    [
-      "Chelyabinsk",
-      "https://en.wikipedia.org/wiki/Kurchatov_Chelyabinsk_International_Airport",
-      "CEK",
-      "USCC"
-    ],
-    [
-      "Dubai–Al Maktoum",
-      "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "DWC",
-      "OMDW"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Namangan",
-      "https://en.wikipedia.org/wiki/Namangan_Airport",
-      "NMA",
-      "UZFN"
-    ],
-    [
-      "Nha Trang",
-      "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport",
-      "CXR",
-      "VVCR"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Samarqand",
-      "https://en.wikipedia.org/wiki/Samarqand_International_Airport",
-      "SKD",
-      "UZSS"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Farman_Salmanov_Surgut_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Tbilisi",
-      "https://en.wikipedia.org/wiki/Tbilisi_International_Airport",
-      "TBS",
-      "UGTB"
-    ],
-    [
-      "Tel Aviv",
-      "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
-      "TLV",
-      "LLBG"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "UFA",
-      "UWUU"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Yerevan",
-      "https://en.wikipedia.org/wiki/Zvartnots_Airport",
-      "EVN",
-      "UDYZ"
-    ],
-    [
-      "Şymkent",
-      "https://en.wikipedia.org/wiki/Şymkent_International_Airport",
-      "CIT",
-      "UAII"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "IrAero",
+        "Southwind Airlines",
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Batumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Batumi_International_Airport",
+      "codes": [
+        "BUS",
+        "UGSB"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Chelyabinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurchatov_Chelyabinsk_International_Airport",
+      "codes": [
+        "CEK",
+        "USCC"
+      ],
+      "airlines": [
+        "Nordstar Airlines",
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Nordwind Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Namangan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Namangan_Airport",
+      "codes": [
+        "NMA",
+        "UZFN"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Nha Trang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport",
+      "codes": [
+        "CXR",
+        "VVCR"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Alrosa",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda",
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Samarqand",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samarqand_International_Airport",
+      "codes": [
+        "SKD",
+        "UZSS"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "AlMasria Universal Airlines",
+        "Nesma Airlines",
+        "Red Sea Airlines",
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Farman_Salmanov_Surgut_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tbilisi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tbilisi_International_Airport",
+      "codes": [
+        "TBS",
+        "UGTB"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "codes": [
+        "TLV",
+        "LLBG"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Pobeda",
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Yerevan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zvartnots_Airport",
+      "codes": [
+        "EVN",
+        "UDYZ"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "FlyOne",
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Şymkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Şymkent_International_Airport",
+      "codes": [
+        "CIT",
+        "UAII"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -277,5 +418,7 @@
     "Uzbekistan Airways": [
       "Namangan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:06Z",
+  "date-time-wikidata": "2026-04-25T02:21:59Z"
 }

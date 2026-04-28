@@ -19,23 +19,35 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Cold Bay",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
-      "CDB",
-      "PACD"
-    ],
-    [
-      "Port Moller",
-      "https://en.wikipedia.org/wiki/Port_Moller_Airport",
-      "PML",
-      "PAAL"
-    ]
+    {
+      "city": "Cold Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Port Moller",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Moller_Airport",
+      "codes": [
+        "PML",
+        "PAAL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
       "Cold Bay",
       "Port Moller"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:59Z",
+  "date-time-wikidata": "2025-05-31T02:28:45Z"
 }

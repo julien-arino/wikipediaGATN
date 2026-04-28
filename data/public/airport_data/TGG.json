@@ -21,18 +21,30 @@
     "Malaysia Airlines"
   ],
   "destinations": [
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kuala Lumpur–Subang",
-      "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
-      "SZB",
-      "WMSA"
-    ]
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Firefly",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–Subang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
+      "codes": [
+        "SZB",
+        "WMSA"
+      ],
+      "airlines": [
+        "Firefly"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -45,5 +57,7 @@
     "Malaysia Airlines": [
       "Kuala Lumpur–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:23Z",
+  "date-time-wikidata": "2025-09-13T06:33:12Z"
 }

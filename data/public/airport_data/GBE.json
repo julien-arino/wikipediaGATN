@@ -22,66 +22,119 @@
     "South African Airways"
   ],
   "destinations": [
-    [
-      "Addis Ababa Bole International Airport",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Cape Town Airport",
-      "https://en.wikipedia.org/wiki/Cape_Town_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Francistown Airport",
-      "https://en.wikipedia.org/wiki/Francistown_Airport",
-      "FRW",
-      "FBPM"
-    ],
-    [
-      "Hosea Kutako International Airport",
-      "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
-      "WDH",
-      "FYWH"
-    ],
-    [
-      "Kasane Airport",
-      "https://en.wikipedia.org/wiki/Kasane_Airport",
-      "BBK",
-      "FBKE"
-    ],
-    [
-      "King Shaka International Airport",
-      "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
-      "DUR",
-      "FALE"
-    ],
-    [
-      "Lusaka Airport",
-      "https://en.wikipedia.org/wiki/Lusaka_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Maun Airport",
-      "https://en.wikipedia.org/wiki/Maun_Airport",
-      "MUB",
-      "FBMN"
-    ],
-    [
-      "O. R. Tambo International Airport",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Robert Gabriel Mugabe International Airport",
-      "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
-      "HRE",
-      "FVRG"
-    ]
+    {
+      "city": "Addis Ababa Bole International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Cape Town Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Air Botswana",
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Francistown Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francistown_Airport",
+      "codes": [
+        "FRW",
+        "FBPM"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Hosea Kutako International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
+      "codes": [
+        "WDH",
+        "FYWH"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Kasane Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kasane_Airport",
+      "codes": [
+        "BBK",
+        "FBKE"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "King Shaka International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
+      "codes": [
+        "DUR",
+        "FALE"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Lusaka Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lusaka_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Maun Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maun_Airport",
+      "codes": [
+        "MUB",
+        "FBMN"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "O. R. Tambo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Air Botswana",
+        "Airlink",
+        "South African Airways"
+      ]
+    },
+    {
+      "city": "Robert Gabriel Mugabe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
+      "codes": [
+        "HRE",
+        "FVRG"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Botswana": [
@@ -105,5 +158,7 @@
     "South African Airways": [
       "O. R. Tambo International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:48Z",
+  "date-time-wikidata": "2026-04-20T17:01:32Z"
 }

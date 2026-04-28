@@ -21,30 +21,53 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Kiunga",
-      "https://en.wikipedia.org/wiki/Kiunga_Airport",
-      "UNG",
-      "AYKI"
-    ],
-    [
-      "Mount Hagen",
-      "https://en.wikipedia.org/wiki/Mount_Hagen_Airport",
-      "HGU",
-      "AYMH"
-    ],
-    [
-      "Port Moresby",
-      "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
-      "POM",
-      "AYPY"
-    ]
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Asia Pacific Airlines"
+      ]
+    },
+    {
+      "city": "Kiunga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kiunga_Airport",
+      "codes": [
+        "UNG",
+        "AYKI"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Mount Hagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Hagen_Airport",
+      "codes": [
+        "HGU",
+        "AYMH"
+      ],
+      "airlines": [
+        "Asia Pacific Airlines",
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Port Moresby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
+      "codes": [
+        "POM",
+        "AYPY"
+      ],
+      "airlines": [
+        "Air Niugini",
+        "Asia Pacific Airlines",
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Niugini": [
@@ -60,5 +83,7 @@
       "Mount Hagen",
       "Port Moresby"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:05Z",
+  "date-time-wikidata": "2025-10-04T01:44:25Z"
 }

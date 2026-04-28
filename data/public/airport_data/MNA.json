@@ -21,24 +21,41 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Manado",
-      "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
-      "MDC",
-      "WAMM"
-    ],
-    [
-      "Miangas",
-      "https://en.wikipedia.org/wiki/Miangas_Airport",
-      "IAX",
-      "WAMS"
-    ],
-    [
-      "Tahuna",
-      "https://en.wikipedia.org/wiki/Naha_Airport_(Indonesia)",
-      "NAH",
-      "WAMH"
-    ]
+    {
+      "city": "Manado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
+      "codes": [
+        "MDC",
+        "WAMM"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Miangas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miangas_Airport",
+      "codes": [
+        "IAX",
+        "WAMS"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Tahuna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport_(Indonesia)",
+      "codes": [
+        "NAH",
+        "WAMH"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
@@ -52,5 +69,7 @@
       "Manado",
       "Tahuna"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:46Z",
+  "date-time-wikidata": "2026-04-16T06:37:21Z"
 }

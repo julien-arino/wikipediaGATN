@@ -7,6 +7,7 @@
   "lat": "3.1035313",
   "lon": "43.6287094",
   "altitude": "458.72",
+  "continent": "Africa",
   "region": "Bay",
   "country_alpha3": "SOM",
   "country_name": "Somalia",
@@ -18,17 +19,23 @@
     "Jubba Airways"
   ],
   "destinations": [
-    [
-      "Mogadishu",
-      "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
-      "MGQ",
-      "HCMM"
-    ]
+    {
+      "city": "Mogadishu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
+      "codes": [
+        "MGQ",
+        "HCMM"
+      ],
+      "airlines": [
+        "Jubba Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jubba Airways": [
       "Mogadishu"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:04:03Z",
+  "date-time-wikidata": "2025-09-07T03:20:10Z"
 }

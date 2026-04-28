@@ -20,24 +20,40 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Fairbanks International Airport",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Fort Yukon Airport",
-      "https://en.wikipedia.org/wiki/Fort_Yukon_Airport",
-      "FYU",
-      "PFYU"
-    ],
-    [
-      "Venetie Airport",
-      "https://en.wikipedia.org/wiki/Venetie_Airport",
-      "VEE",
-      "PAVE"
-    ]
+    {
+      "city": "Fairbanks International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Everts Air",
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fort Yukon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Yukon_Airport",
+      "codes": [
+        "FYU",
+        "PFYU"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Venetie Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venetie_Airport",
+      "codes": [
+        "VEE",
+        "PAVE"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Everts Air": [
@@ -48,5 +64,7 @@
       "Fort Yukon Airport",
       "Venetie Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:49Z",
+  "date-time-wikidata": "2026-01-28T05:21:18Z"
 }

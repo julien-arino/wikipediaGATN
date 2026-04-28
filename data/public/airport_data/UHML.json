@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UHML",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Lavrentiya",
+  "city-served-wikipedia": "[[Lavrentiya]]",
   "location": "[[Lavrentiya]]",
   "lat": "65.580000",
   "lon": "-170.996667",
@@ -19,16 +19,23 @@
     "Chukotavia"
   ],
   "destinations": [
-    [
-      "Anadyr",
-      "https://en.wikipedia.org/wiki/Ugolny_Airport",
-      "DYR",
-      "UHMA"
-    ]
+    {
+      "city": "Anadyr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ugolny_Airport",
+      "codes": [
+        "DYR",
+        "UHMA"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chukotavia": [
       "Anadyr"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:30Z",
+  "date-time-wikidata": "2025-11-06T21:25:59Z"
 }

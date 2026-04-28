@@ -22,48 +22,83 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Ajaccio – Napoléon Bonaparte Airport",
-      "https://en.wikipedia.org/wiki/Ajaccio_%E2%80%93_Napol%C3%A9on_Bonaparte_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Bastia Airport",
-      "https://en.wikipedia.org/wiki/Bastia_Airport",
-      "BIA",
-      "LFKB"
-    ],
-    [
-      "Figari Airport",
-      "https://en.wikipedia.org/wiki/Figari_Airport",
-      "FSC",
-      "LFKF"
-    ],
-    [
-      "Houari Boumediene Airport",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Nice Airport",
-      "https://en.wikipedia.org/wiki/Nice_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris%E2%80%93Charles_de_Gaulle",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Porto Airport",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ]
+    {
+      "city": "Ajaccio – Napoléon Bonaparte Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_%E2%80%93_Napol%C3%A9on_Bonaparte_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Bastia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia_Airport",
+      "codes": [
+        "BIA",
+        "LFKB"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Figari Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Figari_Airport",
+      "codes": [
+        "FSC",
+        "LFKF"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Houari Boumediene Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    },
+    {
+      "city": "Nice Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris%E2%80%93Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Porto Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Corsica": [
@@ -81,5 +116,7 @@
     "Ryanair": [
       "Porto Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:35Z",
+  "date-time-wikidata": "2026-01-02T14:36:03Z"
 }

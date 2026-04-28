@@ -19,23 +19,35 @@
     "Alliance Airlines"
   ],
   "destinations": [
-    [
-      "Brisbane Airport",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Moomba Airport",
-      "https://en.wikipedia.org/wiki/Moomba_Airport",
-      "MOO",
-      "YOOM"
-    ]
+    {
+      "city": "Brisbane Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Moomba Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moomba_Airport",
+      "codes": [
+        "MOO",
+        "YOOM"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
       "Brisbane Airport",
       "Moomba Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:18Z",
+  "date-time-wikidata": "2025-03-06T20:27:16Z"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "YVZ",
   "icao": "CYVZ",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Deer Lake, Ontario",
+  "city-served-wikipedia": "[[Deer Lake, Ontario]]",
   "location": "[[Deer Lake, Ontario]]",
   "lat": "52.655833",
   "lon": "-94.061389",
@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
   "number_airlines": 4,
   "outdegree": 6,
@@ -22,42 +22,73 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Poplar Hill",
-      "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
-      "YHP",
-      "icao code not found"
-    ],
-    [
-      "Red Lake",
-      "https://en.wikipedia.org/wiki/Red_Lake_Airport",
-      "YRL",
-      "CYRL"
-    ],
-    [
-      "Sandy Lake",
-      "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
-      "ZSJ",
-      "CZSJ"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ],
-    [
-      "Winnipeg/St. Andrews",
-      "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
-      "iata code not found",
-      "CYAV"
-    ]
+    {
+      "city": "Poplar Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    },
+    {
+      "city": "Red Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Lake_Airport",
+      "codes": [
+        "YRL",
+        "CYRL"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Sandy Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandy_Lake_Airport",
+      "codes": [
+        "ZSJ",
+        "CZSJ"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg/St. Andrews",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
+      "codes": [
+        "iata code not found",
+        "CYAV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -75,5 +106,7 @@
       "Sioux Lookout",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:07Z",
+  "date-time-wikidata": "2025-07-23T21:51:42Z"
 }

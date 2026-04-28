@@ -21,30 +21,50 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Victoria",
-      "https://en.wikipedia.org/wiki/Victoria_International_Airport",
-      "YYJ",
-      "CYYJ"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Victoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
+      "codes": [
+        "YYJ",
+        "CYYJ"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -57,5 +77,7 @@
       "Calgary",
       "Edmonton"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:35Z",
+  "date-time-wikidata": "2026-03-09T17:09:13Z"
 }

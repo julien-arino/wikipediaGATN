@@ -21,30 +21,51 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Fortaleza",
-      "https://en.wikipedia.org/wiki/Fortaleza_Airport",
-      "FOR",
-      "SBFZ"
-    ],
-    [
-      "Recife",
-      "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
-      "REC",
-      "SBRF"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Fortaleza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fortaleza_Airport",
+      "codes": [
+        "FOR",
+        "SBFZ"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -58,5 +79,7 @@
       "Fortaleza",
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:17Z",
+  "date-time-wikidata": "2026-01-16T19:56:01Z"
 }

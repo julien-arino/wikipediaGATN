@@ -20,24 +20,41 @@
     "EcoJet"
   ],
   "destinations": [
-    [
-      "Cochabamba",
-      "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
-      "CBB",
-      "SLCB"
-    ],
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
-      "LPB",
-      "SLLP"
-    ],
-    [
-      "Santa Cruz de la Sierra–Viru Viru",
-      "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
-      "VVI",
-      "SLVR"
-    ]
+    {
+      "city": "Cochabamba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
+      "codes": [
+        "CBB",
+        "SLCB"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet"
+      ]
+    },
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
+      "codes": [
+        "LPB",
+        "SLLP"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Santa Cruz de la Sierra–Viru Viru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
+      "codes": [
+        "VVI",
+        "SLVR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -49,5 +66,7 @@
       "Cochabamba",
       "Santa Cruz de la Sierra–Viru Viru"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:18Z",
+  "date-time-wikidata": "2025-10-07T03:12:06Z"
 }

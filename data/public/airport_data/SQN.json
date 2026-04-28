@@ -19,23 +19,35 @@
     "Trigana Air Service"
   ],
   "destinations": [
-    [
-      "Ambon",
-      "https://en.wikipedia.org/wiki/Pattimura_Airport",
-      "AMQ",
-      "WAPP"
-    ],
-    [
-      "Ternate",
-      "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
-      "TTE",
-      "WAEE"
-    ]
+    {
+      "city": "Ambon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pattimura_Airport",
+      "codes": [
+        "AMQ",
+        "WAPP"
+      ],
+      "airlines": [
+        "Trigana Air Service"
+      ]
+    },
+    {
+      "city": "Ternate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
+      "codes": [
+        "TTE",
+        "WAEE"
+      ],
+      "airlines": [
+        "Trigana Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Trigana Air Service": [
       "Ambon",
       "Ternate"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:18Z",
+  "date-time-wikidata": "2026-02-26T13:30:17Z"
 }

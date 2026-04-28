@@ -21,24 +21,39 @@
     "NordStar"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/Irkutsk_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Krasnoyarsk–Yemelyanovo",
-      "https://en.wikipedia.org/wiki/Yemelyanovo_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Irkutsk_Airport",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–Yemelyanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yemelyanovo_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IrAero": [
@@ -50,5 +65,7 @@
     "NordStar": [
       "Krasnoyarsk–Yemelyanovo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:08Z",
+  "date-time-wikidata": "2025-11-08T07:37:34Z"
 }

@@ -7,6 +7,7 @@
   "lat": "-15.1039308",
   "lon": "39.2890083",
   "altitude": "440",
+  "continent": "Africa",
   "region": "Nampula",
   "country_alpha3": "MOZ",
   "country_name": "Mozambique",
@@ -20,48 +21,85 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Beira",
-      "https://en.wikipedia.org/wiki/Beira_Airport",
-      "BEW",
-      "FQBR"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Lichinga",
-      "https://en.wikipedia.org/wiki/Lichinga_Airport",
-      "VXC",
-      "FQLC"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Tete",
-      "https://en.wikipedia.org/wiki/Chingozi_Airport",
-      "TET",
-      "FQTT"
-    ]
+    {
+      "city": "Beira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beira_Airport",
+      "codes": [
+        "BEW",
+        "FQBR"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Lichinga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lichinga_Airport",
+      "codes": [
+        "VXC",
+        "FQLC"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Tete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chingozi_Airport",
+      "codes": [
+        "TET",
+        "FQTT"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -78,5 +116,6 @@
       "Tete"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:03:33Z",
+  "date-time-wikidata": "2025-09-25T16:16:16Z"
 }

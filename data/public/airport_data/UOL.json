@@ -20,18 +20,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Gorontalo",
-      "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
-      "GTO",
-      "WAMG"
-    ],
-    [
-      "Palu",
-      "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
-      "PLW",
-      "WAFF"
-    ]
+    {
+      "city": "Gorontalo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
+      "codes": [
+        "GTO",
+        "WAMG"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Palu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
+      "codes": [
+        "PLW",
+        "WAFF"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -40,5 +50,7 @@
     "Wings Air": [
       "Palu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:55Z",
+  "date-time-wikidata": "2026-03-02T09:21:09Z"
 }

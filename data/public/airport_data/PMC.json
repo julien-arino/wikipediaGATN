@@ -21,42 +21,79 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Balmaceda",
-      "https://en.wikipedia.org/wiki/Balmaceda_Airport",
-      "BBA",
-      "SCBA"
-    ],
-    [
-      "Concepción",
-      "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
-      "CCP",
-      "SCIE"
-    ],
-    [
-      "Puerto Natales",
-      "https://en.wikipedia.org/wiki/Teniente_Julio_Gallardo_Airport",
-      "PNT",
-      "SCNT"
-    ],
-    [
-      "Punta Arenas",
-      "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
-      "PUQ",
-      "SCCI"
-    ],
-    [
-      "San Carlos de Bariloche",
-      "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
-      "BRC",
-      "SAZS"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Balmaceda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balmaceda_Airport",
+      "codes": [
+        "BBA",
+        "SCBA"
+      ],
+      "airlines": [
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Concepción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
+      "codes": [
+        "CCP",
+        "SCIE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Puerto Natales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teniente_Julio_Gallardo_Airport",
+      "codes": [
+        "PNT",
+        "SCNT"
+      ],
+      "airlines": [
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Punta Arenas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
+      "codes": [
+        "PUQ",
+        "SCCI"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "San Carlos de Bariloche",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
+      "codes": [
+        "BRC",
+        "SAZS"
+      ],
+      "airlines": [
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Chile": [
@@ -78,5 +115,7 @@
       "San Carlos de Bariloche",
       "Santiago de Chile"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:25Z",
+  "date-time-wikidata": "2026-02-19T10:18:27Z"
 }

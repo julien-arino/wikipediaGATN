@@ -20,24 +20,39 @@
     "IrAero"
   ],
   "destinations": [
-    [
-      "Anadyr",
-      "https://en.wikipedia.org/wiki/Ugolny_Airport",
-      "DYR",
-      "UHMA"
-    ],
-    [
-      "Magadan",
-      "https://en.wikipedia.org/wiki/Magadan_Airport",
-      "GDX",
-      "UHMM"
-    ],
-    [
-      "Pevek",
-      "https://en.wikipedia.org/wiki/Pevek_Airport",
-      "PWE",
-      "UHMP"
-    ]
+    {
+      "city": "Anadyr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ugolny_Airport",
+      "codes": [
+        "DYR",
+        "UHMA"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Magadan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magadan_Airport",
+      "codes": [
+        "GDX",
+        "UHMM"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Pevek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pevek_Airport",
+      "codes": [
+        "PWE",
+        "UHMP"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Chukotavia": [
@@ -47,5 +62,7 @@
     "IrAero": [
       "Magadan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:02Z",
+  "date-time-wikidata": "2025-11-06T21:38:25Z"
 }

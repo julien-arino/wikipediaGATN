@@ -19,24 +19,39 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Khanty-Mansiysk",
-      "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
-      "HMA",
-      "USHH"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Tyumen_Airport",
-      "TJM",
-      "USTR"
-    ]
+    {
+      "city": "Khanty-Mansiysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
+      "codes": [
+        "HMA",
+        "USHH"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tyumen_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Utair": [
@@ -44,5 +59,7 @@
       "Surgut",
       "Tyumen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:48Z",
+  "date-time-wikidata": "2025-11-03T17:41:55Z"
 }

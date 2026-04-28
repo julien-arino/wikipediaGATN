@@ -19,23 +19,35 @@
     "Advanced Air"
   ],
   "destinations": [
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Advanced Air": [
       "Harry Reid International Airport",
       "Phoenix Sky Harbor International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:37Z",
+  "date-time-wikidata": "2025-11-08T13:05:55Z"
 }

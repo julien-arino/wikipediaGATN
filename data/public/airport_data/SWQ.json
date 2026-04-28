@@ -7,6 +7,7 @@
   "lat": "-8.4872496",
   "lon": "117.411007",
   "altitude": "5.79",
+  "continent": "Asia",
   "region": "West Nusa Tenggara",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -18,18 +19,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Denpasar",
-      "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
-      "DPS",
-      "WADD"
-    ],
-    [
-      "Lombok",
-      "https://en.wikipedia.org/wiki/Lombok_International_Airport",
-      "LOP",
-      "WADL"
-    ]
+    {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Lombok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombok_International_Airport",
+      "codes": [
+        "LOP",
+        "WADL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wings Air": [
@@ -37,5 +48,6 @@
       "Lombok"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:13:17Z",
+  "date-time-wikidata": "2026-03-24T00:40:19Z"
 }

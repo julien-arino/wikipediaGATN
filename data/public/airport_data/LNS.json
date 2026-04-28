@@ -21,30 +21,50 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Pittsburgh International Airport",
-      "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
-      "PIT",
-      "KPIT"
-    ]
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Pittsburgh International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
+      "codes": [
+        "PIT",
+        "KPIT"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Breeze Airways": [
@@ -57,5 +77,7 @@
     "United Express": [
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:09Z",
+  "date-time-wikidata": "2026-04-14T15:50:17Z"
 }

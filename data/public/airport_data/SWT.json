@@ -20,12 +20,18 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Tomsk",
-      "https://en.wikipedia.org/wiki/Tomsk_Kamov_Airport",
-      "TOF",
-      "UNTT"
-    ]
+    {
+      "city": "Tomsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tomsk_Kamov_Airport",
+      "codes": [
+        "TOF",
+        "UNTT"
+      ],
+      "airlines": [
+        "KrasAvia",
+        "Utair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KrasAvia": [
@@ -34,5 +40,7 @@
     "Utair": [
       "Tomsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:17Z",
+  "date-time-wikidata": "2025-11-03T20:03:46Z"
 }

@@ -30,126 +30,235 @@
     "UPS Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Aguadilla",
-      "https://en.wikipedia.org/wiki/Rafael_Hernández_Airport",
-      "BQN",
-      "TJBQ"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Bogota",
-      "https://en.wikipedia.org/wiki/Bogota_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Chongqing",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ],
-    [
-      "Medellín–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ],
-    [
-      "Memphis",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
-      "MEM",
-      "KMEM"
-    ],
-    [
-      "Mexico City–AIFA",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Aguadilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Hernández_Airport",
+      "codes": [
+        "BQN",
+        "TJBQ"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Martinair"
+      ]
+    },
+    {
+      "city": "Bogota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bogota_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Aerosucre"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca Cargo",
+        "Cargolux",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Mexico City–AIFA",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Air Canada Cargo",
+        "Atlas Air",
+        "Avianca Cargo",
+        "Emirates SkyCargo",
+        "Ethiopian Airlines Cargo",
+        "FedEx Express",
+        "Qatar Airways Cargo",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Cargo"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "LATAM Cargo Chile"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerosucre": [
@@ -205,5 +314,7 @@
     "UPS Airlines": [
       "Miami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:51Z",
+  "date-time-wikidata": "2026-03-24T15:12:30Z"
 }

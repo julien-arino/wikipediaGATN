@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Lábrea",
-      "https://en.wikipedia.org/wiki/Lábrea_Airport",
-      "LBR",
-      "SWLB"
-    ],
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ]
+    {
+      "city": "Lábrea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lábrea_Airport",
+      "codes": [
+        "LBR",
+        "SWLB"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Lábrea",
       "Manaus"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:55Z",
+  "date-time-wikidata": "2024-05-30T07:26:41Z"
 }

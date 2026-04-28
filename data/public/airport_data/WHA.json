@@ -25,72 +25,128 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Changchun",
-      "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport",
-      "CGQ",
-      "ZYCC"
-    ],
-    [
-      "Changsha",
-      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
-      "CSX",
-      "ZGHA"
-    ],
-    [
-      "Chengdu–Tianfu",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Chongqing",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Dalian",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ],
-    [
-      "Foshan",
-      "https://en.wikipedia.org/wiki/Foshan_Shadi_Airport",
-      "FUO",
-      "ZGFS"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Guilin",
-      "https://en.wikipedia.org/wiki/Guilin_Liangjiang_International_Airport",
-      "KWL",
-      "ZGKL"
-    ],
-    [
-      "Kunming",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
-      "KMG",
-      "ZPPP"
-    ],
-    [
-      "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ]
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China United Airlines"
+      ]
+    },
+    {
+      "city": "Changchun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport",
+      "codes": [
+        "CGQ",
+        "ZYCC"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Changsha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu–Tianfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "China Express Airlines",
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Dalian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "Air Guilin"
+      ]
+    },
+    {
+      "city": "Foshan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Foshan_Shadi_Airport",
+      "codes": [
+        "FUO",
+        "ZGFS"
+      ],
+      "airlines": [
+        "China United Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Guilin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guilin_Liangjiang_International_Airport",
+      "codes": [
+        "KWL",
+        "ZGKL"
+      ],
+      "airlines": [
+        "Air Guilin"
+      ]
+    },
+    {
+      "city": "Kunming",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Shenzhen Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Guilin": [
@@ -119,5 +175,7 @@
       "Chengdu–Tianfu",
       "Chongqing"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:10Z",
+  "date-time-wikidata": "2026-04-09T21:22:06Z"
 }

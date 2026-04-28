@@ -20,36 +20,63 @@
     "Cebgo"
   ],
   "destinations": [
-    [
-      "Busuanga",
-      "https://en.wikipedia.org/wiki/Francisco_B._Reyes_Airport",
-      "USU",
-      "RPVV"
-    ],
-    [
-      "Caticlan",
-      "https://en.wikipedia.org/wiki/Godofredo_P._Ramos_Airport",
-      "MPH",
-      "RPVE"
-    ],
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Clark",
-      "https://en.wikipedia.org/wiki/Clark_International_Airport",
-      "CRK",
-      "RPLC"
-    ],
-    [
-      "Tagbilaran",
-      "https://en.wikipedia.org/wiki/Bohol–Panglao_International_Airport",
-      "TAG",
-      "RPSP"
-    ]
+    {
+      "city": "Busuanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_B._Reyes_Airport",
+      "codes": [
+        "USU",
+        "RPVV"
+      ],
+      "airlines": [
+        "AirSWIFT"
+      ]
+    },
+    {
+      "city": "Caticlan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Godofredo_P._Ramos_Airport",
+      "codes": [
+        "MPH",
+        "RPVE"
+      ],
+      "airlines": [
+        "AirSWIFT"
+      ]
+    },
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "AirSWIFT",
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
+      "codes": [
+        "CRK",
+        "RPLC"
+      ],
+      "airlines": [
+        "AirSWIFT",
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Tagbilaran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bohol–Panglao_International_Airport",
+      "codes": [
+        "TAG",
+        "RPSP"
+      ],
+      "airlines": [
+        "AirSWIFT"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirSWIFT": [
@@ -63,5 +90,7 @@
       "Cebu",
       "Clark"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:18Z",
+  "date-time-wikidata": "2026-04-05T23:28:16Z"
 }

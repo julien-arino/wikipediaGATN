@@ -19,24 +19,39 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Arutua",
-      "https://en.wikipedia.org/wiki/Arutua_Airport",
-      "AXR",
-      "NTGU"
-    ],
-    [
-      "Manihi",
-      "https://en.wikipedia.org/wiki/Manihi_Airport",
-      "XMH",
-      "NTGI"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ]
+    {
+      "city": "Arutua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arutua_Airport",
+      "codes": [
+        "AXR",
+        "NTGU"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Manihi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manihi_Airport",
+      "codes": [
+        "XMH",
+        "NTGI"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
@@ -44,5 +59,7 @@
       "Manihi",
       "Papeete"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:03Z",
+  "date-time-wikidata": "2025-04-01T21:53:58Z"
 }

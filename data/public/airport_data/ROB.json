@@ -26,78 +26,144 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Accra",
-      "https://en.wikipedia.org/wiki/Accra_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Banjul",
-      "https://en.wikipedia.org/wiki/Banjul_International_Airport",
-      "BJL",
-      "GBYD"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Conakry",
-      "https://en.wikipedia.org/wiki/Ahmed_Sékou_Touré_International_Airport",
-      "CKY",
-      "GUCY"
-    ],
-    [
-      "Freetown",
-      "https://en.wikipedia.org/wiki/Freetown_International_Airport",
-      "FNA",
-      "GFLL"
-    ],
-    [
-      "Freetown",
-      "https://en.wikipedia.org/wiki/Lungi_International_Airport",
-      "FNA",
-      "GFLL"
-    ],
-    [
-      "Lagos",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Accra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Peace",
+        "Kenya Airways",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Banjul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Banjul_International_Airport",
+      "codes": [
+        "BJL",
+        "GBYD"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Brussels Airlines"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Conakry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmed_Sékou_Touré_International_Airport",
+      "codes": [
+        "CKY",
+        "GUCY"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Freetown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Freetown_International_Airport",
+      "codes": [
+        "FNA",
+        "GFLL"
+      ],
+      "airlines": [
+        "Brussels Airlines",
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Freetown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lungi_International_Airport",
+      "codes": [
+        "FNA",
+        "GFLL"
+      ],
+      "airlines": [
+        "Brussels Airlines",
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
@@ -132,5 +198,7 @@
     "Turkish Airlines": [
       "Accra"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:49Z",
+  "date-time-wikidata": "2026-04-02T10:23:55Z"
 }

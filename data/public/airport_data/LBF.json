@@ -19,16 +19,23 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Denver",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ]
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "United Express": [
       "Denver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:52Z",
+  "date-time-wikidata": "2025-09-27T01:16:11Z"
 }

@@ -24,102 +24,184 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Alderney",
-      "https://en.wikipedia.org/wiki/Alderney_Airport",
-      "ACI",
-      "EGJA"
-    ],
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Belfast–City",
-      "https://en.wikipedia.org/wiki/Belfast_City_Airport",
-      "BHD",
-      "EGAC"
-    ],
-    [
-      "Belfast–International",
-      "https://en.wikipedia.org/wiki/Belfast_International_Airport",
-      "BFS",
-      "EGAA"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Edinburgh",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "EDI",
-      "EGPH"
-    ],
-    [
-      "Faro",
-      "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Glasgow",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "GLA",
-      "EGPF"
-    ],
-    [
-      "Guernsey",
-      "https://en.wikipedia.org/wiki/Guernsey_Airport",
-      "GCI",
-      "EGJB"
-    ],
-    [
-      "Jersey",
-      "https://en.wikipedia.org/wiki/Jersey_Airport",
-      "PRO",
-      "PROP"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Newcastle upon Tyne",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
-      "NCL",
-      "EGNT"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ]
+    {
+      "city": "Alderney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alderney_Airport",
+      "codes": [
+        "ACI",
+        "EGJA"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Belfast–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "codes": [
+        "BHD",
+        "EGAC"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Belfast–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
+      "codes": [
+        "BFS",
+        "EGAA"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Edinburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Faro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Glasgow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Guernsey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guernsey_Airport",
+      "codes": [
+        "GCI",
+        "EGJB"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Jersey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jersey_Airport",
+      "codes": [
+        "PRO",
+        "PROP"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Newcastle upon Tyne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "codes": [
+        "NCL",
+        "EGNT"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "TUI Airways",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -152,5 +234,7 @@
     "TUI Airways": [
       "Palma de Mallorca"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:11Z",
+  "date-time-wikidata": "2026-04-28T06:28:45Z"
 }

@@ -22,72 +22,132 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/Irkutsk_International_Airport",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Krasnodar",
-      "https://en.wikipedia.org/wiki/Pashkovsky_Airport",
-      "KRR",
-      "URKK"
-    ],
-    [
-      "Krasnoyarsk–Yemelyanovo",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Yemelyanovo_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Krasnoyarsk–Yemelyanovo",
-      "https://en.wikipedia.org/wiki/Yemelyanovo_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Domodedovo_International_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Novosibirsk_Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Polyarny",
-      "https://en.wikipedia.org/wiki/Polyarny_Airport",
-      "PYJ",
-      "UERP"
-    ],
-    [
-      "Yakutsk",
-      "https://en.wikipedia.org/wiki/Yakutsk_Airport",
-      "YKS",
-      "UEEE"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Irkutsk_International_Airport",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    },
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Krasnodar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pashkovsky_Airport",
+      "codes": [
+        "KRR",
+        "URKK"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–Yemelyanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Yemelyanovo_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "ALROSA",
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–Yemelyanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yemelyanovo_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "ALROSA",
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Domodedovo_International_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Novosibirsk_Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "ALROSA",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "ALROSA",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Polyarny",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polyarny_Airport",
+      "codes": [
+        "PYJ",
+        "UERP"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    },
+    {
+      "city": "Yakutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakutsk_Airport",
+      "codes": [
+        "YKS",
+        "UEEE"
+      ],
+      "airlines": [
+        "ALROSA",
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "ALROSA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ALROSA": [
@@ -110,5 +170,7 @@
       "Khabarovsk",
       "Yakutsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:21Z",
+  "date-time-wikidata": "2026-03-05T12:20:57Z"
 }

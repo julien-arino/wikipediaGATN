@@ -19,24 +19,39 @@
     "JSX (airline)"
   ],
   "destinations": [
-    [
-      "Dallas Love Field",
-      "https://en.wikipedia.org/wiki/Dallas_Love_Field",
-      "DAL",
-      "KDAL"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Scottsdale Airport",
-      "https://en.wikipedia.org/wiki/Scottsdale_Airport",
-      "SCF",
-      "KSDL"
-    ]
+    {
+      "city": "Dallas Love Field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Scottsdale Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scottsdale_Airport",
+      "codes": [
+        "SCF",
+        "KSDL"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JSX (airline)": [
@@ -44,5 +59,7 @@
       "Harry Reid International Airport",
       "Scottsdale Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:32Z",
+  "date-time-wikidata": "2026-04-13T06:18:42Z"
 }

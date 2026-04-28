@@ -20,18 +20,28 @@
     "All Nippon Airways"
   ],
   "destinations": [
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "ANA Wings"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -40,5 +50,7 @@
     "ANA Wings": [
       "Sapporo–Chitose"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:11Z",
+  "date-time-wikidata": "2026-04-14T02:57:40Z"
 }

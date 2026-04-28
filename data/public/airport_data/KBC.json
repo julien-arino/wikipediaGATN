@@ -19,24 +19,39 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Chalkyitsik Airport",
-      "https://en.wikipedia.org/wiki/Chalkyitsik_Airport",
-      "CIK",
-      "PACI"
-    ],
-    [
-      "Fairbanks International Airport",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Fort Yukon Airport",
-      "https://en.wikipedia.org/wiki/Fort_Yukon_Airport",
-      "FYU",
-      "PFYU"
-    ]
+    {
+      "city": "Chalkyitsik Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chalkyitsik_Airport",
+      "codes": [
+        "CIK",
+        "PACI"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fairbanks International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fort Yukon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Yukon_Airport",
+      "codes": [
+        "FYU",
+        "PFYU"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
@@ -44,5 +59,7 @@
       "Fairbanks International Airport",
       "Fort Yukon Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:32Z",
+  "date-time-wikidata": "2025-09-12T19:48:27Z"
 }

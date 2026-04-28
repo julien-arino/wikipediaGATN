@@ -11,7 +11,7 @@
   "region": "CA-BC",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "BC",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
   "number_airlines": 11,
   "outdegree": 16,
@@ -29,102 +29,191 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Friday Harbor",
-      "https://en.wikipedia.org/wiki/Friday_Harbor_Airport",
-      "FRD",
-      "KFHR"
-    ],
-    [
-      "Kamloops",
-      "https://en.wikipedia.org/wiki/Kamloops_Airport",
-      "YKA",
-      "CYKA"
-    ],
-    [
-      "Kelowna",
-      "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
-      "YLW",
-      "CYLW"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Prince George",
-      "https://en.wikipedia.org/wiki/Prince_George_Airport",
-      "YXS",
-      "CYXS"
-    ],
-    [
-      "Puerto Vallarta",
-      "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
-      "PVR",
-      "MMPR"
-    ],
-    [
-      "San José del Cabo",
-      "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
-      "SJD",
-      "MMSD"
-    ],
-    [
-      "Seattle/Tacoma",
-      "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Whitehorse",
-      "https://en.wikipedia.org/wiki/Erik_Nielsen_Whitehorse_International_Airport",
-      "YXY",
-      "CYXY"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Flair Airlines",
+        "WestJet",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Flair Airlines",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Friday Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Friday_Harbor_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Kenmore Air"
+      ]
+    },
+    {
+      "city": "Kamloops",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamloops_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Kelowna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Prince George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_George_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Puerto Vallarta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "San José del Cabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
+      "codes": [
+        "SJD",
+        "MMSD"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Porter Airlines",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Air North",
+        "Harbour Air",
+        "Pacific Coastal Airlines",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Whitehorse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erik_Nielsen_Whitehorse_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -174,5 +263,7 @@
       "Calgary",
       "Vancouver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:40Z",
+  "date-time-wikidata": "2026-03-09T14:18:13Z"
 }

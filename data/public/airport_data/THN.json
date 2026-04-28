@@ -19,24 +19,39 @@
     "NyxAir"
   ],
   "destinations": [
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Stockholm–Bromma",
-      "https://en.wikipedia.org/wiki/Stockholm_Bromma_Airport",
-      "BMA",
-      "ESSB"
-    ],
-    [
-      "Sälen-Trysil",
-      "https://en.wikipedia.org/wiki/Sälen/Scandinavian_Mountains_Airport",
-      "SCR",
-      "ESKS"
-    ]
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "NyxAir"
+      ]
+    },
+    {
+      "city": "Stockholm–Bromma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Bromma_Airport",
+      "codes": [
+        "BMA",
+        "ESSB"
+      ],
+      "airlines": [
+        "NyxAir"
+      ]
+    },
+    {
+      "city": "Sälen-Trysil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sälen/Scandinavian_Mountains_Airport",
+      "codes": [
+        "SCR",
+        "ESKS"
+      ],
+      "airlines": [
+        "NyxAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "NyxAir": [
@@ -44,5 +59,7 @@
       "Stockholm–Bromma",
       "Sälen-Trysil"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:25Z",
+  "date-time-wikidata": "2026-04-27T23:54:31Z"
 }

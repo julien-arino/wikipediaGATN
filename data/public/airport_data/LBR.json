@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Coari",
-      "https://en.wikipedia.org/wiki/Coari_Airport",
-      "CIZ",
-      "SWKO"
-    ],
-    [
-      "Porto Velho",
-      "https://en.wikipedia.org/wiki/Governador_Jorge_Teixeira_de_Oliveira_International_Airport",
-      "PVH",
-      "SBPV"
-    ]
+    {
+      "city": "Coari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coari_Airport",
+      "codes": [
+        "CIZ",
+        "SWKO"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Porto Velho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governador_Jorge_Teixeira_de_Oliveira_International_Airport",
+      "codes": [
+        "PVH",
+        "SBPV"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Coari",
       "Porto Velho"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:53Z",
+  "date-time-wikidata": "2026-03-21T21:35:04Z"
 }

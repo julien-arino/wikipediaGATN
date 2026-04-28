@@ -24,54 +24,95 @@
     "Sunday Airlines"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Aqtau",
-      "https://en.wikipedia.org/wiki/Aqtau_Airport",
-      "SCO",
-      "UATE"
-    ],
-    [
-      "Aqtöbe",
-      "https://en.wikipedia.org/wiki/Aktobe_International_Airport",
-      "AKX",
-      "UATT"
-    ],
-    [
-      "Astana",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Istanbul-Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Qarağandy",
-      "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
-      "KGF",
-      "UAKK"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "FlyArystan",
+        "Sunday Airlines"
+      ]
+    },
+    {
+      "city": "Aqtau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aqtau_Airport",
+      "codes": [
+        "SCO",
+        "UATE"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Aqtöbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktobe_International_Airport",
+      "codes": [
+        "AKX",
+        "UATT"
+      ],
+      "airlines": [
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Istanbul-Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Qarağandy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
+      "codes": [
+        "KGF",
+        "UAKK"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Centrum Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Centrum Air": [
@@ -95,5 +136,7 @@
     "Sunday Airlines": [
       "Antalya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:47Z",
+  "date-time-wikidata": "2026-04-22T18:05:43Z"
 }

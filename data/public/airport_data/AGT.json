@@ -22,36 +22,64 @@
     "Western Global Airlines"
   ],
   "destinations": [
-    [
-      "Bogota",
-      "https://en.wikipedia.org/wiki/Bogota_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Campinas_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Santiago_de_Chile_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Bogota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bogota_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Campinas_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Atlas Air",
+        "Western Global Airlines"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "Avianca Cargo",
+        "LATAM Cargo Chile"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago_de_Chile_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "Avianca Cargo",
+        "LATAM Cargo Chile"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca Cargo": [
@@ -68,5 +96,7 @@
     "Western Global Airlines": [
       "Miami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:01Z",
+  "date-time-wikidata": "2026-04-14T11:26:08Z"
 }

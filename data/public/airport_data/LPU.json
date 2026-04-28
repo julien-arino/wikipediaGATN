@@ -19,23 +19,35 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Samarinda",
-      "https://en.wikipedia.org/wiki/Samarinda_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tanjung Selor",
-      "https://en.wikipedia.org/wiki/Tanjung_Harapan_Airport",
-      "TJS",
-      "WAGD"
-    ]
+    {
+      "city": "Samarinda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samarinda_International_Airport",
+      "codes": [
+        "AAP",
+        "WALS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Tanjung Selor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tanjung_Harapan_Airport",
+      "codes": [
+        "TJS",
+        "WAGD"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Samarinda",
       "Tanjung Selor"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:26Z",
+  "date-time-wikidata": "2025-07-17T01:41:42Z"
 }

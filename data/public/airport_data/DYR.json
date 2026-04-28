@@ -22,72 +22,127 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Egvekinot",
-      "https://en.wikipedia.org/wiki/Egvekinot_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Keperveyem",
-      "https://en.wikipedia.org/wiki/Keperveyem_Airport",
-      "KPW",
-      "UHMK"
-    ],
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Lavrentiya",
-      "https://en.wikipedia.org/wiki/Lavrentiya_Airport",
-      "iata code not found",
-      "UHML"
-    ],
-    [
-      "Markovo",
-      "https://en.wikipedia.org/wiki/Markovo_Airport",
-      "KVM",
-      "UHMO"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Petropavlovsk-Kamchatsky",
-      "https://en.wikipedia.org/wiki/Yelizovo_Airport",
-      "PKC",
-      "UHPP"
-    ],
-    [
-      "Pevek",
-      "https://en.wikipedia.org/wiki/Pevek_Airport",
-      "PWE",
-      "UHMP"
-    ],
-    [
-      "Provideniya",
-      "https://en.wikipedia.org/wiki/Provideniya_Bay_Airport",
-      "PVS",
-      "UHMD"
-    ],
-    [
-      "Vladivostok",
-      "https://en.wikipedia.org/wiki/Knevichi_Airport",
-      "VVO",
-      "UHWW"
-    ]
+    {
+      "city": "Egvekinot",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Egvekinot_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Keperveyem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keperveyem_Airport",
+      "codes": [
+        "KPW",
+        "UHMK"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Lavrentiya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lavrentiya_Airport",
+      "codes": [
+        "iata code not found",
+        "UHML"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Markovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Markovo_Airport",
+      "codes": [
+        "KVM",
+        "UHMO"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Petropavlovsk-Kamchatsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yelizovo_Airport",
+      "codes": [
+        "PKC",
+        "UHPP"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    },
+    {
+      "city": "Pevek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pevek_Airport",
+      "codes": [
+        "PWE",
+        "UHMP"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Provideniya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Provideniya_Bay_Airport",
+      "codes": [
+        "PVS",
+        "UHMD"
+      ],
+      "airlines": [
+        "Chukotavia"
+      ]
+    },
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Knevichi_Airport",
+      "codes": [
+        "VVO",
+        "UHWW"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora": [
@@ -109,5 +164,7 @@
     "Yakutia Airlines": [
       "Khabarovsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:13Z",
+  "date-time-wikidata": "2025-10-29T05:22:45Z"
 }

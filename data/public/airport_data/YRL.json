@@ -11,7 +11,7 @@
   "region": "CA-ON",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "ON",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Lake_Airport",
   "number_airlines": 4,
   "outdegree": 7,
@@ -22,48 +22,86 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Deer Lake",
-      "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
-      "YVZ",
-      "CYVZ"
-    ],
-    [
-      "North Spirit Lake",
-      "https://en.wikipedia.org/wiki/North_Spirit_Lake_Airport",
-      "YNO",
-      "icao code not found"
-    ],
-    [
-      "Pikangikum",
-      "https://en.wikipedia.org/wiki/Pikangikum_Airport",
-      "YPM",
-      "CYPM"
-    ],
-    [
-      "Poplar Hill",
-      "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
-      "YHP",
-      "icao code not found"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Deer Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Lake_Airport_(Ontario)",
+      "codes": [
+        "YVZ",
+        "CYVZ"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "North Spirit Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Spirit_Lake_Airport",
+      "codes": [
+        "YNO",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Pikangikum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pikangikum_Airport",
+      "codes": [
+        "YPM",
+        "CYPM"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Poplar Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poplar_Hill_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "Superior Airways"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "Superior Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bearskin Airlines": [
@@ -84,5 +122,7 @@
     "Wasaya Airways": [
       "Sioux Lookout"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:27Z",
+  "date-time-wikidata": "2025-12-29T05:54:19Z"
 }

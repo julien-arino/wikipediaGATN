@@ -19,23 +19,35 @@
     "Manta Air"
   ],
   "destinations": [
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Velana International Airport",
-      "https://en.wikipedia.org/wiki/Velana_International_Airport",
-      "MLE",
-      "VRMM"
-    ]
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Manta Air"
+      ]
+    },
+    {
+      "city": "Velana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "Manta Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Manta Air": [
       "Kempegowda International Airport",
       "Velana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:19Z",
+  "date-time-wikidata": "2025-04-14T12:33:22Z"
 }

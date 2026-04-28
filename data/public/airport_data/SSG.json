@@ -29,90 +29,168 @@
     "World2Fly"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Bata",
-      "https://en.wikipedia.org/wiki/Bata_Airport",
-      "BSG",
-      "FGBT"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Douala",
-      "https://en.wikipedia.org/wiki/Douala_International_Airport",
-      "DLA",
-      "FKKD"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Libreville_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé-Tokoin_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Mengomeyén",
-      "https://en.wikipedia.org/wiki/President_Obiang_Nguema_International_Airport",
-      "GEM",
-      "FGMY"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Port Harcourt",
-      "https://en.wikipedia.org/wiki/Port_Harcourt_International_Airport",
-      "PHC",
-      "DNPO"
-    ],
-    [
-      "Yaoundé",
-      "https://en.wikipedia.org/wiki/Yaoundé_Nsimalen_International_Airport",
-      "NSI",
-      "FKYS"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Bata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bata_Airport",
+      "codes": [
+        "BSG",
+        "FGBT"
+      ],
+      "airlines": [
+        "CEIBA Intercontinental",
+        "Cronos Airlines"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Douala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douala_International_Airport",
+      "codes": [
+        "DLA",
+        "FKKD"
+      ],
+      "airlines": [
+        "Afrijet",
+        "Cronos Airlines",
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "Afrijet"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé-Tokoin_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "CEIBA Intercontinental"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "CEIBA Intercontinental"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Plus Ultra Líneas Aéreas",
+        "World2Fly"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Plus Ultra Líneas Aéreas",
+        "World2Fly"
+      ]
+    },
+    {
+      "city": "Mengomeyén",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/President_Obiang_Nguema_International_Airport",
+      "codes": [
+        "GEM",
+        "FGMY"
+      ],
+      "airlines": [
+        "CEIBA Intercontinental"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Port Harcourt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Harcourt_International_Airport",
+      "codes": [
+        "PHC",
+        "DNPO"
+      ],
+      "airlines": [
+        "Cronos Airlines",
+        "ValueJet"
+      ]
+    },
+    {
+      "city": "Yaoundé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaoundé_Nsimalen_International_Airport",
+      "codes": [
+        "NSI",
+        "FKYS"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afrijet": [
@@ -155,5 +233,7 @@
     "World2Fly": [
       "Madrid"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:20Z",
+  "date-time-wikidata": "2026-01-06T17:31:46Z"
 }

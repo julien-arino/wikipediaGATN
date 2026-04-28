@@ -20,12 +20,18 @@
     "LeAir"
   ],
   "destinations": [
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ]
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Flamingo Air",
+        "LeAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Flamingo Air": [
@@ -34,5 +40,7 @@
     "LeAir": [
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:16Z",
+  "date-time-wikidata": "2024-10-30T11:10:51Z"
 }

@@ -36,228 +36,420 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Alta",
-      "https://en.wikipedia.org/wiki/Alta_Airport",
-      "ALF",
-      "ENAT"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Andenes",
-      "https://en.wikipedia.org/wiki/Andøya_Airport,_Andenes",
-      "ANX",
-      "ENAN"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Berlevåg",
-      "https://en.wikipedia.org/wiki/Berlevåg_Airport",
-      "BVG",
-      "ENBV"
-    ],
-    [
-      "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Bodø",
-      "https://en.wikipedia.org/wiki/Bodø_Airport",
-      "BOO",
-      "ENBO"
-    ],
-    [
-      "Bristol",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-      "GDN",
-      "EPGD"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Hasvik",
-      "https://en.wikipedia.org/wiki/Hasvik_Airport",
-      "HAA",
-      "ENHK"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport",
-      "LTN",
-      "EGGW"
-    ],
-    [
-      "Longyearbyen",
-      "https://en.wikipedia.org/wiki/Svalbard_Airport",
-      "LYR",
-      "ENSB"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Mehamn",
-      "https://en.wikipedia.org/wiki/Mehamn_Airport",
-      "MEH",
-      "ENMH"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Reykjavík–Keflavík",
-      "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
-      "KEF",
-      "BIKF"
-    ],
-    [
-      "Rovaniemi",
-      "https://en.wikipedia.org/wiki/Rovaniemi_Airport",
-      "RVN",
-      "EFRO"
-    ],
-    [
-      "Trondheim",
-      "https://en.wikipedia.org/wiki/Trondheim_Airport,_Vaernes",
-      "TRD",
-      "ENVA"
-    ],
-    [
-      "Vadsø",
-      "https://en.wikipedia.org/wiki/Vadsø_Airport",
-      "VDS",
-      "ENVD"
-    ],
-    [
-      "Vardø",
-      "https://en.wikipedia.org/wiki/Vardø_Airport,_Svartnes",
-      "VAW",
-      "ENSS"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zürich_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Alta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alta_Airport",
+      "codes": [
+        "ALF",
+        "ENAT"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Transavia",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Andenes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Andøya_Airport,_Andenes",
+      "codes": [
+        "ANX",
+        "ENAN"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Berlevåg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlevåg_Airport",
+      "codes": [
+        "BVG",
+        "ENBV"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Eurowings",
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Bodø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bodø_Airport",
+      "codes": [
+        "BOO",
+        "ENBO"
+      ],
+      "airlines": [
+        "Scandinavian Airlines",
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Bristol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Hamburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Hasvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hasvik_Airport",
+      "codes": [
+        "HAA",
+        "ENHK"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Longyearbyen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Svalbard_Airport",
+      "codes": [
+        "LYR",
+        "ENSB"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Mehamn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehamn_Airport",
+      "codes": [
+        "MEH",
+        "ENMH"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France",
+        "Norwegian Air Shuttle",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Reykjavík–Keflavík",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
+      "codes": [
+        "KEF",
+        "BIKF"
+      ],
+      "airlines": [
+        "Icelandair"
+      ]
+    },
+    {
+      "city": "Rovaniemi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rovaniemi_Airport",
+      "codes": [
+        "RVN",
+        "EFRO"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Trondheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trondheim_Airport,_Vaernes",
+      "codes": [
+        "TRD",
+        "ENVA"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Vadsø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vadsø_Airport",
+      "codes": [
+        "VDS",
+        "ENVD"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Vardø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vardø_Airport,_Svartnes",
+      "codes": [
+        "VAW",
+        "ENSS"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zürich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -340,5 +532,7 @@
       "Gdańsk",
       "London–Luton"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:33Z",
+  "date-time-wikidata": "2026-03-18T09:56:00Z"
 }

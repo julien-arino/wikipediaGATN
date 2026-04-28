@@ -20,30 +20,51 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Mount Isa",
-      "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
-      "ISA",
-      "YBMA"
-    ],
-    [
-      "Townsville",
-      "https://en.wikipedia.org/wiki/Townsville_Airport",
-      "TSV",
-      "YBTL"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Mount Isa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
+      "codes": [
+        "ISA",
+        "YBMA"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -55,5 +76,7 @@
       "Mount Isa",
       "Townsville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:00Z",
+  "date-time-wikidata": "2025-08-27T06:07:36Z"
 }

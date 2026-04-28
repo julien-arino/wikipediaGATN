@@ -19,24 +19,39 @@
     "Air Liaison"
   ],
   "destinations": [
-    [
-      "Chevery",
-      "https://en.wikipedia.org/wiki/Chevery_Airport",
-      "YHR",
-      "CYHR"
-    ],
-    [
-      "Saint-Augustin",
-      "https://en.wikipedia.org/wiki/Saint-Augustin_Airport",
-      "YIF",
-      "CYIF"
-    ],
-    [
-      "Tête-à-la-Baleine",
-      "https://en.wikipedia.org/wiki/Tête-à-la-Baleine_Airport",
-      "ZTB",
-      "icao code not found"
-    ]
+    {
+      "city": "Chevery",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chevery_Airport",
+      "codes": [
+        "YHR",
+        "CYHR"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "Saint-Augustin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Augustin_Airport",
+      "codes": [
+        "YIF",
+        "CYIF"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "Tête-à-la-Baleine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tête-à-la-Baleine_Airport",
+      "codes": [
+        "ZTB",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Liaison": [
@@ -44,5 +59,7 @@
       "Saint-Augustin",
       "Tête-à-la-Baleine"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:41Z",
+  "date-time-wikidata": "2025-09-29T06:57:17Z"
 }

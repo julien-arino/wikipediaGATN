@@ -19,23 +19,35 @@
     "Turkmenistan Airlines"
   ],
   "destinations": [
-    [
-      "Ashgabat",
-      "https://en.wikipedia.org/wiki/Aşgabat_International_Airport",
-      "ASB",
-      "UTAA"
-    ],
-    [
-      "Balkanabat",
-      "https://en.wikipedia.org/wiki/Balkanabat_International_Airport",
-      "BKN",
-      "UTAN"
-    ]
+    {
+      "city": "Ashgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aşgabat_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Balkanabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balkanabat_International_Airport",
+      "codes": [
+        "BKN",
+        "UTAN"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Turkmenistan Airlines": [
       "Ashgabat",
       "Balkanabat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:18Z",
+  "date-time-wikidata": "2025-09-05T14:43:06Z"
 }

@@ -22,24 +22,41 @@
     "Skyward Express"
   ],
   "destinations": [
-    [
-      "Eldoret",
-      "https://en.wikipedia.org/wiki/Eldoret_International_Airport",
-      "EDL",
-      "HKEL"
-    ],
-    [
-      "Lokichogio",
-      "https://en.wikipedia.org/wiki/Lokichogio_Airport",
-      "LKG",
-      "HKLK"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Eldoret",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eldoret_International_Airport",
+      "codes": [
+        "EDL",
+        "HKEL"
+      ],
+      "airlines": [
+        "Fly540"
+      ]
+    },
+    {
+      "city": "Lokichogio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokichogio_Airport",
+      "codes": [
+        "LKG",
+        "HKLK"
+      ],
+      "airlines": [
+        "Aircraft Leasing Services"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Aircraft Leasing Services",
+        "Fly-SAX",
+        "Skyward Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aircraft Leasing Services": [
@@ -55,5 +72,7 @@
     "Skyward Express": [
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:23Z",
+  "date-time-wikidata": "2025-09-08T08:34:15Z"
 }

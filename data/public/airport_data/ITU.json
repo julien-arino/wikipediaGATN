@@ -19,23 +19,35 @@
     "Aurora"
   ],
   "destinations": [
-    [
-      "Vladivostok",
-      "https://en.wikipedia.org/wiki/Knevichi_Airport",
-      "VVO",
-      "UHWW"
-    ],
-    [
-      "Yuzhno-Sakhalinsk",
-      "https://en.wikipedia.org/wiki/Yuzhno-Sakhalinsk_Airport",
-      "UUS",
-      "UHSS"
-    ]
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Knevichi_Airport",
+      "codes": [
+        "VVO",
+        "UHWW"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    },
+    {
+      "city": "Yuzhno-Sakhalinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuzhno-Sakhalinsk_Airport",
+      "codes": [
+        "UUS",
+        "UHSS"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora": [
       "Vladivostok",
       "Yuzhno-Sakhalinsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:11Z",
+  "date-time-wikidata": "2025-11-19T07:56:56Z"
 }

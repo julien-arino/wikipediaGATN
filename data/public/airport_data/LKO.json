@@ -27,102 +27,183 @@
     "Thai AirAsia"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Bhopal",
-      "https://en.wikipedia.org/wiki/Raja_Bhoj_Airport",
-      "BHO",
-      "VABP"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Jharsuguda",
-      "https://en.wikipedia.org/wiki/Veer_Surendra_Sai_Airport",
-      "JRG",
-      "VEJH"
-    ],
-    [
-      "Kishangarh",
-      "https://en.wikipedia.org/wiki/Kishangarh_Airport",
-      "KQH",
-      "VIKG"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Mumbai–Navi",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
-      "NMI",
-      "VANM"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Pune",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ],
-    [
-      "Ras Al Khaimah",
-      "https://en.wikipedia.org/wiki/Ras_Al_Khaimah_International_Airport",
-      "RKT",
-      "OMRK"
-    ],
-    [
-      "Riyadh",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Bhopal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raja_Bhoj_Airport",
+      "codes": [
+        "BHO",
+        "VABP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Jharsuguda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veer_Surendra_Sai_Airport",
+      "codes": [
+        "JRG",
+        "VEJH"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Kishangarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kishangarh_Airport",
+      "codes": [
+        "KQH",
+        "VIKG"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "Air Asia"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Mumbai–Navi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "codes": [
+        "NMI",
+        "VANM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Ras Al Khaimah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ras_Al_Khaimah_International_Airport",
+      "codes": [
+        "RKT",
+        "OMRK"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -160,5 +241,7 @@
     "Thai AirAsia": [
       "Bangkok–Don Mueang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:20Z",
+  "date-time-wikidata": "2026-04-10T09:56:24Z"
 }

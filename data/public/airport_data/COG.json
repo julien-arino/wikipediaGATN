@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Medellín–Olaya Herrera",
-      "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ]
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Medellín–Olaya Herrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "Cali",
       "Medellín–Olaya Herrera"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:04Z",
+  "date-time-wikidata": "2024-10-04T17:51:38Z"
 }

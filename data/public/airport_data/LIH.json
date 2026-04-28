@@ -21,30 +21,50 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Sacramento International Airport",
-      "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
-      "SMF",
-      "KSMF"
-    ],
-    [
-      "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Vancouver International Airport",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Portland International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Sacramento International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "San Francisco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Vancouver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
@@ -57,5 +77,7 @@
     "WestJet": [
       "Vancouver International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:58Z",
+  "date-time-wikidata": "2026-04-27T05:56:37Z"
 }

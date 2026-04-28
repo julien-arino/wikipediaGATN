@@ -19,24 +19,39 @@
     "BidAir Cargo"
   ],
   "destinations": [
-    [
-      "Johannesburg–Lanseria",
-      "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
-      "HLA",
-      "FALA"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Port Elizabeth",
-      "https://en.wikipedia.org/wiki/Port_Elizabeth_International_Airport",
-      "PLZ",
-      "FAPE"
-    ]
+    {
+      "city": "Johannesburg–Lanseria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
+      "codes": [
+        "HLA",
+        "FALA"
+      ],
+      "airlines": [
+        "BidAir Cargo"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "BidAir Cargo"
+      ]
+    },
+    {
+      "city": "Port Elizabeth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Elizabeth_International_Airport",
+      "codes": [
+        "PLZ",
+        "FAPE"
+      ],
+      "airlines": [
+        "BidAir Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BidAir Cargo": [
@@ -44,5 +59,7 @@
       "Johannesburg–O. R. Tambo",
       "Port Elizabeth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:54Z",
+  "date-time-wikidata": "2026-04-18T09:06:16Z"
 }

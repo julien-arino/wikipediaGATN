@@ -20,24 +20,39 @@
     "China United Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Haikou Meilan International Airport",
-      "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
-      "HAK",
-      "ZJHK"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China United Airlines"
+      ]
+    },
+    {
+      "city": "Haikou Meilan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "Air Chang'an"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Air Chang'an"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Chang'an": [
@@ -47,5 +62,7 @@
     "China United Airlines": [
       "Beijing Daxing International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:21Z",
+  "date-time-wikidata": "2025-03-06T06:40:02Z"
 }

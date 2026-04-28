@@ -19,23 +19,35 @@
     "Air Vanuatu"
   ],
   "destinations": [
-    [
-      "Luganville",
-      "https://en.wikipedia.org/wiki/Santo_International_Airport",
-      "SON",
-      "NVSS"
-    ],
-    [
-      "Mota Lava",
-      "https://en.wikipedia.org/wiki/Mota_Lava_Airport",
-      "MTV",
-      "NVSA"
-    ]
+    {
+      "city": "Luganville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santo_International_Airport",
+      "codes": [
+        "SON",
+        "NVSS"
+      ],
+      "airlines": [
+        "Air Vanuatu"
+      ]
+    },
+    {
+      "city": "Mota Lava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mota_Lava_Airport",
+      "codes": [
+        "MTV",
+        "NVSA"
+      ],
+      "airlines": [
+        "Air Vanuatu"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Vanuatu": [
       "Luganville",
       "Mota Lava"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:39Z",
+  "date-time-wikidata": "2024-11-21T03:20:09Z"
 }

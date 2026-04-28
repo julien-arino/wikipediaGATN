@@ -27,114 +27,207 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Catania",
-      "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
-      "CTA",
-      "LICC"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "CGN",
-      "EDDK"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Milan-Linate",
-      "https://en.wikipedia.org/wiki/Milan_Linate_Airport",
-      "LIN",
-      "LIML"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Olbia",
-      "https://en.wikipedia.org/wiki/Olbia_Costa_Smeralda_Airport",
-      "OLB",
-      "LIEO"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rome-Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Sarajevo",
-      "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
-      "SJJ",
-      "LQSA"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
+      "codes": [
+        "CTA",
+        "LICC"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Milan-Linate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Air Dolomiti",
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Olbia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olbia_Costa_Smeralda_Airport",
+      "codes": [
+        "OLB",
+        "LIEO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Rome-Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "DAT",
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Sarajevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
+      "codes": [
+        "SJJ",
+        "LQSA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Dolomiti": [
@@ -176,5 +269,7 @@
       "Bergamo",
       "Cologne/Bonn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:30Z",
+  "date-time-wikidata": "2026-01-31T10:11:50Z"
 }

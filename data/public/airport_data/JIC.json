@@ -24,72 +24,128 @@
     "Tianjin Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chongqing Jiangbei International Airport",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Dunhuang Mogao International Airport",
-      "https://en.wikipedia.org/wiki/Dunhuang_Mogao_International_Airport",
-      "DNH",
-      "ZLDH"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hangzhou Xiaoshan International Airport",
-      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
-      "HGH",
-      "ZSHC"
-    ],
-    [
-      "Jiayuguan Jiuquan Airport",
-      "https://en.wikipedia.org/wiki/Jiayuguan_Jiuquan_Airport",
-      "JGN",
-      "ZLJQ"
-    ],
-    [
-      "Lanzhou Zhongchuan International Airport",
-      "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
-      "LHW",
-      "ZLLL"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Wuhan Tianhe International Airport",
-      "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
-      "WUH",
-      "ZHHH"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ],
-    [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Hebei Airlines"
+      ]
+    },
+    {
+      "city": "Chongqing Jiangbei International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Dunhuang Mogao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dunhuang_Mogao_International_Airport",
+      "codes": [
+        "DNH",
+        "ZLDH"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hangzhou Xiaoshan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Jiayuguan Jiuquan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiayuguan_Jiuquan_Airport",
+      "codes": [
+        "JGN",
+        "ZLJQ"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Lanzhou Zhongchuan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
+      "codes": [
+        "LHW",
+        "ZLLL"
+      ],
+      "airlines": [
+        "China Express Airlines",
+        "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Wuhan Tianhe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "codes": [
+        "WUH",
+        "ZHHH"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi Diwopu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
@@ -116,5 +172,7 @@
       "Hangzhou Xiaoshan International Airport",
       "Ürümqi Diwopu International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:15Z",
+  "date-time-wikidata": "2025-11-25T14:09:30Z"
 }

@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Hooper Bay",
-      "https://en.wikipedia.org/wiki/Hooper_Bay_Airport",
-      "HPB",
-      "PAHP"
-    ],
-    [
-      "Scammon Bay",
-      "https://en.wikipedia.org/wiki/Scammon_Bay_Airport",
-      "SCM",
-      "PACM"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Hooper Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hooper_Bay_Airport",
+      "codes": [
+        "HPB",
+        "PAHP"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Scammon Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scammon_Bay_Airport",
+      "codes": [
+        "SCM",
+        "PACM"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -48,5 +64,7 @@
       "Hooper Bay",
       "Scammon Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:58Z",
+  "date-time-wikidata": "2025-08-24T15:08:52Z"
 }

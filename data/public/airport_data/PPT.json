@@ -23,197 +23,358 @@
     "Air Tahiti",
     "Air Tahiti Nui",
     "Aircalin",
-    "Alaska Airlines",
     "French Bee",
+    "Hawaiian Airlines",
     "United Airlines"
   ],
   "destinations": [
-    [
-      "Ahe",
-      "https://en.wikipedia.org/wiki/Ahe_Airport",
-      "AHE",
-      "NTHE"
-    ],
-    [
-      "Arutua",
-      "https://en.wikipedia.org/wiki/Arutua_Airport",
-      "AXR",
-      "NTGU"
-    ],
-    [
-      "Atuona",
-      "https://en.wikipedia.org/wiki/Atuona_Airport",
-      "AUQ",
-      "NTMN"
-    ],
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Bora Bora",
-      "https://en.wikipedia.org/wiki/Bora_Bora_Airport",
-      "BOB",
-      "NTTB"
-    ],
-    [
-      "Fakahina",
-      "https://en.wikipedia.org/wiki/Fakahina",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Fakarava",
-      "https://en.wikipedia.org/wiki/Fakarava_Airport",
-      "FAV",
-      "NTGF"
-    ],
-    [
-      "Fangatau",
-      "https://en.wikipedia.org/wiki/Fangatau_Airport",
-      "FGU",
-      "NTGB"
-    ],
-    [
-      "Hao",
-      "https://en.wikipedia.org/wiki/Hao_Airport",
-      "HOI",
-      "NTTO"
-    ],
-    [
-      "Hikueru",
-      "https://en.wikipedia.org/wiki/Hikueru_Airport",
-      "HHZ",
-      "NTGH"
-    ],
-    [
-      "Honolulu",
-      "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Kauehi",
-      "https://en.wikipedia.org/wiki/Kauehi_Aerodrome",
-      "KHZ",
-      "NTKA"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Moorea",
-      "https://en.wikipedia.org/wiki/Moorea_Airport",
-      "MOZ",
-      "NTTM"
-    ],
-    [
-      "Nouméa",
-      "https://en.wikipedia.org/wiki/La_Tontouta_International_Airport",
-      "NOU",
-      "NWWW"
-    ],
-    [
-      "Nuku Hiva",
-      "https://en.wikipedia.org/wiki/Nuku_Hiva_Airport",
-      "NHV",
-      "NTMD"
-    ],
-    [
-      "Paris Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Raiatea",
-      "https://en.wikipedia.org/wiki/Raiatea_Airport",
-      "RFP",
-      "NTTR"
-    ],
-    [
-      "Rangiroa",
-      "https://en.wikipedia.org/wiki/Rangiroa_Airport",
-      "RGI",
-      "NTTG"
-    ],
-    [
-      "Raroia",
-      "https://en.wikipedia.org/wiki/Raroia_Airport",
-      "RRR",
-      "NTKO"
-    ],
-    [
-      "Rarotonga",
-      "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
-      "RAR",
-      "NCRG"
-    ],
-    [
-      "Rimatara",
-      "https://en.wikipedia.org/wiki/Rimatara_Airport",
-      "RMT",
-      "NTAM"
-    ],
-    [
-      "Rurutu",
-      "https://en.wikipedia.org/wiki/Rurutu_Airport",
-      "RUR",
-      "NTAR"
-    ],
-    [
-      "San Francisco",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Takaroa",
-      "https://en.wikipedia.org/wiki/Takaroa_Airport",
-      "TKX",
-      "NTKR"
-    ],
-    [
-      "Tatakoto",
-      "https://en.wikipedia.org/wiki/Tatakoto_Airport",
-      "TKV",
-      "NTGO"
-    ],
-    [
-      "Tikehau",
-      "https://en.wikipedia.org/wiki/Tikehau_Airport",
-      "TIH",
-      "NTGC"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Totegegie",
-      "https://en.wikipedia.org/wiki/Totegegie_Airport",
-      "GMR",
-      "NTGJ"
-    ],
-    [
-      "Tubuai–Mataura",
-      "https://en.wikipedia.org/wiki/Tubuai_–_Mataura_Airport",
-      "TUB",
-      "NTAT"
-    ]
+    {
+      "city": "Ahe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahe_Airport",
+      "codes": [
+        "AHE",
+        "NTHE"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Arutua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arutua_Airport",
+      "codes": [
+        "AXR",
+        "NTGU"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Atuona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Atuona_Airport",
+      "codes": [
+        "AUQ",
+        "NTMN"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Air Tahiti Nui"
+      ]
+    },
+    {
+      "city": "Bora Bora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bora_Bora_Airport",
+      "codes": [
+        "BOB",
+        "NTTB"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Fakahina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fakahina",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Fakarava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fakarava_Airport",
+      "codes": [
+        "FAV",
+        "NTGF"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Fangatau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fangatau_Airport",
+      "codes": [
+        "FGU",
+        "NTGB"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Hao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hao_Airport",
+      "codes": [
+        "HOI",
+        "NTTO"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Hikueru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hikueru_Airport",
+      "codes": [
+        "HHZ",
+        "NTGH"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "Kauehi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kauehi_Aerodrome",
+      "codes": [
+        "KHZ",
+        "NTKA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Moorea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moorea_Airport",
+      "codes": [
+        "MOZ",
+        "NTTM"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Nouméa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Tontouta_International_Airport",
+      "codes": [
+        "NOU",
+        "NWWW"
+      ],
+      "airlines": [
+        "Aircalin"
+      ]
+    },
+    {
+      "city": "Nuku Hiva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuku_Hiva_Airport",
+      "codes": [
+        "NHV",
+        "NTMD"
+      ],
+      "airlines": [
+        "Air Moana"
+      ]
+    },
+    {
+      "city": "Paris Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "French Bee"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France",
+        "Air Tahiti Nui"
+      ]
+    },
+    {
+      "city": "Raiatea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raiatea_Airport",
+      "codes": [
+        "RFP",
+        "NTTR"
+      ],
+      "airlines": [
+        "Air Moana"
+      ]
+    },
+    {
+      "city": "Rangiroa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rangiroa_Airport",
+      "codes": [
+        "RGI",
+        "NTTG"
+      ],
+      "airlines": [
+        "Air Moana"
+      ]
+    },
+    {
+      "city": "Raroia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raroia_Airport",
+      "codes": [
+        "RRR",
+        "NTKO"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Rarotonga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
+      "codes": [
+        "RAR",
+        "NCRG"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    },
+    {
+      "city": "Rimatara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rimatara_Airport",
+      "codes": [
+        "RMT",
+        "NTAM"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Rurutu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rurutu_Airport",
+      "codes": [
+        "RUR",
+        "NTAR"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "French Bee",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Takaroa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Takaroa_Airport",
+      "codes": [
+        "TKX",
+        "NTKR"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Tatakoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tatakoto_Airport",
+      "codes": [
+        "TKV",
+        "NTGO"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Tikehau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tikehau_Airport",
+      "codes": [
+        "TIH",
+        "NTGC"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Air Tahiti Nui"
+      ]
+    },
+    {
+      "city": "Totegegie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Totegegie_Airport",
+      "codes": [
+        "GMR",
+        "NTGJ"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Tubuai–Mataura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tubuai_–_Mataura_Airport",
+      "codes": [
+        "TUB",
+        "NTAT"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air France": [
@@ -263,15 +424,17 @@
     "Aircalin": [
       "Nouméa"
     ],
-    "Alaska Airlines": [
-      "Honolulu"
-    ],
     "French Bee": [
       "Paris Orly",
       "San Francisco"
     ],
+    "Hawaiian Airlines": [
+      "Honolulu"
+    ],
     "United Airlines": [
       "San Francisco"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:29Z",
+  "date-time-wikidata": "2026-04-27T17:06:02Z"
 }

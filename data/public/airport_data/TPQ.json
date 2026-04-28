@@ -7,6 +7,7 @@
   "lat": "21.4175494",
   "lon": "-104.8428797",
   "altitude": "920",
+  "continent": "North America",
   "region": "Nayarit",
   "country_alpha3": "MEX",
   "country_name": "Mexico",
@@ -23,42 +24,72 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Puerto Balleto",
-      "https://en.wikipedia.org/wiki/Maria_Madre_Island_Naval_Air_Station",
-      "NON",
-      "icao code not found"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Puerto Balleto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_Madre_Island_Naval_Air_Station",
+      "codes": [
+        "NON",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Aéreo Servicio Guerrero"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico Connect": [
@@ -80,5 +111,6 @@
       "Calgary"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:19:35Z",
+  "date-time-wikidata": "2026-03-29T15:27:28Z"
 }

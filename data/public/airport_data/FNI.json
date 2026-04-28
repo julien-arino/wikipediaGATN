@@ -19,24 +19,39 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Fes",
-      "https://en.wikipedia.org/wiki/Fez_Airport",
-      "FEZ",
-      "GMFF"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ]
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Fes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fez_Airport",
+      "codes": [
+        "FEZ",
+        "GMFF"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryanair": [
@@ -44,5 +59,7 @@
       "Fes",
       "London–Stansted"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:47Z",
+  "date-time-wikidata": "2025-11-29T11:52:05Z"
 }

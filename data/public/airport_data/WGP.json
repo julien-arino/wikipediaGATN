@@ -20,36 +20,61 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Labuan Bajo",
-      "https://en.wikipedia.org/wiki/Komodo_International_Airport",
-      "LBJ",
-      "WATO"
-    ],
-    [
-      "Lombok",
-      "https://en.wikipedia.org/wiki/Lombok_International_Airport",
-      "LOP",
-      "WADL"
-    ],
-    [
-      "Ruteng",
-      "https://en.wikipedia.org/wiki/Frans_Sales_Lega_Airport",
-      "RTG",
-      "WATG"
-    ],
-    [
-      "Savu",
-      "https://en.wikipedia.org/wiki/Tardamu_Airport",
-      "SAU",
-      "WATS"
-    ]
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Labuan Bajo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Komodo_International_Airport",
+      "codes": [
+        "LBJ",
+        "WATO"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Lombok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombok_International_Airport",
+      "codes": [
+        "LOP",
+        "WADL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Ruteng",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frans_Sales_Lega_Airport",
+      "codes": [
+        "RTG",
+        "WATG"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Savu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tardamu_Airport",
+      "codes": [
+        "SAU",
+        "WATS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -61,5 +86,7 @@
       "Kupang",
       "Lombok"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:09Z",
+  "date-time-wikidata": "2026-04-04T17:04:14Z"
 }

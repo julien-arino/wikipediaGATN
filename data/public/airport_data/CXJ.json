@@ -21,42 +21,75 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Florianópolis",
-      "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-      "FLN",
-      "SBFL"
-    ],
-    [
-      "Rio de Janeiro–Galeão",
-      "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-      "GIG",
-      "SBGL"
-    ],
-    [
-      "São Paulo–Congonhas",
-      "https://en.wikipedia.org/wiki/São_Paulo/Congonhas_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Rio de Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
+      "codes": [
+        "GIG",
+        "SBGL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Congonhas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Congonhas_Airport",
+      "codes": [
+        "CGH",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -72,5 +105,7 @@
       "São Paulo–Congonhas",
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:58Z",
+  "date-time-wikidata": "2025-12-16T12:27:54Z"
 }

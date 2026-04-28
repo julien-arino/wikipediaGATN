@@ -19,18 +19,28 @@
     "Ulendo Airlink"
   ],
   "destinations": [
-    [
-      "LLW Airport",
-      "https://en.wikipedia.org/wiki/LLW_Airport",
-      "LLW",
-      "FWKI"
-    ],
-    [
-      "Mfuwe Airport",
-      "https://en.wikipedia.org/wiki/Mfuwe_Airport",
-      "MFU",
-      "FLMF"
-    ]
+    {
+      "city": "LLW Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LLW_Airport",
+      "codes": [
+        "LLW",
+        "FWKI"
+      ],
+      "airlines": [
+        "Ulendo Airlink"
+      ]
+    },
+    {
+      "city": "Mfuwe Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mfuwe_Airport",
+      "codes": [
+        "MFU",
+        "FLMF"
+      ],
+      "airlines": [
+        "Ulendo Airlink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ulendo Airlink": [
@@ -40,5 +50,7 @@
       "Mfuwe Airport",
       "Southern Lakeshore Airport (page does not exist)"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:02Z",
+  "date-time-wikidata": "2026-02-06T06:49:44Z"
 }

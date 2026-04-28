@@ -20,18 +20,29 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Charleville",
-      "https://en.wikipedia.org/wiki/Charleville_Airport",
-      "CTL",
-      "YBCV"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Charleville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleville_Airport",
+      "codes": [
+        "CTL",
+        "YBCV"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -41,5 +52,7 @@
       "Brisbane",
       "Charleville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:15Z",
+  "date-time-wikidata": "2025-11-16T08:07:37Z"
 }

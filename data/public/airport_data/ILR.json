@@ -21,18 +21,32 @@
     "Overland Airways"
   ],
   "destinations": [
-    [
-      "Abuja",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ],
-    [
-      "Lagos",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ]
+    {
+      "city": "Abuja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Green Africa Airways",
+        "Overland Airways"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Green Africa Airways",
+        "Overland Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Peace": [
@@ -47,5 +61,7 @@
       "Abuja",
       "Lagos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:02Z",
+  "date-time-wikidata": "2026-04-02T11:55:34Z"
 }

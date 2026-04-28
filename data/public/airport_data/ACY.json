@@ -21,72 +21,130 @@
     "Spirit Airlines"
   ],
   "destinations": [
-    [
-      "Charleston International Airport",
-      "https://en.wikipedia.org/wiki/Charleston_International_Airport",
-      "CHS",
-      "KCHS"
-    ],
-    [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Myrtle Beach International Airport",
-      "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
-      "MYR",
-      "KMYR"
-    ],
-    [
-      "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "Orlando Sanford International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
-      "SFB",
-      "KSFB"
-    ],
-    [
-      "Palm Beach International Airport",
-      "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
-      "PBI",
-      "KPBI"
-    ],
-    [
-      "Punta Gorda Airport (Florida)",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "PGD",
-      "KPGD"
-    ],
-    [
-      "Raleigh–Durham International Airport",
-      "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
-      "RDU",
-      "KRDU"
-    ],
-    [
-      "Southwest Florida International Airport",
-      "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "RSW",
-      "KRSW"
-    ],
-    [
-      "St. Pete–Clearwater International Airport",
-      "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
-      "PIE",
-      "KPIE"
-    ],
-    [
-      "Tampa International Airport",
-      "https://en.wikipedia.org/wiki/Tampa_International_Airport",
-      "TPA",
-      "KTPA"
-    ]
+    {
+      "city": "Charleston International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleston_International_Airport",
+      "codes": [
+        "CHS",
+        "KCHS"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale–Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Allegiant Air",
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Myrtle Beach International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
+      "codes": [
+        "MYR",
+        "KMYR"
+      ],
+      "airlines": [
+        "Allegiant Air",
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Orlando International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Orlando Sanford International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "codes": [
+        "SFB",
+        "KSFB"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Palm Beach International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
+      "codes": [
+        "PBI",
+        "KPBI"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Punta Gorda Airport (Florida)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "codes": [
+        "PGD",
+        "KPGD"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Raleigh–Durham International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Southwest Florida International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "St. Pete–Clearwater International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "codes": [
+        "PIE",
+        "KPIE"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Tampa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Breeze Airways",
+        "Spirit Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -109,5 +167,7 @@
       "Southwest Florida International Airport",
       "Tampa International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:51Z",
+  "date-time-wikidata": "2026-04-18T14:54:05Z"
 }

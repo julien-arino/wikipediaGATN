@@ -19,24 +19,39 @@
     "Skytrans Airlines"
   ],
   "destinations": [
-    [
-      "Badu Island",
-      "https://en.wikipedia.org/wiki/Badu_Island_Airport",
-      "BDD",
-      "YBAU"
-    ],
-    [
-      "Horn Island",
-      "https://en.wikipedia.org/wiki/Horn_Island_Airport",
-      "HID",
-      "YHID"
-    ],
-    [
-      "Saibai Island",
-      "https://en.wikipedia.org/wiki/Saibai_Island_Airport",
-      "SBR",
-      "YSII"
-    ]
+    {
+      "city": "Badu Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Badu_Island_Airport",
+      "codes": [
+        "BDD",
+        "YBAU"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Horn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Island_Airport",
+      "codes": [
+        "HID",
+        "YHID"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Saibai Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saibai_Island_Airport",
+      "codes": [
+        "SBR",
+        "YSII"
+      ],
+      "airlines": [
+        "Skytrans Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytrans Airlines": [
@@ -44,5 +59,7 @@
       "Horn Island",
       "Saibai Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:41Z",
+  "date-time-wikidata": "2023-04-20T02:30:25Z"
 }

@@ -19,23 +19,35 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Longreach",
-      "https://en.wikipedia.org/wiki/Longreach_Airport",
-      "LRE",
-      "YLRE"
-    ],
-    [
-      "Townsville",
-      "https://en.wikipedia.org/wiki/Townsville_Airport",
-      "TSV",
-      "YBTL"
-    ]
+    {
+      "city": "Longreach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Longreach_Airport",
+      "codes": [
+        "LRE",
+        "YLRE"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
       "Longreach",
       "Townsville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:10Z",
+  "date-time-wikidata": "2024-03-13T21:00:05Z"
 }

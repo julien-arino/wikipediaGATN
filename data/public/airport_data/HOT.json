@@ -1,8 +1,8 @@
 {
   "iata": "HOT",
   "icao": "KHOT",
-  "city-served": "[[Hot Springs, Arkansas]]",
-  "location": null,
+  "city-served": "Hot Springs, Arkansas",
+  "location": "Piney",
   "lat": "34.478056",
   "lon": "-93.096111",
   "altitude": "165",
@@ -11,21 +11,29 @@
   "country_name": "United States",
   "subdivision_code": "AR",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Memorial_Field_Airport",
+  "number_airlines": 1,
+  "outdegree": 3,
   "airlines": [
     "Southern Airways Express"
   ],
   "destinations": [
     [
       "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Harrison/Branson",
-      "https://en.wikipedia.org/wiki/Boone_County_Airport_(Arkansas)"
+      "https://en.wikipedia.org/wiki/Boone_County_Airport_(Arkansas)",
+      "HRO",
+      "KHRO"
     ],
     [
       "Memphis",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport"
+      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "MEM",
+      "KMEM"
     ]
   ],
   "airlines_destinations": {
@@ -34,5 +42,6 @@
       "Harrison/Branson",
       "Memphis"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Hot Springs, Arkansas]]"
 }

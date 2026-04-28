@@ -1,7 +1,8 @@
 {
   "iata": "AQJ",
   "icao": "OJAQ",
-  "city-served": "[[Aqaba]], Jordan",
+  "city-served": "Aqaba",
+  "city-served-wikipedia": "[[Aqaba]], Jordan",
   "location": null,
   "lat": null,
   "lon": null,
@@ -11,6 +12,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/King_Hussein_International_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Belavia",
     "Royal Jordanian",
@@ -18,20 +21,28 @@
   ],
   "destinations": [
     [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport"
+      "Amman\u2013Queen Alia",
+      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "AMM",
+      "OJAI"
     ],
     [
       "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport"
+      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "CAI",
+      "HECA"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
       "Minsk",
-      "https://en.wikipedia.org/wiki/Minsk_National_Airport"
+      "https://en.wikipedia.org/wiki/Minsk_National_Airport",
+      "MSQ",
+      "UMMS"
     ]
   ],
   "airlines_destinations": {
@@ -39,7 +50,7 @@
       "Minsk"
     ],
     "Royal Jordanian": [
-      "Amman–Queen Alia",
+      "Amman\u2013Queen Alia",
       "Cairo"
     ],
     "Turkish Airlines": [

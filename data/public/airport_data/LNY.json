@@ -1,8 +1,8 @@
 {
   "iata": "LNY",
   "icao": "PHNY",
-  "city-served": "[[Lanai]]",
-  "location": null,
+  "city-served": "Lanai",
+  "location": "Lana'i City",
   "lat": "20.785556",
   "lon": "-156.951389",
   "altitude": "398.68",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "HI",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lanai_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Lanai Airlines",
     "Mokulele Airlines"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Honolulu International Airport",
-      "https://en.wikipedia.org/wiki/Honolulu_International_Airport"
+      "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Kahului Airport",
-      "https://en.wikipedia.org/wiki/Kahului_Airport"
+      "https://en.wikipedia.org/wiki/Kahului_Airport",
+      "OGG",
+      "PHOG"
     ],
     [
       "Molokai Airport",
-      "https://en.wikipedia.org/wiki/Molokai_Airport"
+      "https://en.wikipedia.org/wiki/Molokai_Airport",
+      "MKK",
+      "PHMK"
     ]
   ],
   "airlines_destinations": {
@@ -38,5 +46,6 @@
       "Kahului Airport",
       "Molokai Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Lanai]]"
 }

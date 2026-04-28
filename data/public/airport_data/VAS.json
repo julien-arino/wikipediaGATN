@@ -1,7 +1,7 @@
 {
   "iata": "VAS",
   "icao": "LTAR",
-  "city-served": "[[Sivas]], [[Turkey]]",
+  "city-served": "Sivas",
   "location": "{{flagicon|Turkey}} [[Sivas]], [[Turkey]]",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sivas_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "AJet",
     "Pegasus Airlines",
@@ -20,28 +22,36 @@
   "destinations": [
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Istanbul–Sabiha Gökcen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gokcen_Airport"
+      "Istanbul\u2013Sabiha G\u00f6kcen",
+      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gokcen_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Izmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport"
+      "https://en.wikipedia.org/wiki/\u0130zmir_Adnan_Menderes_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "AJet": [
       "Cologne/Bonn",
-      "Istanbul–Sabiha Gökcen"
+      "Istanbul\u2013Sabiha G\u00f6kcen"
     ],
     "Pegasus Airlines": [
-      "Istanbul–Sabiha Gökcen",
+      "Istanbul\u2013Sabiha G\u00f6kcen",
       "Izmir"
     ],
     "SunExpress": [
@@ -50,5 +60,6 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Sivas]], [[Turkey]]"
 }

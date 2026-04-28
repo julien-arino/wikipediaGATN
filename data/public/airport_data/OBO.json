@@ -7,10 +7,12 @@
   "lon": "143.217222",
   "altitude": "149.35",
   "region": "JP",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Tokachi–Obihiro_Airport",
+  "country_alpha3": "JPN",
+  "country_name": "Japan",
+  "subdivision_code": "",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Tokachi\u2013Obihiro_Airport",
+  "number_airlines": 3,
+  "outdegree": 3,
   "airlines": [
     "Aero K",
     "Air Do",
@@ -19,27 +21,34 @@
   "destinations": [
     [
       "Cheongju",
-      "https://en.wikipedia.org/wiki/Cheongju_International_Airport"
+      "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
+      "CJJ",
+      "RKTU"
     ],
     [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport"
+      "Seoul\u2013Incheon",
+      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "ICN",
+      "RKSI"
     ],
     [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport"
+      "Tokyo\u2013Haneda",
+      "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "HND",
+      "RJTT"
     ]
   ],
   "airlines_destinations": {
     "Aero K": [
       "Cheongju",
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "Air Do": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ],
     "Japan Airlines": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

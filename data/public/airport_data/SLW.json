@@ -1,7 +1,7 @@
 {
   "iata": "SLW",
   "icao": "MMIO",
-  "city-served": "[[Saltillo]], [[Coahuila]], [[Mexico]]",
+  "city-served": "Saltillo",
   "location": "[[Ramos Arizpe]], [[Coahuila]], [[Mexico]]",
   "lat": "25.549444",
   "lon": "-100.928611",
@@ -11,6 +11,8 @@
   "country_name": "Mexico",
   "subdivision_code": "COA",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Saltillo_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
     "Aerus",
     "Volaris"
@@ -18,11 +20,15 @@
   "destinations": [
     [
       "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport"
+      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "GDL",
+      "MMGL"
     ],
     [
       "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport"
+      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "MTY",
+      "MMMY"
     ]
   ],
   "airlines_destinations": {
@@ -32,5 +38,6 @@
     "Volaris": [
       "Guadalajara"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Saltillo]], [[Coahuila]], [[Mexico]]"
 }

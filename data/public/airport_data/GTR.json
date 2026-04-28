@@ -1,7 +1,7 @@
 {
   "iata": "GTR",
   "icao": "KGTR",
-  "city-served": "[[Columbus, Mississippi|Columbus]], [[Starkville, Mississippi|Starkville]], [[West Point, Mississippi|West Point]]",
+  "city-served": "Columbus",
   "location": "[[Unincorporated area|Unincorporated]] [[Lowndes County, Mississippi]]",
   "lat": "33.448333",
   "lon": "-88.591389",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "MS",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Triangle_Regional_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
     "American Eagle (airline brand)",
     "Delta Connection"
@@ -18,11 +20,15 @@
   "destinations": [
     [
       "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -30,7 +36,8 @@
       "Dallas Fort Worth International Airport"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Columbus, Mississippi|Columbus]], [[Starkville, Mississippi|Starkville]], [[West Point, Mississippi|West Point]]"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "HOM",
   "icao": "PAHO",
-  "city-served": "[[Homer, Alaska]]",
-  "location": null,
+  "city-served": "Homer, Alaska",
+  "location": "Homer",
   "lat": "59.645556",
   "lon": "-151.476667",
   "altitude": "26",
@@ -11,30 +11,41 @@
   "country_name": "United States",
   "subdivision_code": "AK",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Homer_Airport",
+  "number_airlines": 1,
+  "outdegree": 4,
   "airlines": [
     "Aleutian Airways"
   ],
   "destinations": [
     [
       "Nanwalek Airport",
-      "https://en.wikipedia.org/wiki/Nanwalek_Airport"
+      "https://en.wikipedia.org/wiki/Nanwalek_Airport",
+      "KEB",
+      "NONE"
     ],
     [
       "Port Graham Airport",
-      "https://en.wikipedia.org/wiki/Port_Graham_Airport"
+      "https://en.wikipedia.org/wiki/Port_Graham_Airport",
+      "PGM",
+      "icao code not found"
     ],
     [
       "Seldovia Airport",
-      "https://en.wikipedia.org/wiki/Seldovia_Airport"
+      "https://en.wikipedia.org/wiki/Seldovia_Airport",
+      "SOV",
+      "PASO"
     ],
     [
       "Ted Stevens Anchorage International Airport",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport"
+      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "ANC",
+      "PANC"
     ]
   ],
   "airlines_destinations": {
     "Aleutian Airways": [
       "Ted Stevens Anchorage International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Homer, Alaska]]"
 }

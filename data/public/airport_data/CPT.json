@@ -1,7 +1,7 @@
 {
   "iata": "CPT",
   "icao": "FACT",
-  "city-served": "[[City of Cape Town]]",
+  "city-served": "City of Cape Town",
   "location": "Matroosfontein, [[Western Cape]], [[South Africa]]",
   "lat": "-33.969444",
   "lon": "18.597222",
@@ -11,28 +11,37 @@
   "country_name": "South Africa",
   "subdivision_code": "WC",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+  "number_airlines": 1,
+  "outdegree": 3,
   "airlines": [
     "BidAir Cargo"
   ],
   "destinations": [
     [
-      "Johannesburg–Lanseria",
-      "https://en.wikipedia.org/wiki/Lanseria_International_Airport"
+      "Johannesburg\u2013Lanseria",
+      "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
+      "HLA",
+      "FALA"
     ],
     [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport"
+      "Johannesburg\u2013O. R. Tambo",
+      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "JNB",
+      "FAOR"
     ],
     [
       "Port Elizabeth",
-      "https://en.wikipedia.org/wiki/Port_Elizabeth_International_Airport"
+      "https://en.wikipedia.org/wiki/Port_Elizabeth_International_Airport",
+      "PLZ",
+      "FAPE"
     ]
   ],
   "airlines_destinations": {
     "BidAir Cargo": [
-      "Johannesburg–Lanseria",
-      "Johannesburg–O. R. Tambo",
+      "Johannesburg\u2013Lanseria",
+      "Johannesburg\u2013O. R. Tambo",
       "Port Elizabeth"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[City of Cape Town]]"
 }

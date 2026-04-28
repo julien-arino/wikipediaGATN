@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "ON",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
+  "number_airlines": 6,
+  "outdegree": 7,
   "airlines": [
     "Air Canada Express",
     "Bearskin Airlines",
@@ -22,54 +24,69 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
       "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport"
+      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "YHM",
+      "CYHM"
     ],
     [
       "Sudbury",
-      "https://en.wikipedia.org/wiki/Greater_Sudbury_Airport"
+      "https://en.wikipedia.org/wiki/Greater_Sudbury_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Sudbury",
-      "https://en.wikipedia.org/wiki/Sudbury_Airport"
+      "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "YSB",
+      "CYSB"
     ],
     [
       "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport"
+      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "YQT",
+      "CYQT"
     ],
     [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport"
+      "Toronto\u2013Billy Bishop",
+      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "YTZ",
+      "CYTZ"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Express": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Bearskin Airlines": [
       "Sudbury",
       "Thunder Bay"
     ],
     "Porter Airlines": [
-      "Toronto–Billy Bishop"
+      "Toronto\u2013Billy Bishop"
     ],
     "WestJet": [
       "Calgary"
     ],
     "FedEx Express": [
       "Sudbury",
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "SkyLink Express": [
       "Hamilton (ON)",
       "Sudbury"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

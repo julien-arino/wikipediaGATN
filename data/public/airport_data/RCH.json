@@ -1,16 +1,18 @@
 {
   "iata": "RCH",
   "icao": "SKRH",
-  "city-served": "[[Riohacha]], [[Colombia]]",
-  "location": null,
+  "city-served": "Riohacha",
+  "location": "Riohacha",
   "lat": "11.526389",
   "lon": "-72.926389",
   "altitude": "13.11",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "La Guajira",
+  "country_alpha3": "COL",
+  "country_name": "Colombia",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Almirante_Padilla_Airport",
+  "number_airlines": 3,
+  "outdegree": 3,
   "airlines": [
     "Avianca",
     "LATAM Colombia",
@@ -19,27 +21,34 @@
   "destinations": [
     [
       "Barranquilla",
-      "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport"
+      "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
+      "BAQ",
+      "SKBQ"
     ],
     [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport"
+      "Bogot\u00e1",
+      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "BOG",
+      "SKBO"
     ],
     [
-      "Medellin–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport"
+      "Medellin\u2013JMC",
+      "https://en.wikipedia.org/wiki/Jos\u00e9_Mar\u00eda_C\u00f3rdova_International_Airport",
+      "MDE",
+      "SKRG"
     ]
   ],
   "airlines_destinations": {
     "Avianca": [
-      "Bogotá",
-      "Medellin–JMC"
+      "Bogot\u00e1",
+      "Medellin\u2013JMC"
     ],
     "LATAM Colombia": [
-      "Bogotá"
+      "Bogot\u00e1"
     ],
     "SATENA": [
       "Barranquilla"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Riohacha]], [[Colombia]]"
 }

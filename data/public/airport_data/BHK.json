@@ -1,16 +1,20 @@
 {
   "iata": "BHK",
   "icao": "UZSB",
-  "city-served": "[[Bukhara]]",
+  "city-served": "Bukhara",
+  "city-served-wikipedia": "[[Bukhara]]",
   "location": "[[Bukhara, Uzbekistan]]",
   "lat": "39.775000",
   "lon": "64.483333",
   "altitude": "229",
+  "continent": "Asia",
   "region": "UZ",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "UZB",
+  "country_name": "Uzbekistan",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bukhara_International_Airport",
+  "number_airlines": 9,
+  "outdegree": 12,
   "airlines": [
     "Aeroflot",
     "Centrum Air",
@@ -25,56 +29,80 @@
   "destinations": [
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
       "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport"
+      "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "MCX",
+      "URML"
     ],
     [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport"
+      "Moscow\u2013Domodedovo",
+      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "DME",
+      "UUDD"
     ],
     [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport"
+      "Moscow\u2013Sheremetyevo",
+      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "SVO",
+      "UUEE"
     ],
     [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport"
+      "Moscow\u2013Vnukovo",
+      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "VKO",
+      "UUWW"
     ],
     [
       "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport"
+      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "LED",
+      "ULLI"
     ],
     [
       "Samarqand",
-      "https://en.wikipedia.org/wiki/Samarkand_International_Airport"
+      "https://en.wikipedia.org/wiki/Samarkand_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport"
+      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "TAS",
+      "UZTT"
     ],
     [
       "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport"
+      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Türkistan",
-      "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport"
+      "T\u00fcrkistan",
+      "https://en.wikipedia.org/wiki/\u00c4ziret_S\u016bltan_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Urgench",
-      "https://en.wikipedia.org/wiki/Urgench_International_Airport"
+      "https://en.wikipedia.org/wiki/Urgench_International_Airport",
+      "UGC",
+      "UZNU"
     ],
     [
       "Vladivostok",
-      "https://en.wikipedia.org/wiki/Vladivostok_Airport"
+      "https://en.wikipedia.org/wiki/Vladivostok_Airport",
+      "VVO",
+      "UHWW"
     ]
   ],
   "airlines_destinations": {
     "Aeroflot": [
-      "Moscow–Sheremetyevo"
+      "Moscow\u2013Sheremetyevo"
     ],
     "Centrum Air": [
       "Samarqand",
@@ -83,13 +111,13 @@
       "Vladivostok"
     ],
     "Qanot Sharq": [
-      "Moscow–Domodedovo"
+      "Moscow\u2013Domodedovo"
     ],
     "Red Wings Airlines": [
       "Makhachkala"
     ],
     "SCAT Airlines": [
-      "Türkistan"
+      "T\u00fcrkistan"
     ],
     "Silk Avia": [
       "Tashkent"
@@ -98,11 +126,11 @@
       "Istanbul"
     ],
     "Utair": [
-      "Moscow–Vnukovo"
+      "Moscow\u2013Vnukovo"
     ],
     "Uzbekistan Airways": [
       "Istanbul",
-      "Moscow–Vnukovo",
+      "Moscow\u2013Vnukovo",
       "Saint Petersburg",
       "Tashkent",
       "Urgench"

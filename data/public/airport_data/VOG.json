@@ -1,7 +1,7 @@
 {
   "iata": "VOG",
   "icao": "URWW",
-  "city-served": "[[Volgograd]]",
+  "city-served": "Volgograd",
   "location": "Gumrak, Volgograd, [[Russia]]",
   "lat": "48.781667",
   "lon": "44.346667",
@@ -11,6 +11,8 @@
   "country_name": "Russian Federation",
   "subdivision_code": "VGG",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gumrak_Airport",
+  "number_airlines": 12,
+  "outdegree": 14,
   "airlines": [
     "Aeroflot",
     "AlMasria Universal Airlines",
@@ -27,71 +29,99 @@
   ],
   "destinations": [
     [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport"
+      "Dubai\u2013International",
+      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "DXB",
+      "OMDB"
     ],
     [
       "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport"
+      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "HRG",
+      "HEGN"
     ],
     [
       "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport"
+      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "KGD",
+      "UMKK"
     ],
     [
       "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport"
+      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "KZN",
+      "UWKD"
     ],
     [
       "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport"
+      "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "MCX",
+      "URML"
     ],
     [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport"
+      "Moscow\u2013Domodedovo",
+      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "DME",
+      "UUDD"
     ],
     [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport"
+      "Moscow\u2013Sheremetyevo",
+      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "SVO",
+      "UUEE"
     ],
     [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport"
+      "Moscow\u2013Vnukovo",
+      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "VKO",
+      "UUWW"
     ],
     [
       "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Novosibirsk_Airport"
+      "https://en.wikipedia.org/wiki/Novosibirsk_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport"
+      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "LED",
+      "ULLI"
     ],
     [
       "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport"
+      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "SSH",
+      "HESH"
     ],
     [
       "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport"
+      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "AER",
+      "URSS"
     ],
     [
       "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport"
+      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "SVX",
+      "USSS"
     ],
     [
       "Yerevan",
-      "https://en.wikipedia.org/wiki/Zvartnots_International_Airport"
+      "https://en.wikipedia.org/wiki/Zvartnots_International_Airport",
+      "EVN",
+      "UDYZ"
     ]
   ],
   "airlines_destinations": {
     "Aeroflot": [
-      "Moscow–Sheremetyevo"
+      "Moscow\u2013Sheremetyevo"
     ],
     "AlMasria Universal Airlines": [
       "Sharm El Sheikh"
     ],
     "flydubai": [
-      "Dubai–International"
+      "Dubai\u2013International"
     ],
     "Ikar": [
       "Kaliningrad",
@@ -105,20 +135,20 @@
       "Yekaterinburg"
     ],
     "Pobeda": [
-      "Moscow–Sheremetyevo",
-      "Moscow–Vnukovo",
+      "Moscow\u2013Sheremetyevo",
+      "Moscow\u2013Vnukovo",
       "Saint Petersburg"
     ],
     "Red Wings Airlines": [
       "Makhachkala"
     ],
     "Rossiya Airlines": [
-      "Moscow–Sheremetyevo",
+      "Moscow\u2013Sheremetyevo",
       "Saint Petersburg",
       "Yerevan"
     ],
     "S7 Airlines": [
-      "Moscow–Domodedovo",
+      "Moscow\u2013Domodedovo",
       "Novosibirsk"
     ],
     "Smartavia": [
@@ -127,5 +157,6 @@
     "Ural Airlines": [
       "Sharm El Sheikh"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Volgograd]]"
 }

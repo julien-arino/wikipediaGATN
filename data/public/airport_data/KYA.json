@@ -1,8 +1,8 @@
 {
   "iata": "KYA",
   "icao": "LTAN",
-  "city-served": "[[Konya]], [[Turkey]]",
-  "location": "{{flagicon|Turkey}} [[Selçuklu]], [[Konya]], [[Turkey]]",
+  "city-served": "Konya",
+  "location": "{{flagicon|Turkey}} [[Sel\u00e7uklu]], [[Konya]], [[Turkey]]",
   "lat": null,
   "lon": null,
   "altitude": "1,031",
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Konya_Airport",
+  "number_airlines": 4,
+  "outdegree": 8,
   "airlines": [
     "AJet",
     "Pegasus Airlines",
@@ -20,57 +22,74 @@
   "destinations": [
     [
       "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol"
+      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "AMS",
+      "EHAM"
     ],
     [
       "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport"
+      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "CPH",
+      "EKCH"
     ],
     [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport"
+      "D\u00fcsseldorf",
+      "https://en.wikipedia.org/wiki/D\u00fcsseldorf_Airport",
+      "DUS",
+      "EDDL"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
+      "https://en.wikipedia.org/wiki/Sabiha_G\u00f6k\u00e7en_International_Airport",
+      "SAW",
+      "LTFJ"
     ],
     [
       "Izmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport"
+      "https://en.wikipedia.org/wiki/\u0130zmir_Adnan_Menderes_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport"
+      "Stockholm\u2013Arlanda",
+      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "ARN",
+      "ESSA"
     ],
     [
       "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport"
+      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "STR",
+      "EDDS"
     ]
   ],
   "airlines_destinations": {
     "AJet": [
       "Copenhagen",
-      "Istanbul–Sabiha Gökçen"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en"
     ],
     "Pegasus Airlines": [
       "Amsterdam",
       "Copenhagen",
-      "Istanbul–Sabiha Gökçen"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en"
     ],
     "SunExpress": [
       "Amsterdam",
       "Copenhagen",
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Izmir",
-      "Stockholm–Arlanda",
+      "Stockholm\u2013Arlanda",
       "Stuttgart"
     ],
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Konya]], [[Turkey]]"
 }

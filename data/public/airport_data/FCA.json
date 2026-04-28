@@ -1,16 +1,18 @@
 {
   "iata": "FCA",
   "icao": "KGPI",
-  "city-served": "[[Kalispell, Montana]]",
-  "location": null,
+  "city-served": "Kalispell, Montana",
+  "location": "Evergreen",
   "lat": "48.310556",
   "lon": "-114.256111",
   "altitude": "907",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Montana",
+  "country_alpha3": "USA",
+  "country_name": "United States",
+  "subdivision_code": "Flathead County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Glacier_Park_International_Airport",
+  "number_airlines": 3,
+  "outdegree": 3,
   "airlines": [
     "American Airlines",
     "American Eagle (airline brand)",
@@ -18,16 +20,22 @@
   ],
   "destinations": [
     [
-      "Austin–Bergstrom International Airport",
-      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport"
+      "Austin\u2013Bergstrom International Airport",
+      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "LaGuardia Airport",
-      "https://en.wikipedia.org/wiki/LaGuardia_Airport"
+      "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "LGA",
+      "KLGA"
     ],
     [
       "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport"
+      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "PHX",
+      "KPHX"
     ]
   ],
   "airlines_destinations": {
@@ -38,7 +46,8 @@
       "Phoenix Sky Harbor International Airport"
     ],
     "Delta Connection": [
-      "Austin–Bergstrom International Airport"
+      "Austin\u2013Bergstrom International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Kalispell, Montana]]"
 }

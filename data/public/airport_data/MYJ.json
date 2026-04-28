@@ -6,11 +6,13 @@
   "lat": "33.827222",
   "lon": "132.699722",
   "altitude": "3.96",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Ehime",
+  "country_alpha3": "JPN",
+  "country_name": "Japan",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Matsuyama_Airport",
+  "number_airlines": 7,
+  "outdegree": 10,
   "airlines": [
     "Air Busan",
     "All Nippon Airways",
@@ -23,43 +25,63 @@
   "destinations": [
     [
       "Busan",
-      "https://en.wikipedia.org/wiki/Gimhae_International_Airport"
+      "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "PUS",
+      "RKPK"
     ],
     [
       "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport"
+      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "FUK",
+      "RJFF"
     ],
     [
       "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport"
+      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "KOJ",
+      "RJFK"
     ],
     [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport"
+      "Nagoya\u2013Centrair",
+      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "NGO",
+      "RJGG"
     ],
     [
       "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport"
+      "https://en.wikipedia.org/wiki/Naha_Airport",
+      "OKA",
+      "ROAH"
     ],
     [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport"
+      "Osaka\u2013Itami",
+      "https://en.wikipedia.org/wiki/Itami_Airport",
+      "ITM",
+      "RJOO"
     ],
     [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport"
+      "Seoul\u2013Incheon",
+      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "ICN",
+      "RKSI"
     ],
     [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport"
+      "Taipei\u2013Taoyuan",
+      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "TPE",
+      "RCTP"
     ],
     [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport"
+      "Tokyo\u2013Haneda",
+      "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "HND",
+      "RJTT"
     ],
     [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport"
+      "Tokyo\u2013Narita",
+      "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "NRT",
+      "RJAA"
     ]
   ],
   "airlines_destinations": {
@@ -68,26 +90,27 @@
     ],
     "All Nippon Airways": [
       "Naha",
-      "Osaka–Itami",
-      "Tokyo–Haneda"
+      "Osaka\u2013Itami",
+      "Tokyo\u2013Haneda"
     ],
     "EVA Air": [
-      "Taipei–Taoyuan"
+      "Taipei\u2013Taoyuan"
     ],
     "Ibex Airlines": [
-      "Nagoya–Centrair"
+      "Nagoya\u2013Centrair"
     ],
     "Japan Airlines": [
       "Fukuoka",
       "Kagoshima",
-      "Osaka–Itami",
-      "Tokyo–Haneda"
+      "Osaka\u2013Itami",
+      "Tokyo\u2013Haneda"
     ],
     "Jeju Air": [
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "Jetstar Japan": [
-      "Tokyo–Narita"
+      "Tokyo\u2013Narita"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

@@ -1,16 +1,18 @@
 {
   "iata": "GNB",
   "icao": "LFLS",
-  "city-served": "[[Grenoble]], France",
-  "location": "[[Saint-Étienne-de-Saint-Geoirs]]",
+  "city-served": "Grenoble",
+  "location": "[[Saint-\u00c9tienne-de-Saint-Geoirs]]",
   "lat": "45.363056",
   "lon": "5.329444",
   "altitude": "396.8",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Alpes–Isère_Airport",
+  "region": "Rhone-Alpes",
+  "country_alpha3": "FRA",
+  "country_name": "France",
+  "subdivision_code": "Departement de l'Isere",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Alpes\u2013Is\u00e8re_Airport",
+  "number_airlines": 9,
+  "outdegree": 17,
   "airlines": [
     "Aurigny",
     "British Airways",
@@ -25,71 +27,105 @@
   "destinations": [
     [
       "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport"
+      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "BEG",
+      "LYBE"
     ],
     [
       "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport"
+      "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "BHX",
+      "EGBB"
     ],
     [
       "Bristol",
-      "https://en.wikipedia.org/wiki/Bristol_Airport"
+      "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "BRS",
+      "EGGD"
     ],
     [
       "Edinburgh",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport"
+      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "EDI",
+      "EGPH"
     ],
     [
       "Guernsey",
-      "https://en.wikipedia.org/wiki/Guernsey_Airport"
+      "https://en.wikipedia.org/wiki/Guernsey_Airport",
+      "GCI",
+      "EGJB"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "LGW",
+      "EGKK"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/London_Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/London_Luton_Airport"
+      "London\u2013Luton",
+      "https://en.wikipedia.org/wiki/London_Luton_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "London–Southend",
-      "https://en.wikipedia.org/wiki/London_Southend_Airport"
+      "London\u2013Southend",
+      "https://en.wikipedia.org/wiki/London_Southend_Airport",
+      "SEN",
+      "EGMC"
     ],
     [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport"
+      "London\u2013Stansted",
+      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "STN",
+      "EGSS"
     ],
     [
       "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport"
+      "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "MAN",
+      "EGCC"
     ],
     [
       "Newcastle upon Tyne",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport"
+      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "NCL",
+      "EGNT"
     ],
     [
       "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport"
+      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "RTM",
+      "EHRD"
     ],
     [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport"
+      "Stockholm\u2013Arlanda",
+      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "ARN",
+      "ESSA"
     ],
     [
       "Tel Aviv",
-      "https://en.wikipedia.org/wiki/David_Ben_Gurion_International_Airport"
+      "https://en.wikipedia.org/wiki/David_Ben_Gurion_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Vilnius",
-      "https://en.wikipedia.org/wiki/Vilnius_Airport"
+      "https://en.wikipedia.org/wiki/Vilnius_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport"
+      "Warsaw\u2013Chopin",
+      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "WAW",
+      "EPWA"
     ]
   ],
   "airlines_destinations": {
@@ -97,14 +133,14 @@
       "Guernsey"
     ],
     "British Airways": [
-      "London–Gatwick"
+      "London\u2013Gatwick"
     ],
     "easyJet": [
       "Birmingham",
       "Bristol",
       "Edinburgh",
-      "London–Luton",
-      "London–Southend",
+      "London\u2013Luton",
+      "London\u2013Southend",
       "Manchester"
     ],
     "Israir": [
@@ -112,12 +148,12 @@
     ],
     "Jet2.com": [
       "Birmingham",
-      "London–Stansted",
+      "London\u2013Stansted",
       "Manchester",
       "Newcastle upon Tyne"
     ],
     "Norwegian Air Shuttle": [
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ],
     "Ryanair": [
       "Birmingham",
@@ -129,10 +165,11 @@
     ],
     "Wizz Air": [
       "Belgrade",
-      "London–Gatwick",
-      "London–Luton",
+      "London\u2013Gatwick",
+      "London\u2013Luton",
       "Vilnius",
-      "Warsaw–Chopin"
+      "Warsaw\u2013Chopin"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Grenoble]], France"
 }

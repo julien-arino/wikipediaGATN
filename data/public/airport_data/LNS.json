@@ -1,8 +1,8 @@
 {
   "iata": "LNS",
   "icao": "KLNS",
-  "city-served": "[[Lancaster, Pennsylvania|Lancaster]], [[Pennsylvania]], U.S.",
-  "location": null,
+  "city-served": "Lancaster",
+  "location": "Lititz",
   "lat": "40.122222",
   "lon": "-76.294444",
   "altitude": "123",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "PA",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lancaster_Airport_(Pennsylvania)",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Breeze Airways",
     "Southern Airways Express",
@@ -19,19 +21,27 @@
   "destinations": [
     [
       "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport"
+      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "IAD",
+      "KIAD"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport"
+      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "MCO",
+      "KMCO"
     ],
     [
       "Pittsburgh International Airport",
-      "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport"
+      "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
+      "PIT",
+      "KPIT"
     ]
   ],
   "airlines_destinations": {
@@ -45,5 +55,6 @@
     "United Express": [
       "O'Hare International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Lancaster, Pennsylvania|Lancaster]], [[Pennsylvania]], U.S."
 }

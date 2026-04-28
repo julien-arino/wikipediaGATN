@@ -1,7 +1,7 @@
 {
   "iata": "YMM",
   "icao": "CYMM",
-  "city-served": "[[Regional Municipality of Wood Buffalo|Wood Buffalo]], [[Alberta]]",
+  "city-served": "Wood Buffalo",
   "location": "[[Fort McMurray]], Alberta",
   "lat": "56.653333",
   "lon": "-111.223333",
@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "AB",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_McMurray_International_Airport",
+  "number_airlines": 5,
+  "outdegree": 5,
   "airlines": [
     "Air Canada",
     "Air Canada Express",
@@ -21,28 +23,38 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
       "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport"
+      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "YEG",
+      "CYEG"
     ],
     [
       "Fort Chipewyan",
-      "https://en.wikipedia.org/wiki/Fort_Chipewyan_Airport"
+      "https://en.wikipedia.org/wiki/Fort_Chipewyan_Airport",
+      "YPY",
+      "CYPY"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ],
     [
       "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport"
+      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "YVR",
+      "CYVR"
     ]
   ],
   "airlines_destinations": {
     "Air Canada": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Air Canada Express": [
       "Calgary",
@@ -58,5 +70,6 @@
       "Calgary",
       "Edmonton"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Regional Municipality of Wood Buffalo|Wood Buffalo]], [[Alberta]]"
 }

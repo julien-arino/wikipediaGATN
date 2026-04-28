@@ -1,16 +1,18 @@
 {
   "iata": "MFM",
   "icao": "VMMC",
-  "city-served": "[[Pearl River Delta]]",
+  "city-served": "Pearl River Delta",
   "location": "[[Taipa]], [[Macau]]",
   "lat": "22.149444",
   "lon": "113.591389",
   "altitude": "6",
   "region": "MO",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "MAC",
+  "country_name": "Macao",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Ethiopian Airlines Cargo",
     "Qatar Airways Cargo"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport"
+      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "DOH",
+      "OTHH"
     ],
     [
       "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhash_Chandra_Bose_International_Airport"
+      "https://en.wikipedia.org/wiki/Netaji_Subhash_Chandra_Bose_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport"
+      "https://en.wikipedia.org/wiki/Madrid\u2013Barajas_Airport",
+      "MAD",
+      "LEMD"
     ]
   ],
   "airlines_destinations": {
@@ -37,5 +45,6 @@
       "Doha",
       "Kolkata"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Pearl River Delta]]"
 }

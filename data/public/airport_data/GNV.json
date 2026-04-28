@@ -1,7 +1,7 @@
 {
   "iata": "GNV",
   "icao": "KGNV",
-  "city-served": "[[Gainesville, Florida]]",
+  "city-served": "Gainesville, Florida",
   "location": "within Gainesville municipal boundary",
   "lat": "29.690000",
   "lon": "-82.271667",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "FL",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gainesville_Regional_Airport",
+  "number_airlines": 2,
+  "outdegree": 4,
   "airlines": [
     "American Eagle (airline brand)",
     "Delta Air Lines"
@@ -18,19 +20,27 @@
   "destinations": [
     [
       "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport"
+      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "CLT",
+      "KCLT"
     ],
     [
       "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport"
+      "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "MIA",
+      "KMIA"
     ]
   ],
   "airlines_destinations": {
@@ -40,7 +50,8 @@
       "Miami International Airport"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Gainesville, Florida]]"
 }

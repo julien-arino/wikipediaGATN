@@ -1,16 +1,18 @@
 {
   "iata": "UVF",
   "icao": "TLPL",
-  "city-served": "[[Vieux Fort Quarter|Vieux Fort]], Saint Lucia",
+  "city-served": "Vieux Fort",
   "location": "[[La Tourney]], Vieux Fort",
   "lat": "13.733333",
   "lon": "-60.952500",
   "altitude": "4.27",
   "region": "LC",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "LCA",
+  "country_name": "Saint Lucia",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
+  "number_airlines": 5,
+  "outdegree": 8,
   "airlines": [
     "Air Canada Rouge",
     "Air Cargo Carriers",
@@ -21,56 +23,73 @@
   "destinations": [
     [
       "Boston",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport"
+      "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "BOS",
+      "KBOS"
     ],
     [
-      "Dominica–Douglas-Charles",
-      "https://en.wikipedia.org/wiki/Douglas–Charles_Airport"
+      "Dominica\u2013Douglas-Charles",
+      "https://en.wikipedia.org/wiki/Douglas\u2013Charles_Airport",
+      "DOM",
+      "TDPD"
     ],
     [
-      "Georgetown–Cheddi Jagan",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport"
+      "Georgetown\u2013Cheddi Jagan",
+      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "GEO",
+      "SYCJ"
     ],
     [
       "Grenada",
-      "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport"
+      "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+      "GND",
+      "TGPY"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "LGW",
+      "EGKK"
     ],
     [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport"
+      "New York\u2013JFK",
+      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "JFK",
+      "KJFK"
     ],
     [
       "Tobago",
-      "https://en.wikipedia.org/wiki/Arthur_Napoleon_Raymond_Robinson_International_Airport"
+      "https://en.wikipedia.org/wiki/Arthur_Napoleon_Raymond_Robinson_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Rouge": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "British Airways": [
-      "Georgetown–Cheddi Jagan",
+      "Georgetown\u2013Cheddi Jagan",
       "Grenada",
-      "London–Gatwick",
+      "London\u2013Gatwick",
       "Tobago"
     ],
     "JetBlue": [
       "Boston",
-      "New York–JFK"
+      "New York\u2013JFK"
     ],
     "WestJet": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Air Cargo Carriers": [
-      "Dominica–Douglas-Charles"
+      "Dominica\u2013Douglas-Charles"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Vieux Fort Quarter|Vieux Fort]], Saint Lucia"
 }

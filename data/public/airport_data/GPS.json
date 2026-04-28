@@ -1,16 +1,18 @@
 {
   "iata": "GPS",
   "icao": "SEGS",
-  "city-served": "[[Baltra Island|Baltra]], [[Galápagos Islands]], [[Ecuador]]",
-  "location": null,
+  "city-served": "Baltra",
+  "location": "Puerto Ayora",
   "lat": "-0.453889",
   "lon": "-90.265833",
   "altitude": "63.09",
   "region": "EC",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "ECU",
+  "country_name": "Ecuador",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Seymour_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Avianca Ecuador",
     "LATAM Ecuador"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Cuenca",
-      "https://en.wikipedia.org/wiki/Cuenca_Airport"
+      "https://en.wikipedia.org/wiki/Cuenca_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Guayaquil",
-      "https://en.wikipedia.org/wiki/José_Joaquín_de_Olmedo_International_Airport"
+      "https://en.wikipedia.org/wiki/Jos\u00e9_Joaqu\u00edn_de_Olmedo_International_Airport",
+      "GYE",
+      "SEGU"
     ],
     [
       "Quito",
-      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport"
+      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "UIO",
+      "SEQM"
     ]
   ],
   "airlines_destinations": {
@@ -38,5 +46,6 @@
       "Cuenca",
       "Guayaquil"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Baltra Island|Baltra]], [[Gal\u00e1pagos Islands]], [[Ecuador]]"
 }

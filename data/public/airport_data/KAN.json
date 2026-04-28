@@ -1,16 +1,18 @@
 {
   "iata": "KAN",
   "icao": "DNKN",
-  "city-served": "[[Kano (city)|Kano]], Nigeria",
-  "location": null,
+  "city-served": "Kano",
+  "location": "Kano",
   "lat": "12.048611",
   "lon": "8.522222",
   "altitude": "476.1",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Kano",
+  "country_alpha3": "NGA",
+  "country_name": "Nigeria",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kano_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "Aerotranscargo",
     "EgyptAir",
@@ -20,19 +22,27 @@
   "destinations": [
     [
       "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport"
+      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "CAI",
+      "HECA"
     ],
     [
       "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport"
+      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "JED",
+      "OEJN"
     ],
     [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport"
+      "Li\u00e8ge",
+      "https://en.wikipedia.org/wiki/Li\u00e8ge_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ]
   ],
   "airlines_destinations": {
@@ -43,10 +53,11 @@
       "Cairo"
     ],
     "Ethiopian Airlines Cargo": [
-      "Liège"
+      "Li\u00e8ge"
     ],
     "Saudia Cargo": [
       "Jeddah"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Kano (city)|Kano]], Nigeria"
 }

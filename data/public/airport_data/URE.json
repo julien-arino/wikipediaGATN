@@ -1,16 +1,18 @@
 {
   "iata": "URE",
   "icao": "EEKE",
-  "city-served": "[[Kuressaare]], Estonia",
-  "location": null,
+  "city-served": "Kuressaare",
+  "location": "Kuressaare",
   "lat": "58.230000",
   "lon": "22.509444",
   "altitude": "4.27",
   "region": "EE",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "EST",
+  "country_name": "Estonia",
+  "subdivision_code": "Kuressaare linn",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kuressaare_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Diamond Sky",
     "Finnair",
@@ -19,24 +21,32 @@
   "destinations": [
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
-      "Pärnu",
-      "https://en.wikipedia.org/wiki/Pärnu_Airport"
+      "P\u00e4rnu",
+      "https://en.wikipedia.org/wiki/P\u00e4rnu_Airport",
+      "EPU",
+      "EEPU"
     ],
     [
       "Ruhnu",
-      "https://en.wikipedia.org/wiki/Ruhnu_Airfield"
+      "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
+      "iata code not found",
+      "EERU"
     ],
     [
       "Tallinn",
-      "https://en.wikipedia.org/wiki/Tallinn_Airport"
+      "https://en.wikipedia.org/wiki/Tallinn_Airport",
+      "TLL",
+      "EETN"
     ]
   ],
   "airlines_destinations": {
     "Diamond Sky": [
-      "Pärnu",
+      "P\u00e4rnu",
       "Ruhnu"
     ],
     "Finnair": [
@@ -45,5 +55,6 @@
     "NyxAir": [
       "Tallinn"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Kuressaare]], Estonia"
 }

@@ -1,7 +1,7 @@
 {
   "iata": "PNA",
   "icao": "LEPP",
-  "city-served": "[[Pamplona]], [[Navarra]], [[Spain]]",
+  "city-served": "Pamplona",
   "location": null,
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Pamplona_Airport",
+  "number_airlines": 2,
+  "outdegree": 4,
   "airlines": [
     "Binter Canarias",
     "Iberia"
@@ -18,29 +20,38 @@
   "destinations": [
     [
       "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport"
+      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "LPA",
+      "GCLP"
     ],
     [
       "Ibiza",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport"
+      "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "IBZ",
+      "LEIB"
     ],
     [
       "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport"
+      "https://en.wikipedia.org/wiki/Adolfo_Su\u00e1rez_Madrid\u2013Barajas_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport"
+      "Tenerife\u2013North",
+      "https://en.wikipedia.org/wiki/Tenerife_North\u2013Ciudad_de_La_Laguna_Airport",
+      "TFN",
+      "GCXO"
     ]
   ],
   "airlines_destinations": {
     "Binter Canarias": [
       "Gran Canaria",
-      "Tenerife–North"
+      "Tenerife\u2013North"
     ],
     "Iberia": [
       "Ibiza",
       "Madrid"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Pamplona]], [[Navarra]], [[Spain]]"
 }

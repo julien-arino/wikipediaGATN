@@ -1,7 +1,7 @@
 {
   "iata": "ITH",
   "icao": "KITH",
-  "city-served": "[[Ithaca, New York]]",
+  "city-served": "Ithaca, New York",
   "location": "[[Lansing (village), New York|Lansing, New York]]",
   "lat": "42.491389",
   "lon": "-76.458611",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "NY",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ithaca_Tompkins_International_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
     "Delta Connection",
     "United Express"
@@ -18,11 +20,15 @@
   "destinations": [
     [
       "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport"
+      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "IAD",
+      "KIAD"
     ],
     [
       "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport"
+      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "JFK",
+      "KJFK"
     ]
   ],
   "airlines_destinations": {
@@ -32,5 +38,6 @@
     "United Express": [
       "Dulles International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Ithaca, New York]]"
 }

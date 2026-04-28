@@ -1,8 +1,8 @@
 {
   "iata": "DPL",
   "icao": "RPMG",
-  "city-served": "[[Dipolog]]",
-  "location": null,
+  "city-served": "Dipolog",
+  "location": "Dipolog",
   "lat": "8.601389",
   "lon": "123.341944",
   "altitude": "4",
@@ -11,6 +11,8 @@
   "country_name": "Philippines",
   "subdivision_code": "ZAN",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Dipolog_Airport",
+  "number_airlines": 4,
+  "outdegree": 3,
   "airlines": [
     "Cebgo",
     "Cebu Pacific",
@@ -20,15 +22,21 @@
   "destinations": [
     [
       "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport"
+      "https://en.wikipedia.org/wiki/Mactan\u2013Cebu_International_Airport",
+      "CEB",
+      "RPVM"
     ],
     [
       "Dumaguete",
-      "https://en.wikipedia.org/wiki/Sibulan_Airport"
+      "https://en.wikipedia.org/wiki/Sibulan_Airport",
+      "DGT",
+      "RPVD"
     ],
     [
       "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport"
+      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "MNL",
+      "RPLL"
     ]
   ],
   "airlines_destinations": {
@@ -44,5 +52,6 @@
     "Royhle Air Way": [
       "Dumaguete"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Dipolog]]"
 }

@@ -1,16 +1,18 @@
 {
   "iata": "CFN",
   "icao": "EIDL",
-  "city-served": "[[County Donegal]]",
+  "city-served": "County Donegal",
   "location": "Carrickfinn",
   "lat": "55.044167",
   "lon": "-8.341111",
   "altitude": "9",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Ulster",
+  "country_alpha3": "IRL",
+  "country_name": "Ireland",
+  "subdivision_code": "County Donegal",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Donegal_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
     "Aer Lingus",
     "Loganair"
@@ -18,11 +20,15 @@
   "destinations": [
     [
       "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport"
+      "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "DUB",
+      "EIDW"
     ],
     [
       "Glasgow",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport"
+      "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "GLA",
+      "EGPF"
     ]
   ],
   "airlines_destinations": {
@@ -32,5 +38,6 @@
     "Loganair": [
       "Glasgow"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[County Donegal]]"
 }

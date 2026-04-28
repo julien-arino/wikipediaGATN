@@ -1,7 +1,7 @@
 {
   "iata": "TPQ",
   "icao": "MMEP",
-  "city-served": "[[Tepic]], [[Nayarit]], [[Mexico]]",
+  "city-served": "Tepic",
   "location": null,
   "lat": null,
   "lon": null,
@@ -11,9 +11,11 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tepic_International_Airport",
+  "number_airlines": 6,
+  "outdegree": 6,
   "airlines": [
-    "Aeroméxico Connect",
-    "Aéreo Servicio Guerrero",
+    "Aerom\u00e9xico Connect",
+    "A\u00e9reo Servicio Guerrero",
     "United Express",
     "Viva",
     "Volaris",
@@ -22,41 +24,53 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport"
+      "Houston\u2013Intercontinental",
+      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "IAH",
+      "KIAH"
     ],
     [
       "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
+      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "LAX",
+      "KLAX"
     ],
     [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport"
+      "Mexico City\u2013Benito Ju\u00e1rez",
+      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "MEX",
+      "MMMX"
     ],
     [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport"
+      "Mexico City\u2013Felipe \u00c1ngeles",
+      "https://en.wikipedia.org/wiki/Felipe_\u00c1ngeles_International_Airport",
+      "NLU",
+      "MMSM"
     ],
     [
       "Puerto Balleto",
-      "https://en.wikipedia.org/wiki/Maria_Madre_Island_Naval_Air_Station"
+      "https://en.wikipedia.org/wiki/Maria_Madre_Island_Naval_Air_Station",
+      "NON",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
-    "Aeroméxico Connect": [
-      "Mexico City–Benito Juárez"
+    "Aerom\u00e9xico Connect": [
+      "Mexico City\u2013Benito Ju\u00e1rez"
     ],
-    "Aéreo Servicio Guerrero": [
+    "A\u00e9reo Servicio Guerrero": [
       "Puerto Balleto"
     ],
     "United Express": [
-      "Houston–Intercontinental"
+      "Houston\u2013Intercontinental"
     ],
     "Viva": [
-      "Mexico City–Felipe Ángeles"
+      "Mexico City\u2013Felipe \u00c1ngeles"
     ],
     "Volaris": [
       "Los Angeles"
@@ -64,5 +78,6 @@
     "WestJet": [
       "Calgary"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Tepic]], [[Nayarit]], [[Mexico]]"
 }

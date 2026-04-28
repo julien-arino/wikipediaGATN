@@ -1,8 +1,8 @@
 {
   "iata": "CPX",
   "icao": "TJCP",
-  "city-served": "[[Isla de Culebra, Puerto Rico]]",
-  "location": null,
+  "city-served": "Isla de Culebra, Puerto Rico",
+  "location": "Culebra",
   "lat": "18.313333",
   "lon": "-65.304444",
   "altitude": "14.94",
@@ -10,7 +10,9 @@
   "country_alpha3": "USA",
   "country_name": "United States",
   "subdivision_code": "PR",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Benjamín_Rivera_Noriega_Airport",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Benjam\u00edn_Rivera_Noriega_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Air Flamenco",
     "Cape Air",
@@ -19,34 +21,43 @@
   "destinations": [
     [
       "Ceiba",
-      "https://en.wikipedia.org/wiki/José_Aponte_de_la_Torre_Airport"
+      "https://en.wikipedia.org/wiki/Jos\u00e9_Aponte_de_la_Torre_Airport",
+      "NRR",
+      "TJRV"
     ],
     [
-      "San Juan–Isla Grande",
-      "https://en.wikipedia.org/wiki/Fernando_Luis_Ribas_Dominicci_Airport"
+      "San Juan\u2013Isla Grande",
+      "https://en.wikipedia.org/wiki/Fernando_Luis_Ribas_Dominicci_Airport",
+      "SIG",
+      "TJIG"
     ],
     [
-      "San Juan–LMM",
-      "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport"
+      "San Juan\u2013LMM",
+      "https://en.wikipedia.org/wiki/Luis_Mu\u00f1oz_Mar\u00edn_International_Airport",
+      "SJU",
+      "TJSJ"
     ],
     [
       "Vieques",
-      "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodríguez_Airport"
+      "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodr\u00edguez_Airport",
+      "VQS",
+      "TJVQ"
     ]
   ],
   "airlines_destinations": {
     "Air Flamenco": [
       "Ceiba",
-      "San Juan–Isla Grande"
+      "San Juan\u2013Isla Grande"
     ],
     "Cape Air": [
-      "San Juan–LMM",
+      "San Juan\u2013LMM",
       "Vieques"
     ],
     "Vieques Air Link": [
       "Ceiba",
-      "San Juan–Isla Grande",
+      "San Juan\u2013Isla Grande",
       "Vieques"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Isla de Culebra, Puerto Rico]]"
 }

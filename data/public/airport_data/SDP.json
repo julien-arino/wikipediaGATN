@@ -1,8 +1,8 @@
 {
   "iata": "SDP",
   "icao": "PASD",
-  "city-served": "[[Sand Point, Alaska]]",
-  "location": null,
+  "city-served": "Sand Point, Alaska",
+  "location": "Sand Point",
   "lat": "55.313611",
   "lon": "-160.521389",
   "altitude": "6.4",
@@ -11,17 +11,23 @@
   "country_name": "United States",
   "subdivision_code": "AK",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sand_Point_Airport",
+  "number_airlines": 1,
+  "outdegree": 2,
   "airlines": [
     "Aleutian Airways"
   ],
   "destinations": [
     [
       "Anchorage",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport"
+      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "ANC",
+      "PANC"
     ],
     [
       "Cold Bay",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport"
+      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "CDB",
+      "PACD"
     ]
   ],
   "airlines_destinations": {
@@ -29,5 +35,6 @@
       "Anchorage",
       "Cold Bay"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Sand Point, Alaska]]"
 }

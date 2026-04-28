@@ -1,7 +1,7 @@
 {
   "iata": "KSQ",
   "icao": "UTSK",
-  "city-served": "[[Qarshi]]",
+  "city-served": "Qarshi",
   "location": "[[Qarshi]], [[Uzbekistan]]",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Qarshi_Airport",
+  "number_airlines": 4,
+  "outdegree": 6,
   "airlines": [
     "Qanot Sharq",
     "Silk Avia",
@@ -20,27 +22,39 @@
   "destinations": [
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport"
+      "Moscow\u2013Domodedovo",
+      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "DME",
+      "UUDD"
     ],
     [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport"
+      "Moscow\u2013Vnukovo",
+      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "VKO",
+      "UUWW"
     ],
     [
-      "Moscow–Zhukovsky",
-      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport"
+      "Moscow\u2013Zhukovsky",
+      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "ZIA",
+      "UUBW"
     ],
     [
       "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport"
+      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "LED",
+      "ULLI"
     ],
     [
       "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport"
+      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -51,12 +65,13 @@
       "Tashkent"
     ],
     "Ural Airlines": [
-      "Moscow–Domodedovo",
-      "Moscow–Zhukovsky"
+      "Moscow\u2013Domodedovo",
+      "Moscow\u2013Zhukovsky"
     ],
     "Uzbekistan Airways": [
-      "Moscow–Vnukovo",
+      "Moscow\u2013Vnukovo",
       "Saint Petersburg"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Qarshi]]"
 }

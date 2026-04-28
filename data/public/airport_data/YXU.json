@@ -1,7 +1,7 @@
 {
   "iata": "YXU",
   "icao": "CYXU",
-  "city-served": "[[London, Ontario|London]], [[Ontario]]",
+  "city-served": "London",
   "location": "London, Ontario",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/London_International_Airport",
+  "number_airlines": 3,
+  "outdegree": 5,
   "airlines": [
     "Air Canada Express",
     "Air Transat",
@@ -19,38 +21,49 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport"
+      "Canc\u00fan",
+      "https://en.wikipedia.org/wiki/Canc\u00fan_International_Airport",
+      "CUN",
+      "MMUN"
     ],
     [
       "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport"
+      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "PUJ",
+      "MDPC"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ],
     [
       "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport"
+      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "YWG",
+      "CYWG"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Express": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Air Transat": [
-      "Cancún",
+      "Canc\u00fan",
       "Punta Cana"
     ],
     "WestJet": [
       "Calgary",
-      "Cancún",
+      "Canc\u00fan",
       "Punta Cana",
       "Winnipeg"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[London, Ontario|London]], [[Ontario]]"
 }

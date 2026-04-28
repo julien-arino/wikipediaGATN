@@ -1,7 +1,7 @@
 {
   "iata": "ZAG",
   "icao": "LDZA",
-  "city-served": "[[Zagreb]]",
+  "city-served": "Zagreb",
   "location": "[[Velika Gorica]], Croatia",
   "lat": "45.743056",
   "lon": "16.068889",
@@ -11,6 +11,8 @@
   "country_name": "Croatia",
   "subdivision_code": "21",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "DHL Aviation",
     "MNG Airlines"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
       "Leipzig/Halle",
-      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport"
+      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "LEJ",
+      "EDDP"
     ],
     [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport"
+      "Paris\u2013Charles de Gaulle",
+      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "CDG",
+      "LFPG"
     ]
   ],
   "airlines_destinations": {
@@ -35,7 +43,8 @@
     ],
     "MNG Airlines": [
       "Istanbul",
-      "Paris–Charles de Gaulle"
+      "Paris\u2013Charles de Gaulle"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Zagreb]]"
 }

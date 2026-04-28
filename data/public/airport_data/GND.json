@@ -7,10 +7,12 @@
   "lon": "-61.786111",
   "altitude": "12.5",
   "region": "GF",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "GRD",
+  "country_name": "Grenada",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+  "number_airlines": 11,
+  "outdegree": 14,
   "airlines": [
     "Air Canada",
     "American Airlines",
@@ -27,64 +29,92 @@
   "destinations": [
     [
       "Antigua",
-      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport"
+      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "ANU",
+      "TAPA"
     ],
     [
       "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport"
+      "https://en.wikipedia.org/wiki/Hartsfield\u2013Jackson_Atlanta_International_Airport",
+      "ATL",
+      "KATL"
     ],
     [
       "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport"
+      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "BGI",
+      "TBPB"
     ],
     [
       "Castries",
-      "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport"
+      "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport"
+      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "CLT",
+      "KCLT"
     ],
     [
-      "Georgetown–Cheddi Jagan",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport"
+      "Georgetown\u2013Cheddi Jagan",
+      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "GEO",
+      "SYCJ"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "LGW",
+      "EGKK"
     ],
     [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport"
+      "London\u2013Heathrow",
+      "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "LHR",
+      "EGLL"
     ],
     [
       "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport"
+      "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "MIA",
+      "KMIA"
     ],
     [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport"
+      "New York\u2013JFK",
+      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "JFK",
+      "KJFK"
     ],
     [
       "Port of Spain",
-      "https://en.wikipedia.org/wiki/Piarco_International_Airport"
+      "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "POS",
+      "TTPP"
     ],
     [
-      "St. Lucia–Hewanorra",
-      "https://en.wikipedia.org/wiki/Hewanorra_International_Airport"
+      "St. Lucia\u2013Hewanorra",
+      "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
+      "UVF",
+      "TLPL"
     ],
     [
-      "St. Vincent–Argyle",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport"
+      "St. Vincent\u2013Argyle",
+      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "SVD",
+      "TVSA"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "American Airlines": [
       "Charlotte",
@@ -92,8 +122,8 @@
     ],
     "British Airways": [
       "Barbados",
-      "London–Gatwick",
-      "St. Lucia–Hewanorra"
+      "London\u2013Gatwick",
+      "St. Lucia\u2013Hewanorra"
     ],
     "Caribbean Airlines": [
       "Barbados",
@@ -104,11 +134,11 @@
     ],
     "InterCaribbean Airways": [
       "Barbados",
-      "Georgetown–Cheddi Jagan",
-      "St. Vincent–Argyle"
+      "Georgetown\u2013Cheddi Jagan",
+      "St. Vincent\u2013Argyle"
     ],
     "JetBlue": [
-      "New York–JFK"
+      "New York\u2013JFK"
     ],
     "Liat20": [
       "Castries"
@@ -119,10 +149,11 @@
     ],
     "Virgin Atlantic": [
       "Barbados",
-      "London–Heathrow"
+      "London\u2013Heathrow"
     ],
     "WestJet": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ]
-  }
+  },
+  "city-served-wikipedia": "St George's"
 }

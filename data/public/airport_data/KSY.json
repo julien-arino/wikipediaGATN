@@ -1,7 +1,7 @@
 {
   "iata": "KSY",
   "icao": "LTCF",
-  "city-served": "[[Kars]], [[Turkey]]",
+  "city-served": "Kars",
   "location": "{{flagicon|Turkey}} [[Kars]], [[Turkey]]",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kars_Harakani_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "AJet",
     "Pegasus Airlines",
@@ -20,28 +22,36 @@
   "destinations": [
     [
       "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport"
+      "https://en.wikipedia.org/wiki/Ankara_Esenbo\u011fa_Airport",
+      "ESB",
+      "LTAC"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
+      "https://en.wikipedia.org/wiki/Sabiha_G\u00f6k\u00e7en_International_Airport",
+      "SAW",
+      "LTFJ"
     ],
     [
       "Izmir",
-      "https://en.wikipedia.org/wiki/Izmir_Adnan_Menderes_Airport"
+      "https://en.wikipedia.org/wiki/Izmir_Adnan_Menderes_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "AJet": [
       "Ankara",
-      "Istanbul–Sabiha Gökçen"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en"
     ],
     "Pegasus Airlines": [
-      "Istanbul–Sabiha Gökçen"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en"
     ],
     "SunExpress": [
       "Izmir"
@@ -49,5 +59,6 @@
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Kars]], [[Turkey]]"
 }

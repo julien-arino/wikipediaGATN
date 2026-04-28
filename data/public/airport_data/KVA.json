@@ -1,16 +1,18 @@
 {
   "iata": "KVA",
   "icao": "LGKV",
-  "city-served": "[[Kavala]]",
+  "city-served": "Kavala",
   "location": "[[Chrysoupoli]]",
   "lat": "40.913333",
   "lon": "24.619167",
   "altitude": "5",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "East Macedonia and Thrace",
+  "country_alpha3": "GRC",
+  "country_name": "Greece",
+  "subdivision_code": "Nomos Kavalas",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kavala_International_Airport",
+  "number_airlines": 9,
+  "outdegree": 19,
   "airlines": [
     "Aegean Airlines",
     "Air Serbia",
@@ -25,79 +27,117 @@
   "destinations": [
     [
       "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport"
+      "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "ATH",
+      "LGAV"
     ],
     [
       "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport"
+      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "BEG",
+      "LYBE"
     ],
     [
       "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport"
+      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "BER",
+      "EDDB"
     ],
     [
       "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport"
+      "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "BHX",
+      "EGBB"
     ],
     [
       "Brno",
-      "https://en.wikipedia.org/wiki/Brno_Airport"
+      "https://en.wikipedia.org/wiki/Brno_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport"
+      "Bucharest\u2013Otopeni",
+      "https://en.wikipedia.org/wiki/Bucharest_Henri_Coand\u0103_International_Airport",
+      "OTP",
+      "LROP"
     ],
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport"
+      "D\u00fcsseldorf",
+      "https://en.wikipedia.org/wiki/D\u00fcsseldorf_Airport",
+      "DUS",
+      "EDDL"
     ],
     [
       "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "LGW",
+      "EGKK"
     ],
     [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport"
+      "London\u2013Stansted",
+      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "STN",
+      "EGSS"
     ],
     [
       "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport"
+      "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "MAN",
+      "EGCC"
     ],
     [
       "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ],
     [
       "Nuremberg",
-      "https://en.wikipedia.org/wiki/Nuremberg_Airport"
+      "https://en.wikipedia.org/wiki/Nuremberg_Airport",
+      "NUE",
+      "EDDN"
     ],
     [
       "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague"
+      "https://en.wikipedia.org/wiki/V\u00e1clav_Havel_Airport_Prague",
+      "PRG",
+      "LKPR"
     ],
     [
       "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport"
+      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "STR",
+      "EDDS"
     ],
     [
-      "Timișoara",
-      "https://en.wikipedia.org/wiki/Timișoara_Traian_Vuia_International_Airport"
+      "Timi\u0219oara",
+      "https://en.wikipedia.org/wiki/Timi\u0219oara_Traian_Vuia_International_Airport",
+      "TSR",
+      "LRTR"
     ],
     [
       "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport"
+      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Warsaw-Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport"
+      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "WAW",
+      "EPWA"
     ]
   ],
   "airlines_destinations": {
@@ -108,8 +148,8 @@
       "Belgrade"
     ],
     "Animawings": [
-      "Bucharest–Otopeni",
-      "Timișoara"
+      "Bucharest\u2013Otopeni",
+      "Timi\u0219oara"
     ],
     "Austrian Airlines": [
       "Vienna"
@@ -122,12 +162,12 @@
     "Eurowings": [
       "Berlin",
       "Cologne/Bonn",
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Stuttgart"
     ],
     "Jet2.com": [
       "Birmingham",
-      "London–Stansted",
+      "London\u2013Stansted",
       "Manchester"
     ],
     "Smartwings": [
@@ -137,8 +177,9 @@
     ],
     "TUI Airways": [
       "Birmingham",
-      "London–Gatwick",
+      "London\u2013Gatwick",
       "Manchester"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Kavala]]"
 }

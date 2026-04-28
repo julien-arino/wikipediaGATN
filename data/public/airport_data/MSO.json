@@ -1,8 +1,8 @@
 {
   "iata": "MSO",
   "icao": "KMSO",
-  "city-served": "[[Missoula, Montana]]",
-  "location": null,
+  "city-served": "Missoula, Montana",
+  "location": "Orchard Homes",
   "lat": "46.916389",
   "lon": "-114.090556",
   "altitude": "977",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "MT",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Missoula_International_Airport",
+  "number_airlines": 10,
+  "outdegree": 15,
   "airlines": [
     "Alaska Airlines",
     "Allegiant Air",
@@ -26,70 +28,100 @@
   "destinations": [
     [
       "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
       "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
       "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport"
+      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "LAS",
+      "KLAS"
     ],
     [
       "John Wayne Airport",
-      "https://en.wikipedia.org/wiki/John_Wayne_Airport"
+      "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "SNA",
+      "KSNA"
     ],
     [
       "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
+      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "LAX",
+      "KLAX"
     ],
     [
       "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport"
+      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "AZA",
+      "KIWA"
     ],
     [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport"
+      "Minneapolis\u2013Saint Paul International Airport",
+      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Oakland San Francisco Bay Airport",
-      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport"
+      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "OAK",
+      "KOAK"
     ],
     [
       "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport"
+      "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "PDX",
+      "KPDX"
     ],
     [
       "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport"
+      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "SLC",
+      "KSLC"
     ],
     [
       "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "SAN",
+      "KSAN"
     ],
     [
       "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "SFO",
+      "KSFO"
     ],
     [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport"
+      "Seattle\u2013Tacoma International Airport",
+      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
       "Portland International Airport",
       "San Diego International Airport",
-      "Seattle–Tacoma International Airport"
+      "Seattle\u2013Tacoma International Airport"
     ],
     "Allegiant Air": [
       "Harry Reid International Airport",
@@ -107,7 +139,7 @@
       "O'Hare International Airport"
     ],
     "Delta Air Lines": [
-      "Minneapolis–Saint Paul International Airport",
+      "Minneapolis\u2013Saint Paul International Airport",
       "Salt Lake City International Airport"
     ],
     "Delta Connection": [
@@ -117,7 +149,7 @@
       "Denver International Airport"
     ],
     "Sun Country Airlines": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis\u2013Saint Paul International Airport"
     ],
     "United Airlines": [
       "Denver International Airport",
@@ -128,5 +160,6 @@
       "O'Hare International Airport",
       "San Francisco International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Missoula, Montana]]"
 }

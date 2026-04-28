@@ -1,7 +1,7 @@
 {
   "iata": "KOA",
   "icao": "PHKO",
-  "city-served": "[[Island of Hawaii]]",
+  "city-served": "Island of Hawaii",
   "location": "[[Kalaoa, Hawaii]]",
   "lat": "19.738889",
   "lon": "-156.045556",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "HI",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kona_International_Airport",
+  "number_airlines": 7,
+  "outdegree": 12,
   "airlines": [
     "Alaska Airlines",
     "American Airlines",
@@ -23,57 +25,81 @@
   "destinations": [
     [
       "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
       "Denver",
-      "https://en.wikipedia.org/wiki/Denver"
+      "https://en.wikipedia.org/wiki/Denver",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles"
+      "https://en.wikipedia.org/wiki/Los_Angeles",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
+      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "LAX",
+      "KLAX"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Sacramento International Airport",
-      "https://en.wikipedia.org/wiki/Sacramento_International_Airport"
+      "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "SMF",
+      "KSMF"
     ],
     [
       "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport"
+      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "SLC",
+      "KSLC"
     ],
     [
       "San Fransisco",
-      "https://en.wikipedia.org/wiki/San_Fransisco"
+      "https://en.wikipedia.org/wiki/San_Fransisco",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "San José International Airport",
-      "https://en.wikipedia.org/wiki/San_Jos%C3%A9_International_Airport"
+      "San Jos\u00e9 International Airport",
+      "https://en.wikipedia.org/wiki/San_Jos%C3%A9_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport"
+      "Seattle\u2013Tacoma International Airport",
+      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Vancouver International Airport",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport"
+      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "YVR",
+      "CYVR"
     ],
     [
-      "Waimea, Kauaʻi County, Hawaii",
-      "https://en.wikipedia.org/wiki/Waimea,_Kaua%CA%BBi_County,_Hawaii"
+      "Waimea, Kaua\u02bbi County, Hawaii",
+      "https://en.wikipedia.org/wiki/Waimea,_Kaua%CA%BBi_County,_Hawaii",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
       "Sacramento International Airport",
-      "San José International Airport"
+      "San Jos\u00e9 International Airport"
     ],
     "American Airlines": [
       "Dallas Fort Worth International Airport"
@@ -81,10 +107,10 @@
     "Delta Air Lines": [
       "Los Angeles International Airport",
       "Salt Lake City International Airport",
-      "Seattle–Tacoma International Airport"
+      "Seattle\u2013Tacoma International Airport"
     ],
     "Mokulele Airlines": [
-      "Waimea, Kauaʻi County, Hawaii"
+      "Waimea, Kaua\u02bbi County, Hawaii"
     ],
     "Southwest Airlines": [
       "Sacramento International Airport"
@@ -98,5 +124,6 @@
     "WestJet": [
       "Vancouver International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Island of Hawaii]]"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "JAC",
   "icao": "KJAC",
-  "city-served": "[[Jackson Hole]]",
-  "location": null,
+  "city-served": "Jackson Hole",
+  "location": "Jackson",
   "lat": "43.607222",
   "lon": "-110.737778",
   "altitude": "1,966",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "WY",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Jackson_Hole_Airport",
+  "number_airlines": 7,
+  "outdegree": 14,
   "airlines": [
     "Alaska Airlines",
     "American Airlines",
@@ -23,59 +25,87 @@
   "destinations": [
     [
       "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport"
+      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "CLT",
+      "KCLT"
     ],
     [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/O'Hare_International_Airport"
+      "Chicago\u2013O'Hare",
+      "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "ORD",
+      "KORD"
     ],
     [
       "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
       "Denver",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport"
+      "Houston\u2013Intercontinental",
+      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "IAH",
+      "KIAH"
     ],
     [
       "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
+      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "LAX",
+      "KLAX"
     ],
     [
       "Minneapolis/St. Paul",
-      "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport"
+      "https://en.wikipedia.org/wiki/Minneapolis\u2013Saint_Paul_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport"
+      "New York\u2013JFK",
+      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "JFK",
+      "KJFK"
     ],
     [
       "Portland (OR)",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport"
+      "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "PDX",
+      "KPDX"
     ],
     [
       "Salt Lake City",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport"
+      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "SLC",
+      "KSLC"
     ],
     [
       "San Diego",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "SAN",
+      "KSAN"
     ],
     [
       "San Francisco",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "SFO",
+      "KSFO"
     ],
     [
       "Seattle/Tacoma",
-      "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport"
+      "https://en.wikipedia.org/wiki/Seattle\u2013Tacoma_International_Airport",
+      "SEA",
+      "KSEA"
     ],
     [
-      "Washington–Dulles",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport"
+      "Washington\u2013Dulles",
+      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "IAD",
+      "KIAD"
     ]
   ],
   "airlines_destinations": {
@@ -87,9 +117,9 @@
     ],
     "American Airlines": [
       "Charlotte",
-      "Chicago–O'Hare",
+      "Chicago\u2013O'Hare",
       "Dallas/Fort Worth",
-      "New York–JFK"
+      "New York\u2013JFK"
     ],
     "American Eagle": [
       "Los Angeles"
@@ -103,16 +133,17 @@
       "Salt Lake City"
     ],
     "United Airlines": [
-      "Chicago–O'Hare",
+      "Chicago\u2013O'Hare",
       "Denver",
-      "Houston–Intercontinental",
+      "Houston\u2013Intercontinental",
       "Los Angeles",
       "San Francisco",
-      "Washington–Dulles"
+      "Washington\u2013Dulles"
     ],
     "United Express": [
       "Denver",
       "Los Angeles"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Jackson Hole]]"
 }

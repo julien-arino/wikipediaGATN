@@ -1,16 +1,18 @@
 {
   "iata": "SZF",
   "icao": "LTFH",
-  "city-served": "[[Samsun]], [[Turkey]]",
-  "location": "{{flagicon|Turkey}} [[Çarşamba]], [[Samsun]], [[Turkey]]",
+  "city-served": "Samsun",
+  "location": "{{flagicon|Turkey}} [[\u00c7ar\u015famba]], [[Samsun]], [[Turkey]]",
   "lat": "41.265556",
   "lon": "36.548611",
   "altitude": "5.18",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Samsun-Çarşamba_Airport",
+  "region": "Samsun",
+  "country_alpha3": "TUR",
+  "country_name": "T\u00fcrkiye",
+  "subdivision_code": "",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Samsun-\u00c7ar\u015famba_Airport",
+  "number_airlines": 9,
+  "outdegree": 16,
   "airlines": [
     "AJet",
     "Corendon Airlines",
@@ -25,83 +27,115 @@
   "destinations": [
     [
       "Adana/Mersin",
-      "https://en.wikipedia.org/wiki/Çukurova_International_Airport"
+      "https://en.wikipedia.org/wiki/\u00c7ukurova_International_Airport",
+      "COV",
+      "LTDB"
     ],
     [
       "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport"
+      "https://en.wikipedia.org/wiki/Ankara_Esenbo\u011fa_Airport",
+      "ESB",
+      "LTAC"
     ],
     [
       "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport"
+      "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "AYT",
+      "LTAI"
     ],
     [
       "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport"
+      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Airport"
+      "https://en.wikipedia.org/wiki/Berlin_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport"
+      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "BER",
+      "EDDB"
     ],
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport"
+      "D\u00fcsseldorf",
+      "https://en.wikipedia.org/wiki/D\u00fcsseldorf_Airport",
+      "DUS",
+      "EDDL"
     ],
     [
       "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
       "Hannover",
-      "https://en.wikipedia.org/wiki/Hannover_Airport"
+      "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "HAJ",
+      "EDDV"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
+      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_G\u00f6k\u00e7en_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Izmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport"
+      "https://en.wikipedia.org/wiki/\u0130zmir_Adnan_Menderes_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ],
     [
       "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport"
+      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "STR",
+      "EDDS"
     ],
     [
       "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport"
+      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "AJet": [
       "Ankara",
-      "Istanbul–Sabiha Gökçen",
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
       "Munich",
       "Stuttgart"
     ],
     "Corendon Airlines": [
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Hannover"
     ],
     "Eurowings": [
       "Cologne/Bonn",
-      "Düsseldorf"
+      "D\u00fcsseldorf"
     ],
     "Fly Baghdad": [
       "Baghdad"
@@ -112,8 +146,8 @@
     "Pegasus Airlines": [
       "Antalya",
       "Berlin",
-      "Düsseldorf",
-      "Istanbul–Sabiha Gökçen",
+      "D\u00fcsseldorf",
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
       "Izmir"
     ],
     "SunExpress": [
@@ -121,7 +155,7 @@
       "Antalya",
       "Berlin",
       "Cologne/Bonn",
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Frankfurt",
       "Hannover",
       "Izmir",
@@ -137,5 +171,6 @@
     "UR Airlines": [
       "Baghdad"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Samsun]], [[Turkey]]"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "RHI",
   "icao": "KRHI",
-  "city-served": "[[Rhinelander, Wisconsin]]",
-  "location": null,
+  "city-served": "Rhinelander, Wisconsin",
+  "location": "Rhinelander",
   "lat": "45.630833",
   "lon": "-89.466389",
   "altitude": "494.69",
@@ -10,7 +10,9 @@
   "country_alpha3": "USA",
   "country_name": "United States",
   "subdivision_code": "WI",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Rhinelander–Oneida_County_Airport",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Rhinelander\u2013Oneida_County_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
     "Delta Connection",
     "United Express"
@@ -18,11 +20,15 @@
   "destinations": [
     [
       "Minneapolis-Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport"
+      "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "MSP",
+      "KMSP"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -32,5 +38,6 @@
     "United Express": [
       "O'Hare International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Rhinelander, Wisconsin]]"
 }

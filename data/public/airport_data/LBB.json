@@ -1,7 +1,7 @@
 {
   "iata": "LBB",
   "icao": "KLBB",
-  "city-served": "[[Lubbock, Texas]]",
+  "city-served": "Lubbock, Texas",
   "location": "5401 N. Martin Luther King Blvd., Lubbock, TX 79403",
   "lat": "33.663611",
   "lon": "-101.820556",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "TX",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lubbock_Preston_Smith_International_Airport",
+  "number_airlines": 4,
+  "outdegree": 8,
   "airlines": [
     "American Airlines",
     "American Eagle (airline brand)",
@@ -19,36 +21,52 @@
   ],
   "destinations": [
     [
-      "Austin–Bergstrom International Airport",
-      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport"
+      "Austin\u2013Bergstrom International Airport",
+      "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Dallas Love Field",
-      "https://en.wikipedia.org/wiki/Dallas_Love_Field"
+      "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "DAL",
+      "KDAL"
     ],
     [
       "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
       "George Bush Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport"
+      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "IAH",
+      "KIAH"
     ],
     [
       "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport"
+      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport"
+      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "PHX",
+      "KPHX"
     ],
     [
       "William P. Hobby Airport",
-      "https://en.wikipedia.org/wiki/William_P._Hobby_Airport"
+      "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "HOU",
+      "KHOU"
     ]
   ],
   "airlines_destinations": {
@@ -60,7 +78,7 @@
       "Phoenix Sky Harbor International Airport"
     ],
     "Southwest Airlines": [
-      "Austin–Bergstrom International Airport",
+      "Austin\u2013Bergstrom International Airport",
       "Dallas Love Field",
       "Denver International Airport",
       "McCarran International Airport",
@@ -70,5 +88,6 @@
       "Denver International Airport",
       "George Bush Intercontinental Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Lubbock, Texas]]"
 }

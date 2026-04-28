@@ -1,16 +1,18 @@
 {
   "iata": "MPM",
   "icao": "FQMA",
-  "city-served": "[[Maputo]]",
+  "city-served": "Maputo",
   "location": "[[Maputo]], Mozambique",
   "lat": "-25.920833",
   "lon": "32.572500",
   "altitude": "44",
   "region": "MZ",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "MOZ",
+  "country_name": "Mozambique",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+  "number_airlines": 7,
+  "outdegree": 18,
   "airlines": [
     "Airlink",
     "Astral Aviation",
@@ -23,84 +25,120 @@
   "destinations": [
     [
       "Beira",
-      "https://en.wikipedia.org/wiki/Beira_Airport"
+      "https://en.wikipedia.org/wiki/Beira_Airport",
+      "BEW",
+      "FQBR"
     ],
     [
       "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport"
+      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "CPT",
+      "FACT"
     ],
     [
       "Chimoio",
-      "https://en.wikipedia.org/wiki/Chimoio_Airport"
+      "https://en.wikipedia.org/wiki/Chimoio_Airport",
+      "VPY",
+      "FQCH"
     ],
     [
       "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport"
+      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "DAR",
+      "HTDA"
     ],
     [
       "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport"
+      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "DOH",
+      "OTHH"
     ],
     [
       "Inhambane",
-      "https://en.wikipedia.org/wiki/Inhambane_Airport"
+      "https://en.wikipedia.org/wiki/Inhambane_Airport",
+      "INH",
+      "FQIN"
     ],
     [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport"
+      "Johannesburg\u2013O. R. Tambo",
+      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "JNB",
+      "FAOR"
     ],
     [
       "Lichinga",
-      "https://en.wikipedia.org/wiki/Lichinga_Airport"
+      "https://en.wikipedia.org/wiki/Lichinga_Airport",
+      "VXC",
+      "FQLC"
     ],
     [
       "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport"
+      "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Nacala",
-      "https://en.wikipedia.org/wiki/Nacala_Airport"
+      "https://en.wikipedia.org/wiki/Nacala_Airport",
+      "MNC",
+      "FQNC"
     ],
     [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport"
+      "Nairobi\u2013Jomo Kenyatta",
+      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "NBO",
+      "HKJK"
     ],
     [
       "Nampula",
-      "https://en.wikipedia.org/wiki/Nampula_Airport"
+      "https://en.wikipedia.org/wiki/Nampula_Airport",
+      "APL",
+      "FQNP"
     ],
     [
       "Pemba",
-      "https://en.wikipedia.org/wiki/Pemba_Airport_(Mozambique)"
+      "https://en.wikipedia.org/wiki/Pemba_Airport_(Mozambique)",
+      "POL",
+      "FQPB"
     ],
     [
       "Quelimane",
-      "https://en.wikipedia.org/wiki/Quelimane_Airport"
+      "https://en.wikipedia.org/wiki/Quelimane_Airport",
+      "UEL",
+      "FQQL"
     ],
     [
       "Tete",
-      "https://en.wikipedia.org/wiki/Chingozi_Airport"
+      "https://en.wikipedia.org/wiki/Chingozi_Airport",
+      "TET",
+      "FQTT"
     ],
     [
       "Vilanculos",
-      "https://en.wikipedia.org/wiki/Vilankulo_Airport"
+      "https://en.wikipedia.org/wiki/Vilankulo_Airport",
+      "VNX",
+      "FQVL"
     ],
     [
-      "Windhoek–Eros",
-      "https://en.wikipedia.org/wiki/Eros_Airport"
+      "Windhoek\u2013Eros",
+      "https://en.wikipedia.org/wiki/Eros_Airport",
+      "ERS",
+      "FYWE"
     ],
     [
       "Xai-Xai",
-      "https://en.wikipedia.org/wiki/Xai-Xai_Airport"
+      "https://en.wikipedia.org/wiki/Xai-Xai_Airport",
+      "VJB",
+      "FQXA"
     ]
   ],
   "airlines_destinations": {
     "Airlink": [
       "Cape Town",
-      "Johannesburg–O. R. Tambo"
+      "Johannesburg\u2013O. R. Tambo"
     ],
     "FlySafair": [
-      "Johannesburg–O. R. Tambo"
+      "Johannesburg\u2013O. R. Tambo"
     ],
     "LAM Mozambique Airlines": [
       "Beira",
@@ -108,10 +146,10 @@
       "Chimoio",
       "Dar es Salaam",
       "Inhambane",
-      "Johannesburg–O. R. Tambo",
+      "Johannesburg\u2013O. R. Tambo",
       "Lichinga",
       "Nacala",
-      "Nairobi–Jomo Kenyatta",
+      "Nairobi\u2013Jomo Kenyatta",
       "Nampula",
       "Pemba",
       "Quelimane",
@@ -126,11 +164,12 @@
       "Lisbon"
     ],
     "Astral Aviation": [
-      "Johannesburg–O. R. Tambo",
-      "Nairobi–Jomo Kenyatta"
+      "Johannesburg\u2013O. R. Tambo",
+      "Nairobi\u2013Jomo Kenyatta"
     ],
     "Westair Aviation": [
-      "Windhoek–Eros"
+      "Windhoek\u2013Eros"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Maputo]]"
 }

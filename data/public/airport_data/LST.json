@@ -1,16 +1,18 @@
 {
   "iata": "LST",
   "icao": "YMLT",
-  "city-served": "[[Launceston, Tasmania|Launceston]]",
-  "location": null,
+  "city-served": "Launceston",
+  "location": "Evandale",
   "lat": "-41.545000",
   "lon": "147.215000",
   "altitude": "171.3",
   "region": "AU",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "AUS",
+  "country_name": "Australia",
+  "subdivision_code": "Northern Midlands",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
     "Qantas Freight",
     "Team Global Express"
@@ -18,11 +20,15 @@
   "destinations": [
     [
       "Hobart",
-      "https://en.wikipedia.org/wiki/Hobart_Airport"
+      "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "HBA",
+      "YMHB"
     ],
     [
       "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport"
+      "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "MEL",
+      "YMML"
     ]
   ],
   "airlines_destinations": {
@@ -33,5 +39,6 @@
     "Team Global Express": [
       "Melbourne"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Launceston, Tasmania|Launceston]]"
 }

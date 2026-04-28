@@ -2,15 +2,17 @@
   "iata": "ORB",
   "icao": "ESOE",
   "city-served": null,
-  "location": "Örebro",
+  "location": "\u00d6rebro",
   "lat": "59.223611",
   "lon": "15.038056",
   "altitude": "57",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Örebro_Airport",
+  "region": "OErebro",
+  "country_alpha3": "SWE",
+  "country_name": "Sweden",
+  "subdivision_code": "Orebro Kommun",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/\u00d6rebro_Airport",
+  "number_airlines": 2,
+  "outdegree": 5,
   "airlines": [
     "Lygg",
     "Sunclass Airlines"
@@ -18,34 +20,45 @@
   "destinations": [
     [
       "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport"
+      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "LPA",
+      "GCLP"
     ],
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
       "Larnaca",
-      "https://en.wikipedia.org/wiki/Larnaca_International_Airport"
+      "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
+      "LCA",
+      "LCLK"
     ],
     [
-      "Linköping",
-      "https://en.wikipedia.org/wiki/Linköping_City_Airport"
+      "Link\u00f6ping",
+      "https://en.wikipedia.org/wiki/Link\u00f6ping_City_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport"
+      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "RHO",
+      "LGRP"
     ]
   ],
   "airlines_destinations": {
     "Lygg": [
       "Helsinki",
-      "Linköping"
+      "Link\u00f6ping"
     ],
     "Sunclass Airlines": [
       "Gran Canaria",
       "Larnaca",
       "Rhodes"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

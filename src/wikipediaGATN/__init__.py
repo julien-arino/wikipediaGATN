@@ -25,11 +25,11 @@ from .extract_iata_from_wikipedia import (
     create_manual_mapping_from_scraped_data,
     extract_iata_from_unmapped_destinations,
 )
-from .result_processing import (
+from .result_processing_airports import (
     check_duplicated_iata_codes,
     export_all_airport_data,
-    run_two_pass_iata_extraction,
 )
+from .result_processing_network import run_two_pass_iata_extraction
 
 __all__ = [
     # Core functions

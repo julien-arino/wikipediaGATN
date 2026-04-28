@@ -2,15 +2,17 @@
   "iata": "VLL",
   "icao": "LEVD",
   "city-served": null,
-  "location": "[[Villanubla]], [[Province of Valladolid|Valladolid]], [[Castile and León]], Spain",
+  "location": "[[Villanubla]], [[Province of Valladolid|Valladolid]], [[Castile and Le\u00f3n]], Spain",
   "lat": "41.706111",
   "lon": "-4.851944",
   "altitude": "846",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Castille and Leon",
+  "country_alpha3": "ESP",
+  "country_name": "Spain",
+  "subdivision_code": "Provincia de Valladolid",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Valladolid_Airport",
+  "number_airlines": 3,
+  "outdegree": 5,
   "airlines": [
     "Binter Canarias",
     "Iberia",
@@ -19,36 +21,47 @@
   "destinations": [
     [
       "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport"
+      "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport"
+      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "LPA",
+      "GCLP"
     ],
     [
       "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport"
+      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "PMI",
+      "LEPA"
     ],
     [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North_Airport"
+      "Tenerife\u2013North",
+      "https://en.wikipedia.org/wiki/Tenerife_North_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport"
+      "Tenerife\u2013North",
+      "https://en.wikipedia.org/wiki/Tenerife_North\u2013Ciudad_de_La_Laguna_Airport",
+      "TFN",
+      "GCXO"
     ]
   ],
   "airlines_destinations": {
     "Binter Canarias": [
       "Gran Canaria",
-      "Tenerife–North"
+      "Tenerife\u2013North"
     ],
     "Iberia": [
       "Palma de Mallorca",
-      "Tenerife–North"
+      "Tenerife\u2013North"
     ],
     "Vueling": [
       "Barcelona"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

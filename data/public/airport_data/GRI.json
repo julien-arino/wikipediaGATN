@@ -1,8 +1,8 @@
 {
   "iata": "GRI",
   "icao": "KGRI",
-  "city-served": "[[Grand Island, Nebraska]]",
-  "location": null,
+  "city-served": "Grand Island, Nebraska",
+  "location": "Grand Island",
   "lat": "40.967500",
   "lon": "-98.309722",
   "altitude": "563",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "NE",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Central_Nebraska_Regional_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Allegiant Air",
     "American Eagle (airline brand)"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
       "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport"
+      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "LAS",
+      "KLAS"
     ],
     [
       "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport"
+      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "AZA",
+      "KIWA"
     ]
   ],
   "airlines_destinations": {
@@ -37,5 +45,6 @@
     "American Eagle (airline brand)": [
       "Dallas Fort Worth International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Grand Island, Nebraska]]"
 }

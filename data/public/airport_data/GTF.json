@@ -1,8 +1,8 @@
 {
   "iata": "GTF",
   "icao": "KGTF",
-  "city-served": "[[Great Falls, Montana]]",
-  "location": null,
+  "city-served": "Great Falls, Montana",
+  "location": "Great Falls",
   "lat": "47.482778",
   "lon": "-111.370556",
   "altitude": "1121.66",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "MT",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Falls_International_Airport",
+  "number_airlines": 5,
+  "outdegree": 6,
   "airlines": [
     "Alaska Airlines",
     "Allegiant Air",
@@ -21,32 +23,44 @@
   "destinations": [
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
       "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport"
+      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "LAS",
+      "KLAS"
     ],
     [
       "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport"
+      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "AZA",
+      "KIWA"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport"
+      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "SLC",
+      "KSLC"
     ],
     [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport"
+      "Seattle\u2013Tacoma International Airport",
+      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Seattle–Tacoma International Airport"
+      "Seattle\u2013Tacoma International Airport"
     ],
     "Allegiant Air": [
       "Harry Reid International Airport",
@@ -62,5 +76,6 @@
       "Denver International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Great Falls, Montana]]"
 }

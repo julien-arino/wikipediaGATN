@@ -1,7 +1,7 @@
 {
   "iata": "SBY",
   "icao": "KSBY",
-  "city-served": "[[Salisbury, Maryland]], U.S.",
+  "city-served": "Salisbury, Maryland",
   "location": "[[Salisbury, Maryland]], U.S.",
   "lat": "38.340000",
   "lon": "-75.509444",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "MD",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Salisbury_Regional_Airport",
+  "number_airlines": 2,
+  "outdegree": 4,
   "airlines": [
     "American Eagle (airline brand)",
     "Breeze Airways"
@@ -18,19 +20,27 @@
   "destinations": [
     [
       "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport"
+      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "CLT",
+      "KCLT"
     ],
     [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport"
+      "Fort Lauderdale\u2013Hollywood International Airport",
+      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Orlando International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport"
+      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "MCO",
+      "KMCO"
     ],
     [
       "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport"
+      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "PHL",
+      "KPHL"
     ]
   ],
   "airlines_destinations": {
@@ -39,8 +49,9 @@
       "Philadelphia International Airport"
     ],
     "Breeze Airways": [
-      "Fort Lauderdale–Hollywood International Airport",
+      "Fort Lauderdale\u2013Hollywood International Airport",
       "Orlando International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Salisbury, Maryland]], U.S."
 }

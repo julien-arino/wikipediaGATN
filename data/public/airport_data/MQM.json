@@ -1,16 +1,18 @@
 {
   "iata": "MQM",
   "icao": "LTCR",
-  "city-served": "[[Mardin]], [[Turkey]]",
-  "location": "{{flagicon|Turkey}} [[Kızıltepe]], [[Mardin]], [[Turkey]]",
+  "city-served": "Mardin",
+  "location": "{{flagicon|Turkey}} [[K\u0131z\u0131ltepe]], [[Mardin]], [[Turkey]]",
   "lat": "37.232778",
   "lon": "40.640556",
   "altitude": "527",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Mardin",
+  "country_alpha3": "TUR",
+  "country_name": "T\u00fcrkiye",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mardin_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "AJet",
     "Pegasus Airlines",
@@ -20,35 +22,44 @@
   "destinations": [
     [
       "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboğa_Airport"
+      "https://en.wikipedia.org/wiki/Ankara_Esenbo\u011fa_Airport",
+      "ESB",
+      "LTAC"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
+      "https://en.wikipedia.org/wiki/Sabiha_G\u00f6k\u00e7en_International_Airport",
+      "SAW",
+      "LTFJ"
     ],
     [
-      "İzmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport"
+      "\u0130zmir",
+      "https://en.wikipedia.org/wiki/\u0130zmir_Adnan_Menderes_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "AJet": [
       "Ankara",
-      "Istanbul–Sabiha Gökçen"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en"
     ],
     "Pegasus Airlines": [
-      "Istanbul–Sabiha Gökçen",
-      "İzmir"
+      "Istanbul\u2013Sabiha G\u00f6k\u00e7en",
+      "\u0130zmir"
     ],
     "SunExpress": [
-      "İzmir"
+      "\u0130zmir"
     ],
     "Turkish Airlines": [
       "Istanbul"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Mardin]], [[Turkey]]"
 }

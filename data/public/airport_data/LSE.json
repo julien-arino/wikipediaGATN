@@ -1,8 +1,8 @@
 {
   "iata": "LSE",
   "icao": "KLSE",
-  "city-served": "[[La Crosse, Wisconsin]]",
-  "location": null,
+  "city-served": "La Crosse, Wisconsin",
+  "location": "French Island",
   "lat": "43.879167",
   "lon": "-91.256667",
   "altitude": "199.64",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "WI",
   "wikipedia_url": "https://en.wikipedia.org/wiki/La_Crosse_Regional_Airport",
+  "number_airlines": 3,
+  "outdegree": 3,
   "airlines": [
     "Allegiant Air",
     "American Eagle (airline brand)",
@@ -18,16 +20,22 @@
   ],
   "destinations": [
     [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare"
+      "Chicago\u2013O'Hare",
+      "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport"
+      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "AZA",
+      "KIWA"
     ],
     [
       "Orlando Sanford International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport"
+      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "SFB",
+      "KSFB"
     ]
   ],
   "airlines_destinations": {
@@ -36,10 +44,11 @@
       "Orlando Sanford International Airport"
     ],
     "American Eagle (airline brand)": [
-      "Chicago–O'Hare"
+      "Chicago\u2013O'Hare"
     ],
     "United Express": [
-      "Chicago–O'Hare"
+      "Chicago\u2013O'Hare"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[La Crosse, Wisconsin]]"
 }

@@ -7,10 +7,12 @@
   "lon": "134.609167",
   "altitude": "11.28",
   "region": "JP",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "JPN",
+  "country_name": "Japan",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tokushima_Airport",
+  "number_airlines": 4,
+  "outdegree": 3,
   "airlines": [
     "All Nippon Airways",
     "Eastar Jet",
@@ -20,29 +22,36 @@
   "destinations": [
     [
       "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport"
+      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "FUK",
+      "RJFF"
     ],
     [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport"
+      "Seoul\u2013Incheon",
+      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "ICN",
+      "RKSI"
     ],
     [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport"
+      "Tokyo\u2013Haneda",
+      "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "HND",
+      "RJTT"
     ]
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ],
     "Eastar Jet": [
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "J-Air": [
       "Fukuoka"
     ],
     "Japan Airlines": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ]
-  }
+  },
+  "city-served-wikipedia": "Tokushima, Japan"
 }

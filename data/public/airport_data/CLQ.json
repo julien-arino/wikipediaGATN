@@ -1,8 +1,8 @@
 {
   "iata": "CLQ",
   "icao": "MMIA",
-  "city-served": "[[Colima City|Colima]], [[Colima]], [[Mexico]]",
-  "location": "[[Cuauhtémoc, Colima|Cuauhtémoc]], [[Colima]], [[Mexico]]",
+  "city-served": "Colima",
+  "location": "[[Cuauht\u00e9moc, Colima|Cuauht\u00e9moc]], [[Colima]], [[Mexico]]",
   "lat": "19.276944",
   "lon": "-103.577222",
   "altitude": "752",
@@ -11,26 +11,33 @@
   "country_name": "Mexico",
   "subdivision_code": "COL",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Colima_Airport",
+  "number_airlines": 2,
+  "outdegree": 2,
   "airlines": [
-    "Aeroméxico Connect",
+    "Aerom\u00e9xico Connect",
     "Volaris"
   ],
   "destinations": [
     [
-      "Felipe Ángeles International Airport",
-      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport"
+      "Felipe \u00c1ngeles International Airport",
+      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Tijuana International Airport",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport"
+      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "TIJ",
+      "MMTJ"
     ]
   ],
   "airlines_destinations": {
-    "Aeroméxico Connect": [
-      "Felipe Ángeles International Airport"
+    "Aerom\u00e9xico Connect": [
+      "Felipe \u00c1ngeles International Airport"
     ],
     "Volaris": [
       "Tijuana International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Colima City|Colima]], [[Colima]], [[Mexico]]"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "XIY",
   "icao": "ZLXY",
-  "city-served": "[[Xi'an]]",
-  "location": "{{ill|Dizhang Subdistrict|zh|底张街道}}, [[Weicheng District, Xianyang|Weicheng]], [[Xianyang]], [[Shaanxi]], [[China]]",
+  "city-served": "Xi'an",
+  "location": "{{ill|Dizhang Subdistrict|zh|\u5e95\u5f20\u8857\u9053}}, [[Weicheng District, Xianyang|Weicheng]], [[Xianyang]], [[Shaanxi]], [[China]]",
   "lat": null,
   "lon": null,
   "altitude": "479",
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "China Postal Airlines",
     "Korean Air Cargo",
@@ -20,34 +22,43 @@
   "destinations": [
     [
       "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport"
+      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "ALA",
+      "UAAA"
     ],
     [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport"
+      "Seoul\u2013Incheon",
+      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "ICN",
+      "RKSI"
     ],
     [
       "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport"
+      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport"
+      "Tokyo\u2013Narita",
+      "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "NRT",
+      "RJAA"
     ]
   ],
   "airlines_destinations": {
     "China Postal Airlines": [
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "Korean Air Cargo": [
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "SF Airlines": [
-      "Tokyo–Narita"
+      "Tokyo\u2013Narita"
     ],
     "YTO Cargo Airlines": [
       "Almaty",
       "Tashkent"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Xi'an]]"
 }

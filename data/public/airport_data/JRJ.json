@@ -1,7 +1,7 @@
 {
   "iata": "JRJ",
   "icao": "ZSRJ",
-  "city-served": "[[Ruijin]], [[Jiangxi]], [[China]]",
+  "city-served": "Ruijin",
   "location": null,
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ganzhou_Ruijin_Airport",
+  "number_airlines": 3,
+  "outdegree": 3,
   "airlines": [
     "Air China",
     "China Eastern Airlines",
@@ -18,27 +20,34 @@
   ],
   "destinations": [
     [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport"
+      "Beijing\u2013Daxing",
+      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "PKX",
+      "ZBAD"
     ],
     [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport"
+      "Shanghai\u2013Pudong",
+      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "PVG",
+      "ZSPD"
     ],
     [
-      "Zunyi–Xinzhou",
-      "https://en.wikipedia.org/wiki/Zunyi_Xinzhou_Airport"
+      "Zunyi\u2013Xinzhou",
+      "https://en.wikipedia.org/wiki/Zunyi_Xinzhou_Airport",
+      "ZYI",
+      "ZUZY"
     ]
   ],
   "airlines_destinations": {
     "Air China": [
-      "Beijing–Daxing"
+      "Beijing\u2013Daxing"
     ],
     "China Eastern Airlines": [
-      "Shanghai–Pudong"
+      "Shanghai\u2013Pudong"
     ],
     "Jiangxi Air": [
-      "Zunyi–Xinzhou"
+      "Zunyi\u2013Xinzhou"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Ruijin]], [[Jiangxi]], [[China]]"
 }

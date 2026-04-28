@@ -1,8 +1,8 @@
 {
   "iata": "FSD",
   "icao": "KFSD",
-  "city-served": "[[Sioux Falls, South Dakota]]",
-  "location": null,
+  "city-served": "Sioux Falls, South Dakota",
+  "location": "Sioux Falls",
   "lat": "43.581944",
   "lon": "-96.741944",
   "altitude": "435.86",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "SD",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Falls_Regional_Airport",
+  "number_airlines": 8,
+  "outdegree": 13,
   "airlines": [
     "Allegiant Air",
     "American Airlines",
@@ -24,66 +26,92 @@
   "destinations": [
     [
       "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport"
+      "Fort Lauderdale\u2013Hollywood International Airport",
+      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport"
+      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "LAS",
+      "KLAS"
     ],
     [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport"
+      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "AZA",
+      "KIWA"
     ],
     [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport"
+      "Minneapolis\u2013Saint Paul International Airport",
+      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Nashville International Airport",
-      "https://en.wikipedia.org/wiki/Nashville_International_Airport"
+      "https://en.wikipedia.org/wiki/Nashville_International_Airport",
+      "BNA",
+      "KBNA"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Orlando Sanford International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport"
+      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "SFB",
+      "KSFB"
     ],
     [
       "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport"
+      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "PHX",
+      "KPHX"
     ],
     [
       "Punta Gorda Airport (Florida)",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)"
+      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "PGD",
+      "KPGD"
     ],
     [
-      "St. Pete–Clearwater International Airport",
-      "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport"
+      "St. Pete\u2013Clearwater International Airport",
+      "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Fort Lauderdale–Hollywood International Airport",
+      "Fort Lauderdale\u2013Hollywood International Airport",
       "Harry Reid International Airport",
       "Mesa Gateway Airport",
       "Nashville International Airport",
       "Orlando Sanford International Airport",
       "Punta Gorda Airport (Florida)",
-      "St. Pete–Clearwater International Airport"
+      "St. Pete\u2013Clearwater International Airport"
     ],
     "American Airlines": [
       "Dallas Fort Worth International Airport"
@@ -94,11 +122,11 @@
       "Phoenix Sky Harbor International Airport"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport",
+      "Minneapolis\u2013Saint Paul International Airport"
     ],
     "Delta Connection": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis\u2013Saint Paul International Airport"
     ],
     "Frontier Airlines": [
       "Denver International Airport"
@@ -111,5 +139,6 @@
       "Denver International Airport",
       "O'Hare International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Sioux Falls, South Dakota]]"
 }

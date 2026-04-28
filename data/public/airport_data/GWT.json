@@ -1,16 +1,18 @@
 {
   "iata": "GWT",
   "icao": "EDXW",
-  "city-served": "[[Sylt]], [[Germany]]",
-  "location": null,
+  "city-served": "Sylt",
+  "location": "Tinnum",
   "lat": "54.913333",
   "lon": "8.340556",
   "altitude": "16",
   "region": "DE",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "DEU",
+  "country_name": "Germany",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sylt_Airport",
+  "number_airlines": 5,
+  "outdegree": 8,
   "airlines": [
     "Austrian Airlines",
     "Eurowings",
@@ -20,36 +22,52 @@
   ],
   "destinations": [
     [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport"
+      "D\u00fcsseldorf Airport",
+      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
       "Luxembourg Findel Airport",
-      "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport"
+      "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Mannheim City Airport",
-      "https://en.wikipedia.org/wiki/Mannheim_City_Airport"
+      "https://en.wikipedia.org/wiki/Mannheim_City_Airport",
+      "MHG",
+      "EDFM"
     ],
     [
       "Munich Airport",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ],
     [
       "Stuttgart Airport",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport"
+      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "STR",
+      "EDDS"
     ],
     [
       "Vienna International Airport",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport"
+      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport"
+      "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "ZRH",
+      "LSZH"
     ]
   ],
   "airlines_destinations": {
@@ -57,7 +75,7 @@
       "Vienna International Airport"
     ],
     "Eurowings": [
-      "Düsseldorf Airport",
+      "D\u00fcsseldorf Airport",
       "Stuttgart Airport"
     ],
     "Lufthansa": [
@@ -70,5 +88,6 @@
     "Swiss International Air Lines": [
       "Zurich Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Sylt]], [[Germany]]"
 }

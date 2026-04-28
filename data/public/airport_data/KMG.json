@@ -1,16 +1,18 @@
 {
   "iata": "KMG",
   "icao": "ZPPP",
-  "city-served": "[[Kunming]]",
+  "city-served": "Kunming",
   "location": "Changshui, [[Guandu, Kunming|Guandu]], Kunming, [[Yunnan]], [[China]]",
   "lat": "25.101944",
   "lon": "102.929167",
   "altitude": "2,103",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Yunnan",
+  "country_alpha3": "CHN",
+  "country_name": "China",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+  "number_airlines": 2,
+  "outdegree": 4,
   "airlines": [
     "SF Airlines",
     "YTO Cargo Airlines"
@@ -18,29 +20,38 @@
   "destinations": [
     [
       "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport"
+      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "BLR",
+      "VOBL"
     ],
     [
-      "Colombo–Bandaranaike",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport"
+      "Colombo\u2013Bandaranaike",
+      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "CMB",
+      "VCBI"
     ],
     [
       "Karachi",
-      "https://en.wikipedia.org/wiki/Jinnah_International_Airport"
+      "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
+      "KHI",
+      "OPKC"
     ],
     [
       "Lahore",
-      "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport"
+      "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
+      "LHE",
+      "OPLA"
     ]
   ],
   "airlines_destinations": {
     "SF Airlines": [
-      "Colombo–Bandaranaike"
+      "Colombo\u2013Bandaranaike"
     ],
     "YTO Cargo Airlines": [
       "Bengaluru",
       "Karachi",
       "Lahore"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Kunming]]"
 }

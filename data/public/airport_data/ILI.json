@@ -1,8 +1,8 @@
 {
   "iata": "ILI",
   "icao": "PAIL",
-  "city-served": "[[Iliamna, Alaska]]",
-  "location": null,
+  "city-served": "Iliamna, Alaska",
+  "location": "Kodiak Station",
   "lat": "59.753889",
   "lon": "-154.910833",
   "altitude": "59",
@@ -11,29 +11,41 @@
   "country_name": "United States",
   "subdivision_code": "AK",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Iliamna_Airport",
+  "number_airlines": 1,
+  "outdegree": 5,
   "airlines": [
     "Iliamna Air Taxi"
   ],
   "destinations": [
     [
       "Anchorage",
-      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport"
+      "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "ANC",
+      "PANC"
     ],
     [
       "Kokhanok",
-      "https://en.wikipedia.org/wiki/Kokhanok_Airport"
+      "https://en.wikipedia.org/wiki/Kokhanok_Airport",
+      "KNK",
+      "PFKK"
     ],
     [
       "Nondalton",
-      "https://en.wikipedia.org/wiki/Nondalton_Airport"
+      "https://en.wikipedia.org/wiki/Nondalton_Airport",
+      "NNL",
+      "PANO"
     ],
     [
       "Pedro Bay",
-      "https://en.wikipedia.org/wiki/Pedro_Bay_Airport"
+      "https://en.wikipedia.org/wiki/Pedro_Bay_Airport",
+      "PDB",
+      "icao code not found"
     ],
     [
       "Port Alsworth",
-      "https://en.wikipedia.org/wiki/Port_Alsworth_Airport"
+      "https://en.wikipedia.org/wiki/Port_Alsworth_Airport",
+      "PTA",
+      "PALJ"
     ]
   ],
   "airlines_destinations": {
@@ -44,5 +56,6 @@
       "Pedro Bay",
       "Port Alsworth"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Iliamna, Alaska]]"
 }

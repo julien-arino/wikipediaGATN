@@ -1,8 +1,8 @@
 {
   "iata": "CNY",
   "icao": "KCNY",
-  "city-served": "[[Moab, Utah|Moab]], [[Utah]]",
-  "location": null,
+  "city-served": "Moab",
+  "location": "Moab",
   "lat": "38.755000",
   "lon": "-109.754722",
   "altitude": "1399.03",
@@ -11,17 +11,23 @@
   "country_name": "United States",
   "subdivision_code": "UT",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Canyonlands_Regional_Airport",
+  "number_airlines": 1,
+  "outdegree": 2,
   "airlines": [
     "Contour Airlines"
   ],
   "destinations": [
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
       "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport"
+      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "PHX",
+      "KPHX"
     ]
   ],
   "airlines_destinations": {
@@ -29,5 +35,6 @@
       "Denver International Airport",
       "Phoenix Sky Harbor International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Moab, Utah|Moab]], [[Utah]]"
 }

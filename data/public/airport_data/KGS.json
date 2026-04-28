@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kos_International_Airport",
+  "number_airlines": 30,
+  "outdegree": 61,
   "airlines": [
     "Aegean Airlines",
     "Aer Lingus",
@@ -46,247 +48,369 @@
   "destinations": [
     [
       "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol"
+      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "AMS",
+      "EHAM"
     ],
     [
       "Astypalaia",
-      "https://en.wikipedia.org/wiki/Astypalaia_Island_National_Airport"
+      "https://en.wikipedia.org/wiki/Astypalaia_Island_National_Airport",
+      "JTY",
+      "LGPL"
     ],
     [
       "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport"
+      "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "ATH",
+      "LGAV"
     ],
     [
       "Bari",
-      "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport"
+      "https://en.wikipedia.org/wiki/Bari_Karol_Wojty\u0142a_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Belfast–International",
-      "https://en.wikipedia.org/wiki/Belfast_International_Airport"
+      "Belfast\u2013International",
+      "https://en.wikipedia.org/wiki/Belfast_International_Airport",
+      "BFS",
+      "EGAA"
     ],
     [
       "Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport"
+      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Berlin",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport"
+      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "BER",
+      "EDDB"
     ],
     [
       "Bern",
-      "https://en.wikipedia.org/wiki/Bern_Airport"
+      "https://en.wikipedia.org/wiki/Bern_Airport",
+      "BRN",
+      "LSZB"
     ],
     [
       "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport"
+      "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "BHX",
+      "EGBB"
     ],
     [
       "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport"
+      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "BLQ",
+      "LIPE"
     ],
     [
       "Bournemouth",
-      "https://en.wikipedia.org/wiki/Bournemouth_Airport"
+      "https://en.wikipedia.org/wiki/Bournemouth_Airport",
+      "BOH",
+      "EGHH"
     ],
     [
       "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport"
+      "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "BTS",
+      "LZIB"
     ],
     [
       "Bristol",
-      "https://en.wikipedia.org/wiki/Bristol_Airport"
+      "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "BRS",
+      "EGGD"
     ],
     [
       "Brno",
-      "https://en.wikipedia.org/wiki/Brno–Tuřany_Airport"
+      "https://en.wikipedia.org/wiki/Brno\u2013Tu\u0159any_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport"
+      "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "BRU",
+      "EBBR"
     ],
     [
       "Cardiff",
-      "https://en.wikipedia.org/wiki/Cardiff_Airport"
+      "https://en.wikipedia.org/wiki/Cardiff_Airport",
+      "CWL",
+      "EGFF"
     ],
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
       "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport"
+      "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "DUB",
+      "EIDW"
     ],
     [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport"
+      "D\u00fcsseldorf",
+      "https://en.wikipedia.org/wiki/D\u00fcsseldorf_Airport",
+      "DUS",
+      "EDDL"
     ],
     [
       "East Midlands",
-      "https://en.wikipedia.org/wiki/East_Midlands_Airport"
+      "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "EMA",
+      "EGNX"
     ],
     [
       "Edinburgh",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport"
+      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "EDI",
+      "EGPH"
     ],
     [
       "Eindhoven",
-      "https://en.wikipedia.org/wiki/Eindhoven_Airport"
+      "https://en.wikipedia.org/wiki/Eindhoven_Airport",
+      "EIN",
+      "EHEH"
     ],
     [
       "Exeter",
-      "https://en.wikipedia.org/wiki/Exeter_Airport"
+      "https://en.wikipedia.org/wiki/Exeter_Airport",
+      "EXT",
+      "EGTE"
     ],
     [
       "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport"
+      "Gda\u0144sk",
+      "https://en.wikipedia.org/wiki/Gda\u0144sk_Lech_Wa\u0142\u0119sa_Airport",
+      "GDN",
+      "EPGD"
     ],
     [
       "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport"
+      "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "GVA",
+      "LSGG"
     ],
     [
       "Glasgow",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport"
+      "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "GLA",
+      "EGPF"
     ],
     [
       "Graz",
-      "https://en.wikipedia.org/wiki/Graz_Airport"
+      "https://en.wikipedia.org/wiki/Graz_Airport",
+      "GRZ",
+      "LOWG"
     ],
     [
       "Groningen",
-      "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde"
+      "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde",
+      "GRQ",
+      "EHGG"
     ],
     [
       "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport"
+      "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "HAM",
+      "EDDH"
     ],
     [
       "Hannover",
-      "https://en.wikipedia.org/wiki/Hannover_Airport"
+      "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "HAJ",
+      "EDDV"
     ],
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
       "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport"
+      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "HER",
+      "LGIR"
     ],
     [
       "Kalymnos",
-      "https://en.wikipedia.org/wiki/Kalymnos_Island_National_Airport"
+      "https://en.wikipedia.org/wiki/Kalymnos_Island_National_Airport",
+      "JKL",
+      "LGKY"
     ],
     [
       "Leeds/Bradford",
-      "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport"
+      "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
+      "LBA",
+      "EGNM"
     ],
     [
       "Leros",
-      "https://en.wikipedia.org/wiki/Leros_Island_National_Airport"
+      "https://en.wikipedia.org/wiki/Leros_Island_National_Airport",
+      "LRS",
+      "LGLE"
     ],
     [
       "Linz",
-      "https://en.wikipedia.org/wiki/Linz_Airport"
+      "https://en.wikipedia.org/wiki/Linz_Airport",
+      "LNZ",
+      "LOWL"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "LGW",
+      "EGKK"
     ],
     [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/London_Gatwick_Airport"
+      "London\u2013Gatwick",
+      "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport"
+      "London\u2013Luton",
+      "https://en.wikipedia.org/wiki/Luton_Airport",
+      "LTN",
+      "EGGW"
     ],
     [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport"
+      "London\u2013Stansted",
+      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "STN",
+      "EGSS"
     ],
     [
       "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport"
+      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "LUX",
+      "ELLX"
     ],
     [
       "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport"
+      "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "MAN",
+      "EGCC"
     ],
     [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport"
+      "Milan\u2013Malpensa",
+      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "MXP",
+      "LIMC"
     ],
     [
       "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ],
     [
       "Naples",
-      "https://en.wikipedia.org/wiki/Naples_International_Airport"
+      "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "NAP",
+      "LIRN"
     ],
     [
       "Newcastle upon Tyne",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport"
+      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "NCL",
+      "EGNT"
     ],
     [
       "Nuremberg",
-      "https://en.wikipedia.org/wiki/Nuremberg_Airport"
+      "https://en.wikipedia.org/wiki/Nuremberg_Airport",
+      "NUE",
+      "EDDN"
     ],
     [
       "Ostrava",
-      "https://en.wikipedia.org/wiki/Leoš_Janáček_Airport_Ostrava"
+      "https://en.wikipedia.org/wiki/Leo\u0161_Jan\u00e1\u010dek_Airport_Ostrava",
+      "OSR",
+      "LKMT"
     ],
     [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport"
+      "Paris\u2013Orly",
+      "https://en.wikipedia.org/wiki/Orly_Airport",
+      "ORY",
+      "LFPO"
     ],
     [
       "Pisa",
-      "https://en.wikipedia.org/wiki/Pisa_International_Airport"
+      "https://en.wikipedia.org/wiki/Pisa_International_Airport",
+      "PSA",
+      "LIRP"
     ],
     [
       "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague"
+      "https://en.wikipedia.org/wiki/V\u00e1clav_Havel_Airport_Prague",
+      "PRG",
+      "LKPR"
     ],
     [
       "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport"
+      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "RHO",
+      "LGRP"
     ],
     [
       "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport"
+      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "RTM",
+      "EHRD"
     ],
     [
       "Salzburg",
-      "https://en.wikipedia.org/wiki/Salzburg_Airport"
+      "https://en.wikipedia.org/wiki/Salzburg_Airport",
+      "SZG",
+      "LOWS"
     ],
     [
       "Stuttgart",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport"
+      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "STR",
+      "EDDS"
     ],
     [
       "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport"
+      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "SKG",
+      "LGTS"
     ],
     [
       "Venice",
-      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport"
+      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "VCE",
+      "LIPZ"
     ],
     [
       "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport"
+      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Zagreb",
-      "https://en.wikipedia.org/wiki/Zagreb_Airport"
+      "https://en.wikipedia.org/wiki/Zagreb_Airport",
+      "ZAG",
+      "LDZA"
     ],
     [
       "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport"
+      "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "ZRH",
+      "LSZH"
     ]
   ],
   "airlines_destinations": {
@@ -302,7 +426,7 @@
       "Vienna"
     ],
     "British Airways": [
-      "London–Gatwick"
+      "London\u2013Gatwick"
     ],
     "Brussels Airlines": [
       "Brussels"
@@ -317,7 +441,7 @@
       "Vienna"
     ],
     "Corendon Airlines": [
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Hannover",
       "Nuremberg"
     ],
@@ -333,9 +457,9 @@
       "Berlin",
       "Birmingham",
       "Bristol",
-      "London–Gatwick",
+      "London\u2013Gatwick",
       "Manchester",
-      "Milan–Malpensa",
+      "Milan\u2013Malpensa",
       "Naples",
       "Venice"
     ],
@@ -343,12 +467,12 @@
       "Zurich"
     ],
     "Enter Air": [
-      "Gdańsk"
+      "Gda\u0144sk"
     ],
     "Eurowings": [
       "Berlin",
       "Cologne/Bonn",
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Graz",
       "Hamburg",
       "Linz",
@@ -370,9 +494,9 @@
       "Edinburgh",
       "Glasgow",
       "Leeds/Bradford",
-      "London–Gatwick",
-      "London–Luton",
-      "London–Stansted",
+      "London\u2013Gatwick",
+      "London\u2013Luton",
+      "London\u2013Stansted",
       "Manchester",
       "Newcastle upon Tyne"
     ],
@@ -385,13 +509,13 @@
     "Neos": [
       "Bergamo",
       "Bologna",
-      "Milan–Malpensa"
+      "Milan\u2013Malpensa"
     ],
     "Ryanair": [
       "Bari",
       "Bergamo",
-      "London–Stansted",
-      "Milan–Malpensa",
+      "London\u2013Stansted",
+      "Milan\u2013Malpensa",
       "Pisa",
       "Zagreb"
     ],
@@ -417,25 +541,25 @@
     "Transavia": [
       "Amsterdam",
       "Eindhoven",
-      "Paris–Orly",
+      "Paris\u2013Orly",
       "Rotterdam/The Hague"
     ],
     "TUI Airways": [
-      "Belfast–International",
+      "Belfast\u2013International",
       "Birmingham",
       "Bournemouth",
       "Bristol",
       "Cardiff",
       "East Midlands",
       "Exeter",
-      "London–Stansted",
+      "London\u2013Stansted",
       "Newcastle upon Tyne"
     ],
     "TUI fly Belgium": [
       "Brussels"
     ],
     "TUI fly Deutschland": [
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Frankfurt",
       "Hannover",
       "Munich",
@@ -447,5 +571,6 @@
       "Groningen",
       "Rotterdam/The Hague"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

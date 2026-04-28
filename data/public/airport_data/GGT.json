@@ -1,16 +1,18 @@
 {
   "iata": "GGT",
   "icao": "MYEF",
-  "city-served": "[[Great Exuma]], [[Bahamas]]",
+  "city-served": "Great Exuma",
   "location": "Moss Town",
   "lat": "23.563333",
   "lon": "-75.873056",
   "altitude": "2.74",
   "region": "BS",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "BHS",
+  "country_name": "Bahamas",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Exuma_International_Airport",
+  "number_airlines": 6,
+  "outdegree": 7,
   "airlines": [
     "Air Canada",
     "American Airlines",
@@ -22,36 +24,50 @@
   "destinations": [
     [
       "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport"
+      "https://en.wikipedia.org/wiki/Hartsfield\u2013Jackson_Atlanta_International_Airport",
+      "ATL",
+      "KATL"
     ],
     [
       "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport"
+      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "CLT",
+      "KCLT"
     ],
     [
       "Fort Lauderdale",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport"
+      "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport"
+      "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "MIA",
+      "KMIA"
     ],
     [
       "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport"
+      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "NAS",
+      "MYNN"
     ],
     [
       "Rock Sound",
-      "https://en.wikipedia.org/wiki/Rock_Sound_International_Airport"
+      "https://en.wikipedia.org/wiki/Rock_Sound_International_Airport",
+      "RSD",
+      "MYER"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "American Airlines": [
       "Charlotte"
@@ -71,5 +87,6 @@
     "Western Air": [
       "Nassau"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Great Exuma]], [[Bahamas]]"
 }

@@ -1,7 +1,7 @@
 {
   "iata": "YSB",
   "icao": "CYSB",
-  "city-served": "[[Greater Sudbury]], Ontario",
+  "city-served": "Greater Sudbury",
   "location": "[[Garson, Ontario|Garson, Greater Sudbury]]",
   "lat": "46.625556",
   "lon": "-80.797778",
@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "ON",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
+  "number_airlines": 8,
+  "outdegree": 11,
   "airlines": [
     "Air Canada Cargo",
     "Air Canada Express",
@@ -24,52 +26,74 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
       "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport"
+      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "YHM",
+      "CYHM"
     ],
     [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport"
+      "Montr\u00e9al\u2013Trudeau",
+      "https://en.wikipedia.org/wiki/Montr\u00e9al\u2013Trudeau_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "North Bay",
-      "https://en.wikipedia.org/wiki/North_Bay/Jack_Garland_Airport"
+      "https://en.wikipedia.org/wiki/North_Bay/Jack_Garland_Airport",
+      "YYB",
+      "CYYB"
     ],
     [
       "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport"
+      "https://en.wikipedia.org/wiki/Ottawa_Macdonald\u2013Cartier_International_Airport",
+      "YOW",
+      "CYOW"
     ],
     [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport"
+      "Qu\u00e9bec City",
+      "https://en.wikipedia.org/wiki/Qu\u00e9bec_City_Jean_Lesage_International_Airport",
+      "YQB",
+      "CYQB"
     ],
     [
       "Sault Ste. Marie",
-      "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport"
+      "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
+      "YAM",
+      "CYAM"
     ],
     [
       "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport"
+      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "YQT",
+      "CYQT"
     ],
     [
       "Timmins",
-      "https://en.wikipedia.org/wiki/Timmins_Airport"
+      "https://en.wikipedia.org/wiki/Timmins_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport"
+      "Toronto\u2013Billy Bishop",
+      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "YTZ",
+      "CYTZ"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Express": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Bearskin Airlines": [
       "North Bay",
@@ -78,26 +102,27 @@
     ],
     "Porter Airlines": [
       "Ottawa",
-      "Toronto–Billy Bishop"
+      "Toronto\u2013Billy Bishop"
     ],
     "Propair": [
-      "Montréal–Trudeau",
+      "Montr\u00e9al\u2013Trudeau",
       "Ottawa",
-      "Québec City"
+      "Qu\u00e9bec City"
     ],
     "WestJet": [
       "Calgary"
     ],
     "Air Canada Cargo": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "FedEx Express": [
       "Timmins",
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "SkyLink Express": [
       "Hamilton (ON)",
       "Sault Ste. Marie"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Greater Sudbury]], Ontario"
 }

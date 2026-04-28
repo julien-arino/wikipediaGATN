@@ -1,8 +1,8 @@
 {
   "iata": "MOT",
   "icao": "KMOT",
-  "city-served": "[[Minot, North Dakota]], U.S.",
-  "location": null,
+  "city-served": "Minot, North Dakota",
+  "location": "Minot",
   "lat": "48.257778",
   "lon": "-101.278056",
   "altitude": "523.04",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "ND",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Minot_International_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Allegiant Air",
     "Delta Connection",
@@ -19,19 +21,27 @@
   "destinations": [
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
       "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport"
+      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport"
+      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "AZA",
+      "KIWA"
     ],
     [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport"
+      "Minneapolis\u2013Saint Paul International Airport",
+      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -40,10 +50,11 @@
       "Mesa Gateway Airport"
     ],
     "Delta Connection": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis\u2013Saint Paul International Airport"
     ],
     "United Express": [
       "Denver International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Minot, North Dakota]], U.S."
 }

@@ -1,16 +1,18 @@
 {
   "iata": "VBY",
   "icao": "ESSV",
-  "city-served": "[[Visby]] and [[Gotland Municipality|Gotland]]",
+  "city-served": "Visby",
   "location": "[[Gotland Municipality|Gotland]], [[Sweden]]",
   "lat": "57.662778",
   "lon": "18.346111",
   "altitude": "50",
   "region": "SE",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "SWE",
+  "country_name": "Sweden",
+  "subdivision_code": "Gotland",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Visby_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "Finnair",
     "Norwegian Air Shuttle",
@@ -20,19 +22,27 @@
   "destinations": [
     [
       "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport"
+      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "CPH",
+      "EKCH"
     ],
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport"
+      "Stockholm\u2013Arlanda",
+      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "ARN",
+      "ESSA"
     ],
     [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport"
+      "Stockholm\u2013Arlanda",
+      "https://en.wikipedia.org/wiki/Stockholm\u2013Arlanda_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -40,14 +50,15 @@
       "Helsinki"
     ],
     "Norwegian Air Shuttle": [
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ],
     "Scandinavian Airlines": [
       "Copenhagen",
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ],
     "PopulAir": [
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Visby]] and [[Gotland Municipality|Gotland]]"
 }

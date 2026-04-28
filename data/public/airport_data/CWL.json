@@ -1,16 +1,18 @@
 {
   "iata": "CWL",
   "icao": "EGFF",
-  "city-served": "[[Cardiff]]",
+  "city-served": "Cardiff",
   "location": "[[Rhoose]], [[Vale of Glamorgan]], Wales, United Kingdom",
   "lat": "51.396667",
   "lon": "-3.343333",
   "altitude": "67.06",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Wales",
+  "country_alpha3": "GBR",
+  "country_name": "United Kingdom",
+  "subdivision_code": "Vale of Glamorgan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cardiff_Airport",
+  "number_airlines": 7,
+  "outdegree": 19,
   "airlines": [
     "Aer Lingus",
     "KLM",
@@ -23,84 +25,122 @@
   "destinations": [
     [
       "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport"
+      "https://en.wikipedia.org/wiki/Alicante\u2013Elche_Miguel_Hern\u00e1ndez_Airport",
+      "ALC",
+      "LEAL"
     ],
     [
       "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol"
+      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "AMS",
+      "EHAM"
     ],
     [
       "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport"
+      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "BGI",
+      "TBPB"
     ],
     [
-      "Belfast–City",
-      "https://en.wikipedia.org/wiki/Belfast_City_Airport"
+      "Belfast\u2013City",
+      "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Chambéry",
-      "https://en.wikipedia.org/wiki/Chambéry_Airport"
+      "Chamb\u00e9ry",
+      "https://en.wikipedia.org/wiki/Chamb\u00e9ry_Airport",
+      "CMF",
+      "LFLB"
     ],
     [
       "Corfu",
-      "https://en.wikipedia.org/wiki/Corfu_International_Airport"
+      "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "CFU",
+      "LGKR"
     ],
     [
       "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport"
+      "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "DUB",
+      "EIDW"
     ],
     [
       "Enfidha",
-      "https://en.wikipedia.org/wiki/Enfidha–Hammamet_International_Airport"
+      "https://en.wikipedia.org/wiki/Enfidha\u2013Hammamet_International_Airport",
+      "NBE",
+      "DTNH"
     ],
     [
       "Faro",
-      "https://en.wikipedia.org/wiki/Faro_Airport"
+      "https://en.wikipedia.org/wiki/Faro_Airport",
+      "FAO",
+      "LPFR"
     ],
     [
       "Fuerteventura",
-      "https://en.wikipedia.org/wiki/Fuerteventura_Airport"
+      "https://en.wikipedia.org/wiki/Fuerteventura_Airport",
+      "FUE",
+      "GCFV"
     ],
     [
       "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport"
+      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "LPA",
+      "GCLP"
     ],
     [
       "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport"
+      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "HER",
+      "LGIR"
     ],
     [
       "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport"
+      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "HRG",
+      "HEGN"
     ],
     [
       "Lanzarote",
-      "https://en.wikipedia.org/wiki/Lanzarote_Airport"
+      "https://en.wikipedia.org/wiki/Lanzarote_Airport",
+      "ACE",
+      "GCRR"
     ],
     [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport"
+      "M\u00e1laga",
+      "https://en.wikipedia.org/wiki/M\u00e1laga_Airport",
+      "AGP",
+      "LEMG"
     ],
     [
-      "Tenerife–South",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport"
+      "Tenerife\u2013South",
+      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "TFS",
+      "GCTS"
     ],
     [
       "Toronto-Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_Airport"
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Turin",
-      "https://en.wikipedia.org/wiki/Turin_Airport"
+      "https://en.wikipedia.org/wiki/Turin_Airport",
+      "TRN",
+      "LIMF"
     ],
     [
       "Zakynthos",
-      "https://en.wikipedia.org/wiki/Zakynthos_International_Airport"
+      "https://en.wikipedia.org/wiki/Zakynthos_International_Airport",
+      "ZTH",
+      "LGZA"
     ]
   ],
   "airlines_destinations": {
     "Aer Lingus": [
-      "Belfast–City"
+      "Belfast\u2013City"
     ],
     "KLM": [
       "Amsterdam"
@@ -112,12 +152,12 @@
       "Alicante",
       "Dublin",
       "Faro",
-      "Málaga",
-      "Tenerife–South"
+      "M\u00e1laga",
+      "Tenerife\u2013South"
     ],
     "TUI Airways": [
       "Alicante",
-      "Chambéry",
+      "Chamb\u00e9ry",
       "Corfu",
       "Enfidha",
       "Faro",
@@ -131,10 +171,11 @@
     ],
     "Vueling": [
       "Alicante",
-      "Málaga"
+      "M\u00e1laga"
     ],
     "WestJet": [
       "Toronto-Pearson"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Cardiff]]"
 }

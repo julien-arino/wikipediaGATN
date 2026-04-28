@@ -11,6 +11,8 @@
   "country_name": "Sweden",
   "subdivision_code": "BD",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kiruna_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "Air France",
     "Eurowings",
@@ -20,34 +22,43 @@
   "destinations": [
     [
       "Copenhagen",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport"
+      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "CPH",
+      "EKCH"
     ],
     [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport"
+      "D\u00fcsseldorf",
+      "https://en.wikipedia.org/wiki/D\u00fcsseldorf_Airport",
+      "DUS",
+      "EDDL"
     ],
     [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport"
+      "Paris\u2013Charles de Gaulle",
+      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "CDG",
+      "LFPG"
     ],
     [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport"
+      "Stockholm\u2013Arlanda",
+      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "ARN",
+      "ESSA"
     ]
   ],
   "airlines_destinations": {
     "Air France": [
-      "Paris–Charles de Gaulle"
+      "Paris\u2013Charles de Gaulle"
     ],
     "Eurowings": [
-      "Düsseldorf"
+      "D\u00fcsseldorf"
     ],
     "Norwegian Air Shuttle": [
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ],
     "Scandinavian Airlines": [
       "Copenhagen",
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

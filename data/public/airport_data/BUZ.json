@@ -1,7 +1,7 @@
 {
   "iata": "BUZ",
   "icao": "OIBB",
-  "city-served": "[[Bushehr]]",
+  "city-served": "Bushehr",
   "location": "Bushehr, Iran",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bushehr_Airport",
+  "number_airlines": 7,
+  "outdegree": 3,
   "airlines": [
     "ATA Airlines",
     "Iran Air",
@@ -22,40 +24,47 @@
   ],
   "destinations": [
     [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport"
+      "Dubai\u2013International",
+      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "DXB",
+      "OMDB"
     ],
     [
       "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport"
+      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "MED",
+      "OEMA"
     ],
     [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport"
+      "Tehran\u2013Mehrabad",
+      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "THR",
+      "OIII"
     ]
   ],
   "airlines_destinations": {
     "ATA Airlines": [
-      "Tehran–Mehrabad"
+      "Tehran\u2013Mehrabad"
     ],
     "flydubai": [
-      "Dubai–International"
+      "Dubai\u2013International"
     ],
     "Iran Air": [
       "Medina",
-      "Tehran–Mehrabad"
+      "Tehran\u2013Mehrabad"
     ],
     "Iran Airtour": [
-      "Tehran–Mehrabad"
+      "Tehran\u2013Mehrabad"
     ],
     "Iran Aseman Airlines": [
-      "Tehran–Mehrabad"
+      "Tehran\u2013Mehrabad"
     ],
     "Qeshm Air": [
-      "Tehran–Mehrabad"
+      "Tehran\u2013Mehrabad"
     ],
     "Varesh Airlines": [
-      "Tehran–Mehrabad"
+      "Tehran\u2013Mehrabad"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Bushehr]]"
 }

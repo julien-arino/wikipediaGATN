@@ -1,7 +1,7 @@
 {
   "iata": "NNG",
   "icao": "ZGNN",
-  "city-served": "[[Nanning]]",
+  "city-served": "Nanning",
   "location": "[[Wuxu, Nanning|Wuxu]], [[Jiangnan, Nanning|Jiangnan]], Nanning, [[Guangxi]], [[China]]",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
+  "number_airlines": 30,
+  "outdegree": 80,
   "airlines": [
     "Air Cambodia",
     "Air China",
@@ -46,323 +48,483 @@
   "destinations": [
     [
       "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport"
+      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "PEK",
+      "ZBAA"
     ],
     [
       "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport"
+      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "PKX",
+      "ZBAD"
     ],
     [
       "Brunei International Airport",
-      "https://en.wikipedia.org/wiki/Brunei_International_Airport"
+      "https://en.wikipedia.org/wiki/Brunei_International_Airport",
+      "BWN",
+      "WBSB"
     ],
     [
       "Cat Bi International Airport",
-      "https://en.wikipedia.org/wiki/Cat_Bi_International_Airport"
+      "https://en.wikipedia.org/wiki/Cat_Bi_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Changchun Longjia International Airport",
-      "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport"
+      "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport",
+      "CGQ",
+      "ZYCC"
     ],
     [
       "Changi Airport",
-      "https://en.wikipedia.org/wiki/Changi_Airport"
+      "https://en.wikipedia.org/wiki/Changi_Airport",
+      "SIN",
+      "WSSS"
     ],
     [
       "Changsha Huanghua International Airport",
-      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport"
+      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "CSX",
+      "ZGHA"
     ],
     [
       "Changzhou Benniu International Airport",
-      "https://en.wikipedia.org/wiki/Changzhou_Benniu_International_Airport"
+      "https://en.wikipedia.org/wiki/Changzhou_Benniu_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Chengdu Shuangliu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport"
+      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "CTU",
+      "ZUUU"
     ],
     [
       "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport"
+      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "TFU",
+      "ZUTF"
     ],
     [
       "Chongqing Jiangbei International Airport",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport"
+      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "CKG",
+      "ZUCK"
     ],
     [
       "Dalian Zhoushuizi International Airport",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport"
+      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "DLC",
+      "ZYTL"
     ],
     [
       "Enshi Xujiaping International Airport",
-      "https://en.wikipedia.org/wiki/Enshi_Xujiaping_International_Airport"
+      "https://en.wikipedia.org/wiki/Enshi_Xujiaping_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Fuyang Xiguan Airport",
-      "https://en.wikipedia.org/wiki/Fuyang_Xiguan_Airport"
+      "https://en.wikipedia.org/wiki/Fuyang_Xiguan_Airport",
+      "FUG",
+      "ZSFY"
     ],
     [
       "Fuzhou Changle International Airport",
-      "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport"
+      "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
+      "FOC",
+      "ZSFZ"
     ],
     [
       "Ganzhou Huangjin Airport",
-      "https://en.wikipedia.org/wiki/Ganzhou_Huangjin_Airport"
+      "https://en.wikipedia.org/wiki/Ganzhou_Huangjin_Airport",
+      "KOW",
+      "ZSGZ"
     ],
     [
       "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport"
+      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "CAN",
+      "ZGGG"
     ],
     [
       "Haikou Meilan International Airport",
-      "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport"
+      "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "HAK",
+      "ZJHK"
     ],
     [
       "Handan Airport",
-      "https://en.wikipedia.org/wiki/Handan_Airport"
+      "https://en.wikipedia.org/wiki/Handan_Airport",
+      "HDG",
+      "ZBHD"
     ],
     [
       "Hangzhou Xiaoshan International Airport",
-      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport"
+      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "HGH",
+      "ZSHC"
     ],
     [
       "Harbin Taiping International Airport",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport"
+      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "HRB",
+      "ZYHB"
     ],
     [
       "Hefei Xinqiao International Airport",
-      "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport"
+      "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport",
+      "HFE",
+      "ZSOF"
     ],
     [
       "Hohhot Baita International Airport",
-      "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport"
+      "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
+      "HET",
+      "ZBHH"
     ],
     [
       "Huai'an Lianshui Airport",
-      "https://en.wikipedia.org/wiki/Huai%27an_Lianshui_Airport"
+      "https://en.wikipedia.org/wiki/Huai%27an_Lianshui_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Jieyang Chaoshan International Airport",
-      "https://en.wikipedia.org/wiki/Jieyang_Chaoshan_International_Airport"
+      "https://en.wikipedia.org/wiki/Jieyang_Chaoshan_International_Airport",
+      "SWA",
+      "ZGOW"
     ],
     [
       "Jinan Yaoqiang International Airport",
-      "https://en.wikipedia.org/wiki/Jinan_Yaoqiang_International_Airport"
+      "https://en.wikipedia.org/wiki/Jinan_Yaoqiang_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Jingzhou Shashi Airport",
-      "https://en.wikipedia.org/wiki/Jingzhou_Shashi_Airport"
+      "https://en.wikipedia.org/wiki/Jingzhou_Shashi_Airport",
+      "SHS",
+      "ZHJZ"
     ],
     [
       "Jining Da'an Airport",
-      "https://en.wikipedia.org/wiki/Jining_Da%27an_Airport"
+      "https://en.wikipedia.org/wiki/Jining_Da%27an_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Kuala Lumpur International Airport",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport"
+      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "KUL",
+      "WMKK"
     ],
     [
       "Kunming Changshui International Airport",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport"
+      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "KMG",
+      "ZPPP"
     ],
     [
       "Lanzhou Zhongchuan International Airport",
-      "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport"
+      "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Lhasa Gonggar International Airport",
-      "https://en.wikipedia.org/wiki/Lhasa_Gonggar_International_Airport"
+      "https://en.wikipedia.org/wiki/Lhasa_Gonggar_International_Airport",
+      "LXA",
+      "ZULS"
     ],
     [
       "Lianyungang Huaguoshan Airport",
-      "https://en.wikipedia.org/wiki/Lianyungang_Huaguoshan_Airport"
+      "https://en.wikipedia.org/wiki/Lianyungang_Huaguoshan_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Lijiang Sanyi International Airport",
-      "https://en.wikipedia.org/wiki/Lijiang_Sanyi_International_Airport"
+      "https://en.wikipedia.org/wiki/Lijiang_Sanyi_International_Airport",
+      "LJG",
+      "ZPLJ"
     ],
     [
       "Linyi Qiyang Airport",
-      "https://en.wikipedia.org/wiki/Linyi_Qiyang_Airport"
+      "https://en.wikipedia.org/wiki/Linyi_Qiyang_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Luoyang Beijiao Airport",
-      "https://en.wikipedia.org/wiki/Luoyang_Beijiao_Airport"
+      "https://en.wikipedia.org/wiki/Luoyang_Beijiao_Airport",
+      "LYA",
+      "ZHLY"
     ],
     [
       "Luzhou Yunlong Airport",
-      "https://en.wikipedia.org/wiki/Luzhou_Yunlong_Airport"
+      "https://en.wikipedia.org/wiki/Luzhou_Yunlong_Airport",
+      "LZO",
+      "ZULZ"
     ],
     [
       "Macau International Airport",
-      "https://en.wikipedia.org/wiki/Macau_International_Airport"
+      "https://en.wikipedia.org/wiki/Macau_International_Airport",
+      "MFM",
+      "VMMC"
     ],
     [
       "Mianyang Nanjiao Airport",
-      "https://en.wikipedia.org/wiki/Mianyang_Nanjiao_Airport"
+      "https://en.wikipedia.org/wiki/Mianyang_Nanjiao_Airport",
+      "MIG",
+      "ZUMY"
     ],
     [
       "Nanchang Changbei International Airport",
-      "https://en.wikipedia.org/wiki/Nanchang_Changbei_International_Airport"
+      "https://en.wikipedia.org/wiki/Nanchang_Changbei_International_Airport",
+      "KHN",
+      "ZSCN"
     ],
     [
       "Nanchong Gaoping Airport",
-      "https://en.wikipedia.org/wiki/Nanchong_Gaoping_Airport"
+      "https://en.wikipedia.org/wiki/Nanchong_Gaoping_Airport",
+      "NAO",
+      "ZUNC"
     ],
     [
       "Nanjing Lukou International Airport",
-      "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport"
+      "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "NKG",
+      "ZSNJ"
     ],
     [
       "Nantong Xingdong International Airport",
-      "https://en.wikipedia.org/wiki/Nantong_Xingdong_International_Airport"
+      "https://en.wikipedia.org/wiki/Nantong_Xingdong_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Nanyang Jiangying Airport",
-      "https://en.wikipedia.org/wiki/Nanyang_Jiangying_Airport"
+      "https://en.wikipedia.org/wiki/Nanyang_Jiangying_Airport",
+      "NNY",
+      "ZHNY"
     ],
     [
       "Ningbo Lishe International Airport",
-      "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport"
+      "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
+      "NGB",
+      "ZSNB"
     ],
     [
       "Qingdao Jiaodong International Airport",
-      "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport"
+      "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
+      "TAO",
+      "ZSQD"
     ],
     [
       "Quanzhou Jinjiang International Airport",
-      "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport"
+      "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
+      "JJN",
+      "ZSQZ"
     ],
     [
       "Quzhou Airport",
-      "https://en.wikipedia.org/wiki/Quzhou_Airport"
+      "https://en.wikipedia.org/wiki/Quzhou_Airport",
+      "JUZ",
+      "ZSJU"
     ],
     [
       "Sanya Phoenix International Airport",
-      "https://en.wikipedia.org/wiki/Sanya_Phoenix_International_Airport"
+      "https://en.wikipedia.org/wiki/Sanya_Phoenix_International_Airport",
+      "SYX",
+      "ZJSY"
     ],
     [
       "Shanghai Hongqiao International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport"
+      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "SHA",
+      "ZSSS"
     ],
     [
       "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport"
+      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "PVG",
+      "ZSPD"
     ],
     [
       "Shangrao Sanqingshan Airport",
-      "https://en.wikipedia.org/wiki/Shangrao_Sanqingshan_Airport"
+      "https://en.wikipedia.org/wiki/Shangrao_Sanqingshan_Airport",
+      "SQD",
+      "ZSSR"
     ],
     [
       "Shenyang Taoxian International Airport",
-      "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport"
+      "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
+      "SHE",
+      "ZYTX"
     ],
     [
       "Shenzhen Bao'an International Airport",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport"
+      "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Shijiazhuang Zhengding International Airport",
-      "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport"
+      "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
+      "SJW",
+      "ZBSJ"
     ],
     [
       "Shiyan Wudangshan Airport",
-      "https://en.wikipedia.org/wiki/Shiyan_Wudangshan_Airport"
+      "https://en.wikipedia.org/wiki/Shiyan_Wudangshan_Airport",
+      "WDS",
+      "ZHSY"
     ],
     [
       "Sunan Shuofang International Airport",
-      "https://en.wikipedia.org/wiki/Sunan_Shuofang_International_Airport"
+      "https://en.wikipedia.org/wiki/Sunan_Shuofang_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Suvarnabhumi Airport",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport"
+      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "BKK",
+      "VTBS"
     ],
     [
       "Taiyuan Wusu International Airport",
-      "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport"
+      "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
+      "TYN",
+      "ZBYN"
     ],
     [
       "Taizhou Luqiao Airport",
-      "https://en.wikipedia.org/wiki/Taizhou_Luqiao_Airport"
+      "https://en.wikipedia.org/wiki/Taizhou_Luqiao_Airport",
+      "HYN",
+      "ZSLQ"
     ],
     [
       "Tan Son Nhat International Airport",
-      "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport"
+      "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
+      "SGN",
+      "VVTS"
     ],
     [
       "Techo International Airport (Cambodia)",
-      "https://en.wikipedia.org/wiki/Techo_International_Airport_(Cambodia)"
+      "https://en.wikipedia.org/wiki/Techo_International_Airport_(Cambodia)",
+      "KTI",
+      "VDTI"
     ],
     [
       "Tianjin Binhai International Airport",
-      "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport"
+      "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport",
+      "TSN",
+      "ZBTJ"
     ],
     [
       "Wattay International Airport",
-      "https://en.wikipedia.org/wiki/Wattay_International_Airport"
+      "https://en.wikipedia.org/wiki/Wattay_International_Airport",
+      "VTE",
+      "VLVT"
     ],
     [
       "Wenzhou Longwan International Airport",
-      "https://en.wikipedia.org/wiki/Wenzhou_Longwan_International_Airport"
+      "https://en.wikipedia.org/wiki/Wenzhou_Longwan_International_Airport",
+      "WNZ",
+      "ZSWZ"
     ],
     [
       "Wuhan Tianhe International Airport",
-      "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport"
+      "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "WUH",
+      "ZHHH"
     ],
     [
       "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport"
+      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Xiamen Gaoqi International Airport",
-      "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport"
+      "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
+      "XMN",
+      "ZSAM"
     ],
     [
       "Xiangyang Liuji Airport",
-      "https://en.wikipedia.org/wiki/Xiangyang_Liuji_Airport"
+      "https://en.wikipedia.org/wiki/Xiangyang_Liuji_Airport",
+      "XFN",
+      "ZHXF"
     ],
     [
       "Xining Caojiapu International Airport",
-      "https://en.wikipedia.org/wiki/Xining_Caojiapu_International_Airport"
+      "https://en.wikipedia.org/wiki/Xining_Caojiapu_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Xishuangbanna Gasa International Airport",
-      "https://en.wikipedia.org/wiki/Xishuangbanna_Gasa_International_Airport"
+      "https://en.wikipedia.org/wiki/Xishuangbanna_Gasa_International_Airport",
+      "JHG",
+      "ZPJH"
     ],
     [
       "Xuzhou Guanyin International Airport",
-      "https://en.wikipedia.org/wiki/Xuzhou_Guanyin_International_Airport"
+      "https://en.wikipedia.org/wiki/Xuzhou_Guanyin_International_Airport",
+      "XUZ",
+      "ZSXZ"
     ],
     [
       "Yangzhou Taizhou International Airport",
-      "https://en.wikipedia.org/wiki/Yangzhou_Taizhou_International_Airport"
+      "https://en.wikipedia.org/wiki/Yangzhou_Taizhou_International_Airport",
+      "YTY",
+      "ZSYA"
     ],
     [
       "Yantai Penglai International Airport",
-      "https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport"
+      "https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport",
+      "YNT",
+      "ZSYT"
     ],
     [
       "Yinchuan Hedong International Airport",
-      "https://en.wikipedia.org/wiki/Yinchuan_Hedong_International_Airport"
+      "https://en.wikipedia.org/wiki/Yinchuan_Hedong_International_Airport",
+      "INC",
+      "ZLIC"
     ],
     [
       "Yulin Yuyang Airport",
-      "https://en.wikipedia.org/wiki/Yulin_Yuyang_Airport"
+      "https://en.wikipedia.org/wiki/Yulin_Yuyang_Airport",
+      "UYN",
+      "ZLYL"
     ],
     [
       "Yuncheng Guangong Airport",
-      "https://en.wikipedia.org/wiki/Yuncheng_Guangong_Airport"
+      "https://en.wikipedia.org/wiki/Yuncheng_Guangong_Airport",
+      "YCU",
+      "ZBYC"
     ],
     [
       "Zhengzhou Xinzheng International Airport",
-      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport"
+      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "CGO",
+      "ZHCC"
     ],
     [
       "Zhoushan Putuoshan International Airport",
-      "https://en.wikipedia.org/wiki/Zhoushan_Putuoshan_International_Airport"
+      "https://en.wikipedia.org/wiki/Zhoushan_Putuoshan_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport"
+      "\u00dcr\u00fcmqi Diwopu International Airport",
+      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -424,7 +586,7 @@
       "Xi'an Xianyang International Airport",
       "Xiamen Gaoqi International Airport",
       "Zhengzhou Xinzheng International Airport",
-      "Ürümqi Diwopu International Airport"
+      "\u00dcr\u00fcmqi Diwopu International Airport"
     ],
     "Fuzhou Airlines": [
       "Fuzhou Changle International Airport"
@@ -560,7 +722,7 @@
       "Tan Son Nhat International Airport",
       "Tianjin Binhai International Airport",
       "Wuhan Tianhe International Airport",
-      "Ürümqi Diwopu International Airport"
+      "\u00dcr\u00fcmqi Diwopu International Airport"
     ],
     "Spring Airlines": [
       "Dalian Zhoushuizi International Airport",
@@ -591,5 +753,6 @@
       "Quanzhou Jinjiang International Airport",
       "Xiamen Gaoqi International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Nanning]]"
 }

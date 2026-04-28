@@ -1,16 +1,18 @@
 {
   "iata": "OSI",
   "icao": "LDOS",
-  "city-served": "[[Osijek]], [[Vukovar]]",
+  "city-served": "Osijek",
   "location": "[[Klisa, Osijek-Baranja County|Klisa]], [[Croatia]]",
   "lat": "45.462778",
   "lon": "18.810278",
   "altitude": "89",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Vukovarsko-Srijemska",
+  "country_alpha3": "HRV",
+  "country_name": "Croatia",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Osijek_Airport",
+  "number_airlines": 2,
+  "outdegree": 4,
   "airlines": [
     "Croatia Airlines",
     "Ryanair"
@@ -18,19 +20,27 @@
   "destinations": [
     [
       "Dubrovnik",
-      "https://en.wikipedia.org/wiki/Dubrovnik_Airport"
+      "https://en.wikipedia.org/wiki/Dubrovnik_Airport",
+      "DBV",
+      "LDDU"
     ],
     [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport"
+      "London\u2013Stansted",
+      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "STN",
+      "EGSS"
     ],
     [
       "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ],
     [
       "Split",
-      "https://en.wikipedia.org/wiki/Split_Airport"
+      "https://en.wikipedia.org/wiki/Split_Airport",
+      "SPU",
+      "LDSP"
     ]
   ],
   "airlines_destinations": {
@@ -40,7 +50,8 @@
       "Split"
     ],
     "Ryanair": [
-      "London–Stansted"
+      "London\u2013Stansted"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Osijek]], [[Vukovar]]"
 }

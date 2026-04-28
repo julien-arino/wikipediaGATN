@@ -1,8 +1,8 @@
 {
   "iata": "KTN",
   "icao": "PAKT",
-  "city-served": "[[Ketchikan, Alaska]]",
-  "location": null,
+  "city-served": "Ketchikan, Alaska",
+  "location": "Ketchikan",
   "lat": "55.354167",
   "lon": "-131.711111",
   "altitude": "28.04",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "AK",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ketchikan_International_Airport",
+  "number_airlines": 2,
+  "outdegree": 5,
   "airlines": [
     "Alaska Airlines",
     "Island Air Express (page does not exist)"
@@ -18,34 +20,45 @@
   "destinations": [
     [
       "Juneau International Airport",
-      "https://en.wikipedia.org/wiki/Juneau_International_Airport"
+      "https://en.wikipedia.org/wiki/Juneau_International_Airport",
+      "JNU",
+      "PAJN"
     ],
     [
       "Klawock Airport",
-      "https://en.wikipedia.org/wiki/Klawock_Airport"
+      "https://en.wikipedia.org/wiki/Klawock_Airport",
+      "KLW",
+      "PAKW"
     ],
     [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport"
+      "Seattle\u2013Tacoma International Airport",
+      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Sitka Rocky Gutierrez Airport",
-      "https://en.wikipedia.org/wiki/Sitka_Rocky_Gutierrez_Airport"
+      "https://en.wikipedia.org/wiki/Sitka_Rocky_Gutierrez_Airport",
+      "SIT",
+      "PASI"
     ],
     [
       "Wrangell Airport",
-      "https://en.wikipedia.org/wiki/Wrangell_Airport"
+      "https://en.wikipedia.org/wiki/Wrangell_Airport",
+      "WRG",
+      "PAWG"
     ]
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
       "Juneau International Airport",
-      "Seattle–Tacoma International Airport",
+      "Seattle\u2013Tacoma International Airport",
       "Sitka Rocky Gutierrez Airport",
       "Wrangell Airport"
     ],
     "Island Air Express (page does not exist)": [
       "Klawock Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Ketchikan, Alaska]]"
 }

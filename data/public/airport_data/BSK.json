@@ -1,48 +1,60 @@
 {
   "iata": "BSK",
   "icao": "DAUB",
-  "city-served": "[[Biskra]]",
+  "city-served": "Biskra",
   "location": "[[Oumache]], Algeria",
   "lat": "34.801667",
   "lon": "5.741667",
   "altitude": "88",
   "region": "DZ",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "DZA",
+  "country_name": "Algeria",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Biskra_Airport",
+  "number_airlines": 3,
+  "outdegree": 5,
   "airlines": [
-    "Air Algérie",
+    "Air Alg\u00e9rie",
     "Tassili Airlines",
     "Transavia"
   ],
   "destinations": [
     [
       "Algiers",
-      "https://en.wikipedia.org/wiki/Algiers_Airport"
+      "https://en.wikipedia.org/wiki/Algiers_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport"
+      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "ALG",
+      "DAAG"
     ],
     [
       "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport"
+      "https://en.wikipedia.org/wiki/Lyon\u2013Saint-Exup\u00e9ry_Airport",
+      "LYS",
+      "LFLL"
     ],
     [
       "Paris-Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport"
+      "https://en.wikipedia.org/wiki/Orly_Airport",
+      "ORY",
+      "LFPO"
     ],
     [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport"
+      "Paris\u2013Orly",
+      "https://en.wikipedia.org/wiki/Orly_Airport",
+      "ORY",
+      "LFPO"
     ]
   ],
   "airlines_destinations": {
-    "Air Algérie": [
+    "Air Alg\u00e9rie": [
       "Algiers",
       "Lyon",
-      "Paris–Orly"
+      "Paris\u2013Orly"
     ],
     "Tassili Airlines": [
       "Algiers"
@@ -50,5 +62,6 @@
     "Transavia": [
       "Paris-Orly"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Biskra]]"
 }

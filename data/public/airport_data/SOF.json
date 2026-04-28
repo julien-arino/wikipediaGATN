@@ -1,16 +1,18 @@
 {
   "iata": "SOF",
   "icao": "LBSF",
-  "city-served": "[[Sofia]]",
+  "city-served": "Sofia",
   "location": "Sofia, [[Bulgaria]]",
   "lat": "42.695000",
   "lon": "23.408333",
   "altitude": "531",
   "region": "BG",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "BGR",
+  "country_name": "Bulgaria",
+  "subdivision_code": "Stolichna Obshtina",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sofia_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Compass Cargo Airlines",
     "DHL Aviation",
@@ -19,19 +21,27 @@
   "destinations": [
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
       "Leipzig/Halle",
-      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport"
+      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "LEJ",
+      "EDDP"
     ],
     [
       "Liege",
-      "https://en.wikipedia.org/wiki/Liege_Airport"
+      "https://en.wikipedia.org/wiki/Liege_Airport",
+      "LGG",
+      "EBLG"
     ],
     [
       "Zhengzhou",
-      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport"
+      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "CGO",
+      "ZHCC"
     ]
   ],
   "airlines_destinations": {
@@ -45,5 +55,6 @@
     "Swiftair": [
       "Cologne/Bonn"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Sofia]]"
 }

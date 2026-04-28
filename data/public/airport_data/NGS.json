@@ -2,15 +2,17 @@
   "iata": "NGS",
   "icao": "RJFU",
   "city-served": null,
-  "location": "[[Ōmura, Nagasaki|Ōmura]], [[Nagasaki Prefecture]], [[Japan]]",
+  "location": "[[\u014cmura, Nagasaki|\u014cmura]], [[Nagasaki Prefecture]], [[Japan]]",
   "lat": "32.916944",
   "lon": "129.913611",
   "altitude": "2.44",
   "region": "JP",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "JPN",
+  "country_name": "Japan",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nagasaki_Airport",
+  "number_airlines": 10,
+  "outdegree": 10,
   "airlines": [
     "ANA Wings",
     "All Nippon Airways",
@@ -26,64 +28,84 @@
   "destinations": [
     [
       "Fukue",
-      "https://en.wikipedia.org/wiki/Fukue_Airport"
+      "https://en.wikipedia.org/wiki/Fukue_Airport",
+      "FUJ",
+      "RJFE"
     ],
     [
       "Iki",
-      "https://en.wikipedia.org/wiki/Iki_Airport"
+      "https://en.wikipedia.org/wiki/Iki_Airport",
+      "IKI",
+      "RJDB"
     ],
     [
       "Kobe",
-      "https://en.wikipedia.org/wiki/Kobe_Airport"
+      "https://en.wikipedia.org/wiki/Kobe_Airport",
+      "UKB",
+      "RJBE"
     ],
     [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport"
+      "Nagoya\u2013Centrair",
+      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "NGO",
+      "RJGG"
     ],
     [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport"
+      "Osaka\u2013Itami",
+      "https://en.wikipedia.org/wiki/Itami_Airport",
+      "ITM",
+      "RJOO"
     ],
     [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport"
+      "Osaka\u2013Kansai",
+      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "KIX",
+      "RJBB"
     ],
     [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport"
+      "Seoul\u2013Incheon",
+      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "ICN",
+      "RKSI"
     ],
     [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport"
+      "Tokyo\u2013Haneda",
+      "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "HND",
+      "RJTT"
     ],
     [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport"
+      "Tokyo\u2013Narita",
+      "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "NRT",
+      "RJAA"
     ],
     [
       "Tsushima",
-      "https://en.wikipedia.org/wiki/Tsushima_Airport"
+      "https://en.wikipedia.org/wiki/Tsushima_Airport",
+      "TSJ",
+      "RJDT"
     ]
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ],
     "ANA Wings": [
-      "Nagoya–Centrair",
-      "Osaka–Itami"
+      "Nagoya\u2013Centrair",
+      "Osaka\u2013Itami"
     ],
     "J-Air": [
-      "Osaka–Itami"
+      "Osaka\u2013Itami"
     ],
     "Japan Airlines": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ],
     "Jetstar Japan": [
-      "Tokyo–Narita"
+      "Tokyo\u2013Narita"
     ],
     "Korean Air": [
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "Oriental Air Bridge": [
       "Fukue",
@@ -91,13 +113,14 @@
       "Tsushima"
     ],
     "Peach": [
-      "Osaka–Kansai"
+      "Osaka\u2013Kansai"
     ],
     "Skymark Airlines": [
       "Kobe"
     ],
     "Solaseed Air": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

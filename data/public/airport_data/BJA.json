@@ -1,7 +1,8 @@
 {
   "iata": "BJA",
   "icao": "DAAE",
-  "city-served": "[[Bejaia]]",
+  "city-served": "Bejaia",
+  "city-served-wikipedia": "[[Bejaia]]",
   "location": "[[Bejaia]], Algeria",
   "lat": null,
   "lon": null,
@@ -11,9 +12,11 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Abane_Ramdane_Airport",
+  "number_airlines": 6,
+  "outdegree": 10,
   "airlines": [
     "ASL Airlines France",
-    "Air Algérie",
+    "Air Alg\u00e9rie",
     "TUI fly Belgium",
     "Tassili Airlines",
     "Transavia",
@@ -22,64 +25,84 @@
   "destinations": [
     [
       "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport"
+      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "ALG",
+      "DAAG"
     ],
     [
       "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport"
+      "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "BRU",
+      "EBBR"
     ],
     [
       "Hassi Messaoud",
-      "https://en.wikipedia.org/wiki/Hassi_Messaoud_Airport"
+      "https://en.wikipedia.org/wiki/Hassi_Messaoud_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport"
+      "https://en.wikipedia.org/wiki/Lille_Airport",
+      "LIL",
+      "LFQQ"
     ],
     [
       "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport"
+      "https://en.wikipedia.org/wiki/Lyon\u2013Saint-Exup\u00e9ry_Airport",
+      "LYS",
+      "LFLL"
     ],
     [
       "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport"
+      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "MRS",
+      "LFML"
     ],
     [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle"
+      "Paris\u2013Charles de Gaulle",
+      "https://en.wikipedia.org/wiki/Paris\u2013Charles_de_Gaulle",
+      "CDG",
+      "LFPG"
     ],
     [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport"
+      "Paris\u2013Orly",
+      "https://en.wikipedia.org/wiki/Orly_Airport",
+      "ORY",
+      "LFPO"
     ],
     [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Paris–Orly"
+      "Paris\u2013Orly",
+      "https://en.wikipedia.org/wiki/Paris\u2013Orly",
+      "ORY",
+      "LFPO"
     ],
     [
-      "Saint-Étienne",
-      "https://en.wikipedia.org/wiki/Saint-Étienne–Bouthéon_Airport"
+      "Saint-\u00c9tienne",
+      "https://en.wikipedia.org/wiki/Saint-\u00c9tienne\u2013Bouth\u00e9on_Airport",
+      "EBU",
+      "LFMH"
     ]
   ],
   "airlines_destinations": {
-    "Air Algérie": [
+    "Air Alg\u00e9rie": [
       "Algiers",
       "Lyon",
       "Marseille",
-      "Paris–Charles de Gaulle",
-      "Paris–Orly"
+      "Paris\u2013Charles de Gaulle",
+      "Paris\u2013Orly"
     ],
     "ASL Airlines France": [
       "Lille",
-      "Paris–Charles de Gaulle",
-      "Saint-Étienne"
+      "Paris\u2013Charles de Gaulle",
+      "Saint-\u00c9tienne"
     ],
     "Tassili Airlines": [
       "Hassi Messaoud"
     ],
     "Transavia": [
       "Lyon",
-      "Paris–Orly"
+      "Paris\u2013Orly"
     ],
     "TUI fly Belgium": [
       "Brussels",

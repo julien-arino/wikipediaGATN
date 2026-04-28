@@ -1,8 +1,8 @@
 {
   "iata": "MFR",
   "icao": "KMFR",
-  "city-served": "[[Rogue Valley]]",
-  "location": null,
+  "city-served": "Rogue Valley",
+  "location": "Central Point",
   "lat": "42.374167",
   "lon": "-122.873611",
   "altitude": "406.91",
@@ -10,7 +10,9 @@
   "country_alpha3": "USA",
   "country_name": "United States",
   "subdivision_code": "OR",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Rogue_Valley_International–Medford_Airport",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Rogue_Valley_International\u2013Medford_Airport",
+  "number_airlines": 6,
+  "outdegree": 11,
   "airlines": [
     "Alaska Airlines",
     "Allegiant Air",
@@ -22,47 +24,69 @@
   "destinations": [
     [
       "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport"
+      "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "DEN",
+      "KDEN"
     ],
     [
       "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport"
+      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "LAS",
+      "KLAS"
     ],
     [
       "John Wayne Airport",
-      "https://en.wikipedia.org/wiki/John_Wayne_Airport"
+      "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "SNA",
+      "KSNA"
     ],
     [
       "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
+      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "LAX",
+      "KLAX"
     ],
     [
       "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport"
+      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "PHX",
+      "KPHX"
     ],
     [
       "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport"
+      "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "PDX",
+      "KPDX"
     ],
     [
       "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport"
+      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "SLC",
+      "KSLC"
     ],
     [
       "San Diego International Airport",
-      "https://en.wikipedia.org/wiki/San_Diego_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "SAN",
+      "KSAN"
     ],
     [
       "San Francisco International Airport",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "SFO",
+      "KSFO"
     ],
     [
       "Seattle-Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport"
+      "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport"
+      "Seattle\u2013Tacoma International Airport",
+      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -70,7 +94,7 @@
       "Los Angeles International Airport",
       "Portland International Airport",
       "San Diego International Airport",
-      "Seattle–Tacoma International Airport"
+      "Seattle\u2013Tacoma International Airport"
     ],
     "Allegiant Air": [
       "Harry Reid International Airport",
@@ -91,5 +115,6 @@
       "Denver International Airport",
       "San Francisco International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Rogue Valley]]"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "YSJ",
   "icao": "CYSJ",
-  "city-served": "[[Saint John, New Brunswick]]",
-  "location": null,
+  "city-served": "Saint John, New Brunswick",
+  "location": "Saint John",
   "lat": "45.315833",
   "lon": "-65.890000",
   "altitude": "108.81",
@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "NB",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_John_Airport",
+  "number_airlines": 4,
+  "outdegree": 4,
   "airlines": [
     "Air Canada Express",
     "Air Canada Rouge",
@@ -20,35 +22,44 @@
   "destinations": [
     [
       "Halifax",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport"
+      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "YHZ",
+      "CYHZ"
     ],
     [
-      "Montréal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport"
+      "Montr\u00e9al\u2013Saint-Hubert",
+      "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
+      "YHU",
+      "CYHU"
     ],
     [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport"
+      "Montr\u00e9al\u2013Trudeau",
+      "https://en.wikipedia.org/wiki/Montr\u00e9al\u2013Trudeau_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Express": [
-      "Montréal–Trudeau",
-      "Toronto–Pearson"
+      "Montr\u00e9al\u2013Trudeau",
+      "Toronto\u2013Pearson"
     ],
     "Air Canada Rouge": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Flair Airlines": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Pascan Aviation": [
       "Halifax",
-      "Montréal–Saint-Hubert"
+      "Montr\u00e9al\u2013Saint-Hubert"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Saint John, New Brunswick]]"
 }

@@ -1,8 +1,8 @@
 {
   "iata": "YQT",
   "icao": "CYQT",
-  "city-served": "[[Thunder Bay]], [[Ontario]]",
-  "location": null,
+  "city-served": "Thunder Bay",
+  "location": "Thunder Bay",
   "lat": "48.371944",
   "lon": "-89.321667",
   "altitude": "199.34",
@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "ON",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+  "number_airlines": 13,
+  "outdegree": 18,
   "airlines": [
     "Air Canada",
     "Air Canada Express",
@@ -29,86 +31,122 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
       "Fort Hope/Eabametoong",
-      "https://en.wikipedia.org/wiki/Fort_Hope_Airport"
+      "https://en.wikipedia.org/wiki/Fort_Hope_Airport",
+      "YFH",
+      "CYFH"
     ],
     [
       "Kenora",
-      "https://en.wikipedia.org/wiki/Kenora_Airport"
+      "https://en.wikipedia.org/wiki/Kenora_Airport",
+      "YQK",
+      "CYQK"
     ],
     [
       "Muskrat Dam",
-      "https://en.wikipedia.org/wiki/Muskrat_Dam_Airport"
+      "https://en.wikipedia.org/wiki/Muskrat_Dam_Airport",
+      "MSA",
+      "CZMD"
     ],
     [
       "Neskantaga",
-      "https://en.wikipedia.org/wiki/Lansdowne_House_Airport"
+      "https://en.wikipedia.org/wiki/Lansdowne_House_Airport",
+      "YLH",
+      "CYLH"
     ],
     [
       "Ogoki Post",
-      "https://en.wikipedia.org/wiki/Ogoki_Post_Airport"
+      "https://en.wikipedia.org/wiki/Ogoki_Post_Airport",
+      "YOG",
+      "CYKP"
     ],
     [
       "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald-Cartier_International_Airport"
+      "https://en.wikipedia.org/wiki/Ottawa_Macdonald-Cartier_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport"
+      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "PUJ",
+      "MDPC"
     ],
     [
       "Red Lake",
-      "https://en.wikipedia.org/wiki/Red_Lake_Airport"
+      "https://en.wikipedia.org/wiki/Red_Lake_Airport",
+      "YRL",
+      "CYRL"
     ],
     [
       "Sachigo Lake",
-      "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport"
+      "https://en.wikipedia.org/wiki/Sachigo_Lake_Airport",
+      "ZPB",
+      "CZPB"
     ],
     [
       "Sault Ste. Marie",
-      "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport"
+      "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
+      "YAM",
+      "CYAM"
     ],
     [
       "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport"
+      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "YXL",
+      "CYXL"
     ],
     [
       "Sudbury",
-      "https://en.wikipedia.org/wiki/Sudbury_Airport"
+      "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "YSB",
+      "CYSB"
     ],
     [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport"
+      "Toronto\u2013Billy Bishop",
+      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "YTZ",
+      "CYTZ"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ],
     [
       "Weagamow",
-      "https://en.wikipedia.org/wiki/Round_Lake_(Weagamow_Lake)_Airport"
+      "https://en.wikipedia.org/wiki/Round_Lake_(Weagamow_Lake)_Airport",
+      "ZRJ",
+      "CZRJ"
     ],
     [
       "Webequie",
-      "https://en.wikipedia.org/wiki/Webequie_Airport"
+      "https://en.wikipedia.org/wiki/Webequie_Airport",
+      "YWP",
+      "CYWP"
     ],
     [
       "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport"
+      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "YWG",
+      "CYWG"
     ]
   ],
   "airlines_destinations": {
     "Air Canada": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Air Canada Express": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Air Canada Rouge": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "Bearskin Airlines": [
       "Sault Ste. Marie",
@@ -116,7 +154,7 @@
       "Sudbury"
     ],
     "Flair Airlines": [
-      "Toronto–Pearson"
+      "Toronto\u2013Pearson"
     ],
     "North Star Air": [
       "Fort Hope/Eabametoong",
@@ -131,8 +169,8 @@
     ],
     "Porter Airlines": [
       "Ottawa",
-      "Toronto–Billy Bishop",
-      "Toronto–Pearson"
+      "Toronto\u2013Billy Bishop",
+      "Toronto\u2013Pearson"
     ],
     "Superior Airways": [
       "Red Lake"
@@ -153,5 +191,6 @@
     "FedEx Feeder": [
       "Winnipeg"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Thunder Bay]], [[Ontario]]"
 }

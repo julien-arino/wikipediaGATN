@@ -2,15 +2,17 @@
   "iata": "LPI",
   "icao": "ESSL",
   "city-served": null,
-  "location": "[[Linköping]], [[Sweden]]",
+  "location": "[[Link\u00f6ping]], [[Sweden]]",
   "lat": "58.408333",
   "lon": "15.672778",
   "altitude": "52",
   "region": "SE",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Linköping/Saab_Airport",
+  "country_alpha3": "SWE",
+  "country_name": "Sweden",
+  "subdivision_code": "Linkopings Kommun",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Link\u00f6ping/Saab_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "KLM",
     "Lygg"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport"
+      "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
-      "Örebro",
-      "https://en.wikipedia.org/wiki/Örebro_Airport"
+      "\u00d6rebro",
+      "https://en.wikipedia.org/wiki/\u00d6rebro_Airport",
+      "ORB",
+      "ESOE"
     ]
   ],
   "airlines_destinations": {
@@ -35,7 +43,8 @@
     ],
     "Lygg": [
       "Helsinki",
-      "Örebro"
+      "\u00d6rebro"
     ]
-  }
+  },
+  "city-served-wikipedia": null
 }

@@ -1,16 +1,18 @@
 {
   "iata": "PMF",
   "icao": "LIMP",
-  "city-served": "[[Parma]], [[Emilia-Romagna]], Italy",
-  "location": null,
+  "city-served": "Parma",
+  "location": "Baganzola",
   "lat": "44.822222",
   "lon": "10.295278",
   "altitude": "49",
   "region": "IT",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "ITA",
+  "country_name": "Italy",
+  "subdivision_code": "Provincia di Parma",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Parma_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "FlyOne",
     "Ryanair"
@@ -18,24 +20,31 @@
   "destinations": [
     [
       "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport"
+      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "CAG",
+      "LIEE"
     ],
     [
-      "Chișinău",
-      "https://en.wikipedia.org/wiki/Chișinău_International_Airport"
+      "Chi\u0219in\u0103u",
+      "https://en.wikipedia.org/wiki/Chi\u0219in\u0103u_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport"
+      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "FlyOne": [
-      "Chișinău"
+      "Chi\u0219in\u0103u"
     ],
     "Ryanair": [
       "Cagliari",
       "Palermo"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Parma]], [[Emilia-Romagna]], Italy"
 }

@@ -1,7 +1,7 @@
 {
   "iata": "YQY",
   "icao": "CYQY",
-  "city-served": "[[Cape Breton Regional Municipality]]",
+  "city-served": "Cape Breton Regional Municipality",
   "location": "[[Reserve Mines, Nova Scotia|Reserve Mines]], [[Nova Scotia]]",
   "lat": "46.161389",
   "lon": "-60.048056",
@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "NS",
   "wikipedia_url": "https://en.wikipedia.org/wiki/JA_Douglas_McCurdy_Sydney_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Air Canada Express",
     "WestJet"
@@ -18,24 +20,31 @@
   "destinations": [
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport"
+      "Montr\u00e9al\u2013Trudeau",
+      "https://en.wikipedia.org/wiki/Montr\u00e9al\u2013Trudeau_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Express": [
-      "Montréal–Trudeau",
-      "Toronto–Pearson"
+      "Montr\u00e9al\u2013Trudeau",
+      "Toronto\u2013Pearson"
     ],
     "WestJet": [
       "Calgary"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Cape Breton Regional Municipality]]"
 }

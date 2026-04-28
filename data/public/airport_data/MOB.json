@@ -1,7 +1,7 @@
 {
   "iata": "MOB",
   "icao": "KMOB",
-  "city-served": "[[Mobile, Alabama]]",
+  "city-served": "Mobile, Alabama",
   "location": "[[Mobile County, Alabama|Mobile County]]",
   "lat": "30.691389",
   "lon": "-88.242778",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "AL",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mobile_Regional_Airport",
+  "number_airlines": 3,
+  "outdegree": 5,
   "airlines": [
     "American Eagle (airline brand)",
     "Delta Air Lines",
@@ -19,23 +21,33 @@
   "destinations": [
     [
       "Charlotte Douglas International Airport",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport"
+      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "CLT",
+      "KCLT"
     ],
     [
       "Dallas/Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport"
+      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "IAD",
+      "KIAD"
     ],
     [
       "George Bush Intercontinental Airport",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport"
+      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "IAH",
+      "KIAH"
     ],
     [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport",
+      "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -44,11 +56,12 @@
       "Dallas/Fort Worth International Airport"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Hartsfield\u2013Jackson Atlanta International Airport"
     ],
     "United Express": [
       "Dulles International Airport",
       "George Bush Intercontinental Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Mobile, Alabama]]"
 }

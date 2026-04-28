@@ -1,16 +1,18 @@
 {
   "iata": "GAJ",
   "icao": "RJSC",
-  "city-served": "[[Yamagata, Yamagata|Yamagata]]",
+  "city-served": "Yamagata",
   "location": "[[Higashine]], [[Yamagata Prefecture]], Japan",
   "lat": "38.411944",
   "lon": "140.371111",
   "altitude": "105.16",
   "region": "JP",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "JPN",
+  "country_name": "Japan",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Yamagata_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "Fuji Dream Airlines",
     "J-Air",
@@ -18,32 +20,41 @@
   ],
   "destinations": [
     [
-      "Nagoya–Komaki",
-      "https://en.wikipedia.org/wiki/Nagoya_Airfield"
+      "Nagoya\u2013Komaki",
+      "https://en.wikipedia.org/wiki/Nagoya_Airfield",
+      "NKM",
+      "RJNA"
     ],
     [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport"
+      "Osaka\u2013Itami",
+      "https://en.wikipedia.org/wiki/Itami_Airport",
+      "ITM",
+      "RJOO"
     ],
     [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport"
+      "Sapporo\u2013Chitose",
+      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "CTS",
+      "RJCC"
     ],
     [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport"
+      "Tokyo\u2013Haneda",
+      "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "HND",
+      "RJTT"
     ]
   ],
   "airlines_destinations": {
     "Fuji Dream Airlines": [
-      "Nagoya–Komaki",
-      "Sapporo–Chitose"
+      "Nagoya\u2013Komaki",
+      "Sapporo\u2013Chitose"
     ],
     "J-Air": [
-      "Osaka–Itami"
+      "Osaka\u2013Itami"
     ],
     "Japan Airlines": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Yamagata, Yamagata|Yamagata]]"
 }

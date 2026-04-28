@@ -1,8 +1,8 @@
 {
   "iata": "CIU",
   "icao": "KCIU",
-  "city-served": "[[Sault Ste. Marie, Michigan]]",
-  "location": null,
+  "city-served": "Sault Ste. Marie, Michigan",
+  "location": "Sault Ste. Marie",
   "lat": "46.250833",
   "lon": "-84.472500",
   "altitude": "244",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "MI",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Chippewa_County_International_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Delta Connection",
     "United Express"
@@ -18,24 +20,31 @@
   "destinations": [
     [
       "Detroit Metropolitan Airport",
-      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport"
+      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport"
+      "Minneapolis\u2013Saint Paul International Airport",
+      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport"
+      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
     "Delta Connection": [
       "Detroit Metropolitan Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis\u2013Saint Paul International Airport"
     ],
     "United Express": [
       "O'Hare International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Sault Ste. Marie, Michigan]]"
 }

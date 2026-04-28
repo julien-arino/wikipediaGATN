@@ -1,8 +1,8 @@
 {
   "iata": "YQX",
   "icao": "CYQX",
-  "city-served": "[[Gander, Newfoundland and Labrador]]",
-  "location": null,
+  "city-served": "Gander, Newfoundland and Labrador",
+  "location": "Gambo",
   "lat": "48.936944",
   "lon": "-54.568056",
   "altitude": "151.18",
@@ -11,6 +11,8 @@
   "country_name": "Canada",
   "subdivision_code": "NL",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gander_International_Airport",
+  "number_airlines": 2,
+  "outdegree": 8,
   "airlines": [
     "Air Canada Express",
     "PAL Airlines"
@@ -18,42 +20,58 @@
   "destinations": [
     [
       "Churchill Falls",
-      "https://en.wikipedia.org/wiki/Churchill_Falls_Airport"
+      "https://en.wikipedia.org/wiki/Churchill_Falls_Airport",
+      "ZUM",
+      "CZUM"
     ],
     [
       "Deer Lake",
-      "https://en.wikipedia.org/wiki/Deer_Lake_Regional_Airport"
+      "https://en.wikipedia.org/wiki/Deer_Lake_Regional_Airport",
+      "YDF",
+      "CYDF"
     ],
     [
       "Goose Bay",
-      "https://en.wikipedia.org/wiki/CFB_Goose_Bay"
+      "https://en.wikipedia.org/wiki/CFB_Goose_Bay",
+      "YYR",
+      "CYYR"
     ],
     [
       "Halifax",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport"
+      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "YHZ",
+      "CYHZ"
     ],
     [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau"
+      "Montr\u00e9al\u2013Trudeau",
+      "https://en.wikipedia.org/wiki/Montr\u00e9al\u2013Trudeau",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "St. John's",
-      "https://en.wikipedia.org/wiki/St._John's_International_Airport"
+      "https://en.wikipedia.org/wiki/St._John's_International_Airport",
+      "YYT",
+      "CYYT"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto–Pearson"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto\u2013Pearson",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Wabush",
-      "https://en.wikipedia.org/wiki/Wabush_Airport"
+      "https://en.wikipedia.org/wiki/Wabush_Airport",
+      "YWK",
+      "CYWK"
     ]
   ],
   "airlines_destinations": {
     "Air Canada Express": [
       "Halifax",
-      "Montréal–Trudeau",
-      "Toronto–Pearson"
+      "Montr\u00e9al\u2013Trudeau",
+      "Toronto\u2013Pearson"
     ],
     "PAL Airlines": [
       "Churchill Falls",
@@ -62,5 +80,6 @@
       "St. John's",
       "Wabush"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Gander, Newfoundland and Labrador]]"
 }

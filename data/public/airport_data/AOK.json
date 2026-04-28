@@ -2,15 +2,19 @@
   "iata": "AOK",
   "icao": "LGKP",
   "city-served": null,
+  "city-served-wikipedia": null,
   "location": "[[Karpathos]], [[Greece]]",
   "lat": "35.420556",
   "lon": "27.146667",
   "altitude": "20",
+  "continent": "Europe",
   "region": "GR",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "GRC",
+  "country_name": "Greece",
+  "subdivision_code": "Nomos Dodekanisou",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Karpathos_Island_National_Airport",
+  "number_airlines": 14,
+  "outdegree": 20,
   "airlines": [
     "Air Haifa",
     "Austrian Airlines",
@@ -30,83 +34,123 @@
   "destinations": [
     [
       "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol"
+      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "AMS",
+      "EHAM"
     ],
     [
       "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport"
+      "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "ATH",
+      "LGAV"
     ],
     [
       "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport"
+      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "BLQ",
+      "LIPE"
     ],
     [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport"
+      "D\u00fcsseldorf",
+      "https://en.wikipedia.org/wiki/D\u00fcsseldorf_Airport",
+      "DUS",
+      "EDDL"
     ],
     [
-      "Forlì",
-      "https://en.wikipedia.org/wiki/Forlì_Airport"
+      "Forl\u00ec",
+      "https://en.wikipedia.org/wiki/Forl\u00ec_Airport",
+      "FRL",
+      "LIPK"
     ],
     [
       "Haifa",
-      "https://en.wikipedia.org/wiki/Uri_Michaeli_Haifa_International_Airport"
+      "https://en.wikipedia.org/wiki/Uri_Michaeli_Haifa_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
       "Innsbruck",
-      "https://en.wikipedia.org/wiki/Innsbruck_Airport"
+      "https://en.wikipedia.org/wiki/Innsbruck_Airport",
+      "INN",
+      "LOWI"
     ],
     [
       "Kasos",
-      "https://en.wikipedia.org/wiki/Kassos_Island_Public_Airport"
+      "https://en.wikipedia.org/wiki/Kassos_Island_Public_Airport",
+      "KSJ",
+      "LGKS"
     ],
     [
       "Milan-Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport"
+      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "BGY",
+      "LIME"
     ],
     [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport"
+      "Milan\u2013Malpensa",
+      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "MXP",
+      "LIMC"
     ],
     [
       "Naples",
-      "https://en.wikipedia.org/wiki/Naples_Airport"
+      "https://en.wikipedia.org/wiki/Naples_Airport",
+      "NAP",
+      "LIRN"
     ],
     [
       "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Gardermoen_Airport"
+      "https://en.wikipedia.org/wiki/Oslo_Gardermoen_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague"
+      "https://en.wikipedia.org/wiki/V\u00e1clav_Havel_Airport_Prague",
+      "PRG",
+      "LKPR"
     ],
     [
       "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport"
+      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "RHO",
+      "LGRP"
     ],
     [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport"
+      "Rome\u2013Fiumicino",
+      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci\u2013Fiumicino_Airport",
+      "FCO",
+      "LIRF"
     ],
     [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport"
+      "Stockholm\u2013Arlanda",
+      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "ARN",
+      "ESSA"
     ],
     [
       "Venice",
-      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport"
+      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "VCE",
+      "LIPZ"
     ],
     [
       "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport"
+      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "VRN",
+      "LIPX"
     ],
     [
       "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport"
+      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -117,20 +161,20 @@
       "Vienna"
     ],
     "Eurowings": [
-      "Düsseldorf",
+      "D\u00fcsseldorf",
       "Innsbruck"
     ],
     "Finnair": [
       "Helsinki"
     ],
     "GoTo Fly": [
-      "Forlì"
+      "Forl\u00ec"
     ],
     "Neos": [
       "Bologna",
       "Milan-Bergamo",
-      "Milan–Malpensa",
-      "Rome–Fiumicino",
+      "Milan\u2013Malpensa",
+      "Rome\u2013Fiumicino",
       "Verona"
     ],
     "Olympic Air": [
@@ -155,7 +199,7 @@
       "Amsterdam"
     ],
     "TUI fly Nordic": [
-      "Stockholm–Arlanda"
+      "Stockholm\u2013Arlanda"
     ],
     "Volotea": [
       "Naples",

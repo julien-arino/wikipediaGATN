@@ -1,16 +1,20 @@
 {
   "iata": "ARN",
   "icao": "ESSA",
-  "city-served": "[[Metropolitan Stockholm]]",
+  "city-served": "Metropolitan Stockholm",
+  "city-served-wikipedia": "[[Metropolitan Stockholm]]",
   "location": "[[Sigtuna Municipality]], [[Stockholm County]], [[Sweden]]",
   "lat": "59.651944",
   "lon": "17.918611",
   "altitude": "41.76",
+  "continent": "Europe",
   "region": "SE-AB",
   "country_alpha3": "SWE",
   "country_name": "Sweden",
   "subdivision_code": "AB",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+  "number_airlines": 6,
+  "outdegree": 8,
   "airlines": [
     "FedEx Express",
     "Korean Air Cargo",
@@ -22,43 +26,59 @@
   "destinations": [
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
       "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
       "Gothenburg",
-      "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport"
+      "https://en.wikipedia.org/wiki/G\u00f6teborg_Landvetter_Airport",
+      "GOT",
+      "ESGG"
     ],
     [
       "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport"
+      "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "HEL",
+      "EFHK"
     ],
     [
       "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport"
+      "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "IST",
+      "LTFM"
     ],
     [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport"
+      "Paris\u2013Charles de Gaulle",
+      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "CDG",
+      "LFPG"
     ],
     [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport"
+      "Seoul\u2013Incheon",
+      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "ICN",
+      "RKSI"
     ],
     [
       "Sundsvall",
-      "https://en.wikipedia.org/wiki/Sundsvall–Timrå_Airport"
+      "https://en.wikipedia.org/wiki/Sundsvall\u2013Timr\u00e5_Airport",
+      "SDL",
+      "ESNN"
     ]
   ],
   "airlines_destinations": {
     "FedEx Express": [
-      "Paris–Charles de Gaulle"
+      "Paris\u2013Charles de Gaulle"
     ],
     "Korean Air Cargo": [
-      "Seoul–Incheon"
+      "Seoul\u2013Incheon"
     ],
     "Lufthansa Cargo": [
       "Frankfurt",

@@ -1,8 +1,8 @@
 {
   "iata": "LUZ",
   "icao": "EPLB",
-  "city-served": "[[Lublin]], [[Poland]]",
-  "location": "[[Świdnik]]",
+  "city-served": "Lublin",
+  "location": "[[\u015awidnik]]",
   "lat": null,
   "lon": null,
   "altitude": "193",
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lublin_Airport",
+  "number_airlines": 5,
+  "outdegree": 12,
   "airlines": [
     "AeroItalia",
     "El Al Cargo",
@@ -21,69 +23,93 @@
   "destinations": [
     [
       "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport"
+      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "BGY",
+      "LIME"
     ],
     [
       "Burgas",
-      "https://en.wikipedia.org/wiki/Burgas_Airport"
+      "https://en.wikipedia.org/wiki/Burgas_Airport",
+      "BOJ",
+      "LBBG"
     ],
     [
       "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport"
+      "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "DUB",
+      "EIDW"
     ],
     [
       "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport"
+      "Gda\u0144sk",
+      "https://en.wikipedia.org/wiki/Gda\u0144sk_Lech_Wa\u0142\u0119sa_Airport",
+      "GDN",
+      "EPGD"
     ],
     [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/Luton_Airport"
+      "London\u2013Luton",
+      "https://en.wikipedia.org/wiki/Luton_Airport",
+      "LTN",
+      "EGGW"
     ],
     [
       "Maastricht/Aachen",
-      "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport"
+      "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Rijeka",
-      "https://en.wikipedia.org/wiki/Rijeka_Airport"
+      "https://en.wikipedia.org/wiki/Rijeka_Airport",
+      "RJK",
+      "LDRI"
     ],
     [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci-Fiumicino_Airport"
+      "Rome\u2013Fiumicino",
+      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci-Fiumicino_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Split",
-      "https://en.wikipedia.org/wiki/Split_Airport"
+      "https://en.wikipedia.org/wiki/Split_Airport",
+      "SPU",
+      "LDSP"
     ],
     [
       "Tel Aviv",
-      "https://en.wikipedia.org/wiki/Ben_Gurion_Airport"
+      "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "TLV",
+      "LLBG"
     ],
     [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport"
+      "Warsaw\u2013Chopin",
+      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "WAW",
+      "EPWA"
     ]
   ],
   "airlines_destinations": {
     "AeroItalia": [
-      "Rome–Fiumicino"
+      "Rome\u2013Fiumicino"
     ],
     "LOT Polish Airlines": [
-      "Warsaw–Chopin"
+      "Warsaw\u2013Chopin"
     ],
     "Ryanair": [
       "Bergamo",
       "Dublin",
-      "Gdańsk",
-      "London–Luton"
+      "Gda\u0144sk",
+      "London\u2013Luton"
     ],
     "Wizz Air": [
       "Burgas",
-      "London–Luton",
+      "London\u2013Luton",
       "Maastricht/Aachen",
       "Rijeka",
       "Split"
@@ -92,5 +118,6 @@
       "Frankfurt",
       "Tel Aviv"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Lublin]], [[Poland]]"
 }

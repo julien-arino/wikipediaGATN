@@ -1,7 +1,7 @@
 {
   "iata": "JIK",
   "icao": "LGIK",
-  "city-served": "[[Agios Kirykos]]",
+  "city-served": "Agios Kirykos",
   "location": "Ikaria Island, Greece",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ikaria_Island_National_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Olympic Air",
     "Sky Express"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport"
+      "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "ATH",
+      "LGAV"
     ],
     [
       "Lemnos",
-      "https://en.wikipedia.org/wiki/Lemnos_International_Airport"
+      "https://en.wikipedia.org/wiki/Lemnos_International_Airport",
+      "LXS",
+      "LGLM"
     ],
     [
       "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport"
+      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "SKG",
+      "LGTS"
     ]
   ],
   "airlines_destinations": {
@@ -37,5 +45,6 @@
     "Sky Express": [
       "Athens"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Agios Kirykos]]"
 }

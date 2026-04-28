@@ -1,16 +1,20 @@
 {
   "iata": "BER",
   "icao": "EDDB",
-  "city-served": "[[Berlin/Brandenburg Metropolitan Region]]",
-  "location": "[[Schönefeld]], Brandenburg",
+  "city-served": "Berlin/Brandenburg Metropolitan Region",
+  "city-served-wikipedia": "[[Berlin/Brandenburg Metropolitan Region]]",
+  "location": "[[Sch\u00f6nefeld]], Brandenburg",
   "lat": "52.366667",
   "lon": "13.503333",
   "altitude": "47.85",
+  "continent": "Europe",
   "region": "DE-BB",
   "country_alpha3": "DEU",
   "country_name": "Germany",
   "subdivision_code": "BB",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+  "number_airlines": 4,
+  "outdegree": 8,
   "airlines": [
     "ASL Airlines France",
     "FedEx Express",
@@ -20,43 +24,59 @@
   "destinations": [
     [
       "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol"
+      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "AMS",
+      "EHAM"
     ],
     [
       "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport"
+      "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "BRU",
+      "EBBR"
     ],
     [
       "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport"
+      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "CGN",
+      "EDDK"
     ],
     [
       "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport"
+      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "FRA",
+      "EDDF"
     ],
     [
-      "Gdańsk",
-      "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport"
+      "Gda\u0144sk",
+      "https://en.wikipedia.org/wiki/Gda\u0144sk_Lech_Wa\u0142\u0119sa_Airport",
+      "GDN",
+      "EPGD"
     ],
     [
       "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport"
+      "https://en.wikipedia.org/wiki/Munich_Airport",
+      "MUC",
+      "EDDM"
     ],
     [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport"
+      "Paris\u2013Charles de Gaulle",
+      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "CDG",
+      "LFPG"
     ],
     [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle_Airport"
+      "Paris\u2013Charles de Gaulle",
+      "https://en.wikipedia.org/wiki/Paris\u2013Charles_de_Gaulle_Airport",
+      "CDG",
+      "LFPG"
     ]
   ],
   "airlines_destinations": {
     "ASL Airlines France": [
-      "Paris–Charles de Gaulle"
+      "Paris\u2013Charles de Gaulle"
     ],
     "FedEx Express": [
-      "Paris–Charles de Gaulle"
+      "Paris\u2013Charles de Gaulle"
     ],
     "Singapore Airlines Cargo": [
       "Amsterdam",
@@ -66,7 +86,7 @@
     ],
     "UPS Airlines": [
       "Cologne/Bonn",
-      "Gdańsk"
+      "Gda\u0144sk"
     ]
   }
 }

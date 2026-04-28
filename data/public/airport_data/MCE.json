@@ -1,8 +1,8 @@
 {
   "iata": "MCE",
   "icao": "KMCE",
-  "city-served": "[[Merced, California]]",
-  "location": null,
+  "city-served": "Merced, California",
+  "location": "Merced",
   "lat": "37.284722",
   "lon": "-120.513889",
   "altitude": "47",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "CA",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Merced_Regional_Airport",
+  "number_airlines": 2,
+  "outdegree": 3,
   "airlines": [
     "Advanced Air",
     "Contour Airlines"
@@ -18,15 +20,21 @@
   "destinations": [
     [
       "Hawthorne Municipal Airport (California)",
-      "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)"
+      "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
+      "HHR",
+      "KHHR"
     ],
     [
       "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport"
+      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "LAX",
+      "KLAX"
     ],
     [
       "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport"
+      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ]
   ],
   "airlines_destinations": {
@@ -38,5 +46,6 @@
       "Los Angeles International Airport",
       "McCarran International Airport"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Merced, California]]"
 }

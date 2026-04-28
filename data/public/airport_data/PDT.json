@@ -1,8 +1,8 @@
 {
   "iata": "PDT",
   "icao": "KPDT",
-  "city-served": "[[Pendleton, Oregon]], United States",
-  "location": null,
+  "city-served": "Pendleton, Oregon",
+  "location": "Pendleton",
   "lat": "45.695000",
   "lon": "-118.841389",
   "altitude": "456.29",
@@ -11,17 +11,23 @@
   "country_name": "United States",
   "subdivision_code": "OR",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Eastern_Oregon_Regional_Airport",
+  "number_airlines": 1,
+  "outdegree": 2,
   "airlines": [
     "FedEx Feeder"
   ],
   "destinations": [
     [
       "La Grande",
-      "https://en.wikipedia.org/wiki/La_Grande/Union_County_Airport"
+      "https://en.wikipedia.org/wiki/La_Grande/Union_County_Airport",
+      "LGD",
+      "KLGD"
     ],
     [
       "Spokane",
-      "https://en.wikipedia.org/wiki/Spokane_International_Airport"
+      "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "GEG",
+      "KGEG"
     ]
   ],
   "airlines_destinations": {
@@ -29,5 +35,6 @@
       "La Grande",
       "Spokane"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Pendleton, Oregon]], United States"
 }

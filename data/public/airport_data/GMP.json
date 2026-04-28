@@ -1,7 +1,7 @@
 {
   "iata": "GMP",
   "icao": "RKSS",
-  "city-served": "[[Seoul metropolitan area]]",
+  "city-served": "Seoul metropolitan area",
   "location": "[[Gonghang-dong]], [[Gangseo District, Seoul|Gangseo-gu]], Seoul, South Korea",
   "lat": "37.558056",
   "lon": "126.790556",
@@ -11,6 +11,8 @@
   "country_name": "Korea, Republic of",
   "subdivision_code": "11",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gimpo_International_Airport",
+  "number_airlines": 20,
+  "outdegree": 15,
   "airlines": [
     "Air Busan",
     "Air China",
@@ -35,64 +37,94 @@
   ],
   "destinations": [
     [
-      "Beijing–Capital",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport"
+      "Beijing\u2013Capital",
+      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "PEK",
+      "ZBAA"
     ],
     [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport"
+      "Beijing\u2013Daxing",
+      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "PKX",
+      "ZBAD"
     ],
     [
       "Busan",
-      "https://en.wikipedia.org/wiki/Gimhae_International_Airport"
+      "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "PUS",
+      "RKPK"
     ],
     [
       "Gwangju",
-      "https://en.wikipedia.org/wiki/Gwangju_Airport"
+      "https://en.wikipedia.org/wiki/Gwangju_Airport",
+      "KWJ",
+      "RKJJ"
     ],
     [
       "Jeju",
-      "https://en.wikipedia.org/wiki/Jeju_International_Airport"
+      "https://en.wikipedia.org/wiki/Jeju_International_Airport",
+      "CJU",
+      "RKPC"
     ],
     [
       "Kaohsiung",
-      "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport"
+      "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
+      "KHH",
+      "RCKH"
     ],
     [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport"
+      "Nagoya\u2013Centrair",
+      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "NGO",
+      "RJGG"
     ],
     [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport"
+      "Osaka\u2013Kansai",
+      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "KIX",
+      "RJBB"
     ],
     [
-      "Pohang–Gyeongju",
-      "https://en.wikipedia.org/wiki/Pohang_Gyeongju_Airport"
+      "Pohang\u2013Gyeongju",
+      "https://en.wikipedia.org/wiki/Pohang_Gyeongju_Airport",
+      "KPO",
+      "RKTH"
     ],
     [
       "Sacheon",
-      "https://en.wikipedia.org/wiki/Sacheon_Airport"
+      "https://en.wikipedia.org/wiki/Sacheon_Airport",
+      "HIN",
+      "RKPS"
     ],
     [
-      "Shanghai–Hongqiao",
-      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport"
+      "Shanghai\u2013Hongqiao",
+      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "SHA",
+      "ZSSS"
     ],
     [
-      "Taipei–Songshan",
-      "https://en.wikipedia.org/wiki/Songshan_Airport"
+      "Taipei\u2013Songshan",
+      "https://en.wikipedia.org/wiki/Songshan_Airport",
+      "TSA",
+      "RCSS"
     ],
     [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport"
+      "Tokyo\u2013Haneda",
+      "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "HND",
+      "RJTT"
     ],
     [
       "Ulsan",
-      "https://en.wikipedia.org/wiki/Ulsan_Airport"
+      "https://en.wikipedia.org/wiki/Ulsan_Airport",
+      "USN",
+      "RKPU"
     ],
     [
       "Yeosu",
-      "https://en.wikipedia.org/wiki/Yeosu_Airport"
+      "https://en.wikipedia.org/wiki/Yeosu_Airport",
+      "RSU",
+      "RKJY"
     ]
   ],
   "airlines_destinations": {
@@ -101,72 +133,72 @@
       "Jeju"
     ],
     "Air China": [
-      "Beijing–Capital"
+      "Beijing\u2013Capital"
     ],
     "Air Seoul": [
       "Jeju"
     ],
     "All Nippon Airways": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ],
     "Asiana Airlines": [
-      "Beijing–Capital",
+      "Beijing\u2013Capital",
       "Gwangju",
-      "Shanghai–Hongqiao",
-      "Tokyo–Haneda",
+      "Shanghai\u2013Hongqiao",
+      "Tokyo\u2013Haneda",
       "Yeosu"
     ],
     "China Airlines": [
-      "Taipei–Songshan"
+      "Taipei\u2013Songshan"
     ],
     "China Eastern Airlines": [
-      "Shanghai–Hongqiao"
+      "Shanghai\u2013Hongqiao"
     ],
     "China Southern Airlines": [
-      "Beijing–Daxing"
+      "Beijing\u2013Daxing"
     ],
     "Eastar Jet": [
       "Jeju",
-      "Taipei–Songshan"
+      "Taipei\u2013Songshan"
     ],
     "EVA Air": [
-      "Taipei–Songshan"
+      "Taipei\u2013Songshan"
     ],
     "Japan Airlines": [
-      "Tokyo–Haneda"
+      "Tokyo\u2013Haneda"
     ],
     "Jeju Air": [
       "Busan",
       "Jeju",
       "Kaohsiung",
-      "Osaka–Kansai"
+      "Osaka\u2013Kansai"
     ],
     "Jin Air": [
       "Busan",
       "Jeju",
-      "Pohang–Gyeongju",
+      "Pohang\u2013Gyeongju",
       "Sacheon",
       "Ulsan",
       "Yeosu"
     ],
     "Korean Air": [
-      "Beijing–Capital",
+      "Beijing\u2013Capital",
       "Busan",
       "Jeju",
-      "Osaka–Kansai",
-      "Shanghai–Hongqiao",
-      "Tokyo–Haneda",
+      "Osaka\u2013Kansai",
+      "Shanghai\u2013Hongqiao",
+      "Tokyo\u2013Haneda",
       "Ulsan"
     ],
     "Parata Air": [
       "Jeju"
     ],
     "Peach Aviation": [
-      "Nagoya–Centrair",
-      "Osaka–Kansai"
+      "Nagoya\u2013Centrair",
+      "Osaka\u2013Kansai"
     ],
     "Shanghai Airlines": [
-      "Shanghai–Hongqiao"
+      "Shanghai\u2013Hongqiao"
     ],
     "SUM Air": [
       "Sacheon"
@@ -174,10 +206,11 @@
     "T'way Air": [
       "Jeju",
       "Kaohsiung",
-      "Taipei–Songshan"
+      "Taipei\u2013Songshan"
     ],
     "Tigerair Taiwan": [
       "Kaohsiung"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Seoul metropolitan area]]"
 }

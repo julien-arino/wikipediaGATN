@@ -1,8 +1,8 @@
 {
   "iata": "LRD",
   "icao": "KLRD",
-  "city-served": "[[Laredo, Texas]]",
-  "location": null,
+  "city-served": "Laredo, Texas",
+  "location": "Laredo",
   "lat": "27.543889",
   "lon": "-99.461667",
   "altitude": "155",
@@ -11,6 +11,8 @@
   "country_name": "United States",
   "subdivision_code": "TX",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Laredo_International_Airport",
+  "number_airlines": 6,
+  "outdegree": 16,
   "airlines": [
     "ABX Air",
     "Aeronaves TSM",
@@ -22,67 +24,99 @@
   "destinations": [
     [
       "Cincinnati",
-      "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport"
+      "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "CVG",
+      "KCVG"
     ],
     [
-      "Ciudad Juárez",
-      "https://en.wikipedia.org/wiki/Ciudad_Juárez_International_Airport"
+      "Ciudad Ju\u00e1rez",
+      "https://en.wikipedia.org/wiki/Ciudad_Ju\u00e1rez_International_Airport",
+      "CJS",
+      "MMCS"
     ],
     [
       "El Paso",
-      "https://en.wikipedia.org/wiki/El_Paso_International_Airport"
+      "https://en.wikipedia.org/wiki/El_Paso_International_Airport",
+      "ELP",
+      "KELP"
     ],
     [
       "Gary",
-      "https://en.wikipedia.org/wiki/Gary/Chicago_International_Airport"
+      "https://en.wikipedia.org/wiki/Gary/Chicago_International_Airport",
+      "GYY",
+      "KGYY"
     ],
     [
       "Greensboro",
-      "https://en.wikipedia.org/wiki/Piedmont_Triad_International_Airport"
+      "https://en.wikipedia.org/wiki/Piedmont_Triad_International_Airport",
+      "GSO",
+      "KGSO"
     ],
     [
       "Greenville",
-      "https://en.wikipedia.org/wiki/Donaldson_Center_Airport"
+      "https://en.wikipedia.org/wiki/Donaldson_Center_Airport",
+      "GDC",
+      "KGYH"
     ],
     [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport"
+      "Houston\u2013Intercontinental",
+      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "IAH",
+      "KIAH"
     ],
     [
       "Kansas City",
-      "https://en.wikipedia.org/wiki/Kansas_City_International_Airport"
+      "https://en.wikipedia.org/wiki/Kansas_City_International_Airport",
+      "MCI",
+      "KMCI"
     ],
     [
       "Louisville",
-      "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport"
+      "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "SDF",
+      "KSDF"
     ],
     [
       "Memphis",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport"
+      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "MEM",
+      "KMEM"
     ],
     [
       "Oakland",
-      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport"
+      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "OAK",
+      "KOAK"
     ],
     [
       "Puebla",
-      "https://en.wikipedia.org/wiki/Puebla_International_Airport"
+      "https://en.wikipedia.org/wiki/Puebla_International_Airport",
+      "PBC",
+      "MMPB"
     ],
     [
-      "Querétaro",
-      "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport"
+      "Quer\u00e9taro",
+      "https://en.wikipedia.org/wiki/Quer\u00e9taro_Intercontinental_Airport",
+      "QRO",
+      "MMQT"
     ],
     [
       "Saltillo",
-      "https://en.wikipedia.org/wiki/Saltillo_Airport"
+      "https://en.wikipedia.org/wiki/Saltillo_Airport",
+      "SLW",
+      "MMIO"
     ],
     [
       "San Antonio",
-      "https://en.wikipedia.org/wiki/San_Antonio_International_Airport"
+      "https://en.wikipedia.org/wiki/San_Antonio_International_Airport",
+      "SAT",
+      "KSAT"
     ],
     [
       "Toledo",
-      "https://en.wikipedia.org/wiki/Toledo_Express_Airport"
+      "https://en.wikipedia.org/wiki/Toledo_Express_Airport",
+      "TOL",
+      "KTOL"
     ]
   ],
   "airlines_destinations": {
@@ -90,7 +124,7 @@
       "Cincinnati"
     ],
     "Aeronaves TSM": [
-      "Ciudad Juárez",
+      "Ciudad Ju\u00e1rez",
       "El Paso",
       "Gary",
       "Greensboro",
@@ -98,12 +132,12 @@
       "Kansas City",
       "Oakland",
       "Puebla",
-      "Querétaro",
+      "Quer\u00e9taro",
       "Saltillo",
       "Toledo"
     ],
     "Ameristar Air Cargo": [
-      "Houston–Intercontinental"
+      "Houston\u2013Intercontinental"
     ],
     "FedEx Express": [
       "Memphis",
@@ -116,5 +150,6 @@
       "Louisville",
       "San Antonio"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Laredo, Texas]]"
 }

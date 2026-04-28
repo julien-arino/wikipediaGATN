@@ -1,24 +1,26 @@
 {
   "iata": "TQO",
   "icao": "MMTL",
-  "city-served": "[[Tulum, Quintana Roo|Tulum]]",
+  "city-served": "Tulum",
   "location": "[[Felipe Carrillo Puerto, Quintana Roo]], [[Mexico]]",
   "lat": "20.172222",
   "lon": "-87.660556",
   "altitude": "20",
   "region": "MX",
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "country_alpha3": "MEX",
+  "country_name": "Mexico",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tulum_International_Airport",
+  "number_airlines": 11,
+  "outdegree": 13,
   "airlines": [
-    "Aeroméxico",
-    "Aeroméxico Connect",
+    "Aerom\u00e9xico",
+    "Aerom\u00e9xico Connect",
     "Air Canada",
     "Air Transat",
     "American Airlines",
     "Delta Air Lines",
-    "Mexicana de Aviación",
+    "Mexicana de Aviaci\u00f3n",
     "United Airlines",
     "Viva",
     "Volaris",
@@ -27,70 +29,96 @@
   "destinations": [
     [
       "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport"
+      "https://en.wikipedia.org/wiki/Hartsfield\u2013Jackson_Atlanta_International_Airport",
+      "ATL",
+      "KATL"
     ],
     [
       "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport"
+      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "YYC",
+      "CYYC"
     ],
     [
       "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport"
+      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "DFW",
+      "KDFW"
     ],
     [
       "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport"
+      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "GDL",
+      "MMGL"
     ],
     [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport"
+      "Houston\u2013Intercontinental",
+      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "IAH",
+      "KIAH"
     ],
     [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport"
+      "Mexico City\u2013Benito Ju\u00e1rez",
+      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "MEX",
+      "MMMX"
     ],
     [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport"
+      "Mexico City\u2013Felipe \u00c1ngeles",
+      "https://en.wikipedia.org/wiki/Felipe_\u00c1ngeles_International_Airport",
+      "NLU",
+      "MMSM"
     ],
     [
       "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport"
+      "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "MIA",
+      "KMIA"
     ],
     [
       "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport"
+      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "MTY",
+      "MMMY"
     ],
     [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport"
+      "Montr\u00e9al\u2013Trudeau",
+      "https://en.wikipedia.org/wiki/Montr\u00e9al\u2013Trudeau_International_Airport",
+      "iata code not found",
+      "icao code not found"
     ],
     [
       "Newark",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport"
+      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "EWR",
+      "KEWR"
     ],
     [
       "Quebec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport"
+      "https://en.wikipedia.org/wiki/Qu\u00e9bec_City_Jean_Lesage_International_Airport",
+      "YQB",
+      "CYQB"
     ],
     [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport"
+      "Toronto\u2013Pearson",
+      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "YYZ",
+      "CYYZ"
     ]
   ],
   "airlines_destinations": {
-    "Aeroméxico": [
-      "Mexico City–Benito Juárez"
+    "Aerom\u00e9xico": [
+      "Mexico City\u2013Benito Ju\u00e1rez"
     ],
-    "Aeroméxico Connect": [
-      "Mexico City–Felipe Ángeles"
+    "Aerom\u00e9xico Connect": [
+      "Mexico City\u2013Felipe \u00c1ngeles"
     ],
     "Air Canada": [
-      "Montréal–Trudeau",
-      "Toronto–Pearson"
+      "Montr\u00e9al\u2013Trudeau",
+      "Toronto\u2013Pearson"
     ],
     "Air Transat": [
-      "Montréal–Trudeau",
+      "Montr\u00e9al\u2013Trudeau",
       "Quebec City"
     ],
     "American Airlines": [
@@ -100,15 +128,15 @@
     "Delta Air Lines": [
       "Atlanta"
     ],
-    "Mexicana de Aviación": [
-      "Mexico City–Felipe Ángeles"
+    "Mexicana de Aviaci\u00f3n": [
+      "Mexico City\u2013Felipe \u00c1ngeles"
     ],
     "United Airlines": [
-      "Houston–Intercontinental",
+      "Houston\u2013Intercontinental",
       "Newark"
     ],
     "Viva": [
-      "Mexico City–Felipe Ángeles",
+      "Mexico City\u2013Felipe \u00c1ngeles",
       "Monterrey"
     ],
     "Volaris": [
@@ -116,7 +144,8 @@
     ],
     "WestJet": [
       "Calgary",
-      "Montréal–Trudeau"
+      "Montr\u00e9al\u2013Trudeau"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Tulum, Quintana Roo|Tulum]]"
 }

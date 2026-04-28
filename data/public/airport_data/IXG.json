@@ -1,16 +1,18 @@
 {
   "iata": "IXG",
   "icao": "VOBM",
-  "city-served": "[[Belgaum]]",
+  "city-served": "Belgaum",
   "location": "[[Sambra]], Belgaum, [[Karnataka]], [[India]]",
   "lat": "15.859167",
   "lon": "74.617500",
   "altitude": "758",
-  "region": null,
-  "country_alpha3": null,
-  "country_name": null,
-  "subdivision_code": null,
+  "region": "Karnataka",
+  "country_alpha3": "IND",
+  "country_name": "India",
+  "subdivision_code": "Belgaum",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Belgaum_Airport",
+  "number_airlines": 2,
+  "outdegree": 5,
   "airlines": [
     "IndiGo",
     "Star Air"
@@ -18,23 +20,33 @@
   "destinations": [
     [
       "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport"
+      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "BLR",
+      "VOBL"
     ],
     [
       "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport"
+      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "DEL",
+      "VIDP"
     ],
     [
       "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport"
+      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "HYD",
+      "VOHS"
     ],
     [
       "Mumbai-Shivaji",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport"
+      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "BOM",
+      "VABB"
     ],
     [
-      "Mumbai–Navi",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport"
+      "Mumbai\u2013Navi",
+      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "NMI",
+      "VANM"
     ]
   ],
   "airlines_destinations": {
@@ -42,10 +54,11 @@
       "Bengaluru",
       "Delhi",
       "Hyderabad",
-      "Mumbai–Navi"
+      "Mumbai\u2013Navi"
     ],
     "Star Air": [
       "Mumbai-Shivaji"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Belgaum]]"
 }

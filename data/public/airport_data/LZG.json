@@ -1,7 +1,7 @@
 {
   "iata": "LZG",
   "icao": "ZULA",
-  "city-served": "[[Langzhong]], [[Sichuan]], China",
+  "city-served": "Langzhong",
   "location": "Shilong Town",
   "lat": null,
   "lon": null,
@@ -11,6 +11,8 @@
   "country_name": null,
   "subdivision_code": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Langzhong_Gucheng_Airport",
+  "number_airlines": 3,
+  "outdegree": 4,
   "airlines": [
     "China Southern Airlines",
     "Hainan Airlines",
@@ -18,20 +20,28 @@
   ],
   "destinations": [
     [
-      "Beijing–Capital",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport"
+      "Beijing\u2013Capital",
+      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "PEK",
+      "ZBAA"
     ],
     [
       "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport"
+      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "CAN",
+      "ZGGG"
     ],
     [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport"
+      "Shanghai\u2013Pudong",
+      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "PVG",
+      "ZSPD"
     ],
     [
       "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport"
+      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "SZX",
+      "ZGSZ"
     ]
   ],
   "airlines_destinations": {
@@ -39,11 +49,12 @@
       "Guangzhou"
     ],
     "Hainan Airlines": [
-      "Beijing–Capital"
+      "Beijing\u2013Capital"
     ],
     "Suparna Airlines": [
-      "Shanghai–Pudong",
+      "Shanghai\u2013Pudong",
       "Shenzhen"
     ]
-  }
+  },
+  "city-served-wikipedia": "[[Langzhong]], [[Sichuan]], China"
 }

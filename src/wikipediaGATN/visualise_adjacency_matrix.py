@@ -37,7 +37,8 @@ def visualize_graph_plotly(
     symmetric: bool = True,
     output_path: Path | str | None = None,
     seed: int = 42,
-    geographic: bool = True,
+    layout: str = "geographic",
+    geographic: bool | None = None,
     verbose: bool = False,
 ) -> str:
     """
@@ -76,6 +77,10 @@ def visualize_graph_plotly(
         If the matrix or node-list file does not exist.  Run
         :func:`~.adjacency.create_outbound_adjacency_matrix` first.
     """
+    if geographic is not None:
+        warnings.warn("The 'geographic' parameter is deprecated. Use layout='geographic' or layout='spring'.", DeprecationWarning, stacklevel=2)
+        layout = "geographic" if geographic else "spring"
+        
     suffix = "_sym" if symmetric else ""
 
     # ------------------------------------------------------------------
@@ -126,7 +131,7 @@ def visualize_graph_plotly(
     # ------------------------------------------------------------------
     pos = None
 
-    if geographic:
+    if layout in ("geographic", "globe"):
         coord_path = PUBLIC_DATA_DIR / "airports_information.csv"
         if coord_path.exists():
             try:
@@ -151,6 +156,7 @@ def visualize_graph_plotly(
                     if verbose:
                         print(f"Geographic coverage too low ({coverage}/{G.number_of_nodes()})"
                               " — falling back to spring layout")
+                    layout = "spring"
             except Exception as exc:
                 warnings.warn(
                     f"Could not load geographic coordinates: {exc}. "
@@ -160,6 +166,7 @@ def visualize_graph_plotly(
         else:
             if verbose:
                 print("airports_information.csv not found — using spring layout")
+            layout = "spring"
 
     if pos is None:
         if G.number_of_nodes() > 500:
@@ -184,12 +191,20 @@ def visualize_graph_plotly(
         edge_x.extend([x0, x1, None])
         edge_y.extend([y0, y1, None])
 
-    edge_trace = go.Scatter(
-        x=edge_x, y=edge_y,
-        mode="lines",
-        line=dict(width=0.4, color="#aaa"),
-        hoverinfo="none",
-    )
+    if layout == "globe":
+        edge_trace = go.Scattergeo(
+            lon=edge_x, lat=edge_y,
+            mode="lines",
+            line=dict(width=0.4, color="#aaa"),
+            hoverinfo="none",
+        )
+    else:
+        edge_trace = go.Scatter(
+            x=edge_x, y=edge_y,
+            mode="lines",
+            line=dict(width=0.4, color="#aaa"),
+            hoverinfo="none",
+        )
 
     # --- Node trace — colour by degree, text on hover only ---
     node_x, node_y, node_text, node_degree = [], [], [], []
@@ -200,51 +215,88 @@ def visualize_graph_plotly(
         node_text.append(f"{node}<br>Degree: {G.degree(node)}")
         node_degree.append(G.degree(node))
 
-    node_trace = go.Scatter(
-        x=node_x, y=node_y,
-        mode="markers",          # text labels off by default — too cluttered at scale
-        hovertext=node_text,
-        hoverinfo="text",
-        marker=dict(
-            showscale=True,
-            colorscale="Viridis",
-            color=node_degree,
-            size=6,
-            colorbar=dict(
-                thickness=12,
-                title="Degree",
-                xanchor="left",
+    if layout == "globe":
+        node_trace = go.Scattergeo(
+            lon=node_x, lat=node_y,
+            mode="markers",
+            hovertext=node_text,
+            hoverinfo="text",
+            marker=dict(
+                showscale=True,
+                colorscale="Viridis",
+                color=node_degree,
+                size=4,
+                colorbar=dict(
+                    thickness=12,
+                    title="Degree",
+                    xanchor="left",
+                ),
+                line_width=0.5,
             ),
-            line_width=0.5,
-        ),
-    )
+        )
+    else:
+        node_trace = go.Scatter(
+            x=node_x, y=node_y,
+            mode="markers",          # text labels off by default — too cluttered at scale
+            hovertext=node_text,
+            hoverinfo="text",
+            marker=dict(
+                showscale=True,
+                colorscale="Viridis",
+                color=node_degree,
+                size=6,
+                colorbar=dict(
+                    thickness=12,
+                    title="Degree",
+                    xanchor="left",
+                ),
+                line_width=0.5,
+            ),
+        )
 
     # ------------------------------------------------------------------
     # Assemble figure
     # ------------------------------------------------------------------
-    layout_label = "Geographic" if (pos and geographic) else "Spring"
     direction    = "Undirected" if symmetric else "Directed"
+
+    fig_layout = go.Layout(
+        title=dict(
+            text=f"Global Airport Network ({direction}, {layout.capitalize()} layout)",
+            x=0.5,
+        ),
+        showlegend=False,
+        hovermode="closest",
+        margin=dict(b=20, l=5, r=5, t=50),
+    )
+    
+    if layout == "globe":
+        fig_layout.geo = dict(
+            projection_type="orthographic",
+            showland=True,
+            landcolor="rgb(243, 243, 243)",
+            countrycolor="rgb(204, 204, 204)",
+            showocean=True,
+            oceancolor="rgba(10, 20, 30, 0.1)"
+        )
+    else:
+        fig_layout.xaxis = dict(showgrid=False, zeroline=False, showticklabels=False)
+        fig_layout.yaxis = dict(showgrid=False, zeroline=False, showticklabels=False)
 
     fig = go.Figure(
         data=[edge_trace, node_trace],
-        layout=go.Layout(
-            title=dict(
-                text=f"Global Airport Network ({direction}, {layout_label} layout)",
-                x=0.5,
-            ),
-            showlegend=False,
-            hovermode="closest",
-            margin=dict(b=20, l=5, r=5, t=50),
-            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        ),
+        layout=fig_layout,
     )
 
     # ------------------------------------------------------------------
     # Save
     # ------------------------------------------------------------------
     if output_path is None:
-        output_path = PUBLIC_DATA_DIR / f"airport_graph_plotly{suffix}.html"
+        if layout == "geographic":
+            output_path = PUBLIC_DATA_DIR / f"global-air-transportation-network-plotly-geographic{suffix}.html"
+        elif layout == "globe":
+            output_path = PUBLIC_DATA_DIR / f"global-air-transportation-network-plotly-globe{suffix}.html"
+        else:
+            output_path = PUBLIC_DATA_DIR / f"global-air-transportation-network-plotly-graph{suffix}.html"
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)

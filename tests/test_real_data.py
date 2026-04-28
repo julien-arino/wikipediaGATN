@@ -117,7 +117,7 @@ class TestCheckDuplicatedIataCodes:
 class TestCreateOutboundConnectionsList:
 
     def test_creates_connections_csv(self):
-        """create_outbound_connections_list writes outbound_connections.csv."""
+        """create_outbound_connections_list writes global-air-transportation-network.csv."""
         export_all_airport_data(verbose=False)
         connections_csv, _ = create_outbound_connections_list(
             verbose=False, export_unmapped=True
@@ -126,19 +126,19 @@ class TestCreateOutboundConnectionsList:
             f"Expected {connections_csv} to exist"
 
     def test_connections_csv_has_expected_columns(self):
-        """outbound_connections.csv has origin, nb_outlinks, outlinks columns."""
+        """global-air-transportation-network.csv has origin, nb_outlinks, outlinks columns."""
         export_all_airport_data(verbose=False)
         create_outbound_connections_list(verbose=False)
-        csv_path = os.path.join(PUBLIC_DATA_DIR, "outbound_connections.csv")
+        csv_path = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.csv")
         with open(csv_path, encoding="utf-8") as fh:
             headers = set(next(csv.reader(fh)))
         assert {"origin", "nb_outlinks", "outlinks"}.issubset(headers)
 
     def test_connections_csv_non_empty(self):
-        """outbound_connections.csv has at least one data row."""
+        """global-air-transportation-network.csv has at least one data row."""
         export_all_airport_data(verbose=False)
         create_outbound_connections_list(verbose=False)
-        csv_path = os.path.join(PUBLIC_DATA_DIR, "outbound_connections.csv")
+        csv_path = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.csv")
         with open(csv_path, encoding="utf-8") as fh:
             rows = list(csv.DictReader(fh))
         assert len(rows) > 0
@@ -155,12 +155,12 @@ class TestCreateOutboundConnectionsList:
             assert "unmapped_destinations.csv" in unmapped_csv
 
     def test_origin_codes_are_valid_iata(self):
-        """All origin codes in outbound_connections.csv are 3 uppercase letters."""
+        """All origin codes in global-air-transportation-network.csv are 3 uppercase letters."""
         import re
         _IATA = re.compile(r"^[A-Z]{3}$")
         export_all_airport_data(verbose=False)
         create_outbound_connections_list(verbose=False)
-        csv_path = os.path.join(PUBLIC_DATA_DIR, "outbound_connections.csv")
+        csv_path = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.csv")
         with open(csv_path, encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
                 origin = row.get("origin", "").strip()

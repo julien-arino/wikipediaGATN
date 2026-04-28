@@ -5,6 +5,7 @@ This module creates sparse matrix representations of the airport network
 from outbound connection data.
 """
 
+import json
 import os
 import re
 import warnings
@@ -33,7 +34,7 @@ def create_outbound_adjacency_matrix(
     """
     Create a sparse adjacency matrix of outbound airport connections.
 
-    Reads airport connections from ``outbound_connections.csv`` and creates a
+    Reads airport connections from ``global-air-transportation-network.csv`` and creates a
     sparse adjacency matrix where each airport is a node and edges represent
     direct outbound connections.  Can optionally create a symmetric matrix to
     account for incomplete destination data from smaller airports.
@@ -103,13 +104,13 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     # Load outbound connection data
     # ------------------------------------------------------------------
-    input_file = os.path.join(PUBLIC_DATA_DIR, "outbound_connections.csv")
+    input_file = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.csv")
 
     if not os.path.exists(input_file):
         raise FileNotFoundError(
             f"Input file not found: {input_file}\n"
             "Run create_outbound_connections_list() first to generate "
-            "outbound_connections.csv"
+            "global-air-transportation-network.csv"
         )
 
     df = pd.read_csv(input_file)
@@ -133,7 +134,7 @@ def create_outbound_adjacency_matrix(
     if df.empty:
         raise ValueError(
             "No valid airport records found after filtering.  "
-            "Check outbound_connections.csv for correct IATA codes."
+            "Check global-air-transportation-network.csv for correct IATA codes."
         )
 
     # ------------------------------------------------------------------
@@ -158,7 +159,7 @@ def create_outbound_adjacency_matrix(
     iata_codes = sorted(all_origins | all_dest_tokens)
 
     if not iata_codes:
-        raise ValueError("No valid IATA codes found in outbound_connections.csv.")
+        raise ValueError("No valid IATA codes found in global-air-transportation-network.csv.")
 
     iata_to_idx: dict = {code: i for i, code in enumerate(iata_codes)}
 
@@ -239,7 +240,7 @@ def create_outbound_adjacency_matrix(
     if matrix.nnz > 0 and matrix.data.max() > 1:  # pragma: no cover
         warnings.warn(
             "Adjacency matrix contains entries > 1 after deduplication. "
-            "Check outbound_connections.csv for duplicate rows.",
+            "Check global-air-transportation-network.csv for duplicate rows.",
             UserWarning,
             stacklevel=2,
         )
@@ -285,15 +286,34 @@ def create_outbound_adjacency_matrix(
             mapping = {i: code for i, code in enumerate(iata_codes)}
             G = nx.relabel_nodes(G, mapping)
             
-            output_dot = os.path.join(PUBLIC_DATA_DIR, f"network{suffix}.dot")
+            for node in G.nodes():
+                json_file = os.path.join(PUBLIC_DATA_DIR, "airport_data", f"{node}.json")
+                if os.path.exists(json_file):
+                    try:
+                        with open(json_file, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                            if data.get('lat') is not None:
+                                try: G.nodes[node]['lat'] = float(data['lat'])
+                                except ValueError: pass
+                            if data.get('lon') is not None:
+                                try: G.nodes[node]['lon'] = float(data['lon'])
+                                except ValueError: pass
+                            if data.get('city-served') is not None:
+                                G.nodes[node]['city_served'] = str(data['city-served'])
+                            if data.get('country_alpha3') is not None:
+                                G.nodes[node]['country_alpha3'] = str(data['country_alpha3'])
+                    except (json.JSONDecodeError, OSError):
+                        pass
+            
+            output_dot = os.path.join(PUBLIC_DATA_DIR, f"global-air-transportation-network{suffix}.dot")
             nx.drawing.nx_pydot.write_dot(G, output_dot)
             if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
             
-            output_graphml = os.path.join(PUBLIC_DATA_DIR, f"network{suffix}.graphml")
+            output_graphml = os.path.join(PUBLIC_DATA_DIR, f"global-air-transportation-network{suffix}.graphml")
             nx.write_graphml(G, output_graphml)
             if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
             
-            output_gexf = os.path.join(PUBLIC_DATA_DIR, f"network{suffix}.gexf")
+            output_gexf = os.path.join(PUBLIC_DATA_DIR, f"global-air-transportation-network{suffix}.gexf")
             nx.write_gexf(G, output_gexf)
             if verbose: print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
             

@@ -420,7 +420,228 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
     return removed
 
 
+def identify_missing_airport_data(verbose: bool = False) -> str:
+    """
+    Identify airports with missing geographical data.
+
+    Scans all JSON files in ``data/public/airport_data`` and writes a CSV
+    to ``data/tmp_results/missing_airport_data.csv`` listing airports that
+    lack latitude, longitude, or country information.
+
+    Parameters
+    ----------
+    verbose : bool, optional
+        If True, prints a summary of the missing data. Default: False.
+
+    Returns
+    -------
+    str
+        Absolute path to the generated CSV file.
+    """
+    airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
+    if not os.path.isdir(airport_data_dir):
+        if verbose:
+            print(f"Directory not found: {airport_data_dir}")
+        return ""
+
+    os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
+    output_csv = os.path.join(TEMP_RESULTS_DIR, "missing_airport_data.csv")
+    
+    missing_records = []
+    
+    for fname in sorted(os.listdir(airport_data_dir)):
+        if not fname.endswith(".json"):
+            continue
+            
+        fpath = os.path.join(airport_data_dir, fname)
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+            
+        lat = data.get("lat")
+        lon = data.get("lon")
+        country = data.get("country_alpha3")
+        
+        is_missing_latlon = lat is None or lon is None or lat == "" or lon == ""
+        is_missing_country = country is None or country == ""
+        
+        if is_missing_latlon or is_missing_country:
+            missing_records.append({
+                "iata": data.get("iata", ""),
+                "icao": data.get("icao", ""),
+                "name": data.get("name") or data.get("city-served", ""),
+                "missing_latlon": is_missing_latlon,
+                "missing_country": is_missing_country,
+                "wikipedia_url": data.get("wikipedia_url", "")
+            })
+            
+    with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
+        fieldnames = ["iata", "icao", "name", "missing_latlon", "missing_country", "wikipedia_url"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(missing_records)
+        
+    if verbose:
+        print(f"Found {len(missing_records)} airports with missing data.")
+        print(f"Missing data report saved to: {output_csv}")
+        
+    return output_csv
+
+
+def enrich_missing_airport_data(verbose: bool = False) -> int:
+    """
+    Attempt a second round of geocoding for airports with missing data.
+    
+    Reads data/tmp_results/missing_airport_data.csv, attempts multiple
+    queries with Geopy to find lat/lon, and reverse geocodes to find the country.
+    Updates the JSON files in data/public/airport_data in place.
+    
+    Parameters
+    ----------
+    verbose : bool, optional
+        If True, prints progress and success/failure for each missing airport.
+        
+    Returns
+    -------
+    int
+        The number of airports successfully updated.
+    """
+    input_csv = os.path.join(TEMP_RESULTS_DIR, "missing_airport_data.csv")
+    if not os.path.isfile(input_csv):
+        if verbose:
+            print(f"Missing data CSV not found: {input_csv}")
+        return 0
+        
+    airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
+    geolocator = Nominatim(user_agent="wikipediaGATN/2.0")
+    
+    fixed_count = 0
+    
+    with open(input_csv, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        missing_airports = list(reader)
+        
+    for row in missing_airports:
+        iata = row.get("iata") or row.get("name")
+        if not iata:
+            continue
+            
+        json_path = os.path.join(airport_data_dir, f"{iata}.json")
+        # Fallback to checking by identifier if iata is missing or different
+        if not os.path.isfile(json_path) and row.get("wikipedia_url"):
+             identifier = urllib.parse.unquote(row.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
+             # try iata, try identifier... Wait, in result_processing_airports the filenames are exactly `identifier`.
+             # The scraper makes files like `<IATA>.json` generally.
+             pass # just try iata for now, it's safer
+             
+        if not os.path.isfile(json_path):
+            # Sometimes the identifier is not the IATA code if it's missing.
+            # Let's search the directory for a matching wikipedia_url
+            for fname in os.listdir(airport_data_dir):
+                if fname.endswith(".json"):
+                    with open(os.path.join(airport_data_dir, fname), "r", encoding="utf-8") as jf:
+                        try:
+                            d = json.load(jf)
+                            if d.get("wikipedia_url") == row.get("wikipedia_url"):
+                                json_path = os.path.join(airport_data_dir, fname)
+                                iata = fname.replace(".json", "")
+                                break
+                        except Exception:
+                            pass
+            
+        if not os.path.isfile(json_path):
+            if verbose: print(f"Could not find JSON file for {row.get('iata')} or {row.get('wikipedia_url')}")
+            continue
+            
+        with open(json_path, "r", encoding="utf-8") as jf:
+            try:
+                data = json.load(jf)
+            except json.JSONDecodeError:
+                continue
+                
+        lat = data.get("lat")
+        lon = data.get("lon")
+        
+        # 1. Dig out Lat/Lon if missing
+        if not lat or not lon:
+            queries = []
+            if data.get("iata"): queries.append(f'{data.get("iata")} airport')
+            if data.get("name"): queries.append(f'{data.get("name")} airport')
+            
+            # Wikipedia title
+            title = urllib.parse.unquote(data.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
+            if title: queries.append(title)
+                
+            if data.get("city-served"): queries.append(f'{data.get("city-served")} airport')
+            if data.get("location"): queries.append(data.get("location"))
+            if data.get("icao"): queries.append(f'{data.get("icao")} airport')
+            
+            for query in queries:
+                if not query.strip(): continue
+                try:
+                    time.sleep(1.5) # Be nice to Nominatim (max 1 req/s)
+                    loc = geolocator.geocode(query, timeout=5)
+                    if loc:
+                        lat, lon = str(loc.latitude), str(loc.longitude)
+                        data["lat"], data["lon"] = lat, lon
+                        if verbose: print(f"[{iata}] Found coordinates via query: '{query}'")
+                        break
+                except Exception:
+                    pass
+                    
+        # 2. Dig out Country if missing (needs lat/lon)
+        country = data.get("country_alpha3")
+        if (not country or country == "") and lat and lon:
+            try:
+                float(lat)
+                float(lon)
+                res = rg.search((lat, lon), mode=1)
+                if res:
+                    loc_info = res[0]
+                    cc = loc_info.get("cc")
+                    if cc:
+                        country_obj = pycountry.countries.get(alpha_2=cc)
+                        if country_obj:
+                            data["country_alpha3"] = country_obj.alpha_3
+                            data["country_name"] = country_obj.name
+                            if not data.get("location"): data["location"] = loc_info.get("name")
+                            if not data.get("region"): data["region"] = loc_info.get("admin1")
+                            if not data.get("subdivision_code"): data["subdivision_code"] = loc_info.get("admin2")
+                            
+                            # Add continent
+                            try:
+                                continent_code = pc.country_alpha2_to_continent_code(cc)
+                                data["continent"] = pc.convert_continent_code_to_continent_name(continent_code)
+                            except Exception:
+                                pass
+                            if verbose: print(f"[{iata}] Found country: {country_obj.name}")
+            except Exception:
+                pass
+                
+        # Did we fix something?
+        new_lat = data.get("lat")
+        new_lon = data.get("lon")
+        new_country = data.get("country_alpha3")
+        
+        fixed_latlon = (new_lat and new_lon) and (row["missing_latlon"] == "True")
+        fixed_country = (new_country) and (row["missing_country"] == "True")
+        
+        if fixed_latlon or fixed_country:
+            fixed_count += 1
+            with open(json_path, "w", encoding="utf-8") as jf:
+                json.dump(data, jf, indent=2, ensure_ascii=False)
+                
+    if verbose:
+        print(f"Enrichment complete. Successfully updated {fixed_count} airports.")
+        
+    return fixed_count
+
+
 __all__ = [
     "export_all_airport_data",
     "check_duplicated_iata_codes",
+    "identify_missing_airport_data",
+    "enrich_missing_airport_data",
 ]

@@ -84,6 +84,15 @@ def export_all_airport_data(verbose: bool = False) -> str:
             for row in reader:
                 if row.get("url") and row.get("iata"):
                     url_to_codes[row["url"]] = {"iata": row["iata"], "icao": "icao code not found"}
+                    
+    # Also load manual_airport_mapping.csv for any manually scraped overrides
+    manual_csv_path = os.path.join(TEMP_RESULTS_DIR, "manual_airport_mapping.csv")
+    if os.path.exists(manual_csv_path):
+        with open(manual_csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row.get("url") and row.get("iata"):
+                    url_to_codes[row["url"]] = {"iata": row["iata"], "icao": "icao code not found"}
 
     # Scan all JSON files in TEMP_RESULTS_DIR to build the map
     valid_files = []
@@ -119,7 +128,7 @@ def export_all_airport_data(verbose: bool = False) -> str:
     headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
     for i in range(0, len(urls_to_resolve), 50):
         chunk = urls_to_resolve[i:i+50]
-        titles = [urllib.parse.unquote(url.split('/')[-1]) for url in chunk]
+        titles = [urllib.parse.unquote(url.split('/wiki/')[-1]) for url in chunk]
         titles_str = "|".join(titles)
         try:
             r = requests.get(f'https://en.wikipedia.org/w/api.php?action=query&titles={titles_str}&redirects=1&format=json', headers=headers)

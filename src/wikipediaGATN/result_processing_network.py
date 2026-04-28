@@ -103,12 +103,13 @@ def _run_pipeline() -> None:
     # Complete pipeline for GATN generation with two-pass IATA extraction.
     #
     # Steps:
-    #   1. Export airport metadata
-    #   2. Initial connections list  (Pass 1 — identifies unmapped URLs)
-    #   3. Scrape Wikipedia for unmapped IATA codes  (Pass 2)
-    #   4. Build manual mapping from scraped data    (Pass 3)
-    #   5. Re-run connections with enriched mappings (Pass 4)
-    #   6–7. Build asymmetric and symmetric adjacency matrices
+    #   1. Export airport metadata                 (Identifies unmapped URLs into JSON)
+    #   2. Initial connections list                (Pass 1 — produces unmapped_destinations.csv)
+    #   3. Scrape Wikipedia for unmapped IATAs     (Pass 2)
+    #   4. Build manual mapping from scraped data  (Pass 3)
+    #   5. Re-run airport metadata export          (Pass 4 - injects manual mappings into JSON)
+    #   6. Re-run connections list                 (Pass 5)
+    #   7–8. Build asymmetric and symmetric adjacency matrices
 
     print("=" * 70)
     print("GLOBAL AIR TRANSPORTATION NETWORK (GATN)")
@@ -145,7 +146,12 @@ def _run_pipeline() -> None:
         if extraction["total"] > 0:
             # Step 5 --------------------------------------------------------
             print(f"\n{'=' * 70}")
-            print("[STEP 5] Re-running connections with enriched mappings…")
+            print("[STEP 5] Re-exporting airport metadata with enriched mappings…")
+            export_all_airport_data(verbose=True)
+            
+            # Step 6 --------------------------------------------------------
+            print(f"\n{'=' * 70}")
+            print("[STEP 6] Re-running connections with enriched public JSON data…")
             connections_csv, unmapped_csv = create_outbound_connections_list(
                 verbose=True,
                 export_unmapped=True,
@@ -162,18 +168,11 @@ def _run_pipeline() -> None:
         traceback.print_exc()
         print("\nContinuing with existing connections data…")
 
-    # Steps 6–7 -------------------------------------------------------------
+    # Step 7 -------------------------------------------------------------
     print(f"\n{'=' * 70}")
-    print("[STEP 6] Creating adjacency matrix (directed)…")
+    print("[STEP 7] Creating adjacency matrix and network graphs (directed)…")
     matrix_npz, nodes_txt = create_outbound_adjacency_matrix(
         symmetric=False,
-        verbose=True,
-    )
-
-    print(f"\n{'=' * 70}")
-    print("[STEP 7] Creating adjacency matrix (symmetric)…")
-    matrix_sym_npz, nodes_sym_txt = create_outbound_adjacency_matrix(
-        symmetric=True,
         verbose=True,
     )
 
@@ -182,7 +181,6 @@ def _run_pipeline() -> None:
     print(f"{'=' * 70}")
     print(f"\n  Connections CSV   : {connections_csv}")
     print(f"  Matrix (directed) : {matrix_npz}")
-    print(f"  Matrix (symmetric): {matrix_sym_npz}")
 
 
 if __name__ == "__main__":

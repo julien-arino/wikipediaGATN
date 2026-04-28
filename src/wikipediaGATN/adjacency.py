@@ -15,18 +15,19 @@ from scipy.sparse import csr_matrix, save_npz
 
 from .paths import PUBLIC_DATA_DIR
 
-# Pre-compiled pattern for validating IATA codes (3 uppercase letters)
-_IATA_RE = re.compile(r"^[A-Z]{3}$")
+# Pre-compiled pattern for validating IATA or ICAO codes (3 or 4 uppercase letters)
+_CODE_RE = re.compile(r"^[A-Z]{3,4}$")
 
 
-def _is_valid_iata(code: str) -> bool:
-    """Return True if *code* is a well-formed 3-letter IATA code."""
-    return bool(_IATA_RE.match(code))
+def _is_valid_code(code: str) -> bool:
+    """Return True if *code* is a well-formed 3 or 4-letter IATA/ICAO code."""
+    return bool(_CODE_RE.match(code))
 
 
 def create_outbound_adjacency_matrix(
     symmetric: bool = False,
     export_csv: bool = False,
+    export_networks: bool = True,
     verbose: bool = False,
 ) -> tuple:
     """
@@ -122,7 +123,7 @@ def create_outbound_adjacency_matrix(
     # Drop rows with missing or malformed origin codes
     n_before = len(df)
     df = df.dropna(subset=["origin"])
-    df = df[df["origin"].apply(lambda x: _is_valid_iata(str(x).strip()))]
+    df = df[df["origin"].apply(lambda x: _is_valid_code(str(x).strip()))]
 
     if len(df) < n_before and verbose:
         print(
@@ -145,7 +146,7 @@ def create_outbound_adjacency_matrix(
     for outlinks_str in df["outlinks"].fillna(""):
         for token in str(outlinks_str).split():
             token = token.strip()
-            if _is_valid_iata(token):
+            if _is_valid_code(token):
                 all_dest_tokens.add(token)
             else:
                 warnings.warn(
@@ -186,7 +187,7 @@ def create_outbound_adjacency_matrix(
 
         for dest in outlinks_str.split():
             dest = dest.strip()
-            if not _is_valid_iata(dest):
+            if not _is_valid_code(dest):
                 continue  # already warned during token collection
 
             dest_idx = iata_to_idx.get(dest)
@@ -276,6 +277,28 @@ def create_outbound_adjacency_matrix(
         df_matrix.to_csv(output_csv)
         if verbose:
             print(f"Saved dense matrix CSV to {output_csv}")
+
+    if export_networks:
+        try:
+            import networkx as nx
+            G = nx.from_scipy_sparse_array(matrix, create_using=nx.Graph if symmetric else nx.DiGraph)
+            mapping = {i: code for i, code in enumerate(iata_codes)}
+            G = nx.relabel_nodes(G, mapping)
+            
+            output_dot = os.path.join(PUBLIC_DATA_DIR, f"network{suffix}.dot")
+            nx.drawing.nx_pydot.write_dot(G, output_dot)
+            if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
+            
+            output_graphml = os.path.join(PUBLIC_DATA_DIR, f"network{suffix}.graphml")
+            nx.write_graphml(G, output_graphml)
+            if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
+            
+            output_gexf = os.path.join(PUBLIC_DATA_DIR, f"network{suffix}.gexf")
+            nx.write_gexf(G, output_gexf)
+            if verbose: print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
+            
+        except ImportError as e:
+            warnings.warn(f"Could not export network formats: {e}", UserWarning)
 
     if verbose:
         print(f"\nSaved sparse matrix : {os.path.abspath(output_matrix)}")

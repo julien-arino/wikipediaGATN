@@ -2,10 +2,12 @@
   "iata": "SIP",
   "icao": "UKFF",
   "city-served": "Crimea",
+  "city-served-wikipedia": "[[Crimea]]",
   "location": "[[Simferopol]], [[Crimea]]",
   "lat": "45.051944",
   "lon": "33.973611",
   "altitude": "182",
+  "continent": "Europe",
   "region": "Crimea",
   "country_alpha3": "UKR",
   "country_name": "Ukraine",
@@ -55,8 +57,8 @@
     [
       "Cheboksary",
       "https://en.wikipedia.org/wiki/Cheboksary_International_Airport",
-      "iata code not found",
-      "icao code not found"
+      "CSY",
+      "UWKS"
     ],
     [
       "Cherepovets",
@@ -91,8 +93,8 @@
     [
       "Kemerovo",
       "https://en.wikipedia.org/wiki/Kemerovo_International_Airport",
-      "iata code not found",
-      "icao code not found"
+      "KEJ",
+      "UNEE"
     ],
     [
       "Kirov",
@@ -113,7 +115,7 @@
       "URKK"
     ],
     [
-      "Krasnoyarsk\u2013Yemelyanovo",
+      "Krasnoyarsk–Yemelyanovo",
       "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
       "KJA",
       "UNKL"
@@ -149,19 +151,19 @@
       "URMM"
     ],
     [
-      "Moscow\u2013Domodedovo",
+      "Moscow–Domodedovo",
       "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
       "DME",
       "UUDD"
     ],
     [
-      "Moscow\u2013Sheremetyevo",
+      "Moscow–Sheremetyevo",
       "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
       "SVO",
       "UUEE"
     ],
     [
-      "Moscow\u2013Vnukovo",
+      "Moscow–Vnukovo",
       "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
       "VKO",
       "UUWW"
@@ -205,14 +207,14 @@
     [
       "Penza",
       "https://en.wikipedia.org/wiki/Penza_Airport",
-      "iata code not found",
-      "icao code not found"
+      "PEZ",
+      "UWPP"
     ],
     [
       "Petrozavodsk",
       "https://en.wikipedia.org/wiki/Petrozavodsk_Airport",
-      "iata code not found",
-      "icao code not found"
+      "PES",
+      "ULPB"
     ],
     [
       "Rostov-on-Don",
@@ -247,23 +249,23 @@
     [
       "Tomsk",
       "https://en.wikipedia.org/wiki/Bogashevo_Airport",
-      "iata code not found",
-      "icao code not found"
+      "TOF",
+      "UNTT"
     ],
     [
       "Tyumen",
       "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
-      "iata code not found",
-      "icao code not found"
+      "TJM",
+      "USTR"
     ],
     [
       "Ufa",
       "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "iata code not found",
-      "icao code not found"
+      "UFA",
+      "UWUU"
     ],
     [
-      "Ulyanovsk\u2013Baratayevka",
+      "Ulyanovsk–Baratayevka",
       "https://en.wikipedia.org/wiki/Ulyanovsk_Baratayevka_Airport",
       "ULV",
       "UWLL"
@@ -271,14 +273,14 @@
     [
       "Volgograd",
       "https://en.wikipedia.org/wiki/Volgograd_International_Airport",
-      "iata code not found",
-      "icao code not found"
+      "VOG",
+      "URWW"
     ],
     [
       "Voronezh",
       "https://en.wikipedia.org/wiki/Voronezh_International_Airport",
-      "iata code not found",
-      "icao code not found"
+      "VOZ",
+      "UUOO"
     ],
     [
       "Yakutsk",
@@ -290,8 +292,8 @@
   "airlines_destinations": {
     "Aeroflot": [
       "Krasnodar",
-      "Krasnoyarsk\u2013Yemelyanovo",
-      "Moscow\u2013Sheremetyevo"
+      "Krasnoyarsk–Yemelyanovo",
+      "Moscow–Sheremetyevo"
     ],
     "Alrosa": [
       "Novosibirsk",
@@ -306,7 +308,7 @@
     "Ikar": [
       "Belgorod",
       "Cheboksary",
-      "Ulyanovsk\u2013Baratayevka",
+      "Ulyanovsk–Baratayevka",
       "Volgograd"
     ],
     "IrAero": [
@@ -331,7 +333,7 @@
       "Ufa"
     ],
     "Red Wings Airlines": [
-      "Moscow\u2013Domodedovo",
+      "Moscow–Domodedovo",
       "Omsk",
       "Saint Petersburg",
       "Tomsk",
@@ -341,7 +343,7 @@
     "RusLine": [
       "Kursk",
       "Penza",
-      "Ulyanovsk\u2013Baratayevka",
+      "Ulyanovsk–Baratayevka",
       "Volgograd",
       "Voronezh"
     ],
@@ -350,7 +352,7 @@
       "Ivanovo",
       "Kurgan",
       "Lipetsk",
-      "Moscow\u2013Domodedovo",
+      "Moscow–Domodedovo",
       "Novosibirsk"
     ],
     "Severstal Air Company": [
@@ -360,7 +362,7 @@
     "Smartavia": [
       "Arkhangelsk",
       "Cheboksary",
-      "Moscow\u2013Domodedovo",
+      "Moscow–Domodedovo",
       "Syktyvkar",
       "Ufa",
       "Volgograd",
@@ -372,7 +374,7 @@
       "Kemerovo",
       "Kirov",
       "Krasnodar",
-      "Krasnoyarsk\u2013Yemelyanovo",
+      "Krasnoyarsk–Yemelyanovo",
       "Magnitogorsk",
       "Murmansk",
       "Nizhnevartovsk"
@@ -385,17 +387,16 @@
       "Irkutsk",
       "Krasnodar",
       "Mineralnye Vody",
-      "Moscow\u2013Vnukovo",
+      "Moscow–Vnukovo",
       "Yakutsk"
     ],
     "Yamal Airlines": [
       "Kursk",
-      "Moscow\u2013Domodedovo",
+      "Moscow–Domodedovo",
       "Nizhnevartovsk",
       "Omsk",
       "Surgut",
       "Tyumen"
     ]
-  },
-  "city-served-wikipedia": "[[Crimea]]"
+  }
 }

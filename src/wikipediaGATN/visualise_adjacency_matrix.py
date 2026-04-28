@@ -22,6 +22,7 @@ Two layout strategies are supported:
 
 import warnings
 from pathlib import Path
+import json
 
 import networkx as nx
 import pandas as pd
@@ -282,8 +283,15 @@ def visualize_graph_plotly(
         fig_layout.xaxis = dict(showgrid=False, zeroline=False, showticklabels=False)
         fig_layout.yaxis = dict(showgrid=False, zeroline=False, showticklabels=False)
 
+    if layout == "globe":
+        hl_edge = go.Scattergeo(lon=[], lat=[], mode="lines", line=dict(width=2, color="red"), hoverinfo="none")
+        hl_node = go.Scattergeo(lon=[], lat=[], mode="markers", marker=dict(color="red", size=8), hoverinfo="none")
+    else:
+        hl_edge = go.Scatter(x=[], y=[], mode="lines", line=dict(width=2, color="red"), hoverinfo="none")
+        hl_node = go.Scatter(x=[], y=[], mode="markers", marker=dict(color="red", size=8), hoverinfo="none")
+
     fig = go.Figure(
-        data=[edge_trace, node_trace],
+        data=[edge_trace, node_trace, hl_edge, hl_node],
         layout=fig_layout,
     )
 
@@ -300,7 +308,58 @@ def visualize_graph_plotly(
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    fig.write_html(str(output_path))
+    
+    # --- Custom JavaScript Injection for click-to-highlight ---
+    node_list = list(G.nodes())
+    node_idx = {n: i for i, n in enumerate(node_list)}
+    adj = {i: [node_idx[v] for v in G.neighbors(n)] for i, n in enumerate(node_list)}
+    coords = {i: pos[n] for i, n in enumerate(node_list)}
+    
+    coord_keys = "['lon', 'lat']" if layout == "globe" else "['x', 'y']"
+    
+    # We use plot_id as a placeholder. Plotly replaces {plot_id} when rendering the HTML.
+    custom_js = f"""
+    const adj = {json.dumps(adj)};
+    const coords = {json.dumps(coords)};
+    const coord_keys = {coord_keys};
+    
+    var graphDiv = document.getElementById('{{plot_id}}');
+    
+    graphDiv.on('plotly_click', function(data) {{
+        if (data.points[0].curveNumber !== 1) return; // Only process clicks on the main node trace
+        
+        let clicked_idx = data.points[0].pointIndex;
+        let neighbors = adj[clicked_idx] || [];
+        let [cx, cy] = coords[clicked_idx];
+        
+        let e_x = [], e_y = [];
+        let n_x = [cx], n_y = [cy]; // Highlight the clicked node itself
+        
+        for (let i = 0; i < neighbors.length; i++) {{
+            let n_idx = neighbors[i];
+            let [nx, ny] = coords[n_idx];
+            e_x.push(cx, nx, null);
+            e_y.push(cy, ny, null);
+            n_x.push(nx);
+            n_y.push(ny);
+        }}
+        
+        let update = {{}};
+        update[coord_keys[0]] = [e_x, n_x];
+        update[coord_keys[1]] = [e_y, n_y];
+        
+        Plotly.restyle(graphDiv, update, [2, 3]);
+    }});
+    
+    graphDiv.on('plotly_doubleclick', function() {{
+        let update = {{}};
+        update[coord_keys[0]] = [[], []];
+        update[coord_keys[1]] = [[], []];
+        Plotly.restyle(graphDiv, update, [2, 3]);
+    }});
+    """
+
+    fig.write_html(str(output_path), post_script=custom_js)
 
     if verbose:
         print(f"Interactive Plotly graph saved to {output_path.resolve()}")

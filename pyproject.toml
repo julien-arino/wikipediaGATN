@@ -1,0 +1,161 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# ---------------------------------------------------------------------------
+# Project metadata
+# ---------------------------------------------------------------------------
+[project]
+name = "wikipediaGATN"
+version = "0.1.0"
+description = "Derive the Global Air Transportation Network from Wikipedia"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Julien Arino",               email = "julien.arino@umanitoba.ca"   },
+    { name = "Adriana-Stefania Ciupeanu",  email = "ciupeana@myumanitoba.ca" },
+]
+keywords = [
+    "air transportation network",
+    "network science",
+    "Wikipedia scraping",
+    "IATA",
+    "epidemiology",
+    "graph",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+# Minimum Python version.  f-strings and dataclasses were added in 3.7;
+# 3.8 is the lowest version still receiving security fixes at time of
+# initial release, so we require it here.
+requires-python = ">=3.8"
+
+# ---------------------------------------------------------------------------
+# Runtime dependencies
+# ---------------------------------------------------------------------------
+# NOTE on spaCy: the package uses the "en_core_web_sm" language model, which
+# is distributed separately from spaCy itself and cannot be declared here as
+# a normal PyPI dependency.  After installing this package, run:
+#
+#     python -m spacy download en_core_web_sm
+#
+# This step is documented in the README.
+# ---------------------------------------------------------------------------
+dependencies = [
+    # HTTP + HTML parsing
+    "requests>=2.28",
+    "beautifulsoup4>=4.12",
+
+    # Wikipedia wikitext parsing
+    "mwparserfromhell>=0.6",
+
+    # NLP (model must be downloaded separately – see note above)
+    "spacy>=3.5",
+
+    # Geo / country data
+    "geopy>=2.3",
+    "pycountry>=22.3",
+
+    # Numerical / data
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=1.5",
+
+    # Visualisation
+    "networkx>=3.0",
+    "plotly>=5.14",
+]
+
+# ---------------------------------------------------------------------------
+# Optional / extra dependency groups
+# ---------------------------------------------------------------------------
+[project.optional-dependencies]
+# Install dev tools:  pip install -e ".[dev]"
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "responses>=0.23",          # mock HTTP calls in tests
+    "black>=23.0",
+    "ruff>=0.1",
+    "mypy>=1.5",
+]
+# Convenience alias so reviewers can do:  pip install -e ".[test]"
+test = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "responses>=0.23",
+]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=1.3",
+    "myst-parser>=2.0",
+]
+
+# ---------------------------------------------------------------------------
+# Project URLs
+# ---------------------------------------------------------------------------
+[project.urls]
+Homepage      = "https://github.com/jarino/wikipediaGATN"
+Repository    = "https://github.com/jarino/wikipediaGATN"
+"Bug Tracker" = "https://github.com/jarino/wikipediaGATN/issues"
+
+# ---------------------------------------------------------------------------
+# Package discovery
+# ---------------------------------------------------------------------------
+[tool.setuptools.packages.find]
+where   = ["src"]   # look for packages under src/
+include = ["wikipediaGATN*"]
+
+# ---------------------------------------------------------------------------
+# Pytest configuration
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+# Mark tests that hit the real Wikipedia API so they can be skipped in CI:
+#   pytest -m "not network"
+markers = [
+    "network: marks tests that require a live internet connection (deselect with -m 'not network')",
+]
+addopts = "--cov=src/wikipediaGATN --cov-report=term-missing -v"
+
+# ---------------------------------------------------------------------------
+# Coverage
+# ---------------------------------------------------------------------------
+[tool.coverage.run]
+source = ["src/wikipediaGATN"]
+omit   = ["tests/*", "examples/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
+
+# ---------------------------------------------------------------------------
+# Ruff (linter)
+# ---------------------------------------------------------------------------
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+select = ["E", "F", "W", "I"]   # pycodestyle + pyflakes + isort
+ignore = ["E501"]               # handled by formatter
+
+# ---------------------------------------------------------------------------
+# Black (formatter)
+# ---------------------------------------------------------------------------
+[tool.black]
+line-length    = 88
+target-version = ["py38", "py39", "py310", "py311", "py312"]

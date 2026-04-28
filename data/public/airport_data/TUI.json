@@ -20,30 +20,50 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "Hail International Airport",
-      "https://en.wikipedia.org/wiki/Hail_International_Airport",
-      "HAS",
-      "OEHL"
-    ],
-    [
-      "Jeddah International Airport",
-      "https://en.wikipedia.org/wiki/Jeddah_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Fahd International Airport",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "Hail International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hail_International_Airport",
+      "codes": [
+        "HAS",
+        "OEHL"
+      ],
+      "airlines": [
+        "Nesma Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeddah_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Fahd International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nesma Airlines": [
@@ -54,5 +74,7 @@
       "King Fahd International Airport",
       "King Khalid International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:41Z",
+  "date-time-wikidata": "2026-04-17T10:50:13Z"
 }

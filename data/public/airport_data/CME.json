@@ -21,24 +21,40 @@
     "Aerus (airline)"
   ],
   "destinations": [
-    [
-      "Mexico City International Airport",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Minatitlán International Airport",
-      "https://en.wikipedia.org/wiki/Minatitl%C3%A1n_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Veracruz International Airport",
-      "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
-      "VER",
-      "MMVR"
-    ]
+    {
+      "city": "Mexico City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Minatitlán International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minatitl%C3%A1n_International_Airport",
+      "codes": [
+        "MTT",
+        "MMMT"
+      ],
+      "airlines": [
+        "Aerus (airline)"
+      ]
+    },
+    {
+      "city": "Veracruz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
+      "codes": [
+        "VER",
+        "MMVR"
+      ],
+      "airlines": [
+        "Aerus (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -51,5 +67,7 @@
       "Minatitlán International Airport",
       "Veracruz International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:43Z",
+  "date-time-wikidata": "2026-03-26T08:29:46Z"
 }

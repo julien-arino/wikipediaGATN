@@ -19,24 +19,39 @@
     "Air Inuit"
   ],
   "destinations": [
-    [
-      "Aupaluk",
-      "https://en.wikipedia.org/wiki/Aupaluk_Airport",
-      "YPJ",
-      "CYLA"
-    ],
-    [
-      "Kangirsuk",
-      "https://en.wikipedia.org/wiki/Kangirsuk_Airport",
-      "YKG",
-      "CYAS"
-    ],
-    [
-      "Kuujjuaq",
-      "https://en.wikipedia.org/wiki/Kuujjuaq_Airport",
-      "YVP",
-      "CYVP"
-    ]
+    {
+      "city": "Aupaluk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aupaluk_Airport",
+      "codes": [
+        "YPJ",
+        "CYLA"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Kangirsuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kangirsuk_Airport",
+      "codes": [
+        "YKG",
+        "CYAS"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Kuujjuaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuujjuaq_Airport",
+      "codes": [
+        "YVP",
+        "CYVP"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Inuit": [
@@ -44,5 +59,7 @@
       "Kangirsuk",
       "Kuujjuaq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:43Z",
+  "date-time-wikidata": "2025-12-20T18:44:52Z"
 }

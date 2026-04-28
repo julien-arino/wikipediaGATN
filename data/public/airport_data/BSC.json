@@ -20,24 +20,40 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Medellín–Olaya Herrera",
-      "https://en.wikipedia.org/wiki/Enrique_Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ],
-    [
-      "Quibdó",
-      "https://en.wikipedia.org/wiki/El_Caraño_Airport",
-      "UIB",
-      "SKUI"
-    ]
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Medellín–Olaya Herrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enrique_Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Quibdó",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Caraño_Airport",
+      "codes": [
+        "UIB",
+        "SKUI"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Clic": [
@@ -48,5 +64,7 @@
       "Medellín–Olaya Herrera",
       "Quibdó"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:01Z",
+  "date-time-wikidata": "2024-10-30T06:00:05Z"
 }

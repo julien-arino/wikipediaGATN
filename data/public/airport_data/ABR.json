@@ -20,12 +20,18 @@
     "FedEx Feeder"
   ],
   "destinations": [
-    [
-      "Sioux Falls",
-      "https://en.wikipedia.org/wiki/Sioux_Falls_Regional_Airport",
-      "FSD",
-      "KFSD"
-    ]
+    {
+      "city": "Sioux Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Falls_Regional_Airport",
+      "codes": [
+        "FSD",
+        "KFSD"
+      ],
+      "airlines": [
+        "Alpine Air Express",
+        "FedEx Feeder"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alpine Air Express": [
@@ -34,5 +40,7 @@
     "FedEx Feeder": [
       "Sioux Falls"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:18Z",
+  "date-time-wikidata": "2026-03-04T11:05:24Z"
 }

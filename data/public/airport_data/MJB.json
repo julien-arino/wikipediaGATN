@@ -19,23 +19,35 @@
     "Air Marshall Islands"
   ],
   "destinations": [
-    [
-      "Ailuk",
-      "https://en.wikipedia.org/wiki/Ailuk_Airport",
-      "AIM",
-      "icao code not found"
-    ],
-    [
-      "Majuro",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ]
+    {
+      "city": "Ailuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ailuk_Airport",
+      "codes": [
+        "AIM",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Marshall Islands": [
       "Ailuk",
       "Majuro"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:19Z",
+  "date-time-wikidata": "2024-12-26T01:37:29Z"
 }

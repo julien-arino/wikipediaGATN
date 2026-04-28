@@ -22,36 +22,61 @@
     "Sky Alps"
   ],
   "destinations": [
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Bolzano",
-      "https://en.wikipedia.org/wiki/Bolzano_Airport",
-      "BZO",
-      "LIPB"
-    ],
-    [
-      "Bratislava",
-      "https://en.wikipedia.org/wiki/Bratislava_Airport",
-      "BTS",
-      "LZIB"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Zagreb",
-      "https://en.wikipedia.org/wiki/Zagreb_Airport",
-      "ZAG",
-      "LDZA"
-    ]
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Bolzano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolzano_Airport",
+      "codes": [
+        "BZO",
+        "LIPB"
+      ],
+      "airlines": [
+        "Sky Alps"
+      ]
+    },
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "Sky Alps"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Zagreb",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
+      "codes": [
+        "ZAG",
+        "LDZA"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Serbia": [
@@ -67,5 +92,7 @@
       "Bolzano",
       "Bratislava"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:39Z",
+  "date-time-wikidata": "2026-04-11T20:03:02Z"
 }

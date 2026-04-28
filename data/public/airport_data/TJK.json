@@ -21,24 +21,39 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul Sabiha Gökçen International Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_G%C3%B6k%C3%A7en_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "İzmir Adnan Menderes Airport",
-      "https://en.wikipedia.org/wiki/%C4%B0zmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ]
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul Sabiha Gökçen International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_G%C3%B6k%C3%A7en_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "İzmir Adnan Menderes Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C4%B0zmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -50,5 +65,7 @@
     "Turkish Airlines": [
       "Istanbul Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:30Z",
+  "date-time-wikidata": "2026-03-30T15:36:38Z"
 }

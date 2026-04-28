@@ -27,138 +27,252 @@
     "Yakutia Airlines"
   ],
   "destinations": [
-    [
-      "Chita",
-      "https://en.wikipedia.org/wiki/Kadala_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Harbin",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
-      "HRB",
-      "ZYHB"
-    ],
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Kalibo",
-      "https://en.wikipedia.org/wiki/Kalibo_International_Airport",
-      "KLO",
-      "RPVK"
-    ],
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Magadan",
-      "https://en.wikipedia.org/wiki/Sokol_Airport",
-      "GDX",
-      "UHMM"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Nha Trang",
-      "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport",
-      "CXR",
-      "VVCR"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Oktyabrsky",
-      "https://en.wikipedia.org/wiki/Oktyabrsky_Airport_(Amur_Oblast)",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Pattaya",
-      "https://en.wikipedia.org/wiki/U-Tapao_International_Airport",
-      "UTP",
-      "VTBU"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Qinhuangdao",
-      "https://en.wikipedia.org/wiki/Qinhuangdao_Beidaihe_Airport",
-      "BPE",
-      "ZBDH"
-    ],
-    [
-      "Svobodny",
-      "https://en.wikipedia.org/wiki/Svobodny_Airport",
-      "iata code not found",
-      "UHBS"
-    ],
-    [
-      "Tynda",
-      "https://en.wikipedia.org/wiki/Tynda_Airport",
-      "TYD",
-      "UHBW"
-    ],
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ],
-    [
-      "Vladivostok",
-      "https://en.wikipedia.org/wiki/Knevichi_Airport",
-      "VVO",
-      "UHWW"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Yuzhno-Sakhalinsk",
-      "https://en.wikipedia.org/wiki/Khomutovo_Airport",
-      "UUS",
-      "UHSS"
-    ],
-    [
-      "Zeya",
-      "https://en.wikipedia.org/wiki/Zeya_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Chita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kadala_Airport",
+      "codes": [
+        "HTA",
+        "UIAA"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Harbin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "codes": [
+        "HRB",
+        "ZYHB"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Kalibo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalibo_International_Airport",
+      "codes": [
+        "KLO",
+        "RPVK"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Aurora",
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Magadan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sokol_Airport",
+      "codes": [
+        "GDX",
+        "UHMM"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines",
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Nha Trang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cam_Ranh_International_Airport",
+      "codes": [
+        "CXR",
+        "VVCR"
+      ],
+      "airlines": [
+        "Azur Air",
+        "Vietjet Air"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Oktyabrsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oktyabrsky_Airport_(Amur_Oblast)",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Amur Aviabase"
+      ]
+    },
+    {
+      "city": "Pattaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/U-Tapao_International_Airport",
+      "codes": [
+        "UTP",
+        "VTBU"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Qinhuangdao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qinhuangdao_Beidaihe_Airport",
+      "codes": [
+        "BPE",
+        "ZBDH"
+      ],
+      "airlines": [
+        "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Svobodny",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Svobodny_Airport",
+      "codes": [
+        "iata code not found",
+        "UHBS"
+      ],
+      "airlines": [
+        "Amur Aviabase"
+      ]
+    },
+    {
+      "city": "Tynda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tynda_Airport",
+      "codes": [
+        "TYD",
+        "UHBW"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    },
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Knevichi_Airport",
+      "codes": [
+        "VVO",
+        "UHWW"
+      ],
+      "airlines": [
+        "IrAero",
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Yuzhno-Sakhalinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khomutovo_Airport",
+      "codes": [
+        "UUS",
+        "UHSS"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Zeya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeya_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Aurora"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amur Aviabase": [
@@ -205,5 +319,7 @@
     "Yakutia Airlines": [
       "Qinhuangdao"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:19Z",
+  "date-time-wikidata": "2025-11-21T02:14:01Z"
 }

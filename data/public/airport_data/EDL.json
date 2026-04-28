@@ -23,36 +23,65 @@
     "Skyward Express"
   ],
   "destinations": [
-    [
-      "Lodwar",
-      "https://en.wikipedia.org/wiki/Lodwar_Airport",
-      "LOK",
-      "HKLO"
-    ],
-    [
-      "Mombasa",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport",
-      "WIL",
-      "HKNW"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ]
+    {
+      "city": "Lodwar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lodwar_Airport",
+      "codes": [
+        "LOK",
+        "HKLO"
+      ],
+      "airlines": [
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Mombasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Ethiopian Airlines",
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Ethiopian Airlines",
+        "Kenya Airways Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jambojet": [
@@ -74,5 +103,7 @@
       "Nairobi–Jomo Kenyatta",
       "Sharjah"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:20Z",
+  "date-time-wikidata": "2026-03-17T10:58:36Z"
 }

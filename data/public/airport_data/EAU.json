@@ -20,24 +20,39 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Chicago–O'Hare",
-      "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Las Vegas Airport",
-      "https://en.wikipedia.org/wiki/Las_Vegas_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Southwest Florida International Airport",
-      "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "RSW",
-      "KRSW"
-    ]
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Vegas_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Southwest Florida International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Sun Country Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sun Country Airlines": [
@@ -47,5 +62,7 @@
     "United Express": [
       "Chicago–O'Hare"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:16Z",
+  "date-time-wikidata": "2026-04-14T12:40:43Z"
 }

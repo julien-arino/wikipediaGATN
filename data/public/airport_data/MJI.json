@@ -13,8 +13,8 @@
   "country_name": "Libya",
   "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
-  "number_airlines": 21,
-  "outdegree": 26,
+  "number_airlines": 22,
+  "outdegree": 27,
   "airlines": [
     "Afriqiyah Airways",
     "Air Cairo",
@@ -24,6 +24,7 @@
     "Crown Airlines",
     "Egyptair",
     "Egyptair Cargo",
+    "Fly Cham",
     "Fly Oya",
     "Ghadames Air Transport",
     "Global Air",
@@ -39,162 +40,354 @@
     "ULS Airlines Cargo"
   ],
   "destinations": [
-    [
-      "Alexandria",
-      "https://en.wikipedia.org/wiki/Borg_El_Arab_International_Airport",
-      "HBE",
-      "HEAX"
-    ],
-    [
-      "Amman",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Beida",
-      "https://en.wikipedia.org/wiki/Al_Abraq_International_Airport",
-      "LAQ",
-      "HLLQ"
-    ],
-    [
-      "Benghazi",
-      "https://en.wikipedia.org/wiki/Benina_International_Airport",
-      "BEN",
-      "HLLB"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Ghadames East",
-      "https://en.wikipedia.org/wiki/Ghadames_Airport",
-      "LTD",
-      "HLTD"
-    ],
-    [
-      "Ghat",
-      "https://en.wikipedia.org/wiki/Ghat_Airport",
-      "GHT",
-      "HLGT"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Malta",
-      "https://en.wikipedia.org/wiki/Malta_International_Airport",
-      "MLA",
-      "LMML"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Niamey",
-      "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
-      "NIM",
-      "DRRN"
-    ],
-    [
-      "Ostend",
-      "https://en.wikipedia.org/wiki/Ostend–Bruges_International_Airport",
-      "OST",
-      "EBOS"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Sabha",
-      "https://en.wikipedia.org/wiki/Sabha_Airport",
-      "SEB",
-      "HLLS"
-    ],
-    [
-      "Sfax",
-      "https://en.wikipedia.org/wiki/Sfax_Thyna_International_Airport",
-      "SFA",
-      "DTTX"
-    ],
-    [
-      "Tobruk",
-      "https://en.wikipedia.org/wiki/Tobruk_Airport",
-      "TOB",
-      "HLTQ"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis_Carthage_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis_Carthage_International_Airport",
-      "TUN",
-      "DTTA"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
-      "TUN",
-      "DTTA"
-    ],
-    [
-      "Ubari",
-      "https://en.wikipedia.org/wiki/Ubari_Airport",
-      "QUB",
-      "HLUB"
-    ]
+    {
+      "city": "Alexandria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Borg_El_Arab_International_Airport",
+      "codes": [
+        "HBE",
+        "HEAX"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Fly Oya",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Amman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Afriqiyah Airways"
+      ]
+    },
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Libyan Wings",
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Beida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Abraq_International_Airport",
+      "codes": [
+        "LAQ",
+        "HLLQ"
+      ],
+      "airlines": [
+        "Fly Oya",
+        "Global Air"
+      ]
+    },
+    {
+      "city": "Benghazi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benina_International_Airport",
+      "codes": [
+        "BEN",
+        "HLLB"
+      ],
+      "airlines": [
+        "Air Libya",
+        "Berniq Airways",
+        "Buraq Air",
+        "Crown Airlines",
+        "Fly Oya",
+        "Global Air",
+        "Libyan Airlines",
+        "Libyan Wings",
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Berniq Airways",
+        "Crown Airlines",
+        "Egyptair",
+        "Egyptair Cargo",
+        "Fly Oya",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Damascus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damascus_International_Airport",
+      "codes": [
+        "DAM",
+        "OSDI"
+      ],
+      "airlines": [
+        "Fly Cham"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Fly Oya"
+      ]
+    },
+    {
+      "city": "Ghadames East",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ghadames_Airport",
+      "codes": [
+        "LTD",
+        "HLTD"
+      ],
+      "airlines": [
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Ghat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ghat_Airport",
+      "codes": [
+        "GHT",
+        "HLGT"
+      ],
+      "airlines": [
+        "Fly Oya",
+        "Global Air"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Berniq Airways",
+        "Fly Oya",
+        "Ghadames Air Transport",
+        "Libyan Airlines",
+        "Libyan Wings",
+        "MNG Airlines",
+        "MedSky Airways",
+        "Turkish Airlines",
+        "Turkish Cargo",
+        "ULS Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Berniq Airways",
+        "Fly Oya",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Malta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_International_Airport",
+      "codes": [
+        "MLA",
+        "LMML"
+      ],
+      "airlines": [
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Fly Oya",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Niamey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
+      "codes": [
+        "NIM",
+        "DRRN"
+      ],
+      "airlines": [
+        "Fly Oya",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Ostend",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostend–Bruges_International_Airport",
+      "codes": [
+        "OST",
+        "EBOS"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Sabha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabha_Airport",
+      "codes": [
+        "SEB",
+        "HLLS"
+      ],
+      "airlines": [
+        "Fly Oya",
+        "Libyan Wings",
+        "MedSky Airways"
+      ]
+    },
+    {
+      "city": "Sfax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sfax_Thyna_International_Airport",
+      "codes": [
+        "SFA",
+        "DTTX"
+      ],
+      "airlines": [
+        "Afriqiyah Airways"
+      ]
+    },
+    {
+      "city": "Tobruk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tobruk_Airport",
+      "codes": [
+        "TOB",
+        "HLTQ"
+      ],
+      "airlines": [
+        "Fly Oya"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis_Carthage_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Buraq Air",
+        "Ghadames Air Transport",
+        "Libyan Airlines",
+        "Libyan Wings",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis_Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Buraq Air",
+        "Ghadames Air Transport",
+        "Libyan Airlines",
+        "Libyan Wings",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Buraq Air",
+        "Ghadames Air Transport",
+        "Libyan Airlines",
+        "Libyan Wings",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Ubari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ubari_Airport",
+      "codes": [
+        "QUB",
+        "HLUB"
+      ],
+      "airlines": [
+        "Global Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afriqiyah Airways": [
@@ -221,12 +414,15 @@
       "Benghazi",
       "Tunis"
     ],
-    "Egyptair": [
-      "Cairo"
-    ],
     "Crown Airlines": [
       "Benghazi",
       "Cairo"
+    ],
+    "Egyptair": [
+      "Cairo"
+    ],
+    "Fly Cham": [
+      "Damascus"
     ],
     "Fly Oya": [
       "Alexandria",
@@ -304,5 +500,7 @@
     "ULS Airlines Cargo": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:20Z",
+  "date-time-wikidata": "2026-04-28T16:58:02Z"
 }

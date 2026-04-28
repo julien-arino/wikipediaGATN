@@ -20,30 +20,50 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Tbilisi",
-      "https://en.wikipedia.org/wiki/Tbilisi_International_Airport",
-      "TBS",
-      "UGTB"
-    ]
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Tbilisi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tbilisi_International_Airport",
+      "codes": [
+        "TBS",
+        "UGTB"
+      ],
+      "airlines": [
+        "Georgian Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Georgian Airways": [
@@ -54,5 +74,7 @@
       "London–Stansted",
       "Palermo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:30Z",
+  "date-time-wikidata": "2026-04-27T10:51:55Z"
 }

@@ -7,6 +7,7 @@
   "lat": "6.2670003",
   "lon": "6.8763737",
   "altitude": null,
+  "continent": "Africa",
   "region": "Anambra",
   "country_alpha3": "NGA",
   "country_name": "Nigeria",
@@ -19,18 +20,30 @@
     "United Nigeria Airlines"
   ],
   "destinations": [
-    [
-      "Murtala Muhammed International Airport",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ],
-    [
-      "Nnamdi Azikiwe International Airport",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ]
+    {
+      "city": "Murtala Muhammed International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Air Peace",
+        "United Nigeria Airlines"
+      ]
+    },
+    {
+      "city": "Nnamdi Azikiwe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Air Peace",
+        "United Nigeria Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Peace": [
@@ -42,5 +55,6 @@
       "Nnamdi Azikiwe International Airport"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:10:10Z",
+  "date-time-wikidata": "2026-04-13T11:24:09Z"
 }

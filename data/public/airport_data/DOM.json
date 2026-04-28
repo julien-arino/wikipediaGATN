@@ -25,96 +25,186 @@
     "United Airlines"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Castries",
-      "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
-      "SLU",
-      "TLPC"
-    ],
-    [
-      "Grenada",
-      "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
-      "GND",
-      "TGPY"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Newark",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "Saint Kitts",
-      "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
-      "SKB",
-      "TKPK"
-    ],
-    [
-      "Saint Lucia–Hewanorra",
-      "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
-      "UVF",
-      "TLPL"
-    ],
-    [
-      "Saint Thomas",
-      "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
-      "STT",
-      "TIST"
-    ],
-    [
-      "Saint Thomas",
-      "https://en.wikipedia.org/wiki/Cyril_E._King_International_Airport",
-      "STT",
-      "TIST"
-    ],
-    [
-      "Saint Vincent–Argyle",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
-      "SVD",
-      "TVSA"
-    ],
-    [
-      "San Juan",
-      "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
-      "SJU",
-      "TJSJ"
-    ],
-    [
-      "Sint Maarten",
-      "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
-      "SXM",
-      "TNCM"
-    ],
-    [
-      "Tortola",
-      "https://en.wikipedia.org/wiki/Terrance_B._Lettsome_International_Airport",
-      "EIS",
-      "TUPJ"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Ameriflight",
+        "FedEx Feeder",
+        "Liat20"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Liat20"
+      ]
+    },
+    {
+      "city": "Castries",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
+      "codes": [
+        "SLU",
+        "TLPC"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Liat20"
+      ]
+    },
+    {
+      "city": "Grenada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+      "codes": [
+        "GND",
+        "TGPY"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Liat20"
+      ]
+    },
+    {
+      "city": "Saint Kitts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
+      "codes": [
+        "SKB",
+        "TKPK"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Ameriflight",
+        "FedEx Feeder",
+        "Liat20"
+      ]
+    },
+    {
+      "city": "Saint Lucia–Hewanorra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
+      "codes": [
+        "UVF",
+        "TLPL"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "Saint Thomas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
+      "codes": [
+        "STT",
+        "TIST"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Saint Thomas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_International_Airport",
+      "codes": [
+        "STT",
+        "TIST"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Saint Vincent–Argyle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Ameriflight",
+        "Contour Airlines",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Sint Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+      "codes": [
+        "SXM",
+        "TNCM"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Liat20"
+      ]
+    },
+    {
+      "city": "Tortola",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terrance_B._Lettsome_International_Airport",
+      "codes": [
+        "EIS",
+        "TUPJ"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Liat20"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle": [
@@ -159,5 +249,7 @@
       "Saint Kitts",
       "San Juan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:12Z",
+  "date-time-wikidata": "2026-04-08T18:45:59Z"
 }

@@ -19,24 +19,39 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Ende",
-      "https://en.wikipedia.org/wiki/H._Hasan_Aroeboesman_Airport",
-      "ENE",
-      "WATE"
-    ],
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Waingapu",
-      "https://en.wikipedia.org/wiki/Umbu_Mehang_Kunda_Airport",
-      "WGP",
-      "WATU"
-    ]
+    {
+      "city": "Ende",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/H._Hasan_Aroeboesman_Airport",
+      "codes": [
+        "ENE",
+        "WATE"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Waingapu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umbu_Mehang_Kunda_Airport",
+      "codes": [
+        "WGP",
+        "WATU"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -44,5 +59,7 @@
       "Kupang",
       "Waingapu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:26Z",
+  "date-time-wikidata": "2026-02-28T03:06:34Z"
 }

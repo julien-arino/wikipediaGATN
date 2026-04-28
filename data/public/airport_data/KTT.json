@@ -37,174 +37,321 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Alta Airport",
-      "https://en.wikipedia.org/wiki/Alta_Airport",
-      "ALF",
-      "ENAT"
-    ],
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Berlin Brandenburg Airport",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Birmingham Airport",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Bristol Airport",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "Brussels Airport",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Bucharest Henri Coandă International Airport",
-      "https://en.wikipedia.org/wiki/Bucharest_Henri_Coand%C4%83_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Charles de Gaulle Airport",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Copenhagen Airport",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Dublin Airport",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "East Midlands Airport",
-      "https://en.wikipedia.org/wiki/East_Midlands_Airport",
-      "EMA",
-      "EGNX"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Glasgow Airport",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "GLA",
-      "EGPF"
-    ],
-    [
-      "Hamburg Airport",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Helsinki Airport",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Manchester Airport",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Milan Malpensa Airport",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Munich Airport",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Newcastle International Airport",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
-      "NCL",
-      "EGNT"
-    ],
-    [
-      "Orly Airport",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Riga International Airport",
-      "https://en.wikipedia.org/wiki/Riga_International_Airport",
-      "RIX",
-      "EVRA"
-    ],
-    [
-      "Rotterdam The Hague Airport",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Tallinn Airport",
-      "https://en.wikipedia.org/wiki/Tallinn_Airport",
-      "TLL",
-      "EETN"
-    ],
-    [
-      "Tampere Airport",
-      "https://en.wikipedia.org/wiki/Tampere_Airport",
-      "TMP",
-      "EFTP"
-    ],
-    [
-      "Vienna International Airport",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Alta Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alta_Airport",
+      "codes": [
+        "ALF",
+        "ENAT"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Corendon Dutch Airlines",
+        "KLM",
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Berlin Brandenburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Birmingham Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Bristol Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Brussels Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Bucharest Henri Coandă International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Henri_Coand%C4%83_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Animawings"
+      ]
+    },
+    {
+      "city": "Charles de Gaulle Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France",
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Copenhagen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Dublin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "East Midlands Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Discover Airlines"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Glasgow Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Hamburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Helsinki Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Manchester Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "EasyJet",
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Milan Malpensa Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
+      "city": "Munich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Newcastle International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "codes": [
+        "NCL",
+        "EGNT"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Orly Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Riga International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "AirBaltic"
+      ]
+    },
+    {
+      "city": "Rotterdam The Hague Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Tallinn Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tallinn_Airport",
+      "codes": [
+        "TLL",
+        "EETN"
+      ],
+      "airlines": [
+        "AirBaltic"
+      ]
+    },
+    {
+      "city": "Tampere Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampere_Airport",
+      "codes": [
+        "TMP",
+        "EFTP"
+      ],
+      "airlines": [
+        "AirBaltic"
+      ]
+    },
+    {
+      "city": "Vienna International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Zurich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air",
+        "Helvetic Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -280,5 +427,7 @@
       "Amsterdam Airport Schiphol",
       "Rotterdam The Hague Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:48Z",
+  "date-time-wikidata": "2026-04-25T23:34:29Z"
 }

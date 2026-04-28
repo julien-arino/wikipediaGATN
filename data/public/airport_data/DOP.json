@@ -22,12 +22,20 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Nepalgunj",
-      "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
-      "KEP",
-      "VNNG"
-    ]
+    {
+      "city": "Nepalgunj",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nepalgunj_Airport",
+      "codes": [
+        "KEP",
+        "VNNG"
+      ],
+      "airlines": [
+        "Nepal Airlines",
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nepal Airlines": [
@@ -42,5 +50,7 @@
     "Tara Air": [
       "Nepalgunj"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:12Z",
+  "date-time-wikidata": "2026-01-11T09:08:09Z"
 }

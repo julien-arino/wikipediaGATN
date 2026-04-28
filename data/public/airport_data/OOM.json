@@ -19,23 +19,35 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
       "Brisbane",
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:20Z",
+  "date-time-wikidata": "2026-04-28T13:42:44Z"
 }

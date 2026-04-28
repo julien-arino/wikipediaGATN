@@ -21,24 +21,41 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Balikpapan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_International_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balikpapan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "FlyJaya",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_International_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "FlyJaya",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Batik Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
@@ -50,5 +67,7 @@
     "Wings Air": [
       "Balikpapan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:21Z",
+  "date-time-wikidata": "2025-10-03T13:17:54Z"
 }

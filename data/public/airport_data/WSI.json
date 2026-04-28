@@ -20,18 +20,28 @@
     "Singapore Airlines"
   ],
   "destinations": [
-    [
-      "Auckland Airport",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Changi Airport",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ]
+    {
+      "city": "Auckland Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Changi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Singapore Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -40,5 +50,7 @@
     "Singapore Airlines": [
       "Changi Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:24Z",
+  "date-time-wikidata": "2026-04-23T05:23:13Z"
 }

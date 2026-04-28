@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "El Dorado International Airport",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Ernesto Cortissoz International Airport",
-      "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
-      "BAQ",
-      "SKBQ"
-    ]
+    {
+      "city": "El Dorado International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Ernesto Cortissoz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ernesto_Cortissoz_International_Airport",
+      "codes": [
+        "BAQ",
+        "SKBQ"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "El Dorado International Airport",
       "Ernesto Cortissoz International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:11Z",
+  "date-time-wikidata": "2025-12-11T13:52:45Z"
 }

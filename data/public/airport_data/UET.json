@@ -25,54 +25,99 @@
     "Serene Air"
   ],
   "destinations": [
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Islamabad",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Karachi",
-      "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
-      "KHI",
-      "OPKC"
-    ],
-    [
-      "Lahore",
-      "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
-      "LHE",
-      "OPLA"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Zahedan",
-      "https://en.wikipedia.org/wiki/Zahedan_Airport",
-      "ZAH",
-      "OIZH"
-    ]
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Islamabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Fly Jinnah",
+        "Pakistan International Airlines",
+        "Serene Air"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Karachi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
+      "codes": [
+        "KHI",
+        "OPKC"
+      ],
+      "airlines": [
+        "AirSial",
+        "Fly Jinnah",
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Lahore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
+      "codes": [
+        "LHE",
+        "OPLA"
+      ],
+      "airlines": [
+        "Pakistan International Airlines",
+        "Serene Air"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Zahedan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zahedan_Airport",
+      "codes": [
+        "ZAH",
+        "OIZH"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -102,5 +147,7 @@
     "AirSial": [
       "Karachi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:44Z",
+  "date-time-wikidata": "2026-03-12T16:16:36Z"
 }

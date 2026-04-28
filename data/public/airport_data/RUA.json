@@ -21,30 +21,50 @@
     "MAF Uganda"
   ],
   "destinations": [
-    [
-      "Entebbe Airport",
-      "https://en.wikipedia.org/wiki/Entebbe_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Entebbe International Airport",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Kajjansi Airfield",
-      "https://en.wikipedia.org/wiki/Kajjansi_Airfield",
-      "KJJ",
-      "HUKJ"
-    ],
-    [
-      "Yei Airport",
-      "https://en.wikipedia.org/wiki/Yei_Airport",
-      "iata code not found",
-      "HSYE"
-    ]
+    {
+      "city": "Entebbe Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "BAR Aviation Uganda"
+      ]
+    },
+    {
+      "city": "Entebbe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Eagle Air (Uganda)"
+      ]
+    },
+    {
+      "city": "Kajjansi Airfield",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kajjansi_Airfield",
+      "codes": [
+        "KJJ",
+        "HUKJ"
+      ],
+      "airlines": [
+        "MAF Uganda"
+      ]
+    },
+    {
+      "city": "Yei Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yei_Airport",
+      "codes": [
+        "iata code not found",
+        "HSYE"
+      ],
+      "airlines": [
+        "Eagle Air (Uganda)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Eagle Air (Uganda)": [
@@ -57,5 +77,7 @@
     "BAR Aviation Uganda": [
       "Entebbe Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:53Z",
+  "date-time-wikidata": "2026-02-24T01:34:44Z"
 }

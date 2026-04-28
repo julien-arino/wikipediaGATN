@@ -21,24 +21,40 @@
     "Trans Anguilla Airways"
   ],
   "destinations": [
-    [
-      "Anguilla",
-      "https://en.wikipedia.org/wiki/Clayton_J._Lloyd_International_Airport",
-      "AXA",
-      "TQPF"
-    ],
-    [
-      "San Juan",
-      "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
-      "SJU",
-      "TJSJ"
-    ],
-    [
-      "Tortola",
-      "https://en.wikipedia.org/wiki/Terrance_B._Lettsome_International_Airport",
-      "EIS",
-      "TUPJ"
-    ]
+    {
+      "city": "Anguilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clayton_J._Lloyd_International_Airport",
+      "codes": [
+        "AXA",
+        "TQPF"
+      ],
+      "airlines": [
+        "Trans Anguilla Airways"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Tradewind Aviation"
+      ]
+    },
+    {
+      "city": "Tortola",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terrance_B._Lettsome_International_Airport",
+      "codes": [
+        "EIS",
+        "TUPJ"
+      ],
+      "airlines": [
+        "Trans Anguilla Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cape Air": [
@@ -51,5 +67,7 @@
       "Anguilla",
       "Tortola"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:19Z",
+  "date-time-wikidata": "2026-01-27T16:34:41Z"
 }

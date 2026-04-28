@@ -1,8 +1,8 @@
 {
   "iata": "XLB",
   "icao": "CZWH",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Lac Brochet, Manitoba",
+  "city-served-wikipedia": "[[Lac Brochet, Manitoba]]",
   "location": "[[Lac Brochet, Manitoba]]",
   "lat": "58.614444",
   "lon": "-101.468889",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lac_Brochet_Airport",
   "number_airlines": 1,
   "outdegree": 3,
@@ -19,24 +19,39 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Tadoule Lake",
-      "https://en.wikipedia.org/wiki/Tadoule_Lake_Airport",
-      "XTL",
-      "CYBQ"
-    ],
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Tadoule Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tadoule_Lake_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Perimeter Aviation": [
@@ -44,5 +59,7 @@
       "Thompson",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:14Z",
+  "date-time-wikidata": "2025-09-29T04:46:42Z"
 }

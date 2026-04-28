@@ -22,36 +22,63 @@
     "Shree Airlines"
   ],
   "destinations": [
-    [
-      "Bajura",
-      "https://en.wikipedia.org/wiki/Bajura_Airport",
-      "BJU",
-      "VNBR"
-    ],
-    [
-      "Dipayal Silgadhi",
-      "https://en.wikipedia.org/wiki/Doti_Airport",
-      "SIH",
-      "VNDT"
-    ],
-    [
-      "Jayaprithvi",
-      "https://en.wikipedia.org/wiki/Bajhang_Airport",
-      "BJH",
-      "VNBG"
-    ],
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Pokhara",
-      "https://en.wikipedia.org/wiki/Pokhara_Airport",
-      "PKR",
-      "VNPK"
-    ]
+    {
+      "city": "Bajura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bajura_Airport",
+      "codes": [
+        "BJU",
+        "VNBR"
+      ],
+      "airlines": [
+        "Nepal Airlines"
+      ]
+    },
+    {
+      "city": "Dipayal Silgadhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Doti_Airport",
+      "codes": [
+        "SIH",
+        "VNDT"
+      ],
+      "airlines": [
+        "Nepal Airlines"
+      ]
+    },
+    {
+      "city": "Jayaprithvi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bajhang_Airport",
+      "codes": [
+        "BJH",
+        "VNBG"
+      ],
+      "airlines": [
+        "Nepal Airlines"
+      ]
+    },
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Buddha Air",
+        "Saurya Airlines",
+        "Shree Airlines"
+      ]
+    },
+    {
+      "city": "Pokhara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_Airport",
+      "codes": [
+        "PKR",
+        "VNPK"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Buddha Air": [
@@ -69,5 +96,7 @@
     "Shree Airlines": [
       "Kathmandu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:07Z",
+  "date-time-wikidata": "2026-02-02T13:18:16Z"
 }

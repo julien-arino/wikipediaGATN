@@ -19,24 +19,39 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Gunung Sitoli",
-      "https://en.wikipedia.org/wiki/Gunung_Sitoli_Airport",
-      "GNS",
-      "WIMB"
-    ],
-    [
-      "Padang",
-      "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
-      "PDG",
-      "WIEE"
-    ],
-    [
-      "Sibolga",
-      "https://en.wikipedia.org/wiki/Ferdinand_Lumban_Tobing_Airport",
-      "FLZ",
-      "WIMS"
-    ]
+    {
+      "city": "Gunung Sitoli",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gunung_Sitoli_Airport",
+      "codes": [
+        "GNS",
+        "WIMB"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Padang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
+      "codes": [
+        "PDG",
+        "WIEE"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Sibolga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ferdinand_Lumban_Tobing_Airport",
+      "codes": [
+        "FLZ",
+        "WIMS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -44,5 +59,7 @@
       "Padang",
       "Sibolga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:32Z",
+  "date-time-wikidata": "2026-01-14T12:39:14Z"
 }

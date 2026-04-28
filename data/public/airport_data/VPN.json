@@ -19,23 +19,35 @@
     "Norlandair"
   ],
   "destinations": [
-    [
-      "Akureyri",
-      "https://en.wikipedia.org/wiki/Akureyri_Airport",
-      "AEY",
-      "BIAR"
-    ],
-    [
-      "Þórshöfn",
-      "https://en.wikipedia.org/wiki/Þórshöfn_Airport",
-      "THO",
-      "BITN"
-    ]
+    {
+      "city": "Akureyri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akureyri_Airport",
+      "codes": [
+        "AEY",
+        "BIAR"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    },
+    {
+      "city": "Þórshöfn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Þórshöfn_Airport",
+      "codes": [
+        "THO",
+        "BITN"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norlandair": [
       "Akureyri",
       "Þórshöfn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:45Z",
+  "date-time-wikidata": "2026-03-22T16:29:19Z"
 }

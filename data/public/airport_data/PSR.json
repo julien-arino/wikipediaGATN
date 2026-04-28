@@ -21,108 +21,195 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Alghero",
-      "https://en.wikipedia.org/wiki/Alghero–Fertilia_Airport",
-      "AHO",
-      "LIEA"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Hahn",
-      "https://en.wikipedia.org/wiki/Frankfurt-Hahn_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Iași",
-      "https://en.wikipedia.org/wiki/Iași_International_Airport",
-      "IAS",
-      "LRIA"
-    ],
-    [
-      "Kaunas",
-      "https://en.wikipedia.org/wiki/Kaunas_Airport",
-      "KUN",
-      "EYKA"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Malta",
-      "https://en.wikipedia.org/wiki/Malta_International_Airport",
-      "MLA",
-      "LMML"
-    ],
-    [
-      "Memmingen",
-      "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "FMM",
-      "EDJA"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Trapani",
-      "https://en.wikipedia.org/wiki/Trapani–Birgi_Airport",
-      "TPS",
-      "LICT"
-    ],
-    [
-      "Valencia",
-      "https://en.wikipedia.org/wiki/Valencia_Airport",
-      "VLC",
-      "LEVC"
-    ],
-    [
-      "Weeze",
-      "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "NRN",
-      "EDLV"
-    ]
+    {
+      "city": "Alghero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alghero–Fertilia_Airport",
+      "codes": [
+        "AHO",
+        "LIEA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Hahn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt-Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Iași",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iași_International_Airport",
+      "codes": [
+        "IAS",
+        "LRIA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Kaunas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaunas_Airport",
+      "codes": [
+        "KUN",
+        "EYKA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Malta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_International_Airport",
+      "codes": [
+        "MLA",
+        "LMML"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Memmingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
+      "codes": [
+        "FMM",
+        "EDJA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Trapani",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trapani–Birgi_Airport",
+      "codes": [
+        "TPS",
+        "LICT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Valencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
+      "codes": [
+        "VLC",
+        "LEVC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Weeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
+      "codes": [
+        "NRN",
+        "EDLV"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Luxair": [
@@ -150,5 +237,7 @@
       "Iași",
       "Tirana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:46Z",
+  "date-time-wikidata": "2026-04-04T11:09:13Z"
 }

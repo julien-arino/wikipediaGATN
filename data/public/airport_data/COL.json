@@ -19,24 +19,39 @@
     "Hebridean Air Services"
   ],
   "destinations": [
-    [
-      "Colonsay",
-      "https://en.wikipedia.org/wiki/Colonsay_Airport",
-      "CSA",
-      "EGEY"
-    ],
-    [
-      "Oban",
-      "https://en.wikipedia.org/wiki/Oban_Airport",
-      "OBN",
-      "EGEO"
-    ],
-    [
-      "Tiree",
-      "https://en.wikipedia.org/wiki/Tiree_Airport",
-      "TRE",
-      "EGPU"
-    ]
+    {
+      "city": "Colonsay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colonsay_Airport",
+      "codes": [
+        "CSA",
+        "EGEY"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    },
+    {
+      "city": "Oban",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oban_Airport",
+      "codes": [
+        "OBN",
+        "EGEO"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    },
+    {
+      "city": "Tiree",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiree_Airport",
+      "codes": [
+        "TRE",
+        "EGPU"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hebridean Air Services": [
@@ -44,5 +59,7 @@
       "Oban",
       "Tiree"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:05Z",
+  "date-time-wikidata": "2026-03-26T18:34:14Z"
 }

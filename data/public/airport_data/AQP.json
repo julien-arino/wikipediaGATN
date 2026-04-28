@@ -21,18 +21,32 @@
     "Sky Airline Peru"
   ],
   "destinations": [
-    [
-      "Cusco",
-      "https://en.wikipedia.org/wiki/Alejandro_Velasco_Astete_International_Airport",
-      "CUZ",
-      "SPZO"
-    ],
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ]
+    {
+      "city": "Cusco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alejandro_Velasco_Astete_International_Airport",
+      "codes": [
+        "CUZ",
+        "SPZO"
+      ],
+      "airlines": [
+        "JetSmart Perú",
+        "LATAM Perú",
+        "Sky Airline Peru"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "JetSmart Perú",
+        "LATAM Perú",
+        "Sky Airline Peru"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Perú": [
@@ -47,5 +61,7 @@
       "Cusco",
       "Lima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:49Z",
+  "date-time-wikidata": "2026-03-29T12:15:47Z"
 }

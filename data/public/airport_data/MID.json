@@ -31,108 +31,203 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancun_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Flores",
-      "https://en.wikipedia.org/wiki/Mundo_Maya_International_Airport",
-      "FRS",
-      "MGMM"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Guatemala City",
-      "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-      "GUA",
-      "MGGT"
-    ],
-    [
-      "Havana",
-      "https://en.wikipedia.org/wiki/José_Martí_International_Airport",
-      "HAV",
-      "MUHA"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "León/El Bajío",
-      "https://en.wikipedia.org/wiki/Bajío_International_Airport",
-      "BJX",
-      "MMLO"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Tijuana",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ],
-    [
-      "Toluca/Mexico City",
-      "https://en.wikipedia.org/wiki/Toluca_International_Airport",
-      "TLC",
-      "MMTO"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Tuxtla Gutiérrez",
-      "https://en.wikipedia.org/wiki/Tuxtla_Gutiérrez_International_Airport",
-      "TGZ",
-      "MMTG"
-    ],
-    [
-      "Veracruz",
-      "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
-      "VER",
-      "MMVR"
-    ],
-    [
-      "Villahermosa",
-      "https://en.wikipedia.org/wiki/Villahermosa_International_Airport",
-      "VSA",
-      "MMVA"
-    ]
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancun_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Magnicharters"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Flores",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mundo_Maya_International_Airport",
+      "codes": [
+        "FRS",
+        "MGMM"
+      ],
+      "airlines": [
+        "TAG Airlines"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Guatemala City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "TAG Airlines"
+      ]
+    },
+    {
+      "city": "Havana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Martí_International_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "Magnicharters",
+        "Viva"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "León/El Bajío",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bajío_International_Airport",
+      "codes": [
+        "BJX",
+        "MMLO"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect",
+        "Magnicharters",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Aeroméxico Connect",
+        "Mexicana de Aviación",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Viva"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Toluca/Mexico City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toluca_International_Airport",
+      "codes": [
+        "TLC",
+        "MMTO"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Tuxtla Gutiérrez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuxtla_Gutiérrez_International_Airport",
+      "codes": [
+        "TGZ",
+        "MMTG"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Veracruz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
+      "codes": [
+        "VER",
+        "MMVR"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Villahermosa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Villahermosa_International_Airport",
+      "codes": [
+        "VSA",
+        "MMVA"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -188,5 +283,7 @@
     "WestJet": [
       "Toronto–Pearson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:18Z",
+  "date-time-wikidata": "2026-04-07T02:47:44Z"
 }

@@ -7,6 +7,7 @@
   "lat": "30.2683332",
   "lon": "74.7625109",
   "altitude": null,
+  "continent": "Asia",
   "region": "Punjab",
   "country_alpha3": "IND",
   "country_name": "India",
@@ -19,18 +20,28 @@
     "FlyBig"
   ],
   "destinations": [
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Ghaziabad",
-      "https://en.wikipedia.org/wiki/Hindon_Airport",
-      "HDO",
-      "VIDX"
-    ]
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Ghaziabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hindon_Airport",
+      "codes": [
+        "HDO",
+        "VIDX"
+      ],
+      "airlines": [
+        "FlyBig"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -40,5 +51,6 @@
       "Ghaziabad"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:04:26Z",
+  "date-time-wikidata": "2026-01-31T16:45:41Z"
 }

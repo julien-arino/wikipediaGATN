@@ -19,23 +19,35 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Bellona",
-      "https://en.wikipedia.org/wiki/Bellona/Anua_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ]
+    {
+      "city": "Bellona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bellona/Anua_Airport",
+      "codes": [
+        "BNY",
+        "AGGB"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
       "Bellona",
       "Honiara"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:28Z",
+  "date-time-wikidata": "2024-11-21T02:37:55Z"
 }

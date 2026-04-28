@@ -21,42 +21,73 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Balgo",
-      "https://en.wikipedia.org/wiki/Balgo_Hill_Airport",
-      "BQW",
-      "YBGO"
-    ],
-    [
-      "Broome",
-      "https://en.wikipedia.org/wiki/Broome_International_Airport",
-      "BME",
-      "YBRM"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Halls Creek",
-      "https://en.wikipedia.org/wiki/Halls_Creek_Airport",
-      "HCQ",
-      "YHLC"
-    ],
-    [
-      "Kalumburu",
-      "https://en.wikipedia.org/wiki/Kalumburu_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Balgo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balgo_Hill_Airport",
+      "codes": [
+        "BQW",
+        "YBGO"
+      ],
+      "airlines": [
+        "Aviair"
+      ]
+    },
+    {
+      "city": "Broome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broome_International_Airport",
+      "codes": [
+        "BME",
+        "YBRM"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Halls Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halls_Creek_Airport",
+      "codes": [
+        "HCQ",
+        "YHLC"
+      ],
+      "airlines": [
+        "Aviair"
+      ]
+    },
+    {
+      "city": "Kalumburu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalumburu_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Aviair"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Airnorth",
+        "Virgin Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -72,5 +103,7 @@
     "Virgin Australia": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:59Z",
+  "date-time-wikidata": "2026-02-12T14:01:40Z"
 }

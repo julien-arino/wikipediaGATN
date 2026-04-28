@@ -20,24 +20,40 @@
     "Southwest Airlines"
   ],
   "destinations": [
-    [
-      "Daniel K. Inouye International Airport",
-      "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Harry Reid International Airport",
-      "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Kahului Airport",
-      "https://en.wikipedia.org/wiki/Kahului_Airport",
-      "OGG",
-      "PHOG"
-    ]
+    {
+      "city": "Daniel K. Inouye International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Hawaiian Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Harry Reid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Kahului Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahului_Airport",
+      "codes": [
+        "OGG",
+        "PHOG"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hawaiian Airlines": [
@@ -48,5 +64,7 @@
       "Daniel K. Inouye International Airport",
       "Harry Reid International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:11Z",
+  "date-time-wikidata": "2026-04-27T06:21:29Z"
 }

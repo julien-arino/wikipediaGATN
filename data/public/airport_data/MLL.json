@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Pilot Station",
-      "https://en.wikipedia.org/wiki/Pilot_Station_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "St. Mary's",
-      "https://en.wikipedia.org/wiki/St._Mary's_Airport_(Alaska)",
-      "KSM",
-      "PASM"
-    ]
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation",
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Pilot Station",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pilot_Station_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "St. Mary's",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Mary's_Airport_(Alaska)",
+      "codes": [
+        "KSM",
+        "PASM"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -48,5 +64,7 @@
       "Bethel",
       "St. Mary's"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:43Z",
+  "date-time-wikidata": "2025-09-04T00:56:40Z"
 }

@@ -20,48 +20,85 @@
     "West Wing Aviation"
   ],
   "destinations": [
-    [
-      "Burketown",
-      "https://en.wikipedia.org/wiki/Burketown_Airport",
-      "BUC",
-      "YBKT"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Century Mine",
-      "https://en.wikipedia.org/wiki/Century_Mine_Airport",
-      "iata code not found",
-      "YCNY"
-    ],
-    [
-      "Doomadgee",
-      "https://en.wikipedia.org/wiki/Doomadgee_Airport",
-      "DMD",
-      "YDMG"
-    ],
-    [
-      "Gununa",
-      "https://en.wikipedia.org/wiki/Mornington_Island_Airport",
-      "ONG",
-      "YMTI"
-    ],
-    [
-      "Karumba",
-      "https://en.wikipedia.org/wiki/Karumba_Airport",
-      "KRB",
-      "YKMB"
-    ],
-    [
-      "Mount Isa",
-      "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
-      "ISA",
-      "YBMA"
-    ]
+    {
+      "city": "Burketown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burketown_Airport",
+      "codes": [
+        "BUC",
+        "YBKT"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Century Mine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Century_Mine_Airport",
+      "codes": [
+        "iata code not found",
+        "YCNY"
+      ],
+      "airlines": [
+        "West Wing Aviation"
+      ]
+    },
+    {
+      "city": "Doomadgee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Doomadgee_Airport",
+      "codes": [
+        "DMD",
+        "YDMG"
+      ],
+      "airlines": [
+        "Rex Airlines",
+        "West Wing Aviation"
+      ]
+    },
+    {
+      "city": "Gununa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mornington_Island_Airport",
+      "codes": [
+        "ONG",
+        "YMTI"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Karumba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karumba_Airport",
+      "codes": [
+        "KRB",
+        "YKMB"
+      ],
+      "airlines": [
+        "West Wing Aviation"
+      ]
+    },
+    {
+      "city": "Mount Isa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
+      "codes": [
+        "ISA",
+        "YBMA"
+      ],
+      "airlines": [
+        "Rex Airlines",
+        "West Wing Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
@@ -77,5 +114,7 @@
       "Karumba",
       "Mount Isa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:43Z",
+  "date-time-wikidata": "2025-09-13T10:35:01Z"
 }

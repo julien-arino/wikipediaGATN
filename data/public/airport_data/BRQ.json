@@ -26,150 +26,271 @@
     "Tailwind Airlines"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bodrum",
-      "https://en.wikipedia.org/wiki/Bodrum_Airport",
-      "BJV",
-      "LTFE"
-    ],
-    [
-      "Burgas",
-      "https://en.wikipedia.org/wiki/Burgas_Airport",
-      "BOJ",
-      "LBBG"
-    ],
-    [
-      "Chania",
-      "https://en.wikipedia.org/wiki/Chania_International_Airport",
-      "CHQ",
-      "LGSA"
-    ],
-    [
-      "Comiso",
-      "https://en.wikipedia.org/wiki/Comiso_Airport",
-      "CIY",
-      "LICB"
-    ],
-    [
-      "Corfu",
-      "https://en.wikipedia.org/wiki/Corfu_International_Airport",
-      "CFU",
-      "LGKR"
-    ],
-    [
-      "Djerba",
-      "https://en.wikipedia.org/wiki/Djerba–Zarzis_International_Airport",
-      "DJE",
-      "DTTJ"
-    ],
-    [
-      "Enfidha",
-      "https://en.wikipedia.org/wiki/Enfidha–Hammamet_International_Airport",
-      "NBE",
-      "DTNH"
-    ],
-    [
-      "Funchal",
-      "https://en.wikipedia.org/wiki/Madeira_Airport",
-      "FNC",
-      "LPMA"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Mauritius",
-      "https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport",
-      "MRU",
-      "FIMP"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Podgorica",
-      "https://en.wikipedia.org/wiki/Podgorica_Airport",
-      "TGD",
-      "LYPG"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome-Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Taba",
-      "https://en.wikipedia.org/wiki/Taba_International_Airport",
-      "TCP",
-      "HETB"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Tivat",
-      "https://en.wikipedia.org/wiki/Tivat_Airport",
-      "TIV",
-      "LYTV"
-    ],
-    [
-      "Varna",
-      "https://en.wikipedia.org/wiki/Varna_Airport",
-      "VAR",
-      "LBWN"
-    ],
-    [
-      "Volos",
-      "https://en.wikipedia.org/wiki/Volos_Airport",
-      "VOL",
-      "LGBL"
-    ],
-    [
-      "İzmir",
-      "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Freebird Airlines",
+        "Tailwind Airlines"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Burgas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burgas_Airport",
+      "codes": [
+        "BOJ",
+        "LBBG"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Chania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_International_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Comiso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comiso_Airport",
+      "codes": [
+        "CIY",
+        "LICB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Djerba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djerba–Zarzis_International_Airport",
+      "codes": [
+        "DJE",
+        "DTTJ"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Enfidha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enfidha–Hammamet_International_Airport",
+      "codes": [
+        "NBE",
+        "DTNH"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Funchal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeira_Airport",
+      "codes": [
+        "FNC",
+        "LPMA"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Mauritius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport",
+      "codes": [
+        "MRU",
+        "FIMP"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Podgorica",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Podgorica_Airport",
+      "codes": [
+        "TGD",
+        "LYPG"
+      ],
+      "airlines": [
+        "Air Montenegro"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome-Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "AeroItalia"
+      ]
+    },
+    {
+      "city": "Taba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taba_International_Airport",
+      "codes": [
+        "TCP",
+        "HETB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Tivat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tivat_Airport",
+      "codes": [
+        "TIV",
+        "LYTV"
+      ],
+      "airlines": [
+        "Air Montenegro"
+      ]
+    },
+    {
+      "city": "Varna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Varna_Airport",
+      "codes": [
+        "VAR",
+        "LBWN"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Volos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Volos_Airport",
+      "codes": [
+        "VOL",
+        "LGBL"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "İzmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroItalia": [
@@ -213,5 +334,7 @@
     "Tailwind Airlines": [
       "Antalya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:58Z",
+  "date-time-wikidata": "2026-04-07T18:41:31Z"
 }

@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "St. Michael",
-      "https://en.wikipedia.org/wiki/St._Michael_Airport",
-      "SMK",
-      "PAMK"
-    ],
-    [
-      "Unalakleet",
-      "https://en.wikipedia.org/wiki/Unalakleet_Airport",
-      "UNK",
-      "PAUN"
-    ]
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "St. Michael",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Michael_Airport",
+      "codes": [
+        "SMK",
+        "PAMK"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Unalakleet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unalakleet_Airport",
+      "codes": [
+        "UNK",
+        "PAUN"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -48,5 +64,7 @@
     "Ryan Air": [
       "Unalakleet"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:08Z",
+  "date-time-wikidata": "2026-04-24T00:26:11Z"
 }

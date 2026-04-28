@@ -21,30 +21,52 @@
     "Qeshm Air"
   ],
   "destinations": [
-    [
-      "Isfahan",
-      "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
-      "IFN",
-      "OIFM"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Isfahan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
+      "codes": [
+        "IFN",
+        "OIFM"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Karun Airlines",
+        "Pars Air",
+        "Qeshm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Karun Airlines": [
@@ -59,5 +81,7 @@
     "Qeshm Air": [
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:32Z",
+  "date-time-wikidata": "2026-01-17T15:47:36Z"
 }

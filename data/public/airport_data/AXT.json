@@ -25,42 +25,75 @@
     "Tigerair Taiwan"
   ],
   "destinations": [
-    [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
-      "NGO",
-      "RJGG"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Sapporo–Okadama",
-      "https://en.wikipedia.org/wiki/Okadama_Airport",
-      "OKD",
-      "RJCO"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Nagoya–Centrair",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "codes": [
+        "NGO",
+        "RJGG"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "Oriental Air Bridge"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "ANA Wings"
+      ]
+    },
+    {
+      "city": "Sapporo–Okadama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Okadama_Airport",
+      "codes": [
+        "OKD",
+        "RJCO"
+      ],
+      "airlines": [
+        "Hokkaido Air System"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "Tigerair Taiwan"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -86,5 +119,7 @@
     "Tigerair Taiwan": [
       "Taipei–Taoyuan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:42Z",
+  "date-time-wikidata": "2026-03-04T01:17:53Z"
 }

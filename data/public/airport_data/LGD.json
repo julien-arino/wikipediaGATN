@@ -20,36 +20,61 @@
     "FedEx Feeder"
   ],
   "destinations": [
-    [
-      "Hermiston",
-      "https://en.wikipedia.org/wiki/Hermiston_Municipal_Airport",
-      "HES",
-      "KHRI"
-    ],
-    [
-      "Klamath Falls",
-      "https://en.wikipedia.org/wiki/Crater_Lake-Klamath_Regional_Airport",
-      "LMT",
-      "KLMT"
-    ],
-    [
-      "Pendleton",
-      "https://en.wikipedia.org/wiki/Eastern_Oregon_Regional_Airport",
-      "PDT",
-      "KPDT"
-    ],
-    [
-      "Portland, OR",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Spokane",
-      "https://en.wikipedia.org/wiki/Spokane_International_Airport",
-      "GEG",
-      "KGEG"
-    ]
+    {
+      "city": "Hermiston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hermiston_Municipal_Airport",
+      "codes": [
+        "HES",
+        "KHRI"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Klamath Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crater_Lake-Klamath_Regional_Airport",
+      "codes": [
+        "LMT",
+        "KLMT"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Pendleton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eastern_Oregon_Regional_Airport",
+      "codes": [
+        "PDT",
+        "KPDT"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Portland, OR",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Spokane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "codes": [
+        "GEG",
+        "KGEG"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ameriflight": [
@@ -61,5 +86,7 @@
       "Pendleton",
       "Spokane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:02Z",
+  "date-time-wikidata": "2025-09-16T08:58:39Z"
 }

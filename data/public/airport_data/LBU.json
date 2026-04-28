@@ -23,36 +23,64 @@
     "Raya Airways"
   ],
   "destinations": [
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kuala Lumpur–Subang",
-      "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
-      "SZB",
-      "WMSA"
-    ],
-    [
-      "Miri",
-      "https://en.wikipedia.org/wiki/Miri_Airport",
-      "MYY",
-      "WBGR"
-    ]
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirBorneo",
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "MASkargo",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–Subang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
+      "codes": [
+        "SZB",
+        "WMSA"
+      ],
+      "airlines": [
+        "Raya Airways"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -73,5 +101,7 @@
     "Raya Airways": [
       "Kuala Lumpur–Subang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:53Z",
+  "date-time-wikidata": "2026-01-05T17:08:46Z"
 }

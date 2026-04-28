@@ -19,23 +19,35 @@
     "Cinnamon Air"
   ],
   "destinations": [
-    [
-      "Bandaranaike International Airport",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "China Bay Airport",
-      "https://en.wikipedia.org/wiki/China_Bay_Airport",
-      "TRR",
-      "VCCT"
-    ]
+    {
+      "city": "Bandaranaike International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "Cinnamon Air"
+      ]
+    },
+    {
+      "city": "China Bay Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/China_Bay_Airport",
+      "codes": [
+        "TRR",
+        "VCCT"
+      ],
+      "airlines": [
+        "Cinnamon Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cinnamon Air": [
       "Bandaranaike International Airport",
       "China Bay Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:35Z",
+  "date-time-wikidata": "2025-12-07T23:21:48Z"
 }

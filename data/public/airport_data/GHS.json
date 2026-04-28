@@ -7,6 +7,7 @@
   "lat": "-0.2025332",
   "lon": "115.7606001",
   "altitude": "101",
+  "continent": "Asia",
   "region": "East Kalimantan",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -19,24 +20,39 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_International_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Datadawai",
-      "https://en.wikipedia.org/wiki/Datadawai_Airport",
-      "DTD",
-      "WALJ"
-    ],
-    [
-      "Samarinda",
-      "https://en.wikipedia.org/wiki/Aji_Pangeran_Tumenggung_Pranoto_International_Airport",
-      "AAP",
-      "WALS"
-    ]
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_International_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Datadawai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Datadawai_Airport",
+      "codes": [
+        "DTD",
+        "WALJ"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Samarinda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aji_Pangeran_Tumenggung_Pranoto_International_Airport",
+      "codes": [
+        "AAP",
+        "WALS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -47,5 +63,6 @@
       "Balikpapan"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:11:33Z",
+  "date-time-wikidata": "2025-05-15T15:22:33Z"
 }

@@ -22,18 +22,30 @@
     "Mahan Air"
   ],
   "destinations": [
-    [
-      "Mashhad Shahid Hasheminejad International Airport",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Mehrabad International Airport",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Mashhad Shahid Hasheminejad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Caspian Airlines"
+      ]
+    },
+    {
+      "city": "Mehrabad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Chabahar Airlines",
+        "Iran Air",
+        "Mahan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caspian Airlines": [
@@ -48,5 +60,7 @@
     "Mahan Air": [
       "Mehrabad International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:52Z",
+  "date-time-wikidata": "2026-04-10T02:29:46Z"
 }

@@ -19,23 +19,35 @@
     "Hokkaido Air System"
   ],
   "destinations": [
-    [
-      "Hakodate",
-      "https://en.wikipedia.org/wiki/Hakodate_Airport",
-      "HKD",
-      "RJCH"
-    ],
-    [
-      "Sapporo–Okadama",
-      "https://en.wikipedia.org/wiki/Sapporo_Okadama_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Hakodate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hakodate_Airport",
+      "codes": [
+        "HKD",
+        "RJCH"
+      ],
+      "airlines": [
+        "Hokkaido Air System"
+      ]
+    },
+    {
+      "city": "Sapporo–Okadama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sapporo_Okadama_Airport",
+      "codes": [
+        "OKD",
+        "RJCO"
+      ],
+      "airlines": [
+        "Hokkaido Air System"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hokkaido Air System": [
       "Hakodate",
       "Sapporo–Okadama"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:31Z",
+  "date-time-wikidata": "2026-02-19T02:11:35Z"
 }

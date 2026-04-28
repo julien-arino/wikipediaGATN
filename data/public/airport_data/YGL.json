@@ -19,24 +19,39 @@
     "Air Inuit"
   ],
   "destinations": [
-    [
-      "Kuujjuarapik",
-      "https://en.wikipedia.org/wiki/Kuujjuarapik_Airport",
-      "YGW",
-      "CYGW"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Puvirnituq",
-      "https://en.wikipedia.org/wiki/Puvirnituq_Airport",
-      "YPX",
-      "CYPX"
-    ]
+    {
+      "city": "Kuujjuarapik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuujjuarapik_Airport",
+      "codes": [
+        "YGW",
+        "CYGW"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Puvirnituq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puvirnituq_Airport",
+      "codes": [
+        "YPX",
+        "CYPX"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Inuit": [
@@ -44,5 +59,7 @@
       "Montréal–Trudeau",
       "Puvirnituq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:29Z",
+  "date-time-wikidata": "2026-02-09T23:50:32Z"
 }

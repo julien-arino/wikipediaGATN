@@ -19,23 +19,35 @@
     "Kenn Borek Air"
   ],
   "destinations": [
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_Airport",
-      "YEV",
-      "CYEV"
-    ],
-    [
-      "Ulukhaktok",
-      "https://en.wikipedia.org/wiki/Ulukhaktok/Holman_Airport",
-      "YHI",
-      "CYHI"
-    ]
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "Kenn Borek Air"
+      ]
+    },
+    {
+      "city": "Ulukhaktok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ulukhaktok/Holman_Airport",
+      "codes": [
+        "YHI",
+        "CYHI"
+      ],
+      "airlines": [
+        "Kenn Borek Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Kenn Borek Air": [
       "Inuvik",
       "Ulukhaktok"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:43Z",
+  "date-time-wikidata": "2025-12-20T18:42:01Z"
 }

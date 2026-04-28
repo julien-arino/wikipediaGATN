@@ -26,66 +26,120 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa Bole International Airport",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Cairo International Airport",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Charles de Gaulle Airport",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Diori Hamani International Airport",
-      "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
-      "NIM",
-      "DRRN"
-    ],
-    [
-      "Douala International Airport",
-      "https://en.wikipedia.org/wiki/Douala_International_Airport",
-      "DLA",
-      "FKKD"
-    ],
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Lomé–Tokoin Airport",
-      "https://en.wikipedia.org/wiki/Lom%C3%A9%E2%80%93Tokoin_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Mohammed V International Airport",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Nnamdi Azikiwe International Airport",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ],
-    [
-      "Yaoundé Nsimalen International Airport",
-      "https://en.wikipedia.org/wiki/Yaound%C3%A9_Nsimalen_International_Airport",
-      "NSI",
-      "FKYS"
-    ]
+    {
+      "city": "Addis Ababa Bole International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Cairo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Charles de Gaulle Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Diori Hamani International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
+      "codes": [
+        "NIM",
+        "DRRN"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Douala International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douala_International_Airport",
+      "codes": [
+        "DLA",
+        "FKKD"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Côte d'Ivoire",
+        "Camair-Co"
+      ]
+    },
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Lomé–Tokoin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lom%C3%A9%E2%80%93Tokoin_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Mohammed V International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Nnamdi Azikiwe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air France"
+      ]
+    },
+    {
+      "city": "Yaoundé Nsimalen International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaound%C3%A9_Nsimalen_International_Airport",
+      "codes": [
+        "NSI",
+        "FKYS"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Camair-Co"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
@@ -118,5 +172,7 @@
       "Diori Hamani International Airport",
       "Istanbul Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:56Z",
+  "date-time-wikidata": "2026-03-30T04:00:37Z"
 }

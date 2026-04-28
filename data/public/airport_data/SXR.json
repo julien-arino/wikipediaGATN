@@ -23,66 +23,126 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Ahmedabad Airport",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Chandigarh Airport",
-      "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-      "IXC",
-      "VICG"
-    ],
-    [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Jammu Airport",
-      "https://en.wikipedia.org/wiki/Jammu_Airport",
-      "IXJ",
-      "VIJU"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Leh Airport",
-      "https://en.wikipedia.org/wiki/Leh_Airport",
-      "IXL",
-      "VILH"
-    ],
-    [
-      "Netaji Subhas Chandra Bose International Airport",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Rajiv Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Sri Guru Ram Dass Jee International Airport",
-      "https://en.wikipedia.org/wiki/Sri_Guru_Ram_Dass_Jee_International_Airport",
-      "ATQ",
-      "VIAR"
-    ]
+    {
+      "city": "Ahmedabad Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chandigarh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
+      "codes": [
+        "IXC",
+        "VICG"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chhatrapati Shivaji Maharaj International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Akasa Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Jammu Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jammu_Airport",
+      "codes": [
+        "IXJ",
+        "VIJU"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Leh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leh_Airport",
+      "codes": [
+        "IXL",
+        "VILH"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Netaji Subhas Chandra Bose International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rajiv Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Sri Guru Ram Dass Jee International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sri_Guru_Ram_Dass_Jee_International_Airport",
+      "codes": [
+        "ATQ",
+        "VIAR"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -115,5 +175,7 @@
       "Indira Gandhi International Airport",
       "Jammu Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:18Z",
+  "date-time-wikidata": "2026-04-21T03:34:18Z"
 }

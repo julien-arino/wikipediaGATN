@@ -20,24 +20,40 @@
     "Tassili Airlines"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "El Bayadh",
-      "https://en.wikipedia.org/wiki/El_Bayadh_Airport",
-      "EBH",
-      "DAOY"
-    ],
-    [
-      "Tindouf",
-      "https://en.wikipedia.org/wiki/Tindouf_Airport",
-      "TIN",
-      "DAOF"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "El Bayadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Bayadh_Airport",
+      "codes": [
+        "EBH",
+        "DAOY"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Tindouf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tindouf_Airport",
+      "codes": [
+        "TIN",
+        "DAOF"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -48,5 +64,7 @@
     "Tassili Airlines": [
       "Algiers"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:39Z",
+  "date-time-wikidata": "2025-09-14T03:21:43Z"
 }

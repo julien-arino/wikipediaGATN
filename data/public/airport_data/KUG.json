@@ -20,24 +20,42 @@
     "Skytrans Airlines"
   ],
   "destinations": [
-    [
-      "Badu Island",
-      "https://en.wikipedia.org/wiki/Badu_Island_Airport",
-      "BDD",
-      "YBAU"
-    ],
-    [
-      "Horn Island",
-      "https://en.wikipedia.org/wiki/Horn_Island_Airport",
-      "HID",
-      "YHID"
-    ],
-    [
-      "Mabuiag Island",
-      "https://en.wikipedia.org/wiki/Mabuiag_Island_Airport",
-      "UBB",
-      "YMAA"
-    ]
+    {
+      "city": "Badu Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Badu_Island_Airport",
+      "codes": [
+        "BDD",
+        "YBAU"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Horn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Island_Airport",
+      "codes": [
+        "HID",
+        "YHID"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Mabuiag Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mabuiag_Island_Airport",
+      "codes": [
+        "UBB",
+        "YMAA"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hinterland Aviation": [
@@ -50,5 +68,7 @@
       "Horn Island",
       "Mabuiag Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:49Z",
+  "date-time-wikidata": "2024-11-14T01:52:49Z"
 }

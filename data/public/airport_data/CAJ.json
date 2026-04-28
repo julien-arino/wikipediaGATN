@@ -19,24 +19,39 @@
     "Conviasa"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Ciudad Guayana",
-      "https://en.wikipedia.org/wiki/Manuel_Carlos_Piar_Guayana_Airport",
-      "CGU",
-      "SVPR"
-    ],
-    [
-      "Santa Elena de Urairén",
-      "https://en.wikipedia.org/wiki/Santa_Elena_de_Uairén_Airport",
-      "SNV",
-      "SVSE"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Ciudad Guayana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manuel_Carlos_Piar_Guayana_Airport",
+      "codes": [
+        "CGU",
+        "SVPR"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Santa Elena de Urairén",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uairén_Airport",
+      "codes": [
+        "SNV",
+        "SVSE"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Conviasa": [
@@ -44,5 +59,7 @@
       "Ciudad Guayana",
       "Santa Elena de Urairén"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:56Z",
+  "date-time-wikidata": "2026-01-24T21:23:58Z"
 }

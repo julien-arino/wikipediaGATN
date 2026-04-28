@@ -19,23 +19,35 @@
     "Bahamasair"
   ],
   "destinations": [
-    [
-      "Colonel Hill",
-      "https://en.wikipedia.org/wiki/Colonel_Hill_Airport",
-      "CRI",
-      "MYCI"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ]
+    {
+      "city": "Colonel Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colonel_Hill_Airport",
+      "codes": [
+        "CRI",
+        "MYCI"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bahamasair": [
       "Colonel Hill",
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:41Z",
+  "date-time-wikidata": "2024-05-26T23:17:02Z"
 }

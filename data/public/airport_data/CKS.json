@@ -21,30 +21,53 @@
     "Gol Linhas Aéreas"
   ],
   "destinations": [
-    [
-      "Belo Horizonte–Confins",
-      "https://en.wikipedia.org/wiki/Tancredo_Neves_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Belém",
-      "https://en.wikipedia.org/wiki/Belém/Val-de-Cans_International_Airport",
-      "BEL",
-      "SBBE"
-    ],
-    [
-      "Belém",
-      "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
-      "BEL",
-      "SBBE"
-    ],
-    [
-      "Ourilândia do Norte",
-      "https://en.wikipedia.org/wiki/Ourilândia_do_Norte",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tancredo_Neves_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belém/Val-de-Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Ourilândia do Norte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ourilândia_do_Norte",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -58,5 +81,7 @@
     "Gol Linhas Aéreas": [
       "Belo Horizonte–Confins"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:41Z",
+  "date-time-wikidata": "2026-01-17T11:46:28Z"
 }

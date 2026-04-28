@@ -26,138 +26,251 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Belgrade",
-      "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-      "BEG",
-      "LYBE"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
-      "BLQ",
-      "LIPE"
-    ],
-    [
-      "Bordeaux",
-      "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
-      "BOD",
-      "LFBD"
-    ],
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Florence",
-      "https://en.wikipedia.org/wiki/Florence_Airport",
-      "FLR",
-      "LIRQ"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Milan-Linate",
-      "https://en.wikipedia.org/wiki/Linate_Airport",
-      "LIN",
-      "LIML"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Sion",
-      "https://en.wikipedia.org/wiki/Sion_Airport",
-      "SIR",
-      "LSGS"
-    ],
-    [
-      "Skopje",
-      "https://en.wikipedia.org/wiki/Skopje_International_Airport",
-      "SKP",
-      "LWSK"
-    ],
-    [
-      "Sofia",
-      "https://en.wikipedia.org/wiki/Sofia_Airport",
-      "SOF",
-      "LBSF"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_Airport",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Turin",
-      "https://en.wikipedia.org/wiki/Turin_Airport",
-      "TRN",
-      "LIMF"
-    ],
-    [
-      "Venice",
-      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-      "VCE",
-      "LIPZ"
-    ],
-    [
-      "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ],
-    [
-      "Warsaw–Modlin",
-      "https://en.wikipedia.org/wiki/Warsaw_Modlin_Airport",
-      "WMI",
-      "EPMO"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
+      "codes": [
+        "BOD",
+        "LFBD"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Florence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Florence_Airport",
+      "codes": [
+        "FLR",
+        "LIRQ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Milan-Linate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML"
+      ],
+      "airlines": [
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "AeroItalia",
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Sion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sion_Airport",
+      "codes": [
+        "SIR",
+        "LSGS"
+      ],
+      "airlines": [
+        "Air Mountain"
+      ]
+    },
+    {
+      "city": "Skopje",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skopje_International_Airport",
+      "codes": [
+        "SKP",
+        "LWSK"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Sofia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sofia_Airport",
+      "codes": [
+        "SOF",
+        "LBSF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_Airport",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Turin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turin_Airport",
+      "codes": [
+        "TRN",
+        "LIMF"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Venice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "codes": [
+        "VCE",
+        "LIPZ"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "AeroItalia",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Warsaw–Modlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Modlin_Airport",
+      "codes": [
+        "WMI",
+        "EPMO"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroItalia": [
@@ -201,5 +314,7 @@
       "Tirana",
       "Warsaw–Modlin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:04Z",
+  "date-time-wikidata": "2026-04-07T06:21:29Z"
 }

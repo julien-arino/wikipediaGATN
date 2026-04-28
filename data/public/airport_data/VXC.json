@@ -19,24 +19,39 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Nampula",
-      "https://en.wikipedia.org/wiki/Nampula_Airport",
-      "APL",
-      "FQNP"
-    ],
-    [
-      "Quelimane",
-      "https://en.wikipedia.org/wiki/Quelimane_Airport",
-      "UEL",
-      "FQQL"
-    ]
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Nampula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nampula_Airport",
+      "codes": [
+        "APL",
+        "FQNP"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Quelimane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quelimane_Airport",
+      "codes": [
+        "UEL",
+        "FQQL"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LAM Mozambique Airlines": [
@@ -44,5 +59,7 @@
       "Nampula",
       "Quelimane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:05Z",
+  "date-time-wikidata": "2025-09-25T12:27:31Z"
 }

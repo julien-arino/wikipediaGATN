@@ -24,24 +24,47 @@
     "United Nigeria Airlines"
   ],
   "destinations": [
-    [
-      "Abuja",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ],
-    [
-      "Kano",
-      "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
-      "KAN",
-      "DNKN"
-    ],
-    [
-      "Lagos",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ]
+    {
+      "city": "Abuja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Arik Air",
+        "Max Air",
+        "Overland Airways",
+        "United Nigeria Airlines"
+      ]
+    },
+    {
+      "city": "Kano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
+      "codes": [
+        "KAN",
+        "DNKN"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Arik Air",
+        "United Nigeria Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero Contractors": [
@@ -67,5 +90,7 @@
       "Abuja",
       "Lagos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:15Z",
+  "date-time-wikidata": "2026-04-08T20:07:23Z"
 }

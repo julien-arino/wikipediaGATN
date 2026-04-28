@@ -21,30 +21,50 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Denver International Airport",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ],
-    [
-      "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Mesa Gateway Airport",
-      "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "AZA",
-      "KIWA"
-    ],
-    [
-      "Minneapolis–Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ]
+    {
+      "city": "Denver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "McCarran International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Mesa Gateway Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Minneapolis–Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -57,5 +77,7 @@
     "United Express": [
       "Denver International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:43Z",
+  "date-time-wikidata": "2026-03-28T16:06:15Z"
 }

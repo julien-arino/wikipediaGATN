@@ -24,36 +24,68 @@
     "Sunlight Air"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Clark",
-      "https://en.wikipedia.org/wiki/Clark_International_Airport",
-      "CRK",
-      "RPLC"
-    ],
-    [
-      "Davao",
-      "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
-      "DVO",
-      "RPMD"
-    ],
-    [
-      "El Nido",
-      "https://en.wikipedia.org/wiki/El_Nido_Airport",
-      "ENI",
-      "icao code not found"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "Cebu Pacific",
+        "PAL Express",
+        "Philippines AirAsia"
+      ]
+    },
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
+      "codes": [
+        "CRK",
+        "RPLC"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "Philippines AirAsia",
+        "Sunlight Air"
+      ]
+    },
+    {
+      "city": "Davao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
+      "codes": [
+        "DVO",
+        "RPMD"
+      ],
+      "airlines": [
+        "Cebu Pacific"
+      ]
+    },
+    {
+      "city": "El Nido",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Nido_Airport",
+      "codes": [
+        "ENI",
+        "icao code not found"
+      ],
+      "airlines": [
+        "AirSWIFT"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express",
+        "Philippines AirAsia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirSWIFT": [
@@ -80,5 +112,7 @@
     "Sunlight Air": [
       "Clark"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:27Z",
+  "date-time-wikidata": "2026-04-26T05:51:15Z"
 }

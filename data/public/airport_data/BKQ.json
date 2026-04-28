@@ -19,23 +19,35 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Longreach",
-      "https://en.wikipedia.org/wiki/Longreach_Airport",
-      "LRE",
-      "YLRE"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Longreach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Longreach_Airport",
+      "codes": [
+        "LRE",
+        "YLRE"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
       "Brisbane",
       "Longreach"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:52Z",
+  "date-time-wikidata": "2024-01-25T12:28:41Z"
 }

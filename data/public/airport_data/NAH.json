@@ -21,30 +21,52 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Manado",
-      "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
-      "MDC",
-      "WAMM"
-    ],
-    [
-      "Melongguane",
-      "https://en.wikipedia.org/wiki/Melangguane_Airport",
-      "MNA",
-      "WAMN"
-    ],
-    [
-      "Miangas",
-      "https://en.wikipedia.org/wiki/Miangas_Airport",
-      "IAX",
-      "WAMS"
-    ],
-    [
-      "Siau",
-      "https://en.wikipedia.org/wiki/Taman_Bung_Karno_Airport",
-      "BRG",
-      "WAMO"
-    ]
+    {
+      "city": "Manado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
+      "codes": [
+        "MDC",
+        "WAMM"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Melongguane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melangguane_Airport",
+      "codes": [
+        "MNA",
+        "WAMN"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Miangas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miangas_Airport",
+      "codes": [
+        "IAX",
+        "WAMS"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    },
+    {
+      "city": "Siau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taman_Bung_Karno_Airport",
+      "codes": [
+        "BRG",
+        "WAMO"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
@@ -59,5 +81,7 @@
       "Manado",
       "Melongguane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:40Z",
+  "date-time-wikidata": "2026-03-09T17:24:35Z"
 }

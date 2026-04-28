@@ -36,120 +36,240 @@
     "i-Fly Air"
   ],
   "destinations": [
-    [
-      "Adado",
-      "https://en.wikipedia.org/wiki/Adado_Airport",
-      "AAD",
-      "HCAD"
-    ],
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Baidoa",
-      "https://en.wikipedia.org/wiki/Baidoa_Airport",
-      "BIB",
-      "HCMB"
-    ],
-    [
-      "Bosaso",
-      "https://en.wikipedia.org/wiki/Bosaso_Airport",
-      "BSA",
-      "HCMF"
-    ],
-    [
-      "Djibouti",
-      "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
-      "JIB",
-      "HDAM"
-    ],
-    [
-      "Djibouti",
-      "https://en.wikipedia.org/wiki/Djibouti–Ambouli_International_Airport",
-      "JIB",
-      "HDAM"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Galkayo",
-      "https://en.wikipedia.org/wiki/Abdullahi_Yusuf_International_Airport",
-      "GLK",
-      "HCMR"
-    ],
-    [
-      "Garowe",
-      "https://en.wikipedia.org/wiki/Garowe_Airport",
-      "GGR",
-      "HCMW"
-    ],
-    [
-      "Guriel",
-      "https://en.wikipedia.org/wiki/Guriel_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Hargeisa",
-      "https://en.wikipedia.org/wiki/Hargeisa_Airport",
-      "HGA",
-      "HCMH"
-    ],
-    [
-      "Hargeisa",
-      "https://en.wikipedia.org/wiki/Hargeisa_International_Airport",
-      "HGA",
-      "HCMH"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdul_Aziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kismayo",
-      "https://en.wikipedia.org/wiki/Kismayo_Airport",
-      "KMU",
-      "HCMK"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ]
+    {
+      "city": "Adado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adado_Airport",
+      "codes": [
+        "AAD",
+        "HCAD"
+      ],
+      "airlines": [
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Baidoa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baidoa_Airport",
+      "codes": [
+        "BIB",
+        "HCMB"
+      ],
+      "airlines": [
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Bosaso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bosaso_Airport",
+      "codes": [
+        "BSA",
+        "HCMF"
+      ],
+      "airlines": [
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Djibouti",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
+      "codes": [
+        "JIB",
+        "HDAM"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Egyptair",
+        "Jubba Airways",
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Djibouti",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti–Ambouli_International_Airport",
+      "codes": [
+        "JIB",
+        "HDAM"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Egyptair",
+        "Jubba Airways",
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Galkayo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abdullahi_Yusuf_International_Airport",
+      "codes": [
+        "GLK",
+        "HCMR"
+      ],
+      "airlines": [
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Garowe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Garowe_Airport",
+      "codes": [
+        "GGR",
+        "HCMW"
+      ],
+      "airlines": [
+        "Daallo Airlines",
+        "Freedom Airline Express",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Guriel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guriel_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Hargeisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hargeisa_Airport",
+      "codes": [
+        "HGA",
+        "HCMH"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Hargeisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hargeisa_International_Airport",
+      "codes": [
+        "HGA",
+        "HCMH"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "MNG Airlines",
+        "Turkish Airlines",
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdul_Aziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Kismayo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kismayo_Airport",
+      "codes": [
+        "KMU",
+        "HCMK"
+      ],
+      "airlines": [
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Daallo Airlines",
+        "Freedom Airline Express",
+        "Jubba Airways",
+        "Kenya Airways",
+        "Kenya Airways Cargo",
+        "i-Fly Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Djibouti": [
@@ -223,5 +343,7 @@
     "Turkish Cargo": [
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:40Z",
+  "date-time-wikidata": "2026-04-12T19:56:34Z"
 }

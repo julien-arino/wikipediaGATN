@@ -19,30 +19,50 @@
     "Rise Air"
   ],
   "destinations": [
-    [
-      "Fond-du-Lac",
-      "https://en.wikipedia.org/wiki/Fond-du-Lac_Airport",
-      "ZFD",
-      "CZFD"
-    ],
-    [
-      "Prince Albert",
-      "https://en.wikipedia.org/wiki/Prince_Albert_(Glass_Field)_Airport",
-      "YPA",
-      "CYPA"
-    ],
-    [
-      "Saskatoon",
-      "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
-      "YXE",
-      "CYXE"
-    ],
-    [
-      "Uranium City",
-      "https://en.wikipedia.org/wiki/Uranium_City_Airport",
-      "YBE",
-      "CYBE"
-    ]
+    {
+      "city": "Fond-du-Lac",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fond-du-Lac_Airport",
+      "codes": [
+        "ZFD",
+        "CZFD"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    },
+    {
+      "city": "Prince Albert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Albert_(Glass_Field)_Airport",
+      "codes": [
+        "YPA",
+        "CYPA"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    },
+    {
+      "city": "Saskatoon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
+      "codes": [
+        "YXE",
+        "CYXE"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    },
+    {
+      "city": "Uranium City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uranium_City_Airport",
+      "codes": [
+        "YBE",
+        "CYBE"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rise Air": [
@@ -51,5 +71,7 @@
       "Saskatoon",
       "Uranium City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:41Z",
+  "date-time-wikidata": "2025-12-20T18:48:15Z"
 }

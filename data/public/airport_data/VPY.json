@@ -19,24 +19,39 @@
     "LAM Mozambique Airlines"
   ],
   "destinations": [
-    [
-      "Beira",
-      "https://en.wikipedia.org/wiki/Beira_Airport",
-      "BEW",
-      "FQBR"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Xai-Xai",
-      "https://en.wikipedia.org/wiki/Xai-Xai_Airport",
-      "VJB",
-      "FQXA"
-    ]
+    {
+      "city": "Beira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beira_Airport",
+      "codes": [
+        "BEW",
+        "FQBR"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Xai-Xai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xai-Xai_Airport",
+      "codes": [
+        "VJB",
+        "FQXA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LAM Mozambique Airlines": [
@@ -44,5 +59,7 @@
       "Maputo",
       "Xai-Xai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:45Z",
+  "date-time-wikidata": "2024-09-20T16:38:57Z"
 }

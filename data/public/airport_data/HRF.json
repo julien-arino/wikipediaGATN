@@ -20,24 +20,40 @@
     "Manta Air"
   ],
   "destinations": [
-    [
-      "Dharavandhoo Airport",
-      "https://en.wikipedia.org/wiki/Dharavandhoo_Airport",
-      "DRV",
-      "VRMD"
-    ],
-    [
-      "Hanimaadhoo International Airport",
-      "https://en.wikipedia.org/wiki/Hanimaadhoo_International_Airport",
-      "HAQ",
-      "VRMH"
-    ],
-    [
-      "Velana International Airport",
-      "https://en.wikipedia.org/wiki/Velana_International_Airport",
-      "MLE",
-      "VRMM"
-    ]
+    {
+      "city": "Dharavandhoo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dharavandhoo_Airport",
+      "codes": [
+        "DRV",
+        "VRMD"
+      ],
+      "airlines": [
+        "Manta Air"
+      ]
+    },
+    {
+      "city": "Hanimaadhoo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanimaadhoo_International_Airport",
+      "codes": [
+        "HAQ",
+        "VRMH"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    },
+    {
+      "city": "Velana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "Maldivian (airline)",
+        "Manta Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maldivian (airline)": [
@@ -48,5 +64,7 @@
       "Dharavandhoo Airport",
       "Velana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:27Z",
+  "date-time-wikidata": "2025-03-24T19:02:49Z"
 }

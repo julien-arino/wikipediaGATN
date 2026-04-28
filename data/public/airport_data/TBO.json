@@ -19,23 +19,35 @@
     "Air Tanzania"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/JNIA",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Kigoma",
-      "https://en.wikipedia.org/wiki/Kigoma_Airport",
-      "TKQ",
-      "HTKA"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/JNIA",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Kigoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigoma_Airport",
+      "codes": [
+        "TKQ",
+        "HTKA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
       "Dar es Salaam",
       "Kigoma"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:21Z",
+  "date-time-wikidata": "2026-04-19T18:32:23Z"
 }

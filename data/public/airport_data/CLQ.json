@@ -20,18 +20,28 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Felipe Ángeles International Airport",
-      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tijuana International Airport",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ]
+    {
+      "city": "Felipe Ángeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Tijuana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico Connect": [
@@ -40,5 +50,7 @@
     "Volaris": [
       "Tijuana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:50Z",
+  "date-time-wikidata": "2026-02-18T19:52:58Z"
 }

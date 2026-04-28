@@ -21,24 +21,43 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Manthali",
-      "https://en.wikipedia.org/wiki/Ramechhap_Airport",
-      "RHP",
-      "VNRC"
-    ],
-    [
-      "Phaplu",
-      "https://en.wikipedia.org/wiki/Phaplu_Airport",
-      "PPL",
-      "VNPL"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    },
+    {
+      "city": "Manthali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramechhap_Airport",
+      "codes": [
+        "RHP",
+        "VNRC"
+      ],
+      "airlines": [
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    },
+    {
+      "city": "Phaplu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phaplu_Airport",
+      "codes": [
+        "PPL",
+        "VNPL"
+      ],
+      "airlines": [
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sita Air": [
@@ -54,5 +73,7 @@
       "Manthali",
       "Phaplu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:06Z",
+  "date-time-wikidata": "2026-03-19T07:41:22Z"
 }

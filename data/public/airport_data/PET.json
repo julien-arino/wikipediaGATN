@@ -21,30 +21,50 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Florianópolis",
-      "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-      "FLN",
-      "SBFL"
-    ],
-    [
-      "Porto Alegre",
-      "https://en.wikipedia.org/wiki/Salgado_Filho_International_Airport",
-      "POA",
-      "SBPA"
-    ],
-    [
-      "São Paulo–Congonhas",
-      "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
-      "CGH",
-      "SBSP"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Alegre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salgado_Filho_International_Airport",
+      "codes": [
+        "POA",
+        "SBPA"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Congonhas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
+      "codes": [
+        "CGH",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -57,5 +77,7 @@
     "LATAM Brasil": [
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:57Z",
+  "date-time-wikidata": "2026-02-12T20:03:28Z"
 }

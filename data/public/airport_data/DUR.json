@@ -7,6 +7,7 @@
   "lat": "-29.6120445",
   "lon": "31.1150509",
   "altitude": "93",
+  "continent": "Africa",
   "region": "KwaZulu-Natal",
   "country_alpha3": "ZAF",
   "country_name": "South Africa",
@@ -26,90 +27,166 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Bloemfontein Airport",
-      "https://en.wikipedia.org/wiki/Bloemfontein_Airport",
-      "BFN",
-      "FABL"
-    ],
-    [
-      "Cape Town International Airport",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Chief Dawid Stuurman International Airport",
-      "https://en.wikipedia.org/wiki/Chief_Dawid_Stuurman_International_Airport",
-      "PLZ",
-      "FAPE"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "East London Airport",
-      "https://en.wikipedia.org/wiki/East_London_Airport",
-      "ELS",
-      "FAEL"
-    ],
-    [
-      "George Airport",
-      "https://en.wikipedia.org/wiki/George_Airport",
-      "GRJ",
-      "FAGG"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "King Mswati III International Airport",
-      "https://en.wikipedia.org/wiki/King_Mswati_III_International_Airport",
-      "SHO",
-      "FDSK"
-    ],
-    [
-      "Kruger Mpumalanga International Airport",
-      "https://en.wikipedia.org/wiki/Kruger_Mpumalanga_International_Airport",
-      "MQP",
-      "FAKN"
-    ],
-    [
-      "Lanseria International Airport",
-      "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
-      "HLA",
-      "FALA"
-    ],
-    [
-      "O. R. Tambo International Airport",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Robert Gabriel Mugabe International Airport",
-      "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
-      "HRE",
-      "FVRG"
-    ],
-    [
-      "Saint-Pierre Pierrefonds Airport",
-      "https://en.wikipedia.org/wiki/Saint-Pierre_Pierrefonds_Airport",
-      "ZSE",
-      "FMEP"
-    ]
+    {
+      "city": "Bloemfontein Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bloemfontein_Airport",
+      "codes": [
+        "BFN",
+        "FABL"
+      ],
+      "airlines": [
+        "CemAir"
+      ]
+    },
+    {
+      "city": "Cape Town International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "CemAir",
+        "FlySafair",
+        "LIFT (airline)"
+      ]
+    },
+    {
+      "city": "Chief Dawid Stuurman International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chief_Dawid_Stuurman_International_Airport",
+      "codes": [
+        "PLZ",
+        "FAPE"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates (airline)"
+      ]
+    },
+    {
+      "city": "East London Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_London_Airport",
+      "codes": [
+        "ELS",
+        "FAEL"
+      ],
+      "airlines": [
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "George Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Airport",
+      "codes": [
+        "GRJ",
+        "FAGG"
+      ],
+      "airlines": [
+        "CemAir"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "King Mswati III International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Mswati_III_International_Airport",
+      "codes": [
+        "SHO",
+        "FDSK"
+      ],
+      "airlines": [
+        "Eswatini Air"
+      ]
+    },
+    {
+      "city": "Kruger Mpumalanga International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kruger_Mpumalanga_International_Airport",
+      "codes": [
+        "MQP",
+        "FAKN"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Lanseria International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
+      "codes": [
+        "HLA",
+        "FALA"
+      ],
+      "airlines": [
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "O. R. Tambo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair",
+        "LIFT (airline)",
+        "South African Airways"
+      ]
+    },
+    {
+      "city": "Robert Gabriel Mugabe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
+      "codes": [
+        "HRE",
+        "FVRG"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Saint-Pierre Pierrefonds Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Pierre_Pierrefonds_Airport",
+      "codes": [
+        "ZSE",
+        "FMEP"
+      ],
+      "airlines": []
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -152,5 +229,6 @@
       "Istanbul Airport"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:15:13Z",
+  "date-time-wikidata": "2026-04-18T13:11:38Z"
 }

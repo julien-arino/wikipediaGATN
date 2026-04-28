@@ -20,78 +20,138 @@
     "Avelo Airlines"
   ],
   "destinations": [
-    [
-      "Albany International Airport",
-      "https://en.wikipedia.org/wiki/Albany_International_Airport",
-      "ALB",
-      "KALB"
-    ],
-    [
-      "Cleveland Hopkins International Airport",
-      "https://en.wikipedia.org/wiki/Cleveland_Hopkins_International_Airport",
-      "CLE",
-      "KCLE"
-    ],
-    [
-      "Fort Lauderdale–Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Greater Rochester International Airport",
-      "https://en.wikipedia.org/wiki/Greater_Rochester_International_Airport",
-      "ROC",
-      "KROC"
-    ],
-    [
-      "Indianapolis International Airport",
-      "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
-      "IND",
-      "KIND"
-    ],
-    [
-      "Lakeland Linder International Airport",
-      "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
-      "LAL",
-      "KLAL"
-    ],
-    [
-      "Long Island MacArthur Airport",
-      "https://en.wikipedia.org/wiki/Long_Island_MacArthur_Airport",
-      "ISP",
-      "KISP"
-    ],
-    [
-      "Luis Muñoz Marín International Airport",
-      "https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Orlando Sanford International Airport",
-      "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
-      "SFB",
-      "KSFB"
-    ],
-    [
-      "Punta Gorda Airport (Florida)",
-      "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "PGD",
-      "KPGD"
-    ],
-    [
-      "St. Pete–Clearwater International Airport",
-      "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
-      "PIE",
-      "KPIE"
-    ],
-    [
-      "Tweed New Haven Airport",
-      "https://en.wikipedia.org/wiki/Tweed_New_Haven_Airport",
-      "HVN",
-      "KHVN"
-    ]
+    {
+      "city": "Albany International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albany_International_Airport",
+      "codes": [
+        "ALB",
+        "KALB"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Cleveland Hopkins International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Hopkins_International_Airport",
+      "codes": [
+        "CLE",
+        "KCLE"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale–Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Greater Rochester International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Rochester_International_Airport",
+      "codes": [
+        "ROC",
+        "KROC"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Indianapolis International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
+      "codes": [
+        "IND",
+        "KIND"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Lakeland Linder International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
+      "codes": [
+        "LAL",
+        "KLAL"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Long Island MacArthur Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Long_Island_MacArthur_Airport",
+      "codes": [
+        "ISP",
+        "KISP"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Luis Muñoz Marín International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Orlando Sanford International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "codes": [
+        "SFB",
+        "KSFB"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Punta Gorda Airport (Florida)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "codes": [
+        "PGD",
+        "KPGD"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "St. Pete–Clearwater International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "codes": [
+        "PIE",
+        "KPIE"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Tweed New Haven Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tweed_New_Haven_Airport",
+      "codes": [
+        "HVN",
+        "KHVN"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -110,5 +170,7 @@
       "Luis Muñoz Marín International Airport",
       "Tweed New Haven Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:50Z",
+  "date-time-wikidata": "2026-03-18T16:15:33Z"
 }

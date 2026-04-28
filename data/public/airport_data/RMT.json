@@ -19,23 +19,35 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Rurutu",
-      "https://en.wikipedia.org/wiki/Rurutu_Airport",
-      "RUR",
-      "NTAR"
-    ]
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Rurutu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rurutu_Airport",
+      "codes": [
+        "RUR",
+        "NTAR"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
       "Papeete",
       "Rurutu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:17Z",
+  "date-time-wikidata": "2025-04-01T22:13:05Z"
 }

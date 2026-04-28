@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Ikerasak",
-      "https://en.wikipedia.org/wiki/Ikerasak_Heliport",
-      "IKE",
-      "BGIA"
-    ],
-    [
-      "Uummannaq",
-      "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
-      "UMD",
-      "BGUM"
-    ]
+    {
+      "city": "Ikerasak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ikerasak_Heliport",
+      "codes": [
+        "IKE",
+        "BGIA"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Uummannaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
+      "codes": [
+        "UMD",
+        "BGUM"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Ikerasak",
       "Uummannaq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:57Z",
+  "date-time-wikidata": "2025-03-29T21:24:20Z"
 }

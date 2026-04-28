@@ -21,18 +21,29 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Melbourne Essendon Airport",
-      "https://en.wikipedia.org/wiki/Melbourne_Essendon_Airport",
-      "MEB",
-      "YMEN"
-    ]
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne Essendon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Essendon_Airport",
+      "codes": [
+        "MEB",
+        "YMEN"
+      ],
+      "airlines": [
+        "PawMobile"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -44,5 +55,7 @@
     "PawMobile": [
       "Melbourne Essendon Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:46Z",
+  "date-time-wikidata": "2026-03-23T09:04:52Z"
 }

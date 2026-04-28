@@ -19,23 +19,35 @@
     "Scandinavian Airlines"
   ],
   "destinations": [
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Sälen–Trysil",
-      "https://en.wikipedia.org/wiki/Sälen/Scandinavian_Mountains_Airport",
-      "SCR",
-      "ESKS"
-    ]
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Sälen–Trysil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sälen/Scandinavian_Mountains_Airport",
+      "codes": [
+        "SCR",
+        "ESKS"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Scandinavian Airlines": [
       "Stockholm–Arlanda",
       "Sälen–Trysil"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:24Z",
+  "date-time-wikidata": "2025-09-16T10:20:27Z"
 }

@@ -19,23 +19,35 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Sorong",
-      "https://en.wikipedia.org/wiki/Domine_Eduard_Osok_Airport",
-      "SOQ",
-      "WASS"
-    ],
-    [
-      "Ternate",
-      "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
-      "TTE",
-      "WAEE"
-    ]
+    {
+      "city": "Sorong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Domine_Eduard_Osok_Airport",
+      "codes": [
+        "SOQ",
+        "WASS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Ternate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
+      "codes": [
+        "TTE",
+        "WAEE"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Sorong",
       "Ternate"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:52Z",
+  "date-time-wikidata": "2024-05-11T21:20:22Z"
 }

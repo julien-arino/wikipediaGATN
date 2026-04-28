@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Nuugaatsiaq",
-      "https://en.wikipedia.org/wiki/Nuugaatsiaq_Heliport",
-      "JUU",
-      "BGNQ"
-    ],
-    [
-      "Uummannaq",
-      "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
-      "UMD",
-      "BGUM"
-    ]
+    {
+      "city": "Nuugaatsiaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuugaatsiaq_Heliport",
+      "codes": [
+        "JUU",
+        "BGNQ"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Uummannaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uummannaq_Heliport",
+      "codes": [
+        "UMD",
+        "BGUM"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Nuugaatsiaq",
       "Uummannaq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:48Z",
+  "date-time-wikidata": "2024-10-08T20:03:42Z"
 }

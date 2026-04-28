@@ -21,36 +21,68 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Antofagasta",
-      "https://en.wikipedia.org/wiki/Cerro_Moreno_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Arica",
-      "https://en.wikipedia.org/wiki/Chacalluta_International_Airport",
-      "ARI",
-      "SCAR"
-    ],
-    [
-      "Calama",
-      "https://en.wikipedia.org/wiki/El_Loa_Airport",
-      "CJC",
-      "SCCF"
-    ],
-    [
-      "Iquique",
-      "https://en.wikipedia.org/wiki/Diego_Aracena_International_Airport",
-      "IQQ",
-      "SCDA"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Antofagasta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cerro_Moreno_International_Airport",
+      "codes": [
+        "ANF",
+        "SCFA"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Arica",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chacalluta_International_Airport",
+      "codes": [
+        "ARI",
+        "SCAR"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    },
+    {
+      "city": "Calama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Loa_Airport",
+      "codes": [
+        "CJC",
+        "SCCF"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Iquique",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diego_Aracena_International_Airport",
+      "codes": [
+        "IQQ",
+        "SCDA"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Chile": [
@@ -71,5 +103,7 @@
       "Iquique",
       "Santiago de Chile"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:28Z",
+  "date-time-wikidata": "2025-09-16T08:35:27Z"
 }

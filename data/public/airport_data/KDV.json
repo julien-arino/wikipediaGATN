@@ -19,23 +19,35 @@
     "Fiji Link"
   ],
   "destinations": [
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Suva",
-      "https://en.wikipedia.org/wiki/Nausori_International_Airport",
-      "SUV",
-      "NFNA"
-    ]
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Link"
+      ]
+    },
+    {
+      "city": "Suva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nausori_International_Airport",
+      "codes": [
+        "SUV",
+        "NFNA"
+      ],
+      "airlines": [
+        "Fiji Link"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fiji Link": [
       "Nadi",
       "Suva"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:18Z",
+  "date-time-wikidata": "2026-03-03T22:03:33Z"
 }

@@ -21,18 +21,29 @@
     "Northsky Air"
   ],
   "destinations": [
-    [
-      "Basco",
-      "https://en.wikipedia.org/wiki/Basco_Airport",
-      "BSO",
-      "RPUO"
-    ],
-    [
-      "Tuguegarao",
-      "https://en.wikipedia.org/wiki/Tuguegarao_Airport",
-      "TUG",
-      "RPUT"
-    ]
+    {
+      "city": "Basco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basco_Airport",
+      "codes": [
+        "BSO",
+        "RPUO"
+      ],
+      "airlines": [
+        "Aerospeed Air Transport Services",
+        "Fliteline Airways"
+      ]
+    },
+    {
+      "city": "Tuguegarao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuguegarao_Airport",
+      "codes": [
+        "TUG",
+        "RPUT"
+      ],
+      "airlines": [
+        "Northsky Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fliteline Airways": [
@@ -44,5 +55,7 @@
     "Northsky Air": [
       "Tuguegarao"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:52Z",
+  "date-time-wikidata": "2026-03-29T16:58:12Z"
 }

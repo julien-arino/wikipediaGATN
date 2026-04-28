@@ -19,24 +19,39 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Vijayawada Airport",
-      "https://en.wikipedia.org/wiki/Vijayawada_Airport",
-      "VGA",
-      "VOBZ"
-    ],
-    [
-      "Visakhapatnam Airport",
-      "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
-      "VTZ",
-      "VOVZ"
-    ]
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Vijayawada Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vijayawada_Airport",
+      "codes": [
+        "VGA",
+        "VOBZ"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Visakhapatnam Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
+      "codes": [
+        "VTZ",
+        "VOVZ"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -44,5 +59,7 @@
       "Vijayawada Airport",
       "Visakhapatnam Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:52Z",
+  "date-time-wikidata": "2026-02-06T05:32:08Z"
 }

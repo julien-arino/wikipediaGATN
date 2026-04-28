@@ -21,36 +21,61 @@
     "Shenzhen Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Haikou Meilan International Airport",
-      "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
-      "HAK",
-      "ZJHK"
-    ],
-    [
-      "Shenzhen Bao'an International Airport",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Shenzhen Airlines"
+      ]
+    },
+    {
+      "city": "Haikou Meilan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen Bao'an International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Shenzhen Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -64,5 +89,7 @@
       "Chengdu Tianfu International Airport",
       "Shenzhen Bao'an International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:09Z",
+  "date-time-wikidata": "2025-10-29T06:59:16Z"
 }

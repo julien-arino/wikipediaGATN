@@ -21,42 +21,73 @@
     "Cayman Airways"
   ],
   "destinations": [
-    [
-      "Grand Cayman",
-      "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
-      "GCM",
-      "MWCR"
-    ],
-    [
-      "Guanaja",
-      "https://en.wikipedia.org/wiki/Guanaja_Airport",
-      "GJA",
-      "MHNJ"
-    ],
-    [
-      "Roatan",
-      "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
-      "RTB",
-      "MHRO"
-    ],
-    [
-      "San Pedro Sula",
-      "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
-      "SAP",
-      "MHLM"
-    ],
-    [
-      "Tegucigalpa",
-      "https://en.wikipedia.org/wiki/Toncontín_International_Airport",
-      "TGU",
-      "MHTG"
-    ],
-    [
-      "Útila",
-      "https://en.wikipedia.org/wiki/Útila_Airport",
-      "UII",
-      "MHUT"
-    ]
+    {
+      "city": "Grand Cayman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
+      "codes": [
+        "GCM",
+        "MWCR"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    },
+    {
+      "city": "Guanaja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guanaja_Airport",
+      "codes": [
+        "GJA",
+        "MHNJ"
+      ],
+      "airlines": [
+        "CM Airlines"
+      ]
+    },
+    {
+      "city": "Roatan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
+      "codes": [
+        "RTB",
+        "MHRO"
+      ],
+      "airlines": [
+        "Aerolineas Sosa",
+        "CM Airlines"
+      ]
+    },
+    {
+      "city": "San Pedro Sula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
+      "codes": [
+        "SAP",
+        "MHLM"
+      ],
+      "airlines": [
+        "Aerolineas Sosa"
+      ]
+    },
+    {
+      "city": "Tegucigalpa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toncontín_International_Airport",
+      "codes": [
+        "TGU",
+        "MHTG"
+      ],
+      "airlines": [
+        "Aerolineas Sosa"
+      ]
+    },
+    {
+      "city": "Útila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Útila_Airport",
+      "codes": [
+        "UII",
+        "MHUT"
+      ],
+      "airlines": [
+        "CM Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolineas Sosa": [
@@ -72,5 +103,7 @@
       "Roatan",
       "Útila"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:54Z",
+  "date-time-wikidata": "2026-03-18T11:18:23Z"
 }

@@ -19,30 +19,50 @@
     "Turkmenistan Airlines"
   ],
   "destinations": [
-    [
-      "Ashgabat",
-      "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
-      "ASB",
-      "UTAA"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Mary",
-      "https://en.wikipedia.org/wiki/Mary_International_Airport",
-      "MYP",
-      "UTAM"
-    ],
-    [
-      "Türkmenbaşy",
-      "https://en.wikipedia.org/wiki/Turkmenbashi_International_Airport",
-      "KRW",
-      "UTAK"
-    ]
+    {
+      "city": "Ashgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Mary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mary_International_Airport",
+      "codes": [
+        "MYP",
+        "UTAM"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Türkmenbaşy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turkmenbashi_International_Airport",
+      "codes": [
+        "KRW",
+        "UTAK"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Turkmenistan Airlines": [
@@ -51,5 +71,7 @@
       "Mary",
       "Türkmenbaşy"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:04Z",
+  "date-time-wikidata": "2026-03-05T00:15:45Z"
 }

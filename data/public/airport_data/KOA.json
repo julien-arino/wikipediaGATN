@@ -13,94 +13,122 @@
   "country_name": "United States",
   "subdivision_code": "HI",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kona_International_Airport",
-  "number_airlines": 7,
-  "outdegree": 12,
+  "number_airlines": 8,
+  "outdegree": 9,
   "airlines": [
     "Alaska Airlines",
     "American Airlines",
     "Delta Air Lines",
+    "Hawaiian Airlines",
     "Mokulele Airlines",
     "Southwest Airlines",
     "United Airlines",
     "WestJet"
   ],
   "destinations": [
-    [
-      "Dallas Fort Worth International Airport",
-      "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "DFW",
-      "KDFW"
-    ],
-    [
-      "Denver",
-      "https://en.wikipedia.org/wiki/Denver",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Los Angeles International Airport",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Sacramento International Airport",
-      "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
-      "SMF",
-      "KSMF"
-    ],
-    [
-      "Salt Lake City International Airport",
-      "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "SLC",
-      "KSLC"
-    ],
-    [
-      "San Fransisco",
-      "https://en.wikipedia.org/wiki/San_Fransisco",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "San José International Airport",
-      "https://en.wikipedia.org/wiki/San_Jos%C3%A9_International_Airport",
-      "SJC",
-      "KSJC"
-    ],
-    [
-      "Seattle–Tacoma International Airport",
-      "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "Vancouver International Airport",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Waimea, Kauaʻi County, Hawaii",
-      "https://en.wikipedia.org/wiki/Waimea,_Kaua%CA%BBi_County,_Hawaii",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Dallas Fort Worth International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Los Angeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Sacramento International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "Hawaiian Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "San José International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jos%C3%A9_International_Airport",
+      "codes": [
+        "SJC",
+        "KSJC"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Seattle–Tacoma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Vancouver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Waimea, Kauaʻi County, Hawaii",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waimea,_Kaua%CA%BBi_County,_Hawaii",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Mokulele Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Sacramento International Airport",
       "San José International Airport"
     ],
     "American Airlines": [
@@ -111,6 +139,9 @@
       "Salt Lake City International Airport",
       "Seattle–Tacoma International Airport"
     ],
+    "Hawaiian Airlines": [
+      "Sacramento International Airport"
+    ],
     "Mokulele Airlines": [
       "Waimea, Kauaʻi County, Hawaii"
     ],
@@ -118,13 +149,12 @@
       "Sacramento International Airport"
     ],
     "United Airlines": [
-      "Denver",
-      "Los Angeles",
-      "O'Hare International Airport",
-      "San Fransisco"
+      "O'Hare International Airport"
     ],
     "WestJet": [
       "Vancouver International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:59Z",
+  "date-time-wikidata": "2026-04-27T19:31:00Z"
 }

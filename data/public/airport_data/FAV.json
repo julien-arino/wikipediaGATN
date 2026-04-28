@@ -20,30 +20,52 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Kauehi",
-      "https://en.wikipedia.org/wiki/Kauehi_Aerodrome",
-      "KHZ",
-      "NTKA"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faaʻa_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Rangiroa",
-      "https://en.wikipedia.org/wiki/Rangiroa_Airport",
-      "RGI",
-      "NTTG"
-    ]
+    {
+      "city": "Kauehi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kauehi_Aerodrome",
+      "codes": [
+        "KHZ",
+        "NTKA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faaʻa_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Rangiroa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rangiroa_Airport",
+      "codes": [
+        "RGI",
+        "NTTG"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Moana": [
@@ -54,5 +76,7 @@
       "Papeete",
       "Rangiroa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:35Z",
+  "date-time-wikidata": "2025-11-16T20:45:08Z"
 }

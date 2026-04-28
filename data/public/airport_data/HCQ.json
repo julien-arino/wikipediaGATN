@@ -20,30 +20,50 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Balgo",
-      "https://en.wikipedia.org/wiki/Balgo_Hill_Airport",
-      "BQW",
-      "YBGO"
-    ],
-    [
-      "Broome",
-      "https://en.wikipedia.org/wiki/Broome_International_Airport",
-      "BME",
-      "YBRM"
-    ],
-    [
-      "Fitzroy Crossing",
-      "https://en.wikipedia.org/wiki/Fitzroy_Crossing_Airport",
-      "FIZ",
-      "YFTZ"
-    ],
-    [
-      "Kununurra",
-      "https://en.wikipedia.org/wiki/Kununurra_Airport",
-      "KNX",
-      "YPKU"
-    ]
+    {
+      "city": "Balgo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balgo_Hill_Airport",
+      "codes": [
+        "BQW",
+        "YBGO"
+      ],
+      "airlines": [
+        "Aviair"
+      ]
+    },
+    {
+      "city": "Broome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broome_International_Airport",
+      "codes": [
+        "BME",
+        "YBRM"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Fitzroy Crossing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fitzroy_Crossing_Airport",
+      "codes": [
+        "FIZ",
+        "YFTZ"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Kununurra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kununurra_Airport",
+      "codes": [
+        "KNX",
+        "YPKU"
+      ],
+      "airlines": [
+        "Aviair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aviair": [
@@ -54,5 +74,7 @@
       "Broome",
       "Fitzroy Crossing"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:13Z",
+  "date-time-wikidata": "2026-02-16T11:40:04Z"
 }

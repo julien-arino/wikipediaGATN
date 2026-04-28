@@ -19,23 +19,35 @@
     "Island Air Service (page does not exist)"
   ],
   "destinations": [
-    [
-      "Kodiak Airport",
-      "https://en.wikipedia.org/wiki/Kodiak_Airport",
-      "ADQ",
-      "PADQ"
-    ],
-    [
-      "Old Harbor Airport",
-      "https://en.wikipedia.org/wiki/Old_Harbor_Airport",
-      "OLH",
-      "icao code not found"
-    ]
+    {
+      "city": "Kodiak Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kodiak_Airport",
+      "codes": [
+        "ADQ",
+        "PADQ"
+      ],
+      "airlines": [
+        "Island Air Service (page does not exist)"
+      ]
+    },
+    {
+      "city": "Old Harbor Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_Harbor_Airport",
+      "codes": [
+        "OLH",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Island Air Service (page does not exist)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Island Air Service (page does not exist)": [
       "Kodiak Airport",
       "Old Harbor Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:56Z",
+  "date-time-wikidata": "2025-09-29T04:06:44Z"
 }

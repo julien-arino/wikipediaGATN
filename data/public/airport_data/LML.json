@@ -19,23 +19,35 @@
     "Air Marshall Islands"
   ],
   "destinations": [
-    [
-      "Kwajalein",
-      "https://en.wikipedia.org/wiki/Bucholz_Army_Airfield",
-      "KWA",
-      "PKWA"
-    ],
-    [
-      "Majuro",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ]
+    {
+      "city": "Kwajalein",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucholz_Army_Airfield",
+      "codes": [
+        "KWA",
+        "PKWA"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Marshall Islands": [
       "Kwajalein",
       "Majuro"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:05Z",
+  "date-time-wikidata": "2024-12-26T01:37:14Z"
 }

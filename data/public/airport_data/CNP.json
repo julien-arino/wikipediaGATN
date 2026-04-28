@@ -20,24 +20,39 @@
     "Norlandair"
   ],
   "destinations": [
-    [
-      "Akureyri",
-      "https://en.wikipedia.org/wiki/Akureyri_Airport",
-      "AEY",
-      "BIAR"
-    ],
-    [
-      "Ittoqqortoormiit",
-      "https://en.wikipedia.org/wiki/Ittoqqortoormiit_Heliport",
-      "OBY",
-      "BGSC"
-    ],
-    [
-      "Reykjavik",
-      "https://en.wikipedia.org/wiki/Reykjavik_Airport",
-      "RKV",
-      "BIRK"
-    ]
+    {
+      "city": "Akureyri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akureyri_Airport",
+      "codes": [
+        "AEY",
+        "BIAR"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    },
+    {
+      "city": "Ittoqqortoormiit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ittoqqortoormiit_Heliport",
+      "codes": [
+        "OBY",
+        "BGSC"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Reykjavik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reykjavik_Airport",
+      "codes": [
+        "RKV",
+        "BIRK"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
@@ -47,5 +62,7 @@
       "Akureyri",
       "Reykjavik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:02Z",
+  "date-time-wikidata": "2026-01-25T20:27:10Z"
 }

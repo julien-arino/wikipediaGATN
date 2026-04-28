@@ -20,24 +20,40 @@
     "Canadian North"
   ],
   "destinations": [
-    [
-      "Cambridge Bay",
-      "https://en.wikipedia.org/wiki/Cambridge_Bay_Airport",
-      "YCB",
-      "CYCB"
-    ],
-    [
-      "Ulukhaktok",
-      "https://en.wikipedia.org/wiki/Ulukhaktok/Holman_Airport",
-      "YHI",
-      "CYHI"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Cambridge Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cambridge_Bay_Airport",
+      "codes": [
+        "YCB",
+        "CYCB"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Ulukhaktok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ulukhaktok/Holman_Airport",
+      "codes": [
+        "YHI",
+        "CYHI"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "Canadian North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Canadian North": [
@@ -48,5 +64,7 @@
     "Buffalo Airways": [
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:25Z",
+  "date-time-wikidata": "2025-12-20T18:39:20Z"
 }

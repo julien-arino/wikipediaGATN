@@ -7,6 +7,7 @@
   "lat": "15.2933078",
   "lon": "38.9161873",
   "altitude": "2,335",
+  "continent": "Africa",
   "region": "Maekel Region",
   "country_alpha3": "ERI",
   "country_name": "Eritrea",
@@ -23,48 +24,83 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Juba",
-      "https://en.wikipedia.org/wiki/Juba_International_Airport",
-      "JUB",
-      "HJJJ"
-    ],
-    [
-      "Port Sudan",
-      "https://en.wikipedia.org/wiki/Port_Sudan_New_International_Airport",
-      "PZU",
-      "HSPN"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "Juba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juba_International_Airport",
+      "codes": [
+        "JUB",
+        "HJJJ"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Port Sudan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Sudan_New_International_Airport",
+      "codes": [
+        "PZU",
+        "HSPN"
+      ],
+      "airlines": [
+        "Tarco Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Etihad Airways": [
@@ -87,5 +123,6 @@
       "Juba"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:14:06Z",
+  "date-time-wikidata": "2026-04-18T04:31:17Z"
 }

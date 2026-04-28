@@ -20,30 +20,50 @@
     "Qatar Airways Cargo"
   ],
   "destinations": [
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Hazrat_Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Ezhou",
-      "https://en.wikipedia.org/wiki/Ezhou_Huahu_Airport",
-      "EHU",
-      "ZHEC"
-    ],
-    [
-      "Ho Chi Minh City",
-      "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
-      "SGN",
-      "VVTS"
-    ]
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hazrat_Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "IndiGo CarGo"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Ezhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_Airport",
+      "codes": [
+        "EHU",
+        "ZHEC"
+      ],
+      "airlines": [
+        "IndiGo CarGo"
+      ]
+    },
+    {
+      "city": "Ho Chi Minh City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
+      "codes": [
+        "SGN",
+        "VVTS"
+      ],
+      "airlines": [
+        "IndiGo CarGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo CarGo": [
@@ -54,5 +74,7 @@
     "Qatar Airways Cargo": [
       "Doha"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:02Z",
+  "date-time-wikidata": "2026-04-24T19:48:51Z"
 }

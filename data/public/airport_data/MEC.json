@@ -21,18 +21,29 @@
     "LATAM Ecuador"
   ],
   "destinations": [
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Quito",
-      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
-      "UIO",
-      "SEQM"
-    ]
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca Ecuador": [
@@ -44,5 +55,7 @@
     "LATAM Ecuador": [
       "Quito"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:34Z",
+  "date-time-wikidata": "2026-04-17T03:20:29Z"
 }

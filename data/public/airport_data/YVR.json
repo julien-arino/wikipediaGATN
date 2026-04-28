@@ -11,7 +11,7 @@
   "region": "CA-BC",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "BC",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
   "number_airlines": 13,
   "outdegree": 24,
@@ -31,150 +31,291 @@
     "UPS Airlines"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cincinnati",
-      "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
-      "CVG",
-      "KCVG"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Kamloops",
-      "https://en.wikipedia.org/wiki/Kamloops_Airport",
-      "YKA",
-      "CYKA"
-    ],
-    [
-      "Kelowna",
-      "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
-      "YLW",
-      "CYLW"
-    ],
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Louisville",
-      "https://en.wikipedia.org/wiki/Louisville_International_Airport",
-      "SDF",
-      "KSDF"
-    ],
-    [
-      "Memphis",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
-      "MEM",
-      "KMEM"
-    ],
-    [
-      "Montreal–Mirabel",
-      "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
-      "YMX",
-      "CYMX"
-    ],
-    [
-      "Nanaimo",
-      "https://en.wikipedia.org/wiki/Nanaimo_Airport",
-      "YCD",
-      "CYCD"
-    ],
-    [
-      "Portland (OR)",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Prince George",
-      "https://en.wikipedia.org/wiki/Prince_George_Airport",
-      "YXS",
-      "CYXS"
-    ],
-    [
-      "Qingdao",
-      "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
-      "TAO",
-      "ZSQD"
-    ],
-    [
-      "Quesnel",
-      "https://en.wikipedia.org/wiki/Quesnel_Airport",
-      "YQZ",
-      "CYQZ"
-    ],
-    [
-      "Seattle/Tacoma",
-      "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Victoria",
-      "https://en.wikipedia.org/wiki/Victoria_International_Airport",
-      "YYJ",
-      "CYYJ"
-    ],
-    [
-      "Williams Lake",
-      "https://en.wikipedia.org/wiki/Williams_Lake_Airport",
-      "YWL",
-      "CYWL"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "Cargojet",
+        "Carson Air",
+        "FedEx Feeder",
+        "Morningstar Air Express"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cargojet",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "Cargojet",
+        "FedEx Feeder",
+        "Morningstar Air Express"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Kamloops",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamloops_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Carson Air",
+        "KF Cargo"
+      ]
+    },
+    {
+      "city": "Kelowna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Carson Air",
+        "Central Mountain Air Cargo",
+        "KF Cargo"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "DHL Aviation",
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cargojet",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Montreal–Mirabel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Nanaimo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanaimo_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Prince George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_George_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "KF Cargo"
+      ]
+    },
+    {
+      "city": "Qingdao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "China Southern Cargo"
+      ]
+    },
+    {
+      "city": "Quesnel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quesnel_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Central Mountain Air Cargo"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "China Southern Cargo"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Cargo",
+        "China Southern Cargo",
+        "FedEx Feeder",
+        "Morningstar Air Express"
+      ]
+    },
+    {
+      "city": "Victoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
+      "codes": [
+        "YYJ",
+        "CYYJ"
+      ],
+      "airlines": [
+        "Cargojet",
+        "FedEx Feeder",
+        "KF Cargo"
+      ]
+    },
+    {
+      "city": "Williams Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Williams_Lake_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Central Mountain Air Cargo"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Cargojet",
+        "FedEx Feeder",
+        "Morningstar Air Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Cargo": [
@@ -248,5 +389,7 @@
     "UPS Airlines": [
       "Louisville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:39Z",
+  "date-time-wikidata": "2026-04-27T06:43:52Z"
 }

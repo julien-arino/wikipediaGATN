@@ -20,36 +20,61 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Bodø",
-      "https://en.wikipedia.org/wiki/Bodø_Airport",
-      "BOO",
-      "ENBO"
-    ],
-    [
-      "Harstad/Narvik",
-      "https://en.wikipedia.org/wiki/Harstad/Narvik_Airport,_Evenes",
-      "EVE",
-      "ENEV"
-    ],
-    [
-      "Oslo",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Stokmarknes",
-      "https://en.wikipedia.org/wiki/Stokmarknes_Airport,_Skagen",
-      "SKN",
-      "ENSK"
-    ],
-    [
-      "Tromsø",
-      "https://en.wikipedia.org/wiki/Tromsø_Airport",
-      "TOS",
-      "ENTC"
-    ]
+    {
+      "city": "Bodø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bodø_Airport",
+      "codes": [
+        "BOO",
+        "ENBO"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Harstad/Narvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harstad/Narvik_Airport,_Evenes",
+      "codes": [
+        "EVE",
+        "ENEV"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Stokmarknes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stokmarknes_Airport,_Skagen",
+      "codes": [
+        "SKN",
+        "ENSK"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Tromsø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tromsø_Airport",
+      "codes": [
+        "TOS",
+        "ENTC"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norwegian Air Shuttle": [
@@ -61,5 +86,7 @@
       "Stokmarknes",
       "Tromsø"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:29Z",
+  "date-time-wikidata": "2026-01-25T19:33:05Z"
 }

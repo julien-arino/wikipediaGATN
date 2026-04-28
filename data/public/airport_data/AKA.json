@@ -7,6 +7,7 @@
   "lat": "52.2223293",
   "lon": "-174.2080213",
   "altitude": null,
+  "continent": "North America",
   "region": "Alaska",
   "country_alpha3": "USA",
   "country_name": "United States",
@@ -24,78 +25,138 @@
     "XiamenAir"
   ],
   "destinations": [
-    [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Changsha",
-      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
-      "CSX",
-      "ZGHA"
-    ],
-    [
-      "Changzhou",
-      "https://en.wikipedia.org/wiki/Changzhou_Benniu_International_Airport",
-      "CZX",
-      "ZSCG"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hangzhou",
-      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
-      "HGH",
-      "ZSHC"
-    ],
-    [
-      "Lanzhou",
-      "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
-      "LHW",
-      "ZLLL"
-    ],
-    [
-      "Quanzhou",
-      "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
-      "JJN",
-      "ZSQZ"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Urumqi",
-      "https://en.wikipedia.org/wiki/Diwopu_Airport",
-      "URC",
-      "ZWWW"
-    ],
-    [
-      "Wuhan",
-      "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
-      "WUH",
-      "ZHHH"
-    ],
-    [
-      "Xiamen",
-      "https://en.wikipedia.org/wiki/Gaoqi_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China United Airlines"
+      ]
+    },
+    {
+      "city": "Changsha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Changzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changzhou_Benniu_International_Airport",
+      "codes": [
+        "CZX",
+        "ZSCG"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    },
+    {
+      "city": "Lanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
+      "codes": [
+        "LHW",
+        "ZLLL"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Quanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
+      "codes": [
+        "JJN",
+        "ZSQZ"
+      ],
+      "airlines": [
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Urumqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diwopu_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Wuhan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "codes": [
+        "WUH",
+        "ZHHH"
+      ],
+      "airlines": [
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Xiamen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaoqi_Airport",
+      "codes": [
+        "XMN",
+        "ZSAM"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Beijing Capital Airlines": [
@@ -125,5 +186,6 @@
       "Wuhan"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:13:54Z",
+  "date-time-wikidata": "2026-04-27T17:09:25Z"
 }

@@ -21,24 +21,43 @@
     "Sunlight Air"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Clark",
-      "https://en.wikipedia.org/wiki/Clark_International_Airport",
-      "CRK",
-      "RPLC"
-    ],
-    [
-      "Davao",
-      "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
-      "DVO",
-      "RPMD"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "PAL Express",
+        "Sunlight Air"
+      ]
+    },
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
+      "codes": [
+        "CRK",
+        "RPLC"
+      ],
+      "airlines": [
+        "Cebgo",
+        "PAL Express",
+        "Sunlight Air"
+      ]
+    },
+    {
+      "city": "Davao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
+      "codes": [
+        "DVO",
+        "RPMD"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
@@ -54,5 +73,7 @@
       "Cebu",
       "Clark"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:58Z",
+  "date-time-wikidata": "2026-03-28T06:34:48Z"
 }

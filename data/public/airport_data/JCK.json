@@ -19,30 +19,50 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Hughenden",
-      "https://en.wikipedia.org/wiki/Hughenden_Airport",
-      "HGD",
-      "YHUG"
-    ],
-    [
-      "Mount Isa",
-      "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
-      "ISA",
-      "YBMA"
-    ],
-    [
-      "Richmond",
-      "https://en.wikipedia.org/wiki/Richmond_Airport_(Queensland)",
-      "RCM",
-      "YRMD"
-    ],
-    [
-      "Townsville",
-      "https://en.wikipedia.org/wiki/Townsville_Airport",
-      "TSV",
-      "YBTL"
-    ]
+    {
+      "city": "Hughenden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hughenden_Airport",
+      "codes": [
+        "HGD",
+        "YHUG"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Mount Isa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
+      "codes": [
+        "ISA",
+        "YBMA"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Richmond",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Richmond_Airport_(Queensland)",
+      "codes": [
+        "RCM",
+        "YRMD"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
@@ -51,5 +71,7 @@
       "Richmond",
       "Townsville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:17Z",
+  "date-time-wikidata": "2023-12-18T15:06:38Z"
 }

@@ -19,24 +19,39 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Kirkwall",
-      "https://en.wikipedia.org/wiki/Kirkwall_Airport",
-      "KOI",
-      "EGPA"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Sumburgh",
-      "https://en.wikipedia.org/wiki/Sumburgh_Airport",
-      "LSI",
-      "EGPB"
-    ]
+    {
+      "city": "Kirkwall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kirkwall_Airport",
+      "codes": [
+        "KOI",
+        "EGPA"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Sumburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sumburgh_Airport",
+      "codes": [
+        "LSI",
+        "EGPB"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Loganair": [
@@ -44,5 +59,7 @@
       "London–Heathrow",
       "Sumburgh"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:11Z",
+  "date-time-wikidata": "2026-01-01T14:02:35Z"
 }

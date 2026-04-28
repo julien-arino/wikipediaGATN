@@ -31,72 +31,135 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Bujumbura",
-      "https://en.wikipedia.org/wiki/Bujumbura_International_Airport",
-      "BJM",
-      "HBBA"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Kigali",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Port Sudan",
-      "https://en.wikipedia.org/wiki/Port_Sudan_New_International_Airport",
-      "PZU",
-      "HSPN"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Bujumbura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bujumbura_International_Airport",
+      "codes": [
+        "BJM",
+        "HBBA"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "RwandAir",
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "African Express Airways",
+        "Astral Aviation",
+        "Fly540",
+        "Kenya Airways",
+        "Safe Air"
+      ]
+    },
+    {
+      "city": "Port Sudan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Sudan_New_International_Airport",
+      "codes": [
+        "PZU",
+        "HSPN"
+      ],
+      "airlines": [
+        "Tarco Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "African Express Airways": [
@@ -142,5 +205,7 @@
     "Safe Air": [
       "Nairobi–Jomo Kenyatta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:42Z",
+  "date-time-wikidata": "2026-04-28T21:34:52Z"
 }

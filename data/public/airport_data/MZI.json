@@ -19,23 +19,35 @@
     "Sky Mali"
   ],
   "destinations": [
-    [
-      "Bamako",
-      "https://en.wikipedia.org/wiki/Modibo_Keita_International_Airport",
-      "BKO",
-      "GABS"
-    ],
-    [
-      "Timbuktu",
-      "https://en.wikipedia.org/wiki/Timbuktu_Airport",
-      "TOM",
-      "GATB"
-    ]
+    {
+      "city": "Bamako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Modibo_Keita_International_Airport",
+      "codes": [
+        "BKO",
+        "GABS"
+      ],
+      "airlines": [
+        "Sky Mali"
+      ]
+    },
+    {
+      "city": "Timbuktu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timbuktu_Airport",
+      "codes": [
+        "TOM",
+        "GATB"
+      ],
+      "airlines": [
+        "Sky Mali"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sky Mali": [
       "Bamako",
       "Timbuktu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:38Z",
+  "date-time-wikidata": "2024-12-25T17:35:00Z"
 }

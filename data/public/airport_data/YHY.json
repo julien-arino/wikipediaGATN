@@ -21,24 +21,41 @@
     "Canadian North"
   ],
   "destinations": [
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Fort Smith",
-      "https://en.wikipedia.org/wiki/Fort_Smith_Airport",
-      "YSM",
-      "CYSM"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Fort Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Smith_Airport",
+      "codes": [
+        "YSM",
+        "CYSM"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Air Tindi",
+        "Buffalo Airways",
+        "Canadian North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tindi": [
@@ -52,5 +69,7 @@
     "Buffalo Airways": [
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:13Z",
+  "date-time-wikidata": "2025-12-20T18:41:37Z"
 }

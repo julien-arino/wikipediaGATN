@@ -22,60 +22,106 @@
     "LATAM Chile"
   ],
   "destinations": [
-    [
-      "Buenos Aires-Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Buenos Aires–Ezeiza",
-      "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
-      "EZE",
-      "SAEZ"
-    ],
-    [
-      "Comodoro Rivadavia",
-      "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
-      "CRD",
-      "SAVC"
-    ],
-    [
-      "El Calafate",
-      "https://en.wikipedia.org/wiki/Comandante_Armando_Tola_International_Airport",
-      "FTE",
-      "SAWC"
-    ],
-    [
-      "Punta Arenas",
-      "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
-      "PUQ",
-      "SCCI"
-    ],
-    [
-      "Río Grande",
-      "https://en.wikipedia.org/wiki/Hermes_Quijada_International_Airport",
-      "RGA",
-      "SAWE"
-    ],
-    [
-      "Stanley–Mount Pleasant",
-      "https://en.wikipedia.org/wiki/RAF_Mount_Pleasant",
-      "MPN",
-      "EGYP"
-    ],
-    [
-      "Trelew",
-      "https://en.wikipedia.org/wiki/Almirante_Marcos_A._Zar_Airport",
-      "REL",
-      "SAVT"
-    ],
-    [
-      "Ushuaia",
-      "https://en.wikipedia.org/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
-      "USH",
-      "SAWH"
-    ]
+    {
+      "city": "Buenos Aires-Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Ezeiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Flybondi"
+      ]
+    },
+    {
+      "city": "Comodoro Rivadavia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
+      "codes": [
+        "CRD",
+        "SAVC"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "LADE"
+      ]
+    },
+    {
+      "city": "El Calafate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Armando_Tola_International_Airport",
+      "codes": [
+        "FTE",
+        "SAWC"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Punta Arenas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Carlos_Ibáñez_del_Campo_International_Airport",
+      "codes": [
+        "PUQ",
+        "SCCI"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Río Grande",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hermes_Quijada_International_Airport",
+      "codes": [
+        "RGA",
+        "SAWE"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Stanley–Mount Pleasant",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/RAF_Mount_Pleasant",
+      "codes": [
+        "MPN",
+        "EGYP"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Trelew",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almirante_Marcos_A._Zar_Airport",
+      "codes": [
+        "REL",
+        "SAVT"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Ushuaia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
+      "codes": [
+        "USH",
+        "SAWH"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -96,5 +142,7 @@
       "Punta Arenas",
       "Stanley–Mount Pleasant"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:35Z",
+  "date-time-wikidata": "2026-04-14T10:31:49Z"
 }

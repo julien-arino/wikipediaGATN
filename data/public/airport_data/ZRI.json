@@ -19,23 +19,35 @@
     "Trigana Air Service"
   ],
   "destinations": [
-    [
-      "Biak",
-      "https://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
-      "BIK",
-      "WABB"
-    ],
-    [
-      "Jayapura",
-      "https://en.wikipedia.org/wiki/Sentani_International_Airport",
-      "DJJ",
-      "WAJJ"
-    ]
+    {
+      "city": "Biak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
+      "codes": [
+        "BIK",
+        "WABB"
+      ],
+      "airlines": [
+        "Trigana Air Service"
+      ]
+    },
+    {
+      "city": "Jayapura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sentani_International_Airport",
+      "codes": [
+        "DJJ",
+        "WAJJ"
+      ],
+      "airlines": [
+        "Trigana Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Trigana Air Service": [
       "Biak",
       "Jayapura"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:43Z",
+  "date-time-wikidata": "2026-04-06T23:54:35Z"
 }

@@ -22,12 +22,20 @@
     "Myanmar National Airlines"
   ],
   "destinations": [
-    [
-      "Myitkyina",
-      "https://en.wikipedia.org/wiki/Myitkyina_Airport",
-      "MYT",
-      "VYMK"
-    ]
+    {
+      "city": "Myitkyina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Myitkyina_Airport",
+      "codes": [
+        "MYT",
+        "VYMK"
+      ],
+      "airlines": [
+        "Air Thanlwin",
+        "Mingalar Aviation Services",
+        "Myanmar Airways International",
+        "Myanmar National Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Thanlwin": [
@@ -42,5 +50,7 @@
     "Myanmar National Airlines": [
       "Myitkyina"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:39Z",
+  "date-time-wikidata": "2025-06-06T20:16:27Z"
 }

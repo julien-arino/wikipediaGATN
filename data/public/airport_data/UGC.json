@@ -31,126 +31,233 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Baku",
-      "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
-      "GYD",
-      "UBBB"
-    ],
-    [
-      "Bukhara",
-      "https://en.wikipedia.org/wiki/Bukhara_International_Airport",
-      "BHK",
-      "UZSB"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport",
-      "MCX",
-      "URML"
-    ],
-    [
-      "Milan–Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Moscow–Zhukovsky",
-      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
-      "ZIA",
-      "UUBW"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Samara",
-      "https://en.wikipedia.org/wiki/Kurumoch_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Samarqand",
-      "https://en.wikipedia.org/wiki/Samarqand_International_Airport",
-      "SKD",
-      "UZSS"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Türkistan",
-      "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport",
-      "HSA",
-      "UAIT"
-    ],
-    [
-      "Ürümqi",
-      "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Azerbaijan Airlines"
+      ]
+    },
+    {
+      "city": "Bukhara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bukhara_International_Airport",
+      "codes": [
+        "BHK",
+        "UZSB"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Makhachkala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "codes": [
+        "MCX",
+        "URML"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Milan–Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Qanot Sharq"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Moscow–Zhukovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "codes": [
+        "ZIA",
+        "UUBW"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Centrum Air",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Samara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Samarqand",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samarqand_International_Airport",
+      "codes": [
+        "SKD",
+        "UZSS"
+      ],
+      "airlines": [
+        "Centrum Air"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Fly Khiva",
+        "Silk Avia",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Fly Khiva",
+        "Silk Avia",
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Türkistan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Äziret_Sūltan_International_Airport",
+      "codes": [
+        "HSA",
+        "UAIT"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "My Freighter Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -203,5 +310,7 @@
     "My Freighter Airlines": [
       "Ürümqi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:09Z",
+  "date-time-wikidata": "2026-04-11T19:05:39Z"
 }

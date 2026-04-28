@@ -21,30 +21,50 @@
     "Japan Airlines"
   ],
   "destinations": [
-    [
-      "Nagoya–Komaki",
-      "https://en.wikipedia.org/wiki/Nagoya_Airfield",
-      "NKM",
-      "RJNA"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Nagoya–Komaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nagoya_Airfield",
+      "codes": [
+        "NKM",
+        "RJNA"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fuji Dream Airlines": [
@@ -57,5 +77,7 @@
     "Japan Airlines": [
       "Tokyo–Haneda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:26Z",
+  "date-time-wikidata": "2026-01-25T10:49:54Z"
 }

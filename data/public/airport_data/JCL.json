@@ -23,48 +23,85 @@
     "Sundair"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Burgas",
-      "https://en.wikipedia.org/wiki/Burgas_Airport",
-      "BOJ",
-      "LBBG"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Monastir",
-      "https://en.wikipedia.org/wiki/Monastir_Habib_Bourguiba_International_Airport",
-      "MIR",
-      "DTMB"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Corendon Airlines",
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Burgas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burgas_Airport",
+      "codes": [
+        "BOJ",
+        "LBBG"
+      ],
+      "airlines": [
+        "BH Air",
+        "Sundair"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Corendon Airlines"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "AlMasria Universal Airlines"
+      ]
+    },
+    {
+      "city": "Monastir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monastir_Habib_Bourguiba_International_Airport",
+      "codes": [
+        "MIR",
+        "DTMB"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AlMasria Universal Airlines": [
@@ -86,5 +123,7 @@
     "Sundair": [
       "Burgas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:17Z",
+  "date-time-wikidata": "2026-03-25T21:57:02Z"
 }

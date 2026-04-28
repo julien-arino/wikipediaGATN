@@ -19,23 +19,35 @@
     "Proflight Zambia"
   ],
   "destinations": [
-    [
-      "Lusaka",
-      "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
-      "LUN",
-      "FLKK"
-    ],
-    [
-      "Ndola",
-      "https://en.wikipedia.org/wiki/Simon_Mwansa_Kapwepwe_International_Airport",
-      "NLA",
-      "FLSK"
-    ]
+    {
+      "city": "Lusaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Ndola",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simon_Mwansa_Kapwepwe_International_Airport",
+      "codes": [
+        "NLA",
+        "FLSK"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Proflight Zambia": [
       "Lusaka",
       "Ndola"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:47Z",
+  "date-time-wikidata": "2025-06-14T19:08:27Z"
 }

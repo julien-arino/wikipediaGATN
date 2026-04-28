@@ -41,138 +41,320 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Abadan",
-      "https://en.wikipedia.org/wiki/Abadan_Ayatollah_Jami_International_Airport",
-      "ABD",
-      "OIAA"
-    ],
-    [
-      "Ahvaz",
-      "https://en.wikipedia.org/wiki/Qasem_Soleimani_International_Airport",
-      "AWZ",
-      "OIAW"
-    ],
-    [
-      "Asaluyeh",
-      "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
-      "PGU",
-      "OIBP"
-    ],
-    [
-      "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
-      "BGW",
-      "ORBI"
-    ],
-    [
-      "Bandar Abbas",
-      "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
-      "BND",
-      "OIKB"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Dushanbe",
-      "https://en.wikipedia.org/wiki/Dushanbe_International_Airport",
-      "DYU",
-      "UTDD"
-    ],
-    [
-      "Gorgan",
-      "https://en.wikipedia.org/wiki/Gorgan_Airport",
-      "GBT",
-      "OING"
-    ],
-    [
-      "Isfahan",
-      "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
-      "IFN",
-      "OIFM"
-    ],
-    [
-      "Kerman",
-      "https://en.wikipedia.org/wiki/Ayatollah_Hashemi_Rafsanjani_Airport",
-      "KER",
-      "OIKK"
-    ],
-    [
-      "Kermanshah",
-      "https://en.wikipedia.org/wiki/Kermanshah_Airport",
-      "KSH",
-      "OICC"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Najaf",
-      "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
-      "NJF",
-      "ORNI"
-    ],
-    [
-      "Rasht",
-      "https://en.wikipedia.org/wiki/Rasht_Airport",
-      "RAS",
-      "OIGG"
-    ],
-    [
-      "Sari",
-      "https://en.wikipedia.org/wiki/Dasht-e_Naz_Airport",
-      "SRY",
-      "OINZ"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Tabriz",
-      "https://en.wikipedia.org/wiki/Tabriz_Shahid_Madani_International_Airport",
-      "TBZ",
-      "OITT"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ],
-    [
-      "Urmia",
-      "https://en.wikipedia.org/wiki/Urmia_Shahid_Bakeri_International_Airport",
-      "OMH",
-      "OITR"
-    ],
-    [
-      "Yazd",
-      "https://en.wikipedia.org/wiki/Shahid_Sadooghi_Airport",
-      "AZD",
-      "OIYY"
-    ],
-    [
-      "Zahedan",
-      "https://en.wikipedia.org/wiki/Zahedan_Airport",
-      "ZAH",
-      "OIZH"
-    ],
-    [
-      "Zanjan",
-      "https://en.wikipedia.org/wiki/Zanjan_Airport",
-      "JWN",
-      "OITZ"
-    ]
+    {
+      "city": "Abadan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abadan_Ayatollah_Jami_International_Airport",
+      "codes": [
+        "ABD",
+        "OIAA"
+      ],
+      "airlines": [
+        "Kish Air",
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Ahvaz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qasem_Soleimani_International_Airport",
+      "codes": [
+        "AWZ",
+        "OIAW"
+      ],
+      "airlines": [
+        "Kish Air",
+        "Pars Air",
+        "Qeshm Air",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Asaluyeh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
+      "codes": [
+        "PGU",
+        "OIBP"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "Taban Air"
+      ]
+    },
+    {
+      "city": "Bandar Abbas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
+      "codes": [
+        "BND",
+        "OIKB"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Kish Air",
+        "Qeshm Air"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Kish Air",
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Dushanbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dushanbe_International_Airport",
+      "codes": [
+        "DYU",
+        "UTDD"
+      ],
+      "airlines": [
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Gorgan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gorgan_Airport",
+      "codes": [
+        "GBT",
+        "OING"
+      ],
+      "airlines": [
+        "Caspian Airlines",
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Isfahan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
+      "codes": [
+        "IFN",
+        "OIFM"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Caspian Airlines",
+        "FlyPersia",
+        "Kish Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Qeshm Air",
+        "Saha Airlines",
+        "Varesh Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Kerman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ayatollah_Hashemi_Rafsanjani_Airport",
+      "codes": [
+        "KER",
+        "OIKK"
+      ],
+      "airlines": [
+        "Kish Air",
+        "Mahan Air"
+      ]
+    },
+    {
+      "city": "Kermanshah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kermanshah_Airport",
+      "codes": [
+        "KSH",
+        "OICC"
+      ],
+      "airlines": [
+        "AVA Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Caspian Airlines",
+        "FlyPersia",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Kish Air",
+        "Mahan Air",
+        "Meraj Airlines",
+        "Sepehran Airlines",
+        "Taban Air",
+        "Varesh Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Najaf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Najaf_International_Airport",
+      "codes": [
+        "NJF",
+        "ORNI"
+      ],
+      "airlines": [
+        "Kish Air",
+        "Taban Air"
+      ]
+    },
+    {
+      "city": "Rasht",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rasht_Airport",
+      "codes": [
+        "RAS",
+        "OIGG"
+      ],
+      "airlines": [
+        "Iran Airtour",
+        "Kish Air",
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Sari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dasht-e_Naz_Airport",
+      "codes": [
+        "SRY",
+        "OINZ"
+      ],
+      "airlines": [
+        "Kish Air",
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Caspian Airlines",
+        "Chabahar Airlines",
+        "FlyPersia",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Kish Air",
+        "Pars Air",
+        "Qeshm Air",
+        "Saha Airlines",
+        "Taban Air"
+      ]
+    },
+    {
+      "city": "Tabriz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabriz_Shahid_Madani_International_Airport",
+      "codes": [
+        "TBZ",
+        "OITT"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Iran Airtour",
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Air1Air",
+        "Asa Jet",
+        "Caspian Airlines",
+        "Chabahar Airlines",
+        "FlyPersia",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Kish Air",
+        "Mahan Air",
+        "Meraj Airlines",
+        "Pars Air",
+        "Qeshm Air",
+        "Saha Airlines",
+        "Sepehran Airlines",
+        "Taban Air",
+        "Varesh Airlines",
+        "Zagros Airlines"
+      ]
+    },
+    {
+      "city": "Urmia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Urmia_Shahid_Bakeri_International_Airport",
+      "codes": [
+        "OMH",
+        "OITR"
+      ],
+      "airlines": [
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Yazd",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahid_Sadooghi_Airport",
+      "codes": [
+        "AZD",
+        "OIYY"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Kish Air",
+        "Pars Air",
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Zahedan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zahedan_Airport",
+      "codes": [
+        "ZAH",
+        "OIZH"
+      ],
+      "airlines": [
+        "Kish Air"
+      ]
+    },
+    {
+      "city": "Zanjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zanjan_Airport",
+      "codes": [
+        "JWN",
+        "OITZ"
+      ],
+      "airlines": [
+        "Kish Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air1Air": [
@@ -315,5 +497,7 @@
       "Mashhad",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:55Z",
+  "date-time-wikidata": "2026-04-08T13:20:59Z"
 }

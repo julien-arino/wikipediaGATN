@@ -21,30 +21,52 @@
     "TAMep"
   ],
   "destinations": [
-    [
-      "Cochabamba",
-      "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
-      "CBB",
-      "SLCB"
-    ],
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
-      "LPB",
-      "SLLP"
-    ],
-    [
-      "Santa Cruz de la Sierra–Viru Viru",
-      "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
-      "VVI",
-      "SLVR"
-    ],
-    [
-      "Trinidad",
-      "https://en.wikipedia.org/wiki/Teniente_Jorge_Henrich_Arauz_Airport",
-      "TDD",
-      "SLTR"
-    ]
+    {
+      "city": "Cochabamba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
+      "codes": [
+        "CBB",
+        "SLCB"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
+      "codes": [
+        "LPB",
+        "SLLP"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet",
+        "TAMep"
+      ]
+    },
+    {
+      "city": "Santa Cruz de la Sierra–Viru Viru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
+      "codes": [
+        "VVI",
+        "SLVR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Trinidad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teniente_Jorge_Henrich_Arauz_Airport",
+      "codes": [
+        "TDD",
+        "SLTR"
+      ],
+      "airlines": [
+        "EcoJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -59,5 +81,7 @@
     "TAMep": [
       "La Paz"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:42Z",
+  "date-time-wikidata": "2026-04-10T04:22:40Z"
 }

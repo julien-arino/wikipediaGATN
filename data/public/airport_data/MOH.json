@@ -21,24 +21,41 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Bone",
-      "https://en.wikipedia.org/wiki/Arung_Palakka_Airport",
-      "APD",
-      "WAWN"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ],
-    [
-      "Palu",
-      "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
-      "PLW",
-      "WAFF"
-    ]
+    {
+      "city": "Bone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arung_Palakka_Airport",
+      "codes": [
+        "APD",
+        "WAWN"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "FlyJaya",
+        "Sriwijaya Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Palu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
+      "codes": [
+        "PLW",
+        "WAFF"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
@@ -52,5 +69,7 @@
       "Makassar",
       "Palu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:49Z",
+  "date-time-wikidata": "2026-02-25T14:43:13Z"
 }

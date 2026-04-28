@@ -19,23 +19,35 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Kowanyama",
-      "https://en.wikipedia.org/wiki/Kowanyama_Airport",
-      "KWM",
-      "YKOW"
-    ]
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Kowanyama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kowanyama_Airport",
+      "codes": [
+        "KWM",
+        "YKOW"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytrans Australia": [
       "Cairns",
       "Kowanyama"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:21Z",
+  "date-time-wikidata": "2026-02-20T23:44:36Z"
 }

@@ -19,23 +19,35 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Kirkwall",
-      "https://en.wikipedia.org/wiki/Kirkwall_Airport",
-      "KOI",
-      "EGPA"
-    ],
-    [
-      "Papa Westray",
-      "https://en.wikipedia.org/wiki/Papa_Westray_Airport",
-      "PPW",
-      "EGEP"
-    ]
+    {
+      "city": "Kirkwall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kirkwall_Airport",
+      "codes": [
+        "KOI",
+        "EGPA"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Papa Westray",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Papa_Westray_Airport",
+      "codes": [
+        "PPW",
+        "EGEP"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Loganair": [
       "Kirkwall",
       "Papa Westray"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:23Z",
+  "date-time-wikidata": "2025-09-02T09:48:50Z"
 }

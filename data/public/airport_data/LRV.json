@@ -23,12 +23,21 @@
     "SASCA Airlines"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "AeroCaribe Airlines",
+        "Airway Línea Aérea",
+        "Blue Star Aviation",
+        "Conviasa",
+        "SASCA Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroCaribe Airlines": [
@@ -46,5 +55,7 @@
     "SASCA Airlines": [
       "Caracas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:28Z",
+  "date-time-wikidata": "2025-11-22T18:03:15Z"
 }

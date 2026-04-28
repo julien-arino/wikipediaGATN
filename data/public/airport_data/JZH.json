@@ -20,18 +20,29 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Air China",
+        "Sichuan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -41,5 +52,7 @@
     "Sichuan Airlines": [
       "Chengdu Tianfu International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:30Z",
+  "date-time-wikidata": "2026-01-20T08:02:21Z"
 }

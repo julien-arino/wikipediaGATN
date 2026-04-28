@@ -19,23 +19,35 @@
     "Royal Air Maroc Express"
   ],
   "destinations": [
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Ouarzazate",
-      "https://en.wikipedia.org/wiki/Ouarzazate_Airport",
-      "OZZ",
-      "GMMZ"
-    ]
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    },
+    {
+      "city": "Ouarzazate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouarzazate_Airport",
+      "codes": [
+        "OZZ",
+        "GMMZ"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Royal Air Maroc Express": [
       "Casablanca",
       "Ouarzazate"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:47Z",
+  "date-time-wikidata": "2025-08-19T00:06:22Z"
 }

@@ -20,18 +20,28 @@
     "Hokkaido Air System"
   ],
   "destinations": [
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/Sapporo_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Sapporo–Okadama",
-      "https://en.wikipedia.org/wiki/Okadama_Airport",
-      "OKD",
-      "RJCO"
-    ]
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sapporo_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "ANA Wings"
+      ]
+    },
+    {
+      "city": "Sapporo–Okadama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Okadama_Airport",
+      "codes": [
+        "OKD",
+        "RJCO"
+      ],
+      "airlines": [
+        "Hokkaido Air System"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ANA Wings": [
@@ -40,5 +50,7 @@
     "Hokkaido Air System": [
       "Sapporo–Okadama"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:45Z",
+  "date-time-wikidata": "2026-02-19T02:12:48Z"
 }

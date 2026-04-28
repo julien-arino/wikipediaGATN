@@ -21,24 +21,40 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Lord Howe Island",
-      "https://en.wikipedia.org/wiki/Lord_Howe_Island_Airport",
-      "LDH",
-      "YLHI"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Lord Howe Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lord_Howe_Island_Airport",
+      "codes": [
+        "LDH",
+        "YLHI"
+      ],
+      "airlines": [
+        "Eastern Air Services"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Eastern Air Services": [
@@ -51,5 +67,7 @@
     "Rex Airlines": [
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:31Z",
+  "date-time-wikidata": "2025-12-26T12:50:32Z"
 }

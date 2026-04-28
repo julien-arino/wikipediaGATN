@@ -20,24 +20,40 @@
     "FedEx Feeder"
   ],
   "destinations": [
-    [
-      "Portland International Airport",
-      "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "PDX",
-      "KPDX"
-    ],
-    [
-      "Roberts Field",
-      "https://en.wikipedia.org/wiki/Roberts_Field",
-      "RDM",
-      "KRDM"
-    ],
-    [
-      "Rogue Valley International-Medford Airport",
-      "https://en.wikipedia.org/wiki/Rogue_Valley_International-Medford_Airport",
-      "MFR",
-      "KMFR"
-    ]
+    {
+      "city": "Portland International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Roberts Field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roberts_Field",
+      "codes": [
+        "RDM",
+        "KRDM"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Rogue Valley International-Medford Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rogue_Valley_International-Medford_Airport",
+      "codes": [
+        "MFR",
+        "KMFR"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ameriflight": [
@@ -48,5 +64,7 @@
       "Portland International Airport",
       "Roberts Field"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:07Z",
+  "date-time-wikidata": "2026-02-28T20:33:15Z"
 }

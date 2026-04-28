@@ -19,24 +19,39 @@
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Aizawl",
-      "https://en.wikipedia.org/wiki/Aizawl_Airport",
-      "AJL",
-      "VELP"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Imphal_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ]
+    {
+      "city": "Aizawl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aizawl_Airport",
+      "codes": [
+        "AJL",
+        "VELP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -44,5 +59,7 @@
       "Imphal",
       "Kolkata"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:37Z",
+  "date-time-wikidata": "2026-04-06T01:29:37Z"
 }

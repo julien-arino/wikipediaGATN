@@ -7,6 +7,7 @@
   "lat": "40.8563099",
   "lon": "25.9553804",
   "altitude": "7",
+  "continent": "Europe",
   "region": "East Macedonia and Thrace",
   "country_alpha3": "GRC",
   "country_name": "Greece",
@@ -19,24 +20,40 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Sitia",
-      "https://en.wikipedia.org/wiki/Sitia_Public_Airport",
-      "JSH",
-      "LGST"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines",
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Sitia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sitia_Public_Airport",
+      "codes": [
+        "JSH",
+        "LGST"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -48,5 +65,6 @@
       "Sitia"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:03:41Z",
+  "date-time-wikidata": "2025-11-21T15:09:38Z"
 }

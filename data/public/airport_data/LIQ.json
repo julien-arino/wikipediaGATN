@@ -19,23 +19,35 @@
     "Compagnie Africaine d'Aviation"
   ],
   "destinations": [
-    [
-      "Bumba",
-      "https://en.wikipedia.org/wiki/Bumba_Airport",
-      "BMB",
-      "FZFU"
-    ],
-    [
-      "Gemena",
-      "https://en.wikipedia.org/wiki/Gemena_Airport",
-      "GMA",
-      "FZFK"
-    ]
+    {
+      "city": "Bumba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bumba_Airport",
+      "codes": [
+        "BMB",
+        "FZFU"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Gemena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gemena_Airport",
+      "codes": [
+        "GMA",
+        "FZFK"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Compagnie Africaine d'Aviation": [
       "Bumba",
       "Gemena"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:00Z",
+  "date-time-wikidata": "2026-01-29T14:34:17Z"
 }

@@ -19,23 +19,35 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Juanda International Airport",
-      "https://en.wikipedia.org/wiki/Juanda_International_Airport",
-      "SUB",
-      "WARR"
-    ],
-    [
-      "Trunojoyo Airport",
-      "https://en.wikipedia.org/wiki/Trunojoyo_Airport",
-      "SUP",
-      "WART"
-    ]
+    {
+      "city": "Juanda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Trunojoyo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trunojoyo_Airport",
+      "codes": [
+        "SUP",
+        "WART"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Juanda International Airport",
       "Trunojoyo Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:40Z",
+  "date-time-wikidata": "2025-08-19T16:13:47Z"
 }

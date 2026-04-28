@@ -19,23 +19,35 @@
     "Air China"
   ],
   "destinations": [
-    [
-      "Beijing–Capital",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Dalian",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ]
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Dalian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
       "Beijing–Capital",
       "Dalian"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:29Z",
+  "date-time-wikidata": "2025-12-03T00:55:55Z"
 }

@@ -21,12 +21,19 @@
     "Tara Air"
   ],
   "destinations": [
-    [
-      "Jomsom",
-      "https://en.wikipedia.org/wiki/Jomsom_Airport",
-      "JMO",
-      "VNJS"
-    ]
+    {
+      "city": "Jomsom",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomsom_Airport",
+      "codes": [
+        "JMO",
+        "VNJS"
+      ],
+      "airlines": [
+        "Sita Air",
+        "Summit Air",
+        "Tara Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sita Air": [
@@ -38,5 +45,7 @@
     "Tara Air": [
       "Jomsom"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:46Z",
+  "date-time-wikidata": "2026-01-08T19:16:26Z"
 }

@@ -20,12 +20,18 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Qantas",
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Qantas": [
@@ -34,5 +40,7 @@
     "QantasLink": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:43Z",
+  "date-time-wikidata": "2026-03-11T21:39:27Z"
 }

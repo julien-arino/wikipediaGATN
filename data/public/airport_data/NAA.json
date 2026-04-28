@@ -20,24 +20,39 @@
     "Link Airways"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Newcastle",
-      "https://en.wikipedia.org/wiki/Newcastle_Airport,_New_South_Wales",
-      "NTL",
-      "YWLM"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Newcastle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_Airport,_New_South_Wales",
+      "codes": [
+        "NTL",
+        "YWLM"
+      ],
+      "airlines": [
+        "FlyPelican"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "FlyPelican"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyPelican": [
@@ -47,5 +62,7 @@
     "Link Airways": [
       "Brisbane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:39Z",
+  "date-time-wikidata": "2025-06-15T01:14:22Z"
 }

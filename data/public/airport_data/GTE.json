@@ -20,24 +20,39 @@
     "Alliance Airlines"
   ],
   "destinations": [
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Gove",
-      "https://en.wikipedia.org/wiki/Gove_Airport",
-      "GOV",
-      "YPGV"
-    ]
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Gove",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gove_Airport",
+      "codes": [
+        "GOV",
+        "YPGV"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -47,5 +62,7 @@
     "Alliance Airlines": [
       "Cairns"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:05Z",
+  "date-time-wikidata": "2026-01-29T11:34:54Z"
 }

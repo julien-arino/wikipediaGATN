@@ -31,42 +31,85 @@
     "Varesh Airlines"
   ],
   "destinations": [
-    [
-      "Asaluyeh",
-      "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
-      "PGU",
-      "OIBP"
-    ],
-    [
-      "Kish",
-      "https://en.wikipedia.org/wiki/Kish_International_Airport",
-      "KIH",
-      "OIBK"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Qeshm",
-      "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
-      "GSM",
-      "OIKQ"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Asaluyeh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
+      "codes": [
+        "PGU",
+        "OIBP"
+      ],
+      "airlines": [
+        "Caspian Airlines",
+        "Karun Airlines",
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Kish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kish_International_Airport",
+      "codes": [
+        "KIH",
+        "OIBK"
+      ],
+      "airlines": [
+        "AVA Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Sepehran Airlines",
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Qeshm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qeshm_International_Airport",
+      "codes": [
+        "GSM",
+        "OIKQ"
+      ],
+      "airlines": [
+        "Qeshm Air"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "AVA Airlines",
+        "Asa Jet",
+        "Iran Air",
+        "Iran Aseman Airlines",
+        "Mahan Air",
+        "Pars Air",
+        "Pouya Air",
+        "Qeshm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Asa Jet": [
@@ -114,5 +157,7 @@
     "Varesh Airlines": [
       "Mashhad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:44Z",
+  "date-time-wikidata": "2026-04-12T16:20:43Z"
 }

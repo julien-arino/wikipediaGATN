@@ -21,18 +21,30 @@
     "Yeti Airlines"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Pokhara–International",
-      "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
-      "PHH",
-      "VNPR"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Buddha Air",
+        "Nepal Airlines",
+        "Yeti Airlines"
+      ]
+    },
+    {
+      "city": "Pokhara–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
+      "codes": [
+        "PHH",
+        "VNPR"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Buddha Air": [
@@ -45,5 +57,7 @@
     "Yeti Airlines": [
       "Kathmandu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:00Z",
+  "date-time-wikidata": "2026-03-13T04:30:16Z"
 }

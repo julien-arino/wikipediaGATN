@@ -20,18 +20,28 @@
     "Madagascar Airlines"
   ],
   "destinations": [
-    [
-      "Antananarivo",
-      "https://en.wikipedia.org/wiki/Ivato_International_Airport",
-      "TNR",
-      "FMMI"
-    ],
-    [
-      "Dzaoudzi",
-      "https://en.wikipedia.org/wiki/Dzaoudzi–Pamandzi_International_Airport",
-      "DZA",
-      "FMCZ"
-    ]
+    {
+      "city": "Antananarivo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivato_International_Airport",
+      "codes": [
+        "TNR",
+        "FMMI"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Dzaoudzi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dzaoudzi–Pamandzi_International_Airport",
+      "codes": [
+        "DZA",
+        "FMCZ"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ewa Air": [
@@ -40,5 +50,7 @@
     "Madagascar Airlines": [
       "Antananarivo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:21Z",
+  "date-time-wikidata": "2025-08-23T12:35:21Z"
 }

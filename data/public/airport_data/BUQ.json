@@ -7,6 +7,7 @@
   "lat": "-20.0133425",
   "lon": "28.6086137",
   "altitude": "1,308",
+  "continent": "Africa",
   "region": "Bulawayo",
   "country_alpha3": "ZWE",
   "country_name": "Zimbabwe",
@@ -21,36 +22,65 @@
     "Fastjet Zimbabwe"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Harare",
-      "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
-      "HRE",
-      "FVRG"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Victoria Falls",
-      "https://en.wikipedia.org/wiki/Victoria_Falls_Airport",
-      "VFA",
-      "FVFA"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Harare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
+      "codes": [
+        "HRE",
+        "FVRG"
+      ],
+      "airlines": [
+        "Air Zimbabwe",
+        "Fastjet Zimbabwe"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Air Zimbabwe",
+        "Airlink",
+        "Fastjet Zimbabwe"
+      ]
+    },
+    {
+      "city": "Victoria Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_Falls_Airport",
+      "codes": [
+        "VFA",
+        "FVFA"
+      ],
+      "airlines": [
+        "Air Zimbabwe",
+        "Fastjet Zimbabwe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Zimbabwe": [
@@ -71,5 +101,6 @@
       "Victoria Falls"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:04:26Z",
+  "date-time-wikidata": "2026-04-12T04:57:09Z"
 }

@@ -30,162 +30,293 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Alderney",
-      "https://en.wikipedia.org/wiki/Alderney_Airport",
-      "ACI",
-      "EGJA"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Birmingham",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Brest",
-      "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
-      "BES",
-      "LFRB"
-    ],
-    [
-      "Bristol",
-      "https://en.wikipedia.org/wiki/Bristol_Airport",
-      "BRS",
-      "EGGD"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Düsseldorf",
-      "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "East Midlands",
-      "https://en.wikipedia.org/wiki/East_Midlands_Airport",
-      "EMA",
-      "EGNX"
-    ],
-    [
-      "Exeter",
-      "https://en.wikipedia.org/wiki/Exeter_Airport",
-      "EXT",
-      "EGTE"
-    ],
-    [
-      "Faro",
-      "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Glasgow",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "GLA",
-      "EGPF"
-    ],
-    [
-      "Guernsey",
-      "https://en.wikipedia.org/wiki/Guernsey_Airport",
-      "GCI",
-      "EGJB"
-    ],
-    [
-      "Leeds/Bradford",
-      "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
-      "LBA",
-      "EGNM"
-    ],
-    [
-      "Liverpool",
-      "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
-      "LPL",
-      "EGGP"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Newcastle upon Tyne",
-      "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
-      "NCL",
-      "EGNT"
-    ],
-    [
-      "Norwich",
-      "https://en.wikipedia.org/wiki/Norwich_Airport",
-      "NWI",
-      "EGSH"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Sønderborg",
-      "https://en.wikipedia.org/wiki/Sønderborg_Airport",
-      "SGD",
-      "EKSB"
-    ],
-    [
-      "Teesside",
-      "https://en.wikipedia.org/wiki/Teesside_Airport",
-      "MME",
-      "EGNV"
-    ],
-    [
-      "Tenerife–South",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "TFS",
-      "GCTS"
-    ]
+    {
+      "city": "Alderney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alderney_Airport",
+      "codes": [
+        "ACI",
+        "EGJA"
+      ],
+      "airlines": [
+        "Finist'air"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Brest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
+      "codes": [
+        "BES",
+        "LFRB"
+      ],
+      "airlines": [
+        "Finist'air"
+      ]
+    },
+    {
+      "city": "Bristol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
+      "codes": [
+        "BRS",
+        "EGGD"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "East Midlands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "Jet2.com",
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Exeter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Exeter_Airport",
+      "codes": [
+        "EXT",
+        "EGTE"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Faro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Glasgow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Guernsey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guernsey_Airport",
+      "codes": [
+        "GCI",
+        "EGJB"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Leeds/Bradford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
+      "codes": [
+        "LBA",
+        "EGNM"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Liverpool",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
+      "codes": [
+        "LPL",
+        "EGGP"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Newcastle upon Tyne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
+      "codes": [
+        "NCL",
+        "EGNT"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Norwich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norwich_Airport",
+      "codes": [
+        "NWI",
+        "EGSH"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Sønderborg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sønderborg_Airport",
+      "codes": [
+        "SGD",
+        "EKSB"
+      ],
+      "airlines": [
+        "Alsie Express"
+      ]
+    },
+    {
+      "city": "Teesside",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teesside_Airport",
+      "codes": [
+        "MME",
+        "EGNV"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -239,5 +370,7 @@
     "Smartwings": [
       "Tenerife–South"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:32Z",
+  "date-time-wikidata": "2026-04-26T16:28:59Z"
 }

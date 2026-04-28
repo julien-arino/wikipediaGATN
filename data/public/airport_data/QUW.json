@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Nanortalik",
-      "https://en.wikipedia.org/wiki/Nanortalik_Heliport",
-      "JNN",
-      "BGNN"
-    ],
-    [
-      "Qaqortoq",
-      "https://en.wikipedia.org/wiki/Qaqortoq_Airport",
-      "JJU",
-      "BGQO"
-    ]
+    {
+      "city": "Nanortalik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanortalik_Heliport",
+      "codes": [
+        "JNN",
+        "BGNN"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qaqortoq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qaqortoq_Airport",
+      "codes": [
+        "JJU",
+        "BGQO"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Nanortalik",
       "Qaqortoq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:37Z",
+  "date-time-wikidata": "2026-04-16T16:48:37Z"
 }

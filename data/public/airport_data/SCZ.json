@@ -19,23 +19,35 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Lomlom",
-      "https://en.wikipedia.org/wiki/Lomlom_Airport",
-      "LLM",
-      "AGLM"
-    ]
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Lomlom",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomlom_Airport",
+      "codes": [
+        "LLM",
+        "AGLM"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
       "Honiara",
       "Lomlom"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:01Z",
+  "date-time-wikidata": "2024-11-21T05:59:24Z"
 }

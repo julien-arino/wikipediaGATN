@@ -21,18 +21,30 @@
     "Garuda Indonesia"
   ],
   "destinations": [
-    [
-      "Halim Perdanakusuma International Airport",
-      "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
-      "HLP",
-      "WIHH"
-    ],
-    [
-      "Soekarno–Hatta International Airport",
-      "https://en.wikipedia.org/wiki/Soekarno%E2%80%93Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ]
+    {
+      "city": "Halim Perdanakusuma International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
+      "codes": [
+        "HLP",
+        "WIHH"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink"
+      ]
+    },
+    {
+      "city": "Soekarno–Hatta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno%E2%80%93Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Garuda Indonesia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Batik Air": [
@@ -45,5 +57,7 @@
     "Garuda Indonesia": [
       "Soekarno–Hatta International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:42Z",
+  "date-time-wikidata": "2026-03-26T22:18:06Z"
 }

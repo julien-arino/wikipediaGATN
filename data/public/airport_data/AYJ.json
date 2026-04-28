@@ -7,6 +7,7 @@
   "lat": "26.7489176",
   "lon": "82.157608",
   "altitude": "102",
+  "continent": "Asia",
   "region": "Uttar Pradesh",
   "country_alpha3": "IND",
   "country_name": "India",
@@ -21,48 +22,87 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Ahmedabad Airport",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Dehradun Airport",
-      "https://en.wikipedia.org/wiki/Dehradun_Airport",
-      "DED",
-      "VIDN"
-    ],
-    [
-      "Hisar Airport",
-      "https://en.wikipedia.org/wiki/Hisar_Airport",
-      "HSS",
-      "VIHR"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Rajiv Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ]
+    {
+      "city": "Ahmedabad Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chhatrapati Shivaji Maharaj International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dehradun Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dehradun_Airport",
+      "codes": [
+        "DED",
+        "VIDN"
+      ],
+      "airlines": [
+        "Alliance Air (India)"
+      ]
+    },
+    {
+      "city": "Hisar Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hisar_Airport",
+      "codes": [
+        "HSS",
+        "VIHR"
+      ],
+      "airlines": [
+        "Alliance Air (India)"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "Alliance Air (India)",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rajiv Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -85,5 +125,6 @@
       "Rajiv Gandhi International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:03:42Z",
+  "date-time-wikidata": "2026-03-27T13:28:21Z"
 }

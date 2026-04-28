@@ -24,60 +24,105 @@
     "SunExpress"
   ],
   "destinations": [
-    [
-      "Alicante Airport",
-      "https://en.wikipedia.org/wiki/Alicante_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Antalya Airport",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Berlin Brandenburg Airport",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Hamburg Airport",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Heraklion International Airport",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Lamezia Terme Airport",
-      "https://en.wikipedia.org/wiki/Lamezia_Terme_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rhodes International Airport",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Trapani–Birgi Airport",
-      "https://en.wikipedia.org/wiki/Trapani%E2%80%93Birgi_Airport",
-      "TPS",
-      "LICT"
-    ]
+    {
+      "city": "Alicante Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Antalya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Berlin Brandenburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "DAT (airline)"
+      ]
+    },
+    {
+      "city": "Hamburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "DAT (airline)"
+      ]
+    },
+    {
+      "city": "Heraklion International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "Freebird Airlines Europe"
+      ]
+    },
+    {
+      "city": "Lamezia Terme Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lamezia_Terme_Airport",
+      "codes": [
+        "SUF",
+        "LICA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Rhodes International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Trapani–Birgi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trapani%E2%80%93Birgi_Airport",
+      "codes": [
+        "TPS",
+        "LICT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -101,5 +146,7 @@
     "SunExpress": [
       "Antalya Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:32Z",
+  "date-time-wikidata": "2026-04-04T00:38:58Z"
 }

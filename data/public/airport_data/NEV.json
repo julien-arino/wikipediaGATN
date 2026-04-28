@@ -23,48 +23,84 @@
     "Winair"
   ],
   "destinations": [
-    [
-      "Anguilla",
-      "https://en.wikipedia.org/wiki/Clayton_J._Lloyd_International_Airport",
-      "AXA",
-      "TQPF"
-    ],
-    [
-      "Dominica–Canefield",
-      "https://en.wikipedia.org/wiki/Canefield_Airport",
-      "DCF",
-      "TDCF"
-    ],
-    [
-      "Saint Barthélemy",
-      "https://en.wikipedia.org/wiki/Gustaf_III_Airport",
-      "SBH",
-      "TFFJ"
-    ],
-    [
-      "Saint Croix",
-      "https://en.wikipedia.org/wiki/Henry_E._Rohlsen_Airport",
-      "STX",
-      "TISX"
-    ],
-    [
-      "Saint Kitts",
-      "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
-      "SKB",
-      "TKPK"
-    ],
-    [
-      "Saint Thomas",
-      "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
-      "STT",
-      "TIST"
-    ],
-    [
-      "Sint Maarten",
-      "https://en.wikipedia.org/wiki/Sint_Maarten",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Anguilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clayton_J._Lloyd_International_Airport",
+      "codes": [
+        "AXA",
+        "TQPF"
+      ],
+      "airlines": [
+        "Trans Anguilla Airways"
+      ]
+    },
+    {
+      "city": "Dominica–Canefield",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canefield_Airport",
+      "codes": [
+        "DCF",
+        "TDCF"
+      ],
+      "airlines": [
+        "Coastal Air"
+      ]
+    },
+    {
+      "city": "Saint Barthélemy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustaf_III_Airport",
+      "codes": [
+        "SBH",
+        "TFFJ"
+      ],
+      "airlines": [
+        "St Barth Commuter"
+      ]
+    },
+    {
+      "city": "Saint Croix",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_E._Rohlsen_Airport",
+      "codes": [
+        "STX",
+        "TISX"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Coastal Air"
+      ]
+    },
+    {
+      "city": "Saint Kitts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
+      "codes": [
+        "SKB",
+        "TKPK"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Saint Thomas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
+      "codes": [
+        "STT",
+        "TIST"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Sint Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sint_Maarten",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Winair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cape Air": [
@@ -85,5 +121,7 @@
     "Winair": [
       "Sint Maarten"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:21Z",
+  "date-time-wikidata": "2025-09-28T11:04:11Z"
 }

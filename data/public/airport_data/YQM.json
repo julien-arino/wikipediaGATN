@@ -28,132 +28,248 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Cayo Coco",
-      "https://en.wikipedia.org/wiki/Jardines_del_Rey_Airport",
-      "CCC",
-      "MUCC"
-    ],
-    [
-      "Deer Lake",
-      "https://en.wikipedia.org/wiki/Deer_Lake_Regional_Airport",
-      "YDF",
-      "CYDF"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Halifax",
-      "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-      "YHZ",
-      "CYHZ"
-    ],
-    [
-      "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Holguin",
-      "https://en.wikipedia.org/wiki/Frank_País_Airport",
-      "HOG",
-      "MUHG"
-    ],
-    [
-      "Mont-Joli",
-      "https://en.wikipedia.org/wiki/Mont-Joli_Airport",
-      "YYY",
-      "CYYY"
-    ],
-    [
-      "Montego Bay",
-      "https://en.wikipedia.org/wiki/Sangster_International_Airport",
-      "MBJ",
-      "MKJS"
-    ],
-    [
-      "Montreal–Mirabel",
-      "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
-      "YMX",
-      "CYMX"
-    ],
-    [
-      "Montréal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
-      "YHU",
-      "CYHU"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Puerto Plata",
-      "https://en.wikipedia.org/wiki/Gregorio_Luperón_International_Airport",
-      "POP",
-      "MDPP"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "St. John's",
-      "https://en.wikipedia.org/wiki/St._John's_International_Airport",
-      "YYT",
-      "CYYT"
-    ],
-    [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
-      "YTZ",
-      "CYTZ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Varadero",
-      "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
-      "VRA",
-      "MUVR"
-    ],
-    [
-      "Wabush",
-      "https://en.wikipedia.org/wiki/Wabush_Airport",
-      "YWK",
-      "CYWK"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Cayo Coco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jardines_del_Rey_Airport",
+      "codes": [
+        "CCC",
+        "MUCC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Deer Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deer_Lake_Regional_Airport",
+      "codes": [
+        "YDF",
+        "CYDF"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Halifax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ"
+      ],
+      "airlines": [
+        "Cargojet Airways",
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "Cargojet Airways"
+      ]
+    },
+    {
+      "city": "Holguin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frank_País_Airport",
+      "codes": [
+        "HOG",
+        "MUHG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Mont-Joli",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mont-Joli_Airport",
+      "codes": [
+        "YYY",
+        "CYYY"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Montego Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sangster_International_Airport",
+      "codes": [
+        "MBJ",
+        "MKJS"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Montreal–Mirabel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
+      "codes": [
+        "YMX",
+        "CYMX"
+      ],
+      "airlines": [
+        "Cargojet Airways",
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Montréal–Saint-Hubert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montreal_Metropolitan_Airport",
+      "codes": [
+        "YHU",
+        "CYHU"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Canada Express",
+        "Air Canada Rouge"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Puerto Plata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gregorio_Luperón_International_Airport",
+      "codes": [
+        "POP",
+        "MDPP"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "St. John's",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._John's_International_Airport",
+      "codes": [
+        "YYT",
+        "CYYT"
+      ],
+      "airlines": [
+        "Cargojet Airways",
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Billy Bishop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "codes": [
+        "YTZ",
+        "CYTZ"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Canada Rouge",
+        "Flair Airlines",
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Varadero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
+      "codes": [
+        "VRA",
+        "MUVR"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Wabush",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wabush_Airport",
+      "codes": [
+        "YWK",
+        "CYWK"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -208,5 +324,7 @@
       "Halifax",
       "Montreal–Mirabel"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:40Z",
+  "date-time-wikidata": "2026-03-24T18:26:14Z"
 }

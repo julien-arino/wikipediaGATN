@@ -20,24 +20,40 @@
     "Mokulele Airlines"
   ],
   "destinations": [
-    [
-      "Honolulu International Airport",
-      "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Kahului Airport",
-      "https://en.wikipedia.org/wiki/Kahului_Airport",
-      "OGG",
-      "PHOG"
-    ],
-    [
-      "Molokai Airport",
-      "https://en.wikipedia.org/wiki/Molokai_Airport",
-      "MKK",
-      "PHMK"
-    ]
+    {
+      "city": "Honolulu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Lanai Airlines",
+        "Mokulele Airlines"
+      ]
+    },
+    {
+      "city": "Kahului Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahului_Airport",
+      "codes": [
+        "OGG",
+        "PHOG"
+      ],
+      "airlines": [
+        "Mokulele Airlines"
+      ]
+    },
+    {
+      "city": "Molokai Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Molokai_Airport",
+      "codes": [
+        "MKK",
+        "PHMK"
+      ],
+      "airlines": [
+        "Mokulele Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Lanai Airlines": [
@@ -48,5 +64,7 @@
       "Kahului Airport",
       "Molokai Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:09Z",
+  "date-time-wikidata": "2026-02-13T22:03:32Z"
 }

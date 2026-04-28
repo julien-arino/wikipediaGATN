@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UIKG",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Taksimo",
+  "city-served-wikipedia": "Taksimo",
   "location": "Taksimo",
   "lat": "56.361667",
   "lon": "114.930000",
@@ -19,16 +19,23 @@
     "IrAero"
   ],
   "destinations": [
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ]
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IrAero": [
       "Ulan-Ude"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:32Z",
+  "date-time-wikidata": "2026-01-09T01:08:59Z"
 }

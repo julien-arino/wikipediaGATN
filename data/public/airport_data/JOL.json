@@ -20,18 +20,29 @@
     "Leading Edge"
   ],
   "destinations": [
-    [
-      "Cotabato",
-      "https://en.wikipedia.org/wiki/Cotabato_Airport",
-      "CBO",
-      "RPMC"
-    ],
-    [
-      "Zamboanga",
-      "https://en.wikipedia.org/wiki/Zamboanga_International_Airport",
-      "ZAM",
-      "RPMZ"
-    ]
+    {
+      "city": "Cotabato",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cotabato_Airport",
+      "codes": [
+        "CBO",
+        "RPMC"
+      ],
+      "airlines": [
+        "Bangsamoro Airways"
+      ]
+    },
+    {
+      "city": "Zamboanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zamboanga_International_Airport",
+      "codes": [
+        "ZAM",
+        "RPMZ"
+      ],
+      "airlines": [
+        "Bangsamoro Airways",
+        "Leading Edge"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bangsamoro Airways": [
@@ -41,5 +52,7 @@
     "Leading Edge": [
       "Zamboanga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:28Z",
+  "date-time-wikidata": "2025-07-07T16:24:06Z"
 }

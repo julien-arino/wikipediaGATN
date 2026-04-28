@@ -20,30 +20,50 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Los Angeles",
-      "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "LAX",
-      "KLAX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Morelia",
-      "https://en.wikipedia.org/wiki/General_Francisco_Mujica_International_Airport",
-      "MLM",
-      "MMMM"
-    ],
-    [
-      "Tijuana",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ]
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    },
+    {
+      "city": "Morelia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Francisco_Mujica_International_Airport",
+      "codes": [
+        "MLM",
+        "MMMM"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerus": [
@@ -54,5 +74,7 @@
       "Los Angeles",
       "Tijuana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:10Z",
+  "date-time-wikidata": "2026-04-03T13:49:39Z"
 }

@@ -30,144 +30,275 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Aruba",
-      "https://en.wikipedia.org/wiki/Queen_Beatrix_International_Airport",
-      "AUA",
-      "TNCA"
-    ],
-    [
-      "Bahía Blanca",
-      "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
-      "BHI",
-      "SAZB"
-    ],
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Buenos Aires–Ezeiza",
-      "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
-      "EZE",
-      "SAEZ"
-    ],
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Comodoro Rivadavia",
-      "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
-      "CRD",
-      "SAVC"
-    ],
-    [
-      "Córdoba (AR)",
-      "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
-      "COR",
-      "SACO"
-    ],
-    [
-      "Florianópolis",
-      "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-      "FLN",
-      "SBFL"
-    ],
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Malargüe",
-      "https://en.wikipedia.org/wiki/Comodoro_D._Ricardo_Salomón_Airport",
-      "LGS",
-      "SAMM"
-    ],
-    [
-      "Mar del Plata",
-      "https://en.wikipedia.org/wiki/Astor_Piazzolla_International_Airport",
-      "MDQ",
-      "SAZM"
-    ],
-    [
-      "Neuquén",
-      "https://en.wikipedia.org/wiki/Presidente_Perón_International_Airport",
-      "NQN",
-      "SAZN"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Puerto Madryn",
-      "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
-      "PMY",
-      "SAVY"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "Rio de Janeiro–Galeão",
-      "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-      "GIG",
-      "SBGL"
-    ],
-    [
-      "Rosario",
-      "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
-      "ROS",
-      "SAAR"
-    ],
-    [
-      "Salta",
-      "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
-      "SLA",
-      "SASA"
-    ],
-    [
-      "San Carlos de Bariloche",
-      "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
-      "BRC",
-      "SAZS"
-    ],
-    [
-      "San Salvador de Jujuy",
-      "https://en.wikipedia.org/wiki/Gobernador_Horacio_Guzmán_International_Airport",
-      "JUJ",
-      "SASJ"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Aruba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Beatrix_International_Airport",
+      "codes": [
+        "AUA",
+        "TNCA"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Bahía Blanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
+      "codes": [
+        "BHI",
+        "SAZB"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Ezeiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Comodoro Rivadavia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
+      "codes": [
+        "CRD",
+        "SAVC"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "LADE"
+      ]
+    },
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL"
+      ],
+      "airlines": [
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "LATAM Peru"
+      ]
+    },
+    {
+      "city": "Malargüe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comodoro_D._Ricardo_Salomón_Airport",
+      "codes": [
+        "LGS",
+        "SAMM"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Mar del Plata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Astor_Piazzolla_International_Airport",
+      "codes": [
+        "MDQ",
+        "SAZM"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Neuquén",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Perón_International_Airport",
+      "codes": [
+        "NQN",
+        "SAZN"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "LADE"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Puerto Madryn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
+      "codes": [
+        "PMY",
+        "SAVY"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Arajet"
+      ]
+    },
+    {
+      "city": "Rio de Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
+      "codes": [
+        "GIG",
+        "SBGL"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "Rosario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
+      "codes": [
+        "ROS",
+        "SAAR"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Salta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
+      "codes": [
+        "SLA",
+        "SASA"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "San Carlos de Bariloche",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
+      "codes": [
+        "BRC",
+        "SAZS"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "San Salvador de Jujuy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gobernador_Horacio_Guzmán_International_Airport",
+      "codes": [
+        "JUJ",
+        "SASJ"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "JetSmart Argentina",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -230,5 +361,7 @@
       "Florianópolis",
       "Santiago de Chile"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:41Z",
+  "date-time-wikidata": "2026-03-08T08:53:56Z"
 }

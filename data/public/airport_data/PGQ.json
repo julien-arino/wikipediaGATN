@@ -20,12 +20,18 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Ternate",
-      "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
-      "TTE",
-      "WAEE"
-    ]
+    {
+      "city": "Ternate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
+      "codes": [
+        "TTE",
+        "WAEE"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -34,5 +40,7 @@
     "Wings Air": [
       "Ternate"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:00Z",
+  "date-time-wikidata": "2026-02-19T10:19:52Z"
 }

@@ -20,18 +20,29 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Inverness",
-      "https://en.wikipedia.org/wiki/Inverness_Airport",
-      "INV",
-      "EGPE"
-    ],
-    [
-      "Stornoway",
-      "https://en.wikipedia.org/wiki/Stornoway_Airport",
-      "SYY",
-      "EGPO"
-    ]
+    {
+      "city": "Inverness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inverness_Airport",
+      "codes": [
+        "INV",
+        "EGPE"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Stornoway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stornoway_Airport",
+      "codes": [
+        "SYY",
+        "EGPO"
+      ],
+      "airlines": [
+        "Hebridean Air Services",
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hebridean Air Services": [
@@ -41,5 +52,7 @@
       "Inverness",
       "Stornoway"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:47Z",
+  "date-time-wikidata": "2025-11-30T21:01:06Z"
 }

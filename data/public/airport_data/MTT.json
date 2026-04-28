@@ -21,30 +21,51 @@
     "Aerus"
   ],
   "destinations": [
-    [
-      "Ciudad del Carmen",
-      "https://en.wikipedia.org/wiki/Ciudad_del_Carmen_International_Airport",
-      "CME",
-      "MMCE"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Veracruz",
-      "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
-      "VER",
-      "MMVR"
-    ],
-    [
-      "Villahermosa",
-      "https://en.wikipedia.org/wiki/Villahermosa_International_Airport",
-      "VSA",
-      "MMVA"
-    ]
+    {
+      "city": "Ciudad del Carmen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciudad_del_Carmen_International_Airport",
+      "codes": [
+        "CME",
+        "MMCE"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeromexico",
+        "Aeromexico Connect"
+      ]
+    },
+    {
+      "city": "Veracruz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
+      "codes": [
+        "VER",
+        "MMVR"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    },
+    {
+      "city": "Villahermosa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Villahermosa_International_Airport",
+      "codes": [
+        "VSA",
+        "MMVA"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeromexico": [
@@ -58,5 +79,7 @@
       "Veracruz",
       "Villahermosa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:21Z",
+  "date-time-wikidata": "2026-02-18T19:55:23Z"
 }

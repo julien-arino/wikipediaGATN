@@ -7,6 +7,7 @@
   "lat": "36.6969976",
   "lon": "24.4760331",
   "altitude": "3",
+  "continent": "Europe",
   "region": "South Aegean",
   "country_alpha3": "GRC",
   "country_name": "Greece",
@@ -19,18 +20,28 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -40,5 +51,6 @@
       "Athens"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:17:43Z",
+  "date-time-wikidata": "2026-03-26T18:23:41Z"
 }

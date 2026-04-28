@@ -37,138 +37,269 @@
     "United Airlines"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Blenheim",
-      "https://en.wikipedia.org/wiki/Woodbourne_Airport",
-      "BHE",
-      "NZWB"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Chatham Islands",
-      "https://en.wikipedia.org/wiki/Chatham_Islands_/_Tuuta_Airport",
-      "CHT",
-      "NZCI"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Gold Coast",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hamilton",
-      "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
-      "HLZ",
-      "NZHN"
-    ],
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Nelson",
-      "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
-      "NSN",
-      "NZNS"
-    ],
-    [
-      "Palmerston North",
-      "https://en.wikipedia.org/wiki/Palmerston_North_Airport",
-      "PMR",
-      "NZPM"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Port Vila",
-      "https://en.wikipedia.org/wiki/Bauerfield_International_Airport",
-      "VLI",
-      "NVVV"
-    ],
-    [
-      "Rarotonga",
-      "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
-      "RAR",
-      "NCRG"
-    ],
-    [
-      "San Francisco",
-      "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
-      "SFO",
-      "KSFO"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Singapore_Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Sydney–Kingsford Smith",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_International_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "Air New Zealand",
+        "Airwork",
+        "DHL Aviation",
+        "FedEx Express",
+        "Jetstar",
+        "Parcelair",
+        "Qantas Freight",
+        "Texel Air Australasia"
+      ]
+    },
+    {
+      "city": "Blenheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Woodbourne_Airport",
+      "codes": [
+        "BHE",
+        "NZWB"
+      ],
+      "airlines": [
+        "Originair"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "Air New Zealand",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Chatham Islands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chatham_Islands_/_Tuuta_Airport",
+      "codes": [
+        "CHT",
+        "NZCI"
+      ],
+      "airlines": [
+        "Air Chathams"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
+      "codes": [
+        "HLZ",
+        "NZHN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Cathay Pacific"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "DHL Aviation",
+        "FedEx Express",
+        "Jetstar",
+        "Qantas",
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Nelson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
+      "codes": [
+        "NSN",
+        "NZNS"
+      ],
+      "airlines": [
+        "Originair"
+      ]
+    },
+    {
+      "city": "Palmerston North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palmerston_North_Airport",
+      "codes": [
+        "PMR",
+        "NZPM"
+      ],
+      "airlines": [
+        "Originair",
+        "Parcelair",
+        "Texel Air Australasia"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Port Vila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bauerfield_International_Airport",
+      "codes": [
+        "VLI",
+        "NVVV"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Rarotonga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
+      "codes": [
+        "RAR",
+        "NCRG"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Singapore Airlines"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "DHL Aviation",
+        "FedEx Express",
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Sydney–Kingsford Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Emirates",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_International_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Chathams": [
@@ -252,5 +383,7 @@
       "Auckland",
       "Palmerston North"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:03Z",
+  "date-time-wikidata": "2026-04-17T15:47:06Z"
 }

@@ -24,18 +24,34 @@
     "United Nigeria Airlines"
   ],
   "destinations": [
-    [
-      "Abuja",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ],
-    [
-      "Lagos",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ]
+    {
+      "city": "Abuja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Azman Air",
+        "United Nigeria Airlines"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Arik Air",
+        "Enugu Air",
+        "Green Africa Airways",
+        "United Nigeria Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Peace": [
@@ -58,5 +74,7 @@
     "Green Africa Airways": [
       "Lagos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:35Z",
+  "date-time-wikidata": "2025-12-23T23:09:22Z"
 }

@@ -19,23 +19,35 @@
     "La Costeña"
   ],
   "destinations": [
-    [
-      "Bluefields",
-      "https://en.wikipedia.org/wiki/Bluefields_Airport",
-      "BEF",
-      "MNBL"
-    ],
-    [
-      "Managua",
-      "https://en.wikipedia.org/wiki/Augusto_C._Sandino_International_Airport",
-      "MGA",
-      "MNMG"
-    ]
+    {
+      "city": "Bluefields",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bluefields_Airport",
+      "codes": [
+        "BEF",
+        "MNBL"
+      ],
+      "airlines": [
+        "La Costeña"
+      ]
+    },
+    {
+      "city": "Managua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Augusto_C._Sandino_International_Airport",
+      "codes": [
+        "MGA",
+        "MNMG"
+      ],
+      "airlines": [
+        "La Costeña"
+      ]
+    }
   ],
   "airlines_destinations": {
     "La Costeña": [
       "Bluefields",
       "Managua"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:51Z",
+  "date-time-wikidata": "2026-03-18T21:53:07Z"
 }

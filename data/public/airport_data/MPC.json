@@ -19,23 +19,35 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Bengkulu",
-      "https://en.wikipedia.org/wiki/Fatmawati_Soekarno_Airport",
-      "BKS",
-      "WIGG"
-    ],
-    [
-      "Padang",
-      "https://en.wikipedia.org/wiki/Minangkabau_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Bengkulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fatmawati_Soekarno_Airport",
+      "codes": [
+        "BKS",
+        "WIGG"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Padang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minangkabau_Airport",
+      "codes": [
+        "PDG",
+        "WIEE"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
       "Bengkulu",
       "Padang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:26Z",
+  "date-time-wikidata": "2025-04-12T13:08:23Z"
 }

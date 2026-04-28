@@ -19,23 +19,35 @@
     "Air Calédonie"
   ],
   "destinations": [
-    [
-      "Koumac",
-      "https://en.wikipedia.org/wiki/Koumac_Airport",
-      "KOC",
-      "NWWK"
-    ],
-    [
-      "Nouméa–Magenta",
-      "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
-      "GEA",
-      "NWWM"
-    ]
+    {
+      "city": "Koumac",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koumac_Airport",
+      "codes": [
+        "KOC",
+        "NWWK"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Nouméa–Magenta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
+      "codes": [
+        "GEA",
+        "NWWM"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Calédonie": [
       "Koumac",
       "Nouméa–Magenta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:31Z",
+  "date-time-wikidata": "2026-04-25T22:08:35Z"
 }

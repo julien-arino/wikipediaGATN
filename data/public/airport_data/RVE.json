@@ -20,24 +20,39 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Bucaramanga",
-      "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
-      "BGA",
-      "SKBG"
-    ],
-    [
-      "Tame",
-      "https://en.wikipedia.org/wiki/Gabriel_Vargas_Santos_Airport",
-      "TME",
-      "SKTM"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bucaramanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
+      "codes": [
+        "BGA",
+        "SKBG"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "Tame",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gabriel_Vargas_Santos_Airport",
+      "codes": [
+        "TME",
+        "SKTM"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Clic": [
@@ -47,5 +62,7 @@
       "Bogotá",
       "Tame"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:55Z",
+  "date-time-wikidata": "2024-10-04T17:51:06Z"
 }

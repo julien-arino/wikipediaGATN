@@ -20,18 +20,28 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ]
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Delta Connection": [
@@ -40,5 +50,7 @@
     "United Express": [
       "Dulles International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:11Z",
+  "date-time-wikidata": "2025-10-21T22:13:03Z"
 }

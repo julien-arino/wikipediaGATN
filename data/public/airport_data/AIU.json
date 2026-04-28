@@ -19,23 +19,35 @@
     "Air Rarotonga"
   ],
   "destinations": [
-    [
-      "Aitutaki",
-      "https://en.wikipedia.org/wiki/Aitutaki_Airport",
-      "AIT",
-      "NCAI"
-    ],
-    [
-      "Rarotonga",
-      "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
-      "RAR",
-      "NCRG"
-    ]
+    {
+      "city": "Aitutaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aitutaki_Airport",
+      "codes": [
+        "AIT",
+        "NCAI"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    },
+    {
+      "city": "Rarotonga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
+      "codes": [
+        "RAR",
+        "NCRG"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Rarotonga": [
       "Aitutaki",
       "Rarotonga"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:06Z",
+  "date-time-wikidata": "2023-02-13T09:00:42Z"
 }

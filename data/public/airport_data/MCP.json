@@ -22,36 +22,64 @@
     "Omni Táxi Aéreo"
   ],
   "destinations": [
-    [
-      "Belém",
-      "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
-      "BEL",
-      "SBBE"
-    ],
-    [
-      "Brasília",
-      "https://en.wikipedia.org/wiki/Brasília_International_Airport",
-      "BSB",
-      "SBBR"
-    ],
-    [
-      "Oiapoque",
-      "https://en.wikipedia.org/wiki/Oiapoque_Airport",
-      "OYK",
-      "SBOI"
-    ],
-    [
-      "Rio de Janeiro–Galeão",
-      "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-      "GIG",
-      "SBGL"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Oiapoque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oiapoque_Airport",
+      "codes": [
+        "OYK",
+        "SBOI"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Omni Táxi Aéreo"
+      ]
+    },
+    {
+      "city": "Rio de Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
+      "codes": [
+        "GIG",
+        "SBGL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -70,5 +98,7 @@
     "Omni Táxi Aéreo": [
       "Oiapoque"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:10Z",
+  "date-time-wikidata": "2026-02-28T10:45:09Z"
 }

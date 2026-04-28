@@ -19,23 +19,35 @@
     "Air Rarotonga"
   ],
   "destinations": [
-    [
-      "Enua Airport",
-      "https://en.wikipedia.org/wiki/Enua_Airport",
-      "AIU",
-      "NCAT"
-    ],
-    [
-      "Rarotonga International Airport",
-      "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
-      "RAR",
-      "NCRG"
-    ]
+    {
+      "city": "Enua Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enua_Airport",
+      "codes": [
+        "AIU",
+        "NCAT"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    },
+    {
+      "city": "Rarotonga International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rarotonga_International_Airport",
+      "codes": [
+        "RAR",
+        "NCRG"
+      ],
+      "airlines": [
+        "Air Rarotonga"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Rarotonga": [
       "Enua Airport",
       "Rarotonga International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:06Z",
+  "date-time-wikidata": "2026-01-07T18:31:51Z"
 }

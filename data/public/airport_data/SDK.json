@@ -22,30 +22,53 @@
     "Malaysia Airlines"
   ],
   "destinations": [
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Lahad Datu",
-      "https://en.wikipedia.org/wiki/Lahad_Datu_Airport",
-      "LDU",
-      "WBKD"
-    ],
-    [
-      "Tawau",
-      "https://en.wikipedia.org/wiki/Tawau_Airport",
-      "TWU",
-      "WBKW"
-    ]
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Lahad Datu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lahad_Datu_Airport",
+      "codes": [
+        "LDU",
+        "WBKD"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Tawau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tawau_Airport",
+      "codes": [
+        "TWU",
+        "WBKW"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -63,5 +86,7 @@
     "Malaysia Airlines": [
       "Kuala Lumpur–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:02Z",
+  "date-time-wikidata": "2026-04-22T18:49:26Z"
 }

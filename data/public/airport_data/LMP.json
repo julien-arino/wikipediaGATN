@@ -24,66 +24,118 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bologna",
-      "https://en.wikipedia.org/wiki/Bologna_Airport",
-      "BLQ",
-      "LIPE"
-    ],
-    [
-      "Catania",
-      "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
-      "CTA",
-      "LICC"
-    ],
-    [
-      "Milan–Linate",
-      "https://en.wikipedia.org/wiki/Linate_Airport",
-      "LIN",
-      "LIML"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Naples",
-      "https://en.wikipedia.org/wiki/Naples_Airport",
-      "NAP",
-      "LIRN"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Palermo_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Trapani",
-      "https://en.wikipedia.org/wiki/Trapani_Airport",
-      "TPS",
-      "LICT"
-    ],
-    [
-      "Venice",
-      "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-      "VCE",
-      "LIPZ"
-    ],
-    [
-      "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ]
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "AeroItalia"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "AeroItalia"
+      ]
+    },
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
+      "codes": [
+        "CTA",
+        "LICC"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Milan–Linate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML"
+      ],
+      "airlines": [
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Air Horizont",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Volotea",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Trapani",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trapani_Airport",
+      "codes": [
+        "TPS",
+        "LICT"
+      ],
+      "airlines": [
+        "DAT"
+      ]
+    },
+    {
+      "city": "Venice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "codes": [
+        "VCE",
+        "LIPZ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroItalia": [
@@ -110,5 +162,7 @@
       "Venice",
       "Verona"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:06Z",
+  "date-time-wikidata": "2026-03-22T19:51:51Z"
 }

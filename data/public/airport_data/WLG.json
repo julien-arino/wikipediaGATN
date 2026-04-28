@@ -27,138 +27,258 @@
     "Sounds Air"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Blenheim",
-      "https://en.wikipedia.org/wiki/Woodbourne_Airport",
-      "BHE",
-      "NZWB"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Chatham Islands",
-      "https://en.wikipedia.org/wiki/Chatham_Islands_/_Tuuta_Airport",
-      "CHT",
-      "NZCI"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Dunedin",
-      "https://en.wikipedia.org/wiki/Dunedin_Airport",
-      "DUD",
-      "NZDN"
-    ],
-    [
-      "Gisborne",
-      "https://en.wikipedia.org/wiki/Gisborne_Airport",
-      "GIS",
-      "NZGS"
-    ],
-    [
-      "Gold Coast",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Hamilton",
-      "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
-      "HLZ",
-      "NZHN"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Nadi",
-      "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-      "NAN",
-      "NFFN"
-    ],
-    [
-      "Napier",
-      "https://en.wikipedia.org/wiki/Napier_Airport",
-      "NPE",
-      "NZNR"
-    ],
-    [
-      "Nelson",
-      "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
-      "NSN",
-      "NZNS"
-    ],
-    [
-      "New Plymouth",
-      "https://en.wikipedia.org/wiki/New_Plymouth_Airport",
-      "NPL",
-      "NZNP"
-    ],
-    [
-      "Picton",
-      "https://en.wikipedia.org/wiki/Picton_Aerodrome",
-      "PCN",
-      "NZPN"
-    ],
-    [
-      "Queenstown",
-      "https://en.wikipedia.org/wiki/Queenstown_Airport",
-      "ZQN",
-      "NZQN"
-    ],
-    [
-      "Rotorua",
-      "https://en.wikipedia.org/wiki/Rotorua_Airport",
-      "ROT",
-      "NZRO"
-    ],
-    [
-      "Sydney–Kingsford Smith",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Tauranga",
-      "https://en.wikipedia.org/wiki/Tauranga_Airport",
-      "TRG",
-      "NZTG"
-    ],
-    [
-      "Timaru",
-      "https://en.wikipedia.org/wiki/Timaru_Airport",
-      "TIU",
-      "NZTU"
-    ],
-    [
-      "Tākaka",
-      "https://en.wikipedia.org/wiki/Tākaka_Aerodrome",
-      "KTF",
-      "NZTK"
-    ],
-    [
-      "Westport",
-      "https://en.wikipedia.org/wiki/Westport_Airport_(New_Zealand)",
-      "WSZ",
-      "NZWS"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Blenheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Woodbourne_Airport",
+      "codes": [
+        "BHE",
+        "NZWB"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Originair",
+        "Sounds Air"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Qantas",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Chatham Islands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chatham_Islands_/_Tuuta_Airport",
+      "codes": [
+        "CHT",
+        "NZCI"
+      ],
+      "airlines": [
+        "Air Chathams"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Dunedin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dunedin_Airport",
+      "codes": [
+        "DUD",
+        "NZDN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Gisborne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gisborne_Airport",
+      "codes": [
+        "GIS",
+        "NZGS"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamilton_Airport_(New_Zealand)",
+      "codes": [
+        "HLZ",
+        "NZHN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Napier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Napier_Airport",
+      "codes": [
+        "NPE",
+        "NZNR"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Nelson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
+      "codes": [
+        "NSN",
+        "NZNS"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Originair",
+        "Sounds Air"
+      ]
+    },
+    {
+      "city": "New Plymouth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Plymouth_Airport",
+      "codes": [
+        "NPL",
+        "NZNP"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Picton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Picton_Aerodrome",
+      "codes": [
+        "PCN",
+        "NZPN"
+      ],
+      "airlines": [
+        "Sounds Air"
+      ]
+    },
+    {
+      "city": "Queenstown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queenstown_Airport",
+      "codes": [
+        "ZQN",
+        "NZQN"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Rotorua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotorua_Airport",
+      "codes": [
+        "ROT",
+        "NZRO"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Sydney–Kingsford Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Tauranga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tauranga_Airport",
+      "codes": [
+        "TRG",
+        "NZTG"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Timaru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timaru_Airport",
+      "codes": [
+        "TIU",
+        "NZTU"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Tākaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tākaka_Aerodrome",
+      "codes": [
+        "KTF",
+        "NZTK"
+      ],
+      "airlines": [
+        "Golden Bay Air"
+      ]
+    },
+    {
+      "city": "Westport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Westport_Airport_(New_Zealand)",
+      "codes": [
+        "WSZ",
+        "NZWS"
+      ],
+      "airlines": [
+        "Originair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Chathams": [
@@ -211,5 +331,7 @@
       "Nelson",
       "Picton"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:12Z",
+  "date-time-wikidata": "2026-04-21T04:14:54Z"
 }

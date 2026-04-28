@@ -20,30 +20,50 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Bergen Airport, Flesland",
-      "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
-      "BGO",
-      "ENBR"
-    ],
-    [
-      "Chania Airport",
-      "https://en.wikipedia.org/wiki/Chania_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Gran Canaria Airport",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Oslo Airport, Gardermoen",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ]
+    {
+      "city": "Bergen Airport, Flesland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport,_Flesland",
+      "codes": [
+        "BGO",
+        "ENBR"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Chania Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Gran Canaria Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Oslo Airport, Gardermoen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Scandinavian Airlines": [
@@ -54,5 +74,7 @@
     "Widerøe": [
       "Bergen Airport, Flesland"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:45Z",
+  "date-time-wikidata": "2026-01-25T21:55:30Z"
 }

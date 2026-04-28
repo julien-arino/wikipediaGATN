@@ -21,36 +21,62 @@
     "Scoot"
   ],
   "destinations": [
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Krabi",
-      "https://en.wikipedia.org/wiki/Krabi_International_Airport",
-      "KBV",
-      "VTSG"
-    ],
-    [
-      "Kuala Lumpur–Subang",
-      "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
-      "SZB",
-      "WMSA"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ]
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Bangkok Airways"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Bangkok Airways"
+      ]
+    },
+    {
+      "city": "Krabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krabi_International_Airport",
+      "codes": [
+        "KBV",
+        "VTSG"
+      ],
+      "airlines": [
+        "Bangkok Airways"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–Subang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
+      "codes": [
+        "SZB",
+        "WMSA"
+      ],
+      "airlines": [
+        "Berjaya Air"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Bangkok Airways",
+        "Scoot"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bangkok Airways": [
@@ -65,5 +91,7 @@
     "Scoot": [
       "Singapore"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:50Z",
+  "date-time-wikidata": "2026-02-18T03:25:56Z"
 }

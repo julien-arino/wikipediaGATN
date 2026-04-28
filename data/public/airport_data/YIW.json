@@ -20,18 +20,28 @@
     "China Postal Airlines"
   ],
   "destinations": [
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ]
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Central Airlines"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "China Postal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Central Airlines": [
@@ -40,5 +50,7 @@
     "China Postal Airlines": [
       "Osaka–Kansai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:35Z",
+  "date-time-wikidata": "2026-03-19T22:53:03Z"
 }

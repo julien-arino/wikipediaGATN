@@ -22,36 +22,65 @@
     "Virgin Australia Cargo"
   ],
   "destinations": [
-    [
-      "Canberra",
-      "https://en.wikipedia.org/wiki/Canberra_Airport",
-      "CBR",
-      "YSCB"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Canberra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
+      "codes": [
+        "CBR",
+        "YSCB"
+      ],
+      "airlines": [
+        "Toll Group"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Toll Group",
+        "Virgin Australia Cargo"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Toll Group"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Toll Group"
+      ]
+    }
   ],
   "airlines_destinations": {
     "MASkargo": [
@@ -71,5 +100,7 @@
     "Virgin Australia Cargo": [
       "Melbourne"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:53Z",
+  "date-time-wikidata": "2026-04-22T12:11:40Z"
 }

@@ -7,6 +7,7 @@
   "lat": "-8.7078081",
   "lon": "121.0579365",
   "altitude": "1318.56",
+  "continent": "Asia",
   "region": "East Nusa Tenggara",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -18,18 +19,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Labuan Bajo",
-      "https://en.wikipedia.org/wiki/Komodo_International_Airport",
-      "LBJ",
-      "WATO"
-    ]
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Labuan Bajo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Komodo_International_Airport",
+      "codes": [
+        "LBJ",
+        "WATO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wings Air": [
@@ -37,5 +48,6 @@
       "Labuan Bajo"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:04:08Z",
+  "date-time-wikidata": "2026-04-14T20:08:29Z"
 }

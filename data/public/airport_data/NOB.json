@@ -19,23 +19,35 @@
     "Sansa Airlines"
   ],
   "destinations": [
-    [
-      "Liberia",
-      "https://en.wikipedia.org/wiki/Daniel_Oduber_International_Airport",
-      "LIR",
-      "MRLB"
-    ],
-    [
-      "San José–Juan Santamaría",
-      "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
-      "SJO",
-      "MROC"
-    ]
+    {
+      "city": "Liberia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_Oduber_International_Airport",
+      "codes": [
+        "LIR",
+        "MRLB"
+      ],
+      "airlines": [
+        "Sansa Airlines"
+      ]
+    },
+    {
+      "city": "San José–Juan Santamaría",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Sansa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sansa Airlines": [
       "Liberia",
       "San José–Juan Santamaría"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:03Z",
+  "date-time-wikidata": "2025-01-04T20:55:57Z"
 }

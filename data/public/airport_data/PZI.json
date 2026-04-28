@@ -7,6 +7,7 @@
   "lat": "26.5395923",
   "lon": "101.7973517",
   "altitude": "1976",
+  "continent": "Asia",
   "region": "Sichuan",
   "country_alpha3": "CHN",
   "country_name": "China",
@@ -21,30 +22,50 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chengdu Shuangliu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
-      "CTU",
-      "ZUUU"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Shuangliu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -60,5 +81,6 @@
       "Xi'an Xianyang International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:08:13Z",
+  "date-time-wikidata": "2025-08-24T08:56:00Z"
 }

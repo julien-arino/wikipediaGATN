@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Dillingham",
-      "https://en.wikipedia.org/wiki/Dillingham_Airport",
-      "DLG",
-      "PADL"
-    ],
-    [
-      "King Salmon",
-      "https://en.wikipedia.org/wiki/King_Salmon_Airport",
-      "AKN",
-      "PAKN"
-    ],
-    [
-      "Levelock",
-      "https://en.wikipedia.org/wiki/Levelock_Airport",
-      "KLL",
-      "icao code not found"
-    ]
+    {
+      "city": "Dillingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
+      "codes": [
+        "DLG",
+        "PADL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "King Salmon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Salmon_Airport",
+      "codes": [
+        "AKN",
+        "PAKN"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Levelock",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Levelock_Airport",
+      "codes": [
+        "KLL",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "King Salmon",
       "Levelock"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:35Z",
+  "date-time-wikidata": "2025-05-31T00:14:02Z"
 }

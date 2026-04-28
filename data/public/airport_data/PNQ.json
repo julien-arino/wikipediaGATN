@@ -14,7 +14,7 @@
   "subdivision_code": "Pune Division",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_International_Airport",
   "number_airlines": 4,
-  "outdegree": 13,
+  "outdegree": 12,
   "airlines": [
     "Air India",
     "Akasa Air",
@@ -22,89 +22,148 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Goa–Mopa",
-      "https://en.wikipedia.org/wiki/Manohar_International_Airport",
-      "GOX",
-      "VOGA"
-    ],
-    [
-      "Jalgaon",
-      "https://en.wikipedia.org/wiki/Jalgaon_Airport",
-      "JLG",
-      "VAJL"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mangaluru",
-      "https://en.wikipedia.org/wiki/Mangalore_International_Airport",
-      "IXE",
-      "VOML"
-    ],
-    [
-      "Siliguri",
-      "https://en.wikipedia.org/wiki/Bagdogra_Airport",
-      "IXB",
-      "VEBD"
-    ],
-    [
-      "Sindhudurg",
-      "https://en.wikipedia.org/wiki/Sindhudurg_Airport",
-      "SDW",
-      "VOSR"
-    ],
-    [
-      "Varanasi",
-      "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
-      "VNS",
-      "VEBN"
-    ]
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Akasa Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Goa–Mopa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manohar_International_Airport",
+      "codes": [
+        "GOX",
+        "VOGA"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "Fly91",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Jalgaon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jalgaon_Airport",
+      "codes": [
+        "JLG",
+        "VAJL"
+      ],
+      "airlines": [
+        "Fly91"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    },
+    {
+      "city": "Mangaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mangalore_International_Airport",
+      "codes": [
+        "IXE",
+        "VOML"
+      ],
+      "airlines": [
+        "Fly91"
+      ]
+    },
+    {
+      "city": "Sindhudurg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sindhudurg_Airport",
+      "codes": [
+        "SDW",
+        "VOSR"
+      ],
+      "airlines": [
+        "Fly91"
+      ]
+    },
+    {
+      "city": "Varanasi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "codes": [
+        "VNS",
+        "VEBN"
+      ],
+      "airlines": [
+        "Akasa Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
-      "Delhi",
-      "Siliguri"
+      "Delhi"
     ],
     "Akasa Air": [
       "Ahmedabad",
@@ -127,5 +186,7 @@
       "Dubai–International",
       "Goa–Mopa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:53Z",
+  "date-time-wikidata": "2026-04-28T16:34:02Z"
 }

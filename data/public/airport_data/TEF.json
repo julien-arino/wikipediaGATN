@@ -19,23 +19,35 @@
     "Alliance Airlines"
   ],
   "destinations": [
-    [
-      "Melbourne–Essendon",
-      "https://en.wikipedia.org/wiki/Essendon_Airport",
-      "MEB",
-      "YMEN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Melbourne–Essendon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Essendon_Airport",
+      "codes": [
+        "MEB",
+        "YMEN"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
       "Melbourne–Essendon",
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:26Z",
+  "date-time-wikidata": "2025-09-08T15:57:52Z"
 }

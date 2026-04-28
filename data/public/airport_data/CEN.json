@@ -22,54 +22,94 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Ciudad Constitución",
-      "https://en.wikipedia.org/wiki/Ciudad_Constitución_Airport",
-      "CUA",
-      "MMDA"
-    ],
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/La_Paz_International_Airport",
-      "LAP",
-      "MMLP"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "San José del Cabo",
-      "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
-      "SJD",
-      "MMSD"
-    ],
-    [
-      "Tijuana",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ]
+    {
+      "city": "Ciudad Constitución",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciudad_Constitución_Airport",
+      "codes": [
+        "CUA",
+        "MMDA"
+      ],
+      "airlines": [
+        "Aéreo Servicio Guerrero"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Paz_International_Airport",
+      "codes": [
+        "LAP",
+        "MMLP"
+      ],
+      "airlines": [
+        "Aéreo Servicio Guerrero"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "San José del Cabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
+      "codes": [
+        "SJD",
+        "MMSD"
+      ],
+      "airlines": [
+        "Aéreo Servicio Guerrero"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aéreo Servicio Guerrero": [
@@ -88,5 +128,7 @@
       "Guadalajara",
       "Tijuana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:34Z",
+  "date-time-wikidata": "2026-02-18T19:51:56Z"
 }

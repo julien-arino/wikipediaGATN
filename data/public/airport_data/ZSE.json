@@ -21,24 +21,39 @@
     "Fly Vetiv'Air"
   ],
   "destinations": [
-    [
-      "Durban",
-      "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
-      "DUR",
-      "FALE"
-    ],
-    [
-      "Dzaoudzi",
-      "https://en.wikipedia.org/wiki/Dzaoudzi-Pamandzi_International_Airport",
-      "DZA",
-      "FMCZ"
-    ],
-    [
-      "Mauritius",
-      "https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport",
-      "MRU",
-      "FIMP"
-    ]
+    {
+      "city": "Durban",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
+      "codes": [
+        "DUR",
+        "FALE"
+      ],
+      "airlines": [
+        "Fly Vetiv'Air"
+      ]
+    },
+    {
+      "city": "Dzaoudzi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dzaoudzi-Pamandzi_International_Airport",
+      "codes": [
+        "DZA",
+        "FMCZ"
+      ],
+      "airlines": [
+        "Amelia International"
+      ]
+    },
+    {
+      "city": "Mauritius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport",
+      "codes": [
+        "MRU",
+        "FIMP"
+      ],
+      "airlines": [
+        "Air Austral"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Austral": [
@@ -50,5 +65,7 @@
     "Fly Vetiv'Air": [
       "Durban"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:43Z",
+  "date-time-wikidata": "2026-02-25T14:39:59Z"
 }

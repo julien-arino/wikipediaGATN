@@ -19,24 +19,39 @@
     "Contour Airlines"
   ],
   "destinations": [
-    [
-      "BWI Thurgood Marshall Airport",
-      "https://en.wikipedia.org/wiki/BWI_Thurgood_Marshall_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Dulles International Airport",
-      "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "BWI",
-      "KBWI"
-    ],
-    [
-      "Fort Lauderdale-Hollywood International Airport",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ]
+    {
+      "city": "BWI Thurgood Marshall Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/BWI_Thurgood_Marshall_Airport",
+      "codes": [
+        "BWI",
+        "KBWI"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Dulles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale-Hollywood International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Contour Airlines": [
@@ -44,5 +59,7 @@
       "Dulles International Airport",
       "Fort Lauderdale-Hollywood International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:09Z",
+  "date-time-wikidata": "2026-04-11T22:53:17Z"
 }

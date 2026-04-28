@@ -20,18 +20,29 @@
     "All Nippon Airways"
   ],
   "destinations": [
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Tokyo–Haneda",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "ANA Wings"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo–Haneda",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -41,5 +52,7 @@
       "Naha",
       "Tokyo–Haneda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:13Z",
+  "date-time-wikidata": "2026-02-01T12:47:50Z"
 }

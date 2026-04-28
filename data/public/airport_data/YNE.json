@@ -1,8 +1,8 @@
 {
   "iata": "YNE",
   "icao": "CYNE",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Norway House",
+  "city-served-wikipedia": "[[Norway House]], [[Manitoba]]",
   "location": "[[Norway House]], [[Manitoba]]",
   "lat": "53.958333",
   "lon": "-97.844167",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Norway_House_Airport",
   "number_airlines": 1,
   "outdegree": 2,
@@ -19,23 +19,35 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Cross Lake",
-      "https://en.wikipedia.org/wiki/Cross_Lake_Airport",
-      "YCR",
-      "CYCR"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Cross Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cross_Lake_Airport",
+      "codes": [
+        "YCR",
+        "CYCR"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Perimeter Aviation": [
       "Cross Lake",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:22Z",
+  "date-time-wikidata": "2026-02-17T20:33:44Z"
 }

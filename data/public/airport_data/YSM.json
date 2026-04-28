@@ -19,24 +19,39 @@
     "Air Tindi"
   ],
   "destinations": [
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Fort Chipewyan",
-      "https://en.wikipedia.org/wiki/Fort_Chipewyan_Airport",
-      "YPY",
-      "CYPY"
-    ],
-    [
-      "Yellowknife",
-      "https://en.wikipedia.org/wiki/Yellowknife_Airport",
-      "YZF",
-      "CYZF"
-    ]
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Fort Chipewyan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Chipewyan_Airport",
+      "codes": [
+        "YPY",
+        "CYPY"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Yellowknife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
+      "codes": [
+        "YZF",
+        "CYZF"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tindi": [
@@ -44,5 +59,7 @@
       "Fort Chipewyan",
       "Yellowknife"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:42Z",
+  "date-time-wikidata": "2026-01-31T09:46:35Z"
 }

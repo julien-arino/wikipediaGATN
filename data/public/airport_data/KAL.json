@@ -20,30 +20,51 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Edward G. Pitka Sr. Airport",
-      "https://en.wikipedia.org/wiki/Edward_G._Pitka_Sr._Airport",
-      "GAL",
-      "PAGA"
-    ],
-    [
-      "Fairbanks International Airport",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Nulato Airport",
-      "https://en.wikipedia.org/wiki/Nulato_Airport",
-      "NUL",
-      "PANU"
-    ],
-    [
-      "Ruby Airport",
-      "https://en.wikipedia.org/wiki/Ruby_Airport",
-      "RBY",
-      "PARY"
-    ]
+    {
+      "city": "Edward G. Pitka Sr. Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_G._Pitka_Sr._Airport",
+      "codes": [
+        "GAL",
+        "PAGA"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fairbanks International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Everts Air",
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Nulato Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nulato_Airport",
+      "codes": [
+        "NUL",
+        "PANU"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Ruby Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruby_Airport",
+      "codes": [
+        "RBY",
+        "PARY"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Everts Air": [
@@ -55,5 +76,7 @@
       "Nulato Airport",
       "Ruby Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:31Z",
+  "date-time-wikidata": "2025-08-24T15:16:14Z"
 }

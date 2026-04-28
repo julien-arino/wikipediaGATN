@@ -34,168 +34,322 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Banda Aceh",
-      "https://en.wikipedia.org/wiki/Sultan_Iskandar_Muda_International_Airport",
-      "BTJ",
-      "WITT"
-    ],
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Batam",
-      "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
-      "BTH",
-      "WIDD"
-    ],
-    [
-      "Da Nang",
-      "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
-      "DAD",
-      "VVDN"
-    ],
-    [
-      "Gunungsitoli",
-      "https://en.wikipedia.org/wiki/Binaka_Airport",
-      "GNS",
-      "WIMB"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Jambi",
-      "https://en.wikipedia.org/wiki/Sultan_Thaha_Airport",
-      "DJB",
-      "WIJJ"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Lhokseumawe",
-      "https://en.wikipedia.org/wiki/Malikus_Saleh_Airport",
-      "LSW",
-      "WITM"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Meulaboh",
-      "https://en.wikipedia.org/wiki/Cut_Nyak_Dhien_Airport",
-      "MEQ",
-      "WITC"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Padang",
-      "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
-      "PDG",
-      "WIEE"
-    ],
-    [
-      "Palembang",
-      "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
-      "PLM",
-      "WIPP"
-    ],
-    [
-      "Pekanbaru",
-      "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
-      "PKU",
-      "WIBB"
-    ],
-    [
-      "Penang",
-      "https://en.wikipedia.org/wiki/Penang_International_Airport",
-      "PEN",
-      "WMKP"
-    ],
-    [
-      "Pontianak",
-      "https://en.wikipedia.org/wiki/Supadio_International_Airport",
-      "PNK",
-      "WIOO"
-    ],
-    [
-      "Sibolga",
-      "https://en.wikipedia.org/wiki/Ferdinand_Lumban_Tobing_Airport",
-      "FLZ",
-      "WIMS"
-    ],
-    [
-      "Sinabang",
-      "https://en.wikipedia.org/wiki/Lasikin_Airport",
-      "LKI",
-      "WIML"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Singkil",
-      "https://en.wikipedia.org/wiki/Syekh_Hamzah_Fansyuri_Airport",
-      "FSH",
-      "WIMI"
-    ],
-    [
-      "Surabaya",
-      "https://en.wikipedia.org/wiki/Juanda_International_Airport",
-      "SUB",
-      "WARR"
-    ],
-    [
-      "Takengon",
-      "https://en.wikipedia.org/wiki/Rembele_Airport",
-      "TXE",
-      "WITK"
-    ],
-    [
-      "Yogyakarta–International",
-      "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
-      "YIA",
-      "WAHI"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Banda Aceh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Iskandar_Muda_International_Airport",
+      "codes": [
+        "BTJ",
+        "WITT"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Indonesia AirAsia"
+      ]
+    },
+    {
+      "city": "Batam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
+      "codes": [
+        "BTH",
+        "WIDD"
+      ],
+      "airlines": [
+        "Citilink",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Da Nang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
+      "codes": [
+        "DAD",
+        "VVDN"
+      ],
+      "airlines": [
+        "Citilink"
+      ]
+    },
+    {
+      "city": "Gunungsitoli",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Binaka_Airport",
+      "codes": [
+        "GNS",
+        "WIMB"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink",
+        "Garuda Indonesia",
+        "Lion Air",
+        "Pelita Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Jambi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Thaha_Airport",
+      "codes": [
+        "DJB",
+        "WIJJ"
+      ],
+      "airlines": [
+        "Batik Air"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Citilink",
+        "Garuda Indonesia",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia",
+        "Indonesia AirAsia",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Lhokseumawe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malikus_Saleh_Airport",
+      "codes": [
+        "LSW",
+        "WITM"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Garuda Indonesia",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Meulaboh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cut_Nyak_Dhien_Airport",
+      "codes": [
+        "MEQ",
+        "WITC"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Padang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
+      "codes": [
+        "PDG",
+        "WIEE"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Palembang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
+      "codes": [
+        "PLM",
+        "WIPP"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Pekanbaru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
+      "codes": [
+        "PKU",
+        "WIBB"
+      ],
+      "airlines": [
+        "Lion Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Penang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penang_International_Airport",
+      "codes": [
+        "PEN",
+        "WMKP"
+      ],
+      "airlines": [
+        "Batik Air Malaysia",
+        "Indonesia AirAsia",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Pontianak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Supadio_International_Airport",
+      "codes": [
+        "PNK",
+        "WIOO"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Sibolga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ferdinand_Lumban_Tobing_Airport",
+      "codes": [
+        "FLZ",
+        "WIMS"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Sinabang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lasikin_Airport",
+      "codes": [
+        "LKI",
+        "WIML"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Scoot",
+        "Singapore Airlines"
+      ]
+    },
+    {
+      "city": "Singkil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syekh_Hamzah_Fansyuri_Airport",
+      "codes": [
+        "FSH",
+        "WIMI"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Surabaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Takengon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rembele_Airport",
+      "codes": [
+        "TXE",
+        "WITK"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Yogyakarta–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
+      "codes": [
+        "YIA",
+        "WAHI"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -276,5 +430,7 @@
       "Sinabang",
       "Takengon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:58Z",
+  "date-time-wikidata": "2026-04-27T04:35:09Z"
 }

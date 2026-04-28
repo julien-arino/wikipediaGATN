@@ -22,36 +22,61 @@
     "S7 Airlines"
   ],
   "destinations": [
-    [
-      "Khrabrovo Airport",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Moscow Domodedovo Airport",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Pulkovo Airport",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sheremetyevo International Airport",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Vnukovo International Airport",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ]
+    {
+      "city": "Khrabrovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Moscow Domodedovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Pulkovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Rossiya Airlines"
+      ]
+    },
+    {
+      "city": "Sheremetyevo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Vnukovo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Azimuth (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -67,5 +92,7 @@
     "S7 Airlines": [
       "Moscow Domodedovo Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:07Z",
+  "date-time-wikidata": "2026-02-26T13:29:44Z"
 }

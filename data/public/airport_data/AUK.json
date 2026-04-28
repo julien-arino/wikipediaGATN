@@ -7,6 +7,7 @@
   "lat": "62.6831313",
   "lon": "-164.7204177",
   "altitude": "6.61",
+  "continent": "North America",
   "region": "Alaska",
   "country_alpha3": "USA",
   "country_name": "United States",
@@ -18,18 +19,28 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Bethel Airport",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Emmonak Airport",
-      "https://en.wikipedia.org/wiki/Emmonak_Airport",
-      "EMK",
-      "PAEM"
-    ]
+    {
+      "city": "Bethel Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Emmonak Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emmonak_Airport",
+      "codes": [
+        "EMK",
+        "PAEM"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -37,5 +48,6 @@
       "Emmonak Airport"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:03:35Z",
+  "date-time-wikidata": "2025-08-24T15:20:33Z"
 }

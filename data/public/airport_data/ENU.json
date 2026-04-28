@@ -24,24 +24,46 @@
     "United Nigeria Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa Bole International Airport",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Murtala Muhammed International Airport",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ],
-    [
-      "Nnamdi Azikiwe International Airport",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ]
+    {
+      "city": "Addis Ababa Bole International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Murtala Muhammed International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Enugu Air",
+        "Green Africa Airways",
+        "Ibom Air",
+        "United Nigeria Airlines"
+      ]
+    },
+    {
+      "city": "Nnamdi Azikiwe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Enugu Air",
+        "Ibom Air",
+        "United Nigeria Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Peace": [
@@ -66,5 +88,7 @@
       "Murtala Muhammed International Airport",
       "Nnamdi Azikiwe International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:19Z",
+  "date-time-wikidata": "2025-09-25T15:01:14Z"
 }

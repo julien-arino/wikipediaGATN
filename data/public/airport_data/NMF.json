@@ -19,24 +19,39 @@
     "Maldivian (airline)"
   ],
   "destinations": [
-    [
-      "Hanimaadhoo Airport",
-      "https://en.wikipedia.org/wiki/Hanimaadhoo_Airport",
-      "HAQ",
-      "VRMH"
-    ],
-    [
-      "Ibrahim Nasir International Airport",
-      "https://en.wikipedia.org/wiki/Ibrahim_Nasir_International_Airport",
-      "MLE",
-      "VRMM"
-    ],
-    [
-      "Ifuru Airport",
-      "https://en.wikipedia.org/wiki/Ifuru_Airport",
-      "IFU",
-      "VREI"
-    ]
+    {
+      "city": "Hanimaadhoo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanimaadhoo_Airport",
+      "codes": [
+        "HAQ",
+        "VRMH"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    },
+    {
+      "city": "Ibrahim Nasir International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibrahim_Nasir_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    },
+    {
+      "city": "Ifuru Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ifuru_Airport",
+      "codes": [
+        "IFU",
+        "VREI"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maldivian (airline)": [
@@ -44,5 +59,7 @@
       "Ibrahim Nasir International Airport",
       "Ifuru Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:00Z",
+  "date-time-wikidata": "2025-05-23T13:19:02Z"
 }

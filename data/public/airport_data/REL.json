@@ -19,24 +19,39 @@
     "Aerolíneas Argentinas"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "El Calafate",
-      "https://en.wikipedia.org/wiki/Comandante_Armando_Tola_International_Airport",
-      "FTE",
-      "SAWC"
-    ],
-    [
-      "Ushuaia",
-      "https://en.wikipedia.org/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
-      "USH",
-      "SAWH"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "El Calafate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Armando_Tola_International_Airport",
+      "codes": [
+        "FTE",
+        "SAWC"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Ushuaia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
+      "codes": [
+        "USH",
+        "SAWH"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -44,5 +59,7 @@
       "El Calafate",
       "Ushuaia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:32Z",
+  "date-time-wikidata": "2026-02-03T11:02:51Z"
 }

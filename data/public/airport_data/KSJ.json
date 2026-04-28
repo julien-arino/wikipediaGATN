@@ -7,6 +7,7 @@
   "lat": "35.42131",
   "lon": "26.9098295",
   "altitude": "11",
+  "continent": "Europe",
   "region": "South Aegean",
   "country_alpha3": "GRC",
   "country_name": "Greece",
@@ -18,24 +19,39 @@
     "Olympic Air"
   ],
   "destinations": [
-    [
-      "Karpathos",
-      "https://en.wikipedia.org/wiki/Karpathos_Island_National_Airport",
-      "AOK",
-      "LGKP"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Sitia",
-      "https://en.wikipedia.org/wiki/Sitia_Public_Airport",
-      "JSH",
-      "LGST"
-    ]
+    {
+      "city": "Karpathos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karpathos_Island_National_Airport",
+      "codes": [
+        "AOK",
+        "LGKP"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    },
+    {
+      "city": "Sitia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sitia_Public_Airport",
+      "codes": [
+        "JSH",
+        "LGST"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Olympic Air": [
@@ -44,5 +60,6 @@
       "Sitia"
     ]
   },
-  "continent": "Europe"
+  "date-time-parse": "2026-04-28T22:06:44Z",
+  "date-time-wikidata": "2025-09-28T10:06:22Z"
 }

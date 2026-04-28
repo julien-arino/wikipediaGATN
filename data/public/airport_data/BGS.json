@@ -20,18 +20,28 @@
     "KrasAvia"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk–Cheremshanka",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
-      "KCY",
-      "UNKM"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ]
+    {
+      "city": "Krasnoyarsk–Cheremshanka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
+      "codes": [
+        "KCY",
+        "UNKM"
+      ],
+      "airlines": [
+        "AeroGeo"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroGeo": [
@@ -40,5 +50,7 @@
     "KrasAvia": [
       "Krasnoyarsk–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:26Z",
+  "date-time-wikidata": "2025-11-08T07:38:20Z"
 }

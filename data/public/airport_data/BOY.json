@@ -7,6 +7,7 @@
   "lat": "11.1563075",
   "lon": "-4.3363483",
   "altitude": "461",
+  "continent": "Africa",
   "region": "High-Basins",
   "country_alpha3": "BFA",
   "country_name": "Burkina Faso",
@@ -18,18 +19,28 @@
     "Air Burkina"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Ouagadougou",
-      "https://en.wikipedia.org/wiki/Ouagadougou_Airport",
-      "OUA",
-      "DFFD"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Burkina"
+      ]
+    },
+    {
+      "city": "Ouagadougou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouagadougou_Airport",
+      "codes": [
+        "OUA",
+        "DFFD"
+      ],
+      "airlines": [
+        "Air Burkina"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Burkina": [
@@ -37,5 +48,6 @@
       "Ouagadougou"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:04:14Z",
+  "date-time-wikidata": "2024-10-12T03:24:37Z"
 }

@@ -21,30 +21,51 @@
     "Ryanair"
   ],
   "destinations": [
-    [
-      "Bacău",
-      "https://en.wikipedia.org/wiki/George_Enescu_International_Airport",
-      "BCM",
-      "LRBC"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
-      "PMO",
-      "LICJ"
-    ]
+    {
+      "city": "Bacău",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Enescu_International_Airport",
+      "codes": [
+        "BCM",
+        "LRBC"
+      ],
+      "airlines": [
+        "AeroItalia"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "AeroItalia",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AeroItalia": [
@@ -58,5 +79,7 @@
       "Cagliari",
       "Palermo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:09Z",
+  "date-time-wikidata": "2025-12-21T23:41:13Z"
 }

@@ -23,42 +23,77 @@
     "Thai VietJet Air"
   ],
   "destinations": [
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Bangkok–Suvarnabhumi",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Chiang Mai",
-      "https://en.wikipedia.org/wiki/Chiang_Mai_International_Airport",
-      "CNX",
-      "VTCC"
-    ],
-    [
-      "Hat Yai",
-      "https://en.wikipedia.org/wiki/Hat_Yai_International_Airport",
-      "HDY",
-      "VTSS"
-    ],
-    [
-      "Pattaya",
-      "https://en.wikipedia.org/wiki/U-Tapao_International_Airport",
-      "UTP",
-      "VTBU"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ]
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Nok Air",
+        "Thai AirAsia",
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Thai AirAsia",
+        "Thai Airways International",
+        "Thai VietJet Air"
+      ]
+    },
+    {
+      "city": "Chiang Mai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiang_Mai_International_Airport",
+      "codes": [
+        "CNX",
+        "VTCC"
+      ],
+      "airlines": [
+        "Nok Air",
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Hat Yai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hat_Yai_International_Airport",
+      "codes": [
+        "HDY",
+        "VTSS"
+      ],
+      "airlines": [
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Pattaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/U-Tapao_International_Airport",
+      "codes": [
+        "UTP",
+        "VTBU"
+      ],
+      "airlines": [
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nok Air": [
@@ -82,5 +117,7 @@
     "Thai VietJet Air": [
       "Bangkok–Suvarnabhumi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:51Z",
+  "date-time-wikidata": "2026-02-05T21:15:34Z"
 }

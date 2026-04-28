@@ -1,8 +1,8 @@
 {
   "iata": "YST",
   "icao": "CYST",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "St. Theresa Point, Manitoba",
+  "city-served-wikipedia": "[[St. Theresa Point, Manitoba]]",
   "location": "[[St. Theresa Point, Manitoba]]",
   "lat": "53.845556",
   "lon": "-94.852222",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/St._Theresa_Point_Airport",
   "number_airlines": 2,
   "outdegree": 3,
@@ -20,24 +20,39 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Garden Hill",
-      "https://en.wikipedia.org/wiki/Island_Lake_Airport",
-      "YIV",
-      "CYIV"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ],
-    [
-      "Winnipeg/St. Andrews",
-      "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
-      "iata code not found",
-      "CYAV"
-    ]
+    {
+      "city": "Garden Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Island_Lake_Airport",
+      "codes": [
+        "YIV",
+        "CYIV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg/St. Andrews",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
+      "codes": [
+        "iata code not found",
+        "CYAV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Northway Aviation": [
@@ -47,5 +62,7 @@
     "Perimeter Aviation": [
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:35Z",
+  "date-time-wikidata": "2025-10-07T21:45:11Z"
 }

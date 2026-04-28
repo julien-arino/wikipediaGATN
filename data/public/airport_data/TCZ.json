@@ -22,42 +22,75 @@
     "Ruili Airlines"
   ],
   "destinations": [
-    [
-      "Changsha Huanghua International Airport",
-      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
-      "CSX",
-      "ZGHA"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Chongqing Jiangbei International Airport",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Kunming Changshui International Airport",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
-      "KMG",
-      "ZPPP"
-    ],
-    [
-      "Taiyuan Wusu International Airport",
-      "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
-      "TYN",
-      "ZBYN"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Changsha Huanghua International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA"
+      ],
+      "airlines": [
+        "Kunming Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Chongqing Jiangbei International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Kunming Airlines"
+      ]
+    },
+    {
+      "city": "Kunming Changshui International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP"
+      ],
+      "airlines": [
+        "China Eastern Airlines",
+        "Kunming Airlines",
+        "Lucky Air",
+        "Ruili Airlines"
+      ]
+    },
+    {
+      "city": "Taiyuan Wusu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
+      "codes": [
+        "TYN",
+        "ZBYN"
+      ],
+      "airlines": [
+        "Kunming Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Kunming Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
@@ -77,5 +110,7 @@
     "Ruili Airlines": [
       "Kunming Changshui International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:25Z",
+  "date-time-wikidata": "2026-04-17T21:07:51Z"
 }

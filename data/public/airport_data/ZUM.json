@@ -19,23 +19,35 @@
     "PAL Airlines"
   ],
   "destinations": [
-    [
-      "Goose Bay",
-      "https://en.wikipedia.org/wiki/CFB_Goose_Bay",
-      "YYR",
-      "CYYR"
-    ],
-    [
-      "Wabush",
-      "https://en.wikipedia.org/wiki/Wabush_Airport",
-      "YWK",
-      "CYWK"
-    ]
+    {
+      "city": "Goose Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CFB_Goose_Bay",
+      "codes": [
+        "YYR",
+        "CYYR"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    },
+    {
+      "city": "Wabush",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wabush_Airport",
+      "codes": [
+        "YWK",
+        "CYWK"
+      ],
+      "airlines": [
+        "PAL Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PAL Airlines": [
       "Goose Bay",
       "Wabush"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:45Z",
+  "date-time-wikidata": "2025-09-28T21:37:10Z"
 }

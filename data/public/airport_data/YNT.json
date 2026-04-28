@@ -27,48 +27,91 @@
     "YTO Cargo Airlines"
   ],
   "destinations": [
-    [
-      "Almaty",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Karagandy",
-      "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
-      "KGF",
-      "UAKK"
-    ],
-    [
-      "Liege",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ]
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Karagandy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sary-Arka_Airport",
+      "codes": [
+        "KGF",
+        "UAKK"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Liege",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "China Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "Central Airlines",
+        "Longhao Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Air Incheon",
+        "Asiana Cargo",
+        "Central Airlines",
+        "China Postal Airlines",
+        "Jeju Air Cargo",
+        "Longhao Airlines",
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Central Airlines",
+        "YTO Cargo Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Incheon": [
@@ -104,5 +147,7 @@
       "Seoul–Incheon",
       "Tokyo–Narita"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:37Z",
+  "date-time-wikidata": "2026-03-19T19:57:24Z"
 }

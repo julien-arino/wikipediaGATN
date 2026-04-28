@@ -19,23 +19,35 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Aniak",
-      "https://en.wikipedia.org/wiki/Aniak_Airport",
-      "ANI",
-      "PANI"
-    ],
-    [
-      "Russian Mission",
-      "https://en.wikipedia.org/wiki/Russian_Mission_Airport",
-      "RSH",
-      "PARS"
-    ]
+    {
+      "city": "Aniak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aniak_Airport",
+      "codes": [
+        "ANI",
+        "PANI"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Russian Mission",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_Mission_Airport",
+      "codes": [
+        "RSH",
+        "PARS"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryan Air": [
       "Aniak",
       "Russian Mission"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-wikidata": "2026-04-20T12:15:20Z"
 }

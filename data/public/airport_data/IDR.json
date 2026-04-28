@@ -14,7 +14,7 @@
   "subdivision_code": "Indore",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Devi_Ahilya_Bai_Holkar_Airport",
   "number_airlines": 5,
-  "outdegree": 16,
+  "outdegree": 17,
   "airlines": [
     "Air India",
     "Air India Express",
@@ -23,102 +23,201 @@
     "Star Air"
   ],
   "destinations": [
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chandigarh",
-      "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-      "IXC",
-      "VICG"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Goa–Dabolim",
-      "https://en.wikipedia.org/wiki/Dabolim_Airport",
-      "GOI",
-      "VOGO"
-    ],
-    [
-      "Gondia",
-      "https://en.wikipedia.org/wiki/Gondia_Airport",
-      "GDB",
-      "VAGD"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Jaipur",
-      "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
-      "JAI",
-      "VIJP"
-    ],
-    [
-      "Jammu",
-      "https://en.wikipedia.org/wiki/Jammu_Airport",
-      "IXJ",
-      "VIJU"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Pune",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ],
-    [
-      "Raipur",
-      "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
-      "RPR",
-      "VERP"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Udaipur",
-      "https://en.wikipedia.org/wiki/Maharana_Pratap_Airport",
-      "UDR",
-      "VAUD"
-    ]
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chandigarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
+      "codes": [
+        "IXC",
+        "VICG"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Goa–Dabolim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dabolim_Airport",
+      "codes": [
+        "GOI",
+        "VOGO"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Gondia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gondia_Airport",
+      "codes": [
+        "GDB",
+        "VAGD"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo",
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Jaipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
+      "codes": [
+        "JAI",
+        "VIJP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Jalgaon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jalgaon_Airport",
+      "codes": [
+        "JLG",
+        "VAJL"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Jammu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jammu_Airport",
+      "codes": [
+        "IXJ",
+        "VIJU"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo",
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Raipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
+      "codes": [
+        "RPR",
+        "VERP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Udaipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maharana_Pratap_Airport",
+      "codes": [
+        "UDR",
+        "VAUD"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -133,7 +232,8 @@
       "Sharjah"
     ],
     "Alliance Air": [
-      "Delhi"
+      "Delhi",
+      "Jalgaon"
     ],
     "IndiGo": [
       "Ahmedabad",
@@ -155,5 +255,7 @@
       "Hyderabad",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:33Z",
+  "date-time-wikidata": "2026-04-28T11:25:16Z"
 }

@@ -20,24 +20,39 @@
     "MNG Airlines"
   ],
   "destinations": [
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Leipzig/Halle",
-      "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "LEJ",
-      "EDDP"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ]
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "MNG Airlines"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "MNG Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "DHL Aviation": [
@@ -47,5 +62,7 @@
       "Istanbul",
       "Paris–Charles de Gaulle"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:51Z",
+  "date-time-wikidata": "2026-04-17T13:28:11Z"
 }

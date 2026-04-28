@@ -20,18 +20,30 @@
     "Pakistan International Airlines"
   ],
   "destinations": [
-    [
-      "Islamabad",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Karachi",
-      "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
-      "KHI",
-      "OPKC"
-    ]
+    {
+      "city": "Islamabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "AirSial",
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Karachi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
+      "codes": [
+        "KHI",
+        "OPKC"
+      ],
+      "airlines": [
+        "AirSial",
+        "Pakistan International Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Pakistan International Airlines": [
@@ -42,5 +54,7 @@
       "Islamabad",
       "Karachi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:41Z",
+  "date-time-wikidata": "2026-04-08T07:47:31Z"
 }

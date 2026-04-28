@@ -20,24 +20,39 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Juvai Semaring Airport",
-      "https://en.wikipedia.org/wiki/Juvai_Semaring_Airport",
-      "LBW",
-      "WAQJ"
-    ],
-    [
-      "Long Apung Airport",
-      "https://en.wikipedia.org/wiki/Long_Apung_Airport",
-      "LPU",
-      "WAQL"
-    ],
-    [
-      "Sultan Aji Muhammad Sulaiman Sepinggan Airport",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
-      "BPN",
-      "WALL"
-    ]
+    {
+      "city": "Juvai Semaring Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juvai_Semaring_Airport",
+      "codes": [
+        "LBW",
+        "WAQJ"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Long Apung Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Long_Apung_Airport",
+      "codes": [
+        "LPU",
+        "WAQL"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Sultan Aji Muhammad Sulaiman Sepinggan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -47,5 +62,7 @@
     "Wings Air": [
       "Sultan Aji Muhammad Sulaiman Sepinggan Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:30Z",
+  "date-time-wikidata": "2026-03-25T18:25:37Z"
 }

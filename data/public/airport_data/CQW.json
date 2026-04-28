@@ -20,24 +20,39 @@
     "West Air"
   ],
   "destinations": [
-    [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Nanjing",
-      "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
-      "NKG",
-      "ZSNJ"
-    ]
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Nanjing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "codes": [
+        "NKG",
+        "ZSNJ"
+      ],
+      "airlines": [
+        "West Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Southern Airlines": [
@@ -47,5 +62,7 @@
     "West Air": [
       "Nanjing"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:54Z",
+  "date-time-wikidata": "2025-08-14T10:03:03Z"
 }

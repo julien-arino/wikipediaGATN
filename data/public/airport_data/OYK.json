@@ -20,12 +20,18 @@
     "Omni Táxi Aéreo"
   ],
   "destinations": [
-    [
-      "Macapá",
-      "https://en.wikipedia.org/wiki/Macapá_International_Airport",
-      "MCP",
-      "SBMQ"
-    ]
+    {
+      "city": "Macapá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macapá_International_Airport",
+      "codes": [
+        "MCP",
+        "SBMQ"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Omni Táxi Aéreo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -34,5 +40,7 @@
     "Omni Táxi Aéreo": [
       "Macapá"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:53Z",
+  "date-time-wikidata": "2025-08-28T18:31:08Z"
 }

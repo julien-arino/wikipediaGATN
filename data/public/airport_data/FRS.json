@@ -20,12 +20,18 @@
     "Transportes Aéreos Guatemaltecos"
   ],
   "destinations": [
-    [
-      "La Aurora International Airport",
-      "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-      "GUA",
-      "MGGT"
-    ]
+    {
+      "city": "La Aurora International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "Avianca Guatemala",
+        "Transportes Aéreos Guatemaltecos"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca Guatemala": [
@@ -34,5 +40,7 @@
     "Transportes Aéreos Guatemaltecos": [
       "La Aurora International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:31Z",
+  "date-time-wikidata": "2026-04-13T15:18:38Z"
 }

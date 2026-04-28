@@ -21,18 +21,30 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jetstar": [
@@ -45,5 +57,7 @@
     "Virgin Australia": [
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:33Z",
+  "date-time-wikidata": "2025-10-13T10:38:12Z"
 }

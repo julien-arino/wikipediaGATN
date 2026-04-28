@@ -21,18 +21,32 @@
     "Myanmar National Airlines"
   ],
   "destinations": [
-    [
-      "Mandalay",
-      "https://en.wikipedia.org/wiki/Mandalay_Airport",
-      "MDL",
-      "VYMD"
-    ],
-    [
-      "Yangon",
-      "https://en.wikipedia.org/wiki/Yangon_Airport",
-      "RGN",
-      "VYYY"
-    ]
+    {
+      "city": "Mandalay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mandalay_Airport",
+      "codes": [
+        "MDL",
+        "VYMD"
+      ],
+      "airlines": [
+        "Air Thanlwin",
+        "Mingalar Aviation Services",
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Yangon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangon_Airport",
+      "codes": [
+        "RGN",
+        "VYYY"
+      ],
+      "airlines": [
+        "Air Thanlwin",
+        "Mingalar Aviation Services",
+        "Myanmar National Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Thanlwin": [
@@ -47,5 +61,7 @@
       "Mandalay",
       "Yangon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:53Z",
+  "date-time-wikidata": "2024-05-08T14:36:32Z"
 }

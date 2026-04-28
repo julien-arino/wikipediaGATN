@@ -19,23 +19,35 @@
     "Cayman Airways Express"
   ],
   "destinations": [
-    [
-      "Cayman Brac",
-      "https://en.wikipedia.org/wiki/Gerrard_Smith_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Grand Cayman",
-      "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
-      "GCM",
-      "MWCR"
-    ]
+    {
+      "city": "Cayman Brac",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gerrard_Smith_International_Airport",
+      "codes": [
+        "CYB",
+        "MWCB"
+      ],
+      "airlines": [
+        "Cayman Airways Express"
+      ]
+    },
+    {
+      "city": "Grand Cayman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
+      "codes": [
+        "GCM",
+        "MWCR"
+      ],
+      "airlines": [
+        "Cayman Airways Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cayman Airways Express": [
       "Cayman Brac",
       "Grand Cayman"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:33Z",
+  "date-time-wikidata": "2026-02-18T07:23:43Z"
 }

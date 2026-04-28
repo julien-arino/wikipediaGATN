@@ -20,12 +20,18 @@
     "Jin Air"
   ],
   "destinations": [
-    [
-      "Jeju",
-      "https://en.wikipedia.org/wiki/Jeju_International_Airport",
-      "CJU",
-      "RKPC"
-    ]
+    {
+      "city": "Jeju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeju_International_Airport",
+      "codes": [
+        "CJU",
+        "RKPC"
+      ],
+      "airlines": [
+        "Eastar Jet",
+        "Jin Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Eastar Jet": [
@@ -34,5 +40,7 @@
     "Jin Air": [
       "Jeju"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:51Z",
+  "date-time-wikidata": "2025-11-28T21:54:42Z"
 }

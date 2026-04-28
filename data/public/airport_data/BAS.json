@@ -19,24 +19,39 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Gizo",
-      "https://en.wikipedia.org/wiki/Nusatupe_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Mono",
-      "https://en.wikipedia.org/wiki/Mono_Airport",
-      "MNY",
-      "AGGO"
-    ],
-    [
-      "Munda",
-      "https://en.wikipedia.org/wiki/Munda_Airport",
-      "MUA",
-      "AGGM"
-    ]
+    {
+      "city": "Gizo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nusatupe_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Mono",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mono_Airport",
+      "codes": [
+        "MNY",
+        "AGGO"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Munda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munda_Airport",
+      "codes": [
+        "MUA",
+        "AGGM"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
@@ -44,5 +59,7 @@
       "Mono",
       "Munda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:17Z",
+  "date-time-wikidata": "2025-04-12T01:35:16Z"
 }

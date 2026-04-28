@@ -19,30 +19,50 @@
     "Yute Commuter Service"
   ],
   "destinations": [
-    [
-      "Akiachak",
-      "https://en.wikipedia.org/wiki/Akiachak_Airport",
-      "KKI",
-      "PFZK"
-    ],
-    [
-      "Bethel",
-      "https://en.wikipedia.org/wiki/Bethel_Airport",
-      "BET",
-      "PABE"
-    ],
-    [
-      "Kwethluk",
-      "https://en.wikipedia.org/wiki/Kwethluk_Airport",
-      "KWT",
-      "PFKW"
-    ],
-    [
-      "Tuluksak",
-      "https://en.wikipedia.org/wiki/Tuluksak_Airport",
-      "TLT",
-      "icao code not found"
-    ]
+    {
+      "city": "Akiachak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akiachak_Airport",
+      "codes": [
+        "KKI",
+        "PFZK"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    },
+    {
+      "city": "Bethel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethel_Airport",
+      "codes": [
+        "BET",
+        "PABE"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    },
+    {
+      "city": "Kwethluk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kwethluk_Airport",
+      "codes": [
+        "KWT",
+        "PFKW"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    },
+    {
+      "city": "Tuluksak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuluksak_Airport",
+      "codes": [
+        "TLT",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Yute Commuter Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Yute Commuter Service": [
@@ -51,5 +71,7 @@
       "Kwethluk",
       "Tuluksak"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:55Z",
+  "date-time-wikidata": "2025-12-12T20:52:06Z"
 }

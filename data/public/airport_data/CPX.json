@@ -21,30 +21,53 @@
     "Vieques Air Link"
   ],
   "destinations": [
-    [
-      "Ceiba",
-      "https://en.wikipedia.org/wiki/José_Aponte_de_la_Torre_Airport",
-      "NRR",
-      "TJRV"
-    ],
-    [
-      "San Juan–Isla Grande",
-      "https://en.wikipedia.org/wiki/Fernando_Luis_Ribas_Dominicci_Airport",
-      "SIG",
-      "TJIG"
-    ],
-    [
-      "San Juan–LMM",
-      "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
-      "SJU",
-      "TJSJ"
-    ],
-    [
-      "Vieques",
-      "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodríguez_Airport",
-      "VQS",
-      "TJVQ"
-    ]
+    {
+      "city": "Ceiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Aponte_de_la_Torre_Airport",
+      "codes": [
+        "NRR",
+        "TJRV"
+      ],
+      "airlines": [
+        "Air Flamenco",
+        "Vieques Air Link"
+      ]
+    },
+    {
+      "city": "San Juan–Isla Grande",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fernando_Luis_Ribas_Dominicci_Airport",
+      "codes": [
+        "SIG",
+        "TJIG"
+      ],
+      "airlines": [
+        "Air Flamenco",
+        "Vieques Air Link"
+      ]
+    },
+    {
+      "city": "San Juan–LMM",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Vieques",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodríguez_Airport",
+      "codes": [
+        "VQS",
+        "TJVQ"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Vieques Air Link"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Flamenco": [
@@ -60,5 +83,7 @@
       "San Juan–Isla Grande",
       "Vieques"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:54Z",
+  "date-time-wikidata": "2026-03-05T22:10:53Z"
 }

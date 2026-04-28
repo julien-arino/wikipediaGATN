@@ -29,60 +29,112 @@
     "Western Global Airlines"
   ],
   "destinations": [
-    [
-      "Abuja",
-      "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-      "ABV",
-      "DNAA"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Kano",
-      "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
-      "KAN",
-      "DNKN"
-    ],
-    [
-      "Lagos",
-      "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
-      "LOS",
-      "DNMM"
-    ],
-    [
-      "Liège",
-      "https://en.wikipedia.org/wiki/Liège_Airport",
-      "LGG",
-      "EBLG"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Malabo",
-      "https://en.wikipedia.org/wiki/Malabo_International_Airport",
-      "SSG",
-      "FGSL"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ]
+    {
+      "city": "Abuja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Arik Air"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Kano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
+      "codes": [
+        "KAN",
+        "DNKN"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Arik Air",
+        "ValueJet"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Air Atlanta Icelandic",
+        "Western Global Airlines"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux Airlines"
+      ]
+    },
+    {
+      "city": "Malabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malabo_International_Airport",
+      "codes": [
+        "SSG",
+        "FGSL"
+      ],
+      "airlines": [
+        "Cronos Airlines",
+        "ValueJet"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero Contractors": [
@@ -123,5 +175,7 @@
     "Western Global Airlines": [
       "Liège"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:01Z",
+  "date-time-wikidata": "2026-04-08T15:39:38Z"
 }

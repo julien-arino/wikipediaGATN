@@ -28,150 +28,282 @@
     "Tunisair"
   ],
   "destinations": [
-    [
-      "Berlin Brandenburg Airport",
-      "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Bern Airport",
-      "https://en.wikipedia.org/wiki/Bern_Airport",
-      "BRN",
-      "LSZB"
-    ],
-    [
-      "Bremen Airport",
-      "https://en.wikipedia.org/wiki/Bremen_Airport",
-      "BRE",
-      "EDDW"
-    ],
-    [
-      "Brussels Airport",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Charles de Gaulle Airport",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Hamburg Airport",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Hannover Airport",
-      "https://en.wikipedia.org/wiki/Hannover_Airport",
-      "HAJ",
-      "EDDV"
-    ],
-    [
-      "Lille Airport",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "Lisbon Airport",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Luxembourg Airport",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Lyon-Saint Exupéry Airport",
-      "https://en.wikipedia.org/wiki/Lyon-Saint_Exup%C3%A9ry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Lyon–Saint-Exupéry Airport",
-      "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint-Exup%C3%A9ry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille Provence Airport",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Munich Airport",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Nantes Atlantique Airport",
-      "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
-      "NTE",
-      "LFRS"
-    ],
-    [
-      "Nice Côte d'Azur Airport",
-      "https://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Orly Airport",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Porto Airport",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Pulkovo Airport",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Salzburg Airport",
-      "https://en.wikipedia.org/wiki/Salzburg_Airport",
-      "SZG",
-      "LOWS"
-    ],
-    [
-      "Stuttgart Airport",
-      "https://en.wikipedia.org/wiki/Stuttgart_Airport",
-      "STR",
-      "EDDS"
-    ],
-    [
-      "Vienna International Airport",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ]
+    {
+      "city": "Berlin Brandenburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Nouvelair",
+        "Sundair"
+      ]
+    },
+    {
+      "city": "Bern Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bern_Airport",
+      "codes": [
+        "BRN",
+        "LSZB"
+      ],
+      "airlines": [
+        "Helvetic Airways"
+      ]
+    },
+    {
+      "city": "Bremen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bremen_Airport",
+      "codes": [
+        "BRE",
+        "EDDW"
+      ],
+      "airlines": [
+        "Sundair"
+      ]
+    },
+    {
+      "city": "Brussels Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Brussels Airlines",
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Charles de Gaulle Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings",
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Discover Airlines",
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Hamburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Hannover Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "codes": [
+        "HAJ",
+        "EDDV"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Lille Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Lisbon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Luxembourg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Lyon-Saint Exupéry Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon-Saint_Exup%C3%A9ry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Lyon–Saint-Exupéry Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint-Exup%C3%A9ry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Nouvelair",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Marseille Provence Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Nouvelair",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Munich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Discover Airlines",
+        "Nouvelair",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Nantes Atlantique Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Nice Côte d'Azur Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "Nouvelair",
+        "Transavia",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Orly Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia",
+        "Tunisair"
+      ]
+    },
+    {
+      "city": "Porto Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Pulkovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Salzburg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salzburg_Airport",
+      "codes": [
+        "SZG",
+        "LOWS"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Stuttgart Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "Nouvelair"
+      ]
+    },
+    {
+      "city": "Vienna International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines",
+        "Nouvelair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Austrian Airlines": [
@@ -230,5 +362,7 @@
       "Nice Côte d'Azur Airport",
       "Orly Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:19Z",
+  "date-time-wikidata": "2026-04-01T19:51:09Z"
 }

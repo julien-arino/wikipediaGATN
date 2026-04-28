@@ -20,12 +20,18 @@
     "EcoJet"
   ],
   "destinations": [
-    [
-      "Cochabamba",
-      "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
-      "CBB",
-      "SLCB"
-    ]
+    {
+      "city": "Cochabamba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Wilstermann_International_Airport",
+      "codes": [
+        "CBB",
+        "SLCB"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -34,5 +40,7 @@
     "EcoJet": [
       "Cochabamba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:40Z",
+  "date-time-wikidata": "2023-12-19T23:36:27Z"
 }

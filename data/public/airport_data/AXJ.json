@@ -19,23 +19,35 @@
     "Amakusa Airlines"
   ],
   "destinations": [
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kumamoto",
-      "https://en.wikipedia.org/wiki/Kumamoto_Airport",
-      "KMJ",
-      "RJFT"
-    ]
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Amakusa Airlines"
+      ]
+    },
+    {
+      "city": "Kumamoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kumamoto_Airport",
+      "codes": [
+        "KMJ",
+        "RJFT"
+      ],
+      "airlines": [
+        "Amakusa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amakusa Airlines": [
       "Fukuoka",
       "Kumamoto"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:41Z",
+  "date-time-wikidata": "2025-10-16T17:04:00Z"
 }

@@ -21,18 +21,30 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Port Hedland",
-      "https://en.wikipedia.org/wiki/Port_Hedland_International_Airport",
-      "PHE",
-      "YPPD"
-    ]
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Network Aviation",
+        "Qantas",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Port Hedland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Hedland_International_Airport",
+      "codes": [
+        "PHE",
+        "YPPD"
+      ],
+      "airlines": [
+        "Network Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Network Aviation": [
@@ -45,5 +57,7 @@
     "QantasLink": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:19Z",
+  "date-time-wikidata": "2026-02-02T00:20:32Z"
 }

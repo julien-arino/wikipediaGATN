@@ -19,23 +19,35 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Namsos",
-      "https://en.wikipedia.org/wiki/Namsos_Airport,_Høknesøra",
-      "OSY",
-      "ENNM"
-    ],
-    [
-      "Trondheim",
-      "https://en.wikipedia.org/wiki/Trondheim_Airport,_Værnes",
-      "TRD",
-      "ENVA"
-    ]
+    {
+      "city": "Namsos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Namsos_Airport,_Høknesøra",
+      "codes": [
+        "OSY",
+        "ENNM"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Trondheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trondheim_Airport,_Værnes",
+      "codes": [
+        "TRD",
+        "ENVA"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Widerøe": [
       "Namsos",
       "Trondheim"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:56Z",
+  "date-time-wikidata": "2026-01-26T14:49:42Z"
 }

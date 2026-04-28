@@ -1,8 +1,8 @@
 {
   "iata": "YOH",
   "icao": "CYOH",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Oxford House, Manitoba",
+  "city-served-wikipedia": "[[Oxford House, Manitoba]]",
   "location": "[[Oxford House, Manitoba]]",
   "lat": "54.933056",
   "lon": "-95.278889",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Oxford_House_Airport",
   "number_airlines": 2,
   "outdegree": 4,
@@ -20,30 +20,50 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Gods Lake Narrows",
-      "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
-      "YGO",
-      "CYGO"
-    ],
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
-      "YWG",
-      "CYWG"
-    ],
-    [
-      "Winnipeg/St. Andrews",
-      "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
-      "iata code not found",
-      "CYAV"
-    ]
+    {
+      "city": "Gods Lake Narrows",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
+      "codes": [
+        "YGO",
+        "CYGO"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg/St. Andrews",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
+      "codes": [
+        "iata code not found",
+        "CYAV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Northway Aviation": [
@@ -54,5 +74,7 @@
       "Thompson",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:24Z",
+  "date-time-wikidata": "2026-04-02T21:34:25Z"
 }

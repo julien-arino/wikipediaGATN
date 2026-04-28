@@ -20,18 +20,28 @@
     "China Southern Airlines"
   ],
   "destinations": [
-    [
-      "Kashi Laining International Airport",
-      "https://en.wikipedia.org/wiki/Kashi_Laining_International_Airport",
-      "KHG",
-      "ZWSH"
-    ],
-    [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Kashi Laining International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kashi_Laining_International_Airport",
+      "codes": [
+        "KHG",
+        "ZWSH"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi Diwopu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Express Airlines": [
@@ -40,5 +50,7 @@
     "China Southern Airlines": [
       "Ürümqi Diwopu International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:52Z",
+  "date-time-wikidata": "2025-11-25T14:33:47Z"
 }

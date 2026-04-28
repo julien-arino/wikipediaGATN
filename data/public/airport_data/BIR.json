@@ -22,30 +22,53 @@
     "Yeti Airlines"
   ],
   "destinations": [
-    [
-      "Kathmandu",
-      "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
-      "KTM",
-      "VNKT"
-    ],
-    [
-      "Pokhara–International",
-      "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
-      "PHH",
-      "VNPR"
-    ],
-    [
-      "Siddharthanagar",
-      "https://en.wikipedia.org/wiki/Gautam_Buddha_Airport",
-      "BWA",
-      "VNBW"
-    ],
-    [
-      "Tumlingtar",
-      "https://en.wikipedia.org/wiki/Tumlingtar_Airport",
-      "TMI",
-      "VNTR"
-    ]
+    {
+      "city": "Kathmandu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tribhuvan_International_Airport",
+      "codes": [
+        "KTM",
+        "VNKT"
+      ],
+      "airlines": [
+        "Buddha Air",
+        "Saurya Airlines",
+        "Shree Airlines",
+        "Yeti Airlines"
+      ]
+    },
+    {
+      "city": "Pokhara–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pokhara_International_Airport",
+      "codes": [
+        "PHH",
+        "VNPR"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    },
+    {
+      "city": "Siddharthanagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gautam_Buddha_Airport",
+      "codes": [
+        "BWA",
+        "VNBW"
+      ],
+      "airlines": [
+        "Saurya Airlines"
+      ]
+    },
+    {
+      "city": "Tumlingtar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tumlingtar_Airport",
+      "codes": [
+        "TMI",
+        "VNTR"
+      ],
+      "airlines": [
+        "Buddha Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Buddha Air": [
@@ -63,5 +86,7 @@
     "Yeti Airlines": [
       "Kathmandu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:05Z",
+  "date-time-wikidata": "2026-02-26T05:25:43Z"
 }

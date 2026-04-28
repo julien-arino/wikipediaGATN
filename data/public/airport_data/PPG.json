@@ -16,44 +16,70 @@
   "number_airlines": 3,
   "outdegree": 5,
   "airlines": [
-    "Alaska Airlines",
+    "Hawaiian Airlines",
     "Samoa Airways",
     "Talofa Airways"
   ],
   "destinations": [
-    [
-      "Fagali'i Airport",
-      "https://en.wikipedia.org/wiki/Fagali%27i_Airport",
-      "FGI",
-      "NSFI"
-    ],
-    [
-      "Faleolo International Airport",
-      "https://en.wikipedia.org/wiki/Faleolo_International_Airport",
-      "APW",
-      "NSFA"
-    ],
-    [
-      "Fitiuta Airport",
-      "https://en.wikipedia.org/wiki/Fitiuta_Airport",
-      "FTI",
-      "NSFQ"
-    ],
-    [
-      "Honolulu International Airport",
-      "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Ofu Airport",
-      "https://en.wikipedia.org/wiki/Ofu_Airport",
-      "OFU",
-      "NSAS"
-    ]
+    {
+      "city": "Fagali'i Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fagali%27i_Airport",
+      "codes": [
+        "FGI",
+        "NSFI"
+      ],
+      "airlines": [
+        "Samoa Airways"
+      ]
+    },
+    {
+      "city": "Faleolo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faleolo_International_Airport",
+      "codes": [
+        "APW",
+        "NSFA"
+      ],
+      "airlines": [
+        "Samoa Airways",
+        "Talofa Airways"
+      ]
+    },
+    {
+      "city": "Fitiuta Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fitiuta_Airport",
+      "codes": [
+        "FTI",
+        "NSFQ"
+      ],
+      "airlines": [
+        "Samoa Airways"
+      ]
+    },
+    {
+      "city": "Honolulu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "Ofu Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ofu_Airport",
+      "codes": [
+        "OFU",
+        "NSAS"
+      ],
+      "airlines": [
+        "Samoa Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
-    "Alaska Airlines": [
+    "Hawaiian Airlines": [
       "Honolulu International Airport"
     ],
     "Samoa Airways": [
@@ -65,5 +91,7 @@
     "Talofa Airways": [
       "Faleolo International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:08Z",
+  "date-time-wikidata": "2026-04-27T17:26:44Z"
 }

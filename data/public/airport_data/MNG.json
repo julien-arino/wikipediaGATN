@@ -20,24 +20,40 @@
     "Fly Tiwi"
   ],
   "destinations": [
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Elcho Island",
-      "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
-      "ELC",
-      "YELD"
-    ],
-    [
-      "Milingimbi",
-      "https://en.wikipedia.org/wiki/Milingimbi_Airport",
-      "MGT",
-      "YMGB"
-    ]
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth",
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Elcho Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
+      "codes": [
+        "ELC",
+        "YELD"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Milingimbi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milingimbi_Airport",
+      "codes": [
+        "MGT",
+        "YMGB"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -48,5 +64,7 @@
     "Fly Tiwi": [
       "Darwin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:47Z",
+  "date-time-wikidata": "2024-02-17T01:53:10Z"
 }

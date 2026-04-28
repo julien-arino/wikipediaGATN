@@ -7,6 +7,7 @@
   "lat": "26.5329857",
   "lon": "54.8297554",
   "altitude": "20",
+  "continent": "Asia",
   "region": "Hormozgan",
   "country_alpha3": "IRN",
   "country_name": "Iran, Islamic Republic of",
@@ -19,18 +20,29 @@
     "Yazd Airways"
   ],
   "destinations": [
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Yazd Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iran Air": [
@@ -41,5 +53,6 @@
       "Tehran–Mehrabad"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:03:44Z",
+  "date-time-wikidata": "2025-09-24T11:44:39Z"
 }

@@ -19,24 +19,39 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Meekatharra",
-      "https://en.wikipedia.org/wiki/Meekatharra_Airport",
-      "MKR",
-      "YMEK"
-    ],
-    [
-      "Mount Magnet",
-      "https://en.wikipedia.org/wiki/Mount_Magnet_Airport",
-      "MMG",
-      "YMOG"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Meekatharra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meekatharra_Airport",
+      "codes": [
+        "MKR",
+        "YMEK"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Mount Magnet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Magnet_Airport",
+      "codes": [
+        "MMG",
+        "YMOG"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skippers Aviation": [
@@ -44,5 +59,7 @@
       "Mount Magnet",
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:14Z",
+  "date-time-wikidata": "2025-09-08T15:37:09Z"
 }

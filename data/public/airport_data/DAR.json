@@ -44,198 +44,374 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Arusha",
-      "https://en.wikipedia.org/wiki/Arusha_Airport",
-      "ARK",
-      "HTAR"
-    ],
-    [
-      "Blantyre",
-      "https://en.wikipedia.org/wiki/Chileka_International_Airport",
-      "BLZ",
-      "FWCL"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Harare",
-      "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
-      "HRE",
-      "FVRG"
-    ],
-    [
-      "Iringa",
-      "https://en.wikipedia.org/wiki/Iringa_Airport",
-      "IRI",
-      "HTIR"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Kahama",
-      "https://en.wikipedia.org/wiki/Kahama_Airstrip",
-      "KBH",
-      "icao code not found"
-    ],
-    [
-      "Kigali",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "Kilimanjaro",
-      "https://en.wikipedia.org/wiki/Kilimanjaro_International_Airport",
-      "JRO",
-      "HTKJ"
-    ],
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "Lilongwe",
-      "https://en.wikipedia.org/wiki/Kamuzu_International_Airport",
-      "LLW",
-      "FWKI"
-    ],
-    [
-      "Lubumbashi",
-      "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
-      "FBM",
-      "FZQA"
-    ],
-    [
-      "Lusaka",
-      "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
-      "LUN",
-      "FLKK"
-    ],
-    [
-      "Mafia Island",
-      "https://en.wikipedia.org/wiki/Mafia_Airport",
-      "MFA",
-      "HTMA"
-    ],
-    [
-      "Maputo",
-      "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-      "MPM",
-      "FQMA"
-    ],
-    [
-      "Mayotte",
-      "https://en.wikipedia.org/wiki/Dzaoudzi–Pamandzi_International_Airport",
-      "DZA",
-      "FMCZ"
-    ],
-    [
-      "Mombasa",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Mtwara",
-      "https://en.wikipedia.org/wiki/Mtwara_Airport",
-      "MYW",
-      "HTMT"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Mwanza",
-      "https://en.wikipedia.org/wiki/Mwanza_Airport",
-      "MWZ",
-      "HTMW"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Pemba",
-      "https://en.wikipedia.org/wiki/Pemba_Airport_(Mozambique)",
-      "POL",
-      "FQPB"
-    ],
-    [
-      "Pemba Island",
-      "https://en.wikipedia.org/wiki/Pemba_Airport_(Tanzania)",
-      "PMA",
-      "HTPE"
-    ],
-    [
-      "Tanga",
-      "https://en.wikipedia.org/wiki/Tanga_Airport",
-      "TGT",
-      "HTTG"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
-      "ZNZ",
-      "HTZA"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Arusha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arusha_Airport",
+      "codes": [
+        "ARK",
+        "HTAR"
+      ],
+      "airlines": [
+        "Flightlink",
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Blantyre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chileka_International_Airport",
+      "codes": [
+        "BLZ",
+        "FWCL"
+      ],
+      "airlines": [
+        "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "Emirates",
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Harare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
+      "codes": [
+        "HRE",
+        "FVRG"
+      ],
+      "airlines": [
+        "Air Zimbabwe"
+      ]
+    },
+    {
+      "city": "Iringa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iringa_Airport",
+      "codes": [
+        "IRI",
+        "HTIR"
+      ],
+      "airlines": [
+        "Auric Air"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "South African Airways"
+      ]
+    },
+    {
+      "city": "Kahama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahama_Airstrip",
+      "codes": [
+        "KBH",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Kilimanjaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kilimanjaro_International_Airport",
+      "codes": [
+        "JRO",
+        "HTKJ"
+      ],
+      "airlines": [
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Lilongwe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamuzu_International_Airport",
+      "codes": [
+        "LLW",
+        "FWKI"
+      ],
+      "airlines": [
+        "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Lubumbashi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
+      "codes": [
+        "FBM",
+        "FZQA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Lusaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Mafia Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mafia_Airport",
+      "codes": [
+        "MFA",
+        "HTMA"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Coastal Air"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Mayotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dzaoudzi–Pamandzi_International_Airport",
+      "codes": [
+        "DZA",
+        "FMCZ"
+      ],
+      "airlines": [
+        "Ewa Air"
+      ]
+    },
+    {
+      "city": "Mombasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Skyward Airlines"
+      ]
+    },
+    {
+      "city": "Mtwara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mtwara_Airport",
+      "codes": [
+        "MYW",
+        "HTMT"
+      ],
+      "airlines": [
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Oman Air"
+      ]
+    },
+    {
+      "city": "Mwanza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
+      "codes": [
+        "MWZ",
+        "HTMW"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Flightlink",
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Kenya Airways",
+        "Kenya Airways Cargo",
+        "Precision Air",
+        "Skyward Airlines"
+      ]
+    },
+    {
+      "city": "Pemba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pemba_Airport_(Mozambique)",
+      "codes": [
+        "POL",
+        "FQPB"
+      ],
+      "airlines": [
+        "LAM Mozambique Airlines"
+      ]
+    },
+    {
+      "city": "Pemba Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pemba_Airport_(Tanzania)",
+      "codes": [
+        "PMA",
+        "HTPE"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Coastal Air"
+      ]
+    },
+    {
+      "city": "Tanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tanga_Airport",
+      "codes": [
+        "TGT",
+        "HTTG"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Coastal Air"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Auric Air",
+        "Coastal Air",
+        "Flightlink",
+        "Precision Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
@@ -338,5 +514,7 @@
     "Kenya Airways Cargo": [
       "Nairobi–Jomo Kenyatta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:14Z",
+  "date-time-wikidata": "2026-04-19T08:24:53Z"
 }

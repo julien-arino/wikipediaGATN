@@ -21,18 +21,29 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Ambon",
-      "https://en.wikipedia.org/wiki/Pattimura_Airport",
-      "AMQ",
-      "WAPP"
-    ],
-    [
-      "Timika",
-      "https://en.wikipedia.org/wiki/Mozes_Kilangin_Airport",
-      "TIM",
-      "WAYY"
-    ]
+    {
+      "city": "Ambon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pattimura_Airport",
+      "codes": [
+        "AMQ",
+        "WAPP"
+      ],
+      "airlines": [
+        "Lion Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Timika",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mozes_Kilangin_Airport",
+      "codes": [
+        "TIM",
+        "WAYY"
+      ],
+      "airlines": [
+        "Smart Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Lion Air": [
@@ -44,5 +55,7 @@
     "Wings Air": [
       "Ambon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:29Z",
+  "date-time-wikidata": "2026-04-25T20:14:41Z"
 }

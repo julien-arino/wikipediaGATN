@@ -22,36 +22,64 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Cancún International Airport",
-      "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Felipe Ángeles International Airport",
-      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Guadalajara International Airport",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Mexico City International Airport",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Veracruz International Airport",
-      "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
-      "VER",
-      "MMVR"
-    ]
+    {
+      "city": "Cancún International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Felipe Ángeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Guadalajara International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Viva (airline)",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mexico City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect",
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Veracruz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veracruz_International_Airport",
+      "codes": [
+        "VER",
+        "MMVR"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -70,5 +98,7 @@
     "Volaris": [
       "Guadalajara International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:33Z",
+  "date-time-wikidata": "2026-04-12T15:35:52Z"
 }

@@ -30,126 +30,240 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Century",
-      "https://en.wikipedia.org/wiki/Century_Mine_Airport",
-      "iata code not found",
-      "YCNY"
-    ],
-    [
-      "Cloncurry",
-      "https://en.wikipedia.org/wiki/Cloncurry_Airport",
-      "CNJ",
-      "YCCY"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Hughenden",
-      "https://en.wikipedia.org/wiki/Hughenden_Airport",
-      "HGD",
-      "YHUG"
-    ],
-    [
-      "Julia Creek",
-      "https://en.wikipedia.org/wiki/Julia_Creek_Airport",
-      "JCK",
-      "YJLC"
-    ],
-    [
-      "Labona Mine",
-      "https://en.wikipedia.org/wiki/Carmichael_coal_mine",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Longreach",
-      "https://en.wikipedia.org/wiki/Longreach_Airport",
-      "LRE",
-      "YLRE"
-    ],
-    [
-      "Mackay",
-      "https://en.wikipedia.org/wiki/Mackay_Airport",
-      "MKY",
-      "YBMK"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Moranbah",
-      "https://en.wikipedia.org/wiki/Moranbah",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Moranbah",
-      "https://en.wikipedia.org/wiki/Moranbah_Airport",
-      "MOV",
-      "YMRB"
-    ],
-    [
-      "Mount Isa",
-      "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
-      "ISA",
-      "YBMA"
-    ],
-    [
-      "Richmond",
-      "https://en.wikipedia.org/wiki/Richmond_Airport_(Queensland)",
-      "RCM",
-      "YRMD"
-    ],
-    [
-      "Rockhampton",
-      "https://en.wikipedia.org/wiki/Rockhampton_Airport",
-      "ROK",
-      "YBRK"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Trepell",
-      "https://en.wikipedia.org/wiki/Trepell_Airport",
-      "TQP",
-      "YTEE"
-    ],
-    [
-      "Winton",
-      "https://en.wikipedia.org/wiki/Winton_Airport",
-      "WIN",
-      "YWTN"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Qantas Freight",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Century",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Century_Mine_Airport",
+      "codes": [
+        "iata code not found",
+        "YCNY"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Cloncurry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cloncurry_Airport",
+      "codes": [
+        "CNJ",
+        "YCCY"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Airnorth",
+        "HeavyLift Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "HeavyLift Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Hughenden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hughenden_Airport",
+      "codes": [
+        "HGD",
+        "YHUG"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Julia Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julia_Creek_Airport",
+      "codes": [
+        "JCK",
+        "YJLC"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Labona Mine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmichael_coal_mine",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "SmartLynx Australia"
+      ]
+    },
+    {
+      "city": "Longreach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Longreach_Airport",
+      "codes": [
+        "LRE",
+        "YLRE"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Mackay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mackay_Airport",
+      "codes": [
+        "MKY",
+        "YBMK"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Moranbah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moranbah",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "National Jet Express",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Moranbah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moranbah_Airport",
+      "codes": [
+        "MOV",
+        "YMRB"
+      ],
+      "airlines": [
+        "National Jet Express",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Mount Isa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
+      "codes": [
+        "ISA",
+        "YBMA"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Richmond",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Richmond_Airport_(Queensland)",
+      "codes": [
+        "RCM",
+        "YRMD"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Rockhampton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rockhampton_Airport",
+      "codes": [
+        "ROK",
+        "YBRK"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Toll Priority"
+      ]
+    },
+    {
+      "city": "Trepell",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trepell_Airport",
+      "codes": [
+        "TQP",
+        "YTEE"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Winton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winton_Airport",
+      "codes": [
+        "WIN",
+        "YWTN"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airnorth": [
@@ -208,5 +322,7 @@
     "Toll Priority": [
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:15Z",
+  "date-time-wikidata": "2026-02-20T09:12:08Z"
 }

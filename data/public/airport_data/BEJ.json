@@ -24,42 +24,75 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ],
-    [
-      "Maratua",
-      "https://en.wikipedia.org/wiki/Maratua_Airport",
-      "RTU",
-      "WAQC"
-    ],
-    [
-      "Samarinda",
-      "https://en.wikipedia.org/wiki/Aji_Pangeran_Tumenggung_Pranoto_International_Airport",
-      "AAP",
-      "WALS"
-    ],
-    [
-      "Surabaya",
-      "https://en.wikipedia.org/wiki/Juanda_International_Airport",
-      "SUB",
-      "WARR"
-    ]
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Indonesia AirAsia",
+        "Sriwijaya Air",
+        "Super Air Jet",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Sriwijaya Air"
+      ]
+    },
+    {
+      "city": "Maratua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maratua_Airport",
+      "codes": [
+        "RTU",
+        "WAQC"
+      ],
+      "airlines": [
+        "Smart Aviation"
+      ]
+    },
+    {
+      "city": "Samarinda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aji_Pangeran_Tumenggung_Pranoto_International_Airport",
+      "codes": [
+        "AAP",
+        "WALS"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Surabaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "Batik Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Batik Air": [
@@ -83,5 +116,7 @@
       "Balikpapan",
       "Samarinda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:47Z",
+  "date-time-wikidata": "2026-03-25T12:18:45Z"
 }

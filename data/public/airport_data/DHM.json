@@ -21,30 +21,53 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Chandigarh",
-      "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-      "IXC",
-      "VICG"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Jaipur",
-      "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
-      "JAI",
-      "VIJP"
-    ],
-    [
-      "Shimla",
-      "https://en.wikipedia.org/wiki/Shimla_Airport",
-      "SLV",
-      "VISM"
-    ]
+    {
+      "city": "Chandigarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
+      "codes": [
+        "IXC",
+        "VICG"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Jaipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
+      "codes": [
+        "JAI",
+        "VIJP"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Shimla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shimla_Airport",
+      "codes": [
+        "SLV",
+        "VISM"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -60,5 +83,7 @@
     "SpiceJet": [
       "Delhi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:07Z",
+  "date-time-wikidata": "2026-04-27T15:40:25Z"
 }

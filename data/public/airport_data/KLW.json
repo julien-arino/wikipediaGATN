@@ -20,24 +20,39 @@
     "Island Air Express"
   ],
   "destinations": [
-    [
-      "Juneau",
-      "https://en.wikipedia.org/wiki/Juneau_International_Airport",
-      "JNU",
-      "PAJN"
-    ],
-    [
-      "Ketchikan",
-      "https://en.wikipedia.org/wiki/Ketchikan_International_Airport",
-      "KTN",
-      "PAKT"
-    ],
-    [
-      "Sitka",
-      "https://en.wikipedia.org/wiki/Sitka_Rocky_Gutierrez_Airport",
-      "SIT",
-      "PASI"
-    ]
+    {
+      "city": "Juneau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juneau_International_Airport",
+      "codes": [
+        "JNU",
+        "PAJN"
+      ],
+      "airlines": [
+        "Alaska Seaplanes"
+      ]
+    },
+    {
+      "city": "Ketchikan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ketchikan_International_Airport",
+      "codes": [
+        "KTN",
+        "PAKT"
+      ],
+      "airlines": [
+        "Island Air Express"
+      ]
+    },
+    {
+      "city": "Sitka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sitka_Rocky_Gutierrez_Airport",
+      "codes": [
+        "SIT",
+        "PASI"
+      ],
+      "airlines": [
+        "Alaska Seaplanes"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Seaplanes": [
@@ -47,5 +62,7 @@
     "Island Air Express": [
       "Ketchikan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:56Z",
+  "date-time-wikidata": "2026-01-16T02:58:35Z"
 }

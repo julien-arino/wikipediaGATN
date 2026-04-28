@@ -34,132 +34,247 @@
     "TAAG Angola Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Benguela",
-      "https://en.wikipedia.org/wiki/Benguela_Airport",
-      "BUG",
-      "FNBG"
-    ],
-    [
-      "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Catumbela",
-      "https://en.wikipedia.org/wiki/Catumbela_Airport",
-      "CBT",
-      "FNCT"
-    ],
-    [
-      "Etosha",
-      "https://en.wikipedia.org/wiki/Ongava_Airstrip",
-      "OGV",
-      "FYNG"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Gaborone",
-      "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
-      "GBE",
-      "FBSK"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Kasane",
-      "https://en.wikipedia.org/wiki/Kasane_Airport",
-      "BBK",
-      "FBKE"
-    ],
-    [
-      "Livingstone",
-      "https://en.wikipedia.org/wiki/Livingstone_Airport",
-      "LVI",
-      "FLHN"
-    ],
-    [
-      "Luanda",
-      "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
-      "LAD",
-      "FNLU"
-    ],
-    [
-      "Luanda–Agostinho Neto",
-      "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
-      "NBJ",
-      "FNBJ"
-    ],
-    [
-      "Lusaka",
-      "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
-      "LUN",
-      "FLKK"
-    ],
-    [
-      "Maun",
-      "https://en.wikipedia.org/wiki/Maun_Airport",
-      "MUB",
-      "FBMN"
-    ],
-    [
-      "Ndola",
-      "https://en.wikipedia.org/wiki/Simon_Mwansa_Kapwepwe_International_Airport",
-      "NLA",
-      "FLSK"
-    ],
-    [
-      "Sossusvlei",
-      "https://en.wikipedia.org/wiki/Sossusvlei",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Twyfelfontein",
-      "https://en.wikipedia.org/wiki/Twyfelfontein",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Victoria Falls",
-      "https://en.wikipedia.org/wiki/Victoria_Falls_International_Airport",
-      "VFA",
-      "FVFA"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_International_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Benguela",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benguela_Airport",
+      "codes": [
+        "BUG",
+        "FNBG"
+      ],
+      "airlines": [
+        "Fly Angola"
+      ]
+    },
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink",
+        "FlyNamibia",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Catumbela",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catumbela_Airport",
+      "codes": [
+        "CBT",
+        "FNCT"
+      ],
+      "airlines": [
+        "Fly Angola"
+      ]
+    },
+    {
+      "city": "Etosha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ongava_Airstrip",
+      "codes": [
+        "OGV",
+        "FYNG"
+      ],
+      "airlines": [
+        "FlyNamibia Safari"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Discover Airlines",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Discover Airlines",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Gaborone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
+      "codes": [
+        "GBE",
+        "FBSK"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "Airlink Cargo",
+        "BidAir Cargo",
+        "South African Airways"
+      ]
+    },
+    {
+      "city": "Kasane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kasane_Airport",
+      "codes": [
+        "BBK",
+        "FBKE"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Livingstone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Livingstone_Airport",
+      "codes": [
+        "LVI",
+        "FLHN"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Luanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
+      "codes": [
+        "LAD",
+        "FNLU"
+      ],
+      "airlines": [
+        "Fly Angola"
+      ]
+    },
+    {
+      "city": "Luanda–Agostinho Neto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
+      "codes": [
+        "NBJ",
+        "FNBJ"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Lusaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Maun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maun_Airport",
+      "codes": [
+        "MUB",
+        "FBMN"
+      ],
+      "airlines": [
+        "Air Botswana",
+        "FlyNamibia"
+      ]
+    },
+    {
+      "city": "Ndola",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simon_Mwansa_Kapwepwe_International_Airport",
+      "codes": [
+        "NLA",
+        "FLSK"
+      ],
+      "airlines": [
+        "Proflight Zambia"
+      ]
+    },
+    {
+      "city": "Sossusvlei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sossusvlei",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FlyNamibia Safari"
+      ]
+    },
+    {
+      "city": "Twyfelfontein",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twyfelfontein",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FlyNamibia Safari"
+      ]
+    },
+    {
+      "city": "Victoria Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_Falls_International_Airport",
+      "codes": [
+        "VFA",
+        "FVFA"
+      ],
+      "airlines": [
+        "FlyNamibia"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_International_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Botswana": [
@@ -221,5 +336,7 @@
     "Lufthansa Cargo": [
       "Frankfurt"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:08Z",
+  "date-time-wikidata": "2026-04-25T20:43:28Z"
 }

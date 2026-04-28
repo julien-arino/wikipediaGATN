@@ -21,30 +21,52 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Benghazi",
-      "https://en.wikipedia.org/wiki/Benina_International_Airport",
-      "BEN",
-      "HLLB"
-    ],
-    [
-      "Misrata",
-      "https://en.wikipedia.org/wiki/Misrata_Airport",
-      "MRA",
-      "HLMS"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Tripoli–Mitiga",
-      "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
-      "MJI",
-      "HLLM"
-    ]
+    {
+      "city": "Benghazi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benina_International_Airport",
+      "codes": [
+        "BEN",
+        "HLLB"
+      ],
+      "airlines": [
+        "Afriqiyah Airways"
+      ]
+    },
+    {
+      "city": "Misrata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Misrata_Airport",
+      "codes": [
+        "MRA",
+        "HLMS"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Libyan Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Tripoli–Mitiga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
+      "codes": [
+        "MJI",
+        "HLLM"
+      ],
+      "airlines": [
+        "Afriqiyah Airways",
+        "Libyan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afriqiyah Airways": [
@@ -59,5 +81,7 @@
     "Transavia": [
       "Paris–Orly"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:07Z",
+  "date-time-wikidata": "2026-04-01T20:15:00Z"
 }

@@ -19,23 +19,35 @@
     "SAM Air"
   ],
   "destinations": [
-    [
-      "Djalaluddin Airport",
-      "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
-      "GTO",
-      "WAMG"
-    ],
-    [
-      "Mutiara SIS Al-Jufrie International Airport",
-      "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
-      "PLW",
-      "WAFF"
-    ]
+    {
+      "city": "Djalaluddin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
+      "codes": [
+        "GTO",
+        "WAMG"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    },
+    {
+      "city": "Mutiara SIS Al-Jufrie International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mutiara_SIS_Al-Jufrie_International_Airport",
+      "codes": [
+        "PLW",
+        "WAFF"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
       "Djalaluddin Airport",
       "Mutiara SIS Al-Jufrie International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:10Z",
+  "date-time-wikidata": "2026-03-02T08:05:54Z"
 }

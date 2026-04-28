@@ -22,30 +22,52 @@
     "Safarilink Aviation"
   ],
   "destinations": [
-    [
-      "Entebbe International Airport",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Jomo Kenyatta International Airport",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Moi International Airport",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Wilson Airport",
-      "https://en.wikipedia.org/wiki/Wilson_Airport",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Entebbe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Safarilink Aviation"
+      ]
+    },
+    {
+      "city": "Jomo Kenyatta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Jambo Jet",
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Moi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Jambo Jet"
+      ]
+    },
+    {
+      "city": "Wilson Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Renegade Air",
+        "Safarilink Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jambo Jet": [
@@ -62,5 +84,7 @@
       "Entebbe International Airport",
       "Wilson Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:56Z",
+  "date-time-wikidata": "2026-04-14T22:57:44Z"
 }

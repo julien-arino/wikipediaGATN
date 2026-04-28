@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Akunnaaq",
-      "https://en.wikipedia.org/wiki/Akunnaaq_Heliport",
-      "QCU",
-      "BGAK"
-    ],
-    [
-      "Qasigiannguit",
-      "https://en.wikipedia.org/wiki/Qasigiannguit_Heliport",
-      "JCH",
-      "BGCH"
-    ]
+    {
+      "city": "Akunnaaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akunnaaq_Heliport",
+      "codes": [
+        "QCU",
+        "BGAK"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qasigiannguit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qasigiannguit_Heliport",
+      "codes": [
+        "JCH",
+        "BGCH"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Akunnaaq",
       "Qasigiannguit"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:35Z",
+  "date-time-wikidata": "2025-07-16T20:00:52Z"
 }

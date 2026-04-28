@@ -19,23 +19,35 @@
     "Bahamasair"
   ],
   "destinations": [
-    [
-      "Mayaguana",
-      "https://en.wikipedia.org/wiki/Mayaguana_Airport",
-      "MYG",
-      "MYMM"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ]
+    {
+      "city": "Mayaguana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mayaguana_Airport",
+      "codes": [
+        "MYG",
+        "MYMM"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bahamasair": [
       "Mayaguana",
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:35Z",
+  "date-time-wikidata": "2026-04-21T13:44:04Z"
 }

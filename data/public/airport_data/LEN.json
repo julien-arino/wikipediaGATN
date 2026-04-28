@@ -19,42 +19,72 @@
     "Iberia"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona-El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Ibiza",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport",
-      "IBZ",
-      "LEIB"
-    ],
-    [
-      "Menorca",
-      "https://en.wikipedia.org/wiki/Menorca_Airport",
-      "MAH",
-      "LEMH"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona-El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Ibiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Menorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Menorca_Airport",
+      "codes": [
+        "MAH",
+        "LEMH"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iberia": [
@@ -65,5 +95,7 @@
       "Málaga",
       "Palma de Mallorca"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:58Z",
+  "date-time-wikidata": "2026-04-07T20:37:44Z"
 }

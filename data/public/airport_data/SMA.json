@@ -20,18 +20,28 @@
     "SATA Air Açores"
   ],
   "destinations": [
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Ponta Delgada",
-      "https://en.wikipedia.org/wiki/João_Paulo_II_Airport",
-      "PDL",
-      "LPPD"
-    ]
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Portela_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Ponta Delgada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/João_Paulo_II_Airport",
+      "codes": [
+        "PDL",
+        "LPPD"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azores Airlines": [
@@ -40,5 +50,7 @@
     "SATA Air Açores": [
       "Ponta Delgada"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:46Z",
+  "date-time-wikidata": "2026-03-18T18:42:19Z"
 }

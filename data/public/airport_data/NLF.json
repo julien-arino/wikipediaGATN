@@ -20,24 +20,42 @@
     "Skytrans Airlines"
   ],
   "destinations": [
-    [
-      "Horn Island",
-      "https://en.wikipedia.org/wiki/Horn_Island_Airport",
-      "HID",
-      "YHID"
-    ],
-    [
-      "Murray Island",
-      "https://en.wikipedia.org/wiki/Murray_Island_Airport",
-      "MYI",
-      "YMAE"
-    ],
-    [
-      "Yorke Island",
-      "https://en.wikipedia.org/wiki/Yorke_Island_Airport",
-      "OKR",
-      "YYKI"
-    ]
+    {
+      "city": "Horn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Island_Airport",
+      "codes": [
+        "HID",
+        "YHID"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Murray Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murray_Island_Airport",
+      "codes": [
+        "MYI",
+        "YMAE"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Yorke Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yorke_Island_Airport",
+      "codes": [
+        "OKR",
+        "YYKI"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hinterland Aviation": [
@@ -50,5 +68,7 @@
       "Murray Island",
       "Yorke Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:59Z",
+  "date-time-wikidata": "2024-06-02T05:46:33Z"
 }

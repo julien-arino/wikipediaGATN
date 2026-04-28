@@ -23,24 +23,43 @@
     "Yazd Airways"
   ],
   "destinations": [
-    [
-      "Asaluyeh",
-      "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
-      "PGU",
-      "OIBP"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Asaluyeh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_Gulf_Airport",
+      "codes": [
+        "PGU",
+        "OIBP"
+      ],
+      "airlines": [
+        "Iran Aseman Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Yazd Airways"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Iran Aseman Airlines",
+        "Mahan Air",
+        "Pars Air",
+        "Yazd Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iran Air": [
@@ -60,5 +79,7 @@
       "Mashhad",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:54Z",
+  "date-time-wikidata": "2025-09-24T11:42:31Z"
 }

@@ -21,12 +21,19 @@
     "Pouya Air"
   ],
   "destinations": [
-    [
-      "Bandar Abbas",
-      "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
-      "BND",
-      "OIKB"
-    ]
+    {
+      "city": "Bandar Abbas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandar_Abbas_International_Airport",
+      "codes": [
+        "BND",
+        "OIKB"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Karun Airlines",
+        "Pouya Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iran Air": [
@@ -38,5 +45,7 @@
     "Pouya Air": [
       "Bandar Abbas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:20Z",
+  "date-time-wikidata": "2025-09-24T11:44:35Z"
 }

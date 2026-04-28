@@ -25,48 +25,85 @@
     "Uganda Airlines"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Goma",
-      "https://en.wikipedia.org/wiki/Goma_International_Airport",
-      "GOM",
-      "FZNA"
-    ],
-    [
-      "Kigali",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Brussels Airlines"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Goma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Goma_International_Airport",
+      "codes": [
+        "GOM",
+        "FZNA"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo",
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
@@ -92,5 +129,7 @@
       "Addis Ababa",
       "Kigali"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:07Z",
+  "date-time-wikidata": "2026-03-18T22:16:12Z"
 }

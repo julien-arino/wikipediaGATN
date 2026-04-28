@@ -19,23 +19,35 @@
     "Air Marshall Islands"
   ],
   "destinations": [
-    [
-      "Majuro",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ],
-    [
-      "Mejit",
-      "https://en.wikipedia.org/wiki/Mejit_Airport",
-      "MJB",
-      "icao code not found"
-    ]
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Mejit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mejit_Airport",
+      "codes": [
+        "MJB",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Marshall Islands": [
       "Majuro",
       "Mejit"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:05Z",
+  "date-time-wikidata": "2024-12-26T01:36:33Z"
 }

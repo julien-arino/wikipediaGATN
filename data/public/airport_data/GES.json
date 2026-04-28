@@ -21,24 +21,42 @@
     "Philippine Airlines"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Iloilo",
-      "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
-      "ILO",
-      "RPVI"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Iloilo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
+      "codes": [
+        "ILO",
+        "RPVI"
+      ],
+      "airlines": [
+        "Cebu Pacific"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express",
+        "Philippine Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebu Pacific": [
@@ -53,5 +71,7 @@
     "Philippine Airlines": [
       "Manila"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:54Z",
+  "date-time-wikidata": "2026-04-05T10:54:01Z"
 }

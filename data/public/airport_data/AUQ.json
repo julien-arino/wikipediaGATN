@@ -7,6 +7,7 @@
   "lat": "-9.7666779",
   "lon": "-139.0097149",
   "altitude": "451",
+  "continent": "Oceania",
   "region": "",
   "country_alpha3": "PYF",
   "country_name": "French Polynesia",
@@ -19,30 +20,52 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Nuku Hiva",
-      "https://en.wikipedia.org/wiki/Nuku_Hiva_Airport",
-      "NHV",
-      "NTMD"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Ua Huka",
-      "https://en.wikipedia.org/wiki/Ua_Huka_Airport",
-      "UAH",
-      "NTMU"
-    ],
-    [
-      "Ua Pou",
-      "https://en.wikipedia.org/wiki/Ua_Pou_Airport",
-      "UAP",
-      "NTMP"
-    ]
+    {
+      "city": "Nuku Hiva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuku_Hiva_Airport",
+      "codes": [
+        "NHV",
+        "NTMD"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Ua Huka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ua_Huka_Airport",
+      "codes": [
+        "UAH",
+        "NTMU"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Ua Pou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ua_Pou_Airport",
+      "codes": [
+        "UAP",
+        "NTMP"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Moana": [
@@ -56,5 +79,6 @@
       "Ua Pou"
     ]
   },
-  "continent": "Oceania"
+  "date-time-parse": "2026-04-28T22:03:35Z",
+  "date-time-wikidata": "2025-04-01T21:58:00Z"
 }

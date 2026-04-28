@@ -22,138 +22,252 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Abakan",
-      "https://en.wikipedia.org/wiki/Abakan_Airport",
-      "ABA",
-      "UNAA"
-    ],
-    [
-      "Chelyabinsk",
-      "https://en.wikipedia.org/wiki/Balandino_Airport",
-      "CEK",
-      "USCC"
-    ],
-    [
-      "Dikson",
-      "https://en.wikipedia.org/wiki/Dikson_Airport",
-      "DKS",
-      "UODD"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Khatanga",
-      "https://en.wikipedia.org/wiki/Khatanga_Airport",
-      "HTG",
-      "UOHH"
-    ],
-    [
-      "Krasnodar",
-      "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
-      "KRR",
-      "URKK"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport",
-      "MCX",
-      "URML"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Nizhny Novgorod",
-      "https://en.wikipedia.org/wiki/Strigino_Airport",
-      "GOJ",
-      "UWGG"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Novosibirsk_Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Omsk",
-      "https://en.wikipedia.org/wiki/Omsk_Central_Airport",
-      "OMS",
-      "UNOO"
-    ],
-    [
-      "Perm",
-      "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
-      "PEE",
-      "USPP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Samara",
-      "https://en.wikipedia.org/wiki/Kurumoch_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Turukhansk",
-      "https://en.wikipedia.org/wiki/Turukhansk_Airport",
-      "THX",
-      "UOTT"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_Airport",
-      "UFA",
-      "UWUU"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Abakan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abakan_Airport",
+      "codes": [
+        "ABA",
+        "UNAA"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Chelyabinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balandino_Airport",
+      "codes": [
+        "CEK",
+        "USCC"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Dikson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dikson_Airport",
+      "codes": [
+        "DKS",
+        "UODD"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Khatanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khatanga_Airport",
+      "codes": [
+        "HTG",
+        "UOHH"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Krasnodar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
+      "codes": [
+        "KRR",
+        "URKK"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "NordStar",
+        "Utair"
+      ]
+    },
+    {
+      "city": "Makhachkala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "codes": [
+        "MCX",
+        "URML"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "NordStar",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Nizhny Novgorod",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strigino_Airport",
+      "codes": [
+        "GOJ",
+        "UWGG"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Novosibirsk_Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "NordStar",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "NordStar",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Omsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Omsk_Central_Airport",
+      "codes": [
+        "OMS",
+        "UNOO"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
+      "codes": [
+        "PEE",
+        "USPP"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Samara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Turukhansk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turukhansk_Airport",
+      "codes": [
+        "THX",
+        "UOTT"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KrasAvia": [
@@ -188,5 +302,7 @@
     "Utair": [
       "Krasnoyarsk–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:41Z",
+  "date-time-wikidata": "2026-02-02T06:55:05Z"
 }

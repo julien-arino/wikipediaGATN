@@ -19,23 +19,35 @@
     "AirBorneo"
   ],
   "destinations": [
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Sandakan",
-      "https://en.wikipedia.org/wiki/Sandakan_Airport",
-      "SDK",
-      "WBKS"
-    ]
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Sandakan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandakan_Airport",
+      "codes": [
+        "SDK",
+        "WBKS"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirBorneo": [
       "Kota Kinabalu",
       "Sandakan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:57Z",
+  "date-time-wikidata": "2026-01-05T17:09:07Z"
 }

@@ -19,23 +19,35 @@
     "Ryukyu Air Commuter"
   ],
   "destinations": [
-    [
-      "Ishigaki",
-      "https://en.wikipedia.org/wiki/New_Ishigaki_Airport",
-      "ISG",
-      "ROIG"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ]
+    {
+      "city": "Ishigaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Ishigaki_Airport",
+      "codes": [
+        "ISG",
+        "ROIG"
+      ],
+      "airlines": [
+        "Ryukyu Air Commuter"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Ryukyu Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryukyu Air Commuter": [
       "Ishigaki",
       "Naha"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:29Z",
+  "date-time-wikidata": "2026-01-10T02:10:22Z"
 }

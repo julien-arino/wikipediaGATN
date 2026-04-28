@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Campinas",
       "Cuiabá"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:36Z",
+  "date-time-wikidata": "2026-04-03T12:05:27Z"
 }

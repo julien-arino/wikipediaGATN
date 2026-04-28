@@ -23,54 +23,96 @@
     "Western Air"
   ],
   "destinations": [
-    [
-      "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Fort Lauderdale",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Marsh Harbour",
-      "https://en.wikipedia.org/wiki/Marsh_Harbour_Airport",
-      "MHH",
-      "MYAM"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ],
-    [
-      "Orlando",
-      "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "MCO",
-      "KMCO"
-    ],
-    [
-      "South Bimini",
-      "https://en.wikipedia.org/wiki/South_Bimini_Airport",
-      "BIM",
-      "MYBS"
-    ]
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Bahamasair",
+        "Western Air"
+      ]
+    },
+    {
+      "city": "Marsh Harbour",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marsh_Harbour_Airport",
+      "codes": [
+        "MHH",
+        "MYAM"
+      ],
+      "airlines": [
+        "Flamingo Air"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair",
+        "Western Air"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "South Bimini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/South_Bimini_Airport",
+      "codes": [
+        "BIM",
+        "MYBS"
+      ],
+      "airlines": [
+        "Flamingo Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle": [
@@ -93,5 +135,7 @@
       "Fort Lauderdale",
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:28Z",
+  "date-time-wikidata": "2026-04-01T21:32:19Z"
 }

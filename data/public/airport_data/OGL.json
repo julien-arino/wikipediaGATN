@@ -23,42 +23,74 @@
     "Trans Guyana Airways"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Kaieteur",
-      "https://en.wikipedia.org/wiki/Kaieteur_International_Airport",
-      "KAI",
-      "SYKA"
-    ],
-    [
-      "Lethem",
-      "https://en.wikipedia.org/wiki/Lethem_Airport",
-      "LTM",
-      "SYLT"
-    ],
-    [
-      "Paramaribo–Zanderij",
-      "https://en.wikipedia.org/wiki/Johan_Adolf_Pengel_International_Airport",
-      "PBM",
-      "SMJP"
-    ],
-    [
-      "Port of Spain",
-      "https://en.wikipedia.org/wiki/Piarco_International_Airport",
-      "POS",
-      "TTPP"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "LIAT"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "InterCaribbean Airways"
+      ]
+    },
+    {
+      "city": "Kaieteur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaieteur_International_Airport",
+      "codes": [
+        "KAI",
+        "SYKA"
+      ],
+      "airlines": [
+        "Trans Guyana Airways"
+      ]
+    },
+    {
+      "city": "Lethem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lethem_Airport",
+      "codes": [
+        "LTM",
+        "SYLT"
+      ],
+      "airlines": [
+        "Trans Guyana Airways"
+      ]
+    },
+    {
+      "city": "Paramaribo–Zanderij",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Johan_Adolf_Pengel_International_Airport",
+      "codes": [
+        "PBM",
+        "SMJP"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "Gum Air"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caribbean Airlines": [
@@ -79,5 +111,7 @@
       "Kaieteur",
       "Lethem"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:28Z",
+  "date-time-wikidata": "2026-04-22T04:56:40Z"
 }

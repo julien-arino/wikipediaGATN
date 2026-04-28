@@ -21,30 +21,53 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Leh",
-      "https://en.wikipedia.org/wiki/Kushok_Bakula_Rimpochee_Airport",
-      "IXL",
-      "VILH"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Srinagar",
-      "https://en.wikipedia.org/wiki/Srinagar_Airport",
-      "SXR",
-      "VISR"
-    ]
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Alliance Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Leh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kushok_Bakula_Rimpochee_Airport",
+      "codes": [
+        "IXL",
+        "VILH"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Srinagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Srinagar_Airport",
+      "codes": [
+        "SXR",
+        "VISR"
+      ],
+      "airlines": [
+        "Air India",
+        "SpiceJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -60,5 +83,7 @@
       "Delhi",
       "Srinagar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:36Z",
+  "date-time-wikidata": "2026-04-08T05:46:04Z"
 }

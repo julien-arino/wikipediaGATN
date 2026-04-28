@@ -20,12 +20,18 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ]
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Wasaya Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North Star Air": [
@@ -34,5 +40,7 @@
     "Wasaya Airways": [
       "Sioux Lookout"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:37Z",
+  "date-time-wikidata": "2025-09-07T15:46:06Z"
 }

@@ -20,24 +20,40 @@
     "Uni Air"
   ],
   "destinations": [
-    [
-      "Kaohsiung",
-      "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
-      "KHH",
-      "RCKH"
-    ],
-    [
-      "Taichung",
-      "https://en.wikipedia.org/wiki/Taichung_International_Airport",
-      "RMQ",
-      "RCMQ"
-    ],
-    [
-      "Taipei–Songshan",
-      "https://en.wikipedia.org/wiki/Songshan_Airport",
-      "TSA",
-      "RCSS"
-    ]
+    {
+      "city": "Kaohsiung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
+      "codes": [
+        "KHH",
+        "RCKH"
+      ],
+      "airlines": [
+        "Mandarin Airlines"
+      ]
+    },
+    {
+      "city": "Taichung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taichung_International_Airport",
+      "codes": [
+        "RMQ",
+        "RCMQ"
+      ],
+      "airlines": [
+        "Uni Air"
+      ]
+    },
+    {
+      "city": "Taipei–Songshan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Songshan_Airport",
+      "codes": [
+        "TSA",
+        "RCSS"
+      ],
+      "airlines": [
+        "Mandarin Airlines",
+        "Uni Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Mandarin Airlines": [
@@ -48,5 +64,7 @@
       "Taichung",
       "Taipei–Songshan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:11Z",
+  "date-time-wikidata": "2026-03-07T08:18:01Z"
 }

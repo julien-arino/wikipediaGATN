@@ -31,144 +31,273 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Dabo Airport",
-      "https://en.wikipedia.org/wiki/Dabo_Airport",
-      "SIQ",
-      "WIDS"
-    ],
-    [
-      "Depati Amir Airport",
-      "https://en.wikipedia.org/wiki/Depati_Amir_Airport",
-      "PGK",
-      "WIPK"
-    ],
-    [
-      "Incheon International Airport",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Japura Airport",
-      "https://en.wikipedia.org/wiki/Japura_Airport",
-      "RGT",
-      "WIBJ"
-    ],
-    [
-      "Jenderal Ahmad Yani International Airport",
-      "https://en.wikipedia.org/wiki/Jenderal_Ahmad_Yani_International_Airport",
-      "SRG",
-      "WAHS"
-    ],
-    [
-      "Juanda International Airport",
-      "https://en.wikipedia.org/wiki/Juanda_International_Airport",
-      "SUB",
-      "WARR"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Kuala Lumpur International Airport",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kualanamu International Airport",
-      "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
-      "KNO",
-      "WIMM"
-    ],
-    [
-      "Letung Airport",
-      "https://en.wikipedia.org/wiki/Letung_Airport",
-      "LMU",
-      "WIDL"
-    ],
-    [
-      "Minangkabau International Airport",
-      "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
-      "PDG",
-      "WIEE"
-    ],
-    [
-      "Radin Inten II International Airport",
-      "https://en.wikipedia.org/wiki/Radin_Inten_II_International_Airport",
-      "TKG",
-      "WILL"
-    ],
-    [
-      "Raja Sisingamangaraja XII Airport",
-      "https://en.wikipedia.org/wiki/Raja_Sisingamangaraja_XII_Airport",
-      "DTB",
-      "WIMN"
-    ],
-    [
-      "Ranai Airport",
-      "https://en.wikipedia.org/wiki/Ranai_Airport",
-      "NTX",
-      "WIDO"
-    ],
-    [
-      "Ranai-Natuna Airport",
-      "https://en.wikipedia.org/wiki/Ranai-Natuna_Airport",
-      "NTX",
-      "WIDO"
-    ],
-    [
-      "Soekarno–Hatta International Airport",
-      "https://en.wikipedia.org/wiki/Soekarno%E2%80%93Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Sultan Aji Muhammad Sulaiman Sepinggan Airport",
-      "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Sultan Mahmud Badaruddin II International Airport",
-      "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
-      "PLM",
-      "WIPP"
-    ],
-    [
-      "Sultan Syarif Kasim II International Airport",
-      "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
-      "PKU",
-      "WIBB"
-    ],
-    [
-      "Sultan Thaha Airport",
-      "https://en.wikipedia.org/wiki/Sultan_Thaha_Airport",
-      "DJB",
-      "WIJJ"
-    ],
-    [
-      "Supadio International Airport",
-      "https://en.wikipedia.org/wiki/Supadio_International_Airport",
-      "PNK",
-      "WIOO"
-    ],
-    [
-      "Tuanku Tambusai Airport",
-      "https://en.wikipedia.org/wiki/Tuanku_Tambusai_Airport",
-      "PPR",
-      "WIDE"
-    ],
-    [
-      "Yogyakarta International Airport",
-      "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
-      "YIA",
-      "WAHI"
-    ]
+    {
+      "city": "Dabo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dabo_Airport",
+      "codes": [
+        "SIQ",
+        "WIDS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Depati Amir Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Depati_Amir_Airport",
+      "codes": [
+        "PGK",
+        "WIPK"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Incheon International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Jeju Air"
+      ]
+    },
+    {
+      "city": "Japura Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Japura_Airport",
+      "codes": [
+        "RGT",
+        "WIBJ"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Jenderal Ahmad Yani International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jenderal_Ahmad_Yani_International_Airport",
+      "codes": [
+        "SRG",
+        "WAHS"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Juanda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "Citilink",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Kualanamu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
+      "codes": [
+        "KNO",
+        "WIMM"
+      ],
+      "airlines": [
+        "Citilink",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Letung Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Letung_Airport",
+      "codes": [
+        "LMU",
+        "WIDL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Minangkabau International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
+      "codes": [
+        "PDG",
+        "WIEE"
+      ],
+      "airlines": [
+        "Lion Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Radin Inten II International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Radin_Inten_II_International_Airport",
+      "codes": [
+        "TKG",
+        "WILL"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Raja Sisingamangaraja XII Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raja_Sisingamangaraja_XII_Airport",
+      "codes": [
+        "DTB",
+        "WIMN"
+      ],
+      "airlines": [
+        "Citilink",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Ranai Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ranai_Airport",
+      "codes": [
+        "NTX",
+        "WIDO"
+      ],
+      "airlines": [
+        "NAM Air"
+      ]
+    },
+    {
+      "city": "Ranai-Natuna Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ranai-Natuna_Airport",
+      "codes": [
+        "NTX",
+        "WIDO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Soekarno–Hatta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno%E2%80%93Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink",
+        "Garuda Indonesia",
+        "Lion Air",
+        "NAM Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Sultan Aji Muhammad Sulaiman Sepinggan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Sultan Mahmud Badaruddin II International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
+      "codes": [
+        "PLM",
+        "WIPP"
+      ],
+      "airlines": [
+        "Citilink",
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Sultan Syarif Kasim II International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
+      "codes": [
+        "PKU",
+        "WIBB"
+      ],
+      "airlines": [
+        "Citilink",
+        "Lion Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Sultan Thaha Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Thaha_Airport",
+      "codes": [
+        "DJB",
+        "WIJJ"
+      ],
+      "airlines": [
+        "Sriwijaya Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Supadio International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Supadio_International_Airport",
+      "codes": [
+        "PNK",
+        "WIOO"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    },
+    {
+      "city": "Tuanku Tambusai Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuanku_Tambusai_Airport",
+      "codes": [
+        "PPR",
+        "WIDE"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Yogyakarta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
+      "codes": [
+        "YIA",
+        "WAHI"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -234,5 +363,7 @@
       "Letung Airport",
       "Ranai-Natuna Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:04Z",
+  "date-time-wikidata": "2026-04-27T22:23:55Z"
 }

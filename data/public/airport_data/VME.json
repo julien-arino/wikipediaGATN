@@ -19,23 +19,35 @@
     "LADE"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Merlo",
-      "https://en.wikipedia.org/wiki/Valle_del_Conlara_Airport",
-      "RLO",
-      "SAOS"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Merlo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valle_del_Conlara_Airport",
+      "codes": [
+        "RLO",
+        "SAOS"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    }
   ],
   "airlines_destinations": {
     "LADE": [
       "Buenos Aires–Aeroparque",
       "Merlo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:03Z",
+  "date-time-wikidata": "2026-03-30T23:37:37Z"
 }

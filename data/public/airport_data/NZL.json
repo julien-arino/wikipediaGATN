@@ -20,30 +20,50 @@
     "Hebei Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chifeng Yulong Airport",
-      "https://en.wikipedia.org/wiki/Chifeng_Yulong_Airport",
-      "CIF",
-      "ZBCF"
-    ],
-    [
-      "Hohhot Baita International Airport",
-      "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
-      "HET",
-      "ZBHH"
-    ],
-    [
-      "Hulunbeier Hailar Airport",
-      "https://en.wikipedia.org/wiki/Hulunbeier_Hailar_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Hebei Airlines"
+      ]
+    },
+    {
+      "city": "Chifeng Yulong Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chifeng_Yulong_Airport",
+      "codes": [
+        "CIF",
+        "ZBCF"
+      ],
+      "airlines": [
+        "Genghis Khan Airlines"
+      ]
+    },
+    {
+      "city": "Hohhot Baita International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
+      "codes": [
+        "HET",
+        "ZBHH"
+      ],
+      "airlines": [
+        "Genghis Khan Airlines"
+      ]
+    },
+    {
+      "city": "Hulunbeier Hailar Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hulunbeier_Hailar_Airport",
+      "codes": [
+        "HLD",
+        "ZBLA"
+      ],
+      "airlines": [
+        "Genghis Khan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Genghis Khan Airlines": [
@@ -54,5 +74,7 @@
     "Hebei Airlines": [
       "Beijing Daxing International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:09Z",
+  "date-time-wikidata": "2025-07-21T10:07:29Z"
 }

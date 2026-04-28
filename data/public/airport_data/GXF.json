@@ -19,24 +19,39 @@
     "Yemenia"
   ],
   "destinations": [
-    [
-      "Aden",
-      "https://en.wikipedia.org/wiki/Aden_International_Airport",
-      "ADE",
-      "OYAA"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/Jeddah_International_Airport",
-      "JED",
-      "OEJN"
-    ]
+    {
+      "city": "Aden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_International_Airport",
+      "codes": [
+        "ADE",
+        "OYAA"
+      ],
+      "airlines": [
+        "Yemenia"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Yemenia"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeddah_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Yemenia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Yemenia": [
@@ -44,5 +59,7 @@
       "Cairo",
       "Jeddah"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:38Z",
+  "date-time-wikidata": "2026-01-04T19:07:56Z"
 }

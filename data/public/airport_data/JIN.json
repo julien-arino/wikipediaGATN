@@ -20,12 +20,18 @@
     "BAR Aviation"
   ],
   "destinations": [
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ]
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Aerolink",
+        "BAR Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BAR Aviation": [
@@ -34,5 +40,7 @@
     "Aerolink": [
       "Entebbe"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:16Z",
+  "date-time-wikidata": "2026-03-05T00:21:57Z"
 }

@@ -26,72 +26,131 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "North Bay",
-      "https://en.wikipedia.org/wiki/North_Bay/Jack_Garland_Airport",
-      "YYB",
-      "CYYB"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Sault Ste. Marie",
-      "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
-      "YAM",
-      "CYAM"
-    ],
-    [
-      "Thunder Bay",
-      "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
-      "YQT",
-      "CYQT"
-    ],
-    [
-      "Timmins",
-      "https://en.wikipedia.org/wiki/Timmins_Airport",
-      "YTS",
-      "CYTS"
-    ],
-    [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
-      "YTZ",
-      "CYTZ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Propair"
+      ]
+    },
+    {
+      "city": "North Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Bay/Jack_Garland_Airport",
+      "codes": [
+        "YYB",
+        "CYYB"
+      ],
+      "airlines": [
+        "Bearskin Airlines"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Porter Airlines",
+        "Propair"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Propair"
+      ]
+    },
+    {
+      "city": "Sault Ste. Marie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
+      "codes": [
+        "YAM",
+        "CYAM"
+      ],
+      "airlines": [
+        "Bearskin Airlines",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Thunder Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thunder_Bay_International_Airport",
+      "codes": [
+        "YQT",
+        "CYQT"
+      ],
+      "airlines": [
+        "Bearskin Airlines"
+      ]
+    },
+    {
+      "city": "Timmins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timmins_Airport",
+      "codes": [
+        "YTS",
+        "CYTS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Toronto–Billy Bishop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "codes": [
+        "YTZ",
+        "CYTZ"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Cargo",
+        "Air Canada Express",
+        "FedEx Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -125,5 +184,7 @@
       "Hamilton (ON)",
       "Sault Ste. Marie"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:41Z",
+  "date-time-wikidata": "2026-04-22T06:21:50Z"
 }

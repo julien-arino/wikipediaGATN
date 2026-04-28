@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "USMQ",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Yamburg",
+  "city-served-wikipedia": "[[Yamburg, Yamalo-Nenets Autonomous Okrug|Yamburg]], [[Yamalo-Nenets Autonomous Okrug]], [[Russia]]",
   "location": "[[Yamburg, Yamalo-Nenets Autonomous Okrug|Yamburg]], [[Yamalo-Nenets Autonomous Okrug]], [[Russia]]",
   "lat": "67.988611",
   "lon": "75.098333",
@@ -19,24 +19,39 @@
     "Gazpromavia"
   ],
   "destinations": [
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
-      "TJM",
-      "USTR"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "UFA",
-      "UWUU"
-    ]
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Gazpromavia": [
@@ -44,5 +59,7 @@
       "Tyumen",
       "Ufa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:50Z",
+  "date-time-wikidata": "2025-11-03T17:52:49Z"
 }

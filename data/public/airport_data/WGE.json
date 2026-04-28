@@ -19,23 +19,35 @@
     "Air Link"
   ],
   "destinations": [
-    [
-      "Dubbo",
-      "https://en.wikipedia.org/wiki/Dubbo_Airport",
-      "DBO",
-      "YSDU"
-    ],
-    [
-      "Lightning Ridge",
-      "https://en.wikipedia.org/wiki/Lightning_Ridge_Airport",
-      "LHG",
-      "YLRD"
-    ]
+    {
+      "city": "Dubbo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubbo_Airport",
+      "codes": [
+        "DBO",
+        "YSDU"
+      ],
+      "airlines": [
+        "Air Link"
+      ]
+    },
+    {
+      "city": "Lightning Ridge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lightning_Ridge_Airport",
+      "codes": [
+        "LHG",
+        "YLRD"
+      ],
+      "airlines": [
+        "Air Link"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Link": [
       "Dubbo",
       "Lightning Ridge"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:11Z",
+  "date-time-wikidata": "2025-07-26T12:13:34Z"
 }

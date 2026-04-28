@@ -19,24 +19,39 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Elim",
-      "https://en.wikipedia.org/wiki/Elim_Airport",
-      "ELI",
-      "PFEL"
-    ],
-    [
-      "Golovin",
-      "https://en.wikipedia.org/wiki/Golovin_Airport",
-      "GLV",
-      "PAGL"
-    ],
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ]
+    {
+      "city": "Elim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elim_Airport",
+      "codes": [
+        "ELI",
+        "PFEL"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Golovin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golovin_Airport",
+      "codes": [
+        "GLV",
+        "PAGL"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -44,5 +59,7 @@
       "Golovin",
       "Nome"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:19Z",
+  "date-time-wikidata": "2025-09-12T23:29:53Z"
 }

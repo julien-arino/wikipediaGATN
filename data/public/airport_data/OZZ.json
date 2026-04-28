@@ -21,36 +21,61 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Paris_Orly_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Zagora",
-      "https://en.wikipedia.org/wiki/Zagora_Airport",
-      "OZG",
-      "GMAZ"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Zagora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zagora_Airport",
+      "codes": [
+        "OZG",
+        "GMAZ"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Royal Air Maroc Express": [
@@ -64,5 +89,7 @@
     "Transavia": [
       "Paris–Orly"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:33Z",
+  "date-time-wikidata": "2025-10-31T10:47:26Z"
 }

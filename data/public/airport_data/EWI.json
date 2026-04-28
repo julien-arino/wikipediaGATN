@@ -21,18 +21,29 @@
     "Smart Aviation"
   ],
   "destinations": [
-    [
-      "Nabire",
-      "https://en.wikipedia.org/wiki/Douw_Aturure_Airport",
-      "NBX",
-      "WABI"
-    ],
-    [
-      "Timika",
-      "https://en.wikipedia.org/wiki/Mozes_Kilangin_Airport",
-      "TIM",
-      "WAYY"
-    ]
+    {
+      "city": "Nabire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douw_Aturure_Airport",
+      "codes": [
+        "NBX",
+        "WABI"
+      ],
+      "airlines": [
+        "Smart Aviation"
+      ]
+    },
+    {
+      "city": "Timika",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mozes_Kilangin_Airport",
+      "codes": [
+        "TIM",
+        "WAYY"
+      ],
+      "airlines": [
+        "Airfast Indonesia",
+        "Asian One Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Asian One Air": [
@@ -44,5 +55,7 @@
     "Smart Aviation": [
       "Nabire"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:28Z",
+  "date-time-wikidata": "2025-12-13T02:18:04Z"
 }

@@ -22,72 +22,133 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Kadapa",
-      "https://en.wikipedia.org/wiki/Kadapa_Airport",
-      "CDP",
-      "VOCP"
-    ],
-    [
-      "Kurnool",
-      "https://en.wikipedia.org/wiki/Kurnool_Airport",
-      "KJB",
-      "VOKU"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Tirupati",
-      "https://en.wikipedia.org/wiki/Tirupati_Airport",
-      "TIR",
-      "VOTP"
-    ],
-    [
-      "Visakhapatnam",
-      "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
-      "VTZ",
-      "VOVZ"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Fly91",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kadapa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kadapa_Airport",
+      "codes": [
+        "CDP",
+        "VOCP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kurnool",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurnool_Airport",
+      "codes": [
+        "KJB",
+        "VOKU"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Tirupati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirupati_Airport",
+      "codes": [
+        "TIR",
+        "VOTP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Visakhapatnam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
+      "codes": [
+        "VTZ",
+        "VOVZ"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -115,5 +176,7 @@
       "Tirupati",
       "Visakhapatnam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:17Z",
+  "date-time-wikidata": "2026-04-23T04:34:49Z"
 }

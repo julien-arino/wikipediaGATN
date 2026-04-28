@@ -19,24 +19,39 @@
     "Skytrans Australia"
   ],
   "destinations": [
-    [
-      "Aurukun",
-      "https://en.wikipedia.org/wiki/Aurukun_Airport",
-      "AUU",
-      "YAUR"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Weipa",
-      "https://en.wikipedia.org/wiki/Weipa_Airport",
-      "WEI",
-      "YBWP"
-    ]
+    {
+      "city": "Aurukun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aurukun_Airport",
+      "codes": [
+        "AUU",
+        "YAUR"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    },
+    {
+      "city": "Weipa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weipa_Airport",
+      "codes": [
+        "WEI",
+        "YBWP"
+      ],
+      "airlines": [
+        "Skytrans Australia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skytrans Australia": [
@@ -44,5 +59,7 @@
       "Cairns",
       "Weipa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:05Z",
+  "date-time-wikidata": "2026-02-20T23:43:05Z"
 }

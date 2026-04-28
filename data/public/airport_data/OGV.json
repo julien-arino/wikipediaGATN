@@ -20,24 +20,39 @@
     "Wilderness Air"
   ],
   "destinations": [
-    [
-      "Mokuti Lodge",
-      "https://en.wikipedia.org/wiki/Mokuti_Lodge_Airport",
-      "OKU",
-      "FYMO"
-    ],
-    [
-      "Twyfelfontein",
-      "https://en.wikipedia.org/wiki/Twyfelfontein",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Windhoek-Hosea Kutako",
-      "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
-      "WDH",
-      "FYWH"
-    ]
+    {
+      "city": "Mokuti Lodge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mokuti_Lodge_Airport",
+      "codes": [
+        "OKU",
+        "FYMO"
+      ],
+      "airlines": [
+        "FlyNamibia Safari"
+      ]
+    },
+    {
+      "city": "Twyfelfontein",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twyfelfontein",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FlyNamibia Safari"
+      ]
+    },
+    {
+      "city": "Windhoek-Hosea Kutako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
+      "codes": [
+        "WDH",
+        "FYWH"
+      ],
+      "airlines": [
+        "Wilderness Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wilderness Air": [
@@ -47,5 +62,7 @@
       "Mokuti Lodge",
       "Twyfelfontein"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:29Z",
+  "date-time-wikidata": "2026-04-07T16:36:07Z"
 }

@@ -24,54 +24,98 @@
     "Ryukyu Air Commuter"
   ],
   "destinations": [
-    [
-      "Busan",
-      "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
-      "PUS",
-      "RKPK"
-    ],
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Ishigaki",
-      "https://en.wikipedia.org/wiki/New_Ishigaki_Airport",
-      "ISG",
-      "ROIG"
-    ],
-    [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
-      "NGO",
-      "RJGG"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Tarama",
-      "https://en.wikipedia.org/wiki/Tarama_Airport",
-      "TRA",
-      "RORT"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Busan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "codes": [
+        "PUS",
+        "RKPK"
+      ],
+      "airlines": [
+        "Jin Air"
+      ]
+    },
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    },
+    {
+      "city": "Ishigaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Ishigaki_Airport",
+      "codes": [
+        "ISG",
+        "ROIG"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "Ryukyu Air Commuter"
+      ]
+    },
+    {
+      "city": "Nagoya–Centrair",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "codes": [
+        "NGO",
+        "RJGG"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Japan Transocean Air"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    },
+    {
+      "city": "Tarama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarama_Airport",
+      "codes": [
+        "TRA",
+        "RORT"
+      ],
+      "airlines": [
+        "Ryukyu Air Commuter"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -98,5 +142,7 @@
       "Ishigaki",
       "Tarama"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:46Z",
+  "date-time-wikidata": "2026-02-19T02:04:51Z"
 }

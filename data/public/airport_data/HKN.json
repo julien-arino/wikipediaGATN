@@ -20,24 +20,41 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Lae",
-      "https://en.wikipedia.org/wiki/Lae_Nadzab_Airport",
-      "LAE",
-      "AYNZ"
-    ],
-    [
-      "Port Moresby",
-      "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
-      "POM",
-      "AYPY"
-    ],
-    [
-      "Rabaul",
-      "https://en.wikipedia.org/wiki/Rabaul_Airport",
-      "RAB",
-      "AYTK"
-    ]
+    {
+      "city": "Lae",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lae_Nadzab_Airport",
+      "codes": [
+        "LAE",
+        "AYNZ"
+      ],
+      "airlines": [
+        "Air Niugini",
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Port Moresby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
+      "codes": [
+        "POM",
+        "AYPY"
+      ],
+      "airlines": [
+        "Air Niugini"
+      ]
+    },
+    {
+      "city": "Rabaul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rabaul_Airport",
+      "codes": [
+        "RAB",
+        "AYTK"
+      ],
+      "airlines": [
+        "Air Niugini",
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Niugini": [
@@ -49,5 +66,7 @@
       "Lae",
       "Rabaul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:47Z",
+  "date-time-wikidata": "2025-10-04T01:34:24Z"
 }

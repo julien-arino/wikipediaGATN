@@ -25,54 +25,100 @@
     "Malaysia Airlines"
   ],
   "destinations": [
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hong Kong",
-      "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "HKG",
-      "VHHH"
-    ],
-    [
-      "Johor Bahru",
-      "https://en.wikipedia.org/wiki/Senai_International_Airport",
-      "JHB",
-      "WMKJ"
-    ],
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Macau",
-      "https://en.wikipedia.org/wiki/Macau_International_Airport",
-      "MFM",
-      "VMMC"
-    ],
-    [
-      "Sandakan",
-      "https://en.wikipedia.org/wiki/Sandakan_Airport",
-      "SDK",
-      "WBKS"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ]
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Greater Bay Airlines"
+      ]
+    },
+    {
+      "city": "Johor Bahru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
+      "codes": [
+        "JHB",
+        "WMKJ"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia",
+        "Firefly",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Macau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
+      "codes": [
+        "MFM",
+        "VMMC"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Sandakan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandakan_Airport",
+      "codes": [
+        "SDK",
+        "WBKS"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Juneyao Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -103,5 +149,7 @@
     "Malaysia Airlines": [
       "Kuala Lumpur–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:47Z",
+  "date-time-wikidata": "2026-04-18T04:21:10Z"
 }

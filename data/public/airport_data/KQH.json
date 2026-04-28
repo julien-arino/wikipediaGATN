@@ -20,24 +20,39 @@
     "Star Air (India)"
   ],
   "destinations": [
-    [
-      "Ahmedabad Airport",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Dr. Babasaheb Ambedkar International Airport",
-      "https://en.wikipedia.org/wiki/Dr._Babasaheb_Ambedkar_International_Airport",
-      "NAG",
-      "VANP"
-    ],
-    [
-      "Pune Airport",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ]
+    {
+      "city": "Ahmedabad Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dr. Babasaheb Ambedkar International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dr._Babasaheb_Ambedkar_International_Airport",
+      "codes": [
+        "NAG",
+        "VANP"
+      ],
+      "airlines": [
+        "Star Air (India)"
+      ]
+    },
+    {
+      "city": "Pune Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "Star Air (India)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -47,5 +62,7 @@
       "Dr. Babasaheb Ambedkar International Airport",
       "Pune Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:03Z",
+  "date-time-wikidata": "2026-03-03T18:37:11Z"
 }

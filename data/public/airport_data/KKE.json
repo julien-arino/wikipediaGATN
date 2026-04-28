@@ -20,12 +20,18 @@
     "Barrier Air"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Barrier Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -34,5 +40,7 @@
     "Barrier Air": [
       "Auckland"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-wikidata": "2026-01-09T07:55:52Z"
 }

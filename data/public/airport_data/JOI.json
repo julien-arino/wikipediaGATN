@@ -21,30 +21,51 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Porto Seguro",
-      "https://en.wikipedia.org/wiki/Porto_Seguro__Airport",
-      "BPS",
-      "SBPS"
-    ],
-    [
-      "São Paulo–Congonhas",
-      "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
-      "CGH",
-      "SBSP"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Seguro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Seguro__Airport",
+      "codes": [
+        "BPS",
+        "SBPS"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Congonhas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
+      "codes": [
+        "CGH",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -58,5 +79,7 @@
       "São Paulo–Congonhas",
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:27Z",
+  "date-time-wikidata": "2026-02-21T21:38:29Z"
 }

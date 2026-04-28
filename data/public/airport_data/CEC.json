@@ -19,23 +19,35 @@
     "Advanced Air"
   ],
   "destinations": [
-    [
-      "Hawthorne Municipal Airport (California)",
-      "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
-      "HHR",
-      "KHHR"
-    ],
-    [
-      "Oakland San Francisco Bay Airport",
-      "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "OAK",
-      "KOAK"
-    ]
+    {
+      "city": "Hawthorne Municipal Airport (California)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
+      "codes": [
+        "HHR",
+        "KHHR"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Oakland San Francisco Bay Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Advanced Air": [
       "Hawthorne Municipal Airport (California)",
       "Oakland San Francisco Bay Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:32Z",
+  "date-time-wikidata": "2025-09-15T06:09:34Z"
 }

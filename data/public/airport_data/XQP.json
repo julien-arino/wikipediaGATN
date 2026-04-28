@@ -21,18 +21,29 @@
     "Sansa Airlines"
   ],
   "destinations": [
-    [
-      "San José–Juan Santamaría",
-      "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
-      "SJO",
-      "MROC"
-    ],
-    [
-      "San José–Tobías Bolaños",
-      "https://en.wikipedia.org/wiki/Tobías_Bolaños_International_Airport",
-      "SYQ",
-      "MRPV"
-    ]
+    {
+      "city": "San José–Juan Santamaría",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Costa Rica Green Airways",
+        "Sansa Airlines"
+      ]
+    },
+    {
+      "city": "San José–Tobías Bolaños",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tobías_Bolaños_International_Airport",
+      "codes": [
+        "SYQ",
+        "MRPV"
+      ],
+      "airlines": [
+        "Aerobell Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerobell Airlines": [
@@ -44,5 +55,7 @@
     "Sansa Airlines": [
       "San José–Juan Santamaría"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:33Z",
+  "date-time-wikidata": "2026-03-18T18:15:21Z"
 }

@@ -19,24 +19,39 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Ambler",
-      "https://en.wikipedia.org/wiki/Ambler_Airport",
-      "ABL",
-      "PAFM"
-    ],
-    [
-      "Kobuk",
-      "https://en.wikipedia.org/wiki/Kobuk_Airport",
-      "OBU",
-      "PAOB"
-    ],
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ]
+    {
+      "city": "Ambler",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ambler_Airport",
+      "codes": [
+        "ABL",
+        "PAFM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kobuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobuk_Airport",
+      "codes": [
+        "OBU",
+        "PAOB"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -44,5 +59,7 @@
       "Kobuk",
       "Kotzebue"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:39Z",
+  "date-time-wikidata": "2025-06-04T04:31:07Z"
 }

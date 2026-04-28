@@ -21,30 +21,51 @@
     "Skyward Express"
   ],
   "destinations": [
-    [
-      "Kiwayu",
-      "https://en.wikipedia.org/wiki/Kiwayu_Airport",
-      "KWY",
-      "icao code not found"
-    ],
-    [
-      "Mombasa",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Kiwayu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kiwayu_Airport",
+      "codes": [
+        "KWY",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Safarilink"
+      ]
+    },
+    {
+      "city": "Mombasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Safarilink",
+        "Skyward Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jambojet": [
@@ -58,5 +79,7 @@
       "Mombasa",
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:19Z",
+  "date-time-wikidata": "2026-02-01T08:00:28Z"
 }

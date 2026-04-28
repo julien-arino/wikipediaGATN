@@ -19,23 +19,35 @@
     "Compagnie Africaine d'Aviation"
   ],
   "destinations": [
-    [
-      "Kisangani",
-      "https://en.wikipedia.org/wiki/Bangoka_International_Airport",
-      "FKI",
-      "FZIC"
-    ],
-    [
-      "Lisala",
-      "https://en.wikipedia.org/wiki/Lisala_Airport",
-      "LIQ",
-      "FZGA"
-    ]
+    {
+      "city": "Kisangani",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangoka_International_Airport",
+      "codes": [
+        "FKI",
+        "FZIC"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Lisala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisala_Airport",
+      "codes": [
+        "LIQ",
+        "FZGA"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Compagnie Africaine d'Aviation": [
       "Kisangani",
       "Lisala"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:29Z",
+  "date-time-wikidata": "2025-12-21T00:47:04Z"
 }

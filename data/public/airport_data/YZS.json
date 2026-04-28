@@ -19,23 +19,35 @@
     "Calm Air"
   ],
   "destinations": [
-    [
-      "Naujaat",
-      "https://en.wikipedia.org/wiki/Naujaat_Airport",
-      "YUT",
-      "CYUT"
-    ],
-    [
-      "Rankin Inlet",
-      "https://en.wikipedia.org/wiki/Rankin_Inlet_Airport",
-      "YRT",
-      "CYRT"
-    ]
+    {
+      "city": "Naujaat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naujaat_Airport",
+      "codes": [
+        "YUT",
+        "CYUT"
+      ],
+      "airlines": [
+        "Calm Air"
+      ]
+    },
+    {
+      "city": "Rankin Inlet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rankin_Inlet_Airport",
+      "codes": [
+        "YRT",
+        "CYRT"
+      ],
+      "airlines": [
+        "Calm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Calm Air": [
       "Naujaat",
       "Rankin Inlet"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:51Z",
+  "date-time-wikidata": "2026-03-15T07:05:55Z"
 }

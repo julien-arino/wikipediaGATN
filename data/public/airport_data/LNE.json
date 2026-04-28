@@ -19,23 +19,35 @@
     "Air Vanuatu"
   ],
   "destinations": [
-    [
-      "Luganville",
-      "https://en.wikipedia.org/wiki/Santo_International_Airport",
-      "SON",
-      "NVSS"
-    ],
-    [
-      "Port Vila",
-      "https://en.wikipedia.org/wiki/Bauerfield_International_Airport",
-      "VLI",
-      "NVVV"
-    ]
+    {
+      "city": "Luganville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santo_International_Airport",
+      "codes": [
+        "SON",
+        "NVSS"
+      ],
+      "airlines": [
+        "Air Vanuatu"
+      ]
+    },
+    {
+      "city": "Port Vila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bauerfield_International_Airport",
+      "codes": [
+        "VLI",
+        "NVVV"
+      ],
+      "airlines": [
+        "Air Vanuatu"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Vanuatu": [
       "Luganville",
       "Port Vila"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:07Z",
+  "date-time-wikidata": "2025-02-18T16:36:19Z"
 }

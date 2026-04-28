@@ -20,18 +20,28 @@
     "Scoot"
   ],
   "destinations": [
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ]
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Malaysia Airlines": [
@@ -40,5 +50,7 @@
     "Scoot": [
       "Singapore"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:49Z",
+  "date-time-wikidata": "2026-04-14T10:36:33Z"
 }

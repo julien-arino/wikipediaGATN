@@ -20,30 +20,50 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "Abha International Airport",
-      "https://en.wikipedia.org/wiki/Abha_International_Airport",
-      "AHB",
-      "OEAB"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Taif International Airport",
-      "https://en.wikipedia.org/wiki/Taif_International_Airport",
-      "TIF",
-      "OETF"
-    ]
+    {
+      "city": "Abha International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abha_International_Airport",
+      "codes": [
+        "AHB",
+        "OEAB"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Taif International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taif_International_Airport",
+      "codes": [
+        "TIF",
+        "OETF"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Flynas": [
@@ -54,5 +74,7 @@
       "King Khalid International Airport",
       "Taif International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:59Z",
+  "date-time-wikidata": "2026-04-01T18:42:10Z"
 }

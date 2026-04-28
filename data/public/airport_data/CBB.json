@@ -21,66 +21,122 @@
     "TAMep"
   ],
   "destinations": [
-    [
-      "La Paz",
-      "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
-      "LPB",
-      "SLLP"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Oruro",
-      "https://en.wikipedia.org/wiki/Juan_Mendoza_Airport",
-      "ORU",
-      "SLOR"
-    ],
-    [
-      "Rurrenabaque",
-      "https://en.wikipedia.org/wiki/Rurrenabaque_Airport",
-      "RBQ",
-      "SLRQ"
-    ],
-    [
-      "Santa Cruz de la Sierra–Viru Viru",
-      "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
-      "VVI",
-      "SLVR"
-    ],
-    [
-      "Sucre",
-      "https://en.wikipedia.org/wiki/Alcantari_Airport",
-      "SRE",
-      "SLAL"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ],
-    [
-      "Tarija",
-      "https://en.wikipedia.org/wiki/Capitán_Oriel_Lea_Plaza_Airport",
-      "TJA",
-      "SLTJ"
-    ],
-    [
-      "Trinidad",
-      "https://en.wikipedia.org/wiki/Teniente_Jorge_Henrich_Arauz_Airport",
-      "TDD",
-      "SLTR"
-    ],
-    [
-      "Uyuni",
-      "https://en.wikipedia.org/wiki/Uyuni_Airport",
-      "UYU",
-      "SLUY"
-    ]
+    {
+      "city": "La Paz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alto_International_Airport",
+      "codes": [
+        "LPB",
+        "SLLP"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "TAMep"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Oruro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Mendoza_Airport",
+      "codes": [
+        "ORU",
+        "SLOR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Rurrenabaque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rurrenabaque_Airport",
+      "codes": [
+        "RBQ",
+        "SLRQ"
+      ],
+      "airlines": [
+        "EcoJet"
+      ]
+    },
+    {
+      "city": "Santa Cruz de la Sierra–Viru Viru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
+      "codes": [
+        "VVI",
+        "SLVR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet",
+        "TAMep"
+      ]
+    },
+    {
+      "city": "Sucre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alcantari_Airport",
+      "codes": [
+        "SRE",
+        "SLAL"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Tarija",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capitán_Oriel_Lea_Plaza_Airport",
+      "codes": [
+        "TJA",
+        "SLTJ"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet"
+      ]
+    },
+    {
+      "city": "Trinidad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teniente_Jorge_Henrich_Arauz_Airport",
+      "codes": [
+        "TDD",
+        "SLTR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación",
+        "EcoJet"
+      ]
+    },
+    {
+      "city": "Uyuni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uyuni_Airport",
+      "codes": [
+        "UYU",
+        "SLUY"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Boliviana de Aviación": [
@@ -105,5 +161,7 @@
       "La Paz",
       "Santa Cruz de la Sierra–Viru Viru"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:59Z",
+  "date-time-wikidata": "2026-04-16T21:56:09Z"
 }

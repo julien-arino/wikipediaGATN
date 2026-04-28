@@ -19,23 +19,35 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Raroia",
-      "https://en.wikipedia.org/wiki/Raroia_Airport",
-      "RRR",
-      "NTKO"
-    ]
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Raroia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raroia_Airport",
+      "codes": [
+        "RRR",
+        "NTKO"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
       "Papeete",
       "Raroia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:39Z",
+  "date-time-wikidata": "2025-07-28T22:55:16Z"
 }

@@ -21,24 +21,41 @@
     "Compagnie Africaine d'Aviation"
   ],
   "destinations": [
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "Lisala",
-      "https://en.wikipedia.org/wiki/Lisala_Airport",
-      "LIQ",
-      "FZGA"
-    ],
-    [
-      "Mbandaka",
-      "https://en.wikipedia.org/wiki/Mbandaka_Airport",
-      "MDK",
-      "FZEA"
-    ]
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Congo",
+        "Air Kasaï"
+      ]
+    },
+    {
+      "city": "Lisala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisala_Airport",
+      "codes": [
+        "LIQ",
+        "FZGA"
+      ],
+      "airlines": [
+        "Compagnie Africaine d'Aviation"
+      ]
+    },
+    {
+      "city": "Mbandaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mbandaka_Airport",
+      "codes": [
+        "MDK",
+        "FZEA"
+      ],
+      "airlines": [
+        "Air Congo",
+        "Air Kasaï"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Congo": [
@@ -52,5 +69,7 @@
     "Compagnie Africaine d'Aviation": [
       "Lisala"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:30Z",
+  "date-time-wikidata": "2026-02-16T17:57:51Z"
 }

@@ -20,12 +20,18 @@
     "TezJet"
   ],
   "destinations": [
-    [
-      "Bishkek",
-      "https://en.wikipedia.org/wiki/Manas_International_Airport",
-      "BSZ",
-      "UCFM"
-    ]
+    {
+      "city": "Bishkek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manas_International_Airport",
+      "codes": [
+        "BSZ",
+        "UCFM"
+      ],
+      "airlines": [
+        "Asman Airlines",
+        "TezJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Asman Airlines": [
@@ -34,5 +40,7 @@
     "TezJet": [
       "Bishkek"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:16Z",
+  "date-time-wikidata": "2026-01-13T10:01:09Z"
 }

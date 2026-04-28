@@ -19,23 +19,35 @@
     "Bahamasair"
   ],
   "destinations": [
-    [
-      "Inagua",
-      "https://en.wikipedia.org/wiki/Inagua_Airport",
-      "IGA",
-      "MYIG"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ]
+    {
+      "city": "Inagua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inagua_Airport",
+      "codes": [
+        "IGA",
+        "MYIG"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bahamasair": [
       "Inagua",
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:36Z",
+  "date-time-wikidata": "2026-03-09T23:19:36Z"
 }

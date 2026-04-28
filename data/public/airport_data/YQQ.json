@@ -22,42 +22,75 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Kelowna",
-      "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
-      "YLW",
-      "CYLW"
-    ],
-    [
-      "Puerto Vallarta",
-      "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
-      "PVR",
-      "MMPR"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "WestJet",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Kelowna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
+      "codes": [
+        "YLW",
+        "CYLW"
+      ],
+      "airlines": [
+        "Pacific Coastal Airlines"
+      ]
+    },
+    {
+      "city": "Puerto Vallarta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
+      "codes": [
+        "PVR",
+        "MMPR"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Pacific Coastal Airlines",
+        "WestJet Encore"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -77,5 +110,7 @@
       "Edmonton",
       "Vancouver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:40Z",
+  "date-time-wikidata": "2026-04-03T04:48:40Z"
 }

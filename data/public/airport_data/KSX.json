@@ -19,24 +19,40 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Ambon",
-      "https://en.wikipedia.org/wiki/Pattimura_Airport",
-      "AMQ",
-      "WAPP"
-    ],
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Moa/Tiakur",
-      "https://en.wikipedia.org/wiki/Jos_Orno_Imsula_Airport",
-      "JIO",
-      "WAPM"
-    ]
+    {
+      "city": "Ambon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pattimura_Airport",
+      "codes": [
+        "AMQ",
+        "WAPP"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Moa/Tiakur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jos_Orno_Imsula_Airport",
+      "codes": [
+        "JIO",
+        "WAPM"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
@@ -47,5 +63,7 @@
       "Ambon",
       "Kupang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:45Z",
+  "date-time-wikidata": "2024-05-11T20:15:10Z"
 }

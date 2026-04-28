@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Belém",
-      "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
-      "BEL",
-      "SBBE"
-    ],
-    [
-      "Breves",
-      "https://en.wikipedia.org/wiki/Breves_Airport",
-      "BVS",
-      "SNVS"
-    ]
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Breves",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Breves_Airport",
+      "codes": [
+        "BVS",
+        "SNVS"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Belém",
       "Breves"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:48Z",
+  "date-time-wikidata": "2024-04-10T19:37:55Z"
 }

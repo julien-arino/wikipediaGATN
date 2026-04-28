@@ -20,12 +20,18 @@
     "Vostok Aviation Company"
   ],
   "destinations": [
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ]
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Khabarovsk Airlines",
+        "Vostok Aviation Company"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Khabarovsk Airlines": [
@@ -34,5 +40,7 @@
     "Vostok Aviation Company": [
       "Khabarovsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:29Z",
+  "date-time-wikidata": "2025-11-06T21:22:46Z"
 }

@@ -29,90 +29,165 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Castries",
-      "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
-      "SLU",
-      "TLPC"
-    ],
-    [
-      "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Georgetown–Cheddi Jagan",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
-      "GEO",
-      "SYCJ"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Port of Spain",
-      "https://en.wikipedia.org/wiki/Piarco_International_Airport",
-      "POS",
-      "TTPP"
-    ],
-    [
-      "St. Lucia–Hewanorra",
-      "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
-      "UVF",
-      "TLPL"
-    ],
-    [
-      "St. Vincent–Argyle",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
-      "SVD",
-      "TVSA"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "British Airways",
+        "Caribbean Airlines",
+        "InterCaribbean Airways",
+        "Virgin Atlantic"
+      ]
+    },
+    {
+      "city": "Castries",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
+      "codes": [
+        "SLU",
+        "TLPC"
+      ],
+      "airlines": [
+        "Liat20",
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Georgetown–Cheddi Jagan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "codes": [
+        "GEO",
+        "SYCJ"
+      ],
+      "airlines": [
+        "InterCaribbean Airways"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "Virgin Atlantic"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "St. Lucia–Hewanorra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
+      "codes": [
+        "UVF",
+        "TLPL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "St. Vincent–Argyle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "InterCaribbean Airways"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -156,5 +231,7 @@
     "WestJet": [
       "Toronto–Pearson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:31Z",
+  "date-time-wikidata": "2026-04-01T04:30:37Z"
 }

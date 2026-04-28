@@ -7,6 +7,7 @@
   "lat": "38.216488",
   "lon": "-122.2765713",
   "altitude": "11",
+  "continent": "North America",
   "region": "California",
   "country_alpha3": "USA",
   "country_name": "United States",
@@ -19,30 +20,50 @@
     "JSX (airline)"
   ],
   "destinations": [
-    [
-      "Hollywood Burbank Airport",
-      "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
-      "BUR",
-      "KBUR"
-    ],
-    [
-      "John Wayne Airport",
-      "https://en.wikipedia.org/wiki/John_Wayne_Airport",
-      "SNA",
-      "KSNA"
-    ],
-    [
-      "Santa Monica Airport",
-      "https://en.wikipedia.org/wiki/Santa_Monica_Airport",
-      "SMO",
-      "KSMO"
-    ],
-    [
-      "Van Nuys Airport",
-      "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
-      "VNY",
-      "KVNY"
-    ]
+    {
+      "city": "Hollywood Burbank Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "John Wayne Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Santa Monica Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Monica_Airport",
+      "codes": [
+        "SMO",
+        "KSMO"
+      ],
+      "airlines": [
+        "JSX (airline)"
+      ]
+    },
+    {
+      "city": "Van Nuys Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
+      "codes": [
+        "VNY",
+        "KVNY"
+      ],
+      "airlines": [
+        "Aero (American airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero (American airline)": [
@@ -54,5 +75,6 @@
       "Santa Monica Airport"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:03:32Z",
+  "date-time-wikidata": "2026-04-22T04:50:43Z"
 }

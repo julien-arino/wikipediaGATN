@@ -19,23 +19,35 @@
     "All Nippon Airways"
   ],
   "destinations": [
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Osaka_International_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Tokyo–Haneda",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osaka_International_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo–Haneda",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
       "Osaka–Itami",
       "Tokyo–Haneda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:13Z",
+  "date-time-wikidata": "2026-02-19T01:48:02Z"
 }

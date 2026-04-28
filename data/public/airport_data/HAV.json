@@ -38,150 +38,273 @@
     "World2Fly"
   ],
   "destinations": [
-    [
-      "Adolfo Suárez Madrid–Barajas Airport",
-      "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Antonio Maceo Airport",
-      "https://en.wikipedia.org/wiki/Antonio_Maceo_Airport",
-      "SCU",
-      "MUCU"
-    ],
-    [
-      "Arturo Michelena International Airport",
-      "https://en.wikipedia.org/wiki/Arturo_Michelena_International_Airport",
-      "VLN",
-      "SVVA"
-    ],
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Cancún International Airport",
-      "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Charles de Gaulle Airport",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Cheddi Jagan International Airport",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
-      "GEO",
-      "SYCJ"
-    ],
-    [
-      "El Dorado International Airport",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Gustavo Rizo Airport",
-      "https://en.wikipedia.org/wiki/Gustavo_Rizo_Airport",
-      "BCA",
-      "MUBA"
-    ],
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Jardines del Rey Airport",
-      "https://en.wikipedia.org/wiki/Jardines_del_Rey_Airport",
-      "CCC",
-      "MUCC"
-    ],
-    [
-      "La Isabela International Airport",
-      "https://en.wikipedia.org/wiki/La_Isabela_International_Airport",
-      "JBQ",
-      "MDJB"
-    ],
-    [
-      "Madrid–Barajas Airport",
-      "https://en.wikipedia.org/wiki/Madrid%E2%80%93Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Mexico City International Airport",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Monterrey International Airport",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Mérida International Airport",
-      "https://en.wikipedia.org/wiki/M%C3%A9rida_International_Airport",
-      "MID",
-      "MMMD"
-    ],
-    [
-      "Piarco International Airport",
-      "https://en.wikipedia.org/wiki/Piarco_International_Airport",
-      "POS",
-      "TTPP"
-    ],
-    [
-      "Rafael Cabrera Mustelier Airport",
-      "https://en.wikipedia.org/wiki/Rafael_Cabrera_Mustelier_Airport",
-      "GER",
-      "MUNG"
-    ],
-    [
-      "Sheremetyevo International Airport",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Simón Bolívar International Airport (Venezuela)",
-      "https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar_International_Airport_(Venezuela)",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Tampa International Airport",
-      "https://en.wikipedia.org/wiki/Tampa_International_Airport",
-      "TPA",
-      "KTPA"
-    ],
-    [
-      "Tocumen International Airport",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "Toronto Pearson International Airport",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Adolfo Suárez Madrid–Barajas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Air Europa",
+        "Cubana de Aviación",
+        "World2Fly"
+      ]
+    },
+    {
+      "city": "Antonio Maceo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_Maceo_Airport",
+      "codes": [
+        "SCU",
+        "MUCU"
+      ],
+      "airlines": [
+        "Aerogaviota",
+        "Cubana de Aviación"
+      ]
+    },
+    {
+      "city": "Arturo Michelena International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Michelena_International_Airport",
+      "codes": [
+        "VLN",
+        "SVVA"
+      ],
+      "airlines": [
+        "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Cancún International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Charles de Gaulle Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Cheddi Jagan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "codes": [
+        "GEO",
+        "SYCJ"
+      ],
+      "airlines": [
+        "Sky High Aviation Services"
+      ]
+    },
+    {
+      "city": "El Dorado International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Wingo (airline)"
+      ]
+    },
+    {
+      "city": "Gustavo Rizo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustavo_Rizo_Airport",
+      "codes": [
+        "BCA",
+        "MUBA"
+      ],
+      "airlines": [
+        "Aerogaviota"
+      ]
+    },
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Jardines del Rey Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jardines_del_Rey_Airport",
+      "codes": [
+        "CCC",
+        "MUCC"
+      ],
+      "airlines": [
+        "Aerogaviota"
+      ]
+    },
+    {
+      "city": "La Isabela International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Isabela_International_Airport",
+      "codes": [
+        "JBQ",
+        "MDJB"
+      ],
+      "airlines": [
+        "Air Century"
+      ]
+    },
+    {
+      "city": "Madrid–Barajas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid%E2%80%93Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Mexico City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Monterrey International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Mérida International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A9rida_International_Airport",
+      "codes": [
+        "MID",
+        "MMMD"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Piarco International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Rafael Cabrera Mustelier Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Cabrera_Mustelier_Airport",
+      "codes": [
+        "GER",
+        "MUNG"
+      ],
+      "airlines": [
+        "Aerogaviota"
+      ]
+    },
+    {
+      "city": "Sheremetyevo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Simón Bolívar International Airport (Venezuela)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar_International_Airport_(Venezuela)",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
+    {
+      "city": "Tampa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Tocumen International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Toronto Pearson International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -251,5 +374,7 @@
     "World2Fly": [
       "Adolfo Suárez Madrid–Barajas Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:11Z",
+  "date-time-wikidata": "2026-04-25T02:06:05Z"
 }

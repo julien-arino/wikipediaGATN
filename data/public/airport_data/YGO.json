@@ -1,8 +1,8 @@
 {
   "iata": "YGO",
   "icao": "CYGO",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Gods Lake Narrows, Manitoba",
+  "city-served-wikipedia": "[[Gods Lake Narrows, Manitoba]]",
   "location": "[[Gods Lake Narrows, Manitoba]]",
   "lat": "54.558333",
   "lon": "-94.490833",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
   "number_airlines": 2,
   "outdegree": 3,
@@ -20,24 +20,39 @@
     "Northway Aviation"
   ],
   "destinations": [
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ],
-    [
-      "Winnipeg/St. Andrews",
-      "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
-      "iata code not found",
-      "CYAV"
-    ]
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Bearskin Airlines"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Bearskin Airlines"
+      ]
+    },
+    {
+      "city": "Winnipeg/St. Andrews",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg/St._Andrews_Airport",
+      "codes": [
+        "iata code not found",
+        "CYAV"
+      ],
+      "airlines": [
+        "Northway Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Northway Aviation": [
@@ -47,5 +62,7 @@
       "Thompson",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:12Z",
+  "date-time-wikidata": "2026-01-29T23:20:04Z"
 }

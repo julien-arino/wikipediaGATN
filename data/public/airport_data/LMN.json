@@ -19,30 +19,50 @@
     "AirBorneo"
   ],
   "destinations": [
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuching",
-      "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-      "KCH",
-      "WBGG"
-    ],
-    [
-      "Lawas",
-      "https://en.wikipedia.org/wiki/Lawas_Airport",
-      "LWY",
-      "WBGW"
-    ],
-    [
-      "Miri",
-      "https://en.wikipedia.org/wiki/Miri_Airport",
-      "MYY",
-      "WBGR"
-    ]
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Kuching",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
+      "codes": [
+        "KCH",
+        "WBGG"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Lawas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lawas_Airport",
+      "codes": [
+        "LWY",
+        "WBGW"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirBorneo": [
@@ -51,5 +71,7 @@
       "Lawas",
       "Miri"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:06Z",
+  "date-time-wikidata": "2026-01-28T10:08:36Z"
 }

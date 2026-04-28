@@ -20,24 +20,39 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ],
-    [
-      "Porto Velho",
-      "https://en.wikipedia.org/wiki/Governador_Jorge_Teixeira_de_Oliveira_International_Airport",
-      "PVH",
-      "SBPV"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Velho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governador_Jorge_Teixeira_de_Oliveira_International_Airport",
+      "codes": [
+        "PVH",
+        "SBPV"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -47,5 +62,7 @@
     "Azul Conecta": [
       "Porto Velho"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:28Z",
+  "date-time-wikidata": "2026-04-15T17:57:27Z"
 }

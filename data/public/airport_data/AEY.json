@@ -23,60 +23,105 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Grímsey",
-      "https://en.wikipedia.org/wiki/Grímsey_Airport",
-      "GRY",
-      "BIGR"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Nerlerit Inaat",
-      "https://en.wikipedia.org/wiki/Nerlerit_Inaat_Airport",
-      "CNP",
-      "BGCO"
-    ],
-    [
-      "Reykjavík",
-      "https://en.wikipedia.org/wiki/Reykjavík_Airport",
-      "RKV",
-      "BIRK"
-    ],
-    [
-      "Vopnafjörður",
-      "https://en.wikipedia.org/wiki/Vopnafjörður_Airport",
-      "VPN",
-      "BIVO"
-    ],
-    [
-      "Zürich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ],
-    [
-      "Þórshöfn",
-      "https://en.wikipedia.org/wiki/Þórshöfn_Airport",
-      "THO",
-      "BITN"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Grímsey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grímsey_Airport",
+      "codes": [
+        "GRY",
+        "BIGR"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Nerlerit Inaat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nerlerit_Inaat_Airport",
+      "codes": [
+        "CNP",
+        "BGCO"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    },
+    {
+      "city": "Reykjavík",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reykjavík_Airport",
+      "codes": [
+        "RKV",
+        "BIRK"
+      ],
+      "airlines": [
+        "Icelandair"
+      ]
+    },
+    {
+      "city": "Vopnafjörður",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vopnafjörður_Airport",
+      "codes": [
+        "VPN",
+        "BIVO"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    },
+    {
+      "city": "Zürich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    },
+    {
+      "city": "Þórshöfn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Þórshöfn_Airport",
+      "codes": [
+        "THO",
+        "BITN"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "easyJet": [
@@ -98,5 +143,7 @@
     "Transavia": [
       "Amsterdam"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:21Z",
+  "date-time-wikidata": "2026-03-03T16:47:20Z"
 }

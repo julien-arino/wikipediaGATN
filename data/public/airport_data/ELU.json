@@ -20,24 +20,40 @@
     "Tassili Airlines"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Annaba",
-      "https://en.wikipedia.org/wiki/Rabah_Bitat_Airport",
-      "AAE",
-      "DABB"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Annaba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rabah_Bitat_Airport",
+      "codes": [
+        "AAE",
+        "DABB"
+      ],
+      "airlines": [
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -48,5 +64,7 @@
       "Algiers",
       "Annaba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:16Z",
+  "date-time-wikidata": "2025-09-02T08:50:15Z"
 }

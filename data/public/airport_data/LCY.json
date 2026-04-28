@@ -26,186 +26,338 @@
     "Swiss International Air Lines"
   ],
   "destinations": [
-    [
-      "Amsterdam Airport",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Barcelona Airport",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Belfast City Airport",
-      "https://en.wikipedia.org/wiki/Belfast_City_Airport",
-      "BHD",
-      "EGAC"
-    ],
-    [
-      "Bergerac Airport",
-      "https://en.wikipedia.org/wiki/Bergerac_Airport",
-      "EGC",
-      "LFBE"
-    ],
-    [
-      "Berlin Airport",
-      "https://en.wikipedia.org/wiki/Berlin_Airport",
-      "BER",
-      "EDDB"
-    ],
-    [
-      "Chambéry Airport",
-      "https://en.wikipedia.org/wiki/Chamb%C3%A9ry_Airport",
-      "CMF",
-      "LFLB"
-    ],
-    [
-      "Dublin Airport",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Edinburgh Airport",
-      "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "EDI",
-      "EGPH"
-    ],
-    [
-      "Florence Airport",
-      "https://en.wikipedia.org/wiki/Florence_Airport",
-      "FLR",
-      "LIRQ"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gago Coutinho Airport",
-      "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Geneva Airport",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Glasgow Airport",
-      "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "GLA",
-      "EGPF"
-    ],
-    [
-      "Guernsey Airport",
-      "https://en.wikipedia.org/wiki/Guernsey_Airport",
-      "GCI",
-      "EGJB"
-    ],
-    [
-      "Ibiza Airport",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport",
-      "IBZ",
-      "LEIB"
-    ],
-    [
-      "Isle of Man Airport",
-      "https://en.wikipedia.org/wiki/Isle_of_Man_Airport",
-      "IOM",
-      "EGNS"
-    ],
-    [
-      "Linate Airport",
-      "https://en.wikipedia.org/wiki/Linate_Airport",
-      "LIN",
-      "LIML"
-    ],
-    [
-      "Luxembourg Airport",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Madrid Airport",
-      "https://en.wikipedia.org/wiki/Madrid_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Málaga Airport",
-      "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Nice Airport",
-      "https://en.wikipedia.org/wiki/Nice_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Olbia Airport",
-      "https://en.wikipedia.org/wiki/Olbia_Airport",
-      "OLB",
-      "LIEO"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Rotterdam The Hague Airport",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "San Sebastián Airport",
-      "https://en.wikipedia.org/wiki/San_Sebasti%C3%A1n_Airport",
-      "EAS",
-      "LESO"
-    ],
-    [
-      "Skiathos Airport",
-      "https://en.wikipedia.org/wiki/Skiathos_Airport",
-      "JSI",
-      "LGSK"
-    ],
-    [
-      "Split Airport",
-      "https://en.wikipedia.org/wiki/Split_Airport",
-      "SPU",
-      "LDSP"
-    ],
-    [
-      "Toulon Airport",
-      "https://en.wikipedia.org/wiki/Toulon_Airport",
-      "TLN",
-      "LFTH"
-    ],
-    [
-      "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Amsterdam Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Barcelona Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Belfast City Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "codes": [
+        "BHD",
+        "EGAC"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Bergerac Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergerac_Airport",
+      "codes": [
+        "EGC",
+        "LFBE"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Berlin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Chambéry Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chamb%C3%A9ry_Airport",
+      "codes": [
+        "CMF",
+        "LFLB"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Dublin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Edinburgh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Florence Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Florence_Airport",
+      "codes": [
+        "FLR",
+        "LIRQ"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Air Dolomiti"
+      ]
+    },
+    {
+      "city": "Gago Coutinho Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Geneva Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Glasgow Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Guernsey Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guernsey_Airport",
+      "codes": [
+        "GCI",
+        "EGJB"
+      ],
+      "airlines": [
+        "Aurigny"
+      ]
+    },
+    {
+      "city": "Ibiza Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Isle of Man Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isle_of_Man_Airport",
+      "codes": [
+        "IOM",
+        "EGNS"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Linate Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML"
+      ],
+      "airlines": [
+        "British Airways",
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Luxembourg Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Madrid Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Málaga Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Nice Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Olbia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olbia_Airport",
+      "codes": [
+        "OLB",
+        "LIEO"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Rotterdam The Hague Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "San Sebastián Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Sebasti%C3%A1n_Airport",
+      "codes": [
+        "EAS",
+        "LESO"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Skiathos Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skiathos_Airport",
+      "codes": [
+        "JSI",
+        "LGSK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Split Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Split_Airport",
+      "codes": [
+        "SPU",
+        "LDSP"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Toulon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulon_Airport",
+      "codes": [
+        "TLN",
+        "LFTH"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Zurich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "British Airways",
+        "Swiss International Air Lines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Dolomiti": [
@@ -256,5 +408,7 @@
     "Swiss International Air Lines": [
       "Zurich Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:56Z",
+  "date-time-wikidata": "2026-04-27T22:12:19Z"
 }

@@ -19,23 +19,35 @@
     "Toll Group"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Toll Group"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Toll Group"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Toll Group": [
       "Brisbane",
       "Melbourne"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:39Z",
+  "date-time-wikidata": "2026-03-30T04:41:30Z"
 }

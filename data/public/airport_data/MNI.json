@@ -21,18 +21,29 @@
     "Winair"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Sint Maarten",
-      "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
-      "SXM",
-      "TNCM"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "BMN Air",
+        "FlyMontserrat"
+      ]
+    },
+    {
+      "city": "Sint Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+      "codes": [
+        "SXM",
+        "TNCM"
+      ],
+      "airlines": [
+        "Winair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BMN Air": [
@@ -44,5 +55,7 @@
     "Winair": [
       "Sint Maarten"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:47Z",
+  "date-time-wikidata": "2026-04-20T04:10:13Z"
 }

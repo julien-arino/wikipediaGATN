@@ -24,120 +24,218 @@
     "Sichuan Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Changsha Huanghua International Airport",
-      "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
-      "CSX",
-      "ZGHA"
-    ],
-    [
-      "Chengdu Shuangliu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
-      "CTU",
-      "ZUUU"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Chongqing Jiangbei International Airport",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Guiyang Longdongbao International Airport",
-      "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
-      "KWE",
-      "ZUGY"
-    ],
-    [
-      "Haikou Meilan International Airport",
-      "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
-      "HAK",
-      "ZJHK"
-    ],
-    [
-      "Luzhou Yunlong Airport",
-      "https://en.wikipedia.org/wiki/Luzhou_Yunlong_Airport",
-      "LZO",
-      "ZULZ"
-    ],
-    [
-      "Mianyang Nanjiao Airport",
-      "https://en.wikipedia.org/wiki/Mianyang_Nanjiao_Airport",
-      "MIG",
-      "ZUMY"
-    ],
-    [
-      "Nanjing Lukou International Airport",
-      "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
-      "NKG",
-      "ZSNJ"
-    ],
-    [
-      "Ningbo Lishe International Airport",
-      "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
-      "NGB",
-      "ZSNB"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shenzhen Bao'an International Airport",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ],
-    [
-      "Xishuangbanna Gasa International Airport",
-      "https://en.wikipedia.org/wiki/Xishuangbanna_Gasa_International_Airport",
-      "JHG",
-      "ZPJH"
-    ],
-    [
-      "Yibin Wuliangye Airport",
-      "https://en.wikipedia.org/wiki/Yibin_Wuliangye_Airport",
-      "YBP",
-      "ZUYB"
-    ],
-    [
-      "Zhengzhou Xinzheng International Airport",
-      "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
-      "CGO",
-      "ZHCC"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China",
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Qingdao Airlines"
+      ]
+    },
+    {
+      "city": "Changsha Huanghua International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Shuangliu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Chongqing Jiangbei International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Guiyang Longdongbao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
+      "codes": [
+        "KWE",
+        "ZUGY"
+      ],
+      "airlines": [
+        "Colorful Guizhou Airlines"
+      ]
+    },
+    {
+      "city": "Haikou Meilan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Luzhou Yunlong Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luzhou_Yunlong_Airport",
+      "codes": [
+        "LZO",
+        "ZULZ"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Mianyang Nanjiao Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mianyang_Nanjiao_Airport",
+      "codes": [
+        "MIG",
+        "ZUMY"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Nanjing Lukou International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "codes": [
+        "NKG",
+        "ZSNJ"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Ningbo Lishe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
+      "codes": [
+        "NGB",
+        "ZSNB"
+      ],
+      "airlines": [
+        "Colorful Guizhou Airlines",
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen Bao'an International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Xishuangbanna Gasa International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xishuangbanna_Gasa_International_Airport",
+      "codes": [
+        "JHG",
+        "ZPJH"
+      ],
+      "airlines": [
+        "Qingdao Airlines"
+      ]
+    },
+    {
+      "city": "Yibin Wuliangye Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yibin_Wuliangye_Airport",
+      "codes": [
+        "YBP",
+        "ZUYB"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Zhengzhou Xinzheng International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "codes": [
+        "CGO",
+        "ZHCC"
+      ],
+      "airlines": [
+        "Colorful Guizhou Airlines",
+        "Sichuan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -174,5 +272,7 @@
       "Xi'an Xianyang International Airport",
       "Zhengzhou Xinzheng International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:19Z",
+  "date-time-wikidata": "2026-04-10T19:02:09Z"
 }

@@ -19,23 +19,35 @@
     "Jin Air"
   ],
   "destinations": [
-    [
-      "Jeju",
-      "https://en.wikipedia.org/wiki/Jeju_International_Airport",
-      "CJU",
-      "RKPC"
-    ],
-    [
-      "Seoul–Gimpo",
-      "https://en.wikipedia.org/wiki/Gimpo_International_Airport",
-      "GMP",
-      "RKSS"
-    ]
+    {
+      "city": "Jeju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeju_International_Airport",
+      "codes": [
+        "CJU",
+        "RKPC"
+      ],
+      "airlines": [
+        "Jin Air"
+      ]
+    },
+    {
+      "city": "Seoul–Gimpo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimpo_International_Airport",
+      "codes": [
+        "GMP",
+        "RKSS"
+      ],
+      "airlines": [
+        "Jin Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jin Air": [
       "Jeju",
       "Seoul–Gimpo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:02Z",
+  "date-time-wikidata": "2025-11-28T21:55:45Z"
 }

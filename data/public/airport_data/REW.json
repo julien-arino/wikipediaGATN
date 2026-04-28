@@ -21,36 +21,61 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bhopal",
-      "https://en.wikipedia.org/wiki/Bhopal_Airport",
-      "BHO",
-      "VABP"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Indore",
-      "https://en.wikipedia.org/wiki/Indore_Airport",
-      "IDR",
-      "VAID"
-    ],
-    [
-      "Jabalpur",
-      "https://en.wikipedia.org/wiki/Jabalpur_Airport",
-      "JLR",
-      "VAJB"
-    ],
-    [
-      "Raipur",
-      "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
-      "RPR",
-      "VERP"
-    ]
+    {
+      "city": "Bhopal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_Airport",
+      "codes": [
+        "BHO",
+        "VABP"
+      ],
+      "airlines": [
+        "Flyola"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Indore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indore_Airport",
+      "codes": [
+        "IDR",
+        "VAID"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Jabalpur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jabalpur_Airport",
+      "codes": [
+        "JLR",
+        "VAJB"
+      ],
+      "airlines": [
+        "Flyola"
+      ]
+    },
+    {
+      "city": "Raipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
+      "codes": [
+        "RPR",
+        "VERP"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
@@ -64,5 +89,7 @@
       "Bhopal",
       "Jabalpur"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:33Z",
+  "date-time-wikidata": "2026-04-19T09:48:10Z"
 }

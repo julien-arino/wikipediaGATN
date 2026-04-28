@@ -23,42 +23,74 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Koltsovo Airport",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ],
-    [
-      "Krasnoyarsk International Airport",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow Domodedovo Airport",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Pulkovo Airport",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sheremetyevo International Airport",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Vnukovo International Airport",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ]
+    {
+      "city": "Koltsovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "Nordstar Airlines"
+      ]
+    },
+    {
+      "city": "Moscow Domodedovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Nordstar Airlines",
+        "Ural Airlines"
+      ]
+    },
+    {
+      "city": "Pulkovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Rossiya Airlines",
+        "Utair"
+      ]
+    },
+    {
+      "city": "Sheremetyevo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Vnukovo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -79,5 +111,7 @@
       "Pulkovo Airport",
       "Vnukovo International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:52Z",
+  "date-time-wikidata": "2026-04-25T02:22:43Z"
 }

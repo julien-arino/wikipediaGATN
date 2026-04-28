@@ -20,24 +20,39 @@
     "St Barth Commuter"
   ],
   "destinations": [
-    [
-      "Fort-de-France",
-      "https://en.wikipedia.org/wiki/Martinique_Aimé_Césaire_International_Airport",
-      "FDF",
-      "TFFF"
-    ],
-    [
-      "Pointe-à-Pitre",
-      "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
-      "PTP",
-      "TFFR"
-    ],
-    [
-      "Saint Barthélemy",
-      "https://en.wikipedia.org/wiki/Gustaf_III_Airport",
-      "SBH",
-      "TFFJ"
-    ]
+    {
+      "city": "Fort-de-France",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martinique_Aimé_Césaire_International_Airport",
+      "codes": [
+        "FDF",
+        "TFFF"
+      ],
+      "airlines": [
+        "Air Caraïbes"
+      ]
+    },
+    {
+      "city": "Pointe-à-Pitre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
+      "codes": [
+        "PTP",
+        "TFFR"
+      ],
+      "airlines": [
+        "Air Caraïbes"
+      ]
+    },
+    {
+      "city": "Saint Barthélemy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustaf_III_Airport",
+      "codes": [
+        "SBH",
+        "TFFJ"
+      ],
+      "airlines": [
+        "St Barth Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Caraïbes": [
@@ -47,5 +62,7 @@
     "St Barth Commuter": [
       "Saint Barthélemy"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:33Z",
+  "date-time-wikidata": "2026-03-30T01:36:00Z"
 }

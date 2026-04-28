@@ -27,60 +27,111 @@
     "Scoot"
   ],
   "destinations": [
-    [
-      "Changi Airport",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Islam Karimov Tashkent International Airport",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Kuala Lumpur International Airport",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Penang International Airport",
-      "https://en.wikipedia.org/wiki/Penang_International_Airport",
-      "PEN",
-      "WMKP"
-    ],
-    [
-      "Senai International Airport",
-      "https://en.wikipedia.org/wiki/Senai_International_Airport",
-      "JHB",
-      "WMKJ"
-    ],
-    [
-      "Sultan Abdul Aziz Shah Airport",
-      "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
-      "SZB",
-      "WMSA"
-    ],
-    [
-      "Warsaw Chopin Airport",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ]
+    {
+      "city": "Changi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Islam Karimov Tashkent International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Penang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penang_International_Airport",
+      "codes": [
+        "PEN",
+        "WMKP"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Firefly (airline)"
+      ]
+    },
+    {
+      "city": "Senai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
+      "codes": [
+        "JHB",
+        "WMKJ"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Sultan Abdul Aziz Shah Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
+      "codes": [
+        "SZB",
+        "WMSA"
+      ],
+      "airlines": [
+        "Batik Air Malaysia",
+        "Berjaya Air",
+        "Firefly (airline)"
+      ]
+    },
+    {
+      "city": "Warsaw Chopin Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -116,5 +167,7 @@
     "Scoot": [
       "Changi Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:03Z",
+  "date-time-wikidata": "2026-03-26T01:01:45Z"
 }

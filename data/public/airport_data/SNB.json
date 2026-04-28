@@ -20,24 +20,41 @@
     "Fly Tiwi"
   ],
   "destinations": [
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Pularumpi",
-      "https://en.wikipedia.org/wiki/Garden_Point_Airport",
-      "GPN",
-      "YGPT"
-    ]
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Air Ngukurr",
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Air Ngukurr",
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Pularumpi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Garden_Point_Airport",
+      "codes": [
+        "GPN",
+        "YGPT"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Ngukurr": [
@@ -47,5 +64,7 @@
       "Darwin",
       "Pularumpi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:09Z",
+  "date-time-wikidata": "2025-08-07T19:20:46Z"
 }

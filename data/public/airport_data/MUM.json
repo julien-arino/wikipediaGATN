@@ -19,23 +19,35 @@
     "Maldivian (airline)"
   ],
   "destinations": [
-    [
-      "Gan Airport",
-      "https://en.wikipedia.org/wiki/Gan_Airport",
-      "GAN",
-      "VRMG"
-    ],
-    [
-      "Velana International Airport",
-      "https://en.wikipedia.org/wiki/Velana_International_Airport",
-      "MLE",
-      "VRMM"
-    ]
+    {
+      "city": "Gan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gan_Airport",
+      "codes": [
+        "GAN",
+        "VRMG"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    },
+    {
+      "city": "Velana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maldivian (airline)": [
       "Gan Airport",
       "Velana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:25Z",
+  "date-time-wikidata": "2026-02-11T02:44:05Z"
 }

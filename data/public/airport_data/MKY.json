@@ -24,36 +24,66 @@
     "Virgin Australia"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Mount Isa",
-      "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
-      "ISA",
-      "YBMA"
-    ],
-    [
-      "Rockhampton",
-      "https://en.wikipedia.org/wiki/Rockhampton_Airport",
-      "ROK",
-      "YBRK"
-    ],
-    [
-      "Townsville",
-      "https://en.wikipedia.org/wiki/Townsville_Airport",
-      "TSV",
-      "YBTL"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Pel-Air",
+        "Qantas",
+        "QantasLink",
+        "Toll Aviation",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Mount Isa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
+      "codes": [
+        "ISA",
+        "YBMA"
+      ],
+      "airlines": [
+        "Toll Aviation"
+      ]
+    },
+    {
+      "city": "Rockhampton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rockhampton_Airport",
+      "codes": [
+        "ROK",
+        "YBRK"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Jetstar": [
@@ -78,5 +108,7 @@
       "Brisbane",
       "Mount Isa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:24Z",
+  "date-time-wikidata": "2025-11-06T22:39:40Z"
 }

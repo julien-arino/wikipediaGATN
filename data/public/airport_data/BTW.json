@@ -19,23 +19,35 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Banjarmasin",
-      "https://en.wikipedia.org/wiki/Syamsudin_Noor_International_Airport",
-      "BDJ",
-      "WAOO"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Banjarmasin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syamsudin_Noor_International_Airport",
+      "codes": [
+        "BDJ",
+        "WAOO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wings Air": [
       "Banjarmasin",
       "Makassar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:24Z",
+  "date-time-wikidata": "2026-04-14T04:08:07Z"
 }

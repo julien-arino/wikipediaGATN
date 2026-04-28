@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UHMH",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Susuman",
+  "city-served-wikipedia": "Susuman",
   "location": "Susuman",
   "lat": "62.766667",
   "lon": "148.146667",
@@ -19,16 +19,23 @@
     "SiLA Airlines"
   ],
   "destinations": [
-    [
-      "Magadan",
-      "https://en.wikipedia.org/wiki/Sokol_Airport",
-      "GDX",
-      "UHMM"
-    ]
+    {
+      "city": "Magadan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sokol_Airport",
+      "codes": [
+        "GDX",
+        "UHMM"
+      ],
+      "airlines": [
+        "SiLA Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SiLA Airlines": [
       "Magadan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:30Z",
+  "date-time-wikidata": "2025-11-08T08:14:01Z"
 }

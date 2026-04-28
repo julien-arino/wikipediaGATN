@@ -19,23 +19,35 @@
     "SATA Air Açores"
   ],
   "destinations": [
-    [
-      "Ponta Delgada",
-      "https://en.wikipedia.org/wiki/Ponta_Delgada_Airport",
-      "PDL",
-      "LPPD"
-    ],
-    [
-      "Terceira",
-      "https://en.wikipedia.org/wiki/Lajes_Airport",
-      "TER",
-      "LPLA"
-    ]
+    {
+      "city": "Ponta Delgada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ponta_Delgada_Airport",
+      "codes": [
+        "PDL",
+        "LPPD"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Terceira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lajes_Airport",
+      "codes": [
+        "TER",
+        "LPLA"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATA Air Açores": [
       "Ponta Delgada",
       "Terceira"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:08Z",
+  "date-time-wikidata": "2026-01-16T23:22:52Z"
 }

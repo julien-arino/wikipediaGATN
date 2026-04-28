@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ],
-    [
-      "Juína",
-      "https://en.wikipedia.org/wiki/Juína_Airport",
-      "JIA",
-      "SWJN"
-    ]
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Juína",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juína_Airport",
+      "codes": [
+        "JIA",
+        "SWJN"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Cuiabá",
       "Juína"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:05Z",
+  "date-time-wikidata": "2023-11-15T21:25:18Z"
 }

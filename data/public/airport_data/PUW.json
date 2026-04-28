@@ -19,23 +19,35 @@
     "Alaska Airlines"
   ],
   "destinations": [
-    [
-      "Boise",
-      "https://en.wikipedia.org/wiki/Boise_Airport",
-      "BOI",
-      "KBOI"
-    ],
-    [
-      "Seattle/Tacoma",
-      "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
-      "SEA",
-      "KSEA"
-    ]
+    {
+      "city": "Boise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
+      "codes": [
+        "BOI",
+        "KBOI"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
       "Boise",
       "Seattle/Tacoma"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:51Z",
+  "date-time-wikidata": "2026-04-24T16:58:00Z"
 }

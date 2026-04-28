@@ -7,6 +7,7 @@
   "lat": "-4.1896918",
   "lon": "-69.9409916",
   "altitude": null,
+  "continent": "South America",
   "region": "Amazonas",
   "country_alpha3": "COL",
   "country_name": "Colombia",
@@ -20,36 +21,62 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "La Chorrera",
-      "https://en.wikipedia.org/wiki/La_Chorrera_Airport",
-      "LCR",
-      "icao code not found"
-    ],
-    [
-      "La Pedrera",
-      "https://en.wikipedia.org/wiki/La_Pedrera_Airport",
-      "LPD",
-      "SKLP"
-    ],
-    [
-      "San José del Guaviare",
-      "https://en.wikipedia.org/wiki/Jorge_Enrique_González_Torres_Airport",
-      "SJE",
-      "SKSJ"
-    ],
-    [
-      "Tarapacá",
-      "https://en.wikipedia.org/wiki/Tarapacá_Airport",
-      "TCD",
-      "SKRA"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "LATAM Colombia"
+      ]
+    },
+    {
+      "city": "La Chorrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chorrera_Airport",
+      "codes": [
+        "LCR",
+        "icao code not found"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "La Pedrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Pedrera_Airport",
+      "codes": [
+        "LPD",
+        "SKLP"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "San José del Guaviare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Enrique_González_Torres_Airport",
+      "codes": [
+        "SJE",
+        "SKSJ"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Tarapacá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarapacá_Airport",
+      "codes": [
+        "TCD",
+        "SKRA"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -65,5 +92,6 @@
       "Tarapacá"
     ]
   },
-  "continent": "South America"
+  "date-time-parse": "2026-04-28T22:11:59Z",
+  "date-time-wikidata": "2025-12-24T20:58:29Z"
 }

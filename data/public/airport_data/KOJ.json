@@ -35,132 +35,250 @@
     "T'way Air"
   ],
   "destinations": [
-    [
-      "Amami Ōshima",
-      "https://en.wikipedia.org/wiki/Amami_Airport",
-      "ASJ",
-      "RJKA"
-    ],
-    [
-      "Busan",
-      "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
-      "PUS",
-      "RKPK"
-    ],
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kikai",
-      "https://en.wikipedia.org/wiki/Kikai_Airport",
-      "KKX",
-      "RJKI"
-    ],
-    [
-      "Kobe",
-      "https://en.wikipedia.org/wiki/Kobe_Airport",
-      "UKB",
-      "RJBE"
-    ],
-    [
-      "Matsuyama",
-      "https://en.wikipedia.org/wiki/Matsuyama_Airport",
-      "MYJ",
-      "RJOM"
-    ],
-    [
-      "Nagoya–Centrair",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
-      "NGO",
-      "RJGG"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Okinoerabu",
-      "https://en.wikipedia.org/wiki/Okinoerabu_Airport",
-      "OKE",
-      "RJKB"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Itami_Airport",
-      "ITM",
-      "RJOO"
-    ],
-    [
-      "Osaka–Kansai",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Shanghai–Pudong",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shizuoka",
-      "https://en.wikipedia.org/wiki/Shizuoka_Airport",
-      "FSZ",
-      "RJNS"
-    ],
-    [
-      "Taipei–Taoyuan",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Tanegashima",
-      "https://en.wikipedia.org/wiki/New_Tanegashima_Airport",
-      "TNE",
-      "RJFG"
-    ],
-    [
-      "Tokunoshima",
-      "https://en.wikipedia.org/wiki/Tokunoshima_Airport",
-      "TKN",
-      "RJKN"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Yakushima",
-      "https://en.wikipedia.org/wiki/Yakushima_Airport",
-      "KUM",
-      "RJFC"
-    ],
-    [
-      "Yoron",
-      "https://en.wikipedia.org/wiki/Yoron_Airport",
-      "RNJ",
-      "RORY"
-    ]
+    {
+      "city": "Amami Ōshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amami_Airport",
+      "codes": [
+        "ASJ",
+        "RJKA"
+      ],
+      "airlines": [
+        "J-Air",
+        "Japan Air Commuter",
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Busan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "codes": [
+        "PUS",
+        "RKPK"
+      ],
+      "airlines": [
+        "Jeju Air"
+      ]
+    },
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Kikai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kikai_Airport",
+      "codes": [
+        "KKX",
+        "RJKI"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Kobe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_Airport",
+      "codes": [
+        "UKB",
+        "RJBE"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
+      "city": "Matsuyama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matsuyama_Airport",
+      "codes": [
+        "MYJ",
+        "RJOM"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Nagoya–Centrair",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "codes": [
+        "NGO",
+        "RJGG"
+      ],
+      "airlines": [
+        "Ibex Airlines",
+        "Jetstar Japan",
+        "Skymark Airlines",
+        "Solaseed Air"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Solaseed Air"
+      ]
+    },
+    {
+      "city": "Okinoerabu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Okinoerabu_Airport",
+      "codes": [
+        "OKE",
+        "RJKB"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itami_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "Peach"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Eastar Jet",
+        "Jeju Air",
+        "Korean Air",
+        "T'way Air"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shizuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shizuoka_Airport",
+      "codes": [
+        "FSZ",
+        "RJNS"
+      ],
+      "airlines": [
+        "Fuji Dream Airlines"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "China Airlines"
+      ]
+    },
+    {
+      "city": "Tanegashima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Tanegashima_Airport",
+      "codes": [
+        "TNE",
+        "RJFG"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Tokunoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokunoshima_Airport",
+      "codes": [
+        "TKN",
+        "RJKN"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines",
+        "Skymark Airlines",
+        "Solaseed Air"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Jetstar Japan"
+      ]
+    },
+    {
+      "city": "Yakushima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakushima_Airport",
+      "codes": [
+        "KUM",
+        "RJFC"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Yoron",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yoron_Airport",
+      "codes": [
+        "RNJ",
+        "RORY"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -231,5 +349,7 @@
     "T'way Air": [
       "Seoul–Incheon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:00Z",
+  "date-time-wikidata": "2026-03-22T00:54:47Z"
 }

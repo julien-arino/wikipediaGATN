@@ -19,23 +19,35 @@
     "Cebgo"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Clark",
-      "https://en.wikipedia.org/wiki/Clark_International_Airport",
-      "CRK",
-      "RPLC"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
+      "codes": [
+        "CRK",
+        "RPLC"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
       "Cebu",
       "Clark"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:17Z",
+  "date-time-wikidata": "2026-04-15T08:51:40Z"
 }

@@ -19,23 +19,35 @@
     "Air Calédonie"
   ],
   "destinations": [
-    [
-      "Nouméa–Magenta",
-      "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
-      "GEA",
-      "NWWM"
-    ],
-    [
-      "Île Art",
-      "https://en.wikipedia.org/wiki/Île_Art_–_Waala_Airport",
-      "BMY",
-      "NWWC"
-    ]
+    {
+      "city": "Nouméa–Magenta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
+      "codes": [
+        "GEA",
+        "NWWM"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Île Art",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Île_Art_–_Waala_Airport",
+      "codes": [
+        "BMY",
+        "NWWC"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Calédonie": [
       "Nouméa–Magenta",
       "Île Art"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:24Z",
+  "date-time-wikidata": "2025-06-01T22:39:53Z"
 }

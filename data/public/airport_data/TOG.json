@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Dillingham",
-      "https://en.wikipedia.org/wiki/Dillingham_Airport",
-      "DLG",
-      "PADL"
-    ],
-    [
-      "Manokotak",
-      "https://en.wikipedia.org/wiki/Manokotak_Airport",
-      "KMO",
-      "PAMB"
-    ],
-    [
-      "Twin Hills",
-      "https://en.wikipedia.org/wiki/Twin_Hills_Airport",
-      "TWA",
-      "icao code not found"
-    ]
+    {
+      "city": "Dillingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
+      "codes": [
+        "DLG",
+        "PADL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Manokotak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manokotak_Airport",
+      "codes": [
+        "KMO",
+        "PAMB"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Twin Hills",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twin_Hills_Airport",
+      "codes": [
+        "TWA",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "Manokotak",
       "Twin Hills"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:33Z",
+  "date-time-wikidata": "2025-08-24T15:17:01Z"
 }

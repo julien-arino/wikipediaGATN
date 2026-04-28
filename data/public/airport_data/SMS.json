@@ -19,23 +19,35 @@
     "Madagascar Airlines"
   ],
   "destinations": [
-    [
-      "Antananarivo",
-      "https://en.wikipedia.org/wiki/Ivato_Airport",
-      "TNR",
-      "FMMI"
-    ],
-    [
-      "Toamasina",
-      "https://en.wikipedia.org/wiki/Toamasina_Airport",
-      "TMM",
-      "FMMT"
-    ]
+    {
+      "city": "Antananarivo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivato_Airport",
+      "codes": [
+        "TNR",
+        "FMMI"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    },
+    {
+      "city": "Toamasina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toamasina_Airport",
+      "codes": [
+        "TMM",
+        "FMMT"
+      ],
+      "airlines": [
+        "Madagascar Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Madagascar Airlines": [
       "Antananarivo",
       "Toamasina"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:48Z",
+  "date-time-wikidata": "2024-09-21T15:08:04Z"
 }

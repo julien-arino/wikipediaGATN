@@ -20,24 +20,40 @@
     "InterCaribbean Airways"
   ],
   "destinations": [
-    [
-      "Providenciales",
-      "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
-      "PLS",
-      "MBPV"
-    ],
-    [
-      "Salt Cay",
-      "https://en.wikipedia.org/wiki/Salt_Cay_Airport",
-      "SLX",
-      "MBSY"
-    ],
-    [
-      "South Caicos",
-      "https://en.wikipedia.org/wiki/Norman_B._Saunders_Sr._International_Airport",
-      "XSC",
-      "MBSC"
-    ]
+    {
+      "city": "Providenciales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
+      "codes": [
+        "PLS",
+        "MBPV"
+      ],
+      "airlines": [
+        "Caicos Express Airways",
+        "InterCaribbean Airways"
+      ]
+    },
+    {
+      "city": "Salt Cay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Cay_Airport",
+      "codes": [
+        "SLX",
+        "MBSY"
+      ],
+      "airlines": [
+        "Caicos Express Airways"
+      ]
+    },
+    {
+      "city": "South Caicos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_B._Saunders_Sr._International_Airport",
+      "codes": [
+        "XSC",
+        "MBSC"
+      ],
+      "airlines": [
+        "Caicos Express Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caicos Express Airways": [
@@ -48,5 +64,7 @@
     "InterCaribbean Airways": [
       "Providenciales"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:51Z",
+  "date-time-wikidata": "2026-04-17T02:10:38Z"
 }

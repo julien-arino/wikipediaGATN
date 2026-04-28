@@ -20,24 +20,40 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Brevig Mission",
-      "https://en.wikipedia.org/wiki/Brevig_Mission_Airport",
-      "KTS",
-      "PFKT"
-    ],
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Shishmaref",
-      "https://en.wikipedia.org/wiki/Shishmaref_Airport",
-      "SHH",
-      "PASH"
-    ]
+    {
+      "city": "Brevig Mission",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brevig_Mission_Airport",
+      "codes": [
+        "KTS",
+        "PFKT"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Shishmaref",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shishmaref_Airport",
+      "codes": [
+        "SHH",
+        "PASH"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -48,5 +64,7 @@
       "Brevig Mission",
       "Shishmaref"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:06Z",
+  "date-time-wikidata": "2025-09-14T22:41:58Z"
 }

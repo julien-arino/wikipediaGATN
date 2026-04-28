@@ -19,23 +19,35 @@
     "SAM Air"
   ],
   "destinations": [
-    [
-      "Banda",
-      "https://en.wikipedia.org/wiki/Bandanaira_Airport",
-      "NDA",
-      "WAPC"
-    ],
-    [
-      "Fakfak",
-      "https://en.wikipedia.org/wiki/Siboru_Airport",
-      "FKQ",
-      "WASF"
-    ]
+    {
+      "city": "Banda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandanaira_Airport",
+      "codes": [
+        "NDA",
+        "WAPC"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    },
+    {
+      "city": "Fakfak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siboru_Airport",
+      "codes": [
+        "FKQ",
+        "WASF"
+      ],
+      "airlines": [
+        "SAM Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
       "Banda",
       "Fakfak"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:04Z",
+  "date-time-wikidata": "2025-03-28T10:47:07Z"
 }

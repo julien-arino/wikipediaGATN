@@ -7,6 +7,7 @@
   "lat": "-4.4594376",
   "lon": "120.3096641",
   "altitude": "3",
+  "continent": "Asia",
   "region": "South Sulawesi",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -18,30 +19,50 @@
     "FlyJaya"
   ],
   "destinations": [
-    [
-      "Balikpapan",
-      "https://en.wikipedia.org/wiki/Balikpapan_Airport",
-      "BPN",
-      "WALL"
-    ],
-    [
-      "Kendari",
-      "https://en.wikipedia.org/wiki/Kendari_Airport",
-      "KDI",
-      "WAWW"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ],
-    [
-      "Morowali",
-      "https://en.wikipedia.org/wiki/Maleo_Airport",
-      "MOH",
-      "WAFO"
-    ]
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balikpapan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Kendari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kendari_Airport",
+      "codes": [
+        "KDI",
+        "WAWW"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    },
+    {
+      "city": "Morowali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maleo_Airport",
+      "codes": [
+        "MOH",
+        "WAFO"
+      ],
+      "airlines": [
+        "FlyJaya"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
@@ -51,5 +72,6 @@
       "Morowali"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:03:32Z",
+  "date-time-wikidata": "2026-02-14T04:14:51Z"
 }

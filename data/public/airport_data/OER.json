@@ -20,24 +20,39 @@
     "PopulAir"
   ],
   "destinations": [
-    [
-      "Chania",
-      "https://en.wikipedia.org/wiki/Chania_International_Airport",
-      "CHQ",
-      "LGSA"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ]
+    {
+      "city": "Chania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_International_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Enter Air"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Enter Air"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Enter Air": [
@@ -47,5 +62,7 @@
     "PopulAir": [
       "Stockholm–Arlanda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:15Z",
+  "date-time-wikidata": "2025-09-29T12:09:34Z"
 }

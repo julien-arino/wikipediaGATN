@@ -20,24 +20,39 @@
     "QantasLink"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Coffs Harbour",
-      "https://en.wikipedia.org/wiki/Coffs_Harbour_Airport",
-      "CFS",
-      "YCFS"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Coffs Harbour",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coffs_Harbour_Airport",
+      "codes": [
+        "CFS",
+        "YCFS"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Link Airways": [
@@ -47,5 +62,7 @@
     "QantasLink": [
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:50Z",
+  "date-time-wikidata": "2026-02-12T05:58:42Z"
 }

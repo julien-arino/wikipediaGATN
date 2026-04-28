@@ -21,24 +21,39 @@
     "FedEx"
   ],
   "destinations": [
-    [
-      "Dominica–Douglas-Charles",
-      "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
-      "DOM",
-      "TDPD"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "San Juan",
-      "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
-      "SJU",
-      "TJSJ"
-    ]
+    {
+      "city": "Dominica–Douglas-Charles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
+      "codes": [
+        "DOM",
+        "TDPD"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "FedEx"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Cargo Carriers": [
@@ -50,5 +65,7 @@
     "FedEx": [
       "San Juan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:08Z",
+  "date-time-wikidata": "2026-04-24T04:08:43Z"
 }

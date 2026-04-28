@@ -20,18 +20,28 @@
     "Tunisair Express"
   ],
   "destinations": [
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
-      "TUN",
-      "DTTA"
-    ]
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Tunisair Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Transavia": [
@@ -40,5 +50,7 @@
     "Tunisair Express": [
       "Tunis"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:32Z",
+  "date-time-wikidata": "2026-03-31T21:08:54Z"
 }

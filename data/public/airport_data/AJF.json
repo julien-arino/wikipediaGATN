@@ -26,54 +26,98 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "Assiut Airport",
-      "https://en.wikipedia.org/wiki/Assiut_Airport",
-      "ATZ",
-      "HEAT"
-    ],
-    [
-      "Cairo International Airport",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Kuwait International Airport",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Sharjah International Airport",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Sohag International Airport",
-      "https://en.wikipedia.org/wiki/Sohag_International_Airport",
-      "HMB",
-      "HESG"
-    ]
+    {
+      "city": "Assiut Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Assiut_Airport",
+      "codes": [
+        "ATZ",
+        "HEAT"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Cairo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Nesma Airlines",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flynas",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Kuwait International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    },
+    {
+      "city": "Sharjah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Sohag International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sohag_International_Airport",
+      "codes": [
+        "HMB",
+        "HESG"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Nile Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -104,5 +148,7 @@
       "King Abdulaziz International Airport",
       "King Khalid International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:53Z",
+  "date-time-wikidata": "2026-02-14T22:51:31Z"
 }

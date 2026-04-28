@@ -7,6 +7,7 @@
   "lat": "-8.6410507",
   "lon": "122.23625",
   "altitude": "35.05",
+  "continent": "Asia",
   "region": "East Nusa Tenggara",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
@@ -19,24 +20,40 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Labuan Bajo",
-      "https://en.wikipedia.org/wiki/Komodo_International_Airport",
-      "LBJ",
-      "WATO"
-    ],
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "NAM Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Labuan Bajo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Komodo_International_Airport",
+      "codes": [
+        "LBJ",
+        "WATO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "NAM Air": [
@@ -48,5 +65,6 @@
       "Makassar"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:17:48Z",
+  "date-time-wikidata": "2026-03-17T02:08:56Z"
 }

@@ -21,24 +21,41 @@
     "Congo Airways"
   ],
   "destinations": [
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "Lubumbashi",
-      "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
-      "FBM",
-      "FZQA"
-    ],
-    [
-      "Mbuji-Mayi",
-      "https://en.wikipedia.org/wiki/Mbuji_Mayi_Airport",
-      "MJM",
-      "FZWA"
-    ]
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Congo",
+        "Air Kasaï",
+        "Congo Airways"
+      ]
+    },
+    {
+      "city": "Lubumbashi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
+      "codes": [
+        "FBM",
+        "FZQA"
+      ],
+      "airlines": [
+        "Congo Airways"
+      ]
+    },
+    {
+      "city": "Mbuji-Mayi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mbuji_Mayi_Airport",
+      "codes": [
+        "MJM",
+        "FZWA"
+      ],
+      "airlines": [
+        "Air Kasaï"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Congo": [
@@ -52,5 +69,7 @@
       "Kinshasa–N'djili",
       "Lubumbashi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:20Z",
+  "date-time-wikidata": "2025-09-15T03:34:38Z"
 }

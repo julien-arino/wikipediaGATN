@@ -20,18 +20,28 @@
     "American Eagle (airline)"
   ],
   "destinations": [
-    [
-      "McCarran International Airport",
-      "https://en.wikipedia.org/wiki/McCarran_International_Airport",
-      "LAS",
-      "KLAS"
-    ],
-    [
-      "Phoenix Sky Harbor International Airport",
-      "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
-      "PHX",
-      "KPHX"
-    ]
+    {
+      "city": "McCarran International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Phoenix Sky Harbor International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
@@ -40,5 +50,7 @@
     "American Eagle (airline)": [
       "Phoenix Sky Harbor International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:48Z",
+  "date-time-wikidata": "2026-03-31T17:52:38Z"
 }

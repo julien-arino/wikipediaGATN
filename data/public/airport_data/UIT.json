@@ -19,23 +19,35 @@
     "Air Marshall Islands"
   ],
   "destinations": [
-    [
-      "Majuro",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ],
-    [
-      "Mili",
-      "https://en.wikipedia.org/wiki/Mili_Airport",
-      "MIJ",
-      "icao code not found"
-    ]
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Mili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mili_Airport",
+      "codes": [
+        "MIJ",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Marshall Islands": [
       "Majuro",
       "Mili"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-wikidata": "2024-10-30T20:29:32Z"
 }

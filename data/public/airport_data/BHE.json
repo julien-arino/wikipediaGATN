@@ -22,42 +22,75 @@
     "Sounds Air"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Kapiti Coast",
-      "https://en.wikipedia.org/wiki/Kapiti_Coast_Airport",
-      "PPQ",
-      "NZPP"
-    ],
-    [
-      "Nelson",
-      "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
-      "NSN",
-      "NZNS"
-    ],
-    [
-      "Palmerston North",
-      "https://en.wikipedia.org/wiki/Palmerston_North_Airport",
-      "PMR",
-      "NZPM"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_International_Airport",
-      "WLG",
-      "NZWN"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air Chathams",
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Originair"
+      ]
+    },
+    {
+      "city": "Kapiti Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kapiti_Coast_Airport",
+      "codes": [
+        "PPQ",
+        "NZPP"
+      ],
+      "airlines": [
+        "Sounds Air"
+      ]
+    },
+    {
+      "city": "Nelson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
+      "codes": [
+        "NSN",
+        "NZNS"
+      ],
+      "airlines": [
+        "Originair"
+      ]
+    },
+    {
+      "city": "Palmerston North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palmerston_North_Airport",
+      "codes": [
+        "PMR",
+        "NZPM"
+      ],
+      "airlines": [
+        "Originair"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_International_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Originair",
+        "Sounds Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Chathams": [
@@ -77,5 +110,7 @@
       "Kapiti Coast",
       "Wellington"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:28Z",
+  "date-time-wikidata": "2026-02-09T13:28:43Z"
 }

@@ -23,54 +23,95 @@
     "West Air (China)"
   ],
   "destinations": [
-    [
-      "Dalian Zhoushuizi International Airport",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ],
-    [
-      "Kunming Changshui International Airport",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
-      "KMG",
-      "ZPPP"
-    ],
-    [
-      "Ordos Ejin Horo International Airport",
-      "https://en.wikipedia.org/wiki/Ordos_Ejin_Horo_International_Airport",
-      "DSN",
-      "ZBDS"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shenyang Taoxian International Airport",
-      "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
-      "SHE",
-      "ZYTX"
-    ],
-    [
-      "Shenzhen Bao'an International Airport",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Taiyuan Wusu International Airport",
-      "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
-      "TYN",
-      "ZBYN"
-    ],
-    [
-      "Wuhan Tianhe International Airport",
-      "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
-      "WUH",
-      "ZHHH"
-    ]
+    {
+      "city": "Dalian Zhoushuizi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "Hainan Airlines",
+        "Shanghai Airlines"
+      ]
+    },
+    {
+      "city": "Kunming Changshui International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Ordos Ejin Horo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ordos_Ejin_Horo_International_Airport",
+      "codes": [
+        "DSN",
+        "ZBDS"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Shanghai Airlines"
+      ]
+    },
+    {
+      "city": "Shenyang Taoxian International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
+      "codes": [
+        "SHE",
+        "ZYTX"
+      ],
+      "airlines": [
+        "West Air (China)"
+      ]
+    },
+    {
+      "city": "Shenzhen Bao'an International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao%27an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ]
+    },
+    {
+      "city": "Taiyuan Wusu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
+      "codes": [
+        "TYN",
+        "ZBYN"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Wuhan Tianhe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "codes": [
+        "WUH",
+        "ZHHH"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
@@ -92,5 +133,7 @@
     "West Air (China)": [
       "Shenyang Taoxian International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:46Z",
+  "date-time-wikidata": "2026-04-18T19:23:09Z"
 }

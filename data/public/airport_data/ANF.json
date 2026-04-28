@@ -7,6 +7,7 @@
   "lat": "-23.4523757",
   "lon": "-70.4397343",
   "altitude": null,
+  "continent": "South America",
   "region": "Antofagasta",
   "country_alpha3": "CHL",
   "country_name": "Chile",
@@ -20,36 +21,66 @@
     "Sky Airline"
   ],
   "destinations": [
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Concepción",
-      "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
-      "CCP",
-      "SCIE"
-    ],
-    [
-      "La Serena",
-      "https://en.wikipedia.org/wiki/La_Florida_Airport_(Chile)",
-      "LSC",
-      "SCSE"
-    ],
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chavez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "JetSmart Chile"
+      ]
+    },
+    {
+      "city": "Concepción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carriel_Sur_International_Airport",
+      "codes": [
+        "CCP",
+        "SCIE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "La Serena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Florida_Airport_(Chile)",
+      "codes": [
+        "LSC",
+        "SCSE"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chavez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    }
   ],
   "airlines_destinations": {
     "JetSmart Chile": [
@@ -69,5 +100,6 @@
       "Santiago de Chile"
     ]
   },
-  "continent": "South America"
+  "date-time-parse": "2026-04-28T22:03:28Z",
+  "date-time-wikidata": "2025-03-28T05:25:46Z"
 }

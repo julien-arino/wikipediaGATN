@@ -23,48 +23,85 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Maastricht/Aachen",
-      "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
-      "MST",
-      "EHBK"
-    ],
-    [
-      "Rotterdam/The Hague",
-      "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
-      "RTM",
-      "EHRD"
-    ],
-    [
-      "Tangier",
-      "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
-      "TNG",
-      "GMTT"
-    ],
-    [
-      "Tetouan",
-      "https://en.wikipedia.org/wiki/Sania_Ramel_Airport",
-      "TTU",
-      "GMTN"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Royal Air Maroc",
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    },
+    {
+      "city": "Maastricht/Aachen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
+      "codes": [
+        "MST",
+        "EHBK"
+      ],
+      "airlines": [
+        "Corendon Dutch Airlines"
+      ]
+    },
+    {
+      "city": "Rotterdam/The Hague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD"
+      ],
+      "airlines": [
+        "Corendon Dutch Airlines",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Tangier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
+      "codes": [
+        "TNG",
+        "GMTT"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    },
+    {
+      "city": "Tetouan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sania_Ramel_Airport",
+      "codes": [
+        "TTU",
+        "GMTN"
+      ],
+      "airlines": [
+        "Royal Air Maroc Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Corendon Dutch Airlines": [
@@ -86,5 +123,7 @@
     "TUI fly Belgium": [
       "Brussels"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:04Z",
+  "date-time-wikidata": "2025-12-13T11:47:17Z"
 }

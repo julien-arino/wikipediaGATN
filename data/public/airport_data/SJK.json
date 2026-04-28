@@ -20,24 +20,39 @@
     "LATAM Cargo Brasil"
   ],
   "destinations": [
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Rio de Janeiro–Galeão",
-      "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-      "GIG",
-      "SBGL"
-    ]
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Rio de Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
+      "codes": [
+        "GIG",
+        "SBGL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Gol Linhas Aéreas": [
@@ -47,5 +62,7 @@
       "Brussels",
       "Miami"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:05Z",
+  "date-time-wikidata": "2025-10-04T20:15:18Z"
 }

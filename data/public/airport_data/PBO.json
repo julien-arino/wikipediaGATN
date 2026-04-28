@@ -20,18 +20,28 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Busselton Geraldton Charter",
-      "https://en.wikipedia.org/wiki/Busselton_Airport",
-      "BQB",
-      "YBLN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Busselton Geraldton Charter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Busselton_Airport",
+      "codes": [
+        "BQB",
+        "YBLN"
+      ],
+      "airlines": [
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "QantasLink Network Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink Network Aviation": [
@@ -40,5 +50,7 @@
     "Virgin Australia Regional Airlines": [
       "Busselton Geraldton Charter"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:38Z",
+  "date-time-wikidata": "2025-09-08T15:31:56Z"
 }

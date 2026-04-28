@@ -21,24 +21,41 @@
     "LATAM Colombia"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ],
-    [
-      "Medellín–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "LATAM Colombia"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Avianca",
+        "Clic"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -52,5 +69,7 @@
     "LATAM Colombia": [
       "Bogotá"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:34Z",
+  "date-time-wikidata": "2026-02-25T14:42:41Z"
 }

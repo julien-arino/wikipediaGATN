@@ -20,24 +20,40 @@
     "Kam Air"
   ],
   "destinations": [
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Kabul International Airport",
-      "https://en.wikipedia.org/wiki/Kabul_International_Airport",
-      "KBL",
-      "OAKB"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ]
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Kabul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kabul_International_Airport",
+      "codes": [
+        "KBL",
+        "OAKB"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ariana Afghan Airlines": [
@@ -48,5 +64,7 @@
     "Kam Air": [
       "Kabul International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:36Z",
+  "date-time-wikidata": "2026-03-06T11:15:29Z"
 }

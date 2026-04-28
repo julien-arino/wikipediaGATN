@@ -25,72 +25,127 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Hamilton (ON)",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Kitchener/Waterloo",
-      "https://en.wikipedia.org/wiki/Region_of_Waterloo_International_Airport",
-      "YKF",
-      "CYKF"
-    ],
-    [
-      "Laredo",
-      "https://en.wikipedia.org/wiki/Laredo_International_Airport",
-      "LRD",
-      "KLRD"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Pelee Island",
-      "https://en.wikipedia.org/wiki/Pelee_Island_Airport",
-      "iata code not found",
-      "CYPT"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
-      "YTZ",
-      "CYTZ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Varadero",
-      "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
-      "VRA",
-      "MUVR"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Kitchener/Waterloo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Region_of_Waterloo_International_Airport",
+      "codes": [
+        "YKF",
+        "CYKF"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    },
+    {
+      "city": "Laredo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laredo_International_Airport",
+      "codes": [
+        "LRD",
+        "KLRD"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Pelee Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pelee_Island_Airport",
+      "codes": [
+        "iata code not found",
+        "CYPT"
+      ],
+      "airlines": [
+        "Cameron Air Service"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Toronto–Billy Bishop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "codes": [
+        "YTZ",
+        "CYTZ"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Varadero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
+      "codes": [
+        "VRA",
+        "MUVR"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -118,5 +173,7 @@
     "SkyLink Express": [
       "Hamilton (ON)"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:39Z",
+  "date-time-wikidata": "2026-03-12T10:50:23Z"
 }

@@ -19,23 +19,35 @@
     "Air Oceania"
   ],
   "destinations": [
-    [
-      "Lifou",
-      "https://en.wikipedia.org/wiki/Ouanaham_Airport",
-      "LIF",
-      "NWWL"
-    ],
-    [
-      "Nouméa–Magenta",
-      "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
-      "GEA",
-      "NWWM"
-    ]
+    {
+      "city": "Lifou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouanaham_Airport",
+      "codes": [
+        "LIF",
+        "NWWL"
+      ],
+      "airlines": [
+        "Air Oceania"
+      ]
+    },
+    {
+      "city": "Nouméa–Magenta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
+      "codes": [
+        "GEA",
+        "NWWM"
+      ],
+      "airlines": [
+        "Air Oceania"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Oceania": [
       "Lifou",
       "Nouméa–Magenta"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:23Z",
+  "date-time-wikidata": "2025-08-18T17:24:59Z"
 }

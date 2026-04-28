@@ -20,30 +20,50 @@
     "LATAM Brasil"
   ],
   "destinations": [
-    [
-      "Belo Horizonte-Confins",
-      "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
-      "CNF",
-      "SBCF"
-    ],
-    [
-      "Brasília",
-      "https://en.wikipedia.org/wiki/Brasília_International_Airport",
-      "BSB",
-      "SBBR"
-    ],
-    [
-      "São Luís",
-      "https://en.wikipedia.org/wiki/São_Luís_Airport",
-      "SLZ",
-      "SBSL"
-    ],
-    [
-      "São Paulo–Guarulhos",
-      "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
-      "GRU",
-      "SBGR"
-    ]
+    {
+      "city": "Belo Horizonte-Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Luís",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Luís_Airport",
+      "codes": [
+        "SLZ",
+        "SBSL"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -54,5 +74,7 @@
       "Brasília",
       "São Paulo–Guarulhos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:03Z",
+  "date-time-wikidata": "2026-02-13T00:02:23Z"
 }

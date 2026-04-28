@@ -21,18 +21,29 @@
     "NordStar"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk–Cheremshanka",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
-      "KCY",
-      "UNKM"
-    ],
-    [
-      "Krasnoyarsk–Yemelyanovo",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ]
+    {
+      "city": "Krasnoyarsk–Cheremshanka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
+      "codes": [
+        "KCY",
+        "UNKM"
+      ],
+      "airlines": [
+        "Azur Air",
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–Yemelyanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azur Air": [
@@ -44,5 +55,7 @@
     "NordStar": [
       "Krasnoyarsk–Yemelyanovo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:59Z",
+  "date-time-wikidata": "2025-11-08T08:15:19Z"
 }

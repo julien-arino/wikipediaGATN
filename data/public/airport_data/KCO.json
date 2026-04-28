@@ -7,6 +7,7 @@
   "lat": "40.7337845",
   "lon": "30.0835355",
   "altitude": "55",
+  "continent": "Asia",
   "region": "Kocaeli",
   "country_alpha3": "TUR",
   "country_name": "Türkiye",
@@ -18,17 +19,23 @@
     "Pegasus Airlines"
   ],
   "destinations": [
-    [
-      "Trabzon Airport",
-      "https://en.wikipedia.org/wiki/Trabzon_Airport",
-      "TZX",
-      "LTCG"
-    ]
+    {
+      "city": "Trabzon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trabzon_Airport",
+      "codes": [
+        "TZX",
+        "LTCG"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Pegasus Airlines": [
       "Trabzon Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:16:35Z",
+  "date-time-wikidata": "2026-03-21T16:47:07Z"
 }

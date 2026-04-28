@@ -19,24 +19,39 @@
     "Southern Airways Express"
   ],
   "destinations": [
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Harrison/Branson",
-      "https://en.wikipedia.org/wiki/Boone_County_Airport_(Arkansas)",
-      "HRO",
-      "KHRO"
-    ],
-    [
-      "Memphis",
-      "https://en.wikipedia.org/wiki/Memphis_International_Airport",
-      "MEM",
-      "KMEM"
-    ]
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Harrison/Branson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boone_County_Airport_(Arkansas)",
+      "codes": [
+        "HRO",
+        "KHRO"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Southern Airways Express": [
@@ -44,5 +59,7 @@
       "Harrison/Branson",
       "Memphis"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:22Z",
+  "date-time-wikidata": "2025-12-07T02:10:35Z"
 }

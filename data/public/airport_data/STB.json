@@ -19,23 +19,35 @@
     "Aerolíneas Estelar"
   ],
   "destinations": [
-    [
-      "Caracas",
-      "https://en.wikipedia.org/wiki/Caracas_Airport",
-      "CCS",
-      "SVMI"
-    ],
-    [
-      "Maracaibo",
-      "https://en.wikipedia.org/wiki/Maracaibo_Airport",
-      "MAR",
-      "SVMC"
-    ]
+    {
+      "city": "Caracas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caracas_Airport",
+      "codes": [
+        "CCS",
+        "SVMI"
+      ],
+      "airlines": [
+        "Aerolíneas Estelar"
+      ]
+    },
+    {
+      "city": "Maracaibo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maracaibo_Airport",
+      "codes": [
+        "MAR",
+        "SVMC"
+      ],
+      "airlines": [
+        "Aerolíneas Estelar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Estelar": [
       "Caracas",
       "Maracaibo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:49Z",
+  "date-time-wikidata": "2025-06-03T05:23:23Z"
 }

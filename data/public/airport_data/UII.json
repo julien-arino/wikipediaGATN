@@ -20,24 +20,40 @@
     "CM Airlines"
   ],
   "destinations": [
-    [
-      "La Ceiba",
-      "https://en.wikipedia.org/wiki/Golosón_International_Airport",
-      "LCE",
-      "MHLC"
-    ],
-    [
-      "Roatán",
-      "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
-      "RTB",
-      "MHRO"
-    ],
-    [
-      "San Pedro Sula",
-      "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
-      "SAP",
-      "MHLM"
-    ]
+    {
+      "city": "La Ceiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golosón_International_Airport",
+      "codes": [
+        "LCE",
+        "MHLC"
+      ],
+      "airlines": [
+        "Aerolineas Sosa",
+        "CM Airlines"
+      ]
+    },
+    {
+      "city": "Roatán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
+      "codes": [
+        "RTB",
+        "MHRO"
+      ],
+      "airlines": [
+        "CM Airlines"
+      ]
+    },
+    {
+      "city": "San Pedro Sula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
+      "codes": [
+        "SAP",
+        "MHLM"
+      ],
+      "airlines": [
+        "CM Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolineas Sosa": [
@@ -48,5 +64,7 @@
       "Roatán",
       "San Pedro Sula"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:32Z",
+  "date-time-wikidata": "2026-04-11T13:58:29Z"
 }

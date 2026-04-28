@@ -22,36 +22,61 @@
     "airBaltic"
   ],
   "destinations": [
-    [
-      "Chania",
-      "https://en.wikipedia.org/wiki/Chania_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Riga",
-      "https://en.wikipedia.org/wiki/Riga_Airport",
-      "RIX",
-      "EVRA"
-    ]
+    {
+      "city": "Chania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chania_Airport",
+      "codes": [
+        "CHQ",
+        "LGSA"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Discover Airlines"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "airBaltic"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -67,5 +92,7 @@
     "Finnair": [
       "Helsinki"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:51Z",
+  "date-time-wikidata": "2026-04-11T00:29:51Z"
 }

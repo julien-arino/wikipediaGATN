@@ -20,30 +20,50 @@
     "Auric Air"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Kigoma",
-      "https://en.wikipedia.org/wiki/Kigoma_Airport",
-      "TKQ",
-      "HTKA"
-    ],
-    [
-      "Mwanza",
-      "https://en.wikipedia.org/wiki/Mwanza_Airport",
-      "MWZ",
-      "HTMW"
-    ],
-    [
-      "Tabora",
-      "https://en.wikipedia.org/wiki/Tabora_Airport",
-      "TBO",
-      "HTTB"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Kigoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigoma_Airport",
+      "codes": [
+        "TKQ",
+        "HTKA"
+      ],
+      "airlines": [
+        "Auric Air"
+      ]
+    },
+    {
+      "city": "Mwanza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
+      "codes": [
+        "MWZ",
+        "HTMW"
+      ],
+      "airlines": [
+        "Auric Air"
+      ]
+    },
+    {
+      "city": "Tabora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabora_Airport",
+      "codes": [
+        "TBO",
+        "HTTB"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
@@ -54,5 +74,7 @@
       "Kigoma",
       "Mwanza"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:04Z",
+  "date-time-wikidata": "2026-04-19T18:54:42Z"
 }

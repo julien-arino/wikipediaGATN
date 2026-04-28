@@ -22,42 +22,73 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Bourke",
-      "https://en.wikipedia.org/wiki/Bourke_Airport",
-      "BRK",
-      "YBKE"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Broken Hill",
-      "https://en.wikipedia.org/wiki/Broken_Hill_Airport",
-      "BHQ",
-      "YBHI"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Walgett",
-      "https://en.wikipedia.org/wiki/Walgett_Airport",
-      "WGE",
-      "YWLG"
-    ]
+    {
+      "city": "Bourke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bourke_Airport",
+      "codes": [
+        "BRK",
+        "YBKE"
+      ],
+      "airlines": [
+        "Air Link"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Broken Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broken_Hill_Airport",
+      "codes": [
+        "BHQ",
+        "YBHI"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Walgett",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Walgett_Airport",
+      "codes": [
+        "WGE",
+        "YWLG"
+      ],
+      "airlines": [
+        "Air Link"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Link": [
@@ -75,5 +106,7 @@
       "Broken Hill",
       "Sydney"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:15Z",
+  "date-time-wikidata": "2025-06-12T07:57:47Z"
 }

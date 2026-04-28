@@ -19,24 +19,39 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Rajahmundry",
-      "https://en.wikipedia.org/wiki/Rajahmundry_Airport",
-      "RJA",
-      "VORY"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rajahmundry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajahmundry_Airport",
+      "codes": [
+        "RJA",
+        "VORY"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -44,5 +59,7 @@
       "Hyderabad",
       "Rajahmundry"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:05Z",
+  "date-time-wikidata": "2026-01-31T16:42:01Z"
 }

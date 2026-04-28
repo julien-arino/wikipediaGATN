@@ -252,7 +252,9 @@ def export_all_airport_data(verbose: bool = False) -> str:
                 pass
 
         # 1. City-Served Split
-        city_served = data.get("city-served", "")
+        city_served = data.get("city-served")
+        if not city_served:
+            city_served = data.get("location") or data.get("name") or ""
         city_served_wiki = ""
         if city_served and "[[" in city_served:
             city_served_wiki = city_served
@@ -260,8 +262,10 @@ def export_all_airport_data(verbose: bool = False) -> str:
             if text_match:
                 city_served = text_match.group(1)
         else:
-            if "city-served" in data:
+            if "city-served" in data and data.get("city-served"):
                 city_served_wiki = data.get("city-served")
+            elif city_served:
+                city_served_wiki = city_served
 
         new_data = {}
         for k, v in data.items():
@@ -285,12 +289,27 @@ def export_all_airport_data(verbose: bool = False) -> str:
                     new_data["number_airlines"] = len(data.get("airlines", []))
                     new_data["outdegree"] = len(data.get("destinations", []))
                 
+                ad_map = data.get("airlines_destinations", {})
                 new_dests = []
                 for dest in data.get("destinations", []):
-                    if len(dest) >= 2:
+                    if isinstance(dest, dict):
+                        # Ensure compatibility if it's already a dict
+                        new_dests.append(dest)
+                    elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
                         city, url = dest[0], dest[1]
                         codes = url_to_codes.get(url, {"iata": "iata code not found", "icao": "icao code not found"})
-                        new_dest = [city, url, codes["iata"], codes["icao"]]
+                        
+                        op_airlines = []
+                        for al_name, cities in ad_map.items():
+                            if city in cities:
+                                op_airlines.append(al_name)
+                                
+                        new_dest = {
+                            "city": city,
+                            "wikipedia_url": url,
+                            "codes": [codes["iata"], codes["icao"]],
+                            "airlines": sorted(op_airlines)
+                        }
                         new_dests.append(new_dest)
                     else:
                         new_dests.append(dest)
@@ -301,6 +320,14 @@ def export_all_airport_data(verbose: bool = False) -> str:
         if "number_airlines" not in new_data:
             new_data["number_airlines"] = len(data.get("airlines", []))
             new_data["outdegree"] = len(data.get("destinations", []))
+
+        # Ensure timestamps are at the end
+        if "date-time-parse" in new_data:
+            dt_p = new_data.pop("date-time-parse")
+            new_data["date-time-parse"] = dt_p
+        if "date-time-wikidata" in new_data:
+            dt_w = new_data.pop("date-time-wikidata")
+            new_data["date-time-wikidata"] = dt_w
 
         # --- END VALIDATION & CONSOLIDATION ---
 

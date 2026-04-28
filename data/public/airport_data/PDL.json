@@ -33,168 +33,307 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Adolfo Suárez Madrid–Barajas Airport",
-      "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Barcelona Airport",
-      "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Charles de Gaulle Airport",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Düsseldorf International Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_International_Airport",
-      "DUS",
-      "EDDL"
-    ],
-    [
-      "Flores Airport",
-      "https://en.wikipedia.org/wiki/Flores_Airport",
-      "FLW",
-      "LPFL"
-    ],
-    [
-      "Francisco de Sá Carneiro Airport",
-      "https://en.wikipedia.org/wiki/Francisco_de_S%C3%A1_Carneiro_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gago Coutinho Airport",
-      "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
-      "FAO",
-      "LPFR"
-    ],
-    [
-      "Gran Canaria Airport",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Horta Airport",
-      "https://en.wikipedia.org/wiki/Horta_Airport",
-      "HOR",
-      "LPHR"
-    ],
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Lajes Airport",
-      "https://en.wikipedia.org/wiki/Lajes_Airport",
-      "TER",
-      "LPLA"
-    ],
-    [
-      "Lisbon Airport",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "London Heathrow Airport",
-      "https://en.wikipedia.org/wiki/London_Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "Madeira Airport",
-      "https://en.wikipedia.org/wiki/Madeira_Airport",
-      "FNC",
-      "LPMA"
-    ],
-    [
-      "Montréal–Pierre Elliott Trudeau International Airport",
-      "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Nelson Mandela International Airport",
-      "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
-      "RAI",
-      "GVNP"
-    ],
-    [
-      "Newark Liberty International Airport",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Pico Airport",
-      "https://en.wikipedia.org/wiki/Pico_Airport",
-      "PIX",
-      "LPPI"
-    ],
-    [
-      "Santa Maria Airport (Azores)",
-      "https://en.wikipedia.org/wiki/Santa_Maria_Airport_(Azores)",
-      "SMA",
-      "LPAZ"
-    ],
-    [
-      "São Jorge Airport",
-      "https://en.wikipedia.org/wiki/S%C3%A3o_Jorge_Airport",
-      "SJZ",
-      "LPSJ"
-    ],
-    [
-      "Toronto Pearson International Airport",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Vienna Airport",
-      "https://en.wikipedia.org/wiki/Vienna_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Václav Havel Airport Prague",
-      "https://en.wikipedia.org/wiki/V%C3%A1clav_Havel_Airport_Prague",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Zurich Airport",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Adolfo Suárez Madrid–Barajas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia (airline)"
+      ]
+    },
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Barcelona Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Charles de Gaulle Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Düsseldorf International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_International_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Flores Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flores_Airport",
+      "codes": [
+        "FLW",
+        "LPFL"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Francisco de Sá Carneiro Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_de_S%C3%A1_Carneiro_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Azores Airlines",
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Gago Coutinho Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gago_Coutinho_Airport",
+      "codes": [
+        "FAO",
+        "LPFR"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Gran Canaria Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Binter Canarias"
+      ]
+    },
+    {
+      "city": "Horta Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horta_Airport",
+      "codes": [
+        "HOR",
+        "LPHR"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Lajes Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lajes_Airport",
+      "codes": [
+        "TER",
+        "LPLA"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Lisbon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "Azores Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "London Heathrow Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Madeira Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeira_Airport",
+      "codes": [
+        "FNC",
+        "LPMA"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Pierre Elliott Trudeau International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Nelson Mandela International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
+      "codes": [
+        "RAI",
+        "GVNP"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Newark Liberty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Pico Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pico_Airport",
+      "codes": [
+        "PIX",
+        "LPPI"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Santa Maria Airport (Azores)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Maria_Airport_(Azores)",
+      "codes": [
+        "SMA",
+        "LPAZ"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "São Jorge Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A3o_Jorge_Airport",
+      "codes": [
+        "SJZ",
+        "LPSJ"
+      ],
+      "airlines": [
+        "SATA Air Açores"
+      ]
+    },
+    {
+      "city": "Toronto Pearson International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Azores Airlines",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Vienna Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Václav Havel Airport Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V%C3%A1clav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Zurich Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -258,5 +397,7 @@
     "WestJet": [
       "Toronto Pearson International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:40Z",
+  "date-time-wikidata": "2026-04-01T17:42:48Z"
 }

@@ -22,54 +22,97 @@
     "Nantucket Airlines"
   ],
   "destinations": [
-    [
-      "John F. Kennedy International Airport",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "LaGuardia Airport",
-      "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "LGA",
-      "KLGA"
-    ],
-    [
-      "Logan International Airport",
-      "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "BOS",
-      "KBOS"
-    ],
-    [
-      "Martha's Vineyard Airport",
-      "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
-      "MVY",
-      "KMVY"
-    ],
-    [
-      "Nantucket Memorial Airport",
-      "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
-      "ACK",
-      "KACK"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ],
-    [
-      "Philadelphia International Airport",
-      "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
-      "PHL",
-      "KPHL"
-    ],
-    [
-      "Ronald Reagan Washington National Airport",
-      "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "DCA",
-      "KDCA"
-    ]
+    {
+      "city": "John F. Kennedy International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Cape Air",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "LaGuardia Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Logan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Martha's Vineyard Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
+      "codes": [
+        "MVY",
+        "KMVY"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Nantucket Airlines"
+      ]
+    },
+    {
+      "city": "Nantucket Memorial Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
+      "codes": [
+        "ACK",
+        "KACK"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Nantucket Airlines"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Philadelphia International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    },
+    {
+      "city": "Ronald Reagan Washington National Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -91,5 +134,7 @@
       "Martha's Vineyard Airport",
       "Nantucket Memorial Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:55Z",
+  "date-time-wikidata": "2026-03-14T11:56:31Z"
 }

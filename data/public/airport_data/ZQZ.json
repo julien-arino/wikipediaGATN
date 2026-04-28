@@ -21,24 +21,41 @@
     "Spring Airlines"
   ],
   "destinations": [
-    [
-      "Hangzhou Xiaoshan International Airport",
-      "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
-      "HGH",
-      "ZSHC"
-    ],
-    [
-      "Shanghai Hongqiao International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
-      "SHA",
-      "ZSSS"
-    ],
-    [
-      "Shijiazhuang Zhengding International Airport",
-      "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
-      "SJW",
-      "ZBSJ"
-    ]
+    {
+      "city": "Hangzhou Xiaoshan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Hebei Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Hongqiao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "codes": [
+        "SHA",
+        "ZSSS"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Shijiazhuang Zhengding International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shijiazhuang_Zhengding_International_Airport",
+      "codes": [
+        "SJW",
+        "ZBSJ"
+      ],
+      "airlines": [
+        "China Express Airlines",
+        "Hebei Airlines",
+        "Spring Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Express Airlines": [
@@ -52,5 +69,7 @@
       "Shanghai Hongqiao International Airport",
       "Shijiazhuang Zhengding International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:42Z",
+  "date-time-wikidata": "2025-10-29T05:33:15Z"
 }

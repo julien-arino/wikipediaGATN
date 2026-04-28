@@ -21,24 +21,40 @@
     "United Express"
   ],
   "destinations": [
-    [
-      "Detroit Metropolitan Wayne County Airport",
-      "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
-      "DTW",
-      "KDTW"
-    ],
-    [
-      "Minneapolis/Saint Paul International Airport",
-      "https://en.wikipedia.org/wiki/Minneapolis/Saint_Paul_International_Airport",
-      "MSP",
-      "KMSP"
-    ],
-    [
-      "O'Hare International Airport",
-      "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "ORD",
-      "KORD"
-    ]
+    {
+      "city": "Detroit Metropolitan Wayne County Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Minneapolis/Saint Paul International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis/Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "O'Hare International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle (airline brand)",
+        "United Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle (airline brand)": [
@@ -51,5 +67,7 @@
     "United Express": [
       "O'Hare International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:30Z",
+  "date-time-wikidata": "2026-04-22T22:56:44Z"
 }

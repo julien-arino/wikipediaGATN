@@ -22,48 +22,84 @@
     "azimuth"
   ],
   "destinations": [
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Naryan-Mar",
-      "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
-      "NNM",
-      "ULAM"
-    ],
-    [
-      "Perm",
-      "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
-      "PEE",
-      "USPP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Samara",
-      "https://en.wikipedia.org/wiki/Kurumoch_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ]
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Naryan-Mar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
+      "codes": [
+        "NNM",
+        "ULAM"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
+      "codes": [
+        "PEE",
+        "USPP"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Red Wings Airlines",
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Samara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    }
   ],
   "airlines_destinations": {
     "azimuth": [
@@ -82,5 +118,7 @@
     "UVT Aero": [
       "Kazan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:59Z",
+  "date-time-wikidata": "2026-04-11T19:09:03Z"
 }

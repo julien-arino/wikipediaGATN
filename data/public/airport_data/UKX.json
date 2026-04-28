@@ -21,18 +21,29 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Krasnoyarsk",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_Yemelyanovo_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "IrAero",
+        "Utair"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Yemelyanovo_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "UTair Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IrAero": [
@@ -44,5 +55,7 @@
     "UTair Cargo": [
       "Krasnoyarsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-wikidata": "2026-01-22T23:12:51Z"
 }

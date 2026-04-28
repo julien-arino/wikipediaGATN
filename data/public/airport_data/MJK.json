@@ -19,23 +19,35 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Carnarvon",
-      "https://en.wikipedia.org/wiki/Carnarvon_Airport_(Australia)",
-      "CVQ",
-      "YCAR"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Carnarvon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carnarvon_Airport_(Australia)",
+      "codes": [
+        "CVQ",
+        "YCAR"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
       "Carnarvon",
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:20Z",
+  "date-time-wikidata": "2025-09-08T15:34:48Z"
 }

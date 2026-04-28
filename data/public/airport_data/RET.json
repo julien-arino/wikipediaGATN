@@ -19,23 +19,35 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Bodø",
-      "https://en.wikipedia.org/wiki/Bodø_Airport",
-      "BOO",
-      "ENBO"
-    ],
-    [
-      "Svolvær",
-      "https://en.wikipedia.org/wiki/Svolvær_Airport",
-      "SVJ",
-      "ENSH"
-    ]
+    {
+      "city": "Bodø",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bodø_Airport",
+      "codes": [
+        "BOO",
+        "ENBO"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Svolvær",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Svolvær_Airport",
+      "codes": [
+        "SVJ",
+        "ENSH"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Widerøe": [
       "Bodø",
       "Svolvær"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:33Z",
+  "date-time-wikidata": "2026-01-26T14:43:02Z"
 }

@@ -7,6 +7,7 @@
   "lat": "32.4354836",
   "lon": "48.3970136",
   "altitude": null,
+  "continent": "Asia",
   "region": "Khuzestan",
   "country_alpha3": "IRN",
   "country_name": "Iran, Islamic Republic of",
@@ -21,18 +22,31 @@
     "Qeshm Air"
   ],
   "destinations": [
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Karun Airlines"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Karun Airlines",
+        "Mahan Air",
+        "Qeshm Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Iran Air": [
@@ -49,5 +63,6 @@
       "Tehran–Mehrabad"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:11:21Z",
+  "date-time-wikidata": "2026-03-24T17:56:13Z"
 }

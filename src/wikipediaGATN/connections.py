@@ -89,18 +89,26 @@ def create_outbound_connections_list(
         outlinks = set()
 
         for dest in destinations:
-            # dest is a list: [name, wikipedia_url, dest_iata, dest_icao]
-            if len(dest) >= 2:
+            if isinstance(dest, dict):
+                # New dictionary format
+                dest_url = dest.get("wikipedia_url")
+                codes = dest.get("codes", [])
+                dest_iata = codes[0] if len(codes) > 0 else None
+                dest_icao = codes[1] if len(codes) > 1 else None
+            elif isinstance(dest, list) and len(dest) >= 2:
+                # Old array format
                 dest_url = dest[1]
                 dest_iata = dest[2] if len(dest) > 2 else None
                 dest_icao = dest[3] if len(dest) > 3 else None
+            else:
+                continue
                 
-                if dest_iata and dest_iata != "iata code not found":
-                    outlinks.add(dest_iata)
-                elif dest_icao and dest_icao != "icao code not found":
-                    outlinks.add(dest_icao)
-                elif dest_url:
-                    unmapped_destinations[dest_url] += 1
+            if dest_iata and dest_iata != "iata code not found":
+                outlinks.add(dest_iata)
+            elif dest_icao and dest_icao != "icao code not found":
+                outlinks.add(dest_icao)
+            elif dest_url:
+                unmapped_destinations[dest_url] += 1
 
         airport_connections[origin_iata] = {
             "origin": origin_iata,

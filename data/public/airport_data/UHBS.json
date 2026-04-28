@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UHBS",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Svobodnyy",
+  "city-served-wikipedia": "Svobodnyy",
   "location": "Svobodnyy",
   "lat": "51.455000",
   "lon": "128.098333",
@@ -19,23 +19,35 @@
     "Amur Aviabase"
   ],
   "destinations": [
-    [
-      "Blagoveshchensk",
-      "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
-      "BQS",
-      "UHBB"
-    ],
-    [
-      "Oktyabrsky",
-      "https://en.wikipedia.org/wiki/Oktyabrsky,_Amur_Oblast",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Blagoveshchensk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
+      "codes": [
+        "BQS",
+        "UHBB"
+      ],
+      "airlines": [
+        "Amur Aviabase"
+      ]
+    },
+    {
+      "city": "Oktyabrsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oktyabrsky,_Amur_Oblast",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Amur Aviabase"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Amur Aviabase": [
       "Blagoveshchensk",
       "Oktyabrsky"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:29Z",
+  "date-time-wikidata": "2025-11-08T08:14:16Z"
 }

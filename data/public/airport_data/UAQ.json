@@ -20,24 +20,40 @@
     "Flybondi"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Buenos Aires–Ezeiza",
-      "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
-      "EZE",
-      "SAEZ"
-    ],
-    [
-      "Córdoba (AR)",
-      "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
-      "COR",
-      "SACO"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Ezeiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -48,5 +64,7 @@
     "Flybondi": [
       "Buenos Aires–Aeroparque"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:41Z",
+  "date-time-wikidata": "2026-04-14T11:27:50Z"
 }

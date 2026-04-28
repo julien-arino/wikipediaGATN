@@ -20,24 +20,39 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Ambon",
-      "https://en.wikipedia.org/wiki/Pattimura_Airport",
-      "AMQ",
-      "WAPP"
-    ],
-    [
-      "Fakfak",
-      "https://en.wikipedia.org/wiki/Siboru_Airport",
-      "FKQ",
-      "WASF"
-    ],
-    [
-      "Langgur",
-      "https://en.wikipedia.org/wiki/Karel_Sadsuitubun_Airport",
-      "LUV",
-      "WAPF"
-    ]
+    {
+      "city": "Ambon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pattimura_Airport",
+      "codes": [
+        "AMQ",
+        "WAPP"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Fakfak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siboru_Airport",
+      "codes": [
+        "FKQ",
+        "WASF"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Langgur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karel_Sadsuitubun_Airport",
+      "codes": [
+        "LUV",
+        "WAPF"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -47,5 +62,7 @@
       "Ambon",
       "Langgur"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:11Z",
+  "date-time-wikidata": "2026-03-08T22:49:36Z"
 }

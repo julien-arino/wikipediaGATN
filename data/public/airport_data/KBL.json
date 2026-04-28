@@ -29,126 +29,237 @@
     "Varesh Airlines"
   ],
   "destinations": [
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Herat International Airport",
-      "https://en.wikipedia.org/wiki/Herat_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Imam Khomeini International Airport",
-      "https://en.wikipedia.org/wiki/Imam_Khomeini_International_Airport",
-      "IKA",
-      "OIIE"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Islam Karimov Tashkent International Airport",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Islamabad International Airport",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Istanbul Airport",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Kandahar International Airport",
-      "https://en.wikipedia.org/wiki/Kandahar_International_Airport",
-      "KDH",
-      "OAKN"
-    ],
-    [
-      "Khost International Airport",
-      "https://en.wikipedia.org/wiki/Khost_International_Airport",
-      "KHT",
-      "OAKS"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Kuwait International Airport",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Mashhad Shahid Hasheminejad International Airport",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Mazar-i-Sharif International Airport",
-      "https://en.wikipedia.org/wiki/Mazar-i-Sharif_International_Airport",
-      "MZR",
-      "OAMS"
-    ],
-    [
-      "Sabiha Gökçen International Airport",
-      "https://en.wikipedia.org/wiki/Sabiha_G%C3%B6k%C3%A7en_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Sharjah International Airport",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Sheremetyevo International Airport",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Zayed International Airport",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Flydubai",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Herat International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Herat_International_Airport",
+      "codes": [
+        "HEA",
+        "OAHR"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Imam Khomeini International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imam_Khomeini_International_Airport",
+      "codes": [
+        "IKA",
+        "OIIE"
+      ],
+      "airlines": [
+        "Iran Airtour",
+        "Mahan Air",
+        "Meraj Airlines",
+        "Varesh Airlines"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Islam Karimov Tashkent International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Islamabad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Istanbul Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Kam Air",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Kandahar International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kandahar_International_Airport",
+      "codes": [
+        "KDH",
+        "OAKN"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Khost International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khost_International_Airport",
+      "codes": [
+        "KHT",
+        "OAKS"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Kuwait International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Mashhad Shahid Hasheminejad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Iran Air",
+        "Iran Airtour"
+      ]
+    },
+    {
+      "city": "Mazar-i-Sharif International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazar-i-Sharif_International_Airport",
+      "codes": [
+        "MZR",
+        "OAMS"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Sabiha Gökçen International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_G%C3%B6k%C3%A7en_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Sharjah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Kam Air"
+      ]
+    },
+    {
+      "city": "Sheremetyevo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Zayed International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Ürümqi Diwopu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -204,5 +315,7 @@
     "Varesh Airlines": [
       "Imam Khomeini International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:33Z",
+  "date-time-wikidata": "2026-03-27T22:34:45Z"
 }

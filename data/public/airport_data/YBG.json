@@ -20,30 +20,50 @@
     "WestJet"
   ],
   "destinations": [
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Punta Cana",
-      "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
-      "PUJ",
-      "MDPC"
-    ],
-    [
-      "Varadero",
-      "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
-      "VRA",
-      "MUVR"
-    ]
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Varadero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
+      "codes": [
+        "VRA",
+        "MUVR"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -54,5 +74,7 @@
       "Punta Cana",
       "Varadero"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:38Z",
+  "date-time-wikidata": "2026-03-31T18:41:38Z"
 }

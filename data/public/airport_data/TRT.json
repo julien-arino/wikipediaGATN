@@ -20,18 +20,28 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ],
-    [
-      "Seko",
-      "https://en.wikipedia.org/wiki/Seko_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Seko",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seko_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -40,5 +50,7 @@
     "Wings Air": [
       "Makassar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:39Z",
+  "date-time-wikidata": "2025-12-07T09:14:08Z"
 }

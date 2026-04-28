@@ -20,24 +20,39 @@
     "Sounds Air"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Blenheim",
-      "https://en.wikipedia.org/wiki/Woodbourne_Airport",
-      "BHE",
-      "NZWB"
-    ],
-    [
-      "Nelson",
-      "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
-      "NSN",
-      "NZNS"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air Chathams"
+      ]
+    },
+    {
+      "city": "Blenheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Woodbourne_Airport",
+      "codes": [
+        "BHE",
+        "NZWB"
+      ],
+      "airlines": [
+        "Sounds Air"
+      ]
+    },
+    {
+      "city": "Nelson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Airport_(New_Zealand)",
+      "codes": [
+        "NSN",
+        "NZNS"
+      ],
+      "airlines": [
+        "Sounds Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Chathams": [
@@ -47,5 +62,7 @@
       "Blenheim",
       "Nelson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:29Z",
+  "date-time-wikidata": "2025-10-21T17:30:25Z"
 }

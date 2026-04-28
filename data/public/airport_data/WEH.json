@@ -19,23 +19,35 @@
     "Central Airlines"
   ],
   "destinations": [
-    [
-      "Seoul–Incheon",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Tokyo–Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ]
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Central Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Central Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Central Airlines": [
       "Seoul–Incheon",
       "Tokyo–Narita"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:09Z",
+  "date-time-wikidata": "2026-04-18T16:05:18Z"
 }

@@ -21,30 +21,54 @@
     "FlySafair"
   ],
   "destinations": [
-    [
-      "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Durban",
-      "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
-      "DUR",
-      "FALE"
-    ],
-    [
-      "George",
-      "https://en.wikipedia.org/wiki/George_Airport",
-      "GRJ",
-      "FAGG"
-    ],
-    [
-      "Johannesburg–O. R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ]
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Durban",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
+      "codes": [
+        "DUR",
+        "FALE"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir"
+      ]
+    },
+    {
+      "city": "George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Airport",
+      "codes": [
+        "GRJ",
+        "FAGG"
+      ],
+      "airlines": [
+        "CemAir"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
@@ -61,5 +85,7 @@
       "Cape Town",
       "Johannesburg–O. R. Tambo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:22Z",
+  "date-time-wikidata": "2026-04-20T15:31:56Z"
 }

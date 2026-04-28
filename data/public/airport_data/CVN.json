@@ -19,23 +19,35 @@
     "Denver Air Connection"
   ],
   "destinations": [
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Denver",
-      "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "DEN",
-      "KDEN"
-    ]
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Denver Air Connection": [
       "Dallas/Fort Worth",
       "Denver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:12Z",
+  "date-time-wikidata": "2026-02-05T00:31:11Z"
 }

@@ -23,48 +23,86 @@
     "Southern Air Charter"
   ],
   "destinations": [
-    [
-      "Atlanta",
-      "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
-      "ATL",
-      "KATL"
-    ],
-    [
-      "Charlotte",
-      "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "CLT",
-      "KCLT"
-    ],
-    [
-      "Fort Lauderdale",
-      "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
-      "FLL",
-      "KFLL"
-    ],
-    [
-      "Governor's Harbour",
-      "https://en.wikipedia.org/wiki/Governor's_Harbour_Airport",
-      "GHB",
-      "MYEM"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ],
-    [
-      "Rock Sound",
-      "https://en.wikipedia.org/wiki/Rock_Sound_International_Airport",
-      "RSD",
-      "MYER"
-    ]
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "Governor's Harbour",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor's_Harbour_Airport",
+      "codes": [
+        "GHB",
+        "MYEM"
+      ],
+      "airlines": [
+        "Bahamasair",
+        "Pineapple Air"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair",
+        "Pineapple Air",
+        "Southern Air Charter"
+      ]
+    },
+    {
+      "city": "Rock Sound",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rock_Sound_International_Airport",
+      "codes": [
+        "RSD",
+        "MYER"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "American Eagle": [
@@ -87,5 +125,7 @@
     "Southern Air Charter": [
       "Nassau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:25Z",
+  "date-time-wikidata": "2025-11-23T05:33:49Z"
 }

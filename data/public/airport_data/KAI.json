@@ -20,18 +20,29 @@
     "Trans Guyana Airways"
   ],
   "destinations": [
-    [
-      "Georgetown–Cheddi Jagan",
-      "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
-      "GEO",
-      "SYCJ"
-    ],
-    [
-      "Georgetown–Ogle",
-      "https://en.wikipedia.org/wiki/Ogle_Airport",
-      "OGL",
-      "SYEC"
-    ]
+    {
+      "city": "Georgetown–Cheddi Jagan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
+      "codes": [
+        "GEO",
+        "SYCJ"
+      ],
+      "airlines": [
+        "Roraima Airways"
+      ]
+    },
+    {
+      "city": "Georgetown–Ogle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ogle_Airport",
+      "codes": [
+        "OGL",
+        "SYEC"
+      ],
+      "airlines": [
+        "Roraima Airways",
+        "Trans Guyana Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Roraima Airways": [
@@ -41,5 +52,7 @@
     "Trans Guyana Airways": [
       "Georgetown–Ogle"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:31Z",
+  "date-time-wikidata": "2026-03-07T23:26:36Z"
 }

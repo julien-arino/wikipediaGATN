@@ -20,36 +20,65 @@
     "Ryan Air Services"
   ],
   "destinations": [
-    [
-      "Koyuk Alfred Adams Airport",
-      "https://en.wikipedia.org/wiki/Koyuk_Alfred_Adams_Airport",
-      "KKA",
-      "PAKK"
-    ],
-    [
-      "Nome Airport",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "Shaktoolik Airport",
-      "https://en.wikipedia.org/wiki/Shaktoolik_Airport",
-      "SKK",
-      "PFSH"
-    ],
-    [
-      "St. Michael Airport",
-      "https://en.wikipedia.org/wiki/St._Michael_Airport",
-      "SMK",
-      "PAMK"
-    ],
-    [
-      "Stebbins Airport",
-      "https://en.wikipedia.org/wiki/Stebbins_Airport",
-      "WBB",
-      "icao code not found"
-    ]
+    {
+      "city": "Koyuk Alfred Adams Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koyuk_Alfred_Adams_Airport",
+      "codes": [
+        "KKA",
+        "PAKK"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air Services"
+      ]
+    },
+    {
+      "city": "Nome Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Shaktoolik Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shaktoolik_Airport",
+      "codes": [
+        "SKK",
+        "PFSH"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air Services"
+      ]
+    },
+    {
+      "city": "St. Michael Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Michael_Airport",
+      "codes": [
+        "SMK",
+        "PAMK"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air Services"
+      ]
+    },
+    {
+      "city": "Stebbins Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stebbins_Airport",
+      "codes": [
+        "WBB",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bering Air",
+        "Ryan Air Services"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -65,5 +94,7 @@
       "St. Michael Airport",
       "Stebbins Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:55Z",
+  "date-time-wikidata": "2025-10-28T16:04:56Z"
 }

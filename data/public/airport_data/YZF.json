@@ -28,144 +28,275 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Cambridge Bay",
-      "https://en.wikipedia.org/wiki/Cambridge_Bay_Airport",
-      "YCB",
-      "CYCB"
-    ],
-    [
-      "Colville Lake",
-      "https://en.wikipedia.org/wiki/Colville_Lake/Tommy_Kochon_Aerodrome",
-      "YCK",
-      "CYVL"
-    ],
-    [
-      "Déline",
-      "https://en.wikipedia.org/wiki/Déline_Airport",
-      "YWJ",
-      "CYWJ"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Fort Chipewyan",
-      "https://en.wikipedia.org/wiki/Fort_Chipewyan_Airport",
-      "YPY",
-      "CYPY"
-    ],
-    [
-      "Fort Good Hope",
-      "https://en.wikipedia.org/wiki/Fort_Good_Hope_Airport",
-      "YGH",
-      "CYGH"
-    ],
-    [
-      "Fort Simpson",
-      "https://en.wikipedia.org/wiki/Fort_Simpson_Airport",
-      "YFS",
-      "CYFS"
-    ],
-    [
-      "Gjoa Haven",
-      "https://en.wikipedia.org/wiki/Gjoa_Haven_Airport",
-      "YHK",
-      "CYHK"
-    ],
-    [
-      "Hay River",
-      "https://en.wikipedia.org/wiki/Hay_River/Merlyn_Carter_Airport",
-      "YHY",
-      "CYHY"
-    ],
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
-      "YEV",
-      "CYEV"
-    ],
-    [
-      "Iqaluit",
-      "https://en.wikipedia.org/wiki/Iqaluit_Airport",
-      "YFB",
-      "CYFB"
-    ],
-    [
-      "Kugaaruk",
-      "https://en.wikipedia.org/wiki/Kugaaruk_Airport",
-      "YBB",
-      "CYBB"
-    ],
-    [
-      "Kugluktuk",
-      "https://en.wikipedia.org/wiki/Kugluktuk_Airport",
-      "YCO",
-      "CYCO"
-    ],
-    [
-      "Norman Wells",
-      "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
-      "YVQ",
-      "CYVQ"
-    ],
-    [
-      "Ottawa",
-      "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
-      "YOW",
-      "CYOW"
-    ],
-    [
-      "Rankin Inlet",
-      "https://en.wikipedia.org/wiki/Rankin_Inlet_Airport",
-      "YRT",
-      "CYRT"
-    ],
-    [
-      "Taloyoak",
-      "https://en.wikipedia.org/wiki/Taloyoak_Airport",
-      "YYH",
-      "CYYH"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ],
-    [
-      "Tulita",
-      "https://en.wikipedia.org/wiki/Tulita_Airport",
-      "ZFN",
-      "CZFN"
-    ],
-    [
-      "Ulukhaktok",
-      "https://en.wikipedia.org/wiki/Ulukhaktok/Holman_Airport",
-      "YHI",
-      "CYHI"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ],
-    [
-      "Whitehorse",
-      "https://en.wikipedia.org/wiki/Whitehorse_Airport",
-      "YXY",
-      "CYXY"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Cambridge Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cambridge_Bay_Airport",
+      "codes": [
+        "YCB",
+        "CYCB"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Colville Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colville_Lake/Tommy_Kochon_Aerodrome",
+      "codes": [
+        "YCK",
+        "CYVL"
+      ],
+      "airlines": [
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Déline",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Déline_Airport",
+      "codes": [
+        "YWJ",
+        "CYWJ"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Air Tindi",
+        "Buffalo Airways",
+        "Canadian North",
+        "WestJet",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Fort Chipewyan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Chipewyan_Airport",
+      "codes": [
+        "YPY",
+        "CYPY"
+      ],
+      "airlines": [
+        "Air Tindi"
+      ]
+    },
+    {
+      "city": "Fort Good Hope",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Good_Hope_Airport",
+      "codes": [
+        "YGH",
+        "CYGH"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Fort Simpson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Simpson_Airport",
+      "codes": [
+        "YFS",
+        "CYFS"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Gjoa Haven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gjoa_Haven_Airport",
+      "codes": [
+        "YHK",
+        "CYHK"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Hay River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hay_River/Merlyn_Carter_Airport",
+      "codes": [
+        "YHY",
+        "CYHY"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Iqaluit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iqaluit_Airport",
+      "codes": [
+        "YFB",
+        "CYFB"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Kugaaruk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kugaaruk_Airport",
+      "codes": [
+        "YBB",
+        "CYBB"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Kugluktuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kugluktuk_Airport",
+      "codes": [
+        "YCO",
+        "CYCO"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Norman Wells",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Wells_Airport",
+      "codes": [
+        "YVQ",
+        "CYVQ"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "Canadian North",
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Rankin Inlet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rankin_Inlet_Airport",
+      "codes": [
+        "YRT",
+        "CYRT"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Taloyoak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taloyoak_Airport",
+      "codes": [
+        "YYH",
+        "CYYH"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Canada Rouge",
+        "Air North"
+      ]
+    },
+    {
+      "city": "Tulita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tulita_Airport",
+      "codes": [
+        "ZFN",
+        "CZFN"
+      ],
+      "airlines": [
+        "Buffalo Airways",
+        "North-Wright Airways"
+      ]
+    },
+    {
+      "city": "Ulukhaktok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ulukhaktok/Holman_Airport",
+      "codes": [
+        "YHI",
+        "CYHI"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Air North"
+      ]
+    },
+    {
+      "city": "Whitehorse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whitehorse_Airport",
+      "codes": [
+        "YXY",
+        "CYXY"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -227,5 +358,7 @@
       "Norman Wells",
       "Tulita"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:51Z",
+  "date-time-wikidata": "2026-04-15T22:12:34Z"
 }

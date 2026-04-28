@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Aasiaat",
-      "https://en.wikipedia.org/wiki/Aasiaat_Airport",
-      "JEG",
-      "BGAA"
-    ],
-    [
-      "Kangaatsiaq",
-      "https://en.wikipedia.org/wiki/Kangaatsiaq_Heliport",
-      "iata code not found",
-      "BGKA"
-    ]
+    {
+      "city": "Aasiaat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aasiaat_Airport",
+      "codes": [
+        "JEG",
+        "BGAA"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Kangaatsiaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kangaatsiaq_Heliport",
+      "codes": [
+        "iata code not found",
+        "BGKA"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Aasiaat",
       "Kangaatsiaq"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:35Z",
+  "date-time-wikidata": "2025-07-16T16:12:00Z"
 }

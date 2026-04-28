@@ -28,120 +28,224 @@
     "United Airlines"
   ],
   "destinations": [
-    [
-      "Bucholz Army Airfield",
-      "https://en.wikipedia.org/wiki/Bucholz_Army_Airfield",
-      "KWA",
-      "PKWA"
-    ],
-    [
-      "Chubu Centrair International Airport",
-      "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
-      "NGO",
-      "RJGG"
-    ],
-    [
-      "Chuuk International Airport",
-      "https://en.wikipedia.org/wiki/Chuuk_International_Airport",
-      "TKK",
-      "PTKK"
-    ],
-    [
-      "Gimhae International Airport",
-      "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
-      "PUS",
-      "RKPK"
-    ],
-    [
-      "Haneda Airport",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Honolulu International Airport",
-      "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
-      "HNL",
-      "PHNL"
-    ],
-    [
-      "Incheon International Airport",
-      "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "ICN",
-      "RKSI"
-    ],
-    [
-      "Kansai International Airport",
-      "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-      "KIX",
-      "RJBB"
-    ],
-    [
-      "Kosrae International Airport",
-      "https://en.wikipedia.org/wiki/Kosrae_International_Airport",
-      "KSA",
-      "PTSA"
-    ],
-    [
-      "Mactan–Cebu International Airport",
-      "https://en.wikipedia.org/wiki/Mactan%E2%80%93Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Marshall Islands International Airport",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ],
-    [
-      "Narita International Airport",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Ninoy Aquino International Airport",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ],
-    [
-      "Pohnpei International Airport",
-      "https://en.wikipedia.org/wiki/Pohnpei_International_Airport",
-      "PNI",
-      "PTPN"
-    ],
-    [
-      "Roman Tmetuchl International Airport",
-      "https://en.wikipedia.org/wiki/Roman_Tmetuchl_International_Airport",
-      "ROR",
-      "PTRO"
-    ],
-    [
-      "Rota International Airport",
-      "https://en.wikipedia.org/wiki/Rota_International_Airport",
-      "ROP",
-      "PGRO"
-    ],
-    [
-      "Saipan International Airport",
-      "https://en.wikipedia.org/wiki/Saipan_International_Airport",
-      "SPN",
-      "PGSN"
-    ],
-    [
-      "Taoyuan International Airport",
-      "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "TPE",
-      "RCTP"
-    ],
-    [
-      "Yap International Airport",
-      "https://en.wikipedia.org/wiki/Yap_International_Airport",
-      "YAP",
-      "PTYA"
-    ]
+    {
+      "city": "Bucholz Army Airfield",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucholz_Army_Airfield",
+      "codes": [
+        "KWA",
+        "PKWA"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Chubu Centrair International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chubu_Centrair_International_Airport",
+      "codes": [
+        "NGO",
+        "RJGG"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Chuuk International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chuuk_International_Airport",
+      "codes": [
+        "TKK",
+        "PTKK"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Gimhae International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "codes": [
+        "PUS",
+        "RKPK"
+      ],
+      "airlines": [
+        "Air Busan",
+        "Jin Air",
+        "Korean Air"
+      ]
+    },
+    {
+      "city": "Haneda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Honolulu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honolulu_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Incheon International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Air Seoul",
+        "Jin Air",
+        "Korean Air",
+        "T'way Air"
+      ]
+    },
+    {
+      "city": "Kansai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "T'way Air",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Kosrae International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kosrae_International_Airport",
+      "codes": [
+        "KSA",
+        "PTSA"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Mactan–Cebu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan%E2%80%93Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Philippine Airlines"
+      ]
+    },
+    {
+      "city": "Marshall Islands International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Narita International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Japan Airlines",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Ninoy Aquino International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Philippine Airlines",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Pohnpei International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pohnpei_International_Airport",
+      "codes": [
+        "PNI",
+        "PTPN"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Roman Tmetuchl International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Tmetuchl_International_Airport",
+      "codes": [
+        "ROR",
+        "PTRO"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Rota International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rota_International_Airport",
+      "codes": [
+        "ROP",
+        "PGRO"
+      ],
+      "airlines": [
+        "Star Marianas Air"
+      ]
+    },
+    {
+      "city": "Saipan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saipan_International_Airport",
+      "codes": [
+        "SPN",
+        "PGSN"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Taoyuan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "Starlux Airlines",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Yap International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yap_International_Airport",
+      "codes": [
+        "YAP",
+        "PTYA"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Busan": [
@@ -192,5 +296,7 @@
       "Taoyuan International Airport",
       "Yap International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:37Z",
+  "date-time-wikidata": "2026-04-28T03:03:58Z"
 }

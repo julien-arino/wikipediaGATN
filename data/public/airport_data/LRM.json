@@ -29,78 +29,142 @@
     "World2Fly"
   ],
   "destinations": [
-    [
-      "Birmingham Airport",
-      "https://en.wikipedia.org/wiki/Birmingham_Airport",
-      "BHX",
-      "EGBB"
-    ],
-    [
-      "Düsseldorf Airport",
-      "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Frankfurt Airport",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Humberto Delgado Airport",
-      "https://en.wikipedia.org/wiki/Humberto_Delgado_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Madrid–Barajas Airport",
-      "https://en.wikipedia.org/wiki/Madrid%E2%80%93Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Miami International Airport",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Milan Malpensa Airport",
-      "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Montréal–Trudeau International Airport",
-      "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Orly Airport",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rome Fiumicino Airport",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Verona Airport",
-      "https://en.wikipedia.org/wiki/Verona_Airport",
-      "VRN",
-      "LIPX"
-    ]
+    {
+      "city": "Birmingham Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Düsseldorf Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "codes": [
+        "DUS",
+        "EDDL"
+      ],
+      "airlines": [
+        "Condor (airline)"
+      ]
+    },
+    {
+      "city": "Frankfurt Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Condor (airline)",
+        "Discover Airlines"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Humberto Delgado Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Humberto_Delgado_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "World2Fly"
+      ]
+    },
+    {
+      "city": "Madrid–Barajas Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid%E2%80%93Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "World2Fly"
+      ]
+    },
+    {
+      "city": "Miami International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "RED Air"
+      ]
+    },
+    {
+      "city": "Milan Malpensa Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Neos (airline)"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montr%C3%A9al%E2%80%93Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Transat",
+        "Westjet"
+      ]
+    },
+    {
+      "city": "Orly Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Caraïbes"
+      ]
+    },
+    {
+      "city": "Rome Fiumicino Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Neos (airline)"
+      ]
+    },
+    {
+      "city": "Verona Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Neos (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada": [
@@ -141,5 +205,7 @@
       "Humberto Delgado Airport",
       "Madrid–Barajas Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:27Z",
+  "date-time-wikidata": "2026-03-27T09:16:58Z"
 }

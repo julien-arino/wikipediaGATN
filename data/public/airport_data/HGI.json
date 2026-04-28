@@ -19,23 +19,35 @@
     "Alliance Air"
   ],
   "destinations": [
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Guwahati_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Tezu",
-      "https://en.wikipedia.org/wiki/Tezu_Airport",
-      "TEI",
-      "VETJ"
-    ]
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guwahati_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Tezu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tezu_Airport",
+      "codes": [
+        "TEI",
+        "VETJ"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Air": [
       "Guwahati",
       "Tezu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:39Z",
+  "date-time-wikidata": "2026-01-31T06:12:23Z"
 }

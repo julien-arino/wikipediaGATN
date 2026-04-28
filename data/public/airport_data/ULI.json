@@ -20,24 +20,40 @@
     "Pacific Mission Aviation"
   ],
   "destinations": [
-    [
-      "Chuuk",
-      "https://en.wikipedia.org/wiki/Chuuk_International_Airport",
-      "TKK",
-      "PTKK"
-    ],
-    [
-      "Fais",
-      "https://en.wikipedia.org/wiki/Fais_Island#Fais_Airfield",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Yap",
-      "https://en.wikipedia.org/wiki/Yap_International_Airport",
-      "YAP",
-      "PTYA"
-    ]
+    {
+      "city": "Chuuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chuuk_International_Airport",
+      "codes": [
+        "TKK",
+        "PTKK"
+      ],
+      "airlines": [
+        "Caroline Islands Air"
+      ]
+    },
+    {
+      "city": "Fais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fais_Island#Fais_Airfield",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Pacific Mission Aviation"
+      ]
+    },
+    {
+      "city": "Yap",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yap_International_Airport",
+      "codes": [
+        "YAP",
+        "PTYA"
+      ],
+      "airlines": [
+        "Caroline Islands Air",
+        "Pacific Mission Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caroline Islands Air": [
@@ -48,5 +64,7 @@
       "Fais",
       "Yap"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:53Z",
+  "date-time-wikidata": "2026-02-28T00:31:22Z"
 }

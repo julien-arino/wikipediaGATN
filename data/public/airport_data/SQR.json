@@ -20,12 +20,18 @@
     "Pelita Air"
   ],
   "destinations": [
-    [
-      "Makassar",
-      "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
-      "UPG",
-      "WAAA"
-    ]
+    {
+      "city": "Makassar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Hasanuddin_International_Airport",
+      "codes": [
+        "UPG",
+        "WAAA"
+      ],
+      "airlines": [
+        "FlyJaya",
+        "Pelita Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "FlyJaya": [
@@ -34,5 +40,7 @@
     "Pelita Air": [
       "Makassar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:18Z",
+  "date-time-wikidata": "2026-02-27T15:16:29Z"
 }

@@ -21,24 +21,41 @@
     "Precision Air"
   ],
   "destinations": [
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Mwanza",
-      "https://en.wikipedia.org/wiki/Mwanza_Airport",
-      "MWZ",
-      "HTMW"
-    ],
-    [
-      "Rubondo",
-      "https://en.wikipedia.org/wiki/Rubondo_Airstrip",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Mwanza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
+      "codes": [
+        "MWZ",
+        "HTMW"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "Auric Air",
+        "Precision Air"
+      ]
+    },
+    {
+      "city": "Rubondo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rubondo_Airstrip",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Auric Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tanzania": [
@@ -52,5 +69,7 @@
       "Dar es Salaam",
       "Mwanza"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:53Z",
+  "date-time-wikidata": "2026-04-19T18:23:15Z"
 }

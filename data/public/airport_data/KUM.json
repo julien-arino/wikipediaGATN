@@ -20,24 +20,41 @@
     "Japan Air Commuter"
   ],
   "destinations": [
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
-      "KOJ",
-      "RJFK"
-    ],
-    [
-      "Osaka–Itami",
-      "https://en.wikipedia.org/wiki/Osaka_International_Airport",
-      "ITM",
-      "RJOO"
-    ]
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "ANA",
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Kagoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "codes": [
+        "KOJ",
+        "RJFK"
+      ],
+      "airlines": [
+        "ANA",
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Osaka–Itami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osaka_International_Airport",
+      "codes": [
+        "ITM",
+        "RJOO"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Japan Air Commuter": [
@@ -49,5 +66,7 @@
       "Fukuoka",
       "Kagoshima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:50Z",
+  "date-time-wikidata": "2026-02-19T02:19:22Z"
 }

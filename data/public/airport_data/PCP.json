@@ -20,12 +20,18 @@
     "STP Airways"
   ],
   "destinations": [
-    [
-      "São Tomé",
-      "https://en.wikipedia.org/wiki/São_Tomé_International_Airport",
-      "TMS",
-      "FPST"
-    ]
+    {
+      "city": "São Tomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Tomé_International_Airport",
+      "codes": [
+        "TMS",
+        "FPST"
+      ],
+      "airlines": [
+        "Afrijet",
+        "STP Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afrijet": [
@@ -34,5 +40,7 @@
     "STP Airways": [
       "São Tomé"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:39Z",
+  "date-time-wikidata": "2025-09-02T10:38:48Z"
 }

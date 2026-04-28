@@ -19,23 +19,35 @@
     "AirBorneo"
   ],
   "destinations": [
-    [
-      "Marudi",
-      "https://en.wikipedia.org/wiki/Marudi_Airport",
-      "MUR",
-      "WBGM"
-    ],
-    [
-      "Miri",
-      "https://en.wikipedia.org/wiki/Miri_Airport",
-      "MYY",
-      "WBGR"
-    ]
+    {
+      "city": "Marudi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marudi_Airport",
+      "codes": [
+        "MUR",
+        "WBGM"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirBorneo": [
       "Marudi",
       "Miri"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:19Z",
+  "date-time-wikidata": "2026-01-05T17:09:55Z"
 }

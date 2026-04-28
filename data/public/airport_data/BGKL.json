@@ -19,23 +19,35 @@
     "Air Greenland"
   ],
   "destinations": [
-    [
-      "Kangersuatsiaq",
-      "https://en.wikipedia.org/wiki/Kangersuatsiaq_Heliport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Upernavik",
-      "https://en.wikipedia.org/wiki/Upernavik_Airport",
-      "JUV",
-      "BGUK"
-    ]
+    {
+      "city": "Kangersuatsiaq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kangersuatsiaq_Heliport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Upernavik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Upernavik_Airport",
+      "codes": [
+        "JUV",
+        "BGUK"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Kangersuatsiaq",
       "Upernavik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:25Z",
+  "date-time-wikidata": "2025-04-06T12:05:19Z"
 }

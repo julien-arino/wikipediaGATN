@@ -21,42 +21,73 @@
     "Yamal Airlines"
   ],
   "destinations": [
-    [
-      "Beloyarsky",
-      "https://en.wikipedia.org/wiki/Beloyarsk_Airport",
-      "EYK",
-      "USHQ"
-    ],
-    [
-      "Beryozovo",
-      "https://en.wikipedia.org/wiki/beryozovo_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Moscow-Zhukovsky",
-      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
-      "ZIA",
-      "UUBW"
-    ],
-    [
-      "Nizhnevartovsk",
-      "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
-      "NJC",
-      "USNN"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roschino_Airport",
-      "TJM",
-      "USTR"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Beloyarsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beloyarsk_Airport",
+      "codes": [
+        "EYK",
+        "USHQ"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Beryozovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/beryozovo_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Moscow-Zhukovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "codes": [
+        "ZIA",
+        "UUBW"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Nizhnevartovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
+      "codes": [
+        "NJC",
+        "USNN"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roschino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Utair",
+        "Yamal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Red Wings Airlines": [
@@ -72,5 +103,7 @@
     "Yamal Airlines": [
       "Yekaterinburg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:07Z",
+  "date-time-wikidata": "2025-11-03T17:44:27Z"
 }

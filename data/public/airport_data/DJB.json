@@ -23,30 +23,55 @@
     "Super Air Jet"
   ],
   "destinations": [
-    [
-      "Batam",
-      "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
-      "BTH",
-      "WIDD"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Medan",
-      "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
-      "KNO",
-      "WIMM"
-    ],
-    [
-      "Yogyakarta–International",
-      "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
-      "YIA",
-      "WAHI"
-    ]
+    {
+      "city": "Batam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
+      "codes": [
+        "BTH",
+        "WIDD"
+      ],
+      "airlines": [
+        "Sriwijaya Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink",
+        "Garuda Indonesia",
+        "Sriwijaya Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Medan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
+      "codes": [
+        "KNO",
+        "WIMM"
+      ],
+      "airlines": [
+        "Batik Air"
+      ]
+    },
+    {
+      "city": "Yogyakarta–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
+      "codes": [
+        "YIA",
+        "WAHI"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Batik Air": [
@@ -68,5 +93,7 @@
       "Jakarta–Soekarno-Hatta",
       "Yogyakarta–International"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:46Z",
+  "date-time-wikidata": "2026-04-17T11:38:07Z"
 }

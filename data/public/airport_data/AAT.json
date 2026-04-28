@@ -7,6 +7,7 @@
   "lat": "47.7483371",
   "lon": "88.0894825",
   "altitude": "750",
+  "continent": "Asia",
   "region": "Xinjiang Uygur Zizhiqu",
   "country_alpha3": "CHN",
   "country_name": "China",
@@ -26,126 +27,232 @@
     "Tianjin Airlines"
   ],
   "destinations": [
-    [
-      "Akesu Hongqipo Airport",
-      "https://en.wikipedia.org/wiki/Akesu_Hongqipo_Airport",
-      "AKU",
-      "ZWAK"
-    ],
-    [
-      "Aral Talim Airport",
-      "https://en.wikipedia.org/wiki/Aral_Talim_Airport",
-      "ACF",
-      "ZWAL"
-    ],
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Bole Alashankou Airport",
-      "https://en.wikipedia.org/wiki/Bole_Alashankou_Airport",
-      "BPL",
-      "ZWBL"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Chongqing Jiangbei International Airport",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hami Airport",
-      "https://en.wikipedia.org/wiki/Hami_Airport",
-      "HMI",
-      "ZWHM"
-    ],
-    [
-      "Kashgar Laining International Airport",
-      "https://en.wikipedia.org/wiki/Kashgar_Laining_International_Airport",
-      "KHG",
-      "ZWSH"
-    ],
-    [
-      "Kelamayi Guhai Airport",
-      "https://en.wikipedia.org/wiki/Kelamayi_Guhai_Airport",
-      "KRY",
-      "ZWKM"
-    ],
-    [
-      "Lanzhou Zhongchuan International Airport",
-      "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
-      "LHW",
-      "ZLLL"
-    ],
-    [
-      "Shache Yarkant Airport",
-      "https://en.wikipedia.org/wiki/Shache_Yarkant_Airport",
-      "QSZ",
-      "ZWSC"
-    ],
-    [
-      "Shanghai Pudong International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "PVG",
-      "ZSPD"
-    ],
-    [
-      "Shihezi Huayuan Airport",
-      "https://en.wikipedia.org/wiki/Shihezi_Huayuan_Airport",
-      "SHF",
-      "ZWHZ"
-    ],
-    [
-      "Tacheng Qianquan Airport",
-      "https://en.wikipedia.org/wiki/Tacheng_Qianquan_Airport",
-      "TCG",
-      "ZWTC"
-    ],
-    [
-      "Turpan Jiaohe Airport",
-      "https://en.wikipedia.org/wiki/Turpan_Jiaohe_Airport",
-      "TLQ",
-      "ZWTP"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ],
-    [
-      "Yining Airport",
-      "https://en.wikipedia.org/wiki/Yining_Airport",
-      "YIN",
-      "ZWYN"
-    ],
-    [
-      "Ürümqi Diwopu International Airport",
-      "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
-      "URC",
-      "ZWWW"
-    ]
+    {
+      "city": "Akesu Hongqipo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akesu_Hongqipo_Airport",
+      "codes": [
+        "AKU",
+        "ZWAK"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Aral Talim Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aral_Talim_Airport",
+      "codes": [
+        "ACF",
+        "ZWAL"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China",
+        "Hainan Airlines"
+      ]
+    },
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Bole Alashankou Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_Alashankou_Airport",
+      "codes": [
+        "BPL",
+        "ZWBL"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Sichuan Airlines",
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Chongqing Jiangbei International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hami Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hami_Airport",
+      "codes": [
+        "HMI",
+        "ZWHM"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Kashgar Laining International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kashgar_Laining_International_Airport",
+      "codes": [
+        "KHG",
+        "ZWSH"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Kelamayi Guhai Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelamayi_Guhai_Airport",
+      "codes": [
+        "KRY",
+        "ZWKM"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Lanzhou Zhongchuan International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
+      "codes": [
+        "LHW",
+        "ZLLL"
+      ],
+      "airlines": [
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Shache Yarkant Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shache_Yarkant_Airport",
+      "codes": [
+        "QSZ",
+        "ZWSC"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Pudong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shihezi Huayuan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shihezi_Huayuan_Airport",
+      "codes": [
+        "SHF",
+        "ZWHZ"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Tacheng Qianquan Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tacheng_Qianquan_Airport",
+      "codes": [
+        "TCG",
+        "ZWTC"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Turpan Jiaohe Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turpan_Jiaohe_Airport",
+      "codes": [
+        "TLQ",
+        "ZWTP"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Yining Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yining_Airport",
+      "codes": [
+        "YIN",
+        "ZWYN"
+      ],
+      "airlines": [
+        "Chengdu Airlines",
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi Diwopu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "China Southern Airlines",
+        "Tianjin Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -193,5 +300,6 @@
       "Ürümqi Diwopu International Airport"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:03:14Z",
+  "date-time-wikidata": "2026-04-28T19:13:54Z"
 }

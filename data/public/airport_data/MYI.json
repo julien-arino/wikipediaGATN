@@ -20,24 +20,42 @@
     "Skytrans Airlines"
   ],
   "destinations": [
-    [
-      "Darnley Island",
-      "https://en.wikipedia.org/wiki/Darnley_Island_Airport",
-      "NLF",
-      "YDNI"
-    ],
-    [
-      "Horn Island",
-      "https://en.wikipedia.org/wiki/Horn_Island_Airport",
-      "HID",
-      "YHID"
-    ],
-    [
-      "Yorke Island",
-      "https://en.wikipedia.org/wiki/Yorke_Island_Airport",
-      "OKR",
-      "YYKI"
-    ]
+    {
+      "city": "Darnley Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darnley_Island_Airport",
+      "codes": [
+        "NLF",
+        "YDNI"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Horn Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Island_Airport",
+      "codes": [
+        "HID",
+        "YHID"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    },
+    {
+      "city": "Yorke Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yorke_Island_Airport",
+      "codes": [
+        "OKR",
+        "YYKI"
+      ],
+      "airlines": [
+        "Hinterland Aviation",
+        "Skytrans Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hinterland Aviation": [
@@ -50,5 +68,7 @@
       "Horn Island",
       "Yorke Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:36Z",
+  "date-time-wikidata": "2024-10-31T17:32:24Z"
 }

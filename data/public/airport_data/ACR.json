@@ -19,23 +19,35 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Florencia",
-      "https://en.wikipedia.org/wiki/Gustavo_Artunduaga_Paredes_Airport",
-      "FLA",
-      "SKFL"
-    ],
-    [
-      "La Chorrera",
-      "https://en.wikipedia.org/wiki/La_Chorrera_Airport",
-      "LCR",
-      "icao code not found"
-    ]
+    {
+      "city": "Florencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustavo_Artunduaga_Paredes_Airport",
+      "codes": [
+        "FLA",
+        "SKFL"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "La Chorrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chorrera_Airport",
+      "codes": [
+        "LCR",
+        "icao code not found"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
       "Florencia",
       "La Chorrera"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:49Z",
+  "date-time-wikidata": "2025-02-15T04:11:36Z"
 }

@@ -21,42 +21,74 @@
     "Tibet Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Daxing International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Chengdu Shuangliu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
-      "CTU",
-      "ZUUU"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Lhasa Gonggar Airport",
-      "https://en.wikipedia.org/wiki/Lhasa_Gonggar_Airport",
-      "LXA",
-      "ZULS"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ],
-    [
-      "Xining Caojiabao International Airport",
-      "https://en.wikipedia.org/wiki/Xining_Caojiabao_International_Airport",
-      "XNN",
-      "ZLXN"
-    ]
+    {
+      "city": "Beijing Daxing International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Shuangliu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Lhasa Gonggar Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lhasa_Gonggar_Airport",
+      "codes": [
+        "LXA",
+        "ZULS"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Xining Caojiabao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xining_Caojiabao_International_Airport",
+      "codes": [
+        "XNN",
+        "ZLXN"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines",
+        "China Eastern Airlines",
+        "Tibet Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Beijing Capital Airlines": [
@@ -73,5 +105,7 @@
       "Xi'an Xianyang International Airport",
       "Xining Caojiabao International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:46Z",
+  "date-time-wikidata": "2026-04-17T10:46:46Z"
 }

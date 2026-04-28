@@ -22,30 +22,53 @@
     "Skyward Express"
   ],
   "destinations": [
-    [
-      "Lamu",
-      "https://en.wikipedia.org/wiki/Manda_Airport",
-      "LAU",
-      "HKLU"
-    ],
-    [
-      "Mombasa",
-      "https://en.wikipedia.org/wiki/Moi_International_Airport",
-      "MBA",
-      "HKMO"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Lamu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manda_Airport",
+      "codes": [
+        "LAU",
+        "HKLU"
+      ],
+      "airlines": [
+        "Mombasa Air Safari",
+        "Safarilink",
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Mombasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moi_International_Airport",
+      "codes": [
+        "MBA",
+        "HKMO"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Safarilink",
+        "Skyward Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Safarilink": [
@@ -63,5 +86,7 @@
       "Lamu",
       "Mombasa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:35Z",
+  "date-time-wikidata": "2025-12-06T02:21:37Z"
 }

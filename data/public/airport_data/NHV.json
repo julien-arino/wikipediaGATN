@@ -20,30 +20,51 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Atuona",
-      "https://en.wikipedia.org/wiki/Atuona_Airport",
-      "AUQ",
-      "NTMN"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ],
-    [
-      "Ua Huka",
-      "https://en.wikipedia.org/wiki/Ua_Huka_Airport",
-      "UAH",
-      "NTMU"
-    ],
-    [
-      "Ua Pou",
-      "https://en.wikipedia.org/wiki/Ua_Pou_Airport",
-      "UAP",
-      "NTMP"
-    ]
+    {
+      "city": "Atuona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Atuona_Airport",
+      "codes": [
+        "AUQ",
+        "NTMN"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Moana",
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Ua Huka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ua_Huka_Airport",
+      "codes": [
+        "UAH",
+        "NTMU"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Ua Pou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ua_Pou_Airport",
+      "codes": [
+        "UAP",
+        "NTMP"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Moana": [
@@ -55,5 +76,7 @@
       "Ua Huka",
       "Ua Pou"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:24Z",
+  "date-time-wikidata": "2025-04-01T22:05:46Z"
 }

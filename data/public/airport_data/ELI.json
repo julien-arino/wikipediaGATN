@@ -19,24 +19,39 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Golovin",
-      "https://en.wikipedia.org/wiki/Golovin_Airport",
-      "GLV",
-      "PAGL"
-    ],
-    [
-      "Nome",
-      "https://en.wikipedia.org/wiki/Nome_Airport",
-      "OME",
-      "PAOM"
-    ],
-    [
-      "White Mountain",
-      "https://en.wikipedia.org/wiki/White_Mountain_Airport",
-      "WMO",
-      "PAWM"
-    ]
+    {
+      "city": "Golovin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golovin_Airport",
+      "codes": [
+        "GLV",
+        "PAGL"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Nome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
+      "codes": [
+        "OME",
+        "PAOM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "White Mountain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/White_Mountain_Airport",
+      "codes": [
+        "WMO",
+        "PAWM"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -44,5 +59,7 @@
       "Nome",
       "White Mountain"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:25Z",
+  "date-time-wikidata": "2025-08-24T15:20:22Z"
 }

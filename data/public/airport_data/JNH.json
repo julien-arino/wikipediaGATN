@@ -19,23 +19,35 @@
     "China Eastern Airlines"
   ],
   "destinations": [
-    [
-      "Beijing–Daxing",
-      "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
-      "PKX",
-      "ZBAD"
-    ],
-    [
-      "Xi'an",
-      "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
       "Beijing–Daxing",
       "Xi'an"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:26Z",
+  "date-time-wikidata": "2026-03-23T19:59:00Z"
 }

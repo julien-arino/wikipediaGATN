@@ -19,24 +19,39 @@
     "Air Inuit"
   ],
   "destinations": [
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Sept-Îles",
-      "https://en.wikipedia.org/wiki/Sept-Îles_Airport",
-      "YZV",
-      "CYZV"
-    ]
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    },
+    {
+      "city": "Sept-Îles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sept-Îles_Airport",
+      "codes": [
+        "YZV",
+        "CYZV"
+      ],
+      "airlines": [
+        "Air Inuit"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Inuit": [
@@ -44,5 +59,7 @@
       "Québec City",
       "Sept-Îles"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:36Z",
+  "date-time-wikidata": "2026-03-14T12:19:02Z"
 }

@@ -24,96 +24,175 @@
     "SiLA Airlines"
   ],
   "destinations": [
-    [
-      "Blagoveshchensk",
-      "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
-      "BQS",
-      "UHBB"
-    ],
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Keperveyem",
-      "https://en.wikipedia.org/wiki/Keperveyem_Airport",
-      "KPW",
-      "UHMK"
-    ],
-    [
-      "Khabarovsk",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Omolon",
-      "https://en.wikipedia.org/wiki/Omolon_Airport",
-      "iata code not found",
-      "UHMN"
-    ],
-    [
-      "Omsukchan",
-      "https://en.wikipedia.org/wiki/Omsukchan_Airport",
-      "iata code not found",
-      "UHMF"
-    ],
-    [
-      "Petropavlovsk-Kamchatsky",
-      "https://en.wikipedia.org/wiki/Yelizovo_Airport",
-      "PKC",
-      "UHPP"
-    ],
-    [
-      "Pevek",
-      "https://en.wikipedia.org/wiki/Pevek_Airport",
-      "PWE",
-      "UHMP"
-    ],
-    [
-      "Severo-Evensk",
-      "https://en.wikipedia.org/wiki/Severo-Evensk_Airport",
-      "SWV",
-      "UHMW"
-    ],
-    [
-      "Susuman",
-      "https://en.wikipedia.org/wiki/Susuman_Airport",
-      "iata code not found",
-      "UHMH"
-    ],
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ],
-    [
-      "Vladivostok",
-      "https://en.wikipedia.org/wiki/Knevichi_Airport",
-      "VVO",
-      "UHWW"
-    ]
+    {
+      "city": "Blagoveshchensk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
+      "codes": [
+        "BQS",
+        "UHBB"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Keperveyem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keperveyem_Airport",
+      "codes": [
+        "KPW",
+        "UHMK"
+      ],
+      "airlines": [
+        "IrAero",
+        "Petropavlovsk-Kamchatsky Air Enterprise"
+      ]
+    },
+    {
+      "city": "Khabarovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Aurora",
+        "IrAero",
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Omolon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Omolon_Airport",
+      "codes": [
+        "iata code not found",
+        "UHMN"
+      ],
+      "airlines": [
+        "SiLA Airlines"
+      ]
+    },
+    {
+      "city": "Omsukchan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Omsukchan_Airport",
+      "codes": [
+        "iata code not found",
+        "UHMF"
+      ],
+      "airlines": [
+        "SiLA Airlines"
+      ]
+    },
+    {
+      "city": "Petropavlovsk-Kamchatsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yelizovo_Airport",
+      "codes": [
+        "PKC",
+        "UHPP"
+      ],
+      "airlines": [
+        "Aurora",
+        "Petropavlovsk-Kamchatsky Air Enterprise"
+      ]
+    },
+    {
+      "city": "Pevek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pevek_Airport",
+      "codes": [
+        "PWE",
+        "UHMP"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Severo-Evensk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Severo-Evensk_Airport",
+      "codes": [
+        "SWV",
+        "UHMW"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Susuman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Susuman_Airport",
+      "codes": [
+        "iata code not found",
+        "UHMH"
+      ],
+      "airlines": [
+        "SiLA Airlines"
+      ]
+    },
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Knevichi_Airport",
+      "codes": [
+        "VVO",
+        "UHWW"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora": [
@@ -147,5 +226,7 @@
       "Omsukchan",
       "Susuman"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:51Z",
+  "date-time-wikidata": "2026-03-10T04:13:29Z"
 }

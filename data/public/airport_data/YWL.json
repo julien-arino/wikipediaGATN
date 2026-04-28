@@ -20,18 +20,29 @@
     "Pacific Coastal Airlines"
   ],
   "destinations": [
-    [
-      "Quesnel Airport",
-      "https://en.wikipedia.org/wiki/Quesnel_Airport",
-      "YQZ",
-      "CYQZ"
-    ],
-    [
-      "Vancouver International Airport",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Quesnel Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quesnel_Airport",
+      "codes": [
+        "YQZ",
+        "CYQZ"
+      ],
+      "airlines": [
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Vancouver International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Central Mountain Air",
+        "Pacific Coastal Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Central Mountain Air": [
@@ -41,5 +52,7 @@
     "Pacific Coastal Airlines": [
       "Vancouver International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:48Z",
+  "date-time-wikidata": "2026-03-10T00:51:32Z"
 }

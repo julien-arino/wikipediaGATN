@@ -20,12 +20,18 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Cali",
-      "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
-      "CLO",
-      "SKCL"
-    ]
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Clic": [
@@ -34,5 +40,7 @@
     "SATENA": [
       "Cali"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:24Z",
+  "date-time-wikidata": "2025-08-07T12:54:34Z"
 }

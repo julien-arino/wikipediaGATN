@@ -21,42 +21,72 @@
     "S7 Airlines"
   ],
   "destinations": [
-    [
-      "Krasnoyarsk–Yemelyanovo",
-      "https://en.wikipedia.org/wiki/Yemelyanovo_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow-Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Moscow–Domodedovo",
-      "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
-      "DME",
-      "UUDD"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Ulaanbaatar",
-      "https://en.wikipedia.org/wiki/Chinggis_Khaan_International_Airport",
-      "UBN",
-      "ZMCK"
-    ],
-    [
-      "Ulan-Ude",
-      "https://en.wikipedia.org/wiki/Baikal_International_Airport",
-      "UUD",
-      "UIUU"
-    ]
+    {
+      "city": "Krasnoyarsk–Yemelyanovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yemelyanovo_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Moscow-Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Ulaanbaatar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chinggis_Khaan_International_Airport",
+      "codes": [
+        "UBN",
+        "ZMCK"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Ulan-Ude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baikal_International_Airport",
+      "codes": [
+        "UUD",
+        "UIUU"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IrAero": [
@@ -71,5 +101,7 @@
       "Moscow-Domodedovo",
       "Novosibirsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:13Z",
+  "date-time-wikidata": "2025-12-31T08:40:00Z"
 }

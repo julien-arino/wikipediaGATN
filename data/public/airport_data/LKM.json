@@ -20,18 +20,30 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Gorontalo",
-      "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
-      "GTO",
-      "WAMG"
-    ],
-    [
-      "Manado",
-      "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
-      "MDC",
-      "WAMM"
-    ]
+    {
+      "city": "Gorontalo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djalaluddin_Airport",
+      "codes": [
+        "GTO",
+        "WAMG"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Manado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
+      "codes": [
+        "MDC",
+        "WAMM"
+      ],
+      "airlines": [
+        "SAM Air",
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SAM Air": [
@@ -42,5 +54,7 @@
       "Gorontalo",
       "Manado"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:20Z",
+  "date-time-wikidata": "2026-03-02T10:16:17Z"
 }

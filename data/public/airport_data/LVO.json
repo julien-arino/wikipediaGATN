@@ -21,18 +21,30 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Leonora",
-      "https://en.wikipedia.org/wiki/Leonora_Airport",
-      "LNO",
-      "YLEO"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Leonora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonora_Airport",
+      "codes": [
+        "LNO",
+        "YLEO"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "National Jet Express",
+        "Skippers Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -45,5 +57,7 @@
       "Leonora",
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:30Z",
+  "date-time-wikidata": "2026-04-11T03:50:43Z"
 }

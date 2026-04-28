@@ -19,23 +19,35 @@
     "Safarilink"
   ],
   "destinations": [
-    [
-      "Amboseli",
-      "https://en.wikipedia.org/wiki/Amboseli_Airport",
-      "ASV",
-      "HKAM"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Amboseli",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amboseli_Airport",
+      "codes": [
+        "ASV",
+        "HKAM"
+      ],
+      "airlines": [
+        "Safarilink"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Safarilink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Safarilink": [
       "Amboseli",
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:02Z",
+  "date-time-wikidata": "2024-08-09T08:33:14Z"
 }

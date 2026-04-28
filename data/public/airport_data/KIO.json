@@ -19,23 +19,35 @@
     "Air Marshall Islands"
   ],
   "destinations": [
-    [
-      "Majuro",
-      "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
-      "MAJ",
-      "PKMJ"
-    ],
-    [
-      "Namdrik",
-      "https://en.wikipedia.org/wiki/Namorik_Airport",
-      "NDK",
-      "icao code not found"
-    ]
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    },
+    {
+      "city": "Namdrik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Namorik_Airport",
+      "codes": [
+        "NDK",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Marshall Islands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Marshall Islands": [
       "Majuro",
       "Namdrik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:55Z",
+  "date-time-wikidata": "2024-12-26T01:37:13Z"
 }

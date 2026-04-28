@@ -19,23 +19,35 @@
     "Ryan Air"
   ],
   "destinations": [
-    [
-      "Aniak",
-      "https://en.wikipedia.org/wiki/Aniak_Airport",
-      "ANI",
-      "PANI"
-    ],
-    [
-      "Stony River",
-      "https://en.wikipedia.org/wiki/Stony_River_Airport",
-      "SRV",
-      "icao code not found"
-    ]
+    {
+      "city": "Aniak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aniak_Airport",
+      "codes": [
+        "ANI",
+        "PANI"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    },
+    {
+      "city": "Stony River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stony_River_Airport",
+      "codes": [
+        "SRV",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ryan Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Ryan Air": [
       "Aniak",
       "Stony River"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:44Z",
+  "date-time-wikidata": "2025-05-31T03:26:04Z"
 }

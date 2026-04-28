@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Cold Bay",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
-      "CDB",
-      "PACD"
-    ],
-    [
-      "King Salmon",
-      "https://en.wikipedia.org/wiki/King_Salmon_Airport",
-      "AKN",
-      "PAKN"
-    ],
-    [
-      "Nelson Lagoon",
-      "https://en.wikipedia.org/wiki/Nelson_Lagoon_Airport",
-      "NLG",
-      "PAOU"
-    ]
+    {
+      "city": "Cold Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "King Salmon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Salmon_Airport",
+      "codes": [
+        "AKN",
+        "PAKN"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Nelson Lagoon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Lagoon_Airport",
+      "codes": [
+        "NLG",
+        "PAOU"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "King Salmon",
       "Nelson Lagoon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:27Z",
+  "date-time-wikidata": "2025-05-31T02:45:56Z"
 }

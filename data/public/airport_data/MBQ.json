@@ -19,24 +19,39 @@
     "BAR Aviation"
   ],
   "destinations": [
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Jinja",
-      "https://en.wikipedia.org/wiki/Jinja_Airport",
-      "JIN",
-      "HUJI"
-    ],
-    [
-      "Pakuba",
-      "https://en.wikipedia.org/wiki/Pakuba_Airport",
-      "PAF",
-      "HUPA"
-    ]
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "BAR Aviation"
+      ]
+    },
+    {
+      "city": "Jinja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinja_Airport",
+      "codes": [
+        "JIN",
+        "HUJI"
+      ],
+      "airlines": [
+        "BAR Aviation"
+      ]
+    },
+    {
+      "city": "Pakuba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pakuba_Airport",
+      "codes": [
+        "PAF",
+        "HUPA"
+      ],
+      "airlines": [
+        "BAR Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "BAR Aviation": [
@@ -44,5 +59,7 @@
       "Jinja",
       "Pakuba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:17Z",
+  "date-time-wikidata": "2026-02-23T20:50:56Z"
 }

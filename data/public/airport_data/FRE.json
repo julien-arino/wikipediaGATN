@@ -19,23 +19,35 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Suavanao",
-      "https://en.wikipedia.org/wiki/Suavanao_Airport",
-      "VAO",
-      "AGGV"
-    ]
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Suavanao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suavanao_Airport",
+      "codes": [
+        "VAO",
+        "AGGV"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
       "Honiara",
       "Suavanao"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:30Z",
+  "date-time-wikidata": "2024-11-21T02:22:51Z"
 }

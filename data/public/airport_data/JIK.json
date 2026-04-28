@@ -20,24 +20,39 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Lemnos",
-      "https://en.wikipedia.org/wiki/Lemnos_International_Airport",
-      "LXS",
-      "LGLM"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Lemnos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lemnos_International_Airport",
+      "codes": [
+        "LXS",
+        "LGLM"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Olympic Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Olympic Air": [
@@ -47,5 +62,7 @@
     "Sky Express": [
       "Athens"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:16Z",
+  "date-time-wikidata": "2026-01-02T09:07:37Z"
 }

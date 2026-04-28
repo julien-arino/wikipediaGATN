@@ -28,126 +28,235 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Ajaccio",
-      "https://en.wikipedia.org/wiki/Ajaccio_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Ajaccio",
-      "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Bastia",
-      "https://en.wikipedia.org/wiki/Bastia_Airport",
-      "BIA",
-      "LFKB"
-    ],
-    [
-      "Bastia",
-      "https://en.wikipedia.org/wiki/Bastia–Poretta_Airport",
-      "BIA",
-      "LFKB"
-    ],
-    [
-      "Belle Île",
-      "https://en.wikipedia.org/wiki/Belle_Île",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Calvi",
-      "https://en.wikipedia.org/wiki/Calvi_–_Sainte-Catherine_Airport",
-      "CLY",
-      "LFKC"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "CGN",
-      "EDDK"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Figari",
-      "https://en.wikipedia.org/wiki/Figari_Sud-Corse_Airport",
-      "FSC",
-      "LFKF"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Manchester",
-      "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "MAN",
-      "EGCC"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Montpellier",
-      "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
-      "MPL",
-      "LFMT"
-    ],
-    [
-      "Nice",
-      "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Toulouse",
-      "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
-      "TLS",
-      "LFBO"
-    ]
+    {
+      "city": "Ajaccio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Air France",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Ajaccio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Air France",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Bastia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia_Airport",
+      "codes": [
+        "BIA",
+        "LFKB"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Air France"
+      ]
+    },
+    {
+      "city": "Bastia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia–Poretta_Airport",
+      "codes": [
+        "BIA",
+        "LFKB"
+      ],
+      "airlines": [
+        "Air Corsica",
+        "Air France"
+      ]
+    },
+    {
+      "city": "Belle Île",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belle_Île",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Finist'air"
+      ]
+    },
+    {
+      "city": "Calvi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calvi_–_Sainte-Catherine_Airport",
+      "codes": [
+        "CLY",
+        "LFKC"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Swiftair"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Figari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Figari_Sud-Corse_Airport",
+      "codes": [
+        "FSC",
+        "LFKF"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Air France",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Montpellier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
+      "codes": [
+        "MPL",
+        "LFMT"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "Air France",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Toulouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
+      "codes": [
+        "TLS",
+        "LFBO"
+      ],
+      "airlines": [
+        "Twin Jet",
+        "Volotea"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -194,5 +303,7 @@
     "Swiftair": [
       "Cologne/Bonn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:48Z",
+  "date-time-wikidata": "2026-02-28T08:32:32Z"
 }

@@ -19,23 +19,35 @@
     "Maldivian (airline)"
   ],
   "destinations": [
-    [
-      "Hanimaadhoo International Airport",
-      "https://en.wikipedia.org/wiki/Hanimaadhoo_International_Airport",
-      "HAQ",
-      "VRMH"
-    ],
-    [
-      "Velana International Airport",
-      "https://en.wikipedia.org/wiki/Velana_International_Airport",
-      "MLE",
-      "VRMM"
-    ]
+    {
+      "city": "Hanimaadhoo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanimaadhoo_International_Airport",
+      "codes": [
+        "HAQ",
+        "VRMH"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    },
+    {
+      "city": "Velana International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM"
+      ],
+      "airlines": [
+        "Maldivian (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maldivian (airline)": [
       "Hanimaadhoo International Airport",
       "Velana International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:35Z",
+  "date-time-wikidata": "2026-03-03T17:21:31Z"
 }

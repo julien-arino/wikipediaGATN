@@ -19,30 +19,50 @@
     "Japan Air Commuter"
   ],
   "destinations": [
-    [
-      "Amami Ōshima",
-      "https://en.wikipedia.org/wiki/Amami_Airport",
-      "ASJ",
-      "RJKA"
-    ],
-    [
-      "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
-      "KOJ",
-      "RJFK"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Tokunoshima",
-      "https://en.wikipedia.org/wiki/Tokunoshima_Airport",
-      "TKN",
-      "RJKN"
-    ]
+    {
+      "city": "Amami Ōshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amami_Airport",
+      "codes": [
+        "ASJ",
+        "RJKA"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Kagoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "codes": [
+        "KOJ",
+        "RJFK"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Tokunoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokunoshima_Airport",
+      "codes": [
+        "TKN",
+        "RJKN"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Japan Air Commuter": [
@@ -51,5 +71,7 @@
       "Naha",
       "Tokunoshima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:32Z",
+  "date-time-wikidata": "2026-02-19T02:11:14Z"
 }

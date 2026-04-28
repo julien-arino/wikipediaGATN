@@ -20,18 +20,29 @@
     "MIAT Mongolian Airlines"
   ],
   "destinations": [
-    [
-      "Cheongju",
-      "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
-      "CJJ",
-      "RKTU"
-    ],
-    [
-      "Ulaanbaatar",
-      "https://en.wikipedia.org/wiki/Chinggis_Khaan_International_Airport",
-      "UBN",
-      "ZMCK"
-    ]
+    {
+      "city": "Cheongju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
+      "codes": [
+        "CJJ",
+        "RKTU"
+      ],
+      "airlines": [
+        "Hunnu Air"
+      ]
+    },
+    {
+      "city": "Ulaanbaatar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chinggis_Khaan_International_Airport",
+      "codes": [
+        "UBN",
+        "ZMCK"
+      ],
+      "airlines": [
+        "Hunnu Air",
+        "MIAT Mongolian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Hunnu Air": [
@@ -41,5 +52,7 @@
     "MIAT Mongolian Airlines": [
       "Ulaanbaatar"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:35Z",
+  "date-time-wikidata": "2026-03-03T06:40:54Z"
 }

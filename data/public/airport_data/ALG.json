@@ -7,6 +7,7 @@
   "lat": "36.7014097",
   "lon": "3.2293305",
   "altitude": "25",
+  "continent": "Africa",
   "region": "Alger",
   "country_alpha3": "DZA",
   "country_name": "Algeria",
@@ -22,84 +23,151 @@
     "Turkish Cargo"
   ],
   "destinations": [
-    [
-      "Dubai–Al Maktoum",
-      "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "DWC",
-      "OMDW"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/London–Heathrow",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Nouadhibou",
-      "https://en.wikipedia.org/wiki/Nouadhibou_International_Airport",
-      "NDB",
-      "GQPP"
-    ],
-    [
-      "Nouakchott",
-      "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
-      "NKC",
-      "GQNO"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris-Charles_de_Gaulle_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome–Fiumicino",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
-      "TUN",
-      "DTTA"
-    ]
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Air Algérie Cargo",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Air Algérie Cargo",
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Heathrow",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Swiftair"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Nouadhibou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouadhibou_International_Airport",
+      "codes": [
+        "NDB",
+        "GQPP"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Nouakchott",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
+      "codes": [
+        "NKC",
+        "GQNO"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris-Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome–Fiumicino",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Air Algérie Cargo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie Cargo": [
@@ -128,5 +196,6 @@
       "Istanbul"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:14:00Z",
+  "date-time-wikidata": "2026-04-24T09:27:54Z"
 }

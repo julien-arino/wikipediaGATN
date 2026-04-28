@@ -19,30 +19,50 @@
     "Air North"
   ],
   "destinations": [
-    [
-      "Fairbanks",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Inuvik",
-      "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
-      "YEV",
-      "CYEV"
-    ],
-    [
-      "Old Crow",
-      "https://en.wikipedia.org/wiki/Old_Crow_Airport",
-      "YOC",
-      "CYOC"
-    ],
-    [
-      "Whitehorse",
-      "https://en.wikipedia.org/wiki/Erik_Nielsen_Whitehorse_International_Airport",
-      "YXY",
-      "CYXY"
-    ]
+    {
+      "city": "Fairbanks",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Inuvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inuvik_(Mike_Zubko)_Airport",
+      "codes": [
+        "YEV",
+        "CYEV"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Old Crow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_Crow_Airport",
+      "codes": [
+        "YOC",
+        "CYOC"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    },
+    {
+      "city": "Whitehorse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erik_Nielsen_Whitehorse_International_Airport",
+      "codes": [
+        "YXY",
+        "CYXY"
+      ],
+      "airlines": [
+        "Air North"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air North": [
@@ -51,5 +71,7 @@
       "Old Crow",
       "Whitehorse"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:26Z",
+  "date-time-wikidata": "2026-01-24T01:11:24Z"
 }

@@ -22,24 +22,41 @@
     "Helitours"
   ],
   "destinations": [
-    [
-      "Colombo–Bandaranaike",
-      "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-      "CMB",
-      "VCBI"
-    ],
-    [
-      "Colombo–Ratmalana",
-      "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
-      "RML",
-      "VCCC"
-    ],
-    [
-      "Hambantota–Mattala",
-      "https://en.wikipedia.org/wiki/Mattala_Rajapaksa_International_Airport",
-      "HRI",
-      "VCRI"
-    ]
+    {
+      "city": "Colombo–Bandaranaike",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
+      "codes": [
+        "CMB",
+        "VCBI"
+      ],
+      "airlines": [
+        "Cinnamon Air"
+      ]
+    },
+    {
+      "city": "Colombo–Ratmalana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colombo_International_Airport,_Ratmalana",
+      "codes": [
+        "RML",
+        "VCCC"
+      ],
+      "airlines": [
+        "Air Senok",
+        "FitsAir",
+        "Helitours"
+      ]
+    },
+    {
+      "city": "Hambantota–Mattala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mattala_Rajapaksa_International_Airport",
+      "codes": [
+        "HRI",
+        "VCRI"
+      ],
+      "airlines": [
+        "Helitours"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Senok": [
@@ -55,5 +72,7 @@
       "Colombo–Ratmalana",
       "Hambantota–Mattala"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:35Z",
+  "date-time-wikidata": "2025-08-02T22:54:10Z"
 }

@@ -20,24 +20,40 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Losuia",
-      "https://en.wikipedia.org/wiki/Losuia_Airport",
-      "LSA",
-      "AYKA"
-    ],
-    [
-      "Misima Island",
-      "https://en.wikipedia.org/wiki/Misima_Airport",
-      "MIS",
-      "AYMS"
-    ],
-    [
-      "Port Moresby",
-      "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
-      "POM",
-      "AYPY"
-    ]
+    {
+      "city": "Losuia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Losuia_Airport",
+      "codes": [
+        "LSA",
+        "AYKA"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Misima Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Misima_Airport",
+      "codes": [
+        "MIS",
+        "AYMS"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Port Moresby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
+      "codes": [
+        "POM",
+        "AYPY"
+      ],
+      "airlines": [
+        "Air Niugini",
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Niugini": [
@@ -48,5 +64,7 @@
       "Misima Island",
       "Port Moresby"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:37Z",
+  "date-time-wikidata": "2026-01-09T08:04:01Z"
 }

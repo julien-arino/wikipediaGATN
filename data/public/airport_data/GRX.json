@@ -24,78 +24,141 @@
     "Vueling"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Asturias",
-      "https://en.wikipedia.org/wiki/Asturias_Airport",
-      "OVD",
-      "LEAS"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bilbao",
-      "https://en.wikipedia.org/wiki/Bilbao_Airport",
-      "BIO",
-      "LEBB"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid-Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Melilla",
-      "https://en.wikipedia.org/wiki/Melilla_Airport",
-      "MLN",
-      "GEML"
-    ],
-    [
-      "Palma de Mallorca",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Paris_Orly_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Porto",
-      "https://en.wikipedia.org/wiki/Porto_Airport",
-      "OPO",
-      "LPPR"
-    ],
-    [
-      "Santander",
-      "https://en.wikipedia.org/wiki/Santander_Airport",
-      "SDR",
-      "LEXJ"
-    ],
-    [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
-      "TFN",
-      "GCXO"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Asturias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Asturias_Airport",
+      "codes": [
+        "OVD",
+        "LEAS"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Bilbao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
+      "codes": [
+        "BIO",
+        "LEBB"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Binter Canarias",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid-Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Melilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melilla_Airport",
+      "codes": [
+        "MLN",
+        "GEML"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Air Europa",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Santander",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santander_Airport",
+      "codes": [
+        "SDR",
+        "LEXJ"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Tenerife–North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
+      "codes": [
+        "TFN",
+        "GCXO"
+      ],
+      "airlines": [
+        "Binter Canarias",
+        "Vueling"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Europa": [
@@ -125,5 +188,7 @@
       "Paris–Orly",
       "Tenerife–North"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:03Z",
+  "date-time-wikidata": "2026-04-02T21:06:58Z"
 }

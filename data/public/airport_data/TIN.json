@@ -20,30 +20,51 @@
     "Tassili Airlines"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Béchar",
-      "https://en.wikipedia.org/wiki/Boudghene_Ben_Ali_Lotfi_Airport",
-      "CBH",
-      "DAOR"
-    ],
-    [
-      "Constantine",
-      "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
-      "CZL",
-      "DABC"
-    ],
-    [
-      "Oran",
-      "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
-      "ORN",
-      "DAOO"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Béchar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boudghene_Ben_Ali_Lotfi_Airport",
+      "codes": [
+        "CBH",
+        "DAOR"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Constantine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
+      "codes": [
+        "CZL",
+        "DABC"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Oran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oran_Es_Sénia_Airport",
+      "codes": [
+        "ORN",
+        "DAOO"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -55,5 +76,7 @@
     "Tassili Airlines": [
       "Algiers"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:28Z",
+  "date-time-wikidata": "2025-11-27T16:39:43Z"
 }

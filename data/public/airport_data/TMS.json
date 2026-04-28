@@ -23,48 +23,87 @@
     "TAP Air Portugal"
   ],
   "destinations": [
-    [
-      "Accra",
-      "https://en.wikipedia.org/wiki/Accra_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Libreville_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Léon-Mba_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Lisbon",
-      "https://en.wikipedia.org/wiki/Lisbon_Airport",
-      "LIS",
-      "LPPT"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Luanda–Agostinho Neto",
-      "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
-      "NBJ",
-      "FNBJ"
-    ],
-    [
-      "Príncipe",
-      "https://en.wikipedia.org/wiki/Príncipe_Airport",
-      "PCP",
-      "FPPR"
-    ]
+    {
+      "city": "Accra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Afrijet"
+      ]
+    },
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Léon-Mba_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Afrijet"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT"
+      ],
+      "airlines": [
+        "STP Airways",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Luanda–Agostinho Neto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
+      "codes": [
+        "NBJ",
+        "FNBJ"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Príncipe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Príncipe_Airport",
+      "codes": [
+        "PCP",
+        "FPPR"
+      ],
+      "airlines": [
+        "Afrijet",
+        "STP Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afrijet": [
@@ -86,5 +125,7 @@
       "Accra",
       "Lisbon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:10Z",
+  "date-time-wikidata": "2026-02-25T09:14:04Z"
 }

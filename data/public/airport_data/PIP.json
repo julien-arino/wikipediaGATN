@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "King Salmon",
-      "https://en.wikipedia.org/wiki/King_Salmon_Airport",
-      "AKN",
-      "PAKN"
-    ],
-    [
-      "Port Heiden",
-      "https://en.wikipedia.org/wiki/Port_Heiden_Airport",
-      "PTH",
-      "PAPH"
-    ],
-    [
-      "Ugashik Bay",
-      "https://en.wikipedia.org/wiki/Ugashik_Bay_Airport",
-      "UGB",
-      "icao code not found"
-    ]
+    {
+      "city": "King Salmon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Salmon_Airport",
+      "codes": [
+        "AKN",
+        "PAKN"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Port Heiden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Heiden_Airport",
+      "codes": [
+        "PTH",
+        "PAPH"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Ugashik Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ugashik_Bay_Airport",
+      "codes": [
+        "UGB",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "Port Heiden",
       "Ugashik Bay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:42Z",
+  "date-time-wikidata": "2025-10-07T19:16:18Z"
 }

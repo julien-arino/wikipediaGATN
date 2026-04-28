@@ -19,24 +19,39 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Cape Lisburne",
-      "https://en.wikipedia.org/wiki/Cape_Lisburne_LRRS_Airport",
-      "LUR",
-      "PALU"
-    ],
-    [
-      "Kivalina",
-      "https://en.wikipedia.org/wiki/Kivalina_Airport",
-      "KVL",
-      "PAVL"
-    ],
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ]
+    {
+      "city": "Cape Lisburne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Lisburne_LRRS_Airport",
+      "codes": [
+        "LUR",
+        "PALU"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kivalina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kivalina_Airport",
+      "codes": [
+        "KVL",
+        "PAVL"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -44,5 +59,7 @@
       "Kivalina",
       "Kotzebue"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:02Z",
+  "date-time-wikidata": "2025-08-24T15:13:11Z"
 }

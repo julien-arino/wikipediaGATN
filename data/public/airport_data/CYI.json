@@ -19,23 +19,35 @@
     "Uni Air"
   ],
   "destinations": [
-    [
-      "Kinmen",
-      "https://en.wikipedia.org/wiki/Kinmen_Airport",
-      "KNH",
-      "RCBS"
-    ],
-    [
-      "Penghu",
-      "https://en.wikipedia.org/wiki/Penghu_Airport",
-      "MZG",
-      "RCQC"
-    ]
+    {
+      "city": "Kinmen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kinmen_Airport",
+      "codes": [
+        "KNH",
+        "RCBS"
+      ],
+      "airlines": [
+        "Uni Air"
+      ]
+    },
+    {
+      "city": "Penghu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penghu_Airport",
+      "codes": [
+        "MZG",
+        "RCQC"
+      ],
+      "airlines": [
+        "Uni Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Uni Air": [
       "Kinmen",
       "Penghu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:59Z",
+  "date-time-wikidata": "2026-01-18T11:26:55Z"
 }

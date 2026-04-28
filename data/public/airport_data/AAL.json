@@ -28,120 +28,218 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Alicante Airport",
-      "https://en.wikipedia.org/wiki/Alicante_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam Airport Schiphol",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Antalya Airport",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Bornholm Airport",
-      "https://en.wikipedia.org/wiki/Bornholm_Airport",
-      "RNN",
-      "EKRN"
-    ],
-    [
-      "Copenhagen Airport",
-      "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "CPH",
-      "EKCH"
-    ],
-    [
-      "Gatwick Airport",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "Gazipaşa–Alanya Airport",
-      "https://en.wikipedia.org/wiki/Gazipa%C5%9Fa%E2%80%93Alanya_Airport",
-      "GZP",
-      "LTFG"
-    ],
-    [
-      "Gran Canaria Airport",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Madeira Airport",
-      "https://en.wikipedia.org/wiki/Madeira_Airport",
-      "FNC",
-      "LPMA"
-    ],
-    [
-      "Málaga Airport",
-      "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Naples International Airport",
-      "https://en.wikipedia.org/wiki/Naples_International_Airport",
-      "NAP",
-      "LIRN"
-    ],
-    [
-      "Nice Côte d'Azur Airport",
-      "https://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport",
-      "NCE",
-      "LFMN"
-    ],
-    [
-      "Nuuk Airport",
-      "https://en.wikipedia.org/wiki/Nuuk_Airport",
-      "GOH",
-      "BGGH"
-    ],
-    [
-      "Oslo Airport, Gardermoen",
-      "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "OSL",
-      "ENGM"
-    ],
-    [
-      "Palma de Mallorca Airport",
-      "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "PMI",
-      "LEPA"
-    ],
-    [
-      "Scandinavian Mountains Airport",
-      "https://en.wikipedia.org/wiki/Scandinavian_Mountains_Airport",
-      "SCR",
-      "ESKS"
-    ],
-    [
-      "Tenerife South Airport",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "TFS",
-      "GCTS"
-    ],
-    [
-      "Verona Villafranca Airport",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ],
-    [
-      "Vágar Airport",
-      "https://en.wikipedia.org/wiki/V%C3%A1gar_Airport",
-      "FAE",
-      "EKVG"
-    ]
+    {
+      "city": "Alicante Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Amsterdam Airport Schiphol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Antalya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Bornholm Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bornholm_Airport",
+      "codes": [
+        "RNN",
+        "EKRN"
+      ],
+      "airlines": [
+        "DAT (airline)"
+      ]
+    },
+    {
+      "city": "Copenhagen Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Gatwick Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Gazipaşa–Alanya Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gazipa%C5%9Fa%E2%80%93Alanya_Airport",
+      "codes": [
+        "GZP",
+        "LTFG"
+      ],
+      "airlines": [
+        "Corendon Airlines"
+      ]
+    },
+    {
+      "city": "Gran Canaria Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Madeira Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeira_Airport",
+      "codes": [
+        "FNC",
+        "LPMA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Málaga Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Naples International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Nice Côte d'Azur Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Nuuk Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nuuk_Airport",
+      "codes": [
+        "GOH",
+        "BGGH"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Oslo Airport, Gardermoen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Scandinavian Mountains Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scandinavian_Mountains_Airport",
+      "codes": [
+        "SCR",
+        "ESKS"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Tenerife South Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Sunclass Airlines"
+      ]
+    },
+    {
+      "city": "Verona Villafranca Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Vágar Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V%C3%A1gar_Airport",
+      "codes": [
+        "FAE",
+        "EKVG"
+      ],
+      "airlines": [
+        "Atlantic Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Atlantic Airways": [
@@ -186,5 +284,7 @@
       "Naples International Airport",
       "Verona Villafranca Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:13Z",
+  "date-time-wikidata": "2026-04-22T19:04:03Z"
 }

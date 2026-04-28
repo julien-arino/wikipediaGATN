@@ -7,6 +7,7 @@
   "lat": "36.7129295",
   "lon": "5.0737222",
   "altitude": "6",
+  "continent": "Africa",
   "region": "Bejaia",
   "country_alpha3": "DZA",
   "country_name": "Algeria",
@@ -23,66 +24,122 @@
     "Volotea"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Hassi Messaoud",
-      "https://en.wikipedia.org/wiki/Hassi_Messaoud_Airport",
-      "HME",
-      "DAUH"
-    ],
-    [
-      "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Paris–Orly",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Saint-Étienne",
-      "https://en.wikipedia.org/wiki/Saint-Étienne–Bouthéon_Airport",
-      "EBU",
-      "LFMH"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Hassi Messaoud",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hassi_Messaoud_Airport",
+      "codes": [
+        "HME",
+        "DAUH"
+      ],
+      "airlines": [
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Lille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Orly",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Saint-Étienne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Étienne–Bouthéon_Airport",
+      "codes": [
+        "EBU",
+        "LFMH"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -112,5 +169,6 @@
       "Marseille"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:04:06Z",
+  "date-time-wikidata": "2026-03-27T21:57:46Z"
 }

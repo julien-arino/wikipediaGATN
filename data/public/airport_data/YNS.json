@@ -19,23 +19,35 @@
     "Air Creebec"
   ],
   "destinations": [
-    [
-      "Chibougamau",
-      "https://en.wikipedia.org/wiki/Chibougamau/Chapais_Airport",
-      "YMT",
-      "CYMT"
-    ],
-    [
-      "Montreal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ]
+    {
+      "city": "Chibougamau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chibougamau/Chapais_Airport",
+      "codes": [
+        "YMT",
+        "CYMT"
+      ],
+      "airlines": [
+        "Air Creebec"
+      ]
+    },
+    {
+      "city": "Montreal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Creebec"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Creebec": [
       "Chibougamau",
       "Montreal–Trudeau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:13Z",
+  "date-time-wikidata": "2026-03-12T06:58:28Z"
 }

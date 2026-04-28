@@ -25,180 +25,354 @@
     "Japan Airlines"
   ],
   "destinations": [
-    [
-      "Akita",
-      "https://en.wikipedia.org/wiki/Akita_Airport",
-      "AXT",
-      "RJSK"
-    ],
-    [
-      "Amami Ōshima",
-      "https://en.wikipedia.org/wiki/Amami_Airport",
-      "ASJ",
-      "RJKA"
-    ],
-    [
-      "Aomori",
-      "https://en.wikipedia.org/wiki/Aomori_Airport",
-      "AOJ",
-      "RJSA"
-    ],
-    [
-      "Fukuoka",
-      "https://en.wikipedia.org/wiki/Fukuoka_Airport",
-      "FUK",
-      "RJFF"
-    ],
-    [
-      "Fukushima",
-      "https://en.wikipedia.org/wiki/Fukushima_Airport",
-      "FKS",
-      "RJSF"
-    ],
-    [
-      "Hakodate",
-      "https://en.wikipedia.org/wiki/Hakodate_Airport",
-      "HKD",
-      "RJCH"
-    ],
-    [
-      "Hanamaki",
-      "https://en.wikipedia.org/wiki/Hanamaki_Airport",
-      "HNA",
-      "RJSI"
-    ],
-    [
-      "Izumo",
-      "https://en.wikipedia.org/wiki/Izumo_Airport",
-      "IZO",
-      "RJOC"
-    ],
-    [
-      "Kagoshima",
-      "https://en.wikipedia.org/wiki/Kagoshima_Airport",
-      "KOJ",
-      "RJFK"
-    ],
-    [
-      "Kumamoto",
-      "https://en.wikipedia.org/wiki/Kumamoto_Airport",
-      "KMJ",
-      "RJFT"
-    ],
-    [
-      "Kōchi",
-      "https://en.wikipedia.org/wiki/Kōchi_Airport",
-      "KCZ",
-      "RJOK"
-    ],
-    [
-      "Matsumoto",
-      "https://en.wikipedia.org/wiki/Matsumoto_Airport",
-      "MMJ",
-      "RJAF"
-    ],
-    [
-      "Matsuyama",
-      "https://en.wikipedia.org/wiki/Matsuyama_Airport",
-      "MYJ",
-      "RJOM"
-    ],
-    [
-      "Misawa",
-      "https://en.wikipedia.org/wiki/Misawa_Airport",
-      "MSJ",
-      "RJSM"
-    ],
-    [
-      "Miyazaki",
-      "https://en.wikipedia.org/wiki/Miyazaki_Airport",
-      "KMI",
-      "RJFM"
-    ],
-    [
-      "Nagasaki",
-      "https://en.wikipedia.org/wiki/Nagasaki_Airport",
-      "NGS",
-      "RJFU"
-    ],
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Niigata",
-      "https://en.wikipedia.org/wiki/Niigata_Airport",
-      "KIJ",
-      "RJSN"
-    ],
-    [
-      "Oki",
-      "https://en.wikipedia.org/wiki/Oki_Airport",
-      "OKI",
-      "RJNO"
-    ],
-    [
-      "Sapporo–Chitose",
-      "https://en.wikipedia.org/wiki/New_Chitose_Airport",
-      "CTS",
-      "RJCC"
-    ],
-    [
-      "Sendai",
-      "https://en.wikipedia.org/wiki/Sendai_Airport",
-      "SDJ",
-      "RJSS"
-    ],
-    [
-      "Tajima",
-      "https://en.wikipedia.org/wiki/Tajima_Airport",
-      "TJH",
-      "RJBT"
-    ],
-    [
-      "Tanegashima",
-      "https://en.wikipedia.org/wiki/New_Tanegashima_Airport",
-      "TNE",
-      "RJFG"
-    ],
-    [
-      "Tokyo-Narita",
-      "https://en.wikipedia.org/wiki/Narita_International_Airport",
-      "NRT",
-      "RJAA"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Tokyo–Haneda",
-      "HND",
-      "RJTT"
-    ],
-    [
-      "Yakushima",
-      "https://en.wikipedia.org/wiki/Yakushima_Airport",
-      "KUM",
-      "RJFC"
-    ],
-    [
-      "Yamagata",
-      "https://en.wikipedia.org/wiki/Yamagata_Airport",
-      "GAJ",
-      "RJSC"
-    ],
-    [
-      "Ōita",
-      "https://en.wikipedia.org/wiki/Oita_Airport",
-      "OIT",
-      "RJFO"
-    ]
+    {
+      "city": "Akita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akita_Airport",
+      "codes": [
+        "AXT",
+        "RJSK"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Amami Ōshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amami_Airport",
+      "codes": [
+        "ASJ",
+        "RJKA"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Aomori",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aomori_Airport",
+      "codes": [
+        "AOJ",
+        "RJSA"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Fukushima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukushima_Airport",
+      "codes": [
+        "FKS",
+        "RJSF"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "Ibex Airlines"
+      ]
+    },
+    {
+      "city": "Hakodate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hakodate_Airport",
+      "codes": [
+        "HKD",
+        "RJCH"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Hanamaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanamaki_Airport",
+      "codes": [
+        "HNA",
+        "RJSI"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Izumo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Izumo_Airport",
+      "codes": [
+        "IZO",
+        "RJOC"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Kagoshima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kagoshima_Airport",
+      "codes": [
+        "KOJ",
+        "RJFK"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Kumamoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kumamoto_Airport",
+      "codes": [
+        "KMJ",
+        "RJFT"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Amakusa Airlines",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Kōchi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kōchi_Airport",
+      "codes": [
+        "KCZ",
+        "RJOK"
+      ],
+      "airlines": [
+        "ANA Wings"
+      ]
+    },
+    {
+      "city": "Matsumoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matsumoto_Airport",
+      "codes": [
+        "MMJ",
+        "RJAF"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Matsuyama",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matsuyama_Airport",
+      "codes": [
+        "MYJ",
+        "RJOM"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Misawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Misawa_Airport",
+      "codes": [
+        "MSJ",
+        "RJSM"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Miyazaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miyazaki_Airport",
+      "codes": [
+        "KMI",
+        "RJFM"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Nagasaki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nagasaki_Airport",
+      "codes": [
+        "NGS",
+        "RJFU"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Niigata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niigata_Airport",
+      "codes": [
+        "KIJ",
+        "RJSN"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Ibex Airlines",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Oki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oki_Airport",
+      "codes": [
+        "OKI",
+        "RJNO"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Sapporo–Chitose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
+      "codes": [
+        "CTS",
+        "RJCC"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "J-Air",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Sendai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sendai_Airport",
+      "codes": [
+        "SDJ",
+        "RJSS"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Ibex Airlines",
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Tajima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tajima_Airport",
+      "codes": [
+        "TJH",
+        "RJBT"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Tanegashima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Tanegashima_Airport",
+      "codes": [
+        "TNE",
+        "RJFG"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Tokyo-Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo–Haneda",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "All Nippon Airways",
+        "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Yakushima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakushima_Airport",
+      "codes": [
+        "KUM",
+        "RJFC"
+      ],
+      "airlines": [
+        "Japan Air Commuter"
+      ]
+    },
+    {
+      "city": "Yamagata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yamagata_Airport",
+      "codes": [
+        "GAJ",
+        "RJSC"
+      ],
+      "airlines": [
+        "J-Air"
+      ]
+    },
+    {
+      "city": "Ōita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oita_Airport",
+      "codes": [
+        "OIT",
+        "RJFO"
+      ],
+      "airlines": [
+        "ANA Wings",
+        "J-Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "All Nippon Airways": [
@@ -270,5 +444,7 @@
       "Tokyo-Narita",
       "Tokyo–Haneda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:11Z",
+  "date-time-wikidata": "2026-04-22T02:41:50Z"
 }

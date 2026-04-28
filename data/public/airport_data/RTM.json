@@ -27,168 +27,307 @@
     "Transavia"
   ],
   "destinations": [
-    [
-      "Al Hoceima",
-      "https://en.wikipedia.org/wiki/Cherif_Al_Idrissi_Airport",
-      "AHU",
-      "GMTA"
-    ],
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Ankara",
-      "https://en.wikipedia.org/wiki/Ankara_Esenboga_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Bergerac",
-      "https://en.wikipedia.org/wiki/Bergerac_Dordogne_Perigord_Airport",
-      "EGC",
-      "LFBE"
-    ],
-    [
-      "Corfu",
-      "https://en.wikipedia.org/wiki/Corfu_International_Airport",
-      "CFU",
-      "LGKR"
-    ],
-    [
-      "Fez",
-      "https://en.wikipedia.org/wiki/Fès–Saïs_Airport",
-      "FEZ",
-      "GMFF"
-    ],
-    [
-      "Fuerteventura",
-      "https://en.wikipedia.org/wiki/Fuerteventura_Airport",
-      "FUE",
-      "GCFV"
-    ],
-    [
-      "Girona",
-      "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
-      "GRO",
-      "LEGE"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Heraklion",
-      "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "HER",
-      "LGIR"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Izmir",
-      "https://en.wikipedia.org/wiki/Izmir_Adnan_Menderes_Airport",
-      "ADB",
-      "LTBJ"
-    ],
-    [
-      "Kayseri",
-      "https://en.wikipedia.org/wiki/Erkilet_Airport",
-      "ASR",
-      "LTAU"
-    ],
-    [
-      "Kos",
-      "https://en.wikipedia.org/wiki/Kos_International_Airport",
-      "KGS",
-      "LGKO"
-    ],
-    [
-      "Kuusamo",
-      "https://en.wikipedia.org/wiki/Kuusamo_Airport",
-      "KAO",
-      "EFKS"
-    ],
-    [
-      "London–City",
-      "https://en.wikipedia.org/wiki/London_City_Airport",
-      "LCY",
-      "EGLC"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
-      "PMO",
-      "LICJ"
-    ],
-    [
-      "Rhodes",
-      "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
-      "RHO",
-      "LGRP"
-    ],
-    [
-      "Split",
-      "https://en.wikipedia.org/wiki/Split_Airport",
-      "SPU",
-      "LDSP"
-    ],
-    [
-      "Tangier",
-      "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
-      "TNG",
-      "GMTT"
-    ],
-    [
-      "Tenerife–South",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "TFS",
-      "GCTS"
-    ],
-    [
-      "Toulon",
-      "https://en.wikipedia.org/wiki/Toulon–Hyères_Airport",
-      "TLN",
-      "LFTH"
-    ],
-    [
-      "Zadar",
-      "https://en.wikipedia.org/wiki/Zadar_Airport",
-      "ZAD",
-      "LDZD"
-    ],
-    [
-      "Zakynthos",
-      "https://en.wikipedia.org/wiki/Zakynthos_Airport",
-      "ZTH",
-      "LGZA"
-    ]
+    {
+      "city": "Al Hoceima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherif_Al_Idrissi_Airport",
+      "codes": [
+        "AHU",
+        "GMTA"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Esenboga_Airport",
+      "codes": [
+        "ESB",
+        "LTAC"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Bergerac",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bergerac_Dordogne_Perigord_Airport",
+      "codes": [
+        "EGC",
+        "LFBE"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Fez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fès–Saïs_Airport",
+      "codes": [
+        "FEZ",
+        "GMFF"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Fuerteventura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuerteventura_Airport",
+      "codes": [
+        "FUE",
+        "GCFV"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Girona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
+      "codes": [
+        "GRO",
+        "LEGE"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Heraklion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "codes": [
+        "HER",
+        "LGIR"
+      ],
+      "airlines": [
+        "TUI fly Netherlands",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Izmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Izmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Kayseri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erkilet_Airport",
+      "codes": [
+        "ASR",
+        "LTAU"
+      ],
+      "airlines": [
+        "SunExpress"
+      ]
+    },
+    {
+      "city": "Kos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kos_International_Airport",
+      "codes": [
+        "KGS",
+        "LGKO"
+      ],
+      "airlines": [
+        "TUI fly Netherlands",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Kuusamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuusamo_Airport",
+      "codes": [
+        "KAO",
+        "EFKS"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "London–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_City_Airport",
+      "codes": [
+        "LCY",
+        "EGLC"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falcone_Borsellino_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Split",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Split_Airport",
+      "codes": [
+        "SPU",
+        "LDSP"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Tangier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
+      "codes": [
+        "TNG",
+        "GMTT"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Toulon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulon–Hyères_Airport",
+      "codes": [
+        "TLN",
+        "LFTH"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Zadar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zadar_Airport",
+      "codes": [
+        "ZAD",
+        "LDZD"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Zakynthos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zakynthos_Airport",
+      "codes": [
+        "ZTH",
+        "LGZA"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
@@ -240,5 +379,7 @@
       "Rhodes",
       "Zakynthos"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:52Z",
+  "date-time-wikidata": "2026-04-25T22:05:47Z"
 }

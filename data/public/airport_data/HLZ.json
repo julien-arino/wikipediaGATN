@@ -21,54 +21,95 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Christchurch",
-      "https://en.wikipedia.org/wiki/Christchurch_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Gisborne",
-      "https://en.wikipedia.org/wiki/Gisborne_Airport",
-      "GIS",
-      "NZGS"
-    ],
-    [
-      "Gold Coast",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Napier",
-      "https://en.wikipedia.org/wiki/Hawke's_Bay_Airport",
-      "NPE",
-      "NZNR"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Wellington",
-      "https://en.wikipedia.org/wiki/Wellington_Airport",
-      "WLG",
-      "NZWN"
-    ],
-    [
-      "Whakatāne",
-      "https://en.wikipedia.org/wiki/Whakatāne_Airport",
-      "WHK",
-      "NZWK"
-    ],
-    [
-      "Whangārei",
-      "https://en.wikipedia.org/wiki/Whangarei_Airport",
-      "WRE",
-      "NZWR"
-    ]
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Gisborne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gisborne_Airport",
+      "codes": [
+        "GIS",
+        "NZGS"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Napier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawke's_Bay_Airport",
+      "codes": [
+        "NPE",
+        "NZNR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_Airport",
+      "codes": [
+        "WLG",
+        "NZWN"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Whakatāne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whakatāne_Airport",
+      "codes": [
+        "WHK",
+        "NZWK"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    },
+    {
+      "city": "Whangārei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whangarei_Airport",
+      "codes": [
+        "WRE",
+        "NZWR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -86,5 +127,7 @@
       "Whakatāne",
       "Whangārei"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:50Z",
+  "date-time-wikidata": "2026-04-15T23:24:29Z"
 }

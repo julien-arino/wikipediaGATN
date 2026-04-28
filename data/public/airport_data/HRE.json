@@ -37,126 +37,234 @@
     "Zambia Airways"
   ],
   "destinations": [
-    [
-      "Addis Ababa Bole International Airport",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Cape Town International Airport",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Entebbe International Airport",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Jomo Kenyatta International Airport",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Joshua Mqabuko Nkomo International Airport",
-      "https://en.wikipedia.org/wiki/Joshua_Mqabuko_Nkomo_International_Airport",
-      "BUQ",
-      "FVJN"
-    ],
-    [
-      "Julius Nyerere International Airport",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Kenneth Kaunda International Airport",
-      "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
-      "LUN",
-      "FLKK"
-    ],
-    [
-      "Kigali International Airport",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "King Mswati III International Airport",
-      "https://en.wikipedia.org/wiki/King_Mswati_III_International_Airport",
-      "SHO",
-      "FDSK"
-    ],
-    [
-      "King Shaka International Airport",
-      "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
-      "DUR",
-      "FALE"
-    ],
-    [
-      "Lilongwe International Airport",
-      "https://en.wikipedia.org/wiki/Lilongwe_International_Airport",
-      "LLW",
-      "FWKI"
-    ],
-    [
-      "Lusaka International Airport",
-      "https://en.wikipedia.org/wiki/Lusaka_International_Airport",
-      "LUN",
-      "FLKK"
-    ],
-    [
-      "O. R. Tambo International Airport",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "OR Tambo International Airport",
-      "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ],
-    [
-      "Quatro de Fevereiro Airport",
-      "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
-      "LAD",
-      "FNLU"
-    ],
-    [
-      "Sir Seretse Khama International Airport",
-      "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
-      "GBE",
-      "FBSK"
-    ],
-    [
-      "Victoria Falls Airport",
-      "https://en.wikipedia.org/wiki/Victoria_Falls_Airport",
-      "VFA",
-      "FVFA"
-    ],
-    [
-      "Zayed International Airport",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ]
+    {
+      "city": "Addis Ababa Bole International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Cape Town International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates (airline)"
+      ]
+    },
+    {
+      "city": "Entebbe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Jomo Kenyatta International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Joshua Mqabuko Nkomo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Joshua_Mqabuko_Nkomo_International_Airport",
+      "codes": [
+        "BUQ",
+        "FVJN"
+      ],
+      "airlines": [
+        "Air Zimbabwe",
+        "Fastjet Zimbabwe"
+      ]
+    },
+    {
+      "city": "Julius Nyerere International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Air Tanzania",
+        "Air Zimbabwe"
+      ]
+    },
+    {
+      "city": "Kenneth Kaunda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kenneth_Kaunda_International_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Fastjet Zimbabwe",
+        "Malawi Airlines",
+        "Zambia Airways"
+      ]
+    },
+    {
+      "city": "Kigali International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "King Mswati III International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Mswati_III_International_Airport",
+      "codes": [
+        "SHO",
+        "FDSK"
+      ],
+      "airlines": [
+        "Eswatini Air"
+      ]
+    },
+    {
+      "city": "King Shaka International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
+      "codes": [
+        "DUR",
+        "FALE"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Lilongwe International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lilongwe_International_Airport",
+      "codes": [
+        "LLW",
+        "FWKI"
+      ],
+      "airlines": [
+        "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Lusaka International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lusaka_International_Airport",
+      "codes": [
+        "LUN",
+        "FLKK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "O. R. Tambo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "CemAir",
+        "Fastjet Zimbabwe",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "OR Tambo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Air Zimbabwe",
+        "Airlink",
+        "South African Airways"
+      ]
+    },
+    {
+      "city": "Quatro de Fevereiro Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
+      "codes": [
+        "LAD",
+        "FNLU"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Sir Seretse Khama International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
+      "codes": [
+        "GBE",
+        "FBSK"
+      ],
+      "airlines": [
+        "Air Botswana"
+      ]
+    },
+    {
+      "city": "Victoria Falls Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_Falls_Airport",
+      "codes": [
+        "VFA",
+        "FVFA"
+      ],
+      "airlines": [
+        "Air Zimbabwe"
+      ]
+    },
+    {
+      "city": "Zayed International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Botswana": [
@@ -225,5 +333,7 @@
     "Zambia Airways": [
       "Kenneth Kaunda International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:27Z",
+  "date-time-wikidata": "2026-04-20T06:17:21Z"
 }

@@ -19,24 +19,39 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Malinau",
-      "https://en.wikipedia.org/wiki/Robert_Atty_Bessing_Airport",
-      "LNU",
-      "WAQM"
-    ],
-    [
-      "Nunukan",
-      "https://en.wikipedia.org/wiki/Nunukan_Airport",
-      "NNX",
-      "WAQA"
-    ],
-    [
-      "Tarakan",
-      "https://en.wikipedia.org/wiki/Juwata__Airport",
-      "TRK",
-      "WAQQ"
-    ]
+    {
+      "city": "Malinau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Atty_Bessing_Airport",
+      "codes": [
+        "LNU",
+        "WAQM"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Nunukan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nunukan_Airport",
+      "codes": [
+        "NNX",
+        "WAQA"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Tarakan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juwata__Airport",
+      "codes": [
+        "TRK",
+        "WAQQ"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -44,5 +59,7 @@
       "Nunukan",
       "Tarakan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:53Z",
+  "date-time-wikidata": "2026-02-28T10:06:36Z"
 }

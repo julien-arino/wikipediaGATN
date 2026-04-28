@@ -19,23 +19,35 @@
     "Safarilink"
   ],
   "destinations": [
-    [
-      "Lamu",
-      "https://en.wikipedia.org/wiki/Manda_Airport",
-      "LAU",
-      "HKLU"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
-      "WIL",
-      "HKNW"
-    ]
+    {
+      "city": "Lamu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manda_Airport",
+      "codes": [
+        "LAU",
+        "HKLU"
+      ],
+      "airlines": [
+        "Safarilink"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport_(Kenya)",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Safarilink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Safarilink": [
       "Lamu",
       "Nairobi–Wilson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:11Z",
+  "date-time-wikidata": "2026-03-01T07:07:01Z"
 }

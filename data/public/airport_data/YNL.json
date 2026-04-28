@@ -19,24 +19,39 @@
     "Rise Air"
   ],
   "destinations": [
-    [
-      "La Ronge",
-      "https://en.wikipedia.org/wiki/La_Ronge_(Barber_Field)_Airport",
-      "YVC",
-      "CYVC"
-    ],
-    [
-      "Prince Albert",
-      "https://en.wikipedia.org/wiki/Prince_Albert_(Glass_Field)_Airport",
-      "YPA",
-      "CYPA"
-    ],
-    [
-      "Saskatoon",
-      "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
-      "YXE",
-      "CYXE"
-    ]
+    {
+      "city": "La Ronge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Ronge_(Barber_Field)_Airport",
+      "codes": [
+        "YVC",
+        "CYVC"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    },
+    {
+      "city": "Prince Albert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Albert_(Glass_Field)_Airport",
+      "codes": [
+        "YPA",
+        "CYPA"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    },
+    {
+      "city": "Saskatoon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
+      "codes": [
+        "YXE",
+        "CYXE"
+      ],
+      "airlines": [
+        "Rise Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rise Air": [
@@ -44,5 +59,7 @@
       "Prince Albert",
       "Saskatoon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:23Z",
+  "date-time-wikidata": "2024-02-07T20:40:01Z"
 }

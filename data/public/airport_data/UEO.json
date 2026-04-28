@@ -21,18 +21,29 @@
     "Ryukyu Air Commuter"
   ],
   "destinations": [
-    [
-      "Naha",
-      "https://en.wikipedia.org/wiki/Naha_Airport",
-      "OKA",
-      "ROAH"
-    ],
-    [
-      "Tokyo–Haneda",
-      "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "HND",
-      "RJTT"
-    ]
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH"
+      ],
+      "airlines": [
+        "Japan Transocean Air",
+        "Ryukyu Air Commuter"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Japan Airlines": [
@@ -44,5 +55,7 @@
     "Ryukyu Air Commuter": [
       "Naha"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:43Z",
+  "date-time-wikidata": "2026-02-19T01:56:35Z"
 }

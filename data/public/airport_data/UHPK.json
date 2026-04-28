@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UHPK",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Ust-Kamchatsk",
+  "city-served-wikipedia": "Ust-Kamchatsk",
   "location": "Ust-Kamchatsk",
   "lat": "56.238333",
   "lon": "162.688333",
@@ -19,16 +19,23 @@
     "Petropavlovsk-Kamchatsky Air Enterprise"
   ],
   "destinations": [
-    [
-      "Petropavlovsk-Kamchatsky",
-      "https://en.wikipedia.org/wiki/Petropavlovsk-Kamchatsky_Airport",
-      "PKC",
-      "UHPP"
-    ]
+    {
+      "city": "Petropavlovsk-Kamchatsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petropavlovsk-Kamchatsky_Airport",
+      "codes": [
+        "PKC",
+        "UHPP"
+      ],
+      "airlines": [
+        "Petropavlovsk-Kamchatsky Air Enterprise"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Petropavlovsk-Kamchatsky Air Enterprise": [
       "Petropavlovsk-Kamchatsky"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:30Z",
+  "date-time-wikidata": "2025-11-06T21:52:12Z"
 }

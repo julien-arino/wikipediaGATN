@@ -20,36 +20,63 @@
     "Wasaya Airways"
   ],
   "destinations": [
-    [
-      "Bearskin Lake",
-      "https://en.wikipedia.org/wiki/Bearskin_Lake_Airport",
-      "XBE",
-      "icao code not found"
-    ],
-    [
-      "Fort Severn",
-      "https://en.wikipedia.org/wiki/Fort_Severn_Airport",
-      "YER",
-      "CYER"
-    ],
-    [
-      "Kasabonika",
-      "https://en.wikipedia.org/wiki/Kasabonika_Airport",
-      "XKS",
-      "CYAQ"
-    ],
-    [
-      "Sioux Lookout",
-      "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
-      "YXL",
-      "CYXL"
-    ],
-    [
-      "Wapekeka",
-      "https://en.wikipedia.org/wiki/Angling_Lake/Wapekeka_Airport",
-      "YAX",
-      "icao code not found"
-    ]
+    {
+      "city": "Bearskin Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bearskin_Lake_Airport",
+      "codes": [
+        "XBE",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air"
+      ]
+    },
+    {
+      "city": "Fort Severn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Severn_Airport",
+      "codes": [
+        "YER",
+        "CYER"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Kasabonika",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kasabonika_Airport",
+      "codes": [
+        "XKS",
+        "CYAQ"
+      ],
+      "airlines": [
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Sioux Lookout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Lookout_Airport",
+      "codes": [
+        "YXL",
+        "CYXL"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Wasaya Airways"
+      ]
+    },
+    {
+      "city": "Wapekeka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Angling_Lake/Wapekeka_Airport",
+      "codes": [
+        "YAX",
+        "icao code not found"
+      ],
+      "airlines": [
+        "North Star Air",
+        "Wasaya Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "North Star Air": [
@@ -63,5 +90,7 @@
       "Sioux Lookout",
       "Wapekeka"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:43Z",
+  "date-time-wikidata": "2025-12-20T18:45:16Z"
 }

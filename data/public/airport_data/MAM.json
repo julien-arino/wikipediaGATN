@@ -20,18 +20,28 @@
     "Viva (airline)"
   ],
   "destinations": [
-    [
-      "Felipe Ángeles International Airport",
-      "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Mexico City International Airport",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ]
+    {
+      "city": "Felipe Ángeles International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva (airline)"
+      ]
+    },
+    {
+      "city": "Mexico City International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico Connect"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico Connect": [
@@ -40,5 +50,7 @@
     "Viva (airline)": [
       "Felipe Ángeles International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:14Z",
+  "date-time-wikidata": "2026-04-03T14:39:39Z"
 }

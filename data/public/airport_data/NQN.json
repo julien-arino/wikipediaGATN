@@ -23,66 +23,122 @@
     "LATAM Chile"
   ],
   "destinations": [
-    [
-      "Bahía Blanca",
-      "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
-      "BHI",
-      "SAZB"
-    ],
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Comodoro Rivadavia",
-      "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
-      "CRD",
-      "SAVC"
-    ],
-    [
-      "Córdoba (AR)",
-      "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
-      "COR",
-      "SACO"
-    ],
-    [
-      "Malargüe",
-      "https://en.wikipedia.org/wiki/Comodoro_D._Ricardo_Salomón_Airport",
-      "LGS",
-      "SAMM"
-    ],
-    [
-      "Mendoza",
-      "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
-      "MDZ",
-      "SAME"
-    ],
-    [
-      "Puerto Madryn",
-      "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
-      "PMY",
-      "SAVY"
-    ],
-    [
-      "Rosario",
-      "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
-      "ROS",
-      "SAAR"
-    ],
-    [
-      "Salta",
-      "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
-      "SLA",
-      "SASA"
-    ],
-    [
-      "Santiago de Chile",
-      "https://en.wikipedia.org/wiki/Arturo_Merino_Benitez_International_Airport",
-      "SCL",
-      "SCEL"
-    ]
+    {
+      "city": "Bahía Blanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
+      "codes": [
+        "BHI",
+        "SAZB"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "Comodoro Rivadavia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
+      "codes": [
+        "CRD",
+        "SAVC"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "LADE"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi"
+      ]
+    },
+    {
+      "city": "Malargüe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comodoro_D._Ricardo_Salomón_Airport",
+      "codes": [
+        "LGS",
+        "SAMM"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "LADE"
+      ]
+    },
+    {
+      "city": "Puerto Madryn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
+      "codes": [
+        "PMY",
+        "SAVY"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Rosario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
+      "codes": [
+        "ROS",
+        "SAAR"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Salta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
+      "codes": [
+        "SLA",
+        "SASA"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benitez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "LATAM Chile"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -111,5 +167,7 @@
       "Mendoza",
       "Puerto Madryn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:05Z",
+  "date-time-wikidata": "2026-04-02T11:09:36Z"
 }

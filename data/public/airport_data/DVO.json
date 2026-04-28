@@ -29,84 +29,151 @@
     "VietJet Air"
   ],
   "destinations": [
-    [
-      "Bacolod",
-      "https://en.wikipedia.org/wiki/Bacolod–Silay_Airport",
-      "BCD",
-      "RPVB"
-    ],
-    [
-      "Cagayan de Oro",
-      "https://en.wikipedia.org/wiki/Laguindingan_Airport",
-      "CGY",
-      "RPMY"
-    ],
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Da Nang",
-      "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
-      "DAD",
-      "VVDN"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Iloilo",
-      "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
-      "ILO",
-      "RPVI"
-    ],
-    [
-      "Macau",
-      "https://en.wikipedia.org/wiki/Macau_International_Airport",
-      "MFM",
-      "VMMC"
-    ],
-    [
-      "Manila",
-      "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
-      "MNL",
-      "RPLL"
-    ],
-    [
-      "Nanning",
-      "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
-      "NNG",
-      "ZGNN"
-    ],
-    [
-      "Shenzhen",
-      "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "SZX",
-      "ZGSZ"
-    ],
-    [
-      "Siargao",
-      "https://en.wikipedia.org/wiki/Sayak_Airport",
-      "IAO",
-      "RPNS"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Tagbilaran",
-      "https://en.wikipedia.org/wiki/Bohol–Panglao_International_Airport",
-      "TAG",
-      "RPSP"
-    ]
+    {
+      "city": "Bacolod",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bacolod–Silay_Airport",
+      "codes": [
+        "BCD",
+        "RPVB"
+      ],
+      "airlines": [
+        "Cebu Pacific"
+      ]
+    },
+    {
+      "city": "Cagayan de Oro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laguindingan_Airport",
+      "codes": [
+        "CGY",
+        "RPMY"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "PAL Express",
+        "Philippines AirAsia"
+      ]
+    },
+    {
+      "city": "Da Nang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
+      "codes": [
+        "DAD",
+        "VVDN"
+      ],
+      "airlines": [
+        "VietJet Air"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Iloilo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
+      "codes": [
+        "ILO",
+        "RPVI"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Macau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
+      "codes": [
+        "MFM",
+        "VMMC"
+      ],
+      "airlines": [
+        "MJets Air"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "PAL Express",
+        "Philippine Airlines"
+      ]
+    },
+    {
+      "city": "Nanning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
+      "codes": [
+        "NNG",
+        "ZGNN"
+      ],
+      "airlines": [
+        "Royal Air Philippines"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "JD Airlines"
+      ]
+    },
+    {
+      "city": "Siargao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sayak_Airport",
+      "codes": [
+        "IAO",
+        "RPNS"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Tagbilaran",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bohol–Panglao_International_Airport",
+      "codes": [
+        "TAG",
+        "RPSP"
+      ],
+      "airlines": [
+        "PAL Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
@@ -146,5 +213,7 @@
     "Royal Air Philippines": [
       "Nanning"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:15Z",
+  "date-time-wikidata": "2026-04-26T15:03:35Z"
 }

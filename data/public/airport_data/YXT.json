@@ -25,48 +25,90 @@
     "WestJet Encore"
   ],
   "destinations": [
-    [
-      "Calgary",
-      "https://en.wikipedia.org/wiki/Calgary_International_Airport",
-      "YYC",
-      "CYYC"
-    ],
-    [
-      "Edmonton",
-      "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
-      "YEG",
-      "CYEG"
-    ],
-    [
-      "Hamilton",
-      "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "YHM",
-      "CYHM"
-    ],
-    [
-      "Kelowna",
-      "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
-      "YLW",
-      "CYLW"
-    ],
-    [
-      "Nanaimo",
-      "https://en.wikipedia.org/wiki/Nanaimo_Airport",
-      "YCD",
-      "CYCD"
-    ],
-    [
-      "Prince George",
-      "https://en.wikipedia.org/wiki/Prince_George_Airport",
-      "YXS",
-      "CYXS"
-    ],
-    [
-      "Vancouver",
-      "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "YVR",
-      "CYVR"
-    ]
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Canadian North",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Canadian North",
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "Canadian North"
+      ]
+    },
+    {
+      "city": "Kelowna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
+      "codes": [
+        "YLW",
+        "CYLW"
+      ],
+      "airlines": [
+        "Central Mountain Air",
+        "North Cariboo Air"
+      ]
+    },
+    {
+      "city": "Nanaimo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanaimo_Airport",
+      "codes": [
+        "YCD",
+        "CYCD"
+      ],
+      "airlines": [
+        "Summit Air"
+      ]
+    },
+    {
+      "city": "Prince George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_George_Airport",
+      "codes": [
+        "YXS",
+        "CYXS"
+      ],
+      "airlines": [
+        "Airco",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "Central Mountain Air",
+        "North Cariboo Air",
+        "WestJet Encore"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -97,5 +139,7 @@
       "Edmonton",
       "Vancouver"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:49Z",
+  "date-time-wikidata": "2026-03-23T10:45:39Z"
 }

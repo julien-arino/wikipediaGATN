@@ -26,72 +26,131 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Cancún",
-      "https://en.wikipedia.org/wiki/Cancún_International_Airport",
-      "CUN",
-      "MMUN"
-    ],
-    [
-      "Dallas/Fort Worth",
-      "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Houston–Intercontinental",
-      "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "IAH",
-      "KIAH"
-    ],
-    [
-      "Huatulco",
-      "https://en.wikipedia.org/wiki/Bahías_de_Huatulco_International_Airport",
-      "HUX",
-      "MMBT"
-    ],
-    [
-      "Ixtepec",
-      "https://en.wikipedia.org/wiki/Ixtepec_Airport",
-      "IZT",
-      "MMIT"
-    ],
-    [
-      "Mexico City–Benito Juárez",
-      "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
-      "MEX",
-      "MMMX"
-    ],
-    [
-      "Mexico City–Felipe Ángeles",
-      "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
-      "NLU",
-      "MMSM"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ],
-    [
-      "Puerto Escondido",
-      "https://en.wikipedia.org/wiki/Puerto_Escondido_International_Airport",
-      "PXM",
-      "MMPS"
-    ],
-    [
-      "Querétaro",
-      "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
-      "QRO",
-      "MMQT"
-    ],
-    [
-      "Tijuana",
-      "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
-      "TIJ",
-      "MMTJ"
-    ]
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Huatulco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahías_de_Huatulco_International_Airport",
+      "codes": [
+        "HUX",
+        "MMBT"
+      ],
+      "airlines": [
+        "Aerotucán"
+      ]
+    },
+    {
+      "city": "Ixtepec",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ixtepec_Airport",
+      "codes": [
+        "IZT",
+        "MMIT"
+      ],
+      "airlines": [
+        "Aerotucán"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect",
+        "Viva"
+      ]
+    },
+    {
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Puerto Escondido",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puerto_Escondido_International_Airport",
+      "codes": [
+        "PXM",
+        "MMPS"
+      ],
+      "airlines": [
+        "Aerotucán",
+        "Aerovega"
+      ]
+    },
+    {
+      "city": "Querétaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
@@ -125,5 +184,7 @@
       "Querétaro",
       "Tijuana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:13Z",
+  "date-time-wikidata": "2026-04-21T23:15:21Z"
 }

@@ -20,18 +20,30 @@
     "LATAM Ecuador"
   ],
   "destinations": [
-    [
-      "Guayaquil",
-      "https://en.wikipedia.org/wiki/José_Joaquín_de_Olmedo_International_Airport",
-      "GYE",
-      "SEGU"
-    ],
-    [
-      "Quito",
-      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
-      "UIO",
-      "SEQM"
-    ]
+    {
+      "city": "Guayaquil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Joaquín_de_Olmedo_International_Airport",
+      "codes": [
+        "GYE",
+        "SEGU"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca Ecuador": [
@@ -42,5 +54,7 @@
       "Guayaquil",
       "Quito"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:01Z",
+  "date-time-wikidata": "2025-10-30T18:36:17Z"
 }

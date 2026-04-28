@@ -20,12 +20,18 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia Regional Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -34,5 +40,7 @@
     "Virgin Australia Regional Airlines": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:19Z",
+  "date-time-wikidata": "2026-02-05T06:17:35Z"
 }

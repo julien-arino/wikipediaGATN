@@ -19,23 +19,35 @@
     "Azul Brazilian Airlines"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Curitiba",
-      "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
-      "CWB",
-      "SBCT"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Curitiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
+      "codes": [
+        "CWB",
+        "SBCT"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
       "Campinas",
       "Curitiba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:48Z",
+  "date-time-wikidata": "2025-08-15T12:02:03Z"
 }

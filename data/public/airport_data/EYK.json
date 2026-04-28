@@ -20,54 +20,94 @@
     "Utair"
   ],
   "destinations": [
-    [
-      "Beryozovo",
-      "https://en.wikipedia.org/wiki/Beryozovo_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Khanty-Mansiysk",
-      "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
-      "HMA",
-      "USHH"
-    ],
-    [
-      "Moscow-Zhukovsky",
-      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
-      "ZIA",
-      "UUBW"
-    ],
-    [
-      "Nyagan",
-      "https://en.wikipedia.org/wiki/Nyagan_Airport",
-      "NYA",
-      "USHN"
-    ],
-    [
-      "Sovetsky",
-      "https://en.wikipedia.org/wiki/Sovetsky_Airport",
-      "OVS",
-      "USHS"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_International_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roschino_Airport",
-      "TJM",
-      "USTR"
-    ],
-    [
-      "Yekaterinburg",
-      "https://en.wikipedia.org/wiki/Koltsovo_Airport",
-      "SVX",
-      "USSS"
-    ]
+    {
+      "city": "Beryozovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beryozovo_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Khanty-Mansiysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanty-Mansiysk_Airport",
+      "codes": [
+        "HMA",
+        "USHH"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Moscow-Zhukovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "codes": [
+        "ZIA",
+        "UUBW"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Nyagan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nyagan_Airport",
+      "codes": [
+        "NYA",
+        "USHN"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Sovetsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sovetsky_Airport",
+      "codes": [
+        "OVS",
+        "USHS"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roschino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    }
   ],
   "airlines_destinations": {
     "RusLine": [
@@ -82,5 +122,7 @@
       "Surgut",
       "Tyumen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:30Z",
+  "date-time-wikidata": "2025-11-03T17:36:42Z"
 }

@@ -20,30 +20,50 @@
     "Shandong Airlines"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Dalian Zhoushuizi International Airport",
-      "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
-      "DLC",
-      "ZYTL"
-    ],
-    [
-      "Harbin Taiping International Airport",
-      "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
-      "HRB",
-      "ZYHB"
-    ],
-    [
-      "Qingdao Jiaodong International Airport",
-      "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
-      "TAO",
-      "ZSQD"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Dalian Zhoushuizi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL"
+      ],
+      "airlines": [
+        "Shandong Airlines"
+      ]
+    },
+    {
+      "city": "Harbin Taiping International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport",
+      "codes": [
+        "HRB",
+        "ZYHB"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Qingdao Jiaodong International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
+      "codes": [
+        "TAO",
+        "ZSQD"
+      ],
+      "airlines": [
+        "Shandong Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -54,5 +74,7 @@
       "Dalian Zhoushuizi International Airport",
       "Qingdao Jiaodong International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:40Z",
+  "date-time-wikidata": "2025-06-01T05:30:08Z"
 }

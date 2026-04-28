@@ -7,6 +7,7 @@
   "lat": "67.1048598",
   "lon": "-157.8569938",
   "altitude": "102",
+  "continent": "North America",
   "region": "Alaska",
   "country_alpha3": "USA",
   "country_name": "United States",
@@ -18,24 +19,39 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Kobuk",
-      "https://en.wikipedia.org/wiki/Kobuk_Airport",
-      "OBU",
-      "PAOB"
-    ],
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ],
-    [
-      "Shungnak",
-      "https://en.wikipedia.org/wiki/Shungnak_Airport",
-      "SHG",
-      "PAGH"
-    ]
+    {
+      "city": "Kobuk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kobuk_Airport",
+      "codes": [
+        "OBU",
+        "PAOB"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Shungnak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shungnak_Airport",
+      "codes": [
+        "SHG",
+        "PAGH"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
@@ -44,5 +60,6 @@
       "Shungnak"
     ]
   },
-  "continent": "North America"
+  "date-time-parse": "2026-04-28T22:03:18Z",
+  "date-time-wikidata": "2025-08-27T18:23:43Z"
 }

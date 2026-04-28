@@ -22,36 +22,63 @@
     "Sky Pasada"
   ],
   "destinations": [
-    [
-      "Calayan",
-      "https://en.wikipedia.org/wiki/Calayan_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Clark",
-      "https://en.wikipedia.org/wiki/Clark_International_Airport",
-      "CRK",
-      "RPLC"
-    ],
-    [
-      "Itbayat",
-      "https://en.wikipedia.org/wiki/Itbayat_Airport",
-      "iata code not found",
-      "RPLT"
-    ],
-    [
-      "Laoag",
-      "https://en.wikipedia.org/wiki/Laoag_International_Airport",
-      "LAO",
-      "RPLI"
-    ],
-    [
-      "Tuguegarao",
-      "https://en.wikipedia.org/wiki/Tuguegarao_Airport",
-      "TUG",
-      "RPUT"
-    ]
+    {
+      "city": "Calayan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calayan_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Sky Pasada"
+      ]
+    },
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
+      "codes": [
+        "CRK",
+        "RPLC"
+      ],
+      "airlines": [
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Itbayat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Itbayat_Airport",
+      "codes": [
+        "iata code not found",
+        "RPLT"
+      ],
+      "airlines": [
+        "Aerospeed Air Transport Services",
+        "Fliteline Airways"
+      ]
+    },
+    {
+      "city": "Laoag",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laoag_International_Airport",
+      "codes": [
+        "LAO",
+        "RPLI"
+      ],
+      "airlines": [
+        "Sky Pasada"
+      ]
+    },
+    {
+      "city": "Tuguegarao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuguegarao_Airport",
+      "codes": [
+        "TUG",
+        "RPUT"
+      ],
+      "airlines": [
+        "Fliteline Airways",
+        "Sky Pasada"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PAL Express": [
@@ -69,5 +96,7 @@
     "Aerospeed Air Transport Services": [
       "Itbayat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:03Z",
+  "date-time-wikidata": "2026-03-31T15:07:51Z"
 }

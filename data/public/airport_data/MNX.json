@@ -20,12 +20,18 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Manaus",
-      "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-      "MAO",
-      "SBEG"
-    ]
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Apuí Táxi Aéreo",
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Apuí Táxi Aéreo": [
@@ -34,5 +40,7 @@
     "Azul Conecta": [
       "Manaus"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:48Z",
+  "date-time-wikidata": "2024-06-08T22:33:23Z"
 }

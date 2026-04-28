@@ -20,78 +20,145 @@
     "Central Mountain Air"
   ],
   "destinations": [
-    [
-      "Baie-Comeau",
-      "https://en.wikipedia.org/wiki/Baie-Comeau_Airport",
-      "YBC",
-      "CYBC"
-    ],
-    [
-      "Blanc-Sablon",
-      "https://en.wikipedia.org/wiki/Blanc-Sablon_Airport",
-      "YBX",
-      "CYBX"
-    ],
-    [
-      "La Romaine",
-      "https://en.wikipedia.org/wiki/La_Romaine_Airport",
-      "ZGS",
-      "icao code not found"
-    ],
-    [
-      "La Tabatière",
-      "https://en.wikipedia.org/wiki/La_Tabatière_Airport",
-      "ZLT",
-      "icao code not found"
-    ],
-    [
-      "Montreal–Saint-Hubert",
-      "https://en.wikipedia.org/wiki/MET_–_Montreal_Metropolitan_Airport",
-      "YHU",
-      "CYHU"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Natashquan",
-      "https://en.wikipedia.org/wiki/Natashquan_Airport",
-      "YNA",
-      "CYNA"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Quebec_City_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Saint-Augustin",
-      "https://en.wikipedia.org/wiki/Saint-Augustin_Airport",
-      "YIF",
-      "CYIF"
-    ],
-    [
-      "Sept-Îles",
-      "https://en.wikipedia.org/wiki/Sept-Îles_Airport",
-      "YZV",
-      "CYZV"
-    ],
-    [
-      "Tête-à-la-Baleine",
-      "https://en.wikipedia.org/wiki/Tête-à-la-Baleine_Airport",
-      "ZTB",
-      "icao code not found"
-    ]
+    {
+      "city": "Baie-Comeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baie-Comeau_Airport",
+      "codes": [
+        "YBC",
+        "CYBC"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "Blanc-Sablon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blanc-Sablon_Airport",
+      "codes": [
+        "YBX",
+        "CYBX"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "La Romaine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Romaine_Airport",
+      "codes": [
+        "ZGS",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "La Tabatière",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Tabatière_Airport",
+      "codes": [
+        "ZLT",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "Montreal–Saint-Hubert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/MET_–_Montreal_Metropolitan_Airport",
+      "codes": [
+        "YHU",
+        "CYHU"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Natashquan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Natashquan_Airport",
+      "codes": [
+        "YNA",
+        "CYNA"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quebec_City_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Saint-Augustin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Augustin_Airport",
+      "codes": [
+        "YIF",
+        "CYIF"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Sept-Îles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sept-Îles_Airport",
+      "codes": [
+        "YZV",
+        "CYZV"
+      ],
+      "airlines": [
+        "Air Liaison",
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Tête-à-la-Baleine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tête-à-la-Baleine_Airport",
+      "codes": [
+        "ZTB",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Liaison": [
@@ -115,5 +182,7 @@
       "Saint-Augustin",
       "Sept-Îles"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:31Z",
+  "date-time-wikidata": "2026-03-26T20:21:49Z"
 }

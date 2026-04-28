@@ -20,24 +20,39 @@
     "Susi Air"
   ],
   "destinations": [
-    [
-      "Bengkulu",
-      "https://en.wikipedia.org/wiki/Fatmawati_Soekarno_Airport",
-      "BKS",
-      "WIGG"
-    ],
-    [
-      "Jakarta–Halim Perdanakusuma",
-      "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
-      "HLP",
-      "WIHH"
-    ],
-    [
-      "Palembang",
-      "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
-      "PLM",
-      "WIPP"
-    ]
+    {
+      "city": "Bengkulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fatmawati_Soekarno_Airport",
+      "codes": [
+        "BKS",
+        "WIGG"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Halim Perdanakusuma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
+      "codes": [
+        "HLP",
+        "WIHH"
+      ],
+      "airlines": [
+        "Citilink"
+      ]
+    },
+    {
+      "city": "Palembang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
+      "codes": [
+        "PLM",
+        "WIPP"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Citilink": [
@@ -47,5 +62,7 @@
       "Bengkulu",
       "Palembang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:10Z",
+  "date-time-wikidata": "2026-04-14T11:03:20Z"
 }

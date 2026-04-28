@@ -23,78 +23,140 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Beauvais",
-      "https://en.wikipedia.org/wiki/Beauvais_Airport",
-      "BVA",
-      "LFOB"
-    ],
-    [
-      "Bordeaux",
-      "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
-      "BOD",
-      "LFBD"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Nantes",
-      "https://en.wikipedia.org/wiki/Nantes_Airport",
-      "NTE",
-      "LFRS"
-    ],
-    [
-      "Nantes",
-      "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
-      "NTE",
-      "LFRS"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Paris–Orly",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Rabat",
-      "https://en.wikipedia.org/wiki/Rabat–Salé_Airport",
-      "RBA",
-      "GMME"
-    ],
-    [
-      "Seville",
-      "https://en.wikipedia.org/wiki/Seville_Airport",
-      "SVQ",
-      "LEZL"
-    ]
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais_Airport",
+      "codes": [
+        "BVA",
+        "LFOB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
+      "codes": [
+        "BOD",
+        "LFBD"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "Transavia",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "Transavia",
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Orly",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Rabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rabat–Salé_Airport",
+      "codes": [
+        "RBA",
+        "GMME"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Seville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seville_Airport",
+      "codes": [
+        "SVQ",
+        "LEZL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -119,5 +181,7 @@
       "Barcelona",
       "Seville"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:23Z",
+  "date-time-wikidata": "2026-04-25T07:59:16Z"
 }

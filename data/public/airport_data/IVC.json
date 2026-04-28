@@ -20,24 +20,39 @@
     "Stewart Island Flights"
   ],
   "destinations": [
-    [
-      "Auckland Airport",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Christchurch International Airport",
-      "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-      "CHC",
-      "NZCH"
-    ],
-    [
-      "Ryan's Creek Aerodrome",
-      "https://en.wikipedia.org/wiki/Ryan%27s_Creek_Aerodrome",
-      "SZS",
-      "NZRC"
-    ]
+    {
+      "city": "Auckland Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Christchurch International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Ryan's Creek Aerodrome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ryan%27s_Creek_Aerodrome",
+      "codes": [
+        "SZS",
+        "NZRC"
+      ],
+      "airlines": [
+        "Stewart Island Flights"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air New Zealand": [
@@ -47,5 +62,7 @@
     "Stewart Island Flights": [
       "Ryan's Creek Aerodrome"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:12Z",
+  "date-time-wikidata": "2026-03-25T08:43:43Z"
 }

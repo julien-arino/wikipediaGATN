@@ -31,132 +31,248 @@
     "Winair"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Bordeaux",
-      "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
-      "BOD",
-      "LFBD"
-    ],
-    [
-      "Castries",
-      "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
-      "SLU",
-      "TLPC"
-    ],
-    [
-      "Cayenne",
-      "https://en.wikipedia.org/wiki/Cayenne_–_Rochambeau_Airport",
-      "CAY",
-      "SOCA"
-    ],
-    [
-      "Havana",
-      "https://en.wikipedia.org/wiki/José_Martí_International_Airport",
-      "HAV",
-      "MUHA"
-    ],
-    [
-      "Kingstown",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
-      "SVD",
-      "TVSA"
-    ],
-    [
-      "Miami",
-      "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "MIA",
-      "KMIA"
-    ],
-    [
-      "Montréal–Trudeau",
-      "https://en.wikipedia.org/wiki/Montréal-Trudeau_International_Airport",
-      "YUL",
-      "CYUL"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Pointe-à-Pitre",
-      "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
-      "PTP",
-      "TFFR"
-    ],
-    [
-      "Port of Spain",
-      "https://en.wikipedia.org/wiki/Piarco_International_Airport",
-      "POS",
-      "TTPP"
-    ],
-    [
-      "Port-au-Prince",
-      "https://en.wikipedia.org/wiki/Toussaint_Louverture_International_Airport",
-      "PAP",
-      "MTPP"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Quebec_City_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Québec City",
-      "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
-      "YQB",
-      "CYQB"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Santo Domingo–Las Américas",
-      "https://en.wikipedia.org/wiki/Las_Americas_International_Airport",
-      "SDQ",
-      "MDSD"
-    ],
-    [
-      "Sint Maarten",
-      "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
-      "SXM",
-      "TNCM"
-    ],
-    [
-      "St. Martin",
-      "https://en.wikipedia.org/wiki/Grand_Case–Espérance_Airport",
-      "SFG",
-      "TFFG"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "Sunrise Airways",
+        "Winair"
+      ]
+    },
+    {
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
+      "codes": [
+        "BOD",
+        "LFBD"
+      ],
+      "airlines": [
+        "Corsair International"
+      ]
+    },
+    {
+      "city": "Castries",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
+      "codes": [
+        "SLU",
+        "TLPC"
+      ],
+      "airlines": [
+        "Air Adelphi",
+        "Caribbean Airlines",
+        "Sunrise Airways",
+        "Winair"
+      ]
+    },
+    {
+      "city": "Cayenne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cayenne_–_Rochambeau_Airport",
+      "codes": [
+        "CAY",
+        "SOCA"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Havana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Martí_International_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "Sky High"
+      ]
+    },
+    {
+      "city": "Kingstown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "Air Adelphi"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Air Caraïbes",
+        "Corsair International"
+      ]
+    },
+    {
+      "city": "Pointe-à-Pitre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
+      "codes": [
+        "PTP",
+        "TFFR"
+      ],
+      "airlines": [
+        "Air Antilles",
+        "Air Caraïbes",
+        "Air France"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Port-au-Prince",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toussaint_Louverture_International_Airport",
+      "codes": [
+        "PAP",
+        "MTPP"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quebec_City_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Québec City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
+      "codes": [
+        "YQB",
+        "CYQB"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Santo Domingo–Las Américas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Americas_International_Airport",
+      "codes": [
+        "SDQ",
+        "MDSD"
+      ],
+      "airlines": [
+        "Sky High"
+      ]
+    },
+    {
+      "city": "Sint Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+      "codes": [
+        "SXM",
+        "TNCM"
+      ],
+      "airlines": [
+        "Winair"
+      ]
+    },
+    {
+      "city": "St. Martin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Case–Espérance_Airport",
+      "codes": [
+        "SFG",
+        "TFFG"
+      ],
+      "airlines": [
+        "Air Caraïbes"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Adelphi": [
@@ -215,5 +331,7 @@
       "Castries",
       "Sint Maarten"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:47Z",
+  "date-time-wikidata": "2026-04-24T03:58:26Z"
 }

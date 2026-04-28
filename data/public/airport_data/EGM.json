@@ -19,24 +19,39 @@
     "Solomon Airlines"
   ],
   "destinations": [
-    [
-      "Gizo",
-      "https://en.wikipedia.org/wiki/Nusatupe_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Honiara",
-      "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "HIR",
-      "AGGH"
-    ],
-    [
-      "Munda",
-      "https://en.wikipedia.org/wiki/Munda_Airport",
-      "MUA",
-      "AGGM"
-    ]
+    {
+      "city": "Gizo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nusatupe_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Munda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munda_Airport",
+      "codes": [
+        "MUA",
+        "AGGM"
+      ],
+      "airlines": [
+        "Solomon Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Solomon Airlines": [
@@ -44,5 +59,7 @@
       "Honiara",
       "Munda"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:23Z",
+  "date-time-wikidata": "2026-01-02T22:56:40Z"
 }

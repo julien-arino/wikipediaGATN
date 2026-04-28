@@ -19,23 +19,35 @@
     "Bering Air"
   ],
   "destinations": [
-    [
-      "Kotzebue",
-      "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
-      "OTZ",
-      "PAOT"
-    ],
-    [
-      "Noorvik",
-      "https://en.wikipedia.org/wiki/Robert_(Bob)_Curtis_Memorial_Airport",
-      "ORV",
-      "PFNO"
-    ]
+    {
+      "city": "Kotzebue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ralph_Wien_Memorial_Airport",
+      "codes": [
+        "OTZ",
+        "PAOT"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    },
+    {
+      "city": "Noorvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_(Bob)_Curtis_Memorial_Airport",
+      "codes": [
+        "ORV",
+        "PFNO"
+      ],
+      "airlines": [
+        "Bering Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bering Air": [
       "Kotzebue",
       "Noorvik"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:58Z",
+  "date-time-wikidata": "2026-04-26T01:12:16Z"
 }

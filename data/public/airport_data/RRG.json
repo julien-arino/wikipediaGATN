@@ -20,18 +20,28 @@
     "Air Mauritius"
   ],
   "destinations": [
-    [
-      "Roland Garros Airport",
-      "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
-      "RUN",
-      "FMEE"
-    ],
-    [
-      "Sir Seewoosagur Ramgoolam International Airport",
-      "https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport",
-      "MRU",
-      "FIMP"
-    ]
+    {
+      "city": "Roland Garros Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roland_Garros_Airport",
+      "codes": [
+        "RUN",
+        "FMEE"
+      ],
+      "airlines": [
+        "Air Austral"
+      ]
+    },
+    {
+      "city": "Sir Seewoosagur Ramgoolam International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport",
+      "codes": [
+        "MRU",
+        "FIMP"
+      ],
+      "airlines": [
+        "Air Mauritius"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Austral": [
@@ -40,5 +50,7 @@
     "Air Mauritius": [
       "Sir Seewoosagur Ramgoolam International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:56Z",
+  "date-time-wikidata": "2025-10-10T15:00:28Z"
 }

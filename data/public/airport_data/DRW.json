@@ -28,204 +28,383 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Adelaide",
-      "https://en.wikipedia.org/wiki/Adelaide_Airport",
-      "ADL",
-      "YPAD"
-    ],
-    [
-      "Alice Springs",
-      "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
-      "ASP",
-      "YBAS"
-    ],
-    [
-      "Biak",
-      "https://en.wikipedia.org/wiki/Frans_Kaisiepo_International_Airport",
-      "BIK",
-      "WABB"
-    ],
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Broome",
-      "https://en.wikipedia.org/wiki/Broome_International_Airport",
-      "BME",
-      "YBRM"
-    ],
-    [
-      "Cairns",
-      "https://en.wikipedia.org/wiki/Cairns_Airport",
-      "CNS",
-      "YBCS"
-    ],
-    [
-      "Canberra",
-      "https://en.wikipedia.org/wiki/Canberra_Airport",
-      "CBR",
-      "YSCB"
-    ],
-    [
-      "Denpasar",
-      "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
-      "DPS",
-      "WADD"
-    ],
-    [
-      "Dili",
-      "https://en.wikipedia.org/wiki/Presidente_Nicolau_Lobato_International_Airport",
-      "DIL",
-      "WPDL"
-    ],
-    [
-      "Elcho Island",
-      "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
-      "ELC",
-      "YELD"
-    ],
-    [
-      "Gapuwiyak",
-      "https://en.wikipedia.org/wiki/Lake_Evella_Airport",
-      "LEL",
-      "YLEV"
-    ],
-    [
-      "Gold Coast",
-      "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
-      "OOL",
-      "YBCG"
-    ],
-    [
-      "Gove",
-      "https://en.wikipedia.org/wiki/Gove_Airport",
-      "GOV",
-      "YPGV"
-    ],
-    [
-      "Groote Eylandt",
-      "https://en.wikipedia.org/wiki/Groote_Eylandt_Airport",
-      "GTE",
-      "YGTE"
-    ],
-    [
-      "Guangzhou",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Katherine",
-      "https://en.wikipedia.org/wiki/RAAF_Base_Tindal",
-      "KTR",
-      "YPTN"
-    ],
-    [
-      "Kununurra",
-      "https://en.wikipedia.org/wiki/Kununurra_Airport",
-      "KNX",
-      "YPKU"
-    ],
-    [
-      "Maningrida",
-      "https://en.wikipedia.org/wiki/Maningrida_Airport",
-      "MNG",
-      "YMGD"
-    ],
-    [
-      "McArthur River Mine",
-      "https://en.wikipedia.org/wiki/McArthur_River_Mine_Airport",
-      "MCV",
-      "YMHU"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Milikapiti",
-      "https://en.wikipedia.org/wiki/Snake_Bay_Airport",
-      "SNB",
-      "YSNK"
-    ],
-    [
-      "Milingimbi",
-      "https://en.wikipedia.org/wiki/Milingimbi_Airport",
-      "MGT",
-      "YMGB"
-    ],
-    [
-      "Minjilang",
-      "https://en.wikipedia.org/wiki/Croker_Island_Airport",
-      "CKI",
-      "YCKI"
-    ],
-    [
-      "Nguiu",
-      "https://en.wikipedia.org/wiki/Bathurst_Island_Airport",
-      "BRT",
-      "YBTI"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Pirlangimpi",
-      "https://en.wikipedia.org/wiki/Garden_Point_Airport",
-      "GPN",
-      "YGPT"
-    ],
-    [
-      "Ramingining",
-      "https://en.wikipedia.org/wiki/Ramingining_Airport",
-      "RAM",
-      "YRNG"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ],
-    [
-      "Tennant Creek",
-      "https://en.wikipedia.org/wiki/Tennant_Creek_Airport",
-      "TCA",
-      "YTNK"
-    ],
-    [
-      "The Granites",
-      "https://en.wikipedia.org/wiki/The_Granites_Airport",
-      "GTS",
-      "YTGT"
-    ],
-    [
-      "Townsville",
-      "https://en.wikipedia.org/wiki/Townsville_Airport",
-      "TSV",
-      "YBTL"
-    ],
-    [
-      "Warruwi",
-      "https://en.wikipedia.org/wiki/South_Goulburn_Island_Airport",
-      "GBL",
-      "YGBI"
-    ]
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Alice Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
+      "codes": [
+        "ASP",
+        "YBAS"
+      ],
+      "airlines": [
+        "Airnorth",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Biak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frans_Kaisiepo_International_Airport",
+      "codes": [
+        "BIK",
+        "WABB"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Broome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broome_International_Airport",
+      "codes": [
+        "BME",
+        "YBRM"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Airnorth",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Canberra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
+      "codes": [
+        "CBR",
+        "YSCB"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Dili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Nicolau_Lobato_International_Airport",
+      "codes": [
+        "DIL",
+        "WPDL"
+      ],
+      "airlines": [
+        "Aero Dili",
+        "Airnorth",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Elcho Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
+      "codes": [
+        "ELC",
+        "YELD"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Gapuwiyak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Evella_Airport",
+      "codes": [
+        "LEL",
+        "YLEV"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Gove",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gove_Airport",
+      "codes": [
+        "GOV",
+        "YPGV"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Groote Eylandt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Groote_Eylandt_Airport",
+      "codes": [
+        "GTE",
+        "YGTE"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Katherine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/RAAF_Base_Tindal",
+      "codes": [
+        "KTR",
+        "YPTN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Kununurra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kununurra_Airport",
+      "codes": [
+        "KNX",
+        "YPKU"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Maningrida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maningrida_Airport",
+      "codes": [
+        "MNG",
+        "YMGD"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "McArthur River Mine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McArthur_River_Mine_Airport",
+      "codes": [
+        "MCV",
+        "YMHU"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Milikapiti",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Snake_Bay_Airport",
+      "codes": [
+        "SNB",
+        "YSNK"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Milingimbi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milingimbi_Airport",
+      "codes": [
+        "MGT",
+        "YMGB"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Minjilang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Croker_Island_Airport",
+      "codes": [
+        "CKI",
+        "YCKI"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Nguiu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bathurst_Island_Airport",
+      "codes": [
+        "BRT",
+        "YBTI"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Airnorth",
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Pirlangimpi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Garden_Point_Airport",
+      "codes": [
+        "GPN",
+        "YGPT"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Ramingining",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramingining_Airport",
+      "codes": [
+        "RAM",
+        "YRNG"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Qantas",
+        "Singapore Airlines"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Tennant Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tennant_Creek_Airport",
+      "codes": [
+        "TCA",
+        "YTNK"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "The Granites",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Granites_Airport",
+      "codes": [
+        "GTS",
+        "YTGT"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Warruwi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/South_Goulburn_Island_Airport",
+      "codes": [
+        "GBL",
+        "YGBI"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aero Dili": [
@@ -295,5 +474,7 @@
     "Virgin Australia Regional Airlines": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:07Z",
+  "date-time-wikidata": "2026-04-26T14:58:36Z"
 }

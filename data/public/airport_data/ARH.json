@@ -24,60 +24,108 @@
     "Southwind Airlines"
   ],
   "destinations": [
-    [
-      "Amderma",
-      "https://en.wikipedia.org/wiki/Amderma_Airport",
-      "AMV",
-      "ULDD"
-    ],
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Cherepovets",
-      "https://en.wikipedia.org/wiki/Cherepovets_Airport",
-      "CEE",
-      "ULWC"
-    ],
-    [
-      "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Murmansk",
-      "https://en.wikipedia.org/wiki/Murmansk_Airport",
-      "MMK",
-      "ULMM"
-    ],
-    [
-      "Naryan-Mar",
-      "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
-      "NNM",
-      "ULAM"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ]
+    {
+      "city": "Amderma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amderma_Airport",
+      "codes": [
+        "AMV",
+        "ULDD"
+      ],
+      "airlines": [
+        "Arktika Airlines"
+      ]
+    },
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Southwind Airlines"
+      ]
+    },
+    {
+      "city": "Cherepovets",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherepovets_Airport",
+      "codes": [
+        "CEE",
+        "ULWC"
+      ],
+      "airlines": [
+        "Severstal Air Company"
+      ]
+    },
+    {
+      "city": "Kaliningrad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Rossiya",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Murmansk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murmansk_Airport",
+      "codes": [
+        "MMK",
+        "ULMM"
+      ],
+      "airlines": [
+        "Severstal Air Company"
+      ]
+    },
+    {
+      "city": "Naryan-Mar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
+      "codes": [
+        "NNM",
+        "ULAM"
+      ],
+      "airlines": [
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Rossiya",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Smartavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -104,5 +152,7 @@
     "Southwind Airlines": [
       "Antalya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:49Z",
+  "date-time-wikidata": "2026-04-25T22:05:49Z"
 }

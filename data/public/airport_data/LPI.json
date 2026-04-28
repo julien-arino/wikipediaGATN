@@ -20,24 +20,39 @@
     "Lygg"
   ],
   "destinations": [
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Örebro",
-      "https://en.wikipedia.org/wiki/Örebro_Airport",
-      "ORB",
-      "ESOE"
-    ]
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Lygg"
+      ]
+    },
+    {
+      "city": "Örebro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Örebro_Airport",
+      "codes": [
+        "ORB",
+        "ESOE"
+      ],
+      "airlines": [
+        "Lygg"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KLM": [
@@ -47,5 +62,7 @@
       "Helsinki",
       "Örebro"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:25Z",
+  "date-time-wikidata": "2025-04-14T20:30:44Z"
 }

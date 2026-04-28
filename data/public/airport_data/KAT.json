@@ -20,18 +20,28 @@
     "Sunair"
   ],
   "destinations": [
-    [
-      "Auckland",
-      "https://en.wikipedia.org/wiki/Auckland_Airport",
-      "AKL",
-      "NZAA"
-    ],
-    [
-      "Whangārei",
-      "https://en.wikipedia.org/wiki/Whangarei_Airport",
-      "WRE",
-      "NZWR"
-    ]
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Barrier Air"
+      ]
+    },
+    {
+      "city": "Whangārei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whangarei_Airport",
+      "codes": [
+        "WRE",
+        "NZWR"
+      ],
+      "airlines": [
+        "Sunair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Barrier Air": [
@@ -40,5 +50,7 @@
     "Sunair": [
       "Whangārei"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:32Z",
+  "date-time-wikidata": "2025-02-19T05:39:02Z"
 }

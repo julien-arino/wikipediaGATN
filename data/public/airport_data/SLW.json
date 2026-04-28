@@ -20,18 +20,28 @@
     "Volaris"
   ],
   "destinations": [
-    [
-      "Guadalajara",
-      "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ],
-    [
-      "Monterrey",
-      "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
-      "MTY",
-      "MMMY"
-    ]
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerus": [
@@ -40,5 +50,7 @@
     "Volaris": [
       "Guadalajara"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:45Z",
+  "date-time-wikidata": "2026-04-02T12:08:48Z"
 }

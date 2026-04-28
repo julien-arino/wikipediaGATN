@@ -20,30 +20,50 @@
     "Gol Linhas Aéreas"
   ],
   "destinations": [
-    [
-      "Campinas",
-      "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "VCP",
-      "SBKP"
-    ],
-    [
-      "Maceió",
-      "https://en.wikipedia.org/wiki/Zumbi_dos_Palmares_International_Airport",
-      "MCZ",
-      "SBMO"
-    ],
-    [
-      "Porto Seguro",
-      "https://en.wikipedia.org/wiki/Porto_Seguro_Airport",
-      "BPS",
-      "SBPS"
-    ],
-    [
-      "São Paulo–Congonhas",
-      "https://en.wikipedia.org/wiki/São_Paulo/Congonhas_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Maceió",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zumbi_dos_Palmares_International_Airport",
+      "codes": [
+        "MCZ",
+        "SBMO"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Porto Seguro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Seguro_Airport",
+      "codes": [
+        "BPS",
+        "SBPS"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "São Paulo–Congonhas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Congonhas_Airport",
+      "codes": [
+        "CGH",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
@@ -54,5 +74,7 @@
     "Gol Linhas Aéreas": [
       "São Paulo–Congonhas"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:50Z",
+  "date-time-wikidata": "2025-12-18T22:12:07Z"
 }

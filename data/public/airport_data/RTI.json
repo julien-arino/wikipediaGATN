@@ -20,18 +20,29 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Savu",
-      "https://en.wikipedia.org/wiki/Tardamu_Airport",
-      "SAU",
-      "WATS"
-    ]
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Savu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tardamu_Airport",
+      "codes": [
+        "SAU",
+        "WATS"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -41,5 +52,7 @@
     "Wings Air": [
       "Kupang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:28Z",
+  "date-time-wikidata": "2026-04-03T22:17:28Z"
 }

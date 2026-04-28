@@ -7,6 +7,7 @@
   "lat": "28.9411554",
   "lon": "50.848109",
   "altitude": "21",
+  "continent": "Asia",
   "region": "Bushehr",
   "country_alpha3": "IRN",
   "country_name": "Iran, Islamic Republic of",
@@ -24,24 +25,44 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Medina",
-      "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "MED",
-      "OEMA"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Iran Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Iran Air",
+        "Iran Airtour",
+        "Iran Aseman Airlines",
+        "Qeshm Air",
+        "Varesh Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ATA Airlines": [
@@ -67,5 +88,6 @@
       "Tehran–Mehrabad"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:14:35Z",
+  "date-time-wikidata": "2026-03-06T17:20:26Z"
 }

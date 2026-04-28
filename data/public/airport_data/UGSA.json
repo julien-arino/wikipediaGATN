@@ -19,24 +19,39 @@
     "Vanilla Sky Airlines"
   ],
   "destinations": [
-    [
-      "Ambrolauri",
-      "https://en.wikipedia.org/wiki/Ambrolauri_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Batumi",
-      "https://en.wikipedia.org/wiki/Batumi_International_Airport",
-      "BUS",
-      "UGSB"
-    ],
-    [
-      "Mestia",
-      "https://en.wikipedia.org/wiki/Queen_Tamar_Airport",
-      "iata code not found",
-      "UGMS"
-    ]
+    {
+      "city": "Ambrolauri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ambrolauri_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Vanilla Sky Airlines"
+      ]
+    },
+    {
+      "city": "Batumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Batumi_International_Airport",
+      "codes": [
+        "BUS",
+        "UGSB"
+      ],
+      "airlines": [
+        "Vanilla Sky Airlines"
+      ]
+    },
+    {
+      "city": "Mestia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Tamar_Airport",
+      "codes": [
+        "iata code not found",
+        "UGMS"
+      ],
+      "airlines": [
+        "Vanilla Sky Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Vanilla Sky Airlines": [
@@ -44,5 +59,7 @@
       "Batumi",
       "Mestia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:29Z",
+  "date-time-wikidata": "2025-07-31T02:28:23Z"
 }

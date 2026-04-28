@@ -20,18 +20,30 @@
     "PAL Express"
   ],
   "destinations": [
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan-Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ],
-    [
-      "Cebu",
-      "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-      "CEB",
-      "RPVM"
-    ]
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan-Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "PAL Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Cebgo": [
@@ -40,5 +52,7 @@
     "PAL Express": [
       "Cebu"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:00Z",
+  "date-time-wikidata": "2025-10-26T17:34:34Z"
 }

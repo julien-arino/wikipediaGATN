@@ -19,23 +19,35 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Cold Bay",
-      "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
-      "CDB",
-      "PACD"
-    ],
-    [
-      "False Pass",
-      "https://en.wikipedia.org/wiki/False_Pass_Airport",
-      "KFP",
-      "PAKF"
-    ]
+    {
+      "city": "Cold Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "False Pass",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/False_Pass_Airport",
+      "codes": [
+        "KFP",
+        "PAKF"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
       "Cold Bay",
       "False Pass"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:07Z",
+  "date-time-wikidata": "2025-05-31T00:18:24Z"
 }

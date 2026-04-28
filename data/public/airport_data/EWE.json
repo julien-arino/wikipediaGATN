@@ -21,18 +21,29 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Merauke",
-      "https://en.wikipedia.org/wiki/Mopah_Airport",
-      "MKQ",
-      "WAKK"
-    ],
-    [
-      "Timika",
-      "https://en.wikipedia.org/wiki/Timika_Airport",
-      "TIM",
-      "WAYY"
-    ]
+    {
+      "city": "Merauke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mopah_Airport",
+      "codes": [
+        "MKQ",
+        "WAKK"
+      ],
+      "airlines": [
+        "Susi Air",
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Timika",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timika_Airport",
+      "codes": [
+        "TIM",
+        "WAYY"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -44,5 +55,7 @@
     "Wings Air": [
       "Timika"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:27Z",
+  "date-time-wikidata": "2026-03-14T12:57:35Z"
 }

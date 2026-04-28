@@ -21,18 +21,29 @@
     "Seair Pacific"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Lady Elliot Island",
-      "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Link Airways",
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Lady Elliot Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Seair Pacific"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Link Airways": [
@@ -44,5 +55,7 @@
     "Seair Pacific": [
       "Lady Elliot Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:43Z",
+  "date-time-wikidata": "2025-08-05T08:48:00Z"
 }

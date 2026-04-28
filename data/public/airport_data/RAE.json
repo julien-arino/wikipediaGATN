@@ -23,36 +23,63 @@
     "Saudia"
   ],
   "destinations": [
-    [
-      "Cairo International Airport",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Hail International Airport",
-      "https://en.wikipedia.org/wiki/Hail_International_Airport",
-      "HAS",
-      "OEHL"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Fahd International Airport",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ]
+    {
+      "city": "Cairo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Hail International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hail_International_Airport",
+      "codes": [
+        "HAS",
+        "OEHL"
+      ],
+      "airlines": [
+        "Nesma Airlines"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "King Fahd International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Flynas"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Flyadeal",
+        "Flynas",
+        "Saudia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Flyadeal": [
@@ -72,5 +99,7 @@
       "King Abdulaziz International Airport",
       "King Khalid International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:37Z",
+  "date-time-wikidata": "2026-04-17T10:49:45Z"
 }

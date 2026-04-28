@@ -20,12 +20,18 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Nukus",
-      "https://en.wikipedia.org/wiki/Nukus_Airport",
-      "NCU",
-      "UZNN"
-    ]
+    {
+      "city": "Nukus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nukus_Airport",
+      "codes": [
+        "NCU",
+        "UZNN"
+      ],
+      "airlines": [
+        "Silk Avia",
+        "Uzbekistan Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Silk Avia": [
@@ -34,5 +40,7 @@
     "Uzbekistan Airways": [
       "Nukus"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:49Z",
+  "date-time-wikidata": "2025-12-18T04:01:35Z"
 }

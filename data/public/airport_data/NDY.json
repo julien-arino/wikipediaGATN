@@ -19,24 +19,39 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Kirkwall",
-      "https://en.wikipedia.org/wiki/Kirkwall_Airport",
-      "KOI",
-      "EGPA"
-    ],
-    [
-      "North Ronaldsay",
-      "https://en.wikipedia.org/wiki/North_Ronaldsay_Airport",
-      "NRL",
-      "EGEN"
-    ],
-    [
-      "Stronsay",
-      "https://en.wikipedia.org/wiki/Stronsay_Airport",
-      "SOY",
-      "EGER"
-    ]
+    {
+      "city": "Kirkwall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kirkwall_Airport",
+      "codes": [
+        "KOI",
+        "EGPA"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "North Ronaldsay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Ronaldsay_Airport",
+      "codes": [
+        "NRL",
+        "EGEN"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Stronsay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stronsay_Airport",
+      "codes": [
+        "SOY",
+        "EGER"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Loganair": [
@@ -44,5 +59,7 @@
       "North Ronaldsay",
       "Stronsay"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:21Z",
+  "date-time-wikidata": "2025-10-30T21:59:11Z"
 }

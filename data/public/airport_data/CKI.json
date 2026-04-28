@@ -19,23 +19,35 @@
     "Fly Tiwi"
   ],
   "destinations": [
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Warruwi",
-      "https://en.wikipedia.org/wiki/South_Goulburn_Island_Airport",
-      "GBL",
-      "YGBI"
-    ]
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Warruwi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/South_Goulburn_Island_Airport",
+      "codes": [
+        "GBL",
+        "YGBI"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fly Tiwi": [
       "Darwin",
       "Warruwi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:41Z",
+  "date-time-wikidata": "2024-01-31T23:47:53Z"
 }

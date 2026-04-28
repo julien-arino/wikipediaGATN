@@ -22,48 +22,87 @@
     "PopulAir"
   ],
   "destinations": [
-    [
-      "Hanover",
-      "https://en.wikipedia.org/wiki/Hannover_Airport",
-      "HAJ",
-      "EDDV"
-    ],
-    [
-      "Hanover",
-      "https://en.wikipedia.org/wiki/Hanover_Airport",
-      "HAJ",
-      "EDDV"
-    ],
-    [
-      "Hemavan",
-      "https://en.wikipedia.org/wiki/Hemavan_Airport",
-      "HMV",
-      "ESUT"
-    ],
-    [
-      "Lycksele",
-      "https://en.wikipedia.org/wiki/Lycksele_Airport",
-      "LYC",
-      "ESNL"
-    ],
-    [
-      "Munich",
-      "https://en.wikipedia.org/wiki/Munich_Airport",
-      "MUC",
-      "EDDM"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Vilhelmina",
-      "https://en.wikipedia.org/wiki/Vilhelmina_Airport",
-      "VHM",
-      "ESNV"
-    ]
+    {
+      "city": "Hanover",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
+      "codes": [
+        "HAJ",
+        "EDDV"
+      ],
+      "airlines": [
+        "Condor",
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Hanover",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanover_Airport",
+      "codes": [
+        "HAJ",
+        "EDDV"
+      ],
+      "airlines": [
+        "Condor",
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Hemavan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hemavan_Airport",
+      "codes": [
+        "HMV",
+        "ESUT"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Lycksele",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lycksele_Airport",
+      "codes": [
+        "LYC",
+        "ESNL"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Condor",
+        "Eurowings",
+        "LEAV Aviation"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    },
+    {
+      "city": "Vilhelmina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vilhelmina_Airport",
+      "codes": [
+        "VHM",
+        "ESNV"
+      ],
+      "airlines": [
+        "PopulAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Condor": [
@@ -83,5 +122,7 @@
       "Stockholm–Arlanda",
       "Vilhelmina"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:54Z",
+  "date-time-wikidata": "2026-02-09T11:37:43Z"
 }

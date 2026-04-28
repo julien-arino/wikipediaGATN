@@ -21,36 +21,61 @@
     "UPS Airlines"
   ],
   "destinations": [
-    [
-      "Cleveland Burke Lakefront Airport",
-      "https://en.wikipedia.org/wiki/Cleveland_Burke_Lakefront_Airport",
-      "BKL",
-      "KBKL"
-    ],
-    [
-      "Columbia Regional Airport",
-      "https://en.wikipedia.org/wiki/Columbia_Regional_Airport",
-      "COU",
-      "KCOU"
-    ],
-    [
-      "Laredo International Airport",
-      "https://en.wikipedia.org/wiki/Laredo_International_Airport",
-      "LRD",
-      "KLRD"
-    ],
-    [
-      "Louisville International Airport",
-      "https://en.wikipedia.org/wiki/Louisville_International_Airport",
-      "SDF",
-      "KSDF"
-    ],
-    [
-      "Miguel Hidalgo y Costilla Guadalajara International Airport",
-      "https://en.wikipedia.org/wiki/Miguel_Hidalgo_y_Costilla_Guadalajara_International_Airport",
-      "GDL",
-      "MMGL"
-    ]
+    {
+      "city": "Cleveland Burke Lakefront Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Burke_Lakefront_Airport",
+      "codes": [
+        "BKL",
+        "KBKL"
+      ],
+      "airlines": [
+        "AirNet Express"
+      ]
+    },
+    {
+      "city": "Columbia Regional Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Columbia_Regional_Airport",
+      "codes": [
+        "COU",
+        "KCOU"
+      ],
+      "airlines": [
+        "AirNet Express"
+      ]
+    },
+    {
+      "city": "Laredo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laredo_International_Airport",
+      "codes": [
+        "LRD",
+        "KLRD"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    },
+    {
+      "city": "Louisville International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Miguel Hidalgo y Costilla Guadalajara International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miguel_Hidalgo_y_Costilla_Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeronaves TSM": [
@@ -64,5 +89,7 @@
     "UPS Airlines": [
       "Louisville International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:42Z",
+  "date-time-wikidata": "2026-01-09T21:21:45Z"
 }

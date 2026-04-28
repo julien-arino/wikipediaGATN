@@ -23,36 +23,72 @@
     "Myanmar National Airlines"
   ],
   "destinations": [
-    [
-      "Heho",
-      "https://en.wikipedia.org/wiki/Heho_Airport",
-      "HEH",
-      "VYHH"
-    ],
-    [
-      "Mandalay",
-      "https://en.wikipedia.org/wiki/Mandalay_International_Airport",
-      "MDL",
-      "VYMD"
-    ],
-    [
-      "Nay Pyi Taw",
-      "https://en.wikipedia.org/wiki/Nay_Pyi_Taw_International_Airport",
-      "NYT",
-      "VYNT"
-    ],
-    [
-      "Yangon",
-      "https://en.wikipedia.org/wiki/Yangon_Airport",
-      "RGN",
-      "VYYY"
-    ],
-    [
-      "Yangon",
-      "https://en.wikipedia.org/wiki/Yangon_International_Airport",
-      "RGN",
-      "VYYY"
-    ]
+    {
+      "city": "Heho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heho_Airport",
+      "codes": [
+        "HEH",
+        "VYHH"
+      ],
+      "airlines": [
+        "Mann Yatanarpon Airlines",
+        "Mingalar Aviation Services",
+        "Myanmar Airways International"
+      ]
+    },
+    {
+      "city": "Mandalay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mandalay_International_Airport",
+      "codes": [
+        "MDL",
+        "VYMD"
+      ],
+      "airlines": [
+        "Air Thanlwin",
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Nay Pyi Taw",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nay_Pyi_Taw_International_Airport",
+      "codes": [
+        "NYT",
+        "VYNT"
+      ],
+      "airlines": [
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Yangon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangon_Airport",
+      "codes": [
+        "RGN",
+        "VYYY"
+      ],
+      "airlines": [
+        "Air Thanlwin",
+        "Mann Yatanarpon Airlines",
+        "Mingalar Aviation Services",
+        "Myanmar Airways International",
+        "Myanmar National Airlines"
+      ]
+    },
+    {
+      "city": "Yangon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangon_International_Airport",
+      "codes": [
+        "RGN",
+        "VYYY"
+      ],
+      "airlines": [
+        "Air Thanlwin",
+        "Mann Yatanarpon Airlines",
+        "Mingalar Aviation Services",
+        "Myanmar Airways International",
+        "Myanmar National Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Thanlwin": [
@@ -76,5 +112,7 @@
       "Nay Pyi Taw",
       "Yangon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:01Z",
+  "date-time-wikidata": "2025-06-25T01:53:57Z"
 }

@@ -20,18 +20,28 @@
     "Loganair"
   ],
   "destinations": [
-    [
-      "Aberdeen",
-      "https://en.wikipedia.org/wiki/Aberdeen_Airport",
-      "ABZ",
-      "EGPD"
-    ],
-    [
-      "Stavanger",
-      "https://en.wikipedia.org/wiki/Stavanger_Airport,_Sola",
-      "SVG",
-      "ENZV"
-    ]
+    {
+      "city": "Aberdeen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aberdeen_Airport",
+      "codes": [
+        "ABZ",
+        "EGPD"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Stavanger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stavanger_Airport,_Sola",
+      "codes": [
+        "SVG",
+        "ENZV"
+      ],
+      "airlines": [
+        "LYGG"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Loganair": [
@@ -40,5 +50,7 @@
     "LYGG": [
       "Stavanger"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:17Z",
+  "date-time-wikidata": "2026-02-03T14:00:55Z"
 }

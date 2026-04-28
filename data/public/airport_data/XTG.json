@@ -19,30 +19,50 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Cunnamulla",
-      "https://en.wikipedia.org/wiki/Cunnamulla_Airport",
-      "CMA",
-      "YCMU"
-    ],
-    [
-      "St George",
-      "https://en.wikipedia.org/wiki/St_George_Airport_(Queensland)",
-      "SGO",
-      "YSGE"
-    ],
-    [
-      "Toowoomba",
-      "https://en.wikipedia.org/wiki/Toowoomba_Wellcamp_Airport",
-      "WTB",
-      "YBWW"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Cunnamulla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cunnamulla_Airport",
+      "codes": [
+        "CMA",
+        "YCMU"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "St George",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St_George_Airport_(Queensland)",
+      "codes": [
+        "SGO",
+        "YSGE"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Toowoomba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toowoomba_Wellcamp_Airport",
+      "codes": [
+        "WTB",
+        "YBWW"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Rex Airlines": [
@@ -51,5 +71,7 @@
       "St George",
       "Toowoomba"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:34Z",
+  "date-time-wikidata": "2026-01-24T11:07:08Z"
 }

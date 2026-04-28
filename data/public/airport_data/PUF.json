@@ -23,60 +23,108 @@
     "Twin Jet"
   ],
   "destinations": [
-    [
-      "Ajaccio",
-      "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
-      "AJA",
-      "LFKJ"
-    ],
-    [
-      "Brest",
-      "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
-      "BES",
-      "LFRB"
-    ],
-    [
-      "Figari",
-      "https://en.wikipedia.org/wiki/Figari–Sud_Corse_Airport",
-      "FSC",
-      "LFKF"
-    ],
-    [
-      "Kerry",
-      "https://en.wikipedia.org/wiki/Kerry_Airport",
-      "KIR",
-      "EIKY"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ]
+    {
+      "city": "Ajaccio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
+      "codes": [
+        "AJA",
+        "LFKJ"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Brest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
+      "codes": [
+        "BES",
+        "LFRB"
+      ],
+      "airlines": [
+        "Chalair Aviation"
+      ]
+    },
+    {
+      "city": "Figari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Figari–Sud_Corse_Airport",
+      "codes": [
+        "FSC",
+        "LFKF"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Kerry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kerry_Airport",
+      "codes": [
+        "KIR",
+        "EIKY"
+      ],
+      "airlines": [
+        "Chalair Aviation"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air France",
+        "Twin Jet"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air France",
+        "Twin Jet"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Twin Jet"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Amelia International",
+        "Transavia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air France": [
@@ -99,5 +147,7 @@
       "Lyon",
       "Marseille"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:50Z",
+  "date-time-wikidata": "2025-11-15T09:49:25Z"
 }

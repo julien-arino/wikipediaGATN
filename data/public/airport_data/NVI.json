@@ -20,18 +20,28 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Tashkent International Airport",
-      "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Vnukovo International Airport",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ]
+    {
+      "city": "Tashkent International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Silk Avia"
+      ]
+    },
+    {
+      "city": "Vnukovo International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Silk Avia": [
@@ -40,5 +50,7 @@
     "Uzbekistan Airways": [
       "Vnukovo International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:06Z",
+  "date-time-wikidata": "2026-01-05T03:15:32Z"
 }

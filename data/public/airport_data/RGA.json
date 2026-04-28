@@ -21,42 +21,72 @@
     "LADE"
   ],
   "destinations": [
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Buenos Aires–Ezeiza",
-      "https://en.wikipedia.org/wiki/Ezeiza_Airport",
-      "EZE",
-      "SAEZ"
-    ],
-    [
-      "Comodoro Rivadavia",
-      "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
-      "CRD",
-      "SAVC"
-    ],
-    [
-      "El Calafate",
-      "https://en.wikipedia.org/wiki/Comandante_Armando_Tola_International_Airport",
-      "FTE",
-      "SAWC"
-    ],
-    [
-      "Río Gallegos",
-      "https://en.wikipedia.org/wiki/Piloto_Civil_Norberto_Fernández_International_Airport",
-      "RGL",
-      "SAWG"
-    ],
-    [
-      "Ushuaia",
-      "https://en.wikipedia.org/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
-      "USH",
-      "SAWH"
-    ]
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Ezeiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezeiza_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas Cargo"
+      ]
+    },
+    {
+      "city": "Comodoro Rivadavia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
+      "codes": [
+        "CRD",
+        "SAVC"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "El Calafate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Armando_Tola_International_Airport",
+      "codes": [
+        "FTE",
+        "SAWC"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Río Gallegos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piloto_Civil_Norberto_Fernández_International_Airport",
+      "codes": [
+        "RGL",
+        "SAWG"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Ushuaia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
+      "codes": [
+        "USH",
+        "SAWH"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -71,5 +101,7 @@
     "Aerolíneas Argentinas Cargo": [
       "Buenos Aires–Ezeiza"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:34Z",
+  "date-time-wikidata": "2026-01-18T14:11:48Z"
 }

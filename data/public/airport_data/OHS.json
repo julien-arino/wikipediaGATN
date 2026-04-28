@@ -22,24 +22,40 @@
     "Taban Air"
   ],
   "destinations": [
-    [
-      "Salalah",
-      "https://en.wikipedia.org/wiki/Salalah_International_Airport",
-      "SLL",
-      "OOSA"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ]
+    {
+      "city": "Salalah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salalah_International_Airport",
+      "codes": [
+        "SLL",
+        "OOSA"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Pars Air",
+        "Taban Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -54,5 +70,7 @@
     "SalamAir": [
       "Salalah"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:31Z",
+  "date-time-wikidata": "2026-04-05T18:44:18Z"
 }

@@ -19,23 +19,35 @@
     "Azul Conecta"
   ],
   "destinations": [
-    [
-      "Cuiabá",
-      "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
-      "CGB",
-      "SBCY"
-    ],
-    [
-      "Goiânia",
-      "https://en.wikipedia.org/wiki/Santa_Genoveva_Airport",
-      "GYN",
-      "SBGO"
-    ]
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "Goiânia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Genoveva_Airport",
+      "codes": [
+        "GYN",
+        "SBGO"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Azul Conecta": [
       "Cuiabá",
       "Goiânia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:14Z",
+  "date-time-wikidata": "2024-06-29T06:38:22Z"
 }

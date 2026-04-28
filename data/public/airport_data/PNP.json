@@ -20,18 +20,29 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Port Moresby",
-      "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
-      "POM",
-      "AYPY"
-    ],
-    [
-      "Tufi",
-      "https://en.wikipedia.org/wiki/Tufi_Airport",
-      "TFI",
-      "AYTU"
-    ]
+    {
+      "city": "Port Moresby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksons_International_Airport",
+      "codes": [
+        "POM",
+        "AYPY"
+      ],
+      "airlines": [
+        "Air Niugini",
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Tufi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tufi_Airport",
+      "codes": [
+        "TFI",
+        "AYTU"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Niugini": [
@@ -41,5 +52,7 @@
       "Port Moresby",
       "Tufi"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:29Z",
+  "date-time-wikidata": "2025-12-25T21:36:32Z"
 }

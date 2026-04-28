@@ -22,36 +22,63 @@
     "DHL de Guatemala"
   ],
   "destinations": [
-    [
-      "Guatemala City",
-      "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-      "GUA",
-      "MGGT"
-    ],
-    [
-      "La Ceiba",
-      "https://en.wikipedia.org/wiki/Golosón_International_Airport",
-      "LCE",
-      "MHLC"
-    ],
-    [
-      "Puerto Lempira",
-      "https://en.wikipedia.org/wiki/Puerto_Lempira_Airport",
-      "PEU",
-      "MHPL"
-    ],
-    [
-      "Roatán",
-      "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
-      "RTB",
-      "MHRO"
-    ],
-    [
-      "San Pedro Sula",
-      "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
-      "SAP",
-      "MHLM"
-    ]
+    {
+      "city": "Guatemala City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "DHL de Guatemala"
+      ]
+    },
+    {
+      "city": "La Ceiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golosón_International_Airport",
+      "codes": [
+        "LCE",
+        "MHLC"
+      ],
+      "airlines": [
+        "Aerolíneas Sosa"
+      ]
+    },
+    {
+      "city": "Puerto Lempira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puerto_Lempira_Airport",
+      "codes": [
+        "PEU",
+        "MHPL"
+      ],
+      "airlines": [
+        "CM Airlines"
+      ]
+    },
+    {
+      "city": "Roatán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
+      "codes": [
+        "RTB",
+        "MHRO"
+      ],
+      "airlines": [
+        "Aerolíneas Sosa",
+        "Aviatsa",
+        "CM Airlines"
+      ]
+    },
+    {
+      "city": "San Pedro Sula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
+      "codes": [
+        "SAP",
+        "MHLM"
+      ],
+      "airlines": [
+        "CM Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Sosa": [
@@ -69,5 +96,7 @@
     "DHL de Guatemala": [
       "Guatemala City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:24Z",
+  "date-time-wikidata": "2026-02-28T08:39:12Z"
 }

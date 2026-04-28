@@ -20,48 +20,85 @@
     "LADE"
   ],
   "destinations": [
-    [
-      "Bahía Blanca",
-      "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
-      "BHI",
-      "SAZB"
-    ],
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Córdoba (AR)",
-      "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
-      "COR",
-      "SACO"
-    ],
-    [
-      "Mendoza",
-      "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
-      "MDZ",
-      "SAME"
-    ],
-    [
-      "Puerto Madryn",
-      "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
-      "PMY",
-      "SAVY"
-    ],
-    [
-      "San Carlos de Bariloche",
-      "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
-      "BRC",
-      "SAZS"
-    ],
-    [
-      "Trelew",
-      "https://en.wikipedia.org/wiki/Almirante_Marcos_A._Zar_Airport",
-      "REL",
-      "SAVT"
-    ]
+    {
+      "city": "Bahía Blanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
+      "codes": [
+        "BHI",
+        "SAZB"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "LADE"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "LADE"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Puerto Madryn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
+      "codes": [
+        "PMY",
+        "SAVY"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "San Carlos de Bariloche",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
+      "codes": [
+        "BRC",
+        "SAZS"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Trelew",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almirante_Marcos_A._Zar_Airport",
+      "codes": [
+        "REL",
+        "SAVT"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -77,5 +114,7 @@
       "Puerto Madryn",
       "San Carlos de Bariloche"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:14Z",
+  "date-time-wikidata": "2026-01-16T00:30:51Z"
 }

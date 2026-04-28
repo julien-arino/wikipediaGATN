@@ -19,23 +19,35 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Kiunga",
-      "https://en.wikipedia.org/wiki/Kiunga_Airport",
-      "UNG",
-      "AYKI"
-    ],
-    [
-      "Obo",
-      "https://en.wikipedia.org/wiki/Obo_Airport_(Papua_New_Guinea)",
-      "OBX",
-      "AYOB"
-    ]
+    {
+      "city": "Kiunga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kiunga_Airport",
+      "codes": [
+        "UNG",
+        "AYKI"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Obo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Obo_Airport_(Papua_New_Guinea)",
+      "codes": [
+        "OBX",
+        "AYOB"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PNG Air": [
       "Kiunga",
       "Obo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:07Z",
+  "date-time-wikidata": "2024-11-01T19:39:36Z"
 }

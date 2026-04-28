@@ -19,23 +19,35 @@
     "China Eastern Airlines"
   ],
   "destinations": [
-    [
-      "Kunming Changshui International Airport",
-      "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
-      "KMG",
-      "ZPPP"
-    ],
-    [
-      "Shanghai Hongqiao International Airport",
-      "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
-      "SHA",
-      "ZSSS"
-    ]
+    {
+      "city": "Kunming Changshui International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai Hongqiao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "codes": [
+        "SHA",
+        "ZSSS"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Eastern Airlines": [
       "Kunming Changshui International Airport",
       "Shanghai Hongqiao International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:14Z",
+  "date-time-wikidata": "2025-09-05T10:09:19Z"
 }

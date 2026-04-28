@@ -24,30 +24,55 @@
     "Satena"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Bucaramanga",
-      "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
-      "BGA",
-      "SKBG"
-    ],
-    [
-      "Paipa",
-      "https://en.wikipedia.org/wiki/Juan_José_Rondón_Airport",
-      "RON",
-      "SKPA"
-    ],
-    [
-      "Villavicencio",
-      "https://en.wikipedia.org/wiki/Vanguardia_Airport",
-      "VVC",
-      "SKVV"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "AeroTACA",
+        "Clic",
+        "LATAM Colombia",
+        "Satena"
+      ]
+    },
+    {
+      "city": "Bucaramanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
+      "codes": [
+        "BGA",
+        "SKBG"
+      ],
+      "airlines": [
+        "Clic",
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Paipa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_José_Rondón_Airport",
+      "codes": [
+        "RON",
+        "SKPA"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Villavicencio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vanguardia_Airport",
+      "codes": [
+        "VVC",
+        "SKVV"
+      ],
+      "airlines": [
+        "AeroTACA",
+        "Avianca"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -71,5 +96,7 @@
       "Bogotá",
       "Villavicencio"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:30Z",
+  "date-time-wikidata": "2025-10-12T03:11:53Z"
 }

@@ -19,24 +19,39 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Bima",
-      "https://en.wikipedia.org/wiki/Sultan_Muhammad_Salahudin_Airport",
-      "BMU",
-      "WADB"
-    ],
-    [
-      "Kupang",
-      "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
-      "KOE",
-      "WATT"
-    ],
-    [
-      "Labuan Bajo",
-      "https://en.wikipedia.org/wiki/Komodo_International_Airport",
-      "LBJ",
-      "WATO"
-    ]
+    {
+      "city": "Bima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Muhammad_Salahudin_Airport",
+      "codes": [
+        "BMU",
+        "WADB"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Kupang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tari_International_Airport",
+      "codes": [
+        "KOE",
+        "WATT"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Labuan Bajo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Komodo_International_Airport",
+      "codes": [
+        "LBJ",
+        "WATO"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wings Air": [
@@ -44,5 +59,7 @@
       "Kupang",
       "Labuan Bajo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:17Z",
+  "date-time-wikidata": "2026-04-07T00:06:35Z"
 }

@@ -20,24 +20,39 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Lombok",
-      "https://en.wikipedia.org/wiki/Lombok_International_Airport",
-      "LOP",
-      "WADL"
-    ],
-    [
-      "Surabaya",
-      "https://en.wikipedia.org/wiki/Juanda_International_Airport",
-      "SUB",
-      "WARR"
-    ]
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Lombok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombok_International_Airport",
+      "codes": [
+        "LOP",
+        "WADL"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Surabaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Super Air Jet": [
@@ -47,5 +62,7 @@
       "Lombok",
       "Surabaya"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:39Z",
+  "date-time-wikidata": "2026-04-17T20:15:02Z"
 }

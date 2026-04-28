@@ -7,6 +7,7 @@
   "lat": "30.5450472",
   "lon": "47.6699113",
   "altitude": "3",
+  "continent": "Asia",
   "region": "Basra Governorate",
   "country_alpha3": "IRQ",
   "country_name": "Iraq",
@@ -27,102 +28,189 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Amman–Queen Alia",
-      "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-      "AMM",
-      "OJAI"
-    ],
-    [
-      "Baghdad",
-      "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
-      "BGW",
-      "ORBI"
-    ],
-    [
-      "Beijing–Capital",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Beirut",
-      "https://en.wikipedia.org/wiki/Beirut_Rafic_Hariri_International_Airport",
-      "BEY",
-      "OLBA"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Damascus",
-      "https://en.wikipedia.org/wiki/Damascus_International_Airport",
-      "DAM",
-      "OSDI"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Doha",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Erbil",
-      "https://en.wikipedia.org/wiki/Erbil_International_Airport",
-      "EBL",
-      "ORER"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Istanbul–Sabiha Gökçen",
-      "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
-      "SAW",
-      "LTFJ"
-    ],
-    [
-      "Mashhad",
-      "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
-      "MHD",
-      "OIMM"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Sulaymaniyah",
-      "https://en.wikipedia.org/wiki/Sulaymaniyah_International_Airport",
-      "ISU",
-      "ORSU"
-    ]
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "Royal Jordanian"
+      ]
+    },
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Beirut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beirut_Rafic_Hariri_International_Airport",
+      "codes": [
+        "BEY",
+        "OLBA"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Damascus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damascus_International_Airport",
+      "codes": [
+        "DAM",
+        "OSDI"
+      ],
+      "airlines": [
+        "Fly Baghdad"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates",
+        "Iraqi Airways",
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Erbil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erbil_International_Airport",
+      "codes": [
+        "EBL",
+        "ORER"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Iraqi Airways",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "AJet",
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "Mashhad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mashhad_Shahid_Hasheminejad_International_Airport",
+      "codes": [
+        "MHD",
+        "OIMM"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    },
+    {
+      "city": "Sulaymaniyah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sulaymaniyah_International_Airport",
+      "codes": [
+        "ISU",
+        "ORSU"
+      ],
+      "airlines": [
+        "Iraqi Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AJet": [
@@ -167,5 +255,6 @@
       "Istanbul"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:11:03Z",
+  "date-time-wikidata": "2026-02-27T06:48:59Z"
 }

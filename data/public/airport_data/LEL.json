@@ -21,18 +21,29 @@
     "Mission Aviation Fellowship"
   ],
   "destinations": [
-    [
-      "Darwin",
-      "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-      "DRW",
-      "YPDN"
-    ],
-    [
-      "Gove",
-      "https://en.wikipedia.org/wiki/Gove_Airport",
-      "GOV",
-      "YPGV"
-    ]
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "Fly Tiwi"
+      ]
+    },
+    {
+      "city": "Gove",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gove_Airport",
+      "codes": [
+        "GOV",
+        "YPGV"
+      ],
+      "airlines": [
+        "Marthakal Yolngu Airline",
+        "Mission Aviation Fellowship"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fly Tiwi": [
@@ -44,5 +55,7 @@
     "Mission Aviation Fellowship": [
       "Gove"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:58Z",
+  "date-time-wikidata": "2024-04-17T17:13:32Z"
 }

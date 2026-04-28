@@ -21,24 +21,41 @@
     "LATAM Ecuador"
   ],
   "destinations": [
-    [
-      "Baltra",
-      "https://en.wikipedia.org/wiki/Seymour_Airport",
-      "GPS",
-      "SEGS"
-    ],
-    [
-      "Guayaquil",
-      "https://en.wikipedia.org/wiki/José_Joaquín_de_Olmedo_International_Airport",
-      "GYE",
-      "SEGU"
-    ],
-    [
-      "Quito",
-      "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
-      "UIO",
-      "SEQM"
-    ]
+    {
+      "city": "Baltra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seymour_Airport",
+      "codes": [
+        "GPS",
+        "SEGS"
+      ],
+      "airlines": [
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Guayaquil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Joaquín_de_Olmedo_International_Airport",
+      "codes": [
+        "GYE",
+        "SEGU"
+      ],
+      "airlines": [
+        "LATAM Ecuador"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Aeroregional",
+        "Avianca Ecuador",
+        "LATAM Ecuador"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroregional": [
@@ -52,5 +69,7 @@
       "Guayaquil",
       "Quito"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:09Z",
+  "date-time-wikidata": "2026-02-02T01:55:58Z"
 }

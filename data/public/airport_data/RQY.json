@@ -21,36 +21,62 @@
     "Star Air"
   ],
   "destinations": [
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Goa–Mopa",
-      "https://en.wikipedia.org/wiki/Manohar_International_Airport",
-      "GOX",
-      "VOGA"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Tirupati",
-      "https://en.wikipedia.org/wiki/Tirupati_Airport",
-      "TIR",
-      "VOTP"
-    ]
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Goa–Mopa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manohar_International_Airport",
+      "codes": [
+        "GOX",
+        "VOGA"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "SpiceJet",
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Tirupati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirupati_Airport",
+      "codes": [
+        "TIR",
+        "VOTP"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -65,5 +91,7 @@
       "Hyderabad",
       "Tirupati"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:56Z",
+  "date-time-wikidata": "2026-03-13T11:52:05Z"
 }

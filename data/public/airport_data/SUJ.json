@@ -20,18 +20,28 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Bucharest–Otopeni",
-      "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
-      "OTP",
-      "LROP"
-    ],
-    [
-      "London–Luton",
-      "https://en.wikipedia.org/wiki/London–Luton",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP"
+      ],
+      "airlines": [
+        "TAROM"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Luton",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "TAROM": [
@@ -40,5 +50,7 @@
     "Wizz Air": [
       "London–Luton"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:56Z",
+  "date-time-wikidata": "2026-03-06T01:21:47Z"
 }

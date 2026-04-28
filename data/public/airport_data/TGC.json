@@ -19,23 +19,35 @@
     "AirBorneo"
   ],
   "destinations": [
-    [
-      "Kuching",
-      "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-      "KCH",
-      "WBGG"
-    ],
-    [
-      "Mukah",
-      "https://en.wikipedia.org/wiki/Mukah_Airport",
-      "MKM",
-      "WBGK"
-    ]
+    {
+      "city": "Kuching",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
+      "codes": [
+        "KCH",
+        "WBGG"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Mukah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mukah_Airport",
+      "codes": [
+        "MKM",
+        "WBGK"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirBorneo": [
       "Kuching",
       "Mukah"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:22Z",
+  "date-time-wikidata": "2026-01-05T17:13:32Z"
 }

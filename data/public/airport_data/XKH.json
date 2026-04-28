@@ -21,12 +21,19 @@
     "Lao Skyway"
   ],
   "destinations": [
-    [
-      "Vientiane",
-      "https://en.wikipedia.org/wiki/Wattay_International_Airport",
-      "VTE",
-      "VLVT"
-    ]
+    {
+      "city": "Vientiane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wattay_International_Airport",
+      "codes": [
+        "VTE",
+        "VLVT"
+      ],
+      "airlines": [
+        "Lanexang Airways International",
+        "Lao Airlines",
+        "Lao Skyway"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Lao Airlines": [
@@ -38,5 +45,7 @@
     "Lanexang Airways International": [
       "Vientiane"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:20Z",
+  "date-time-wikidata": "2026-02-12T23:11:31Z"
 }

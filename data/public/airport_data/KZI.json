@@ -19,23 +19,35 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ],
-    [
-      "Kastoria",
-      "https://en.wikipedia.org/wiki/Kastoria_Airport",
-      "KSO",
-      "LGKA"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    },
+    {
+      "city": "Kastoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kastoria_Airport",
+      "codes": [
+        "KSO",
+        "LGKA"
+      ],
+      "airlines": [
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Sky Express": [
       "Athens",
       "Kastoria"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:13Z",
+  "date-time-wikidata": "2025-01-04T20:29:13Z"
 }

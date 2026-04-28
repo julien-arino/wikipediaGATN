@@ -19,23 +19,35 @@
     "Bahamasair"
   ],
   "destinations": [
-    [
-      "Nassau",
-      "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
-      "NAS",
-      "MYNN"
-    ],
-    [
-      "Spring Point",
-      "https://en.wikipedia.org/wiki/Spring_Point_Airport",
-      "AXP",
-      "MYAP"
-    ]
+    {
+      "city": "Nassau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lynden_Pindling_International_Airport",
+      "codes": [
+        "NAS",
+        "MYNN"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    },
+    {
+      "city": "Spring Point",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spring_Point_Airport",
+      "codes": [
+        "AXP",
+        "MYAP"
+      ],
+      "airlines": [
+        "Bahamasair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Bahamasair": [
       "Nassau",
       "Spring Point"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:55Z",
+  "date-time-wikidata": "2022-02-02T02:50:07Z"
 }

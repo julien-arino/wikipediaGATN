@@ -20,30 +20,53 @@
     "Tropic Air"
   ],
   "destinations": [
-    [
-      "Belize City–International",
-      "https://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
-      "BZE",
-      "MZBZ"
-    ],
-    [
-      "Belize City–Municipal",
-      "https://en.wikipedia.org/wiki/Sir_Barry_Bowen_Municipal_Airport",
-      "TZA",
-      "MZBE"
-    ],
-    [
-      "Independence",
-      "https://en.wikipedia.org/wiki/Independence_Airport_(Belize)",
-      "INB",
-      "MZSV"
-    ],
-    [
-      "Placencia",
-      "https://en.wikipedia.org/wiki/Placencia_Airport",
-      "PLJ",
-      "MZPL"
-    ]
+    {
+      "city": "Belize City–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_S._W._Goldson_International_Airport",
+      "codes": [
+        "BZE",
+        "MZBZ"
+      ],
+      "airlines": [
+        "Maya Island Air",
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Belize City–Municipal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Barry_Bowen_Municipal_Airport",
+      "codes": [
+        "TZA",
+        "MZBE"
+      ],
+      "airlines": [
+        "Maya Island Air",
+        "Tropic Air"
+      ]
+    },
+    {
+      "city": "Independence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Independence_Airport_(Belize)",
+      "codes": [
+        "INB",
+        "MZSV"
+      ],
+      "airlines": [
+        "Maya Island Air"
+      ]
+    },
+    {
+      "city": "Placencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Placencia_Airport",
+      "codes": [
+        "PLJ",
+        "MZPL"
+      ],
+      "airlines": [
+        "Maya Island Air",
+        "Tropic Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Maya Island Air": [
@@ -57,5 +80,7 @@
       "Belize City–Municipal",
       "Placencia"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:06Z",
+  "date-time-wikidata": "2026-03-18T15:06:30Z"
 }

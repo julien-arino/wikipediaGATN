@@ -19,24 +19,39 @@
     "Air Liaison"
   ],
   "destinations": [
-    [
-      "Chevery",
-      "https://en.wikipedia.org/wiki/Chevery_Airport",
-      "YHR",
-      "CYHR"
-    ],
-    [
-      "La Tabatière",
-      "https://en.wikipedia.org/wiki/La_Tabatière_Airport",
-      "ZLT",
-      "icao code not found"
-    ],
-    [
-      "Saint-Augustin",
-      "https://en.wikipedia.org/wiki/Saint-Augustin_Airport",
-      "YIF",
-      "CYIF"
-    ]
+    {
+      "city": "Chevery",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chevery_Airport",
+      "codes": [
+        "YHR",
+        "CYHR"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "La Tabatière",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Tabatière_Airport",
+      "codes": [
+        "ZLT",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    },
+    {
+      "city": "Saint-Augustin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint-Augustin_Airport",
+      "codes": [
+        "YIF",
+        "CYIF"
+      ],
+      "airlines": [
+        "Air Liaison"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Liaison": [
@@ -44,5 +59,7 @@
       "La Tabatière",
       "Saint-Augustin"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:43Z",
+  "date-time-wikidata": "2025-10-08T22:24:59Z"
 }

@@ -21,18 +21,29 @@
     "Cronos Airlines"
   ],
   "destinations": [
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Libreville_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Malabo",
-      "https://en.wikipedia.org/wiki/Malabo_International_Airport",
-      "SSG",
-      "FGSL"
-    ]
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "Afrijet"
+      ]
+    },
+    {
+      "city": "Malabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malabo_International_Airport",
+      "codes": [
+        "SSG",
+        "FGSL"
+      ],
+      "airlines": [
+        "CEIBA Intercontinental",
+        "Cronos Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afrijet": [
@@ -44,5 +55,7 @@
     "Cronos Airlines": [
       "Malabo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:01Z",
+  "date-time-wikidata": "2026-04-28T04:37:13Z"
 }

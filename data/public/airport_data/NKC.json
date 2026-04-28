@@ -27,90 +27,169 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Bamako",
-      "https://en.wikipedia.org/wiki/Bamako-Sénou_International_Airport",
-      "BKO",
-      "GABS"
-    ],
-    [
-      "Banjul",
-      "https://en.wikipedia.org/wiki/Banjul_International_Airport",
-      "BJL",
-      "GBYD"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Conakry",
-      "https://en.wikipedia.org/wiki/Ahmed_Sékou_Touré_International_Airport",
-      "CKY",
-      "GUCY"
-    ],
-    [
-      "Conakry",
-      "https://en.wikipedia.org/wiki/Conakry_International_Airport",
-      "CKY",
-      "GUCY"
-    ],
-    [
-      "Dakar–Diass",
-      "https://en.wikipedia.org/wiki/Blaise_Diagne_International_Airport",
-      "DSS",
-      "GOBD"
-    ],
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Nouadhibou",
-      "https://en.wikipedia.org/wiki/Nouadhibou_International_Airport",
-      "NDB",
-      "GQPP"
-    ],
-    [
-      "Néma",
-      "https://en.wikipedia.org/wiki/Néma_Airport",
-      "EMN",
-      "GQNI"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
-      "TUN",
-      "DTTA"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Bamako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bamako-Sénou_International_Airport",
+      "codes": [
+        "BKO",
+        "GABS"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Banjul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Banjul_International_Airport",
+      "codes": [
+        "BJL",
+        "GBYD"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Mauritania Airlines",
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Conakry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmed_Sékou_Touré_International_Airport",
+      "codes": [
+        "CKY",
+        "GUCY"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air France",
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Conakry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Conakry_International_Airport",
+      "codes": [
+        "CKY",
+        "GUCY"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air France",
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Dakar–Diass",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blaise_Diagne_International_Airport",
+      "codes": [
+        "DSS",
+        "GOBD"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Air Senegal",
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Binter Canarias",
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Nouadhibou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouadhibou_International_Airport",
+      "codes": [
+        "NDB",
+        "GQPP"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Néma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Néma_Airport",
+      "codes": [
+        "EMN",
+        "GQNI"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Mauritania Airlines",
+        "Tunisair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -151,5 +230,7 @@
       "Banjul",
       "Istanbul"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:57Z",
+  "date-time-wikidata": "2025-12-09T08:19:51Z"
 }

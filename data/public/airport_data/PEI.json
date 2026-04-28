@@ -23,54 +23,98 @@
     "LATAM Colombia"
   ],
   "destinations": [
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Cartagena",
-      "https://en.wikipedia.org/wiki/Rafael_Núñez_International_Airport",
-      "CTG",
-      "SKCG"
-    ],
-    [
-      "Medellín–JMC",
-      "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-      "MDE",
-      "SKRG"
-    ],
-    [
-      "Medellín–Olaya Herrera",
-      "https://en.wikipedia.org/wiki/Enrique_Olaya_Herrera_Airport",
-      "EOH",
-      "SKMD"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "Panama City–Tocumen",
-      "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
-      "PTY",
-      "MPTO"
-    ],
-    [
-      "San Andrés Island",
-      "https://en.wikipedia.org/wiki/Gustavo_Rojas_Pinilla_International_Airport",
-      "ADZ",
-      "SKSP"
-    ],
-    [
-      "Santa Marta",
-      "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Colombia)",
-      "SMR",
-      "SKSM"
-    ]
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia",
+        "LATAM Colombia"
+      ]
+    },
+    {
+      "city": "Cartagena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Núñez_International_Airport",
+      "codes": [
+        "CTG",
+        "SKCG"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca",
+        "LATAM Colombia"
+      ]
+    },
+    {
+      "city": "Medellín–Olaya Herrera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enrique_Olaya_Herrera_Airport",
+      "codes": [
+        "EOH",
+        "SKMD"
+      ],
+      "airlines": [
+        "Clic"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "San Andrés Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustavo_Rojas_Pinilla_International_Airport",
+      "codes": [
+        "ADZ",
+        "SKSP"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    },
+    {
+      "city": "Santa Marta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Colombia)",
+      "codes": [
+        "SMR",
+        "SKSM"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Avianca": [
@@ -95,5 +139,7 @@
       "Bogotá",
       "Medellín–JMC"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:54Z",
+  "date-time-wikidata": "2026-02-28T08:40:09Z"
 }

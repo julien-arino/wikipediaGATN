@@ -22,18 +22,30 @@
     "MedSky Airways (page does not exist)"
   ],
   "destinations": [
-    [
-      "Benina International Airport",
-      "https://en.wikipedia.org/wiki/Benina_International_Airport",
-      "BEN",
-      "HLLB"
-    ],
-    [
-      "Mitiga International Airport",
-      "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
-      "MJI",
-      "HLLM"
-    ]
+    {
+      "city": "Benina International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benina_International_Airport",
+      "codes": [
+        "BEN",
+        "HLLB"
+      ],
+      "airlines": [
+        "Afriqiyah Airways"
+      ]
+    },
+    {
+      "city": "Mitiga International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
+      "codes": [
+        "MJI",
+        "HLLM"
+      ],
+      "airlines": [
+        "Fly Oya (page does not exist)",
+        "Libyan Wings",
+        "MedSky Airways (page does not exist)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afriqiyah Airways": [
@@ -48,5 +60,7 @@
     "MedSky Airways (page does not exist)": [
       "Mitiga International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:05Z",
+  "date-time-wikidata": "2024-10-29T20:23:34Z"
 }

@@ -26,204 +26,390 @@
     "Thai AirAsia"
   ],
   "destinations": [
-    [
-      "Agartala",
-      "https://en.wikipedia.org/wiki/Maharaja_Bir_Bikram_Airport",
-      "IXA",
-      "VEAT"
-    ],
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Aizawl",
-      "https://en.wikipedia.org/wiki/Lengpui_Airport",
-      "AJL",
-      "VELP"
-    ],
-    [
-      "Bangkok",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ],
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Bhubaneswar",
-      "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
-      "BBI",
-      "VEBS"
-    ],
-    [
-      "Chandigarh",
-      "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-      "IXC",
-      "VICG"
-    ],
-    [
-      "Chennai",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Coimbatore",
-      "https://en.wikipedia.org/wiki/Coimbatore_International_Airport",
-      "CJB",
-      "VOCB"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dibrugarh",
-      "https://en.wikipedia.org/wiki/Dibrugarh_Airport",
-      "DIB",
-      "VEMN"
-    ],
-    [
-      "Dimapur",
-      "https://en.wikipedia.org/wiki/Dimapur_Airport",
-      "DMU",
-      "VEMR"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Imphal",
-      "https://en.wikipedia.org/wiki/Imphal_Airport",
-      "IMF",
-      "VEIM"
-    ],
-    [
-      "Itanagar",
-      "https://en.wikipedia.org/wiki/Donyi_Polo_Airport,_Itanagar",
-      "HGI",
-      "VEHO"
-    ],
-    [
-      "Jaipur",
-      "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
-      "JAI",
-      "VIJP"
-    ],
-    [
-      "Jorhat",
-      "https://en.wikipedia.org/wiki/Jorhat_Airport",
-      "JRH",
-      "VEJT"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Lilabari",
-      "https://en.wikipedia.org/wiki/Lilabari_Airport",
-      "IXI",
-      "VELR"
-    ],
-    [
-      "Lucknow",
-      "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_Airport",
-      "LKO",
-      "VILK"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Paro",
-      "https://en.wikipedia.org/wiki/Paro_International_Airport",
-      "PBH",
-      "VQPR"
-    ],
-    [
-      "Pasighat",
-      "https://en.wikipedia.org/wiki/Pasighat_Airport",
-      "IXT",
-      "VEPG"
-    ],
-    [
-      "Pune",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ],
-    [
-      "Rupsi",
-      "https://en.wikipedia.org/wiki/Rupsi_Airport",
-      "RUP",
-      "VERU"
-    ],
-    [
-      "Shillong",
-      "https://en.wikipedia.org/wiki/Shillong_Airport",
-      "SHL",
-      "VEBI"
-    ],
-    [
-      "Silchar",
-      "https://en.wikipedia.org/wiki/Silchar_Airport",
-      "IXS",
-      "VEKU"
-    ],
-    [
-      "Siliguri",
-      "https://en.wikipedia.org/wiki/Bagdogra_Airport",
-      "IXB",
-      "VEBD"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Tezpur",
-      "https://en.wikipedia.org/wiki/Tezpur_Airport",
-      "TEZ",
-      "VETZ"
-    ],
-    [
-      "Tezu",
-      "https://en.wikipedia.org/wiki/Tezu_Airport",
-      "TEI",
-      "VETJ"
-    ],
-    [
-      "Ziro",
-      "https://en.wikipedia.org/wiki/Ziro_Airport",
-      "ZER",
-      "VEZO"
-    ]
+    {
+      "city": "Agartala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maharaja_Bir_Bikram_Airport",
+      "codes": [
+        "IXA",
+        "VEAT"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Aizawl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lengpui_Airport",
+      "codes": [
+        "AJL",
+        "VELP"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bangkok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    },
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bhubaneswar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
+      "codes": [
+        "BBI",
+        "VEBS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chandigarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
+      "codes": [
+        "IXC",
+        "VICG"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Coimbatore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coimbatore_International_Airport",
+      "codes": [
+        "CJB",
+        "VOCB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Dibrugarh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dibrugarh_Airport",
+      "codes": [
+        "DIB",
+        "VEMN"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dimapur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dimapur_Airport",
+      "codes": [
+        "DMU",
+        "VEMR"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
+      "codes": [
+        "IMF",
+        "VEIM"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Itanagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Donyi_Polo_Airport,_Itanagar",
+      "codes": [
+        "HGI",
+        "VEHO"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Jaipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
+      "codes": [
+        "JAI",
+        "VIJP"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Jorhat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorhat_Airport",
+      "codes": [
+        "JRH",
+        "VEJT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Alliance Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Lilabari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lilabari_Airport",
+      "codes": [
+        "IXI",
+        "VELR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Lucknow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_Airport",
+      "codes": [
+        "LKO",
+        "VILK"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Paro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paro_International_Airport",
+      "codes": [
+        "PBH",
+        "VQPR"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    },
+    {
+      "city": "Pasighat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pasighat_Airport",
+      "codes": [
+        "IXT",
+        "VEPG"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rupsi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rupsi_Airport",
+      "codes": [
+        "RUP",
+        "VERU"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Shillong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shillong_Airport",
+      "codes": [
+        "SHL",
+        "VEBI"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Silchar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silchar_Airport",
+      "codes": [
+        "IXS",
+        "VEKU"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Siliguri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bagdogra_Airport",
+      "codes": [
+        "IXB",
+        "VEBD"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Drukair"
+      ]
+    },
+    {
+      "city": "Tezpur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tezpur_Airport",
+      "codes": [
+        "TEZ",
+        "VETZ"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Tezu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tezu_Airport",
+      "codes": [
+        "TEI",
+        "VETJ"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Ziro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ziro_Airport",
+      "codes": [
+        "ZER",
+        "VEZO"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -296,5 +482,7 @@
     "Thai AirAsia": [
       "Bangkok–Don Mueang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:28Z",
+  "date-time-wikidata": "2026-04-24T08:55:43Z"
 }

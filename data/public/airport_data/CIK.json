@@ -19,24 +19,39 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Birch Creek",
-      "https://en.wikipedia.org/wiki/Birch_Creek_Airport",
-      "KBC",
-      "icao code not found"
-    ],
-    [
-      "Fairbanks",
-      "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
-      "FAI",
-      "PAFA"
-    ],
-    [
-      "Fort Yukon",
-      "https://en.wikipedia.org/wiki/Fort_Yukon_Airport",
-      "FYU",
-      "PFYU"
-    ]
+    {
+      "city": "Birch Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birch_Creek_Airport",
+      "codes": [
+        "KBC",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fairbanks",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fairbanks_International_Airport",
+      "codes": [
+        "FAI",
+        "PAFA"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Fort Yukon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Yukon_Airport",
+      "codes": [
+        "FYU",
+        "PFYU"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
@@ -44,5 +59,7 @@
       "Fairbanks",
       "Fort Yukon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:54Z",
+  "date-time-wikidata": "2025-09-13T23:26:48Z"
 }

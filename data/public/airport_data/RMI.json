@@ -26,126 +26,228 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/Basel_Airport",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Cagliari",
-      "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
-      "CAG",
-      "LIEE"
-    ],
-    [
-      "Chișinău",
-      "https://en.wikipedia.org/wiki/Chișinău_Eugen_Doga_International_Airport",
-      "RMO",
-      "LUKK"
-    ],
-    [
-      "Cologne/Bonn",
-      "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "CGN",
-      "EDDK"
-    ],
-    [
-      "Katowice",
-      "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "KTW",
-      "EPKT"
-    ],
-    [
-      "Kaunas",
-      "https://en.wikipedia.org/wiki/Kaunas_Airport",
-      "KUN",
-      "EYKA"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "London–Heathrow",
-      "https://en.wikipedia.org/wiki/Heathrow_Airport",
-      "LHR",
-      "EGLL"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London_Stansted_Airport",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Marsa Matruh",
-      "https://en.wikipedia.org/wiki/Marsa_Matruh_International_Airport",
-      "MUH",
-      "HEMM"
-    ],
-    [
-      "Palermo",
-      "https://en.wikipedia.org/wiki/Palermo_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Pristina",
-      "https://en.wikipedia.org/wiki/Pristina_Airport",
-      "PRN",
-      "BKPR"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Sofia",
-      "https://en.wikipedia.org/wiki/Sofia_Airport",
-      "SOF",
-      "LBSF"
-    ],
-    [
-      "Tirana",
-      "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
-      "TIA",
-      "LATI"
-    ],
-    [
-      "Vienna",
-      "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "VIE",
-      "LOWW"
-    ],
-    [
-      "Vilnius",
-      "https://en.wikipedia.org/wiki/Vilnius_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basel_Airport",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Chișinău",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chișinău_Eugen_Doga_International_Airport",
+      "codes": [
+        "RMO",
+        "LUKK"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Kaunas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaunas_Airport",
+      "codes": [
+        "KUN",
+        "EYKA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Luxair"
+      ]
+    },
+    {
+      "city": "Marsa Matruh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marsa_Matruh_International_Airport",
+      "codes": [
+        "MUH",
+        "HEMM"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Palermo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo_International_Airport",
+      "codes": [
+        "PMO",
+        "LICJ"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Pristina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pristina_Airport",
+      "codes": [
+        "PRN",
+        "BKPR"
+      ],
+      "airlines": [
+        "GP Aviation"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Sofia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sofia_Airport",
+      "codes": [
+        "SOF",
+        "LBSF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Vilnius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vilnius_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "GetJet Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "British Airways": [
@@ -184,5 +286,7 @@
       "Sofia",
       "Tirana"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:16Z",
+  "date-time-wikidata": "2026-04-23T07:35:07Z"
 }

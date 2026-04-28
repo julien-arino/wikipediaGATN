@@ -19,24 +19,39 @@
     "Widerøe"
   ],
   "destinations": [
-    [
-      "Mo i Rana",
-      "https://en.wikipedia.org/wiki/Mo_i_Rana_Airport,_Røssvoll",
-      "MQN",
-      "ENRA"
-    ],
-    [
-      "Rørvik",
-      "https://en.wikipedia.org/wiki/Rørvik_Airport,_Ryum",
-      "RVK",
-      "ENRM"
-    ],
-    [
-      "Sandnessjøen",
-      "https://en.wikipedia.org/wiki/Sandnessjøen_Airport",
-      "SSJ",
-      "ENST"
-    ]
+    {
+      "city": "Mo i Rana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mo_i_Rana_Airport,_Røssvoll",
+      "codes": [
+        "MQN",
+        "ENRA"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Rørvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rørvik_Airport,_Ryum",
+      "codes": [
+        "RVK",
+        "ENRM"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    },
+    {
+      "city": "Sandnessjøen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sandnessjøen_Airport",
+      "codes": [
+        "SSJ",
+        "ENST"
+      ],
+      "airlines": [
+        "Widerøe"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Widerøe": [
@@ -44,5 +59,7 @@
       "Rørvik",
       "Sandnessjøen"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:48Z",
+  "date-time-wikidata": "2026-01-26T14:40:07Z"
 }

@@ -30,192 +30,360 @@
     "Vueling"
   ],
   "destinations": [
-    [
-      "Adrar",
-      "https://en.wikipedia.org/wiki/Adrar_Airport",
-      "AZR",
-      "DAUA"
-    ],
-    [
-      "Adrar",
-      "https://en.wikipedia.org/wiki/Touat-Cheikh_Sidi_Mohamed_Belkebir_Airport",
-      "AZR",
-      "DAUA"
-    ],
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Annaba",
-      "https://en.wikipedia.org/wiki/Rabah_Bitat_Airport",
-      "AAE",
-      "DABB"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Bechar",
-      "https://en.wikipedia.org/wiki/Béchar_Ouakda_Airport",
-      "CBH",
-      "DAOR"
-    ],
-    [
-      "Bordeaux",
-      "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
-      "BOD",
-      "LFBD"
-    ],
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Constantine",
-      "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
-      "CZL",
-      "DABC"
-    ],
-    [
-      "El Bayadh",
-      "https://en.wikipedia.org/wiki/El_Bayadh_Airport",
-      "EBH",
-      "DAOY"
-    ],
-    [
-      "Ghardaïa",
-      "https://en.wikipedia.org/wiki/Noumérat_–_Moufdi_Zakaria_Airport",
-      "GHA",
-      "DAUG"
-    ],
-    [
-      "Hassi Messaoud",
-      "https://en.wikipedia.org/wiki/Oued_Irara–Krim_Belkacem_Airport",
-      "HME",
-      "DAUH"
-    ],
-    [
-      "In Amenas",
-      "https://en.wikipedia.org/wiki/In_Aménas_Airport",
-      "IAM",
-      "DAUZ"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Lille",
-      "https://en.wikipedia.org/wiki/Lille_Airport",
-      "LIL",
-      "LFQQ"
-    ],
-    [
-      "Lyon",
-      "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
-      "LYS",
-      "LFLL"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Marseille",
-      "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "MRS",
-      "LFML"
-    ],
-    [
-      "Metz/Nancy",
-      "https://en.wikipedia.org/wiki/Metz-Nancy-Lorraine_Airport",
-      "ETZ",
-      "LFJL"
-    ],
-    [
-      "Montpellier",
-      "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
-      "MPL",
-      "LFMT"
-    ],
-    [
-      "Mécheria",
-      "https://en.wikipedia.org/wiki/Mécheria_Airport",
-      "MZW",
-      "DAAY"
-    ],
-    [
-      "Nantes",
-      "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
-      "NTE",
-      "LFRS"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Paris–Orly",
-      "https://en.wikipedia.org/wiki/Orly_Airport",
-      "ORY",
-      "LFPO"
-    ],
-    [
-      "Perpignan",
-      "https://en.wikipedia.org/wiki/Perpignan–Rivesaltes_Airport",
-      "PGF",
-      "LFMP"
-    ],
-    [
-      "Setif",
-      "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
-      "CZL",
-      "DABC"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Toulouse",
-      "https://en.wikipedia.org/wiki/Toulouse_–_Blagnac_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Tunis",
-      "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
-      "TUN",
-      "DTTA"
-    ]
+    {
+      "city": "Adrar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adrar_Airport",
+      "codes": [
+        "AZR",
+        "DAUA"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Domestic Airlines"
+      ]
+    },
+    {
+      "city": "Adrar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Touat-Cheikh_Sidi_Mohamed_Belkebir_Airport",
+      "codes": [
+        "AZR",
+        "DAUA"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Domestic Airlines"
+      ]
+    },
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Domestic Airlines"
+      ]
+    },
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Annaba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rabah_Bitat_Airport",
+      "codes": [
+        "AAE",
+        "DABB"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    },
+    {
+      "city": "Bechar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Béchar_Ouakda_Airport",
+      "codes": [
+        "CBH",
+        "DAOR"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Domestic Airlines"
+      ]
+    },
+    {
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
+      "codes": [
+        "BOD",
+        "LFBD"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Constantine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
+      "codes": [
+        "CZL",
+        "DABC"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "El Bayadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Bayadh_Airport",
+      "codes": [
+        "EBH",
+        "DAOY"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Ghardaïa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noumérat_–_Moufdi_Zakaria_Airport",
+      "codes": [
+        "GHA",
+        "DAUG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Hassi Messaoud",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oued_Irara–Krim_Belkacem_Airport",
+      "codes": [
+        "HME",
+        "DAUH"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Domestic Airlines"
+      ]
+    },
+    {
+      "city": "In Amenas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_Aménas_Airport",
+      "codes": [
+        "IAM",
+        "DAUZ"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Lille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
+      "codes": [
+        "LIL",
+        "LFQQ"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon-Saint_Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Metz/Nancy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Metz-Nancy-Lorraine_Airport",
+      "codes": [
+        "ETZ",
+        "LFJL"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Montpellier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montpellier–Méditerranée_Airport",
+      "codes": [
+        "MPL",
+        "LFMT"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Mécheria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mécheria_Airport",
+      "codes": [
+        "MZW",
+        "DAAY"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO"
+      ],
+      "airlines": [
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Perpignan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perpignan–Rivesaltes_Airport",
+      "codes": [
+        "PGF",
+        "LFMP"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    },
+    {
+      "city": "Setif",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
+      "codes": [
+        "CZL",
+        "DABC"
+      ],
+      "airlines": [
+        "Domestic Airlines"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Toulouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse_–_Blagnac_Airport",
+      "codes": [
+        "TLS",
+        "LFBO"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA"
+      ],
+      "airlines": [
+        "Nouvelair",
+        "Tunisair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -284,5 +452,7 @@
       "Alicante",
       "Barcelona"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:47Z",
+  "date-time-wikidata": "2026-04-04T20:45:11Z"
 }

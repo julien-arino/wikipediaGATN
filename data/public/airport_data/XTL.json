@@ -19,23 +19,35 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Lac Brochet",
-      "https://en.wikipedia.org/wiki/Lac_Brochet_Airport",
-      "XLB",
-      "CZWH"
-    ],
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ]
+    {
+      "city": "Lac Brochet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lac_Brochet_Airport",
+      "codes": [
+        "XLB",
+        "CZWH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Perimeter Aviation": [
       "Lac Brochet",
       "Thompson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:34Z",
+  "date-time-wikidata": "2025-10-08T21:53:19Z"
 }

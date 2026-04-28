@@ -37,156 +37,295 @@
     "flydubai"
   ],
   "destinations": [
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Amboseli",
-      "https://en.wikipedia.org/wiki/Amboseli_Airport",
-      "ASV",
-      "HKAM"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Dar es Salaam",
-      "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-      "DAR",
-      "HTDA"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Eldoret",
-      "https://en.wikipedia.org/wiki/Eldoret_International_Airport",
-      "EDL",
-      "HKEL"
-    ],
-    [
-      "Entebbe",
-      "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
-      "EBB",
-      "HUEN"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Keekorok",
-      "https://en.wikipedia.org/wiki/Keekorok_Airport",
-      "KEU",
-      "HKKE"
-    ],
-    [
-      "Kigali",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "Kisumu",
-      "https://en.wikipedia.org/wiki/Kisumu_International_Airport",
-      "KIS",
-      "HKKI"
-    ],
-    [
-      "Lamu",
-      "https://en.wikipedia.org/wiki/Manda_Airport",
-      "LAU",
-      "HKLU"
-    ],
-    [
-      "Malindi",
-      "https://en.wikipedia.org/wiki/Malindi_Airport",
-      "MYD",
-      "HKML"
-    ],
-    [
-      "Masai Mara",
-      "https://en.wikipedia.org/wiki/Mara_Serena_Airport",
-      "MRE",
-      "HKMS"
-    ],
-    [
-      "Milan–Malpensa",
-      "https://en.wikipedia.org/wiki/Milan–Malpensa",
-      "MXP",
-      "LIMC"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nairobi–Wilson",
-      "https://en.wikipedia.org/wiki/Wilson_Airport",
-      "WIL",
-      "HKNW"
-    ],
-    [
-      "Prague",
-      "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
-      "PRG",
-      "LKPR"
-    ],
-    [
-      "Rome–Fiumicino",
-      "https://en.wikipedia.org/wiki/Rome_Fiumicino_airport",
-      "FCO",
-      "LIRF"
-    ],
-    [
-      "Ukunda/Diani Beach",
-      "https://en.wikipedia.org/wiki/Ukunda_Airport",
-      "UKA",
-      "HKUK"
-    ],
-    [
-      "Verona",
-      "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
-      "VRN",
-      "LIPX"
-    ],
-    [
-      "Wrocław",
-      "https://en.wikipedia.org/wiki/Wrocław_Airport",
-      "WRO",
-      "EPWR"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
-      "ZNZ",
-      "HTZA"
-    ],
-    [
-      "Zanzibar",
-      "https://en.wikipedia.org/wiki/Zanzibar_Airport",
-      "ZNZ",
-      "HTZA"
-    ]
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Amboseli",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amboseli_Airport",
+      "codes": [
+        "ASV",
+        "HKAM"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "TUI fly Netherlands"
+      ]
+    },
+    {
+      "city": "Dar es Salaam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
+      "codes": [
+        "DAR",
+        "HTDA"
+      ],
+      "airlines": [
+        "Flightlink",
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Eldoret",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eldoret_International_Airport",
+      "codes": [
+        "EDL",
+        "HKEL"
+      ],
+      "airlines": [
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Uganda Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Condor",
+        "Discover Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Keekorok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keekorok_Airport",
+      "codes": [
+        "KEU",
+        "HKKE"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "Rwandair"
+      ]
+    },
+    {
+      "city": "Kisumu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kisumu_International_Airport",
+      "codes": [
+        "KIS",
+        "HKKI"
+      ],
+      "airlines": [
+        "Jambojet"
+      ]
+    },
+    {
+      "city": "Lamu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manda_Airport",
+      "codes": [
+        "LAU",
+        "HKLU"
+      ],
+      "airlines": [
+        "Mombasa Air Safari",
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Malindi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malindi_Airport",
+      "codes": [
+        "MYD",
+        "HKML"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Masai Mara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mara_Serena_Airport",
+      "codes": [
+        "MRE",
+        "HKMS"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "748 Air",
+        "Freedom Airline",
+        "Jambojet",
+        "Kenya Airways",
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Nairobi–Wilson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilson_Airport",
+      "codes": [
+        "WIL",
+        "HKNW"
+      ],
+      "airlines": [
+        "Safarilink",
+        "Skyward Express"
+      ]
+    },
+    {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR"
+      ],
+      "airlines": [
+        "Smartwings"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Ukunda/Diani Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ukunda_Airport",
+      "codes": [
+        "UKA",
+        "HKUK"
+      ],
+      "airlines": [
+        "Mombasa Air Safari"
+      ]
+    },
+    {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
+      "city": "Wrocław",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wrocław_Airport",
+      "codes": [
+        "WRO",
+        "EPWR"
+      ],
+      "airlines": [
+        "Enter Air"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abeid_Amani_Karume_International_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Flightlink",
+        "Jambojet",
+        "Rwandair",
+        "Safarilink"
+      ]
+    },
+    {
+      "city": "Zanzibar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zanzibar_Airport",
+      "codes": [
+        "ZNZ",
+        "HTZA"
+      ],
+      "airlines": [
+        "Flightlink",
+        "Jambojet",
+        "Rwandair",
+        "Safarilink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "748 Air": [
@@ -262,5 +401,7 @@
     "Uganda Airlines": [
       "Entebbe"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:16Z",
+  "date-time-wikidata": "2026-04-15T14:51:17Z"
 }

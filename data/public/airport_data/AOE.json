@@ -21,18 +21,30 @@
     "TUI fly Belgium"
   ],
   "destinations": [
-    [
-      "Brussels",
-      "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "BRU",
-      "EBBR"
-    ],
-    [
-      "Ostend/Bruges",
-      "https://en.wikipedia.org/wiki/Ostend–Bruges_International_Airport",
-      "OST",
-      "EBOS"
-    ]
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Corendon Airlines",
+        "SunExpress",
+        "TUI fly Belgium"
+      ]
+    },
+    {
+      "city": "Ostend/Bruges",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostend–Bruges_International_Airport",
+      "codes": [
+        "OST",
+        "EBOS"
+      ],
+      "airlines": [
+        "TUI fly Belgium"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Corendon Airlines": [
@@ -45,5 +57,7 @@
       "Brussels",
       "Ostend/Bruges"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:29Z",
+  "date-time-wikidata": "2026-03-26T16:58:19Z"
 }

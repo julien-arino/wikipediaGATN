@@ -20,24 +20,39 @@
     "China Southern Airlines"
   ],
   "destinations": [
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Guiyang Longdongbao International Airport",
-      "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
-      "KWE",
-      "ZUGY"
-    ],
-    [
-      "Yantai Penglai International Airport",
-      "https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport",
-      "YNT",
-      "ZSYT"
-    ]
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Guiyang Longdongbao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
+      "codes": [
+        "KWE",
+        "ZUGY"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Yantai Penglai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport",
+      "codes": [
+        "YNT",
+        "ZSYT"
+      ],
+      "airlines": [
+        "China Express Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "China Express Airlines": [
@@ -47,5 +62,7 @@
     "China Southern Airlines": [
       "Guangzhou Baiyun International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:24Z",
+  "date-time-wikidata": "2025-04-17T14:14:05Z"
 }

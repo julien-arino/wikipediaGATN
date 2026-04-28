@@ -19,23 +19,35 @@
     "Air Tahiti"
   ],
   "destinations": [
-    [
-      "Hao",
-      "https://en.wikipedia.org/wiki/Hao_Airport",
-      "HOI",
-      "NTTO"
-    ],
-    [
-      "Papeete",
-      "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
-      "PPT",
-      "NTAA"
-    ]
+    {
+      "city": "Hao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hao_Airport",
+      "codes": [
+        "HOI",
+        "NTTO"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    },
+    {
+      "city": "Papeete",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faa'a_International_Airport",
+      "codes": [
+        "PPT",
+        "NTAA"
+      ],
+      "airlines": [
+        "Air Tahiti"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Tahiti": [
       "Hao",
       "Papeete"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:30Z",
+  "date-time-wikidata": "2025-04-03T23:53:20Z"
 }

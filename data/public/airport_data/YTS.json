@@ -23,54 +23,98 @@
     "Thunder Airlines"
   ],
   "destinations": [
-    [
-      "Attawapiskat",
-      "https://en.wikipedia.org/wiki/Attawapiskat_Airport",
-      "YAT",
-      "CYAT"
-    ],
-    [
-      "Fort Albany",
-      "https://en.wikipedia.org/wiki/Fort_Albany_Airport",
-      "YFA",
-      "CYFA"
-    ],
-    [
-      "Kashechewan",
-      "https://en.wikipedia.org/wiki/Kashechewan_Airport",
-      "ZKE",
-      "CZKE"
-    ],
-    [
-      "Moosonee",
-      "https://en.wikipedia.org/wiki/Moosonee_Airport",
-      "YMO",
-      "CYMO"
-    ],
-    [
-      "Peawanuck",
-      "https://en.wikipedia.org/wiki/Peawanuck_Airport",
-      "YPO",
-      "CYPO"
-    ],
-    [
-      "Sudbury",
-      "https://en.wikipedia.org/wiki/Sudbury_Airport",
-      "YSB",
-      "CYSB"
-    ],
-    [
-      "Toronto–Billy Bishop",
-      "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
-      "YTZ",
-      "CYTZ"
-    ],
-    [
-      "Toronto–Pearson",
-      "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "YYZ",
-      "CYYZ"
-    ]
+    {
+      "city": "Attawapiskat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Attawapiskat_Airport",
+      "codes": [
+        "YAT",
+        "CYAT"
+      ],
+      "airlines": [
+        "Air Creebec",
+        "Thunder Airlines"
+      ]
+    },
+    {
+      "city": "Fort Albany",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Albany_Airport",
+      "codes": [
+        "YFA",
+        "CYFA"
+      ],
+      "airlines": [
+        "Thunder Airlines"
+      ]
+    },
+    {
+      "city": "Kashechewan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kashechewan_Airport",
+      "codes": [
+        "ZKE",
+        "CZKE"
+      ],
+      "airlines": [
+        "Air Creebec",
+        "Thunder Airlines"
+      ]
+    },
+    {
+      "city": "Moosonee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moosonee_Airport",
+      "codes": [
+        "YMO",
+        "CYMO"
+      ],
+      "airlines": [
+        "Thunder Airlines"
+      ]
+    },
+    {
+      "city": "Peawanuck",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peawanuck_Airport",
+      "codes": [
+        "YPO",
+        "CYPO"
+      ],
+      "airlines": [
+        "Air Creebec",
+        "Thunder Airlines"
+      ]
+    },
+    {
+      "city": "Sudbury",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "codes": [
+        "YSB",
+        "CYSB"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Toronto–Billy Bishop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
+      "codes": [
+        "YTZ",
+        "CYTZ"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Express",
+        "FedEx Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Canada Express": [
@@ -95,5 +139,7 @@
       "Sudbury",
       "Toronto–Pearson"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:43Z",
+  "date-time-wikidata": "2026-03-22T19:41:17Z"
 }

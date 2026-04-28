@@ -27,150 +27,278 @@
     "easyJet"
   ],
   "destinations": [
-    [
-      "Alicante",
-      "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-      "ALC",
-      "LEAL"
-    ],
-    [
-      "Amsterdam",
-      "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "AMS",
-      "EHAM"
-    ],
-    [
-      "Barcelona",
-      "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
-      "BCN",
-      "LEBL"
-    ],
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/EuroAirport_Basel-Mulhouse-Freiburg",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Bilbao",
-      "https://en.wikipedia.org/wiki/Bilbao_Airport",
-      "BIO",
-      "LEBB"
-    ],
-    [
-      "Charleroi",
-      "https://en.wikipedia.org/wiki/Charleroi_Airport",
-      "CRL",
-      "EBCI"
-    ],
-    [
-      "Cork",
-      "https://en.wikipedia.org/wiki/Cork_Airport",
-      "ORK",
-      "EICK"
-    ],
-    [
-      "Dublin",
-      "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "DUB",
-      "EIDW"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "Fuerteventura",
-      "https://en.wikipedia.org/wiki/Fuerteventura_Airport",
-      "FUE",
-      "GCFV"
-    ],
-    [
-      "Geneva",
-      "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "GVA",
-      "LSGG"
-    ],
-    [
-      "Ibiza",
-      "https://en.wikipedia.org/wiki/Ibiza_Airport",
-      "IBZ",
-      "LEIB"
-    ],
-    [
-      "Jerez de la Frontera",
-      "https://en.wikipedia.org/wiki/Jerez_Airport",
-      "XRY",
-      "LEJR"
-    ],
-    [
-      "Lanzarote",
-      "https://en.wikipedia.org/wiki/Lanzarote_Airport",
-      "ACE",
-      "GCRR"
-    ],
-    [
-      "London–Stansted",
-      "https://en.wikipedia.org/wiki/London–Stansted",
-      "STN",
-      "EGSS"
-    ],
-    [
-      "Madrid",
-      "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "MAD",
-      "LEMD"
-    ],
-    [
-      "Marrakesh",
-      "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "RAK",
-      "GMMX"
-    ],
-    [
-      "Melilla",
-      "https://en.wikipedia.org/wiki/Melilla_Airport",
-      "MLN",
-      "GEML"
-    ],
-    [
-      "Málaga",
-      "https://en.wikipedia.org/wiki/Málaga_Airport",
-      "AGP",
-      "LEMG"
-    ],
-    [
-      "Newark",
-      "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
-      "EWR",
-      "KEWR"
-    ],
-    [
-      "Seville",
-      "https://en.wikipedia.org/wiki/San_Pablo_Airport",
-      "SVQ",
-      "LEZL"
-    ],
-    [
-      "Tenerife–North",
-      "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
-      "TFN",
-      "GCXO"
-    ],
-    [
-      "Tenerife–South",
-      "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "TFS",
-      "GCTS"
-    ],
-    [
-      "Zurich",
-      "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "ZRH",
-      "LSZH"
-    ]
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel-Mulhouse-Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Bilbao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
+      "codes": [
+        "BIO",
+        "LEBB"
+      ],
+      "airlines": [
+        "Iberia",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cork",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cork_Airport",
+      "codes": [
+        "ORK",
+        "EICK"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Aer Lingus",
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Fuerteventura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuerteventura_Airport",
+      "codes": [
+        "FUE",
+        "GCFV"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "easyJet"
+      ]
+    },
+    {
+      "city": "Ibiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Jerez de la Frontera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerez_Airport",
+      "codes": [
+        "XRY",
+        "LEJR"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Lanzarote",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzarote_Airport",
+      "codes": [
+        "ACE",
+        "GCRR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Stansted",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Melilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melilla_Airport",
+      "codes": [
+        "MLN",
+        "GEML"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Seville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Pablo_Airport",
+      "codes": [
+        "SVQ",
+        "LEZL"
+      ],
+      "airlines": [
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Tenerife–North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North–Ciudad_de_La_Laguna_Airport",
+      "codes": [
+        "TFN",
+        "GCXO"
+      ],
+      "airlines": [
+        "Iberia",
+        "Vueling"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Edelweiss Air",
+        "Vueling"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
@@ -223,5 +351,7 @@
       "Tenerife–North",
       "Zurich"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:18:59Z",
+  "date-time-wikidata": "2026-04-13T09:35:01Z"
 }

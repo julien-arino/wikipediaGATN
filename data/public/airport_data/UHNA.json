@@ -1,8 +1,8 @@
 {
   "iata": null,
   "icao": "UHNA",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Ayan",
+  "city-served-wikipedia": "[[Ayan, Russia|Ayan]], [[Khabarovsk Krai]], [[Russia]]",
   "location": "[[Ayan, Russia|Ayan]], [[Khabarovsk Krai]], [[Russia]]",
   "lat": "56.4327406",
   "lon": "138.0426265",
@@ -19,16 +19,23 @@
     "Vostok Aviation Company"
   ],
   "destinations": [
-    [
-      "Poliny Osipenko",
-      "https://en.wikipedia.org/wiki/Poliny_Osipenko_Airport",
-      "iata code not found",
-      "icao code not found"
-    ]
+    {
+      "city": "Poliny Osipenko",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poliny_Osipenko_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Vostok Aviation Company"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Vostok Aviation Company": [
       "Poliny Osipenko"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:30Z",
+  "date-time-wikidata": "2025-11-06T21:18:03Z"
 }

@@ -20,18 +20,28 @@
     "Jazeera Airways"
   ],
   "destinations": [
-    [
-      "Assiut",
-      "https://en.wikipedia.org/wiki/Assiut_Airport",
-      "ATZ",
-      "HEAT"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ]
+    {
+      "city": "Assiut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Assiut_Airport",
+      "codes": [
+        "ATZ",
+        "HEAT"
+      ],
+      "airlines": [
+        "Air Cairo"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Cairo": [
@@ -40,5 +50,7 @@
     "Jazeera Airways": [
       "Kuwait City"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:52Z",
+  "date-time-wikidata": "2026-04-14T18:19:25Z"
 }

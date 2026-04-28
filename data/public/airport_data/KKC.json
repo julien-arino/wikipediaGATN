@@ -22,30 +22,53 @@
     "Thai VietJet Air"
   ],
   "destinations": [
-    [
-      "Chiang Mai International Airport",
-      "https://en.wikipedia.org/wiki/Chiang_Mai_International_Airport",
-      "CNX",
-      "VTCC"
-    ],
-    [
-      "Don Mueang International Airport",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Phuket International Airport",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Suvarnabhumi Airport",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ]
+    {
+      "city": "Chiang Mai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiang_Mai_International_Airport",
+      "codes": [
+        "CNX",
+        "VTCC"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Don Mueang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia",
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Phuket International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Suvarnabhumi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Thai AirAsia",
+        "Thai Airways International",
+        "Thai VietJet Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Thai AirAsia": [
@@ -63,5 +86,7 @@
     "Thai VietJet Air": [
       "Suvarnabhumi Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-wikidata": "2026-03-26T06:52:57Z"
 }

@@ -20,42 +20,72 @@
     "LADE"
   ],
   "destinations": [
-    [
-      "Bahía Blanca",
-      "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
-      "BHI",
-      "SAZB"
-    ],
-    [
-      "Buenos Aires–Aeroparque",
-      "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-      "AEP",
-      "SABE"
-    ],
-    [
-      "Comodoro Rivadavia",
-      "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
-      "CRD",
-      "SAVC"
-    ],
-    [
-      "Mendoza",
-      "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
-      "MDZ",
-      "SAME"
-    ],
-    [
-      "Neuquén",
-      "https://en.wikipedia.org/wiki/Presidente_Perón_International_Airport",
-      "NQN",
-      "SAZN"
-    ],
-    [
-      "Puerto Madryn",
-      "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
-      "PMY",
-      "SAVY"
-    ]
+    {
+      "city": "Bahía Blanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comandante_Espora_Airport",
+      "codes": [
+        "BHI",
+        "SAZB"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Comodoro Rivadavia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Enrique_Mosconi_International_Airport",
+      "codes": [
+        "CRD",
+        "SAVC"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Neuquén",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Perón_International_Airport",
+      "codes": [
+        "NQN",
+        "SAZN"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    },
+    {
+      "city": "Puerto Madryn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Tehuelche_Airport",
+      "codes": [
+        "PMY",
+        "SAVY"
+      ],
+      "airlines": [
+        "LADE"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
@@ -68,5 +98,7 @@
       "Neuquén",
       "Puerto Madryn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:03Z",
+  "date-time-wikidata": "2025-03-20T06:27:24Z"
 }

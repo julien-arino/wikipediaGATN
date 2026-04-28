@@ -19,24 +19,39 @@
     "Kostroma Air Enterprise"
   ],
   "destinations": [
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Nizhny Novgorod",
-      "https://en.wikipedia.org/wiki/Strigino_Airport",
-      "GOJ",
-      "UWGG"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ]
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Kostroma Air Enterprise"
+      ]
+    },
+    {
+      "city": "Nizhny Novgorod",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strigino_Airport",
+      "codes": [
+        "GOJ",
+        "UWGG"
+      ],
+      "airlines": [
+        "Kostroma Air Enterprise"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Kostroma Air Enterprise"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Kostroma Air Enterprise": [
@@ -44,5 +59,7 @@
       "Nizhny Novgorod",
       "Saint Petersburg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:57Z",
+  "date-time-wikidata": "2025-11-02T21:04:48Z"
 }

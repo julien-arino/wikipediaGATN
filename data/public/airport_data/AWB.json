@@ -7,6 +7,7 @@
   "lat": "-8.0129693",
   "lon": "142.7521913",
   "altitude": "18",
+  "continent": "Oceania",
   "region": "Western Province",
   "country_alpha3": "PNG",
   "country_name": "Papua New Guinea",
@@ -18,18 +19,28 @@
     "PNG Air"
   ],
   "destinations": [
-    [
-      "Daru",
-      "https://en.wikipedia.org/wiki/Daru_Airport",
-      "DAU",
-      "AYDU"
-    ],
-    [
-      "Sasereme",
-      "https://en.wikipedia.org/wiki/Sasereme_Airport",
-      "TDS",
-      "AYSS"
-    ]
+    {
+      "city": "Daru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daru_Airport",
+      "codes": [
+        "DAU",
+        "AYDU"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    },
+    {
+      "city": "Sasereme",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sasereme_Airport",
+      "codes": [
+        "TDS",
+        "AYSS"
+      ],
+      "airlines": [
+        "PNG Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "PNG Air": [
@@ -37,5 +48,6 @@
       "Sasereme"
     ]
   },
-  "continent": "Oceania"
+  "date-time-parse": "2026-04-28T22:03:40Z",
+  "date-time-wikidata": "2024-11-01T18:41:10Z"
 }

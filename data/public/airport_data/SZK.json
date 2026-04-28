@@ -19,23 +19,35 @@
     "Airlink"
   ],
   "destinations": [
-    [
-      "Cape Town",
-      "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
-      "CPT",
-      "FACT"
-    ],
-    [
-      "Johannesburg–O.R. Tambo",
-      "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "JNB",
-      "FAOR"
-    ]
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    },
+    {
+      "city": "Johannesburg–O.R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Airlink": [
       "Cape Town",
       "Johannesburg–O.R. Tambo"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:00Z",
+  "date-time-wikidata": "2026-03-29T21:09:17Z"
 }

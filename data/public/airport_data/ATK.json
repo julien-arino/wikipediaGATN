@@ -19,23 +19,35 @@
     "Wright Air Service"
   ],
   "destinations": [
-    [
-      "Utqiagvik",
-      "https://en.wikipedia.org/wiki/Wiley_Post-Will_Rogers_Memorial_Airport",
-      "BRW",
-      "PABR"
-    ],
-    [
-      "Wainwright",
-      "https://en.wikipedia.org/wiki/Wainwright_Airport_(Alaska)",
-      "AIN",
-      "PAWI"
-    ]
+    {
+      "city": "Utqiagvik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wiley_Post-Will_Rogers_Memorial_Airport",
+      "codes": [
+        "BRW",
+        "PABR"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    },
+    {
+      "city": "Wainwright",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wainwright_Airport_(Alaska)",
+      "codes": [
+        "AIN",
+        "PAWI"
+      ],
+      "airlines": [
+        "Wright Air Service"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wright Air Service": [
       "Utqiagvik",
       "Wainwright"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:08Z",
+  "date-time-wikidata": "2025-08-24T15:08:23Z"
 }

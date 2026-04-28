@@ -24,54 +24,100 @@
     "West Air (China)"
   ],
   "destinations": [
-    [
-      "Beijing Capital International Airport",
-      "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "PEK",
-      "ZBAA"
-    ],
-    [
-      "Chengdu Shuangliu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
-      "CTU",
-      "ZUUU"
-    ],
-    [
-      "Chengdu Tianfu International Airport",
-      "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "TFU",
-      "ZUTF"
-    ],
-    [
-      "Chongqing Jiangbei International Airport",
-      "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "CKG",
-      "ZUCK"
-    ],
-    [
-      "Guangzhou Baiyun International Airport",
-      "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
-      "CAN",
-      "ZGGG"
-    ],
-    [
-      "Hefei Xinqiao International Airport",
-      "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport",
-      "HFE",
-      "ZSOF"
-    ],
-    [
-      "Mianyang Nanjiao Airport",
-      "https://en.wikipedia.org/wiki/Mianyang_Nanjiao_Airport",
-      "MIG",
-      "ZUMY"
-    ],
-    [
-      "Xi'an Xianyang International Airport",
-      "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
-      "XIY",
-      "ZLXY"
-    ]
+    {
+      "city": "Beijing Capital International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Chengdu Shuangliu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "Sichuan Airlines",
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu Tianfu International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Air China",
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Chongqing Jiangbei International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Chongqing Airlines",
+        "Sichuan Airlines",
+        "Tibet Airlines",
+        "West Air (China)"
+      ]
+    },
+    {
+      "city": "Guangzhou Baiyun International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hefei Xinqiao International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport",
+      "codes": [
+        "HFE",
+        "ZSOF"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Mianyang Nanjiao Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mianyang_Nanjiao_Airport",
+      "codes": [
+        "MIG",
+        "ZUMY"
+      ],
+      "airlines": [
+        "Tibet Airlines"
+      ]
+    },
+    {
+      "city": "Xi'an Xianyang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Sichuan Airlines",
+        "Tibet Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air China": [
@@ -100,5 +146,7 @@
     "West Air (China)": [
       "Chongqing Jiangbei International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:12Z",
+  "date-time-wikidata": "2026-04-10T17:30:34Z"
 }

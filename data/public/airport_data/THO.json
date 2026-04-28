@@ -19,23 +19,35 @@
     "Norlandair"
   ],
   "destinations": [
-    [
-      "Akureyri",
-      "https://en.wikipedia.org/wiki/Akureyri_Airport",
-      "AEY",
-      "BIAR"
-    ],
-    [
-      "Vopnafjörður",
-      "https://en.wikipedia.org/wiki/Vopnafjörður_Airport",
-      "VPN",
-      "BIVO"
-    ]
+    {
+      "city": "Akureyri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akureyri_Airport",
+      "codes": [
+        "AEY",
+        "BIAR"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    },
+    {
+      "city": "Vopnafjörður",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vopnafjörður_Airport",
+      "codes": [
+        "VPN",
+        "BIVO"
+      ],
+      "airlines": [
+        "Norlandair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Norlandair": [
       "Akureyri",
       "Vopnafjörður"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:26Z",
+  "date-time-wikidata": "2026-02-18T18:19:33Z"
 }

@@ -19,23 +19,35 @@
     "Turkish Airlines"
   ],
   "destinations": [
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Macau",
-      "https://en.wikipedia.org/wiki/Macau_Airport",
-      "MFM",
-      "VMMC"
-    ]
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Macau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_Airport",
+      "codes": [
+        "MFM",
+        "VMMC"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Turkish Airlines": [
       "Istanbul",
       "Macau"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:29Z",
+  "date-time-wikidata": "2026-02-13T07:53:16Z"
 }

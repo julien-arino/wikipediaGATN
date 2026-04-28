@@ -20,24 +20,39 @@
     "Rex Airlines"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Townsville",
-      "https://en.wikipedia.org/wiki/Townsville_Airport",
-      "TSV",
-      "YBTL"
-    ],
-    [
-      "Winton",
-      "https://en.wikipedia.org/wiki/Winton_Airport",
-      "WIN",
-      "YWTN"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Winton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winton_Airport",
+      "codes": [
+        "WIN",
+        "YWTN"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "QantasLink": [
@@ -47,5 +62,7 @@
       "Townsville",
       "Winton"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:27Z",
+  "date-time-wikidata": "2025-08-07T14:43:10Z"
 }

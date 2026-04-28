@@ -19,24 +19,39 @@
     "Air Serbia"
   ],
   "destinations": [
-    [
-      "Istanbul",
-      "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "IST",
-      "LTFM"
-    ],
-    [
-      "Thessaloniki",
-      "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
-      "SKG",
-      "LGTS"
-    ],
-    [
-      "Tivat",
-      "https://en.wikipedia.org/wiki/Tivat_Airport",
-      "TIV",
-      "LYTV"
-    ]
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Tivat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tivat_Airport",
+      "codes": [
+        "TIV",
+        "LYTV"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Serbia": [
@@ -44,5 +59,7 @@
       "Thessaloniki",
       "Tivat"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:07Z",
+  "date-time-wikidata": "2026-04-02T19:28:22Z"
 }

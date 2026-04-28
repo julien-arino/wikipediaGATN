@@ -24,42 +24,72 @@
     "Pakistan International Airlines"
   ],
   "destinations": [
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ],
-    [
-      "Islamabad",
-      "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
-      "ISB",
-      "OPIS"
-    ],
-    [
-      "Jeddah",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "Khost",
-      "https://en.wikipedia.org/wiki/Khost_International_Airport",
-      "KHT",
-      "OAKS"
-    ],
-    [
-      "Kozhikode",
-      "https://en.wikipedia.org/wiki/Kozhikode_International_Airport",
-      "CCJ",
-      "VOCL"
-    ],
-    [
-      "Kuwait City",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ]
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Nile Air"
+      ]
+    },
+    {
+      "city": "Islamabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Pakistan International Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Khost",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khost_International_Airport",
+      "codes": [
+        "KHT",
+        "OAKS"
+      ],
+      "airlines": [
+        "Ariana Afghan Airlines"
+      ]
+    },
+    {
+      "city": "Kozhikode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kozhikode_International_Airport",
+      "codes": [
+        "CCJ",
+        "VOCL"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India Express": [
@@ -80,5 +110,7 @@
     "Pakistan International Airlines": [
       "Islamabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:03:13Z",
+  "date-time-wikidata": "2026-04-19T04:00:33Z"
 }

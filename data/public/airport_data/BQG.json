@@ -20,18 +20,28 @@
     "KhabAvia"
   ],
   "destinations": [
-    [
-      "Khabarovsk Novy Airport",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Nogliki Airport",
-      "https://en.wikipedia.org/wiki/Nogliki_Airport",
-      "NGK",
-      "UHSN"
-    ]
+    {
+      "city": "Khabarovsk Novy Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "KhabAvia"
+      ]
+    },
+    {
+      "city": "Nogliki Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nogliki_Airport",
+      "codes": [
+        "NGK",
+        "UHSN"
+      ],
+      "airlines": [
+        "Aurora (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora (airline)": [
@@ -40,5 +50,7 @@
     "KhabAvia": [
       "Khabarovsk Novy Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:18Z",
+  "date-time-wikidata": "2024-10-10T23:27:00Z"
 }

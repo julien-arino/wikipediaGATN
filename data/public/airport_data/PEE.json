@@ -39,204 +39,383 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Baku",
-      "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
-      "GYD",
-      "UBBB"
-    ],
-    [
-      "Goa-Dabolim",
-      "https://en.wikipedia.org/wiki/Dabolim_Airport",
-      "GOI",
-      "VOGO"
-    ],
-    [
-      "Gorno-Altaysk",
-      "https://en.wikipedia.org/wiki/Gorno-Altaysk_Airport",
-      "RGK",
-      "UNBG"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Kaliningrad",
-      "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
-      "KGD",
-      "UMKK"
-    ],
-    [
-      "Kazan",
-      "https://en.wikipedia.org/wiki/Kazan_International_Airport",
-      "KZN",
-      "UWKD"
-    ],
-    [
-      "Kogalym",
-      "https://en.wikipedia.org/wiki/Kogalym_Airport",
-      "KGP",
-      "USRK"
-    ],
-    [
-      "Krasnodar",
-      "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
-      "KRR",
-      "URKK"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Makhachkala",
-      "https://en.wikipedia.org/wiki/Uytash_Airport",
-      "MCX",
-      "URML"
-    ],
-    [
-      "Mineralnye Vody",
-      "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
-      "MRV",
-      "URMM"
-    ],
-    [
-      "Minsk",
-      "https://en.wikipedia.org/wiki/Minsk_National_Airport",
-      "MSQ",
-      "UMMS"
-    ],
-    [
-      "Moscow–Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Namangan",
-      "https://en.wikipedia.org/wiki/Namangan_Airport",
-      "NMA",
-      "UZFN"
-    ],
-    [
-      "Naryan-Mar",
-      "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
-      "NNM",
-      "ULAM"
-    ],
-    [
-      "Nizhnevartovsk",
-      "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
-      "NJC",
-      "USNN"
-    ],
-    [
-      "Norilsk",
-      "https://en.wikipedia.org/wiki/Alykel_Airport",
-      "NSK",
-      "UOOO"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Novy Urengoy",
-      "https://en.wikipedia.org/wiki/Novy_Urengoy_Airport",
-      "NUX",
-      "USMU"
-    ],
-    [
-      "Perm",
-      "https://en.wikipedia.org/wiki/Sukhum_International_Airport",
-      "SUI",
-      "UGSS"
-    ],
-    [
-      "Petrozavodsk",
-      "https://en.wikipedia.org/wiki/Petrozavodsk_Airport",
-      "PES",
-      "ULPB"
-    ],
-    [
-      "Phuket",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Saint Petersburg",
-      "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "LED",
-      "ULLI"
-    ],
-    [
-      "Samara",
-      "https://en.wikipedia.org/wiki/Kurumoch_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Sochi",
-      "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "AER",
-      "URSS"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_International_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Tashkent",
-      "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "TAS",
-      "UZTT"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Usinsk",
-      "https://en.wikipedia.org/wiki/Usinsk_Airport",
-      "USK",
-      "UUYS"
-    ],
-    [
-      "Yerevan",
-      "https://en.wikipedia.org/wiki/Zvartnots_International_Airport",
-      "EVN",
-      "UDYZ"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Southwind Airlines"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "IrAero"
+      ]
+    },
+    {
+      "city": "Goa-Dabolim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dabolim_Airport",
+      "codes": [
+        "GOI",
+        "VOGO"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Gorno-Altaysk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gorno-Altaysk_Airport",
+      "codes": [
+        "RGK",
+        "UNBG"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "AlMasria Universal Airlines",
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Kaliningrad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
+      "codes": [
+        "KGD",
+        "UMKK"
+      ],
+      "airlines": [
+        "Ikar"
+      ]
+    },
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD"
+      ],
+      "airlines": [
+        "Nordstar Airlines",
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Kogalym",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kogalym_Airport",
+      "codes": [
+        "KGP",
+        "USRK"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Krasnodar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
+      "codes": [
+        "KRR",
+        "URKK"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "Rossiya"
+      ]
+    },
+    {
+      "city": "Makhachkala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "codes": [
+        "MCX",
+        "URML"
+      ],
+      "airlines": [
+        "Azimuth",
+        "Nordwind Airlines"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
+      ]
+    },
+    {
+      "city": "Minsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minsk_National_Airport",
+      "codes": [
+        "MSQ",
+        "UMMS"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Namangan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Namangan_Airport",
+      "codes": [
+        "NMA",
+        "UZFN"
+      ],
+      "airlines": [
+        "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Naryan-Mar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naryan-Mar_Airport",
+      "codes": [
+        "NNM",
+        "ULAM"
+      ],
+      "airlines": [
+        "RusLine",
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Nizhnevartovsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nizhnevartovsk_Airport",
+      "codes": [
+        "NJC",
+        "USNN"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Norilsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alykel_Airport",
+      "codes": [
+        "NSK",
+        "UOOO"
+      ],
+      "airlines": [
+        "Nordstar Airlines"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Novy Urengoy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Novy_Urengoy_Airport",
+      "codes": [
+        "NUX",
+        "USMU"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sukhum_International_Airport",
+      "codes": [
+        "SUI",
+        "UGSS"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Petrozavodsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petrozavodsk_Airport",
+      "codes": [
+        "PES",
+        "ULPB"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Phuket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "Pobeda",
+        "Rossiya",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Samara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "AlMasria Universal Airlines",
+        "Rossiya",
+        "Sky Vision Airlines"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Ikar",
+        "Nordwind Airlines",
+        "Pobeda",
+        "Smartavia"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Usinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Usinsk_Airport",
+      "codes": [
+        "USK",
+        "UUYS"
+      ],
+      "airlines": [
+        "UVT Aero"
+      ]
+    },
+    {
+      "city": "Yerevan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zvartnots_International_Airport",
+      "codes": [
+        "EVN",
+        "UDYZ"
+      ],
+      "airlines": [
+        "Shirak Avia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aeroflot": [
@@ -328,5 +507,7 @@
     "Uzbekistan Airways": [
       "Namangan"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:07:54Z",
+  "date-time-wikidata": "2026-04-11T17:59:57Z"
 }

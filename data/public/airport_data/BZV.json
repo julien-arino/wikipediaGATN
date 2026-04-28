@@ -35,144 +35,266 @@
     "Trans Air Congo"
   ],
   "destinations": [
-    [
-      "Abidjan",
-      "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "ABJ",
-      "DIAP"
-    ],
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Accra",
-      "https://en.wikipedia.org/wiki/Accra_International_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Addis Ababa",
-      "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "ADD",
-      "HAAB"
-    ],
-    [
-      "Bamako",
-      "https://en.wikipedia.org/wiki/Bamako–Sénou_International_Airport",
-      "BKO",
-      "GABS"
-    ],
-    [
-      "Bangui",
-      "https://en.wikipedia.org/wiki/Bangui_M'Poko_International_Airport",
-      "BGF",
-      "FEFF"
-    ],
-    [
-      "Casablanca",
-      "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "CMN",
-      "GMMN"
-    ],
-    [
-      "Cotonou",
-      "https://en.wikipedia.org/wiki/Cadjehoun_Airport",
-      "COO",
-      "DBBB"
-    ],
-    [
-      "Douala",
-      "https://en.wikipedia.org/wiki/Douala_International_Airport",
-      "DLA",
-      "FKKD"
-    ],
-    [
-      "Impfondo",
-      "https://en.wikipedia.org/wiki/Impfondo_Airport",
-      "ION",
-      "FCOI"
-    ],
-    [
-      "Kigali",
-      "https://en.wikipedia.org/wiki/Kigali_International_Airport",
-      "KGL",
-      "HRYR"
-    ],
-    [
-      "Kinshasa–N'djili",
-      "https://en.wikipedia.org/wiki/N'djili_Airport",
-      "FIH",
-      "FZAA"
-    ],
-    [
-      "Lagos",
-      "https://en.wikipedia.org/wiki/Lagos_International_Airport",
-      "LOS",
-      "DNMM"
-    ],
-    [
-      "Libreville",
-      "https://en.wikipedia.org/wiki/Libreville_International_Airport",
-      "LBV",
-      "FOOL"
-    ],
-    [
-      "Lomé",
-      "https://en.wikipedia.org/wiki/Lomé–Tokoin_Airport",
-      "LFW",
-      "DXXX"
-    ],
-    [
-      "Luanda",
-      "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
-      "LAD",
-      "FNLU"
-    ],
-    [
-      "Luanda–Agostinho Neto",
-      "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
-      "NBJ",
-      "FNBJ"
-    ],
-    [
-      "Luxembourg",
-      "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "LUX",
-      "ELLX"
-    ],
-    [
-      "Nairobi–Jomo Kenyatta",
-      "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "NBO",
-      "HKJK"
-    ],
-    [
-      "Nouakchott",
-      "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
-      "NKC",
-      "GQNO"
-    ],
-    [
-      "Ouesso",
-      "https://en.wikipedia.org/wiki/Ouesso_Airport",
-      "OUE",
-      "FCOU"
-    ],
-    [
-      "Paris–Charles de Gaulle",
-      "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
-      "CDG",
-      "LFPG"
-    ],
-    [
-      "Pointe-Noire",
-      "https://en.wikipedia.org/wiki/Pointe_Noire_Airport",
-      "PNR",
-      "FCPP"
-    ]
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Accra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Bamako",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bamako–Sénou_International_Airport",
+      "codes": [
+        "BKO",
+        "GABS"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Bangui",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangui_M'Poko_International_Airport",
+      "codes": [
+        "BGF",
+        "FEFF"
+      ],
+      "airlines": [
+        "Air France Cargo"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Cotonou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cadjehoun_Airport",
+      "codes": [
+        "COO",
+        "DBBB"
+      ],
+      "airlines": [
+        "Mauritania Airlines",
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Douala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douala_International_Airport",
+      "codes": [
+        "DLA",
+        "FKKD"
+      ],
+      "airlines": [
+        "Camair-Co",
+        "Trans Air Congo"
+      ]
+    },
+    {
+      "city": "Impfondo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impfondo_Airport",
+      "codes": [
+        "ION",
+        "FCOI"
+      ],
+      "airlines": [
+        "Canadian Airways Congo"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air Côte d'Ivoire"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lagos_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "Afrijet",
+        "Air Côte d'Ivoire",
+        "Trans Air Congo"
+      ]
+    },
+    {
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_Airport",
+      "codes": [
+        "LFW",
+        "DXXX"
+      ],
+      "airlines": [
+        "ASKY Airlines"
+      ]
+    },
+    {
+      "city": "Luanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
+      "codes": [
+        "LAD",
+        "FNLU"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Luanda–Agostinho Neto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
+      "codes": [
+        "NBJ",
+        "FNBJ"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Nouakchott",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
+      "codes": [
+        "NKC",
+        "GQNO"
+      ],
+      "airlines": [
+        "Mauritania Airlines"
+      ]
+    },
+    {
+      "city": "Ouesso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouesso_Airport",
+      "codes": [
+        "OUE",
+        "FCOU"
+      ],
+      "airlines": [
+        "Canadian Airways Congo"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Pointe-Noire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe_Noire_Airport",
+      "codes": [
+        "PNR",
+        "FCPP"
+      ],
+      "airlines": [
+        "Canadian Airways Congo",
+        "Trans Air Congo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Afrijet": [
@@ -239,5 +361,7 @@
     "Ethiopian Airlines Cargo": [
       "Addis Ababa"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:55Z",
+  "date-time-wikidata": "2026-02-25T09:12:33Z"
 }

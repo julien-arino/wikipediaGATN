@@ -21,36 +21,62 @@
     "Condor"
   ],
   "destinations": [
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Frankfurt",
-      "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "FRA",
-      "EDDF"
-    ],
-    [
-      "London–Gatwick",
-      "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "LGW",
-      "EGKK"
-    ],
-    [
-      "New York–JFK",
-      "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "JFK",
-      "KJFK"
-    ],
-    [
-      "St. Lucia–Hewanorra",
-      "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
-      "UVF",
-      "TLPL"
-    ]
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "British Airways",
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Condor"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "St. Lucia–Hewanorra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
+      "codes": [
+        "UVF",
+        "TLPL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "British Airways": [
@@ -65,5 +91,7 @@
     "Condor": [
       "Frankfurt"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:01Z",
+  "date-time-wikidata": "2026-03-17T10:09:24Z"
 }

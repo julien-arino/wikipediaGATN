@@ -23,36 +23,62 @@
     "TUI fly Nordic"
   ],
   "destinations": [
-    [
-      "Gran Canaria",
-      "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "LPA",
-      "GCLP"
-    ],
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Vaasa",
-      "https://en.wikipedia.org/wiki/Vaasa_Airport",
-      "VAA",
-      "EFVA"
-    ],
-    [
-      "Östersund",
-      "https://en.wikipedia.org/wiki/Åre_Östersund_Airport",
-      "OSD",
-      "ESNZ"
-    ]
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "TUI fly Nordic"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Vaasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vaasa_Airport",
+      "codes": [
+        "VAA",
+        "EFVA"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Östersund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Åre_Östersund_Airport",
+      "codes": [
+        "OSD",
+        "ESNZ"
+      ],
+      "airlines": [
+        "Jonair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Finnair": [
@@ -71,5 +97,7 @@
     "TUI fly Nordic": [
       "Gran Canaria"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:54Z",
+  "date-time-wikidata": "2026-03-31T16:38:37Z"
 }

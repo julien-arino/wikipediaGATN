@@ -21,48 +21,85 @@
     "IndiGo"
   ],
   "destinations": [
-    [
-      "Bangalore",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Bhubaneswar",
-      "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
-      "BBI",
-      "VEBS"
-    ],
-    [
-      "Bilaspur",
-      "https://en.wikipedia.org/wiki/Bilaspur_Airport",
-      "PAB",
-      "VEBU"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Raipur",
-      "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
-      "RPR",
-      "VERP"
-    ]
+    {
+      "city": "Bangalore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bhubaneswar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
+      "codes": [
+        "BBI",
+        "VEBS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bilaspur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilaspur_Airport",
+      "codes": [
+        "PAB",
+        "VEBU"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Raipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
+      "codes": [
+        "RPR",
+        "VERP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Akasa Air": [
@@ -80,5 +117,7 @@
       "Mumbai",
       "Raipur"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:14Z",
+  "date-time-wikidata": "2026-03-28T15:02:33Z"
 }

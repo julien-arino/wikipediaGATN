@@ -20,24 +20,39 @@
     "Star Air"
   ],
   "destinations": [
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Indore",
-      "https://en.wikipedia.org/wiki/Devi_Ahilyabai_Holkar_International_Airport",
-      "IDR",
-      "VAID"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ]
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Indore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Devi_Ahilyabai_Holkar_International_Airport",
+      "codes": [
+        "IDR",
+        "VAID"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "IndiGo": [
@@ -47,5 +62,7 @@
       "Indore",
       "Mumbai"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:05:50Z",
+  "date-time-wikidata": "2026-04-25T18:55:05Z"
 }

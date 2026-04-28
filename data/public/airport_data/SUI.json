@@ -20,24 +20,39 @@
     "RusLine"
   ],
   "destinations": [
-    [
-      "Moscow-Sheremetyevo",
-      "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "SVO",
-      "UUEE"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Perm",
-      "https://en.wikipedia.org/wiki/Perm_International_Airport",
-      "PEE",
-      "USPP"
-    ]
+    {
+      "city": "Moscow-Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "I-Fly"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perm_International_Airport",
+      "codes": [
+        "PEE",
+        "USPP"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    }
   ],
   "airlines_destinations": {
     "I-Fly": [
@@ -47,5 +62,7 @@
       "Moscow–Vnukovo",
       "Perm"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:56Z",
+  "date-time-wikidata": "2026-04-11T13:20:15Z"
 }

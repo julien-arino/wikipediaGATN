@@ -22,36 +22,61 @@
     "Seair Pacific"
   ],
   "destinations": [
-    [
-      "Brisbane",
-      "https://en.wikipedia.org/wiki/Brisbane_Airport",
-      "BNE",
-      "YBBN"
-    ],
-    [
-      "Fraser Island",
-      "https://en.wikipedia.org/wiki/Fraser_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Lady Elliot Island",
-      "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Melbourne",
-      "https://en.wikipedia.org/wiki/Melbourne_Airport",
-      "MEL",
-      "YMML"
-    ],
-    [
-      "Sydney",
-      "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "SYD",
-      "YSSY"
-    ]
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    },
+    {
+      "city": "Fraser Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fraser_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Fraser Island"
+      ]
+    },
+    {
+      "city": "Lady Elliot Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_Elliot_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Seair Pacific"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Fraser Island": [
@@ -67,5 +92,7 @@
     "Seair Pacific": [
       "Lady Elliot Island"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:52Z",
+  "date-time-wikidata": "2025-10-05T20:50:16Z"
 }

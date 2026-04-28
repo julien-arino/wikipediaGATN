@@ -21,30 +21,50 @@
     "NyxAir"
   ],
   "destinations": [
-    [
-      "Helsinki",
-      "https://en.wikipedia.org/wiki/Helsinki_Airport",
-      "HEL",
-      "EFHK"
-    ],
-    [
-      "Pärnu",
-      "https://en.wikipedia.org/wiki/Pärnu_Airport",
-      "EPU",
-      "EEPU"
-    ],
-    [
-      "Ruhnu",
-      "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
-      "iata code not found",
-      "EERU"
-    ],
-    [
-      "Tallinn",
-      "https://en.wikipedia.org/wiki/Tallinn_Airport",
-      "TLL",
-      "EETN"
-    ]
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "Finnair"
+      ]
+    },
+    {
+      "city": "Pärnu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pärnu_Airport",
+      "codes": [
+        "EPU",
+        "EEPU"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    },
+    {
+      "city": "Ruhnu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
+      "codes": [
+        "iata code not found",
+        "EERU"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    },
+    {
+      "city": "Tallinn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tallinn_Airport",
+      "codes": [
+        "TLL",
+        "EETN"
+      ],
+      "airlines": [
+        "NyxAir"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Diamond Sky": [
@@ -57,5 +77,7 @@
     "NyxAir": [
       "Tallinn"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:19:48Z",
+  "date-time-wikidata": "2026-04-11T00:50:58Z"
 }

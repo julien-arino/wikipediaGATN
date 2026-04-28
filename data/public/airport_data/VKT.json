@@ -20,18 +20,28 @@
     "RusLine"
   ],
   "destinations": [
-    [
-      "Moscow-Zhukovsky",
-      "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
-      "ZIA",
-      "UUBW"
-    ],
-    [
-      "Syktyvkar",
-      "https://en.wikipedia.org/wiki/Syktyvkar_Airport",
-      "SCW",
-      "UUYY"
-    ]
+    {
+      "city": "Moscow-Zhukovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "codes": [
+        "ZIA",
+        "UUBW"
+      ],
+      "airlines": [
+        "RusLine"
+      ]
+    },
+    {
+      "city": "Syktyvkar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syktyvkar_Airport",
+      "codes": [
+        "SCW",
+        "UUYY"
+      ],
+      "airlines": [
+        "Komiaviatrans"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Komiaviatrans": [
@@ -40,5 +50,7 @@
     "RusLine": [
       "Moscow-Zhukovsky"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:01Z",
+  "date-time-wikidata": "2025-11-10T16:35:40Z"
 }

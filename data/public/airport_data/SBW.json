@@ -24,54 +24,98 @@
     "World Cargo Airlines"
   ],
   "destinations": [
-    [
-      "Bintulu",
-      "https://en.wikipedia.org/wiki/Bintulu_Airport",
-      "BTU",
-      "WBGB"
-    ],
-    [
-      "Johor Bahru",
-      "https://en.wikipedia.org/wiki/Senai_International_Airport",
-      "JHB",
-      "WMKJ"
-    ],
-    [
-      "Kota Kinabalu",
-      "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
-      "BKI",
-      "WBKK"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kuching",
-      "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-      "KCH",
-      "WBGG"
-    ],
-    [
-      "Miri",
-      "https://en.wikipedia.org/wiki/Miri_Airport",
-      "MYY",
-      "WBGR"
-    ],
-    [
-      "Mukah",
-      "https://en.wikipedia.org/wiki/Mukah_Airport",
-      "MKM",
-      "WBGK"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ]
+    {
+      "city": "Bintulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bintulu_Airport",
+      "codes": [
+        "BTU",
+        "WBGB"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Johor Bahru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
+      "codes": [
+        "JHB",
+        "WMKJ"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Batik Air Malaysia",
+        "Malaysia Airlines",
+        "World Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Kuching",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
+      "codes": [
+        "KCH",
+        "WBGG"
+      ],
+      "airlines": [
+        "AirAsia",
+        "World Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Mukah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mukah_Airport",
+      "codes": [
+        "MKM",
+        "WBGK"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -98,5 +142,7 @@
       "Kuala Lumpur–International",
       "Kuching"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:30Z",
+  "date-time-wikidata": "2026-04-18T04:22:20Z"
 }

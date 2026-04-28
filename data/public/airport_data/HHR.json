@@ -19,24 +19,39 @@
     "Advanced Air"
   ],
   "destinations": [
-    [
-      "Del Norte County Airport",
-      "https://en.wikipedia.org/wiki/Del_Norte_County_Airport",
-      "CEC",
-      "KCEC"
-    ],
-    [
-      "Mammoth Yosemite Airport",
-      "https://en.wikipedia.org/wiki/Mammoth_Yosemite_Airport",
-      "MMH",
-      "KMMH"
-    ],
-    [
-      "Merced Regional Airport",
-      "https://en.wikipedia.org/wiki/Merced_Regional_Airport",
-      "MCE",
-      "KMCE"
-    ]
+    {
+      "city": "Del Norte County Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Del_Norte_County_Airport",
+      "codes": [
+        "CEC",
+        "KCEC"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Mammoth Yosemite Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mammoth_Yosemite_Airport",
+      "codes": [
+        "MMH",
+        "KMMH"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
+      "city": "Merced Regional Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Merced_Regional_Airport",
+      "codes": [
+        "MCE",
+        "KMCE"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Advanced Air": [
@@ -44,5 +59,7 @@
       "Mammoth Yosemite Airport",
       "Merced Regional Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:42Z",
+  "date-time-wikidata": "2026-04-14T02:42:10Z"
 }

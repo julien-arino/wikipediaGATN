@@ -19,24 +19,39 @@
     "SATENA"
   ],
   "destinations": [
-    [
-      "Araracuara",
-      "https://en.wikipedia.org/wiki/Araracuara_Airport",
-      "ACR",
-      "SKAC"
-    ],
-    [
-      "Bogotá",
-      "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "BOG",
-      "SKBO"
-    ],
-    [
-      "Neiva",
-      "https://en.wikipedia.org/wiki/Benito_Salas_Airport",
-      "NVA",
-      "SKNV"
-    ]
+    {
+      "city": "Araracuara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Araracuara_Airport",
+      "codes": [
+        "ACR",
+        "SKAC"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    },
+    {
+      "city": "Neiva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benito_Salas_Airport",
+      "codes": [
+        "NVA",
+        "SKNV"
+      ],
+      "airlines": [
+        "SATENA"
+      ]
+    }
   ],
   "airlines_destinations": {
     "SATENA": [
@@ -44,5 +59,7 @@
       "Bogotá",
       "Neiva"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:13Z",
+  "date-time-wikidata": "2026-01-08T01:02:15Z"
 }

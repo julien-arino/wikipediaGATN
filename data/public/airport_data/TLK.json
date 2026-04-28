@@ -26,78 +26,145 @@
     "Yamal Airlines"
   ],
   "destinations": [
-    [
-      "Bratsk",
-      "https://en.wikipedia.org/wiki/Bratsk_Airport",
-      "BTK",
-      "UIBB"
-    ],
-    [
-      "Irkutsk",
-      "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "IKT",
-      "UIII"
-    ],
-    [
-      "Krasnodar",
-      "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
-      "KRR",
-      "URKK"
-    ],
-    [
-      "Krasnoyarsk–International",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ],
-    [
-      "Moscow–Vnukovo",
-      "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
-      "VKO",
-      "UUWW"
-    ],
-    [
-      "Novosibirsk",
-      "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
-      "OVB",
-      "UNNT"
-    ],
-    [
-      "Novy Urengoy",
-      "https://en.wikipedia.org/wiki/Novy_Urengoy_Airport",
-      "NUX",
-      "USMU"
-    ],
-    [
-      "Noyabrsk",
-      "https://en.wikipedia.org/wiki/Noyabrsk_Airport",
-      "NOJ",
-      "USRO"
-    ],
-    [
-      "Omsk",
-      "https://en.wikipedia.org/wiki/Omsk_Tsentralny_Airport",
-      "OMS",
-      "UNOO"
-    ],
-    [
-      "Surgut",
-      "https://en.wikipedia.org/wiki/Surgut_International_Airport",
-      "SGC",
-      "USRR"
-    ],
-    [
-      "Tyumen",
-      "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
-      "TJM",
-      "USTR"
-    ],
-    [
-      "Ufa",
-      "https://en.wikipedia.org/wiki/Ufa_International_Airport",
-      "UFA",
-      "UWUU"
-    ]
+    {
+      "city": "Bratsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratsk_Airport",
+      "codes": [
+        "BTK",
+        "UIBB"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
+      "codes": [
+        "IKT",
+        "UIII"
+      ],
+      "airlines": [
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Krasnodar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
+      "codes": [
+        "KRR",
+        "URKK"
+      ],
+      "airlines": [
+        "Polar Airlines"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "NordStar",
+        "Polar Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
+      "codes": [
+        "OVB",
+        "UNNT"
+      ],
+      "airlines": [
+        "Polar Airlines",
+        "Red Wings Airlines",
+        "S7 Airlines"
+      ]
+    },
+    {
+      "city": "Novy Urengoy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Novy_Urengoy_Airport",
+      "codes": [
+        "NUX",
+        "USMU"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Noyabrsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noyabrsk_Airport",
+      "codes": [
+        "NOJ",
+        "USRO"
+      ],
+      "airlines": [
+        "Gazpromavia"
+      ]
+    },
+    {
+      "city": "Omsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Omsk_Tsentralny_Airport",
+      "codes": [
+        "OMS",
+        "UNOO"
+      ],
+      "airlines": [
+        "Red Wings Airlines",
+        "Yamal Airlines"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "codes": [
+        "SGC",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_International_Airport",
+      "codes": [
+        "TJM",
+        "USTR"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU"
+      ],
+      "airlines": [
+        "Gazpromavia",
+        "KrasAvia",
+        "Red Wings Airlines",
+        "Utair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Gazpromavia": [
@@ -135,5 +202,7 @@
     "Yamal Airlines": [
       "Omsk"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:05Z",
+  "date-time-wikidata": "2025-12-19T01:32:11Z"
 }

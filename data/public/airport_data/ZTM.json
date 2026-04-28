@@ -1,8 +1,8 @@
 {
   "iata": "ZTM",
   "icao": "CZTM",
-  "city-served": null,
-  "city-served-wikipedia": null,
+  "city-served": "Shamattawa, Manitoba",
+  "city-served-wikipedia": "[[Shamattawa, Manitoba]]",
   "location": "[[Shamattawa, Manitoba]]",
   "lat": "55.863056",
   "lon": "-92.081389",
@@ -11,7 +11,7 @@
   "region": "CA-MB",
   "country_alpha3": "CAN",
   "country_name": "Canada",
-  "subdivision_code": "MB",
+  "subdivision_code": "",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Shamattawa_Airport",
   "number_airlines": 1,
   "outdegree": 3,
@@ -19,24 +19,39 @@
     "Perimeter Aviation"
   ],
   "destinations": [
-    [
-      "Gods River",
-      "https://en.wikipedia.org/wiki/Gods_River_Airport",
-      "ZGI",
-      "CZGI"
-    ],
-    [
-      "Thompson",
-      "https://en.wikipedia.org/wiki/Thompson_Airport",
-      "YTH",
-      "CYTH"
-    ],
-    [
-      "Winnipeg",
-      "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-      "YWG",
-      "CYWG"
-    ]
+    {
+      "city": "Gods River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_River_Airport",
+      "codes": [
+        "ZGI",
+        "CZGI"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Thompson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
+      "codes": [
+        "YTH",
+        "CYTH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Perimeter Aviation": [
@@ -44,5 +59,7 @@
       "Thompson",
       "Winnipeg"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T21:28:33Z",
+  "date-time-wikidata": "2024-03-08T01:12:01Z"
 }

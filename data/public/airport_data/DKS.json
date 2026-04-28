@@ -19,23 +19,35 @@
     "KrasAvia"
   ],
   "destinations": [
-    [
-      "Alykel Airport",
-      "https://en.wikipedia.org/wiki/Alykel_Airport",
-      "NSK",
-      "UOOO"
-    ],
-    [
-      "Krasnoyarsk International Airport",
-      "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-      "KJA",
-      "UNKL"
-    ]
+    {
+      "city": "Alykel Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alykel_Airport",
+      "codes": [
+        "NSK",
+        "UOOO"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL"
+      ],
+      "airlines": [
+        "KrasAvia"
+      ]
+    }
   ],
   "airlines_destinations": {
     "KrasAvia": [
       "Alykel Airport",
       "Krasnoyarsk International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:20:24Z",
+  "date-time-wikidata": "2026-02-28T15:36:58Z"
 }

@@ -19,24 +19,39 @@
     "Pars Air"
   ],
   "destinations": [
-    [
-      "Isfahan",
-      "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
-      "IFN",
-      "OIFM"
-    ],
-    [
-      "Shiraz",
-      "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
-      "SYZ",
-      "OISS"
-    ],
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Isfahan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isfahan_Shahid_Beheshti_International_Airport",
+      "codes": [
+        "IFN",
+        "OIFM"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Shiraz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiraz_Shahid_Dastgheib_International_Airport",
+      "codes": [
+        "SYZ",
+        "OISS"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    },
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "Pars Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Pars Air": [
@@ -44,5 +59,7 @@
       "Shiraz",
       "Tehran–Mehrabad"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:13:58Z",
+  "date-time-wikidata": "2025-11-10T18:08:11Z"
 }

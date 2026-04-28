@@ -7,6 +7,7 @@
   "lat": "22.3722279",
   "lon": "31.6130042",
   "altitude": "188",
+  "continent": "Africa",
   "region": "Aswan",
   "country_alpha3": "EGY",
   "country_name": "Egypt",
@@ -19,18 +20,30 @@
     "Egyptair"
   ],
   "destinations": [
-    [
-      "Aswan",
-      "https://en.wikipedia.org/wiki/Aswan_International_Airport",
-      "ASW",
-      "HESN"
-    ],
-    [
-      "Cairo",
-      "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "CAI",
-      "HECA"
-    ]
+    {
+      "city": "Aswan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aswan_International_Airport",
+      "codes": [
+        "ASW",
+        "HESN"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Air Cairo",
+        "Egyptair"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Cairo": [
@@ -42,5 +55,6 @@
       "Cairo"
     ]
   },
-  "continent": "Africa"
+  "date-time-parse": "2026-04-28T22:03:18Z",
+  "date-time-wikidata": "2025-12-26T20:30:17Z"
 }

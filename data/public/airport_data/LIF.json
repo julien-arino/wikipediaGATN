@@ -20,30 +20,51 @@
     "Air Oceania"
   ],
   "destinations": [
-    [
-      "Maré",
-      "https://en.wikipedia.org/wiki/Maré_Airport",
-      "MEE",
-      "NWWR"
-    ],
-    [
-      "Nouméa–Magenta",
-      "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
-      "GEA",
-      "NWWM"
-    ],
-    [
-      "Nouméa–Tontouta",
-      "https://en.wikipedia.org/wiki/La_Tontouta_International_Airport",
-      "NOU",
-      "NWWW"
-    ],
-    [
-      "Ouvéa",
-      "https://en.wikipedia.org/wiki/Ouvéa_Airport",
-      "UVE",
-      "NWWV"
-    ]
+    {
+      "city": "Maré",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maré_Airport",
+      "codes": [
+        "MEE",
+        "NWWR"
+      ],
+      "airlines": [
+        "Air Calédonie",
+        "Air Oceania"
+      ]
+    },
+    {
+      "city": "Nouméa–Magenta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nouméa_Magenta_Airport",
+      "codes": [
+        "GEA",
+        "NWWM"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Nouméa–Tontouta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Tontouta_International_Airport",
+      "codes": [
+        "NOU",
+        "NWWW"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    },
+    {
+      "city": "Ouvéa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouvéa_Airport",
+      "codes": [
+        "UVE",
+        "NWWV"
+      ],
+      "airlines": [
+        "Air Calédonie"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Calédonie": [
@@ -55,5 +76,7 @@
     "Air Oceania": [
       "Maré"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:06:58Z",
+  "date-time-wikidata": "2025-12-23T12:19:20Z"
 }

@@ -32,144 +32,279 @@
     "SpiceJet"
   ],
   "destinations": [
-    [
-      "Abu Dhabi International Airport",
-      "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Agatti Airport",
-      "https://en.wikipedia.org/wiki/Agatti_Airport",
-      "AGX",
-      "VOAT"
-    ],
-    [
-      "Al Ain International Airport",
-      "https://en.wikipedia.org/wiki/Al_Ain_International_Airport",
-      "AAN",
-      "OMAL"
-    ],
-    [
-      "Bahrain International Airport",
-      "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
-      "BAH",
-      "OBBI"
-    ],
-    [
-      "Chennai International Airport",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Chhatrapati Shivaji International Airport",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Cochin International Airport",
-      "https://en.wikipedia.org/wiki/Cochin_International_Airport",
-      "COK",
-      "VOCI"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Fujairah International Airport",
-      "https://en.wikipedia.org/wiki/Fujairah_International_Airport",
-      "FJR",
-      "OMFJ"
-    ],
-    [
-      "Hamad International Airport",
-      "https://en.wikipedia.org/wiki/Hamad_International_Airport",
-      "DOH",
-      "OTHH"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "King Abdulaziz International Airport",
-      "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "JED",
-      "OEJN"
-    ],
-    [
-      "King Fahd International Airport",
-      "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
-      "DMM",
-      "OEDF"
-    ],
-    [
-      "King Khalid International Airport",
-      "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
-      "RUH",
-      "OERK"
-    ],
-    [
-      "Kuala Lumpur International Airport",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Kuwait International Airport",
-      "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "KWI",
-      "OKKK"
-    ],
-    [
-      "Muscat International Airport",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Rajiv Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Ras Al Khaimah International Airport",
-      "https://en.wikipedia.org/wiki/Ras_Al_Khaimah_International_Airport",
-      "RKT",
-      "OMRK"
-    ],
-    [
-      "Salalah International Airport",
-      "https://en.wikipedia.org/wiki/Salalah_International_Airport",
-      "SLL",
-      "OOSA"
-    ],
-    [
-      "Sharjah International Airport",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Zayed International Airport",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ]
+    {
+      "city": "Abu Dhabi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Agatti Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Agatti_Airport",
+      "codes": [
+        "AGX",
+        "VOAT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Al Ain International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Ain_International_Airport",
+      "codes": [
+        "AAN",
+        "OMAL"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Bahrain International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Chennai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chhatrapati Shivaji International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Akasa Air",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Cochin International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cochin_International_Airport",
+      "codes": [
+        "COK",
+        "VOCI"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Flydubai",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Fujairah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fujairah_International_Airport",
+      "codes": [
+        "FJR",
+        "OMFJ"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Hamad International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "King Abdulaziz International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "King Fahd International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
+      "codes": [
+        "DMM",
+        "OEDF"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "King Khalid International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Flynas",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kuwait International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Muscat International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Oman Air",
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Rajiv Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Ras Al Khaimah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ras_Al_Khaimah_International_Airport",
+      "codes": [
+        "RKT",
+        "OMRK"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Salalah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salalah_International_Airport",
+      "codes": [
+        "SLL",
+        "OOSA"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Sharjah International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia",
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Zayed International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Air Arabia Abu Dhabi",
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -243,5 +378,7 @@
       "Dubai International Airport",
       "Fujairah International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:01Z",
+  "date-time-wikidata": "2026-04-22T17:16:19Z"
 }

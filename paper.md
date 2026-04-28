@@ -43,7 +43,7 @@ This will also be of interest to instructors teaching graph or network theory.
 
 # Methods
 
-Airport information pages on Wikipedia have evolved to become quite standardised entities.
+Airport information pages on Wikipedia is quite standardised.
 There is, typically, an infobox that presents summary information about the airport (name, IATA and ICAO codes, city served, geographical coordinates); see, for example, the infobox for YWG, the Winnipeg James Armstrong International Airport in \autoref{fig:infobox}.
 
 ![Infobox for YWG (Winnipeg airport).\label{fig:infobox}](YWG-infobox.png)

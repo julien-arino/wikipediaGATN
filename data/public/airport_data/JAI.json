@@ -28,174 +28,328 @@
     "Thai AirAsia"
   ],
   "destinations": [
-    [
-      "Abu Dhabi",
-      "https://en.wikipedia.org/wiki/Zayed_International_Airport",
-      "AUH",
-      "OMAA"
-    ],
-    [
-      "Ahmedabad",
-      "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Bangkok–Don Mueang",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Bareilly",
-      "https://en.wikipedia.org/wiki/Bareilly_Airport",
-      "BEK",
-      "VIBY"
-    ],
-    [
-      "Belgaum",
-      "https://en.wikipedia.org/wiki/Belgaum_Airport",
-      "IXG",
-      "VOBM"
-    ],
-    [
-      "Bengaluru",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Bhopal",
-      "https://en.wikipedia.org/wiki/Raja_Bhoj_Airport",
-      "BHO",
-      "VABP"
-    ],
-    [
-      "Delhi",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Dubai–International",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Goa–Mopa",
-      "https://en.wikipedia.org/wiki/Manohar_International_Airport",
-      "GOX",
-      "VOGA"
-    ],
-    [
-      "Guwahati",
-      "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
-      "GAU",
-      "VEGT"
-    ],
-    [
-      "Hyderabad",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Indore",
-      "https://en.wikipedia.org/wiki/Devi_Ahilya_Bai_Holkar_Airport",
-      "IDR",
-      "VAID"
-    ],
-    [
-      "Jaisalmer",
-      "https://en.wikipedia.org/wiki/Jaisalmer_Airport",
-      "JSA",
-      "VIJR"
-    ],
-    [
-      "Jodhpur",
-      "https://en.wikipedia.org/wiki/Jodhpur_Airport",
-      "JDH",
-      "VIJO"
-    ],
-    [
-      "Kolkata",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Kullu",
-      "https://en.wikipedia.org/wiki/Kullu–Manali_Airport",
-      "KUU",
-      "VIBR"
-    ],
-    [
-      "Lucknow",
-      "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_International_Airport",
-      "LKO",
-      "VILK"
-    ],
-    [
-      "Mumbai",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Mumbai–Navi",
-      "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
-      "NMI",
-      "VANM"
-    ],
-    [
-      "Muscat",
-      "https://en.wikipedia.org/wiki/Muscat_International_Airport",
-      "MCT",
-      "OOMS"
-    ],
-    [
-      "Pantnagar",
-      "https://en.wikipedia.org/wiki/Pantnagar_Airport",
-      "PGH",
-      "VIPT"
-    ],
-    [
-      "Prayagraj",
-      "https://en.wikipedia.org/wiki/Prayagraj_Airport",
-      "IXD",
-      "VEAB"
-    ],
-    [
-      "Pune",
-      "https://en.wikipedia.org/wiki/Pune_Airport",
-      "PNQ",
-      "VAPO"
-    ],
-    [
-      "Sharjah",
-      "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "SHJ",
-      "OMSJ"
-    ],
-    [
-      "Surat",
-      "https://en.wikipedia.org/wiki/Surat_Airport",
-      "STV",
-      "VASU"
-    ],
-    [
-      "Udaipur",
-      "https://en.wikipedia.org/wiki/Maharana_Pratap_Airport",
-      "UDR",
-      "VAUD"
-    ],
-    [
-      "Varanasi",
-      "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
-      "VNS",
-      "VEBN"
-    ]
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Bareilly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bareilly_Airport",
+      "codes": [
+        "BEK",
+        "VIBY"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Belgaum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgaum_Airport",
+      "codes": [
+        "IXG",
+        "VOBM"
+      ],
+      "airlines": [
+        "Star Air"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bhopal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raja_Bhoj_Airport",
+      "codes": [
+        "BHO",
+        "VABP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Alliance Air",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air India Express",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Goa–Mopa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manohar_International_Airport",
+      "codes": [
+        "GOX",
+        "VOGA"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Indore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Devi_Ahilya_Bai_Holkar_Airport",
+      "codes": [
+        "IDR",
+        "VAID"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Jaisalmer",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaisalmer_Airport",
+      "codes": [
+        "JSA",
+        "VIJR"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Jodhpur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jodhpur_Airport",
+      "codes": [
+        "JDH",
+        "VIJO"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Kullu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kullu–Manali_Airport",
+      "codes": [
+        "KUU",
+        "VIBR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Lucknow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_International_Airport",
+      "codes": [
+        "LKO",
+        "VILK"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Mumbai–Navi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport",
+      "codes": [
+        "NMI",
+        "VANM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Muscat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
+      "codes": [
+        "MCT",
+        "OOMS"
+      ],
+      "airlines": [
+        "SalamAir"
+      ]
+    },
+    {
+      "city": "Pantnagar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pantnagar_Airport",
+      "codes": [
+        "PGH",
+        "VIPT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Prayagraj",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prayagraj_Airport",
+      "codes": [
+        "IXD",
+        "VEAB"
+      ],
+      "airlines": [
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo",
+        "SpiceJet"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Air Arabia"
+      ]
+    },
+    {
+      "city": "Surat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surat_Airport",
+      "codes": [
+        "STV",
+        "VASU"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Udaipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maharana_Pratap_Airport",
+      "codes": [
+        "UDR",
+        "VAUD"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Varanasi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "codes": [
+        "VNS",
+        "VEBN"
+      ],
+      "airlines": [
+        "Air India Express",
+        "SpiceJet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Arabia": [
@@ -260,5 +414,7 @@
     "Thai AirAsia": [
       "Bangkok–Don Mueang"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:22Z",
+  "date-time-wikidata": "2026-04-08T16:04:29Z"
 }

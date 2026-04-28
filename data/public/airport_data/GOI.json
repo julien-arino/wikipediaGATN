@@ -26,144 +26,274 @@
     "SCAT Airlines"
   ],
   "destinations": [
-    [
-      "Almaty International Airport",
-      "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-      "ALA",
-      "UAAA"
-    ],
-    [
-      "Bahrain International Airport",
-      "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
-      "BAH",
-      "OBBI"
-    ],
-    [
-      "Bolshoye Savino Airport",
-      "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
-      "PEE",
-      "USPP"
-    ],
-    [
-      "Chandigarh Airport",
-      "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-      "IXC",
-      "VICG"
-    ],
-    [
-      "Chaudhary Charan Singh Airport",
-      "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_Airport",
-      "LKO",
-      "VILK"
-    ],
-    [
-      "Chennai International Airport",
-      "https://en.wikipedia.org/wiki/Chennai_International_Airport",
-      "MAA",
-      "VOMM"
-    ],
-    [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "BOM",
-      "VABB"
-    ],
-    [
-      "Cochin International Airport",
-      "https://en.wikipedia.org/wiki/Cochin_International_Airport",
-      "COK",
-      "VOCI"
-    ],
-    [
-      "Coimbatore International Airport",
-      "https://en.wikipedia.org/wiki/Coimbatore_International_Airport",
-      "CJB",
-      "VOCB"
-    ],
-    [
-      "Devi Ahilya Bai Holkar Airport",
-      "https://en.wikipedia.org/wiki/Devi_Ahilya_Bai_Holkar_Airport",
-      "IDR",
-      "VAID"
-    ],
-    [
-      "Dubai International Airport",
-      "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "DXB",
-      "OMDB"
-    ],
-    [
-      "Hindon Airport",
-      "https://en.wikipedia.org/wiki/Hindon_Airport",
-      "HDO",
-      "VIDX"
-    ],
-    [
-      "Indira Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "DEL",
-      "VIDP"
-    ],
-    [
-      "Kempegowda International Airport",
-      "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "BLR",
-      "VOBL"
-    ],
-    [
-      "Nashik Airport",
-      "https://en.wikipedia.org/wiki/Nashik_Airport",
-      "ISK",
-      "VAOZ"
-    ],
-    [
-      "Netaji Subhas Chandra Bose International Airport",
-      "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "CCU",
-      "VECC"
-    ],
-    [
-      "Nursultan Nazarbayev International Airport",
-      "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-      "NQZ",
-      "UACC"
-    ],
-    [
-      "Pune International Airport",
-      "https://en.wikipedia.org/wiki/Pune_International_Airport",
-      "PNQ",
-      "VAPO"
-    ],
-    [
-      "Raja Bhoj Airport",
-      "https://en.wikipedia.org/wiki/Raja_Bhoj_Airport",
-      "BHO",
-      "VABP"
-    ],
-    [
-      "Rajiv Gandhi International Airport",
-      "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "HYD",
-      "VOHS"
-    ],
-    [
-      "Sardar Vallabhbhai Patel International Airport",
-      "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
-      "AMD",
-      "VAAH"
-    ],
-    [
-      "Surat Airport",
-      "https://en.wikipedia.org/wiki/Surat_Airport",
-      "STV",
-      "VASU"
-    ],
-    [
-      "Swami Vivekananda Airport",
-      "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
-      "RPR",
-      "VERP"
-    ]
+    {
+      "city": "Almaty International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Bahrain International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "Gulf Air"
+      ]
+    },
+    {
+      "city": "Bolshoye Savino Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
+      "codes": [
+        "PEE",
+        "USPP"
+      ],
+      "airlines": [
+        "Azur Air"
+      ]
+    },
+    {
+      "city": "Chandigarh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
+      "codes": [
+        "IXC",
+        "VICG"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chaudhary Charan Singh Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_Airport",
+      "codes": [
+        "LKO",
+        "VILK"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chennai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Chhatrapati Shivaji Maharaj International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Alliance Air (India)",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Cochin International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cochin_International_Airport",
+      "codes": [
+        "COK",
+        "VOCI"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Coimbatore International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coimbatore_International_Airport",
+      "codes": [
+        "CJB",
+        "VOCB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Devi Ahilya Bai Holkar Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Devi_Ahilya_Bai_Holkar_Airport",
+      "codes": [
+        "IDR",
+        "VAID"
+      ],
+      "airlines": [
+        "Alliance Air (India)",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Hindon Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hindon_Airport",
+      "codes": [
+        "HDO",
+        "VIDX"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Indira Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Kempegowda International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "Alliance Air (India)",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Nashik Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashik_Airport",
+      "codes": [
+        "ISK",
+        "VAOZ"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Netaji Subhas Chandra Bose International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Nursultan Nazarbayev International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Pune International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_International_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Raja Bhoj Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raja_Bhoj_Airport",
+      "codes": [
+        "BHO",
+        "VABP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rajiv Gandhi International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Alliance Air (India)",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Sardar Vallabhbhai Patel International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
+      "codes": [
+        "AMD",
+        "VAAH"
+      ],
+      "airlines": [
+        "Air India",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Surat Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surat_Airport",
+      "codes": [
+        "STV",
+        "VASU"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Swami Vivekananda Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
+      "codes": [
+        "RPR",
+        "VERP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air India": [
@@ -220,5 +350,7 @@
     "SCAT Airlines": [
       "Almaty International Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:15:33Z",
+  "date-time-wikidata": "2026-04-10T10:35:49Z"
 }

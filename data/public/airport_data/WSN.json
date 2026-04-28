@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Clarks Point",
-      "https://en.wikipedia.org/wiki/Clarks_Point_Airport",
-      "CLP",
-      "PFCL"
-    ],
-    [
-      "Dillingham",
-      "https://en.wikipedia.org/wiki/Dillingham_Airport",
-      "DLG",
-      "PADL"
-    ],
-    [
-      "King Salmon",
-      "https://en.wikipedia.org/wiki/King_Salmon_Airport",
-      "AKN",
-      "PAKN"
-    ]
+    {
+      "city": "Clarks Point",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarks_Point_Airport",
+      "codes": [
+        "CLP",
+        "PFCL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Dillingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
+      "codes": [
+        "DLG",
+        "PADL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "King Salmon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Salmon_Airport",
+      "codes": [
+        "AKN",
+        "PAKN"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "Dillingham",
       "King Salmon"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:24Z",
+  "date-time-wikidata": "2025-05-31T03:26:34Z"
 }

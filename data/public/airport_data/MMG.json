@@ -19,24 +19,39 @@
     "Skippers Aviation"
   ],
   "destinations": [
-    [
-      "Meekatharra",
-      "https://en.wikipedia.org/wiki/Meekatharra_Airport",
-      "MKR",
-      "YMEK"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ],
-    [
-      "Wiluna",
-      "https://en.wikipedia.org/wiki/Wiluna_Airport",
-      "WUN",
-      "YWLU"
-    ]
+    {
+      "city": "Meekatharra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meekatharra_Airport",
+      "codes": [
+        "MKR",
+        "YMEK"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    },
+    {
+      "city": "Wiluna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wiluna_Airport",
+      "codes": [
+        "WUN",
+        "YWLU"
+      ],
+      "airlines": [
+        "Skippers Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Skippers Aviation": [
@@ -44,5 +59,7 @@
       "Perth",
       "Wiluna"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:45Z",
+  "date-time-wikidata": "2025-09-08T15:26:43Z"
 }

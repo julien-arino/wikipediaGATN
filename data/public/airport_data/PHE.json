@@ -25,36 +25,65 @@
     "Virgin Australia Regional Airlines"
   ],
   "destinations": [
-    [
-      "Broome",
-      "https://en.wikipedia.org/wiki/Broome_Airport",
-      "BME",
-      "YBRM"
-    ],
-    [
-      "Geraldton",
-      "https://en.wikipedia.org/wiki/Geraldton_Airport",
-      "GET",
-      "YGEL"
-    ],
-    [
-      "Karratha",
-      "https://en.wikipedia.org/wiki/Karratha_Airport",
-      "KTA",
-      "YPKA"
-    ],
-    [
-      "Newman",
-      "https://en.wikipedia.org/wiki/Newman_Airport",
-      "ZNE",
-      "YNWN"
-    ],
-    [
-      "Perth",
-      "https://en.wikipedia.org/wiki/Perth_Airport",
-      "PER",
-      "YPPH"
-    ]
+    {
+      "city": "Broome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broome_Airport",
+      "codes": [
+        "BME",
+        "YBRM"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Geraldton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geraldton_Airport",
+      "codes": [
+        "GET",
+        "YGEL"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Karratha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karratha_Airport",
+      "codes": [
+        "KTA",
+        "YPKA"
+      ],
+      "airlines": [
+        "Nexus Airlines"
+      ]
+    },
+    {
+      "city": "Newman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newman_Airport",
+      "codes": [
+        "ZNE",
+        "YNWN"
+      ],
+      "airlines": [
+        "Aviair"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Alliance Airlines",
+        "Qantas",
+        "QantasLink",
+        "Virgin Australia",
+        "Virgin Australia Regional Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Alliance Airlines": [
@@ -80,5 +109,7 @@
     "Virgin Australia Regional Airlines": [
       "Perth"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:01Z",
+  "date-time-wikidata": "2025-09-14T16:14:22Z"
 }

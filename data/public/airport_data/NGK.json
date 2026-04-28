@@ -19,23 +19,35 @@
     "Aurora (airline)"
   ],
   "destinations": [
-    [
-      "Khabarovsk Novy Airport",
-      "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
-      "KHV",
-      "UHHH"
-    ],
-    [
-      "Khomutovo Airport",
-      "https://en.wikipedia.org/wiki/Khomutovo_Airport",
-      "UUS",
-      "UHSS"
-    ]
+    {
+      "city": "Khabarovsk Novy Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khabarovsk_Novy_Airport",
+      "codes": [
+        "KHV",
+        "UHHH"
+      ],
+      "airlines": [
+        "Aurora (airline)"
+      ]
+    },
+    {
+      "city": "Khomutovo Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khomutovo_Airport",
+      "codes": [
+        "UUS",
+        "UHSS"
+      ],
+      "airlines": [
+        "Aurora (airline)"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Aurora (airline)": [
       "Khabarovsk Novy Airport",
       "Khomutovo Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:10:23Z",
+  "date-time-wikidata": "2025-11-12T21:44:18Z"
 }

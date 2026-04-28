@@ -20,30 +20,50 @@
     "Trigana Air"
   ],
   "destinations": [
-    [
-      "Bade",
-      "https://en.wikipedia.org/wiki/Bade_Airport",
-      "BXD",
-      "WAKE"
-    ],
-    [
-      "Jayapura",
-      "https://en.wikipedia.org/wiki/Sentani_International_Airport",
-      "DJJ",
-      "WAJJ"
-    ],
-    [
-      "Merauke",
-      "https://en.wikipedia.org/wiki/Mopah_Airport",
-      "MKQ",
-      "WAKK"
-    ],
-    [
-      "Oksibil",
-      "https://en.wikipedia.org/wiki/Oksibil_Airport",
-      "OKL",
-      "WAJO"
-    ]
+    {
+      "city": "Bade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bade_Airport",
+      "codes": [
+        "BXD",
+        "WAKE"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Jayapura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sentani_International_Airport",
+      "codes": [
+        "DJJ",
+        "WAJJ"
+      ],
+      "airlines": [
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Merauke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mopah_Airport",
+      "codes": [
+        "MKQ",
+        "WAKK"
+      ],
+      "airlines": [
+        "Trigana Air"
+      ]
+    },
+    {
+      "city": "Oksibil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oksibil_Airport",
+      "codes": [
+        "OKL",
+        "WAJO"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Susi Air": [
@@ -54,5 +74,7 @@
       "Jayapura",
       "Merauke"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:09:09Z",
+  "date-time-wikidata": "2026-04-06T23:55:06Z"
 }

@@ -29,78 +29,146 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Batam",
-      "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
-      "BTH",
-      "WIDD"
-    ],
-    [
-      "Batu Islands",
-      "https://en.wikipedia.org/wiki/Lasondre_Airport",
-      "LXD",
-      "WIMO"
-    ],
-    [
-      "Gunungsitoli",
-      "https://en.wikipedia.org/wiki/Binaka_Airport",
-      "GNS",
-      "WIMB"
-    ],
-    [
-      "Jakarta–Halim Perdanakusuma",
-      "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
-      "HLP",
-      "WIHH"
-    ],
-    [
-      "Jakarta–Soekarno-Hatta",
-      "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
-      "CGK",
-      "WIII"
-    ],
-    [
-      "Kuala Lumpur–International",
-      "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
-      "KUL",
-      "WMKK"
-    ],
-    [
-      "Medan",
-      "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
-      "KNO",
-      "WIMM"
-    ],
-    [
-      "Mukomuko",
-      "https://en.wikipedia.org/wiki/Mukomuko_Airport",
-      "MPC",
-      "WIPU"
-    ],
-    [
-      "Pekanbaru",
-      "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
-      "PKU",
-      "WIBB"
-    ],
-    [
-      "Singapore",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Sipora",
-      "https://en.wikipedia.org/wiki/Rokot_Airport",
-      "RKI",
-      "WIBR"
-    ],
-    [
-      "Yogyakarta–International",
-      "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
-      "YIA",
-      "WAHI"
-    ]
+    {
+      "city": "Batam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hang_Nadim_International_Airport",
+      "codes": [
+        "BTH",
+        "WIDD"
+      ],
+      "airlines": [
+        "Lion Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Batu Islands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lasondre_Airport",
+      "codes": [
+        "LXD",
+        "WIMO"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Gunungsitoli",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Binaka_Airport",
+      "codes": [
+        "GNS",
+        "WIMB"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Jakarta–Halim Perdanakusuma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
+      "codes": [
+        "HLP",
+        "WIHH"
+      ],
+      "airlines": [
+        "Cardig Air",
+        "Citilink"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink",
+        "Garuda Indonesia",
+        "Lion Air",
+        "Pelita Air",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Medan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kualanamu_International_Airport",
+      "codes": [
+        "KNO",
+        "WIMM"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Mukomuko",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mukomuko_Airport",
+      "codes": [
+        "MPC",
+        "WIPU"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Pekanbaru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Syarif_Kasim_II_International_Airport",
+      "codes": [
+        "PKU",
+        "WIBB"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Sipora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rokot_Airport",
+      "codes": [
+        "RKI",
+        "WIBR"
+      ],
+      "airlines": [
+        "Susi Air"
+      ]
+    },
+    {
+      "city": "Yogyakarta–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yogyakarta_International_Airport",
+      "codes": [
+        "YIA",
+        "WAHI"
+      ],
+      "airlines": [
+        "Super Air Jet"
+      ]
+    }
   ],
   "airlines_destinations": {
     "AirAsia": [
@@ -145,5 +213,7 @@
     "Cardig Air": [
       "Jakarta–Halim Perdanakusuma"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:12:40Z",
+  "date-time-wikidata": "2026-04-27T22:54:22Z"
 }

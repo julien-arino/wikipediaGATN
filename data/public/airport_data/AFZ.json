@@ -7,6 +7,7 @@
   "lat": "36.171675",
   "lon": "57.599416",
   "altitude": "917",
+  "continent": "Asia",
   "region": "Razavi Khorasan",
   "country_alpha3": "IRN",
   "country_name": "Iran, Islamic Republic of",
@@ -19,12 +20,18 @@
     "Yazd Airways"
   ],
   "destinations": [
-    [
-      "Tehran–Mehrabad",
-      "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
-      "THR",
-      "OIII"
-    ]
+    {
+      "city": "Tehran–Mehrabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+      "codes": [
+        "THR",
+        "OIII"
+      ],
+      "airlines": [
+        "ATA Airlines",
+        "Yazd Airways"
+      ]
+    }
   ],
   "airlines_destinations": {
     "ATA Airlines": [
@@ -34,5 +41,6 @@
       "Tehran–Mehrabad"
     ]
   },
-  "continent": "Asia"
+  "date-time-parse": "2026-04-28T22:03:22Z",
+  "date-time-wikidata": "2025-09-24T11:49:47Z"
 }

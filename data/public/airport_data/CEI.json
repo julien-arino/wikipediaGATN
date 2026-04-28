@@ -24,30 +24,54 @@
     "Thai VietJet Air"
   ],
   "destinations": [
-    [
-      "Changi Airport",
-      "https://en.wikipedia.org/wiki/Changi_Airport",
-      "SIN",
-      "WSSS"
-    ],
-    [
-      "Don Mueang International Airport",
-      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
-      "DMK",
-      "VTBD"
-    ],
-    [
-      "Phuket International Airport",
-      "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "HKT",
-      "VTSP"
-    ],
-    [
-      "Suvarnabhumi Airport",
-      "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "BKK",
-      "VTBS"
-    ]
+    {
+      "city": "Changi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Don Mueang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Nok Air",
+        "Thai AirAsia",
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Phuket International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
+      "codes": [
+        "HKT",
+        "VTSP"
+      ],
+      "airlines": [
+        "Thai VietJet Air"
+      ]
+    },
+    {
+      "city": "Suvarnabhumi Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Thai AirAsia",
+        "Thai Airways International",
+        "Thai VietJet Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Nok Air": [
@@ -70,5 +94,7 @@
       "Phuket International Airport",
       "Suvarnabhumi Airport"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:33Z",
+  "date-time-wikidata": "2026-02-05T21:16:23Z"
 }

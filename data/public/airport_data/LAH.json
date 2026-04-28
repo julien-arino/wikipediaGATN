@@ -19,23 +19,35 @@
     "Wings Air"
   ],
   "destinations": [
-    [
-      "Manado",
-      "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
-      "MDC",
-      "WAMM"
-    ],
-    [
-      "Ternate",
-      "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
-      "TTE",
-      "WAEE"
-    ]
+    {
+      "city": "Manado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Ratulangi_International_Airport",
+      "codes": [
+        "MDC",
+        "WAMM"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    },
+    {
+      "city": "Ternate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Babullah_Airport",
+      "codes": [
+        "TTE",
+        "WAEE"
+      ],
+      "airlines": [
+        "Wings Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Wings Air": [
       "Manado",
       "Ternate"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:17:15Z",
+  "date-time-wikidata": "2025-07-22T03:12:37Z"
 }

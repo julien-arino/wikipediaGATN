@@ -21,120 +21,218 @@
     "Wizz Air"
   ],
   "destinations": [
-    [
-      "Antalya",
-      "https://en.wikipedia.org/wiki/Antalya_International_Airport",
-      "AYT",
-      "LTAI"
-    ],
-    [
-      "Bari",
-      "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport",
-      "BRI",
-      "LIBD"
-    ],
-    [
-      "Basel/Mulhouse",
-      "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
-      "BSL",
-      "LFSB"
-    ],
-    [
-      "Bergamo",
-      "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "BGY",
-      "LIME"
-    ],
-    [
-      "Bodrum",
-      "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
-      "BJV",
-      "LTFE"
-    ],
-    [
-      "Budapest",
-      "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
-      "BUD",
-      "LHBP"
-    ],
-    [
-      "Enfidha",
-      "https://en.wikipedia.org/wiki/Enfidha–Hammamet_International_Airport",
-      "NBE",
-      "DTNH"
-    ],
-    [
-      "Girona",
-      "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
-      "GRO",
-      "LEGE"
-    ],
-    [
-      "Hahn",
-      "https://en.wikipedia.org/wiki/Hahn_Airport",
-      "iata code not found",
-      "icao code not found"
-    ],
-    [
-      "Hamburg",
-      "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "HAM",
-      "EDDH"
-    ],
-    [
-      "Hurghada",
-      "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
-      "HRG",
-      "HEGN"
-    ],
-    [
-      "Karlsruhe/Baden–Baden",
-      "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
-      "FKB",
-      "EDSB"
-    ],
-    [
-      "Kraków",
-      "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
-      "KRK",
-      "EPKK"
-    ],
-    [
-      "Memmingen",
-      "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "FMM",
-      "EDJA"
-    ],
-    [
-      "Naples",
-      "https://en.wikipedia.org/wiki/Naples_International_Airport",
-      "NAP",
-      "LIRN"
-    ],
-    [
-      "Sharm El Sheikh",
-      "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
-      "SSH",
-      "HESH"
-    ],
-    [
-      "Stockholm–Arlanda",
-      "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
-      "ARN",
-      "ESSA"
-    ],
-    [
-      "Warsaw–Chopin",
-      "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
-      "WAW",
-      "EPWA"
-    ],
-    [
-      "Wrocław",
-      "https://en.wikipedia.org/wiki/Wrocław_Nicolaus_Copernicus_Airport",
-      "WRO",
-      "EPWR"
-    ]
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_International_Airport",
+      "codes": [
+        "AYT",
+        "LTAI"
+      ],
+      "airlines": [
+        "Fly Lili"
+      ]
+    },
+    {
+      "city": "Bari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari_Karol_Wojtyła_Airport",
+      "codes": [
+        "BRI",
+        "LIBD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "Fly Lili"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Enfidha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enfidha–Hammamet_International_Airport",
+      "codes": [
+        "NBE",
+        "DTNH"
+      ],
+      "airlines": [
+        "Fly Lili"
+      ]
+    },
+    {
+      "city": "Girona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
+      "codes": [
+        "GRO",
+        "LEGE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Hahn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Hamburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
+      "codes": [
+        "HAM",
+        "EDDH"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN"
+      ],
+      "airlines": [
+        "Fly Lili"
+      ]
+    },
+    {
+      "city": "Karlsruhe/Baden–Baden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
+      "codes": [
+        "FKB",
+        "EDSB"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Memmingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
+      "codes": [
+        "FMM",
+        "EDJA"
+      ],
+      "airlines": [
+        "Ryanair",
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Sharm El Sheikh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharm_El_Sheikh_International_Airport",
+      "codes": [
+        "SSH",
+        "HESH"
+      ],
+      "airlines": [
+        "Fly Lili"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Wrocław",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wrocław_Nicolaus_Copernicus_Airport",
+      "codes": [
+        "WRO",
+        "EPWR"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Fly Lili": [
@@ -165,5 +263,7 @@
       "Warsaw–Chopin",
       "Wrocław"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:14:19Z",
+  "date-time-wikidata": "2026-04-17T14:37:00Z"
 }

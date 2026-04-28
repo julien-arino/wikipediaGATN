@@ -22,42 +22,76 @@
     "US-Bangla Airlines"
   ],
   "destinations": [
-    [
-      "Chittagong",
-      "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
-      "CGP",
-      "VGEG"
-    ],
-    [
-      "Dhaka",
-      "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
-      "DAC",
-      "VGHS"
-    ],
-    [
-      "Jashore",
-      "https://en.wikipedia.org/wiki/Jashore_Airport",
-      "JSR",
-      "VGJR"
-    ],
-    [
-      "Rajshahi",
-      "https://en.wikipedia.org/wiki/Shah_Makhdum_Airport",
-      "RJH",
-      "VGRJ"
-    ],
-    [
-      "Saidpur",
-      "https://en.wikipedia.org/wiki/Saidpur_Airport",
-      "SPD",
-      "VGSD"
-    ],
-    [
-      "Sylhet",
-      "https://en.wikipedia.org/wiki/Osmani_International_Airport",
-      "ZYL",
-      "VGSY"
-    ]
+    {
+      "city": "Chittagong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
+      "codes": [
+        "CGP",
+        "VGEG"
+      ],
+      "airlines": [
+        "Air Astra"
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Air Astra",
+        "Biman Bangladesh Airlines",
+        "Novoair",
+        "US-Bangla Airlines"
+      ]
+    },
+    {
+      "city": "Jashore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jashore_Airport",
+      "codes": [
+        "JSR",
+        "VGJR"
+      ],
+      "airlines": [
+        "Novoair",
+        "US-Bangla Airlines"
+      ]
+    },
+    {
+      "city": "Rajshahi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Makhdum_Airport",
+      "codes": [
+        "RJH",
+        "VGRJ"
+      ],
+      "airlines": [
+        "Novoair"
+      ]
+    },
+    {
+      "city": "Saidpur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saidpur_Airport",
+      "codes": [
+        "SPD",
+        "VGSD"
+      ],
+      "airlines": [
+        "Biman Bangladesh Airlines"
+      ]
+    },
+    {
+      "city": "Sylhet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osmani_International_Airport",
+      "codes": [
+        "ZYL",
+        "VGSY"
+      ],
+      "airlines": [
+        "Air Astra"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Astra": [
@@ -78,5 +112,7 @@
       "Dhaka",
       "Jashore"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:04:58Z",
+  "date-time-wikidata": "2026-04-04T18:28:04Z"
 }

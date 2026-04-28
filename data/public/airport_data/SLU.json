@@ -23,60 +23,112 @@
     "LIAT20"
   ],
   "destinations": [
-    [
-      "Antigua",
-      "https://en.wikipedia.org/wiki/V.C._Bird_International_Airport",
-      "ANU",
-      "TAPA"
-    ],
-    [
-      "Barbados",
-      "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-      "BGI",
-      "TBPB"
-    ],
-    [
-      "Dominica–Douglas-Charles",
-      "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
-      "DOM",
-      "TDPD"
-    ],
-    [
-      "Fort-de-France",
-      "https://en.wikipedia.org/wiki/Martinique_Aimé_Césaire_International_Airport",
-      "FDF",
-      "TFFF"
-    ],
-    [
-      "Grenada",
-      "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
-      "GND",
-      "TGPY"
-    ],
-    [
-      "Pointe-à-Pitre",
-      "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
-      "PTP",
-      "TFFR"
-    ],
-    [
-      "Port of Spain",
-      "https://en.wikipedia.org/wiki/Piarco_International_Airport",
-      "POS",
-      "TTPP"
-    ],
-    [
-      "St. Kitts",
-      "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
-      "SKB",
-      "TKPK"
-    ],
-    [
-      "St. Vincent–Argyle",
-      "https://en.wikipedia.org/wiki/Argyle_International_Airport",
-      "SVD",
-      "TVSA"
-    ]
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V.C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "LIAT20"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Caribbean Airlines",
+        "LIAT20"
+      ]
+    },
+    {
+      "city": "Dominica–Douglas-Charles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
+      "codes": [
+        "DOM",
+        "TDPD"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Fort-de-France",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martinique_Aimé_Césaire_International_Airport",
+      "codes": [
+        "FDF",
+        "TFFF"
+      ],
+      "airlines": [
+        "Air Adelphi",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Grenada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+      "codes": [
+        "GND",
+        "TGPY"
+      ],
+      "airlines": [
+        "DHL Aviation",
+        "LIAT20"
+      ]
+    },
+    {
+      "city": "Pointe-à-Pitre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
+      "codes": [
+        "PTP",
+        "TFFR"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ]
+    },
+    {
+      "city": "St. Kitts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
+      "codes": [
+        "SKB",
+        "TKPK"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "St. Vincent–Argyle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "Air Adelphi",
+        "Air Cargo Carriers",
+        "Caribbean Airlines",
+        "DHL Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Caribbean Airlines": [
@@ -105,5 +157,7 @@
       "Grenada",
       "St. Vincent–Argyle"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:44Z",
+  "date-time-wikidata": "2026-03-31T19:52:27Z"
 }

@@ -19,24 +19,39 @@
     "Grant Aviation"
   ],
   "destinations": [
-    [
-      "Dillingham",
-      "https://en.wikipedia.org/wiki/Dillingham_Airport",
-      "DLG",
-      "PADL"
-    ],
-    [
-      "Ekwok",
-      "https://en.wikipedia.org/wiki/Ekwok_Airport",
-      "KEK",
-      "icao code not found"
-    ],
-    [
-      "New Stuyahok",
-      "https://en.wikipedia.org/wiki/New_Stuyahok_Airport",
-      "KNW",
-      "PANW"
-    ]
+    {
+      "city": "Dillingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
+      "codes": [
+        "DLG",
+        "PADL"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "Ekwok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ekwok_Airport",
+      "codes": [
+        "KEK",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    },
+    {
+      "city": "New Stuyahok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Stuyahok_Airport",
+      "codes": [
+        "KNW",
+        "PANW"
+      ],
+      "airlines": [
+        "Grant Aviation"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Grant Aviation": [
@@ -44,5 +59,7 @@
       "Ekwok",
       "New Stuyahok"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:16:51Z",
+  "date-time-wikidata": "2025-05-31T00:19:39Z"
 }

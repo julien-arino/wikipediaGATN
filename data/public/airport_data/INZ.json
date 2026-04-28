@@ -20,24 +20,41 @@
     "Tassili Airlines"
   ],
   "destinations": [
-    [
-      "Algiers",
-      "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "ALG",
-      "DAAG"
-    ],
-    [
-      "Hassi Messaoud",
-      "https://en.wikipedia.org/wiki/Hassi_Messaoud_Airport",
-      "HME",
-      "DAUH"
-    ],
-    [
-      "Tamanrasset",
-      "https://en.wikipedia.org/wiki/Aguenar_–_Hadj_Bey_Akhamok_Airport",
-      "TMR",
-      "DAAT"
-    ]
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    },
+    {
+      "city": "Hassi Messaoud",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hassi_Messaoud_Airport",
+      "codes": [
+        "HME",
+        "DAUH"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
+      "city": "Tamanrasset",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aguenar_–_Hadj_Bey_Akhamok_Airport",
+      "codes": [
+        "TMR",
+        "DAAT"
+      ],
+      "airlines": [
+        "Air Algérie",
+        "Tassili Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Air Algérie": [
@@ -49,5 +66,7 @@
       "Algiers",
       "Tamanrasset"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:48Z",
+  "date-time-wikidata": "2025-09-14T01:37:31Z"
 }

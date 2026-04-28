@@ -20,24 +20,40 @@
     "Star Perú"
   ],
   "destinations": [
-    [
-      "Lima",
-      "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
-      "LIM",
-      "SPJC"
-    ],
-    [
-      "Pucallpa",
-      "https://en.wikipedia.org/wiki/FAP_Captain_David_Abensur_Rengifo_International_Airport",
-      "PCL",
-      "SPCL"
-    ],
-    [
-      "Tarapoto",
-      "https://en.wikipedia.org/wiki/Cadete_FAP_Guillermo_del_Castillo_Paredes_Airport",
-      "TPP",
-      "SPST"
-    ]
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "Atsa Airlines",
+        "Star Perú"
+      ]
+    },
+    {
+      "city": "Pucallpa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/FAP_Captain_David_Abensur_Rengifo_International_Airport",
+      "codes": [
+        "PCL",
+        "SPCL"
+      ],
+      "airlines": [
+        "Atsa Airlines"
+      ]
+    },
+    {
+      "city": "Tarapoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cadete_FAP_Guillermo_del_Castillo_Paredes_Airport",
+      "codes": [
+        "TPP",
+        "SPST"
+      ],
+      "airlines": [
+        "Atsa Airlines"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Atsa Airlines": [
@@ -48,5 +64,7 @@
     "Star Perú": [
       "Lima"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:11:47Z",
+  "date-time-wikidata": "2025-04-08T05:57:07Z"
 }

@@ -20,12 +20,18 @@
     "Sky Express"
   ],
   "destinations": [
-    [
-      "Athens",
-      "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "ATH",
-      "LGAV"
-    ]
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Olympic Air",
+        "Sky Express"
+      ]
+    }
   ],
   "airlines_destinations": {
     "Olympic Air": [
@@ -34,5 +40,7 @@
     "Sky Express": [
       "Athens"
     ]
-  }
+  },
+  "date-time-parse": "2026-04-28T22:08:24Z",
+  "date-time-wikidata": "2025-01-04T20:30:13Z"
 }

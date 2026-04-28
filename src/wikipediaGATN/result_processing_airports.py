@@ -109,14 +109,16 @@ def export_all_airport_data(verbose: bool = False) -> str:
         except (json.JSONDecodeError, OSError):
             continue
 
-    # Bulk resolve Wikipedia redirects
+    # Bulk resolve Wikipedia redirects for both known URLs and unresolved destinations
     unresolved_urls = [url for url in all_destinations if url not in url_to_codes]
-    if unresolved_urls and verbose:
-        print(f"Resolving {len(unresolved_urls)} redirects via Wikipedia API...")
+    urls_to_resolve = list(url_to_codes.keys()) + unresolved_urls
+    
+    if verbose:
+        print(f"Resolving canonical titles for {len(urls_to_resolve)} URLs via Wikipedia API...")
     
     headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
-    for i in range(0, len(unresolved_urls), 25):
-        chunk = unresolved_urls[i:i+25]
+    for i in range(0, len(urls_to_resolve), 50):
+        chunk = urls_to_resolve[i:i+50]
         titles = [urllib.parse.unquote(url.split('/')[-1]) for url in chunk]
         titles_str = "|".join(titles)
         try:
@@ -126,18 +128,30 @@ def export_all_airport_data(verbose: bool = False) -> str:
                 time.sleep(2)
                 continue
             res_json = r.json()
-            if 'query' in res_json and 'redirects' in res_json['query']:
-                for rd in res_json['query']['redirects']:
-                    for url in chunk:
-                        url_title = urllib.parse.unquote(url.split('/')[-1])
-                        if url_title.replace('_', ' ') == rd['from']:
-                            for known_url in url_to_codes:
-                                if urllib.parse.unquote(known_url.split('/')[-1]).replace('_', ' ') == rd['to']:
-                                    url_to_codes[url] = url_to_codes[known_url]
-                                    break
+            if 'query' in res_json:
+                title_to_canonical = {t: t.replace('_', ' ') for t in titles}
+                if 'normalized' in res_json['query']:
+                    for n in res_json['query']['normalized']:
+                        title_to_canonical[n['from']] = n['to']
+                if 'redirects' in res_json['query']:
+                    for rd in res_json['query']['redirects']:
+                        for orig, norm in list(title_to_canonical.items()):
+                            if norm == rd['from']:
+                                title_to_canonical[orig] = rd['to']
+                
+                # If chunk URL was in url_to_codes, propagate its code to canonical
+                # If chunk URL was an unresolved destination, see if its canonical is in url_to_codes
+                for url, orig_title in zip(chunk, titles):
+                    canonical = title_to_canonical.get(orig_title)
+                    if canonical:
+                        canonical_url = f"https://en.wikipedia.org/wiki/{canonical.replace(' ', '_')}"
+                        if url in url_to_codes:
+                            url_to_codes[canonical_url] = url_to_codes[url]
+                        elif canonical_url in url_to_codes:
+                            url_to_codes[url] = url_to_codes[canonical_url]
         except Exception as exc:
             if verbose: print(f"Redirect resolution failed for a chunk: {exc}")
-        time.sleep(0.5)
+        time.sleep(0.1)
 
     rows = []
     skipped = 0
@@ -279,9 +293,10 @@ def export_all_airport_data(verbose: bool = False) -> str:
             "outdegree":     new_data.get("outdegree", 0),
         })
 
+        # Save to public/airport_data
         public_json_path = os.path.join(airport_data_dir, f"{identifier}.json")
         with open(public_json_path, "w", encoding="utf-8") as out_fh:
-            json.dump(new_data, out_fh, indent=2)
+            json.dump(new_data, out_fh, indent=2, ensure_ascii=False)
 
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
     output_csv = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")

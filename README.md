@@ -7,11 +7,12 @@
 The package handles the full pipeline:
 
 1. **Crawling** — breadth-first traversal from a seed airport, following destination links to neighbouring airport pages.
-2. **Parsing** — extraction of IATA/ICAO codes, geographic coordinates, and route tables from Wikipedia infoboxes and HTML tables.
-3. **IATA recovery** — two-pass strategy to resolve destination URLs that lack an obvious code, combining dictionary lookup with Wikipedia scraping and optional fuzzy matching.
-4. **Export** — sparse adjacency matrices (`.npz`), node lists, and airport metadata CSVs ready for network analysis.
+2. **Parsing** — extraction of IATA/ICAO codes, geographic coordinates, and route tables from Wikipedia infoboxes and HTML tables, supplemented by the authoritative [OurAirports](https://ourairports.com/) database for metadata.
+3. **IATA recovery** — resolution of destination URLs that lack an obvious code, prioritizing offline lookups in the [OurAirports](https://ourairports.com/) database before falling back to Wikipedia scraping.
+4. **Export** — sparse adjacency matrices (`.npz`), node lists, airport metadata CSVs ready for network analysis, and interactive Plotly visualisations (`.html`).
+5. **Updates** — on demand maintenance of the network through incremental scraping and synchronization with upstream [OurAirports](https://ourairports.com/) metadata changes, keeping the graphs up to date.
 
-The resulting network can be used for empirical studies of air-travel connectivity, epidemic-spread modelling, and transportation network analysis.
+The resulting networks can be used for empirical studies of air-travel connectivity, epidemic-spread modelling and transportation network analysis. They also provide great examples in courses about graphs/networks, data science and computational social science.
 
 ## Setting up
 

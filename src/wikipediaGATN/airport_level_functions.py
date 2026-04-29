@@ -84,7 +84,7 @@ _API_URL = "https://en.wikipedia.org/w/api.php"
 # address so they can reach out if the bot misbehaves.
 _HEADERS = {
     "User-Agent": (
-        "wikipediaGATN/1.0 (https://github.com/jarino; julien.arino@umanitoba.ca) "
+        "wikipediaGATN/1.0 (https://github.com/julien-arino; julien.arino@umanitoba.ca) "
         "python-requests"
     )
 }

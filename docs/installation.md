@@ -5,7 +5,7 @@
 Currently, `wikipediaGATN` can be installed from source.
 
 ```bash
-git clone https://github.com/jarino/wikipediaGATN.git
+git clone https://github.com/julien-arino/wikipediaGATN.git
 cd wikipediaGATN
 pip install .
 ```

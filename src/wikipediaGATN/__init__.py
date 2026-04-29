@@ -10,10 +10,10 @@ The package provides tools to:
 - Build sparse adjacency matrices of the global air network
 - Analyze network structure
 
-For more information, see: https://github.com/jarino/wikipediaGATN
+For more information, see: https://github.com/julien-arino/wikipediaGATN
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Julien Arino and Adriana-Stefania Ciupeanu"
 __author_email__ = "julien.arino@umanitoba.ca, Adriana-Stefania.Ciupeanu@umanitoba.ca"
 __license__ = "GPLv3"

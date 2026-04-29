@@ -1,19 +1,39 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# ---------------------------------------------------------------------------
+# Hatch Build Configuration
+# ---------------------------------------------------------------------------
+[tool.hatch.build.targets.wheel]
+packages = ["src/wikipediaGATN"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+    "paper.md",
+    "paper.bib",
+    "LICENSE",
+    "README.md",
+]
 
 # ---------------------------------------------------------------------------
 # Project metadata
 # ---------------------------------------------------------------------------
 [project]
 name = "wikipediaGATN"
-version = "0.1.0"
-description = "Derive the Global Air Transportation Networks from Wikipedia"
+version = "0.1.1"
+description = "Derive the Global Air Transportation Network from Wikipedia"
 readme = "README.md"
-license = { file = "LICENSE" }
+license = "GPL-3.0-or-later"
 authors = [
     { name = "Julien Arino",               email = "julien.arino@umanitoba.ca"   },
     { name = "Adriana-Stefania Ciupeanu",  email = "ciupeana@myumanitoba.ca" },
+]
+maintainers = [
+    { name = "Julien Arino",               email = "julien.arino@umanitoba.ca"   },
+    { name = "Adriana-Stefania Ciupeanu", email = "ciupeana@myumanitoba.ca" },
 ]
 keywords = [
     "air transportation network",
@@ -108,9 +128,9 @@ docs = [
 # Project URLs
 # ---------------------------------------------------------------------------
 [project.urls]
-Homepage      = "https://github.com/jarino/wikipediaGATN"
-Repository    = "https://github.com/jarino/wikipediaGATN"
-"Bug Tracker" = "https://github.com/jarino/wikipediaGATN/issues"
+Homepage      = "https://github.com/julien-arino/wikipediaGATN"
+Repository    = "https://github.com/julien-arino/wikipediaGATN"
+"Bug Tracker" = "https://github.com/julien-arino/wikipediaGATN/issues"
 
 # ---------------------------------------------------------------------------
 # Package discovery
@@ -160,3 +180,9 @@ ignore = ["E501"]               # handled by formatter
 [tool.black]
 line-length    = 88
 target-version = ["py310", "py311", "py312"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.bib"]
+
+[tool.setuptools.include-package-data]
+keep-default = true

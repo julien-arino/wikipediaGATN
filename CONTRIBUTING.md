@@ -8,7 +8,8 @@ To set up a local development environment:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/jarino/wikipediaGATN.git
+   git clone https://github.com/julien-arino/wikipediaGATN.git
+
    cd wikipediaGATN
    ```
 

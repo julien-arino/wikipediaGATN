@@ -42,16 +42,18 @@ _FNAME_RE = re.compile(r"^([A-Z]{3,4}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
 # AIRPORT DATA EXTRACTION
 ###############################################################################
 
-def export_all_airport_data(verbose: bool = False) -> str:
+def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -> str:
     """
     Extract metadata from all airport JSON files and write to CSV.
 
     Scans every ``<IATA>.<distance>.json`` and ``wiki_*.<distance>.json`` file
-    in ``TEMP_RESULTS_DIR`` and collects airport metadata into a single
-    ``airports_information.csv``.
+    in ``PUBLIC_DATA_DIR/airport_data`` (or ``TEMP_RESULTS_DIR`` if use_new_data is True)
+    and collects airport metadata into a single ``airports_information.csv``.
 
     Parameters
     ----------
+    use_new_data : bool, optional
+        If True, reads from ``TEMP_RESULTS_DIR``. Default: False (reads from ``PUBLIC_DATA_DIR/airport_data``).
     verbose : bool, optional
         If True, prints per-file status and a final summary.  Default: False.
 
@@ -63,7 +65,7 @@ def export_all_airport_data(verbose: bool = False) -> str:
     Raises
     ------
     FileNotFoundError
-        If ``TEMP_RESULTS_DIR`` does not exist.
+        If the selected directory does not exist.
 
     Notes
     -----
@@ -76,16 +78,13 @@ def export_all_airport_data(verbose: bool = False) -> str:
     """
     airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
     
-    if not os.path.isdir(TEMP_RESULTS_DIR):
-        if not os.path.isdir(airport_data_dir):
-            raise FileNotFoundError(
-                f"Neither temporary nor public results directory found.\n"
-                "Run the Wikipedia scraping step first."
-            )
-        else:
-            scan_dir = airport_data_dir
-    else:
+    if use_new_data:
         scan_dir = TEMP_RESULTS_DIR
+    else:
+        scan_dir = airport_data_dir
+        
+    if not os.path.isdir(scan_dir):
+        raise FileNotFoundError(f"Directory not found: {scan_dir}")
 
     # 1. Pre-computation pass: Build url_to_codes mapping
     url_to_codes = build_url_to_codes_map(verbose=verbose)
@@ -545,3 +544,12 @@ __all__ = [
     "identify_missing_airport_data",
     "enrich_missing_airport_data",
 ]
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Compile airport JSONs into airports_information.csv")
+    parser.add_argument("--quiet", action="store_true", help="Suppress verbose output")
+    parser.add_argument("--use-new-data", action="store_true", help="Read from TEMP_RESULTS_DIR instead of public data")
+    args = parser.parse_args()
+    
+    export_all_airport_data(use_new_data=args.use_new_data, verbose=not args.quiet)

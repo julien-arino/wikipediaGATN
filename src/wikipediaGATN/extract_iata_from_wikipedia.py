@@ -317,6 +317,23 @@ def extract_iata_from_unmapped_destinations(
         if verbose:
             print(f"[{idx}/{total}] Fetching: {url}")
 
+        # ---- Offline Fast-Path: Check OurAirports Database First --------
+        from .airport_level_functions import _load_ourairports_data
+        oa_cache = _load_ourairports_data()
+        
+        # OurAirports has some http links and some https links, so we'll match by end of path
+        url_end = url.split("wikipedia.org/")[-1]
+        oa_match = next((row for wiki, row in oa_cache.items() if wiki.endswith(url_end)), None)
+        
+        if oa_match and oa_match.get("iata_code"):
+            row["iata"] = oa_match["iata_code"]
+            row["source"] = "ourairports_db (conf: 1.00)"
+            successful += 1
+            if verbose:
+                print(f"    → {row['iata']} (offline from OurAirports)\n")
+            continue
+
+        # ---- Fallback: Web Scrape Wikipedia Page ------------------------
         result = _extract_iata_from_wikipedia_page(url, verbose=verbose)
 
         if result["iata"]:

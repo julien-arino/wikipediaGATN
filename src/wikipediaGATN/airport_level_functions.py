@@ -1505,6 +1505,48 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
             
     return mapped_destinations
 
+_OURAIRPORTS_CACHE = None
+
+def _load_ourairports_data():
+    global _OURAIRPORTS_CACHE
+    if _OURAIRPORTS_CACHE is not None:
+        return _OURAIRPORTS_CACHE
+        
+    import os
+    import csv
+    import requests
+    from .paths import PUBLIC_DATA_DIR
+    
+    ourairports_path = os.path.join(PUBLIC_DATA_DIR, "ourairports.csv")
+    if not os.path.exists(ourairports_path):
+        url = "https://davidmegginson.github.io/ourairports-data/airports.csv"
+        try:
+            print(f"Downloading OurAirports dataset from {url}...")
+            r = requests.get(url, timeout=30)
+            r.raise_for_status()
+            with open(ourairports_path, "w", encoding="utf-8") as f:
+                f.write(r.text)
+        except Exception as e:
+            print(f"Warning: Failed to download OurAirports dataset: {e}")
+            _OURAIRPORTS_CACHE = {}
+            return _OURAIRPORTS_CACHE
+            
+    cache = {}
+    try:
+        with open(ourairports_path, "r", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                iata = row.get("iata_code", "").strip()
+                icao = row.get("icao_code", "").strip()
+                wiki = row.get("wikipedia_link", "").strip()
+                if iata: cache[iata] = row
+                if icao: cache[icao] = row
+                if iata and wiki: cache[wiki] = row
+    except Exception as e:
+        print(f"Warning: Failed to parse OurAirports dataset: {e}")
+        
+    _OURAIRPORTS_CACHE = cache
+    return _OURAIRPORTS_CACHE
+
 def infer_missing_geographic_data(data: dict) -> dict:
     """
     Attempt to infer missing geographic data (lat, lon, admin1, admin2, country)
@@ -1517,6 +1559,44 @@ def infer_missing_geographic_data(data: dict) -> dict:
     from geopy.geocoders import Nominatim
     
     geolocator = Nominatim(user_agent="wikipediaGATN")
+    
+    # -------------------------------------------------------------------------
+    # Priority 1: OurAirports Database
+    # -------------------------------------------------------------------------
+    oa_cache = _load_ourairports_data()
+    oa_row = None
+    if data.get("iata") and data.get("iata") in oa_cache:
+        oa_row = oa_cache[data["iata"]]
+    elif data.get("icao") and data.get("icao") in oa_cache:
+        oa_row = oa_cache[data["icao"]]
+        
+    if oa_row:
+        # Backfill coordinates if missing
+        if not data.get("lat") or not data.get("lon"):
+            if oa_row.get("latitude_deg") and oa_row.get("longitude_deg"):
+                data["lat"] = str(oa_row["latitude_deg"])
+                data["lon"] = str(oa_row["longitude_deg"])
+                
+        # Resolve authoritative country and region
+        if oa_row.get("iso_country"):
+            c = pycountry.countries.get(alpha_2=oa_row["iso_country"])
+            if c:
+                data["country_alpha3"] = c.alpha_3
+                data["country_name"] = c.name
+                
+        if oa_row.get("iso_region"):
+            data["admin1_code"] = oa_row["iso_region"]
+            try:
+                s = pycountry.subdivisions.get(code=oa_row["iso_region"])
+                if s:
+                    data["admin1_name"] = s.name
+            except Exception:
+                pass
+                
+    # -------------------------------------------------------------------------
+    # Priority 2: Fallback processing and Geopy
+    # -------------------------------------------------------------------------
+    
     # Fallback for city-served
     if not data.get("city-served") and data.get("location"):
         data["city-served"] = data.get("location")
@@ -1560,7 +1640,7 @@ def infer_missing_geographic_data(data: dict) -> dict:
             except Exception:
                 pass
     
-    # Fill in lat/lon if missing but we have an ISO region or location
+    # Fill in lat/lon if missing but we have an ISO region or location (only if OurAirports failed)
     if not data.get("lat") or not data.get("lon"):
         query = data.get("admin1_name") or data.get("location")
         if query:
@@ -1599,89 +1679,6 @@ def infer_missing_geographic_data(data: dict) -> dict:
             except Exception:
                 pass
 
-    # Extract explicit text for validation and corrections
-    loc_text = str(data.get("location", "")) + " " + str(data.get("city-served-wikipedia", ""))
-    
-    # Apply user-defined geographic correction rule for the US-Canada border
-    if data.get("country_alpha3") == "USA":
-        force_canada = False
-        
-        # Rule 1: Anything north of 49 degrees that is not in Alaska is in Canada.
-        if data.get("admin1_code") != "US-AK":
-            try:
-                if float(data.get("lat", 0)) > 49.0:
-                    force_canada = True
-            except (ValueError, TypeError):
-                pass
-                
-        # Rule 2: Generalized validation check against Wikipedia city-served string
-        if data.get("city-served-wikipedia"):
-            import mwparserfromhell
-            try:
-                wikicode = mwparserfromhell.parse(data["city-served-wikipedia"])
-                links = [link.title.strip_code().strip() for link in wikicode.filter_wikilinks()]
-                
-                for link in links:
-                    matches = [s for s in pycountry.subdivisions if s.name.lower() == link.lower()]
-                    unique_countries = list(set([s.country_code for s in matches]))
-                    
-                    if len(unique_countries) == 1:
-                        sub_country = unique_countries[0]
-                        if sub_country != "US":
-                            force_canada = True
-                            c_new = pycountry.countries.get(alpha_2=sub_country)
-                            if c_new:
-                                data["country_alpha3"] = c_new.alpha_3
-                                data["country_name"] = c_new.name
-                            break
-            except Exception:
-                pass
-                
-        if force_canada:
-            if data.get("country_alpha3") == "USA":
-                data["country_alpha3"] = "CAN"
-                data["country_name"] = "Canada"
-            # Clear incorrect US state/county info
-            data["admin1_code"] = None
-            data["admin1_name"] = None
-            data["admin2_name"] = None
-                
-    # If the reverse geocoder got it wrong because of a border (e.g. FZNI in Uganda instead of DRC)
-    # we can try to extract the explicit country name from the location text if it contradicts the geocoder.
-    if loc_text.strip() != "None None":
-        # Handle common Wikipedia name discrepancies
-        custom_country_map = {
-            "Democratic Republic of the Congo": "COD",
-            "Republic of the Congo": "COG",
-            "United States": "USA",
-            "United Kingdom": "GBR",
-            "Russia": "RUS",
-            "South Korea": "KOR",
-            "North Korea": "PRK",
-            "Ivory Coast": "CIV",
-            "Czech Republic": "CZE",
-            "Eswatini": "SWZ",
-            "Macau": "MAC"
-        }
-        matched = False
-        for name, alpha3 in custom_country_map.items():
-            if name in loc_text:
-                c = pycountry.countries.get(alpha_3=alpha3)
-                if c:
-                    data["country_alpha3"] = c.alpha_3
-                    data["country_name"] = c.name
-                    matched = True
-                    break
-        
-        if not matched:
-            # Sort by descending length so "South Sudan" matches before "Sudan"
-            sorted_countries = sorted(list(pycountry.countries), key=lambda x: len(x.name), reverse=True)
-            for c in sorted_countries:
-                if c.name in loc_text:
-                    data["country_alpha3"] = c.alpha_3
-                    data["country_name"] = c.name
-                    break
-                
     # Fix continent if missing
     if not data.get("continent") and data.get("country_alpha3"):
         try:
@@ -1693,3 +1690,155 @@ def infer_missing_geographic_data(data: dict) -> dict:
             pass
             
     return data
+
+def compare_airports_with_ourairports(output_csv: str = None) -> str:
+    """
+    Compares airports in airports_information.csv with ourairports.csv and 
+    generates a CSV of airports in ourairports.csv that we have not picked up.
+    
+    Criteria for an airport to be included:
+    1. It must not be "closed"
+    2. It must have a wikipedia_link
+    3. It must not be present in airports_information.csv
+    """
+    import os
+    import csv
+    from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+    
+    if output_csv is None:
+        os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
+        output_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports.csv")
+        
+    airports_info_path = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
+    ourairports_path = os.path.join(PUBLIC_DATA_DIR, "ourairports.csv")
+    
+    if not os.path.exists(airports_info_path):
+        raise FileNotFoundError(f"{airports_info_path} does not exist.")
+    if not os.path.exists(ourairports_path):
+        raise FileNotFoundError(f"{ourairports_path} does not exist.")
+        
+    known_iatas = set()
+    known_icaos = set()
+    known_wikis = set()
+    
+    with open(airports_info_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get("iata"): known_iatas.add(row["iata"].strip().upper())
+            if row.get("icao"): known_icaos.add(row["icao"].strip().upper())
+            if row.get("wikipedia_url"): 
+                wiki = row["wikipedia_url"].strip()
+                known_wikis.add(wiki)
+                known_wikis.add(wiki.split("wikipedia.org/")[-1])
+                
+    missing_airports = []
+    
+    with open(ourairports_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get("type") == "closed":
+                continue
+                
+            wiki_link = row.get("wikipedia_link", "").strip()
+            if not wiki_link:
+                continue
+                
+            iata = row.get("iata_code", "").strip().upper()
+            icao = row.get("icao_code", "").strip().upper()
+            wiki_end = wiki_link.split("wikipedia.org/")[-1]
+            
+            # Check if we already picked it up
+            if (iata and iata in known_iatas) or \
+               (icao and icao in known_icaos) or \
+               (wiki_link in known_wikis) or \
+               (wiki_end in known_wikis):
+                continue
+                
+            missing_airports.append(row)
+            
+    if missing_airports:
+        with open(output_csv, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=missing_airports[0].keys())
+            writer.writeheader()
+            writer.writerows(missing_airports)
+            
+    print(f"Found {len(missing_airports)} missing airports with wikipedia links.")
+    if missing_airports:
+        print(f"Exported to {output_csv}")
+        
+    return output_csv
+
+def find_active_missing_airports(input_csv: str = None, output_csv: str = None, max_workers: int = 5) -> str:
+    """
+    Takes the CSV generated by compare_airports_with_ourairports and checks the 
+    Wikipedia page for each airport. If the page contains an 'Airlines and destinations'
+    or 'Cargo' section, it is saved to a new active CSV.
+    """
+    import os
+    import csv
+    import requests
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from .paths import TEMP_RESULTS_DIR
+    
+    if input_csv is None:
+        input_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports.csv")
+    if output_csv is None:
+        os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
+        output_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports_active.csv")
+        
+    if not os.path.exists(input_csv):
+        raise FileNotFoundError(f"{input_csv} does not exist. Run compare_airports_with_ourairports() first.")
+        
+    with open(input_csv, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        airports = list(reader)
+        fieldnames = reader.fieldnames
+        
+    if not airports:
+        print("Input CSV is empty.")
+        return output_csv
+        
+    print(f"Checking {len(airports)} Wikipedia pages for active flight sections...")
+    
+    active_airports = []
+    
+    def check_active(airport):
+        url = airport.get("wikipedia_link", "").strip()
+        if not url:
+            return None
+            
+        try:
+            headers = {"User-Agent": "wikipediaGATN/0.1.0 (Global Air Transportation Network research; jarino@umanitoba.ca)"}
+            res = requests.get(url, headers=headers, timeout=10)
+            res.raise_for_status()
+            html = res.text.lower()
+            if 'id="airlines_and_destinations"' in html or 'id="passenger"' in html or 'id="cargo"' in html or 'id="airlines"' in html:
+                return airport
+        except Exception:
+            pass
+        return None
+
+    processed = 0
+    total = len(airports)
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(check_active, a): a for a in airports}
+        for future in as_completed(futures):
+            processed += 1
+            result = future.result()
+            if result:
+                active_airports.append(result)
+                
+            if processed % 100 == 0 or processed == total:
+                print(f"Processed {processed}/{total} pages. Found {len(active_airports)} active so far...", end="\\r", flush=True)
+                
+    print(f"\\nFound {len(active_airports)} active missing airports out of {total} total.")
+    
+    if active_airports:
+        with open(output_csv, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(active_airports)
+        print(f"Exported active airports to {output_csv}")
+        
+    return output_csv

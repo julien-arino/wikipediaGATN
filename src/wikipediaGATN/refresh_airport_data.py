@@ -6,7 +6,7 @@ import time
 import traceback
 import warnings
 import urllib.parse
-from typing import Union
+from typing import Union, Optional
 
 from dateutil import parser as dt_parser
 

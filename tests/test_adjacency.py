@@ -33,8 +33,8 @@ def public_dir(tmp_path, monkeypatch):
 
 
 def _write_connections(public_dir: Path, rows: list) -> Path:
-    """Write a minimal ``global-air-transportation-network.csv`` and return its path."""
-    csv_path = public_dir / "global-air-transportation-network.csv"
+    """Write a minimal ``global-air-pax-network.csv`` and return its path."""
+    csv_path = public_dir / "global-air-pax-network.csv"
     df = pd.DataFrame(rows, columns=["origin", "nb_outlinks", "outlinks"])
     df.to_csv(csv_path, index=False)
     return csv_path
@@ -51,8 +51,8 @@ def _load_nodes(nodes_path: str) -> list:
 class TestErrors:
 
     def test_raises_when_csv_missing(self, public_dir):
-        """FileNotFoundError when global-air-transportation-network.csv is absent."""
-        with pytest.raises(FileNotFoundError, match="global-air-transportation-network.csv"):
+        """FileNotFoundError when global-air-pax-network.csv is absent."""
+        with pytest.raises(FileNotFoundError, match="global-air-pax-network.csv"):
             create_outbound_adjacency_matrix(verbose=False)
 
     def test_raises_when_all_origins_malformed(self, public_dir):
@@ -66,7 +66,7 @@ class TestErrors:
 
     def test_raises_when_csv_empty(self, public_dir):
         """ValueError (or EmptyDataError) on a header-only CSV."""
-        (public_dir / "global-air-transportation-network.csv").write_text(
+        (public_dir / "global-air-pax-network.csv").write_text(
             "origin,nb_outlinks,outlinks\n"
         )
         with pytest.raises((ValueError, pd.errors.EmptyDataError)):
@@ -184,7 +184,7 @@ class TestDirectedMatrix:
 
     def test_nan_origin_rows_dropped(self, public_dir):
         """Rows with NaN origin are silently filtered without crashing."""
-        csv_path = public_dir / "global-air-transportation-network.csv"
+        csv_path = public_dir / "global-air-pax-network.csv"
         pd.DataFrame([
             {"origin": "YWG", "nb_outlinks": 1, "outlinks": "YYZ"},
             {"origin": float("nan"), "nb_outlinks": 1, "outlinks": "YVR"},

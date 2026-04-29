@@ -71,15 +71,15 @@ class TestCreateOutboundConnectionsList:
         assert isinstance(result[1], str)
 
     def test_connections_csv_created(self, data_dirs):
-        """global-air-transportation-network.csv is written to PUBLIC_DATA_DIR."""
+        """global-air-pax-network.csv is written to PUBLIC_DATA_DIR."""
         public = data_dirs
         _write_airport_json(public, "YWG", destinations=[])
         csv_path, _, _ = create_outbound_connections_list(verbose=False)
         assert os.path.exists(csv_path)
-        assert "global-air-transportation-network.csv" in csv_path
+        assert "global-air-pax-network.csv" in csv_path
 
     def test_connections_csv_contains_origin(self, data_dirs):
-        """The origin IATA code appears in global-air-transportation-network.csv."""
+        """The origin IATA code appears in global-air-pax-network.csv."""
         public = data_dirs
         _write_airport_json(public, "YWG", destinations=[])
         csv_path, _, _ = create_outbound_connections_list(verbose=False)

@@ -78,7 +78,7 @@ def visualize_graph_plotly(
     # Resolve input paths
     # ------------------------------------------------------------------
     if input_path is None:
-        input_path = PUBLIC_DATA_DIR / "global-air-transportation-network.graphml"
+        input_path = PUBLIC_DATA_DIR / "global-air-pax-network.graphml"
     elif isinstance(input_path, str):
         input_path = Path(input_path)
 
@@ -351,7 +351,7 @@ def visualise_all_networks(verbose: bool = False):
     """
     layouts = ["geographic", "globe", "spring"]
     
-    pax_graphml = PUBLIC_DATA_DIR / "global-air-transportation-network.graphml"
+    pax_graphml = PUBLIC_DATA_DIR / "global-air-pax-network.graphml"
     if pax_graphml.exists():
         for l in layouts:
             visualize_graph_plotly(input_path=pax_graphml, layout=l, verbose=verbose)

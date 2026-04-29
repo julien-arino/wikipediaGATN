@@ -35,7 +35,7 @@ def create_outbound_adjacency_matrix(
     """
     Create a sparse adjacency matrix of outbound airport connections.
 
-    Reads airport connections from ``global-air-transportation-network.csv`` and creates a
+    Reads airport connections from ``global-air-pax-network.csv`` and creates a
     sparse adjacency matrix where each airport is a node and edges represent
     direct outbound connections.  Can optionally create a symmetric matrix to
     account for incomplete destination data from smaller airports.
@@ -104,14 +104,14 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     # Load outbound connection data
     # ------------------------------------------------------------------
-    filename = "global-air-cargo-network.csv" if is_cargo else "global-air-transportation-network.csv"
+    filename = "global-air-cargo-network.csv" if is_cargo else "global-air-pax-network.csv"
     input_file = os.path.join(PUBLIC_DATA_DIR, filename)
 
     if not os.path.exists(input_file):
         raise FileNotFoundError(
             f"Input file not found: {input_file}\n"
             "Run create_outbound_connections_list() first to generate "
-            "global-air-transportation-network.csv"
+            "global-air-pax-network.csv"
         )
 
     df = pd.read_csv(input_file)
@@ -304,7 +304,7 @@ def create_outbound_adjacency_matrix(
                     except (json.JSONDecodeError, OSError):
                         pass
             
-            base_name = "global-air-cargo-network" if is_cargo else "global-air-transportation-network"
+            base_name = "global-air-cargo-network" if is_cargo else "global-air-pax-network"
             output_graphml = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.graphml")
             nx.write_graphml(G, output_graphml)
             if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")

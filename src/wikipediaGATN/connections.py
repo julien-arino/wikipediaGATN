@@ -25,7 +25,7 @@ def create_outbound_connections_list(
     Parse JSON files in ``PUBLIC_DATA_DIR/airport_data`` and write a connections CSV.
 
     Reads every ``<IATA>.json`` file, extracts the pre-mapped destination IATA codes,
-    and writes the result to ``global-air-transportation-network.csv``.
+    and writes the result to ``global-air-pax-network.csv``.
 
     Optionally exports a second CSV listing destination URLs that could not be
     mapped, so they can be resolved in a subsequent scraping pass.
@@ -138,10 +138,10 @@ def create_outbound_connections_list(
             print(f"     {count:>4}x  {url}")
 
     # ------------------------------------------------------------------
-    # Write global-air-transportation-network.csv
+    # Write global-air-pax-network.csv
     # ------------------------------------------------------------------
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
-    output_csv = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.csv")
+    output_csv = os.path.join(PUBLIC_DATA_DIR, "global-air-pax-network.csv")
     output_cargo_csv = os.path.join(PUBLIC_DATA_DIR, "global-air-cargo-network.csv")
 
     connections = sorted(airport_connections.values(), key=lambda x: x["origin"])

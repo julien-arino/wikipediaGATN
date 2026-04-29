@@ -31,10 +31,6 @@ authors = [
     { name = "Julien Arino",               email = "julien.arino@umanitoba.ca"   },
     { name = "Adriana-Stefania Ciupeanu",  email = "ciupeana@myumanitoba.ca" },
 ]
-maintainers = [
-    { name = "Julien Arino",               email = "julien.arino@umanitoba.ca"   },
-    { name = "Adriana-Stefania Ciupeanu", email = "ciupeana@myumanitoba.ca" },
-]
 keywords = [
     "air transportation network",
     "network science",
@@ -180,9 +176,3 @@ ignore = ["E501"]               # handled by formatter
 [tool.black]
 line-length    = 88
 target-version = ["py310", "py311", "py312"]
-
-[tool.setuptools.package-data]
-"*" = ["*.md", "*.bib"]
-
-[tool.setuptools.include-package-data]
-keep-default = true

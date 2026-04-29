@@ -2,7 +2,7 @@
 
 ## Overview
 
-`wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Network (GATN)**: a directed graph in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports.
+`wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo.
 
 The package handles the full pipeline:
 

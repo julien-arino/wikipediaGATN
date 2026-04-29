@@ -1,3 +1,7 @@
+"""
+Merges JSON data from successfully scraped missing airports (in tmp_results) back into the main public/airport_data repository.
+"""
+
 import os
 import json
 import shutil

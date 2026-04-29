@@ -1,3 +1,7 @@
+"""
+Utility script to re-format all public airport JSON files, ensuring their keys are ordered consistently according to the canonical schema.
+"""
+
 import os
 import json
 

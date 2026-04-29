@@ -1,4 +1,6 @@
-
+"""
+Legacy script built to test data extraction on tricky airports (like YWG) that have complex infoboxes or destination tables.
+"""
 
 from wikipediaGATN.wikipedia_airport_level import (
     extract_airport_information,

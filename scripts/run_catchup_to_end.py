@@ -1,4 +1,6 @@
-
+"""
+Resumes an interrupted BFS network crawl and continues automatically until the queue is completely empty.
+"""
 
 from wikipediaGATN.wikipedia_network_level import continue_existing_search_until_empty
 

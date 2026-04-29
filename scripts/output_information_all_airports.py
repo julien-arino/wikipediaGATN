@@ -1,4 +1,6 @@
-
+"""
+Orchestrates the deduplication of scraped IATA files and exports the consolidated airports_information.csv.
+"""
 
 from wikipediaGATN.result_processing import (
     check_duplicated_iata_codes,

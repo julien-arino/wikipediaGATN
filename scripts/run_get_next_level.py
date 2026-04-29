@@ -1,3 +1,7 @@
+"""
+Automatically determines the current maximum BFS level in tmp_results and triggers a crawl for the next level.
+"""
+
 import os
 from wikipediaGATN.wikipedia_network_level import (
     get_connections_level_N,

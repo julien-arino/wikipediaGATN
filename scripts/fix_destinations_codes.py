@@ -1,3 +1,7 @@
+"""
+Updates destination code lists across public JSONs by looking up their Wikipedia URLs in the global URL map, fixing missing or changed IATA/ICAO codes.
+"""
+
 import os
 import json
 import urllib.parse

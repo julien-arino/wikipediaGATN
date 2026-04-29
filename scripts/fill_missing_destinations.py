@@ -1,3 +1,7 @@
+"""
+Fills missing IATA/ICAO/GPS codes for destinations in the temporary directory by matching their Wikipedia URLs against the global URL map.
+"""
+
 import os
 import json
 import urllib.parse

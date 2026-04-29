@@ -1,3 +1,7 @@
+"""
+Legacy script to extract airport information and destinations directly from a Wikipedia page based on its IATA code.
+"""
+
 import json
 import sys
 

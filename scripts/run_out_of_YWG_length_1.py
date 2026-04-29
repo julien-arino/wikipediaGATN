@@ -1,6 +1,6 @@
-# This tests whether the code works as expected when malformed urls are present:
-# out of YWG, there is an issue with MSP and YUL. Running length 1 should have them
-# both present in the results.
+"""
+Test script that crawls exactly one level out from YWG (Winnipeg), explicitly verifying handling of known tricky URLs like MSP and YUL.
+"""
 
 import json
 

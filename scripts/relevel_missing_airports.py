@@ -1,3 +1,7 @@
+"""
+Adjusts the BFS sweep distance levels for missing airports that were just resolved, assigning them the correct level relative to their parent seeds.
+"""
+
 import os
 import json
 import urllib.parse

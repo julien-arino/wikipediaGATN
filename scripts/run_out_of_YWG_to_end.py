@@ -1,4 +1,6 @@
-
+"""
+Test script that performs a complete, clean-slate network crawl starting from YWG (Winnipeg) until exhaustion.
+"""
 
 from wikipediaGATN.wikipedia_network_level import (
     clean_output_directory,

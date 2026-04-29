@@ -1,4 +1,6 @@
-
+"""
+Resumes an interrupted BFS network crawl, expanding the frontier by exactly one level.
+"""
 
 from wikipediaGATN.wikipedia_network_level import continue_existing_search_one_step
 

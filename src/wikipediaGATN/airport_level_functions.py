@@ -5,13 +5,13 @@ Functions in this module interact with the Wikipedia API to fetch and parse
 airport pages.  They are designed to be called in sequence, but each can also
 be used standalone:
 
-1. :func:`get_wikipedia_airport_page_link`         resolve an identifier to a URL
-2. :func:`get_wikipedia_airport_page_html`         fetch parsed HTML
-3. :func:`get_wikipedia_airport_page_wikitext`     fetch raw wikitext
-4. :func:`extract_airlines_from_airport`           set of airline names
-5. :func:`extract_destinations_from_airport`       set of (name, URL) tuples
-6. :func:`extract_airlines_destinations_from_airport`  airline → destinations map
-7. :func:`extract_airport_information`             all metadata in one dict
+1. :func:`fetch_wikipedia_airport_link`         resolve an identifier to a URL
+2. :func:`fetch_wikipedia_airport_html`         fetch parsed HTML
+3. :func:`fetch_wikipedia_airport_wikitext`     fetch raw wikitext
+4. :func:`fetch_wikipedia_airlines`           set of airline names
+5. :func:`fetch_wikipedia_destinations`       set of (name, URL) tuples
+6. :func:`fetch_wikipedia_airlines_destinations`  airline → destinations map
+7. :func:`fetch_wikipedia_airport_info`             all metadata in one dict
 8. :func:`save_airport_info`                       persist dict to JSON + progress CSV
 
 Helper / fallback functions:
@@ -20,9 +20,9 @@ Helper / fallback functions:
 * :func:`clean_infobox_value`
 * :func:`parse_lat_lon_from_string`
 * :func:`parse_iso3166_2`
-* :func:`fallback_extract_airport_information`
-* :func:`fallback_nlp_extract_airlines_destinations`
-* :func:`extract_airlines_destinations_from_wikitext`
+* :func:`fallback_fetch_wikipedia_airport_info`
+* :func:`parse_fallback_nlp_airlines_destinations`
+* :func:`parse_wikitext_airlines_destinations`
 """
 
 import csv
@@ -45,21 +45,22 @@ from .paths import TEMP_RESULTS_DIR
 logger = logging.getLogger(__name__)
 
 __all__ = [
-    "get_wikipedia_airport_page_link",
-    "get_wikipedia_airport_page_html",
-    "get_wikipedia_airport_page_wikitext",
-    "extract_airlines_from_airport",
-    "extract_destinations_from_airport",
-    "extract_airlines_destinations_from_airport",
-    "extract_airport_information",
+    "fetch_wikipedia_airport_link",
+    "fetch_wikipedia_airport_html",
+    "fetch_wikipedia_airport_wikitext",
+    "fetch_wikipedia_airlines",
+    "fetch_wikipedia_destinations",
+    "fetch_wikipedia_airlines_destinations",
+    "fetch_wikipedia_airport_info",
     "save_airport_info",
     "parse_infobox_from_wikitext",
     "clean_infobox_value",
     "parse_lat_lon_from_string",
     "parse_iso3166_2",
-    "fallback_extract_airport_information",
-    "fallback_nlp_extract_airlines_destinations",
-    "extract_airlines_destinations_from_wikitext",
+    "fallback_fetch_wikipedia_airport_info",
+    "parse_fallback_nlp_airlines_destinations",
+    "parse_wikitext_airlines_destinations",
+    "format_airport_json",
 ]
 
 # ---------------------------------------------------------------------------
@@ -92,10 +93,42 @@ except (ImportError, OSError):
 
 
 # ---------------------------------------------------------------------------
+# Formatting helper
+# ---------------------------------------------------------------------------
+
+def format_airport_json(data: dict) -> dict:
+    """
+    Enforce a strict ordering of JSON keys for airport data output.
+    """
+    key_order = [
+        "iata", "icao", "city-served", "city-served-wikipedia", "location",
+        "lat", "lon", "altitude", "continent",
+        "country_alpha3", "country_name",
+        "admin1_code", "admin1_name", "admin2_name",
+        "wikipedia_url",
+        "outdegree", "number_airlines",
+        "airlines", "destinations", "airlines_destinations",
+        "date-time-parse", "date-time-wikidata"
+    ]
+    
+    formatted = {}
+    
+    # 1. Insert known keys in the specified order
+    for k in key_order:
+        if k in data:
+            formatted[k] = data[k]
+            
+    # 2. Append any extra keys that might exist (to prevent data loss)
+    for k, v in data.items():
+        if k not in formatted:
+            formatted[k] = v
+            
+    return formatted
+# ---------------------------------------------------------------------------
 # Wikipedia page lookup
 # ---------------------------------------------------------------------------
 
-def get_wikipedia_airport_page_link(identifier: str, verbose: bool = False):
+def fetch_wikipedia_airport_link(identifier: str, verbose: bool = False):
     """
     Resolve an airport identifier to its Wikipedia page URL.
 
@@ -181,7 +214,7 @@ def get_wikipedia_airport_page_link(identifier: str, verbose: bool = False):
 # HTML and wikitext fetchers
 # ---------------------------------------------------------------------------
 
-def get_wikipedia_airport_page_html(link: str, verbose: bool = False):
+def fetch_wikipedia_airport_html(link: str, verbose: bool = False):
     """
     Fetch the parsed HTML content of a Wikipedia page.
 
@@ -231,7 +264,7 @@ def get_wikipedia_airport_page_html(link: str, verbose: bool = False):
         return None
 
 
-def get_wikipedia_airport_page_wikitext(link: str, verbose: bool = False):
+def fetch_wikipedia_airport_wikitext(link: str, verbose: bool = False):
     """
     Fetch the raw wikitext source of a Wikipedia page.
 
@@ -296,12 +329,12 @@ def _fetch_html_if_needed(identifier, link, html_content, verbose):
     if html_content is not None:
         return link, html_content
     if link is None:
-        link = get_wikipedia_airport_page_link(identifier, verbose=verbose)
+        link = fetch_wikipedia_airport_link(identifier, verbose=verbose)
     if not link:
         warnings.warn(f"Could not resolve Wikipedia link for {identifier!r}.",
                       UserWarning, stacklevel=3)
         return None, None
-    html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
+    html_content = fetch_wikipedia_airport_html(link, verbose=verbose)
     if not html_content:
         warnings.warn(f"Could not fetch HTML for {link!r}.", UserWarning, stacklevel=3)
     return link, html_content
@@ -311,7 +344,7 @@ def _fetch_html_if_needed(identifier, link, html_content, verbose):
 # Table-based destination/airline extraction
 # ---------------------------------------------------------------------------
 
-def extract_airlines_from_airport(
+def fetch_wikipedia_airlines(
     identifier: str = "YWG",
     link=None,
     html_content=None,
@@ -386,7 +419,7 @@ def extract_airlines_from_airport(
     return airlines
 
 
-def extract_destinations_from_airport(
+def fetch_wikipedia_destinations(
     identifier: str = "YWG",
     link=None,
     html_content=None,
@@ -468,7 +501,7 @@ def extract_destinations_from_airport(
     return destinations
 
 
-def extract_airlines_destinations_from_airport(
+def fetch_wikipedia_airlines_destinations(
     identifier: str = "YWG",
     link=None,
     html_content=None,
@@ -478,7 +511,7 @@ def extract_airlines_destinations_from_airport(
     """
     Extract an airline to destinations mapping from an airport's Wikipedia page.
 
-    Falls back to :func:`fallback_nlp_extract_airlines_destinations` if no
+    Falls back to :func:`parse_fallback_nlp_airlines_destinations` if no
     table-based data is found.
 
     Parameters
@@ -569,7 +602,7 @@ def extract_airlines_destinations_from_airport(
     if not airline_dest_map:
         if verbose:
             print("No table data found — trying NLP fallback...")
-        for org, gpe in fallback_nlp_extract_airlines_destinations(
+        for org, gpe in parse_fallback_nlp_airlines_destinations(
             html_content, verbose=verbose, soup=soup
         ):
             airline_dest_map.setdefault(org, set()).add(gpe)
@@ -592,7 +625,7 @@ def _feet_to_metres(value_str):
         return value_str
 
 
-def extract_airport_information(
+def fetch_wikipedia_airport_info(
     identifier: str = "YWG",
     link=None,
     verbose: bool = False,
@@ -625,10 +658,10 @@ def extract_airport_information(
         'lat':                   None,
         'lon':                   None,
         'altitude':              None,
-        'region':                None,
-        'country_alpha3':        None,
         'country_name':          None,
-        'subdivision_code':      None,
+        'admin1_code':           None,
+        'admin1_name':           None,
+        'admin2_name':           None,
         'wikipedia_url':         None,
         'airlines':              [],
         'destinations':          [],
@@ -636,18 +669,18 @@ def extract_airport_information(
     }
 
     if link is None:
-        link = get_wikipedia_airport_page_link(identifier, verbose=verbose)
+        link = fetch_wikipedia_airport_link(identifier, verbose=verbose)
     if not link:
         return _EMPTY.copy()
 
     # Capture the exact moment we initiate the extraction (standardized to match Wikipedia's Z format)
     dt_parse = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
-    html_content = get_wikipedia_airport_page_html(link, verbose=verbose)
+    html_content = fetch_wikipedia_airport_html(link, verbose=verbose)
     if not html_content:
         return {**_EMPTY, 'wikipedia_url': link, 'date-time-parse': dt_parse}
 
-    wikitext, dt_wikidata = get_wikipedia_airport_page_wikitext(link, verbose=verbose)
+    wikitext, dt_wikidata = fetch_wikipedia_airport_wikitext(link, verbose=verbose)
     if not wikitext:
         return {**_EMPTY, 'wikipedia_url': link, 'date-time-parse': dt_parse}
 
@@ -673,10 +706,11 @@ def extract_airport_information(
             infobox.get('elevation-m')
             or _feet_to_metres(infobox.get('elevation-f'))
         ),
-        'region':                infobox.get('region'),
         'country_alpha3':        infobox.get('country_alpha3'),
         'country_name':          infobox.get('country_name'),
-        'subdivision_code':      infobox.get('subdivision_code'),
+        'admin1_code':           infobox.get('admin1_code'),
+        'admin1_name':           infobox.get('region') or infobox.get('admin1_name'),
+        'admin2_name':           None,
         'wikipedia_url':         link,
         'airlines':              set(),
         'destinations':          set(),
@@ -685,7 +719,7 @@ def extract_airport_information(
         'date-time-wikidata':    dt_wikidata,
     }
 
-    ad_map_wikitext = extract_airlines_destinations_from_wikitext(wikitext)
+    ad_map_wikitext = parse_wikitext_airlines_destinations(wikitext)
     if ad_map_wikitext:
         info['airlines'] = sorted(ad_map_wikitext.keys())
         info['destinations'] = sorted({
@@ -700,11 +734,11 @@ def extract_airport_information(
     else:
         soup = BeautifulSoup(html_content, 'html.parser') if html_content else None
 
-        info['airlines']     = extract_airlines_from_airport(
+        info['airlines']     = fetch_wikipedia_airlines(
             link=link, html_content=html_content, verbose=verbose, soup=soup)
-        info['destinations'] = extract_destinations_from_airport(
+        info['destinations'] = fetch_wikipedia_destinations(
             link=link, html_content=html_content, verbose=verbose, soup=soup)
-        ad_map               = extract_airlines_destinations_from_airport(
+        ad_map               = fetch_wikipedia_airlines_destinations(
             link=link, html_content=html_content, verbose=verbose, soup=soup)
 
         # Normalise to JSON-serialisable types
@@ -734,7 +768,7 @@ def save_airport_info(
     Parameters
     ----------
     airport_info : dict
-        Dict as returned by :func:`extract_airport_information`.
+        Dict as returned by :func:`fetch_wikipedia_airport_info`.
     level : int, optional
         BFS distance level from the seed airport.  Default: 0.
     verbose : bool, optional
@@ -844,7 +878,7 @@ def parse_lat_lon_from_string(coord_string: str):
 # NLP fallback
 # ---------------------------------------------------------------------------
 
-def fallback_nlp_extract_airlines_destinations(
+def parse_fallback_nlp_airlines_destinations(
     html_content: str,
     verbose: bool = False,
     soup=None,
@@ -1024,7 +1058,7 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
                 
                 region_m = re.search(r'region:([A-Za-z0-9\-]+)', inner)
                 if region_m:
-                    infobox_data['region'] = region_m.group(1)
+                    region = region_m.group(1)
                     
                 args = [arg.strip() for arg in inner.split('|') 
                         if '=' not in arg and 'region:' not in arg.lower() and arg.strip()]
@@ -1057,6 +1091,11 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
         if iso:
             infobox_data.update(iso)
 
+    if not infobox_data.get('admin1_code') and infobox_data.get('region'):
+        iso = parse_iso3166_2(infobox_data['region'])
+        if iso:
+            infobox_data.update(iso)
+
     infobox_data = {
         k: v for k, v in infobox_data.items()
         if v and not (str(v).strip().startswith("<!--") and str(v).strip().endswith("-->"))
@@ -1067,7 +1106,7 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
     return infobox_data
 
 
-def extract_airlines_destinations_from_wikitext(wikitext: str) -> dict:
+def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
     """
     Extract airline to destinations data from ``{{Airport-dest-list}}`` templates.
 
@@ -1144,7 +1183,7 @@ def extract_airlines_destinations_from_wikitext(wikitext: str) -> dict:
 # Fallback HTML info extraction
 # ---------------------------------------------------------------------------
 
-def fallback_extract_airport_information(html_content: str) -> dict:
+def fallback_fetch_wikipedia_airport_info(html_content: str) -> dict:
     """
     Extract basic airport info from HTML when the infobox cannot be parsed.
 
@@ -1215,20 +1254,343 @@ def parse_iso3166_2(region_code: str):
         or ``None`` if *region_code* is invalid or the country is not found.
     """
     try:
-        if '-' not in region_code:
-            return None
-        country_code, subdivision = region_code.split('-', 1)
-        country = pycountry.countries.get(alpha_2=country_code.upper())
-        if not country:
-            return None
-        return {
-            'country_alpha3':   country.alpha_3,
-            'country_name':     country.name,
-            'subdivision_code': subdivision.upper(),
+        if '-' in region_code:
+            country_code, subdivision = region_code.split('-', 1)
+            country = pycountry.countries.get(alpha_2=country_code.upper())
+            s = pycountry.subdivisions.get(code=region_code.upper())
+            if country:
+                return {
+                    'country_alpha3':   country.alpha_3,
+                    'country_name':     country.name,
+                    'admin1_code':      f"{country.alpha_2}-{subdivision.upper()}",
+                    'admin1_name':      s.name if s else None,
+                }
+                
+        # Exact string match fallback for things like "Pennsylvania"
+        region_code_lower = region_code.strip().lower()
+        
+        # Legacy name map for common outdated geocoder names (e.g., French pre-2016 regions)
+        legacy_names = {
+            "aquitaine": "FR-NAQ",
+            "alsace": "FR-GES",
+            "champagne-ardenne": "FR-GES",
+            "lorraine": "FR-GES",
+            "auvergne": "FR-ARA",
+            "rhône-alpes": "FR-ARA",
+            "bourgogne": "FR-BFC",
+            "franche-comté": "FR-BFC",
+            "bretagne": "FR-BRE",
+            "centre": "FR-CVL",
+            "corse": "FR-COR",
+            "languedoc-roussillon": "FR-OCC",
+            "midi-pyrénées": "FR-OCC",
+            "nord-pas-de-calais": "FR-HDF",
+            "picardie": "FR-HDF",
+            "basse-normandie": "FR-NOR",
+            "haute-normandie": "FR-NOR",
+            "pays de la loire": "FR-PDL",
+            "provence-alpes-côte d'azur": "FR-PAC"
         }
+        if region_code_lower in legacy_names:
+            iso_code = legacy_names[region_code_lower]
+            country_code, subdivision = iso_code.split('-', 1)
+            country = pycountry.countries.get(alpha_2=country_code.upper())
+            s = pycountry.subdivisions.get(code=iso_code.upper())
+            return {
+                'country_alpha3':   country.alpha_3 if country else None,
+                'country_name':     country.name if country else None,
+                'admin1_code':      f"{country_code.upper()}-{subdivision.upper()}",
+                'admin1_name':      s.name if s else None,
+            }
+            
+        # Short strings like "US" or "CA" should not be treated as subdivisions
+        if len(region_code_lower) > 2:
+            for s in pycountry.subdivisions:
+                if s.name.lower() == region_code_lower:
+                    country_code, subdivision = s.code.split('-', 1)
+                    country = pycountry.countries.get(alpha_2=country_code.upper())
+                    return {
+                        'country_alpha3':   country.alpha_3 if country else None,
+                        'country_name':     country.name if country else None,
+                        'admin1_code':      f"{country_code.upper()}-{subdivision.upper()}",
+                        'admin1_name':      s.name,
+                    }
+        return None
     except Exception as exc:
         warnings.warn(
             f"Could not parse ISO 3166-2 code {region_code!r}: {exc}",
             UserWarning, stacklevel=2,
         )
         return None
+
+# ---------------------------------------------------------------------------
+# Centralized Processing Helpers
+# ---------------------------------------------------------------------------
+
+def build_url_to_codes_map(verbose: bool = False) -> dict:
+    """
+    Builds a mapping from Wikipedia URL to IATA/ICAO codes.
+    Loads from local JSONs, manual overrides, and processes redirects via Wikipedia API.
+    """
+    from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+    import json
+    import os
+    import csv
+    import urllib.parse
+    import requests
+    
+    url_to_codes = {}
+    
+    csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
+    if os.path.exists(csv_path):
+        with open(csv_path, "r", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                if row.get("url") and row.get("iata"):
+                    url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": row["iata"], "icao": "icao code not found"}
+
+    manual_path = os.path.join(TEMP_RESULTS_DIR, "manual_airport_mapping.csv")
+    if os.path.exists(manual_path):
+        with open(manual_path, "r", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                if row.get("url") and row.get("iata"):
+                    url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": row["iata"], "icao": "icao code not found"}
+                    
+    airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
+    if os.path.exists(airport_data_dir):
+        for fname in os.listdir(airport_data_dir):
+            if not fname.endswith(".json"): continue
+            try:
+                with open(os.path.join(airport_data_dir, fname), "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    url = urllib.parse.unquote(data.get("wikipedia_url")) if data.get("wikipedia_url") else None
+                    if url:
+                        url_to_codes[url] = {
+                            "iata": data.get("iata") or "iata code not found",
+                            "icao": data.get("icao") or "icao code not found"
+                        }
+            except Exception:
+                pass
+                
+    # Also load from TEMP_RESULTS_DIR JSON files (from recent scrapes)
+    if os.path.exists(TEMP_RESULTS_DIR):
+        for fname in os.listdir(TEMP_RESULTS_DIR):
+            if not fname.endswith(".json"): continue
+            try:
+                with open(os.path.join(TEMP_RESULTS_DIR, fname), "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    url = urllib.parse.unquote(data.get("wikipedia_url")) if data.get("wikipedia_url") else None
+                    if url:
+                        url_to_codes[url] = {
+                            "iata": data.get("iata") or "iata code not found",
+                            "icao": data.get("icao") or "icao code not found"
+                        }
+            except Exception:
+                pass
+
+    urls_to_resolve = list(url_to_codes.keys())
+    canonical_map = {}
+    
+    headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
+    for i in range(0, len(urls_to_resolve), 50):
+        chunk = urls_to_resolve[i:i+50]
+        titles = [urllib.parse.unquote(url.split('/wiki/')[-1]) for url in chunk]
+        titles_str = "|".join(titles)
+        try:
+            r = requests.get(f'https://en.wikipedia.org/w/api.php?action=query&titles={titles_str}&redirects=1&format=json', headers=headers, timeout=10)
+            if r.status_code == 200:
+                res_json = r.json()
+                if 'query' in res_json:
+                    title_to_canonical = {t: t.replace('_', ' ') for t in titles}
+                    if 'normalized' in res_json['query']:
+                        for n in res_json['query']['normalized']:
+                            title_to_canonical[n['from']] = n['to']
+                    if 'redirects' in res_json['query']:
+                        for rd in res_json['query']['redirects']:
+                            for orig, norm in list(title_to_canonical.items()):
+                                if norm == rd['from']:
+                                    title_to_canonical[orig] = rd['to']
+                    
+                    for orig_url, orig_title in zip(chunk, titles):
+                        canonical_title = title_to_canonical.get(orig_title, orig_title)
+                        canonical_url = urllib.parse.unquote(f"https://en.wikipedia.org/wiki/{canonical_title.replace(' ', '_')}")
+                        if canonical_url != orig_url:
+                            canonical_map[canonical_url] = url_to_codes[orig_url]
+        except Exception as e:
+            if verbose: print(f"Wikipedia API error resolving canonicals: {e}")
+            
+    url_to_codes.update(canonical_map)
+    return url_to_codes
+
+def format_destinations_list(raw_destinations: list, airlines_destinations_map: dict, url_to_codes: dict) -> list:
+    """
+    Format a list of destinations into a strict schema of dictionaries.
+    Looks up IATA/ICAO codes using url_to_codes map.
+    """
+    import urllib.parse
+    mapped_destinations = []
+    
+    for dest in raw_destinations:
+        if isinstance(dest, dict):
+            mapped_destinations.append(dest)
+        elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
+            city, d_url = dest[0], dest[1]
+            codes = url_to_codes.get(urllib.parse.unquote(d_url), {"iata": "iata code not found", "icao": "icao code not found"})
+            
+            op_airlines = []
+            for al_name, cities in airlines_destinations_map.items():
+                if city in cities:
+                    op_airlines.append(al_name)
+                    
+            mapped_destinations.append({
+                "city": city,
+                "wikipedia_url": d_url,
+                "codes": [codes["iata"], codes["icao"]],
+                "airlines": sorted(op_airlines)
+            })
+        else:
+            mapped_destinations.append(dest)
+            
+    return mapped_destinations
+
+def infer_missing_geographic_data(data: dict) -> dict:
+    """
+    Attempt to infer missing geographic data (lat, lon, admin1, admin2, country)
+    using the geopy and reverse_geocoder fallbacks.
+    Returns the mutated data dictionary.
+    """
+    import pycountry_convert as pc
+    import pycountry
+    import urllib.parse
+    from geopy.geocoders import Nominatim
+    
+    geolocator = Nominatim(user_agent="wikipediaGATN")
+    # Fallback for city-served
+    if not data.get("city-served") and data.get("location"):
+        data["city-served"] = data.get("location")
+    if not data.get("city-served-wikipedia") and data.get("location"):
+        data["city-served-wikipedia"] = data.get("location")
+        
+    # Simplify city-served and location (strip wikitext and grab the first part before a comma)
+    import mwparserfromhell
+    for key in ["city-served", "location"]:
+        if data.get(key):
+            try:
+                # Strip wikitext like [[Link|Text]] -> Text
+                clean_text = mwparserfromhell.parse(str(data[key])).strip_code().strip()
+                # Split by comma to grab the core city (e.g., "Pau, Pyrénées-Atlantiques" -> "Pau")
+                if "," in clean_text:
+                    clean_text = clean_text.split(",")[0].strip()
+                data[key] = clean_text
+            except Exception:
+                pass
+        
+    # Clean up dirty legacy admin codes
+    if data.get("admin1_code"):
+        if len(str(data.get("admin1_code"))) > 6:
+            # ISO-3166-2 codes are max 6 characters (e.g. FR-NAQ). Anything longer is garbage text.
+            data["admin1_code"] = None
+        elif "-" not in str(data.get("admin1_code")) and data.get("country_alpha3"):
+            # If the code is missing the country prefix (e.g., 'NAQ' instead of 'FR-NAQ'), prepend it
+            try:
+                c = pycountry.countries.get(alpha_3=data["country_alpha3"])
+                if c:
+                    data["admin1_code"] = f"{c.alpha_2}-{data['admin1_code']}"
+            except Exception:
+                pass
+                
+        # Resolve admin1_name if it was erroneously set to the code (e.g., US-WI)
+        if data.get("admin1_code") and data.get("admin1_name") == data.get("admin1_code"):
+            try:
+                s = pycountry.subdivisions.get(code=data["admin1_code"])
+                if s:
+                    data["admin1_name"] = s.name
+            except Exception:
+                pass
+    
+    # Fill in lat/lon if missing but we have an ISO region or location
+    if not data.get("lat") or not data.get("lon"):
+        query = data.get("admin1_name") or data.get("location")
+        if query:
+            try:
+                import time
+                time.sleep(1) # Be nice to Nominatim
+                loc = geolocator.geocode(query, timeout=10)
+                if loc:
+                    data["lat"] = str(loc.latitude)
+                    data["lon"] = str(loc.longitude)
+            except Exception:
+                pass
+
+    # Reverse geocoder fallback for country and admin info
+    if not data.get("admin1_code") or len(str(data.get("admin1_code"))) > 3 or not data.get("country_alpha3") or not data.get("admin2_name"):
+        if data.get("lat") and data.get("lon"):
+            try:
+                import reverse_geocoder as rg
+                res = rg.search((data["lat"], data["lon"]), mode=1)
+                if res:
+                    match = res[0]
+                    # Fix admin1
+                    if not data.get("admin1_code") or len(str(data.get("admin1_code"))) > 3:
+                        iso = parse_iso3166_2(match.get("admin1", ""))
+                        if iso:
+                            data.update(iso)
+                    # Fix admin2
+                    if not data.get("admin2_name") and match.get("admin2"):
+                        data["admin2_name"] = match.get("admin2")
+                    # Fix country
+                    if not data.get("country_alpha3") and match.get("cc"):
+                        c = pycountry.countries.get(alpha_2=match.get("cc"))
+                        if c:
+                            data["country_alpha3"] = c.alpha_3
+                            data["country_name"] = c.name
+            except Exception:
+                pass
+                
+    # If the reverse geocoder got it wrong because of a border (e.g. FZNI in Uganda instead of DRC)
+    # we can try to extract the explicit country name from the location text if it contradicts the geocoder.
+    loc_text = str(data.get("location", "")) + " " + str(data.get("city-served-wikipedia", ""))
+    if loc_text.strip() != "None None":
+        # Handle common Wikipedia name discrepancies
+        custom_country_map = {
+            "Democratic Republic of the Congo": "COD",
+            "Republic of the Congo": "COG",
+            "United States": "USA",
+            "United Kingdom": "GBR",
+            "Russia": "RUS",
+            "South Korea": "KOR",
+            "North Korea": "PRK",
+            "Ivory Coast": "CIV",
+            "Czech Republic": "CZE",
+            "Eswatini": "SWZ",
+            "Macau": "MAC"
+        }
+        matched = False
+        for name, alpha3 in custom_country_map.items():
+            if name in loc_text:
+                c = pycountry.countries.get(alpha_3=alpha3)
+                if c:
+                    data["country_alpha3"] = c.alpha_3
+                    data["country_name"] = c.name
+                    matched = True
+                    break
+        
+        if not matched:
+            # Sort by descending length so "South Sudan" matches before "Sudan"
+            sorted_countries = sorted(list(pycountry.countries), key=lambda x: len(x.name), reverse=True)
+            for c in sorted_countries:
+                if c.name in loc_text:
+                    data["country_alpha3"] = c.alpha_3
+                    data["country_name"] = c.name
+                    break
+                
+    # Fix continent if missing
+    if not data.get("continent") and data.get("country_alpha3"):
+        try:
+            c = pycountry.countries.get(alpha_3=data["country_alpha3"])
+            if c:
+                cont_code = pc.country_alpha2_to_continent_code(c.alpha_2)
+                data["continent"] = pc.map_continent_code_to_continent_name(cont_code)
+        except Exception:
+            pass
+            
+    return data

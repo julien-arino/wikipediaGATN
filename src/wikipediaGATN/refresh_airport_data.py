@@ -5,113 +5,31 @@ import requests
 import time
 import traceback
 import warnings
+import urllib.parse
 from typing import Union
 
 from dateutil import parser as dt_parser
 
 from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
-from .wikipedia_airport_level import (
-    get_wikipedia_airport_page_wikitext,
-    get_wikipedia_airport_page_html,
-    extract_airlines_destinations_from_wikitext,
-    fallback_nlp_extract_airlines_destinations,
-    extract_airlines_destinations_from_airport,
-    extract_airport_information,
-    extract_airlines_from_airport,
-    extract_destinations_from_airport,
+from .airport_level_functions import (
+    fetch_wikipedia_airport_wikitext,
+    fetch_wikipedia_airport_html,
+    parse_wikitext_airlines_destinations,
+    parse_fallback_nlp_airlines_destinations,
+    fetch_wikipedia_airlines_destinations,
+    fetch_wikipedia_airport_info,
+    fetch_wikipedia_airlines,
+    fetch_wikipedia_destinations,
+    format_airport_json,
+    parse_iso3166_2,
+    build_url_to_codes_map,
+    format_destinations_list,
+    infer_missing_geographic_data,
     _SESSION,
     _API_URL
 )
 
-# Shared mapping state
-_URL_TO_CODES = None
 
-
-def _load_url_to_codes(verbose: bool = False) -> dict:
-    """Load URL -> IATA/ICAO mapping from CSV files to resolve new destinations."""
-    global _URL_TO_CODES
-    if _URL_TO_CODES is not None:
-        return _URL_TO_CODES
-
-    _URL_TO_CODES = {}
-    
-    # Load processed_locations.csv
-    csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
-    if os.path.exists(csv_path):
-        with open(csv_path, "r", encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                if row.get("url") and row.get("iata"):
-                    _URL_TO_CODES[row["url"]] = {"iata": row["iata"], "icao": "icao code not found"}
-
-    # Load manual overrides
-    manual_path = os.path.join(TEMP_RESULTS_DIR, "manual_airport_mapping.csv")
-    if os.path.exists(manual_path):
-        with open(manual_path, "r", encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                if row.get("url") and row.get("iata"):
-                    _URL_TO_CODES[row["url"]] = {"iata": row["iata"], "icao": "icao code not found"}
-                    
-    # Also load all existing public airport JSONs to capture their own explicit IATA/ICAOs
-    airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
-    if os.path.isdir(airport_data_dir):
-        for fname in os.listdir(airport_data_dir):
-            if not fname.endswith(".json"): continue
-            try:
-                with open(os.path.join(airport_data_dir, fname), "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    url = data.get("wikipedia_url")
-                    if url:
-                        _URL_TO_CODES[url] = {
-                            "iata": data.get("iata") or "iata code not found",
-                            "icao": data.get("icao") or "icao code not found"
-                        }
-            except Exception:
-                pass
-                
-    if verbose:
-        print(f"Loaded {len(_URL_TO_CODES)} pre-mapped Wikipedia destination URLs. Resolving canonical titles...")
-        
-    # Bulk resolve Wikipedia redirects for all known URLs
-    urls_to_resolve = list(_URL_TO_CODES.keys())
-    canonical_map = {}
-    
-    import urllib.parse
-    headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
-    for i in range(0, len(urls_to_resolve), 50):
-        chunk = urls_to_resolve[i:i+50]
-        titles = [urllib.parse.unquote(url.split('/wiki/')[-1]) for url in chunk]
-        titles_str = "|".join(titles)
-        try:
-            r = requests.get(f'https://en.wikipedia.org/w/api.php?action=query&titles={titles_str}&redirects=1&format=json', headers=headers, timeout=10)
-            if r.status_code == 200:
-                res_json = r.json()
-                if 'query' in res_json:
-                    title_to_canonical = {t: t.replace('_', ' ') for t in titles}
-                    if 'normalized' in res_json['query']:
-                        for n in res_json['query']['normalized']:
-                            title_to_canonical[n['from']] = n['to']
-                    if 'redirects' in res_json['query']:
-                        for rd in res_json['query']['redirects']:
-                            for orig, norm in list(title_to_canonical.items()):
-                                if norm == rd['from']:
-                                    title_to_canonical[orig] = rd['to']
-                    
-                    for orig_url, orig_title in zip(chunk, titles):
-                        canonical_title = title_to_canonical.get(orig_title, orig_title)
-                        canonical_url = f"https://en.wikipedia.org/wiki/{canonical_title.replace(' ', '_')}"
-                        if canonical_url != orig_url:
-                            # Map the canonical URL to the original URL's codes
-                            canonical_map[canonical_url] = _URL_TO_CODES[orig_url]
-        except Exception:
-            pass
-            
-    # Add the canonicalized URLs back into the global dictionary
-    _URL_TO_CODES.update(canonical_map)
-    
-    if verbose:
-        print(f"Resolved canonical URLs. Dictionary now contains {len(_URL_TO_CODES)} entries.")
-        
-    return _URL_TO_CODES
 
 
 def check_needs_refresh(file_paths: list[str], verbose: bool = False) -> list[str]:
@@ -220,15 +138,18 @@ def check_needs_refresh(file_paths: list[str], verbose: bool = False) -> list[st
     return to_refresh
 
 
-def refresh_airport_file(fpath: str, refresh_all_data: bool = False, verbose: bool = False) -> bool:
+def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only: bool = False, verbose: bool = False, file_idx: int = None, total_files: int = None, url_map: dict = None) -> bool:
     """
     Refresh a single airport JSON file.
     
+    If `local_only` is True, it skips Wikipedia completely and just applies the latest
+    formatting and geographic inference to the existing data.
     If `refresh_all_data` is False, it only updates the airlines and destinations,
     leaving the rest of the file exactly as it was (preserving geocoding).
     """
     if verbose:
-        print(f"\nRefreshing {os.path.basename(fpath)}...")
+        progress_str = f" [{file_idx}/{total_files}]" if file_idx is not None and total_files is not None else ""
+        print(f"\nRefreshing {os.path.basename(fpath)}{progress_str}...")
         
     try:
         with open(fpath, "r", encoding="utf-8") as f:
@@ -242,41 +163,74 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, verbose: bo
         print(f"  ✗ No wikipedia_url found in {fpath}. Cannot refresh.")
         return False
         
-    if refresh_all_data:
-        # Re-fetch EVERYTHING
-        new_data = extract_airport_information(link=url, verbose=verbose)
+    if local_only:
+        # Just update geographic info and destination schemas locally
+        data = infer_missing_geographic_data(data)
+        if url_map is None:
+            url_map = build_url_to_codes_map(verbose=False)
+        mapped_destinations = format_destinations_list(data.get("destinations", []), data.get("airlines_destinations", {}), url_map)
+        if len(mapped_destinations) == 0:
+            data["airlines_destinations"] = {}
+            data["airlines"] = []
+            
+        data["destinations"] = mapped_destinations
+        data["outdegree"] = len(mapped_destinations)
+        data["number_airlines"] = len(data.get("airlines", []))
         
-        # We need to map destinations to the expected format
-        url_map = _load_url_to_codes(verbose=False)
-        mapped_destinations = []
-        for dest in new_data.get("destinations", []):
-            if len(dest) >= 2:
-                city, d_url = dest[0], dest[1]
-                codes = url_map.get(d_url, {"iata": "iata code not found", "icao": "icao code not found"})
-                mapped_destinations.append([city, d_url, codes["iata"], codes["icao"]])
-            else:
-                mapped_destinations.append(dest)
+        # Migrate old legacy schema keys
+        if "region" in data:
+            if "admin1_name" not in data:
+                data["admin1_name"] = data["region"]
+            del data["region"]
+        if "subdivision_code" in data:
+            if "admin1_code" not in data:
+                data["admin1_code"] = data["subdivision_code"]
+            del data["subdivision_code"]
+            
+    elif refresh_all_data:
+        # Re-fetch EVERYTHING
+        new_data = fetch_wikipedia_airport_info(link=url, verbose=verbose)
+        
+        if url_map is None:
+            url_map = build_url_to_codes_map(verbose=False)
+        mapped_destinations = format_destinations_list(new_data.get("destinations", []), new_data.get("airlines_destinations", {}), url_map)
                 
+        if len(mapped_destinations) == 0:
+            new_data["airlines_destinations"] = {}
+            new_data["airlines"] = []
+            
         new_data["destinations"] = mapped_destinations
         new_data["outdegree"] = len(mapped_destinations)
         new_data["number_airlines"] = len(new_data.get("airlines", []))
         
+        # Migrate old legacy schema keys if they exist in the existing data
+        if "region" in data:
+            if "admin1_name" not in data:
+                data["admin1_name"] = data["region"]
+            del data["region"]
+        if "subdivision_code" in data:
+            if "admin1_code" not in data:
+                data["admin1_code"] = data["subdivision_code"]
+            del data["subdivision_code"]
+            
         # We must NOT lose the country/lat/lon if they were inferred manually in result_processing_airports!
         # So we merge `new_data` INTO `data` to prefer the new parsed stuff, but keep old geocoding if missing.
-        for key in ["lat", "lon", "country_alpha3", "country_name", "location", "region", "subdivision_code", "continent"]:
+        for key in ["lat", "lon", "country_alpha3", "country_name", "location", "admin1_name", "admin1_code", "admin2_name", "continent"]:
             if not new_data.get(key) and data.get(key):
                 new_data[key] = data[key]
                 
+        new_data = infer_missing_geographic_data(new_data)
+        
         data = new_data
     else:
         # Partial refresh: only airlines and destinations
-        wikitext, dt_wikidata = get_wikipedia_airport_page_wikitext(link=url, verbose=verbose)
+        wikitext, dt_wikidata = fetch_wikipedia_airport_wikitext(link=url, verbose=verbose)
         
         if not wikitext:
             print(f"  ✗ Failed to fetch wikitext for {url}")
             return False
             
-        ad_map_wikitext = extract_airlines_destinations_from_wikitext(wikitext)
+        ad_map_wikitext = parse_wikitext_airlines_destinations(wikitext)
         
         airlines = []
         destinations = []
@@ -295,19 +249,19 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, verbose: bo
             }
         else:
             # Fallback to HTML
-            html_content = get_wikipedia_airport_page_html(link=url, verbose=verbose)
-            airlines = sorted(list(extract_airlines_from_airport(link=url, html_content=html_content)))
-            destinations = sorted(list(extract_destinations_from_airport(link=url, html_content=html_content)))
-            ad_map = extract_airlines_destinations_from_airport(link=url, html_content=html_content)
+            html_content = fetch_wikipedia_airport_html(link=url, verbose=verbose)
+            airlines = sorted(list(fetch_wikipedia_airlines(link=url, html_content=html_content)))
+            destinations = sorted(list(fetch_wikipedia_destinations(link=url, html_content=html_content)))
+            ad_map = fetch_wikipedia_airlines_destinations(link=url, html_content=html_content)
             airlines_destinations = {k: sorted(v) for k, v in ad_map.items()}
 
         # Map destinations
-        url_map = _load_url_to_codes(verbose=False)
+        if url_map is None:
+            url_map = build_url_to_codes_map(verbose=False)
         
         # Resolve any unknown Wikipedia URLs (redirects)
         unresolved = [d[1] for d in destinations if len(d) >= 2 and d[1] not in url_map]
         if unresolved:
-            import urllib.parse
             headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
             for i in range(0, len(unresolved), 50):
                 chunk = unresolved[i:i+50]
@@ -338,28 +292,12 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, verbose: bo
                 except Exception:
                     pass
 
-        mapped_destinations = []
-        for dest in destinations:
-            if isinstance(dest, dict):
-                mapped_destinations.append(dest)
-            elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
-                city, d_url = dest[0], dest[1]
-                codes = url_map.get(d_url, {"iata": "iata code not found", "icao": "icao code not found"})
+        mapped_destinations = format_destinations_list(destinations, airlines_destinations, url_map)
                 
-                op_airlines = []
-                for al_name, cities in airlines_destinations.items():
-                    if city in cities:
-                        op_airlines.append(al_name)
-                        
-                mapped_destinations.append({
-                    "city": city,
-                    "wikipedia_url": d_url,
-                    "codes": [codes["iata"], codes["icao"]],
-                    "airlines": sorted(op_airlines)
-                })
-            else:
-                mapped_destinations.append(dest)
-                
+        if len(mapped_destinations) == 0:
+            airlines_destinations = {}
+            airlines = []
+            
         # Update the dictionary
         from datetime import datetime, timezone
         data["airlines"] = airlines
@@ -371,22 +309,17 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, verbose: bo
         if dt_wikidata:
             data["date-time-wikidata"] = dt_wikidata
             
-    # Always ensure timestamps are at the end
-    if "date-time-parse" in data:
-        dt_p = data.pop("date-time-parse")
-        data["date-time-parse"] = dt_p
-    if "date-time-wikidata" in data:
-        dt_w = data.pop("date-time-wikidata")
-        data["date-time-wikidata"] = dt_w
-        
+    # Format JSON order before saving
+    data = format_airport_json(data)
+    
     with open(fpath, "w", encoding="utf-8") as out_fh:
         json.dump(data, out_fh, indent=2, ensure_ascii=False)
         
-    print(f"  ✓ Refreshed {data.get('iata', os.path.basename(fpath))} ({len(data.get('destinations', []))} destinations)")
+    print(f"  ✓ Refreshed {data.get('iata', os.path.basename(fpath))}")
     return True
 
 
-def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bool = False, verbose: bool = True):
+def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bool = False, local_only: bool = False, force: bool = False, verbose: bool = True):
     """
     Refresh JSON files in data/public/airport_data based on Wikipedia edit timestamps.
     
@@ -396,6 +329,8 @@ def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bo
         Can be "all" to check all files, a single file path, or a list of file paths.
     refresh_all_data : bool
         If False, only updates airlines and destinations. If True, re-fetches everything.
+    force : bool
+        If True, skip the Wikipedia timestamp check and force refresh all targeted files.
     verbose : bool
         Print progress.
     """
@@ -420,9 +355,16 @@ def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bo
         return
         
     if verbose:
-        print(f"\nChecking {len(files_to_check)} files for Wikipedia updates...")
+        print(f"\nChecking {len(files_to_check)} files...")
         
-    files_to_refresh = check_needs_refresh(files_to_check, verbose=verbose)
+    if force or local_only:
+        if verbose and force:
+            print("Force flag is set. Skipping Wikipedia timestamp checks.")
+        elif verbose and local_only:
+            print("Local-only flag is set. Skipping Wikipedia timestamp checks.")
+        files_to_refresh = files_to_check
+    else:
+        files_to_refresh = check_needs_refresh(files_to_check, verbose=verbose)
     
     if not files_to_refresh:
         print("✓ All files are up to date! No refreshing needed.")
@@ -431,12 +373,44 @@ def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bo
     if verbose:
         print(f"\nFound {len(files_to_refresh)} files that need refreshing.")
         
+    files_to_refresh.sort()
+    
+    if verbose:
+        print("\nPre-computing global Wikipedia URL to IATA/ICAO code map...")
+    global_url_map = build_url_to_codes_map(verbose=False)
+    
     success_count = 0
-    for fpath in files_to_refresh:
-        if refresh_airport_file(fpath, refresh_all_data=refresh_all_data, verbose=verbose):
+    total_files = len(files_to_refresh)
+    for idx, fpath in enumerate(files_to_refresh, 1):
+        if refresh_airport_file(fpath, refresh_all_data=refresh_all_data, local_only=local_only, verbose=verbose, file_idx=idx, total_files=total_files, url_map=global_url_map):
             success_count += 1
             
     print(f"\nRefresh complete. Successfully updated {success_count}/{len(files_to_refresh)} files.")
 
 if __name__ == "__main__":
-    refresh_airports(target="all", refresh_all_data=False, verbose=True)
+    import argparse
+    parser = argparse.ArgumentParser(description="Refresh airport JSON data from Wikipedia.")
+    parser.add_argument("--target", type=str, nargs="+", default="all",
+                        help="Target 'all' or specific JSON file paths.")
+    parser.add_argument("--all-data", action="store_true",
+                        help="Refresh all metadata (infobox), not just destinations/airlines.")
+    parser.add_argument("--local-only", action="store_true",
+                        help="Offline refresh to update formatting and infer missing geography.")
+    parser.add_argument("--force", action="store_true",
+                        help="Force refresh even if Wikipedia page hasn't been updated.")
+    parser.add_argument("--quiet", action="store_true",
+                        help="Suppress verbose output.")
+    
+    args = parser.parse_args()
+    
+    # If target is a list of length 1 and equals "all", normalize it
+    if isinstance(args.target, list) and len(args.target) == 1 and args.target[0] == "all":
+        args.target = "all"
+        
+    refresh_airports(
+        target=args.target,
+        refresh_all_data=args.all_data,
+        local_only=args.local_only,
+        force=args.force,
+        verbose=not args.quiet
+    )

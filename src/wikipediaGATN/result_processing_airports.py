@@ -23,6 +23,13 @@ import reverse_geocoder as rg
 from geopy.geocoders import Nominatim
 
 from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+from .airport_level_functions import (
+    parse_iso3166_2,
+    format_airport_json,
+    build_url_to_codes_map,
+    infer_missing_geographic_data,
+    format_destinations_list
+)
 
 logger = logging.getLogger(__name__)
 
@@ -74,93 +81,15 @@ def export_all_airport_data(verbose: bool = False) -> str:
         )
 
     # 1. Pre-computation pass: Build url_to_codes mapping
-    url_to_codes = {}
-    
-    # Also load processed_locations.csv if it exists to get any extra IATA mappings
-    processed_csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
-    if os.path.exists(processed_csv_path):
-        with open(processed_csv_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                if row.get("url") and row.get("iata"):
-                    url_to_codes[row["url"]] = {"iata": row["iata"], "icao": "icao code not found"}
-                    
-    # Also load manual_airport_mapping.csv for any manually scraped overrides
-    manual_csv_path = os.path.join(TEMP_RESULTS_DIR, "manual_airport_mapping.csv")
-    if os.path.exists(manual_csv_path):
-        with open(manual_csv_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                if row.get("url") and row.get("iata"):
-                    url_to_codes[row["url"]] = {"iata": row["iata"], "icao": "icao code not found"}
+    url_to_codes = build_url_to_codes_map(verbose=verbose)
 
-    # Scan all JSON files in TEMP_RESULTS_DIR to build the map
+    # Scan all JSON files in TEMP_RESULTS_DIR
     valid_files = []
-    all_destinations = set()
     for fname in sorted(os.listdir(TEMP_RESULTS_DIR)):
         m = _FNAME_RE.match(fname)
         if not m:
             continue
         valid_files.append((fname, m.group(1)))
-        
-        fpath = os.path.join(TEMP_RESULTS_DIR, fname)
-        try:
-            with open(fpath, "r", encoding="utf-8") as fh:
-                data = json.load(fh)
-                if "wikipedia_url" in data:
-                    url_to_codes[data["wikipedia_url"]] = {
-                        "iata": data.get("iata", "iata code not found") or "iata code not found",
-                        "icao": data.get("icao", "icao code not found") or "icao code not found"
-                    }
-                for dest in data.get("destinations", []):
-                    if len(dest) >= 2:
-                        all_destinations.add(dest[1])
-        except (json.JSONDecodeError, OSError):
-            continue
-
-    # Bulk resolve Wikipedia redirects for both known URLs and unresolved destinations
-    unresolved_urls = [url for url in all_destinations if url not in url_to_codes]
-    urls_to_resolve = list(url_to_codes.keys()) + unresolved_urls
-    
-    if verbose:
-        print(f"Resolving canonical titles for {len(urls_to_resolve)} URLs via Wikipedia API...")
-    
-    headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
-    for i in range(0, len(urls_to_resolve), 50):
-        chunk = urls_to_resolve[i:i+50]
-        titles = [urllib.parse.unquote(url.split('/wiki/')[-1]) for url in chunk]
-        titles_str = "|".join(titles)
-        try:
-            r = requests.get(f'https://en.wikipedia.org/w/api.php?action=query&titles={titles_str}&redirects=1&format=json', headers=headers)
-            if r.status_code != 200:
-                if verbose: print(f"Wikipedia API error {r.status_code}: {r.text[:100]}")
-                time.sleep(2)
-                continue
-            res_json = r.json()
-            if 'query' in res_json:
-                title_to_canonical = {t: t.replace('_', ' ') for t in titles}
-                if 'normalized' in res_json['query']:
-                    for n in res_json['query']['normalized']:
-                        title_to_canonical[n['from']] = n['to']
-                if 'redirects' in res_json['query']:
-                    for rd in res_json['query']['redirects']:
-                        for orig, norm in list(title_to_canonical.items()):
-                            if norm == rd['from']:
-                                title_to_canonical[orig] = rd['to']
-                
-                # If chunk URL was in url_to_codes, propagate its code to canonical
-                # If chunk URL was an unresolved destination, see if its canonical is in url_to_codes
-                for url, orig_title in zip(chunk, titles):
-                    canonical = title_to_canonical.get(orig_title)
-                    if canonical:
-                        canonical_url = f"https://en.wikipedia.org/wiki/{canonical.replace(' ', '_')}"
-                        if url in url_to_codes:
-                            url_to_codes[canonical_url] = url_to_codes[url]
-                        elif canonical_url in url_to_codes:
-                            url_to_codes[url] = url_to_codes[canonical_url]
-        except Exception as exc:
-            if verbose: print(f"Redirect resolution failed for a chunk: {exc}")
-        time.sleep(0.1)
 
     rows = []
     skipped = 0
@@ -182,74 +111,8 @@ def export_all_airport_data(verbose: bool = False) -> str:
 
         # --- VALIDATION & CONSOLIDATION ---
         
-        # Geopy fallback if missing lat/lon
-        lat = data.get("lat") or data.get("latitude")
-        lon = data.get("lon") or data.get("longitude")
-        if not lat or not lon:
-            queries = []
-            if data.get("iata"): queries.append(f'{data.get("iata")} airport')
-            if data.get("name"): queries.append(f'{data.get("name")} airport')
-            
-            title = urllib.parse.unquote(data.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
-            if title: queries.append(title)
-                
-            if data.get("city-served"): queries.append(f'{data.get("city-served")} airport')
-            if data.get("location"): queries.append(data.get("location"))
-            if data.get("icao"): queries.append(f'{data.get("icao")} airport')
-            
-            for query in queries:
-                if not query.strip(): continue
-                try:
-                    time.sleep(1.5) # Geopy Nominatim limits to 1 req/s
-                    loc = geolocator.geocode(query, timeout=5)
-                    if loc:
-                        lat, lon = str(loc.latitude), str(loc.longitude)
-                        data["lat"], data["lon"] = lat, lon
-                        break
-                except Exception:
-                    pass
-        
-        # Check if we need to infer location data
-        needs_inference = not all([
-            data.get("location"), data.get("region"), data.get("country_alpha3"),
-            data.get("country_name"), data.get("subdivision_code")
-        ])
-        
-        inferred_country_cc = None
-        
-        if needs_inference and lat and lon:
-            try:
-                float(lat)
-                float(lon)
-                res = rg.search((lat, lon), mode=1)
-                if res:
-                    loc_info = res[0]
-                    if not data.get("location"): data["location"] = loc_info.get("name")
-                    if not data.get("region"): data["region"] = loc_info.get("admin1")
-                    if not data.get("subdivision_code"): data["subdivision_code"] = loc_info.get("admin2")
-                    
-                    cc = loc_info.get("cc")
-                    inferred_country_cc = cc
-                    if cc and (not data.get("country_alpha3") or not data.get("country_name")):
-                        country = pycountry.countries.get(alpha_2=cc)
-                        if country:
-                            if not data.get("country_alpha3"): data["country_alpha3"] = country.alpha_3
-                            if not data.get("country_name"): data["country_name"] = country.name
-            except ValueError:
-                pass
-
-        continent_name = ""
-        alpha2 = inferred_country_cc
-        if not alpha2 and data.get("country_alpha3"):
-            country = pycountry.countries.get(alpha_3=data.get("country_alpha3"))
-            if country:
-                alpha2 = country.alpha_2
-        if alpha2:
-            try:
-                continent_code = pc.country_alpha2_to_continent_code(alpha2)
-                continent_name = pc.convert_continent_code_to_continent_name(continent_code)
-            except Exception:
-                pass
+        # Geopy fallback and offline geographic inference
+        data = infer_missing_geographic_data(data)
 
         # 1. City-Served Split
         city_served = data.get("city-served")
@@ -274,12 +137,6 @@ def export_all_airport_data(verbose: bool = False) -> str:
                 new_data["city-served-wikipedia"] = city_served_wiki
                 continue
             
-            if k == "altitude":
-                new_data["altitude"] = v
-                if continent_name:
-                    new_data["continent"] = continent_name
-                continue
-                
             if k == "airlines":
                 new_data["number_airlines"] = len(data.get("airlines", []))
                 new_data["outdegree"] = len(data.get("destinations", []))
@@ -290,30 +147,7 @@ def export_all_airport_data(verbose: bool = False) -> str:
                     new_data["outdegree"] = len(data.get("destinations", []))
                 
                 ad_map = data.get("airlines_destinations", {})
-                new_dests = []
-                for dest in data.get("destinations", []):
-                    if isinstance(dest, dict):
-                        # Ensure compatibility if it's already a dict
-                        new_dests.append(dest)
-                    elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
-                        city, url = dest[0], dest[1]
-                        codes = url_to_codes.get(url, {"iata": "iata code not found", "icao": "icao code not found"})
-                        
-                        op_airlines = []
-                        for al_name, cities in ad_map.items():
-                            if city in cities:
-                                op_airlines.append(al_name)
-                                
-                        new_dest = {
-                            "city": city,
-                            "wikipedia_url": url,
-                            "codes": [codes["iata"], codes["icao"]],
-                            "airlines": sorted(op_airlines)
-                        }
-                        new_dests.append(new_dest)
-                    else:
-                        new_dests.append(dest)
-                v = new_dests
+                v = format_destinations_list(data.get("destinations", []), ad_map, url_to_codes)
                 
             new_data[k] = v
             
@@ -340,6 +174,9 @@ def export_all_airport_data(verbose: bool = False) -> str:
             "wikipedia_url": new_data.get("wikipedia_url", ""),
             "outdegree":     new_data.get("outdegree", 0),
         })
+
+        # Apply formatting constraints
+        new_data = format_airport_json(new_data)
 
         # Save to public/airport_data
         public_json_path = os.path.join(airport_data_dir, f"{identifier}.json")

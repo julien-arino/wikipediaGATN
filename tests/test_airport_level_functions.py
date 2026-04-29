@@ -1,18 +1,18 @@
 """
-Tests for :mod:`wikipediaGATN.wikipedia_airport_level`.
+Tests for :mod:`wikipediaGATN.airport_level_functions`.
 """
 
 import pytest
 import requests
 import warnings
 from unittest.mock import Mock, patch
-from wikipediaGATN.wikipedia_airport_level import get_wikipedia_airport_page_html
+from wikipediaGATN.airport_level_functions import fetch_wikipedia_airport_html
 
 # Correct patch target for the shared session in the module
-_SESSION_GET = "wikipediaGATN.wikipedia_airport_level._SESSION.get"
+_SESSION_GET = "wikipediaGATN.airport_level_functions._SESSION.get"
 
-class TestGetWikipediaAirportPageHtml:
-    """Test suite for get_wikipedia_airport_page_html function."""
+class TestFetchWikipediaAirportHtml:
+    """Test suite for fetch_wikipedia_airport_html function."""
 
     @patch(_SESSION_GET)
     def test_get_html_success(self, mock_get):
@@ -27,7 +27,7 @@ class TestGetWikipediaAirportPageHtml:
         mock_get.return_value = mock_response
 
         link = "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport"
-        result = get_wikipedia_airport_page_html(link)
+        result = fetch_wikipedia_airport_html(link)
 
         assert result == "<html><body>Airport content</body></html>"
         mock_get.assert_called_once()
@@ -47,7 +47,7 @@ class TestGetWikipediaAirportPageHtml:
         mock_get.return_value = mock_response
 
         link = "https://en.wikipedia.org/wiki/YWG"
-        get_wikipedia_airport_page_html(link, verbose=True)
+        fetch_wikipedia_airport_html(link, verbose=True)
 
         captured = capsys.readouterr()
         assert "Fetching HTML for 'YWG'..." in captured.out
@@ -57,7 +57,7 @@ class TestGetWikipediaAirportPageHtml:
         """Verify handling of invalid Wikipedia URLs."""
         link = "https://example.com/not_a_wiki_link"
         with pytest.warns(UserWarning, match="Invalid Wikipedia URL"):
-            result = get_wikipedia_airport_page_html(link)
+            result = fetch_wikipedia_airport_html(link)
         assert result is None
 
     @patch(_SESSION_GET)
@@ -65,7 +65,7 @@ class TestGetWikipediaAirportPageHtml:
         """Verify handling of requests exceptions."""
         mock_get.side_effect = requests.exceptions.RequestException("Network error")
         link = "https://en.wikipedia.org/wiki/YWG"
-        result = get_wikipedia_airport_page_html(link)
+        result = fetch_wikipedia_airport_html(link)
         assert "Error fetching HTML for" in caplog.text
         assert result is None
 
@@ -79,7 +79,7 @@ class TestGetWikipediaAirportPageHtml:
 
         link = "https://en.wikipedia.org/wiki/YWG"
         with pytest.warns(UserWarning, match="No HTML content returned"):
-            result = get_wikipedia_airport_page_html(link)
+            result = fetch_wikipedia_airport_html(link)
         assert result is None
 
     @patch(_SESSION_GET)
@@ -91,6 +91,6 @@ class TestGetWikipediaAirportPageHtml:
         mock_get.return_value = mock_response
 
         link = "https://en.wikipedia.org/wiki/YWG"
-        result = get_wikipedia_airport_page_html(link)
+        result = fetch_wikipedia_airport_html(link)
         assert "Could not parse HTML response" in caplog.text
         assert result is None

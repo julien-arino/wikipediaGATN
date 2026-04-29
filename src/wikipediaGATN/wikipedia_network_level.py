@@ -33,9 +33,9 @@ import time
 import warnings
 
 from .paths import TEMP_RESULTS_DIR
-from .wikipedia_airport_level import (
-    extract_airport_information,
-    get_wikipedia_airport_page_link,
+from .airport_level_functions import (
+    fetch_wikipedia_airport_info,
+    fetch_wikipedia_airport_link,
     save_airport_info,
 )
 
@@ -228,7 +228,7 @@ def get_connections_level_N(
             if verbose:
                 print(f"  {origin_iata} -> {dest_name}: fetching...")
 
-            dest_info = extract_airport_information(dest_url, verbose=verbose)
+            dest_info = fetch_wikipedia_airport_info(dest_url, verbose=verbose)
             dest_iata = dest_info.get('iata') or dest_info.get('icao')
 
             if not dest_iata:
@@ -344,13 +344,13 @@ def iterate_search_until_distance_N(
     verbose : bool, optional
         Print per-airport progress.  Default: False.
     """
-    link = get_wikipedia_airport_page_link(seed_iata, verbose=verbose)
+    link = fetch_wikipedia_airport_link(seed_iata, verbose=verbose)
     if not link:
         warnings.warn(f"Could not find Wikipedia page for {seed_iata!r}.",
                       UserWarning, stacklevel=2)
         return
 
-    airport_details = extract_airport_information(link, verbose=verbose)
+    airport_details = fetch_wikipedia_airport_info(link, verbose=verbose)
     save_airport_info(airport_details, level=0, verbose=verbose)
 
     if not airport_details.get("destinations"):
@@ -386,13 +386,13 @@ def iterate_search_until_empty(
     For a global crawl this may run for many hours.  Use
     :func:`iterate_search_until_distance_N` if you want a bounded run.
     """
-    link = get_wikipedia_airport_page_link(seed_iata, verbose=verbose)
+    link = fetch_wikipedia_airport_link(seed_iata, verbose=verbose)
     if not link:
         warnings.warn(f"Could not find Wikipedia page for {seed_iata!r}.",
                       UserWarning, stacklevel=2)
         return
 
-    airport_details = extract_airport_information(link, verbose=verbose)
+    airport_details = fetch_wikipedia_airport_info(link, verbose=verbose)
     save_airport_info(airport_details, level=0, verbose=verbose)
 
     if not airport_details.get("destinations"):

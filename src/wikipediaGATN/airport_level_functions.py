@@ -2,24 +2,35 @@
 Airport-level Wikipedia scraping and data extraction functions.
 
 Functions in this module interact with the Wikipedia API to fetch and parse
-airport pages.  They are designed to be called in sequence, but each can also
-be used standalone:
+airport pages, and supplement the extracted data using the authoritative
+OurAirports database.
+
+Core Pipeline Functions:
 
 1. :func:`fetch_wikipedia_airport_link`         resolve an identifier to a URL
 2. :func:`fetch_wikipedia_airport_html`         fetch parsed HTML
 3. :func:`fetch_wikipedia_airport_wikitext`     fetch raw wikitext
-4. :func:`fetch_wikipedia_airlines`           set of airline names
-5. :func:`fetch_wikipedia_destinations`       set of (name, URL) tuples
-6. :func:`fetch_wikipedia_airlines_destinations`  airline → destinations map
-7. :func:`fetch_wikipedia_airport_info`             all metadata in one dict
-8. :func:`save_airport_info`                       persist dict to JSON + progress CSV
+4. :func:`fetch_wikipedia_airlines`             set of airline names
+5. :func:`fetch_wikipedia_destinations`         set of (name, URL) tuples
+6. :func:`fetch_wikipedia_airlines_destinations` airline → destinations map
+7. :func:`fetch_wikipedia_airport_info`         all metadata in one dict
+8. :func:`save_airport_info`                    persist dict to JSON + progress CSV
 
-Helper / fallback functions:
+OurAirports Integration & Validation:
 
+* :func:`infer_missing_geographic_data`         supplement missing data via OurAirports
+* :func:`compare_airports_with_ourairports`     audit extracted data against OurAirports
+* :func:`find_active_missing_airports`          identify unmapped airports in OurAirports
+* :func:`build_url_to_codes_map`                map Wikipedia URLs to IATA codes
+
+Helper / Fallback functions:
+
+* :func:`format_airport_json`
 * :func:`parse_infobox_from_wikitext`
 * :func:`clean_infobox_value`
 * :func:`parse_lat_lon_from_string`
 * :func:`parse_iso3166_2`
+* :func:`format_destinations_list`
 * :func:`fallback_fetch_wikipedia_airport_info`
 * :func:`parse_fallback_nlp_airlines_destinations`
 * :func:`parse_wikitext_airlines_destinations`
@@ -73,7 +84,7 @@ _API_URL = "https://en.wikipedia.org/w/api.php"
 # address so they can reach out if the bot misbehaves.
 _HEADERS = {
     "User-Agent": (
-        "wikipediaGATN/1.0 (https://github.com/jarino; jarino@umanitoba.ca) "
+        "wikipediaGATN/1.0 (https://github.com/jarino; julien.arino@umanitoba.ca) "
         "python-requests"
     )
 }
@@ -1902,7 +1913,7 @@ def find_active_missing_airports(input_csv: str = None, output_csv: str = None, 
             return None
             
         try:
-            headers = {"User-Agent": "wikipediaGATN/0.1.0 (Global Air Transportation Network research; jarino@umanitoba.ca)"}
+            headers = {"User-Agent": "wikipediaGATN/0.1.0 (Global Air Transportation Networks research; julien.arino@umanitoba.ca)"}
             res = requests.get(url, headers=headers, timeout=10)
             res.raise_for_status()
             html = res.text.lower()

@@ -9,8 +9,8 @@ is defined exactly once.  The directory layout assumed by this module is::
     │   └── wikipediaGATN/   ← this file lives here (two levels below repo root)
     │       └── paths.py
     └── data/
-        ├── tmp_results/     ← TEMP_RESULTS_DIR  (scraper JSON output)
-        └── public/          ← PUBLIC_DATA_DIR   (processed CSVs, matrices)
+        ├── tmp_results/     ← TEMP_RESULTS_DIR  (raw scraper output)
+        └── public/          ← PUBLIC_DATA_DIR   (CSVs, matrices, network graphs)
 
 Environment variable override
 ------------------------------
@@ -53,7 +53,7 @@ DATA_DIR: Path = (
 #: Temporary directory for raw JSON files produced by the Wikipedia scraper.
 TEMP_RESULTS_DIR: Path = DATA_DIR / "tmp_results"
 
-#: Directory for processed, public-facing outputs (CSVs, sparse matrices).
+#: Directory for processed, public-facing outputs (CSVs, sparse matrices, network graphs).
 PUBLIC_DATA_DIR: Path = DATA_DIR / "public"
 
 # ---------------------------------------------------------------------------

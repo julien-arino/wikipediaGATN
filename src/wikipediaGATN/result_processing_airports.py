@@ -46,11 +46,14 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
     Scans every ``<IATA>.<distance>.json`` and ``wiki_*.<distance>.json`` file
     in ``PUBLIC_DATA_DIR/airport_data`` (or ``TEMP_RESULTS_DIR`` if use_new_data is True)
     and collects airport metadata into a single ``airports_information.csv``.
+    During the process, it performs offline geographic inference and destination 
+    URL mapping.
 
     Parameters
     ----------
     use_new_data : bool, optional
-        If True, reads from ``TEMP_RESULTS_DIR``. Default: False (reads from ``PUBLIC_DATA_DIR/airport_data``).
+        If True, reads from ``TEMP_RESULTS_DIR/airports_rooted_sweep``. 
+        Default: False (reads from ``PUBLIC_DATA_DIR/airport_data``).
     verbose : bool, optional
         If True, prints per-file status and a final summary.  Default: False.
 
@@ -66,8 +69,8 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
     Notes
     -----
-    * ``outdegree`` is the number of destination airports listed for each
-      airport in its JSON file, not the verified network degree.
+    * ``outdegree`` and ``outdegree_cargo`` represent the number of verified 
+      destinations listed for each airport in the JSON file.
     * Fields absent from the JSON file are written as empty strings.
     * Run this function before
       :func:`~.connections.create_outbound_connections_list` so that

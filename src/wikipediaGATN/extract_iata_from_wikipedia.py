@@ -1,9 +1,10 @@
 """
-Extract IATA codes from Wikipedia airport pages.
+Extract IATA codes from unmapped destination URLs.
 
-This module fetches Wikipedia pages for unmapped destination airports and
-extracts their IATA codes using pattern matching.  It handles the standard
-Wikipedia infobox format: ``(IATA: XXX, ICAO: YYYY, FAA LID: ZZZ)``
+This module resolves destination airports by first performing a fast, offline 
+lookup against the authoritative OurAirports database. If the airport is not 
+found, it falls back to fetching the Wikipedia page and extracting the IATA code 
+using pattern matching (e.g. ``(IATA: XXX, ICAO: YYYY)``).
 
 Typical workflow
 ----------------
@@ -33,8 +34,8 @@ from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 #: the package name, version, and a contact address.
 _USER_AGENT = (
     "wikipediaGATN/0.1.0 "
-    "(Global Air Transportation Network research; "
-    "jarino@umanitoba.ca)"
+    "(Global Air Transportation Networks research; "
+    "julien.arino@umanitoba.ca)"
 )
 
 # Compiled regex patterns used by _extract_iata_from_wikipedia_page.
@@ -237,9 +238,11 @@ def extract_iata_from_unmapped_destinations(
     """
     Extract IATA codes from Wikipedia pages for unmapped destinations.
 
-    Reads ``unmapped_destinations.csv``, fetches each Wikipedia page that does
-    not yet have an IATA code, and writes the results back to the same file
-    atomically (write to a temp file then rename).
+    Reads ``unmapped_destinations.csv`` and attempts to resolve each URL.
+    It prioritizes an instantaneous offline lookup against the OurAirports 
+    database, falling back to Wikipedia web scraping only if the URL is not found.
+    Results are written back to the same file atomically (write to a temp file 
+    then rename).
 
     Rows that already have an IATA code are skipped and reported separately
     so that the success count only reflects codes extracted in *this* run.

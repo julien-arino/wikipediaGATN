@@ -1,5 +1,5 @@
 """
-wikipediaGATN: Global Air Transportation Network from Wikipedia
+wikipediaGATN: Global Air Transportation Networks from Wikipedia
 
 A Python package for deriving the structure of the global air transportation network
 (GATN) from information publicly available on Wikipedia.

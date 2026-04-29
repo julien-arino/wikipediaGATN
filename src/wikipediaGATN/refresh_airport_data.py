@@ -1,3 +1,20 @@
+"""
+Incremental updater for airport JSON data.
+
+This module provides tools to refresh existing airport JSON data files without
+needing to scrape everything from scratch. It utilizes the Wikipedia API to check
+the 'last modified' timestamps of Wikipedia pages and compares them against the
+local parse times. Only airports whose Wikipedia pages have been updated since 
+they were last parsed are fetched again.
+
+It also supports partial refreshes (only updating airlines and destinations) and
+local-only migrations (applying geographic inference without network calls).
+
+Typical usage:
+    python -m wikipediaGATN.refresh_airport_data --target all --local-only
+    python -m wikipediaGATN.refresh_airport_data --target all
+"""
+
 import json
 import os
 import requests
@@ -27,10 +44,27 @@ from .airport_level_functions import (
 
 def check_needs_refresh(file_paths: list[str], verbose: bool = False) -> list[str]:
     """
-    Check multiple public JSON files to see if their Wikipedia pages have been updated
-    since they were last parsed.
+    Filter a list of JSON files to find those that need to be refreshed.
     
-    Returns a list of file paths that actually need to be refreshed.
+    This function compares the local ``date-time-parse`` timestamp stored in each
+    JSON file against the latest revision timestamp from the Wikipedia API. It 
+    batches Wikipedia API requests (up to 50 titles per query) for efficiency.
+
+    Parameters
+    ----------
+    file_paths : list of str
+        List of absolute file paths to the airport JSON files.
+    verbose : bool, optional
+        If True, prints progress and details about which files need updates.
+        Default is False.
+
+    Returns
+    -------
+    list of str
+        A subset of ``file_paths`` containing only the files that have either:
+        1. Been updated on Wikipedia since they were last scraped.
+        2. Are missing a ``date-time-parse`` field and therefore must be repaired.
+        3. Encountered a parsing or decode error.
     """
     to_refresh = []
     
@@ -135,10 +169,36 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
     """
     Refresh a single airport JSON file.
     
-    If `local_only` is True, it skips Wikipedia completely and just applies the latest
-    formatting and geographic inference to the existing data.
-    If `refresh_all_data` is False, it only updates the airlines and destinations,
-    leaving the rest of the file exactly as it was (preserving geocoding).
+    Depending on the flags provided, this function can perform a full web scrape,
+    a partial web scrape (only destinations), or a purely offline data migration.
+
+    Parameters
+    ----------
+    fpath : str
+        Absolute path to the airport JSON file to refresh.
+    refresh_all_data : bool, optional
+        If True, re-fetches all metadata (infobox) from Wikipedia. If False,
+        only re-fetches the airlines and destinations. Default is False.
+    local_only : bool, optional
+        If True, skips Wikipedia web scraping completely and purely applies 
+        the latest formatting, data schema migrations, and geographic inferences
+        using the offline OurAirports database. Default is False.
+    verbose : bool, optional
+        If True, prints detailed progress output. Default is False.
+    file_idx : int, optional
+        Current index in a batch (for logging ETA).
+    total_files : int, optional
+        Total number of files in the batch (for logging ETA).
+    url_map : dict, optional
+        A pre-computed mapping from Wikipedia URLs to IATA/ICAO codes. If not
+        provided, it will be built dynamically.
+    start_time : float, optional
+        The Unix timestamp when the batch started (for logging ETA).
+
+    Returns
+    -------
+    bool
+        True if the file was successfully loaded, updated, and saved. False otherwise.
     """
     if verbose:
         progress_str = f" [{file_idx}/{total_files}]" if file_idx is not None and total_files is not None else ""
@@ -360,18 +420,27 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
 
 def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bool = False, local_only: bool = False, force: bool = False, verbose: bool = True):
     """
-    Refresh JSON files in data/public/airport_data based on Wikipedia edit timestamps.
+    Orchestrate the batch refresh of airport JSON files.
     
+    Scans the ``PUBLIC_DATA_DIR/airport_data`` directory, determines which files
+    require an update (via Wikipedia API timestamps), and refreshes them.
+
     Parameters
     ----------
-    target : str or list[str]
-        Can be "all" to check all files, a single file path, or a list of file paths.
-    refresh_all_data : bool
-        If False, only updates airlines and destinations. If True, re-fetches everything.
-    force : bool
-        If True, skip the Wikipedia timestamp check and force refresh all targeted files.
-    verbose : bool
-        Print progress.
+    target : str or list of str, optional
+        Can be "all" to check all files in the directory, a single file path, 
+        or a list of specific file paths. Default is "all".
+    refresh_all_data : bool, optional
+        If True, re-fetches all metadata (infobox). If False, only updates 
+        airlines and destinations. Default is False.
+    local_only : bool, optional
+        If True, skips Wikipedia timestamp checks and scraping, and only applies
+        local geographic inferences and schema migrations. Default is False.
+    force : bool, optional
+        If True, skips the Wikipedia timestamp check and forces a refresh on 
+        all targeted files. Default is False.
+    verbose : bool, optional
+        If True, prints detailed progress and ETA. Default is True.
     """
     airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
     if not os.path.isdir(airport_data_dir):

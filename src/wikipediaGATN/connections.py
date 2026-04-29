@@ -2,8 +2,9 @@
 Generate outbound airport connections list from public JSON data.
 
 This module parses augmented JSON files from the public airport_data directory
-and creates a CSV file listing outbound connections for each airport. It exports
-unmapped destination URLs to a CSV for later processing via web scraping.
+and creates CSV files listing outbound passenger and cargo connections for each 
+airport. It exports unmapped destination URLs to a separate CSV for later 
+processing via web scraping.
 """
 
 import csv
@@ -22,12 +23,13 @@ def create_outbound_connections_list(
     export_unmapped: bool = True,
 ):
     """
-    Parse JSON files in ``PUBLIC_DATA_DIR/airport_data`` and write a connections CSV.
+    Parse JSON files in ``PUBLIC_DATA_DIR/airport_data`` and write connection CSVs.
 
     Reads every ``<IATA>.json`` file, extracts the pre-mapped destination IATA codes,
-    and writes the result to ``global-air-pax-network.csv``.
+    and writes the results to ``global-air-pax-network.csv`` and 
+    ``global-air-cargo-network.csv``.
 
-    Optionally exports a second CSV listing destination URLs that could not be
+    Optionally exports a third CSV listing destination URLs that could not be
     mapped, so they can be resolved in a subsequent scraping pass.
 
     Parameters
@@ -40,8 +42,8 @@ def create_outbound_connections_list(
 
     Returns
     -------
-    tuple of (str, str or None)
-        ``(connections_csv_path, unmapped_csv_path)``.
+    tuple of (str, str, str | None)
+        ``(pax_csv_path, cargo_csv_path, unmapped_csv_path)``.
         *unmapped_csv_path* is ``None`` when no unmapped URLs were found or
         when ``export_unmapped=False``.
 

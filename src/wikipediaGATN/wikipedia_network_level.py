@@ -2,10 +2,11 @@
 Network-level BFS crawling of airport Wikipedia pages.
 
 This module drives the breadth-first expansion of the airport network.
-Starting from a seed IATA code it iteratively fetches each airport's
-destinations, saves the results as ``<CODE>.<level>.json`` files in
-``TEMP_RESULTS_DIR``, and tracks progress in ``processed_locations.csv``
-so that interrupted runs can be resumed.
+Starting from a seed IATA code, it iteratively fetches each airport's
+destinations (both passenger and cargo), saves the results as 
+``<CODE>.<level>.json`` files in ``TEMP_RESULTS_DIR/airports_rooted_sweep``, 
+and tracks progress in ``processed_locations.csv`` so that interrupted runs 
+can be resumed.
 
 Typical usage::
 
@@ -172,8 +173,8 @@ def get_connections_level_N(
     Expand the airport network by one BFS level.
 
     For every airport file at level *from_length* (``<CODE>.<from_length>.json``),
-    fetch each listed destination that has not yet been processed and save its
-    data as ``<CODE>.<from_length+1>.json``.
+    fetch each listed destination (both passenger and cargo) that has not yet 
+    been processed and save its data as ``<CODE>.<from_length+1>.json``.
 
     Parameters
     ----------

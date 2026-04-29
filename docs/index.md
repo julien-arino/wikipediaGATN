@@ -2,7 +2,7 @@
 
 Welcome to the documentation for `wikipediaGATN`!
 
-`wikipediaGATN` is a Python package designed to assemble the Global Air Transportation Network (GATN) by scraping Wikipedia airport pages.
+`wikipediaGATN` is a Python package designed to assemble the Global Air Transportation Networks (GATN) by scraping Wikipedia airport pages.
 
 ```{toctree}
 :maxdepth: 2

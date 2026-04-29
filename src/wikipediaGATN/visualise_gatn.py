@@ -1,14 +1,15 @@
 """
-Interactive visualisation of the airport network adjacency matrix.
+Interactive visualisation of the airport network.
 
-Reads a sparse adjacency matrix and its node list from ``PUBLIC_DATA_DIR``
+Reads a graphml object from ``PUBLIC_DATA_DIR``
 and writes an interactive Plotly HTML graph.
 
-Two layout strategies are supported:
+Three layout strategies are supported:
 
-* **Geographic** (default when coordinate data is available): nodes are
-  placed at their real-world longitude/latitude.  Requires
-  ``airports_information.csv`` to be present.
+* **Geographic** (default): nodes are placed at their real-world 
+  longitude/latitude on a flat map.
+* **Globe**: nodes are placed at their real-world longitude/latitude 
+  on a 3D globe.
 * **Spring** (fallback): force-directed layout via
   :func:`networkx.spring_layout`.  Slow for large graphs (> 500 nodes) and
   non-deterministic unless *seed* is fixed — use the *seed* parameter to get
@@ -44,22 +45,17 @@ def visualize_graph_plotly(
 
     Parameters
     ----------
+    input_path : path-like or None, optional
+        Path to the input graphml file. If None, defaults to the global pax network.
     output_path : path-like or None, optional
         Destination for the HTML file.  Defaults to
-        ``PUBLIC_DATA_DIR/airport_graph_plotly.html``.
+        ``PUBLIC_DATA_DIR/<input_stem>-plotly-<layout>.html``.
     seed : int, optional
         Random seed passed to :func:`networkx.spring_layout` for
         reproducible layouts.  Ignored when *layout* is "geographic" or "globe".
         Default: 42.
     layout : str, optional
         Layout strategy: "geographic", "globe", or "spring". Default: "geographic".
-    verbose : bool, optional
-        If True, prints progress messages.  Default: False.
-    geographic : bool, optional
-        If True (default), attempt to place nodes at their real-world
-        longitude/latitude by reading ``airports_information.csv``.
-        Falls back to spring layout if the file is missing or coordinates
-        are unavailable.
     verbose : bool, optional
         If True, prints progress messages.  Default: False.
 
@@ -71,8 +67,7 @@ def visualize_graph_plotly(
     Raises
     ------
     FileNotFoundError
-        If the matrix or node-list file does not exist.  Run
-        :func:`~.adjacency.create_outbound_adjacency_matrix` first.
+        If the input graphml file does not exist.
     """
     # ------------------------------------------------------------------
     # Resolve input paths

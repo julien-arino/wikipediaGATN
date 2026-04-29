@@ -1,8 +1,10 @@
 """
-Generate sparse adjacency matrices from airport connections.
+Generate adjacency matrices and network graphs from airport connections.
 
-This module creates sparse matrix representations of the airport network
-from outbound connection data.
+This module processes outbound connection data to build structural representations
+of the airport networks (both passenger and cargo). It outputs highly efficient 
+sparse matrix formats (.npz) alongside node lists, as well as rich graph-theoretic 
+network exports (GraphML, GEXF, DOT) annotated with airport metadata.
 """
 
 import json
@@ -35,9 +37,10 @@ def create_outbound_adjacency_matrix(
     """
     Create a sparse adjacency matrix of outbound airport connections.
 
-    Reads airport connections from ``global-air-pax-network.csv`` and creates a
+    Reads airport connections from ``global-air-pax-network.csv`` (or 
+    ``global-air-cargo-network.csv`` if ``is_cargo`` is True) and creates a
     sparse adjacency matrix where each airport is a node and edges represent
-    direct outbound connections.  Can optionally create a symmetric matrix to
+    direct outbound connections. Can optionally create a symmetric matrix to
     account for incomplete destination data from smaller airports.
 
     Parameters
@@ -46,12 +49,18 @@ def create_outbound_adjacency_matrix(
         If True, the matrix is made symmetric (A -> B implies B -> A).
         Default is False.
     export_csv : bool, optional
-        If True, also writes a dense ``adjacency_matrix[_sym].csv`` alongside
-        the ``.npz`` file.  This file can be very large for global-scale
+        If True, also writes a dense ``adjacency_matrix[_cargo][_sym].csv`` 
+        alongside the ``.npz`` file.  This file can be very large for global-scale
         networks (≥ 4 000 nodes → > 100 MB), so it is **off by default** and
         intended only for small-scale inspection.  Default is False.
+    export_networks : bool, optional
+        If True, exports the network as GraphML, GEXF, and DOT formats with 
+        rich node attributes. Default is True.
     verbose : bool, optional
         If True, prints status messages about processing.  Default is False.
+    is_cargo : bool, optional
+        If True, uses the cargo dataset instead of the passenger dataset.
+        Default is False.
 
     Returns
     -------
@@ -63,19 +72,17 @@ def create_outbound_adjacency_matrix(
 
     Output files
     ------------
-    When ``symmetric=False``:
-
-    * ``adjacency_matrix.npz``  – sparse adjacency matrix
+    Base matrix files:
+    * ``adjacency_matrix[_cargo][_sym].npz``  – sparse adjacency matrix
       (1 = connection exists, 0 otherwise).
-    * ``nodes.txt``             – sorted list of IATA codes (one per line).
-    * ``adjacency_matrix.csv``  – dense matrix with IATA labels
+    * ``nodes[_cargo][_sym].txt``             – sorted list of IATA codes.
+    * ``adjacency_matrix[_cargo][_sym].csv``  – dense matrix with IATA labels
       *(only written when* ``export_csv=True`` *)*.
 
-    When ``symmetric=True``:
-
-    * ``adjacency_matrix_sym.npz``
-    * ``nodes_sym.txt``
-    * ``adjacency_matrix_sym.csv``  *(only when* ``export_csv=True`` *)*.
+    Network files *(when* ``export_networks=True`` *)*:
+    * ``global-air-[pax|cargo]-network.graphml``
+    * ``global-air-[pax|cargo]-network.gexf``
+    * ``global-air-[pax|cargo]-network.dot``
 
     Notes
     -----
@@ -87,7 +94,7 @@ def create_outbound_adjacency_matrix(
     directions are added.  This is useful when working with data that under-
     reports small-airport outbound routes.
 
-    Malformed IATA tokens (not matching ``[A-Z]{3}``) and self-loops are
+    Malformed IATA tokens (not matching ``[A-Z]{3,4}``) and self-loops are
     silently skipped with a warning.
 
     Examples

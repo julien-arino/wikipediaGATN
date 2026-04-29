@@ -1,8 +1,10 @@
 """
-Orchestration functions for GATN (Global Air Transportation Network) generation.
+Orchestration functions for GATN (Global Air Transportation Networks) generation.
 
-This module handles the extraction of network structure from scraped destinations
-and builds adjacency matrices.
+This module provides the complete pipeline to extract network structures from 
+the parsed airport data. It drives the multi-pass IATA code recovery workflow, 
+generates outbound connection lists, builds sparse adjacency matrices, and 
+exports rich network graphs for both the Passenger (Pax) and Cargo networks.
 """
 
 import logging
@@ -35,7 +37,8 @@ def run_two_pass_iata_extraction(
     has already been run and ``unmapped_destinations.csv`` exists.
 
     Pass 2
-        Fetches each unmapped Wikipedia URL and extracts the IATA code.
+        Attempts instantaneous offline OurAirports lookup for unmapped URLs, 
+        falling back to fetching the Wikipedia page to extract the IATA code.
     Pass 3
         Filters successful extractions by confidence and writes
         ``manual_airport_mapping.csv`` for use in the next
@@ -105,11 +108,11 @@ def _run_pipeline() -> None:
     # Steps:
     #   1. Export airport metadata                 (Identifies unmapped URLs into JSON)
     #   2. Initial connections list                (Pass 1 — produces unmapped_destinations.csv)
-    #   3. Scrape Wikipedia for unmapped IATAs     (Pass 2)
+    #   3. Resolve unmapped IATAs                  (Pass 2 - OurAirports offline + Wikipedia scrape)
     #   4. Build manual mapping from scraped data  (Pass 3)
     #   5. Re-run airport metadata export          (Pass 4 - injects manual mappings into JSON)
     #   6. Re-run connections list                 (Pass 5)
-    #   7–8. Build asymmetric and symmetric adjacency matrices
+    #   7–8. Build adjacency matrices and network graphs for Pax and Cargo
 
     print("=" * 70)
     print("GLOBAL AIR TRANSPORTATION NETWORK (GATN)")

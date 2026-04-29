@@ -35,6 +35,7 @@ __all__ = ["visualize_graph_plotly"]
 
 
 def visualize_graph_plotly(
+    input_path: Path | str | None = None,
     output_path: Path | str | None = None,
     seed: int = 42,
     layout: str = "geographic",
@@ -78,7 +79,18 @@ def visualize_graph_plotly(
     # ------------------------------------------------------------------
     # Resolve input paths
     # ------------------------------------------------------------------
-    graphml_path = PUBLIC_DATA_DIR / "global-air-transportation-network.graphml"
+    if input_path is None:
+        input_path = PUBLIC_DATA_DIR / "global-air-transportation-network.graphml"
+    elif isinstance(input_path, str):
+        input_path = Path(input_path)
+
+    graphml_path = input_path
+
+    if output_path is None:
+        layout_str = "graph" if layout == "spring" else layout
+        output_path = PUBLIC_DATA_DIR / f"{graphml_path.stem}-plotly-{layout_str}.html"
+    elif isinstance(output_path, str):
+        output_path = Path(output_path)
 
     if not graphml_path.exists():
         raise FileNotFoundError(
@@ -273,13 +285,7 @@ def visualize_graph_plotly(
     # ------------------------------------------------------------------
     # Save
     # ------------------------------------------------------------------
-    if output_path is None:
-        if layout == "geographic":
-            output_path = PUBLIC_DATA_DIR / "global-air-transportation-network-plotly-geographic.html"
-        elif layout == "globe":
-            output_path = PUBLIC_DATA_DIR / "global-air-transportation-network-plotly-globe.html"
-        else:
-            output_path = PUBLIC_DATA_DIR / "global-air-transportation-network-plotly-graph.html"
+
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -288,7 +294,7 @@ def visualize_graph_plotly(
     node_list = list(G.nodes())
     node_idx = {n: i for i, n in enumerate(node_list)}
     adj = {i: [node_idx[v] for v in G.neighbors(n)] for i, n in enumerate(node_list)}
-    coords = {i: pos[n] for i, n in enumerate(node_list)}
+    coords = {i: [float(c) for c in pos[n]] for i, n in enumerate(node_list)}
     
     coord_keys = "['lon', 'lat']" if layout == "globe" else "['x', 'y']"
     
@@ -341,6 +347,21 @@ def visualize_graph_plotly(
 
     return str(output_path.resolve())
 
+def visualise_all_networks(verbose: bool = False):
+    """
+    Generate visualizations for all generated networks.
+    """
+    layouts = ["geographic", "globe", "spring"]
+    
+    pax_graphml = PUBLIC_DATA_DIR / "global-air-transportation-network.graphml"
+    if pax_graphml.exists():
+        for l in layouts:
+            visualize_graph_plotly(input_path=pax_graphml, layout=l, verbose=verbose)
+        
+    cargo_graphml = PUBLIC_DATA_DIR / "global-air-cargo-network.graphml"
+    if cargo_graphml.exists():
+        for l in layouts:
+            visualize_graph_plotly(input_path=cargo_graphml, layout=l, verbose=verbose)
 
 if __name__ == "__main__":
-    visualize_graph_plotly(verbose=True)
+    visualise_all_networks(verbose=True)

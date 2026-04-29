@@ -28,7 +28,6 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -40,7 +39,7 @@ classifiers = [
 # Minimum Python version.  f-strings and dataclasses were added in 3.7;
 # 3.8 is the lowest version still receiving security fixes at time of
 # initial release, so we require it here.
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 
 # ---------------------------------------------------------------------------
 # Runtime dependencies
@@ -69,6 +68,7 @@ dependencies = [
     "geopy>=2.3",
     "pycountry>=22.3",
     "pycountry-convert>=0.7",
+    "reverse_geocoder>=1.5.1",
 
     # Numerical / data
     "numpy>=1.24",
@@ -151,7 +151,7 @@ exclude_lines = [
 # ---------------------------------------------------------------------------
 [tool.ruff]
 line-length = 88
-target-version = "py38"
+target-version = "py39"
 select = ["E", "F", "W", "I"]   # pycodestyle + pyflakes + isort
 ignore = ["E501"]               # handled by formatter
 
@@ -160,4 +160,4 @@ ignore = ["E501"]               # handled by formatter
 # ---------------------------------------------------------------------------
 [tool.black]
 line-length    = 88
-target-version = ["py38", "py39", "py310", "py311", "py312"]
+target-version = ["py39", "py310", "py311", "py312"]

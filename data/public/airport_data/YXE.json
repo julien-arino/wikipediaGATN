@@ -13,15 +13,13 @@
   "admin1_code": "CA-SK",
   "admin1_name": "Saskatchewan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
-  "outdegree": 20,
-  "number_airlines": 8,
+  "outdegree": 19,
+  "number_airlines": 6,
   "airlines": [
     "Air Canada Express",
     "Air Canada Rouge",
-    "Cargojet Airways",
     "Porter Airlines",
     "Rise Air",
-    "SkyLink Express",
     "WestJet",
     "WestJet Encore"
   ],
@@ -64,8 +62,8 @@
       "city": "Fond-du-Lac",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fond-du-Lac_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "ZFD",
+        "CZFD"
       ],
       "airlines": [
         "Rise Air"
@@ -75,8 +73,8 @@
       "city": "Kelowna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YLW",
+        "CYLW"
       ],
       "airlines": [
         "WestJet Encore"
@@ -86,8 +84,8 @@
       "city": "La Ronge",
       "wikipedia_url": "https://en.wikipedia.org/wiki/La_Ronge_(Barber_Field)_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YVC",
+        "CYVC"
       ],
       "airlines": [
         "Rise Air"
@@ -97,8 +95,8 @@
       "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "LAS",
+        "KLAS"
       ],
       "airlines": [
         "WestJet"
@@ -130,8 +128,8 @@
       "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "PHX",
+        "KPHX"
       ],
       "airlines": [
         "WestJet"
@@ -141,8 +139,8 @@
       "city": "Points North",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Points_North_Landing_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YNL",
+        "CYNL"
       ],
       "airlines": [
         "Rise Air"
@@ -152,8 +150,8 @@
       "city": "Prince Albert",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Albert_(Glass_Field)_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YPA",
+        "CYPA"
       ],
       "airlines": [
         "Rise Air"
@@ -163,31 +161,19 @@
       "city": "Puerto Vallarta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "PVR",
+        "MMPR"
       ],
       "airlines": [
         "WestJet"
       ]
     },
     {
-      "city": "Regina",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Regina_International_Airport",
-      "codes": [
-        "YQR",
-        "CYQR"
-      ],
-      "airlines": [
-        "Cargojet Airways",
-        "SkyLink Express"
-      ]
-    },
-    {
       "city": "Stony Rapids",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stony_Rapids_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YSF",
+        "CYSF"
       ],
       "airlines": [
         "Rise Air"
@@ -210,8 +196,8 @@
       "city": "Uranium City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Uranium_City_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YBE",
+        "CYBE"
       ],
       "airlines": [
         "Rise Air"
@@ -237,8 +223,6 @@
         "CYWG"
       ],
       "airlines": [
-        "Cargojet Airways",
-        "SkyLink Express",
         "WestJet Encore"
       ]
     },
@@ -246,8 +230,8 @@
       "city": "Wollaston",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wollaston_Lake_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "ZWL",
+        "CZWL"
       ],
       "airlines": [
         "Rise Air"
@@ -289,7 +273,41 @@
       "Edmonton",
       "Kelowna",
       "Winnipeg"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Cargojet Airways",
+    "SkyLink Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Regina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Regina_International_Airport",
+      "codes": [
+        "YQR",
+        "CYQR"
+      ],
+      "airlines": [
+        "Cargojet Airways",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Cargojet Airways",
+        "SkyLink Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargojet Airways": [
       "Regina",
       "Winnipeg"
@@ -299,6 +317,6 @@
       "Winnipeg"
     ]
   },
-  "date-time-parse": "2026-04-28T21:28:32Z",
+  "date-time-parse": "2026-04-29T05:02:29Z",
   "date-time-wikidata": "2026-04-04T16:42:49Z"
 }

@@ -24,7 +24,7 @@
   ],
   "destinations": [
     {
-      "city": "Cairo International Airport",
+      "city": "Cairo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
       "codes": [
         "CAI",
@@ -35,29 +35,7 @@
       ]
     },
     {
-      "city": "Hail International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hail_International_Airport",
-      "codes": [
-        "HAS",
-        "OEHL"
-      ],
-      "airlines": [
-        "Nesma Airlines"
-      ]
-    },
-    {
-      "city": "King Abdulaziz International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "codes": [
-        "JED",
-        "OEJN"
-      ],
-      "airlines": [
-        "Saudia"
-      ]
-    },
-    {
-      "city": "King Fahd International Airport",
+      "city": "Dammam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/King_Fahd_International_Airport",
       "codes": [
         "DMM",
@@ -68,7 +46,29 @@
       ]
     },
     {
-      "city": "King Khalid International Airport",
+      "city": "Hail",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hail_International_Airport",
+      "codes": [
+        "HAS",
+        "OEHL"
+      ],
+      "airlines": [
+        "Nesma Airlines"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Riyadh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
       "codes": [
         "RUH",
@@ -83,23 +83,28 @@
   ],
   "airlines_destinations": {
     "Flyadeal": [
-      "King Khalid International Airport"
+      "Riyadh"
     ],
     "Flynas": [
-      "King Fahd International Airport",
-      "King Khalid International Airport"
+      "Dammam",
+      "Riyadh"
     ],
     "Nesma Airlines": [
-      "Hail International Airport"
+      "Hail"
     ],
     "Nile Air": [
-      "Cairo International Airport"
+      "Cairo"
     ],
     "Saudia": [
-      "King Abdulaziz International Airport",
-      "King Khalid International Airport"
+      "Jeddah",
+      "Riyadh"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:37Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:58:30Z",
   "date-time-wikidata": "2026-04-17T10:49:45Z"
 }

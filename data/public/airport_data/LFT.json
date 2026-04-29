@@ -17,35 +17,46 @@
   "outdegree": 4,
   "number_airlines": 3,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -54,31 +65,25 @@
       "airlines": [
         "United Express"
       ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Dallas/Fort Worth"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "United Express": [
-      "George Bush Intercontinental Airport"
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:01Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:07Z",
   "date-time-wikidata": "2026-04-07T21:14:52Z"
 }

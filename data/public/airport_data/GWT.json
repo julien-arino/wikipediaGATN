@@ -14,18 +14,19 @@
   "admin1_name": "Schleswig-Holstein",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sylt_Airport",
   "outdegree": 8,
-  "number_airlines": 5,
+  "number_airlines": 6,
   "airlines": [
     "Austrian Airlines",
     "Eurowings",
     "Lufthansa",
     "Luxair",
+    "Mannheim City Air",
     "Swiss International Air Lines"
   ],
   "destinations": [
     {
-      "city": "Düsseldorf Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
+      "city": "Düsseldorf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
       "codes": [
         "DUS",
         "EDDL"
@@ -35,7 +36,7 @@
       ]
     },
     {
-      "city": "Frankfurt Airport",
+      "city": "Frankfurt",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
       "codes": [
         "FRA",
@@ -46,7 +47,7 @@
       ]
     },
     {
-      "city": "Luxembourg Findel Airport",
+      "city": "Luxembourg",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
       "codes": [
         "LUX",
@@ -57,16 +58,18 @@
       ]
     },
     {
-      "city": "Mannheim City Airport",
+      "city": "Mannheim",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mannheim_City_Airport",
       "codes": [
         "MHG",
         "EDFM"
       ],
-      "airlines": []
+      "airlines": [
+        "Mannheim City Air"
+      ]
     },
     {
-      "city": "Munich Airport",
+      "city": "Munich",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
       "codes": [
         "MUC",
@@ -77,7 +80,7 @@
       ]
     },
     {
-      "city": "Stuttgart Airport",
+      "city": "Stuttgart",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
       "codes": [
         "STR",
@@ -88,7 +91,7 @@
       ]
     },
     {
-      "city": "Vienna International Airport",
+      "city": "Vienna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
       "codes": [
         "VIE",
@@ -99,7 +102,7 @@
       ]
     },
     {
-      "city": "Zurich Airport",
+      "city": "Zürich",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
       "codes": [
         "ZRH",
@@ -112,23 +115,31 @@
   ],
   "airlines_destinations": {
     "Austrian Airlines": [
-      "Vienna International Airport"
+      "Vienna"
     ],
     "Eurowings": [
-      "Düsseldorf Airport",
-      "Stuttgart Airport"
+      "Düsseldorf",
+      "Stuttgart"
     ],
     "Lufthansa": [
-      "Frankfurt Airport",
-      "Munich Airport"
+      "Frankfurt",
+      "Munich"
     ],
     "Luxair": [
-      "Luxembourg Findel Airport"
+      "Luxembourg"
+    ],
+    "Mannheim City Air": [
+      "Mannheim"
     ],
     "Swiss International Air Lines": [
-      "Zurich Airport"
+      "Zürich"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:38Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:23Z",
   "date-time-wikidata": "2026-03-11T09:35:51Z"
 }

@@ -14,11 +14,64 @@
   "admin1_name": "Michigan",
   "admin2_name": "Houghton County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Houghton_County_Memorial_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:15:00Z",
+  "outdegree": 1,
+  "number_airlines": 1,
+  "airlines": [
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "United Express": [
+      "Chicago–O'Hare"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Madison",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dane_County_Regional_Airport",
+      "codes": [
+        "MSN",
+        "KMSN"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milwaukee_Mitchell_International_Airport",
+      "codes": [
+        "MKE",
+        "KMKE"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Madison",
+      "Milwaukee"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:18Z",
   "date-time-wikidata": "2026-04-15T13:30:47Z"
 }

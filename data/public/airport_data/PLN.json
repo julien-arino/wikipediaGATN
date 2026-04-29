@@ -22,7 +22,18 @@
   ],
   "destinations": [
     {
-      "city": "Detroit Metropolitan Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
         "DTW",
@@ -31,27 +42,66 @@
       "airlines": [
         "Delta Connection"
       ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
     }
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Detroit Metropolitan Airport"
+      "Detroit"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:24Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Grand Rapids",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gerald_R._Ford_International_Airport",
+      "codes": [
+        "GRR",
+        "KGRR"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Lansing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capital_Region_International_Airport",
+      "codes": [
+        "LAN",
+        "KLAN"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Sault Ste. Marie (MI)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chippewa_County_International_Airport",
+      "codes": [
+        "CIU",
+        "KCIU"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Lansing",
+      "Sault Ste. Marie (MI)"
+    ],
+    "FedEx Feeder": [
+      "Grand Rapids"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:58:01Z",
   "date-time-wikidata": "2025-12-11T18:10:18Z"
 }

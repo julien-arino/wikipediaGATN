@@ -21,7 +21,7 @@
   ],
   "destinations": [
     {
-      "city": "Minneapolis/St. Paul International Airport",
+      "city": "Minneapolis/St. Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis/St._Paul_International_Airport",
       "codes": [
         "MSP",
@@ -34,9 +34,88 @@
   ],
   "airlines_destinations": {
     "Denver Air Connection": [
-      "Minneapolis/St. Paul International Airport"
+      "Minneapolis/St. Paul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:45Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Alpine Air",
+    "DHL",
+    "FedEx Feeder",
+    "Freight Runners Express",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "Alpine Air",
+        "DHL",
+        "FedEx Feeder",
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis/St._Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "DHL",
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Alpine Air": [
+      "Fargo"
+    ],
+    "Freight Runners Express": [
+      "Fargo"
+    ],
+    "DHL": [
+      "Fargo",
+      "Minneapolis/St. Paul"
+    ],
+    "FedEx Feeder": [
+      "Fargo",
+      "Memphis",
+      "Minneapolis/St. Paul"
+    ],
+    "UPS Airlines": [
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T05:00:52Z",
   "date-time-wikidata": "2025-12-05T09:20:24Z"
 }

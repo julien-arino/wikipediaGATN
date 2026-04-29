@@ -13,13 +13,534 @@
   "admin1_code": "HR-21",
   "admin1_name": "Grad Zagreb",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
-  "outdegree": 3,
-  "number_airlines": 2,
+  "outdegree": 37,
+  "number_airlines": 19,
   "airlines": [
+    "Aegean Airlines",
+    "Air France",
+    "Air Serbia",
+    "Air Transat",
+    "Austrian Airlines",
+    "British Airways",
+    "Croatia Airlines",
+    "Eurowings",
+    "Iberia",
+    "KLM",
+    "LOT Polish Airlines",
+    "Lufthansa",
+    "Pegasus Airlines",
+    "Qatar Airways",
+    "Ryanair",
+    "Sundor",
+    "T'way Air",
+    "Turkish Airlines",
+    "flydubai"
+  ],
+  "destinations": [
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Croatia Airlines",
+        "KLM"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais_Airport",
+      "codes": [
+        "BVA",
+        "LFOB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Girona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Girona_Airport",
+      "codes": [
+        "GRO",
+        "LEGE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Croatia Airlines",
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Croatia Airlines",
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Malmö",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malmö_Airport",
+      "codes": [
+        "MMX",
+        "ESMS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Malta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_Airport",
+      "codes": [
+        "MLA",
+        "LMML"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Croatia Airlines",
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_Airport",
+      "codes": [
+        "NAP",
+        "LIRN"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Paphos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paphos_International_Airport",
+      "codes": [
+        "PFO",
+        "LCPH"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France",
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "T'way Air"
+      ]
+    },
+    {
+      "city": "Stuttgart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "Eurowings"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "codes": [
+        "TLV",
+        "LLBG"
+      ],
+      "airlines": [
+        "Croatia Airlines",
+        "Sundor"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Austrian Airlines",
+        "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "LOT Polish Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aegean Airlines": [
+      "Athens"
+    ],
+    "Air France": [
+      "Paris–Charles de Gaulle"
+    ],
+    "Air Serbia": [
+      "Belgrade"
+    ],
+    "Air Transat": [
+      "Toronto–Pearson"
+    ],
+    "Austrian Airlines": [
+      "Vienna"
+    ],
+    "British Airways": [
+      "London–Heathrow"
+    ],
+    "Croatia Airlines": [
+      "Amsterdam",
+      "Barcelona",
+      "Berlin",
+      "Brussels",
+      "Madrid",
+      "Munich",
+      "Paris–Charles de Gaulle",
+      "Rome–Fiumicino",
+      "Tel Aviv",
+      "Vienna"
+    ],
+    "Eurowings": [
+      "Cologne/Bonn",
+      "Stuttgart"
+    ],
+    "flydubai": [
+      "Dubai–International"
+    ],
+    "Iberia": [
+      "Madrid"
+    ],
+    "KLM": [
+      "Amsterdam"
+    ],
+    "LOT Polish Airlines": [
+      "Warsaw–Chopin"
+    ],
+    "Lufthansa": [
+      "Frankfurt",
+      "Munich"
+    ],
+    "Pegasus Airlines": [
+      "Istanbul–Sabiha Gökçen"
+    ],
+    "Qatar Airways": [
+      "Doha"
+    ],
+    "Ryanair": [
+      "Alicante",
+      "Basel/Mulhouse",
+      "Beauvais",
+      "Dublin",
+      "Girona",
+      "London–Stansted",
+      "Malmö",
+      "Malta",
+      "Manchester",
+      "Málaga",
+      "Naples",
+      "Palma de Mallorca",
+      "Paphos"
+    ],
+    "Sundor": [
+      "Tel Aviv"
+    ],
+    "T'way Air": [
+      "Seoul–Incheon"
+    ],
+    "Turkish Airlines": [
+      "Istanbul"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "DHL Aviation",
     "MNG Airlines"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Istanbul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
@@ -54,7 +575,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Leipzig/Halle"
     ],
@@ -63,6 +584,6 @@
       "Paris–Charles de Gaulle"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:51Z",
+  "date-time-parse": "2026-04-29T05:02:36Z",
   "date-time-wikidata": "2026-04-17T13:28:11Z"
 }

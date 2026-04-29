@@ -14,12 +14,12 @@
   "admin1_name": "South Carolina",
   "admin2_name": "Greenville County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Greenville–Spartanburg_International_Airport",
-  "outdegree": 29,
+  "outdegree": 27,
   "number_airlines": 10,
   "airlines": [
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Avelo Airlines",
     "Breeze Airways",
     "Delta Air Lines",
@@ -30,7 +30,18 @@
   ],
   "destinations": [
     {
-      "city": "Baltimore/Washington International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Baltimore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
       "codes": [
         "BWI",
@@ -41,18 +52,7 @@
       ]
     },
     {
-      "city": "Bradley International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
-      "codes": [
-        "BDL",
-        "KBDL"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
@@ -60,22 +60,35 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Cincinnati/Northern Kentucky International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
-        "CVG",
-        "KCVG"
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Columbus–Glenn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Glenn_Columbus_International_Airport",
+      "codes": [
+        "CMH",
+        "KCMH"
       ],
       "airlines": [
         "Breeze Airways"
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -83,11 +96,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -99,7 +112,7 @@
       ]
     },
     {
-      "city": "Detroit Metropolitan Airport",
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
         "DTW",
@@ -111,19 +124,8 @@
       ]
     },
     {
-      "city": "Dulles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "codes": [
-        "IAD",
-        "KIAD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -134,7 +136,29 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Fort Myers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Hartford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
+      "codes": [
+        "BDL",
+        "KBDL"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -146,41 +170,7 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "John Glenn Columbus International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Glenn_Columbus_International_Airport",
-      "codes": [
-        "CMH",
-        "KCMH"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "LaGuardia Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "codes": [
-        "LGA",
-        "KLGA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Los Angeles International Airport",
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
@@ -191,18 +181,18 @@
       ]
     },
     {
-      "city": "Miami International Airport",
+      "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
         "MIA",
         "KMIA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Nashville International Airport",
+      "city": "Nashville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
       "codes": [
         "BNA",
@@ -213,7 +203,30 @@
       ]
     },
     {
-      "city": "Newark Liberty International Airport",
+      "city": "New Haven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tweed_New_Haven_Airport",
+      "codes": [
+        "HVN",
+        "KHVN"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "New York–LaGuardia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "American Eagle",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
         "EWR",
@@ -224,20 +237,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Airlines",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -248,7 +248,7 @@
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -259,18 +259,18 @@
       ]
     },
     {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Pittsburgh International Airport",
+      "city": "Pittsburgh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
       "codes": [
         "PIT",
@@ -281,7 +281,7 @@
       ]
     },
     {
-      "city": "Rhode Island T. F. Green International Airport",
+      "city": "Providence",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rhode_Island_T._F._Green_International_Airport",
       "codes": [
         "PVD",
@@ -292,19 +292,8 @@
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "codes": [
-        "DCA",
-        "KDCA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
       "codes": [
         "SRQ",
         "KSRQ"
@@ -314,19 +303,8 @@
       ]
     },
     {
-      "city": "Southwest Florida International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "codes": [
-        "RSW",
-        "KRSW"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -336,88 +314,314 @@
       ]
     },
     {
-      "city": "Tampa International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
       "codes": [
-        "TPA",
-        "KTPA"
+        "IAD",
+        "KIAD"
       ],
       "airlines": [
-        "Breeze Airways"
+        "United Express"
       ]
     },
     {
-      "city": "Tweed New Haven Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tweed_New_Haven_Airport",
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
       "codes": [
-        "HVN",
-        "KHVN"
+        "DCA",
+        "KDCA"
       ],
       "airlines": [
-        "Avelo Airlines"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Orlando Sanford International Airport",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Fort Lauderdale",
+      "Orlando/Sanford",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ],
     "American Airlines": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport"
+      "Charlotte",
+      "Dallas/Fort Worth"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "LaGuardia Airport",
-      "Miami International Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Miami",
+      "New York–LaGuardia",
+      "Philadelphia",
+      "Washington–National"
     ],
     "Avelo Airlines": [
-      "Tweed New Haven Airport"
+      "New Haven"
     ],
     "Breeze Airways": [
-      "Bradley International Airport",
-      "Cincinnati/Northern Kentucky International Airport",
-      "Fort Lauderdale–Hollywood International Airport",
-      "John Glenn Columbus International Airport",
-      "Los Angeles International Airport",
-      "Orlando International Airport",
-      "Pittsburgh International Airport",
-      "Rhode Island T. F. Green International Airport",
-      "Southwest Florida International Airport",
-      "Tampa International Airport"
+      "Columbus–Glenn",
+      "Fort Lauderdale",
+      "Fort Myers",
+      "Hartford",
+      "Los Angeles",
+      "Orlando",
+      "Pittsburgh",
+      "Providence"
     ],
     "Delta Air Lines": [
-      "Detroit Metropolitan Airport",
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta",
+      "Detroit"
     ],
     "Delta Connection": [
-      "Detroit Metropolitan Airport",
-      "LaGuardia Airport"
+      "Detroit",
+      "New York–LaGuardia"
     ],
     "Southwest Airlines": [
-      "Baltimore/Washington International Airport",
-      "Denver International Airport",
-      "Nashville International Airport"
+      "Baltimore",
+      "Denver",
+      "Nashville"
     ],
     "United Airlines": [
-      "George Bush Intercontinental Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Houston–Intercontinental"
     ],
     "United Express": [
-      "Denver International Airport",
-      "Dulles International Airport",
-      "George Bush Intercontinental Airport",
-      "Newark Liberty International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental",
+      "Newark",
+      "Washington–Dulles"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:04Z",
+  "outdegree_cargo": 16,
+  "number_airlines_cargo": 8,
+  "airlines_cargo": [
+    "Air Atlanta Icelandic",
+    "Amerijet International",
+    "Atlas Air",
+    "FedEx Express",
+    "FedEx Feeder",
+    "Maersk Air Cargo",
+    "UPS Airlines",
+    "Western Global Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Charleston (SC)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleston_International_Airport",
+      "codes": [
+        "CHS",
+        "KCHS"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Cologne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    },
+    {
+      "city": "Columbia (SC)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Columbia_Metropolitan_Airport",
+      "codes": [
+        "CAE",
+        "KCAE"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Fort Myers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Western Global Airlines"
+      ]
+    },
+    {
+      "city": "Greensboro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piedmont_Triad_International_Airport",
+      "codes": [
+        "GSO",
+        "KGSO"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Hahn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Atlanta Icelandic",
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Hartford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
+      "codes": [
+        "BDL",
+        "KBDL"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Indianapolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
+      "codes": [
+        "IND",
+        "KIND"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "Air Atlanta Icelandic"
+      ]
+    },
+    {
+      "city": "Querétaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "Air Atlanta Icelandic"
+      ]
+    },
+    {
+      "city": "Raleigh/Durham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh–Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    },
+    {
+      "city": "Shenyang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
+      "codes": [
+        "SHE",
+        "ZYTX"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air Atlanta Icelandic": [
+      "Hahn",
+      "Munich",
+      "Querétaro"
+    ],
+    "Amerijet International": [
+      "Miami"
+    ],
+    "Atlas Air": [
+      "Hahn"
+    ],
+    "FedEx Express": [
+      "Indianapolis",
+      "Memphis"
+    ],
+    "FedEx Feeder": [
+      "Greensboro"
+    ],
+    "Maersk Air Cargo": [
+      "Cologne",
+      "Seoul–Incheon",
+      "Shenyang"
+    ],
+    "UPS Airlines": [
+      "Charleston (SC)",
+      "Columbia (SC)",
+      "Hartford",
+      "Louisville",
+      "Miami",
+      "Raleigh/Durham"
+    ],
+    "Western Global Airlines": [
+      "Fort Myers"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:51:20Z",
   "date-time-wikidata": "2026-04-05T21:44:12Z"
 }

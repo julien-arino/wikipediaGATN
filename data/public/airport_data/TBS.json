@@ -13,8 +13,8 @@
   "admin1_code": "",
   "admin1_name": "GE",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Shota_Rustaveli_Tbilisi_International_Airport",
-  "outdegree": 61,
-  "number_airlines": 56,
+  "outdegree": 59,
+  "number_airlines": 51,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -28,7 +28,6 @@
     "Azerbaijan Airlines",
     "Belavia",
     "British Airways",
-    "Cargolux",
     "Centrum Air",
     "China Eastern Airlines",
     "China Southern Airlines",
@@ -52,20 +51,16 @@
     "Kuwait Airways",
     "LOT Polish Airlines",
     "Lufthansa",
-    "My Freighter",
     "Norwegian Air Shuttle",
     "Pegasus Airlines",
     "Qatar Airways",
     "Qeshm Air",
     "Red Wings Airlines",
     "SCAT Airlines",
-    "SF Airlines",
-    "Silk Way West Airlines",
     "Sky Express",
     "SkyUp Airlines",
     "Transavia",
     "Turkish Airlines",
-    "Turkish Cargo",
     "Uzbekistan Airways",
     "Varesh Airlines",
     "airBaltic",
@@ -184,9 +179,7 @@
         "UBBB"
       ],
       "airlines": [
-        "Azerbaijan Airlines",
-        "Cargolux",
-        "Silk Way West Airlines"
+        "Azerbaijan Airlines"
       ]
     },
     {
@@ -425,17 +418,6 @@
       ]
     },
     {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Cargolux"
-      ]
-    },
-    {
       "city": "Milan–Malpensa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
       "codes": [
@@ -636,7 +618,6 @@
         "Air Samarkand",
         "Centrum Air",
         "Fly Khiva",
-        "My Freighter",
         "Uzbekistan Airways"
       ]
     },
@@ -743,19 +724,7 @@
       ],
       "airlines": [
         "Air China",
-        "China Southern Airlines",
-        "SF Airlines"
-      ]
-    },
-    {
-      "city": "İzmir",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
-      "codes": [
-        "ADB",
-        "LTBJ"
-      ],
-      "airlines": [
-        "Turkish Cargo"
+        "China Southern Airlines"
       ]
     },
     {
@@ -947,7 +916,76 @@
     ],
     "Varesh Airlines": [
       "Tehran–Imam Khomeini"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Cargolux",
+    "My Freighter",
+    "SF Airlines",
+    "Silk Way West Airlines",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Cargolux",
+        "Silk Way West Airlines"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "My Freighter"
+      ]
+    },
+    {
+      "city": "Ürümqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Diwopu_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "İzmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargolux": [
       "Baku",
       "Luxembourg"
@@ -965,6 +1003,6 @@
       "İzmir"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:21Z",
+  "date-time-parse": "2026-04-29T05:00:13Z",
   "date-time-wikidata": "2026-04-28T16:46:14Z"
 }

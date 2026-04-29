@@ -17,13 +17,13 @@
   "number_airlines": 4,
   "airlines": [
     "Aeroflot",
-    "Azimuth (airline)",
     "Rossiya Airlines",
-    "S7 Airlines"
+    "S7 Airlines",
+    "azimuth"
   ],
   "destinations": [
     {
-      "city": "Khrabrovo Airport",
+      "city": "Kaliningrad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
       "codes": [
         "KGD",
@@ -34,7 +34,18 @@
       ]
     },
     {
-      "city": "Moscow Domodedovo Airport",
+      "city": "Moscow-Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Moscow–Domodedovo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
       "codes": [
         "DME",
@@ -45,18 +56,7 @@
       ]
     },
     {
-      "city": "Pulkovo Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "codes": [
-        "LED",
-        "ULLI"
-      ],
-      "airlines": [
-        "Rossiya Airlines"
-      ]
-    },
-    {
-      "city": "Sheremetyevo International Airport",
+      "city": "Moscow–Sheremetyevo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
       "codes": [
         "SVO",
@@ -67,32 +67,37 @@
       ]
     },
     {
-      "city": "Vnukovo International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
       "codes": [
-        "VKO",
-        "UUWW"
+        "LED",
+        "ULLI"
       ],
       "airlines": [
-        "Azimuth (airline)"
+        "Rossiya Airlines"
       ]
     }
   ],
   "airlines_destinations": {
     "Aeroflot": [
-      "Sheremetyevo International Airport"
+      "Moscow–Sheremetyevo"
     ],
-    "Azimuth (airline)": [
-      "Vnukovo International Airport"
+    "azimuth": [
+      "Moscow-Vnukovo"
     ],
     "Rossiya Airlines": [
-      "Khrabrovo Airport",
-      "Pulkovo Airport"
+      "Kaliningrad",
+      "Saint Petersburg"
     ],
     "S7 Airlines": [
-      "Moscow Domodedovo Airport"
+      "Moscow–Domodedovo"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:07Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:54:47Z",
   "date-time-wikidata": "2026-02-26T13:29:44Z"
 }

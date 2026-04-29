@@ -20,9 +20,22 @@
     "Alaska Airlines",
     "Aleutian Airways",
     "Grant Aviation",
-    "Katmai Air (page does not exist)"
+    "Katmai Air"
   ],
   "destinations": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Aleutian Airways",
+        "Katmai Air"
+      ]
+    },
     {
       "city": "Brooks Camp",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brooks_Camp",
@@ -31,11 +44,11 @@
         "icao code not found"
       ],
       "airlines": [
-        "Katmai Air (page does not exist)"
+        "Katmai Air"
       ]
     },
     {
-      "city": "Chignik Airport",
+      "city": "Chignik",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chignik_Airport",
       "codes": [
         "KCG",
@@ -46,7 +59,7 @@
       ]
     },
     {
-      "city": "Chignik Lagoon Airport",
+      "city": "Chignik Lagoon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chignik_Lagoon_Airport",
       "codes": [
         "KCL",
@@ -57,7 +70,7 @@
       ]
     },
     {
-      "city": "Chignik Lake Airport",
+      "city": "Chignik Lake",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chignik_Lake_Airport",
       "codes": [
         "KCQ",
@@ -68,7 +81,7 @@
       ]
     },
     {
-      "city": "Clarks Point Airport",
+      "city": "Clarks Point",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Clarks_Point_Airport",
       "codes": [
         "CLP",
@@ -79,7 +92,7 @@
       ]
     },
     {
-      "city": "Dillingham Airport",
+      "city": "Dillingham",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dillingham_Airport",
       "codes": [
         "DLG",
@@ -90,7 +103,7 @@
       ]
     },
     {
-      "city": "Egegik Airport",
+      "city": "Egegik",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Egegik_Airport",
       "codes": [
         "EGX",
@@ -101,7 +114,7 @@
       ]
     },
     {
-      "city": "Igiugig Airport",
+      "city": "Igiugig",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Igiugig_Airport",
       "codes": [
         "IGG",
@@ -112,7 +125,7 @@
       ]
     },
     {
-      "city": "Levelock Airport",
+      "city": "Levelock",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Levelock_Airport",
       "codes": [
         "KLL",
@@ -123,7 +136,7 @@
       ]
     },
     {
-      "city": "Perryville Airport",
+      "city": "Perryville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Perryville_Airport",
       "codes": [
         "KPV",
@@ -134,7 +147,7 @@
       ]
     },
     {
-      "city": "Pilot Point Airport",
+      "city": "Pilot Point",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pilot_Point_Airport",
       "codes": [
         "PIP",
@@ -145,7 +158,7 @@
       ]
     },
     {
-      "city": "Port Heiden Airport",
+      "city": "Port Heiden",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Heiden_Airport",
       "codes": [
         "PTH",
@@ -156,7 +169,7 @@
       ]
     },
     {
-      "city": "South Naknek Airport",
+      "city": "South Naknek",
       "wikipedia_url": "https://en.wikipedia.org/wiki/South_Naknek_Airport",
       "codes": [
         "WSN",
@@ -167,20 +180,7 @@
       ]
     },
     {
-      "city": "Ted Stevens Anchorage International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "codes": [
-        "ANC",
-        "PANC"
-      ],
-      "airlines": [
-        "Alaska Airlines",
-        "Aleutian Airways",
-        "Katmai Air (page does not exist)"
-      ]
-    },
-    {
-      "city": "Ugashik Bay Airport",
+      "city": "Ugashik Bay",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ugashik_Bay_Airport",
       "codes": [
         "UGB",
@@ -193,31 +193,36 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Ted Stevens Anchorage International Airport"
+      "Anchorage"
     ],
     "Aleutian Airways": [
-      "Ted Stevens Anchorage International Airport"
+      "Anchorage"
     ],
     "Grant Aviation": [
-      "Chignik Airport",
-      "Chignik Lagoon Airport",
-      "Chignik Lake Airport",
-      "Clarks Point Airport",
-      "Dillingham Airport",
-      "Egegik Airport",
-      "Igiugig Airport",
-      "Levelock Airport",
-      "Perryville Airport",
-      "Pilot Point Airport",
-      "Port Heiden Airport",
-      "South Naknek Airport",
-      "Ugashik Bay Airport"
+      "Chignik",
+      "Chignik Lagoon",
+      "Chignik Lake",
+      "Clarks Point",
+      "Dillingham",
+      "Egegik",
+      "Igiugig",
+      "Levelock",
+      "Perryville",
+      "Pilot Point",
+      "Port Heiden",
+      "South Naknek",
+      "Ugashik Bay"
     ],
-    "Katmai Air (page does not exist)": [
-      "Brooks Camp",
-      "Ted Stevens Anchorage International Airport"
+    "Katmai Air": [
+      "Anchorage",
+      "Brooks Camp"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:56Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:03Z",
   "date-time-wikidata": "2026-04-24T00:27:04Z"
 }

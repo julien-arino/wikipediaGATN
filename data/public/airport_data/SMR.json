@@ -13,12 +13,119 @@
   "admin1_code": "CO-MAG",
   "admin1_name": "Magdalena",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Colombia)",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 6,
+  "number_airlines": 5,
   "airlines": [
-    "Aerosucre"
+    "Avianca",
+    "Copa Airlines",
+    "JetSmart Colombia",
+    "LATAM Colombia",
+    "Wingo"
   ],
   "destinations": [
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia",
+        "LATAM Colombia",
+        "Wingo"
+      ]
+    },
+    {
+      "city": "Bucaramanga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palonegro_International_Airport",
+      "codes": [
+        "BGA",
+        "SKBG"
+      ],
+      "airlines": [
+        "Wingo"
+      ]
+    },
+    {
+      "city": "Cali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_Bonilla_Aragón_International_Airport",
+      "codes": [
+        "CLO",
+        "SKCL"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca",
+        "JetSmart Colombia",
+        "Wingo"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Pereira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Matecaña_International_Airport",
+      "codes": [
+        "PEI",
+        "SKPE"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Avianca": [
+      "Bogotá",
+      "Cali",
+      "Medellín–JMC",
+      "Pereira"
+    ],
+    "Copa Airlines": [
+      "Panama City–Tocumen"
+    ],
+    "JetSmart Colombia": [
+      "Bogotá",
+      "Cali",
+      "Medellín–JMC"
+    ],
+    "LATAM Colombia": [
+      "Bogotá"
+    ],
+    "Wingo": [
+      "Bogotá",
+      "Bucaramanga",
+      "Medellín–JMC"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Aerosucre"
+  ],
+  "destinations_cargo": [
     {
       "city": "Bogotá",
       "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
@@ -31,11 +138,11 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Aerosucre": [
       "Bogotá"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:48Z",
+  "date-time-parse": "2026-04-29T04:59:37Z",
   "date-time-wikidata": "2026-04-19T17:45:55Z"
 }

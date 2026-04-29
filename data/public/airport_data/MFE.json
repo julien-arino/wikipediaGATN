@@ -17,17 +17,17 @@
   "outdegree": 7,
   "number_airlines": 6,
   "airlines": [
-    "Aerus (airline)",
+    "Aerus",
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Airlines"
   ],
   "destinations": [
     {
-      "city": "Austin–Bergstrom International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
       "codes": [
         "AUS",
         "KAUS"
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston-Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -70,18 +70,18 @@
       ]
     },
     {
-      "city": "Monterrey International Airport",
+      "city": "Monterrey",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
       "codes": [
         "MTY",
         "MMMY"
       ],
       "airlines": [
-        "Aerus (airline)"
+        "Aerus"
       ]
     },
     {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -92,38 +92,73 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "Aerus (airline)": [
-      "Monterrey International Airport"
+    "Aerus": [
+      "Monterrey"
     ],
     "Allegiant Air": [
-      "Harry Reid International Airport",
-      "Orlando International Airport"
+      "Las Vegas",
+      "Orlando"
     ],
     "American Airlines": [
-      "Dallas Fort Worth International Airport"
+      "Dallas/Fort Worth"
     ],
-    "American Eagle (airline brand)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ],
     "Delta Connection": [
-      "Austin–Bergstrom International Airport"
+      "Austin"
     ],
     "United Airlines": [
-      "George Bush Intercontinental Airport"
+      "Houston-Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:38Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Little Rock",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clinton_National_Airport",
+      "codes": [
+        "LIT",
+        "KLIT"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "UPS Airlines": [
+      "Little Rock",
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:02Z",
   "date-time-wikidata": "2026-04-24T05:16:56Z"
 }

@@ -14,14 +14,12 @@
   "admin1_name": "Michigan",
   "admin2_name": "Chippewa County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
-  "outdegree": 7,
-  "number_airlines": 6,
+  "outdegree": 5,
+  "number_airlines": 4,
   "airlines": [
     "Air Canada Express",
     "Bearskin Airlines",
-    "FedEx Express",
     "Porter Airlines",
-    "SkyLink Express",
     "WestJet"
   ],
   "destinations": [
@@ -37,17 +35,6 @@
       ]
     },
     {
-      "city": "Hamilton (ON)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "codes": [
-        "YHM",
-        "CYHM"
-      ],
-      "airlines": [
-        "SkyLink Express"
-      ]
-    },
-    {
       "city": "Sudbury",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Sudbury_Airport",
       "codes": [
@@ -55,22 +42,7 @@
         "CYSB"
       ],
       "airlines": [
-        "Bearskin Airlines",
-        "FedEx Express",
-        "SkyLink Express"
-      ]
-    },
-    {
-      "city": "Sudbury",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
-      "codes": [
-        "YSB",
-        "CYSB"
-      ],
-      "airlines": [
-        "Bearskin Airlines",
-        "FedEx Express",
-        "SkyLink Express"
+        "Bearskin Airlines"
       ]
     },
     {
@@ -103,8 +75,7 @@
         "CYYZ"
       ],
       "airlines": [
-        "Air Canada Express",
-        "FedEx Express"
+        "Air Canada Express"
       ]
     }
   ],
@@ -121,7 +92,51 @@
     ],
     "WestJet": [
       "Calgary"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "FedEx Express",
+    "SkyLink Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Sudbury",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "codes": [
+        "YSB",
+        "CYSB"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "FedEx Express": [
       "Sudbury",
       "Toronto–Pearson"
@@ -131,6 +146,6 @@
       "Sudbury"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:37Z",
+  "date-time-parse": "2026-04-29T05:01:55Z",
   "date-time-wikidata": "2026-02-11T17:24:39Z"
 }

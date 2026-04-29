@@ -13,8 +13,8 @@
   "admin1_code": "CA-NS",
   "admin1_name": "Nova Scotia",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
-  "outdegree": 58,
-  "number_airlines": 23,
+  "outdegree": 52,
+  "number_airlines": 17,
   "airlines": [
     "Air Canada",
     "Air Canada Express",
@@ -24,19 +24,13 @@
     "American Airlines",
     "American Eagle",
     "BermudAir",
-    "Cargojet",
     "Delta Connection",
     "Discover Airlines",
     "Edelweiss Air",
-    "FedEx Express",
     "Flair Airlines",
     "Icelandair",
-    "Korean Air Cargo",
-    "Maersk Air Cargo",
     "Pascan Aviation",
     "Porter Airlines",
-    "SF Airlines",
-    "Sky Lease Cargo",
     "United Express",
     "WestJet"
   ],
@@ -124,17 +118,6 @@
       ]
     },
     {
-      "city": "Changsha",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
-      "codes": [
-        "CSX",
-        "ZGHA"
-      ],
-      "airlines": [
-        "Sky Lease Cargo"
-      ]
-    },
-    {
       "city": "Chicago–O'Hare",
       "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
@@ -202,17 +185,6 @@
       ]
     },
     {
-      "city": "Ezhou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_International_Airport",
-      "codes": [
-        "EHU",
-        "ZHEC"
-      ],
-      "airlines": [
-        "SF Airlines"
-      ]
-    },
-    {
       "city": "Fort Lauderdale",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
       "codes": [
@@ -254,17 +226,6 @@
       ],
       "airlines": [
         "Air Canada Express"
-      ]
-    },
-    {
-      "city": "Hamilton",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "codes": [
-        "YHM",
-        "CYHM"
-      ],
-      "airlines": [
-        "Cargojet"
       ]
     },
     {
@@ -323,17 +284,6 @@
       ]
     },
     {
-      "city": "Liège",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Maersk Air Cargo"
-      ]
-    },
-    {
       "city": "London–Gatwick",
       "wikipedia_url": "https://en.wikipedia.org/wiki/London_Gatwick_Airport",
       "codes": [
@@ -366,17 +316,6 @@
         "Air Canada",
         "Air Transat",
         "WestJet"
-      ]
-    },
-    {
-      "city": "Montréal–Mirabel",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
-      "codes": [
-        "YMX",
-        "CYMX"
-      ],
-      "airlines": [
-        "Cargojet"
       ]
     },
     {
@@ -575,17 +514,6 @@
       ]
     },
     {
-      "city": "Seoul–Incheon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "codes": [
-        "ICN",
-        "RKSI"
-      ],
-      "airlines": [
-        "Korean Air Cargo"
-      ]
-    },
-    {
       "city": "St. John's (NL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/St._John's_International_Airport",
       "codes": [
@@ -615,7 +543,6 @@
         "CYYZ"
       ],
       "airlines": [
-        "FedEx Express",
         "Flair Airlines"
       ]
     },
@@ -805,7 +732,98 @@
       "Vancouver",
       "Varadero",
       "Winnipeg"
-    ],
+    ]
+  },
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 6,
+  "airlines_cargo": [
+    "Cargojet",
+    "FedEx Express",
+    "Korean Air Cargo",
+    "Maersk Air Cargo",
+    "SF Airlines",
+    "Sky Lease Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Changsha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA"
+      ],
+      "airlines": [
+        "Sky Lease Cargo"
+      ]
+    },
+    {
+      "city": "Ezhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_International_Airport",
+      "codes": [
+        "EHU",
+        "ZHEC"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Hamilton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    },
+    {
+      "city": "Montréal–Mirabel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
+      "codes": [
+        "YMX",
+        "CYMX"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargojet": [
       "Hamilton",
       "Montréal–Mirabel"
@@ -826,6 +844,6 @@
       "Changsha"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:31Z",
+  "date-time-parse": "2026-04-29T05:02:07Z",
   "date-time-wikidata": "2026-04-20T17:31:19Z"
 }

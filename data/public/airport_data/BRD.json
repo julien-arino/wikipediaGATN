@@ -21,7 +21,7 @@
   ],
   "destinations": [
     {
-      "city": "Minneapolis-Saint Paul International Airport",
+      "city": "Minneapolis/St. Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
       "codes": [
         "MSP",
@@ -34,9 +34,76 @@
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Minneapolis-Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:21Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Bemidji Airlines",
+    "FedEx Feeder",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "Bemidji Airlines"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Bemidji Airlines",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis−Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Bemidji Airlines",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Rochester (MN)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rochester_International_Airport",
+      "codes": [
+        "RST",
+        "KRST"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Bemidji Airlines": [
+      "Fargo",
+      "Minneapolis/St. Paul"
+    ],
+    "FedEx Feeder": [
+      "Rochester (MN)"
+    ],
+    "UPS Airlines": [
+      "Minneapolis/St. Paul"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:27Z",
   "date-time-wikidata": "2026-02-13T03:44:02Z"
 }

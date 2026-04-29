@@ -14,16 +14,13 @@
   "admin1_name": "Upper Austria",
   "admin2_name": "Politischer Bezirk Linz-Land",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Linz_Airport",
-  "outdegree": 12,
-  "number_airlines": 7,
+  "outdegree": 8,
+  "number_airlines": 4,
   "airlines": [
-    "Amazon Air",
     "Corendon Airlines",
     "DAT",
-    "DHL Aviation",
     "Eurowings",
-    "Ryanair",
-    "Turkish Cargo"
+    "Ryanair"
   ],
   "destinations": [
     {
@@ -82,17 +79,6 @@
       ]
     },
     {
-      "city": "Istanbul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "codes": [
-        "IST",
-        "LTFM"
-      ],
-      "airlines": [
-        "Turkish Cargo"
-      ]
-    },
-    {
       "city": "Kos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kos_International_Airport",
       "codes": [
@@ -104,28 +90,6 @@
       ]
     },
     {
-      "city": "Leipzig/Halle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "codes": [
-        "LEJ",
-        "EDDP"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Ljubljana",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ljubljana_Jože_Pučnik_Airport",
-      "codes": [
-        "LJU",
-        "LJLJ"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
       "city": "London–Stansted",
       "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
       "codes": [
@@ -134,17 +98,6 @@
       ],
       "airlines": [
         "Ryanair"
-      ]
-    },
-    {
-      "city": "Madrid",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
-      "codes": [
-        "MAD",
-        "LEMD"
-      ],
-      "airlines": [
-        "Amazon Air"
       ]
     },
     {
@@ -175,7 +128,62 @@
       "Alicante",
       "Bari",
       "London–Stansted"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Amazon Air",
+    "DHL Aviation",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ljubljana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ljubljana_Jože_Pučnik_Airport",
+      "codes": [
+        "LJU",
+        "LJLJ"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Amazon Air": [
       "Madrid"
     ],
@@ -187,6 +195,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:09Z",
+  "date-time-parse": "2026-04-29T04:55:26Z",
   "date-time-wikidata": "2026-03-31T08:36:55Z"
 }

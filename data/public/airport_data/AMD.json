@@ -14,8 +14,8 @@
   "admin1_name": "Gujarat",
   "admin2_name": "Ahmadabad",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
-  "outdegree": 68,
-  "number_airlines": 28,
+  "outdegree": 66,
+  "number_airlines": 25,
   "airlines": [
     "Air Arabia",
     "Air India",
@@ -23,9 +23,7 @@
     "AirAsia",
     "Akasa Air",
     "Alliance Air",
-    "Blue Dart Aviation",
     "Emirates",
-    "Ethiopian Airlines Cargo",
     "Etihad Airways",
     "FitsAir",
     "Flydubai",
@@ -43,7 +41,6 @@
     "Thai Airways International",
     "Thai Lion Air",
     "Thai VietJet Air",
-    "Turkish Cargo",
     "VietJet Air"
   ],
   "destinations": [
@@ -59,17 +56,6 @@
         "Akasa Air",
         "Etihad Airways",
         "IndiGo"
-      ]
-    },
-    {
-      "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "codes": [
-        "ADD",
-        "HAAB"
-      ],
-      "airlines": [
-        "Ethiopian Airlines Cargo"
       ]
     },
     {
@@ -264,7 +250,6 @@
         "Air India",
         "Akasa Air",
         "Alliance Air",
-        "Blue Dart Aviation",
         "IndiGo",
         "SpiceJet"
       ]
@@ -407,17 +392,6 @@
         "Alliance Air",
         "IndiGo",
         "Star Air"
-      ]
-    },
-    {
-      "city": "Istanbul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "codes": [
-        "IST",
-        "LTFM"
-      ],
-      "airlines": [
-        "Turkish Cargo"
       ]
     },
     {
@@ -624,7 +598,6 @@
       "airlines": [
         "Air India",
         "Akasa Air",
-        "Blue Dart Aviation",
         "IndiGo",
         "SpiceJet"
       ]
@@ -986,18 +959,103 @@
     "VietJet Air": [
       "Hanoi",
       "Ho Chi Minh City"
-    ],
+    ]
+  },
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Blue Dart Aviation",
+    "Emirates SkyCargo",
+    "Ethiopian Airlines Cargo",
+    "Qatar Airways Cargo",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Blue Dart Aviation"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Blue Dart Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Blue Dart Aviation": [
       "Delhi",
       "Mumbai"
     ],
+    "Emirates SkyCargo": [
+      "Dubai–Al Maktoum"
+    ],
     "Ethiopian Airlines Cargo": [
       "Addis Ababa"
+    ],
+    "Qatar Airways Cargo": [
+      "Doha"
     ],
     "Turkish Cargo": [
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:25Z",
+  "date-time-parse": "2026-04-29T04:47:08Z",
   "date-time-wikidata": "2026-04-28T16:34:44Z"
 }

@@ -26,7 +26,7 @@
   ],
   "destinations": [
     {
-      "city": "Ajaccio Napoleon Bonaparte Airport",
+      "city": "Ajaccio",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ajaccio_Napoleon_Bonaparte_Airport",
       "codes": [
         "AJA",
@@ -37,7 +37,31 @@
       ]
     },
     {
-      "city": "Bastia-Poretta Airport",
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumedienne_Airport",
+      "codes": [
+        "ALG",
+        "DAAG"
+      ],
+      "airlines": [
+        "ASL Airlines France",
+        "Transavia"
+      ]
+    },
+    {
+      "city": "Bastia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia-Poretta_Airport",
       "codes": [
         "BIA",
@@ -48,8 +72,8 @@
       ]
     },
     {
-      "city": "Bordeaux–Mérignac Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux%E2%80%93M%C3%A9rignac_Airport",
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
       "codes": [
         "BOD",
         "LFBD"
@@ -59,7 +83,7 @@
       ]
     },
     {
-      "city": "Brest Bretagne Airport",
+      "city": "Brest",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brest_Bretagne_Airport",
       "codes": [
         "BES",
@@ -70,8 +94,8 @@
       ]
     },
     {
-      "city": "Figari–Sud Corse Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Figari%E2%80%93Sud_Corse_Airport",
+      "city": "Figari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Figari–Sud_Corse_Airport",
       "codes": [
         "FSC",
         "LFKF"
@@ -81,51 +105,31 @@
       ]
     },
     {
-      "city": "Houari Boumediene Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "codes": [
-        "ALG",
-        "DAAG"
-      ],
-      "airlines": [
-        "ASL Airlines France"
-      ]
-    },
-    {
-      "city": "Houari Boumedienne Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumedienne_Airport",
-      "codes": [
-        "ALG",
-        "DAAG"
-      ],
-      "airlines": [
-        "Transavia"
-      ]
-    },
-    {
-      "city": "Lille Airport",
+      "city": "Lille",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
       "codes": [
         "LIL",
         "LFQQ"
       ],
       "airlines": [
-        "ASL Airlines France"
+        "ASL Airlines France",
+        "Volotea"
       ]
     },
     {
-      "city": "Lille Lesquin Airport",
+      "city": "Lille",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Lesquin_Airport",
       "codes": [
         "LIL",
         "LFQQ"
       ],
       "airlines": [
+        "ASL Airlines France",
         "Volotea"
       ]
     },
     {
-      "city": "London City Airport",
+      "city": "London–City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/London_City_Airport",
       "codes": [
         "LCY",
@@ -136,7 +140,7 @@
       ]
     },
     {
-      "city": "Luxembourg Airport",
+      "city": "Luxembourg",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
       "codes": [
         "LUX",
@@ -147,7 +151,7 @@
       ]
     },
     {
-      "city": "Nantes Airport",
+      "city": "Nantes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Airport",
       "codes": [
         "NTE",
@@ -158,7 +162,7 @@
       ]
     },
     {
-      "city": "Paris Orly Airport",
+      "city": "Paris–Orly",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Orly_Airport",
       "codes": [
         "ORY",
@@ -169,7 +173,7 @@
       ]
     },
     {
-      "city": "Rotterdam The Hague Airport",
+      "city": "Rotterdam/The Hague",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
       "codes": [
         "RTM",
@@ -182,32 +186,37 @@
   ],
   "airlines_destinations": {
     "Air Corsica": [
-      "Ajaccio Napoleon Bonaparte Airport",
-      "Bastia-Poretta Airport",
-      "Figari–Sud Corse Airport"
+      "Ajaccio",
+      "Bastia",
+      "Figari"
     ],
     "British Airways": [
-      "London City Airport"
+      "London–City"
     ],
     "ASL Airlines France": [
-      "Houari Boumediene Airport",
-      "Lille Airport"
+      "Algiers",
+      "Lille"
     ],
     "Luxair": [
-      "Luxembourg Airport"
+      "Luxembourg"
     ],
     "Volotea": [
-      "Lille Lesquin Airport"
+      "Lille"
     ],
     "Transavia": [
-      "Bordeaux–Mérignac Airport",
-      "Brest Bretagne Airport",
-      "Houari Boumedienne Airport",
-      "Nantes Airport",
-      "Paris Orly Airport",
-      "Rotterdam The Hague Airport"
+      "Algiers",
+      "Bordeaux",
+      "Brest",
+      "Nantes",
+      "Paris–Orly",
+      "Rotterdam/The Hague"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:07Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:00:30Z",
   "date-time-wikidata": "2026-01-23T21:11:46Z"
 }

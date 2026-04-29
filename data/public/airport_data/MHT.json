@@ -14,10 +14,10 @@
   "admin1_name": "New Hampshire",
   "admin2_name": "Hillsborough County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester–Boston_Regional_Airport",
-  "outdegree": 15,
+  "outdegree": 11,
   "number_airlines": 5,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "JetBlue",
     "Southwest Airlines",
@@ -25,7 +25,7 @@
   ],
   "destinations": [
     {
-      "city": "Baltimore/Washington International Airport",
+      "city": "Baltimore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
       "codes": [
         "BWI",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "city": "Charleston International Airport",
+      "city": "Charleston (SC)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charleston_International_Airport",
       "codes": [
         "CHS",
@@ -47,40 +47,18 @@
       ]
     },
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dulles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "codes": [
-        "IAD",
-        "KIAD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
-      "codes": [
-        "FLL",
-        "KFLL"
-      ],
-      "airlines": [
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Midway International Airport",
+      "city": "Chicago–Midway",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
       "codes": [
         "MDW",
@@ -91,40 +69,40 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
-      "codes": [
-        "MYR",
-        "KMYR"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Nashville International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "codes": [
-        "BNA",
-        "KBNA"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
         "ORD",
         "KORD"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Orlando International Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Fort Myers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -137,92 +115,276 @@
       ]
     },
     {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Raleigh-Durham International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh-Durham_International_Airport",
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
       "codes": [
-        "RDU",
-        "KRDU"
+        "IAD",
+        "KIAD"
       ],
       "airlines": [
-        "Breeze Airways"
+        "United Express"
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
+      "city": "Washington–National",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
       "codes": [
         "DCA",
         "KDCA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Southwest Florida International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "codes": [
-        "RSW",
-        "KRSW"
-      ],
-      "airlines": [
-        "Breeze Airways",
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Tampa International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
-      "codes": [
-        "TPA",
-        "KTPA"
-      ],
-      "airlines": [
-        "Southwest Airlines"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Philadelphia",
+      "Washington–National"
     ],
     "Breeze Airways": [
-      "Charleston International Airport",
-      "Myrtle Beach International Airport",
-      "Orlando International Airport",
-      "Raleigh-Durham International Airport",
-      "Southwest Florida International Airport"
+      "Charleston (SC)",
+      "Orlando"
     ],
     "JetBlue": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Orlando International Airport",
-      "Southwest Florida International Airport"
+      "Fort Lauderdale",
+      "Fort Myers",
+      "Orlando"
     ],
     "Southwest Airlines": [
-      "Baltimore/Washington International Airport",
-      "Midway International Airport",
-      "Nashville International Airport",
-      "Orlando International Airport",
-      "Tampa International Airport"
+      "Baltimore",
+      "Chicago–Midway",
+      "Orlando"
     ],
     "United Express": [
-      "Dulles International Airport"
+      "Washington–Dulles"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:41Z",
+  "outdegree_cargo": 16,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Amazon Air",
+    "Ameriflight",
+    "FedEx Express",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Auburn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auburn/Lewiston_Municipal_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Bangor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangor_International_Airport",
+      "codes": [
+        "BGR",
+        "KBGR"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Barre/Montpelier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_F._Knapp_State_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Burlington (VT)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burlington_International_Airport",
+      "codes": [
+        "BTV",
+        "KBTV"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Chicago/Rockford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Rockford_International_Airport",
+      "codes": [
+        "RFD",
+        "KRFD"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    },
+    {
+      "city": "Fort Worth/Alliance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perot_Field_Fort_Worth_Alliance_Airport",
+      "codes": [
+        "AFW",
+        "KAFW"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Portland (ME)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Jetport",
+      "codes": [
+        "PWM",
+        "KPWM"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Presque Isle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presque_Isle_International_Airport",
+      "codes": [
+        "PQI",
+        "KPQI"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Rockland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Knox_County_Regional_Airport",
+      "codes": [
+        "RKD",
+        "KRKD"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Rutland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rutland–Southern_Vermont_Regional_Airport",
+      "codes": [
+        "RUT",
+        "KRUT"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Waterville (ME)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waterville_Robert_LaFleur_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Amazon Air": [
+      "Chicago/Rockford",
+      "Cincinnati",
+      "Fort Worth/Alliance"
+    ],
+    "Ameriflight": [
+      "Auburn",
+      "Bangor",
+      "Barre/Montpelier",
+      "Burlington (VT)",
+      "Portland (ME)",
+      "Presque Isle",
+      "Rockland",
+      "Rutland",
+      "Waterville (ME)"
+    ],
+    "FedEx Express": [
+      "Memphis"
+    ],
+    "UPS Airlines": [
+      "Louisville",
+      "Ontario",
+      "Philadelphia"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:06Z",
   "date-time-wikidata": "2026-04-14T17:03:45Z"
 }

@@ -25,40 +25,7 @@
   ],
   "destinations": [
     {
-      "city": "Adler-Sochi International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
-      "codes": [
-        "AER",
-        "URSS"
-      ],
-      "airlines": [
-        "NordStar"
-      ]
-    },
-    {
-      "city": "Alykel Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Alykel_Airport",
-      "codes": [
-        "NSK",
-        "UOOO"
-      ],
-      "airlines": [
-        "NordStar"
-      ]
-    },
-    {
-      "city": "International Airport Irkutsk",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
-      "codes": [
-        "IKT",
-        "UIII"
-      ],
-      "airlines": [
-        "IrAero"
-      ]
-    },
-    {
-      "city": "Kadala Airport",
+      "city": "Chita",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kadala_Airport",
       "codes": [
         "HTA",
@@ -69,18 +36,18 @@
       ]
     },
     {
-      "city": "Koltsovo Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "city": "Irkutsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
       "codes": [
-        "SVX",
-        "USSS"
+        "IKT",
+        "UIII"
       ],
       "airlines": [
-        "Red Wings Airlines"
+        "IrAero"
       ]
     },
     {
-      "city": "Krasnoyarsk Cheremshanka Airport",
+      "city": "Krasnoyarsk–Cheremshanka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Cheremshanka_Airport",
       "codes": [
         "KCY",
@@ -91,7 +58,7 @@
       ]
     },
     {
-      "city": "Krasnoyarsk International Airport",
+      "city": "Krasnoyarsk–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
       "codes": [
         "KJA",
@@ -102,7 +69,7 @@
       ]
     },
     {
-      "city": "Moscow Domodedovo Airport",
+      "city": "Moscow–Domodedovo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
       "codes": [
         "DME",
@@ -113,18 +80,7 @@
       ]
     },
     {
-      "city": "Pulkovo Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
-      "codes": [
-        "LED",
-        "ULLI"
-      ],
-      "airlines": [
-        "NordStar"
-      ]
-    },
-    {
-      "city": "Sheremetyevo International Airport",
+      "city": "Moscow–Sheremetyevo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
       "codes": [
         "SVO",
@@ -135,7 +91,18 @@
       ]
     },
     {
-      "city": "Tolmachevo Airport",
+      "city": "Norilsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alykel_Airport",
+      "codes": [
+        "NSK",
+        "UOOO"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Novosibirsk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
       "codes": [
         "OVB",
@@ -144,33 +111,142 @@
       "airlines": [
         "S7 Airlines"
       ]
+    },
+    {
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
+      "codes": [
+        "LED",
+        "ULLI"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Sochi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "codes": [
+        "AER",
+        "URSS"
+      ],
+      "airlines": [
+        "NordStar"
+      ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
+      "codes": [
+        "SVX",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
     "Aeroflot": [
-      "Sheremetyevo International Airport"
+      "Moscow–Sheremetyevo"
     ],
     "IrAero": [
-      "International Airport Irkutsk",
-      "Kadala Airport"
+      "Chita",
+      "Irkutsk"
     ],
     "KrasAvia": [
-      "Krasnoyarsk Cheremshanka Airport",
-      "Krasnoyarsk International Airport"
+      "Krasnoyarsk–Cheremshanka",
+      "Krasnoyarsk–International"
     ],
     "NordStar": [
-      "Adler-Sochi International Airport",
-      "Alykel Airport",
-      "Pulkovo Airport"
+      "Norilsk",
+      "Saint Petersburg",
+      "Sochi"
     ],
     "Red Wings Airlines": [
-      "Koltsovo Airport"
+      "Yekaterinburg"
     ],
     "S7 Airlines": [
-      "Moscow Domodedovo Airport",
-      "Tolmachevo Airport"
+      "Moscow–Domodedovo",
+      "Novosibirsk"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:15Z",
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Grizodubova Air Company",
+    "Volga-Dnepr"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Chelyabinsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chelyabinsk_Airport",
+      "codes": [
+        "CEK",
+        "USCC"
+      ],
+      "airlines": [
+        "Grizodubova Air Company"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "Volga-Dnepr"
+      ]
+    },
+    {
+      "city": "Moscow-Domodedovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow-Domodedovo",
+      "codes": [
+        "DME",
+        "UUDD"
+      ],
+      "airlines": [
+        "Volga-Dnepr"
+      ]
+    },
+    {
+      "city": "Shanghai-Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Volga-Dnepr"
+      ]
+    },
+    {
+      "city": "Tianjin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport",
+      "codes": [
+        "TSN",
+        "ZBTJ"
+      ],
+      "airlines": [
+        "Grizodubova Air Company",
+        "Volga-Dnepr"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Grizodubova Air Company": [
+      "Chelyabinsk",
+      "Tianjin"
+    ],
+    "Volga-Dnepr": [
+      "Guangzhou",
+      "Moscow-Domodedovo",
+      "Shanghai-Pudong",
+      "Tianjin"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:46:41Z",
   "date-time-wikidata": "2026-04-11T19:06:36Z"
 }

@@ -14,52 +14,19 @@
   "admin1_name": "Virginia",
   "admin2_name": "Roanoke County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Roanoke–Blacksburg_Regional_Airport",
-  "outdegree": 10,
+  "outdegree": 9,
   "number_airlines": 5,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Dallas Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Dulles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "codes": [
-        "IAD",
-        "KIAD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -70,31 +37,51 @@
       ]
     },
     {
-      "city": "LaGuardia Airport",
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "New York–LaGuardia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
       "codes": [
         "LGA",
         "KLGA"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
-        "Delta Connection"
+        "American Eagle"
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -105,19 +92,19 @@
       ]
     },
     {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
       "codes": [
         "SRQ",
         "KSRQ"
@@ -127,8 +114,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -140,29 +127,31 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Orlando Sanford International Airport",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Orlando/Sanford",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "LaGuardia Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Dallas/Fort Worth",
+      "New York–LaGuardia",
+      "Philadelphia"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "LaGuardia Airport"
+      "Atlanta"
     ],
     "United Express": [
-      "Dulles International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:48Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:58:49Z",
   "date-time-wikidata": "2026-01-28T01:11:09Z"
 }

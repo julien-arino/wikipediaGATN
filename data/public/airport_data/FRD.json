@@ -22,7 +22,7 @@
   ],
   "destinations": [
     {
-      "city": "Anacortes Airport",
+      "city": "Anacortes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Anacortes_Airport",
       "codes": [
         "OTS",
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "city": "Bellingham International Airport",
+      "city": "Bellingham",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bellingham_International_Airport",
       "codes": [
         "BLI",
@@ -44,29 +44,7 @@
       ]
     },
     {
-      "city": "Boeing Field",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
-      "codes": [
-        "BFI",
-        "KBFI"
-      ],
-      "airlines": [
-        "Kenmore Air"
-      ]
-    },
-    {
-      "city": "Lopez Island Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lopez_Island_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "San Juan Airlines"
-      ]
-    },
-    {
-      "city": "Orcas Island Airport",
+      "city": "Eastsound",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orcas_Island_Airport",
       "codes": [
         "ESD",
@@ -77,7 +55,18 @@
       ]
     },
     {
-      "city": "Roche Harbor Airport",
+      "city": "Lopez Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lopez_Island_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Roche Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Roche_Harbor_Airport",
       "codes": [
         "iata code not found",
@@ -88,7 +77,18 @@
       ]
     },
     {
-      "city": "Victoria International Airport",
+      "city": "Seattle–Boeing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "Kenmore Air"
+      ]
+    },
+    {
+      "city": "Victoria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
       "codes": [
         "YYJ",
@@ -101,17 +101,40 @@
   ],
   "airlines_destinations": {
     "Kenmore Air": [
-      "Boeing Field",
-      "Orcas Island Airport",
-      "Victoria International Airport"
+      "Eastsound",
+      "Seattle–Boeing",
+      "Victoria"
     ],
     "San Juan Airlines": [
-      "Anacortes Airport",
-      "Bellingham International Airport",
-      "Lopez Island Airport",
-      "Roche Harbor Airport"
+      "Anacortes",
+      "Bellingham",
+      "Lopez Island",
+      "Roche Harbor"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:30Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Seattle/Tacoma"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:50:53Z",
   "date-time-wikidata": "2025-03-23T21:18:00Z"
 }

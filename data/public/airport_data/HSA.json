@@ -13,12 +13,152 @@
   "admin1_code": "",
   "admin1_name": "KZ",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Turkistan_Airport",
-  "outdegree": 2,
-  "number_airlines": 1,
+  "outdegree": 9,
+  "number_airlines": 6,
   "airlines": [
+    "FlyArystan",
+    "Jazeera Airways",
+    "Qazaq Air",
+    "SCAT Airlines",
+    "Silk Avia",
     "Turkish Airlines"
   ],
   "destinations": [
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Aqtau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aqtau_Airport",
+      "codes": [
+        "SCO",
+        "UATE"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Aqtöbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aliya_Moldagulova_International_Airport",
+      "codes": [
+        "AKX",
+        "UATT"
+      ],
+      "airlines": [
+        "Qazaq Air",
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC"
+      ],
+      "airlines": [
+        "FlyArystan",
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Bukhara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bukhara_International_Airport",
+      "codes": [
+        "BHK",
+        "UZSB"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Kuwait City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
+      "codes": [
+        "KWI",
+        "OKKK"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    },
+    {
+      "city": "Qostanai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qostanai_Airport",
+      "codes": [
+        "KSN",
+        "UAUU"
+      ],
+      "airlines": [
+        "Qazaq Air"
+      ]
+    },
+    {
+      "city": "Samarqand",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samarqand_International_Airport",
+      "codes": [
+        "SKD",
+        "UZSS"
+      ],
+      "airlines": [
+        "Qazaq Air",
+        "Silk Avia"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "FlyArystan": [
+      "Almaty",
+      "Astana"
+    ],
+    "Jazeera Airways": [
+      "Kuwait City"
+    ],
+    "Qazaq Air": [
+      "Aqtöbe",
+      "Astana",
+      "Qostanai",
+      "Samarqand"
+    ],
+    "SCAT Airlines": [
+      "Aqtau",
+      "Aqtöbe",
+      "Bukhara"
+    ],
+    "Silk Avia": [
+      "Samarqand"
+    ],
+    "Turkish Airlines": [
+      "Istanbul"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Turkish Airlines"
+  ],
+  "destinations_cargo": [
     {
       "city": "Istanbul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
@@ -42,12 +182,12 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Turkish Airlines": [
       "Istanbul",
       "Macau"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:29Z",
+  "date-time-parse": "2026-04-29T04:51:53Z",
   "date-time-wikidata": "2026-02-13T07:53:16Z"
 }

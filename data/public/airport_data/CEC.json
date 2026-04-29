@@ -21,7 +21,7 @@
   ],
   "destinations": [
     {
-      "city": "Hawthorne Municipal Airport (California)",
+      "city": "Los Angeles/Hawthorne",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
       "codes": [
         "HHR",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "city": "Oakland San Francisco Bay Airport",
+      "city": "Oakland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
       "codes": [
         "OAK",
@@ -45,10 +45,72 @@
   ],
   "airlines_destinations": {
     "Advanced Air": [
-      "Hawthorne Municipal Airport (California)",
-      "Oakland San Francisco Bay Airport"
+      "Los Angeles/Hawthorne",
+      "Oakland"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:32Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Arcata/Eureka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arcata–Eureka_Airport",
+      "codes": [
+        "ACV",
+        "KACV"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "North Bend/Coos Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Oregon_Regional_Airport",
+      "codes": [
+        "OTH",
+        "KOTH"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Sacramento",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "North Bend/Coos Bay",
+      "Portland (OR)"
+    ],
+    "FedEx Feeder": [
+      "Arcata/Eureka",
+      "Sacramento"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:58Z",
   "date-time-wikidata": "2025-09-15T06:09:34Z"
 }

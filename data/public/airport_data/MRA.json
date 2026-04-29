@@ -13,17 +13,15 @@
   "admin1_code": "LY-MRA",
   "admin1_name": "LY-MRA",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Misrata_Airport",
-  "outdegree": 11,
-  "number_airlines": 12,
+  "outdegree": 10,
+  "number_airlines": 10,
   "airlines": [
     "Afriqiyah Airways",
     "Berniq Airways",
     "Egyptair",
-    "Egyptair Cargo",
     "Fly Oya",
     "Global Air",
     "Libyan Airlines",
-    "MNG Airlines",
     "MedSky Airways",
     "Medavia",
     "Royal Jordanian",
@@ -75,19 +73,7 @@
       "airlines": [
         "Afriqiyah Airways",
         "Berniq Airways",
-        "Egyptair",
-        "Egyptair Cargo"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Egyptair Cargo"
+        "Egyptair"
       ]
     },
     {
@@ -100,7 +86,6 @@
       "airlines": [
         "Afriqiyah Airways",
         "Berniq Airways",
-        "MNG Airlines",
         "MedSky Airways",
         "Turkish Airlines"
       ]
@@ -210,7 +195,50 @@
     ],
     "Turkish Airlines": [
       "Istanbul"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Egyptair Cargo",
+    "MNG Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "MNG Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Egyptair Cargo": [
       "Cairo",
       "Frankfurt"
@@ -219,6 +247,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:30Z",
+  "date-time-parse": "2026-04-29T04:56:27Z",
   "date-time-wikidata": "2026-04-02T00:21:52Z"
 }

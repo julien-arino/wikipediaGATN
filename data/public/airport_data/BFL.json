@@ -18,13 +18,13 @@
   "number_airlines": 4,
   "airlines": [
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "United Airlines",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
@@ -55,11 +55,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -72,20 +72,72 @@
   ],
   "airlines_destinations": {
     "American Airlines": [
-      "Dallas/Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
-    "American Eagle (airline brand)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ],
     "United Airlines": [
-      "Denver International Airport"
+      "Denver"
     ],
     "United Express": [
-      "Denver International Airport",
-      "San Francisco International Airport"
+      "Denver",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:22Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "San Luis Obispo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Luis_Obispo_County_Regional_Airport",
+      "codes": [
+        "SBP",
+        "KSBP"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Burbank",
+      "Ontario",
+      "San Luis Obispo"
+    ],
+    "FedEx Feeder": [
+      "Ontario"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:47:48Z",
   "date-time-wikidata": "2026-04-21T05:21:21Z"
 }

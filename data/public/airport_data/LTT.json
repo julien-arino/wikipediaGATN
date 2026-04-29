@@ -15,69 +15,99 @@
   "admin2_name": "Departement du Var",
   "wikipedia_url": "https://en.wikipedia.org/wiki/La_Môle_–_Saint-Tropez_Airport",
   "outdegree": 6,
-  "number_airlines": 0,
-  "airlines": [],
+  "number_airlines": 3,
+  "airlines": [
+    "Air Mountain",
+    "Alpes Hélicoptères",
+    "Luxwing"
+  ],
   "destinations": [
     {
-      "city": "Cuneo International Airport",
+      "city": "Cuneo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cuneo_International_Airport",
       "codes": [
         "CUF",
         "LIMZ"
       ],
-      "airlines": []
+      "airlines": [
+        "Luxwing"
+      ]
     },
     {
-      "city": "Geneva Airport",
+      "city": "Geneva",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
       "codes": [
         "GVA",
         "LSGG"
       ],
-      "airlines": []
+      "airlines": [
+        "Air Mountain"
+      ]
     },
     {
-      "city": "Monaco Heliport",
+      "city": "Monaco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Monaco_Heliport",
       "codes": [
         "MCM",
         "LNMC"
       ],
-      "airlines": []
+      "airlines": [
+        "Alpes Hélicoptères"
+      ]
     },
     {
-      "city": "Nice Côte d'Azur Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport",
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
       "codes": [
         "NCE",
         "LFMN"
       ],
-      "airlines": []
+      "airlines": [
+        "Alpes Hélicoptères"
+      ]
     },
     {
-      "city": "Parma Airport",
+      "city": "Parma",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Parma_Airport",
       "codes": [
         "PMF",
         "LIMP"
       ],
-      "airlines": []
+      "airlines": [
+        "Luxwing"
+      ]
     },
     {
-      "city": "Sion Airport",
+      "city": "Sion",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sion_Airport",
       "codes": [
         "SIR",
         "LSGS"
       ],
-      "airlines": []
+      "airlines": [
+        "Air Mountain"
+      ]
     }
   ],
   "airlines_destinations": {
-    "Airlines Destinations Air Mountain": [
-      "Geneva"
+    "Air Mountain": [
+      "Geneva",
+      "Sion"
+    ],
+    "Luxwing": [
+      "Cuneo",
+      "Parma"
+    ],
+    "Alpes Hélicoptères": [
+      "Monaco",
+      "Nice"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:06Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:34Z",
   "date-time-wikidata": "2025-06-25T14:57:42Z"
 }

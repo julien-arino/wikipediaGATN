@@ -14,9 +14,8 @@
   "admin1_name": "Hokkaido",
   "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
   "outdegree": 49,
-  "number_airlines": 50,
+  "number_airlines": 48,
   "airlines": [
-    "ANA Cargo",
     "ANA Wings",
     "Aero K",
     "Air Busan",
@@ -25,7 +24,6 @@
     "Air Do",
     "Air Seoul",
     "AirAsia X",
-    "AirZeta",
     "All Nippon Airways",
     "Asiana Airlines",
     "Beijing Capital Airlines",
@@ -501,7 +499,6 @@
       "airlines": [
         "Air Busan",
         "Air Seoul",
-        "AirZeta",
         "Asiana Airlines",
         "Eastar Jet",
         "Jeju Air",
@@ -609,7 +606,6 @@
         "RJAA"
       ],
       "airlines": [
-        "ANA Cargo",
         "All Nippon Airways",
         "Jetstar Japan",
         "Peach Aviation",
@@ -879,7 +875,39 @@
     "Tigerair Taiwan": [
       "Kaohsiung",
       "Taipei–Taoyuan"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "ANA Cargo",
+    "AirZeta"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "AirZeta"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "ANA Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "AirZeta": [
       "Seoul–Incheon"
     ],
@@ -887,6 +915,6 @@
       "Tokyo–Narita"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:07Z",
+  "date-time-parse": "2026-04-29T04:49:30Z",
   "date-time-wikidata": "2026-04-14T09:53:15Z"
 }

@@ -14,14 +14,14 @@
   "admin1_name": "Ohio",
   "admin2_name": "Lucas County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Toledo_Express_Airport",
-  "outdegree": 4,
+  "outdegree": 2,
   "number_airlines": 1,
   "airlines": [
     "Allegiant Air"
   ],
   "destinations": [
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -41,38 +41,37 @@
       "airlines": [
         "Allegiant Air"
       ]
-    },
-    {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
-      "codes": [
-        "SRQ",
-        "KSRQ"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
-      "codes": [
-        "PIE",
-        "KPIE"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Orlando/Sanford",
+      "Punta Gorda (FL)"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:33Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Amazon Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Lakeland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
+      "codes": [
+        "LAL",
+        "KLAL"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Amazon Air": [
+      "Lakeland"
+    ]
+  },
+  "date-time-parse": "2026-04-29T05:00:37Z",
   "date-time-wikidata": "2026-02-15T14:22:58Z"
 }

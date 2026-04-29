@@ -13,16 +13,21 @@
   "admin1_code": "AG-06",
   "admin1_name": "Saint Paul",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Canefield_Airport",
-  "outdegree": 15,
-  "number_airlines": 8,
+  "outdegree": 18,
+  "number_airlines": 13,
   "airlines": [
     "Airawak",
+    "Anguilla Air Services",
     "CalvinAir Helicopters",
     "Executive Air",
     "Express Air Transport",
+    "Fly BVI Ltd",
     "Fly Montserrat",
+    "Island Birds",
     "SVG Air",
+    "SXM Airways",
     "St Barth Commuter",
+    "St Barth Executive",
     "Trans Anguilla Airways"
   ],
   "destinations": [
@@ -34,6 +39,7 @@
         "TQPF"
       ],
       "airlines": [
+        "Anguilla Air Services",
         "Trans Anguilla Airways"
       ]
     },
@@ -45,9 +51,11 @@
         "TAPA"
       ],
       "airlines": [
+        "Anguilla Air Services",
         "CalvinAir Helicopters",
         "Executive Air",
         "Fly Montserrat",
+        "Island Birds",
         "SVG Air"
       ]
     },
@@ -61,6 +69,17 @@
       "airlines": [
         "Executive Air",
         "Express Air Transport"
+      ]
+    },
+    {
+      "city": "Beef Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terrance_B._Lettsome_International_Airport",
+      "codes": [
+        "EIS",
+        "TUPJ"
+      ],
+      "airlines": [
+        "Fly BVI Ltd"
       ]
     },
     {
@@ -130,7 +149,19 @@
       ],
       "airlines": [
         "Airawak",
-        "St Barth Commuter"
+        "St Barth Commuter",
+        "St Barth Executive"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "St Barth Executive"
       ]
     },
     {
@@ -141,7 +172,9 @@
         "TFFJ"
       ],
       "airlines": [
-        "St Barth Commuter"
+        "Anguilla Air Services",
+        "St Barth Commuter",
+        "St Barth Executive"
       ]
     },
     {
@@ -156,7 +189,194 @@
       ]
     },
     {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Island Birds"
+      ]
+    },
+    {
       "city": "St. Croix",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_E._Rohlsen_Airport",
+      "codes": [
+        "STX",
+        "TISX"
+      ],
+      "airlines": [
+        "Express Air Transport"
+      ]
+    },
+    {
+      "city": "St. Kitts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
+      "codes": [
+        "SKB",
+        "TKPK"
+      ],
+      "airlines": [
+        "Anguilla Air Services",
+        "Executive Air"
+      ]
+    },
+    {
+      "city": "St. Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+      "codes": [
+        "SXM",
+        "TNCM"
+      ],
+      "airlines": [
+        "Anguilla Air Services",
+        "Express Air Transport",
+        "SXM Airways"
+      ]
+    },
+    {
+      "city": "St. Vincent–Argyle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Argyle_International_Airport",
+      "codes": [
+        "SVD",
+        "TVSA"
+      ],
+      "airlines": [
+        "Express Air Transport",
+        "SVG Air"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Airawak": [
+      "Castries",
+      "Fort-de-France",
+      "Pointe-à-Pitre"
+    ],
+    "Anguilla Air Services": [
+      "Anguilla",
+      "Antigua",
+      "Saint Barthélemy",
+      "St. Kitts",
+      "St. Maarten"
+    ],
+    "CalvinAir Helicopters": [
+      "Antigua"
+    ],
+    "Executive Air": [
+      "Antigua",
+      "Barbados",
+      "Castries",
+      "Grenada",
+      "St. Kitts"
+    ],
+    "Express Air Transport": [
+      "Barbados",
+      "Bequia",
+      "St. Croix",
+      "St. Maarten",
+      "St. Vincent–Argyle"
+    ],
+    "Fly BVI Ltd": [
+      "Beef Island"
+    ],
+    "Fly Montserrat": [
+      "Antigua",
+      "Montserrat"
+    ],
+    "Island Birds": [
+      "Antigua",
+      "San Juan"
+    ],
+    "St Barth Commuter": [
+      "Fort-de-France",
+      "Pointe-à-Pitre",
+      "Saint Barthélemy",
+      "Saint Martin"
+    ],
+    "St Barth Executive": [
+      "Pointe-à-Pitre",
+      "Port of Spain",
+      "Saint Barthélemy"
+    ],
+    "SVG Air": [
+      "Antigua",
+      "Castries",
+      "St. Vincent–Argyle"
+    ],
+    "SXM Airways": [
+      "St. Maarten"
+    ],
+    "Trans Anguilla Airways": [
+      "Anguilla"
+    ]
+  },
+  "outdegree_cargo": 9,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Executive Air",
+    "Express Air Transport"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "Executive Air"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Executive Air",
+        "Express Air Transport"
+      ]
+    },
+    {
+      "city": "Bequia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/J._F._Mitchell_Airport",
+      "codes": [
+        "BQU",
+        "TVSB"
+      ],
+      "airlines": [
+        "Express Air Transport"
+      ]
+    },
+    {
+      "city": "Castries",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
+      "codes": [
+        "SLU",
+        "TLPC"
+      ],
+      "airlines": [
+        "Executive Air"
+      ]
+    },
+    {
+      "city": "Grenada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_Bishop_International_Airport",
+      "codes": [
+        "GND",
+        "TGPY"
+      ],
+      "airlines": [
+        "Executive Air"
+      ]
+    },
+    {
+      "city": "Saint Croix",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_E._Rohlsen_Airport",
       "codes": [
         "STX",
@@ -196,53 +416,26 @@
         "TVSA"
       ],
       "airlines": [
-        "Express Air Transport",
-        "SVG Air"
+        "Express Air Transport"
       ]
     }
   ],
-  "airlines_destinations": {
-    "Airawak": [
-      "Castries",
-      "Fort-de-France",
-      "Pointe-à-Pitre"
-    ],
-    "CalvinAir Helicopters": [
-      "Antigua"
-    ],
-    "Express Air Transport": [
-      "Barbados",
-      "Bequia",
-      "St. Croix",
-      "St. Maarten",
-      "St. Vincent–Argyle"
-    ],
-    "Fly Montserrat": [
-      "Antigua",
-      "Montserrat"
-    ],
-    "St Barth Commuter": [
-      "Fort-de-France",
-      "Pointe-à-Pitre",
-      "Saint Barthélemy",
-      "Saint Martin"
-    ],
-    "SVG Air": [
-      "Antigua",
-      "Castries",
-      "St. Vincent–Argyle"
-    ],
-    "Trans Anguilla Airways": [
-      "Anguilla"
-    ],
+  "airlines_destinations_cargo": {
     "Executive Air": [
       "Antigua",
       "Barbados",
       "Castries",
       "Grenada",
       "St. Kitts"
+    ],
+    "Express Air Transport": [
+      "Barbados",
+      "Bequia",
+      "Saint Croix",
+      "St. Maarten",
+      "St. Vincent–Argyle"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:18Z",
+  "date-time-parse": "2026-04-29T04:49:46Z",
   "date-time-wikidata": "2026-02-05T23:20:51Z"
 }

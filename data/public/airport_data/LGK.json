@@ -20,7 +20,7 @@
     "AirAsia",
     "Batik Air Malaysia",
     "Berjaya Air",
-    "Firefly (airline)",
+    "Firefly",
     "Flydubai",
     "IndiGo",
     "LOT Polish Airlines",
@@ -29,41 +29,7 @@
   ],
   "destinations": [
     {
-      "city": "Changi Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
-      "codes": [
-        "SIN",
-        "WSSS"
-      ],
-      "airlines": [
-        "AirAsia",
-        "Scoot"
-      ]
-    },
-    {
-      "city": "Dubai International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "codes": [
-        "DXB",
-        "OMDB"
-      ],
-      "airlines": [
-        "Flydubai"
-      ]
-    },
-    {
-      "city": "Islam Karimov Tashkent International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
-      "codes": [
-        "TAS",
-        "UZTT"
-      ],
-      "airlines": [
-        "Batik Air Malaysia"
-      ]
-    },
-    {
-      "city": "Kempegowda International Airport",
+      "city": "Bengaluru",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
       "codes": [
         "BLR",
@@ -74,7 +40,29 @@
       ]
     },
     {
-      "city": "Kuala Lumpur International Airport",
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Flydubai"
+      ]
+    },
+    {
+      "city": "Johor Bahru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
+      "codes": [
+        "JHB",
+        "WMKJ"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
       "codes": [
         "KUL",
@@ -87,30 +75,7 @@
       ]
     },
     {
-      "city": "Penang International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Penang_International_Airport",
-      "codes": [
-        "PEN",
-        "WMKP"
-      ],
-      "airlines": [
-        "AirAsia",
-        "Firefly (airline)"
-      ]
-    },
-    {
-      "city": "Senai International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
-      "codes": [
-        "JHB",
-        "WMKJ"
-      ],
-      "airlines": [
-        "AirAsia"
-      ]
-    },
-    {
-      "city": "Sultan Abdul Aziz Shah Airport",
+      "city": "Kuala Lumpur–Subang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
       "codes": [
         "SZB",
@@ -119,11 +84,46 @@
       "airlines": [
         "Batik Air Malaysia",
         "Berjaya Air",
-        "Firefly (airline)"
+        "Firefly"
       ]
     },
     {
-      "city": "Warsaw Chopin Airport",
+      "city": "Penang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Penang_International_Airport",
+      "codes": [
+        "PEN",
+        "WMKP"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Firefly"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Warsaw-Chopin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
       "codes": [
         "WAW",
@@ -136,39 +136,44 @@
   ],
   "airlines_destinations": {
     "AirAsia": [
-      "Changi Airport",
-      "Kuala Lumpur International Airport",
-      "Penang International Airport",
-      "Senai International Airport"
+      "Johor Bahru",
+      "Kuala Lumpur–International",
+      "Penang",
+      "Singapore"
     ],
     "Batik Air Malaysia": [
-      "Islam Karimov Tashkent International Airport",
-      "Kuala Lumpur International Airport",
-      "Sultan Abdul Aziz Shah Airport"
+      "Kuala Lumpur–International",
+      "Kuala Lumpur–Subang",
+      "Tashkent"
     ],
     "Berjaya Air": [
-      "Sultan Abdul Aziz Shah Airport"
+      "Kuala Lumpur–Subang"
     ],
-    "Firefly (airline)": [
-      "Penang International Airport",
-      "Sultan Abdul Aziz Shah Airport"
+    "Firefly": [
+      "Kuala Lumpur–Subang",
+      "Penang"
     ],
     "Flydubai": [
-      "Dubai International Airport"
+      "Dubai–International"
     ],
     "IndiGo": [
-      "Kempegowda International Airport"
+      "Bengaluru"
     ],
     "LOT Polish Airlines": [
-      "Warsaw Chopin Airport"
+      "Warsaw-Chopin"
     ],
     "Malaysia Airlines": [
-      "Kuala Lumpur International Airport"
+      "Kuala Lumpur–International"
     ],
     "Scoot": [
-      "Changi Airport"
+      "Singapore"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:03Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:09Z",
   "date-time-wikidata": "2026-03-26T01:01:45Z"
 }

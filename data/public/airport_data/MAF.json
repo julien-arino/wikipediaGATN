@@ -14,18 +14,19 @@
   "admin1_name": "Texas",
   "admin2_name": "Midland County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Midland_International_Air_and_Space_Port",
-  "outdegree": 8,
-  "number_airlines": 4,
+  "outdegree": 9,
+  "number_airlines": 5,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
+    "Empire Airlines",
     "Southwest Airlines",
     "United Airlines",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Austin–Bergstrom International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
       "codes": [
         "AUS",
         "KAUS"
@@ -35,7 +36,18 @@
       ]
     },
     {
-      "city": "Dallas Love Field",
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Dallas–Love",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
       "codes": [
         "DAL",
@@ -46,18 +58,7 @@
       ]
     },
     {
-      "city": "Dallas/Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -69,7 +70,18 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -81,7 +93,7 @@
       ]
     },
     {
-      "city": "McCarran International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
       "codes": [
         "LAS",
@@ -92,48 +104,56 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Lubbock",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubbock",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Empire Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "William P. Hobby Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
-      "codes": [
-        "HOU",
-        "KHOU"
-      ],
-      "airlines": [
-        "Southwest Airlines"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas/Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "Southwest Airlines": [
-      "Austin–Bergstrom International Airport",
-      "Dallas Love Field",
-      "Denver International Airport",
-      "McCarran International Airport",
-      "William P. Hobby Airport"
+      "Austin",
+      "Dallas–Love",
+      "Denver",
+      "Houston–Hobby",
+      "Las Vegas"
     ],
     "United Airlines": [
-      "George Bush Intercontinental Airport"
+      "Houston–Intercontinental"
     ],
     "United Express": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport"
+      "Denver",
+      "Houston–Intercontinental"
+    ],
+    "Empire Airlines": [
+      "Lubbock"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:13Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:44Z",
   "date-time-wikidata": "2026-03-17T00:11:26Z"
 }

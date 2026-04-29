@@ -14,11 +14,63 @@
   "admin1_name": "Alaska",
   "admin2_name": "City and Borough of Wrangell",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Wrangell_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:09:22Z",
+  "outdegree": 3,
+  "number_airlines": 2,
+  "airlines": [
+    "Alaska Airlines",
+    "Alaska Seaplanes"
+  ],
+  "destinations": [
+    {
+      "city": "Ketchikan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ketchikan_International_Airport",
+      "codes": [
+        "KTN",
+        "PAKT"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petersburg_James_A._Johnson_Airport",
+      "codes": [
+        "PSG",
+        "PAPG"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Alaska Seaplanes"
+      ]
+    },
+    {
+      "city": "Sitka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sitka_Rocky_Gutierrez_Airport",
+      "codes": [
+        "SIT",
+        "PASI"
+      ],
+      "airlines": [
+        "Alaska Seaplanes"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Alaska Airlines": [
+      "Ketchikan",
+      "Petersburg"
+    ],
+    "Alaska Seaplanes": [
+      "Petersburg",
+      "Sitka"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:01:44Z",
   "date-time-wikidata": "2025-09-15T10:06:34Z"
 }

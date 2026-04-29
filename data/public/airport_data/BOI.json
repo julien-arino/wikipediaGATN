@@ -14,13 +14,13 @@
   "admin1_name": "Idaho",
   "admin2_name": "Ada County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
-  "outdegree": 29,
+  "outdegree": 20,
   "number_airlines": 11,
   "airlines": [
     "Alaska Airlines",
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "Frontier Airlines",
@@ -31,7 +31,18 @@
   ],
   "destinations": [
     {
-      "city": "Bozeman Yellowstone International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Bozeman",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bozeman_Yellowstone_International_Airport",
       "codes": [
         "BZN",
@@ -42,7 +53,42 @@
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–Midway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -53,7 +99,7 @@
       ]
     },
     {
-      "city": "Dallas Love Field",
+      "city": "Dallas–Love",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
       "codes": [
         "DAL",
@@ -64,7 +110,7 @@
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -78,42 +124,52 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
         "KLAS"
       ],
       "airlines": [
-        "Alaska Airlines",
-        "Southwest Airlines"
+        "Alaska Airlines"
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
-        "ATL",
-        "KATL"
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Delta Connection",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
       ],
       "airlines": [
         "Delta Air Lines"
       ]
     },
     {
-      "city": "Hollywood Burbank Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "city": "Minneapolis/St.Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-St.Paul_International_Airport",
       "codes": [
-        "BUR",
-        "KBUR"
+        "MSP",
+        "KMSP"
       ],
       "airlines": [
-        "Alaska Airlines",
-        "Southwest Airlines"
+        "Sun Country"
       ]
     },
     {
-      "city": "John Wayne Airport",
+      "city": "Orange County",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
       "codes": [
         "SNA",
@@ -125,100 +181,7 @@
       ]
     },
     {
-      "city": "Los Angeles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "codes": [
-        "LAX",
-        "KLAX"
-      ],
-      "airlines": [
-        "Alaska Airlines",
-        "Delta Connection",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Midway International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
-      "codes": [
-        "MDW",
-        "KMDW"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Minneapolis-Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
-      "codes": [
-        "MSP",
-        "KMSP"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Minneapolis-St.Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-St.Paul_International_Airport",
-      "codes": [
-        "MSP",
-        "KMSP"
-      ],
-      "airlines": [
-        "Sun Country"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Airlines",
-        "American Eagle (airline brand)",
-        "United Airlines",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Oakland San Francisco Bay Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "codes": [
-        "OAK",
-        "KOAK"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Ontario International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
-      "codes": [
-        "ONT",
-        "KONT"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
-    },
-    {
-      "city": "Palm Springs International Airport",
+      "city": "Palm Springs",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
       "codes": [
         "PSP",
@@ -229,7 +192,18 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
@@ -238,70 +212,33 @@
       "airlines": [
         "Alaska Airlines",
         "American Airlines",
-        "American Eagle (airline brand)",
-        "Southwest Airlines"
+        "American Eagle"
       ]
     },
     {
-      "city": "Portland International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "codes": [
-        "PDX",
-        "KPDX"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
-    },
-    {
-      "city": "Pullman–Moscow Regional Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pullman%E2%80%93Moscow_Regional_Airport",
-      "codes": [
-        "PUW",
-        "KPUW"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
-    },
-    {
-      "city": "Sacramento International Airport",
+      "city": "Sacramento",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
       "codes": [
         "SMF",
         "KSMF"
       ],
       "airlines": [
-        "Alaska Airlines",
-        "Southwest Airlines"
+        "Alaska Airlines"
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
-      "codes": [
-        "SLC",
-        "KSLC"
-      ],
-      "airlines": [
-        "Delta Air Lines",
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "San Diego International Airport",
+      "city": "San Diego",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
       "codes": [
         "SAN",
         "KSAN"
       ],
       "airlines": [
-        "Alaska Airlines",
-        "Southwest Airlines"
+        "Alaska Airlines"
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -314,19 +251,7 @@
       ]
     },
     {
-      "city": "San Jose International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
-      "codes": [
-        "SJC",
-        "KSJC"
-      ],
-      "airlines": [
-        "Alaska Airlines",
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Seattle-Tacoma International Airport",
+      "city": "Seattle/Tacoma",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
       "codes": [
         "SEA",
@@ -335,114 +260,68 @@
       "airlines": [
         "Delta Connection"
       ]
-    },
-    {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
-      "codes": [
-        "SEA",
-        "KSEA"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
-    },
-    {
-      "city": "Spokane International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
-      "codes": [
-        "GEG",
-        "KGEG"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
-    },
-    {
-      "city": "Ted Stevens Anchorage International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "codes": [
-        "ANC",
-        "PANC"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Bozeman Yellowstone International Airport",
-      "Harry Reid International Airport",
-      "Hollywood Burbank Airport",
-      "John Wayne Airport",
-      "Los Angeles International Airport",
-      "Ontario International Airport",
-      "Palm Springs International Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Portland International Airport",
-      "Pullman–Moscow Regional Airport",
-      "Sacramento International Airport",
-      "San Diego International Airport",
-      "San Francisco International Airport",
-      "San Jose International Airport",
-      "Seattle–Tacoma International Airport",
-      "Spokane International Airport",
-      "Ted Stevens Anchorage International Airport"
+      "Bozeman",
+      "Burbank",
+      "Las Vegas",
+      "Orange County",
+      "Palm Springs",
+      "Phoenix–Sky Harbor",
+      "Sacramento",
+      "San Diego",
+      "San Francisco"
     ],
     "Allegiant Air": [
-      "John Wayne Airport",
-      "Mesa Gateway Airport"
+      "Orange County",
+      "Phoenix/Mesa"
     ],
     "American Airlines": [
-      "Dallas Fort Worth International Airport",
-      "O'Hare International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
-    "American Eagle (airline brand)": [
-      "O'Hare International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare",
+      "Phoenix–Sky Harbor"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Minneapolis-Saint Paul International Airport",
-      "Salt Lake City International Airport"
+      "Atlanta",
+      "Minneapolis/St. Paul"
     ],
     "Delta Connection": [
-      "Los Angeles International Airport",
-      "Salt Lake City International Airport",
-      "Seattle-Tacoma International Airport"
+      "Los Angeles",
+      "Seattle/Tacoma"
     ],
     "Frontier Airlines": [
-      "Denver International Airport"
+      "Denver"
     ],
     "Southwest Airlines": [
-      "Dallas Love Field",
-      "Denver International Airport",
-      "Harry Reid International Airport",
-      "Hollywood Burbank Airport",
-      "Midway International Airport",
-      "Oakland San Francisco Bay Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Sacramento International Airport",
-      "San Diego International Airport",
-      "San Jose International Airport"
+      "Chicago–Midway",
+      "Dallas–Love",
+      "Denver"
     ],
     "Sun Country": [
-      "Minneapolis-St.Paul International Airport"
+      "Minneapolis/St.Paul"
     ],
     "United Airlines": [
-      "Denver International Airport",
-      "O'Hare International Airport",
-      "San Francisco International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "San Francisco"
     ],
     "United Express": [
-      "Denver International Airport",
-      "Los Angeles International Airport",
-      "O'Hare International Airport",
-      "San Francisco International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "Los Angeles",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:10Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:48:19Z",
   "date-time-wikidata": "2026-04-24T17:57:02Z"
 }

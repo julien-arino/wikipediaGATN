@@ -14,20 +14,17 @@
   "admin1_name": "Queensland",
   "admin2_name": "Townsville",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
-  "outdegree": 20,
-  "number_airlines": 12,
+  "outdegree": 19,
+  "number_airlines": 9,
   "airlines": [
     "Airnorth",
     "Alliance Airlines",
-    "HeavyLift Cargo Airlines",
     "Jetstar",
     "National Jet Express",
     "Qantas",
-    "Qantas Freight",
     "QantasLink",
     "Rex Airlines",
     "SmartLynx Australia",
-    "Toll Priority",
     "Virgin Australia"
   ],
   "destinations": [
@@ -41,7 +38,6 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "QantasLink",
         "Virgin Australia"
       ]
@@ -54,7 +50,6 @@
         "YBCS"
       ],
       "airlines": [
-        "Qantas Freight",
         "QantasLink",
         "Rex Airlines"
       ]
@@ -90,19 +85,7 @@
         "YPDN"
       ],
       "airlines": [
-        "Airnorth",
-        "HeavyLift Cargo Airlines"
-      ]
-    },
-    {
-      "city": "Honiara",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
-      "codes": [
-        "HIR",
-        "AGGH"
-      ],
-      "airlines": [
-        "HeavyLift Cargo Airlines"
+        "Airnorth"
       ]
     },
     {
@@ -239,8 +222,7 @@
       ],
       "airlines": [
         "Jetstar",
-        "QantasLink",
-        "Toll Priority"
+        "QantasLink"
       ]
     },
     {
@@ -311,7 +293,73 @@
     ],
     "National Jet Express": [
       "Moranbah"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "HeavyLift Cargo Airlines",
+    "Qantas Freight",
+    "Toll Priority"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Darwin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
+      "codes": [
+        "DRW",
+        "YPDN"
+      ],
+      "airlines": [
+        "HeavyLift Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "HeavyLift Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Toll Priority"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "HeavyLift Cargo Airlines": [
       "Darwin",
       "Honiara"
@@ -324,6 +372,6 @@
       "Sydney"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:15Z",
+  "date-time-parse": "2026-04-29T05:00:48Z",
   "date-time-wikidata": "2026-02-20T09:12:08Z"
 }

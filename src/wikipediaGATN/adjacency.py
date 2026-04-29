@@ -26,7 +26,6 @@ def _is_valid_code(code: str) -> bool:
 
 
 def create_outbound_adjacency_matrix(
-    symmetric: bool = False,
     export_csv: bool = False,
     export_networks: bool = True,
     verbose: bool = False,
@@ -41,10 +40,6 @@ def create_outbound_adjacency_matrix(
 
     Parameters
     ----------
-    symmetric : bool, optional
-        If True, assumes all links are bidirectional.  Use this option when
-        destination data is incomplete (small airports may not list all their
-        outbound flights on Wikipedia).  Default is False (directed graph).
     export_csv : bool, optional
         If True, also writes a dense ``adjacency_matrix[_sym].csv`` alongside
         the ``.npz`` file.  This file can be very large for global-scale
@@ -204,10 +199,6 @@ def create_outbound_adjacency_matrix(
             rows_list.append(origin_idx)
             cols_list.append(dest_idx)
 
-            if symmetric:
-                rows_list.append(dest_idx)
-                cols_list.append(origin_idx)
-
     if verbose:
         print(f"Raw directed edges collected: {len(rows_list)}")
         if skipped_self_loops:
@@ -225,9 +216,6 @@ def create_outbound_adjacency_matrix(
         rows_arr, cols_arr = zip(*unique_edges)
     else:
         rows_arr, cols_arr = [], []
-
-    if verbose and symmetric:
-        print(f"Edges after deduplication: {len(rows_arr)}")
 
     # ------------------------------------------------------------------
     # Create sparse matrix
@@ -251,10 +239,9 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
 
-    suffix = "_sym" if symmetric else ""
-    output_matrix = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}.npz")
-    output_nodes  = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}.txt")
-    output_csv    = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}.csv")
+    output_matrix = os.path.join(PUBLIC_DATA_DIR, "adjacency_matrix.npz")
+    output_nodes  = os.path.join(PUBLIC_DATA_DIR, "nodes.txt")
+    output_csv    = os.path.join(PUBLIC_DATA_DIR, "adjacency_matrix.csv")
 
     # ------------------------------------------------------------------
     # Save outputs
@@ -282,7 +269,7 @@ def create_outbound_adjacency_matrix(
     if export_networks:
         try:
             import networkx as nx
-            G = nx.from_scipy_sparse_array(matrix, create_using=nx.Graph if symmetric else nx.DiGraph)
+            G = nx.from_scipy_sparse_array(matrix, create_using=nx.DiGraph)
             mapping = {i: code for i, code in enumerate(iata_codes)}
             G = nx.relabel_nodes(G, mapping)
             
@@ -292,30 +279,27 @@ def create_outbound_adjacency_matrix(
                     try:
                         with open(json_file, 'r', encoding='utf-8') as f:
                             data = json.load(f)
-                            if data.get('lat') is not None:
-                                try: G.nodes[node]['lat'] = float(data['lat'])
-                                except ValueError: pass
-                            if data.get('lon') is not None:
-                                try: G.nodes[node]['lon'] = float(data['lon'])
-                                except ValueError: pass
-                            if data.get('city-served') is not None:
-                                G.nodes[node]['city_served'] = str(data['city-served'])
-                            if data.get('country_alpha3') is not None:
-                                G.nodes[node]['country_alpha3'] = str(data['country_alpha3'])
+                            for num_key in ('lat', 'lon', 'altitude', 'outdegree', 'number_airlines'):
+                                if data.get(num_key) is not None:
+                                    try: G.nodes[node][num_key] = float(data[num_key])
+                                    except ValueError: pass
+                            for str_key in ('name', 'city-served', 'country_alpha3', 'country_name', 'admin1_code', 'admin1_name', 'continent', 'wikipedia_url'):
+                                if data.get(str_key):
+                                    G.nodes[node][str_key.replace('-', '_')] = str(data[str_key])
                     except (json.JSONDecodeError, OSError):
                         pass
             
-            output_dot = os.path.join(PUBLIC_DATA_DIR, f"global-air-transportation-network{suffix}.dot")
-            nx.drawing.nx_pydot.write_dot(G, output_dot)
-            if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
-            
-            output_graphml = os.path.join(PUBLIC_DATA_DIR, f"global-air-transportation-network{suffix}.graphml")
+            output_graphml = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.graphml")
             nx.write_graphml(G, output_graphml)
             if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
             
-            output_gexf = os.path.join(PUBLIC_DATA_DIR, f"global-air-transportation-network{suffix}.gexf")
+            output_gexf = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.gexf")
             nx.write_gexf(G, output_gexf)
             if verbose: print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
+
+            output_dot = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.dot")
+            nx.drawing.nx_pydot.write_dot(G, output_dot)
+            if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
             
         except ImportError as e:
             warnings.warn(f"Could not export network formats: {e}", UserWarning)

@@ -14,28 +14,51 @@
   "admin1_name": "Pennsylvania",
   "admin2_name": "Lehigh County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lehigh_Valley_International_Airport",
-  "outdegree": 14,
+  "outdegree": 9,
   "number_airlines": 4,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -46,8 +69,8 @@
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -57,18 +80,7 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Melbourne Orlando International Airport",
+      "city": "Melbourne/Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Orlando_International_Airport",
       "codes": [
         "MLB",
@@ -79,7 +91,7 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
+      "city": "Myrtle Beach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
       "codes": [
         "MYR",
@@ -90,30 +102,7 @@
       ]
     },
     {
-      "city": "Nashville International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "codes": [
-        "BNA",
-        "KBNA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -124,7 +113,7 @@
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -133,77 +122,33 @@
       "airlines": [
         "Allegiant Air"
       ]
-    },
-    {
-      "city": "Punta Gorda Airport (Florida)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "codes": [
-        "PGD",
-        "KPGD"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
-      "codes": [
-        "SRQ",
-        "KSRQ"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Southwest Florida International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "codes": [
-        "RSW",
-        "KRSW"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
-      "codes": [
-        "PIE",
-        "KPIE"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Denver International Airport",
-      "Fort Lauderdale–Hollywood International Airport",
-      "Melbourne Orlando International Airport",
-      "Myrtle Beach International Airport",
-      "Nashville International Airport",
-      "Orlando International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota–Bradenton International Airport",
-      "Southwest Florida International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Denver",
+      "Fort Lauderdale",
+      "Melbourne/Orlando",
+      "Myrtle Beach",
+      "Orlando",
+      "Orlando/Sanford"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T23:28:45Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:46:42Z",
   "date-time-wikidata": "2026-04-22T04:56:35Z"
 }

@@ -14,8 +14,8 @@
   "admin1_name": "Amazonas",
   "admin2_name": "Manaus",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
-  "outdegree": 33,
-  "number_airlines": 10,
+  "outdegree": 32,
+  "number_airlines": 8,
   "airlines": [
     "Apuí Táxi Aéreo",
     "Avianca",
@@ -24,9 +24,7 @@
     "Copa Airlines",
     "Gol Linhas Aéreas",
     "LATAM Brasil",
-    "LATAM Cargo Brasil",
-    "TAP Air Portugal",
-    "Total Express Linhas Aéreas"
+    "TAP Air Portugal"
   ],
   "destinations": [
     {
@@ -358,18 +356,6 @@
       ]
     },
     {
-      "city": "São Paulo-Guarulhos",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-      "codes": [
-        "GRU",
-        "SBGR"
-      ],
-      "airlines": [
-        "LATAM Cargo Brasil",
-        "Total Express Linhas Aéreas"
-      ]
-    },
-    {
       "city": "São Paulo–Guarulhos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos_International_Airport",
       "codes": [
@@ -462,7 +448,29 @@
     ],
     "TAP Air Portugal": [
       "Lisbon"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "LATAM Cargo Brasil",
+    "Total Express Linhas Aéreas"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "São Paulo-Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil",
+        "Total Express Linhas Aéreas"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "LATAM Cargo Brasil": [
       "São Paulo-Guarulhos"
     ],
@@ -470,6 +478,6 @@
       "São Paulo-Guarulhos"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:15Z",
+  "date-time-parse": "2026-04-29T04:55:46Z",
   "date-time-wikidata": "2026-04-21T12:47:37Z"
 }

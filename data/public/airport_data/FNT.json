@@ -18,13 +18,25 @@
   "number_airlines": 3,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Destin–Fort Walton Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin%E2%80%93Fort_Walton_Beach_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Destin/Fort Walton Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin–Fort_Walton_Beach_Airport",
       "codes": [
         "VPS",
         "KVPS"
@@ -34,8 +46,8 @@
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -45,18 +57,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Jacksonville International Airport",
+      "city": "Jacksonville (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksonville_International_Airport",
       "codes": [
         "JAX",
@@ -67,18 +68,18 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
-        "AZA",
-        "KIWA"
+        "LAS",
+        "KLAS"
       ],
       "airlines": [
         "Allegiant Air"
       ]
     },
     {
-      "city": "Nashville International Airport",
+      "city": "Nashville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
       "codes": [
         "BNA",
@@ -89,19 +90,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -112,7 +101,18 @@
       ]
     },
     {
-      "city": "Portland International Airport",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -134,8 +134,8 @@
       ]
     },
     {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
       "codes": [
         "SRQ",
         "KSRQ"
@@ -145,8 +145,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -158,25 +158,87 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Destin–Fort Walton Beach Airport",
-      "Fort Lauderdale–Hollywood International Airport",
-      "Harry Reid International Airport",
-      "Jacksonville International Airport",
-      "Mesa Gateway Airport",
-      "Nashville International Airport",
-      "Orlando Sanford International Airport",
-      "Portland International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Destin/Fort Walton Beach",
+      "Fort Lauderdale",
+      "Jacksonville (FL)",
+      "Las Vegas",
+      "Nashville",
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "Portland (OR)",
+      "Punta Gorda (FL)",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:48Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "FedEx Express",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Alpena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alpena_County_Regional_Airport",
+      "codes": [
+        "APN",
+        "KAPN"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Gaylord",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaylord_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Indianapolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
+      "codes": [
+        "IND",
+        "KIND"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Indianapolis",
+      "Memphis"
+    ],
+    "FedEx Feeder": [
+      "Alpena",
+      "Gaylord"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:50:49Z",
   "date-time-wikidata": "2026-04-13T20:38:23Z"
 }

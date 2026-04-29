@@ -13,8 +13,8 @@
   "admin1_code": "CI-LG",
   "admin1_name": "Lagunes",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-  "outdegree": 47,
-  "number_airlines": 25,
+  "outdegree": 45,
+  "number_airlines": 22,
   "airlines": [
     "ASKY Airlines",
     "Air Algérie",
@@ -24,12 +24,10 @@
     "Air Peace",
     "Air Senegal",
     "Brussels Airlines",
-    "Cargolux",
     "Corsair International",
     "Egyptair",
     "Emirates",
     "Ethiopian Airlines",
-    "Ethiopian Cargo",
     "Kenya Airways",
     "Mauritania Airlines",
     "Middle East Airlines",
@@ -37,7 +35,6 @@
     "Royal Air Maroc",
     "Sky Mali",
     "South African Airways",
-    "Swiftair",
     "TAAG Angola Airlines",
     "Tunisair",
     "Turkish Airlines"
@@ -65,23 +62,9 @@
         "Air Burkina",
         "Air Côte d'Ivoire",
         "Brussels Airlines",
-        "Cargolux",
         "Emirates",
         "Qatar Airways",
-        "South African Airways",
-        "Swiftair"
-      ]
-    },
-    {
-      "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "codes": [
-        "ADD",
-        "HAAB"
-      ],
-      "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Cargo"
+        "South African Airways"
       ]
     },
     {
@@ -92,8 +75,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -372,8 +354,7 @@
       "airlines": [
         "Air Côte d'Ivoire",
         "Air Peace",
-        "Middle East Airlines",
-        "Swiftair"
+        "Middle East Airlines"
       ]
     },
     {
@@ -384,19 +365,7 @@
         "FOOL"
       ],
       "airlines": [
-        "Air Côte d'Ivoire",
-        "Ethiopian Cargo"
-      ]
-    },
-    {
-      "city": "Liege",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liege_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Ethiopian Cargo"
+        "Air Côte d'Ivoire"
       ]
     },
     {
@@ -705,7 +674,74 @@
     "Turkish Airlines": [
       "Cotonou",
       "Istanbul"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Cargolux",
+    "Ethiopian Cargo",
+    "Swiftair"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Accra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Cargolux",
+        "Swiftair"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Swiftair"
+      ]
+    },
+    {
+      "city": "Libreville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
+      "codes": [
+        "LBV",
+        "FOOL"
+      ],
+      "airlines": [
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Liege",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liege_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Ethiopian Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargolux": [
       "Accra"
     ],
@@ -719,6 +755,6 @@
       "Lagos"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:17Z",
+  "date-time-parse": "2026-04-29T04:46:43Z",
   "date-time-wikidata": "2026-04-08T12:40:31Z"
 }

@@ -14,13 +14,12 @@
   "admin1_name": "Saint George",
   "wikipedia_url": "https://en.wikipedia.org/wiki/L.F._Wade_International_Airport",
   "outdegree": 12,
-  "number_airlines": 8,
+  "number_airlines": 7,
   "airlines": [
     "Air Canada Rouge",
     "American Airlines",
     "BermudAir",
     "British Airways",
-    "Cargojet",
     "Delta Air Lines",
     "JetBlue",
     "United Airlines"
@@ -126,7 +125,6 @@
       ],
       "airlines": [
         "BermudAir",
-        "Cargojet",
         "United Airlines"
       ]
     },
@@ -194,11 +192,31 @@
     ],
     "United Airlines": [
       "Newark"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Cargojet"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargojet": [
       "Newark"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:43Z",
+  "date-time-parse": "2026-04-29T04:47:39Z",
   "date-time-wikidata": "2026-04-22T05:52:10Z"
 }

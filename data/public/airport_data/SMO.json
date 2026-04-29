@@ -14,11 +14,58 @@
   "admin1_name": "California",
   "admin2_name": "Los Angeles County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Monica_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:08:47Z",
+  "outdegree": 3,
+  "number_airlines": 1,
+  "airlines": [
+    "JSX"
+  ],
+  "destinations": [
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    },
+    {
+      "city": "Napa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Napa_County_Airport",
+      "codes": [
+        "APC",
+        "KAPC"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    },
+    {
+      "city": "Scottsdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scottsdale_Airport",
+      "codes": [
+        "SCF",
+        "KSDL"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "JSX": [
+      "Las Vegas",
+      "Napa",
+      "Scottsdale"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:59:36Z",
   "date-time-wikidata": "2026-04-22T04:50:56Z"
 }

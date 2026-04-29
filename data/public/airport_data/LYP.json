@@ -13,102 +13,80 @@
   "admin1_code": "IN-PB",
   "admin1_name": "Punjab",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Faisalabad_International_Airport",
-  "outdegree": 6,
-  "number_airlines": 4,
-  "airlines": [
-    "Air Arabia",
-    "Fly Jinnah",
-    "Flydubai",
-    "Pakistan International Airlines"
+  "outdegree": 0,
+  "number_airlines": 0,
+  "airlines": [],
+  "destinations": [],
+  "airlines_destinations": {},
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Royal Airlines Cargo",
+    "Star Air Aviation",
+    "TCS Courier"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
-      "city": "Abu Dhabi International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "codes": [
-        "AUH",
-        "OMAA"
-      ],
-      "airlines": [
-        "Air Arabia"
-      ]
-    },
-    {
-      "city": "Dubai International Airport",
+      "city": "Dubai–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
       "codes": [
         "DXB",
         "OMDB"
       ],
       "airlines": [
-        "Flydubai",
-        "Pakistan International Airlines"
+        "TCS Courier"
       ]
     },
     {
-      "city": "Jinnah International Airport",
+      "city": "Islamabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islamabad_International_Airport",
+      "codes": [
+        "ISB",
+        "OPIS"
+      ],
+      "airlines": [
+        "Royal Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Karachi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
       "codes": [
         "KHI",
         "OPKC"
       ],
       "airlines": [
-        "Fly Jinnah",
-        "Pakistan International Airlines"
+        "Royal Airlines Cargo",
+        "Star Air Aviation",
+        "TCS Courier"
       ]
     },
     {
-      "city": "King Abdulaziz International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "city": "Lahore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
       "codes": [
-        "JED",
-        "OEJN"
+        "LHE",
+        "OPLA"
       ],
       "airlines": [
-        "Pakistan International Airlines"
-      ]
-    },
-    {
-      "city": "Prince Mohammad bin Abdulaziz International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
-      "codes": [
-        "MED",
-        "OEMA"
-      ],
-      "airlines": [
-        "Pakistan International Airlines"
-      ]
-    },
-    {
-      "city": "Sharjah International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "codes": [
-        "SHJ",
-        "OMSJ"
-      ],
-      "airlines": [
-        "Air Arabia"
+        "Star Air Aviation"
       ]
     }
   ],
-  "airlines_destinations": {
-    "Air Arabia": [
-      "Abu Dhabi International Airport",
-      "Sharjah International Airport"
+  "airlines_destinations_cargo": {
+    "Royal Airlines Cargo": [
+      "Islamabad",
+      "Karachi"
     ],
-    "Fly Jinnah": [
-      "Jinnah International Airport"
+    "Star Air Aviation": [
+      "Karachi",
+      "Lahore"
     ],
-    "Flydubai": [
-      "Dubai International Airport"
-    ],
-    "Pakistan International Airlines": [
-      "Dubai International Airport",
-      "Jinnah International Airport",
-      "King Abdulaziz International Airport",
-      "Prince Mohammad bin Abdulaziz International Airport"
+    "TCS Courier": [
+      "Dubai–International",
+      "Karachi"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:10Z",
+  "date-time-parse": "2026-04-29T04:55:40Z",
   "date-time-wikidata": "2026-02-08T03:27:15Z"
 }

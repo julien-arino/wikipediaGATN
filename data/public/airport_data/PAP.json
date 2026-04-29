@@ -13,13 +13,171 @@
   "admin1_code": "HT-OU",
   "admin1_name": "Ouest",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Toussaint_Louverture_International_Airport",
-  "outdegree": 1,
-  "number_airlines": 2,
+  "outdegree": 11,
+  "number_airlines": 6,
   "airlines": [
+    "Air Transat",
+    "American Airlines",
+    "JetBlue",
+    "Sky High",
+    "Spirit Airlines",
+    "Sunrise Airways"
+  ],
+  "destinations": [
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Cap-Haïtien",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cap-Haïtien_International_Airport",
+      "codes": [
+        "CAP",
+        "MTCH"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Curaçao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Curaçao_International_Airport",
+      "codes": [
+        "CUR",
+        "TNCC"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Jacmel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacmel_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Les Cayes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Cayes_Airport",
+      "codes": [
+        "CYA",
+        "MTCA"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Punta Cana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
+      "codes": [
+        "PUJ",
+        "MDPC"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
+      "city": "Santo Domingo–Las Américas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Américas_International_Airport",
+      "codes": [
+        "SDQ",
+        "MDSD"
+      ],
+      "airlines": [
+        "Sky High"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Transat": [
+      "Montréal–Trudeau"
+    ],
+    "American Airlines": [
+      "Miami"
+    ],
+    "JetBlue": [
+      "New York–JFK"
+    ],
+    "Sky High": [
+      "Santo Domingo–Las Américas"
+    ],
+    "Spirit Airlines": [
+      "Fort Lauderdale"
+    ],
+    "Sunrise Airways": [
+      "Antigua",
+      "Cap-Haïtien",
+      "Curaçao",
+      "Jacmel",
+      "Les Cayes",
+      "Punta Cana"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "Amerijet International",
     "IBC Airways"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
@@ -33,7 +191,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Amerijet International": [
       "Miami"
     ],
@@ -41,6 +199,6 @@
       "Miami"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:35Z",
+  "date-time-parse": "2026-04-29T04:57:42Z",
   "date-time-wikidata": "2026-04-20T14:55:09Z"
 }

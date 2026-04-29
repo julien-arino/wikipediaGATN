@@ -13,18 +13,32 @@
   "admin1_code": "",
   "admin1_name": "MZ",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
-  "outdegree": 18,
-  "number_airlines": 7,
+  "outdegree": 20,
+  "number_airlines": 10,
   "airlines": [
     "Airlink",
-    "Astral Aviation",
+    "Ethiopian Airlines",
     "FlySafair",
+    "Kenya Airways",
     "LAM Mozambique Airlines",
+    "Moçambique Expresso",
     "Qatar Airways",
+    "TAAG Angola Airlines",
     "TAP Air Portugal",
-    "Westair Aviation"
+    "Turkish Airlines"
   ],
   "destinations": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
     {
       "city": "Beira",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Beira_Airport",
@@ -33,7 +47,8 @@
         "FQBR"
       ],
       "airlines": [
-        "LAM Mozambique Airlines"
+        "LAM Mozambique Airlines",
+        "Moçambique Expresso"
       ]
     },
     {
@@ -93,6 +108,17 @@
       ]
     },
     {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
       "city": "Johannesburg–O. R. Tambo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
       "codes": [
@@ -101,7 +127,6 @@
       ],
       "airlines": [
         "Airlink",
-        "Astral Aviation",
         "FlySafair",
         "LAM Mozambique Airlines"
       ]
@@ -129,6 +154,17 @@
       ]
     },
     {
+      "city": "Luanda–Agostinho Neto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dr._Antonio_Agostinho_Neto_International_Airport",
+      "codes": [
+        "NBJ",
+        "FNBJ"
+      ],
+      "airlines": [
+        "TAAG Angola Airlines"
+      ]
+    },
+    {
       "city": "Nacala",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nacala_Airport",
       "codes": [
@@ -147,7 +183,7 @@
         "HKJK"
       ],
       "airlines": [
-        "Astral Aviation",
+        "Kenya Airways",
         "LAM Mozambique Airlines"
       ]
     },
@@ -192,7 +228,8 @@
         "FQTT"
       ],
       "airlines": [
-        "LAM Mozambique Airlines"
+        "LAM Mozambique Airlines",
+        "Moçambique Expresso"
       ]
     },
     {
@@ -204,17 +241,6 @@
       ],
       "airlines": [
         "LAM Mozambique Airlines"
-      ]
-    },
-    {
-      "city": "Windhoek–Eros",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Eros_Airport",
-      "codes": [
-        "ERS",
-        "FYWE"
-      ],
-      "airlines": [
-        "Westair Aviation"
       ]
     },
     {
@@ -234,8 +260,14 @@
       "Cape Town",
       "Johannesburg–O. R. Tambo"
     ],
+    "Ethiopian Airlines": [
+      "Addis Ababa"
+    ],
     "FlySafair": [
       "Johannesburg–O. R. Tambo"
+    ],
+    "Kenya Airways": [
+      "Nairobi–Jomo Kenyatta"
     ],
     "LAM Mozambique Airlines": [
       "Beira",
@@ -254,12 +286,65 @@
       "Vilanculos",
       "Xai-Xai"
     ],
+    "Moçambique Expresso": [
+      "Beira",
+      "Tete"
+    ],
     "Qatar Airways": [
       "Doha"
+    ],
+    "TAAG Angola Airlines": [
+      "Luanda–Agostinho Neto"
     ],
     "TAP Air Portugal": [
       "Lisbon"
     ],
+    "Turkish Airlines": [
+      "Istanbul"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Westair Aviation"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Astral Aviation"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation"
+      ]
+    },
+    {
+      "city": "Windhoek–Eros",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eros_Airport",
+      "codes": [
+        "ERS",
+        "FYWE"
+      ],
+      "airlines": [
+        "Westair Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Johannesburg–O. R. Tambo",
       "Nairobi–Jomo Kenyatta"
@@ -268,6 +353,6 @@
       "Windhoek–Eros"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:27Z",
+  "date-time-parse": "2026-04-29T04:56:24Z",
   "date-time-wikidata": "2026-02-05T11:34:03Z"
 }

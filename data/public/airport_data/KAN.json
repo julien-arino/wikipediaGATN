@@ -13,15 +13,220 @@
   "admin1_code": "NG-KN",
   "admin1_name": "Kano",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kano_Airport",
-  "outdegree": 4,
-  "number_airlines": 4,
+  "outdegree": 12,
+  "number_airlines": 11,
   "airlines": [
+    "Aero Contractors",
+    "Air Peace",
+    "Arik Air",
+    "Azman Air",
+    "Egyptair",
+    "Ethiopian Airlines",
+    "Flynas",
+    "Max Air",
+    "Qatar Airways",
+    "Saudia",
+    "ValueJet"
+  ],
+  "destinations": [
+    {
+      "city": "Abuja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Arik Air",
+        "Azman Air",
+        "Max Air",
+        "ValueJet"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Asaba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Asaba_International_Airport",
+      "codes": [
+        "ABB",
+        "DNAS"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
+      "city": "Benin City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benin_Airport",
+      "codes": [
+        "BNI",
+        "DNBE"
+      ],
+      "airlines": [
+        "Max Air"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Flynas",
+        "Max Air",
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Azman Air",
+        "Max Air"
+      ]
+    },
+    {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_Airport",
+      "codes": [
+        "MED",
+        "OEMA"
+      ],
+      "airlines": [
+        "Saudia"
+      ]
+    },
+    {
+      "city": "Niamey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
+      "codes": [
+        "NIM",
+        "DRRN"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
+      "city": "Owerri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sam_Mbakwe_Airport",
+      "codes": [
+        "QOW",
+        "DNIM"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
+      "city": "Port Harcourt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Harcourt_International_Airport",
+      "codes": [
+        "PHC",
+        "DNPO"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aero Contractors": [
+      "Abuja",
+      "Lagos"
+    ],
+    "Air Peace": [
+      "Abuja",
+      "Asaba",
+      "Lagos",
+      "Niamey",
+      "Owerri",
+      "Port Harcourt"
+    ],
+    "Arik Air": [
+      "Abuja"
+    ],
+    "Azman Air": [
+      "Abuja",
+      "Lagos"
+    ],
+    "Egyptair": [
+      "Cairo"
+    ],
+    "Ethiopian Airlines": [
+      "Addis Ababa"
+    ],
+    "Flynas": [
+      "Jeddah"
+    ],
+    "Max Air": [
+      "Abuja",
+      "Benin City",
+      "Jeddah",
+      "Lagos"
+    ],
+    "Qatar Airways": [
+      "Doha"
+    ],
+    "Saudia": [
+      "Jeddah",
+      "Medina"
+    ],
+    "ValueJet": [
+      "Abuja"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
     "Aerotranscargo",
     "EgyptAir",
     "Ethiopian Airlines Cargo",
     "Saudia Cargo"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Cairo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
@@ -67,7 +272,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Aerotranscargo": [
       "Munich"
     ],
@@ -81,6 +286,6 @@
       "Jeddah"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:31Z",
+  "date-time-parse": "2026-04-29T04:54:07Z",
   "date-time-wikidata": "2026-03-17T11:09:43Z"
 }

@@ -14,8 +14,8 @@
   "admin1_name": "Central Serbia",
   "admin2_name": "Belgrade",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
-  "outdegree": 77,
-  "number_airlines": 32,
+  "outdegree": 72,
+  "number_airlines": 28,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -24,9 +24,7 @@
     "Air Serbia",
     "Arkia",
     "Austrian Airlines",
-    "Cargoair",
     "China Southern Airlines",
-    "DHL Aviation",
     "Eurowings",
     "Hainan Airlines",
     "KLM",
@@ -43,25 +41,12 @@
     "Swiss International Air Lines",
     "TAROM",
     "Turkish Airlines",
-    "Turkish Cargo",
     "Wizz Air",
-    "YTO Cargo Airlines",
     "airBaltic",
     "easyJet",
     "flydubai"
   ],
   "destinations": [
-    {
-      "city": "Aktobe",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktobe_International_Airport",
-      "codes": [
-        "AKX",
-        "UATT"
-      ],
-      "airlines": [
-        "YTO Cargo Airlines"
-      ]
-    },
     {
       "city": "Alghero",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alghero–Fertilia_Airport",
@@ -421,8 +406,7 @@
         "LTFM"
       ],
       "airlines": [
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -471,28 +455,6 @@
       ]
     },
     {
-      "city": "Leipzig/Halle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "codes": [
-        "LEJ",
-        "EDDP"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Linz",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Linz_Airport",
-      "codes": [
-        "LNZ",
-        "LOWL"
-      ],
-      "airlines": [
-        "Cargoair"
-      ]
-    },
-    {
       "city": "Malmö",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Malmö_Airport",
       "codes": [
@@ -512,17 +474,6 @@
       ],
       "airlines": [
         "Air Serbia"
-      ]
-    },
-    {
-      "city": "Milan–Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "codes": [
-        "MXP",
-        "LIMC"
-      ],
-      "airlines": [
-        "DHL Aviation"
       ]
     },
     {
@@ -903,17 +854,6 @@
       "airlines": [
         "Swiss International Air Lines"
       ]
-    },
-    {
-      "city": "Ürümqi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
-      "codes": [
-        "URC",
-        "ZWWW"
-      ],
-      "airlines": [
-        "YTO Cargo Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
@@ -1058,7 +998,85 @@
       "Nice",
       "Palermo",
       "Pisa"
-    ],
+    ]
+  },
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Cargoair",
+    "DHL Aviation",
+    "Turkish Cargo",
+    "YTO Cargo Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Aktobe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aktobe_International_Airport",
+      "codes": [
+        "AKX",
+        "UATT"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Linz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linz_Airport",
+      "codes": [
+        "LNZ",
+        "LOWL"
+      ],
+      "airlines": [
+        "Cargoair"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ürümqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "YTO Cargo Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargoair": [
       "Linz"
     ],
@@ -1074,6 +1092,6 @@
       "Ürümqi"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:47Z",
+  "date-time-parse": "2026-04-29T04:47:43Z",
   "date-time-wikidata": "2026-04-21T10:08:36Z"
 }

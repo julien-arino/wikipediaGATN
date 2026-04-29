@@ -14,7 +14,7 @@
   "admin1_name": "VE",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
   "outdegree": 52,
-  "number_airlines": 26,
+  "number_airlines": 24,
   "airlines": [
     "AeroCaribe",
     "Aerolíneas Estelar",
@@ -23,7 +23,6 @@
     "Air Europa",
     "American Eagle",
     "Avianca",
-    "Avianca Cargo",
     "Avior Airlines",
     "Boliviana de Aviación",
     "Caribbean Airlines",
@@ -36,7 +35,6 @@
     "Plus Ultra Líneas Aéreas",
     "RUTACA Airlines",
     "SASCA",
-    "Sky Lease Cargo",
     "TAP Air Portugal",
     "Turkish Airlines",
     "Turpial Airlines",
@@ -101,7 +99,6 @@
       ],
       "airlines": [
         "Avianca",
-        "Avianca Cargo",
         "Avior Airlines",
         "LASER Airlines",
         "LATAM Colombia",
@@ -446,8 +443,7 @@
       ],
       "airlines": [
         "American Eagle",
-        "LASER Airlines",
-        "Sky Lease Cargo"
+        "LASER Airlines"
       ]
     },
     {
@@ -835,14 +831,66 @@
     "Wingo": [
       "Bogotá",
       "Medellín–JMC"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Amerijet International",
+    "Avianca Cargo",
+    "Cargojet",
+    "Sky Lease Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International",
+        "Sky Lease Cargo"
+      ]
+    },
+    {
+      "city": "Santo Domingo-Las Américas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Américas_International_Airport",
+      "codes": [
+        "SDQ",
+        "MDSD"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Amerijet International": [
+      "Miami"
     ],
     "Avianca Cargo": [
       "Bogotá"
+    ],
+    "Cargojet": [
+      "Santo Domingo-Las Américas"
     ],
     "Sky Lease Cargo": [
       "Miami"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:02Z",
-  "date-time-wikidata": "2026-04-28T13:01:26Z"
+  "date-time-parse": "2026-04-29T04:48:54Z",
+  "date-time-wikidata": "2026-04-29T02:46:29Z"
 }

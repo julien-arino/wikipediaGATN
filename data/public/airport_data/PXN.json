@@ -18,22 +18,22 @@
   "number_airlines": 2,
   "airlines": [
     "IndiGo",
-    "Star Air (India)"
+    "Star Air"
   ],
   "destinations": [
     {
-      "city": "Ahmedabad Airport",
+      "city": "Ahmedabad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
       "codes": [
         "AMD",
         "VAAH"
       ],
       "airlines": [
-        "Star Air (India)"
+        "Star Air"
       ]
     },
     {
-      "city": "Indira Gandhi International Airport",
+      "city": "Delhi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
       "codes": [
         "DEL",
@@ -44,19 +44,7 @@
       ]
     },
     {
-      "city": "Netaji Subhas Chandra Bose International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "codes": [
-        "CCU",
-        "VECC"
-      ],
-      "airlines": [
-        "IndiGo",
-        "Star Air (India)"
-      ]
-    },
-    {
-      "city": "Rajiv Gandhi International Airport",
+      "city": "Hyderabad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
       "codes": [
         "HYD",
@@ -65,19 +53,36 @@
       "airlines": [
         "IndiGo"
       ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo",
+        "Star Air"
+      ]
     }
   ],
   "airlines_destinations": {
     "IndiGo": [
-      "Indira Gandhi International Airport",
-      "Netaji Subhas Chandra Bose International Airport",
-      "Rajiv Gandhi International Airport"
+      "Delhi",
+      "Hyderabad",
+      "Kolkata"
     ],
-    "Star Air (India)": [
-      "Ahmedabad Airport",
-      "Netaji Subhas Chandra Bose International Airport"
+    "Star Air": [
+      "Ahmedabad",
+      "Kolkata"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:11Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:58:25Z",
   "date-time-wikidata": "2026-03-11T20:34:22Z"
 }

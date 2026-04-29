@@ -14,171 +14,130 @@
   "admin1_name": "Sinaloa",
   "admin2_name": "Culiacan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Culiacán_International_Airport",
-  "outdegree": 11,
-  "number_airlines": 5,
+  "outdegree": 6,
+  "number_airlines": 3,
   "airlines": [
     "Aeroméxico",
-    "Aeroméxico Connect",
-    "TAR Aerolíneas",
-    "Viva (airline)",
-    "Volaris"
+    "Mexico City–Benito Juárez",
+    "Viva"
   ],
   "destinations": [
     {
-      "city": "Chihuahua International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chihuahua_International_Airport",
-      "codes": [
-        "CUU",
-        "MMCU"
-      ],
-      "airlines": [
-        "TAR Aerolíneas"
-      ]
-    },
-    {
-      "city": "Felipe Ángeles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_%C3%81ngeles_International_Airport",
-      "codes": [
-        "NLU",
-        "MMSM"
-      ],
-      "airlines": [
-        "Viva (airline)"
-      ]
-    },
-    {
-      "city": "Guadalajara International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "codes": [
-        "GDL",
-        "MMGL"
-      ],
-      "airlines": [
-        "Volaris"
-      ]
-    },
-    {
-      "city": "Hermosillo International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hermosillo_International_Airport",
-      "codes": [
-        "HMO",
-        "MMHO"
-      ],
-      "airlines": [
-        "TAR Aerolíneas"
-      ]
-    },
-    {
-      "city": "La Paz International Airport",
+      "city": "La Paz",
       "wikipedia_url": "https://en.wikipedia.org/wiki/La_Paz_International_Airport",
       "codes": [
         "LAP",
         "MMLP"
       ],
       "airlines": [
-        "Viva (airline)"
+        "Viva"
       ]
     },
     {
-      "city": "Los Cabos International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
-      "codes": [
-        "SJD",
-        "MMSD"
-      ],
-      "airlines": [
-        "Viva (airline)",
-        "Volaris"
-      ]
-    },
-    {
-      "city": "Mexicali International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexicali_International_Airport",
-      "codes": [
-        "MXL",
-        "MMML"
-      ],
-      "airlines": [
-        "Volaris"
-      ]
-    },
-    {
-      "city": "Mexico City International Airport",
+      "city": "Mexico City–Benito Juárez",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
       "codes": [
         "MEX",
         "MMMX"
       ],
       "airlines": [
-        "Aeroméxico",
-        "Aeroméxico Connect",
-        "Volaris"
+        "Aeroméxico"
       ]
     },
     {
-      "city": "Monterrey International Airport",
+      "city": "Mexico City–Felipe Ángeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Monterrey",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
       "codes": [
         "MTY",
         "MMMY"
       ],
       "airlines": [
-        "Viva (airline)",
-        "Volaris"
+        "Viva"
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "city": "TAR México",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/TAR_Aerolíneas",
       "codes": [
-        "PHX",
-        "KPHX"
+        "iata code not found",
+        "icao code not found"
       ],
       "airlines": [
-        "Volaris"
+        "Mexico City–Benito Juárez"
       ]
     },
     {
-      "city": "Tijuana International Airport",
+      "city": "Tijuana",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
       "codes": [
         "TIJ",
         "MMTJ"
       ],
       "airlines": [
-        "Viva (airline)",
-        "Volaris"
+        "Viva"
       ]
     }
   ],
   "airlines_destinations": {
     "Aeroméxico": [
-      "Mexico City International Airport"
+      "Mexico City–Benito Juárez"
     ],
-    "Aeroméxico Connect": [
-      "Mexico City International Airport"
+    "Mexico City–Benito Juárez": [
+      "TAR México"
     ],
-    "TAR Aerolíneas": [
-      "Chihuahua International Airport",
-      "Hermosillo International Airport"
-    ],
-    "Viva (airline)": [
-      "Felipe Ángeles International Airport",
-      "La Paz International Airport",
-      "Los Cabos International Airport",
-      "Monterrey International Airport",
-      "Tijuana International Airport"
-    ],
-    "Volaris": [
-      "Guadalajara International Airport",
-      "Los Cabos International Airport",
-      "Mexicali International Airport",
-      "Mexico City International Airport",
-      "Monterrey International Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Tijuana International Airport"
+    "Viva": [
+      "La Paz",
+      "Mexico City–Felipe Ángeles",
+      "Monterrey",
+      "Tijuana"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:09Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Estafeta"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "San Luis Potosí",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Luis_Potosí_International_Airport",
+      "codes": [
+        "SLP",
+        "MMSP"
+      ],
+      "airlines": [
+        "Estafeta"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Estafeta"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Estafeta": [
+      "San Luis Potosí",
+      "Tijuana"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:31Z",
   "date-time-wikidata": "2026-04-14T08:48:17Z"
 }

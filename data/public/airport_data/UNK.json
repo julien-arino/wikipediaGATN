@@ -18,11 +18,11 @@
   "number_airlines": 2,
   "airlines": [
     "Bering Air",
-    "Ryan Air Services"
+    "Ryan Air"
   ],
   "destinations": [
     {
-      "city": "Koyuk Alfred Adams Airport",
+      "city": "Koyuk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Koyuk_Alfred_Adams_Airport",
       "codes": [
         "KKA",
@@ -30,11 +30,11 @@
       ],
       "airlines": [
         "Bering Air",
-        "Ryan Air Services"
+        "Ryan Air"
       ]
     },
     {
-      "city": "Nome Airport",
+      "city": "Nome",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nome_Airport",
       "codes": [
         "OME",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "city": "Shaktoolik Airport",
+      "city": "Shaktoolik",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shaktoolik_Airport",
       "codes": [
         "SKK",
@@ -53,11 +53,11 @@
       ],
       "airlines": [
         "Bering Air",
-        "Ryan Air Services"
+        "Ryan Air"
       ]
     },
     {
-      "city": "St. Michael Airport",
+      "city": "St. Michael",
       "wikipedia_url": "https://en.wikipedia.org/wiki/St._Michael_Airport",
       "codes": [
         "SMK",
@@ -65,11 +65,11 @@
       ],
       "airlines": [
         "Bering Air",
-        "Ryan Air Services"
+        "Ryan Air"
       ]
     },
     {
-      "city": "Stebbins Airport",
+      "city": "Stebbins",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stebbins_Airport",
       "codes": [
         "WBB",
@@ -77,25 +77,53 @@
       ],
       "airlines": [
         "Bering Air",
-        "Ryan Air Services"
+        "Ryan Air"
       ]
     }
   ],
   "airlines_destinations": {
     "Bering Air": [
-      "Koyuk Alfred Adams Airport",
-      "Nome Airport",
-      "Shaktoolik Airport",
-      "St. Michael Airport",
-      "Stebbins Airport"
+      "Koyuk",
+      "Nome",
+      "Shaktoolik",
+      "St. Michael",
+      "Stebbins"
     ],
-    "Ryan Air Services": [
-      "Koyuk Alfred Adams Airport",
-      "Shaktoolik Airport",
-      "St. Michael Airport",
-      "Stebbins Airport"
+    "Ryan Air": [
+      "Koyuk",
+      "Shaktoolik",
+      "St. Michael",
+      "Stebbins"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:55Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Everts Air Cargo",
+    "Northern Air Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Everts Air Cargo",
+        "Northern Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Northern Air Cargo": [
+      "Anchorage"
+    ],
+    "Everts Air Cargo": [
+      "Anchorage"
+    ]
+  },
+  "date-time-parse": "2026-04-29T05:01:09Z",
   "date-time-wikidata": "2025-10-28T16:04:56Z"
 }

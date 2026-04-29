@@ -14,11 +14,45 @@
   "admin1_name": "Liège",
   "admin2_name": "Province de Liege",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Liege_Airport",
-  "outdegree": 69,
-  "number_airlines": 21,
+  "outdegree": 2,
+  "number_airlines": 1,
   "airlines": [
+    "Air Baltic"
+  ],
+  "destinations": [
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Air Baltic"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS"
+      ],
+      "airlines": [
+        "Air Baltic"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Baltic": [
+      "Gran Canaria",
+      "Tenerife–South"
+    ]
+  },
+  "outdegree_cargo": 67,
+  "number_airlines_cargo": 20,
+  "airlines_cargo": [
     "ASL Airlines Belgium",
-    "Air Baltic",
     "Air Canada Cargo",
     "Air China Cargo",
     "Atlas Air",
@@ -39,7 +73,7 @@
     "SF Airlines",
     "Supernova Airlines"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Abidjan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
@@ -258,17 +292,6 @@
       ],
       "airlines": [
         "FedEx Feeder"
-      ]
-    },
-    {
-      "city": "Gran Canaria",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "codes": [
-        "LPA",
-        "GCLP"
-      ],
-      "airlines": [
-        "Air Baltic"
       ]
     },
     {
@@ -753,17 +776,6 @@
       ]
     },
     {
-      "city": "Tenerife–South",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "codes": [
-        "TFS",
-        "GCTS"
-      ],
-      "airlines": [
-        "Air Baltic"
-      ]
-    },
-    {
       "city": "Tokyo–Narita",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
       "codes": [
@@ -834,11 +846,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Air Baltic": [
-      "Gran Canaria",
-      "Tenerife–South"
-    ],
+  "airlines_destinations_cargo": {
     "Air Canada Cargo": [
       "Basel/Mulhouse",
       "Toronto–Pearson"
@@ -981,6 +989,6 @@
       "Ostrava"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:02Z",
+  "date-time-parse": "2026-04-29T04:55:09Z",
   "date-time-wikidata": "2026-04-03T20:32:44Z"
 }

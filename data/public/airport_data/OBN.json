@@ -14,11 +14,58 @@
   "admin1_name": "Scotland",
   "admin2_name": "Argyll and Bute",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Oban_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:18:13Z",
+  "outdegree": 3,
+  "number_airlines": 1,
+  "airlines": [
+    "Hebridean Air Services"
+  ],
+  "destinations": [
+    {
+      "city": "Coll",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coll_Airport",
+      "codes": [
+        "COL",
+        "EGEL"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    },
+    {
+      "city": "Colonsay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colonsay_Airport",
+      "codes": [
+        "CSA",
+        "EGEY"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    },
+    {
+      "city": "Tiree",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiree_Airport",
+      "codes": [
+        "TRE",
+        "EGPU"
+      ],
+      "airlines": [
+        "Hebridean Air Services"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Hebridean Air Services": [
+      "Coll",
+      "Colonsay",
+      "Tiree"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:57:14Z",
   "date-time-wikidata": "2025-11-10T00:49:46Z"
 }

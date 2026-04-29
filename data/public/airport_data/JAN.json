@@ -14,10 +14,10 @@
   "admin1_name": "Mississippi",
   "admin2_name": "Rankin County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Jackson–Medgar_Wiley_Evers_International_Airport",
-  "outdegree": 9,
+  "outdegree": 6,
   "number_airlines": 5,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "Southwest Airlines",
@@ -25,30 +25,8 @@
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Dallas/Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -59,8 +37,41 @@
       ]
     },
     {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Houston–Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
       "city": "Houston–Intercontinental",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Houston%E2%80%93Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houston–Intercontinental",
       "codes": [
         "IAH",
         "KIAH"
@@ -70,29 +81,7 @@
       ]
     },
     {
-      "city": "Miami International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "codes": [
-        "MIA",
-        "KMIA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Nashville International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "codes": [
-        "BNA",
-        "KBNA"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -101,52 +90,32 @@
       "airlines": [
         "Southwest Airlines"
       ]
-    },
-    {
-      "city": "Ronald Reagan Washington National Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "codes": [
-        "DCA",
-        "KDCA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "William P. Hobby Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
-      "codes": [
-        "HOU",
-        "KHOU"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas/Fort Worth International Airport",
-      "Miami International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Dallas/Fort Worth"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "Southwest Airlines": [
-      "Nashville International Airport",
-      "Orlando International Airport",
-      "William P. Hobby Airport"
+      "Houston–Hobby",
+      "Orlando"
     ],
     "United Express": [
       "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:15Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:53:35Z",
   "date-time-wikidata": "2026-03-17T09:08:53Z"
 }

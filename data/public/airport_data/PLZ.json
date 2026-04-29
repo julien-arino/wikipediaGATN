@@ -14,12 +14,92 @@
   "admin1_name": "Eastern Cape",
   "admin2_name": "Nelson Mandela Bay Metropolitan Municipality",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Elizabeth_International_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 4,
+  "number_airlines": 4,
   "airlines": [
-    "BidAir Cargo"
+    "Airlink",
+    "CemAir",
+    "FlySafair",
+    "South African Airways"
   ],
   "destinations": [
+    {
+      "city": "Cape Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
+      "codes": [
+        "CPT",
+        "FACT"
+      ],
+      "airlines": [
+        "Airlink",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Durban",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Shaka_International_Airport",
+      "codes": [
+        "DUR",
+        "FALE"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Johannesburg–Lanseria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
+      "codes": [
+        "HLA",
+        "FALA"
+      ],
+      "airlines": [
+        "FlySafair"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink",
+        "CemAir",
+        "FlySafair",
+        "South African Airways"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Airlink": [
+      "Cape Town",
+      "Durban",
+      "Johannesburg–O. R. Tambo"
+    ],
+    "CemAir": [
+      "Durban",
+      "Johannesburg–O. R. Tambo"
+    ],
+    "FlySafair": [
+      "Cape Town",
+      "Durban",
+      "Johannesburg–Lanseria",
+      "Johannesburg–O. R. Tambo"
+    ],
+    "South African Airways": [
+      "Johannesburg–O. R. Tambo"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "BidAir Cargo"
+  ],
+  "destinations_cargo": [
     {
       "city": "Johannesburg–O. R. Tambo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
@@ -32,11 +112,11 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "BidAir Cargo": [
       "Johannesburg–O. R. Tambo"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:25Z",
+  "date-time-parse": "2026-04-29T04:58:02Z",
   "date-time-wikidata": "2026-04-18T12:22:24Z"
 }

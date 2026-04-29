@@ -13,13 +13,10 @@
   "admin1_code": "KE-44",
   "admin1_name": "Uasin Gishu",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Eldoret_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 5,
+  "outdegree": 4,
+  "number_airlines": 2,
   "airlines": [
-    "Astral Aviation",
-    "Ethiopian Airlines",
     "Jambojet",
-    "Kenya Airways Cargo",
     "Skyward Express"
   ],
   "destinations": [
@@ -53,8 +50,6 @@
         "HKJK"
       ],
       "airlines": [
-        "Astral Aviation",
-        "Ethiopian Airlines",
         "Jambojet"
       ]
     },
@@ -67,6 +62,37 @@
       ],
       "airlines": [
         "Skyward Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Jambojet": [
+      "Mombasa",
+      "Nairobi–Jomo Kenyatta"
+    ],
+    "Skyward Express": [
+      "Lodwar",
+      "Nairobi–Wilson"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Ethiopian Airlines",
+    "Kenya Airways Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -83,15 +109,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Jambojet": [
-      "Mombasa",
-      "Nairobi–Jomo Kenyatta"
-    ],
-    "Skyward Express": [
-      "Lodwar",
-      "Nairobi–Wilson"
-    ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Nairobi–Jomo Kenyatta",
       "Sharjah"
@@ -104,6 +122,6 @@
       "Sharjah"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:20Z",
+  "date-time-parse": "2026-04-29T04:50:21Z",
   "date-time-wikidata": "2026-03-17T10:58:36Z"
 }

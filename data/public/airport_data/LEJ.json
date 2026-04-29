@@ -23,7 +23,7 @@
     "Eurowings",
     "Freebird Airlines",
     "Lufthansa",
-    "Marabu (airline)",
+    "Marabu",
     "Nouvelair",
     "Pegasus Airlines",
     "SunExpress",
@@ -31,7 +31,7 @@
   ],
   "destinations": [
     {
-      "city": "Antalya Airport",
+      "city": "Antalya",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
       "codes": [
         "AYT",
@@ -45,7 +45,18 @@
       ]
     },
     {
-      "city": "Burgas Airport",
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas-Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "AJet"
+      ]
+    },
+    {
+      "city": "Burgas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Burgas_Airport",
       "codes": [
         "BOJ",
@@ -56,8 +67,8 @@
       ]
     },
     {
-      "city": "Djerba–Zarzis International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Djerba%E2%80%93Zarzis_International_Airport",
+      "city": "Djerba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djerba–Zarzis_International_Airport",
       "codes": [
         "DJE",
         "DTTJ"
@@ -67,7 +78,7 @@
       ]
     },
     {
-      "city": "Frankfurt Airport",
+      "city": "Frankfurt",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
       "codes": [
         "FRA",
@@ -78,7 +89,7 @@
       ]
     },
     {
-      "city": "Fuerteventura Airport",
+      "city": "Fuerteventura",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fuerteventura_Airport",
       "codes": [
         "FUE",
@@ -86,33 +97,44 @@
       ],
       "airlines": [
         "Freebird Airlines",
-        "Marabu (airline)"
+        "Marabu"
       ]
     },
     {
-      "city": "Gran Canaria Airport",
+      "city": "Funchal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeira_Airport",
+      "codes": [
+        "FNC",
+        "LPMA"
+      ],
+      "airlines": [
+        "Marabu"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
       "codes": [
         "LPA",
         "GCLP"
       ],
       "airlines": [
-        "Marabu (airline)"
+        "Marabu"
       ]
     },
     {
-      "city": "Heraklion International Airport",
+      "city": "Heraklion",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
       "codes": [
         "HER",
         "LGIR"
       ],
       "airlines": [
-        "Marabu (airline)"
+        "Marabu"
       ]
     },
     {
-      "city": "Hurghada International Airport",
+      "city": "Hurghada",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
       "codes": [
         "HRG",
@@ -124,7 +146,7 @@
       ]
     },
     {
-      "city": "Istanbul Airport",
+      "city": "Istanbul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
       "codes": [
         "IST",
@@ -135,29 +157,7 @@
       ]
     },
     {
-      "city": "Madeira Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeira_Airport",
-      "codes": [
-        "FNC",
-        "LPMA"
-      ],
-      "airlines": [
-        "Marabu (airline)"
-      ]
-    },
-    {
-      "city": "Milas-Bodrum Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas-Bodrum_Airport",
-      "codes": [
-        "BJV",
-        "LTFE"
-      ],
-      "airlines": [
-        "AJet"
-      ]
-    },
-    {
-      "city": "Monastir Habib Bourguiba International Airport",
+      "city": "Monastir",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Monastir_Habib_Bourguiba_International_Airport",
       "codes": [
         "MIR",
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "city": "Palma de Mallorca Airport",
+      "city": "Palma de Mallorca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
       "codes": [
         "PMI",
@@ -176,22 +176,22 @@
       ],
       "airlines": [
         "Eurowings",
-        "Marabu (airline)"
+        "Marabu"
       ]
     },
     {
-      "city": "Tenerife South Airport",
+      "city": "Tenerife–South",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
       "codes": [
         "TFS",
         "GCTS"
       ],
       "airlines": [
-        "Marabu (airline)"
+        "Marabu"
       ]
     },
     {
-      "city": "Vienna International Airport",
+      "city": "Vienna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
       "codes": [
         "VIE",
@@ -204,51 +204,963 @@
   ],
   "airlines_destinations": {
     "Air Cairo": [
-      "Hurghada International Airport"
+      "Hurghada"
     ],
     "AJet": [
-      "Milas-Bodrum Airport"
+      "Bodrum"
     ],
     "Austrian Airlines": [
-      "Vienna International Airport"
+      "Vienna"
     ],
     "Corendon Airlines": [
-      "Antalya Airport",
-      "Hurghada International Airport"
+      "Antalya",
+      "Hurghada"
     ],
     "Eurowings": [
-      "Palma de Mallorca Airport"
+      "Palma de Mallorca"
     ],
     "Freebird Airlines": [
-      "Antalya Airport",
-      "Burgas Airport",
-      "Fuerteventura Airport"
+      "Antalya",
+      "Burgas",
+      "Fuerteventura"
     ],
     "Lufthansa": [
-      "Frankfurt Airport"
+      "Frankfurt"
     ],
-    "Marabu (airline)": [
-      "Fuerteventura Airport",
-      "Gran Canaria Airport",
-      "Heraklion International Airport",
-      "Madeira Airport",
-      "Palma de Mallorca Airport",
-      "Tenerife South Airport"
+    "Marabu": [
+      "Fuerteventura",
+      "Funchal",
+      "Gran Canaria",
+      "Heraklion",
+      "Palma de Mallorca",
+      "Tenerife–South"
     ],
     "Nouvelair": [
-      "Djerba–Zarzis International Airport",
-      "Monastir Habib Bourguiba International Airport"
+      "Djerba",
+      "Monastir"
     ],
     "Pegasus Airlines": [
-      "Antalya Airport"
+      "Antalya"
     ],
     "SunExpress": [
-      "Antalya Airport"
+      "Antalya"
     ],
     "Turkish Airlines": [
-      "Istanbul Airport"
+      "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:58Z",
+  "outdegree_cargo": 72,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "AeroLogic",
+    "Amazon Air",
+    "DHL Aviation",
+    "MNG Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bahrain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bahrain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Basel/Mulhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Euroairport",
+      "codes": [
+        "BSL",
+        "LFSB"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bratislava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
+      "codes": [
+        "BTS",
+        "LZIB"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Brno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brno_Airport",
+      "codes": [
+        "BRQ",
+        "LKTB"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Airport",
+      "codes": [
+        "BUD",
+        "LHBP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "East Midlands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Edinburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
+      "codes": [
+        "GDN",
+        "EPGD"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "MNG Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ"
+      ],
+      "airlines": [
+        "MNG Airlines"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Linz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linz_Airport",
+      "codes": [
+        "LNZ",
+        "LOWL"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ljubljana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ljubljana_Airport",
+      "codes": [
+        "LJU",
+        "LJLJ"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
+      "codes": [
+        "LTN",
+        "EGGW"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon_Airport",
+      "codes": [
+        "LYS",
+        "LFLL"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Airport",
+      "codes": [
+        "MRS",
+        "LFML"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Mexico City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mumbai_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Airport",
+      "codes": [
+        "NTE",
+        "LFRS"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ostrava",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostrava_Airport",
+      "codes": [
+        "OSR",
+        "LKMT"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Pisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_International_Airport",
+      "codes": [
+        "PSA",
+        "LIRP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Rome–Ciampino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Ciampino_Airport",
+      "codes": [
+        "CIA",
+        "LIRA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Shannon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shannon_Airport",
+      "codes": [
+        "SNN",
+        "EINN"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao’an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Skopje",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skopje_International_Airport",
+      "codes": [
+        "SKP",
+        "LWSK"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Sofia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sofia_Airport",
+      "codes": [
+        "SOF",
+        "LBSF"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Stavanger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stavanger_Airport",
+      "codes": [
+        "SVG",
+        "ENZV"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Stuttgart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
+      "codes": [
+        "STR",
+        "EDDS"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tashkent_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "codes": [
+        "TLV",
+        "LLBG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Treviso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Treviso_Airport",
+      "codes": [
+        "TSF",
+        "LIPH"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Turku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turku_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Vilnius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vilnius_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Vitoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vitoria_Airport",
+      "codes": [
+        "VIT",
+        "LEVT"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "AeroLogic": [
+      "Bahrain",
+      "Bangkok–Suvarnabhumi",
+      "Bengaluru",
+      "Brussels",
+      "Cincinnati",
+      "Delhi",
+      "Dubai–International",
+      "East Midlands",
+      "Frankfurt",
+      "Hong Kong",
+      "Mexico City",
+      "Mumbai",
+      "Seoul–Incheon",
+      "Shanghai–Pudong",
+      "Shenzhen",
+      "Singapore",
+      "Stavanger",
+      "Tokyo–Narita"
+    ],
+    "Amazon Air": [
+      "Milan–Malpensa"
+    ],
+    "DHL Aviation": [
+      "Amsterdam",
+      "Athens",
+      "Bahrain",
+      "Bangkok–Suvarnabhumi",
+      "Barcelona",
+      "Basel/Mulhouse",
+      "Belgrade",
+      "Bengaluru",
+      "Bologna",
+      "Bratislava",
+      "Brno",
+      "Brussels",
+      "Budapest",
+      "Cincinnati",
+      "Cologne/Bonn",
+      "Copenhagen",
+      "Delhi",
+      "Dubai–International",
+      "Dublin",
+      "East Midlands",
+      "Edinburgh",
+      "Frankfurt",
+      "Gdańsk",
+      "Geneva",
+      "Helsinki",
+      "Hong Kong",
+      "Katowice",
+      "Linz",
+      "Ljubljana",
+      "London–Heathrow",
+      "London–Luton",
+      "Los Angeles",
+      "Lyon",
+      "Madrid",
+      "Marseille",
+      "Milan–Malpensa",
+      "Mumbai",
+      "Munich",
+      "Nantes",
+      "New York–JFK",
+      "Oslo",
+      "Ostrava",
+      "Paris–Charles de Gaulle",
+      "Pisa",
+      "Rome–Ciampino",
+      "Seoul–Incheon",
+      "Shanghai–Pudong",
+      "Shannon",
+      "Skopje",
+      "Sofia",
+      "Stockholm–Arlanda",
+      "Stuttgart",
+      "Tashkent",
+      "Tel Aviv",
+      "Treviso",
+      "Turku",
+      "Vilnius",
+      "Vitoria",
+      "Warsaw–Chopin"
+    ],
+    "MNG Airlines": [
+      "Istanbul",
+      "Istanbul–Sabiha Gökçen"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:55:05Z",
   "date-time-wikidata": "2026-04-25T21:18:16Z"
 }

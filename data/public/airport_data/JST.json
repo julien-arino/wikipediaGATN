@@ -14,11 +14,46 @@
   "admin1_name": "Pennsylvania",
   "admin2_name": "Cambria County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Johnstown–Cambria_County_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:06:41Z",
+  "outdegree": 2,
+  "number_airlines": 1,
+  "airlines": [
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "United Express": [
+      "Chicago–O'Hare",
+      "Washington–Dulles"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:54:04Z",
   "date-time-wikidata": "2026-03-13T19:46:15Z"
 }

@@ -18,25 +18,14 @@
   "number_airlines": 4,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -46,30 +35,30 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
         "ORD",
         "KORD"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
+        "American Eagle",
         "United Express"
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -80,8 +69,19 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -93,21 +93,44 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Mesa Gateway Airport",
-      "Orlando Sanford International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport",
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:30Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Memphis"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:12Z",
   "date-time-wikidata": "2026-02-13T13:36:13Z"
 }

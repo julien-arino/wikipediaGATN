@@ -13,12 +13,11 @@
   "admin1_code": "JP-17",
   "admin1_name": "Ishikawa",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Komatsu_Airport",
-  "outdegree": 10,
-  "number_airlines": 10,
+  "outdegree": 8,
+  "number_airlines": 9,
   "airlines": [
     "ANA Wings",
     "All Nippon Airways",
-    "Cargolux",
     "China Eastern Airlines",
     "EVA Air",
     "HK Express",
@@ -28,17 +27,6 @@
     "Tigerair Taiwan"
   ],
   "destinations": [
-    {
-      "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "Cargolux"
-      ]
-    },
     {
       "city": "Fukuoka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
@@ -58,19 +46,7 @@
         "VHHH"
       ],
       "airlines": [
-        "Cargolux",
         "HK Express"
-      ]
-    },
-    {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Cargolux"
       ]
     },
     {
@@ -103,7 +79,6 @@
         "RKSI"
       ],
       "airlines": [
-        "Cargolux",
         "Korean Air"
       ]
     },
@@ -171,7 +146,60 @@
     ],
     "Tigerair Taiwan": [
       "Taipei–Taoyuan"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Cargolux"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargolux": [
       "Chicago–O'Hare",
       "Hong Kong",
@@ -179,6 +207,6 @@
       "Seoul–Incheon"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:57Z",
+  "date-time-parse": "2026-04-29T04:54:28Z",
   "date-time-wikidata": "2026-04-25T08:33:54Z"
 }

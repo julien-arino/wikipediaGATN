@@ -14,16 +14,21 @@
   "admin1_name": "Indiana",
   "admin2_name": "Lake County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gary/Chicago_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 3,
-  "airlines": [
+  "outdegree": 0,
+  "number_airlines": 0,
+  "airlines": [],
+  "destinations": [],
+  "airlines_destinations": {},
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
     "Aeronaves TSM",
     "AirNet Express",
     "UPS Airlines"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
-      "city": "Cleveland Burke Lakefront Airport",
+      "city": "Cleveland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Burke_Lakefront_Airport",
       "codes": [
         "BKL",
@@ -34,7 +39,7 @@
       ]
     },
     {
-      "city": "Columbia Regional Airport",
+      "city": "Columbia (MO)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Columbia_Regional_Airport",
       "codes": [
         "COU",
@@ -45,7 +50,18 @@
       ]
     },
     {
-      "city": "Laredo International Airport",
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miguel_Hidalgo_y_Costilla_Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Aeronaves TSM"
+      ]
+    },
+    {
+      "city": "Laredo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Laredo_International_Airport",
       "codes": [
         "LRD",
@@ -56,7 +72,7 @@
       ]
     },
     {
-      "city": "Louisville International Airport",
+      "city": "Louisville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
       "codes": [
         "SDF",
@@ -65,32 +81,21 @@
       "airlines": [
         "UPS Airlines"
       ]
-    },
-    {
-      "city": "Miguel Hidalgo y Costilla Guadalajara International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miguel_Hidalgo_y_Costilla_Guadalajara_International_Airport",
-      "codes": [
-        "GDL",
-        "MMGL"
-      ],
-      "airlines": [
-        "Aeronaves TSM"
-      ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Aeronaves TSM": [
-      "Laredo International Airport",
-      "Miguel Hidalgo y Costilla Guadalajara International Airport"
+      "Guadalajara",
+      "Laredo"
     ],
     "AirNet Express": [
-      "Cleveland Burke Lakefront Airport",
-      "Columbia Regional Airport"
+      "Cleveland",
+      "Columbia (MO)"
     ],
     "UPS Airlines": [
-      "Louisville International Airport"
+      "Louisville"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:42Z",
+  "date-time-parse": "2026-04-29T04:51:26Z",
   "date-time-wikidata": "2026-01-09T21:21:45Z"
 }

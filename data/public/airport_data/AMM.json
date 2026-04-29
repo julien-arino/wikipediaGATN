@@ -13,8 +13,8 @@
   "admin1_code": "",
   "admin1_name": "Amman",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
-  "outdegree": 91,
-  "number_airlines": 40,
+  "outdegree": 86,
+  "number_airlines": 35,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -24,7 +24,6 @@
     "Air Cairo",
     "Austrian Airlines",
     "British Airways",
-    "Cargolux",
     "Egyptair",
     "Emirates",
     "Ethiopian Airlines",
@@ -40,20 +39,16 @@
     "Kuwait Airways",
     "Libyan Wings",
     "Lufthansa",
-    "Lufthansa Cargo",
     "Middle East Airlines",
     "Oman Air",
     "Pegasus Airlines",
     "Qatar Airways",
     "Royal Jordanian",
-    "Royal Jordanian Cargo",
     "Ryanair",
     "Saudia",
-    "Saudia Cargo",
     "SunExpress",
     "TAROM",
     "Turkish Airlines",
-    "Turkish Cargo",
     "Wizz Air",
     "Yemenia"
   ],
@@ -202,26 +197,13 @@
     },
     {
       "city": "Baghdad",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_Airport",
-      "codes": [
-        "BGW",
-        "ORBI"
-      ],
-      "airlines": [
-        "Iraqi Airways",
-        "Royal Jordanian Cargo"
-      ]
-    },
-    {
-      "city": "Baghdad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
       "codes": [
         "BGW",
         "ORBI"
       ],
       "airlines": [
-        "Iraqi Airways",
-        "Royal Jordanian Cargo"
+        "Iraqi Airways"
       ]
     },
     {
@@ -391,8 +373,7 @@
       ],
       "airlines": [
         "Air Cairo",
-        "Egyptair",
-        "Royal Jordanian Cargo"
+        "Egyptair"
       ]
     },
     {
@@ -463,17 +444,6 @@
       ]
     },
     {
-      "city": "Dubai-International",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "codes": [
-        "DXB",
-        "OMDB"
-      ],
-      "airlines": [
-        "Royal Jordanian Cargo"
-      ]
-    },
-    {
       "city": "Dubai–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
       "codes": [
@@ -506,8 +476,7 @@
       ],
       "airlines": [
         "Iraqi Airways",
-        "Royal Jordanian",
-        "Royal Jordanian Cargo"
+        "Royal Jordanian"
       ]
     },
     {
@@ -519,7 +488,6 @@
       ],
       "airlines": [
         "Lufthansa",
-        "Lufthansa Cargo",
         "Royal Jordanian"
       ]
     },
@@ -543,8 +511,7 @@
       ],
       "airlines": [
         "FlyJordan",
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -582,17 +549,6 @@
         "Jordan Aviation",
         "Royal Jordanian",
         "Saudia"
-      ]
-    },
-    {
-      "city": "Karachi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
-      "codes": [
-        "KHI",
-        "OPKC"
-      ],
-      "airlines": [
-        "Royal Jordanian Cargo"
       ]
     },
     {
@@ -664,17 +620,6 @@
       ]
     },
     {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Cargolux"
-      ]
-    },
-    {
       "city": "Lyon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
       "codes": [
@@ -683,17 +628,6 @@
       ],
       "airlines": [
         "Royal Jordanian"
-      ]
-    },
-    {
-      "city": "Maastricht/Aachen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
-      "codes": [
-        "MST",
-        "EHBK"
-      ],
-      "airlines": [
-        "Royal Jordanian Cargo"
       ]
     },
     {
@@ -896,8 +830,7 @@
       "airlines": [
         "Flyadeal",
         "Flynas",
-        "Saudia",
-        "Saudia Cargo"
+        "Saudia"
       ]
     },
     {
@@ -1295,7 +1228,130 @@
     "Yemenia": [
       "Aden",
       "Sana'a"
-    ],
+    ]
+  },
+  "outdegree_cargo": 10,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Cargolux",
+    "Lufthansa Cargo",
+    "Royal Jordanian Cargo",
+    "Saudia Cargo",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Baghdad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_Airport",
+      "codes": [
+        "BGW",
+        "ORBI"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Dubai-International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Erbil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erbil_International_Airport",
+      "codes": [
+        "EBL",
+        "ORER"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Karachi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinnah_International_Airport",
+      "codes": [
+        "KHI",
+        "OPKC"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Maastricht/Aachen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
+      "codes": [
+        "MST",
+        "EHBK"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargolux": [
       "Luxembourg"
     ],
@@ -1317,6 +1373,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:26Z",
+  "date-time-parse": "2026-04-29T04:47:09Z",
   "date-time-wikidata": "2026-04-25T12:00:42Z"
 }

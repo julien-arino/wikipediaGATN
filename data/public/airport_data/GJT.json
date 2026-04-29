@@ -17,7 +17,7 @@
   "outdegree": 6,
   "number_airlines": 5,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Connection",
     "United Airlines",
@@ -25,18 +25,18 @@
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "city": "John Wayne Airport",
+      "city": "Orange County",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
       "codes": [
         "SNA",
@@ -70,18 +70,18 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -93,24 +93,29 @@
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "Breeze Airways": [
-      "Harry Reid International Airport",
-      "John Wayne Airport"
+      "Las Vegas",
+      "Orange County"
     ],
     "Delta Connection": [
-      "Salt Lake City International Airport"
+      "Salt Lake City"
     ],
     "United Airlines": [
-      "Denver International Airport"
+      "Denver"
     ],
     "United Express": [
-      "Denver International Airport"
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:36Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:08Z",
   "date-time-wikidata": "2026-03-08T22:27:11Z"
 }

@@ -74,33 +74,40 @@ def export_all_airport_data(verbose: bool = False) -> str:
       :func:`~.connections.create_outbound_connections_list` so that
       ``airports_information.csv`` is available for URL→IATA mapping.
     """
+    airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
+    
     if not os.path.isdir(TEMP_RESULTS_DIR):
-        raise FileNotFoundError(
-            f"Temporary results directory not found: {TEMP_RESULTS_DIR}\n"
-            "Run the Wikipedia scraping step first."
-        )
+        if not os.path.isdir(airport_data_dir):
+            raise FileNotFoundError(
+                f"Neither temporary nor public results directory found.\n"
+                "Run the Wikipedia scraping step first."
+            )
+        else:
+            scan_dir = airport_data_dir
+    else:
+        scan_dir = TEMP_RESULTS_DIR
 
     # 1. Pre-computation pass: Build url_to_codes mapping
     url_to_codes = build_url_to_codes_map(verbose=verbose)
 
-    # Scan all JSON files in TEMP_RESULTS_DIR
+    # Scan all JSON files in the chosen directory
     valid_files = []
-    for fname in sorted(os.listdir(TEMP_RESULTS_DIR)):
+    for fname in sorted(os.listdir(scan_dir)):
         m = _FNAME_RE.match(fname)
-        if not m:
-            continue
-        valid_files.append((fname, m.group(1)))
+        if m:
+            valid_files.append((fname, m.group(1)))
+        elif fname.endswith(".json"):
+            valid_files.append((fname, fname[:-5]))
 
     rows = []
     skipped = 0
 
-    airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
     os.makedirs(airport_data_dir, exist_ok=True)
     
     geolocator = Nominatim(user_agent="wikipediaGATN/1.0")
 
     for fname, identifier in valid_files:
-        fpath = os.path.join(TEMP_RESULTS_DIR, fname)
+        fpath = os.path.join(scan_dir, fname)
         try:
             with open(fpath, "r", encoding="utf-8") as fh:
                 data = json.load(fh)
@@ -140,6 +147,10 @@ def export_all_airport_data(verbose: bool = False) -> str:
             if k == "airlines":
                 new_data["number_airlines"] = len(data.get("airlines", []))
                 new_data["outdegree"] = len(data.get("destinations", []))
+                
+            if k == "airlines_cargo":
+                new_data["number_airlines_cargo"] = len(data.get("airlines_cargo", []))
+                new_data["outdegree_cargo"] = len(data.get("destinations_cargo", []))
             
             if k == "destinations":
                 if "number_airlines" not in new_data:
@@ -149,11 +160,23 @@ def export_all_airport_data(verbose: bool = False) -> str:
                 ad_map = data.get("airlines_destinations", {})
                 v = format_destinations_list(data.get("destinations", []), ad_map, url_to_codes)
                 
+            if k == "destinations_cargo":
+                if "number_airlines_cargo" not in new_data:
+                    new_data["number_airlines_cargo"] = len(data.get("airlines_cargo", []))
+                    new_data["outdegree_cargo"] = len(data.get("destinations_cargo", []))
+                
+                ad_map_c = data.get("airlines_destinations_cargo", {})
+                v = format_destinations_list(data.get("destinations_cargo", []), ad_map_c, url_to_codes)
+                
             new_data[k] = v
             
         if "number_airlines" not in new_data:
             new_data["number_airlines"] = len(data.get("airlines", []))
             new_data["outdegree"] = len(data.get("destinations", []))
+            
+        if "number_airlines_cargo" not in new_data:
+            new_data["number_airlines_cargo"] = len(data.get("airlines_cargo", []))
+            new_data["outdegree_cargo"] = len(data.get("destinations_cargo", []))
 
         # Ensure timestamps are at the end
         if "date-time-parse" in new_data:
@@ -173,6 +196,7 @@ def export_all_airport_data(verbose: bool = False) -> str:
             "name":          new_data.get("name") or new_data.get("serves", ""),
             "wikipedia_url": new_data.get("wikipedia_url", ""),
             "outdegree":     new_data.get("outdegree", 0),
+            "outdegree_cargo": new_data.get("outdegree_cargo", 0),
         })
 
         # Apply formatting constraints
@@ -189,7 +213,7 @@ def export_all_airport_data(verbose: bool = False) -> str:
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
         fieldnames = [
             "iata", "icao", "latitude", "longitude",
-            "name", "wikipedia_url", "outdegree",
+            "name", "wikipedia_url", "outdegree", "outdegree_cargo"
         ]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()

@@ -14,12 +14,253 @@
   "admin1_name": "Munster",
   "admin2_name": "An Clar",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Shannon_Airport",
-  "outdegree": 4,
-  "number_airlines": 1,
+  "outdegree": 18,
+  "number_airlines": 5,
   "airlines": [
-    "Turkish Cargo"
+    "Aer Lingus",
+    "Delta Air Lines",
+    "Discover Airlines",
+    "Ryanair",
+    "United Airlines"
   ],
   "destinations": [
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Birmingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
+      "codes": [
+        "BHX",
+        "EGBB"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Discover Airlines"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Kaunas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaunas_Airport",
+      "codes": [
+        "KUN",
+        "EYKA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Aer Lingus",
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Palma de Mallorca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
+      "codes": [
+        "PMI",
+        "LEPA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Reus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reus_Airport",
+      "codes": [
+        "REU",
+        "LERS"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Rome–Ciampino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Ciampino_Airport",
+      "codes": [
+        "CIA",
+        "LIRA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Turin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turin_Airport",
+      "codes": [
+        "TRN",
+        "LIMF"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aer Lingus": [
+      "Boston",
+      "London–Heathrow",
+      "New York–JFK"
+    ],
+    "Delta Air Lines": [
+      "New York–JFK"
+    ],
+    "Discover Airlines": [
+      "Frankfurt"
+    ],
+    "Ryanair": [
+      "Alicante",
+      "Birmingham",
+      "Corfu",
+      "Gran Canaria",
+      "Kaunas",
+      "London–Gatwick",
+      "Madrid",
+      "Málaga",
+      "Palma de Mallorca",
+      "Reus",
+      "Rome–Ciampino",
+      "Turin"
+    ],
+    "United Airlines": [
+      "Chicago–O'Hare",
+      "Newark"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
     {
       "city": "Atlanta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
@@ -65,7 +306,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Turkish Cargo": [
       "Atlanta",
       "Chicago–O'Hare",
@@ -73,6 +314,6 @@
       "New York–JFK"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:10Z",
-  "date-time-wikidata": "2026-04-19T15:30:58Z"
+  "date-time-parse": "2026-04-29T04:59:38Z",
+  "date-time-wikidata": "2026-04-29T00:25:56Z"
 }

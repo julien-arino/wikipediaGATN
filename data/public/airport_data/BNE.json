@@ -14,8 +14,8 @@
   "admin1_name": "Queensland",
   "admin2_name": "Brisbane",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
-  "outdegree": 99,
-  "number_airlines": 39,
+  "outdegree": 101,
+  "number_airlines": 33,
   "airlines": [
     "Air Canada",
     "Air New Zealand",
@@ -23,9 +23,7 @@
     "Aircalin",
     "Alliance Airlines",
     "American Airlines",
-    "Astral Aviation",
     "Batik Air Malaysia",
-    "Cathay Cargo",
     "Cathay Pacific",
     "China Airlines",
     "China Eastern Airlines",
@@ -43,19 +41,15 @@
     "Nauru Airlines",
     "Philippine Airlines",
     "Qantas",
-    "Qantas Freight",
     "QantasLink",
     "Qatar Airways",
     "Rex Airlines",
     "Singapore Airlines",
     "Skytrans Australia",
     "Solomon Airlines",
-    "Team Global Express",
-    "Terra Avia",
     "United Airlines",
     "VietJet Air",
-    "Virgin Australia",
-    "Virgin Australia Cargo"
+    "Virgin Australia"
   ],
   "destinations": [
     {
@@ -68,7 +62,6 @@
       "airlines": [
         "Jetstar",
         "QantasLink",
-        "Team Global Express",
         "Virgin Australia"
       ]
     },
@@ -207,8 +200,7 @@
         "YTNG"
       ],
       "airlines": [
-        "Link Airways",
-        "Team Global Express"
+        "Link Airways"
       ]
     },
     {
@@ -277,10 +269,8 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "QantasLink",
-        "Virgin Australia",
-        "Virgin Australia Cargo"
+        "Virgin Australia"
       ]
     },
     {
@@ -538,10 +528,7 @@
         "VHHH"
       ],
       "airlines": [
-        "Astral Aviation",
-        "Cathay Cargo",
-        "Cathay Pacific",
-        "Terra Avia"
+        "Cathay Pacific"
       ]
     },
     {
@@ -552,7 +539,6 @@
         "AGGH"
       ],
       "airlines": [
-        "Nauru Airlines",
         "QantasLink",
         "Solomon Airlines"
       ]
@@ -587,6 +573,7 @@
         "PTRO"
       ],
       "airlines": [
+        "Nauru Airlines",
         "Qantas"
       ]
     },
@@ -661,8 +648,18 @@
         "Jetstar",
         "Qantas",
         "QantasLink",
-        "Team Global Express",
         "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Majuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marshall_Islands_International_Airport",
+      "codes": [
+        "MAJ",
+        "PKMJ"
+      ],
+      "airlines": [
+        "Nauru Airlines"
       ]
     },
     {
@@ -687,11 +684,8 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "QantasLink",
-        "Team Global Express",
-        "Virgin Australia",
-        "Virgin Australia Cargo"
+        "Virgin Australia"
       ]
     },
     {
@@ -859,8 +853,18 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Team Global Express",
         "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Pohnpei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pohnpei_International_Airport",
+      "codes": [
+        "PNI",
+        "PTPN"
+      ],
+      "airlines": [
+        "Nauru Airlines"
       ]
     },
     {
@@ -957,7 +961,6 @@
         "Alliance Airlines",
         "National Jet Express",
         "QantasLink",
-        "Team Global Express",
         "Virgin Australia"
       ]
     },
@@ -1042,17 +1045,6 @@
       ]
     },
     {
-      "city": "Sydney–Bankstown",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bankstown_Airport",
-      "codes": [
-        "BWU",
-        "YSBK"
-      ],
-      "airlines": [
-        "Team Global Express"
-      ]
-    },
-    {
       "city": "Sydney–Kingsford Smith",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
       "codes": [
@@ -1061,9 +1053,7 @@
       ],
       "airlines": [
         "Qantas",
-        "Team Global Express",
-        "Virgin Australia",
-        "Virgin Australia Cargo"
+        "Virgin Australia"
       ]
     },
     {
@@ -1087,6 +1077,17 @@
       ],
       "airlines": [
         "Link Airways"
+      ]
+    },
+    {
+      "city": "Tarawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bonriki_International_Airport",
+      "codes": [
+        "TRW",
+        "NGTA"
+      ],
+      "airlines": [
+        "Nauru Airlines"
       ]
     },
     {
@@ -1142,11 +1143,8 @@
       ],
       "airlines": [
         "Qantas",
-        "Qantas Freight",
         "QantasLink",
-        "Team Global Express",
-        "Virgin Australia",
-        "Virgin Australia Cargo"
+        "Virgin Australia"
       ]
     },
     {
@@ -1351,8 +1349,11 @@
       "Rockhampton"
     ],
     "Nauru Airlines": [
-      "Honiara",
-      "Nauru"
+      "Koror",
+      "Majuro",
+      "Nauru",
+      "Pohnpei",
+      "Tarawa"
     ],
     "Philippine Airlines": [
       "Manila"
@@ -1476,12 +1477,182 @@
       "Sydney–Kingsford Smith",
       "Townsville",
       "West Angelas"
-    ],
+    ]
+  },
+  "outdegree_cargo": 13,
+  "number_airlines_cargo": 7,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Cathay Cargo",
+    "Nauru Airlines",
+    "Qantas Freight",
+    "Team Global Express",
+    "Terra Avia",
+    "Virgin Australia Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Team Global Express"
+      ]
+    },
+    {
+      "city": "Biloela/Thangool",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thangool_Airport",
+      "codes": [
+        "THG",
+        "YTNG"
+      ],
+      "airlines": [
+        "Team Global Express"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Virgin Australia Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Cathay Cargo",
+        "Terra Avia"
+      ]
+    },
+    {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH"
+      ],
+      "airlines": [
+        "Nauru Airlines"
+      ]
+    },
+    {
+      "city": "Mackay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mackay_Airport",
+      "codes": [
+        "MKY",
+        "YBMK"
+      ],
+      "airlines": [
+        "Team Global Express"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Team Global Express",
+        "Virgin Australia Cargo"
+      ]
+    },
+    {
+      "city": "Nauru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nauru_International_Airport",
+      "codes": [
+        "INU",
+        "ANYN"
+      ],
+      "airlines": [
+        "Nauru Airlines"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Team Global Express"
+      ]
+    },
+    {
+      "city": "Rockhampton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rockhampton_Airport",
+      "codes": [
+        "ROK",
+        "YBRK"
+      ],
+      "airlines": [
+        "Team Global Express"
+      ]
+    },
+    {
+      "city": "Sydney–Bankstown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bankstown_Airport",
+      "codes": [
+        "BWU",
+        "YSBK"
+      ],
+      "airlines": [
+        "Team Global Express"
+      ]
+    },
+    {
+      "city": "Sydney–Kingsford Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Team Global Express",
+        "Virgin Australia Cargo"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Qantas Freight",
+        "Team Global Express",
+        "Virgin Australia Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Hong Kong"
     ],
     "Cathay Cargo": [
       "Hong Kong"
+    ],
+    "Nauru Airlines": [
+      "Honiara",
+      "Nauru"
     ],
     "Qantas Freight": [
       "Cairns",
@@ -1509,6 +1680,6 @@
       "Townsville"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:33Z",
+  "date-time-parse": "2026-04-29T04:48:15Z",
   "date-time-wikidata": "2026-04-26T05:25:56Z"
 }

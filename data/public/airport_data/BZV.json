@@ -13,20 +13,16 @@
   "admin1_code": "CG-BZV",
   "admin1_name": "Brazzaville",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Maya-Maya_Airport",
-  "outdegree": 23,
-  "number_airlines": 17,
+  "outdegree": 19,
+  "number_airlines": 13,
   "airlines": [
     "ASKY Airlines",
     "Afrijet",
     "Air Côte d'Ivoire",
     "Air France",
-    "Air France Cargo",
     "Camair-Co",
     "Canadian Airways Congo",
-    "Cargolux",
     "Ethiopian Airlines",
-    "Ethiopian Airlines Cargo",
-    "Etihad Cargo",
     "Kenya Airways",
     "Mauritania Airlines",
     "Royal Air Maroc",
@@ -44,17 +40,6 @@
       ],
       "airlines": [
         "Air Côte d'Ivoire"
-      ]
-    },
-    {
-      "city": "Abu Dhabi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
-      "codes": [
-        "AUH",
-        "OMAA"
-      ],
-      "airlines": [
-        "Etihad Cargo"
       ]
     },
     {
@@ -76,8 +61,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -89,17 +73,6 @@
       ],
       "airlines": [
         "Mauritania Airlines"
-      ]
-    },
-    {
-      "city": "Bangui",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangui_M'Poko_International_Airport",
-      "codes": [
-        "BGF",
-        "FEFF"
-      ],
-      "airlines": [
-        "Air France Cargo"
       ]
     },
     {
@@ -172,17 +145,6 @@
       ]
     },
     {
-      "city": "Lagos",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lagos_International_Airport",
-      "codes": [
-        "LOS",
-        "DNMM"
-      ],
-      "airlines": [
-        "Etihad Cargo"
-      ]
-    },
-    {
       "city": "Libreville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
       "codes": [
@@ -226,17 +188,6 @@
       ],
       "airlines": [
         "TAAG Angola Airlines"
-      ]
-    },
-    {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Cargolux"
       ]
     },
     {
@@ -347,7 +298,74 @@
       "Douala",
       "Libreville",
       "Pointe-Noire"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Air France Cargo",
+    "Cargolux",
+    "Ethiopian Airlines Cargo",
+    "Etihad Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Bangui",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangui_M'Poko_International_Airport",
+      "codes": [
+        "BGF",
+        "FEFF"
+      ],
+      "airlines": [
+        "Air France Cargo"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lagos_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Air France Cargo": [
       "Bangui"
     ],
@@ -362,6 +380,6 @@
       "Addis Ababa"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:55Z",
+  "date-time-parse": "2026-04-29T04:48:47Z",
   "date-time-wikidata": "2026-02-25T09:12:33Z"
 }

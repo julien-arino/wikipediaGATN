@@ -13,12 +13,199 @@
   "admin1_code": "DO-25",
   "admin1_name": "Santiago",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cibao_International_Airport",
-  "outdegree": 2,
-  "number_airlines": 1,
+  "outdegree": 11,
+  "number_airlines": 11,
   "airlines": [
-    "Amerijet International"
+    "Air Europa",
+    "American Airlines",
+    "Caicos Express Airways",
+    "Copa Airlines",
+    "Delta Air Lines",
+    "Frontier Airlines",
+    "InterCaribbean Airways",
+    "JetBlue",
+    "Sky High",
+    "Spirit Airlines",
+    "United Airlines"
   ],
   "destinations": [
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "JetBlue",
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Air Europa"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Sky High"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "JetBlue",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "Providenciales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
+      "codes": [
+        "PLS",
+        "MBPV"
+      ],
+      "airlines": [
+        "Caicos Express Airways",
+        "InterCaribbean Airways"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Frontier Airlines",
+        "JetBlue"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Europa": [
+      "Madrid"
+    ],
+    "American Airlines": [
+      "Miami",
+      "Philadelphia"
+    ],
+    "Caicos Express Airways": [
+      "Providenciales"
+    ],
+    "Copa Airlines": [
+      "Panama City–Tocumen"
+    ],
+    "Delta Air Lines": [
+      "New York–JFK"
+    ],
+    "Frontier Airlines": [
+      "Philadelphia",
+      "San Juan"
+    ],
+    "InterCaribbean Airways": [
+      "Providenciales"
+    ],
+    "JetBlue": [
+      "Boston",
+      "Fort Lauderdale",
+      "New York–JFK",
+      "Newark",
+      "Orlando",
+      "San Juan"
+    ],
+    "Sky High": [
+      "Miami"
+    ],
+    "Spirit Airlines": [
+      "Fort Lauderdale"
+    ],
+    "United Airlines": [
+      "Newark"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Amerijet International"
+  ],
+  "destinations_cargo": [
     {
       "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
@@ -42,12 +229,12 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Amerijet International": [
       "Miami",
       "Puerto Plata"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:49Z",
+  "date-time-parse": "2026-04-29T04:59:49Z",
   "date-time-wikidata": "2026-04-26T02:21:32Z"
 }

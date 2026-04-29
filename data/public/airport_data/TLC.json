@@ -14,11 +14,9 @@
   "admin1_name": "Mexico",
   "admin2_name": "Toluca",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Toluca_International_Airport",
-  "outdegree": 17,
-  "number_airlines": 4,
+  "outdegree": 7,
+  "number_airlines": 2,
   "airlines": [
-    "FedEx Express",
-    "TUM AeroCarga",
     "Viva",
     "Volaris"
   ],
@@ -31,9 +29,113 @@
         "MMUN"
       ],
       "airlines": [
-        "TUM AeroCarga",
         "Viva",
         "Volaris"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mérida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mérida_International_Airport",
+      "codes": [
+        "MID",
+        "MMMD"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Puerto Vallarta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
+      "codes": [
+        "PVR",
+        "MMPR"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "San José del Cabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
+      "codes": [
+        "SJD",
+        "MMSD"
+      ],
+      "airlines": [
+        "Viva",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Viva": [
+      "Cancún",
+      "Monterrey",
+      "Mérida",
+      "Puerto Vallarta",
+      "San José del Cabo"
+    ],
+    "Volaris": [
+      "Cancún",
+      "Guadalajara",
+      "Monterrey",
+      "Puerto Vallarta",
+      "San José del Cabo",
+      "Tijuana"
+    ]
+  },
+  "outdegree_cargo": 15,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "FedEx Express",
+    "TUM AeroCarga"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "TUM AeroCarga"
       ]
     },
     {
@@ -55,8 +157,7 @@
         "MMGL"
       ],
       "airlines": [
-        "TUM AeroCarga",
-        "Volaris"
+        "TUM AeroCarga"
       ]
     },
     {
@@ -100,9 +201,7 @@
         "MMMY"
       ],
       "airlines": [
-        "TUM AeroCarga",
-        "Viva",
-        "Volaris"
+        "TUM AeroCarga"
       ]
     },
     {
@@ -113,8 +212,7 @@
         "MMMD"
       ],
       "airlines": [
-        "TUM AeroCarga",
-        "Viva"
+        "TUM AeroCarga"
       ]
     },
     {
@@ -140,18 +238,6 @@
       ]
     },
     {
-      "city": "Puerto Vallarta",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
-      "codes": [
-        "PVR",
-        "MMPR"
-      ],
-      "airlines": [
-        "Viva",
-        "Volaris"
-      ]
-    },
-    {
       "city": "Querétaro",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
       "codes": [
@@ -174,18 +260,6 @@
       ]
     },
     {
-      "city": "San José del Cabo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
-      "codes": [
-        "SJD",
-        "MMSD"
-      ],
-      "airlines": [
-        "Viva",
-        "Volaris"
-      ]
-    },
-    {
       "city": "Tijuana",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
       "codes": [
@@ -193,8 +267,7 @@
         "MMTJ"
       ],
       "airlines": [
-        "TUM AeroCarga",
-        "Volaris"
+        "TUM AeroCarga"
       ]
     },
     {
@@ -220,22 +293,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Viva": [
-      "Cancún",
-      "Monterrey",
-      "Mérida",
-      "Puerto Vallarta",
-      "San José del Cabo"
-    ],
-    "Volaris": [
-      "Cancún",
-      "Guadalajara",
-      "Monterrey",
-      "Puerto Vallarta",
-      "San José del Cabo",
-      "Tijuana"
-    ],
+  "airlines_destinations_cargo": {
     "FedEx Express": [
       "Memphis"
     ],
@@ -256,6 +314,6 @@
       "Villahermosa"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:32Z",
+  "date-time-parse": "2026-04-29T05:00:28Z",
   "date-time-wikidata": "2026-04-09T03:31:06Z"
 }

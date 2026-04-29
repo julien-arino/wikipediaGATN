@@ -14,10 +14,11 @@
   "admin1_name": "Gujarat",
   "admin2_name": "Bhavnagar",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bhavnagar_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 2,
+  "number_airlines": 2,
   "airlines": [
-    "IndiGo"
+    "IndiGo",
+    "Ventura AirConnect"
   ],
   "destinations": [
     {
@@ -30,13 +31,32 @@
       "airlines": [
         "IndiGo"
       ]
+    },
+    {
+      "city": "Surat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Surat_International_Airport",
+      "codes": [
+        "STV",
+        "VASU"
+      ],
+      "airlines": [
+        "Ventura AirConnect"
+      ]
     }
   ],
   "airlines_destinations": {
     "IndiGo": [
       "Mumbai–Navi"
+    ],
+    "Ventura AirConnect": [
+      "Surat"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:01Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:57Z",
   "date-time-wikidata": "2026-04-10T13:48:58Z"
 }

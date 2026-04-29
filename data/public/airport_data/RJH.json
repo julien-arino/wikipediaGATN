@@ -13,13 +13,25 @@
   "admin1_code": "BD-54",
   "admin1_name": "Rajshahi",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Makhdum_Airport",
-  "outdegree": 1,
-  "number_airlines": 2,
+  "outdegree": 2,
+  "number_airlines": 3,
   "airlines": [
     "Biman Bangladesh Airlines",
+    "Novoair",
     "US-Bangla Airlines"
   ],
   "destinations": [
+    {
+      "city": "Cox's Bazar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
+      "codes": [
+        "CXB",
+        "VGCB"
+      ],
+      "airlines": [
+        "Novoair"
+      ]
+    },
     {
       "city": "Dhaka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
@@ -29,6 +41,7 @@
       ],
       "airlines": [
         "Biman Bangladesh Airlines",
+        "Novoair",
         "US-Bangla Airlines"
       ]
     }
@@ -37,10 +50,19 @@
     "Biman Bangladesh Airlines": [
       "Dhaka"
     ],
+    "Novoair": [
+      "Cox's Bazar",
+      "Dhaka"
+    ],
     "US-Bangla Airlines": [
       "Dhaka"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:46Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:58:42Z",
   "date-time-wikidata": "2025-10-16T12:25:19Z"
 }

@@ -27,7 +27,7 @@
   ],
   "destinations": [
     {
-      "city": "Adelaide Airport",
+      "city": "Adelaide",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
       "codes": [
         "ADL",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "city": "Auckland Airport",
+      "city": "Auckland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
       "codes": [
         "AKL",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "city": "Brisbane Airport",
+      "city": "Brisbane",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
       "codes": [
         "BNE",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "city": "Canberra Airport",
+      "city": "Canberra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
       "codes": [
         "CBR",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "city": "Gold Coast Airport",
+      "city": "Gold Coast",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
       "codes": [
         "OOL",
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "city": "Melbourne Airport",
+      "city": "Melbourne",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
       "codes": [
         "MEL",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "city": "Newcastle Airport (New South Wales)",
+      "city": "Newcastle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_Airport_(New_South_Wales)",
       "codes": [
         "NTL",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "city": "Perth Airport",
+      "city": "Perth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
       "codes": [
         "PER",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "city": "Sydney Airport",
+      "city": "Sydney",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
       "codes": [
         "SYD",
@@ -151,42 +151,111 @@
   ],
   "airlines_destinations": {
     "Air New Zealand": [
-      "Auckland Airport"
+      "Auckland"
     ],
     "Jetstar": [
-      "Adelaide Airport",
-      "Brisbane Airport",
-      "Gold Coast Airport",
-      "Melbourne Airport",
-      "Newcastle Airport (New South Wales)",
-      "Sydney Airport"
+      "Adelaide",
+      "Brisbane",
+      "Gold Coast",
+      "Melbourne",
+      "Newcastle",
+      "Sydney"
     ],
     "Link Airways": [
-      "Canberra Airport"
+      "Canberra"
     ],
     "Qantas": [
-      "Melbourne Airport",
-      "Perth Airport",
-      "Sydney Airport"
+      "Melbourne",
+      "Perth",
+      "Sydney"
     ],
     "QantasLink": [
-      "Brisbane Airport",
-      "Canberra Airport",
-      "Melbourne Airport",
-      "Perth Airport",
-      "Sydney Airport"
+      "Brisbane",
+      "Canberra",
+      "Melbourne",
+      "Perth",
+      "Sydney"
     ],
     "Skytraders": [
       "Wilkins Runway"
     ],
     "Virgin Australia": [
-      "Adelaide Airport",
-      "Brisbane Airport",
-      "Melbourne Airport",
-      "Perth Airport",
-      "Sydney Airport"
+      "Adelaide",
+      "Brisbane",
+      "Melbourne",
+      "Perth",
+      "Sydney"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:11Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Cathay Cargo",
+    "Pionair Australia",
+    "Qantas Freight"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Cathay Cargo"
+      ]
+    },
+    {
+      "city": "Launceston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
+      "codes": [
+        "LST",
+        "YMLT"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Cathay Cargo",
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Cathay Cargo",
+        "Pionair Australia"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Cathay Cargo": [
+      "Hong Kong",
+      "Melbourne",
+      "Sydney"
+    ],
+    "Qantas Freight": [
+      "Launceston",
+      "Melbourne"
+    ],
+    "Pionair Australia": [
+      "Sydney"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:51:31Z",
   "date-time-wikidata": "2026-04-28T03:19:43Z"
 }

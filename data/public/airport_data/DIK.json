@@ -14,11 +14,57 @@
   "admin1_name": "North Dakota",
   "admin2_name": "Stark County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Dickinson_Theodore_Roosevelt_Regional_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:05:09Z",
+  "outdegree": 1,
+  "number_airlines": 1,
+  "airlines": [
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "United Express": [
+      "Denver"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Bemidji Airlines",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "Bemidji Airlines",
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Bemidji Airlines": [
+      "Fargo"
+    ],
+    "FedEx Feeder": [
+      "Fargo"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:53Z",
   "date-time-wikidata": "2025-09-25T17:38:02Z"
 }

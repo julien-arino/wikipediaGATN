@@ -13,23 +13,20 @@
   "admin1_code": "VN-SG",
   "admin1_name": "Hồ Chí Minh",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
-  "outdegree": 76,
-  "number_airlines": 60,
+  "outdegree": 75,
+  "number_airlines": 53,
   "airlines": [
-    "AeroLogic",
     "Aeroflot",
     "Air Cambodia",
     "Air China",
     "Air France",
     "Air India",
-    "Air Premia",
     "AirAsia",
     "AirAsia Cambodia",
     "All Nippon Airways",
     "Asiana Airlines",
     "Bamboo Airways",
     "Bhutan Airlines",
-    "Cathay Cargo",
     "Cathay Pacific",
     "Cebu Pacific",
     "China Airlines",
@@ -37,7 +34,6 @@
     "China Southern Airlines",
     "Chongqing Airlines",
     "EVA Air",
-    "EVA Air Cargo",
     "Emirates",
     "Hainan Airlines",
     "IndiGo",
@@ -54,7 +50,6 @@
     "Qatar Airways",
     "Qingdao Airlines",
     "Ruili Airlines",
-    "SF Airlines",
     "Scoot",
     "Shandong Airlines",
     "Shenzhen Airlines",
@@ -67,10 +62,8 @@
     "Thai Airways International",
     "Thai Lion Air",
     "Thai VietJet Air",
-    "Tri-MG Intra Asia Airlines",
     "Turkish Airlines",
     "Turkmenistan Airlines",
-    "UPS Airlines",
     "United Airlines",
     "VietJet Air",
     "Vietnam Airlines",
@@ -365,7 +358,6 @@
         "VVNB"
       ],
       "airlines": [
-        "Cathay Cargo",
         "Sun PhuQuoc Airways",
         "Vietnam Airlines",
         "Vietravel Airlines"
@@ -379,7 +371,6 @@
         "VHHH"
       ],
       "airlines": [
-        "Cathay Cargo",
         "Cathay Pacific",
         "United Airlines"
       ]
@@ -494,17 +485,6 @@
       ],
       "airlines": [
         "Vietnam Airlines"
-      ]
-    },
-    {
-      "city": "Los Angeles",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "codes": [
-        "LAX",
-        "KLAX"
-      ],
-      "airlines": [
-        "AeroLogic"
       ]
     },
     {
@@ -735,7 +715,6 @@
         "RKSI"
       ],
       "airlines": [
-        "Air Premia",
         "Asiana Airlines",
         "Korean Air",
         "Vietnam Airlines"
@@ -763,9 +742,7 @@
       ],
       "airlines": [
         "China Southern Airlines",
-        "SF Airlines",
-        "Shenzhen Airlines",
-        "UPS Airlines"
+        "Shenzhen Airlines"
       ]
     },
     {
@@ -801,7 +778,6 @@
       "airlines": [
         "Scoot",
         "Singapore Airlines",
-        "Tri-MG Intra Asia Airlines",
         "VietJet Air",
         "Vietnam Airlines"
       ]
@@ -839,7 +815,6 @@
       "airlines": [
         "China Airlines",
         "EVA Air",
-        "EVA Air Cargo",
         "Starlux Airlines",
         "VietJet Air"
       ]
@@ -1202,7 +1177,100 @@
     "XiamenAir": [
       "Hangzhou",
       "Xiamen"
-    ],
+    ]
+  },
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 7,
+  "airlines_cargo": [
+    "AeroLogic",
+    "Air Premia",
+    "Cathay Cargo",
+    "EVA Air Cargo",
+    "SF Airlines",
+    "Tri-MG Intra Asia Airlines",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "Cathay Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Cathay Cargo"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Air Premia"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "SF Airlines",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Tri-MG Intra Asia Airlines"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "EVA Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Air Premia": [
       "Seoul–Incheon"
     ],
@@ -1226,6 +1294,6 @@
       "Shenzhen"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:35Z",
+  "date-time-parse": "2026-04-29T04:59:18Z",
   "date-time-wikidata": "2026-04-24T21:06:58Z"
 }

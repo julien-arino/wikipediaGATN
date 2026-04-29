@@ -22,29 +22,7 @@
   ],
   "destinations": [
     {
-      "city": "Felts Field",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Felts_Field",
-      "codes": [
-        "SFF",
-        "KSFF"
-      ],
-      "airlines": [
-        "SeaPort Airlines"
-      ]
-    },
-    {
-      "city": "Friday Harbor Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Friday_Harbor_Airport",
-      "codes": [
-        "FRD",
-        "KFHR"
-      ],
-      "airlines": [
-        "Kenmore Air"
-      ]
-    },
-    {
-      "city": "Orcas Island Airport",
+      "city": "Eastsound",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orcas_Island_Airport",
       "codes": [
         "ESD",
@@ -55,7 +33,18 @@
       ]
     },
     {
-      "city": "Portland International Airport",
+      "city": "Friday Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Friday_Harbor_Airport",
+      "codes": [
+        "FRD",
+        "KFHR"
+      ],
+      "airlines": [
+        "Kenmore Air"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
@@ -66,7 +55,18 @@
       ]
     },
     {
-      "city": "Vancouver International Airport",
+      "city": "Spokane–Felts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felts_Field",
+      "codes": [
+        "SFF",
+        "KSFF"
+      ],
+      "airlines": [
+        "SeaPort Airlines"
+      ]
+    },
+    {
+      "city": "Vancouver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
       "codes": [
         "YVR",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "city": "Victoria International Airport",
+      "city": "Victoria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
       "codes": [
         "YYJ",
@@ -90,16 +90,364 @@
   ],
   "airlines_destinations": {
     "Kenmore Air": [
-      "Friday Harbor Airport",
-      "Orcas Island Airport",
-      "Vancouver International Airport",
-      "Victoria International Airport"
+      "Eastsound",
+      "Friday Harbor",
+      "Vancouver",
+      "Victoria"
     ],
     "SeaPort Airlines": [
-      "Felts Field",
-      "Portland International Airport"
+      "Portland (OR)",
+      "Spokane–Felts"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:56Z",
+  "outdegree_cargo": 26,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "AirPac Airlines",
+    "Ameriflight",
+    "SkyLink Express",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Bellingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bellingham_International_Airport",
+      "codes": [
+        "BLI",
+        "KBLI"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Burlington/Mount Vernon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skagit_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "AirPac Airlines",
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Chicago/Rockford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Rockford_International_Airport",
+      "codes": [
+        "RFD",
+        "KRFD"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Eugene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eugene_Airport",
+      "codes": [
+        "EUG",
+        "KEUG"
+      ],
+      "airlines": [
+        "AirPac Airlines"
+      ]
+    },
+    {
+      "city": "Everett",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paine_Field",
+      "codes": [
+        "PAE",
+        "KPAE"
+      ],
+      "airlines": [
+        "AirPac Airlines",
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Ketchikan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ketchikan_International_Airport",
+      "codes": [
+        "KTN",
+        "PAKT"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Lewiston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lewiston–Nez_Perce_County_Airport",
+      "codes": [
+        "LWS",
+        "KLWS"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Moses Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grant_County_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Olympia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olympia_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Omak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Omak_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Port Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_R._Fairchild_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "AirPac Airlines"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "AirPac Airlines",
+        "Ameriflight",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Sacramento–Executive",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_Executive_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "AirPac Airlines"
+      ]
+    },
+    {
+      "city": "Spokane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "codes": [
+        "GEG",
+        "KGEG"
+      ],
+      "airlines": [
+        "AirPac Airlines",
+        "Ameriflight",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Spokane–Felts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felts_Field",
+      "codes": [
+        "SFF",
+        "KSFF"
+      ],
+      "airlines": [
+        "AirPac Airlines"
+      ]
+    },
+    {
+      "city": "Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tacoma_Narrows_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Tri-Cities (WA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tri-Cities_Airport_(Washington)",
+      "codes": [
+        "PSC",
+        "KPSC"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "SkyLink Express",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Walla Walla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Walla_Walla_Regional_Airport",
+      "codes": [
+        "ALW",
+        "KALW"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Wenatchee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pangborn_Memorial_Airport",
+      "codes": [
+        "EAT",
+        "KEAT"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Yakima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakima_Air_Terminal",
+      "codes": [
+        "YKM",
+        "KYKM"
+      ],
+      "airlines": [
+        "AirPac Airlines",
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "AirPac Airlines": [
+      "Burlington/Mount Vernon",
+      "Eugene",
+      "Everett",
+      "Port Angeles",
+      "Portland (OR)",
+      "Sacramento–Executive",
+      "Spokane",
+      "Spokane–Felts",
+      "Yakima"
+    ],
+    "Ameriflight": [
+      "Bellingham",
+      "Burlington/Mount Vernon",
+      "Everett",
+      "Ketchikan",
+      "Lewiston",
+      "Moses Lake",
+      "Olympia",
+      "Omak",
+      "Portland (OR)",
+      "Spokane",
+      "Tacoma",
+      "Tri-Cities (WA)",
+      "Walla Walla",
+      "Wenatchee",
+      "Yakima"
+    ],
+    "SkyLink Express": [
+      "Vancouver"
+    ],
+    "UPS Airlines": [
+      "Anchorage",
+      "Chicago/Rockford",
+      "Denver",
+      "Fargo",
+      "Louisville",
+      "Ontario",
+      "Portland (OR)",
+      "Spokane",
+      "Vancouver"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:47:48Z",
   "date-time-wikidata": "2026-03-21T06:06:24Z"
 }

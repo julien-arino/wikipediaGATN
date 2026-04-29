@@ -14,11 +14,129 @@
   "admin1_name": "Oregon",
   "admin2_name": "Coos County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Oregon_Regional_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:07:49Z",
+  "outdegree": 2,
+  "number_airlines": 1,
+  "airlines": [
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "United Express": [
+      "Denver",
+      "San Francisco"
+    ]
+  },
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Corvallis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corvallis_Municipal_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Crescent City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_McNamara_Field",
+      "codes": [
+        "CEC",
+        "KCEC"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Portland/Hillsboro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hillsboro_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Roseburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roseburg_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Salem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McNary_Field",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Corvallis",
+      "Crescent City",
+      "Portland (OR)",
+      "Portland/Hillsboro"
+    ],
+    "FedEx Feeder": [
+      "Portland (OR)",
+      "Roseburg",
+      "Salem"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:57:35Z",
   "date-time-wikidata": "2025-12-03T15:53:29Z"
 }

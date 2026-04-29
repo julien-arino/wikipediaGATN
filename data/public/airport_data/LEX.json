@@ -19,14 +19,25 @@
   "airlines": [
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
@@ -34,11 +45,23 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -46,11 +69,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -61,8 +84,8 @@
       ]
     },
     {
-      "city": "Destin–Fort Walton Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin%E2%80%93Fort_Walton_Beach_Airport",
+      "city": "Destin/Fort Walton Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin–Fort_Walton_Beach_Airport",
       "codes": [
         "VPS",
         "KVPS"
@@ -72,7 +95,7 @@
       ]
     },
     {
-      "city": "Detroit Metropolitan Airport",
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
         "DTW",
@@ -83,8 +106,8 @@
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -94,7 +117,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -105,41 +128,19 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "LaGuardia Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "codes": [
-        "LGA",
-        "KLGA"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Miami International Airport",
+      "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
         "MIA",
         "KMIA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -149,7 +150,7 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
+      "city": "Myrtle Beach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
       "codes": [
         "MYR",
@@ -160,19 +161,18 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "New York–LaGuardia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
       "codes": [
-        "ORD",
-        "KORD"
+        "LGA",
+        "KLGA"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
+        "Delta Connection"
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -183,18 +183,18 @@
       ]
     },
     {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -205,19 +205,8 @@
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "codes": [
-        "DCA",
-        "KDCA"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
       "codes": [
         "SRQ",
         "KSRQ"
@@ -227,8 +216,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -236,44 +225,60 @@
       "airlines": [
         "Allegiant Air"
       ]
+    },
+    {
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Destin–Fort Walton Beach Airport",
-      "Fort Lauderdale–Hollywood International Airport",
-      "Harry Reid International Airport",
-      "Myrtle Beach International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Destin/Fort Walton Beach",
+      "Fort Lauderdale",
+      "Las Vegas",
+      "Myrtle Beach",
+      "Orlando/Sanford",
+      "Punta Gorda (FL)",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ],
     "American Airlines": [
-      "Charlotte Douglas International Airport",
-      "Dallas/Fort Worth International Airport"
+      "Charlotte",
+      "Dallas/Fort Worth"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas/Fort Worth International Airport",
-      "Miami International Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Miami",
+      "Philadelphia"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "Delta Connection": [
-      "Detroit Metropolitan Airport",
-      "LaGuardia Airport",
-      "Minneapolis–Saint Paul International Airport",
-      "Ronald Reagan Washington National Airport"
+      "Detroit",
+      "Minneapolis/St. Paul",
+      "New York–LaGuardia",
+      "Washington–National"
     ],
     "United Express": [
-      "Denver International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:59Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:06Z",
   "date-time-wikidata": "2026-04-15T04:14:49Z"
 }

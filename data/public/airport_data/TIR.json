@@ -18,24 +18,24 @@
   "number_airlines": 4,
   "airlines": [
     "Air India",
-    "Alliance Air (India)",
+    "Alliance Air",
     "IndiGo",
-    "Star Air (India)"
+    "Star Air"
   ],
   "destinations": [
     {
-      "city": "Chhatrapati Shivaji Maharaj International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
       "codes": [
-        "BOM",
-        "VABB"
+        "BLR",
+        "VOBL"
       ],
       "airlines": [
         "IndiGo"
       ]
     },
     {
-      "city": "Indira Gandhi International Airport",
+      "city": "Delhi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
       "codes": [
         "DEL",
@@ -47,29 +47,7 @@
       ]
     },
     {
-      "city": "Kempegowda International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "codes": [
-        "BLR",
-        "VOBL"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Rajahmundry Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajahmundry_Airport",
-      "codes": [
-        "RJA",
-        "VORY"
-      ],
-      "airlines": [
-        "Alliance Air (India)"
-      ]
-    },
-    {
-      "city": "Rajiv Gandhi International Airport",
+      "city": "Hyderabad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
       "codes": [
         "HYD",
@@ -77,23 +55,45 @@
       ],
       "airlines": [
         "Air India",
-        "Alliance Air (India)",
+        "Alliance Air",
         "IndiGo"
       ]
     },
     {
-      "city": "Shimoga Airport",
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Rajahmundry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajahmundry_Airport",
+      "codes": [
+        "RJA",
+        "VORY"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Shimoga",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shimoga_Airport",
       "codes": [
         "RQY",
         "VOSH"
       ],
       "airlines": [
-        "Star Air (India)"
+        "Star Air"
       ]
     },
     {
-      "city": "Vijayawada Airport",
+      "city": "Vijayawada",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vijayawada_Airport",
       "codes": [
         "VGA",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "city": "Visakhapatnam Airport",
+      "city": "Visakhapatnam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
       "codes": [
         "VTZ",
@@ -117,25 +117,30 @@
   ],
   "airlines_destinations": {
     "Air India": [
-      "Indira Gandhi International Airport",
-      "Rajiv Gandhi International Airport"
+      "Delhi",
+      "Hyderabad"
     ],
-    "Alliance Air (India)": [
-      "Rajahmundry Airport",
-      "Rajiv Gandhi International Airport"
+    "Alliance Air": [
+      "Hyderabad",
+      "Rajahmundry"
     ],
     "IndiGo": [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "Indira Gandhi International Airport",
-      "Kempegowda International Airport",
-      "Rajiv Gandhi International Airport",
-      "Vijayawada Airport",
-      "Visakhapatnam Airport"
+      "Bengaluru",
+      "Delhi",
+      "Hyderabad",
+      "Mumbai",
+      "Vijayawada",
+      "Visakhapatnam"
     ],
-    "Star Air (India)": [
-      "Shimoga Airport"
+    "Star Air": [
+      "Shimoga"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:28Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:00:25Z",
   "date-time-wikidata": "2026-04-15T01:35:56Z"
 }

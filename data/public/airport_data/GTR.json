@@ -17,24 +17,13 @@
   "outdegree": 2,
   "number_airlines": 2,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection"
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -42,16 +31,32 @@
       "airlines": [
         "Delta Connection"
       ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:51Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:21Z",
   "date-time-wikidata": "2026-03-29T12:49:39Z"
 }

@@ -17,7 +17,7 @@
   "outdegree": 7,
   "number_airlines": 5,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Southwest Airlines",
     "Sun Country Airlines",
@@ -25,8 +25,8 @@
   ],
   "destinations": [
     {
-      "city": "Austin–Bergstrom International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
       "codes": [
         "AUS",
         "KAUS"
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "city": "Cancún International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
       "codes": [
         "CUN",
         "MMUN"
@@ -47,18 +47,18 @@
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Love Field",
+      "city": "Dallas–Love",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
       "codes": [
         "DAL",
@@ -69,7 +69,18 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -80,8 +91,8 @@
       ]
     },
     {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -90,39 +101,66 @@
         "Delta Air Lines",
         "Sun Country Airlines"
       ]
-    },
-    {
-      "city": "William P. Hobby Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
-      "codes": [
-        "HOU",
-        "KHOU"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth"
     ],
     "Delta Air Lines": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "Southwest Airlines": [
-      "Austin–Bergstrom International Airport",
-      "Dallas Love Field",
-      "William P. Hobby Airport"
+      "Austin",
+      "Dallas–Love",
+      "Houston–Hobby"
     ],
     "Sun Country Airlines": [
-      "Cancún International Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Cancún",
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "George Bush Intercontinental Airport"
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:28Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "FedEx Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "DHL Aviation": [
+      "Cincinnati"
+    ],
+    "FedEx Express": [
+      "Memphis"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:51:52Z",
   "date-time-wikidata": "2026-04-24T15:25:28Z"
 }

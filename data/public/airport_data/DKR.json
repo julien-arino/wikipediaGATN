@@ -13,38 +13,21 @@
   "admin1_code": "SN-DK",
   "admin1_name": "Dakar",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Léopold_Sédar_Senghor_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 3,
-  "airlines": [
+  "outdegree": 0,
+  "number_airlines": 0,
+  "airlines": [],
+  "destinations": [],
+  "airlines_destinations": {},
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
     "Emirates SkyCargo",
     "Lufthansa Cargo",
     "Med Airlines"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
-      "city": "Al Maktoum International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "codes": [
-        "DWC",
-        "OMDW"
-      ],
-      "airlines": [
-        "Emirates SkyCargo"
-      ]
-    },
-    {
-      "city": "Carrasco International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
-      "codes": [
-        "MVD",
-        "SUMU"
-      ],
-      "airlines": [
-        "Lufthansa Cargo"
-      ]
-    },
-    {
-      "city": "Ministro Pistarini International Airport",
+      "city": "Buenos Aires–Ezeiza",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport",
       "codes": [
         "EZE",
@@ -55,7 +38,19 @@
       ]
     },
     {
-      "city": "Mohammed V International Airport",
+      "city": "Campinas–Viracopos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos-Campinas_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Emirates SkyCargo",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Casablanca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
       "codes": [
         "CMN",
@@ -66,32 +61,42 @@
       ]
     },
     {
-      "city": "Viracopos-Campinas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos-Campinas_International_Airport",
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
       "codes": [
-        "VCP",
-        "SBKP"
+        "DWC",
+        "OMDW"
       ],
       "airlines": [
-        "Emirates SkyCargo",
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Montevideo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
+      "codes": [
+        "MVD",
+        "SUMU"
+      ],
+      "airlines": [
         "Lufthansa Cargo"
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Emirates SkyCargo": [
-      "Al Maktoum International Airport",
-      "Viracopos-Campinas International Airport"
+      "Campinas–Viracopos",
+      "Dubai–Al Maktoum"
     ],
     "Lufthansa Cargo": [
-      "Carrasco International Airport",
-      "Ministro Pistarini International Airport",
-      "Viracopos-Campinas International Airport"
+      "Buenos Aires–Ezeiza",
+      "Campinas–Viracopos",
+      "Montevideo"
     ],
     "Med Airlines": [
-      "Mohammed V International Airport"
+      "Casablanca"
     ]
   },
-  "date-time-parse": "2026-04-28T22:20:24Z",
+  "date-time-parse": "2026-04-29T04:49:56Z",
   "date-time-wikidata": "2026-04-07T16:58:50Z"
 }

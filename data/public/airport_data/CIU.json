@@ -22,7 +22,18 @@
   ],
   "destinations": [
     {
-      "city": "Detroit Metropolitan Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
         "DTW",
@@ -33,8 +44,8 @@
       ]
     },
     {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -42,28 +53,22 @@
       "airlines": [
         "Delta Connection"
       ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
     }
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Detroit Metropolitan Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Detroit",
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:54Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:49:09Z",
   "date-time-wikidata": "2026-04-15T13:46:06Z"
 }

@@ -17,47 +17,70 @@
   "outdegree": 12,
   "number_airlines": 4,
   "airlines": [
-    "Aero (American airline)",
-    "American Eagle (airline brand)",
+    "Aero",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Austin-Bergstrom International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin-Bergstrom_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "ATL",
+        "KATL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "Delta Connection"
       ]
     },
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin-Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas/Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "ORD",
+        "KORD"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle",
+        "United Express"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -68,7 +91,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -79,54 +102,42 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Los Angeles International Airport",
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
         "KLAX"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
+        "American Eagle",
         "Delta Connection",
         "United Express"
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "Los Angeles–Van Nuys",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
       "codes": [
-        "ORD",
-        "KORD"
+        "VNY",
+        "KVNY"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
+        "Aero"
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -137,53 +148,47 @@
       ]
     },
     {
-      "city": "Teterboro Airport",
+      "city": "Teterboro",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Teterboro_Airport",
       "codes": [
         "TEB",
         "KTEB"
       ],
       "airlines": [
-        "Aero (American airline)"
-      ]
-    },
-    {
-      "city": "Van Nuys Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
-      "codes": [
-        "VNY",
-        "KVNY"
-      ],
-      "airlines": [
-        "Aero (American airline)"
+        "Aero"
       ]
     }
   ],
   "airlines_destinations": {
-    "Aero (American airline)": [
-      "Teterboro Airport",
-      "Van Nuys Airport"
+    "Aero": [
+      "Los Angeles–Van Nuys",
+      "Teterboro"
     ],
-    "American Eagle (airline brand)": [
-      "Austin-Bergstrom International Airport",
-      "Charlotte Douglas International Airport",
-      "Dallas/Fort Worth International Airport",
-      "Los Angeles International Airport",
-      "O'Hare International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Austin",
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Los Angeles",
+      "Phoenix–Sky Harbor"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Los Angeles International Airport"
+      "Atlanta",
+      "Los Angeles"
     ],
     "United Express": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport",
-      "Los Angeles International Airport",
-      "O'Hare International Airport",
-      "San Francisco International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental",
+      "Los Angeles",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-29T00:07:09Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:19Z",
   "date-time-wikidata": "2026-04-02T20:41:24Z"
 }

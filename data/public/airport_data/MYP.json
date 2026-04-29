@@ -13,12 +13,59 @@
   "admin1_code": "TM-M",
   "admin1_name": "Mary",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mary_International_Airport",
-  "outdegree": 4,
+  "outdegree": 3,
   "number_airlines": 1,
   "airlines": [
     "Turkmenistan Airlines"
   ],
   "destinations": [
+    {
+      "city": "Ashgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Balkanabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balkanabat_International_Airport",
+      "codes": [
+        "BKN",
+        "UTAN"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Daşoguz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daşoguz_Airport",
+      "codes": [
+        "TAZ",
+        "UTAT"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Turkmenistan Airlines": [
+      "Ashgabat",
+      "Balkanabat",
+      "Daşoguz"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Turkmenistan Airlines"
+  ],
+  "destinations_cargo": [
     {
       "city": "Ashgabat",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
@@ -64,7 +111,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Turkmenistan Airlines": [
       "Ashgabat",
       "Bangkok–Suvarnabhumi",
@@ -72,6 +119,6 @@
       "Türkmenbaşy"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:37Z",
+  "date-time-parse": "2026-04-29T04:56:42Z",
   "date-time-wikidata": "2026-03-05T00:39:08Z"
 }

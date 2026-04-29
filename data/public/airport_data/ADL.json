@@ -14,15 +14,483 @@
   "admin1_name": "South Australia",
   "admin2_name": "City of West Torrens",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
-  "outdegree": 5,
-  "number_airlines": 4,
+  "outdegree": 32,
+  "number_airlines": 20,
   "airlines": [
+    "Air New Zealand",
+    "Alliance Airlines",
+    "Cathay Pacific",
+    "China Eastern Airlines",
+    "China Southern Airlines",
+    "Emirates",
+    "Fiji Airways",
+    "Indonesia AirAsia",
+    "Jetstar",
+    "Malaysia Airlines",
+    "National Jet Express",
+    "Pel-Air",
+    "Qantas",
+    "QantasLink",
+    "Qatar Airways",
+    "Rex Airlines",
+    "Singapore Airlines",
+    "United Airlines",
+    "Virgin Australia",
+    "Virgin Australia Regional Airlines"
+  ],
+  "destinations": [
+    {
+      "city": "Alice Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
+      "codes": [
+        "ASP",
+        "YBAS"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Air New Zealand",
+        "Qantas",
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Avalon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Avalon_Airport",
+      "codes": [
+        "AVV",
+        "YMAV"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Ballera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballera_Airport",
+      "codes": [
+        "BBL",
+        "YLLE"
+      ],
+      "airlines": [
+        "Alliance Airlines"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Broken Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Broken_Hill_Airport",
+      "codes": [
+        "BHQ",
+        "YBHI"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Carrapateena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrapateena_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "National Jet Express"
+      ]
+    },
+    {
+      "city": "Ceduna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ceduna_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Air New Zealand"
+      ]
+    },
+    {
+      "city": "Coober Pedy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coober_Pedy_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD"
+      ],
+      "airlines": [
+        "Indonesia AirAsia"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Cathay Pacific"
+      ]
+    },
+    {
+      "city": "Jacinth-Ambrosia Mine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacinth_Ambrosia_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Pel-Air"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Launceston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
+      "codes": [
+        "LST",
+        "YMLT"
+      ],
+      "airlines": [
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Mount Gambier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Gambier_Airport",
+      "codes": [
+        "MGB",
+        "YMTG"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Nadi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
+      "codes": [
+        "NAN",
+        "NFFN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Qantas",
+        "Virgin Australia Regional Airlines"
+      ]
+    },
+    {
+      "city": "Port Augusta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Augusta_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "National Jet Express"
+      ]
+    },
+    {
+      "city": "Port Lincoln",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Lincoln_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "QantasLink",
+        "Rex Airlines"
+      ]
+    },
+    {
+      "city": "Prominent Hill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prominent_Hill_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "National Jet Express"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Singapore Airlines"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Whyalla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Whyalla_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "QantasLink"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air New Zealand": [
+      "Auckland",
+      "Christchurch"
+    ],
+    "Alliance Airlines": [
+      "Ballera"
+    ],
+    "Cathay Pacific": [
+      "Hong Kong"
+    ],
+    "China Eastern Airlines": [
+      "Shanghai–Pudong"
+    ],
+    "China Southern Airlines": [
+      "Guangzhou"
+    ],
+    "Emirates": [
+      "Dubai–International"
+    ],
+    "Fiji Airways": [
+      "Nadi"
+    ],
+    "Indonesia AirAsia": [
+      "Denpasar"
+    ],
+    "Jetstar": [
+      "Avalon",
+      "Brisbane",
+      "Cairns"
+    ],
+    "Malaysia Airlines": [
+      "Kuala Lumpur–International"
+    ],
+    "National Jet Express": [
+      "Carrapateena",
+      "Port Augusta",
+      "Prominent Hill"
+    ],
+    "Pel-Air": [
+      "Jacinth-Ambrosia Mine"
+    ],
+    "Qantas": [
+      "Auckland",
+      "Melbourne",
+      "Perth",
+      "Sydney"
+    ],
+    "QantasLink": [
+      "Alice Springs",
+      "Brisbane",
+      "Mount Gambier",
+      "Port Lincoln",
+      "Whyalla"
+    ],
+    "Qatar Airways": [
+      "Auckland",
+      "Doha"
+    ],
+    "Rex Airlines": [
+      "Broken Hill",
+      "Ceduna",
+      "Coober Pedy",
+      "Mount Gambier",
+      "Port Lincoln"
+    ],
+    "Singapore Airlines": [
+      "Singapore"
+    ],
+    "United Airlines": [
+      "San Francisco"
+    ],
+    "Virgin Australia": [
+      "Alice Springs",
+      "Brisbane",
+      "Hobart",
+      "Launceston"
+    ],
+    "Virgin Australia Regional Airlines": [
+      "Perth"
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
     "MASkargo",
     "Qantas Freight",
     "Toll Group",
     "Virgin Australia Cargo"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Canberra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
@@ -83,7 +551,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "MASkargo": [
       "Kuala Lumpur–International"
     ],
@@ -102,6 +570,6 @@
       "Melbourne"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:53Z",
+  "date-time-parse": "2026-04-29T04:46:50Z",
   "date-time-wikidata": "2026-04-22T12:11:40Z"
 }

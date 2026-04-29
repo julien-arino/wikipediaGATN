@@ -13,14 +13,136 @@
   "admin1_code": "CA-MB",
   "admin1_name": "Manitoba",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Thompson_Airport",
-  "outdegree": 21,
-  "number_airlines": 3,
+  "outdegree": 9,
+  "number_airlines": 2,
   "airlines": [
     "Calm Air",
-    "North Star Air",
     "Perimeter Aviation"
   ],
   "destinations": [
+    {
+      "city": "Brochet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brochet_Airport",
+      "codes": [
+        "YBT",
+        "CYBT"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Gods Lake Narrows",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
+      "codes": [
+        "YGO",
+        "CYGO"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Gods River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_River_Airport",
+      "codes": [
+        "ZGI",
+        "CZGI"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Lac Brochet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lac_Brochet_Airport",
+      "codes": [
+        "XLB",
+        "CZWH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Oxford House",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oxford_House_Airport",
+      "codes": [
+        "YOH",
+        "CYOH"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Shamattawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shamattawa_Airport",
+      "codes": [
+        "ZTM",
+        "CZTM"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Tadoule Lake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tadoule_Lake_Airport",
+      "codes": [
+        "XTL",
+        "CYBQ"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Calm Air",
+        "Perimeter Aviation"
+      ]
+    },
+    {
+      "city": "York Landing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/York_Landing_Airport",
+      "codes": [
+        "ZAC",
+        "CZAC"
+      ],
+      "airlines": [
+        "Perimeter Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Calm Air": [
+      "Winnipeg"
+    ],
+    "Perimeter Aviation": [
+      "Brochet",
+      "Gods Lake Narrows",
+      "Gods River",
+      "Lac Brochet",
+      "Oxford House",
+      "Shamattawa",
+      "Tadoule Lake",
+      "Winnipeg",
+      "York Landing"
+    ]
+  },
+  "outdegree_cargo": 13,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "North Star Air"
+  ],
+  "destinations_cargo": [
     {
       "city": "Arctic Bay",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Arctic_Bay",
@@ -41,17 +163,6 @@
       ],
       "airlines": [
         "North Star Air"
-      ]
-    },
-    {
-      "city": "Brochet",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Brochet_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Perimeter Aviation"
       ]
     },
     {
@@ -99,28 +210,6 @@
       ]
     },
     {
-      "city": "Gods Lake Narrows",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_Lake_Narrows_Airport",
-      "codes": [
-        "YGO",
-        "CYGO"
-      ],
-      "airlines": [
-        "Perimeter Aviation"
-      ]
-    },
-    {
-      "city": "Gods River",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gods_River_Airport",
-      "codes": [
-        "ZGI",
-        "CZGI"
-      ],
-      "airlines": [
-        "Perimeter Aviation"
-      ]
-    },
-    {
       "city": "Igloolik",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Igloolik",
       "codes": [
@@ -139,31 +228,7 @@
         "icao code not found"
       ],
       "airlines": [
-        "North Star Air",
-        "Perimeter Aviation"
-      ]
-    },
-    {
-      "city": "Lac Brochet",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lac_Brochet_Airport",
-      "codes": [
-        "XLB",
-        "CZWH"
-      ],
-      "airlines": [
-        "North Star Air",
-        "Perimeter Aviation"
-      ]
-    },
-    {
-      "city": "Oxford House",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Oxford_House_Airport",
-      "codes": [
-        "YOH",
-        "CYOH"
-      ],
-      "airlines": [
-        "Perimeter Aviation"
+        "North Star Air"
       ]
     },
     {
@@ -189,17 +254,6 @@
       ]
     },
     {
-      "city": "Shamattawa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shamattawa_Airport",
-      "codes": [
-        "ZTM",
-        "CZTM"
-      ],
-      "airlines": [
-        "Perimeter Aviation"
-      ]
-    },
-    {
       "city": "Tadoule Lake",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tadoule_Lake",
       "codes": [
@@ -207,20 +261,7 @@
         "icao code not found"
       ],
       "airlines": [
-        "North Star Air",
-        "Perimeter Aviation"
-      ]
-    },
-    {
-      "city": "Tadoule Lake",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tadoule_Lake_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "North Star Air",
-        "Perimeter Aviation"
+        "North Star Air"
       ]
     },
     {
@@ -235,18 +276,6 @@
       ]
     },
     {
-      "city": "Winnipeg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_Airport",
-      "codes": [
-        "YWG",
-        "CYWG"
-      ],
-      "airlines": [
-        "Calm Air",
-        "Perimeter Aviation"
-      ]
-    },
-    {
       "city": "York Landing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/York_Landing_Airport",
       "codes": [
@@ -254,26 +283,11 @@
         "CZAC"
       ],
       "airlines": [
-        "North Star Air",
-        "Perimeter Aviation"
+        "North Star Air"
       ]
     }
   ],
-  "airlines_destinations": {
-    "Calm Air": [
-      "Winnipeg"
-    ],
-    "Perimeter Aviation": [
-      "Brochet",
-      "Gods Lake Narrows",
-      "Gods River",
-      "Lac Brochet",
-      "Oxford House",
-      "Shamattawa",
-      "Tadoule Lake",
-      "Winnipeg",
-      "York Landing"
-    ],
+  "airlines_destinations_cargo": {
     "North Star Air": [
       "Arctic Bay",
       "Baker Lake, Nunavut",
@@ -290,6 +304,6 @@
       "York Landing"
     ]
   },
-  "date-time-parse": "2026-04-28T21:28:37Z",
+  "date-time-parse": "2026-04-29T05:02:22Z",
   "date-time-wikidata": "2025-12-20T18:46:34Z"
 }

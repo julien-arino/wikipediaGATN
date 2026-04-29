@@ -14,11 +14,88 @@
   "admin1_name": "Wyoming",
   "admin2_name": "Laramie County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cheyenne_Regional_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:05:01Z",
+  "outdegree": 1,
+  "number_airlines": 1,
+  "airlines": [
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "United Express": [
+      "Denver"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Key Lime Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Key Lime Air"
+      ]
+    },
+    {
+      "city": "Denver-Centennial",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Centennial_Airport",
+      "codes": [
+        "APA",
+        "KAPA"
+      ],
+      "airlines": [
+        "Key Lime Air"
+      ]
+    },
+    {
+      "city": "Denver-Rocky Mountain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rocky_Mountain_Metropolitan_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Key Lime Air"
+      ]
+    },
+    {
+      "city": "Grand Junction",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Junction_Regional_Airport",
+      "codes": [
+        "GJT",
+        "KGJT"
+      ],
+      "airlines": [
+        "Key Lime Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Key Lime Air": [
+      "Denver",
+      "Denver-Centennial",
+      "Denver-Rocky Mountain",
+      "Grand Junction"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:39Z",
   "date-time-wikidata": "2026-04-13T18:48:49Z"
 }

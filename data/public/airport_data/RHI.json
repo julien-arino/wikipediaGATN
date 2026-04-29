@@ -22,7 +22,18 @@
   ],
   "destinations": [
     {
-      "city": "Minneapolis-Saint Paul International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
       "codes": [
         "MSP",
@@ -31,27 +42,113 @@
       "airlines": [
         "Delta Connection"
       ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
     }
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Minneapolis-Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:43Z",
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "FedEx Feeder",
+    "Freight Runners Express",
+    "PACC Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Appleton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Appleton_International_Airport",
+      "codes": [
+        "ATW",
+        "KATW"
+      ],
+      "airlines": [
+        "PACC Air"
+      ]
+    },
+    {
+      "city": "Madison",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dane_County_Regional_Airport",
+      "codes": [
+        "MSN",
+        "KMSN"
+      ],
+      "airlines": [
+        "FedEx Feeder",
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milwaukee_Mitchell_International_Airport",
+      "codes": [
+        "MKE",
+        "KMKE"
+      ],
+      "airlines": [
+        "FedEx Feeder",
+        "Freight Runners Express",
+        "PACC Air"
+      ]
+    },
+    {
+      "city": "Mosinee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Central_Wisconsin_Airport",
+      "codes": [
+        "CWA",
+        "KCWA"
+      ],
+      "airlines": [
+        "Freight Runners Express",
+        "PACC Air"
+      ]
+    },
+    {
+      "city": "Oshkosh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wittman_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Stevens Point",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stevens_Point_Municipal_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Freight Runners Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Madison",
+      "Milwaukee"
+    ],
+    "Freight Runners Express": [
+      "Madison",
+      "Milwaukee",
+      "Mosinee",
+      "Oshkosh",
+      "Stevens Point"
+    ],
+    "PACC Air": [
+      "Appleton",
+      "Milwaukee",
+      "Mosinee"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:58:39Z",
   "date-time-wikidata": "2026-04-14T12:31:39Z"
 }

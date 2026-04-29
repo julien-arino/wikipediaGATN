@@ -14,11 +14,79 @@
   "admin1_name": "Washington",
   "admin2_name": "Douglas County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Pangborn_Memorial_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:05:16Z",
+  "outdegree": 1,
+  "number_airlines": 1,
+  "airlines": [
+    "Alaska Airlines"
+  ],
+  "destinations": [
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Alaska Airlines": [
+      "Seattle/Tacoma"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Omak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Omak_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Seattle–Boeing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Spokane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "codes": [
+        "GEG",
+        "KGEG"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Omak",
+      "Seattle–Boeing"
+    ],
+    "FedEx Feeder": [
+      "Spokane"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:50:18Z",
   "date-time-wikidata": "2025-09-14T00:35:47Z"
 }

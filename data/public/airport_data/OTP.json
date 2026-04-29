@@ -14,8 +14,8 @@
   "admin1_name": "Ilfov",
   "admin2_name": "Comuna Otopeni",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
-  "outdegree": 113,
-  "number_airlines": 36,
+  "outdegree": 111,
+  "number_airlines": 33,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -25,7 +25,6 @@
     "Animawings",
     "Austrian Airlines",
     "British Airways",
-    "DHL Aviation",
     "Dan Air",
     "El Al",
     "Etihad Airways",
@@ -48,8 +47,6 @@
     "Swiss International Air Lines",
     "TAROM",
     "Turkish Airlines",
-    "Turkish Cargo",
-    "UPS Airlines",
     "Wizz Air",
     "airBaltic",
     "flydubai"
@@ -430,17 +427,6 @@
       ]
     },
     {
-      "city": "Cologne/Bonn",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "codes": [
-        "CGN",
-        "EDDK"
-      ],
-      "airlines": [
-        "UPS Airlines"
-      ]
-    },
-    {
       "city": "Corfu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
       "codes": [
@@ -667,8 +653,7 @@
       ],
       "airlines": [
         "TAROM",
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -728,17 +713,6 @@
       "airlines": [
         "Ryanair",
         "Wizz Air"
-      ]
-    },
-    {
-      "city": "Leipzig/Halle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "codes": [
-        "LEJ",
-        "EDDP"
-      ],
-      "airlines": [
-        "DHL Aviation"
       ]
     },
     {
@@ -890,8 +864,7 @@
         "LIMC"
       ],
       "airlines": [
-        "Animawings",
-        "DHL Aviation"
+        "Animawings"
       ]
     },
     {
@@ -1595,7 +1568,62 @@
       "Tenerife–South",
       "Zakynthos",
       "Zaragoza"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "Turkish Cargo",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Leipzig/Halle",
       "Milan–Malpensa"
@@ -1607,6 +1635,6 @@
       "Cologne/Bonn"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:49Z",
+  "date-time-parse": "2026-04-29T04:57:36Z",
   "date-time-wikidata": "2026-04-11T08:54:45Z"
 }

@@ -13,24 +13,18 @@
   "admin1_code": "",
   "admin1_name": "RW",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_Airport",
-  "outdegree": 35,
-  "number_airlines": 16,
+  "outdegree": 30,
+  "number_airlines": 10,
   "airlines": [
-    "Astral Aviation",
     "Auric Air",
     "Brussels Airlines",
     "Coastal Aviation",
     "Egyptair",
     "Ethiopian Airlines",
-    "Ethiopian Airlines Cargo",
     "KLM",
     "Kenya Airways",
-    "Kenya Airways Cargo",
-    "Magma Aviation",
     "Qatar Airways",
-    "Qatar Airways Cargo",
     "RwandAir",
-    "RwandAir Cargo",
     "Turkish Airlines"
   ],
   "destinations": [
@@ -53,20 +47,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
-      "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
-      "codes": [
-        "ADD",
-        "HAAB"
-      ],
-      "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -250,37 +231,13 @@
     },
     {
       "city": "Johannesburg–O.R. Tambo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "codes": [
-        "JNB",
-        "FAOR"
-      ],
-      "airlines": [
-        "Qatar Airways Cargo",
-        "RwandAir"
-      ]
-    },
-    {
-      "city": "Johannesburg–O.R. Tambo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/OR_Tambo_International_Airport",
       "codes": [
         "JNB",
         "FAOR"
       ],
       "airlines": [
-        "Qatar Airways Cargo",
         "RwandAir"
-      ]
-    },
-    {
-      "city": "Kano",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
-      "codes": [
-        "KAN",
-        "DNKN"
-      ],
-      "airlines": [
-        "Qatar Airways Cargo"
       ]
     },
     {
@@ -302,7 +259,6 @@
         "DNMM"
       ],
       "airlines": [
-        "Qatar Airways Cargo",
         "RwandAir"
       ]
     },
@@ -315,17 +271,6 @@
       ],
       "airlines": [
         "RwandAir"
-      ]
-    },
-    {
-      "city": "Liège",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Magma Aviation"
       ]
     },
     {
@@ -381,12 +326,8 @@
         "HKJK"
       ],
       "airlines": [
-        "Astral Aviation",
         "Kenya Airways",
-        "Kenya Airways Cargo",
-        "Magma Aviation",
-        "RwandAir",
-        "RwandAir Cargo"
+        "RwandAir"
       ]
     },
     {
@@ -409,17 +350,6 @@
       ],
       "airlines": [
         "Auric Air"
-      ]
-    },
-    {
-      "city": "Sharjah",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
-      "codes": [
-        "SHJ",
-        "OMSJ"
-      ],
-      "airlines": [
-        "RwandAir Cargo"
       ]
     },
     {
@@ -489,7 +419,125 @@
     ],
     "Turkish Airlines": [
       "Istanbul"
-    ],
+    ]
+  },
+  "outdegree_cargo": 9,
+  "number_airlines_cargo": 6,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Ethiopian Airlines Cargo",
+    "Kenya Airways Cargo",
+    "Magma Aviation",
+    "Qatar Airways Cargo",
+    "RwandAir Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Entebbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entebbe_International_Airport",
+      "codes": [
+        "EBB",
+        "HUEN"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Johannesburg–O.R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Kano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
+      "codes": [
+        "KAN",
+        "DNKN"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "codes": [
+        "LOS",
+        "DNMM"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation",
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Kenya Airways Cargo",
+        "Magma Aviation",
+        "Qatar Airways Cargo",
+        "RwandAir Cargo"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "RwandAir Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Nairobi–Jomo Kenyatta"
     ],
@@ -504,15 +552,19 @@
       "Nairobi–Jomo Kenyatta"
     ],
     "Qatar Airways Cargo": [
+      "Doha",
+      "Entebbe",
       "Johannesburg–O.R. Tambo",
       "Kano",
-      "Lagos"
+      "Lagos",
+      "Liège",
+      "Nairobi–Jomo Kenyatta"
     ],
     "RwandAir Cargo": [
       "Nairobi–Jomo Kenyatta",
       "Sharjah"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:51Z",
+  "date-time-parse": "2026-04-29T04:54:17Z",
   "date-time-wikidata": "2026-03-08T08:52:07Z"
 }

@@ -14,8 +14,8 @@
   "admin1_name": "Pernambuco",
   "admin2_name": "Recife",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
-  "outdegree": 37,
-  "number_airlines": 11,
+  "outdegree": 34,
+  "number_airlines": 8,
   "airlines": [
     "Azul Brazilian Airlines",
     "Azul Conecta",
@@ -24,9 +24,6 @@
     "Iberia",
     "JetSmart Argentina",
     "LATAM Brasil",
-    "LATAM Cargo Brasil",
-    "Lufthansa Cargo",
-    "Modern Logistics",
     "TAP Air Portugal"
   ],
   "destinations": [
@@ -72,8 +69,7 @@
       ],
       "airlines": [
         "Gol Linhas Aéreas",
-        "LATAM Brasil",
-        "Modern Logistics"
+        "LATAM Brasil"
       ]
     },
     {
@@ -123,18 +119,6 @@
       ]
     },
     {
-      "city": "Campinas",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "codes": [
-        "VCP",
-        "SBKP"
-      ],
-      "airlines": [
-        "Lufthansa Cargo",
-        "Modern Logistics"
-      ]
-    },
-    {
       "city": "Caruaru",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Caruaru_Airport",
       "codes": [
@@ -164,8 +148,7 @@
         "SBCT"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "Lufthansa Cargo"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -201,17 +184,6 @@
       ],
       "airlines": [
         "Azul Brazilian Airlines"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "codes": [
-        "FRA",
-        "EDDF"
-      ],
-      "airlines": [
-        "Lufthansa Cargo"
       ]
     },
     {
@@ -266,19 +238,7 @@
         "SBEG"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "Modern Logistics"
-      ]
-    },
-    {
-      "city": "Miami",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "codes": [
-        "MIA",
-        "KMIA"
-      ],
-      "airlines": [
-        "LATAM Cargo Brasil"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -512,7 +472,85 @@
     ],
     "TAP Air Portugal": [
       "Lisbon"
-    ],
+    ]
+  },
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "LATAM Cargo Brasil",
+    "Lufthansa Cargo",
+    "Modern Logistics"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR"
+      ],
+      "airlines": [
+        "Modern Logistics"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Lufthansa Cargo",
+        "Modern Logistics"
+      ]
+    },
+    {
+      "city": "Curitiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
+      "codes": [
+        "CWB",
+        "SBCT"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG"
+      ],
+      "airlines": [
+        "Modern Logistics"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "LATAM Cargo Brasil": [
       "Miami"
     ],
@@ -527,6 +565,6 @@
       "Manaus"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:32Z",
+  "date-time-parse": "2026-04-29T04:58:36Z",
   "date-time-wikidata": "2026-04-26T22:39:49Z"
 }

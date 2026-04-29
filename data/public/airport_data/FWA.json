@@ -14,39 +14,50 @@
   "admin1_name": "Indiana",
   "admin2_name": "Wells County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Wayne_International_Airport",
-  "outdegree": 14,
+  "outdegree": 13,
   "number_airlines": 4,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
-        "DFW",
-        "KDFW"
+        "ORD",
+        "KORD"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "United Express"
       ]
     },
     {
-      "city": "Detroit Metropolitan Airport",
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
         "DTW",
@@ -57,8 +68,8 @@
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -68,7 +79,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -79,30 +90,8 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -112,7 +101,7 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
+      "city": "Myrtle Beach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
       "codes": [
         "MYR",
@@ -123,19 +112,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -146,7 +123,18 @@
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -157,8 +145,8 @@
       ]
     },
     {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
       "codes": [
         "SRQ",
         "KSRQ"
@@ -168,8 +156,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -181,29 +169,32 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Harry Reid International Airport",
-      "Mesa Gateway Airport",
-      "Myrtle Beach International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Fort Lauderdale",
+      "Las Vegas",
+      "Myrtle Beach",
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "Punta Gorda (FL)",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Charlotte"
     ],
     "Delta Connection": [
-      "Detroit Metropolitan Airport",
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Atlanta",
+      "Detroit",
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:25Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:50:57Z",
   "date-time-wikidata": "2026-04-14T22:52:13Z"
 }

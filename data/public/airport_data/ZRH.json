@@ -14,8 +14,8 @@
   "admin1_name": "CH-ZH",
   "admin2_name": "Bezirk Dielsdorf",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
-  "outdegree": 134,
-  "number_airlines": 66,
+  "outdegree": 133,
+  "number_airlines": 64,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -58,7 +58,6 @@
     "KLM",
     "KM Malta Airlines",
     "Korean Air",
-    "Korean Air Cargo",
     "Kuwait Airways",
     "LOT Polish Airlines",
     "Lufthansa",
@@ -78,7 +77,6 @@
     "Thai Airways International",
     "Travelcoup",
     "Turkish Airlines",
-    "Turkish Cargo",
     "United Airlines",
     "Vueling",
     "airBaltic",
@@ -740,8 +738,7 @@
         "LTFM"
       ],
       "airlines": [
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -1309,7 +1306,6 @@
       ],
       "airlines": [
         "Korean Air",
-        "Korean Air Cargo",
         "Swiss International Air Lines"
       ]
     },
@@ -1477,20 +1473,7 @@
         "LOWW"
       ],
       "airlines": [
-        "Austrian Airlines",
-        "Korean Air Cargo"
-      ]
-    },
-    {
-      "city": "Vienna",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "codes": [
-        "VIE",
-        "LOWW"
-      ],
-      "airlines": [
-        "Austrian Airlines",
-        "Korean Air Cargo"
+        "Austrian Airlines"
       ]
     },
     {
@@ -1907,7 +1890,50 @@
     ],
     "Vueling": [
       "Barcelona"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Korean Air Cargo",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Korean Air Cargo": [
       "Seoul–Incheon",
       "Vienna"
@@ -1916,6 +1942,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:43Z",
+  "date-time-parse": "2026-04-29T05:02:43Z",
   "date-time-wikidata": "2026-04-23T09:54:04Z"
 }

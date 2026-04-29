@@ -13,12 +13,11 @@
   "admin1_code": "",
   "admin1_name": "FO",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Vágar_Airport",
-  "outdegree": 20,
-  "number_airlines": 6,
+  "outdegree": 17,
+  "number_airlines": 5,
   "airlines": [
     "Atlantic Airways",
     "Atlantic Airways Helicopter",
-    "FarCargo",
     "Icelandair",
     "Scandinavian Airlines",
     "Widerøe"
@@ -47,17 +46,6 @@
       ]
     },
     {
-      "city": "Brussels",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "codes": [
-        "BRU",
-        "EBBR"
-      ],
-      "airlines": [
-        "FarCargo"
-      ]
-    },
-    {
       "city": "Copenhagen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
       "codes": [
@@ -67,17 +55,6 @@
       "airlines": [
         "Atlantic Airways",
         "Scandinavian Airlines"
-      ]
-    },
-    {
-      "city": "Dublin",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
-      "codes": [
-        "DUB",
-        "EIDW"
-      ],
-      "airlines": [
-        "FarCargo"
       ]
     },
     {
@@ -144,17 +121,6 @@
       ],
       "airlines": [
         "Atlantic Airways Helicopter"
-      ]
-    },
-    {
-      "city": "Liege",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liege_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "FarCargo"
       ]
     },
     {
@@ -276,13 +242,55 @@
     ],
     "Widerøe": [
       "Bergen"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FarCargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "FarCargo"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW"
+      ],
+      "airlines": [
+        "FarCargo"
+      ]
+    },
+    {
+      "city": "Liege",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liege_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "FarCargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "FarCargo": [
       "Brussels",
       "Dublin",
       "Liege"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:32Z",
+  "date-time-parse": "2026-04-29T04:50:38Z",
   "date-time-wikidata": "2026-01-16T07:40:54Z"
 }

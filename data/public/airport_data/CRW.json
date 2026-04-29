@@ -17,25 +17,14 @@
   "outdegree": 8,
   "number_airlines": 4,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield Jackson Atlanta International Airport",
+      "city": "Atlanta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield_Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
@@ -46,7 +35,29 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Myrtle Beach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
       "codes": [
         "MYR",
@@ -57,7 +68,7 @@
       ]
     },
     {
-      "city": "Newark Liberty International Airport",
+      "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
         "EWR",
@@ -68,18 +79,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -90,18 +90,7 @@
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "codes": [
-        "DCA",
-        "KDCA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Tampa International Airport",
+      "city": "Tampa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
       "codes": [
         "TPA",
@@ -110,26 +99,60 @@
       "airlines": [
         "Breeze Airways"
       ]
+    },
+    {
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Washington–National"
     ],
     "Breeze Airways": [
-      "Myrtle Beach International Airport",
-      "Newark Liberty International Airport",
-      "Orlando International Airport",
-      "Tampa International Airport"
+      "Myrtle Beach",
+      "Newark",
+      "Orlando",
+      "Tampa"
     ],
     "Delta Connection": [
-      "Hartsfield Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:57Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Air Cargo Carriers"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air Cargo Carriers": [
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:27Z",
   "date-time-wikidata": "2026-02-28T19:26:35Z"
 }

@@ -13,31 +13,26 @@
   "admin1_code": "CO-ANT",
   "admin1_name": "Antioquia",
   "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
-  "outdegree": 48,
-  "number_airlines": 31,
+  "outdegree": 47,
+  "number_airlines": 26,
   "airlines": [
-    "Aero Union",
     "Aeroméxico",
     "Air Europa",
     "Air Panama",
     "Air Transat",
     "American Airlines",
-    "Amerijet International",
     "Arajet",
     "Avianca",
-    "Avianca Cargo",
     "Avianca Costa Rica",
     "Avianca Ecuador",
     "Avianca El Salvador",
     "Avior Airlines",
     "Copa Airlines",
     "Copa Airlines Colombia",
-    "FedEx Express",
     "JetBlue",
     "JetSmart Chile",
     "JetSmart Colombia",
     "JetSmart Perú",
-    "LATAM Cargo Brasil",
     "LATAM Colombia",
     "LATAM Perú",
     "Spirit Airlines",
@@ -285,7 +280,6 @@
         "SPJC"
       ],
       "airlines": [
-        "Avianca Cargo",
         "JetSmart Perú",
         "LATAM Perú"
       ]
@@ -343,13 +337,8 @@
         "KMIA"
       ],
       "airlines": [
-        "Aero Union",
         "American Airlines",
-        "Amerijet International",
-        "Avianca",
-        "Avianca Cargo",
-        "FedEx Express",
-        "LATAM Cargo Brasil"
+        "Avianca"
       ]
     },
     {
@@ -490,19 +479,6 @@
         "SEQM"
       ],
       "airlines": [
-        "Avianca Cargo",
-        "Avianca Ecuador"
-      ]
-    },
-    {
-      "city": "Quito",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre__International_Airport",
-      "codes": [
-        "UIO",
-        "SEQM"
-      ],
-      "airlines": [
-        "Avianca Cargo",
         "Avianca Ecuador"
       ]
     },
@@ -527,7 +503,6 @@
         "MROC"
       ],
       "airlines": [
-        "Avianca Cargo",
         "Avianca Costa Rica",
         "Wingo"
       ]
@@ -757,7 +732,68 @@
     "Z Air": [
       "Bonaire",
       "Curaçao"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Aero Union",
+    "Amerijet International",
+    "Avianca Cargo",
+    "FedEx Express",
+    "LATAM Cargo Brasil"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Aero Union",
+        "Amerijet International",
+        "Avianca Cargo",
+        "FedEx Express",
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre__International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    },
+    {
+      "city": "San José (CR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Avianca Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Aero Union": [
       "Miami"
     ],
@@ -777,6 +813,6 @@
       "Miami"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:13Z",
+  "date-time-parse": "2026-04-29T04:55:56Z",
   "date-time-wikidata": "2026-04-28T11:50:41Z"
 }

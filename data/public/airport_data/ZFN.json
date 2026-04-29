@@ -13,10 +13,9 @@
   "admin1_code": "CA-NT",
   "admin1_name": "Northwest Territories",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tulita_Airport",
-  "outdegree": 4,
-  "number_airlines": 2,
+  "outdegree": 3,
+  "number_airlines": 1,
   "airlines": [
-    "Buffalo Airways",
     "North-Wright Airways"
   ],
   "destinations": [
@@ -52,7 +51,21 @@
       "airlines": [
         "North-Wright Airways"
       ]
-    },
+    }
+  ],
+  "airlines_destinations": {
+    "North-Wright Airways": [
+      "Déline",
+      "Fort Good Hope",
+      "Norman Wells"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Buffalo Airways"
+  ],
+  "destinations_cargo": [
     {
       "city": "Yellowknife",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowknife_Airport",
@@ -65,16 +78,11 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "North-Wright Airways": [
-      "Déline",
-      "Fort Good Hope",
-      "Norman Wells"
-    ],
+  "airlines_destinations_cargo": {
     "Buffalo Airways": [
       "Yellowknife"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:54Z",
+  "date-time-parse": "2026-04-29T05:02:39Z",
   "date-time-wikidata": "2025-12-20T18:42:20Z"
 }

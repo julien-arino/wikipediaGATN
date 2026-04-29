@@ -13,36 +13,13 @@
   "admin1_code": "AE-FU",
   "admin1_name": "Al Fujayrah",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Fujairah_International_Airport",
-  "outdegree": 7,
-  "number_airlines": 3,
+  "outdegree": 4,
+  "number_airlines": 2,
   "airlines": [
-    "Aerotranscargo",
     "IndiGo",
     "Spicejet"
   ],
   "destinations": [
-    {
-      "city": "Dubai–Al Maktoum",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "codes": [
-        "DWC",
-        "OMDW"
-      ],
-      "airlines": [
-        "Aerotranscargo"
-      ]
-    },
-    {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "codes": [
-        "HKG",
-        "VHHH"
-      ],
-      "airlines": [
-        "Aerotranscargo"
-      ]
-    },
     {
       "city": "Kannur",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kannur_International_Airport",
@@ -86,6 +63,45 @@
       "airlines": [
         "IndiGo"
       ]
+    }
+  ],
+  "airlines_destinations": {
+    "IndiGo": [
+      "Kannur",
+      "Mumbai"
+    ],
+    "Spicejet": [
+      "Kochi",
+      "Kozhikode"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Aerotranscargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Aerotranscargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Aerotranscargo"
+      ]
     },
     {
       "city": "Riyadh",
@@ -99,21 +115,13 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "IndiGo": [
-      "Kannur",
-      "Mumbai"
-    ],
-    "Spicejet": [
-      "Kochi",
-      "Kozhikode"
-    ],
+  "airlines_destinations_cargo": {
     "Aerotranscargo": [
       "Dubai–Al Maktoum",
       "Hong Kong",
       "Riyadh"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:40Z",
+  "date-time-parse": "2026-04-29T04:50:43Z",
   "date-time-wikidata": "2026-01-01T17:02:44Z"
 }

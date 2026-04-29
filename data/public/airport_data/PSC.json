@@ -14,13 +14,192 @@
   "admin1_name": "Washington",
   "admin2_name": "Franklin County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tri-Cities_Airport_(Washington)",
-  "outdegree": 3,
-  "number_airlines": 2,
+  "outdegree": 12,
+  "number_airlines": 7,
   "airlines": [
+    "Alaska Airlines",
+    "Allegiant Air",
+    "American Eagle",
+    "Delta Air Lines",
+    "Delta Connection",
+    "United Airlines",
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Orange County",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Delta Connection"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Alaska Airlines": [
+      "Burbank",
+      "Los Angeles",
+      "Portland (OR)",
+      "Seattle/Tacoma"
+    ],
+    "Allegiant Air": [
+      "Las Vegas",
+      "Orange County",
+      "Phoenix/Mesa"
+    ],
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
+    ],
+    "Delta Air Lines": [
+      "Minneapolis/St. Paul",
+      "Salt Lake City"
+    ],
+    "Delta Connection": [
+      "Salt Lake City",
+      "Seattle/Tacoma"
+    ],
+    "United Airlines": [
+      "Denver"
+    ],
+    "United Express": [
+      "Denver",
+      "San Francisco"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "Ameriflight",
     "FedEx Feeder"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Seattle–Boeing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
@@ -56,7 +235,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Ameriflight": [
       "Seattle–Boeing",
       "Spokane",
@@ -66,6 +245,6 @@
       "Spokane"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:33Z",
+  "date-time-parse": "2026-04-29T04:58:15Z",
   "date-time-wikidata": "2026-04-09T06:00:52Z"
 }

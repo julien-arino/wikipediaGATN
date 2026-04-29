@@ -14,8 +14,8 @@
   "admin1_name": "MA",
   "admin2_name": "Tanger-Assilah",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
-  "outdegree": 38,
-  "number_airlines": 19,
+  "outdegree": 37,
+  "number_airlines": 18,
   "airlines": [
     "Air Arabia",
     "Air Cairo",
@@ -24,7 +24,6 @@
     "Avion Express",
     "Binter Canarias",
     "Brussels Airlines",
-    "DHL Aviation",
     "Eurowings",
     "Iberia",
     "Norwegian Air Shuttle",
@@ -333,7 +332,6 @@
       ],
       "airlines": [
         "Air Arabia",
-        "DHL Aviation",
         "Iberia",
         "Royal Air Maroc"
       ]
@@ -347,21 +345,6 @@
       ],
       "airlines": [
         "Air Arabia",
-        "DHL Aviation",
-        "Iberia",
-        "Royal Air Maroc"
-      ]
-    },
-    {
-      "city": "Madrid",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
-      "codes": [
-        "MAD",
-        "LEMD"
-      ],
-      "airlines": [
-        "Air Arabia",
-        "DHL Aviation",
         "Iberia",
         "Royal Air Maroc"
       ]
@@ -563,11 +546,31 @@
     "Vueling": [
       "Barcelona",
       "Paris–Orly"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "DHL Aviation"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Madrid"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:11Z",
+  "date-time-parse": "2026-04-29T05:00:36Z",
   "date-time-wikidata": "2026-04-28T09:16:30Z"
 }

@@ -14,7 +14,7 @@
   "admin1_name": "Kashmir",
   "admin2_name": "Srinagar",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sheikh_ul-Alam_International_Airport",
-  "outdegree": 10,
+  "outdegree": 8,
   "number_airlines": 5,
   "airlines": [
     "Air India",
@@ -25,7 +25,7 @@
   ],
   "destinations": [
     {
-      "city": "Ahmedabad Airport",
+      "city": "Ahmedabad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
       "codes": [
         "AMD",
@@ -36,7 +36,29 @@
       ]
     },
     {
-      "city": "Chandigarh Airport",
+      "city": "Amritsar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sri_Guru_Ram_Dass_Jee_International_Airport",
+      "codes": [
+        "ATQ",
+        "VIAR"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express"
+      ]
+    },
+    {
+      "city": "Chandigarh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
       "codes": [
         "IXC",
@@ -47,20 +69,7 @@
       ]
     },
     {
-      "city": "Chhatrapati Shivaji Maharaj International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "codes": [
-        "BOM",
-        "VABB"
-      ],
-      "airlines": [
-        "Air India",
-        "Akasa Air",
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Indira Gandhi International Airport",
+      "city": "Delhi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
       "codes": [
         "DEL",
@@ -70,12 +79,11 @@
         "Air India",
         "Air India Express",
         "Akasa Air",
-        "IndiGo",
         "SpiceJet"
       ]
     },
     {
-      "city": "Jammu Airport",
+      "city": "Jammu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jammu_Airport",
       "codes": [
         "IXJ",
@@ -84,24 +92,11 @@
       "airlines": [
         "Air India",
         "Air India Express",
-        "IndiGo",
         "SpiceJet"
       ]
     },
     {
-      "city": "Kempegowda International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "codes": [
-        "BLR",
-        "VOBL"
-      ],
-      "airlines": [
-        "Air India Express",
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Leh Airport",
+      "city": "Leh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leh_Airport",
       "codes": [
         "IXL",
@@ -112,71 +107,51 @@
       ]
     },
     {
-      "city": "Netaji Subhas Chandra Bose International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
       "codes": [
-        "CCU",
-        "VECC"
+        "BOM",
+        "VABB"
       ],
       "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Rajiv Gandhi International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "codes": [
-        "HYD",
-        "VOHS"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Sri Guru Ram Dass Jee International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sri_Guru_Ram_Dass_Jee_International_Airport",
-      "codes": [
-        "ATQ",
-        "VIAR"
-      ],
-      "airlines": [
+        "Air India",
+        "Akasa Air",
         "IndiGo"
       ]
     }
   ],
   "airlines_destinations": {
     "Air India": [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "Indira Gandhi International Airport",
-      "Jammu Airport",
-      "Leh Airport"
+      "Delhi",
+      "Jammu",
+      "Leh",
+      "Mumbai"
     ],
     "Air India Express": [
-      "Indira Gandhi International Airport",
-      "Jammu Airport",
-      "Kempegowda International Airport"
+      "Bengaluru",
+      "Delhi",
+      "Jammu"
     ],
     "Akasa Air": [
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "Indira Gandhi International Airport"
+      "Delhi",
+      "Mumbai"
     ],
     "IndiGo": [
-      "Ahmedabad Airport",
-      "Chandigarh Airport",
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "Indira Gandhi International Airport",
-      "Jammu Airport",
-      "Kempegowda International Airport",
-      "Netaji Subhas Chandra Bose International Airport",
-      "Rajiv Gandhi International Airport",
-      "Sri Guru Ram Dass Jee International Airport"
+      "Ahmedabad",
+      "Amritsar",
+      "Chandigarh",
+      "Mumbai"
     ],
     "SpiceJet": [
-      "Indira Gandhi International Airport",
-      "Jammu Airport"
+      "Delhi",
+      "Jammu"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:18Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:00:01Z",
   "date-time-wikidata": "2026-04-21T03:34:18Z"
 }

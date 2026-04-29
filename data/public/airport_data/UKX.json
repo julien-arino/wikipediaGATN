@@ -13,11 +13,10 @@
   "admin1_code": "",
   "admin1_name": "Irkutsk",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ust-Kut_Airport",
-  "outdegree": 2,
-  "number_airlines": 3,
+  "outdegree": 1,
+  "number_airlines": 2,
   "airlines": [
     "IrAero",
-    "UTair Cargo",
     "Utair"
   ],
   "destinations": [
@@ -32,7 +31,22 @@
         "IrAero",
         "Utair"
       ]
-    },
+    }
+  ],
+  "airlines_destinations": {
+    "IrAero": [
+      "Irkutsk"
+    ],
+    "Utair": [
+      "Irkutsk"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "UTair Cargo"
+  ],
+  "destinations_cargo": [
     {
       "city": "Krasnoyarsk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_Yemelyanovo_Airport",
@@ -45,17 +59,11 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "IrAero": [
-      "Irkutsk"
-    ],
-    "Utair": [
-      "Irkutsk"
-    ],
+  "airlines_destinations_cargo": {
     "UTair Cargo": [
       "Krasnoyarsk"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:52Z",
+  "date-time-parse": "2026-04-29T05:01:07Z",
   "date-time-wikidata": "2026-01-22T23:12:51Z"
 }

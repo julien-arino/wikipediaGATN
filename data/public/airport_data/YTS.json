@@ -13,12 +13,11 @@
   "admin1_code": "CA-ON",
   "admin1_name": "Ontario",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Timmins_Victor_M._Power_Airport",
-  "outdegree": 8,
-  "number_airlines": 5,
+  "outdegree": 7,
+  "number_airlines": 4,
   "airlines": [
     "Air Canada Express",
     "Air Creebec",
-    "FedEx Express",
     "Porter Airlines",
     "Thunder Airlines"
   ],
@@ -82,17 +81,6 @@
       ]
     },
     {
-      "city": "Sudbury",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
-      "codes": [
-        "YSB",
-        "CYSB"
-      ],
-      "airlines": [
-        "FedEx Express"
-      ]
-    },
-    {
       "city": "Toronto–Billy Bishop",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Billy_Bishop_Toronto_City_Airport",
       "codes": [
@@ -111,8 +99,7 @@
         "CYYZ"
       ],
       "airlines": [
-        "Air Canada Express",
-        "FedEx Express"
+        "Air Canada Express"
       ]
     }
   ],
@@ -134,12 +121,43 @@
       "Kashechewan",
       "Moosonee",
       "Peawanuck"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Sudbury",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "codes": [
+        "YSB",
+        "CYSB"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "FedEx Express": [
       "Sudbury",
       "Toronto–Pearson"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:43Z",
+  "date-time-parse": "2026-04-29T05:02:23Z",
   "date-time-wikidata": "2026-03-22T19:41:17Z"
 }

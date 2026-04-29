@@ -21,8 +21,8 @@
   ],
   "destinations": [
     {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -34,9 +34,103 @@
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:07Z",
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Bemidji Airlines",
+    "FedEx Feeder",
+    "Freight Runners Express",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Brainerd",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brainerd_Lakes_Regional_Airport",
+      "codes": [
+        "BRD",
+        "KBRD"
+      ],
+      "airlines": [
+        "Bemidji Airlines"
+      ]
+    },
+    {
+      "city": "Eveleth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eveleth–Virginia_Municipal_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Bemidji Airlines"
+      ]
+    },
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Madison",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dane_County_Regional_Airport",
+      "codes": [
+        "MSN",
+        "KMSN"
+      ],
+      "airlines": [
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Bemidji Airlines",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Seattle–Boeing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "Freight Runners Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Bemidji Airlines": [
+      "Brainerd",
+      "Eveleth",
+      "Minneapolis/St. Paul"
+    ],
+    "FedEx Feeder": [
+      "Fargo"
+    ],
+    "Freight Runners Express": [
+      "Madison",
+      "Seattle–Boeing"
+    ],
+    "UPS Airlines": [
+      "Minneapolis/St. Paul"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:02Z",
   "date-time-wikidata": "2026-04-07T00:31:54Z"
 }

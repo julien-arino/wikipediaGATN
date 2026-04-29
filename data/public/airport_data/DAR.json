@@ -13,13 +13,12 @@
   "admin1_code": "TZ-02",
   "admin1_name": "Dar es Salaam",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nyerere_International_Airport",
-  "outdegree": 32,
-  "number_airlines": 26,
+  "outdegree": 34,
+  "number_airlines": 24,
   "airlines": [
     "Air Tanzania",
     "Air Zimbabwe",
     "Airlink",
-    "Astral Aviation",
     "Auric Air",
     "Coastal Air",
     "Egyptair",
@@ -29,7 +28,6 @@
     "Flightlink",
     "KLM",
     "Kenya Airways",
-    "Kenya Airways Cargo",
     "LAM Mozambique Airlines",
     "Malawi Airlines",
     "Oman Air",
@@ -44,6 +42,17 @@
     "flydubai"
   ],
   "destinations": [
+    {
+      "city": "Accra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
     {
       "city": "Addis Ababa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
@@ -74,6 +83,7 @@
         "HTAR"
       ],
       "airlines": [
+        "Air Tanzania",
         "Flightlink",
         "Precision Air"
       ]
@@ -87,6 +97,17 @@
       ],
       "airlines": [
         "Malawi Airlines"
+      ]
+    },
+    {
+      "city": "Bujumbura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melchior_Ndadaye_International_Airport",
+      "codes": [
+        "BJM",
+        "HBBA"
+      ],
+      "airlines": [
+        "Air Tanzania"
       ]
     },
     {
@@ -119,7 +140,6 @@
         "OMDB"
       ],
       "airlines": [
-        "Air Tanzania",
         "Emirates",
         "flydubai"
       ]
@@ -214,11 +234,11 @@
       ]
     },
     {
-      "city": "Kinshasa–N'djili",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "city": "Lagos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
       "codes": [
-        "FIH",
-        "FZAA"
+        "LOS",
+        "DNMM"
       ],
       "airlines": [
         "Air Tanzania"
@@ -233,17 +253,6 @@
       ],
       "airlines": [
         "Malawi Airlines"
-      ]
-    },
-    {
-      "city": "Lubumbashi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
-      "codes": [
-        "FBM",
-        "FZQA"
-      ],
-      "airlines": [
-        "Air Tanzania"
       ]
     },
     {
@@ -303,6 +312,28 @@
       ]
     },
     {
+      "city": "Moroni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Said_Ibrahim_International_Airport",
+      "codes": [
+        "HAH",
+        "FMCH"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Mpanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mpanda_Airport",
+      "codes": [
+        "NPY",
+        "HTMP"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
       "city": "Mtwara",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mtwara_Airport",
       "codes": [
@@ -311,17 +342,6 @@
       ],
       "airlines": [
         "Precision Air"
-      ]
-    },
-    {
-      "city": "Mumbai",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
-      "codes": [
-        "BOM",
-        "VABB"
-      ],
-      "airlines": [
-        "Air Tanzania"
       ]
     },
     {
@@ -356,9 +376,7 @@
         "HKJK"
       ],
       "airlines": [
-        "Astral Aviation",
         "Kenya Airways",
-        "Kenya Airways Cargo",
         "Precision Air",
         "Skyward Airlines"
       ]
@@ -382,6 +400,7 @@
         "HTPE"
       ],
       "airlines": [
+        "Air Tanzania",
         "Auric Air",
         "Coastal Air"
       ]
@@ -406,6 +425,7 @@
         "HTZA"
       ],
       "airlines": [
+        "Air Tanzania",
         "Auric Air",
         "Coastal Air",
         "Flightlink",
@@ -415,10 +435,14 @@
   ],
   "airlines_destinations": {
     "Air Tanzania": [
-      "Dubai–International",
-      "Kinshasa–N'djili",
-      "Lubumbashi",
-      "Mumbai"
+      "Accra",
+      "Arusha",
+      "Bujumbura",
+      "Lagos",
+      "Moroni",
+      "Mpanda",
+      "Pemba Island",
+      "Zanzibar"
     ],
     "Air Zimbabwe": [
       "Harare"
@@ -507,6 +531,79 @@
     ],
     "Zambia Airways": [
       "Lusaka"
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Air Tanzania",
+    "Astral Aviation",
+    "Kenya Airways Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Kinshasa–N'djili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N'djili_Airport",
+      "codes": [
+        "FIH",
+        "FZAA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Lubumbashi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubumbashi_International_Airport",
+      "codes": [
+        "FBM",
+        "FZQA"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Air Tanzania"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Kenya Airways Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air Tanzania": [
+      "Dubai–International",
+      "Kinshasa–N'djili",
+      "Lubumbashi",
+      "Mumbai"
     ],
     "Astral Aviation": [
       "Nairobi–Jomo Kenyatta"
@@ -515,6 +612,6 @@
       "Nairobi–Jomo Kenyatta"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:14Z",
+  "date-time-parse": "2026-04-29T04:49:43Z",
   "date-time-wikidata": "2026-04-19T08:24:53Z"
 }

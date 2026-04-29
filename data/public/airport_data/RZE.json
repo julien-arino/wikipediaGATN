@@ -14,7 +14,7 @@
   "admin1_name": "Subcarpathian Voivodeship",
   "admin2_name": "Powiat rzeszowski",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Rzeszów–Jasionka_Airport",
-  "outdegree": 17,
+  "outdegree": 15,
   "number_airlines": 5,
   "airlines": [
     "LOT Polish Airlines",
@@ -25,8 +25,8 @@
   ],
   "destinations": [
     {
-      "city": "Alicante–Elche Miguel Hernández Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
       "codes": [
         "ALC",
         "LEAL"
@@ -36,7 +36,18 @@
       ]
     },
     {
-      "city": "Bristol Airport",
+      "city": "Bodrum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas–Bodrum_Airport",
+      "codes": [
+        "BJV",
+        "LTFE"
+      ],
+      "airlines": [
+        "Smartwings Poland"
+      ]
+    },
+    {
+      "city": "Bristol",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
       "codes": [
         "BRS",
@@ -47,7 +58,7 @@
       ]
     },
     {
-      "city": "Dublin Airport",
+      "city": "Dublin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
       "codes": [
         "DUB",
@@ -58,18 +69,7 @@
       ]
     },
     {
-      "city": "Edinburgh Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "codes": [
-        "EDI",
-        "EGPH"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Frankfurt Airport",
+      "city": "Frankfurt",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
       "codes": [
         "FRA",
@@ -80,8 +80,8 @@
       ]
     },
     {
-      "city": "Gdańsk Lech Wałęsa Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gda%C5%84sk_Lech_Wa%C5%82%C4%99sa_Airport",
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
       "codes": [
         "GDN",
         "EPGD"
@@ -91,29 +91,7 @@
       ]
     },
     {
-      "city": "Leonardo da Vinci–Fiumicino Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport",
-      "codes": [
-        "FCO",
-        "LIRF"
-      ],
-      "airlines": [
-        "Wizz Air"
-      ]
-    },
-    {
-      "city": "London–Stansted",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/London%E2%80%93Stansted",
-      "codes": [
-        "STN",
-        "EGSS"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Luton Airport",
+      "city": "London–Luton",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
       "codes": [
         "LTN",
@@ -124,7 +102,7 @@
       ]
     },
     {
-      "city": "Malta International Airport",
+      "city": "Malta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_International_Airport",
       "codes": [
         "MLA",
@@ -135,7 +113,7 @@
       ]
     },
     {
-      "city": "Manchester Airport",
+      "city": "Manchester",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
       "codes": [
         "MAN",
@@ -146,30 +124,18 @@
       ]
     },
     {
-      "city": "Milan Malpensa Airport",
+      "city": "Milan–Malpensa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
       "codes": [
         "MXP",
         "LIMC"
       ],
       "airlines": [
-        "Ryanair",
         "Wizz Air"
       ]
     },
     {
-      "city": "Milas–Bodrum Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milas%E2%80%93Bodrum_Airport",
-      "codes": [
-        "BJV",
-        "LTFE"
-      ],
-      "airlines": [
-        "Smartwings Poland"
-      ]
-    },
-    {
-      "city": "Newark Liberty International Airport",
+      "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
         "EWR",
@@ -180,7 +146,7 @@
       ]
     },
     {
-      "city": "Podgorica Airport",
+      "city": "Podgorica",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Podgorica_Airport",
       "codes": [
         "TGD",
@@ -191,7 +157,18 @@
       ]
     },
     {
-      "city": "Warsaw Chopin Airport",
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Warsaw–Chopin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
       "codes": [
         "WAW",
@@ -202,7 +179,7 @@
       ]
     },
     {
-      "city": "Zadar Airport",
+      "city": "Zadar",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zadar_Airport",
       "codes": [
         "ZAD",
@@ -215,34 +192,36 @@
   ],
   "airlines_destinations": {
     "LOT Polish Airlines": [
-      "Gdańsk Lech Wałęsa Airport",
-      "Newark Liberty International Airport",
-      "Warsaw Chopin Airport"
+      "Gdańsk",
+      "Newark",
+      "Warsaw–Chopin"
     ],
     "Lufthansa": [
-      "Frankfurt Airport"
+      "Frankfurt"
     ],
     "Ryanair": [
-      "Alicante–Elche Miguel Hernández Airport",
-      "Bristol Airport",
-      "Dublin Airport",
-      "Edinburgh Airport",
-      "London–Stansted",
-      "Luton Airport",
-      "Malta International Airport",
-      "Manchester Airport",
-      "Milan Malpensa Airport",
-      "Zadar Airport"
+      "Alicante",
+      "Bristol",
+      "Dublin",
+      "London–Luton",
+      "Malta",
+      "Manchester",
+      "Zadar"
     ],
     "Smartwings Poland": [
-      "Milas–Bodrum Airport"
+      "Bodrum"
     ],
     "Wizz Air": [
-      "Leonardo da Vinci–Fiumicino Airport",
-      "Milan Malpensa Airport",
-      "Podgorica Airport"
+      "Milan–Malpensa",
+      "Podgorica",
+      "Rome–Fiumicino"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:56Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:58:58Z",
   "date-time-wikidata": "2026-04-18T07:39:06Z"
 }

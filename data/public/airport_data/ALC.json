@@ -14,7 +14,7 @@
   "admin1_name": "Valencia",
   "admin2_name": "Provincia de Alicante",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
-  "outdegree": 129,
+  "outdegree": 77,
   "number_airlines": 36,
   "airlines": [
     "Aer Lingus",
@@ -22,13 +22,11 @@
     "Air Europa",
     "Air Nostrum",
     "Air Serbia",
-    "AirBaltic",
     "Atlantic Airways",
     "Aurigny",
     "Austrian Airlines",
     "British Airways",
     "Brussels Airlines",
-    "EasyJet",
     "Eurowings",
     "Finnair",
     "FlyOne",
@@ -39,7 +37,7 @@
     "Lufthansa",
     "Lufthansa City Airlines",
     "Luxair",
-    "Neos (airline)",
+    "Neos",
     "Norwegian Air Shuttle",
     "Pegasus Airlines",
     "Royal Air Maroc",
@@ -52,22 +50,24 @@
     "Transavia",
     "Volotea",
     "Vueling",
-    "Wizz Air"
+    "Wizz Air",
+    "airBaltic",
+    "easyJet"
   ],
   "destinations": [
     {
-      "city": "Aalborg Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Aalborg_Airport",
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
       "codes": [
-        "AAL",
-        "EKYT"
+        "ALG",
+        "DAAG"
       ],
       "airlines": [
-        "Norwegian Air Shuttle"
+        "Air Algérie"
       ]
     },
     {
-      "city": "Amsterdam Airport",
+      "city": "Amsterdam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport",
       "codes": [
         "AMS",
@@ -76,22 +76,26 @@
       "airlines": [
         "KLM",
         "Transavia",
-        "Vueling"
+        "Vueling",
+        "easyJet"
       ]
     },
     {
-      "city": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
       "codes": [
         "AMS",
         "EHAM"
       ],
       "airlines": [
-        "EasyJet"
+        "KLM",
+        "Transavia",
+        "Vueling",
+        "easyJet"
       ]
     },
     {
-      "city": "Antwerp International Airport",
+      "city": "Antwerp",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Antwerp_International_Airport",
       "codes": [
         "ANR",
@@ -102,7 +106,7 @@
       ]
     },
     {
-      "city": "Asturias Airport",
+      "city": "Asturias",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Asturias_Airport",
       "codes": [
         "OVD",
@@ -113,52 +117,19 @@
       ]
     },
     {
-      "city": "Athens International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
-      "codes": [
-        "ATH",
-        "LGAV"
-      ],
-      "airlines": [
-        "EasyJet"
-      ]
-    },
-    {
-      "city": "Barcelona Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_Airport",
-      "codes": [
-        "BCN",
-        "LEBL"
-      ],
-      "airlines": [
-        "Vueling"
-      ]
-    },
-    {
-      "city": "Bari Karol Wojtyła Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari_Karol_Wojty%C5%82a_Airport",
-      "codes": [
-        "BRI",
-        "LIBD"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Basel-Mulhouse International Airport",
+      "city": "Basel/Mulhouse",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basel-Mulhouse_International_Airport",
       "codes": [
         "BSL",
         "LFSB"
       ],
       "airlines": [
-        "EasyJet"
+        "easyJet"
       ]
     },
     {
-      "city": "Beauvais–Tillé Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais%E2%80%93Till%C3%A9_Airport",
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
       "codes": [
         "BVA",
         "LFOB"
@@ -168,19 +139,18 @@
       ]
     },
     {
-      "city": "Belfast International Airport",
+      "city": "Belfast–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
       "codes": [
         "BFS",
         "EGAA"
       ],
       "airlines": [
-        "EasyJet",
         "Jet2.com"
       ]
     },
     {
-      "city": "Belgrade Nikola Tesla Airport",
+      "city": "Belgrade",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
       "codes": [
         "BEG",
@@ -192,7 +162,18 @@
       ]
     },
     {
-      "city": "Bergen Airport",
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Bergen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport",
       "codes": [
         "BGO",
@@ -203,45 +184,30 @@
       ]
     },
     {
-      "city": "Berlin Brandenburg Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "codes": [
-        "BER",
-        "EDDB"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Bilbao Airport",
+      "city": "Bilbao",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
       "codes": [
         "BIO",
         "LEBB"
       ],
       "airlines": [
-        "Volotea",
-        "Vueling"
+        "Volotea"
       ]
     },
     {
-      "city": "Birmingham Airport",
+      "city": "Birmingham",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
       "codes": [
         "BHX",
         "EGBB"
       ],
       "airlines": [
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair",
         "TUI Airways"
       ]
     },
     {
-      "city": "Bordeaux–Mérignac Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux%E2%80%93M%C3%A9rignac_Airport",
+      "city": "Bordeaux",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bordeaux–Mérignac_Airport",
       "codes": [
         "BOD",
         "LFBD"
@@ -251,31 +217,18 @@
       ]
     },
     {
-      "city": "Bournemouth Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bournemouth_Airport",
-      "codes": [
-        "BOH",
-        "EGHH"
-      ],
-      "airlines": [
-        "Jet2.com",
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Bratislava Airport",
+      "city": "Bratislava",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bratislava_Airport",
       "codes": [
         "BTS",
         "LZIB"
       ],
       "airlines": [
-        "Ryanair",
         "Wizz Air"
       ]
     },
     {
-      "city": "Bremen Airport",
+      "city": "Bremen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bremen_Airport",
       "codes": [
         "BRE",
@@ -286,20 +239,18 @@
       ]
     },
     {
-      "city": "Bristol Airport",
+      "city": "Bristol",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bristol_Airport",
       "codes": [
         "BRS",
         "EGGD"
       ],
       "airlines": [
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair"
+        "easyJet"
       ]
     },
     {
-      "city": "Brussels Airport",
+      "city": "Brussels",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
       "codes": [
         "BRU",
@@ -307,24 +258,22 @@
       ],
       "airlines": [
         "Brussels Airlines",
-        "TUI fly Belgium",
-        "Transavia",
-        "Vueling"
+        "TUI fly Belgium"
       ]
     },
     {
-      "city": "Brussels South Charleroi Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coandă_International_Airport",
       "codes": [
-        "CRL",
-        "EBCI"
+        "OTP",
+        "LROP"
       ],
       "airlines": [
-        "Ryanair"
+        "Wizz Air"
       ]
     },
     {
-      "city": "Budapest Ferenc Liszt International Airport",
+      "city": "Budapest",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
       "codes": [
         "BUD",
@@ -335,32 +284,41 @@
       ]
     },
     {
-      "city": "Bydgoszcz Ignacy Jan Paderewski Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bydgoszcz_Ignacy_Jan_Paderewski_Airport",
-      "codes": [
-        "BZG",
-        "EPBY"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Cardiff Airport",
+      "city": "Cardiff",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cardiff_Airport",
       "codes": [
         "CWL",
         "EGFF"
       ],
       "airlines": [
-        "Ryanair",
-        "TUI Airways",
-        "Vueling"
+        "Ryanair"
       ]
     },
     {
-      "city": "Chișinău International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u_International_Airport",
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Chișinău",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chișinău_International_Airport",
       "codes": [
         "RMO",
         "LUKK"
@@ -370,7 +328,7 @@
       ]
     },
     {
-      "city": "Cluj International Airport",
+      "city": "Cluj-Napoca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cluj_International_Airport",
       "codes": [
         "CLJ",
@@ -381,18 +339,7 @@
       ]
     },
     {
-      "city": "Cologne Bonn Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "codes": [
-        "CGN",
-        "EDDK"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Cologne/Bonn Airport",
+      "city": "Cologne/Bonn",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne/Bonn_Airport",
       "codes": [
         "CGN",
@@ -403,42 +350,18 @@
       ]
     },
     {
-      "city": "Copenhagen Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "codes": [
-        "CPH",
-        "EKCH"
-      ],
-      "airlines": [
-        "Norwegian Air Shuttle",
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Dublin Airport",
+      "city": "Dublin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
       "codes": [
         "DUB",
         "EIDW"
       ],
       "airlines": [
-        "Aer Lingus",
-        "Ryanair"
+        "Aer Lingus"
       ]
     },
     {
-      "city": "Düsseldorf Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%BCsseldorf_Airport",
-      "codes": [
-        "DUS",
-        "EDDL"
-      ],
-      "airlines": [
-        "Eurowings"
-      ]
-    },
-    {
-      "city": "East Midlands Airport",
+      "city": "East Midlands",
       "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
       "codes": [
         "EMA",
@@ -446,48 +369,33 @@
       ],
       "airlines": [
         "Jet2.com",
-        "Ryanair",
         "TUI Airways"
       ]
     },
     {
-      "city": "Edinburgh Airport",
+      "city": "Edinburgh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
       "codes": [
         "EDI",
         "EGPH"
       ],
       "airlines": [
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair"
+        "Jet2.com"
       ]
     },
     {
-      "city": "Eindhoven Airport",
+      "city": "Eindhoven",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eindhoven_Airport",
       "codes": [
         "EIN",
         "EHEH"
       ],
       "airlines": [
-        "Ryanair",
         "Transavia"
       ]
     },
     {
-      "city": "Exeter Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Exeter_Airport",
-      "codes": [
-        "EXT",
-        "EGTE"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Frankfurt Airport",
+      "city": "Frankfurt",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
       "codes": [
         "FRA",
@@ -498,82 +406,29 @@
       ]
     },
     {
-      "city": "Friedrichshafen Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Friedrichshafen_Airport",
-      "codes": [
-        "FDH",
-        "EDNY"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Gatwick Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "codes": [
-        "LGW",
-        "EGKK"
-      ],
-      "airlines": [
-        "British Airways",
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair",
-        "TUI Airways",
-        "Vueling"
-      ]
-    },
-    {
-      "city": "Gdańsk Lech Wałęsa Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gda%C5%84sk_Lech_Wa%C5%82%C4%99sa_Airport",
+      "city": "Gdańsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
       "codes": [
         "GDN",
         "EPGD"
       ],
       "airlines": [
-        "Ryanair",
         "Wizz Air"
       ]
     },
     {
-      "city": "Geneva Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
-      "codes": [
-        "GVA",
-        "LSGG"
-      ],
-      "airlines": [
-        "EasyJet"
-      ]
-    },
-    {
-      "city": "Glasgow Airport",
+      "city": "Glasgow",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
       "codes": [
         "GLA",
         "EGPF"
       ],
       "airlines": [
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair",
         "TUI Airways"
       ]
     },
     {
-      "city": "Glasgow Prestwick Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Prestwick_Airport",
-      "codes": [
-        "PIK",
-        "EGPK"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Gran Canaria Airport",
+      "city": "Gran Canaria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
       "codes": [
         "LPA",
@@ -584,7 +439,7 @@
       ]
     },
     {
-      "city": "Guernsey Airport",
+      "city": "Guernsey",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guernsey_Airport",
       "codes": [
         "GCI",
@@ -595,29 +450,7 @@
       ]
     },
     {
-      "city": "Göteborg Landvetter Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/G%C3%B6teborg_Landvetter_Airport",
-      "codes": [
-        "GOT",
-        "ESGG"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Hamburg Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamburg_Airport",
-      "codes": [
-        "HAM",
-        "EDDH"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Hannover Airport",
+      "city": "Hannover",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
       "codes": [
         "HAJ",
@@ -628,89 +461,51 @@
       ]
     },
     {
-      "city": "Helsinki Airport",
+      "city": "Helsinki",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
       "codes": [
         "HEL",
         "EFHK"
       ],
       "airlines": [
-        "Finnair",
-        "Norwegian Air Shuttle",
-        "Ryanair"
+        "Finnair"
       ]
     },
     {
-      "city": "Henri Coandă International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Coand%C4%83_International_Airport",
-      "codes": [
-        "OTP",
-        "LROP"
-      ],
-      "airlines": [
-        "Wizz Air"
-      ]
-    },
-    {
-      "city": "Houari Boumediene Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
-      "codes": [
-        "ALG",
-        "DAAG"
-      ],
-      "airlines": [
-        "Air Algérie",
-        "Vueling"
-      ]
-    },
-    {
-      "city": "Ibiza Airport",
+      "city": "Ibiza",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
       "codes": [
         "IBZ",
         "LEIB"
       ],
       "airlines": [
-        "Air Nostrum",
-        "Ryanair"
+        "Air Nostrum"
       ]
     },
     {
-      "city": "Ireland West Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ireland_West_Airport",
+      "city": "Istanbul–Sabiha Gökçen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
       "codes": [
-        "NOC",
-        "EIKN"
+        "SAW",
+        "LTFJ"
       ],
       "airlines": [
-        "Ryanair"
+        "Pegasus Airlines"
       ]
     },
     {
-      "city": "Karlsruhe/Baden-Baden Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
-      "codes": [
-        "FKB",
-        "EDSB"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Katowice Airport",
+      "city": "Katowice",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
       "codes": [
         "KTW",
         "EPKT"
       ],
       "airlines": [
-        "Ryanair",
         "Wizz Air"
       ]
     },
     {
-      "city": "Kaunas International Airport",
+      "city": "Kaunas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kaunas_International_Airport",
       "codes": [
         "KUN",
@@ -721,19 +516,7 @@
       ]
     },
     {
-      "city": "Keflavík International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflav%C3%ADk_International_Airport",
-      "codes": [
-        "KEF",
-        "BIKF"
-      ],
-      "airlines": [
-        "Icelandair",
-        "Neos (airline)"
-      ]
-    },
-    {
-      "city": "Kerry Airport",
+      "city": "Kerry",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kerry_Airport",
       "codes": [
         "KIR",
@@ -744,79 +527,53 @@
       ]
     },
     {
-      "city": "Kraków John Paul II International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Krak%C3%B3w_John_Paul_II_International_Airport",
-      "codes": [
-        "KRK",
-        "EPKK"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Leeds Bradford Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leeds_Bradford_Airport",
-      "codes": [
-        "LBA",
-        "EGNM"
-      ],
-      "airlines": [
-        "Jet2.com",
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Leonardo da Vinci–Fiumicino Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport",
-      "codes": [
-        "FCO",
-        "LIRF"
-      ],
-      "airlines": [
-        "Wizz Air"
-      ]
-    },
-    {
-      "city": "Lille Airport",
+      "city": "Lille",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lille_Airport",
       "codes": [
         "LIL",
         "LFQQ"
       ],
       "airlines": [
-        "EasyJet"
+        "easyJet"
       ]
     },
     {
-      "city": "Liverpool John Lennon Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liverpool_John_Lennon_Airport",
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
       "codes": [
-        "LPL",
-        "EGGP"
+        "LGW",
+        "EGKK"
       ],
       "airlines": [
-        "EasyJet",
+        "British Airways",
         "Jet2.com",
         "Ryanair"
       ]
     },
     {
-      "city": "Luton Airport",
+      "city": "London–Luton",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Luton_Airport",
       "codes": [
         "LTN",
         "EGGW"
       ],
       "airlines": [
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair",
-        "Wizz Air"
+        "Jet2.com"
       ]
     },
     {
-      "city": "Luxembourg Airport",
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "Jet2.com"
+      ]
+    },
+    {
+      "city": "Luxembourg",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
       "codes": [
         "LUX",
@@ -828,29 +585,31 @@
       ]
     },
     {
-      "city": "Lyon Airport",
+      "city": "Lyon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon_Airport",
       "codes": [
         "LYS",
         "LFLL"
       ],
       "airlines": [
-        "EasyJet"
+        "Volotea",
+        "easyJet"
       ]
     },
     {
-      "city": "Lyon–Saint-Exupéry Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon%E2%80%93Saint-Exup%C3%A9ry_Airport",
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
       "codes": [
         "LYS",
         "LFLL"
       ],
       "airlines": [
-        "Volotea"
+        "Volotea",
+        "easyJet"
       ]
     },
     {
-      "city": "Madrid Airport",
+      "city": "Madrid",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
       "codes": [
         "MAD",
@@ -863,65 +622,7 @@
       ]
     },
     {
-      "city": "Manchester Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
-      "codes": [
-        "MAN",
-        "EGCC"
-      ],
-      "airlines": [
-        "EasyJet",
-        "Jet2.com",
-        "Ryanair",
-        "TUI Airways"
-      ]
-    },
-    {
-      "city": "Marrakesh Menara Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
-      "codes": [
-        "RAK",
-        "GMMX"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Marseille Provence Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
-      "codes": [
-        "MRS",
-        "LFML"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Memmingen Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
-      "codes": [
-        "FMM",
-        "EDJA"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Menorca Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Menorca_Airport",
-      "codes": [
-        "MAH",
-        "LEMH"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Milan Malpensa Airport",
+      "city": "Milan–Malpensa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
       "codes": [
         "MXP",
@@ -932,18 +633,7 @@
       ]
     },
     {
-      "city": "Mohammed V International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
-      "codes": [
-        "CMN",
-        "GMMN"
-      ],
-      "airlines": [
-        "Royal Air Maroc"
-      ]
-    },
-    {
-      "city": "Munich Airport",
+      "city": "Munich",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
       "codes": [
         "MUC",
@@ -954,87 +644,44 @@
       ]
     },
     {
-      "city": "Münster Osnabrück Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%BCnster_Osnabr%C3%BCck_Airport",
-      "codes": [
-        "FMO",
-        "EDDG"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Nantes Airport",
+      "city": "Nantes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Airport",
       "codes": [
         "NTE",
         "LFRS"
       ],
       "airlines": [
-        "EasyJet"
+        "Volotea",
+        "easyJet"
       ]
     },
     {
-      "city": "Nantes Atlantique Airport",
+      "city": "Nantes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
       "codes": [
         "NTE",
         "LFRS"
       ],
       "airlines": [
-        "Volotea"
+        "Volotea",
+        "easyJet"
       ]
     },
     {
-      "city": "Naples International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
-      "codes": [
-        "NAP",
-        "LIRN"
-      ],
-      "airlines": [
-        "EasyJet"
-      ]
-    },
-    {
-      "city": "Newcastle International Airport",
+      "city": "Newcastle upon Tyne",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
       "codes": [
         "NCL",
         "EGNT"
       ],
       "airlines": [
-        "EasyJet",
         "Jet2.com",
         "Ryanair",
-        "TUI Airways"
+        "easyJet"
       ]
     },
     {
-      "city": "Newquay Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Newquay_Airport",
-      "codes": [
-        "NQY",
-        "EGHQ"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Norwich Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Norwich_Airport",
-      "codes": [
-        "NWI",
-        "EGSH"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Oran Airport",
+      "city": "Oran",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Oran_Airport",
       "codes": [
         "ORN",
@@ -1046,52 +693,7 @@
       ]
     },
     {
-      "city": "Orio al Serio International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "codes": [
-        "BGY",
-        "LIME"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Orly Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
-      "codes": [
-        "ORY",
-        "LFPO"
-      ],
-      "airlines": [
-        "Transavia",
-        "Vueling"
-      ]
-    },
-    {
-      "city": "Oslo Airport, Gardermoen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
-      "codes": [
-        "OSL",
-        "ENGM"
-      ],
-      "airlines": [
-        "Norwegian Air Shuttle"
-      ]
-    },
-    {
-      "city": "Ostend Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostend_Airport",
-      "codes": [
-        "OST",
-        "EBOS"
-      ],
-      "airlines": [
-        "TUI fly Belgium"
-      ]
-    },
-    {
-      "city": "Palma de Mallorca Airport",
+      "city": "Palma de Mallorca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
       "codes": [
         "PMI",
@@ -1099,57 +701,67 @@
       ],
       "airlines": [
         "Air Europa",
-        "Ryanair",
-        "Vueling"
-      ]
-    },
-    {
-      "city": "Pardubice Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pardubice_Airport",
-      "codes": [
-        "PED",
-        "LKPD"
-      ],
-      "airlines": [
         "Ryanair"
       ]
     },
     {
-      "city": "Poznań–Ławica Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pozna%C5%84%E2%80%93%C5%81awica_Airport",
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
       "codes": [
-        "POZ",
-        "EPPO"
+        "ORY",
+        "LFPO"
       ],
       "airlines": [
-        "Ryanair"
+        "Transavia"
       ]
     },
     {
-      "city": "Prague Airport",
+      "city": "Prague",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Airport",
       "codes": [
         "PRG",
         "LKPR"
       ],
       "airlines": [
-        "EasyJet",
-        "Eurowings"
+        "easyJet"
       ]
     },
     {
-      "city": "Riga Airport",
+      "city": "Reykjavík–Keflavík",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keflavík_International_Airport",
+      "codes": [
+        "KEF",
+        "BIKF"
+      ],
+      "airlines": [
+        "Icelandair",
+        "Neos"
+      ]
+    },
+    {
+      "city": "Riga",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_Airport",
       "codes": [
         "RIX",
         "EVRA"
       ],
       "airlines": [
-        "AirBaltic"
+        "airBaltic"
       ]
     },
     {
-      "city": "Rotterdam Airport",
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Rotterdam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_Airport",
       "codes": [
         "RTM",
@@ -1160,141 +772,40 @@
       ]
     },
     {
-      "city": "Rzeszów–Jasionka Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rzesz%C3%B3w%E2%80%93Jasionka_Airport",
-      "codes": [
-        "RZE",
-        "EPRZ"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Saarbrücken Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Saarbr%C3%BCcken_Airport",
-      "codes": [
-        "SCN",
-        "EDDR"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Sabiha Gökçen International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_G%C3%B6k%C3%A7en_International_Airport",
-      "codes": [
-        "SAW",
-        "LTFJ"
-      ],
-      "airlines": [
-        "Pegasus Airlines"
-      ]
-    },
-    {
-      "city": "Sandefjord Airport, Torp",
+      "city": "Sandefjord",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sandefjord_Airport,_Torp",
       "codes": [
         "TRF",
         "ENTO"
       ],
       "airlines": [
-        "Norwegian Air Shuttle",
         "Ryanair"
       ]
     },
     {
-      "city": "Sania Ramel Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sania_Ramel_Airport",
-      "codes": [
-        "TTU",
-        "GMTN"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Santiago–Rosalía de Castro Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago%E2%80%93Rosal%C3%ADa_de_Castro_Airport",
+      "city": "Santiago de Compostela",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santiago–Rosalía_de_Castro_Airport",
       "codes": [
         "SCQ",
         "LEST"
       ],
       "airlines": [
-        "Ryanair",
-        "Vueling"
-      ]
-    },
-    {
-      "city": "Seville Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seville_Airport",
-      "codes": [
-        "SVQ",
-        "LEZL"
-      ],
-      "airlines": [
         "Ryanair"
       ]
     },
     {
-      "city": "Shannon Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shannon_Airport",
-      "codes": [
-        "SNN",
-        "EINN"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Sofia Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sofia_Airport",
-      "codes": [
-        "SOF",
-        "LBSF"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Southampton Airport",
+      "city": "Southampton",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Southampton_Airport",
       "codes": [
         "SOU",
         "EGHI"
       ],
       "airlines": [
-        "EasyJet"
+        "easyJet"
       ]
     },
     {
-      "city": "Southend Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Southend_Airport",
-      "codes": [
-        "SEN",
-        "EGMC"
-      ],
-      "airlines": [
-        "EasyJet"
-      ]
-    },
-    {
-      "city": "Stansted Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stansted_Airport",
-      "codes": [
-        "STN",
-        "EGSS"
-      ],
-      "airlines": [
-        "Jet2.com"
-      ]
-    },
-    {
-      "city": "Stavanger Airport",
+      "city": "Stavanger",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stavanger_Airport",
       "codes": [
         "SVG",
@@ -1305,18 +816,7 @@
       ]
     },
     {
-      "city": "Stavanger Airport, Sola",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stavanger_Airport,_Sola",
-      "codes": [
-        "SVG",
-        "ENZV"
-      ],
-      "airlines": [
-        "Norwegian Air Shuttle"
-      ]
-    },
-    {
-      "city": "Stockholm Arlanda Airport",
+      "city": "Stockholm–Arlanda",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
       "codes": [
         "ARN",
@@ -1327,40 +827,7 @@
       ]
     },
     {
-      "city": "Stockholm Västerås Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_V%C3%A4ster%C3%A5s_Airport",
-      "codes": [
-        "VST",
-        "ESOW"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Stockholm–Arlanda Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm%E2%80%93Arlanda_Airport",
-      "codes": [
-        "ARN",
-        "ESSA"
-      ],
-      "airlines": [
-        "Norwegian Air Shuttle"
-      ]
-    },
-    {
-      "city": "Teesside International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Teesside_International_Airport",
-      "codes": [
-        "MME",
-        "EGNV"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Tenerife North Airport",
+      "city": "Tenerife–North",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_North_Airport",
       "codes": [
         "TFN",
@@ -1371,41 +838,18 @@
       ]
     },
     {
-      "city": "Toulouse–Blagnac Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse%E2%80%93Blagnac_Airport",
-      "codes": [
-        "TLS",
-        "LFBO"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Trondheim Airport, Værnes",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Trondheim_Airport,_V%C3%A6rnes",
-      "codes": [
-        "TRD",
-        "ENVA"
-      ],
-      "airlines": [
-        "Norwegian Air Shuttle"
-      ]
-    },
-    {
-      "city": "Venice Marco Polo Airport",
+      "city": "Venice",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
       "codes": [
         "VCE",
         "LIPZ"
       ],
       "airlines": [
-        "Ryanair",
         "Wizz Air"
       ]
     },
     {
-      "city": "Vienna International Airport",
+      "city": "Vienna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
       "codes": [
         "VIE",
@@ -1417,19 +861,8 @@
       ]
     },
     {
-      "city": "Vitoria Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Vitoria_Airport",
-      "codes": [
-        "VIT",
-        "LEVT"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Vágar Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/V%C3%A1gar_Airport",
+      "city": "Vágar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vágar_Airport",
       "codes": [
         "FAE",
         "EKVG"
@@ -1439,30 +872,18 @@
       ]
     },
     {
-      "city": "Växjö Småland Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/V%C3%A4xj%C3%B6_Sm%C3%A5land_Airport",
-      "codes": [
-        "VXO",
-        "ESMX"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Warsaw Chopin Airport",
+      "city": "Warsaw–Chopin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
       "codes": [
         "WAW",
         "EPWA"
       ],
       "airlines": [
-        "Ryanair",
         "Wizz Air"
       ]
     },
     {
-      "city": "Warsaw Modlin Airport",
+      "city": "Warsaw–Modlin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Modlin_Airport",
       "codes": [
         "WMI",
@@ -1473,40 +894,7 @@
       ]
     },
     {
-      "city": "Weeze Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Weeze_Airport",
-      "codes": [
-        "NRN",
-        "EDLV"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Wrocław Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Wroc%C5%82aw_Airport",
-      "codes": [
-        "WRO",
-        "EPWR"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Zurich Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
-      "codes": [
-        "ZRH",
-        "LSZH"
-      ],
-      "airlines": [
-        "Swiss International Air Lines"
-      ]
-    },
-    {
-      "city": "Zvartnots International Airport",
+      "city": "Yerevan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zvartnots_International_Airport",
       "codes": [
         "EVN",
@@ -1517,8 +905,19 @@
       ]
     },
     {
-      "city": "Ålesund Airport, Vigra",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%85lesund_Airport,_Vigra",
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH"
+      ],
+      "airlines": [
+        "Swiss International Air Lines"
+      ]
+    },
+    {
+      "city": "Ålesund",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ålesund_Airport,_Vigra",
       "codes": [
         "AES",
         "ENAL"
@@ -1526,286 +925,180 @@
       "airlines": [
         "Norwegian Air Shuttle"
       ]
-    },
-    {
-      "city": "Łódź Władysław Reymont Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA_W%C5%82adys%C5%82aw_Reymont_Airport",
-      "codes": [
-        "LCJ",
-        "EPLL"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
     }
   ],
   "airlines_destinations": {
     "Aer Lingus": [
-      "Dublin Airport"
+      "Dublin"
     ],
     "Air Algérie": [
-      "Houari Boumediene Airport",
-      "Oran Airport"
+      "Algiers",
+      "Oran"
     ],
     "Air Europa": [
-      "Madrid Airport",
-      "Palma de Mallorca Airport"
+      "Madrid",
+      "Palma de Mallorca"
     ],
     "Air Nostrum": [
-      "Ibiza Airport",
-      "Madrid Airport"
+      "Ibiza",
+      "Madrid"
     ],
     "Air Serbia": [
-      "Belgrade Nikola Tesla Airport"
+      "Belgrade"
     ],
-    "AirBaltic": [
-      "Riga Airport"
+    "airBaltic": [
+      "Riga"
     ],
     "Aurigny": [
-      "Guernsey Airport"
+      "Guernsey"
     ],
     "Austrian Airlines": [
-      "Vienna International Airport"
+      "Vienna"
     ],
     "Atlantic Airways": [
-      "Vágar Airport"
+      "Vágar"
     ],
     "British Airways": [
-      "Gatwick Airport"
+      "London–Gatwick"
     ],
     "Brussels Airlines": [
-      "Brussels Airport"
+      "Brussels"
     ],
-    "EasyJet": [
-      "Amsterdam Airport Schiphol",
-      "Athens International Airport",
-      "Basel-Mulhouse International Airport",
-      "Belfast International Airport",
-      "Birmingham Airport",
-      "Bristol Airport",
-      "Edinburgh Airport",
-      "Gatwick Airport",
-      "Geneva Airport",
-      "Glasgow Airport",
-      "Lille Airport",
-      "Liverpool John Lennon Airport",
-      "Luton Airport",
-      "Lyon Airport",
-      "Manchester Airport",
-      "Nantes Airport",
-      "Naples International Airport",
-      "Newcastle International Airport",
-      "Prague Airport",
-      "Southampton Airport",
-      "Southend Airport"
+    "easyJet": [
+      "Amsterdam",
+      "Basel/Mulhouse",
+      "Bristol",
+      "Lille",
+      "Lyon",
+      "Nantes",
+      "Newcastle upon Tyne",
+      "Prague",
+      "Southampton"
     ],
     "Eurowings": [
-      "Cologne/Bonn Airport",
-      "Düsseldorf Airport",
-      "Hannover Airport",
-      "Prague Airport"
+      "Cologne/Bonn",
+      "Hannover"
     ],
     "Finnair": [
-      "Helsinki Airport"
+      "Helsinki"
     ],
     "FlyOne": [
-      "Zvartnots International Airport"
+      "Yerevan"
     ],
     "Iberia": [
-      "Madrid Airport"
+      "Madrid"
     ],
     "Icelandair": [
-      "Keflavík International Airport"
+      "Reykjavík–Keflavík"
     ],
     "Jet2.com": [
-      "Belfast International Airport",
-      "Birmingham Airport",
-      "Bournemouth Airport",
-      "Bristol Airport",
-      "East Midlands Airport",
-      "Edinburgh Airport",
-      "Gatwick Airport",
-      "Glasgow Airport",
-      "Leeds Bradford Airport",
-      "Liverpool John Lennon Airport",
-      "Luton Airport",
-      "Manchester Airport",
-      "Newcastle International Airport",
-      "Stansted Airport"
+      "Belfast–International",
+      "East Midlands",
+      "Edinburgh",
+      "London–Gatwick",
+      "London–Luton",
+      "London–Stansted",
+      "Newcastle upon Tyne"
     ],
     "KLM": [
-      "Amsterdam Airport"
+      "Amsterdam"
     ],
     "Lufthansa": [
-      "Frankfurt Airport"
+      "Frankfurt"
     ],
     "Lufthansa City Airlines": [
-      "Munich Airport"
+      "Munich"
     ],
     "Luxair": [
-      "Luxembourg Airport"
+      "Luxembourg"
     ],
-    "Neos (airline)": [
-      "Keflavík International Airport"
+    "Neos": [
+      "Reykjavík–Keflavík"
     ],
     "Norwegian Air Shuttle": [
-      "Aalborg Airport",
-      "Bergen Airport",
-      "Copenhagen Airport",
-      "Helsinki Airport",
-      "Oslo Airport, Gardermoen",
-      "Sandefjord Airport, Torp",
-      "Stavanger Airport, Sola",
-      "Stockholm–Arlanda Airport",
-      "Trondheim Airport, Værnes",
-      "Ålesund Airport, Vigra"
+      "Bergen",
+      "Ålesund"
     ],
     "Pegasus Airlines": [
-      "Sabiha Gökçen International Airport"
+      "Istanbul–Sabiha Gökçen"
     ],
     "Royal Air Maroc": [
-      "Mohammed V International Airport"
+      "Casablanca"
     ],
     "Ryanair": [
-      "Bari Karol Wojtyła Airport",
-      "Beauvais–Tillé Airport",
-      "Berlin Brandenburg Airport",
-      "Birmingham Airport",
-      "Bournemouth Airport",
-      "Bratislava Airport",
-      "Bremen Airport",
-      "Bristol Airport",
-      "Brussels South Charleroi Airport",
-      "Bydgoszcz Ignacy Jan Paderewski Airport",
-      "Cardiff Airport",
-      "Cologne Bonn Airport",
-      "Copenhagen Airport",
-      "Dublin Airport",
-      "East Midlands Airport",
-      "Edinburgh Airport",
-      "Eindhoven Airport",
-      "Exeter Airport",
-      "Friedrichshafen Airport",
-      "Gatwick Airport",
-      "Gdańsk Lech Wałęsa Airport",
-      "Glasgow Airport",
-      "Glasgow Prestwick Airport",
-      "Göteborg Landvetter Airport",
-      "Hamburg Airport",
-      "Helsinki Airport",
-      "Ibiza Airport",
-      "Ireland West Airport",
-      "Karlsruhe/Baden-Baden Airport",
-      "Katowice Airport",
-      "Kaunas International Airport",
-      "Kerry Airport",
-      "Kraków John Paul II International Airport",
-      "Leeds Bradford Airport",
-      "Liverpool John Lennon Airport",
-      "Luton Airport",
-      "Manchester Airport",
-      "Marrakesh Menara Airport",
-      "Marseille Provence Airport",
-      "Memmingen Airport",
-      "Menorca Airport",
-      "Münster Osnabrück Airport",
-      "Newcastle International Airport",
-      "Newquay Airport",
-      "Norwich Airport",
-      "Orio al Serio International Airport",
-      "Palma de Mallorca Airport",
-      "Pardubice Airport",
-      "Poznań–Ławica Airport",
-      "Rzeszów–Jasionka Airport",
-      "Saarbrücken Airport",
-      "Sandefjord Airport, Torp",
-      "Sania Ramel Airport",
-      "Santiago–Rosalía de Castro Airport",
-      "Seville Airport",
-      "Shannon Airport",
-      "Sofia Airport",
-      "Stockholm Arlanda Airport",
-      "Stockholm Västerås Airport",
-      "Teesside International Airport",
-      "Toulouse–Blagnac Airport",
-      "Venice Marco Polo Airport",
-      "Vienna International Airport",
-      "Vitoria Airport",
-      "Växjö Småland Airport",
-      "Warsaw Chopin Airport",
-      "Warsaw Modlin Airport",
-      "Weeze Airport",
-      "Wrocław Airport",
-      "Łódź Władysław Reymont Airport"
+      "Beauvais",
+      "Bergamo",
+      "Bremen",
+      "Cardiff",
+      "Charleroi",
+      "Kaunas",
+      "Kerry",
+      "London–Gatwick",
+      "Newcastle upon Tyne",
+      "Palma de Mallorca",
+      "Sandefjord",
+      "Santiago de Compostela",
+      "Stockholm–Arlanda",
+      "Vienna",
+      "Warsaw–Modlin"
     ],
     "Scandinavian Airlines": [
-      "Stavanger Airport"
+      "Stavanger"
     ],
     "SkyUp Airlines": [
-      "Chișinău International Airport"
+      "Chișinău"
     ],
     "Swiss International Air Lines": [
-      "Zurich Airport"
+      "Zurich"
     ],
     "Transavia": [
-      "Amsterdam Airport",
-      "Brussels Airport",
-      "Eindhoven Airport",
-      "Orly Airport",
-      "Rotterdam Airport"
+      "Amsterdam",
+      "Eindhoven",
+      "Paris–Orly",
+      "Rotterdam"
     ],
     "TUI Airways": [
-      "Birmingham Airport",
-      "Cardiff Airport",
-      "East Midlands Airport",
-      "Gatwick Airport",
-      "Glasgow Airport",
-      "Manchester Airport",
-      "Newcastle International Airport"
+      "Birmingham",
+      "East Midlands",
+      "Glasgow"
     ],
     "TUI fly Belgium": [
-      "Antwerp International Airport",
-      "Brussels Airport",
-      "Ostend Airport"
+      "Antwerp",
+      "Brussels"
     ],
     "Volotea": [
-      "Asturias Airport",
-      "Bilbao Airport",
-      "Bordeaux–Mérignac Airport",
-      "Luxembourg Airport",
-      "Lyon–Saint-Exupéry Airport",
-      "Nantes Atlantique Airport"
+      "Asturias",
+      "Bilbao",
+      "Bordeaux",
+      "Luxembourg",
+      "Lyon",
+      "Nantes"
     ],
     "Vueling": [
-      "Amsterdam Airport",
-      "Barcelona Airport",
-      "Bilbao Airport",
-      "Brussels Airport",
-      "Cardiff Airport",
-      "Gatwick Airport",
-      "Gran Canaria Airport",
-      "Houari Boumediene Airport",
-      "Oran Airport",
-      "Orly Airport",
-      "Palma de Mallorca Airport",
-      "Santiago–Rosalía de Castro Airport",
-      "Tenerife North Airport"
+      "Amsterdam",
+      "Gran Canaria",
+      "Oran",
+      "Tenerife–North"
     ],
     "Wizz Air": [
-      "Belgrade Nikola Tesla Airport",
-      "Bratislava Airport",
-      "Budapest Ferenc Liszt International Airport",
-      "Cluj International Airport",
-      "Gdańsk Lech Wałęsa Airport",
-      "Henri Coandă International Airport",
-      "Katowice Airport",
-      "Leonardo da Vinci–Fiumicino Airport",
-      "Luton Airport",
-      "Milan Malpensa Airport",
-      "Venice Marco Polo Airport",
-      "Warsaw Chopin Airport"
+      "Belgrade",
+      "Bratislava",
+      "Bucharest–Otopeni",
+      "Budapest",
+      "Cluj-Napoca",
+      "Gdańsk",
+      "Katowice",
+      "Milan–Malpensa",
+      "Rome–Fiumicino",
+      "Venice",
+      "Warsaw–Chopin"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:00Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:06Z",
   "date-time-wikidata": "2026-04-23T21:40:24Z"
 }

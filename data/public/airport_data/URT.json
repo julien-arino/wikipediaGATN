@@ -16,7 +16,7 @@
   "outdegree": 4,
   "number_airlines": 5,
   "airlines": [
-    "EZY Airlines (page does not exist)",
+    "EZY Airlines",
     "Nok Air",
     "Thai AirAsia",
     "Thai Lion Air",
@@ -24,18 +24,7 @@
   ],
   "destinations": [
     {
-      "city": "Chiang Mai International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiang_Mai_International_Airport",
-      "codes": [
-        "CNX",
-        "VTCC"
-      ],
-      "airlines": [
-        "Thai AirAsia"
-      ]
-    },
-    {
-      "city": "Don Mueang International Airport",
+      "city": "Bangkok–Don Mueang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
       "codes": [
         "DMK",
@@ -48,18 +37,7 @@
       ]
     },
     {
-      "city": "Hua Hin Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hua_Hin_Airport",
-      "codes": [
-        "HHQ",
-        "VTPH"
-      ],
-      "airlines": [
-        "EZY Airlines (page does not exist)"
-      ]
-    },
-    {
-      "city": "Suvarnabhumi Airport",
+      "city": "Bangkok–Suvarnabhumi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
       "codes": [
         "BKK",
@@ -69,27 +47,54 @@
         "Thai AirAsia",
         "Thai VietJet Air"
       ]
+    },
+    {
+      "city": "Chiang Mai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiang_Mai_International_Airport",
+      "codes": [
+        "CNX",
+        "VTCC"
+      ],
+      "airlines": [
+        "Thai AirAsia"
+      ]
+    },
+    {
+      "city": "Hua Hin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hua_Hin_Airport",
+      "codes": [
+        "HHQ",
+        "VTPH"
+      ],
+      "airlines": [
+        "EZY Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
-    "EZY Airlines (page does not exist)": [
-      "Hua Hin Airport"
+    "EZY Airlines": [
+      "Hua Hin"
     ],
     "Nok Air": [
-      "Don Mueang International Airport"
+      "Bangkok–Don Mueang"
     ],
     "Thai AirAsia": [
-      "Chiang Mai International Airport",
-      "Don Mueang International Airport",
-      "Suvarnabhumi Airport"
+      "Bangkok–Don Mueang",
+      "Bangkok–Suvarnabhumi",
+      "Chiang Mai"
     ],
     "Thai Lion Air": [
-      "Don Mueang International Airport"
+      "Bangkok–Don Mueang"
     ],
     "Thai VietJet Air": [
-      "Suvarnabhumi Airport"
+      "Bangkok–Suvarnabhumi"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:49Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:01:12Z",
   "date-time-wikidata": "2026-01-02T17:46:47Z"
 }

@@ -13,16 +13,16 @@
   "admin1_code": "",
   "admin1_name": "Chittagong",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
-  "outdegree": 16,
+  "outdegree": 14,
   "number_airlines": 7,
   "airlines": [
     "Air Arabia",
+    "Air Astra",
     "Biman Bangladesh Airlines",
-    "Bismillah Airlines",
-    "Etihad Cargo",
     "Novoair",
-    "SkyAir",
-    "US-Bangla Airlines"
+    "Salam Air",
+    "US-Bangla Airlines",
+    "flydubai"
   ],
   "destinations": [
     {
@@ -35,7 +35,6 @@
       "airlines": [
         "Air Arabia",
         "Biman Bangladesh Airlines",
-        "Etihad Cargo",
         "US-Bangla Airlines"
       ]
     },
@@ -47,9 +46,7 @@
         "VGCB"
       ],
       "airlines": [
-        "Biman Bangladesh Airlines",
-        "Bismillah Airlines",
-        "SkyAir"
+        "Biman Bangladesh Airlines"
       ]
     },
     {
@@ -60,10 +57,9 @@
         "VGHS"
       ],
       "airlines": [
+        "Air Astra",
         "Biman Bangladesh Airlines",
-        "Bismillah Airlines",
         "Novoair",
-        "SkyAir",
         "US-Bangla Airlines"
       ]
     },
@@ -75,25 +71,9 @@
         "VGHS"
       ],
       "airlines": [
+        "Air Astra",
         "Biman Bangladesh Airlines",
-        "Bismillah Airlines",
         "Novoair",
-        "SkyAir",
-        "US-Bangla Airlines"
-      ]
-    },
-    {
-      "city": "Dhaka",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Zia_International_Airport",
-      "codes": [
-        "DAC",
-        "VGHS"
-      ],
-      "airlines": [
-        "Biman Bangladesh Airlines",
-        "Bismillah Airlines",
-        "Novoair",
-        "SkyAir",
         "US-Bangla Airlines"
       ]
     },
@@ -117,18 +97,8 @@
         "OMDB"
       ],
       "airlines": [
-        "Biman Bangladesh Airlines"
-      ]
-    },
-    {
-      "city": "Hanoi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
-      "codes": [
-        "HAN",
-        "VVNB"
-      ],
-      "airlines": [
-        "Etihad Cargo"
+        "Biman Bangladesh Airlines",
+        "flydubai"
       ]
     },
     {
@@ -185,6 +155,7 @@
       ],
       "airlines": [
         "Biman Bangladesh Airlines",
+        "Salam Air",
         "US-Bangla Airlines"
       ]
     },
@@ -228,6 +199,9 @@
       "Abu Dhabi",
       "Sharjah"
     ],
+    "Air Astra": [
+      "Dhaka"
+    ],
     "Biman Bangladesh Airlines": [
       "Abu Dhabi",
       "Cox's Bazar",
@@ -241,8 +215,14 @@
       "Sharjah",
       "Sylhet"
     ],
+    "flydubai": [
+      "Dubai–International"
+    ],
     "Novoair": [
       "Dhaka"
+    ],
+    "Salam Air": [
+      "Muscat"
     ],
     "US-Bangla Airlines": [
       "Abu Dhabi",
@@ -252,8 +232,74 @@
       "Kolkata",
       "Muscat",
       "Saidpur"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Bismillah Airlines",
+    "Easy Fly Express",
+    "Etihad Cargo",
+    "Hello Airlines",
+    "SkyAir"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Dhabi_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    },
+    {
+      "city": "Cox's Bazar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
+      "codes": [
+        "CXB",
+        "VGCB"
+      ],
+      "airlines": [
+        "Bismillah Airlines",
+        "Easy Fly Express",
+        "SkyAir"
+      ]
+    },
+    {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zia_International_Airport",
+      "codes": [
+        "DAC",
+        "VGHS"
+      ],
+      "airlines": [
+        "Bismillah Airlines",
+        "Easy Fly Express",
+        "Hello Airlines",
+        "SkyAir"
+      ]
+    },
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "Etihad Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Bismillah Airlines": [
+      "Cox's Bazar",
+      "Dhaka"
+    ],
+    "Easy Fly Express": [
       "Cox's Bazar",
       "Dhaka"
     ],
@@ -261,11 +307,14 @@
       "Abu Dhabi",
       "Hanoi"
     ],
+    "Hello Airlines": [
+      "Dhaka"
+    ],
     "SkyAir": [
       "Cox's Bazar",
       "Dhaka"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:42Z",
+  "date-time-parse": "2026-04-29T04:49:04Z",
   "date-time-wikidata": "2026-04-24T00:51:46Z"
 }

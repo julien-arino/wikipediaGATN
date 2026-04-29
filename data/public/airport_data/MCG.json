@@ -14,11 +14,61 @@
   "admin1_name": "Alaska",
   "admin2_name": "Dillingham Census Area",
   "wikipedia_url": "https://en.wikipedia.org/wiki/McGrath_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:12:18Z",
+  "outdegree": 3,
+  "number_airlines": 2,
+  "airlines": [
+    "Alaska Air Transit",
+    "Tanana Air Service"
+  ],
+  "destinations": [
+    {
+      "city": "Anchorage–Merrill",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Merrill_Field",
+      "codes": [
+        "MRI",
+        "PAMR"
+      ],
+      "airlines": [
+        "Alaska Air Transit"
+      ]
+    },
+    {
+      "city": "Nikolai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nikolai_Airport",
+      "codes": [
+        "NIB",
+        "PAFS"
+      ],
+      "airlines": [
+        "Tanana Air Service"
+      ]
+    },
+    {
+      "city": "Takotna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Takotna_Airport",
+      "codes": [
+        "TCT",
+        "PPCT"
+      ],
+      "airlines": [
+        "Tanana Air Service"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Alaska Air Transit": [
+      "Anchorage–Merrill"
+    ],
+    "Tanana Air Service": [
+      "Nikolai",
+      "Takotna"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:49Z",
   "date-time-wikidata": "2025-10-05T11:53:51Z"
 }

@@ -13,13 +13,738 @@
   "admin1_code": "",
   "admin1_name": "MO",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
-  "outdegree": 3,
-  "number_airlines": 2,
+  "outdegree": 49,
+  "number_airlines": 25,
   "airlines": [
+    "Air Busan",
+    "Air China",
+    "Air Macau",
+    "AirAsia",
+    "Batik Air Malaysia",
+    "Cambodia Airways",
+    "Cebu Pacific",
+    "China Eastern Airlines",
+    "China Southern Airlines",
+    "EVA Air",
+    "Hainan Airlines",
+    "Jeju Air",
+    "Juneyao Air",
+    "Korean Air",
+    "Philippines AirAsia",
+    "Scoot",
+    "Shanghai Airlines",
+    "Shenzhen Airlines",
+    "Sky Angkor Airlines",
+    "Spring Airlines",
+    "Starlux Airlines",
+    "Thai AirAsia",
+    "Thai Lion Air",
+    "West Air",
+    "XiamenAir"
+  ],
+  "destinations": [
+    {
+      "city": "Bangkok–Don Mueang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
+      "codes": [
+        "DMK",
+        "VTBD"
+      ],
+      "airlines": [
+        "Thai AirAsia",
+        "Thai Lion Air"
+      ]
+    },
+    {
+      "city": "Bangkok–Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD"
+      ],
+      "airlines": [
+        "Air Macau",
+        "China Eastern Airlines",
+        "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Busan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "codes": [
+        "PUS",
+        "RKPK"
+      ],
+      "airlines": [
+        "Air Busan"
+      ]
+    },
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM"
+      ],
+      "airlines": [
+        "Philippines AirAsia"
+      ]
+    },
+    {
+      "city": "Changzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changzhou_Benniu_International_Airport",
+      "codes": [
+        "CZX",
+        "ZSCG"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Chengdu–Tianfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Air Macau",
+        "West Air"
+      ]
+    },
+    {
+      "city": "Da Nang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
+      "codes": [
+        "DAD",
+        "VVDN"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Fukuoka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukuoka_Airport",
+      "codes": [
+        "FUK",
+        "RJFF"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Fuzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
+      "codes": [
+        "FOC",
+        "ZSFZ"
+      ],
+      "airlines": [
+        "Air Macau",
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Guiyang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
+      "codes": [
+        "KWE",
+        "ZUGY"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Haikou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Air Macau",
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Hefei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hefei_Xinqiao_International_Airport",
+      "codes": [
+        "HFE",
+        "ZSOF"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Jinan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinan_Yaoqiang_International_Airport",
+      "codes": [
+        "TNA",
+        "ZSJN"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Kaohsiung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaohsiung_International_Airport",
+      "codes": [
+        "KHH",
+        "RCKH"
+      ],
+      "airlines": [
+        "Air Macau",
+        "EVA Air"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "Air Macau",
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Air Macau",
+        "Cebu Pacific",
+        "Philippines AirAsia"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Nanchang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanchang_Changbei_International_Airport",
+      "codes": [
+        "KHN",
+        "ZSCN"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Nanjing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "codes": [
+        "NKG",
+        "ZSNJ"
+      ],
+      "airlines": [
+        "Air Macau",
+        "China Eastern Airlines",
+        "Shenzhen Airlines"
+      ]
+    },
+    {
+      "city": "Nanning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
+      "codes": [
+        "NNG",
+        "ZGNN"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Nantong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantong_Xingdong_International_Airport",
+      "codes": [
+        "NTG",
+        "ZSNT"
+      ],
+      "airlines": [
+        "Shenzhen Airlines"
+      ]
+    },
+    {
+      "city": "Ningbo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
+      "codes": [
+        "NGB",
+        "ZSNB"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Phnom Penh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Techo_International_Airport_(Cambodia)",
+      "codes": [
+        "KTI",
+        "VDTI"
+      ],
+      "airlines": [
+        "Cambodia Airways",
+        "Sky Angkor Airlines"
+      ]
+    },
+    {
+      "city": "Qingdao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
+      "codes": [
+        "TAO",
+        "ZSQD"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Quanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
+      "codes": [
+        "JJN",
+        "ZSQZ"
+      ],
+      "airlines": [
+        "XiamenAir"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Air Macau",
+        "Jeju Air",
+        "Korean Air"
+      ]
+    },
+    {
+      "city": "Shanghai–Hongqiao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "codes": [
+        "SHA",
+        "ZSSS"
+      ],
+      "airlines": [
+        "Air Macau",
+        "China Eastern Airlines",
+        "Shanghai Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Air Macau",
+        "China Eastern Airlines",
+        "Juneyao Air",
+        "Shanghai Airlines",
+        "Spring Airlines"
+      ]
+    },
+    {
+      "city": "Sihanoukville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sihanouk_International_Airport",
+      "codes": [
+        "KOS",
+        "VDSV"
+      ],
+      "airlines": [
+        "Sky Angkor Airlines"
+      ]
+    },
+    {
+      "city": "Singapore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
+      "codes": [
+        "SIN",
+        "WSSS"
+      ],
+      "airlines": [
+        "Air Macau",
+        "Scoot"
+      ]
+    },
+    {
+      "city": "Taichung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taichung_International_Airport",
+      "codes": [
+        "RMQ",
+        "RCMQ"
+      ],
+      "airlines": [
+        "Air Macau",
+        "Starlux Airlines"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "Air Macau",
+        "EVA Air",
+        "Starlux Airlines"
+      ]
+    },
+    {
+      "city": "Taiyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
+      "codes": [
+        "TYN",
+        "ZBYN"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Tawau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tawau_Airport",
+      "codes": [
+        "TWU",
+        "WBKW"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vladivostok_International_Airport",
+      "codes": [
+        "VVO",
+        "UHWW"
+      ],
+      "airlines": [
+        "Cambodia Airways"
+      ]
+    },
+    {
+      "city": "Wenzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wenzhou_Longwan_International_Airport",
+      "codes": [
+        "WNZ",
+        "ZSWZ"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Wuhan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "codes": [
+        "WUH",
+        "ZHHH"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Wuxi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sunan_Shuofang_International_Airport",
+      "codes": [
+        "WUX",
+        "ZSWX"
+      ],
+      "airlines": [
+        "China Eastern Airlines",
+        "Shenzhen Airlines"
+      ]
+    },
+    {
+      "city": "Xiamen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
+      "codes": [
+        "XMN",
+        "ZSAM"
+      ],
+      "airlines": [
+        "Air Macau",
+        "XiamenAir"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Busan": [
+      "Busan"
+    ],
+    "Air China": [
+      "Wuhan"
+    ],
+    "Air Macau": [
+      "Bangkok–Suvarnabhumi",
+      "Beijing–Capital",
+      "Beijing–Daxing",
+      "Changzhou",
+      "Chengdu–Tianfu",
+      "Chongqing",
+      "Da Nang",
+      "Fukuoka",
+      "Fuzhou",
+      "Guiyang",
+      "Hangzhou",
+      "Hanoi",
+      "Jakarta–Soekarno-Hatta",
+      "Jinan",
+      "Kaohsiung",
+      "Kuala Lumpur–International",
+      "Manila",
+      "Nanjing",
+      "Nanning",
+      "Ningbo",
+      "Osaka–Kansai",
+      "Qingdao",
+      "Seoul–Incheon",
+      "Shanghai–Hongqiao",
+      "Shanghai–Pudong",
+      "Singapore",
+      "Taichung",
+      "Taipei–Taoyuan",
+      "Tokyo–Narita",
+      "Wenzhou",
+      "Xiamen"
+    ],
+    "AirAsia": [
+      "Kuala Lumpur–International",
+      "Tawau"
+    ],
+    "Batik Air Malaysia": [
+      "Delhi",
+      "Hyderabad",
+      "Mumbai"
+    ],
+    "Cambodia Airways": [
+      "Phnom Penh",
+      "Vladivostok"
+    ],
+    "Cebu Pacific": [
+      "Manila"
+    ],
+    "China Eastern Airlines": [
+      "Beijing–Daxing",
+      "Hefei",
+      "Nanchang",
+      "Nanjing",
+      "Shanghai–Hongqiao",
+      "Shanghai–Pudong",
+      "Taiyuan",
+      "Wuxi"
+    ],
+    "China Southern Airlines": [
+      "Beijing–Daxing"
+    ],
+    "EVA Air": [
+      "Kaohsiung",
+      "Taipei–Taoyuan"
+    ],
+    "Hainan Airlines": [
+      "Haikou"
+    ],
+    "Jeju Air": [
+      "Seoul–Incheon"
+    ],
+    "Juneyao Air": [
+      "Shanghai–Pudong"
+    ],
+    "Korean Air": [
+      "Seoul–Incheon"
+    ],
+    "Philippines AirAsia": [
+      "Cebu",
+      "Manila"
+    ],
+    "Scoot": [
+      "Singapore"
+    ],
+    "Shanghai Airlines": [
+      "Shanghai–Hongqiao",
+      "Shanghai–Pudong"
+    ],
+    "Shenzhen Airlines": [
+      "Nanjing",
+      "Nantong",
+      "Wuxi"
+    ],
+    "Sky Angkor Airlines": [
+      "Phnom Penh",
+      "Sihanoukville"
+    ],
+    "Spring Airlines": [
+      "Shanghai–Pudong"
+    ],
+    "Starlux Airlines": [
+      "Taichung",
+      "Taipei–Taoyuan"
+    ],
+    "Thai AirAsia": [
+      "Bangkok–Don Mueang"
+    ],
+    "Thai Lion Air": [
+      "Bangkok–Don Mueang"
+    ],
+    "West Air": [
+      "Chongqing"
+    ],
+    "XiamenAir": [
+      "Fuzhou",
+      "Hangzhou",
+      "Quanzhou",
+      "Xiamen"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "Ethiopian Airlines Cargo",
     "Qatar Airways Cargo"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Doha",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
@@ -54,7 +779,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Ethiopian Airlines Cargo": [
       "Madrid"
     ],
@@ -63,6 +788,6 @@
       "Kolkata"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:38Z",
+  "date-time-parse": "2026-04-29T04:56:02Z",
   "date-time-wikidata": "2026-04-26T15:17:29Z"
 }

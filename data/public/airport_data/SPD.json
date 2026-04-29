@@ -13,13 +13,37 @@
   "admin1_code": "BD-54",
   "admin1_name": "Rajshahi",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Saidpur_Airport",
-  "outdegree": 1,
-  "number_airlines": 2,
+  "outdegree": 3,
+  "number_airlines": 4,
   "airlines": [
     "Air Astra",
-    "Novoair"
+    "Biman Bangladesh Airlines",
+    "Novoair",
+    "US-Bangla Airlines"
   ],
   "destinations": [
+    {
+      "city": "Chattogram",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shah_Amanat_International_Airport",
+      "codes": [
+        "CGP",
+        "VGEG"
+      ],
+      "airlines": [
+        "US-Bangla Airlines"
+      ]
+    },
+    {
+      "city": "Cox's Bazar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cox's_Bazar_Airport",
+      "codes": [
+        "CXB",
+        "VGCB"
+      ],
+      "airlines": [
+        "Biman Bangladesh Airlines"
+      ]
+    },
     {
       "city": "Dhaka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shahjalal_International_Airport",
@@ -29,7 +53,9 @@
       ],
       "airlines": [
         "Air Astra",
-        "Novoair"
+        "Biman Bangladesh Airlines",
+        "Novoair",
+        "US-Bangla Airlines"
       ]
     }
   ],
@@ -37,10 +63,23 @@
     "Air Astra": [
       "Dhaka"
     ],
+    "Biman Bangladesh Airlines": [
+      "Cox's Bazar",
+      "Dhaka"
+    ],
     "Novoair": [
+      "Dhaka"
+    ],
+    "US-Bangla Airlines": [
+      "Chattogram",
       "Dhaka"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:13Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:59:42Z",
   "date-time-wikidata": "2025-12-15T07:58:01Z"
 }

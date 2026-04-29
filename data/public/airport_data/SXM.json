@@ -14,16 +14,14 @@
   "admin1_name": "SX",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
   "outdegree": 37,
-  "number_airlines": 28,
+  "number_airlines": 26,
   "airlines": [
     "Air Canada",
     "Air Caraïbes",
-    "Air Cargo Carriers",
     "Air Century",
     "Air France",
     "Air Transat",
     "American Airlines",
-    "Amerijet International",
     "Anguilla Air Services",
     "Arajet",
     "Caribbean Airlines",
@@ -237,8 +235,7 @@
         "KMIA"
       ],
       "airlines": [
-        "American Airlines",
-        "Amerijet International"
+        "American Airlines"
       ]
     },
     {
@@ -388,7 +385,6 @@
         "TJSJ"
       ],
       "airlines": [
-        "Air Cargo Carriers",
         "Contour Airlines"
       ]
     },
@@ -579,7 +575,39 @@
     ],
     "Z Air": [
       "Curaçao"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Air Cargo Carriers",
+    "Amerijet International"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Air Cargo Carriers": [
       "San Juan"
     ],
@@ -587,6 +615,6 @@
       "Miami"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:18Z",
+  "date-time-parse": "2026-04-29T05:00:01Z",
   "date-time-wikidata": "2026-04-10T15:00:57Z"
 }

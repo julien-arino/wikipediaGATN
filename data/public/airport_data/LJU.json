@@ -13,11 +13,9 @@
   "admin1_code": "",
   "admin1_name": "Sencur",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ljubljana_Airport",
-  "outdegree": 41,
-  "number_airlines": 34,
+  "outdegree": 37,
+  "number_airlines": 28,
   "airlines": [
-    "ASL Airlines",
-    "ASL Airlines France",
     "Aegean Airlines",
     "Air Dolomiti",
     "Air France",
@@ -25,7 +23,6 @@
     "Air Serbia",
     "British Airways",
     "Brussels Airlines",
-    "DHL Aviation",
     "Finnair",
     "Flydubai",
     "GP Aviation",
@@ -33,15 +30,12 @@
     "Israir",
     "KLM",
     "LOT Polish Airlines",
-    "Lipican Aer",
     "Lufthansa",
     "Luxair",
     "Nesma Airlines",
     "Norwegian Air Shuttle",
     "Nouvelair",
     "Pegasus Airlines",
-    "SprintAir",
-    "SwiftAir Hellas",
     "Swiss International Air Lines",
     "Trade Air",
     "Transavia",
@@ -93,8 +87,7 @@
         "LYBE"
       ],
       "airlines": [
-        "Air Serbia",
-        "SwiftAir Hellas"
+        "Air Serbia"
       ]
     },
     {
@@ -106,17 +99,6 @@
       ],
       "airlines": [
         "Brussels Airlines"
-      ]
-    },
-    {
-      "city": "Cologne",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "codes": [
-        "CGN",
-        "EDDK"
-      ],
-      "airlines": [
-        "SprintAir"
       ]
     },
     {
@@ -242,17 +224,6 @@
       ]
     },
     {
-      "city": "Leipzig/Halle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "codes": [
-        "LEJ",
-        "EDDP"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
       "city": "London–Gatwick",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
       "codes": [
@@ -359,7 +330,6 @@
         "LFPG"
       ],
       "airlines": [
-        "ASL Airlines France",
         "Air France"
       ]
     },
@@ -420,17 +390,6 @@
       ]
     },
     {
-      "city": "Sarajevo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
-      "codes": [
-        "SJJ",
-        "LQSA"
-      ],
-      "airlines": [
-        "Lipican Aer"
-      ]
-    },
-    {
       "city": "Skopje",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Skopje_Airport",
       "codes": [
@@ -472,17 +431,6 @@
       ],
       "airlines": [
         "Air Montenegro"
-      ]
-    },
-    {
-      "city": "Venice",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-      "codes": [
-        "VCE",
-        "LIPZ"
-      ],
-      "airlines": [
-        "ASL Airlines"
       ]
     },
     {
@@ -603,7 +551,87 @@
     "Wizz Air": [
       "Podgorica",
       "Skopje"
-    ],
+    ]
+  },
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 6,
+  "airlines_cargo": [
+    "ASL Airlines",
+    "ASL Airlines France",
+    "DHL Aviation",
+    "Lipican Aer",
+    "SprintAir",
+    "SwiftAir Hellas"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Belgrade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+      "codes": [
+        "BEG",
+        "LYBE"
+      ],
+      "airlines": [
+        "SwiftAir Hellas"
+      ]
+    },
+    {
+      "city": "Cologne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "SprintAir"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    },
+    {
+      "city": "Sarajevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
+      "codes": [
+        "SJJ",
+        "LQSA"
+      ],
+      "airlines": [
+        "Lipican Aer"
+      ]
+    },
+    {
+      "city": "Venice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "codes": [
+        "VCE",
+        "LIPZ"
+      ],
+      "airlines": [
+        "ASL Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "ASL Airlines": [
       "Venice"
     ],
@@ -623,6 +651,6 @@
       "Belgrade"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:03Z",
+  "date-time-parse": "2026-04-29T04:55:18Z",
   "date-time-wikidata": "2026-04-24T11:03:59Z"
 }

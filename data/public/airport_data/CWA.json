@@ -17,26 +17,26 @@
   "outdegree": 2,
   "number_airlines": 3,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
       "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–O'Hare",
       "codes": [
         "ORD",
         "KORD"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
+        "American Eagle",
         "United Express"
       ]
     },
     {
-      "city": "Minneapolis−Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%88%92Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis−Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -47,16 +47,85 @@
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
+    "American Eagle": [
       "Chicago–O'Hare"
     ],
     "Delta Connection": [
-      "Minneapolis−Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
       "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:13Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "FedEx Feeder",
+    "Freight Runners Express",
+    "PACC Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Madison",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dane_County_Regional_Airport",
+      "codes": [
+        "MSN",
+        "KMSN"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milwaukee_Mitchell_International_Airport",
+      "codes": [
+        "MKE",
+        "KMKE"
+      ],
+      "airlines": [
+        "FedEx Feeder",
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Oshkosh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wittman_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Rhinelander",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhinelander-Oneida_County_Airport",
+      "codes": [
+        "RHI",
+        "KRHI"
+      ],
+      "airlines": [
+        "Freight Runners Express",
+        "PACC Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Madison",
+      "Milwaukee"
+    ],
+    "Freight Runners Express": [
+      "Milwaukee",
+      "Oshkosh",
+      "Rhinelander"
+    ],
+    "PACC Air": [
+      "Rhinelander"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:34Z",
   "date-time-wikidata": "2026-04-14T13:19:13Z"
 }

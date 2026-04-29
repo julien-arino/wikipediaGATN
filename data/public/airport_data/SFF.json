@@ -21,7 +21,7 @@
   ],
   "destinations": [
     {
-      "city": "Boeing Field",
+      "city": "Seattle–Boeing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
       "codes": [
         "BFI",
@@ -34,9 +34,44 @@
   ],
   "airlines_destinations": {
     "SeaPort Airlines": [
-      "Boeing Field"
+      "Seattle–Boeing"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:33Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "AirPac Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "AirPac Airlines"
+      ]
+    },
+    {
+      "city": "Seattle–Boeing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "AirPac Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "AirPac Airlines": [
+      "Portland (OR)",
+      "Seattle–Boeing"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:59:14Z",
   "date-time-wikidata": "2026-04-24T18:52:54Z"
 }

@@ -14,9 +14,77 @@
   "admin1_name": "Texas",
   "admin2_name": "Webb County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Laredo_International_Airport",
-  "outdegree": 16,
-  "number_airlines": 6,
+  "outdegree": 4,
+  "number_airlines": 4,
   "airlines": [
+    "Aerus",
+    "Allegiant Air",
+    "American Eagle",
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "Aerus"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aerus": [
+      "Monterrey"
+    ],
+    "Allegiant Air": [
+      "Las Vegas"
+    ],
+    "American Eagle": [
+      "Dallas/Fort Worth"
+    ],
+    "United Express": [
+      "Houston–Intercontinental"
+    ]
+  },
+  "outdegree_cargo": 16,
+  "number_airlines_cargo": 6,
+  "airlines_cargo": [
     "ABX Air",
     "Aeronaves TSM",
     "Ameristar Air Cargo",
@@ -24,7 +92,7 @@
     "Martinair",
     "UPS Airlines"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Cincinnati",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
@@ -204,7 +272,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "ABX Air": [
       "Cincinnati"
     ],
@@ -236,6 +304,6 @@
       "San Antonio"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:27Z",
+  "date-time-parse": "2026-04-29T04:55:30Z",
   "date-time-wikidata": "2026-04-21T23:35:21Z"
 }

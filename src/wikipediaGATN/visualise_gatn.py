@@ -35,11 +35,9 @@ __all__ = ["visualize_graph_plotly"]
 
 
 def visualize_graph_plotly(
-    symmetric: bool = True,
     output_path: Path | str | None = None,
     seed: int = 42,
     layout: str = "geographic",
-    geographic: bool | None = None,
     verbose: bool = False,
 ) -> str:
     """
@@ -47,18 +45,17 @@ def visualize_graph_plotly(
 
     Parameters
     ----------
-    symmetric : bool, optional
-        If True (default), loads ``adjacency_matrix_sym.npz`` and
-        ``nodes_sym.txt`` and creates an undirected :class:`networkx.Graph`.
-        If False, loads the directed versions and creates a
-        :class:`networkx.DiGraph`.
     output_path : path-like or None, optional
         Destination for the HTML file.  Defaults to
-        ``PUBLIC_DATA_DIR/airport_graph_plotly[_sym].html``.
+        ``PUBLIC_DATA_DIR/airport_graph_plotly.html``.
     seed : int, optional
         Random seed passed to :func:`networkx.spring_layout` for
-        reproducible layouts.  Ignored when *geographic* is True and
-        coordinate data is available.  Default: 42.
+        reproducible layouts.  Ignored when *layout* is "geographic" or "globe".
+        Default: 42.
+    layout : str, optional
+        Layout strategy: "geographic", "globe", or "spring". Default: "geographic".
+    verbose : bool, optional
+        If True, prints progress messages.  Default: False.
     geographic : bool, optional
         If True (default), attempt to place nodes at their real-world
         longitude/latitude by reading ``airports_information.csv``.
@@ -78,50 +75,24 @@ def visualize_graph_plotly(
         If the matrix or node-list file does not exist.  Run
         :func:`~.adjacency.create_outbound_adjacency_matrix` first.
     """
-    if geographic is not None:
-        warnings.warn("The 'geographic' parameter is deprecated. Use layout='geographic' or layout='spring'.", DeprecationWarning, stacklevel=2)
-        layout = "geographic" if geographic else "spring"
-        
-    suffix = "_sym" if symmetric else ""
-
     # ------------------------------------------------------------------
     # Resolve input paths
     # ------------------------------------------------------------------
-    matrix_path = PUBLIC_DATA_DIR / f"adjacency_matrix{suffix}.npz"
-    nodes_path  = PUBLIC_DATA_DIR / f"nodes{suffix}.txt"
+    graphml_path = PUBLIC_DATA_DIR / "global-air-transportation-network.graphml"
 
-    for p in (matrix_path, nodes_path):
-        if not p.exists():
-            raise FileNotFoundError(
-                f"Required file not found: {p}\n"
-                "Run create_outbound_adjacency_matrix() first."
-            )
-
-    # ------------------------------------------------------------------
-    # Load matrix and node list
-    # ------------------------------------------------------------------
-    if verbose:
-        print(f"Loading matrix from {matrix_path}…")
-
-    matrix = load_npz(matrix_path)
-
-    # Filter empty strings that can appear if nodes file has a trailing newline
-    nodes = [line for line in nodes_path.read_text(encoding="utf-8").splitlines()
-             if line.strip()]
-
-    n = matrix.shape[0]
-    if len(nodes) != n:
-        raise ValueError(
-            f"Node list length ({len(nodes)}) does not match "
-            f"matrix dimension ({n}).  Files may be out of sync."
+    if not graphml_path.exists():
+        raise FileNotFoundError(
+            f"Required file not found: {graphml_path}\n"
+            "Run create_outbound_adjacency_matrix() first."
         )
 
     # ------------------------------------------------------------------
-    # Build NetworkX graph
+    # Load NetworkX graph
     # ------------------------------------------------------------------
-    graph_type = nx.Graph if symmetric else nx.DiGraph
-    G = nx.from_scipy_sparse_array(matrix, create_using=graph_type)
-    G = nx.relabel_nodes(G, {i: code for i, code in enumerate(nodes)})
+    if verbose:
+        print(f"Loading matrix from {graphml_path}…")
+
+    G = nx.read_graphml(graphml_path)
 
     if verbose:
         print(f"Graph: {G.number_of_nodes():,} nodes, "
@@ -133,41 +104,21 @@ def visualize_graph_plotly(
     pos = None
 
     if layout in ("geographic", "globe"):
-        coord_path = PUBLIC_DATA_DIR / "airports_information.csv"
-        if coord_path.exists():
-            try:
-                df = pd.read_csv(coord_path, dtype=str)
-                df["latitude"]  = pd.to_numeric(df["latitude"],  errors="coerce")
-                df["longitude"] = pd.to_numeric(df["longitude"], errors="coerce")
-                coord_df = df.dropna(subset=["iata", "latitude", "longitude"])
-                coord_map = dict(zip(coord_df["iata"],
-                                     zip(coord_df["longitude"], coord_df["latitude"])))
-                # Only use geographic layout if we have coords for most nodes
-                coverage = sum(1 for n in G.nodes() if n in coord_map)
-                if coverage >= 0.8 * G.number_of_nodes():
-                    pos = {n: coord_map[n] for n in G.nodes() if n in coord_map}
-                    # Nodes without coordinates fall back to (0, 0)
-                    for node in G.nodes():
-                        if node not in pos:
-                            pos[node] = (0.0, 0.0)
-                    if verbose:
-                        print(f"Using geographic layout "
-                              f"({coverage:,}/{G.number_of_nodes():,} nodes with coords)")
-                else:
-                    if verbose:
-                        print(f"Geographic coverage too low ({coverage}/{G.number_of_nodes()})"
-                              " — falling back to spring layout")
-                    layout = "spring"
-            except Exception as exc:
-                warnings.warn(
-                    f"Could not load geographic coordinates: {exc}. "
-                    "Falling back to spring layout.",
-                    UserWarning, stacklevel=2,
-                )
-        else:
+        pos = {}
+        missing_nodes = []
+        for node, data in G.nodes(data=True):
+            if 'lon' in data and 'lat' in data:
+                pos[node] = (float(data['lon']), float(data['lat']))
+            else:
+                missing_nodes.append(node)
+
+        if missing_nodes:
+            G.remove_nodes_from(missing_nodes)
             if verbose:
-                print("airports_information.csv not found — using spring layout")
-            layout = "spring"
+                print(f"Dropped {len(missing_nodes)} nodes with missing coordinates.")
+        if verbose:
+            print(f"Using geographic layout "
+                  f"({len(pos):,}/{G.number_of_nodes() + len(missing_nodes):,} nodes with coords)")
 
     if pos is None:
         if G.number_of_nodes() > 500:
@@ -209,12 +160,38 @@ def visualize_graph_plotly(
 
     # --- Node trace — colour by degree, text on hover only ---
     node_x, node_y, node_text, node_degree = [], [], [], []
-    for node in G.nodes():
+    for node, data in G.nodes(data=True):
         x, y = pos[node]
         node_x.append(x)
         node_y.append(y)
-        node_text.append(f"{node}<br>Degree: {G.degree(node)}")
-        node_degree.append(G.degree(node))
+        node_degree_val = G.out_degree(node)
+        
+        # Build rich tooltip
+        airport_name = "Unknown Airport"
+        if 'wikipedia_url' in data:
+            airport_name = data['wikipedia_url'].split('/')[-1].replace('_', ' ')
+            # Decode URL encoded characters (e.g. %27 -> ')
+            import urllib.parse
+            airport_name = urllib.parse.unquote(airport_name)
+        elif 'city_served' in data:
+            airport_name = f"{data['city_served']} Airport"
+
+        text_lines = [f"<b>{node}</b> - {airport_name}"]
+        
+        location = []
+        if 'city_served' in data: location.append(data['city_served'])
+        if 'admin1_name' in data: location.append(data['admin1_name'])
+        if 'country_name' in data: location.append(data['country_name'])
+        if location:
+            text_lines.append(", ".join(location))
+            
+        stats = [f"Outdegree: {node_degree_val}"]
+        if 'number_airlines' in data:
+            stats.append(f"Airlines: {int(float(data['number_airlines']))}")
+        text_lines.append(" | ".join(stats))
+        
+        node_text.append("<br>".join(text_lines))
+        node_degree.append(node_degree_val)
 
     if layout == "globe":
         node_trace = go.Scattergeo(
@@ -229,7 +206,7 @@ def visualize_graph_plotly(
                 size=4,
                 colorbar=dict(
                     thickness=12,
-                    title="Degree",
+                    title="Outdegree",
                     xanchor="left",
                 ),
                 line_width=0.5,
@@ -248,7 +225,7 @@ def visualize_graph_plotly(
                 size=6,
                 colorbar=dict(
                     thickness=12,
-                    title="Degree",
+                    title="Outdegree",
                     xanchor="left",
                 ),
                 line_width=0.5,
@@ -258,11 +235,9 @@ def visualize_graph_plotly(
     # ------------------------------------------------------------------
     # Assemble figure
     # ------------------------------------------------------------------
-    direction    = "Undirected" if symmetric else "Directed"
-
     fig_layout = go.Layout(
         title=dict(
-            text=f"Global Airport Network ({direction}, {layout.capitalize()} layout)",
+            text=f"Global Airport Network ({layout.capitalize()} layout)",
             x=0.5,
         ),
         showlegend=False,
@@ -300,11 +275,11 @@ def visualize_graph_plotly(
     # ------------------------------------------------------------------
     if output_path is None:
         if layout == "geographic":
-            output_path = PUBLIC_DATA_DIR / f"global-air-transportation-network-plotly-geographic{suffix}.html"
+            output_path = PUBLIC_DATA_DIR / "global-air-transportation-network-plotly-geographic.html"
         elif layout == "globe":
-            output_path = PUBLIC_DATA_DIR / f"global-air-transportation-network-plotly-globe{suffix}.html"
+            output_path = PUBLIC_DATA_DIR / "global-air-transportation-network-plotly-globe.html"
         else:
-            output_path = PUBLIC_DATA_DIR / f"global-air-transportation-network-plotly-graph{suffix}.html"
+            output_path = PUBLIC_DATA_DIR / "global-air-transportation-network-plotly-graph.html"
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -359,7 +334,7 @@ def visualize_graph_plotly(
     }});
     """
 
-    fig.write_html(str(output_path), post_script=custom_js)
+    fig.write_html(str(output_path), config={"scrollZoom": True}, post_script=custom_js)
 
     if verbose:
         print(f"Interactive Plotly graph saved to {output_path.resolve()}")

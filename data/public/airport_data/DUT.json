@@ -22,7 +22,7 @@
   ],
   "destinations": [
     {
-      "city": "Akutan Airport",
+      "city": "Akutan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Akutan_Airport",
       "codes": [
         "KQA",
@@ -33,7 +33,18 @@
       ]
     },
     {
-      "city": "Atka Airport",
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Aleutian Airways"
+      ]
+    },
+    {
+      "city": "Atka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Atka_Airport",
       "codes": [
         "AKB",
@@ -44,7 +55,7 @@
       ]
     },
     {
-      "city": "Cold Bay Airport",
+      "city": "Cold Bay",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
       "codes": [
         "CDB",
@@ -55,7 +66,7 @@
       ]
     },
     {
-      "city": "Nikolski Air Station",
+      "city": "Nikolski",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nikolski_Air_Station",
       "codes": [
         "IKO",
@@ -66,7 +77,7 @@
       ]
     },
     {
-      "city": "St. George Airport (Alaska)",
+      "city": "St. George",
       "wikipedia_url": "https://en.wikipedia.org/wiki/St._George_Airport_(Alaska)",
       "codes": [
         "STG",
@@ -77,7 +88,7 @@
       ]
     },
     {
-      "city": "St. Paul Island Airport",
+      "city": "St. Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/St._Paul_Island_Airport",
       "codes": [
         "SNP",
@@ -86,32 +97,56 @@
       "airlines": [
         "Grant Aviation"
       ]
-    },
+    }
+  ],
+  "airlines_destinations": {
+    "Aleutian Airways": [
+      "Anchorage"
+    ],
+    "Grant Aviation": [
+      "Akutan",
+      "Atka",
+      "Cold Bay",
+      "Nikolski",
+      "St. George",
+      "St. Paul"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Alaska Central Express"
+  ],
+  "destinations_cargo": [
     {
-      "city": "Ted Stevens Anchorage International Airport",
+      "city": "Anchorage",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
       "codes": [
         "ANC",
         "PANC"
       ],
       "airlines": [
-        "Aleutian Airways"
+        "Alaska Central Express"
+      ]
+    },
+    {
+      "city": "Cold Bay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cold_Bay_Airport",
+      "codes": [
+        "CDB",
+        "PACD"
+      ],
+      "airlines": [
+        "Alaska Central Express"
       ]
     }
   ],
-  "airlines_destinations": {
-    "Aleutian Airways": [
-      "Ted Stevens Anchorage International Airport"
-    ],
-    "Grant Aviation": [
-      "Akutan Airport",
-      "Atka Airport",
-      "Cold Bay Airport",
-      "Nikolski Air Station",
-      "St. George Airport (Alaska)",
-      "St. Paul Island Airport"
+  "airlines_destinations_cargo": {
+    "Alaska Central Express": [
+      "Anchorage",
+      "Cold Bay"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:15Z",
+  "date-time-parse": "2026-04-29T04:50:12Z",
   "date-time-wikidata": "2026-01-17T20:37:21Z"
 }

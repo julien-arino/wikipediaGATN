@@ -13,26 +13,14 @@
   "admin1_code": "",
   "admin1_name": "HN",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Toncontín_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 4,
+  "outdegree": 4,
+  "number_airlines": 3,
   "airlines": [
     "Aerolíneas Sosa",
     "Aviatsa",
-    "CM Airlines",
-    "DHL de Guatemala"
+    "CM Airlines"
   ],
   "destinations": [
-    {
-      "city": "Guatemala City",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-      "codes": [
-        "GUA",
-        "MGGT"
-      ],
-      "airlines": [
-        "DHL de Guatemala"
-      ]
-    },
     {
       "city": "La Ceiba",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Golosón_International_Airport",
@@ -92,11 +80,31 @@
       "Puerto Lempira",
       "Roatán",
       "San Pedro Sula"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "DHL de Guatemala"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Guatemala City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "DHL de Guatemala"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL de Guatemala": [
       "Guatemala City"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:24Z",
+  "date-time-parse": "2026-04-29T05:00:21Z",
   "date-time-wikidata": "2026-02-28T08:39:12Z"
 }

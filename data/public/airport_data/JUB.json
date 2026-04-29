@@ -13,18 +13,15 @@
   "admin1_code": "SS-EC",
   "admin1_name": "Central Equatoria",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Juba_International_Airport",
-  "outdegree": 11,
-  "number_airlines": 13,
+  "outdegree": 8,
+  "number_airlines": 10,
   "airlines": [
     "African Express Airways",
-    "Astral Aviation",
     "Egyptair",
     "Ethiopian Airlines",
-    "Ethiopian Airlines Cargo",
     "Fly540",
     "Kenya Airways",
     "RwandAir",
-    "Safe Air",
     "Tarco Aviation",
     "Turkish Airlines",
     "Uganda Airlines",
@@ -33,37 +30,13 @@
   "destinations": [
     {
       "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "codes": [
-        "ADD",
-        "HAAB"
-      ],
-      "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
-      "city": "Addis Ababa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
       "codes": [
         "ADD",
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
-      "city": "Bujumbura",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bujumbura_International_Airport",
-      "codes": [
-        "BJM",
-        "HBBA"
-      ],
-      "airlines": [
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -124,17 +97,6 @@
       ]
     },
     {
-      "city": "Liège",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
       "city": "Nairobi–Jomo Kenyatta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
       "codes": [
@@ -143,10 +105,8 @@
       ],
       "airlines": [
         "African Express Airways",
-        "Astral Aviation",
         "Fly540",
-        "Kenya Airways",
-        "Safe Air"
+        "Kenya Airways"
       ]
     },
     {
@@ -193,7 +153,63 @@
     ],
     "Uganda Airlines": [
       "Entebbe"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Ethiopian Airlines Cargo",
+    "Safe Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Bujumbura",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bujumbura_International_Airport",
+      "codes": [
+        "BJM",
+        "HBBA"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Safe Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Nairobi–Jomo Kenyatta"
     ],
@@ -206,6 +222,6 @@
       "Nairobi–Jomo Kenyatta"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:42Z",
+  "date-time-parse": "2026-04-29T04:54:05Z",
   "date-time-wikidata": "2026-04-28T21:34:52Z"
 }

@@ -15,9 +15,10 @@
   "admin2_name": "Ladakh",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kushok_Bakula_Rimpochee_Airport",
   "outdegree": 5,
-  "number_airlines": 2,
+  "number_airlines": 3,
   "airlines": [
     "Air India",
+    "IndiGo",
     "SpiceJet"
   ],
   "destinations": [
@@ -29,7 +30,8 @@
         "VICG"
       ],
       "airlines": [
-        "Air India"
+        "Air India",
+        "IndiGo"
       ]
     },
     {
@@ -41,6 +43,7 @@
       ],
       "airlines": [
         "Air India",
+        "IndiGo",
         "SpiceJet"
       ]
     },
@@ -52,7 +55,8 @@
         "VIJU"
       ],
       "airlines": [
-        "Air India"
+        "Air India",
+        "IndiGo"
       ]
     },
     {
@@ -63,6 +67,7 @@
         "VABB"
       ],
       "airlines": [
+        "IndiGo",
         "SpiceJet"
       ]
     },
@@ -85,11 +90,40 @@
       "Jammu",
       "Srinagar"
     ],
+    "IndiGo": [
+      "Chandigarh",
+      "Delhi",
+      "Jammu",
+      "Mumbai"
+    ],
     "SpiceJet": [
       "Delhi",
       "Mumbai"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:37Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "SpiceXpress"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "SpiceXpress"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "SpiceXpress": [
+      "Delhi"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:53:32Z",
   "date-time-wikidata": "2026-04-09T21:29:15Z"
 }

@@ -21,7 +21,7 @@
   ],
   "destinations": [
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -45,10 +45,63 @@
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Salt Lake City International Airport",
-      "Seattle–Tacoma International Airport"
+      "Salt Lake City",
+      "Seattle/Tacoma"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:31Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Express",
+    "Western Air Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Boise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
+      "codes": [
+        "BOI",
+        "KBOI"
+      ],
+      "airlines": [
+        "Western Air Express"
+      ]
+    },
+    {
+      "city": "Seattle–Boeing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
+      "codes": [
+        "BFI",
+        "KBFI"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Spokane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "codes": [
+        "GEG",
+        "KGEG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Seattle–Boeing"
+    ],
+    "FedEx Express": [
+      "Spokane"
+    ],
+    "Western Air Express": [
+      "Boise"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:55:37Z",
   "date-time-wikidata": "2025-12-01T15:25:35Z"
 }

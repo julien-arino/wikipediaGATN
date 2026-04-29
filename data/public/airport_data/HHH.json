@@ -17,24 +17,13 @@
   "outdegree": 8,
   "number_airlines": 3,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield-Jackson Atlanta International Airport",
+      "city": "Atlanta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
@@ -45,7 +34,41 @@
       ]
     },
     {
-      "city": "LaGuardia Airport",
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "New York–LaGuardia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
       "codes": [
         "LGA",
@@ -56,18 +79,7 @@
       ]
     },
     {
-      "city": "Logan International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "codes": [
-        "BOS",
-        "KBOS"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Newark Liberty International Airport",
+      "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
         "EWR",
@@ -78,57 +90,50 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Reagan National Airport",
+      "city": "Washington–National",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Reagan_National_Airport",
       "codes": [
         "DCA",
         "KDCA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Logan International Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport",
-      "Reagan National Airport"
+    "American Eagle": [
+      "Boston",
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Philadelphia",
+      "Washington–National"
     ],
     "Delta Connection": [
-      "Hartsfield-Jackson Atlanta International Airport",
-      "LaGuardia Airport"
+      "Atlanta",
+      "New York–LaGuardia"
     ],
     "United Express": [
-      "Newark Liberty International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Newark"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:41Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:39Z",
   "date-time-wikidata": "2026-04-13T22:50:20Z"
 }

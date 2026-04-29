@@ -17,23 +17,23 @@
   "outdegree": 4,
   "number_airlines": 2,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -55,27 +55,50 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas/Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "United Express": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport"
+      "Denver",
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:17Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Lubbock",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubbock_Preston_Smith_International_Airport",
+      "codes": [
+        "LBB",
+        "KLBB"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Lubbock"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:46:42Z",
   "date-time-wikidata": "2026-04-05T04:19:51Z"
 }

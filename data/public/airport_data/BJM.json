@@ -14,12 +14,11 @@
   "admin1_name": "Bujumbura Mairie",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bujumbura_International_Airport",
   "outdegree": 7,
-  "number_airlines": 7,
+  "number_airlines": 6,
   "airlines": [
     "Air Tanzania",
     "Brussels Airlines",
     "Ethiopian Airlines",
-    "Ethiopian Airlines Cargo",
     "Kenya Airways",
     "RwandAir",
     "Uganda Airlines"
@@ -33,8 +32,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -89,7 +87,6 @@
         "HRYR"
       ],
       "airlines": [
-        "Ethiopian Airlines Cargo",
         "RwandAir"
       ]
     },
@@ -124,12 +121,43 @@
     ],
     "Uganda Airlines": [
       "Entebbe"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Ethiopian Airlines Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Kigali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
+      "codes": [
+        "KGL",
+        "HRYR"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Ethiopian Airlines Cargo": [
       "Addis Ababa",
       "Kigali"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:07Z",
+  "date-time-parse": "2026-04-29T04:48:02Z",
   "date-time-wikidata": "2026-03-18T22:16:12Z"
 }

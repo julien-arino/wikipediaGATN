@@ -14,11 +14,51 @@
   "admin1_name": "Arizona",
   "admin2_name": "Coconino County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Flagstaff_Pulliam_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:05:42Z",
+  "outdegree": 2,
+  "number_airlines": 2,
+  "airlines": [
+    "American Airlines",
+    "American Eagle"
+  ],
+  "destinations": [
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "American Airlines": [
+      "Dallas/Fort Worth"
+    ],
+    "American Eagle": [
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:50:44Z",
   "date-time-wikidata": "2026-02-27T02:54:54Z"
 }

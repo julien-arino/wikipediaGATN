@@ -13,16 +13,503 @@
   "admin1_code": "BO-L",
   "admin1_name": "La Paz",
   "wikipedia_url": "https://en.wikipedia.org/wiki/El_Salvador_International_Airport",
-  "outdegree": 4,
-  "number_airlines": 5,
+  "outdegree": 32,
+  "number_airlines": 15,
   "airlines": [
+    "Aeroméxico",
+    "Air Transat",
+    "American Airlines",
+    "Avianca",
+    "Avianca Costa Rica",
+    "Avianca El Salvador",
+    "Avianca Guatemala",
+    "Copa Airlines",
+    "Delta Air Lines",
+    "Frontier Airlines",
+    "Iberia",
+    "Spirit Airlines",
+    "TAG Airlines",
+    "United Airlines",
+    "Volaris El Salvador"
+  ],
+  "destinations": [
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca",
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Avianca El Salvador",
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "Guatemala City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
+      "codes": [
+        "GUA",
+        "MGGT"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "Avianca Guatemala",
+        "TAG Airlines"
+      ]
+    },
+    {
+      "city": "Guayaquil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Joaquín_de_Olmedo_International_Airport",
+      "codes": [
+        "GYE",
+        "SEGU"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "Frontier Airlines",
+        "Spirit Airlines",
+        "United Airlines",
+        "Volaris El Salvador"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "United Airlines",
+        "Volaris El Salvador"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Managua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Augusto_C._Sandino_International_Airport",
+      "codes": [
+        "MGA",
+        "MNMG"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Avianca El Salvador",
+        "Volaris El Salvador"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Avianca El Salvador",
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Transat",
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines",
+        "Volaris El Salvador"
+      ]
+    },
+    {
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Volaris El Salvador"
+      ]
+    },
+    {
+      "city": "Ontario (CA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Roatán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Manuel_Gálvez_International_Airport",
+      "codes": [
+        "RTB",
+        "MHRO"
+      ],
+      "airlines": [
+        "TAG Airlines"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "San José (CR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Avianca Costa Rica",
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "San Pedro Sula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ramón_Villeda_Morales_International_Airport",
+      "codes": [
+        "SAP",
+        "MHLM"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "Volaris El Salvador"
+      ]
+    },
+    {
+      "city": "Tegucigalpa/Comayagua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comayagua_International_Airport",
+      "codes": [
+        "XPL",
+        "MHPR"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
+    },
+    {
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "Avianca El Salvador",
+        "Frontier Airlines",
+        "United Airlines",
+        "Volaris El Salvador"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aeroméxico": [
+      "Mexico City–Benito Juárez"
+    ],
+    "Air Transat": [
+      "Montréal–Trudeau"
+    ],
+    "American Airlines": [
+      "Dallas/Fort Worth",
+      "Miami"
+    ],
+    "Avianca": [
+      "Bogotá"
+    ],
+    "Avianca Costa Rica": [
+      "San José (CR)"
+    ],
+    "Avianca El Salvador": [
+      "Bogotá",
+      "Boston",
+      "Cancún",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Guatemala City",
+      "Guayaquil",
+      "Houston–Intercontinental",
+      "Las Vegas",
+      "Lima",
+      "Los Angeles",
+      "Madrid",
+      "Managua",
+      "Medellín–JMC",
+      "Mexico City–Benito Juárez",
+      "Miami",
+      "Montréal–Trudeau",
+      "New York–JFK",
+      "Ontario (CA)",
+      "Panama City–Tocumen",
+      "Quito",
+      "San Francisco",
+      "San José (CR)",
+      "San Pedro Sula",
+      "Tegucigalpa/Comayagua",
+      "Toronto–Pearson",
+      "Washington–Dulles"
+    ],
+    "Avianca Guatemala": [
+      "Guatemala City"
+    ],
+    "Copa Airlines": [
+      "Panama City–Tocumen"
+    ],
+    "Delta Air Lines": [
+      "Atlanta"
+    ],
+    "Frontier Airlines": [
+      "Atlanta",
+      "Dallas/Fort Worth",
+      "Houston–Intercontinental",
+      "Miami",
+      "Orlando",
+      "Washington–Dulles"
+    ],
+    "Iberia": [
+      "Madrid"
+    ],
+    "Spirit Airlines": [
+      "Houston–Intercontinental"
+    ],
+    "TAG Airlines": [
+      "Guatemala City",
+      "Roatán"
+    ],
+    "United Airlines": [
+      "Houston–Intercontinental",
+      "Los Angeles",
+      "Newark",
+      "Washington–Dulles"
+    ],
+    "Volaris El Salvador": [
+      "Houston–Intercontinental",
+      "Los Angeles",
+      "Mexico City–Benito Juárez",
+      "Newark",
+      "Oakland",
+      "San Pedro Sula",
+      "Washington–Dulles"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
     "Amerijet International",
     "Avianca Cargo",
     "DHL Aero Expreso",
     "FedEx Feeder",
     "LATAM Cargo"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Guatemala City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
@@ -72,7 +559,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Amerijet International": [
       "Miami"
     ],
@@ -92,6 +579,6 @@
       "Quito"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:58Z",
+  "date-time-parse": "2026-04-29T04:59:00Z",
   "date-time-wikidata": "2026-04-20T17:39:36Z"
 }

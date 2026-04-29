@@ -14,68 +14,61 @@
   "admin1_name": "California",
   "admin2_name": "Napa County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Napa_County_Airport",
-  "outdegree": 4,
+  "outdegree": 3,
   "number_airlines": 2,
   "airlines": [
-    "Aero (American airline)",
-    "JSX (airline)"
+    "Aero",
+    "JSX"
   ],
   "destinations": [
     {
-      "city": "Hollywood Burbank Airport",
+      "city": "Burbank",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
       "codes": [
         "BUR",
         "KBUR"
       ],
       "airlines": [
-        "JSX (airline)"
+        "JSX"
       ]
     },
     {
-      "city": "John Wayne Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
-      "codes": [
-        "SNA",
-        "KSNA"
-      ],
-      "airlines": [
-        "JSX (airline)"
-      ]
-    },
-    {
-      "city": "Santa Monica Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Monica_Airport",
-      "codes": [
-        "SMO",
-        "KSMO"
-      ],
-      "airlines": [
-        "JSX (airline)"
-      ]
-    },
-    {
-      "city": "Van Nuys Airport",
+      "city": "Los Angeles–Van Nuys",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
       "codes": [
         "VNY",
         "KVNY"
       ],
       "airlines": [
-        "Aero (American airline)"
+        "Aero"
+      ]
+    },
+    {
+      "city": "Orange County",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA"
+      ],
+      "airlines": [
+        "JSX"
       ]
     }
   ],
   "airlines_destinations": {
-    "Aero (American airline)": [
-      "Van Nuys Airport"
+    "Aero": [
+      "Los Angeles–Van Nuys"
     ],
-    "JSX (airline)": [
-      "Hollywood Burbank Airport",
-      "John Wayne Airport",
-      "Santa Monica Airport"
+    "JSX": [
+      "Burbank",
+      "Orange County"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:32Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:14Z",
   "date-time-wikidata": "2026-04-22T04:50:43Z"
 }

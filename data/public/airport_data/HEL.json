@@ -14,24 +14,21 @@
   "admin1_name": "Uusimaa",
   "admin2_name": "Helsinki",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
-  "outdegree": 83,
-  "number_airlines": 27,
+  "outdegree": 80,
+  "number_airlines": 22,
   "airlines": [
     "Aegean Airlines",
     "Air France",
     "BASe Airlines",
-    "Challenge Airlines",
     "China Southern Airlines",
     "Emirates",
     "Eurowings",
-    "FedEx Express",
     "Finnair",
     "Icelandair",
     "Japan Airlines",
     "Juneyao Air",
     "KLM",
     "Lufthansa",
-    "Lufthansa Cargo",
     "Luxair",
     "Lygg",
     "Norwegian Air Shuttle",
@@ -41,8 +38,6 @@
     "SunExpress",
     "Sunclass Airlines",
     "Turkish Airlines",
-    "Turkish Cargo",
-    "UPS Airlines",
     "airBaltic"
   ],
   "destinations": [
@@ -242,17 +237,6 @@
       ]
     },
     {
-      "city": "Cologne/Bonn",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "codes": [
-        "CGN",
-        "EDDK"
-      ],
-      "airlines": [
-        "UPS Airlines"
-      ]
-    },
-    {
       "city": "Copenhagen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
       "codes": [
@@ -261,7 +245,6 @@
       ],
       "airlines": [
         "Finnair",
-        "Lufthansa Cargo",
         "Scandinavian Airlines"
       ]
     },
@@ -364,8 +347,7 @@
       ],
       "airlines": [
         "Finnair",
-        "Lufthansa",
-        "Lufthansa Cargo"
+        "Lufthansa"
       ]
     },
     {
@@ -444,8 +426,7 @@
         "LTFM"
       ],
       "airlines": [
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -702,8 +683,7 @@
         "LFPG"
       ],
       "airlines": [
-        "Air France",
-        "FedEx Express"
+        "Air France"
       ]
     },
     {
@@ -829,39 +809,14 @@
     },
     {
       "city": "Stockholm–Arlanda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Arlanda_Airport",
-      "codes": [
-        "ARN",
-        "ESSA"
-      ],
-      "airlines": [
-        "Lufthansa Cargo",
-        "Norwegian Air Shuttle",
-        "Scandinavian Airlines"
-      ]
-    },
-    {
-      "city": "Stockholm–Arlanda",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport",
       "codes": [
         "ARN",
         "ESSA"
       ],
       "airlines": [
-        "Lufthansa Cargo",
         "Norwegian Air Shuttle",
         "Scandinavian Airlines"
-      ]
-    },
-    {
-      "city": "Tel Aviv",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/David_Ben_Gurion_International_Airport",
-      "codes": [
-        "TLV",
-        "LLBG"
-      ],
-      "airlines": [
-        "Challenge Airlines"
       ]
     },
     {
@@ -1129,7 +1084,97 @@
     ],
     "Turkish Airlines": [
       "Istanbul"
-    ],
+    ]
+  },
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Challenge Airlines",
+    "FedEx Express",
+    "Lufthansa Cargo",
+    "Turkish Cargo",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/David_Ben_Gurion_International_Airport",
+      "codes": [
+        "TLV",
+        "LLBG"
+      ],
+      "airlines": [
+        "Challenge Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Challenge Airlines": [
       "Tel Aviv"
     ],
@@ -1148,6 +1193,6 @@
       "Cologne/Bonn"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:16Z",
+  "date-time-parse": "2026-04-29T04:51:35Z",
   "date-time-wikidata": "2026-04-11T17:06:46Z"
 }

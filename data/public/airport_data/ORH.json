@@ -14,17 +14,17 @@
   "admin1_name": "Massachusetts",
   "admin2_name": "Worcester County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Worcester_Regional_Airport",
-  "outdegree": 5,
+  "outdegree": 4,
   "number_airlines": 3,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "JetBlue"
   ],
   "destinations": [
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -34,7 +34,18 @@
       ]
     },
     {
-      "city": "LaGuardia Airport",
+      "city": "Fort Myers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "New York–LaGuardia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
       "codes": [
         "LGA",
@@ -45,52 +56,34 @@
       ]
     },
     {
-      "city": "Orlando International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "codes": [
-        "MCO",
-        "KMCO"
-      ],
-      "airlines": [
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Southwest Florida International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "codes": [
-        "RSW",
-        "KRSW"
-      ],
-      "airlines": [
-        "JetBlue"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Philadelphia International Airport"
+    "American Eagle": [
+      "Philadelphia"
     ],
     "Delta Connection": [
-      "LaGuardia Airport"
+      "New York–LaGuardia"
     ],
     "JetBlue": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Orlando International Airport",
-      "Southwest Florida International Airport"
+      "Fort Lauderdale",
+      "Fort Myers"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:23Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:57:30Z",
   "date-time-wikidata": "2026-04-26T22:35:32Z"
 }

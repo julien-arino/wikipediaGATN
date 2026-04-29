@@ -18,23 +18,23 @@
   "number_airlines": 3,
   "airlines": [
     "American Airlines",
-    "JSX (airline)",
+    "JSX",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas Love Field",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
-        "DAL",
-        "KDAL"
+        "ORD",
+        "KORD"
       ],
       "airlines": [
-        "JSX (airline)"
+        "United Express"
       ]
     },
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -45,7 +45,18 @@
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Dallas–Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    },
+    {
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -56,7 +67,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -65,32 +76,26 @@
       "airlines": [
         "United Express"
       ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
     }
   ],
   "airlines_destinations": {
     "American Airlines": [
-      "Dallas/Fort Worth International Airport"
+      "Dallas/Fort Worth"
     ],
-    "JSX (airline)": [
-      "Dallas Love Field"
+    "JSX": [
+      "Dallas–Love"
     ],
     "United Express": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:36Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:21Z",
   "date-time-wikidata": "2026-03-08T22:31:43Z"
 }

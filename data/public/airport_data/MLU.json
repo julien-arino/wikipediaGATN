@@ -17,24 +17,13 @@
   "outdegree": 2,
   "number_airlines": 2,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection"
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -42,16 +31,50 @@
       "airlines": [
         "Delta Connection"
       ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth"
     ],
     "Delta Connection": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:44Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Memphis"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:16Z",
   "date-time-wikidata": "2026-01-29T06:04:06Z"
 }

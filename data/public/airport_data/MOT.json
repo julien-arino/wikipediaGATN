@@ -23,7 +23,7 @@
   ],
   "destinations": [
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "city": "McCarran International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
       "codes": [
         "LAS",
@@ -45,7 +45,18 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Phoenix/Mesa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
       "codes": [
         "AZA",
@@ -54,31 +65,25 @@
       "airlines": [
         "Allegiant Air"
       ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "codes": [
-        "MSP",
-        "KMSP"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "McCarran International Airport",
-      "Mesa Gateway Airport"
+      "Las Vegas",
+      "Phoenix/Mesa"
     ],
     "Delta Connection": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "Denver International Airport"
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:43Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:56:23Z",
   "date-time-wikidata": "2026-03-28T16:06:15Z"
 }

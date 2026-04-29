@@ -18,11 +18,11 @@
   "number_airlines": 2,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline)"
+    "American Eagle"
   ],
   "destinations": [
     {
-      "city": "McCarran International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
       "codes": [
         "LAS",
@@ -33,25 +33,63 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "McCarran International Airport"
+      "Las Vegas"
     ],
-    "American Eagle (airline)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:48Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Burbank"
+    ],
+    "FedEx Feeder": [
+      "Ontario"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:59:37Z",
   "date-time-wikidata": "2026-03-31T17:52:38Z"
 }

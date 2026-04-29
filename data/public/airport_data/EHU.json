@@ -13,20 +13,106 @@
   "admin1_code": "",
   "admin1_name": "Hubei",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_Airport",
-  "outdegree": 23,
-  "number_airlines": 9,
+  "outdegree": 6,
+  "number_airlines": 3,
   "airlines": [
     "Air Chang'an",
     "China Eastern Airlines",
+    "Okay Airways"
+  ],
+  "destinations": [
+    {
+      "city": "Chengdu–Tianfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Quanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
+      "codes": [
+        "JJN",
+        "ZSQZ"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Okay Airways"
+      ]
+    },
+    {
+      "city": "Tianjin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport",
+      "codes": [
+        "TSN",
+        "ZBTJ"
+      ],
+      "airlines": [
+        "Okay Airways"
+      ]
+    },
+    {
+      "city": "Xi'an",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
+      "codes": [
+        "XIY",
+        "ZLXY"
+      ],
+      "airlines": [
+        "Air Chang'an"
+      ]
+    },
+    {
+      "city": "Xiamen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
+      "codes": [
+        "XMN",
+        "ZSAM"
+      ],
+      "airlines": [
+        "Air Chang'an"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Chang'an": [
+      "Xi'an",
+      "Xiamen"
+    ],
+    "China Eastern Airlines": [
+      "Chengdu–Tianfu",
+      "Quanzhou"
+    ],
+    "Okay Airways": [
+      "Shenzhen",
+      "Tianjin"
+    ]
+  },
+  "outdegree_cargo": 18,
+  "number_airlines_cargo": 6,
+  "airlines_cargo": [
     "Etihad Cargo",
     "Geosky",
     "IndiGo CarGo",
     "Maersk Air Cargo",
-    "Okay Airways",
     "One Air",
     "SF Airlines"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Abu Dhabi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
@@ -81,17 +167,6 @@
       ],
       "airlines": [
         "SF Airlines"
-      ]
-    },
-    {
-      "city": "Chengdu–Tianfu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
-      "codes": [
-        "TFU",
-        "ZUTF"
-      ],
-      "airlines": [
-        "China Eastern Airlines"
       ]
     },
     {
@@ -228,17 +303,6 @@
       ]
     },
     {
-      "city": "Quanzhou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
-      "codes": [
-        "JJN",
-        "ZSQZ"
-      ],
-      "airlines": [
-        "China Eastern Airlines"
-      ]
-    },
-    {
       "city": "Shenzhen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
       "codes": [
@@ -246,57 +310,11 @@
         "ZGSZ"
       ],
       "airlines": [
-        "Okay Airways",
         "SF Airlines"
-      ]
-    },
-    {
-      "city": "Tianjin",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport",
-      "codes": [
-        "TSN",
-        "ZBTJ"
-      ],
-      "airlines": [
-        "Okay Airways"
-      ]
-    },
-    {
-      "city": "Xi'an",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
-      "codes": [
-        "XIY",
-        "ZLXY"
-      ],
-      "airlines": [
-        "Air Chang'an"
-      ]
-    },
-    {
-      "city": "Xiamen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
-      "codes": [
-        "XMN",
-        "ZSAM"
-      ],
-      "airlines": [
-        "Air Chang'an"
       ]
     }
   ],
-  "airlines_destinations": {
-    "Air Chang'an": [
-      "Xi'an",
-      "Xiamen"
-    ],
-    "China Eastern Airlines": [
-      "Chengdu–Tianfu",
-      "Quanzhou"
-    ],
-    "Okay Airways": [
-      "Shenzhen",
-      "Tianjin"
-    ],
+  "airlines_destinations_cargo": {
     "Etihad Cargo": [
       "Abu Dhabi",
       "Frankfurt"
@@ -330,6 +348,6 @@
       "Kolkata"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:23Z",
+  "date-time-parse": "2026-04-29T04:50:23Z",
   "date-time-wikidata": "2026-04-11T22:16:12Z"
 }

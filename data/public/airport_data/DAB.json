@@ -14,11 +14,11 @@
   "admin1_name": "Florida",
   "admin2_name": "Volusia County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Daytona_Beach_International_Airport",
-  "outdegree": 11,
+  "outdegree": 9,
   "number_airlines": 6,
   "airlines": [
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Avelo Airlines",
     "Breeze Airways",
     "Delta Air Lines",
@@ -26,8 +26,8 @@
   ],
   "destinations": [
     {
-      "city": "Akron–Canton Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Akron%E2%80%93Canton_Airport",
+      "city": "Akron/Canton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akron–Canton_Airport",
       "codes": [
         "CAK",
         "KCAK"
@@ -37,31 +37,8 @@
       ]
     },
     {
-      "city": "Bradley International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
-      "codes": [
-        "BDL",
-        "KBDL"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Airlines",
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -71,18 +48,7 @@
       ]
     },
     {
-      "city": "John F. Kennedy International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "codes": [
-        "JFK",
-        "KJFK"
-      ],
-      "airlines": [
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Logan International Airport",
+      "city": "Boston",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
       "codes": [
         "BOS",
@@ -93,29 +59,30 @@
       ]
     },
     {
-      "city": "Raleigh–Durham International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
-        "RDU",
-        "KRDU"
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Hartford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
+      "codes": [
+        "BDL",
+        "KBDL"
       ],
       "airlines": [
         "Breeze Airways"
       ]
     },
     {
-      "city": "Rhode Island T. F. Green International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhode_Island_T._F._Green_International_Airport",
-      "codes": [
-        "PVD",
-        "KPVD"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Tweed New Haven Airport",
+      "city": "New Haven",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tweed_New_Haven_Airport",
       "codes": [
         "HVN",
@@ -126,18 +93,29 @@
       ]
     },
     {
-      "city": "Westchester County Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Westchester_County_Airport",
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
       "codes": [
-        "HPN",
-        "KHPN"
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Providence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhode_Island_T._F._Green_International_Airport",
+      "codes": [
+        "PVD",
+        "KPVD"
       ],
       "airlines": [
         "Breeze Airways"
       ]
     },
     {
-      "city": "Wilmington Airport (Delaware)",
+      "city": "Wilmington (DE)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wilmington_Airport_(Delaware)",
       "codes": [
         "ILG",
@@ -150,30 +128,33 @@
   ],
   "airlines_destinations": {
     "American Airlines": [
-      "Charlotte Douglas International Airport"
+      "Charlotte"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport"
+    "American Eagle": [
+      "Charlotte"
     ],
     "Avelo Airlines": [
-      "Tweed New Haven Airport",
-      "Wilmington Airport (Delaware)"
+      "New Haven",
+      "Wilmington (DE)"
     ],
     "Breeze Airways": [
-      "Akron–Canton Airport",
-      "Bradley International Airport",
-      "Raleigh–Durham International Airport",
-      "Rhode Island T. F. Green International Airport",
-      "Westchester County Airport"
+      "Akron/Canton",
+      "Hartford",
+      "Providence"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "JetBlue": [
-      "John F. Kennedy International Airport",
-      "Logan International Airport"
+      "Boston",
+      "New York–JFK"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:04Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:49:41Z",
   "date-time-wikidata": "2026-04-13T22:58:05Z"
 }

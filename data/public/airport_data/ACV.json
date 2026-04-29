@@ -23,29 +23,7 @@
   ],
   "destinations": [
     {
-      "city": "Denver International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "codes": [
-        "DEN",
-        "KDEN"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Hollywood Burbank Airport",
+      "city": "Burbank",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
       "codes": [
         "BUR",
@@ -56,7 +34,29 @@
       ]
     },
     {
-      "city": "Los Angeles International Airport",
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -78,8 +78,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -91,18 +91,41 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Seattle–Tacoma International Airport"
+      "Seattle/Tacoma"
     ],
     "Breeze Airways": [
-      "Harry Reid International Airport",
-      "Hollywood Burbank Airport"
+      "Burbank",
+      "Las Vegas"
     ],
     "United Express": [
-      "Denver International Airport",
-      "Los Angeles International Airport",
-      "San Francisco International Airport"
+      "Denver",
+      "Los Angeles",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:50Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Sacramento",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Sacramento"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:46:47Z",
   "date-time-wikidata": "2026-04-17T19:30:21Z"
 }

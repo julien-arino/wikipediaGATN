@@ -14,15 +14,26 @@
   "admin1_name": "North Carolina",
   "admin2_name": "Craven County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Coastal_Carolina_Regional_Airport",
-  "outdegree": 3,
+  "outdegree": 2,
   "number_airlines": 2,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways"
   ],
   "destinations": [
     {
-      "city": "Bradley International Airport",
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Hartford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
       "codes": [
         "BDL",
@@ -31,39 +42,21 @@
       "airlines": [
         "Breeze Airways"
       ]
-    },
-    {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "codes": [
-        "MCO",
-        "KMCO"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport"
+    "American Eagle": [
+      "Charlotte"
     ],
     "Breeze Airways": [
-      "Bradley International Airport",
-      "Orlando International Airport"
+      "Hartford"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:28Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:50:34Z",
   "date-time-wikidata": "2026-04-10T17:57:33Z"
 }

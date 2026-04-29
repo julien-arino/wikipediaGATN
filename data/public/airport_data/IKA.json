@@ -13,8 +13,8 @@
   "admin1_code": "",
   "admin1_name": "IR",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tehran_Imam_Khomeini_International_Airport",
-  "outdegree": 38,
-  "number_airlines": 33,
+  "outdegree": 35,
+  "number_airlines": 30,
   "airlines": [
     "AJet",
     "ATA Airlines",
@@ -34,19 +34,16 @@
     "Jazeera Airways",
     "Kuwait Airways",
     "Lufthansa",
-    "Lufthansa Cargo",
     "Mahan Air",
     "Meraj Airlines",
     "Pegasus Airlines",
     "Qatar Airways",
-    "Qatar Airways Cargo",
     "Qeshm Air",
     "SalamAir",
     "Sepehran Airlines",
     "Somon Air",
     "Taban Air",
     "Turkish Airlines",
-    "Turkish Cargo",
     "Varesh Airlines",
     "Zagros Airlines"
   ],
@@ -138,8 +135,7 @@
         "OTHH"
       ],
       "airlines": [
-        "Qatar Airways",
-        "Qatar Airways Cargo"
+        "Qatar Airways"
       ]
     },
     {
@@ -178,20 +174,7 @@
         "EDDF"
       ],
       "airlines": [
-        "Lufthansa",
-        "Lufthansa Cargo"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
-      "codes": [
-        "FRA",
-        "EDDF"
-      ],
-      "airlines": [
-        "Lufthansa",
-        "Lufthansa Cargo"
+        "Lufthansa"
       ]
     },
     {
@@ -214,28 +197,6 @@
       ],
       "airlines": [
         "Mahan Air"
-      ]
-    },
-    {
-      "city": "Hanoi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
-      "codes": [
-        "HAN",
-        "VVNB"
-      ],
-      "airlines": [
-        "Turkish Cargo"
-      ]
-    },
-    {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "codes": [
-        "HKG",
-        "VHHH"
-      ],
-      "airlines": [
-        "Qatar Airways Cargo"
       ]
     },
     {
@@ -265,8 +226,7 @@
         "Meraj Airlines",
         "Sepehran Airlines",
         "Taban Air",
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -661,7 +621,73 @@
     "Zagros Airlines": [
       "Najaf",
       "Tashkent"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Lufthansa Cargo",
+    "Qatar Airways Cargo",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
+      "codes": [
+        "HAN",
+        "VVNB"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Lufthansa Cargo": [
       "Frankfurt"
     ],
@@ -674,6 +700,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:20Z",
+  "date-time-parse": "2026-04-29T04:52:54Z",
   "date-time-wikidata": "2026-04-19T15:37:50Z"
 }

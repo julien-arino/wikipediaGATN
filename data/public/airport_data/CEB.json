@@ -13,23 +13,20 @@
   "admin1_code": "",
   "admin1_name": "PH",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
-  "outdegree": 55,
-  "number_airlines": 33,
+  "outdegree": 51,
+  "number_airlines": 28,
   "airlines": [
     "Aero K",
     "Air Busan",
-    "Air Hong Kong",
     "AirSWIFT",
     "Cathay Pacific",
     "Cebgo",
     "Cebu Pacific",
-    "Central Airlines",
     "China Airlines",
     "China Eastern Airlines",
     "EVA Air",
     "Emirates",
     "Firefly",
-    "JD Airlines",
     "Jeju Air",
     "Jetstar",
     "Jin Air",
@@ -39,8 +36,6 @@
     "Philippine Airlines",
     "Philippines AirAsia",
     "Qatar Airways",
-    "Royal Air Philippines",
-    "SEAir International",
     "Scoot",
     "Singapore Airlines",
     "Starlux Airlines",
@@ -238,8 +233,7 @@
         "RPLC"
       ],
       "airlines": [
-        "Cebgo",
-        "SEAir International"
+        "Cebgo"
       ]
     },
     {
@@ -266,19 +260,6 @@
     },
     {
       "city": "Davao",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Davao_International_Airport",
-      "codes": [
-        "DVO",
-        "RPMD"
-      ],
-      "airlines": [
-        "PAL Express",
-        "Philippines AirAsia",
-        "Royal Air Philippines"
-      ]
-    },
-    {
-      "city": "Davao",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
       "codes": [
         "DVO",
@@ -286,8 +267,7 @@
       ],
       "airlines": [
         "PAL Express",
-        "Philippines AirAsia",
-        "Royal Air Philippines"
+        "Philippines AirAsia"
       ]
     },
     {
@@ -398,7 +378,6 @@
         "VHHH"
       ],
       "airlines": [
-        "Air Hong Kong",
         "Cathay Pacific"
       ]
     },
@@ -438,25 +417,12 @@
     },
     {
       "city": "Manila",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Manila_International_Airport",
-      "codes": [
-        "MNL",
-        "RPLL"
-      ],
-      "airlines": [
-        "Air Hong Kong",
-        "PAL Express"
-      ]
-    },
-    {
-      "city": "Manila",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
       "codes": [
         "MNL",
         "RPLL"
       ],
       "airlines": [
-        "Air Hong Kong",
         "PAL Express"
       ]
     },
@@ -556,18 +522,6 @@
       ]
     },
     {
-      "city": "Shenzhen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "codes": [
-        "SZX",
-        "ZGSZ"
-      ],
-      "airlines": [
-        "Central Airlines",
-        "JD Airlines"
-      ]
-    },
-    {
       "city": "Siargao",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sayak_Airport",
       "codes": [
@@ -664,17 +618,6 @@
         "Cebu Pacific",
         "Philippine Airlines",
         "United Airlines"
-      ]
-    },
-    {
-      "city": "Wuhu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhu_Xuanzhou_Airport",
-      "codes": [
-        "WHA",
-        "ZSWA"
-      ],
-      "airlines": [
-        "Central Airlines"
       ]
     },
     {
@@ -843,7 +786,87 @@
     ],
     "XiamenAir": [
       "Quanzhou"
-    ],
+    ]
+  },
+  "outdegree_cargo": 6,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Air Hong Kong",
+    "Central Airlines",
+    "JD Airlines",
+    "Royal Air Philippines",
+    "SEAir International"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
+      "codes": [
+        "CRK",
+        "RPLC"
+      ],
+      "airlines": [
+        "SEAir International"
+      ]
+    },
+    {
+      "city": "Davao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Davao_International_Airport",
+      "codes": [
+        "DVO",
+        "RPMD"
+      ],
+      "airlines": [
+        "Royal Air Philippines"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Air Hong Kong"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manila_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Air Hong Kong"
+      ]
+    },
+    {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Central Airlines",
+        "JD Airlines"
+      ]
+    },
+    {
+      "city": "Wuhu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhu_Xuanzhou_Airport",
+      "codes": [
+        "WHA",
+        "ZSWA"
+      ],
+      "airlines": [
+        "Central Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Air Hong Kong": [
       "Hong Kong",
       "Manila"
@@ -862,6 +885,6 @@
       "Clark"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:32Z",
+  "date-time-parse": "2026-04-29T04:48:58Z",
   "date-time-wikidata": "2026-04-15T02:35:34Z"
 }

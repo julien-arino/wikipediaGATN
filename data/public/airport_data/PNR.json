@@ -13,19 +13,17 @@
   "admin1_code": "CG-16",
   "admin1_name": "Pointe-Noire",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe_Noire_Airport",
-  "outdegree": 17,
-  "number_airlines": 14,
+  "outdegree": 15,
+  "number_airlines": 12,
   "airlines": [
     "ASKY Airlines",
     "Afrijet",
     "Air Côte d'Ivoire",
     "Air France",
-    "Air France Cargo",
     "Camair-Co",
     "Canadian Airways Congo",
     "Equaflight",
     "Ethiopian Airlines",
-    "Ethiopian Airlines Cargo",
     "Mauritania Airlines",
     "TAAG Angola Airlines",
     "Trans Air Congo",
@@ -51,8 +49,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -155,17 +152,6 @@
       ]
     },
     {
-      "city": "Liège",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
       "city": "Lomé",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
       "codes": [
@@ -190,17 +176,6 @@
       ]
     },
     {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
       "city": "Nouakchott",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nouakchott–Oumtounsy_International_Airport",
       "codes": [
@@ -219,8 +194,7 @@
         "LFPG"
       ],
       "airlines": [
-        "Air France",
-        "Air France Cargo"
+        "Air France"
       ]
     },
     {
@@ -282,7 +256,61 @@
     "Turkish Airlines": [
       "Istanbul",
       "Libreville"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Air France Cargo",
+    "Ethiopian Airlines Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Air France Cargo": [
       "Paris–Charles de Gaulle"
     ],
@@ -292,6 +320,6 @@
       "Luxembourg"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:04Z",
+  "date-time-parse": "2026-04-29T04:58:07Z",
   "date-time-wikidata": "2025-11-06T17:33:04Z"
 }

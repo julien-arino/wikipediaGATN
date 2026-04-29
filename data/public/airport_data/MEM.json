@@ -14,12 +14,12 @@
   "admin1_name": "Mississippi",
   "admin2_name": "De Soto County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
-  "outdegree": 38,
+  "outdegree": 36,
   "number_airlines": 13,
   "airlines": [
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Air Lines",
     "Delta Connection",
@@ -29,12 +29,24 @@
     "Spirit Airlines",
     "United Airlines",
     "United Express",
-    "Viva (airline)"
+    "Viva"
   ],
   "destinations": [
     {
-      "city": "Austin–Bergstrom International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
       "codes": [
         "AUS",
         "KAUS"
@@ -45,7 +57,7 @@
       ]
     },
     {
-      "city": "Baltimore/Washington International Airport",
+      "city": "Baltimore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
       "codes": [
         "BWI",
@@ -56,29 +68,29 @@
       ]
     },
     {
-      "city": "Boone County Airport (Arkansas)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Boone_County_Airport_(Arkansas)",
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
       "codes": [
-        "HRO",
-        "KHRO"
+        "BOS",
+        "KBOS"
       ],
       "airlines": [
-        "Southern Airways Express"
+        "Delta Connection"
       ]
     },
     {
-      "city": "Cancún International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Canc%C3%BAn_International_Airport",
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
       "codes": [
         "CUN",
         "MMUN"
       ],
       "airlines": [
-        "Viva (airline)"
+        "Viva"
       ]
     },
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
@@ -86,23 +98,47 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Chicago–Midway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Love Field",
+      "city": "Dallas–Love",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
       "codes": [
         "DAL",
@@ -113,7 +149,7 @@
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -121,13 +157,12 @@
       ],
       "airlines": [
         "Frontier Airlines",
-        "Southwest Airlines",
         "United Airlines"
       ]
     },
     {
-      "city": "Destin–Fort Walton Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin%E2%80%93Fort_Walton_Beach_Airport",
+      "city": "Destin/Fort Walton Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin–Fort_Walton_Beach_Airport",
       "codes": [
         "VPS",
         "KVPS"
@@ -137,20 +172,19 @@
       ]
     },
     {
-      "city": "Detroit Metropolitan Wayne County Airport",
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
       "codes": [
         "DTW",
         "KDTW"
       ],
       "airlines": [
-        "Delta Air Lines",
-        "Delta Connection"
+        "Delta Air Lines"
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -161,7 +195,29 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Harrison/Branson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boone_County_Airport_(Arkansas)",
+      "codes": [
+        "HRO",
+        "KHRO"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Hot Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memorial_Field_Airport",
+      "codes": [
+        "HOT",
+        "KHOT"
+      ],
+      "airlines": [
+        "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -173,77 +229,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Allegiant Air",
-        "Frontier Airlines",
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines",
-        "Frontier Airlines"
-      ]
-    },
-    {
-      "city": "John F. Kennedy International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
-      "codes": [
-        "JFK",
-        "KJFK"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "LaGuardia Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
-      "codes": [
-        "LGA",
-        "KLGA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Logan International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "codes": [
-        "BOS",
-        "KBOS"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Los Angeles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "codes": [
-        "LAX",
-        "KLAX"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "McGhee Tyson Airport",
+      "city": "Knoxville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McGhee_Tyson_Airport",
       "codes": [
         "TYS",
@@ -254,18 +240,30 @@
       ]
     },
     {
-      "city": "Memorial Field Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Memorial_Field_Airport",
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
-        "HOT",
-        "KHOT"
+        "LAS",
+        "KLAS"
       ],
       "airlines": [
-        "Southern Airways Express"
+        "Allegiant Air",
+        "Frontier Airlines"
       ]
     },
     {
-      "city": "Miami International Airport",
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
         "MIA",
@@ -276,30 +274,18 @@
       ]
     },
     {
-      "city": "Midway International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
-      "codes": [
-        "MDW",
-        "KMDW"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
       ],
       "airlines": [
-        "Delta Air Lines",
-        "Delta Connection"
+        "Delta Air Lines"
       ]
     },
     {
-      "city": "Nashville International Airport",
+      "city": "Nashville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
       "codes": [
         "BNA",
@@ -310,7 +296,18 @@
       ]
     },
     {
-      "city": "Newark Liberty International Airport",
+      "city": "New York–LaGuardia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "codes": [
+        "LGA",
+        "KLGA"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
         "EWR",
@@ -321,21 +318,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Airlines",
-        "American Eagle (airline brand)",
-        "United Airlines",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -347,7 +330,7 @@
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -358,7 +341,7 @@
       ]
     },
     {
-      "city": "Pensacola International Airport",
+      "city": "Pensacola",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pensacola_International_Airport",
       "codes": [
         "PNS",
@@ -369,18 +352,18 @@
       ]
     },
     {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
@@ -388,14 +371,13 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)",
-        "Frontier Airlines",
-        "Southwest Airlines"
+        "American Eagle",
+        "Frontier Airlines"
       ]
     },
     {
-      "city": "Raleigh–Durham International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
+      "city": "Raleigh/Durham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh–Durham_International_Airport",
       "codes": [
         "RDU",
         "KRDU"
@@ -405,18 +387,7 @@
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "codes": [
-        "DCA",
-        "KDCA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -427,7 +398,7 @@
       ]
     },
     {
-      "city": "San Antonio International Airport",
+      "city": "San Antonio",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Antonio_International_Airport",
       "codes": [
         "SAT",
@@ -438,8 +409,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -449,7 +420,7 @@
       ]
     },
     {
-      "city": "Tampa International Airport",
+      "city": "Tampa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
       "codes": [
         "TPA",
@@ -461,104 +432,1946 @@
       ]
     },
     {
-      "city": "William P. Hobby Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
       "codes": [
-        "HOU",
-        "KHOU"
+        "DCA",
+        "KDCA"
       ],
       "airlines": [
-        "Southwest Airlines"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Destin–Fort Walton Beach Airport",
-      "Fort Lauderdale–Hollywood International Airport",
-      "Harry Reid International Airport",
-      "McGhee Tyson Airport",
-      "Orlando Sanford International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Destin/Fort Walton Beach",
+      "Fort Lauderdale",
+      "Knoxville",
+      "Las Vegas",
+      "Orlando/Sanford",
+      "St. Petersburg/Clearwater"
     ],
     "American Airlines": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "Miami International Airport",
-      "O'Hare International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Miami",
+      "Phoenix–Sky Harbor"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "LaGuardia Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "New York–LaGuardia",
+      "Philadelphia",
+      "Phoenix–Sky Harbor",
+      "Washington–National"
     ],
     "Breeze Airways": [
-      "Pensacola International Airport",
-      "Raleigh–Durham International Airport",
-      "San Antonio International Airport",
-      "Tampa International Airport"
+      "Pensacola",
+      "Raleigh/Durham",
+      "San Antonio",
+      "Tampa"
     ],
     "Delta Air Lines": [
-      "Detroit Metropolitan Wayne County Airport",
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Los Angeles International Airport",
-      "Minneapolis–Saint Paul International Airport",
-      "Salt Lake City International Airport"
+      "Atlanta",
+      "Detroit",
+      "Los Angeles",
+      "Minneapolis/St. Paul",
+      "Salt Lake City"
     ],
     "Delta Connection": [
-      "Austin–Bergstrom International Airport",
-      "Detroit Metropolitan Wayne County Airport",
-      "John F. Kennedy International Airport",
-      "LaGuardia Airport",
-      "Logan International Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Austin",
+      "Boston"
     ],
     "Frontier Airlines": [
-      "Denver International Airport",
-      "Harry Reid International Airport",
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Atlanta",
+      "Denver",
+      "Las Vegas",
+      "Phoenix–Sky Harbor"
     ],
     "Southern Airways Express": [
-      "Boone County Airport (Arkansas)",
-      "Memorial Field Airport"
+      "Harrison/Branson",
+      "Hot Springs"
     ],
     "Southwest Airlines": [
-      "Austin–Bergstrom International Airport",
-      "Baltimore/Washington International Airport",
-      "Dallas Love Field",
-      "Denver International Airport",
-      "Harry Reid International Airport",
-      "Midway International Airport",
-      "Nashville International Airport",
-      "Orlando International Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Tampa International Airport",
-      "William P. Hobby Airport"
+      "Austin",
+      "Baltimore",
+      "Chicago–Midway",
+      "Dallas–Love",
+      "Nashville",
+      "Orlando",
+      "Tampa"
     ],
     "Spirit Airlines": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Orlando International Airport"
+      "Fort Lauderdale",
+      "Orlando"
     ],
     "United Airlines": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental"
     ],
     "United Express": [
-      "George Bush Intercontinental Airport",
-      "Newark Liberty International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Houston–Intercontinental",
+      "Newark"
     ],
-    "Viva (airline)": [
-      "Cancún International Airport"
+    "Viva": [
+      "Cancún"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:36Z",
+  "outdegree_cargo": 152,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "FedEx Express",
+    "FedEx Feeder",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Aguadilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Hernández_Airport",
+      "codes": [
+        "BQN",
+        "TJBQ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Albany (NY)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albany_International_Airport",
+      "codes": [
+        "ALB",
+        "KALB"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Albuquerque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albuquerque_International_Sunport",
+      "codes": [
+        "ABQ",
+        "KABQ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Allentown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lehigh_Valley_International_Airport",
+      "codes": [
+        "ABE",
+        "KABE"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Appleton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Appleton_International_Airport",
+      "codes": [
+        "ATW",
+        "KATW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Baltimore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
+      "codes": [
+        "BWI",
+        "KBWI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Birmingham (AL)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham–Shuttlesworth_International_Airport",
+      "codes": [
+        "BHM",
+        "KBHM"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Bloomington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Central_Illinois_Regional_Airport",
+      "codes": [
+        "BMI",
+        "KBMI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Boise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
+      "codes": [
+        "BOI",
+        "KBOI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Buffalo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Buffalo_Niagara_International_Airport",
+      "codes": [
+        "BUF",
+        "KBUF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Burlington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burlington_International_Airport",
+      "codes": [
+        "BTV",
+        "KBTV"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Casper",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Casper–Natrona_County_International_Airport",
+      "codes": [
+        "CPR",
+        "KCPR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Cedar Rapids/Iowa City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eastern_Iowa_Airport",
+      "codes": [
+        "CID",
+        "KCID"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Charleston (SC)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleston_International_Airport",
+      "codes": [
+        "CHS",
+        "KCHS"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Chattanooga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chattanooga_Metropolitan_Airport",
+      "codes": [
+        "CHA",
+        "KCHA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Chicago/Rockford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Rockford_International_Airport",
+      "codes": [
+        "RFD",
+        "KRFD"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Cleveland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Hopkins_International_Airport",
+      "codes": [
+        "CLE",
+        "KCLE"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Colorado Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colorado_Springs_Airport",
+      "codes": [
+        "COS",
+        "KCOS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Columbia (SC)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Columbia_Metropolitan_Airport",
+      "codes": [
+        "CAE",
+        "KCAE"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Columbus (GA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Columbus_Airport_(Georgia)",
+      "codes": [
+        "CSG",
+        "KCSG"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Columbus–Rickenbacker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rickenbacker_International_Airport",
+      "codes": [
+        "LCK",
+        "KLCK"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Dayton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dayton_International_Airport",
+      "codes": [
+        "DAY",
+        "KDAY"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Des Moines",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Des_Moines_International_Airport",
+      "codes": [
+        "DSM",
+        "KDSM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Detroit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Dothan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dothan_Regional_Airport",
+      "codes": [
+        "DHN",
+        "KDHN"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "El Paso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Paso_International_Airport",
+      "codes": [
+        "ELP",
+        "KELP"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Evansville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Evansville_Regional_Airport",
+      "codes": [
+        "EVV",
+        "KEVV"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Flint",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bishop_International_Airport",
+      "codes": [
+        "FNT",
+        "KFNT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Fort Myers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Fort Wayne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Wayne_International_Airport",
+      "codes": [
+        "FWA",
+        "KFWA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Fort Worth/Alliance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perot_Field_Fort_Worth_Alliance_Airport",
+      "codes": [
+        "AFW",
+        "KAFW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Fresno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fresno_Yosemite_International_Airport",
+      "codes": [
+        "FAT",
+        "KFAT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Grand Junction",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Junction_Regional_Airport",
+      "codes": [
+        "GJT",
+        "KGJT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Grand Rapids",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gerald_R._Ford_International_Airport",
+      "codes": [
+        "GRR",
+        "KGRR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Great Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Falls_International_Airport",
+      "codes": [
+        "GTF",
+        "KGTF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Greensboro (NC)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piedmont_Triad_International_Airport",
+      "codes": [
+        "GSO",
+        "KGSO"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Greenville/Spartanburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greenville–Spartanburg_International_Airport",
+      "codes": [
+        "GSP",
+        "KGSP"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Harlingen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valley_International_Airport",
+      "codes": [
+        "HRL",
+        "KHRL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Harrisburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harrisburg_International_Airport",
+      "codes": [
+        "MDT",
+        "KMDT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Hartford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
+      "codes": [
+        "BDL",
+        "KBDL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Ho Chi Minh City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tan_Son_Nhat_International_Airport",
+      "codes": [
+        "SGN",
+        "VVTS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Huntington (WV)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tri-State_Airport",
+      "codes": [
+        "HTS",
+        "KHTS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Huntsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huntsville_International_Airport",
+      "codes": [
+        "HSV",
+        "KHSV"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Indianapolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
+      "codes": [
+        "IND",
+        "KIND"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Jacksonville (FL)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jacksonville_International_Airport",
+      "codes": [
+        "JAX",
+        "KJAX"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Kansas City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansas_City_International_Airport",
+      "codes": [
+        "MCI",
+        "KMCI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Knoxville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McGhee_Tyson_Airport",
+      "codes": [
+        "TYS",
+        "KTYS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Lafayette",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lafayette_Regional_Airport",
+      "codes": [
+        "LFT",
+        "KLFT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Laredo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laredo_International_Airport",
+      "codes": [
+        "LRD",
+        "KLRD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Lubbock",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lubbock_Preston_Smith_International_Airport",
+      "codes": [
+        "LBB",
+        "KLBB"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Madison",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dane_County_Regional_Airport",
+      "codes": [
+        "MSN",
+        "KMSN"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Manchester (NH)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester–Boston_Regional_Airport",
+      "codes": [
+        "MHT",
+        "KMHT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Mexico City–AIFA",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Felipe_Ángeles_International_Airport",
+      "codes": [
+        "NLU",
+        "MMSM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milwaukee_Mitchell_International_Airport",
+      "codes": [
+        "MKE",
+        "KMKE"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Mobile–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mobile_International_Airport",
+      "codes": [
+        "BFM",
+        "KBFM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Monroe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monroe_Regional_Airport_(Louisiana)",
+      "codes": [
+        "MLU",
+        "KMLU"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Montréal–Mirabel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
+      "codes": [
+        "YMX",
+        "CYMX"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Nashville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
+      "codes": [
+        "BNA",
+        "KBNA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "New Orleans",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_Armstrong_New_Orleans_International_Airport",
+      "codes": [
+        "MSY",
+        "KMSY"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Newburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stewart_International_Airport",
+      "codes": [
+        "SWF",
+        "KSWF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Norfolk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norfolk_International_Airport",
+      "codes": [
+        "ORF",
+        "KORF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Oklahoma City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/OKC_Will_Rogers_International_Airport",
+      "codes": [
+        "OKC",
+        "KOKC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Omaha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eppley_Airfield",
+      "codes": [
+        "OMA",
+        "KOMA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Orange County",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Osaka–Kansai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
+      "codes": [
+        "KIX",
+        "RJBB"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Pittsburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
+      "codes": [
+        "PIT",
+        "KPIT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Portland (ME)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Jetport",
+      "codes": [
+        "PWM",
+        "KPWM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Providence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhode_Island_T._F._Green_International_Airport",
+      "codes": [
+        "PVD",
+        "KPVD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Querétaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Raleigh/Durham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh–Durham_International_Airport",
+      "codes": [
+        "RDU",
+        "KRDU"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Reno/Tahoe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reno–Tahoe_International_Airport",
+      "codes": [
+        "RNO",
+        "KRNO"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Richmond",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Richmond_International_Airport",
+      "codes": [
+        "RIC",
+        "KRIC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Roanoke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roanoke–Blacksburg_Regional_Airport",
+      "codes": [
+        "ROA",
+        "KROA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Rochester (MN)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rochester_International_Airport",
+      "codes": [
+        "RST",
+        "KRST"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Rochester (NY)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Rochester_International_Airport",
+      "codes": [
+        "ROC",
+        "KROC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Sacramento",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Antonio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Antonio_International_Airport",
+      "codes": [
+        "SAT",
+        "KSAT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Bernardino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Bernardino_International_Airport",
+      "codes": [
+        "SBD",
+        "KSBD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Diego",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Jose (CA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
+      "codes": [
+        "SJC",
+        "KSJC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San José (CR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Santo Domingo–Las Américas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Américas_International_Airport",
+      "codes": [
+        "SDQ",
+        "MDSD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Savannah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Savannah/Hilton_Head_International_Airport",
+      "codes": [
+        "SAV",
+        "KSAV"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Shreveport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shreveport_Regional_Airport",
+      "codes": [
+        "SHV",
+        "KSHV"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Sioux Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Falls_Regional_Airport",
+      "codes": [
+        "FSD",
+        "KFSD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "South Bend",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/South_Bend_International_Airport",
+      "codes": [
+        "SBN",
+        "KSBN"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Spokane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "codes": [
+        "GEG",
+        "KGEG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Springfield/Branson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Springfield–Branson_National_Airport",
+      "codes": [
+        "SGF",
+        "KSGF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "St. Louis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Louis_Lambert_International_Airport",
+      "codes": [
+        "STL",
+        "KSTL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Syracuse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syracuse_Hancock_International_Airport",
+      "codes": [
+        "SYR",
+        "KSYR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Tallahassee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tallahassee_International_Airport",
+      "codes": [
+        "TLH",
+        "KTLH"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Tampa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Thief River Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thief_River_Falls_Regional_Airport",
+      "codes": [
+        "TVF",
+        "KTVF"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Toluca/Mexico City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toluca_International_Airport",
+      "codes": [
+        "TLC",
+        "MMTO"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Tucson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tucson_International_Airport",
+      "codes": [
+        "TUS",
+        "KTUS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Tulsa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tulsa_International_Airport",
+      "codes": [
+        "TUL",
+        "KTUL"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "West Palm Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
+      "codes": [
+        "PBI",
+        "KPBI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Wichita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wichita_Dwight_D._Eisenhower_National_Airport",
+      "codes": [
+        "ICT",
+        "KICT"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Aguadilla",
+      "Albany (NY)",
+      "Albuquerque",
+      "Allentown",
+      "Anchorage",
+      "Appleton",
+      "Atlanta",
+      "Austin",
+      "Baltimore",
+      "Birmingham (AL)",
+      "Bloomington",
+      "Boise",
+      "Boston",
+      "Buffalo",
+      "Burbank",
+      "Burlington",
+      "Calgary",
+      "Campinas",
+      "Casper",
+      "Cedar Rapids/Iowa City",
+      "Charleston (SC)",
+      "Charlotte",
+      "Chattanooga",
+      "Chicago–O'Hare",
+      "Cincinnati",
+      "Cleveland",
+      "Cologne/Bonn",
+      "Colorado Springs",
+      "Columbia (SC)",
+      "Columbus–Rickenbacker",
+      "Dallas/Fort Worth",
+      "Dayton",
+      "Denver",
+      "Des Moines",
+      "Detroit",
+      "Dubai–International",
+      "Edmonton",
+      "El Paso",
+      "Fargo",
+      "Flint",
+      "Fort Lauderdale",
+      "Fort Myers",
+      "Fort Wayne",
+      "Fort Worth/Alliance",
+      "Frankfurt",
+      "Fresno",
+      "Grand Junction",
+      "Grand Rapids",
+      "Great Falls",
+      "Greensboro (NC)",
+      "Greenville/Spartanburg",
+      "Guadalajara",
+      "Harlingen",
+      "Harrisburg",
+      "Hartford",
+      "Ho Chi Minh City",
+      "Hong Kong",
+      "Honolulu",
+      "Houston–Intercontinental",
+      "Huntington (WV)",
+      "Indianapolis",
+      "Jacksonville (FL)",
+      "Kansas City",
+      "Knoxville",
+      "Lafayette",
+      "Laredo",
+      "Las Vegas",
+      "Liège",
+      "London–Stansted",
+      "Los Angeles",
+      "Louisville",
+      "Lubbock",
+      "Madison",
+      "Manchester (NH)",
+      "Mexico City–AIFA",
+      "Miami",
+      "Milan–Malpensa",
+      "Milwaukee",
+      "Minneapolis/St. Paul",
+      "Mobile–International",
+      "Monterrey",
+      "Montréal–Mirabel",
+      "Nashville",
+      "New Orleans",
+      "New York–JFK",
+      "Newark",
+      "Newburgh",
+      "Norfolk",
+      "Oakland",
+      "Oklahoma City",
+      "Omaha",
+      "Ontario",
+      "Orange County",
+      "Orlando",
+      "Osaka–Kansai",
+      "Ottawa",
+      "Panama City–Tocumen",
+      "Paris–Charles de Gaulle",
+      "Philadelphia",
+      "Phoenix–Sky Harbor",
+      "Pittsburgh",
+      "Portland (ME)",
+      "Portland (OR)",
+      "Providence",
+      "Querétaro",
+      "Quito",
+      "Raleigh/Durham",
+      "Reno/Tahoe",
+      "Richmond",
+      "Roanoke",
+      "Rochester (MN)",
+      "Rochester (NY)",
+      "Sacramento",
+      "Salt Lake City",
+      "San Antonio",
+      "San Bernardino",
+      "San Diego",
+      "San Francisco",
+      "San Jose (CA)",
+      "San José (CR)",
+      "San Juan",
+      "Santo Domingo–Las Américas",
+      "Savannah",
+      "Seattle/Tacoma",
+      "Seoul–Incheon",
+      "Shanghai–Pudong",
+      "Shreveport",
+      "Sioux Falls",
+      "South Bend",
+      "Spokane",
+      "Springfield/Branson",
+      "St. Louis",
+      "Syracuse",
+      "Tallahassee",
+      "Tampa",
+      "Tokyo–Narita",
+      "Toluca/Mexico City",
+      "Toronto–Pearson",
+      "Tucson",
+      "Tulsa",
+      "Vancouver",
+      "Washington–Dulles",
+      "West Palm Beach",
+      "Wichita",
+      "Winnipeg"
+    ],
+    "FedEx Feeder": [
+      "Atlanta",
+      "Birmingham (AL)",
+      "Charleston (SC)",
+      "Columbus (GA)",
+      "Dothan",
+      "Evansville",
+      "Huntsville",
+      "Monroe",
+      "Tallahassee",
+      "Thief River Falls"
+    ],
+    "UPS Airlines": [
+      "Chicago/Rockford",
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:00Z",
   "date-time-wikidata": "2026-04-24T00:03:33Z"
 }

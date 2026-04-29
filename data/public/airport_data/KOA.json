@@ -28,7 +28,18 @@
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -39,7 +50,7 @@
       ]
     },
     {
-      "city": "Los Angeles International Airport",
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
@@ -50,18 +61,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Airlines"
-      ]
-    },
-    {
-      "city": "Sacramento International Airport",
+      "city": "Sacramento",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
       "codes": [
         "SMF",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -84,8 +84,8 @@
       ]
     },
     {
-      "city": "San José International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jos%C3%A9_International_Airport",
+      "city": "San Jose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_José_International_Airport",
       "codes": [
         "SJC",
         "KSJC"
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "city": "Vancouver International Airport",
+      "city": "Vancouver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
       "codes": [
         "YVR",
@@ -117,8 +117,8 @@
       ]
     },
     {
-      "city": "Waimea, Kauaʻi County, Hawaii",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Waimea,_Kaua%CA%BBi_County,_Hawaii",
+      "city": "Waimea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waimea,_Kauaʻi_County,_Hawaii",
       "codes": [
         "iata code not found",
         "icao code not found"
@@ -130,32 +130,82 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "San José International Airport"
+      "San Jose"
     ],
     "American Airlines": [
-      "Dallas Fort Worth International Airport"
+      "Dallas/Fort Worth"
     ],
     "Delta Air Lines": [
-      "Los Angeles International Airport",
-      "Salt Lake City International Airport",
-      "Seattle–Tacoma International Airport"
+      "Los Angeles",
+      "Salt Lake City",
+      "Seattle/Tacoma"
     ],
     "Hawaiian Airlines": [
-      "Sacramento International Airport"
+      "Sacramento"
     ],
     "Mokulele Airlines": [
-      "Waimea, Kauaʻi County, Hawaii"
+      "Waimea"
     ],
     "Southwest Airlines": [
-      "Sacramento International Airport"
+      "Sacramento"
     ],
     "United Airlines": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ],
     "WestJet": [
-      "Vancouver International Airport"
+      "Vancouver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:59Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Amazon Air",
+    "Atlas Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Kahului",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahului_Airport",
+      "codes": [
+        "OGG",
+        "PHOG"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Riverside/March Air Base",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/March_Air_Reserve_Base",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Amazon Air": [
+      "Riverside/March Air Base"
+    ],
+    "Atlas Air": [
+      "Kahului",
+      "Ontario"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:54:31Z",
   "date-time-wikidata": "2026-04-27T19:31:00Z"
 }

@@ -13,7 +13,7 @@
   "admin1_code": "",
   "admin1_name": "Inner Mongolia",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ulanhot_Yilelite_Airport",
-  "outdegree": 17,
+  "outdegree": 16,
   "number_airlines": 7,
   "airlines": [
     "Air China",
@@ -26,7 +26,7 @@
   ],
   "destinations": [
     {
-      "city": "Arxan Yiershi Airport",
+      "city": "Arxan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Arxan_Yiershi_Airport",
       "codes": [
         "YIE",
@@ -37,29 +37,31 @@
       ]
     },
     {
-      "city": "Baotou Donghe Airport",
+      "city": "Baotou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baotou_Donghe_Airport",
       "codes": [
         "BAV",
         "ZBOW"
       ],
       "airlines": [
-        "China Express Airlines"
+        "China Express Airlines",
+        "Genghis Khan Airlines"
       ]
     },
     {
-      "city": "Baotou Donghe International Airport",
+      "city": "Baotou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baotou_Donghe_International_Airport",
       "codes": [
         "BAV",
         "ZBOW"
       ],
       "airlines": [
+        "China Express Airlines",
         "Genghis Khan Airlines"
       ]
     },
     {
-      "city": "Beijing Capital International Airport",
+      "city": "Beijing–Capital",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
       "codes": [
         "PEK",
@@ -70,7 +72,7 @@
       ]
     },
     {
-      "city": "Beijing Daxing International Airport",
+      "city": "Beijing–Daxing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
       "codes": [
         "PKX",
@@ -81,7 +83,7 @@
       ]
     },
     {
-      "city": "Changchun Longjia International Airport",
+      "city": "Changchun",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport",
       "codes": [
         "CGQ",
@@ -92,7 +94,7 @@
       ]
     },
     {
-      "city": "Chifeng Yulong Airport",
+      "city": "Chifeng",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chifeng_Yulong_Airport",
       "codes": [
         "CIF",
@@ -103,18 +105,7 @@
       ]
     },
     {
-      "city": "Chongqing Jiangbei International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "codes": [
-        "CKG",
-        "ZUCK"
-      ],
-      "airlines": [
-        "Tianjin Airlines"
-      ]
-    },
-    {
-      "city": "Guangzhou Baiyun International Airport",
+      "city": "Guangzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
       "codes": [
         "CAN",
@@ -125,7 +116,19 @@
       ]
     },
     {
-      "city": "Hohhot Baita International Airport",
+      "city": "Hailar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hulunbeier_Hailar_Airport",
+      "codes": [
+        "HLD",
+        "ZBLA"
+      ],
+      "airlines": [
+        "China Express Airlines",
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Hohhot",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport",
       "codes": [
         "HET",
@@ -139,19 +142,7 @@
       ]
     },
     {
-      "city": "Hulunbeier Hailar Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hulunbeier_Hailar_Airport",
-      "codes": [
-        "HLD",
-        "ZBLA"
-      ],
-      "airlines": [
-        "China Express Airlines",
-        "Tianjin Airlines"
-      ]
-    },
-    {
-      "city": "Ordos Ejin Horo International Airport",
+      "city": "Ordos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ordos_Ejin_Horo_International_Airport",
       "codes": [
         "DSN",
@@ -162,7 +153,7 @@
       ]
     },
     {
-      "city": "Shanghai Pudong International Airport",
+      "city": "Shanghai–Pudong",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
       "codes": [
         "PVG",
@@ -173,7 +164,7 @@
       ]
     },
     {
-      "city": "Shenyang Taoxian International Airport",
+      "city": "Shenyang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
       "codes": [
         "SHE",
@@ -184,7 +175,7 @@
       ]
     },
     {
-      "city": "Tongliao Airport",
+      "city": "Tongliao",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tongliao_Airport",
       "codes": [
         "TGO",
@@ -195,7 +186,7 @@
       ]
     },
     {
-      "city": "Wuhan Tianhe International Airport",
+      "city": "Wuhan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
       "codes": [
         "WUH",
@@ -206,8 +197,8 @@
       ]
     },
     {
-      "city": "Xi'an Xianyang International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27an_Xianyang_International_Airport",
+      "city": "Xi'an",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport",
       "codes": [
         "XIY",
         "ZLXY"
@@ -219,41 +210,45 @@
   ],
   "airlines_destinations": {
     "Air China": [
-      "Beijing Capital International Airport",
-      "Hohhot Baita International Airport"
+      "Beijing–Capital",
+      "Hohhot"
     ],
     "China Express Airlines": [
-      "Arxan Yiershi Airport",
-      "Baotou Donghe Airport",
-      "Hohhot Baita International Airport",
-      "Hulunbeier Hailar Airport",
-      "Shenyang Taoxian International Airport"
+      "Arxan",
+      "Baotou",
+      "Hailar",
+      "Hohhot",
+      "Shenyang"
     ],
     "China Southern Airlines": [
-      "Guangzhou Baiyun International Airport",
-      "Wuhan Tianhe International Airport"
+      "Guangzhou",
+      "Wuhan"
     ],
     "China United Airlines": [
-      "Beijing Daxing International Airport"
+      "Beijing–Daxing"
     ],
     "Genghis Khan Airlines": [
-      "Baotou Donghe International Airport",
-      "Changchun Longjia International Airport",
-      "Hohhot Baita International Airport",
-      "Tongliao Airport"
+      "Baotou",
+      "Changchun",
+      "Hohhot",
+      "Tongliao"
     ],
     "Juneyao Air": [
-      "Shanghai Pudong International Airport"
+      "Shanghai–Pudong"
     ],
     "Tianjin Airlines": [
-      "Chifeng Yulong Airport",
-      "Chongqing Jiangbei International Airport",
-      "Hohhot Baita International Airport",
-      "Hulunbeier Hailar Airport",
-      "Ordos Ejin Horo International Airport",
-      "Xi'an Xianyang International Airport"
+      "Chifeng",
+      "Hailar",
+      "Hohhot",
+      "Ordos",
+      "Xi'an"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:49Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:44Z",
   "date-time-wikidata": "2026-04-04T07:30:49Z"
 }

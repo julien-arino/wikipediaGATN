@@ -17,7 +17,7 @@
   "outdegree": 14,
   "number_airlines": 7,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Cape Air",
     "Delta Connection",
     "JetBlue",
@@ -27,7 +27,52 @@
   ],
   "destinations": [
     {
-      "city": "Barnstable Municipal Airport",
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Cape Air",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Danbury",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Danbury_Municipal_Airport",
+      "codes": [
+        "DXR",
+        "KDXR"
+      ],
+      "airlines": [
+        "Reliant Air"
+      ]
+    },
+    {
+      "city": "Hyannis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Barnstable_Municipal_Airport",
       "codes": [
         "HYA",
@@ -39,29 +84,30 @@
       ]
     },
     {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "city": "Nantucket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
       "codes": [
-        "CLT",
-        "KCLT"
+        "ACK",
+        "KACK"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "Cape Air",
+        "Nantucket Airlines"
       ]
     },
     {
-      "city": "Danbury Municipal Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Danbury_Municipal_Airport",
+      "city": "New Bedford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Bedford_Regional_Airport",
       "codes": [
-        "DXR",
-        "KDXR"
+        "EWB",
+        "KEWB"
       ],
       "airlines": [
-        "Reliant Air"
+        "Cape Air"
       ]
     },
     {
-      "city": "John F. Kennedy International Airport",
+      "city": "New York–JFK",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
       "codes": [
         "JFK",
@@ -74,54 +120,19 @@
       ]
     },
     {
-      "city": "LaGuardia Airport",
+      "city": "New York–LaGuardia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
       "codes": [
         "LGA",
         "KLGA"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
+        "American Eagle",
         "Delta Connection"
       ]
     },
     {
-      "city": "Logan International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "codes": [
-        "BOS",
-        "KBOS"
-      ],
-      "airlines": [
-        "Cape Air",
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Nantucket Memorial Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
-      "codes": [
-        "ACK",
-        "KACK"
-      ],
-      "airlines": [
-        "Cape Air",
-        "Nantucket Airlines"
-      ]
-    },
-    {
-      "city": "New Bedford Regional Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Bedford_Regional_Airport",
-      "codes": [
-        "EWB",
-        "KEWB"
-      ],
-      "airlines": [
-        "Cape Air"
-      ]
-    },
-    {
-      "city": "Norwood Memorial Airport",
+      "city": "Norwood",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Norwood_Memorial_Airport",
       "codes": [
         "OWD",
@@ -132,41 +143,18 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
-      "codes": [
-        "DCA",
-        "KDCA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Teterboro Airport",
+      "city": "Teterboro",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Teterboro_Airport",
       "codes": [
         "TEB",
@@ -177,7 +165,19 @@
       ]
     },
     {
-      "city": "Westchester County Airport",
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "White Plains",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Westchester_County_Airport",
       "codes": [
         "HPN",
@@ -190,43 +190,105 @@
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "LaGuardia Airport",
-      "O'Hare International Airport",
-      "Philadelphia International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "New York–LaGuardia",
+      "Philadelphia",
+      "Washington–National"
     ],
     "Cape Air": [
-      "Barnstable Municipal Airport",
-      "John F. Kennedy International Airport",
-      "Logan International Airport",
-      "Nantucket Memorial Airport",
-      "New Bedford Regional Airport",
-      "Norwood Memorial Airport",
-      "Westchester County Airport"
+      "Boston",
+      "Hyannis",
+      "Nantucket",
+      "New Bedford",
+      "New York–JFK",
+      "Norwood",
+      "White Plains"
     ],
     "Delta Connection": [
-      "John F. Kennedy International Airport",
-      "LaGuardia Airport"
+      "New York–JFK",
+      "New York–LaGuardia"
     ],
     "JetBlue": [
-      "John F. Kennedy International Airport",
-      "Logan International Airport",
-      "Ronald Reagan Washington National Airport"
+      "Boston",
+      "New York–JFK",
+      "Washington–National"
     ],
     "Nantucket Airlines": [
-      "Barnstable Municipal Airport",
-      "Nantucket Memorial Airport"
+      "Hyannis",
+      "Nantucket"
     ],
     "Reliant Air": [
-      "Danbury Municipal Airport"
+      "Danbury"
     ],
     "Tradewind Aviation": [
-      "Teterboro Airport",
-      "Westchester County Airport"
+      "Teterboro",
+      "White Plains"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:27Z",
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Cape Air",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Hyannis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barnstable_Municipal_Airport",
+      "codes": [
+        "HYA",
+        "KHYA"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "New Bedford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Bedford_Regional_Airport",
+      "codes": [
+        "EWB",
+        "KEWB"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
+    },
+    {
+      "city": "Providence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/T._F._Green_Airport",
+      "codes": [
+        "PVD",
+        "KPVD"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Cape Air": [
+      "Boston",
+      "Hyannis",
+      "New Bedford"
+    ],
+    "FedEx Feeder": [
+      "Providence"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:38Z",
   "date-time-wikidata": "2026-04-13T22:31:08Z"
 }

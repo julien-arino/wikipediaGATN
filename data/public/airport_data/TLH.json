@@ -17,37 +17,61 @@
   "outdegree": 8,
   "number_airlines": 4,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Air Lines",
     "Delta Connection"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -57,41 +81,19 @@
       ]
     },
     {
-      "city": "Hartsfield-Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Miami International Airport",
+      "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
         "MIA",
         "KMIA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Raleigh–Durham International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport",
+      "city": "Raleigh/Durham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raleigh–Durham_International_Airport",
       "codes": [
         "RDU",
         "KRDU"
@@ -101,35 +103,90 @@
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
+      "city": "Washington–National",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
       "codes": [
         "DCA",
         "KDCA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "Miami International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Dallas/Fort Worth",
+      "Miami",
+      "Washington–National"
     ],
     "Breeze Airways": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Raleigh–Durham International Airport"
+      "Fort Lauderdale",
+      "Raleigh/Durham"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "Delta Connection": [
-      "Hartsfield-Jackson Atlanta International Airport"
+      "Atlanta"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:08Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "FedEx Express",
+    "FedEx Feeder",
+    "Quest Diagnostics Aviation"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Tampa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_Executive_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Quest Diagnostics Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Memphis"
+    ],
+    "FedEx Feeder": [
+      "Memphis",
+      "Orlando"
+    ],
+    "Quest Diagnostics Aviation": [
+      "Tampa"
+    ]
+  },
+  "date-time-parse": "2026-04-29T05:00:29Z",
   "date-time-wikidata": "2026-04-17T16:50:24Z"
 }

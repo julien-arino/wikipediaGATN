@@ -14,17 +14,29 @@
   "admin1_name": "Michigan",
   "admin2_name": "Ingham County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Capital_Region_International_Airport",
-  "outdegree": 5,
+  "outdegree": 4,
   "number_airlines": 4,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Detroit Metropolitan Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
         "DTW",
@@ -35,19 +47,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -58,44 +58,209 @@
       ]
     },
     {
-      "city": "Ronald Reagan Washington National Airport",
+      "city": "Washington–National",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
       "codes": [
         "DCA",
         "KDCA"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Southwest Florida International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
-      "codes": [
-        "RSW",
-        "KRSW"
-      ],
-      "airlines": [
-        "Breeze Airways"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "O'Hare International Airport",
-      "Ronald Reagan Washington National Airport"
+    "American Eagle": [
+      "Chicago–O'Hare",
+      "Washington–National"
     ],
     "Breeze Airways": [
-      "Orlando International Airport",
-      "Southwest Florida International Airport"
+      "Orlando"
     ],
     "Delta Connection": [
-      "Detroit Metropolitan Airport"
+      "Detroit"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:16Z",
+  "outdegree_cargo": 13,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Ameriflight",
+    "Martinaire",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Alpena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alpena_County_Regional_Airport",
+      "codes": [
+        "APN",
+        "KAPN"
+      ],
+      "airlines": [
+        "Martinaire"
+      ]
+    },
+    {
+      "city": "Chicago/Rockford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Rockford_International_Airport",
+      "codes": [
+        "RFD",
+        "KRFD"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Escanaba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Delta_County_Airport",
+      "codes": [
+        "ESC",
+        "KESC"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Harbor Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harbor_Springs_Municipal_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Martinaire"
+      ]
+    },
+    {
+      "city": "Houghton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houghton_County_Memorial_Airport",
+      "codes": [
+        "CMX",
+        "KCMX"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Ironwood",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gogebic–Iron_County_Airport",
+      "codes": [
+        "IWD",
+        "KIWD"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Marquette",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sawyer_International_Airport",
+      "codes": [
+        "MQT",
+        "KSAW"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Muskegon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muskegon_County_Airport",
+      "codes": [
+        "MKG",
+        "KMKG"
+      ],
+      "airlines": [
+        "Martinaire"
+      ]
+    },
+    {
+      "city": "Pellston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pellston_Regional_Airport",
+      "codes": [
+        "PLN",
+        "KPLN"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "Martinaire"
+      ]
+    },
+    {
+      "city": "Saginaw",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/MBS_International_Airport",
+      "codes": [
+        "MBS",
+        "KMBS"
+      ],
+      "airlines": [
+        "Martinaire"
+      ]
+    },
+    {
+      "city": "Sault Ste. Marie (MI)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chippewa_County_International_Airport",
+      "codes": [
+        "CIU",
+        "KCIU"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "Martinaire"
+      ]
+    },
+    {
+      "city": "Traverse City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherry_Capital_Airport",
+      "codes": [
+        "TVC",
+        "KTVC"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Escanaba",
+      "Houghton",
+      "Ironwood",
+      "Marquette",
+      "Pellston",
+      "Sault Ste. Marie (MI)",
+      "Traverse City"
+    ],
+    "Martinaire": [
+      "Alpena",
+      "Harbor Springs",
+      "Muskegon",
+      "Pellston",
+      "Saginaw",
+      "Sault Ste. Marie (MI)"
+    ],
+    "UPS Airlines": [
+      "Chicago/Rockford",
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:54:54Z",
   "date-time-wikidata": "2026-04-13T20:42:31Z"
 }

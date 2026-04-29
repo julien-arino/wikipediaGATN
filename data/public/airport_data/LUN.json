@@ -13,20 +13,17 @@
   "admin1_code": "ZM-09",
   "admin1_name": "Lusaka",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lusaka_International_Airport",
-  "outdegree": 26,
-  "number_airlines": 18,
+  "outdegree": 23,
+  "number_airlines": 15,
   "airlines": [
     "Air Botswana",
     "Air Tanzania",
     "Airlink",
-    "Astral Aviation",
     "Emirates",
     "Ethiopian Airlines",
     "Fastjet Zimbabwe",
     "Kenya Airways",
-    "Magma Aviation",
     "Malawi Airlines",
-    "Martinair",
     "Proflight Zambia",
     "Qatar Airways",
     "RwandAir",
@@ -45,17 +42,6 @@
       ],
       "airlines": [
         "Ethiopian Airlines"
-      ]
-    },
-    {
-      "city": "Amsterdam",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "codes": [
-        "AMS",
-        "EHAM"
-      ],
-      "airlines": [
-        "Martinair"
       ]
     },
     {
@@ -135,6 +121,7 @@
       "airlines": [
         "Emirates",
         "Fastjet Zimbabwe",
+        "Kenya Airways",
         "Malawi Airlines",
         "Qatar Airways",
         "Zambia Airways"
@@ -160,23 +147,6 @@
       ],
       "airlines": [
         "Airlink",
-        "Astral Aviation",
-        "Proflight Zambia",
-        "RwandAir",
-        "South African Airways",
-        "Zambia Airways"
-      ]
-    },
-    {
-      "city": "Johannesburg–O. R. Tambo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
-      "codes": [
-        "JNB",
-        "FAOR"
-      ],
-      "airlines": [
-        "Airlink",
-        "Astral Aviation",
         "Proflight Zambia",
         "RwandAir",
         "South African Airways",
@@ -192,7 +162,6 @@
       ],
       "airlines": [
         "Airlink",
-        "Astral Aviation",
         "Proflight Zambia",
         "RwandAir",
         "South African Airways",
@@ -270,17 +239,6 @@
       ]
     },
     {
-      "city": "Liège",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Magma Aviation"
-      ]
-    },
-    {
       "city": "Mansa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mansa_Airport",
       "codes": [
@@ -311,7 +269,6 @@
         "HKJK"
       ],
       "airlines": [
-        "Astral Aviation",
         "Kenya Airways",
         "Zambia Airways"
       ]
@@ -371,6 +328,7 @@
       "Harare"
     ],
     "Kenya Airways": [
+      "Harare",
       "Nairobi–Jomo Kenyatta"
     ],
     "Malawi Airlines": [
@@ -413,9 +371,69 @@
       "Livingstone",
       "Mfuwe",
       "Nairobi–Jomo Kenyatta"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Kenya Airways",
+    "Magma Aviation",
+    "Martinair"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Martinair"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Astral Aviation"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    },
+    {
+      "city": "Nairobi–Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation",
+        "Kenya Airways"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Johannesburg–O. R. Tambo",
+      "Nairobi–Jomo Kenyatta"
+    ],
+    "Kenya Airways": [
       "Nairobi–Jomo Kenyatta"
     ],
     "Magma Aviation": [
@@ -425,6 +443,6 @@
       "Amsterdam"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:08Z",
+  "date-time-parse": "2026-04-29T04:55:35Z",
   "date-time-wikidata": "2026-04-28T12:52:55Z"
 }

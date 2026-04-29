@@ -14,12 +14,12 @@
   "admin1_name": "California",
   "admin2_name": "Santa Barbara County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Barbara_Municipal_Airport",
-  "outdegree": 13,
+  "outdegree": 12,
   "number_airlines": 7,
   "airlines": [
     "Alaska Airlines",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "Southwest Airlines",
     "United Airlines",
@@ -27,7 +27,18 @@
   ],
   "destinations": [
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -38,7 +49,7 @@
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -51,7 +62,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -62,7 +73,7 @@
       ]
     },
     {
-      "city": "Los Angeles International Airport",
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
@@ -73,29 +84,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Airlines"
-      ]
-    },
-    {
-      "city": "Oakland San Francisco Bay Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "codes": [
-        "OAK",
-        "KOAK"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
@@ -103,12 +92,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)",
-        "Southwest Airlines"
+        "American Eagle"
       ]
     },
     {
-      "city": "Portland International Airport",
+      "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
@@ -119,7 +107,7 @@
       ]
     },
     {
-      "city": "Sacramento International Airport",
+      "city": "Sacramento",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
       "codes": [
         "SMF",
@@ -130,7 +118,7 @@
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -141,19 +129,18 @@
       ]
     },
     {
-      "city": "San Diego International Airport",
+      "city": "San Diego",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
       "codes": [
         "SAN",
         "KSAN"
       ],
       "airlines": [
-        "Alaska Airlines",
-        "Southwest Airlines"
+        "Alaska Airlines"
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -165,8 +152,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -178,39 +165,41 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Portland International Airport",
-      "San Diego International Airport",
-      "Seattle–Tacoma International Airport"
+      "Portland (OR)",
+      "San Diego",
+      "Seattle/Tacoma"
     ],
     "American Airlines": [
-      "Dallas/Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
-    "American Eagle (airline brand)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ],
     "Delta Connection": [
-      "Salt Lake City International Airport"
+      "Salt Lake City"
     ],
     "Southwest Airlines": [
-      "Denver International Airport",
-      "Harry Reid International Airport",
-      "Oakland San Francisco Bay Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Sacramento International Airport",
-      "San Diego International Airport"
+      "Denver",
+      "Las Vegas",
+      "Sacramento"
     ],
     "United Airlines": [
-      "Denver International Airport",
-      "O'Hare International Airport",
-      "San Francisco International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "San Francisco"
     ],
     "United Express": [
-      "Denver International Airport",
-      "Los Angeles International Airport",
-      "San Francisco International Airport"
+      "Denver",
+      "Los Angeles",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:28Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:59:02Z",
   "date-time-wikidata": "2026-04-28T05:16:46Z"
 }

@@ -14,27 +14,20 @@
   "admin1_name": "Canterbury",
   "admin2_name": "Selwyn District",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
-  "outdegree": 22,
-  "number_airlines": 19,
+  "outdegree": 21,
+  "number_airlines": 12,
   "airlines": [
-    "ASL Airlines Australia",
     "Air Chathams",
     "Air New Zealand",
-    "Airwork",
     "Cathay Pacific",
     "China Southern Airlines",
-    "DHL Aviation",
     "Emirates",
-    "FedEx Express",
     "Fiji Airways",
     "Jetstar",
     "Originair",
-    "Parcelair",
     "Qantas",
-    "Qantas Freight",
     "Singapore Airlines",
     "Solomon Airlines",
-    "Texel Air Australasia",
     "United Airlines"
   ],
   "destinations": [
@@ -46,15 +39,8 @@
         "NZAA"
       ],
       "airlines": [
-        "ASL Airlines Australia",
         "Air New Zealand",
-        "Airwork",
-        "DHL Aviation",
-        "FedEx Express",
-        "Jetstar",
-        "Parcelair",
-        "Qantas Freight",
-        "Texel Air Australasia"
+        "Jetstar"
       ]
     },
     {
@@ -76,7 +62,6 @@
         "YBBN"
       ],
       "airlines": [
-        "ASL Airlines Australia",
         "Air New Zealand",
         "Qantas"
       ]
@@ -166,12 +151,8 @@
         "YMML"
       ],
       "airlines": [
-        "ASL Airlines Australia",
-        "DHL Aviation",
-        "FedEx Express",
         "Jetstar",
-        "Qantas",
-        "Qantas Freight"
+        "Qantas"
       ]
     },
     {
@@ -204,9 +185,7 @@
         "NZPM"
       ],
       "airlines": [
-        "Originair",
-        "Parcelair",
-        "Texel Air Australasia"
+        "Originair"
       ]
     },
     {
@@ -262,20 +241,6 @@
       ],
       "airlines": [
         "Singapore Airlines"
-      ]
-    },
-    {
-      "city": "Sydney",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
-      "codes": [
-        "SYD",
-        "YSSY"
-      ],
-      "airlines": [
-        "ASL Airlines Australia",
-        "DHL Aviation",
-        "FedEx Express",
-        "Qantas Freight"
       ]
     },
     {
@@ -351,7 +316,90 @@
     ],
     "United Airlines": [
       "San Francisco"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 7,
+  "airlines_cargo": [
+    "ASL Airlines Australia",
+    "Airwork",
+    "DHL Aviation",
+    "FedEx Express",
+    "Parcelair",
+    "Qantas Freight",
+    "Texel Air Australasia"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "Airwork",
+        "DHL Aviation",
+        "FedEx Express",
+        "Parcelair",
+        "Qantas Freight",
+        "Texel Air Australasia"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "ASL Airlines Australia"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "DHL Aviation",
+        "FedEx Express",
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Palmerston North",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palmerston_North_Airport",
+      "codes": [
+        "PMR",
+        "NZPM"
+      ],
+      "airlines": [
+        "Parcelair",
+        "Texel Air Australasia"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "ASL Airlines Australia",
+        "DHL Aviation",
+        "FedEx Express",
+        "Qantas Freight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Airwork": [
       "Auckland"
     ],
@@ -385,6 +433,6 @@
       "Palmerston North"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:03Z",
+  "date-time-parse": "2026-04-29T04:49:05Z",
   "date-time-wikidata": "2026-04-17T15:47:06Z"
 }

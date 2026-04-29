@@ -17,36 +17,47 @@
   "outdegree": 7,
   "number_airlines": 3,
   "airlines": [
-    "Aero (American airline)",
-    "JSX (airline)",
+    "Aero",
+    "JSX",
     "Tradewind Aviation"
   ],
   "destinations": [
     {
-      "city": "Aspen/Pitkin County Airport",
+      "city": "Aspen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aspen/Pitkin_County_Airport",
       "codes": [
         "ASE",
         "KASE"
       ],
       "airlines": [
-        "Aero (American airline)"
+        "Aero"
       ]
     },
     {
-      "city": "Fort Lauderdale Executive Airport",
+      "city": "Fort Lauderdale–Executive",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale_Executive_Airport",
       "codes": [
         "FXE",
         "KFXE"
       ],
       "airlines": [
-        "JSX (airline)"
+        "JSX"
       ]
     },
     {
-      "city": "Martha's Vineyard Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Airport",
+      "city": "Los Angeles–Van Nuys",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
+      "codes": [
+        "VNY",
+        "KVNY"
+      ],
+      "airlines": [
+        "Aero"
+      ]
+    },
+    {
+      "city": "Martha's Vineyard",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martha's_Vineyard_Airport",
       "codes": [
         "MVY",
         "KMVY"
@@ -56,18 +67,18 @@
       ]
     },
     {
-      "city": "Miami–Opa Locka Executive Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami%E2%80%93Opa_Locka_Executive_Airport",
+      "city": "Miami–Opa Locka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami–Opa_Locka_Executive_Airport",
       "codes": [
         "OPF",
         "KOPF"
       ],
       "airlines": [
-        "JSX (airline)"
+        "JSX"
       ]
     },
     {
-      "city": "Nantucket Memorial Airport",
+      "city": "Nantucket",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nantucket_Memorial_Airport",
       "codes": [
         "ACK",
@@ -78,43 +89,37 @@
       ]
     },
     {
-      "city": "Palm Beach International Airport",
+      "city": "West Palm Beach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
       "codes": [
         "PBI",
         "KPBI"
       ],
       "airlines": [
-        "JSX (airline)"
-      ]
-    },
-    {
-      "city": "Van Nuys Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
-      "codes": [
-        "VNY",
-        "KVNY"
-      ],
-      "airlines": [
-        "Aero (American airline)"
+        "JSX"
       ]
     }
   ],
   "airlines_destinations": {
-    "Aero (American airline)": [
-      "Aspen/Pitkin County Airport",
-      "Van Nuys Airport"
+    "Aero": [
+      "Aspen",
+      "Los Angeles–Van Nuys"
     ],
-    "JSX (airline)": [
-      "Fort Lauderdale Executive Airport",
-      "Miami–Opa Locka Executive Airport",
-      "Palm Beach International Airport"
+    "JSX": [
+      "Fort Lauderdale–Executive",
+      "Miami–Opa Locka",
+      "West Palm Beach"
     ],
     "Tradewind Aviation": [
-      "Martha's Vineyard Airport",
-      "Nantucket Memorial Airport"
+      "Martha's Vineyard",
+      "Nantucket"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:26Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:00:16Z",
   "date-time-wikidata": "2026-04-12T06:18:25Z"
 }

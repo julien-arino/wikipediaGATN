@@ -14,7 +14,7 @@
   "admin1_name": "IQ",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Erbil_International_Airport",
   "outdegree": 39,
-  "number_airlines": 21,
+  "number_airlines": 19,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -33,10 +33,8 @@
     "Pegasus Airlines",
     "Qatar Airways",
     "Royal Jordanian",
-    "Royal Jordanian Cargo",
     "SunExpress",
-    "Turkish Airlines",
-    "Turkish Cargo"
+    "Turkish Airlines"
   ],
   "destinations": [
     {
@@ -70,8 +68,7 @@
       ],
       "airlines": [
         "Iraqi Airways",
-        "Royal Jordanian",
-        "Royal Jordanian Cargo"
+        "Royal Jordanian"
       ]
     },
     {
@@ -348,8 +345,7 @@
       "airlines": [
         "FlyErbil",
         "Iraqi Airways",
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -598,7 +594,39 @@
     ],
     "Turkish Airlines": [
       "Istanbul"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Royal Jordanian Cargo",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amman–Queen Alia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Alia_International_Airport",
+      "codes": [
+        "AMM",
+        "OJAI"
+      ],
+      "airlines": [
+        "Royal Jordanian Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Royal Jordanian Cargo": [
       "Amman–Queen Alia"
     ],
@@ -606,6 +634,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:18Z",
+  "date-time-parse": "2026-04-29T04:50:19Z",
   "date-time-wikidata": "2026-04-26T05:36:17Z"
 }

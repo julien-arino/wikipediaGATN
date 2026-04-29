@@ -17,14 +17,14 @@
   "outdegree": 4,
   "number_airlines": 4,
   "airlines": [
-    "AirBaltic",
     "Norwegian Air Shuttle",
     "Sunclass Airlines",
-    "Widerøe"
+    "Widerøe",
+    "airBaltic"
   ],
   "destinations": [
     {
-      "city": "Bergen Airport",
+      "city": "Bergen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport",
       "codes": [
         "BGO",
@@ -35,18 +35,18 @@
       ]
     },
     {
-      "city": "Gran Canaria Airport",
+      "city": "Gran Canaria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
       "codes": [
         "LPA",
         "GCLP"
       ],
       "airlines": [
-        "AirBaltic"
+        "airBaltic"
       ]
     },
     {
-      "city": "Oslo Airport, Gardermoen",
+      "city": "Oslo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
       "codes": [
         "OSL",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "city": "Rhodes International Airport",
+      "city": "Rhodes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
       "codes": [
         "RHO",
@@ -69,19 +69,24 @@
     }
   ],
   "airlines_destinations": {
-    "AirBaltic": [
-      "Gran Canaria Airport"
+    "airBaltic": [
+      "Gran Canaria"
     ],
     "Norwegian Air Shuttle": [
-      "Oslo Airport, Gardermoen"
+      "Oslo"
     ],
     "Sunclass Airlines": [
-      "Rhodes International Airport"
+      "Rhodes"
     ],
     "Widerøe": [
-      "Bergen Airport"
+      "Bergen"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:49Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:56:23Z",
   "date-time-wikidata": "2026-01-26T14:28:29Z"
 }

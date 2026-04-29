@@ -15,7 +15,7 @@
   "admin2_name": "Abu Ghraib District",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_Airport",
   "outdegree": 52,
-  "number_airlines": 37,
+  "number_airlines": 33,
   "airlines": [
     "AJet",
     "ATA Airlines",
@@ -23,9 +23,6 @@
     "Air Arabia",
     "Azerbaijan Airlines",
     "Caspian Airlines",
-    "Coyne Airways",
-    "DHL Aviation",
-    "EgyptAir Cargo",
     "Egyptair",
     "Emirates",
     "Fly Baghdad",
@@ -46,7 +43,6 @@
     "Royal Jordanian",
     "SalamAir",
     "Sepehran Airlines",
-    "Silk Way Airlines",
     "Syrian Air",
     "Taban Air",
     "Turkish Airlines",
@@ -163,7 +159,6 @@
         "OBBI"
       ],
       "airlines": [
-        "DHL Aviation",
         "Gulf Air"
       ]
     },
@@ -176,8 +171,7 @@
       ],
       "airlines": [
         "Azerbaijan Airlines",
-        "Iraqi Airways",
-        "Silk Way Airlines"
+        "Iraqi Airways"
       ]
     },
     {
@@ -234,7 +228,6 @@
         "HECA"
       ],
       "airlines": [
-        "EgyptAir Cargo",
         "Egyptair",
         "Iraqi Airways",
         "Nile Air"
@@ -283,7 +276,6 @@
         "OMDB"
       ],
       "airlines": [
-        "Coyne Airways",
         "Emirates",
         "Iraqi Airways",
         "flydubai"
@@ -850,7 +842,63 @@
     ],
     "Zagros Airlines": [
       "Tehran–Imam Khomeini"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Coyne Airways",
+    "DHL Aviation",
+    "EgyptAir Cargo",
+    "Silk Way Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Bahrain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Silk Way Airlines"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "EgyptAir Cargo"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Coyne Airways"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Coyne Airways": [
       "Dubai–International"
     ],
@@ -864,6 +912,6 @@
       "Bahrain"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:27Z",
+  "date-time-parse": "2026-04-29T04:47:54Z",
   "date-time-wikidata": "2026-04-20T11:01:55Z"
 }

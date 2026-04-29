@@ -14,19 +14,17 @@
   "admin1_name": "Rio Grande do Sul",
   "admin2_name": "Porto Alegre",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Salgado_Filho_International_Airport",
-  "outdegree": 15,
-  "number_airlines": 10,
+  "outdegree": 20,
+  "number_airlines": 8,
   "airlines": [
     "Aerolíneas Argentinas",
     "Azul Brazilian Airlines",
     "Copa Airlines",
     "Gol Linhas Aéreas",
     "LATAM Brasil",
-    "LATAM Cargo Brasil",
     "LATAM Chile",
     "LATAM Perú",
-    "TAP Air Portugal",
-    "Total Linhas Aéreas"
+    "TAP Air Portugal"
   ],
   "destinations": [
     {
@@ -37,6 +35,7 @@
         "SBCF"
       ],
       "airlines": [
+        "Azul Brazilian Airlines",
         "LATAM Brasil"
       ]
     },
@@ -73,8 +72,7 @@
         "SBKP"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "LATAM Cargo Brasil"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -85,6 +83,7 @@
         "SBCT"
       ],
       "airlines": [
+        "Azul Brazilian Airlines",
         "LATAM Brasil"
       ]
     },
@@ -134,6 +133,17 @@
       ]
     },
     {
+      "city": "Pelotas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pelotas_International_Airport",
+      "codes": [
+        "PET",
+        "SBPK"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
       "city": "Punta del Este",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Capitán_de_Corbeta_Carlos_A._Curbelo_International_Airport",
       "codes": [
@@ -146,6 +156,17 @@
       ]
     },
     {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
       "city": "Rio de Janeiro–Galeão",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
       "codes": [
@@ -153,8 +174,31 @@
         "SBGL"
       ],
       "airlines": [
+        "Azul Brazilian Airlines",
         "Gol Linhas Aéreas",
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "San Carlos de Bariloche",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Carlos_de_Bariloche_Airport",
+      "codes": [
+        "BRC",
+        "SAZS"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
+      "city": "Santa Maria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Maria_Airport_(Rio_Grande_do_Sul)",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -169,14 +213,14 @@
       ]
     },
     {
-      "city": "São Paulo-Guarulhos",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
+      "city": "Santo Ângelo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santo_Ângelo_Airport",
       "codes": [
-        "GRU",
-        "SBGR"
+        "GEL",
+        "SBNM"
       ],
       "airlines": [
-        "Total Linhas Aéreas"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -187,6 +231,7 @@
         "SBSP"
       ],
       "airlines": [
+        "Azul Brazilian Airlines",
         "Gol Linhas Aéreas",
         "LATAM Brasil"
       ]
@@ -203,6 +248,17 @@
         "Gol Linhas Aéreas",
         "LATAM Brasil"
       ]
+    },
+    {
+      "city": "Uruguaiana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruben_Berta_International_Airport",
+      "codes": [
+        "URG",
+        "SBUG"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -211,8 +267,18 @@
       "Punta del Este"
     ],
     "Azul Brazilian Airlines": [
+      "Belo Horizonte–Confins",
       "Campinas",
-      "São Paulo–Guarulhos"
+      "Curitiba",
+      "Pelotas",
+      "Recife",
+      "Rio de Janeiro–Galeão",
+      "San Carlos de Bariloche",
+      "Santa Maria",
+      "Santo Ângelo",
+      "São Paulo–Congonhas",
+      "São Paulo–Guarulhos",
+      "Uruguaiana"
     ],
     "Copa Airlines": [
       "Panama City–Tocumen"
@@ -244,6 +310,55 @@
     ],
     "TAP Air Portugal": [
       "Lisbon"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Azul Brazilian Airlines",
+    "LATAM Cargo Brasil",
+    "Total Linhas Aéreas"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo-Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Total Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Azul Brazilian Airlines": [
+      "Campinas",
+      "São Paulo–Guarulhos"
     ],
     "LATAM Cargo Brasil": [
       "Campinas"
@@ -252,6 +367,6 @@
       "São Paulo-Guarulhos"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:05Z",
+  "date-time-parse": "2026-04-29T04:58:08Z",
   "date-time-wikidata": "2026-04-24T23:31:40Z"
 }

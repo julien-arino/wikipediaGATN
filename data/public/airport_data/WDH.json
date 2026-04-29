@@ -13,39 +13,23 @@
   "admin1_code": "NA-KH",
   "admin1_name": "Khomas",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Hosea_Kutako_International_Airport",
-  "outdegree": 21,
-  "number_airlines": 16,
+  "outdegree": 19,
+  "number_airlines": 12,
   "airlines": [
     "Air Botswana",
     "Airlink",
-    "Airlink Cargo",
-    "BidAir Cargo",
     "Discover Airlines",
     "Edelweiss Air",
     "Ethiopian Airlines",
-    "Ethiopian Cargo",
     "Fly Angola",
     "FlyNamibia",
     "FlyNamibia Safari",
     "FlySafair",
-    "Lufthansa Cargo",
     "Proflight Zambia",
     "South African Airways",
     "TAAG Angola Airlines"
   ],
   "destinations": [
-    {
-      "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
-      "codes": [
-        "ADD",
-        "HAAB"
-      ],
-      "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Cargo"
-      ]
-    },
     {
       "city": "Addis Ababa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
@@ -54,8 +38,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -112,20 +95,7 @@
         "EDDF"
       ],
       "airlines": [
-        "Discover Airlines",
-        "Lufthansa Cargo"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
-      "codes": [
-        "FRA",
-        "EDDF"
-      ],
-      "airlines": [
-        "Discover Airlines",
-        "Lufthansa Cargo"
+        "Discover Airlines"
       ]
     },
     {
@@ -148,8 +118,6 @@
       ],
       "airlines": [
         "Airlink",
-        "Airlink Cargo",
-        "BidAir Cargo",
         "South African Airways"
       ]
     },
@@ -323,7 +291,53 @@
     ],
     "TAAG Angola Airlines": [
       "Luanda–Agostinho Neto"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Airlink Cargo",
+    "BidAir Cargo",
+    "Ethiopian Cargo",
+    "Lufthansa Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR"
+      ],
+      "airlines": [
+        "Airlink Cargo",
+        "BidAir Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Airlink Cargo": [
       "Johannesburg–O. R. Tambo"
     ],
@@ -337,6 +351,6 @@
       "Frankfurt"
     ]
   },
-  "date-time-parse": "2026-04-28T22:20:08Z",
+  "date-time-parse": "2026-04-29T05:01:36Z",
   "date-time-wikidata": "2026-04-25T20:43:28Z"
 }

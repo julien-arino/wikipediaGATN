@@ -23,7 +23,7 @@
   ],
   "destinations": [
     {
-      "city": "Beijing Daxing International Airport",
+      "city": "Beijing–Daxing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
       "codes": [
         "PKX",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "city": "Guangzhou Baiyun International Airport",
+      "city": "Guangzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
       "codes": [
         "CAN",
@@ -45,29 +45,31 @@
       ]
     },
     {
-      "city": "Kashgar Laining International Airport",
+      "city": "Kashgar",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kashgar_Laining_International_Airport",
       "codes": [
         "KHG",
         "ZWSH"
       ],
       "airlines": [
-        "Chengdu Airlines"
+        "Chengdu Airlines",
+        "China Express Airlines"
       ]
     },
     {
-      "city": "Kashi Laining International Airport",
+      "city": "Kashgar",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kashi_Laining_International_Airport",
       "codes": [
         "KHG",
         "ZWSH"
       ],
       "airlines": [
+        "Chengdu Airlines",
         "China Express Airlines"
       ]
     },
     {
-      "city": "Korla Airport",
+      "city": "Korla",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Korla_Airport",
       "codes": [
         "KRL",
@@ -78,7 +80,7 @@
       ]
     },
     {
-      "city": "Shanghai Pudong International Airport",
+      "city": "Shanghai–Pudong",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
       "codes": [
         "PVG",
@@ -89,7 +91,18 @@
       ]
     },
     {
-      "city": "Urumqi Diwopu International Airport",
+      "city": "Yining",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yining_Airport",
+      "codes": [
+        "YIN",
+        "ZWYN"
+      ],
+      "airlines": [
+        "Chengdu Airlines"
+      ]
+    },
+    {
+      "city": "Ürümqi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Urumqi_Diwopu_International_Airport",
       "codes": [
         "URC",
@@ -99,38 +112,32 @@
         "China Southern Airlines",
         "Urumqi Air"
       ]
-    },
-    {
-      "city": "Yining Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Yining_Airport",
-      "codes": [
-        "YIN",
-        "ZWYN"
-      ],
-      "airlines": [
-        "Chengdu Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
     "Chengdu Airlines": [
-      "Kashgar Laining International Airport",
-      "Yining Airport"
+      "Kashgar",
+      "Yining"
     ],
     "China Express Airlines": [
-      "Kashi Laining International Airport",
-      "Korla Airport"
+      "Kashgar",
+      "Korla"
     ],
     "China Southern Airlines": [
-      "Beijing Daxing International Airport",
-      "Urumqi Diwopu International Airport"
+      "Beijing–Daxing",
+      "Ürümqi"
     ],
     "Urumqi Air": [
-      "Guangzhou Baiyun International Airport",
-      "Shanghai Pudong International Airport",
-      "Urumqi Diwopu International Airport"
+      "Guangzhou",
+      "Shanghai–Pudong",
+      "Ürümqi"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:43Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:02:23Z",
   "date-time-wikidata": "2026-02-08T10:21:57Z"
 }

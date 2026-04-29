@@ -14,11 +14,103 @@
   "admin1_name": "Wyoming",
   "admin2_name": "Natrona County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Casper–Natrona_County_International_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:04:54Z",
+  "outdegree": 1,
+  "number_airlines": 1,
+  "airlines": [
+    "United Express"
+  ],
+  "destinations": [
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "United Express": [
+      "Denver"
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "FedEx Express",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Boise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
+      "codes": [
+        "BOI",
+        "KBOI"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Hayden (CO)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yampa_Valley_Airport",
+      "codes": [
+        "HDN",
+        "KHDN"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Rock Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rock_Springs-Sweetwater_County_Airport",
+      "codes": [
+        "RKS",
+        "KRKS"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Scottsbluff",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Western_Nebraska_Regional_Airport",
+      "codes": [
+        "BFF",
+        "KBFF"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Boise",
+      "Memphis"
+    ],
+    "FedEx Feeder": [
+      "Hayden (CO)",
+      "Rock Springs",
+      "Scottsbluff"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:24Z",
   "date-time-wikidata": "2026-03-19T16:26:37Z"
 }

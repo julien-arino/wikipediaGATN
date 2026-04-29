@@ -14,17 +14,15 @@
   "admin1_name": "SE",
   "admin2_name": "Harryda Kommun",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Göteborg_Landvetter_Airport",
-  "outdegree": 28,
-  "number_airlines": 15,
+  "outdegree": 27,
+  "number_airlines": 13,
   "airlines": [
     "Air France",
     "Air Serbia",
     "Austrian Airlines",
     "British Airways",
     "Brussels Airlines",
-    "DHL Aviation",
     "Eurowings",
-    "FedEx Express",
     "KLM",
     "Norwegian Air Shuttle",
     "Ryanair",
@@ -113,17 +111,6 @@
       ]
     },
     {
-      "city": "Copenhagen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
-      "codes": [
-        "CPH",
-        "EKCH"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
       "city": "Corfu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
       "codes": [
@@ -208,8 +195,7 @@
         "LFPG"
       ],
       "airlines": [
-        "Air France",
-        "FedEx Express"
+        "Air France"
       ]
     },
     {
@@ -401,7 +387,39 @@
       "Rome–Fiumicino",
       "Skopje",
       "Tuzla"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "FedEx Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Copenhagen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_Airport",
+      "codes": [
+        "CPH",
+        "EKCH"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Copenhagen"
     ],
@@ -409,6 +427,6 @@
       "Paris–Charles de Gaulle"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:34Z",
+  "date-time-parse": "2026-04-29T04:51:15Z",
   "date-time-wikidata": "2026-04-26T12:24:10Z"
 }

@@ -18,23 +18,23 @@
   "number_airlines": 2,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)"
+    "American Eagle"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Destin–Fort Walton Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin%E2%80%93Fort_Walton_Beach_Airport",
+      "city": "Destin/Fort Walton Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin–Fort_Walton_Beach_Airport",
       "codes": [
         "VPS",
         "KVPS"
@@ -44,8 +44,8 @@
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
+      "city": "Myrtle Beach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
       "codes": [
         "MYR",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -88,8 +88,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -101,17 +101,40 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Destin–Fort Walton Beach Airport",
-      "Fort Lauderdale–Hollywood International Airport",
-      "Myrtle Beach International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "St. Pete–Clearwater International Airport"
+      "Destin/Fort Walton Beach",
+      "Fort Lauderdale",
+      "Myrtle Beach",
+      "Orlando/Sanford",
+      "Punta Gorda (FL)",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport"
+    "American Eagle": [
+      "Charlotte"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:45Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis,_Tennessee",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Memphis"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:51:55Z",
   "date-time-wikidata": "2025-10-29T14:33:27Z"
 }

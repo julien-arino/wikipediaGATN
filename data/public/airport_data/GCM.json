@@ -13,8 +13,8 @@
   "admin1_code": "",
   "admin1_name": "KY",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Owen_Roberts_International_Airport",
-  "outdegree": 22,
-  "number_airlines": 13,
+  "outdegree": 29,
+  "number_airlines": 12,
   "airlines": [
     "Air Canada Rouge",
     "American Airlines",
@@ -22,7 +22,6 @@
     "Cayman Airways",
     "Cayman Airways Express",
     "Delta Air Lines",
-    "IBC Airways",
     "JetBlue",
     "Porter Airlines",
     "Southwest Airlines",
@@ -72,6 +71,7 @@
         "MWCB"
       ],
       "airlines": [
+        "Cayman Airways",
         "Cayman Airways Express"
       ]
     },
@@ -110,6 +110,17 @@
       ]
     },
     {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    },
+    {
       "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
       "codes": [
@@ -132,6 +143,17 @@
       ]
     },
     {
+      "city": "Havana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Martí_International_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    },
+    {
       "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
@@ -140,6 +162,28 @@
       ],
       "airlines": [
         "United Airlines"
+      ]
+    },
+    {
+      "city": "Kingston–Norman Manley",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Manley_International_Airport",
+      "codes": [
+        "KIN",
+        "MKJP"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    },
+    {
+      "city": "La Ceiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golosón_International_Airport",
+      "codes": [
+        "LCE",
+        "MHLC"
+      ],
+      "airlines": [
+        "Cayman Airways"
       ]
     },
     {
@@ -154,6 +198,17 @@
       ]
     },
     {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    },
+    {
       "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
@@ -162,8 +217,7 @@
       ],
       "airlines": [
         "American Airlines",
-        "Cayman Airways",
-        "IBC Airways"
+        "Cayman Airways"
       ]
     },
     {
@@ -209,6 +263,7 @@
         "KJFK"
       ],
       "airlines": [
+        "Cayman Airways",
         "Delta Air Lines",
         "JetBlue"
       ]
@@ -247,6 +302,17 @@
       ]
     },
     {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO"
+      ],
+      "airlines": [
+        "Cayman Airways"
+      ]
+    },
+    {
       "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
@@ -255,6 +321,17 @@
       ],
       "airlines": [
         "American Airlines"
+      ]
+    },
+    {
+      "city": "Tampa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Cayman Airways"
       ]
     },
     {
@@ -298,7 +375,16 @@
       "Nassau"
     ],
     "Cayman Airways": [
-      "Miami"
+      "Cayman Brac",
+      "Denver",
+      "Havana",
+      "Kingston–Norman Manley",
+      "La Ceiba",
+      "Los Angeles",
+      "Miami",
+      "New York–JFK",
+      "Panama City–Tocumen",
+      "Tampa"
     ],
     "Cayman Airways Express": [
       "Cayman Brac"
@@ -333,11 +419,36 @@
     ],
     "WestJet": [
       "Toronto–Pearson"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Cayman Airways",
+    "IBC Airways"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Cayman Airways",
+        "IBC Airways"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "IBC Airways": [
+      "Miami"
+    ],
+    "Cayman Airways": [
       "Miami"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:50Z",
+  "date-time-parse": "2026-04-29T04:51:00Z",
   "date-time-wikidata": "2026-04-16T07:37:52Z"
 }

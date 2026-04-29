@@ -17,24 +17,36 @@
   "outdegree": 5,
   "number_airlines": 3,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -45,7 +57,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -56,19 +68,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -80,19 +80,24 @@
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport",
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth"
     ],
     "Breeze Airways": [
-      "Harry Reid International Airport",
-      "Orlando International Airport"
+      "Las Vegas",
+      "Orlando"
     ],
     "United Express": [
-      "Denver International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:08Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:55:24Z",
   "date-time-wikidata": "2026-04-22T06:14:53Z"
 }

@@ -14,13 +14,11 @@
   "admin1_name": "Pomeranian Voivodeship",
   "admin2_name": "Powiat kartuski",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gdańsk_Lech_Wałęsa_Airport",
-  "outdegree": 65,
-  "number_airlines": 18,
+  "outdegree": 61,
+  "number_airlines": 15,
   "airlines": [
-    "DHL Aviation",
     "Enter Air",
     "Eurowings",
-    "FedEx Feeder",
     "Finnair",
     "Icelandair",
     "Jet2.com",
@@ -33,7 +31,6 @@
     "SkyUp",
     "Smartwings Poland",
     "Swiss International Air Lines",
-    "UPS Airlines",
     "Wizz Air"
   ],
   "destinations": [
@@ -148,17 +145,6 @@
       "airlines": [
         "LOT Polish Airlines",
         "Norwegian Air Shuttle"
-      ]
-    },
-    {
-      "city": "Berlin",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
-      "codes": [
-        "BER",
-        "EDDB"
-      ],
-      "airlines": [
-        "UPS Airlines"
       ]
     },
     {
@@ -387,17 +373,6 @@
       ]
     },
     {
-      "city": "Katowice",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
-      "codes": [
-        "KTW",
-        "EPKT"
-      ],
-      "airlines": [
-        "FedEx Feeder"
-      ]
-    },
-    {
       "city": "Kraków",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
       "codes": [
@@ -406,17 +381,6 @@
       ],
       "airlines": [
         "LOT Polish Airlines"
-      ]
-    },
-    {
-      "city": "Leipzig/Halle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
-      "codes": [
-        "LEJ",
-        "EDDP"
-      ],
-      "airlines": [
-        "DHL Aviation"
       ]
     },
     {
@@ -529,17 +493,6 @@
       ],
       "airlines": [
         "Wizz Air"
-      ]
-    },
-    {
-      "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
-      "codes": [
-        "CDG",
-        "LFPG"
-      ],
-      "airlines": [
-        "FedEx Feeder"
       ]
     },
     {
@@ -663,7 +616,6 @@
         "EETN"
       ],
       "airlines": [
-        "DHL Aviation",
         "Wizz Air"
       ]
     },
@@ -873,7 +825,73 @@
       "Tirana",
       "Varna",
       "Ålesund"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "FedEx Feeder",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Tallinn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tallinn_Airport",
+      "codes": [
+        "TLL",
+        "EETN"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Leipzig/Halle",
       "Tallinn"
@@ -886,6 +904,6 @@
       "Berlin"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:51Z",
-  "date-time-wikidata": "2026-04-03T10:23:12Z"
+  "date-time-parse": "2026-04-29T04:51:02Z",
+  "date-time-wikidata": "2026-04-28T22:09:34Z"
 }

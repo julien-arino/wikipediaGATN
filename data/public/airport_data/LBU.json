@@ -13,27 +13,14 @@
   "admin1_code": "MY-12",
   "admin1_name": "Sabah",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Labuan_Airport",
-  "outdegree": 5,
-  "number_airlines": 5,
+  "outdegree": 3,
+  "number_airlines": 3,
   "airlines": [
     "AirAsia",
     "AirBorneo",
-    "MASkargo",
-    "Malaysia Airlines",
-    "Raya Airways"
+    "Malaysia Airlines"
   ],
   "destinations": [
-    {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "codes": [
-        "HKG",
-        "VHHH"
-      ],
-      "airlines": [
-        "MASkargo"
-      ]
-    },
     {
       "city": "Kota Kinabalu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
@@ -42,8 +29,7 @@
         "WBKK"
       ],
       "airlines": [
-        "AirBorneo",
-        "MASkargo"
+        "AirBorneo"
       ]
     },
     {
@@ -55,19 +41,7 @@
       ],
       "airlines": [
         "AirAsia",
-        "MASkargo",
         "Malaysia Airlines"
-      ]
-    },
-    {
-      "city": "Kuala Lumpur–Subang",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
-      "codes": [
-        "SZB",
-        "WMSA"
-      ],
-      "airlines": [
-        "Raya Airways"
       ]
     },
     {
@@ -92,7 +66,61 @@
     ],
     "Malaysia Airlines": [
       "Kuala Lumpur–International"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "MASkargo",
+    "Raya Airways"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–Subang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport",
+      "codes": [
+        "SZB",
+        "WMSA"
+      ],
+      "airlines": [
+        "Raya Airways"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "MASkargo": [
       "Hong Kong",
       "Kota Kinabalu",
@@ -102,6 +130,6 @@
       "Kuala Lumpur–Subang"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:53Z",
+  "date-time-parse": "2026-04-29T04:55:00Z",
   "date-time-wikidata": "2026-01-05T17:08:46Z"
 }

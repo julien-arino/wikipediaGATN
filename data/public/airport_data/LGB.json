@@ -15,9 +15,10 @@
   "admin2_name": "Los Angeles County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Long_Beach_Airport",
   "outdegree": 3,
-  "number_airlines": 2,
+  "number_airlines": 3,
   "airlines": [
     "Delta Air Lines",
+    "Delta Connection",
     "Hawaiian Airlines"
   ],
   "destinations": [
@@ -51,7 +52,8 @@
         "KSLC"
       ],
       "airlines": [
-        "Delta Air Lines"
+        "Delta Air Lines",
+        "Delta Connection"
       ]
     }
   ],
@@ -59,11 +61,52 @@
     "Delta Air Lines": [
       "Salt Lake City"
     ],
+    "Delta Connection": [
+      "Salt Lake City"
+    ],
     "Hawaiian Airlines": [
       "Honolulu",
       "Kahului"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:02Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "FedEx Express",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Fort Worth/Alliance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perot_Field_Fort_Worth_Alliance_Airport",
+      "codes": [
+        "AFW",
+        "KAFW"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Express": [
+      "Fort Worth/Alliance"
+    ],
+    "UPS Airlines": [
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:55:08Z",
   "date-time-wikidata": "2026-04-28T05:59:38Z"
 }

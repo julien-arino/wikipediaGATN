@@ -14,15 +14,15 @@
   "admin1_name": "Scotland",
   "admin2_name": "South Ayrshire",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Prestwick_Airport",
-  "outdegree": 10,
+  "outdegree": 3,
   "number_airlines": 1,
   "airlines": [
     "Ryanair"
   ],
   "destinations": [
     {
-      "city": "Alicante–Elche Miguel Hernández Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
       "codes": [
         "ALC",
         "LEAL"
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "city": "Faro Airport",
+      "city": "Faro",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Faro_Airport",
       "codes": [
         "FAO",
@@ -43,29 +43,7 @@
       ]
     },
     {
-      "city": "Gran Canaria Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
-      "codes": [
-        "LPA",
-        "GCLP"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Josep Tarradellas Barcelona–El Prat Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona%E2%80%93El_Prat_Airport",
-      "codes": [
-        "BCN",
-        "LEBL"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Lanzarote Airport",
+      "city": "Lanzarote",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzarote_Airport",
       "codes": [
         "ACE",
@@ -74,77 +52,184 @@
       "airlines": [
         "Ryanair"
       ]
-    },
-    {
-      "city": "Málaga Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A1laga_Airport",
-      "codes": [
-        "AGP",
-        "LEMG"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Palma de Mallorca Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
-      "codes": [
-        "PMI",
-        "LEPA"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Pisa International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_International_Airport",
-      "codes": [
-        "PSA",
-        "LIRP"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Región de Murcia International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Regi%C3%B3n_de_Murcia_International_Airport",
-      "codes": [
-        "RMU",
-        "LEMI"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Tenerife South Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
-      "codes": [
-        "TFS",
-        "GCTS"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
     }
   ],
   "airlines_destinations": {
     "Ryanair": [
-      "Alicante–Elche Miguel Hernández Airport",
-      "Faro Airport",
-      "Gran Canaria Airport",
-      "Josep Tarradellas Barcelona–El Prat Airport",
-      "Lanzarote Airport",
-      "Málaga Airport",
-      "Palma de Mallorca Airport",
-      "Pisa International Airport",
-      "Región de Murcia International Airport",
-      "Tenerife South Airport"
+      "Alicante",
+      "Faro",
+      "Lanzarote"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:42Z",
+  "outdegree_cargo": 12,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Air China Cargo",
+    "Air France Cargo",
+    "Beijing Capital Airlines",
+    "Cargolux",
+    "China Southern Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China Cargo"
+      ]
+    },
+    {
+      "city": "Chengdu–Shuangliu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "Air China Cargo"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Air France Cargo"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG"
+      ],
+      "airlines": [
+        "Air China Cargo",
+        "China Southern Cargo"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France Cargo"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Air China Cargo"
+      ]
+    },
+    {
+      "city": "Zhengzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "codes": [
+        "CGO",
+        "ZHCC"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air China Cargo": [
+      "Beijing–Capital",
+      "Chengdu–Shuangliu",
+      "Guangzhou",
+      "Stockholm–Arlanda"
+    ],
+    "Air France Cargo": [
+      "Chicago–O'Hare",
+      "Paris–Charles de Gaulle"
+    ],
+    "Beijing Capital Airlines": [
+      "Oslo",
+      "Zhengzhou"
+    ],
+    "Cargolux": [
+      "Houston–Intercontinental",
+      "Los Angeles",
+      "Luxembourg",
+      "Seattle/Tacoma"
+    ],
+    "China Southern Cargo": [
+      "Guangzhou"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:57:56Z",
   "date-time-wikidata": "2026-04-27T04:27:50Z"
 }

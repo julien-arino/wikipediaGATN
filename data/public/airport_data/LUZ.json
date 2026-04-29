@@ -14,11 +14,10 @@
   "admin1_name": "Lublin Voivodeship",
   "admin2_name": "Powiat swidnicki",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lublin_Airport",
-  "outdegree": 12,
-  "number_airlines": 5,
+  "outdegree": 10,
+  "number_airlines": 4,
   "airlines": [
     "AeroItalia",
-    "El Al Cargo",
     "LOT Polish Airlines",
     "Ryanair",
     "Wizz Air"
@@ -55,17 +54,6 @@
       ],
       "airlines": [
         "Ryanair"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "codes": [
-        "FRA",
-        "EDDF"
-      ],
-      "airlines": [
-        "El Al Cargo"
       ]
     },
     {
@@ -136,17 +124,6 @@
       ]
     },
     {
-      "city": "Tel Aviv",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
-      "codes": [
-        "TLV",
-        "LLBG"
-      ],
-      "airlines": [
-        "El Al Cargo"
-      ]
-    },
-    {
       "city": "Warsaw–Chopin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
       "codes": [
@@ -177,12 +154,43 @@
       "Maastricht/Aachen",
       "Rijeka",
       "Split"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "El Al Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "El Al Cargo"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "codes": [
+        "TLV",
+        "LLBG"
+      ],
+      "airlines": [
+        "El Al Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "El Al Cargo": [
       "Frankfurt",
       "Tel Aviv"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:30Z",
+  "date-time-parse": "2026-04-29T04:55:37Z",
   "date-time-wikidata": "2026-04-03T22:37:16Z"
 }

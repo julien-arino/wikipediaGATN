@@ -13,11 +13,10 @@
   "admin1_code": "",
   "admin1_name": "Krasnoyarskiy",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
-  "outdegree": 88,
-  "number_airlines": 22,
+  "outdegree": 81,
+  "number_airlines": 21,
   "airlines": [
     "Aeroflot",
-    "AirBridgeCargo Airlines",
     "Aurora",
     "Avia Traffic Company",
     "Azur Air",
@@ -60,17 +59,6 @@
       ],
       "airlines": [
         "Rossiya"
-      ]
-    },
-    {
-      "city": "Amsterdam",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "codes": [
-        "AMS",
-        "EHAM"
-      ],
-      "airlines": [
-        "AirBridgeCargo Airlines"
       ]
     },
     {
@@ -126,17 +114,6 @@
       ],
       "airlines": [
         "KrasAvia"
-      ]
-    },
-    {
-      "city": "Beijing–Capital",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-      "codes": [
-        "PEK",
-        "ZBAA"
-      ],
-      "airlines": [
-        "AirBridgeCargo Airlines"
       ]
     },
     {
@@ -295,17 +272,6 @@
       ],
       "airlines": [
         "Rossiya"
-      ]
-    },
-    {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "codes": [
-        "HKG",
-        "VHHH"
-      ],
-      "airlines": [
-        "AirBridgeCargo Airlines"
       ]
     },
     {
@@ -478,17 +444,6 @@
       ]
     },
     {
-      "city": "Milan–Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa_Airport",
-      "codes": [
-        "MXP",
-        "LIMC"
-      ],
-      "airlines": [
-        "AirBridgeCargo Airlines"
-      ]
-    },
-    {
       "city": "Mineralnye Vody",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
       "codes": [
@@ -523,19 +478,6 @@
     },
     {
       "city": "Moscow–Sheremetyevo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow–Sheremetyevo",
-      "codes": [
-        "SVO",
-        "UUEE"
-      ],
-      "airlines": [
-        "Aeroflot",
-        "AirBridgeCargo Airlines",
-        "Pobeda"
-      ]
-    },
-    {
-      "city": "Moscow–Sheremetyevo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
       "codes": [
         "SVO",
@@ -543,7 +485,6 @@
       ],
       "airlines": [
         "Aeroflot",
-        "AirBridgeCargo Airlines",
         "Pobeda"
       ]
     },
@@ -674,17 +615,6 @@
       ]
     },
     {
-      "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "codes": [
-        "CDG",
-        "LFPG"
-      ],
-      "airlines": [
-        "AirBridgeCargo Airlines"
-      ]
-    },
-    {
       "city": "Pattaya-U-Tapao",
       "wikipedia_url": "https://en.wikipedia.org/wiki/U-Tapao_International_Airport",
       "codes": [
@@ -794,17 +724,6 @@
       ],
       "airlines": [
         "KrasAvia"
-      ]
-    },
-    {
-      "city": "Shanghai–Pudong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
-      "codes": [
-        "PVG",
-        "ZSPD"
-      ],
-      "airlines": [
-        "AirBridgeCargo Airlines"
       ]
     },
     {
@@ -1183,7 +1102,93 @@
     ],
     "VietJet Air": [
       "Nha Trang"
-    ],
+    ]
+  },
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "AirBridgeCargo Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    },
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    },
+    {
+      "city": "Moscow–Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow–Sheremetyevo",
+      "codes": [
+        "SVO",
+        "UUEE"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "AirBridgeCargo Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "AirBridgeCargo Airlines": [
       "Amsterdam",
       "Beijing–Capital",
@@ -1194,6 +1199,6 @@
       "Shanghai–Pudong"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:51Z",
+  "date-time-parse": "2026-04-29T04:54:23Z",
   "date-time-wikidata": "2026-04-18T17:23:47Z"
 }

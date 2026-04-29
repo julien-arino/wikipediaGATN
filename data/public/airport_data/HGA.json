@@ -20,13 +20,13 @@
     "Air Djibouti",
     "Daallo Airlines",
     "Ethiopian Airlines",
-    "Flydubai",
     "Freedom Airline Express",
-    "Jubba Airways"
+    "Jubba Airways",
+    "flydubai"
   ],
   "destinations": [
     {
-      "city": "Addis Ababa Bole International Airport",
+      "city": "Addis Ababa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
       "codes": [
         "ADD",
@@ -37,7 +37,78 @@
       ]
     },
     {
-      "city": "Aden Adde International Airport",
+      "city": "Berbera",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berbera_Airport",
+      "codes": [
+        "BBO",
+        "HCMI"
+      ],
+      "airlines": [
+        "African Express Airways"
+      ]
+    },
+    {
+      "city": "Bosaso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bender_Qassim_International_Airport",
+      "codes": [
+        "BSA",
+        "HCMF"
+      ],
+      "airlines": [
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "African Express Airways"
+      ]
+    },
+    {
+      "city": "Djibouti",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
+      "codes": [
+        "JIB",
+        "HDAM"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Daallo Airlines"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "African Express Airways",
+        "Daallo Airlines",
+        "Jubba Airways",
+        "flydubai"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Daallo Airlines",
+        "Jubba Airways"
+      ]
+    },
+    {
+      "city": "Mogadishu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
       "codes": [
         "MGQ",
@@ -51,66 +122,7 @@
       ]
     },
     {
-      "city": "Bender Qassim International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bender_Qassim_International_Airport",
-      "codes": [
-        "BSA",
-        "HCMF"
-      ],
-      "airlines": [
-        "Jubba Airways"
-      ]
-    },
-    {
-      "city": "Berbera Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Berbera_Airport",
-      "codes": [
-        "BBO",
-        "HCMI"
-      ],
-      "airlines": [
-        "African Express Airways"
-      ]
-    },
-    {
-      "city": "Cairo International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-      "codes": [
-        "CAI",
-        "HECA"
-      ],
-      "airlines": [
-        "African Express Airways"
-      ]
-    },
-    {
-      "city": "Djibouti-Ambouli International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
-      "codes": [
-        "JIB",
-        "HDAM"
-      ],
-      "airlines": [
-        "Air Djibouti",
-        "Daallo Airlines"
-      ]
-    },
-    {
-      "city": "Dubai International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
-      "codes": [
-        "DXB",
-        "OMDB"
-      ],
-      "airlines": [
-        "African Express Airways",
-        "Daallo Airlines",
-        "Flydubai",
-        "Jubba Airways"
-      ]
-    },
-    {
-      "city": "Jomo Kenyatta International Airport",
+      "city": "Nairobi–Jomo Kenyatta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
       "codes": [
         "NBO",
@@ -121,19 +133,7 @@
       ]
     },
     {
-      "city": "King Abdulaziz International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
-      "codes": [
-        "JED",
-        "OEJN"
-      ],
-      "airlines": [
-        "Daallo Airlines",
-        "Jubba Airways"
-      ]
-    },
-    {
-      "city": "Sharjah International Airport",
+      "city": "Sharjah",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
       "codes": [
         "SHJ",
@@ -146,38 +146,61 @@
   ],
   "airlines_destinations": {
     "Air Djibouti": [
-      "Djibouti-Ambouli International Airport"
+      "Djibouti"
     ],
     "African Express Airways": [
-      "Aden Adde International Airport",
-      "Berbera Airport",
-      "Cairo International Airport",
-      "Dubai International Airport",
-      "Jomo Kenyatta International Airport",
-      "Sharjah International Airport"
+      "Berbera",
+      "Cairo",
+      "Dubai–International",
+      "Mogadishu",
+      "Nairobi–Jomo Kenyatta",
+      "Sharjah"
     ],
     "Daallo Airlines": [
-      "Aden Adde International Airport",
-      "Djibouti-Ambouli International Airport",
-      "Dubai International Airport",
-      "King Abdulaziz International Airport"
+      "Djibouti",
+      "Dubai–International",
+      "Jeddah",
+      "Mogadishu"
     ],
     "Ethiopian Airlines": [
-      "Addis Ababa Bole International Airport"
+      "Addis Ababa"
     ],
-    "Flydubai": [
-      "Dubai International Airport"
+    "flydubai": [
+      "Dubai–International"
     ],
     "Freedom Airline Express": [
-      "Aden Adde International Airport"
+      "Mogadishu"
     ],
     "Jubba Airways": [
-      "Aden Adde International Airport",
-      "Bender Qassim International Airport",
-      "Dubai International Airport",
-      "King Abdulaziz International Airport"
+      "Bosaso",
+      "Dubai–International",
+      "Jeddah",
+      "Mogadishu"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:38Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Ethiopian Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ethiopian Cargo": [
+      "Addis Ababa"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:51:37Z",
   "date-time-wikidata": "2026-04-27T11:24:58Z"
 }

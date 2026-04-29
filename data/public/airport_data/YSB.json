@@ -13,16 +13,13 @@
   "admin1_code": "CA-ON",
   "admin1_name": "Ontario",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
-  "outdegree": 11,
-  "number_airlines": 8,
+  "outdegree": 9,
+  "number_airlines": 5,
   "airlines": [
-    "Air Canada Cargo",
     "Air Canada Express",
     "Bearskin Airlines",
-    "FedEx Express",
     "Porter Airlines",
     "Propair",
-    "SkyLink Express",
     "WestJet"
   ],
   "destinations": [
@@ -35,17 +32,6 @@
       ],
       "airlines": [
         "WestJet"
-      ]
-    },
-    {
-      "city": "Hamilton (ON)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-      "codes": [
-        "YHM",
-        "CYHM"
-      ],
-      "airlines": [
-        "SkyLink Express"
       ]
     },
     {
@@ -101,8 +87,7 @@
         "CYAM"
       ],
       "airlines": [
-        "Bearskin Airlines",
-        "SkyLink Express"
+        "Bearskin Airlines"
       ]
     },
     {
@@ -114,17 +99,6 @@
       ],
       "airlines": [
         "Bearskin Airlines"
-      ]
-    },
-    {
-      "city": "Timmins",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Timmins_Airport",
-      "codes": [
-        "YTS",
-        "CYTS"
-      ],
-      "airlines": [
-        "FedEx Express"
       ]
     },
     {
@@ -146,9 +120,7 @@
         "CYYZ"
       ],
       "airlines": [
-        "Air Canada Cargo",
-        "Air Canada Express",
-        "FedEx Express"
+        "Air Canada Express"
       ]
     }
   ],
@@ -172,7 +144,63 @@
     ],
     "WestJet": [
       "Calgary"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Air Canada Cargo",
+    "FedEx Express",
+    "SkyLink Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Hamilton (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
+      "codes": [
+        "YHM",
+        "CYHM"
+      ],
+      "airlines": [
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Sault Ste. Marie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sault_Ste._Marie_Airport",
+      "codes": [
+        "YAM",
+        "CYAM"
+      ],
+      "airlines": [
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Timmins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timmins_Airport",
+      "codes": [
+        "YTS",
+        "CYTS"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Cargo",
+        "FedEx Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Air Canada Cargo": [
       "Toronto–Pearson"
     ],
@@ -185,6 +213,6 @@
       "Sault Ste. Marie"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:41Z",
+  "date-time-parse": "2026-04-29T05:02:21Z",
   "date-time-wikidata": "2026-04-22T06:21:50Z"
 }

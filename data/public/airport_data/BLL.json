@@ -14,8 +14,8 @@
   "admin1_name": "DK",
   "admin2_name": "Billund Kommune",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Billund_Airport",
-  "outdegree": 41,
-  "number_airlines": 23,
+  "outdegree": 38,
+  "number_airlines": 20,
   "airlines": [
     "Air France",
     "Air Greenland",
@@ -23,20 +23,17 @@
     "Austrian Airlines",
     "British Airways",
     "DAT",
-    "DHL Aviation",
     "Finnair",
     "Icelandair",
     "KLM",
     "LOT Polish Airlines",
     "Lufthansa",
-    "Maersk Air Cargo",
     "Norwegian Air Shuttle",
     "Pegasus Airlines",
     "Scandinavian Airlines",
     "SkyAlps",
     "SunExpress",
     "Turkish Airlines",
-    "Turkish Cargo",
     "Widerøe",
     "Wizz Air",
     "airBaltic"
@@ -187,17 +184,6 @@
       ]
     },
     {
-      "city": "Ezhou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_Airport",
-      "codes": [
-        "EHU",
-        "ZHEC"
-      ],
-      "airlines": [
-        "Maersk Air Cargo"
-      ]
-    },
-    {
       "city": "Frankfurt",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
       "codes": [
@@ -228,17 +214,6 @@
       ],
       "airlines": [
         "airBaltic"
-      ]
-    },
-    {
-      "city": "Hangzhou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
-      "codes": [
-        "HGH",
-        "ZSHC"
-      ],
-      "airlines": [
-        "Maersk Air Cargo"
       ]
     },
     {
@@ -293,8 +268,7 @@
         "LTFM"
       ],
       "airlines": [
-        "Turkish Airlines",
-        "Turkish Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -306,17 +280,6 @@
       ],
       "airlines": [
         "Wizz Air"
-      ]
-    },
-    {
-      "city": "Leipzig/Halle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig_Halle_Airport",
-      "codes": [
-        "LEJ",
-        "EDDP"
-      ],
-      "airlines": [
-        "DHL Aviation"
       ]
     },
     {
@@ -577,7 +540,62 @@
       "Katowice",
       "Tirana",
       "Vilnius"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "Maersk Air Cargo",
+    "Turkish Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Ezhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_Airport",
+      "codes": [
+        "EHU",
+        "ZHEC"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig_Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Leipzig/Halle"
     ],
@@ -589,6 +607,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:55Z",
+  "date-time-parse": "2026-04-29T04:48:09Z",
   "date-time-wikidata": "2026-04-27T22:07:27Z"
 }

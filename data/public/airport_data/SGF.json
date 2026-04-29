@@ -14,84 +14,18 @@
   "admin1_name": "Missouri",
   "admin2_name": "Greene County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Springfield–Branson_National_Airport",
-  "outdegree": 15,
+  "outdegree": 7,
   "number_airlines": 4,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Dallas Fort Worth International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Denver International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "codes": [
-        "DEN",
-        "KDEN"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Destin–Fort Walton Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin%E2%80%93Fort_Walton_Beach_Airport",
-      "codes": [
-        "VPS",
-        "KVPS"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "George Bush Intercontinental Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "codes": [
-        "IAH",
-        "KIAH"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
         "ATL",
         "KATL"
@@ -101,7 +35,30 @@
       ]
     },
     {
-      "city": "Jack Edwards Airport",
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Gulf Shores",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_Edwards_Airport",
       "codes": [
         "GUF",
@@ -112,75 +69,30 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
-        "AZA",
-        "KIWA"
+        "LAS",
+        "KLAS"
       ],
       "airlines": [
         "Allegiant Air"
       ]
     },
     {
-      "city": "Miami International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "codes": [
-        "MIA",
-        "KMIA"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando Sanford International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
-      "codes": [
-        "SFB",
-        "KSFB"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix-Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
-      "codes": [
-        "PGD",
-        "KPGD"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -192,30 +104,27 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Destin–Fort Walton Beach Airport",
-      "Harry Reid International Airport",
-      "Jack Edwards Airport",
-      "Mesa Gateway Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "St. Pete–Clearwater International Airport"
+      "Gulf Shores",
+      "Las Vegas",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "Miami International Airport",
-      "O'Hare International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Phoenix-Sky Harbor"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "United Express": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:34Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:59:17Z",
   "date-time-wikidata": "2026-03-17T23:54:56Z"
 }

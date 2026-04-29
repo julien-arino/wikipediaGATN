@@ -17,7 +17,7 @@
   "outdegree": 8,
   "number_airlines": 5,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Air Lines",
     "Sun Country Airlines",
@@ -25,29 +25,40 @@
   ],
   "destinations": [
     {
-      "city": "Charlotte/Douglas International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte/Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -58,7 +69,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -69,18 +80,7 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Minneapolis-Saint Paul International Airport",
+      "city": "Minneapolis/St. Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
       "codes": [
         "MSP",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "city": "Tampa International Airport",
+      "city": "Tampa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
       "codes": [
         "TPA",
@@ -114,25 +114,30 @@
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Charlotte/Douglas International Airport",
-      "Dallas/Fort Worth International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Dallas/Fort Worth"
     ],
     "Breeze Airways": [
-      "Harry Reid International Airport",
-      "Orlando International Airport",
-      "Tampa International Airport"
+      "Las Vegas",
+      "Orlando",
+      "Tampa"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "Sun Country Airlines": [
-      "Minneapolis-Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "George Bush Intercontinental Airport"
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:58Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:51:16Z",
   "date-time-wikidata": "2026-04-14T22:57:07Z"
 }

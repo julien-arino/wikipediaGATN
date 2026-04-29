@@ -13,40 +13,23 @@
   "admin1_code": "GA-1",
   "admin1_name": "Estuaire",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Libreville_International_Airport",
-  "outdegree": 31,
-  "number_airlines": 16,
+  "outdegree": 29,
+  "number_airlines": 12,
   "airlines": [
     "ASKY Airlines",
     "AfriJet",
     "Air Côte d'Ivoire",
     "Air France",
     "Camair-co",
-    "Cargolux",
-    "DHL Aviation",
     "Ethiopian Airlines",
-    "Ethiopian Cargo",
     "FlyGabon",
     "Nationale Regionale Transport",
     "Royal Air Maroc",
-    "Royal Air Maroc Cargo",
     "RwandAir",
     "Trans Air Congo",
     "Turkish Airlines"
   ],
   "destinations": [
-    {
-      "city": "Abidjan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
-      "codes": [
-        "ABJ",
-        "DIAP"
-      ],
-      "airlines": [
-        "Air Côte d'Ivoire",
-        "DHL Aviation",
-        "Ethiopian Cargo"
-      ]
-    },
     {
       "city": "Abidjan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
@@ -55,9 +38,7 @@
         "DIAP"
       ],
       "airlines": [
-        "Air Côte d'Ivoire",
-        "DHL Aviation",
-        "Ethiopian Cargo"
+        "Air Côte d'Ivoire"
       ]
     },
     {
@@ -68,9 +49,7 @@
         "HAAB"
       ],
       "airlines": [
-        "Ethiopian Airlines",
-        "Ethiopian Cargo",
-        "Royal Air Maroc Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -104,8 +83,7 @@
         "GMMN"
       ],
       "airlines": [
-        "Royal Air Maroc",
-        "Royal Air Maroc Cargo"
+        "Royal Air Maroc"
       ]
     },
     {
@@ -145,7 +123,6 @@
       ],
       "airlines": [
         "AfriJet",
-        "DHL Aviation",
         "Nationale Regionale Transport"
       ]
     },
@@ -236,17 +213,6 @@
       ],
       "airlines": [
         "Turkish Airlines"
-      ]
-    },
-    {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Cargolux"
       ]
     },
     {
@@ -354,7 +320,6 @@
         "FOOG"
       ],
       "airlines": [
-        "DHL Aviation",
         "Nationale Regionale Transport"
       ]
     },
@@ -477,7 +442,99 @@
       "Istanbul",
       "Luanda",
       "Pointe-Noire"
-    ],
+    ]
+  },
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Cargolux",
+    "DHL Aviation",
+    "Ethiopian Cargo",
+    "Royal Air Maroc Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "DHL Aviation",
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP"
+      ],
+      "airlines": [
+        "DHL Aviation",
+        "Ethiopian Cargo"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Cargo",
+        "Royal Air Maroc Cargo"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "Royal Air Maroc Cargo"
+      ]
+    },
+    {
+      "city": "Franceville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M'Vengue_El_Hadj_Omar_Bongo_Ondimba_International_Airport",
+      "codes": [
+        "MVB",
+        "FOON"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Port-Gentil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port-Gentil_International_Airport",
+      "codes": [
+        "POG",
+        "FOOG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Cargolux": [
       "Luxembourg"
     ],
@@ -495,6 +552,6 @@
       "Casablanca"
     ]
   },
-  "date-time-parse": "2026-04-28T22:06:53Z",
+  "date-time-parse": "2026-04-29T04:55:00Z",
   "date-time-wikidata": "2026-04-11T19:50:25Z"
 }

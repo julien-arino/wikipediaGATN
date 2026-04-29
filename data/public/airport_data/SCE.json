@@ -14,27 +14,16 @@
   "admin1_name": "Pennsylvania",
   "admin2_name": "Centre County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/State_College_Regional_Airport",
-  "outdegree": 3,
+  "outdegree": 2,
   "number_airlines": 2,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dulles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "codes": [
-        "IAD",
-        "KIAD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
         "ORD",
         "KORD"
@@ -44,26 +33,48 @@
       ]
     },
     {
-      "city": "Philadelphia International Airport",
+      "city": "Philadelphia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
       "codes": [
         "PHL",
         "KPHL"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Philadelphia International Airport"
+    "American Eagle": [
+      "Philadelphia"
     ],
     "United Express": [
-      "Dulles International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:31Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Pittsburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
+      "codes": [
+        "PIT",
+        "KPIT"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Pittsburgh"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:59:04Z",
   "date-time-wikidata": "2026-04-11T00:28:50Z"
 }

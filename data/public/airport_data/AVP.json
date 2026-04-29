@@ -18,13 +18,13 @@
   "number_airlines": 4,
   "airlines": [
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte/Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte/Douglas_International_Airport",
       "codes": [
         "CLT",
@@ -32,35 +32,24 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
       "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–O'Hare",
       "codes": [
         "ORD",
         "KORD"
       ],
       "airlines": [
-        "American Eagle (airline brand)",
+        "American Eagle",
         "United Express"
       ]
     },
     {
-      "city": "Dulles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
-      "codes": [
-        "IAD",
-        "KIAD"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -70,29 +59,7 @@
       ]
     },
     {
-      "city": "Myrtle Beach International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
-      "codes": [
-        "MYR",
-        "KMYR"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Orlando International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
-      "codes": [
-        "MCO",
-        "KMCO"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Southwest Florida International Airport",
+      "city": "Fort Myers",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
       "codes": [
         "RSW",
@@ -103,7 +70,29 @@
       ]
     },
     {
-      "city": "Tampa International Airport",
+      "city": "Myrtle Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrtle_Beach_International_Airport",
+      "codes": [
+        "MYR",
+        "KMYR"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Tampa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
       "codes": [
         "TPA",
@@ -112,28 +101,89 @@
       "airlines": [
         "Breeze Airways"
       ]
+    },
+    {
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
     }
   ],
   "airlines_destinations": {
     "American Airlines": [
-      "Charlotte/Douglas International Airport"
+      "Charlotte"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte/Douglas International Airport",
+    "American Eagle": [
+      "Charlotte",
       "Chicago–O'Hare"
     ],
     "Breeze Airways": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Myrtle Beach International Airport",
-      "Orlando International Airport",
-      "Southwest Florida International Airport",
-      "Tampa International Airport"
+      "Fort Lauderdale",
+      "Fort Myers",
+      "Myrtle Beach",
+      "Orlando",
+      "Tampa"
     ],
     "United Express": [
       "Chicago–O'Hare",
-      "Dulles International Airport"
+      "Washington–Dulles"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:39Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "FedEx Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Albany",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albany_International_Airport",
+      "codes": [
+        "ALB",
+        "KALB"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Allentown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lehigh_Valley_International_Airport",
+      "codes": [
+        "ABE",
+        "KABE"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "DHL Aviation": [
+      "Albany",
+      "Cincinnati"
+    ],
+    "FedEx Express": [
+      "Allentown"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:47:29Z",
   "date-time-wikidata": "2026-03-18T18:16:54Z"
 }

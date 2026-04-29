@@ -14,13 +14,11 @@
   "admin1_name": "Vaesternorrland",
   "admin2_name": "Timra Kommun",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sundsvall–Timrå_Airport",
-  "outdegree": 6,
-  "number_airlines": 4,
+  "outdegree": 2,
+  "number_airlines": 2,
   "airlines": [
-    "PopulAir",
     "Scandinavian Airlines",
-    "TUI fly Nordic",
-    "West Air Sweden"
+    "TUI fly Nordic"
   ],
   "destinations": [
     {
@@ -34,6 +32,33 @@
         "TUI fly Nordic"
       ]
     },
+    {
+      "city": "Stockholm–Arlanda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
+      "codes": [
+        "ARN",
+        "ESSA"
+      ],
+      "airlines": [
+        "Scandinavian Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Scandinavian Airlines": [
+      "Stockholm–Arlanda"
+    ],
+    "TUI fly Nordic": [
+      "Gran Canaria"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "PopulAir",
+    "West Air Sweden"
+  ],
+  "destinations_cargo": [
     {
       "city": "Malmö",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Malmö_Airport",
@@ -58,26 +83,13 @@
     },
     {
       "city": "Stockholm–Arlanda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
-      "codes": [
-        "ARN",
-        "ESSA"
-      ],
-      "airlines": [
-        "PopulAir",
-        "Scandinavian Airlines"
-      ]
-    },
-    {
-      "city": "Stockholm–Arlanda",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda_Airport",
       "codes": [
         "ARN",
         "ESSA"
       ],
       "airlines": [
-        "PopulAir",
-        "Scandinavian Airlines"
+        "PopulAir"
       ]
     },
     {
@@ -92,13 +104,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Scandinavian Airlines": [
-      "Stockholm–Arlanda"
-    ],
-    "TUI fly Nordic": [
-      "Gran Canaria"
-    ],
+  "airlines_destinations_cargo": {
     "PopulAir": [
       "Malmö",
       "Stockholm–Arlanda",
@@ -108,6 +114,6 @@
       "Stockholm-Arlanda"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:02Z",
+  "date-time-parse": "2026-04-29T04:59:08Z",
   "date-time-wikidata": "2026-02-05T07:36:18Z"
 }

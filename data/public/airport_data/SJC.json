@@ -14,12 +14,12 @@
   "admin1_name": "California",
   "admin2_name": "Santa Clara County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
-  "outdegree": 39,
+  "outdegree": 32,
   "number_airlines": 11,
   "airlines": [
     "Alaska Airlines",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "Frontier Airlines",
@@ -31,8 +31,19 @@
   ],
   "destinations": [
     {
-      "city": "Austin–Bergstrom International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin%E2%80%93Bergstrom_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
       "codes": [
         "AUS",
         "KAUS"
@@ -42,18 +53,7 @@
       ]
     },
     {
-      "city": "Bajío International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Baj%C3%ADo_International_Airport",
-      "codes": [
-        "BJX",
-        "MMLO"
-      ],
-      "airlines": [
-        "Volaris"
-      ]
-    },
-    {
-      "city": "Baltimore/Washington International Airport",
+      "city": "Baltimore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
       "codes": [
         "BWI",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "city": "Boise Airport",
+      "city": "Boise",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
       "codes": [
         "BOI",
@@ -76,7 +76,40 @@
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–Midway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -87,18 +120,30 @@
       ]
     },
     {
-      "city": "Dallas Love Field",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
-        "DAL",
-        "KDAL"
+        "DEN",
+        "KDEN"
       ],
       "airlines": [
-        "Southwest Airlines"
+        "United Airlines"
       ]
     },
     {
-      "city": "Daniel K. Inouye International Airport",
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Honolulu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
       "codes": [
         "HNL",
@@ -111,41 +156,18 @@
       ]
     },
     {
-      "city": "Denver International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "city": "Houston–Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
       "codes": [
-        "DEN",
-        "KDEN"
-      ],
-      "airlines": [
-        "Southwest Airlines",
-        "United Airlines"
-      ]
-    },
-    {
-      "city": "Eugene Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Eugene_Airport",
-      "codes": [
-        "EUG",
-        "KEUG"
+        "HOU",
+        "KHOU"
       ],
       "airlines": [
         "Southwest Airlines"
       ]
     },
     {
-      "city": "General Francisco Mujica International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Francisco_Mujica_International_Airport",
-      "codes": [
-        "MLM",
-        "MMMM"
-      ],
-      "airlines": [
-        "Volaris"
-      ]
-    },
-    {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -156,76 +178,7 @@
       ]
     },
     {
-      "city": "Guadalajara International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
-      "codes": [
-        "GDL",
-        "MMGL"
-      ],
-      "airlines": [
-        "Alaska Airlines",
-        "Volaris"
-      ]
-    },
-    {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Frontier Airlines",
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Hollywood Burbank Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
-      "codes": [
-        "BUR",
-        "KBUR"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "John Wayne Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
-      "codes": [
-        "SNA",
-        "KSNA"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Kahului Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahului_Airport",
-      "codes": [
-        "OGG",
-        "PHOG"
-      ],
-      "airlines": [
-        "Hawaiian Airlines",
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Kona International Airport",
+      "city": "Kailua-Kona",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kona_International_Airport",
       "codes": [
         "KOA",
@@ -236,18 +189,29 @@
       ]
     },
     {
-      "city": "Licenciado Gustavo Díaz Ordaz International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_D%C3%ADaz_Ordaz_International_Airport",
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
-        "PVR",
-        "MMPR"
+        "LAS",
+        "KLAS"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Frontier Airlines"
       ]
     },
     {
-      "city": "Lihue Airport",
+      "city": "León/Del Bajío",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bajío_International_Airport",
+      "codes": [
+        "BJX",
+        "MMLO"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Lihue",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lihue_Airport",
       "codes": [
         "LIH",
@@ -258,18 +222,7 @@
       ]
     },
     {
-      "city": "Long Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Long_Beach_Airport",
-      "codes": [
-        "LGB",
-        "KLGB"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Los Angeles International Airport",
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
@@ -282,30 +235,8 @@
       ]
     },
     {
-      "city": "Los Cabos International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
-      "codes": [
-        "SJD",
-        "MMSD"
-      ],
-      "airlines": [
-        "Alaska Airlines"
-      ]
-    },
-    {
-      "city": "Midway International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
-      "codes": [
-        "MDW",
-        "KMDW"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -315,40 +246,18 @@
       ]
     },
     {
-      "city": "Narita International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "city": "Morelia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_Francisco_Mujica_International_Airport",
       "codes": [
-        "NRT",
-        "RJAA"
+        "MLM",
+        "MMMM"
       ],
       "airlines": [
-        "Zipair Tokyo"
+        "Volaris"
       ]
     },
     {
-      "city": "Nashville International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
-      "codes": [
-        "BNA",
-        "KBNA"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "United Airlines"
-      ]
-    },
-    {
-      "city": "Ontario International Airport",
+      "city": "Ontario",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
       "codes": [
         "ONT",
@@ -359,18 +268,7 @@
       ]
     },
     {
-      "city": "Palm Springs International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
-      "codes": [
-        "PSP",
-        "KPSP"
-      ],
-      "airlines": [
-        "Southwest Airlines"
-      ]
-    },
-    {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
@@ -378,12 +276,12 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)",
+        "American Eagle",
         "Southwest Airlines"
       ]
     },
     {
-      "city": "Portland International Airport",
+      "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
@@ -395,8 +293,19 @@
       ]
     },
     {
-      "city": "Reno–Tahoe International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Reno%E2%80%93Tahoe_International_Airport",
+      "city": "Puerto Vallarta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
+      "codes": [
+        "PVR",
+        "MMPR"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Reno/Tahoe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reno–Tahoe_International_Airport",
       "codes": [
         "RNO",
         "KRNO"
@@ -406,7 +315,7 @@
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -419,32 +328,41 @@
       ]
     },
     {
-      "city": "San Diego International Airport",
+      "city": "San Diego",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
       "codes": [
         "SAN",
         "KSAN"
       ],
       "airlines": [
-        "Alaska Airlines",
         "Southwest Airlines"
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "San José del Cabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
+      "codes": [
+        "SJD",
+        "MMSD"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
       ],
       "airlines": [
-        "Alaska Airlines",
         "Delta Connection",
         "Southwest Airlines"
       ]
     },
     {
-      "city": "Spokane International Airport",
+      "city": "Spokane",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
       "codes": [
         "GEG",
@@ -455,18 +373,18 @@
       ]
     },
     {
-      "city": "William P. Hobby Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
       "codes": [
-        "HOU",
-        "KHOU"
+        "NRT",
+        "RJAA"
       ],
       "airlines": [
-        "Southwest Airlines"
+        "Zipair Tokyo"
       ]
     },
     {
-      "city": "Zacatecas International Airport",
+      "city": "Zacatecas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zacatecas_International_Airport",
       "codes": [
         "ZCL",
@@ -479,84 +397,77 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Boise Airport",
-      "Daniel K. Inouye International Airport",
-      "Guadalajara International Airport",
-      "Kona International Airport",
-      "Licenciado Gustavo Díaz Ordaz International Airport",
-      "Lihue Airport",
-      "Los Cabos International Airport",
-      "Portland International Airport",
-      "San Diego International Airport",
-      "Seattle–Tacoma International Airport"
+      "Boise",
+      "Guadalajara",
+      "Honolulu",
+      "Kailua-Kona",
+      "Lihue",
+      "Portland (OR)",
+      "Puerto Vallarta",
+      "San José del Cabo"
     ],
     "American Airlines": [
-      "Dallas Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
-    "American Eagle (airline brand)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Minneapolis–Saint Paul International Airport",
-      "Salt Lake City International Airport"
+      "Atlanta",
+      "Minneapolis/St. Paul",
+      "Salt Lake City"
     ],
     "Delta Connection": [
-      "Los Angeles International Airport",
-      "Salt Lake City International Airport",
-      "Seattle–Tacoma International Airport"
+      "Los Angeles",
+      "Salt Lake City",
+      "Seattle/Tacoma"
     ],
     "Frontier Airlines": [
-      "Harry Reid International Airport",
-      "Los Angeles International Airport"
+      "Las Vegas",
+      "Los Angeles"
     ],
     "Hawaiian Airlines": [
-      "Daniel K. Inouye International Airport",
-      "Kahului Airport"
+      "Honolulu"
     ],
     "Southwest Airlines": [
-      "Austin–Bergstrom International Airport",
-      "Baltimore/Washington International Airport",
-      "Boise Airport",
-      "Dallas Love Field",
-      "Daniel K. Inouye International Airport",
-      "Denver International Airport",
-      "Eugene Airport",
-      "Harry Reid International Airport",
-      "Hollywood Burbank Airport",
-      "John Wayne Airport",
-      "Kahului Airport",
-      "Long Beach Airport",
-      "Los Angeles International Airport",
-      "Midway International Airport",
-      "Nashville International Airport",
-      "Ontario International Airport",
-      "Palm Springs International Airport",
-      "Phoenix Sky Harbor International Airport",
-      "Portland International Airport",
-      "Reno–Tahoe International Airport",
-      "Salt Lake City International Airport",
-      "San Diego International Airport",
-      "Seattle–Tacoma International Airport",
-      "Spokane International Airport",
-      "William P. Hobby Airport"
+      "Austin",
+      "Baltimore",
+      "Boise",
+      "Burbank",
+      "Chicago–Midway",
+      "Honolulu",
+      "Houston–Hobby",
+      "Los Angeles",
+      "Ontario",
+      "Phoenix–Sky Harbor",
+      "Portland (OR)",
+      "Reno/Tahoe",
+      "Salt Lake City",
+      "San Diego",
+      "Seattle/Tacoma",
+      "Spokane"
     ],
     "United Airlines": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental"
     ],
     "Volaris": [
-      "Bajío International Airport",
-      "General Francisco Mujica International Airport",
-      "Guadalajara International Airport",
-      "Zacatecas International Airport"
+      "Guadalajara",
+      "León/Del Bajío",
+      "Morelia",
+      "Zacatecas"
     ],
     "Zipair Tokyo": [
-      "Narita International Airport"
+      "Tokyo–Narita"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:04Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:59:26Z",
   "date-time-wikidata": "2026-04-28T02:57:26Z"
 }

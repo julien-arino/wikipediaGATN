@@ -15,29 +15,45 @@
   "admin2_name": "Kodiak Island Borough",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Lions_Airport",
   "outdegree": 2,
-  "number_airlines": 0,
-  "airlines": [],
+  "number_airlines": 1,
+  "airlines": [
+    "Island Air Service"
+  ],
   "destinations": [
     {
-      "city": "Kodiak Airport",
+      "city": "Kodiak",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kodiak_Airport",
       "codes": [
         "ADQ",
         "PADQ"
       ],
-      "airlines": []
+      "airlines": [
+        "Island Air Service"
+      ]
     },
     {
-      "city": "Ouzinkie Airport",
+      "city": "Ouzinkie",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ouzinkie_Airport",
       "codes": [
         "KOZ",
         "icao code not found"
       ],
-      "airlines": []
+      "airlines": [
+        "Island Air Service"
+      ]
     }
   ],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:18:23Z",
+  "airlines_destinations": {
+    "Island Air Service": [
+      "Kodiak",
+      "Ouzinkie"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:57:31Z",
   "date-time-wikidata": "2025-07-19T12:46:09Z"
 }

@@ -13,38 +13,13 @@
   "admin1_code": "CA-ON",
   "admin1_name": "Ontario",
   "wikipedia_url": "https://en.wikipedia.org/wiki/John_C._Munro_Hamilton_International_Airport",
-  "outdegree": 17,
-  "number_airlines": 5,
+  "outdegree": 9,
+  "number_airlines": 2,
   "airlines": [
-    "Amazon Air",
-    "Castle Aviation",
-    "DHL Aviation",
     "Porter Airlines",
     "WestJet"
   ],
   "destinations": [
-    {
-      "city": "Akron/Canton",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Akron–Canton_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Castle Aviation"
-      ]
-    },
-    {
-      "city": "Anchorage",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
     {
       "city": "Calgary",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
@@ -53,7 +28,6 @@
         "CYYC"
       ],
       "airlines": [
-        "Amazon Air",
         "Porter Airlines",
         "WestJet"
       ]
@@ -71,50 +45,6 @@
       ]
     },
     {
-      "city": "Chicago–DuPage",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/DuPage_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Castle Aviation"
-      ]
-    },
-    {
-      "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Cincinnati",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Cleveland",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Hopkins_International_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Castle Aviation"
-      ]
-    },
-    {
       "city": "Edmonton",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
       "codes": [
@@ -129,30 +59,19 @@
       "city": "Halifax",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "YHZ",
+        "CYHZ"
       ],
       "airlines": [
         "Porter Airlines"
       ]
     },
     {
-      "city": "Indianapolis",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Castle Aviation"
-      ]
-    },
-    {
       "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "MCO",
+        "KMCO"
       ],
       "airlines": [
         "Porter Airlines"
@@ -173,8 +92,8 @@
       "city": "Puerto Vallarta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found"
+        "PVR",
+        "MMPR"
       ],
       "airlines": [
         "Porter Airlines"
@@ -201,17 +120,6 @@
       "airlines": [
         "Porter Airlines"
       ]
-    },
-    {
-      "city": "Vancouver",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
-      "codes": [
-        "YVR",
-        "CYVR"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
     }
   ],
   "airlines_destinations": {
@@ -229,10 +137,320 @@
       "Calgary",
       "Cancún",
       "Punta Cana"
-    ],
+    ]
+  },
+  "outdegree_cargo": 25,
+  "number_airlines_cargo": 6,
+  "airlines_cargo": [
+    "Amazon Air",
+    "Cargojet",
+    "Castle Aviation",
+    "Central Mountain Air",
+    "DHL Aviation",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Akron/Canton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Akron–Canton_Airport",
+      "codes": [
+        "CAK",
+        "KCAK"
+      ],
+      "airlines": [
+        "Castle Aviation"
+      ]
+    },
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Chicago–DuPage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/DuPage_Airport",
+      "codes": [
+        "DPA",
+        "KDPA"
+      ],
+      "airlines": [
+        "Castle Aviation"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "Cargojet",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cleveland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Hopkins_International_Airport",
+      "codes": [
+        "CLE",
+        "KCLE"
+      ],
+      "airlines": [
+        "Castle Aviation"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Columbus–Rickenbacker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rickenbacker_International_Airport",
+      "codes": [
+        "LCK",
+        "KLCK"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "East Midlands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Halifax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Havana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_Martí_International_Airport",
+      "codes": [
+        "HAV",
+        "MUHA"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Indianapolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indianapolis_International_Airport",
+      "codes": [
+        "IND",
+        "KIND"
+      ],
+      "airlines": [
+        "Castle Aviation"
+      ]
+    },
+    {
+      "city": "Iqaluit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iqaluit_Airport",
+      "codes": [
+        "YFB",
+        "CYFB"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Kingston (ON)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingston_Norman_Rogers_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Moncton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Moncton_International_Airport",
+      "codes": [
+        "YQM",
+        "CYQM"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Montréal–Mirabel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
+      "codes": [
+        "YMX",
+        "CYMX"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Sudbury",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sudbury_Airport",
+      "codes": [
+        "YSB",
+        "CYSB"
+      ],
+      "airlines": [
+        "Central Mountain Air"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "Cargojet"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "Cargojet"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Amazon Air": [
       "Calgary",
       "Vancouver"
+    ],
+    "Cargojet": [
+      "Calgary",
+      "Cincinnati",
+      "Cologne/Bonn",
+      "Columbus–Rickenbacker",
+      "East Midlands",
+      "Edmonton",
+      "Halifax",
+      "Havana",
+      "Iqaluit",
+      "Miami",
+      "Moncton",
+      "Montréal–Mirabel",
+      "New York–JFK",
+      "Ottawa",
+      "Vancouver",
+      "Winnipeg"
     ],
     "Castle Aviation": [
       "Akron/Canton",
@@ -240,12 +458,19 @@
       "Cleveland",
       "Indianapolis"
     ],
+    "Central Mountain Air": [
+      "Kingston (ON)",
+      "Sudbury"
+    ],
     "DHL Aviation": [
       "Anchorage",
       "Chicago–O'Hare",
       "Cincinnati"
+    ],
+    "UPS Airlines": [
+      "Louisville"
     ]
   },
-  "date-time-parse": "2026-04-28T21:28:14Z",
+  "date-time-parse": "2026-04-29T05:02:05Z",
   "date-time-wikidata": "2026-04-21T05:27:05Z"
 }

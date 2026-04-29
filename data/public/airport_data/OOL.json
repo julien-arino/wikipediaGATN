@@ -15,7 +15,7 @@
   "admin2_name": "Gold Coast",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
   "outdegree": 24,
-  "number_airlines": 9,
+  "number_airlines": 8,
   "airlines": [
     "Air New Zealand",
     "Eastern Air Services",
@@ -23,7 +23,6 @@
     "FlyPelican",
     "Jetstar",
     "Qantas",
-    "Qantas Freight",
     "Seair Pacific",
     "Virgin Australia"
   ],
@@ -290,7 +289,6 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "Virgin Australia"
       ]
     },
@@ -356,11 +354,31 @@
       "Denpasar",
       "Melbourne",
       "Sydney"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Qantas Freight"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Qantas Freight": [
       "Sydney"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:20Z",
+  "date-time-parse": "2026-04-29T04:57:26Z",
   "date-time-wikidata": "2026-04-01T11:17:48Z"
 }

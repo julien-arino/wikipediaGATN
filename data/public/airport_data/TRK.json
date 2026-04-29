@@ -14,11 +14,74 @@
   "admin1_name": "North Kalimantan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Juwata_Airport",
   "outdegree": 3,
-  "number_airlines": 1,
+  "number_airlines": 5,
   "airlines": [
-    "Cardig Air"
+    "Batik Air",
+    "Citilink",
+    "Indonesia AirAsia",
+    "Lion Air",
+    "Super Air Jet"
   ],
   "destinations": [
+    {
+      "city": "Balikpapan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
+      "codes": [
+        "BPN",
+        "WALL"
+      ],
+      "airlines": [
+        "Citilink",
+        "Indonesia AirAsia",
+        "Super Air Jet"
+      ]
+    },
+    {
+      "city": "Jakarta–Soekarno-Hatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
+      "codes": [
+        "CGK",
+        "WIII"
+      ],
+      "airlines": [
+        "Batik Air"
+      ]
+    },
+    {
+      "city": "Surabaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR"
+      ],
+      "airlines": [
+        "Lion Air"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Batik Air": [
+      "Jakarta–Soekarno-Hatta"
+    ],
+    "Citilink": [
+      "Balikpapan"
+    ],
+    "Indonesia AirAsia": [
+      "Balikpapan"
+    ],
+    "Lion Air": [
+      "Surabaya"
+    ],
+    "Super Air Jet": [
+      "Balikpapan"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Cardig Air"
+  ],
+  "destinations_cargo": [
     {
       "city": "Balikpapan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Aji_Muhammad_Sulaiman_Sepinggan_Airport",
@@ -53,13 +116,13 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Cardig Air": [
       "Balikpapan",
       "Gorontalo",
       "Palu"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:38Z",
+  "date-time-parse": "2026-04-29T05:00:43Z",
   "date-time-wikidata": "2026-03-22T12:51:10Z"
 }

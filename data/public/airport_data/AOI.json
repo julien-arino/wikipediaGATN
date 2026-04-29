@@ -14,16 +14,13 @@
   "admin1_name": "IT",
   "admin2_name": "Provincia di Ancona",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Marche_Airport",
-  "outdegree": 18,
-  "number_airlines": 9,
+  "outdegree": 14,
+  "number_airlines": 6,
   "airlines": [
     "Air Dolomiti",
     "DAT",
-    "DHL Aviation",
-    "FedEx Express",
     "Lufthansa",
     "Ryanair",
-    "UPS Airlines",
     "Volotea",
     "Wizz Air"
   ],
@@ -37,17 +34,6 @@
       ],
       "airlines": [
         "Volotea"
-      ]
-    },
-    {
-      "city": "Bergamo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "codes": [
-        "BGY",
-        "LIME"
-      ],
-      "airlines": [
-        "UPS Airlines"
       ]
     },
     {
@@ -71,17 +57,6 @@
       ],
       "airlines": [
         "Ryanair"
-      ]
-    },
-    {
-      "city": "Cologne/Bonn",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "codes": [
-        "CGN",
-        "EDDK"
-      ],
-      "airlines": [
-        "UPS Airlines"
       ]
     },
     {
@@ -126,17 +101,6 @@
       ],
       "airlines": [
         "DAT"
-      ]
-    },
-    {
-      "city": "Milan–Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "codes": [
-        "MXP",
-        "LIMC"
-      ],
-      "airlines": [
-        "DHL Aviation"
       ]
     },
     {
@@ -192,19 +156,7 @@
         "LIRF"
       ],
       "airlines": [
-        "DAT",
-        "FedEx Express"
-      ]
-    },
-    {
-      "city": "Sarajevo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
-      "codes": [
-        "SJJ",
-        "LQSA"
-      ],
-      "airlines": [
-        "DHL Aviation"
+        "DAT"
       ]
     },
     {
@@ -258,7 +210,73 @@
     ],
     "Wizz Air": [
       "Tirana"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "FedEx Express",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Rome-Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Sarajevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
+      "codes": [
+        "SJJ",
+        "LQSA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Milan–Malpensa",
       "Sarajevo"
@@ -271,6 +289,6 @@
       "Cologne/Bonn"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:30Z",
+  "date-time-parse": "2026-04-29T04:47:13Z",
   "date-time-wikidata": "2026-01-31T10:11:50Z"
 }

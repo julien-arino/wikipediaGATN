@@ -14,14 +14,15 @@
   "admin1_name": "SO",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kismayo_Airport",
   "outdegree": 2,
-  "number_airlines": 2,
+  "number_airlines": 3,
   "airlines": [
     "African Express Airways",
+    "Freedom Airlines",
     "Jubba Airways"
   ],
   "destinations": [
     {
-      "city": "Aden Adde International Airport",
+      "city": "Mogadishu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
       "codes": [
         "MGQ",
@@ -29,27 +30,39 @@
       ],
       "airlines": [
         "African Express Airways",
+        "Freedom Airlines",
         "Jubba Airways"
       ]
     },
     {
-      "city": "Jomo Kenyatta International Airport",
+      "city": "Nairobi–Jomo Kenyatta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
       "codes": [
         "NBO",
         "HKJK"
       ],
-      "airlines": []
+      "airlines": [
+        "Freedom Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
     "African Express Airways": [
-      "Aden Adde International Airport"
+      "Mogadishu"
+    ],
+    "Freedom Airlines": [
+      "Mogadishu",
+      "Nairobi–Jomo Kenyatta"
     ],
     "Jubba Airways": [
-      "Aden Adde International Airport"
+      "Mogadishu"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:57Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:54:29Z",
   "date-time-wikidata": "2026-02-15T13:15:53Z"
 }

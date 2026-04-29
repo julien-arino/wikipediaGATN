@@ -13,16 +13,13 @@
   "admin1_code": "DJ-DJ",
   "admin1_name": "Djibouti",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti-Ambouli_International_Airport",
-  "outdegree": 16,
-  "number_airlines": 13,
+  "outdegree": 15,
+  "number_airlines": 10,
   "airlines": [
     "Air Djibouti",
     "Air France",
-    "Coyne Airways",
     "Egyptair",
-    "Emirates SkyCargo",
     "Ethiopian Airlines",
-    "Ethiopian Airlines Cargo",
     "Flydubai",
     "Flynas",
     "Jubba Airways",
@@ -33,15 +30,14 @@
   "destinations": [
     {
       "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
       "codes": [
         "ADD",
         "HAAB"
       ],
       "airlines": [
         "Air Djibouti",
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -53,8 +49,7 @@
       ],
       "airlines": [
         "Air Djibouti",
-        "Ethiopian Airlines",
-        "Ethiopian Airlines Cargo"
+        "Ethiopian Airlines"
       ]
     },
     {
@@ -65,6 +60,19 @@
         "OYAA"
       ],
       "airlines": [
+        "Air Djibouti",
+        "Yemenia"
+      ]
+    },
+    {
+      "city": "Aden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_International_Airport",
+      "codes": [
+        "ADE",
+        "OYAA"
+      ],
+      "airlines": [
+        "Air Djibouti",
         "Yemenia"
       ]
     },
@@ -98,6 +106,7 @@
         "HADR"
       ],
       "airlines": [
+        "Air Djibouti",
         "Ethiopian Airlines"
       ]
     },
@@ -113,30 +122,6 @@
       ]
     },
     {
-      "city": "Dubai–Al Maktoum",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
-      "codes": [
-        "DWC",
-        "OMDW"
-      ],
-      "airlines": [
-        "Air Djibouti",
-        "Emirates SkyCargo"
-      ]
-    },
-    {
-      "city": "Dubai–Al Maktoum",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_World_Central_International_Airport",
-      "codes": [
-        "DWC",
-        "OMDW"
-      ],
-      "airlines": [
-        "Air Djibouti",
-        "Emirates SkyCargo"
-      ]
-    },
-    {
       "city": "Dubai–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
       "codes": [
@@ -144,8 +129,19 @@
         "OMDB"
       ],
       "airlines": [
-        "Coyne Airways",
         "Flydubai"
+      ]
+    },
+    {
+      "city": "Hargeisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hargeisa_Airport",
+      "codes": [
+        "HGA",
+        "HCMH"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Jubba Airways"
       ]
     },
     {
@@ -197,17 +193,6 @@
       ]
     },
     {
-      "city": "Nanjing",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
-      "codes": [
-        "NKG",
-        "ZSNJ"
-      ],
-      "airlines": [
-        "Ethiopian Airlines Cargo"
-      ]
-    },
-    {
       "city": "Paris–Charles de Gaulle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
       "codes": [
@@ -222,7 +207,8 @@
   "airlines_destinations": {
     "Air Djibouti": [
       "Addis Ababa",
-      "Dubai–Al Maktoum",
+      "Aden",
+      "Dire Dawa",
       "Hargeisa",
       "Mogadishu"
     ],
@@ -257,6 +243,116 @@
     ],
     "Yemenia": [
       "Aden"
+    ]
+  },
+  "outdegree_cargo": 8,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Air Djibouti",
+    "Coyne Airways",
+    "Emirates SkyCargo",
+    "Ethiopian Airlines Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_World_Central_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Air Djibouti",
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Coyne Airways"
+      ]
+    },
+    {
+      "city": "Hargeisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hargeisa_International_Airport",
+      "codes": [
+        "HGA",
+        "HCMH"
+      ],
+      "airlines": [
+        "Air Djibouti"
+      ]
+    },
+    {
+      "city": "Mogadishu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aden_Adde_International_Airport",
+      "codes": [
+        "MGQ",
+        "HCMM"
+      ],
+      "airlines": [
+        "Air Djibouti"
+      ]
+    },
+    {
+      "city": "Nanjing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
+      "codes": [
+        "NKG",
+        "ZSNJ"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air Djibouti": [
+      "Addis Ababa",
+      "Dubai–Al Maktoum",
+      "Hargeisa",
+      "Mogadishu"
     ],
     "Coyne Airways": [
       "Dubai–International"
@@ -269,6 +365,6 @@
       "Nanjing"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:15Z",
+  "date-time-parse": "2026-04-29T04:53:45Z",
   "date-time-wikidata": "2026-04-07T17:14:25Z"
 }

@@ -14,13 +14,197 @@
   "admin1_name": "Tasmania",
   "admin2_name": "Northern Midlands",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Launceston_Airport",
-  "outdegree": 2,
-  "number_airlines": 2,
+  "outdegree": 12,
+  "number_airlines": 6,
   "airlines": [
+    "Airlines of Tasmania",
+    "Jetstar",
+    "Link Airways",
+    "QantasLink",
+    "Sharp Airlines",
+    "Virgin Australia"
+  ],
+  "destinations": [
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD"
+      ],
+      "airlines": [
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Burnie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burnie_Airport",
+      "codes": [
+        "BWT",
+        "YWYY"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Canberra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
+      "codes": [
+        "CBR",
+        "YSCB"
+      ],
+      "airlines": [
+        "Link Airways"
+      ]
+    },
+    {
+      "city": "Cape Barren Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Barren_Island",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Airlines of Tasmania"
+      ]
+    },
+    {
+      "city": "Flinders Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flinders_Island_Airport",
+      "codes": [
+        "FLS",
+        "YFLI"
+      ],
+      "airlines": [
+        "Airlines of Tasmania",
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Hobart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
+      "codes": [
+        "HBA",
+        "YMHB"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Hobart–Cambridge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cambridge_Aerodrome",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Airlines of Tasmania"
+      ]
+    },
+    {
+      "city": "King Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Island_Airport",
+      "codes": [
+        "KNS",
+        "YKII"
+      ],
+      "airlines": [
+        "Sharp Airlines"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH"
+      ],
+      "airlines": [
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Airlines of Tasmania": [
+      "Cape Barren Island",
+      "Flinders Island",
+      "Hobart–Cambridge"
+    ],
+    "Jetstar": [
+      "Brisbane",
+      "Melbourne",
+      "Sydney"
+    ],
+    "Link Airways": [
+      "Canberra"
+    ],
+    "QantasLink": [
+      "Brisbane",
+      "Melbourne",
+      "Sydney"
+    ],
+    "Sharp Airlines": [
+      "Burnie",
+      "Flinders Island",
+      "Hobart",
+      "King Island"
+    ],
+    "Virgin Australia": [
+      "Adelaide",
+      "Brisbane",
+      "Melbourne",
+      "Perth",
+      "Sydney"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "Qantas Freight",
     "Team Global Express"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Hobart",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
@@ -45,7 +229,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Qantas Freight": [
       "Hobart",
       "Melbourne"
@@ -54,6 +238,6 @@
       "Melbourne"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:04Z",
+  "date-time-parse": "2026-04-29T04:55:32Z",
   "date-time-wikidata": "2026-04-01T11:07:36Z"
 }

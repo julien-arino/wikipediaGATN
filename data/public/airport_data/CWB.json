@@ -14,25 +14,18 @@
   "admin1_name": "BR",
   "admin2_name": "Sao Jose Dos Pinhais",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
-  "outdegree": 29,
-  "number_airlines": 16,
+  "outdegree": 22,
+  "number_airlines": 9,
   "airlines": [
     "Aerolíneas Argentinas",
-    "Avianca Cargo",
     "Azul Brazilian Airlines",
     "Azul Conecta",
-    "Cargolux",
-    "Cargolux Italia",
     "Gol Linhas Aéreas",
     "JetSmart Chile",
     "LATAM Brasil",
-    "LATAM Cargo Brasil",
-    "LATAM Cargo Chile",
     "LATAM Chile",
     "LATAM Perú",
-    "Lufthansa Cargo",
-    "TAP Air Portugal",
-    "Total Linhas Aéreas"
+    "TAP Air Portugal"
   ],
   "destinations": [
     {
@@ -72,28 +65,13 @@
     },
     {
       "city": "Campinas",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Campinas_International_Airport",
-      "codes": [
-        "VCP",
-        "SBKP"
-      ],
-      "airlines": [
-        "Avianca Cargo",
-        "Azul Brazilian Airlines",
-        "Lufthansa Cargo"
-      ]
-    },
-    {
-      "city": "Campinas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
       "codes": [
         "VCP",
         "SBKP"
       ],
       "airlines": [
-        "Avianca Cargo",
-        "Azul Brazilian Airlines",
-        "Lufthansa Cargo"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -109,26 +87,13 @@
     },
     {
       "city": "Florianópolis",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Florianópolis_Airport",
-      "codes": [
-        "FLN",
-        "SBFL"
-      ],
-      "airlines": [
-        "Azul Brazilian Airlines",
-        "Total Linhas Aéreas"
-      ]
-    },
-    {
-      "city": "Florianópolis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
       "codes": [
         "FLN",
         "SBFL"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "Total Linhas Aéreas"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -141,17 +106,6 @@
       "airlines": [
         "Azul Brazilian Airlines",
         "LATAM Brasil"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
-      "codes": [
-        "FRA",
-        "EDDF"
-      ],
-      "airlines": [
-        "Lufthansa Cargo"
       ]
     },
     {
@@ -199,17 +153,6 @@
       ]
     },
     {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
-      "codes": [
-        "LUX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Cargolux"
-      ]
-    },
-    {
       "city": "Maringá",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Maringá_Regional_Airport",
       "codes": [
@@ -219,28 +162,6 @@
       "airlines": [
         "Azul Brazilian Airlines",
         "Gol Linhas Aéreas"
-      ]
-    },
-    {
-      "city": "Miami",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "codes": [
-        "MIA",
-        "KMIA"
-      ],
-      "airlines": [
-        "LATAM Cargo Brasil"
-      ]
-    },
-    {
-      "city": "Milan-Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Malpensa_Airport",
-      "codes": [
-        "MXP",
-        "LIMC"
-      ],
-      "airlines": [
-        "Cargolux Italia"
       ]
     },
     {
@@ -274,8 +195,7 @@
         "SBRF"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "Lufthansa Cargo"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -311,19 +231,7 @@
       ],
       "airlines": [
         "JetSmart Chile",
-        "LATAM Cargo Chile",
         "LATAM Chile"
-      ]
-    },
-    {
-      "city": "São Paulo-Guarulhos",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
-      "codes": [
-        "GRU",
-        "SBGR"
-      ],
-      "airlines": [
-        "Total Linhas Aéreas"
       ]
     },
     {
@@ -428,7 +336,134 @@
     ],
     "TAP Air Portugal": [
       "Lisbon"
-    ],
+    ]
+  },
+  "outdegree_cargo": 10,
+  "number_airlines_cargo": 7,
+  "airlines_cargo": [
+    "Avianca Cargo",
+    "Cargolux",
+    "Cargolux Italia",
+    "LATAM Cargo Brasil",
+    "LATAM Cargo Chile",
+    "Lufthansa Cargo",
+    "Total Linhas Aéreas"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Campinas_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Avianca Cargo",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Avianca Cargo",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Florianópolis_Airport",
+      "codes": [
+        "FLN",
+        "SBFL"
+      ],
+      "airlines": [
+        "Total Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "Milan-Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "Cargolux Italia"
+      ]
+    },
+    {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF"
+      ],
+      "airlines": [
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL"
+      ],
+      "airlines": [
+        "LATAM Cargo Chile"
+      ]
+    },
+    {
+      "city": "São Paulo-Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Total Linhas Aéreas"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Avianca Cargo": [
       "Campinas"
     ],
@@ -454,6 +489,6 @@
       "São Paulo-Guarulhos"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:13Z",
+  "date-time-parse": "2026-04-29T04:49:35Z",
   "date-time-wikidata": "2026-04-17T18:24:41Z"
 }

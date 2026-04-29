@@ -13,29 +13,15 @@
   "admin1_code": "MW-MW",
   "admin1_name": "Mwanza",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mwanza_Airport",
-  "outdegree": 18,
-  "number_airlines": 7,
+  "outdegree": 15,
+  "number_airlines": 4,
   "airlines": [
     "Air Tanzania",
-    "Astral Aviation",
     "Auric Air",
     "Coastal Aviation",
-    "Ethiopian Airlines",
-    "Precision Air",
-    "RwandAir"
+    "Precision Air"
   ],
   "destinations": [
-    {
-      "city": "Addis Ababa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "Ethiopian Airlines"
-      ]
-    },
     {
       "city": "Arusha",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Arusha_Airport",
@@ -45,17 +31,6 @@
       ],
       "airlines": [
         "Coastal Aviation"
-      ]
-    },
-    {
-      "city": "Brussels",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
-      "codes": [
-        "BRU",
-        "EBBR"
-      ],
-      "airlines": [
-        "RwandAir"
       ]
     },
     {
@@ -150,17 +125,6 @@
       ],
       "airlines": [
         "Auric Air"
-      ]
-    },
-    {
-      "city": "Nairobi-Jomo Kenyatta",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
-      "codes": [
-        "NBO",
-        "HKJK"
-      ],
-      "airlines": [
-        "Astral Aviation"
       ]
     },
     {
@@ -259,7 +223,51 @@
       "Dar es Salaam",
       "Kilimanjaro",
       "Nairobi–Jomo Kenyatta"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Astral Aviation",
+    "Ethiopian Airlines",
+    "RwandAir"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR"
+      ],
+      "airlines": [
+        "RwandAir"
+      ]
+    },
+    {
+      "city": "Nairobi-Jomo Kenyatta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
+      "codes": [
+        "NBO",
+        "HKJK"
+      ],
+      "airlines": [
+        "Astral Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Nairobi-Jomo Kenyatta"
     ],
@@ -270,6 +278,6 @@
       "Brussels"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:28Z",
+  "date-time-parse": "2026-04-29T04:56:39Z",
   "date-time-wikidata": "2026-04-19T08:38:48Z"
 }

@@ -13,27 +13,12 @@
   "admin1_code": "TM-L",
   "admin1_name": "Lebap",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Türkmenabat_International_Airport",
-  "outdegree": 11,
-  "number_airlines": 5,
+  "outdegree": 3,
+  "number_airlines": 1,
   "airlines": [
-    "Georgian Airlines",
-    "Geosky",
-    "MNG Airlines",
-    "My Freighter",
     "Turkmenistan Airlines"
   ],
   "destinations": [
-    {
-      "city": "Ankara",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "MNG Airlines"
-      ]
-    },
     {
       "city": "Ashgabat",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
@@ -57,8 +42,36 @@
       ]
     },
     {
-      "city": "Chengdu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu",
+      "city": "Daşoguz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daşoguz_International_Airport",
+      "codes": [
+        "TAZ",
+        "UTAT"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Turkmenistan Airlines": [
+      "Ashgabat",
+      "Balkanabat",
+      "Daşoguz"
+    ]
+  },
+  "outdegree_cargo": 8,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Georgian Airlines",
+    "Geosky",
+    "MNG Airlines",
+    "My Freighter"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Ankara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara",
       "codes": [
         "iata code not found",
         "icao code not found"
@@ -68,14 +81,14 @@
       ]
     },
     {
-      "city": "Daşoguz",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Daşoguz_International_Airport",
+      "city": "Chengdu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu",
       "codes": [
-        "TAZ",
-        "UTAT"
+        "iata code not found",
+        "icao code not found"
       ],
       "airlines": [
-        "Turkmenistan Airlines"
+        "MNG Airlines"
       ]
     },
     {
@@ -146,12 +159,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Turkmenistan Airlines": [
-      "Ashgabat",
-      "Balkanabat",
-      "Daşoguz"
-    ],
+  "airlines_destinations_cargo": {
     "MNG Airlines": [
       "Ankara",
       "Chengdu",
@@ -170,6 +178,6 @@
       "Zhengzhou"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:57Z",
+  "date-time-parse": "2026-04-29T04:49:27Z",
   "date-time-wikidata": "2026-04-11T22:16:00Z"
 }

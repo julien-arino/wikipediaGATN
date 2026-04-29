@@ -13,8 +13,8 @@
   "admin1_code": "KZ-19",
   "admin1_name": "Almaty oblysy",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-  "outdegree": 95,
-  "number_airlines": 44,
+  "outdegree": 87,
+  "number_airlines": 40,
   "airlines": [
     "AJet",
     "Aeroflot",
@@ -25,7 +25,6 @@
     "AirAsia X",
     "Asiana Airlines",
     "Asman Airlines",
-    "Atlas Air",
     "Azimuth",
     "Belavia",
     "Centrum Air",
@@ -42,18 +41,15 @@
     "LOT Polish Airlines",
     "Loong Air",
     "Lufthansa",
-    "My Freighter",
     "Neos",
     "Pegasus Airlines",
     "Qatar Airways",
-    "Qatar Airways Cargo",
     "Qeshm Air",
     "Red Sea Airlines",
     "Rossiya Airlines",
     "S7 Airlines",
     "SCAT Airlines",
     "SalamAir",
-    "Silk Way West Airlines",
     "Somon Air",
     "Sunday Airlines",
     "Thai AirAsia X",
@@ -110,17 +106,6 @@
       "airlines": [
         "FlyArystan",
         "SCAT Airlines"
-      ]
-    },
-    {
-      "city": "Amsterdam",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "codes": [
-        "AMS",
-        "EHAM"
-      ],
-      "airlines": [
-        "Atlas Air"
       ]
     },
     {
@@ -186,26 +171,13 @@
     },
     {
       "city": "Baku",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Baku_Airport",
-      "codes": [
-        "GYD",
-        "UBBB"
-      ],
-      "airlines": [
-        "Air Astana",
-        "Silk Way West Airlines"
-      ]
-    },
-    {
-      "city": "Baku",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
       "codes": [
         "GYD",
         "UBBB"
       ],
       "airlines": [
-        "Air Astana",
-        "Silk Way West Airlines"
+        "Air Astana"
       ]
     },
     {
@@ -287,17 +259,6 @@
       ]
     },
     {
-      "city": "Chongqing",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "codes": [
-        "CKG",
-        "ZUCK"
-      ],
-      "airlines": [
-        "Atlas Air"
-      ]
-    },
-    {
       "city": "Da Nang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
       "codes": [
@@ -317,8 +278,7 @@
       ],
       "airlines": [
         "Air Astana",
-        "Qatar Airways",
-        "Qatar Airways Cargo"
+        "Qatar Airways"
       ]
     },
     {
@@ -448,30 +408,6 @@
       ]
     },
     {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_Airport",
-      "codes": [
-        "HKG",
-        "VHHH"
-      ],
-      "airlines": [
-        "Qatar Airways Cargo",
-        "Silk Way West Airlines"
-      ]
-    },
-    {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "codes": [
-        "HKG",
-        "VHHH"
-      ],
-      "airlines": [
-        "Qatar Airways Cargo",
-        "Silk Way West Airlines"
-      ]
-    },
-    {
       "city": "Issyk-Kul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Issyk-Kul_International",
       "codes": [
@@ -582,17 +518,6 @@
       ],
       "airlines": [
         "Air Astana"
-      ]
-    },
-    {
-      "city": "Liège",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
-      "codes": [
-        "LGG",
-        "EBLG"
-      ],
-      "airlines": [
-        "Atlas Air"
       ]
     },
     {
@@ -973,7 +898,6 @@
       "airlines": [
         "Air Astana",
         "Centrum Air",
-        "My Freighter",
         "Uzbekistan Airways"
       ]
     },
@@ -987,7 +911,6 @@
       "airlines": [
         "Air Astana",
         "Centrum Air",
-        "My Freighter",
         "Uzbekistan Airways"
       ]
     },
@@ -1077,28 +1000,6 @@
       ],
       "airlines": [
         "FlyArystan"
-      ]
-    },
-    {
-      "city": "Zaragoza",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Zaragoza_Airport",
-      "codes": [
-        "ZAZ",
-        "LEZG"
-      ],
-      "airlines": [
-        "Atlas Air"
-      ]
-    },
-    {
-      "city": "Zhengzhou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
-      "codes": [
-        "CGO",
-        "ZHCC"
-      ],
-      "airlines": [
-        "Atlas Air"
       ]
     },
     {
@@ -1363,7 +1264,131 @@
     "VietJet Air": [
       "Hanoi",
       "Prague"
-    ],
+    ]
+  },
+  "outdegree_cargo": 10,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Atlas Air",
+    "My Freighter",
+    "Qatar Airways Cargo",
+    "Silk Way West Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baku_Airport",
+      "codes": [
+        "GYD",
+        "UBBB"
+      ],
+      "airlines": [
+        "Silk Way West Airlines"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo",
+        "Silk Way West Airlines"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo",
+        "Silk Way West Airlines"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT"
+      ],
+      "airlines": [
+        "My Freighter"
+      ]
+    },
+    {
+      "city": "Zaragoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zaragoza_Airport",
+      "codes": [
+        "ZAZ",
+        "LEZG"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Zhengzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "codes": [
+        "CGO",
+        "ZHCC"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Atlas Air": [
       "Amsterdam",
       "Chongqing",
@@ -1383,6 +1408,6 @@
       "Hong Kong"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:58Z",
+  "date-time-parse": "2026-04-29T04:47:05Z",
   "date-time-wikidata": "2026-04-23T11:11:50Z"
 }

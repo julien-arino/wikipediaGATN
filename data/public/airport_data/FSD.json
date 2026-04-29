@@ -19,7 +19,7 @@
   "airlines": [
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "Frontier Airlines",
@@ -28,7 +28,31 @@
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -36,11 +60,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -53,8 +77,8 @@
       ]
     },
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -64,7 +88,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -75,30 +99,8 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP"
@@ -109,7 +111,7 @@
       ]
     },
     {
-      "city": "Nashville International Airport",
+      "city": "Nashville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
       "codes": [
         "BNA",
@@ -120,20 +122,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Airlines",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -144,18 +133,29 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -166,8 +166,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -179,41 +179,175 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Harry Reid International Airport",
-      "Mesa Gateway Airport",
-      "Nashville International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "St. Pete–Clearwater International Airport"
+      "Fort Lauderdale",
+      "Las Vegas",
+      "Nashville",
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "Punta Gorda (FL)",
+      "St. Petersburg/Clearwater"
     ],
     "American Airlines": [
-      "Dallas Fort Worth International Airport"
+      "Dallas/Fort Worth"
     ],
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport",
-      "O'Hare International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Minneapolis–Saint Paul International Airport"
+      "Atlanta",
+      "Minneapolis/St. Paul"
     ],
     "Delta Connection": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "Frontier Airlines": [
-      "Denver International Airport"
+      "Denver"
     ],
     "United Airlines": [
-      "Denver International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver"
     ],
     "United Express": [
-      "Denver International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:32Z",
+  "outdegree_cargo": 9,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Alpine Air Express",
+    "FedEx Express",
+    "FedEx Feeder",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Aberdeen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aberdeen_Regional_Airport",
+      "codes": [
+        "ABR",
+        "KABR"
+      ],
+      "airlines": [
+        "Alpine Air Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "Alpine Air Express",
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Mobridge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mobridge_Municipal_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Alpine Air Express"
+      ]
+    },
+    {
+      "city": "Pierre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pierre_Regional_Airport",
+      "codes": [
+        "PIR",
+        "KPIR"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Rapid City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rapid_City_Regional_Airport",
+      "codes": [
+        "RAP",
+        "KRAP"
+      ],
+      "airlines": [
+        "Alpine Air Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Watertown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Watertown_Regional_Airport",
+      "codes": [
+        "ATY",
+        "KATY"
+      ],
+      "airlines": [
+        "Alpine Air Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Alpine Air Express": [
+      "Aberdeen",
+      "Fargo",
+      "Mobridge",
+      "Rapid City",
+      "Watertown"
+    ],
+    "FedEx Express": [
+      "Fargo",
+      "Memphis"
+    ],
+    "FedEx Feeder": [
+      "Aberdeen",
+      "Pierre",
+      "Rapid City"
+    ],
+    "UPS Airlines": [
+      "Calgary",
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:50:54Z",
   "date-time-wikidata": "2026-03-16T06:22:54Z"
 }

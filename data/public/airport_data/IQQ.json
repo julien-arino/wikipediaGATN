@@ -14,28 +14,16 @@
   "admin1_name": "CL",
   "admin2_name": "Provincia de Iquique",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Diego_Aracena_International_Airport",
-  "outdegree": 9,
-  "number_airlines": 6,
+  "outdegree": 7,
+  "number_airlines": 5,
   "airlines": [
     "Boliviana de Aviación",
     "JetSmart Chile",
-    "LATAM Cargo Chile",
     "LATAM Chile",
     "Paranair",
     "Sky Airline"
   ],
   "destinations": [
-    {
-      "city": "Amsterdam",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
-      "codes": [
-        "AMS",
-        "EHAM"
-      ],
-      "airlines": [
-        "LATAM Cargo Chile"
-      ]
-    },
     {
       "city": "Antofagasta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Andrés_Sabella_Gálvez_International_Airport",
@@ -68,17 +56,6 @@
       ],
       "airlines": [
         "Paranair"
-      ]
-    },
-    {
-      "city": "Campinas",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "codes": [
-        "VCP",
-        "SBKP"
-      ],
-      "airlines": [
-        "LATAM Cargo Chile"
       ]
     },
     {
@@ -148,12 +125,43 @@
     ],
     "Sky Airline": [
       "Santiago de Chile"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "LATAM Cargo Chile"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "LATAM Cargo Chile"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "LATAM Cargo Chile"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "LATAM Cargo Chile": [
       "Amsterdam",
       "Campinas"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:50Z",
+  "date-time-parse": "2026-04-29T04:53:23Z",
   "date-time-wikidata": "2026-03-27T23:25:36Z"
 }

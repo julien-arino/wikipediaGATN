@@ -15,28 +15,33 @@
   "admin2_name": "Moreton Bay",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Redcliffe_Airport_(Queensland)",
   "outdegree": 4,
-  "number_airlines": 1,
+  "number_airlines": 2,
   "airlines": [
-    "Seair Pacific (page does not exist)"
+    "Air Queensland",
+    "Seair Pacific"
   ],
   "destinations": [
     {
-      "city": "Bundaberg Airport",
+      "city": "Bundaberg",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bundaberg_Airport",
       "codes": [
         "BDB",
         "YBUD"
       ],
-      "airlines": []
+      "airlines": [
+        "Air Queensland"
+      ]
     },
     {
-      "city": "Charleville Airport",
+      "city": "Charleville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charleville_Airport",
       "codes": [
         "CTL",
         "YBCV"
       ],
-      "airlines": []
+      "airlines": [
+        "Air Queensland"
+      ]
     },
     {
       "city": "Lady Elliot Island",
@@ -46,24 +51,36 @@
         "icao code not found"
       ],
       "airlines": [
-        "Seair Pacific (page does not exist)"
+        "Seair Pacific"
       ]
     },
     {
-      "city": "Roma Airport",
+      "city": "Roma",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Roma_Airport",
       "codes": [
         "RMA",
         "YROM"
       ],
-      "airlines": []
+      "airlines": [
+        "Air Queensland"
+      ]
     }
   ],
   "airlines_destinations": {
-    "Seair Pacific (page does not exist)": [
+    "Air Queensland": [
+      "Bundaberg",
+      "Charleville",
+      "Roma"
+    ],
+    "Seair Pacific": [
       "Lady Elliot Island"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:41Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:02:20Z",
   "date-time-wikidata": "2025-12-26T23:27:34Z"
 }

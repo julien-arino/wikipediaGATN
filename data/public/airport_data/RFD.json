@@ -21,8 +21,8 @@
   ],
   "destinations": [
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -43,18 +43,7 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Nashville International Airport",
+      "city": "Nashville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
       "codes": [
         "BNA",
@@ -65,7 +54,7 @@
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -76,7 +65,18 @@
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -87,8 +87,8 @@
       ]
     },
     {
-      "city": "Sarasota–Bradenton International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota%E2%80%93Bradenton_International_Airport",
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
       "codes": [
         "SRQ",
         "KSRQ"
@@ -98,8 +98,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -111,16 +111,56 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Harry Reid International Airport",
-      "Mesa Gateway Airport",
-      "Nashville International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota–Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Fort Lauderdale",
+      "Las Vegas",
+      "Nashville",
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "Punta Gorda (FL)",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:34Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Korean Air Cargo",
+    "Maersk Air Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air Cargo",
+        "Maersk Air Cargo"
+      ]
+    },
+    {
+      "city": "Zhengzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
+      "codes": [
+        "CGO",
+        "ZHCC"
+      ],
+      "airlines": [
+        "Maersk Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Korean Air Cargo": [
+      "Seoul–Incheon"
+    ],
+    "Maersk Air Cargo": [
+      "Seoul–Incheon",
+      "Zhengzhou"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:58:38Z",
   "date-time-wikidata": "2026-04-27T01:36:10Z"
 }

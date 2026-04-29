@@ -14,13 +14,35 @@
   "admin1_name": "BR",
   "admin2_name": "Sao Jose Dos Campos",
   "wikipedia_url": "https://en.wikipedia.org/wiki/São_José_dos_Campos_Airport",
-  "outdegree": 3,
-  "number_airlines": 2,
+  "outdegree": 1,
+  "number_airlines": 1,
   "airlines": [
-    "Gol Linhas Aéreas",
-    "LATAM Cargo Brasil"
+    "Gol Linhas Aéreas"
   ],
   "destinations": [
+    {
+      "city": "Rio de Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
+      "codes": [
+        "GIG",
+        "SBGL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Gol Linhas Aéreas": [
+      "Rio de Janeiro–Galeão"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "LATAM Cargo Brasil"
+  ],
+  "destinations_cargo": [
     {
       "city": "Brussels",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
@@ -42,28 +64,14 @@
       "airlines": [
         "LATAM Cargo Brasil"
       ]
-    },
-    {
-      "city": "Rio de Janeiro–Galeão",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-      "codes": [
-        "GIG",
-        "SBGL"
-      ],
-      "airlines": [
-        "Gol Linhas Aéreas"
-      ]
     }
   ],
-  "airlines_destinations": {
-    "Gol Linhas Aéreas": [
-      "Rio de Janeiro–Galeão"
-    ],
+  "airlines_destinations_cargo": {
     "LATAM Cargo Brasil": [
       "Brussels",
       "Miami"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:05Z",
+  "date-time-parse": "2026-04-29T04:59:27Z",
   "date-time-wikidata": "2025-10-04T20:15:18Z"
 }

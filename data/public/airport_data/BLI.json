@@ -14,7 +14,7 @@
   "admin1_name": "Washington",
   "admin2_name": "Whatcom County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bellingham_International_Airport",
-  "outdegree": 11,
+  "outdegree": 12,
   "number_airlines": 3,
   "airlines": [
     "Alaska Airlines",
@@ -23,29 +23,18 @@
   ],
   "destinations": [
     {
-      "city": "Friday Harbor Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Friday_Harbor_Airport",
+      "city": "Blakely Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blakely_Island_Airport",
       "codes": [
-        "FRD",
-        "KFHR"
+        "iata code not found",
+        "icao code not found"
       ],
       "airlines": [
         "San Juan Airlines"
       ]
     },
     {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Hollywood Burbank Airport",
+      "city": "Burbank",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
       "codes": [
         "BUR",
@@ -56,40 +45,7 @@
       ]
     },
     {
-      "city": "Lopez Island Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lopez_Island_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found"
-      ],
-      "airlines": [
-        "San Juan Airlines"
-      ]
-    },
-    {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Oakland San Francisco Bay Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
-      "codes": [
-        "OAK",
-        "KOAK"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Orcas Island Airport",
+      "city": "Eastsound",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orcas_Island_Airport",
       "codes": [
         "ESD",
@@ -100,7 +56,51 @@
       ]
     },
     {
-      "city": "Palm Springs International Airport",
+      "city": "Friday Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Friday_Harbor_Airport",
+      "codes": [
+        "FRD",
+        "KFHR"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Lopez Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lopez_Island_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "San Juan Airlines"
+      ]
+    },
+    {
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Palm Springs",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
       "codes": [
         "PSP",
@@ -111,7 +111,18 @@
       ]
     },
     {
-      "city": "Portland International Airport",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
@@ -122,7 +133,7 @@
       ]
     },
     {
-      "city": "Roche Harbor Airport",
+      "city": "Roche Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Roche_Harbor_Airport",
       "codes": [
         "iata code not found",
@@ -133,8 +144,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -146,24 +157,29 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Portland International Airport",
-      "Seattle–Tacoma International Airport"
+      "Portland (OR)",
+      "Seattle/Tacoma"
     ],
     "Allegiant Air": [
-      "Harry Reid International Airport",
-      "Hollywood Burbank Airport",
-      "Mesa Gateway Airport",
-      "Oakland San Francisco Bay Airport",
-      "Palm Springs International Airport"
+      "Burbank",
+      "Las Vegas",
+      "Oakland",
+      "Palm Springs",
+      "Phoenix/Mesa"
     ],
     "San Juan Airlines": [
-      "Blakely Island Airport (page does not exist)",
-      "Friday Harbor Airport",
-      "Lopez Island Airport",
-      "Orcas Island Airport",
-      "Roche Harbor Airport"
+      "Blakely Island",
+      "Eastsound",
+      "Friday Harbor",
+      "Lopez Island",
+      "Roche Harbor"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:54Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:48:08Z",
   "date-time-wikidata": "2026-04-25T17:44:32Z"
 }

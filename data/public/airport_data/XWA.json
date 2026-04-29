@@ -23,7 +23,7 @@
   ],
   "destinations": [
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "city": "McCarran International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
       "codes": [
         "LAS",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "city": "Minneapolis-Saint Paul International Airport",
+      "city": "Minneapolis/Saint Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
       "codes": [
         "MSP",
@@ -58,15 +58,43 @@
   ],
   "airlines_destinations": {
     "Delta Connection": [
-      "Minneapolis-Saint Paul International Airport"
+      "Minneapolis/Saint Paul"
     ],
     "Sun Country Airlines": [
-      "McCarran International Airport"
+      "Las Vegas"
     ],
     "United Express": [
-      "Denver International Airport"
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:35Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Encore Air Cargo",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "Encore Air Cargo",
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Encore Air Cargo": [
+      "Fargo"
+    ],
+    "FedEx Feeder": [
+      "Fargo"
+    ]
+  },
+  "date-time-parse": "2026-04-29T05:01:54Z",
   "date-time-wikidata": "2026-04-10T03:19:30Z"
 }

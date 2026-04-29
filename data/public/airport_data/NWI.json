@@ -14,17 +14,18 @@
   "admin1_name": "England",
   "admin2_name": "Norfolk",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Norwich_Airport",
-  "outdegree": 16,
-  "number_airlines": 4,
+  "outdegree": 14,
+  "number_airlines": 5,
   "airlines": [
     "KLM",
     "Loganair",
+    "Lygg",
     "Ryanair",
     "TUI Airways"
   ],
   "destinations": [
     {
-      "city": "Aberdeen Airport",
+      "city": "Aberdeen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aberdeen_Airport",
       "codes": [
         "ABZ",
@@ -35,8 +36,8 @@
       ]
     },
     {
-      "city": "Alicante–Elche Miguel Hernández Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante%E2%80%93Elche_Miguel_Hern%C3%A1ndez_Airport",
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
       "codes": [
         "ALC",
         "LEAL"
@@ -46,7 +47,7 @@
       ]
     },
     {
-      "city": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
       "codes": [
         "AMS",
@@ -57,7 +58,7 @@
       ]
     },
     {
-      "city": "Corfu International Airport",
+      "city": "Corfu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
       "codes": [
         "CFU",
@@ -68,18 +69,7 @@
       ]
     },
     {
-      "city": "Dalaman Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalaman_Airport",
-      "codes": [
-        "DLM",
-        "LTBS"
-      ],
-      "airlines": [
-        "TUI Airways"
-      ]
-    },
-    {
-      "city": "Faro Airport",
+      "city": "Faro",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Faro_Airport",
       "codes": [
         "FAO",
@@ -90,27 +80,18 @@
       ]
     },
     {
-      "city": "Groningen Airport Eelde",
+      "city": "Groningen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Groningen_Airport_Eelde",
       "codes": [
         "GRQ",
         "EHGG"
       ],
-      "airlines": []
-    },
-    {
-      "city": "Heraklion International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
-      "codes": [
-        "HER",
-        "LGIR"
-      ],
       "airlines": [
-        "TUI Airways"
+        "Lygg"
       ]
     },
     {
-      "city": "Ibiza Airport",
+      "city": "Ibiza",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
       "codes": [
         "IBZ",
@@ -121,7 +102,7 @@
       ]
     },
     {
-      "city": "Jersey Airport",
+      "city": "Jersey",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jersey_Airport",
       "codes": [
         "PRO",
@@ -132,7 +113,7 @@
       ]
     },
     {
-      "city": "Malta International Airport",
+      "city": "Malta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Malta_International_Airport",
       "codes": [
         "MLA",
@@ -143,7 +124,7 @@
       ]
     },
     {
-      "city": "Menorca Airport",
+      "city": "Menorca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Menorca_Airport",
       "codes": [
         "MAH",
@@ -154,7 +135,7 @@
       ]
     },
     {
-      "city": "Palma de Mallorca Airport",
+      "city": "Palma de Mallorca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palma_de_Mallorca_Airport",
       "codes": [
         "PMI",
@@ -165,7 +146,7 @@
       ]
     },
     {
-      "city": "Paphos International Airport",
+      "city": "Paphos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Paphos_International_Airport",
       "codes": [
         "PFO",
@@ -176,7 +157,7 @@
       ]
     },
     {
-      "city": "Rhodes International Airport",
+      "city": "Rhodes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
       "codes": [
         "RHO",
@@ -187,7 +168,7 @@
       ]
     },
     {
-      "city": "Tenerife South Airport",
+      "city": "Tenerife–South",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
       "codes": [
         "TFS",
@@ -200,29 +181,35 @@
   ],
   "airlines_destinations": {
     "KLM": [
-      "Amsterdam Airport Schiphol"
+      "Amsterdam"
     ],
     "Loganair": [
-      "Aberdeen Airport",
-      "Jersey Airport"
+      "Aberdeen",
+      "Jersey"
+    ],
+    "Lygg": [
+      "Groningen"
     ],
     "Ryanair": [
-      "Alicante–Elche Miguel Hernández Airport",
-      "Faro Airport",
-      "Malta International Airport"
+      "Alicante",
+      "Faro",
+      "Malta"
     ],
     "TUI Airways": [
-      "Corfu International Airport",
-      "Dalaman Airport",
-      "Heraklion International Airport",
-      "Ibiza Airport",
-      "Menorca Airport",
-      "Palma de Mallorca Airport",
-      "Paphos International Airport",
-      "Rhodes International Airport",
-      "Tenerife South Airport"
+      "Corfu",
+      "Ibiza",
+      "Menorca",
+      "Palma de Mallorca",
+      "Paphos",
+      "Rhodes",
+      "Tenerife–South"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:07Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:57:09Z",
   "date-time-wikidata": "2026-04-27T22:21:52Z"
 }

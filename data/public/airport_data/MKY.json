@@ -14,14 +14,12 @@
   "admin1_name": "Queensland",
   "admin2_name": "Mackay",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mackay_Airport",
-  "outdegree": 5,
-  "number_airlines": 6,
+  "outdegree": 4,
+  "number_airlines": 4,
   "airlines": [
     "Jetstar",
-    "Pel-Air",
     "Qantas",
     "QantasLink",
-    "Toll Aviation",
     "Virgin Australia"
   ],
   "destinations": [
@@ -34,10 +32,8 @@
       ],
       "airlines": [
         "Jetstar",
-        "Pel-Air",
         "Qantas",
         "QantasLink",
-        "Toll Aviation",
         "Virgin Australia"
       ]
     },
@@ -50,17 +46,6 @@
       ],
       "airlines": [
         "QantasLink"
-      ]
-    },
-    {
-      "city": "Mount Isa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
-      "codes": [
-        "ISA",
-        "YBMA"
-      ],
-      "airlines": [
-        "Toll Aviation"
       ]
     },
     {
@@ -101,7 +86,40 @@
     ],
     "Virgin Australia": [
       "Brisbane"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Pel-Air",
+    "Toll Aviation"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Pel-Air",
+        "Toll Aviation"
+      ]
+    },
+    {
+      "city": "Mount Isa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Isa_Airport",
+      "codes": [
+        "ISA",
+        "YBMA"
+      ],
+      "airlines": [
+        "Toll Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Pel-Air": [
       "Brisbane"
     ],
@@ -110,6 +128,6 @@
       "Mount Isa"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:24Z",
+  "date-time-parse": "2026-04-29T04:56:13Z",
   "date-time-wikidata": "2025-11-06T22:39:40Z"
 }

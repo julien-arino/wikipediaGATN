@@ -20,14 +20,25 @@
     "American Airlines",
     "Avianca El Salvador",
     "Copa Airlines",
-    "Iberojet (airline)",
+    "Iberojet",
     "Spirit Airlines",
     "United Airlines",
     "Volaris Costa Rica"
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL"
+      ],
+      "airlines": [
+        "Iberojet"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -38,19 +49,8 @@
       ]
     },
     {
-      "city": "El Salvador International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Salvador_International_Airport",
-      "codes": [
-        "SAL",
-        "MSLP"
-      ],
-      "airlines": [
-        "Avianca El Salvador"
-      ]
-    },
-    {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -71,51 +71,18 @@
       ]
     },
     {
-      "city": "Josep Tarradellas Barcelona–El Prat Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona%E2%80%93El_Prat_Airport",
-      "codes": [
-        "BCN",
-        "LEBL"
-      ],
-      "airlines": [
-        "Iberojet (airline)"
-      ]
-    },
-    {
-      "city": "Juan Santamaría International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamar%C3%ADa_International_Airport",
-      "codes": [
-        "SJO",
-        "MROC"
-      ],
-      "airlines": [
-        "Volaris Costa Rica"
-      ]
-    },
-    {
-      "city": "Louis Armstrong New Orleans International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_Armstrong_New_Orleans_International_Airport",
-      "codes": [
-        "MSY",
-        "KMSY"
-      ],
-      "airlines": [
-        "Spirit Airlines"
-      ]
-    },
-    {
-      "city": "Madrid–Barajas Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid%E2%80%93Barajas_Airport",
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
       "codes": [
         "MAD",
         "LEMD"
       ],
       "airlines": [
-        "Iberojet (airline)"
+        "Iberojet"
       ]
     },
     {
-      "city": "Mexico City International Airport",
+      "city": "Mexico City–Benito Juárez",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
       "codes": [
         "MEX",
@@ -126,7 +93,7 @@
       ]
     },
     {
-      "city": "Miami International Airport",
+      "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
         "MIA",
@@ -137,7 +104,18 @@
       ]
     },
     {
-      "city": "Tocumen International Airport",
+      "city": "New Orleans",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_Armstrong_New_Orleans_International_Airport",
+      "codes": [
+        "MSY",
+        "KMSY"
+      ],
+      "airlines": [
+        "Spirit Airlines"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
       "codes": [
         "PTY",
@@ -146,37 +124,64 @@
       "airlines": [
         "Copa Airlines"
       ]
+    },
+    {
+      "city": "San José (CR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "Volaris Costa Rica"
+      ]
+    },
+    {
+      "city": "San Salvador",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Salvador_International_Airport",
+      "codes": [
+        "SAL",
+        "MSLP"
+      ],
+      "airlines": [
+        "Avianca El Salvador"
+      ]
     }
   ],
   "airlines_destinations": {
     "Aeroméxico Connect": [
-      "Mexico City International Airport"
+      "Mexico City–Benito Juárez"
     ],
     "American Airlines": [
-      "Dallas Fort Worth International Airport",
-      "Miami International Airport"
+      "Dallas/Fort Worth",
+      "Miami"
     ],
     "Avianca El Salvador": [
-      "El Salvador International Airport"
+      "San Salvador"
     ],
     "Copa Airlines": [
-      "Tocumen International Airport"
+      "Panama City–Tocumen"
     ],
-    "Iberojet (airline)": [
-      "Josep Tarradellas Barcelona–El Prat Airport",
-      "Madrid–Barajas Airport"
+    "Iberojet": [
+      "Barcelona",
+      "Madrid"
     ],
     "Spirit Airlines": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "Louis Armstrong New Orleans International Airport"
+      "Fort Lauderdale",
+      "New Orleans"
     ],
     "United Airlines": [
-      "George Bush Intercontinental Airport"
+      "Houston–Intercontinental"
     ],
     "Volaris Costa Rica": [
-      "Juan Santamaría International Airport"
+      "San José (CR)"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:33Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T05:01:53Z",
   "date-time-wikidata": "2026-04-27T12:04:47Z"
 }

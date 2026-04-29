@@ -15,12 +15,35 @@
   "admin2_name": "Brown County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Aberdeen_Regional_Airport",
   "outdegree": 1,
-  "number_airlines": 2,
+  "number_airlines": 1,
   "airlines": [
+    "Delta Connection"
+  ],
+  "destinations": [
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Delta Connection": [
+      "Minneapolis/St. Paul"
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "Alpine Air Express",
     "FedEx Feeder"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Sioux Falls",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Falls_Regional_Airport",
@@ -34,7 +57,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Alpine Air Express": [
       "Sioux Falls"
     ],
@@ -42,6 +65,6 @@
       "Sioux Falls"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:18Z",
+  "date-time-parse": "2026-04-29T04:46:43Z",
   "date-time-wikidata": "2026-03-04T11:05:24Z"
 }

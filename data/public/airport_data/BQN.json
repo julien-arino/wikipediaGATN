@@ -22,8 +22,8 @@
   ],
   "destinations": [
     {
-      "city": "Fort Lauderdale–Hollywood International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale%E2%80%93Hollywood_International_Airport",
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
       "codes": [
         "FLL",
         "KFLL"
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "city": "John F. Kennedy International Airport",
+      "city": "New York–JFK",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
       "codes": [
         "JFK",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "city": "Newark Liberty International Airport",
+      "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
         "EWR",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "city": "Orlando International Airport",
+      "city": "Orlando",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
       "codes": [
         "MCO",
@@ -69,17 +69,206 @@
   ],
   "airlines_destinations": {
     "Frontier Airlines": [
-      "Orlando International Airport"
+      "Orlando"
     ],
     "JetBlue": [
-      "Fort Lauderdale–Hollywood International Airport",
-      "John F. Kennedy International Airport",
-      "Orlando International Airport"
+      "Fort Lauderdale",
+      "New York–JFK",
+      "Orlando"
     ],
     "United Airlines": [
-      "Newark Liberty International Airport"
+      "Newark"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:18Z",
+  "outdegree_cargo": 13,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Air Cargo Carriers",
+    "Ameriflight",
+    "Emirates Sky Cargo",
+    "FedEx Express",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM"
+      ],
+      "airlines": [
+        "Emirates Sky Cargo"
+      ]
+    },
+    {
+      "city": "Barbados",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
+      "codes": [
+        "BGI",
+        "TBPB"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Castries",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
+      "codes": [
+        "SLU",
+        "TLPC"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Fort-de-France",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martinique_Aimé_Césaire_International_Airport",
+      "codes": [
+        "FDF",
+        "TFFF"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Memphis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_International_Airport",
+      "codes": [
+        "MEM",
+        "KMEM"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM"
+      ],
+      "airlines": [
+        "Emirates Sky Cargo"
+      ]
+    },
+    {
+      "city": "San José (CR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Santamaría_International_Airport",
+      "codes": [
+        "SJO",
+        "MROC"
+      ],
+      "airlines": [
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Santiago de los Caballeros",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cibao_International_Airport",
+      "codes": [
+        "STI",
+        "MDST"
+      ],
+      "airlines": [
+        "Air Cargo Carriers",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Santo Domingo–Las Américas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Américas_International_Airport",
+      "codes": [
+        "SDQ",
+        "MDSD"
+      ],
+      "airlines": [
+        "FedEx Express",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "St. Kitts",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
+      "codes": [
+        "SKB",
+        "TKPK"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air Cargo Carriers": [
+      "San Juan",
+      "Santiago de los Caballeros"
+    ],
+    "Ameriflight": [
+      "Barbados",
+      "Castries",
+      "Fort-de-France",
+      "Port of Spain",
+      "San Juan",
+      "St. Kitts"
+    ],
+    "Emirates Sky Cargo": [
+      "Amsterdam",
+      "Quito"
+    ],
+    "FedEx Express": [
+      "Campinas",
+      "Memphis",
+      "San José (CR)",
+      "Santo Domingo–Las Américas"
+    ],
+    "FedEx Feeder": [
+      "Castries",
+      "Port of Spain",
+      "Santiago de los Caballeros",
+      "Santo Domingo–Las Américas"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:25Z",
   "date-time-wikidata": "2026-04-20T01:30:39Z"
 }

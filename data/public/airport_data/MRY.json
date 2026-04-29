@@ -20,14 +20,36 @@
     "Alaska Airlines",
     "Allegiant Air",
     "American Airlines",
-    "American Eagle (airline brand)",
-    "JSX (airline)",
+    "American Eagle",
+    "JSX",
     "United Airlines",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Burbank",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
+      "codes": [
+        "BUR",
+        "KBUR"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -38,7 +60,7 @@
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -49,40 +71,7 @@
       ]
     },
     {
-      "city": "Hollywood Burbank Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
-      "codes": [
-        "BUR",
-        "KBUR"
-      ],
-      "airlines": [
-        "JSX (airline)"
-      ]
-    },
-    {
-      "city": "John Wayne Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
-      "codes": [
-        "SNA",
-        "KSNA"
-      ],
-      "airlines": [
-        "JSX (airline)"
-      ]
-    },
-    {
-      "city": "Los Angeles International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "codes": [
-        "LAX",
-        "KLAX"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "McCarran International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
       "codes": [
         "LAS",
@@ -93,29 +82,29 @@
       ]
     },
     {
-      "city": "McClellan–Palomar Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/McClellan%E2%80%93Palomar_Airport",
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
-        "CLD",
-        "KCRQ"
+        "LAX",
+        "KLAX"
       ],
       "airlines": [
-        "JSX (airline)"
+        "United Express"
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "Orange County",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
       "codes": [
-        "ORD",
-        "KORD"
+        "SNA",
+        "KSNA"
       ],
       "airlines": [
-        "United Airlines"
+        "JSX"
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
@@ -123,11 +112,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "San Diego International Airport",
+      "city": "San Diego",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
       "codes": [
         "SAN",
@@ -138,7 +127,18 @@
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Diego/Carlsbad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McClellan–Palomar_Airport",
+      "codes": [
+        "CLD",
+        "KCRQ"
+      ],
+      "airlines": [
+        "JSX"
+      ]
+    },
+    {
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "city": "Seattle-Tacoma International Airport",
+      "city": "Seattle/Tacoma",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
       "codes": [
         "SEA",
@@ -162,33 +162,38 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "San Diego International Airport",
-      "Seattle-Tacoma International Airport"
+      "San Diego",
+      "Seattle/Tacoma"
     ],
     "Allegiant Air": [
-      "McCarran International Airport"
+      "Las Vegas"
     ],
     "American Airlines": [
-      "Dallas/Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
-    "American Eagle (airline brand)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ],
-    "JSX (airline)": [
-      "Hollywood Burbank Airport",
-      "John Wayne Airport",
-      "McClellan–Palomar Airport"
+    "JSX": [
+      "Burbank",
+      "Orange County",
+      "San Diego/Carlsbad"
     ],
     "United Airlines": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ],
     "United Express": [
-      "Denver International Airport",
-      "Los Angeles International Airport",
-      "San Francisco International Airport"
+      "Denver",
+      "Los Angeles",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:33Z",
-  "date-time-wikidata": "2026-04-23T03:45:10Z"
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:56:29Z",
+  "date-time-wikidata": "2026-04-28T23:22:00Z"
 }

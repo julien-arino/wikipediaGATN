@@ -14,11 +14,76 @@
   "admin1_name": "Alaska",
   "admin2_name": "Valdez-Cordova Census Area",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Merle_K._(Mudhole)_Smith_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:04:32Z",
+  "outdegree": 2,
+  "number_airlines": 1,
+  "airlines": [
+    "Alaska Airlines"
+  ],
+  "destinations": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Yakutat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakutat_Airport",
+      "codes": [
+        "YAK",
+        "PAYA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Alaska Airlines": [
+      "Anchorage",
+      "Yakutat"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Alaska Central Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Alaska Central Express"
+      ]
+    },
+    {
+      "city": "Yakutat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yakutat_Airport",
+      "codes": [
+        "YAK",
+        "PAYA"
+      ],
+      "airlines": [
+        "Alaska Central Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Alaska Central Express": [
+      "Anchorage",
+      "Yakutat"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:57Z",
   "date-time-wikidata": "2025-08-27T18:24:06Z"
 }

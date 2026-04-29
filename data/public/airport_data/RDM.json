@@ -18,7 +18,7 @@
   "number_airlines": 6,
   "airlines": [
     "Alaska Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Breeze Airways",
     "Delta Connection",
     "United Airlines",
@@ -26,29 +26,7 @@
   ],
   "destinations": [
     {
-      "city": "Denver International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
-      "codes": [
-        "DEN",
-        "KDEN"
-      ],
-      "airlines": [
-        "United Airlines"
-      ]
-    },
-    {
-      "city": "Harry Reid International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
-      "codes": [
-        "LAS",
-        "KLAS"
-      ],
-      "airlines": [
-        "Breeze Airways"
-      ]
-    },
-    {
-      "city": "Hollywood Burbank Airport",
+      "city": "Burbank",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Burbank_Airport",
       "codes": [
         "BUR",
@@ -59,7 +37,29 @@
       ]
     },
     {
-      "city": "Los Angeles International Airport",
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
       "codes": [
         "LAX",
@@ -71,18 +71,18 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Portland International Airport",
+      "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "city": "San Diego International Airport",
+      "city": "San Diego",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
       "codes": [
         "SAN",
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "city": "San Francisco International Airport",
+      "city": "San Francisco",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
       "codes": [
         "SFO",
@@ -128,8 +128,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -142,32 +142,84 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Hollywood Burbank Airport",
-      "Los Angeles International Airport",
-      "Portland International Airport",
-      "San Diego International Airport",
-      "San Francisco International Airport",
-      "Seattle–Tacoma International Airport"
+      "Burbank",
+      "Los Angeles",
+      "Portland (OR)",
+      "San Diego",
+      "San Francisco",
+      "Seattle/Tacoma"
     ],
-    "American Eagle (airline brand)": [
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
     ],
     "Breeze Airways": [
-      "Harry Reid International Airport"
+      "Las Vegas"
     ],
     "Delta Connection": [
-      "Salt Lake City International Airport",
-      "Seattle–Tacoma International Airport"
+      "Salt Lake City",
+      "Seattle/Tacoma"
     ],
     "United Airlines": [
-      "Denver International Airport",
-      "San Francisco International Airport"
+      "Denver",
+      "San Francisco"
     ],
     "United Express": [
-      "Los Angeles International Airport",
-      "San Francisco International Airport"
+      "Los Angeles",
+      "San Francisco"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:42Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Eugene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eugene_Airport",
+      "codes": [
+        "EUG",
+        "KEUG"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Portland/Hillsboro (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hillsboro_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Eugene",
+      "Portland (OR)",
+      "Portland/Hillsboro (OR)"
+    ],
+    "FedEx Feeder": [
+      "Portland (OR)"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:58:34Z",
   "date-time-wikidata": "2026-04-06T01:19:07Z"
 }

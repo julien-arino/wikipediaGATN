@@ -14,11 +14,83 @@
   "admin1_name": "Michigan",
   "admin2_name": "Gogebic County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gogebic–Iron_County_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:16:13Z",
+  "outdegree": 2,
+  "number_airlines": 1,
+  "airlines": [
+    "Denver Air Connection"
+  ],
+  "destinations": [
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Denver Air Connection"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Denver Air Connection": [
+      "Chicago–O'Hare",
+      "Minneapolis/St. Paul"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Ameriflight",
+    "Freight Runners Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Iron Mountain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ford_Airport_(Iron_Mountain)",
+      "codes": [
+        "IMT",
+        "KIMT"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "Freight Runners Express"
+      ]
+    },
+    {
+      "city": "Lansing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capital_Region_International_Airport",
+      "codes": [
+        "LAN",
+        "KLAN"
+      ],
+      "airlines": [
+        "Ameriflight",
+        "Freight Runners Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Iron Mountain",
+      "Lansing"
+    ],
+    "Freight Runners Express": [
+      "Iron Mountain",
+      "Lansing"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:53:30Z",
   "date-time-wikidata": "2026-04-15T01:30:59Z"
 }

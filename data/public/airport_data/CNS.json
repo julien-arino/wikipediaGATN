@@ -15,7 +15,7 @@
   "admin2_name": "Cairns",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
   "outdegree": 41,
-  "number_airlines": 16,
+  "number_airlines": 15,
   "airlines": [
     "Air New Zealand",
     "Air Niugini",
@@ -27,7 +27,6 @@
     "Jetstar",
     "PNG Air",
     "Qantas",
-    "Qantas Freight",
     "QantasLink",
     "Rex Airlines",
     "Singapore Airlines",
@@ -113,7 +112,6 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "Virgin Australia"
       ]
     },
@@ -306,7 +304,6 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "Virgin Australia"
       ]
     },
@@ -466,7 +463,6 @@
       "airlines": [
         "Jetstar",
         "Qantas",
-        "Qantas Freight",
         "Virgin Australia"
       ]
     },
@@ -489,7 +485,6 @@
         "YBTL"
       ],
       "airlines": [
-        "Qantas Freight",
         "QantasLink",
         "Rex Airlines"
       ]
@@ -594,7 +589,60 @@
       "Brisbane",
       "Melbourne",
       "Sydney"
-    ],
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Qantas Freight"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Qantas Freight": [
       "Brisbane",
       "Melbourne",
@@ -602,6 +650,6 @@
       "Townsville"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:02Z",
+  "date-time-parse": "2026-04-29T04:49:20Z",
   "date-time-wikidata": "2026-04-20T13:29:34Z"
 }

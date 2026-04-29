@@ -14,11 +14,46 @@
   "admin1_name": "Alaska",
   "admin2_name": "Kodiak Island Borough",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ouzinkie_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:17:02Z",
+  "outdegree": 2,
+  "number_airlines": 1,
+  "airlines": [
+    "Island Air Service"
+  ],
+  "destinations": [
+    {
+      "city": "Kodiak",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kodiak_Airport",
+      "codes": [
+        "ADQ",
+        "PADQ"
+      ],
+      "airlines": [
+        "Island Air Service"
+      ]
+    },
+    {
+      "city": "Port Lions",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Lions_Airport",
+      "codes": [
+        "ORI",
+        "icao code not found"
+      ],
+      "airlines": [
+        "Island Air Service"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Island Air Service": [
+      "Kodiak",
+      "Port Lions"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:54:33Z",
   "date-time-wikidata": "2025-10-10T14:08:34Z"
 }

@@ -14,15 +14,14 @@
   "admin1_name": "BA-09",
   "admin2_name": "Kanton Sarajevo",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_Airport",
-  "outdegree": 36,
-  "number_airlines": 26,
+  "outdegree": 34,
+  "number_airlines": 25,
   "airlines": [
     "AJet",
     "Air Serbia",
     "Arkia",
     "Austrian Airlines",
     "Croatia Airlines",
-    "DHL Aviation",
     "Eurowings",
     "Flydubai",
     "Flynas",
@@ -45,17 +44,6 @@
     "Wizz Air"
   ],
   "destinations": [
-    {
-      "city": "Ancona",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Marche_Airport",
-      "codes": [
-        "AOI",
-        "LIPY"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
     {
       "city": "Ankara",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ankara_Airport",
@@ -270,17 +258,6 @@
       ]
     },
     {
-      "city": "Milan–Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "codes": [
-        "MXP",
-        "LIMC"
-      ],
-      "airlines": [
-        "DHL Aviation"
-      ]
-    },
-    {
       "city": "Monastir",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Monastir_Habib_Bourguiba_International_Airport",
       "codes": [
@@ -433,8 +410,7 @@
         "LDZA"
       ],
       "airlines": [
-        "Croatia Airlines",
-        "DHL Aviation"
+        "Croatia Airlines"
       ]
     },
     {
@@ -537,13 +513,55 @@
     "Wizz Air": [
       "London–Luton",
       "Rome–Fiumicino"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "DHL Aviation"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Ancona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marche_Airport",
+      "codes": [
+        "AOI",
+        "LIPY"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Zagreb",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
+      "codes": [
+        "ZAG",
+        "LDZA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Ancona",
       "Milan–Malpensa",
       "Zagreb"
     ]
   },
-  "date-time-parse": "2026-04-28T22:13:05Z",
+  "date-time-parse": "2026-04-29T04:59:27Z",
   "date-time-wikidata": "2026-04-26T18:35:01Z"
 }

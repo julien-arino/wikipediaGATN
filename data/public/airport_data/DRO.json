@@ -18,13 +18,13 @@
   "number_airlines": 4,
   "airlines": [
     "American Airlines",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "United Airlines",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
@@ -32,11 +32,11 @@
       ],
       "airlines": [
         "American Airlines",
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
+      "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
         "IAH",
@@ -59,33 +59,56 @@
       ]
     },
     {
-      "city": "Phoenix Sky Harbor International Airport",
+      "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
         "PHX",
         "KPHX"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     }
   ],
   "airlines_destinations": {
     "American Airlines": [
-      "Dallas/Fort Worth International Airport"
+      "Dallas/Fort Worth"
     ],
-    "American Eagle (airline brand)": [
-      "Dallas/Fort Worth International Airport",
-      "Phoenix Sky Harbor International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "United Airlines": [
-      "Denver International Airport"
+      "Denver"
     ],
     "United Express": [
-      "Denver International Airport",
-      "George Bush Intercontinental Airport"
+      "Denver",
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:06Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Albuquerque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albuquerque_International_Sunport",
+      "codes": [
+        "ABQ",
+        "KABQ"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "FedEx Feeder": [
+      "Albuquerque"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:50:04Z",
   "date-time-wikidata": "2025-12-07T21:19:47Z"
 }

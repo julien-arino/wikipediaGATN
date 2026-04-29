@@ -13,12 +13,11 @@
   "admin1_code": "",
   "admin1_name": "BL",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gustaf_III_Airport",
-  "outdegree": 16,
-  "number_airlines": 8,
+  "outdegree": 8,
+  "number_airlines": 7,
   "airlines": [
     "Air Antilles",
     "Cape Air",
-    "DHL Aviation",
     "St Barth Commuter",
     "St Barth Executive",
     "Tradewind Aviation",
@@ -34,7 +33,6 @@
         "TQPF"
       ],
       "airlines": [
-        "DHL Aviation",
         "Tradewind Aviation",
         "West Indies Helicopters"
       ]
@@ -47,11 +45,151 @@
         "TAPA"
       ],
       "airlines": [
-        "DHL Aviation",
         "St Barth Commuter",
         "Tradewind Aviation",
         "West Indies Helicopters",
         "Winair"
+      ]
+    },
+    {
+      "city": "Pointe-à-Pitre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
+      "codes": [
+        "PTP",
+        "TFFR"
+      ],
+      "airlines": [
+        "Air Antilles",
+        "St Barth Commuter",
+        "St Barth Executive",
+        "West Indies Helicopters"
+      ]
+    },
+    {
+      "city": "Saba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juancho_E._Yrausquin_Airport",
+      "codes": [
+        "SAB",
+        "TNCS"
+      ],
+      "airlines": [
+        "West Indies Helicopters",
+        "Winair"
+      ]
+    },
+    {
+      "city": "Saint Martin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Espérance_Airport",
+      "codes": [
+        "SFG",
+        "TFFG"
+      ],
+      "airlines": [
+        "St Barth Commuter",
+        "West Indies Helicopters"
+      ]
+    },
+    {
+      "city": "Saint Thomas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
+      "codes": [
+        "STT",
+        "TIST"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Tradewind Aviation"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "St Barth Executive",
+        "Tradewind Aviation"
+      ]
+    },
+    {
+      "city": "Sint Maarten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Juliana_International_Airport",
+      "codes": [
+        "SXM",
+        "TNCM"
+      ],
+      "airlines": [
+        "St Barth Commuter",
+        "West Indies Helicopters",
+        "Winair"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Antilles": [
+      "Pointe-à-Pitre"
+    ],
+    "Cape Air": [
+      "Saint Thomas"
+    ],
+    "St Barth Commuter": [
+      "Antigua",
+      "Pointe-à-Pitre",
+      "Saint Martin",
+      "Sint Maarten"
+    ],
+    "St Barth Executive": [
+      "Pointe-à-Pitre",
+      "San Juan"
+    ],
+    "Tradewind Aviation": [
+      "Anguilla",
+      "Antigua",
+      "Saint Thomas",
+      "San Juan"
+    ],
+    "West Indies Helicopters": [
+      "Anguilla",
+      "Antigua",
+      "Pointe-à-Pitre",
+      "Saba",
+      "Saint Martin",
+      "Sint Maarten"
+    ],
+    "Winair": [
+      "Antigua",
+      "Saba",
+      "Sint Maarten"
+    ]
+  },
+  "outdegree_cargo": 14,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "DHL Aviation"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Anguilla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clayton_J._Lloyd_International_Airport",
+      "codes": [
+        "AXA",
+        "TQPF"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Antigua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
+      "codes": [
+        "ANU",
+        "TAPA"
+      ],
+      "airlines": [
+        "DHL Aviation"
       ]
     },
     {
@@ -95,23 +233,7 @@
         "TFFR"
       ],
       "airlines": [
-        "Air Antilles",
-        "DHL Aviation",
-        "St Barth Commuter",
-        "St Barth Executive",
-        "West Indies Helicopters"
-      ]
-    },
-    {
-      "city": "Saba",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Juancho_E._Yrausquin_Airport",
-      "codes": [
-        "SAB",
-        "TNCS"
-      ],
-      "airlines": [
-        "West Indies Helicopters",
-        "Winair"
+        "DHL Aviation"
       ]
     },
     {
@@ -137,18 +259,6 @@
       ]
     },
     {
-      "city": "Saint Martin",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Espérance_Airport",
-      "codes": [
-        "SFG",
-        "TFFG"
-      ],
-      "airlines": [
-        "St Barth Commuter",
-        "West Indies Helicopters"
-      ]
-    },
-    {
       "city": "Saint Thomas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
       "codes": [
@@ -156,9 +266,7 @@
         "TIST"
       ],
       "airlines": [
-        "Cape Air",
-        "DHL Aviation",
-        "Tradewind Aviation"
+        "DHL Aviation"
       ]
     },
     {
@@ -180,9 +288,7 @@
         "TJSJ"
       ],
       "airlines": [
-        "DHL Aviation",
-        "St Barth Executive",
-        "Tradewind Aviation"
+        "DHL Aviation"
       ]
     },
     {
@@ -193,10 +299,7 @@
         "TNCM"
       ],
       "airlines": [
-        "DHL Aviation",
-        "St Barth Commuter",
-        "West Indies Helicopters",
-        "Winair"
+        "DHL Aviation"
       ]
     },
     {
@@ -222,42 +325,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Air Antilles": [
-      "Pointe-à-Pitre"
-    ],
-    "Cape Air": [
-      "Saint Thomas"
-    ],
-    "St Barth Commuter": [
-      "Antigua",
-      "Pointe-à-Pitre",
-      "Saint Martin",
-      "Sint Maarten"
-    ],
-    "St Barth Executive": [
-      "Pointe-à-Pitre",
-      "San Juan"
-    ],
-    "Tradewind Aviation": [
-      "Anguilla",
-      "Antigua",
-      "Saint Thomas",
-      "San Juan"
-    ],
-    "West Indies Helicopters": [
-      "Anguilla",
-      "Antigua",
-      "Pointe-à-Pitre",
-      "Saba",
-      "Saint Martin",
-      "Sint Maarten"
-    ],
-    "Winair": [
-      "Antigua",
-      "Saba",
-      "Sint Maarten"
-    ],
+  "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Anguilla",
       "Antigua",
@@ -275,6 +343,6 @@
       "Trinidad"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:28Z",
+  "date-time-parse": "2026-04-29T04:59:02Z",
   "date-time-wikidata": "2026-02-04T18:14:53Z"
 }

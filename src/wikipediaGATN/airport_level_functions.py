@@ -108,6 +108,8 @@ def format_airport_json(data: dict) -> dict:
         "wikipedia_url",
         "outdegree", "number_airlines",
         "airlines", "destinations", "airlines_destinations",
+        "outdegree_cargo", "number_airlines_cargo",
+        "airlines_cargo", "destinations_cargo", "airlines_destinations_cargo",
         "date-time-parse", "date-time-wikidata"
     ]
     
@@ -529,8 +531,8 @@ def fetch_wikipedia_airlines_destinations(
 
     Returns
     -------
-    dict[str, set[str]]
-        ``{airline_name: {destination_name, ...}, ...}``
+    dict
+        ``{"passenger": {airline_name: {destination_name, ...}, ...}, "cargo": {...}}``
     """
     if soup is None:
         link, html_content = _fetch_html_if_needed(identifier, link, html_content, verbose)
@@ -538,76 +540,84 @@ def fetch_wikipedia_airlines_destinations(
             return {}
         soup = BeautifulSoup(html_content, 'html.parser')
 
-    airline_dest_map: dict = {}
+    result: dict = {"passenger": {}, "cargo": {}}
 
     for header in soup.find_all(['h2', 'h3', 'h4']):
         header_text = header.get_text(strip=True).lower()
         if 'airlines' not in header_text or 'destination' not in header_text:
             continue
-        table = None
+            
+        header_level = header.name
         for tbl in header.find_all_next('table'):
             classes = tbl.get('class', [])
             if any('ambox' in c or 'box' in c for c in classes):
                 continue
-            table = tbl
-            break
-        if not table:
-            break
-        header_row = table.find('tr')
-        if not header_row:
-            break
-        ths         = [th.get_text(strip=True).lower() for th in header_row.find_all('th')]
-        airline_idx = next((i for i, th in enumerate(ths) if 'airline' in th), None)
-        dest_idx    = next((i for i, th in enumerate(ths) if 'destination' in th), None)
+                
+            # Check if we left the section
+            prev_level_header = tbl.find_previous(header_level)
+            if prev_level_header and prev_level_header.get_text(strip=True) != header.get_text(strip=True):
+                break
+                
+            prev_header = tbl.find_previous(['h2', 'h3', 'h4'])
+            is_cargo = prev_header and 'cargo' in prev_header.get_text(strip=True).lower()
+            target_dict = result["cargo"] if is_cargo else result["passenger"]
 
-        if airline_idx is None or dest_idx is None:
-            # Column headers not found — scan each cell for keywords
-            for row in table.find_all('tr')[1:]:
-                cells         = row.find_all(['td', 'th'])
-                airline_names: set = set()
-                dest_names:    set = set()
-                for cell in cells:
-                    cell_text = cell.get_text(" ", strip=True)
-                    if re.search(r'airline', cell_text, re.I):
-                        for a in cell.find_all('a'):
-                            if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:')):
-                                airline_names.add(a.get('title'))
-                    if re.search(r'destination', cell_text, re.I):
-                        for a in cell.find_all('a'):
-                            if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:')):
-                                dest_names.add(a.get('title'))
-                for airline in airline_names:
-                    airline_dest_map.setdefault(airline, set()).update(dest_names)
-        else:
-            for row in table.find_all('tr')[1:]:
-                cells = row.find_all(['td', 'th'])
-                if len(cells) <= max(airline_idx, dest_idx):
-                    continue
-                airline_names = [
-                    a.get('title') for a in cells[airline_idx].find_all('a')
-                    if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:'))
-                ]
-                dest_names = [
-                    a.get('title') for a in cells[dest_idx].find_all('a')
-                    if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:'))
-                ]
-                for airline in airline_names:
-                    airline_dest_map.setdefault(airline, set()).update(dest_names)
+            header_row = tbl.find('tr')
+            if not header_row:
+                continue
+            ths         = [th.get_text(strip=True).lower() for th in header_row.find_all('th')]
+            airline_idx = next((i for i, th in enumerate(ths) if 'airline' in th), None)
+            dest_idx    = next((i for i, th in enumerate(ths) if 'destination' in th), None)
+
+            if airline_idx is None or dest_idx is None:
+                # Column headers not found — scan each cell for keywords
+                for row in tbl.find_all('tr')[1:]:
+                    cells         = row.find_all(['td', 'th'])
+                    airline_names: set = set()
+                    dest_names:    set = set()
+                    for cell in cells:
+                        cell_text = cell.get_text(" ", strip=True)
+                        if re.search(r'airline', cell_text, re.I):
+                            for a in cell.find_all('a'):
+                                if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:')):
+                                    airline_names.add(a.get('title'))
+                        if re.search(r'destination', cell_text, re.I):
+                            for a in cell.find_all('a'):
+                                if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:')):
+                                    dest_names.add(a.get('title'))
+                    for airline in airline_names:
+                        target_dict.setdefault(airline, set()).update(dest_names)
+            else:
+                for row in tbl.find_all('tr')[1:]:
+                    cells = row.find_all(['td', 'th'])
+                    if len(cells) <= max(airline_idx, dest_idx):
+                        continue
+                    airline_names = [
+                        a.get('title') for a in cells[airline_idx].find_all('a')
+                        if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:'))
+                    ]
+                    dest_names = [
+                        a.get('title') for a in cells[dest_idx].find_all('a')
+                        if a.get('title') and not a.get('href', '').startswith(('/wiki/Wikipedia:', '/wiki/Help:', '/wiki/File:', '/wiki/Category:', '/wiki/Template:', '/wiki/Portal:'))
+                    ]
+                    for airline in airline_names:
+                        target_dict.setdefault(airline, set()).update(dest_names)
         break
 
     if verbose:
-        print(f"Extracted airline-destination map: {len(airline_dest_map)} airlines.")
+        total_airlines = len(result['passenger']) + len(result['cargo'])
+        print(f"Extracted airline-destination map: {total_airlines} airlines.")
 
     # NLP fallback
-    if not airline_dest_map:
+    if not result["passenger"] and not result["cargo"]:
         if verbose:
             print("No table data found — trying NLP fallback...")
         for org, gpe in parse_fallback_nlp_airlines_destinations(
             html_content, verbose=verbose, soup=soup
         ):
-            airline_dest_map.setdefault(org, set()).add(gpe)
+            result["passenger"].setdefault(org, set()).add(gpe)
 
-    return airline_dest_map
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -720,33 +730,49 @@ def fetch_wikipedia_airport_info(
     }
 
     ad_map_wikitext = parse_wikitext_airlines_destinations(wikitext)
-    if ad_map_wikitext:
-        info['airlines'] = sorted(ad_map_wikitext.keys())
-        info['destinations'] = sorted({
-            (d["name"], d["wikipedia_url"])
-            for dests in ad_map_wikitext.values()
-            for d in dests
-        })
-        info['airlines_destinations'] = {
-            airline: sorted({d["name"] for d in dests})
-            for airline, dests in ad_map_wikitext.items()
-        }
-    else:
+    
+    # Intelligent HTML Fallback
+    # If wikitext found no passenger airlines but did find cargo, it likely missed a wikitable
+    html_content = None
+    if not ad_map_wikitext['passenger'] and ad_map_wikitext['cargo']:
+        html_content = fetch_wikipedia_airport_html(link=link, verbose=verbose)
+        ad_map_html = fetch_wikipedia_airlines_destinations(
+            link=link, html_content=html_content, verbose=verbose, soup=None)
+        if ad_map_html['passenger']:
+            ad_map_wikitext['passenger'] = ad_map_html['passenger']
+
+    if not ad_map_wikitext['passenger'] and not ad_map_wikitext['cargo']:
+        if not html_content:
+            html_content = fetch_wikipedia_airport_html(link=link, verbose=verbose)
         soup = BeautifulSoup(html_content, 'html.parser') if html_content else None
+        ad_map = fetch_wikipedia_airlines_destinations(
+            link=link, html_content=html_content, verbose=verbose, soup=soup)
+    else:
+        ad_map = ad_map_wikitext
 
-        info['airlines']     = fetch_wikipedia_airlines(
-            link=link, html_content=html_content, verbose=verbose, soup=soup)
-        info['destinations'] = fetch_wikipedia_destinations(
-            link=link, html_content=html_content, verbose=verbose, soup=soup)
-        ad_map               = fetch_wikipedia_airlines_destinations(
-            link=link, html_content=html_content, verbose=verbose, soup=soup)
-
-        # Normalise to JSON-serialisable types
-        if isinstance(info['airlines'], set):
-            info['airlines'] = sorted(info['airlines'])
-        if isinstance(info['destinations'], set):
-            info['destinations'] = sorted(info['destinations'])
-        info['airlines_destinations'] = {k: sorted(v) for k, v in ad_map.items()}
+    # Passenger data
+    info['airlines'] = sorted(ad_map['passenger'].keys())
+    info['destinations'] = sorted({
+        (d["name"], d["wikipedia_url"]) if isinstance(d, dict) else d
+        for dests in ad_map['passenger'].values()
+        for d in dests
+    })
+    info['airlines_destinations'] = {
+        airline: sorted({d["name"] if isinstance(d, dict) else d for d in dests})
+        for airline, dests in ad_map['passenger'].items()
+    }
+    
+    # Cargo data
+    info['airlines_cargo'] = sorted(ad_map['cargo'].keys())
+    info['destinations_cargo'] = sorted({
+        (d["name"], d["wikipedia_url"]) if isinstance(d, dict) else d
+        for dests in ad_map['cargo'].values()
+        for d in dests
+    })
+    info['airlines_destinations_cargo'] = {
+        airline: sorted({d["name"] if isinstance(d, dict) else d for d in dests})
+        for airline, dests in ad_map['cargo'].items()
+    }
 
     return info
 
@@ -1119,20 +1145,43 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
 
     Returns
     -------
-    dict[str, list[dict]]
-        ``{airline_name: [{"name": str, "wikipedia_url": str}, ...], ...}``
+    dict
+        ``{"passenger": {airline_name: [{"name": str, "wikipedia_url": str}, ...], ...}, "cargo": {...}}``
     """
     wikicode      = mwparserfromhell.parse(wikitext)
-    airlines_dest: dict = {}
+    result: dict  = {"passenger": {}, "cargo": {}}
 
     for template in wikicode.filter_templates():
-        if not template.name.lower().strip().startswith("airport-dest-list"):
+        t_name = template.name.lower().strip().replace("-", " ")
+        if not (t_name.startswith("airport dest list") or t_name.startswith("airport destination list")):
             continue
+            
+        # Find the closest preceding heading
+        is_cargo = False
+        try:
+            # We must iterate backwards from the template's index in the parent's nodes
+            nodes = wikicode.nodes
+            idx = nodes.index(template)
+            for i in range(idx, -1, -1):
+                if isinstance(nodes[i], mwparserfromhell.nodes.heading.Heading):
+                    if "cargo" in str(nodes[i].title).lower():
+                        is_cargo = True
+                    break
+        except ValueError:
+            pass # Template not found in top-level nodes, assume passenger
+            
+        target_dict = result["cargo"] if is_cargo else result["passenger"]
 
         positional = [p for p in template.params if str(p.name).strip().isdigit()]
         positional.sort(key=lambda p: int(str(p.name).strip()))
         
-        for i in range(0, len(positional) - 1, 2):
+        step = 2
+        if template.has("3rdcoltitle"): step += 1
+        if template.has("4thcoltitle"): step += 1
+        if template.has("5thcoltitle"): step += 1
+        if template.has("6thcoltitle"): step += 1
+        
+        for i in range(0, len(positional) - (step - 1), step):
             airline_raw = str(positional[i].value)
             dests_raw = str(positional[i+1].value)
 
@@ -1174,9 +1223,13 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
             ]
 
             if dest_objs:
-                airlines_dest[airline] = dest_objs
+                if airline not in target_dict:
+                    target_dict[airline] = []
+                # Avoid duplicating destinations if they are listed in multiple templates in the same section
+                existing_urls = {d['wikipedia_url'] for d in target_dict[airline]}
+                target_dict[airline].extend([d for d in dest_objs if d['wikipedia_url'] not in existing_urls])
 
-    return airlines_dest
+    return result
 
 
 # ---------------------------------------------------------------------------

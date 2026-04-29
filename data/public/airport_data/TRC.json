@@ -13,13 +13,173 @@
   "admin1_code": "MX-COA",
   "admin1_name": "Coahuila de Zaragoza",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Torreón_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 2,
+  "outdegree": 11,
+  "number_airlines": 6,
   "airlines": [
+    "Aeroméxico",
+    "Aeroméxico Connect",
+    "American Eagle",
+    "TAR México",
+    "Viva",
+    "Volaris"
+  ],
+  "destinations": [
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Chihuahua",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chihuahua_International_Airport",
+      "codes": [
+        "CUU",
+        "MMCU"
+      ],
+      "airlines": [
+        "TAR México"
+      ]
+    },
+    {
+      "city": "Ciudad Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciudad_Juárez_International_Airport",
+      "codes": [
+        "CJS",
+        "MMCS"
+      ],
+      "airlines": [
+        "TAR México"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
+      "city": "Mazatlán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazatlán_International_Airport",
+      "codes": [
+        "MZT",
+        "MMMZ"
+      ],
+      "airlines": [
+        "TAR México"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Aeroméxico Connect"
+      ]
+    },
+    {
+      "city": "Monterrey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monterrey_International_Airport",
+      "codes": [
+        "MTY",
+        "MMMY"
+      ],
+      "airlines": [
+        "TAR México"
+      ]
+    },
+    {
+      "city": "Querétaro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Querétaro_Intercontinental_Airport",
+      "codes": [
+        "QRO",
+        "MMQT"
+      ],
+      "airlines": [
+        "TAR México"
+      ]
+    },
+    {
+      "city": "San José del Cabo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Cabos_International_Airport",
+      "codes": [
+        "SJD",
+        "MMSD"
+      ],
+      "airlines": [
+        "Viva"
+      ]
+    },
+    {
+      "city": "Tijuana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tijuana_International_Airport",
+      "codes": [
+        "TIJ",
+        "MMTJ"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aeroméxico": [
+      "Mexico City–Benito Juárez"
+    ],
+    "Aeroméxico Connect": [
+      "Mexico City–Benito Juárez"
+    ],
+    "American Eagle": [
+      "Dallas/Fort Worth"
+    ],
+    "TAR México": [
+      "Chihuahua",
+      "Ciudad Juárez",
+      "Mazatlán",
+      "Monterrey",
+      "Querétaro"
+    ],
+    "Viva": [
+      "Cancún",
+      "San José del Cabo"
+    ],
+    "Volaris": [
+      "Guadalajara",
+      "Tijuana"
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "Aeronaves TSM",
     "TUM AeroCarga"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
       "city": "Chihuahua",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chihuahua_International_Airport",
@@ -76,7 +236,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "Aeronaves TSM": [
       "Culiacán",
       "Querétaro"
@@ -87,6 +247,6 @@
       "Toluca/Mexico City"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:36Z",
+  "date-time-parse": "2026-04-29T05:00:41Z",
   "date-time-wikidata": "2026-04-03T16:05:54Z"
 }

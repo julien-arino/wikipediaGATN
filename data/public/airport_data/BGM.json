@@ -14,11 +14,34 @@
   "admin1_name": "New York",
   "admin2_name": "Broome County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Binghamton_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
-  "date-time-parse": "2026-04-28T22:14:25Z",
+  "outdegree": 1,
+  "number_airlines": 1,
+  "airlines": [
+    "Delta Connection"
+  ],
+  "destinations": [
+    {
+      "city": "Detroit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
+      "codes": [
+        "DTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Connection"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Delta Connection": [
+      "Detroit"
+    ]
+  },
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:52Z",
   "date-time-wikidata": "2026-03-15T02:11:21Z"
 }

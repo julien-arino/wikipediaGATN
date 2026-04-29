@@ -14,48 +14,20 @@
   "admin1_name": "Ohio",
   "admin2_name": "Cuyahoga County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Burke_Lakefront_Airport",
-  "outdegree": 5,
-  "number_airlines": 2,
-  "airlines": [
+  "outdegree": 0,
+  "number_airlines": 0,
+  "airlines": [],
+  "destinations": [],
+  "airlines_destinations": {},
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
     "AirNet Express",
-    "Central Air Southwest (page does not exist)"
+    "Central Air Southwest"
   ],
-  "destinations": [
+  "destinations_cargo": [
     {
-      "city": "Butler County Regional Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Butler_County_Regional_Airport",
-      "codes": [
-        "HAO",
-        "KHAO"
-      ],
-      "airlines": [
-        "Central Air Southwest (page does not exist)"
-      ]
-    },
-    {
-      "city": "Dayton–Wright Brothers Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dayton%E2%80%93Wright_Brothers_Airport",
-      "codes": [
-        "MGY",
-        "KMGY"
-      ],
-      "airlines": [
-        "Central Air Southwest (page does not exist)"
-      ]
-    },
-    {
-      "city": "Kalamazoo/Battle Creek International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalamazoo/Battle_Creek_International_Airport",
-      "codes": [
-        "AZO",
-        "KAZO"
-      ],
-      "airlines": [
-        "Central Air Southwest (page does not exist)"
-      ]
-    },
-    {
-      "city": "Rickenbacker International Airport",
+      "city": "Columbus–Rickenbacker",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rickenbacker_International_Airport",
       "codes": [
         "LCK",
@@ -66,28 +38,61 @@
       ]
     },
     {
-      "city": "Willow Run Airport",
+      "city": "Dayton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dayton–Wright_Brothers_Airport",
+      "codes": [
+        "MGY",
+        "KMGY"
+      ],
+      "airlines": [
+        "Central Air Southwest"
+      ]
+    },
+    {
+      "city": "Hamilton (OH)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Butler_County_Regional_Airport",
+      "codes": [
+        "HAO",
+        "KHAO"
+      ],
+      "airlines": [
+        "Central Air Southwest"
+      ]
+    },
+    {
+      "city": "Kalamazoo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalamazoo/Battle_Creek_International_Airport",
+      "codes": [
+        "AZO",
+        "KAZO"
+      ],
+      "airlines": [
+        "Central Air Southwest"
+      ]
+    },
+    {
+      "city": "Ypsilanti",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Willow_Run_Airport",
       "codes": [
         "YIP",
         "KYIP"
       ],
       "airlines": [
-        "Central Air Southwest (page does not exist)"
+        "Central Air Southwest"
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "AirNet Express": [
-      "Rickenbacker International Airport"
+      "Columbus–Rickenbacker"
     ],
-    "Central Air Southwest (page does not exist)": [
-      "Butler County Regional Airport",
-      "Dayton–Wright Brothers Airport",
-      "Kalamazoo/Battle Creek International Airport",
-      "Willow Run Airport"
+    "Central Air Southwest": [
+      "Dayton",
+      "Hamilton (OH)",
+      "Kalamazoo",
+      "Ypsilanti"
     ]
   },
-  "date-time-parse": "2026-04-28T22:10:52Z",
+  "date-time-parse": "2026-04-29T04:48:06Z",
   "date-time-wikidata": "2026-04-26T19:55:40Z"
 }

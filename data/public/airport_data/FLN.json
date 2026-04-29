@@ -14,8 +14,8 @@
   "admin1_name": "Santa Catarina",
   "admin2_name": "Florianopolis",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-  "outdegree": 30,
-  "number_airlines": 15,
+  "outdegree": 28,
+  "number_airlines": 13,
   "airlines": [
     "Aerolíneas Argentinas",
     "Azul Brazilian Airlines",
@@ -25,13 +25,11 @@
     "JetSmart Argentina",
     "JetSmart Chile",
     "LATAM Brasil",
-    "LATAM Cargo Brasil",
     "LATAM Chile",
     "Paranair",
     "Sky Airline",
     "Sky Airline Peru",
-    "TAP Air Portugal",
-    "Total Linhas Aéreas"
+    "TAP Air Portugal"
   ],
   "destinations": [
     {
@@ -148,8 +146,7 @@
         "SBCT"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "Total Linhas Aéreas"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -208,17 +205,6 @@
       ],
       "airlines": [
         "TAP Air Portugal"
-      ]
-    },
-    {
-      "city": "Miami",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "codes": [
-        "MIA",
-        "KMIA"
-      ],
-      "airlines": [
-        "LATAM Cargo Brasil"
       ]
     },
     {
@@ -337,17 +323,6 @@
       ]
     },
     {
-      "city": "São Paulo-Guarulhos",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
-      "codes": [
-        "GRU",
-        "SBGR"
-      ],
-      "airlines": [
-        "Total Linhas Aéreas"
-      ]
-    },
-    {
       "city": "São Paulo–Congonhas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
       "codes": [
@@ -454,7 +429,50 @@
     ],
     "TAP Air Portugal": [
       "Lisbon"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "LATAM Cargo Brasil",
+    "Total Linhas Aéreas"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Curitiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
+      "codes": [
+        "CWB",
+        "SBCT"
+      ],
+      "airlines": [
+        "Total Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "LATAM Cargo Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo-Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo-Guarulhos",
+      "codes": [
+        "GRU",
+        "SBGR"
+      ],
+      "airlines": [
+        "Total Linhas Aéreas"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "LATAM Cargo Brasil": [
       "Miami"
     ],
@@ -463,6 +481,6 @@
       "São Paulo-Guarulhos"
     ]
   },
-  "date-time-parse": "2026-04-28T22:05:43Z",
+  "date-time-parse": "2026-04-29T04:50:45Z",
   "date-time-wikidata": "2026-04-11T23:57:49Z"
 }

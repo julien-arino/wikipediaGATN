@@ -14,12 +14,35 @@
   "admin1_name": "Oregon",
   "admin2_name": "Umatilla County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Eastern_Oregon_Regional_Airport",
-  "outdegree": 2,
+  "outdegree": 1,
   "number_airlines": 1,
   "airlines": [
-    "FedEx Feeder"
+    "Boutique Air"
   ],
   "destinations": [
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Boutique Air"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Boutique Air": [
+      "Portland (OR)"
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
     {
       "city": "La Grande",
       "wikipedia_url": "https://en.wikipedia.org/wiki/La_Grande/Union_County_Airport",
@@ -43,12 +66,12 @@
       ]
     }
   ],
-  "airlines_destinations": {
+  "airlines_destinations_cargo": {
     "FedEx Feeder": [
       "La Grande",
       "Spokane"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:41Z",
+  "date-time-parse": "2026-04-29T04:57:46Z",
   "date-time-wikidata": "2026-04-17T19:39:01Z"
 }

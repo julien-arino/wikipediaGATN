@@ -14,10 +14,9 @@
   "admin1_name": "England",
   "admin2_name": "Dorset",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bournemouth_Airport",
-  "outdegree": 25,
-  "number_airlines": 5,
+  "outdegree": 20,
+  "number_airlines": 4,
   "airlines": [
-    "European Cargo",
     "Jet2.com",
     "Ryanair",
     "TUI Airways",
@@ -45,28 +44,6 @@
       ],
       "airlines": [
         "Ryanair"
-      ]
-    },
-    {
-      "city": "Chengdu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
-      "codes": [
-        "CTU",
-        "ZUUU"
-      ],
-      "airlines": [
-        "European Cargo"
-      ]
-    },
-    {
-      "city": "Chongqing",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
-      "codes": [
-        "CKG",
-        "ZUCK"
-      ],
-      "airlines": [
-        "European Cargo"
       ]
     },
     {
@@ -144,17 +121,6 @@
       ],
       "airlines": [
         "Ryanair"
-      ]
-    },
-    {
-      "city": "Haikou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
-      "codes": [
-        "HAK",
-        "ZJHK"
-      ],
-      "airlines": [
-        "European Cargo"
       ]
     },
     {
@@ -260,17 +226,6 @@
       ]
     },
     {
-      "city": "Vienna",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
-      "codes": [
-        "VIE",
-        "LOWW"
-      ],
-      "airlines": [
-        "European Cargo"
-      ]
-    },
-    {
       "city": "Zadar",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zadar_Airport",
       "codes": [
@@ -291,17 +246,6 @@
       "airlines": [
         "Jet2.com",
         "TUI Airways"
-      ]
-    },
-    {
-      "city": "Ürümqi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
-      "codes": [
-        "URC",
-        "ZWWW"
-      ],
-      "airlines": [
-        "European Cargo"
       ]
     }
   ],
@@ -338,7 +282,71 @@
       "Rhodes",
       "Tenerife–South",
       "Zakynthos"
-    ],
+    ]
+  },
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "European Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Chengdu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "European Cargo"
+      ]
+    },
+    {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK"
+      ],
+      "airlines": [
+        "European Cargo"
+      ]
+    },
+    {
+      "city": "Haikou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "European Cargo"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW"
+      ],
+      "airlines": [
+        "European Cargo"
+      ]
+    },
+    {
+      "city": "Ürümqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW"
+      ],
+      "airlines": [
+        "European Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "European Cargo": [
       "Chengdu",
       "Chongqing",
@@ -347,6 +355,6 @@
       "Ürümqi"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:59Z",
+  "date-time-parse": "2026-04-29T04:48:18Z",
   "date-time-wikidata": "2026-04-08T06:24:24Z"
 }

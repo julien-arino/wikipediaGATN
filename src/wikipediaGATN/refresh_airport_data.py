@@ -138,7 +138,7 @@ def check_needs_refresh(file_paths: list[str], verbose: bool = False) -> list[st
     return to_refresh
 
 
-def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only: bool = False, verbose: bool = False, file_idx: int = None, total_files: int = None, url_map: dict = None) -> bool:
+def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only: bool = False, verbose: bool = False, file_idx: int = None, total_files: int = None, url_map: dict = None, start_time: float = None) -> bool:
     """
     Refresh a single airport JSON file.
     
@@ -149,7 +149,14 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
     """
     if verbose:
         progress_str = f" [{file_idx}/{total_files}]" if file_idx is not None and total_files is not None else ""
-        print(f"\nRefreshing {os.path.basename(fpath)}{progress_str}...")
+        time_str = ""
+        if start_time is not None and file_idx is not None and total_files is not None and file_idx > 1:
+            elapsed = time.time() - start_time
+            avg_time = elapsed / (file_idx - 1)
+            eta = avg_time * (total_files - file_idx + 1)
+            time_str = f" (elapsed: {int(elapsed)}s, ETA: {int(eta)}s)"
+            
+        print(f"\nRefreshing {os.path.basename(fpath)}{progress_str}{time_str}...")
         
     try:
         with open(fpath, "r", encoding="utf-8") as f:
@@ -193,15 +200,25 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
         
         if url_map is None:
             url_map = build_url_to_codes_map(verbose=False)
+            
         mapped_destinations = format_destinations_list(new_data.get("destinations", []), new_data.get("airlines_destinations", {}), url_map)
+        mapped_destinations_cargo = format_destinations_list(new_data.get("destinations_cargo", []), new_data.get("airlines_destinations_cargo", {}), url_map)
                 
         if len(mapped_destinations) == 0:
             new_data["airlines_destinations"] = {}
             new_data["airlines"] = []
             
+        if len(mapped_destinations_cargo) == 0:
+            new_data["airlines_destinations_cargo"] = {}
+            new_data["airlines_cargo"] = []
+            
         new_data["destinations"] = mapped_destinations
         new_data["outdegree"] = len(mapped_destinations)
         new_data["number_airlines"] = len(new_data.get("airlines", []))
+        
+        new_data["destinations_cargo"] = mapped_destinations_cargo
+        new_data["outdegree_cargo"] = len(mapped_destinations_cargo)
+        new_data["number_airlines_cargo"] = len(new_data.get("airlines_cargo", []))
         
         # Migrate old legacy schema keys if they exist in the existing data
         if "region" in data:
@@ -232,35 +249,53 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
             
         ad_map_wikitext = parse_wikitext_airlines_destinations(wikitext)
         
-        airlines = []
-        destinations = []
-        airlines_destinations = {}
-        
-        if ad_map_wikitext:
-            airlines = sorted(ad_map_wikitext.keys())
-            destinations = sorted({
-                (d["name"], d["wikipedia_url"])
-                for dests in ad_map_wikitext.values()
-                for d in dests
-            })
-            airlines_destinations = {
-                airline: sorted({d["name"] for d in dests})
-                for airline, dests in ad_map_wikitext.items()
-            }
-        else:
-            # Fallback to HTML
+        # Intelligent HTML Fallback
+        html_content = None
+        if not ad_map_wikitext['passenger'] and ad_map_wikitext['cargo']:
             html_content = fetch_wikipedia_airport_html(link=url, verbose=verbose)
-            airlines = sorted(list(fetch_wikipedia_airlines(link=url, html_content=html_content)))
-            destinations = sorted(list(fetch_wikipedia_destinations(link=url, html_content=html_content)))
-            ad_map = fetch_wikipedia_airlines_destinations(link=url, html_content=html_content)
-            airlines_destinations = {k: sorted(v) for k, v in ad_map.items()}
+            ad_map_html = fetch_wikipedia_airlines_destinations(
+                link=url, html_content=html_content, verbose=verbose, soup=None)
+            if ad_map_html['passenger']:
+                ad_map_wikitext['passenger'] = ad_map_html['passenger']
+
+        if not ad_map_wikitext['passenger'] and not ad_map_wikitext['cargo']:
+            if not html_content:
+                html_content = fetch_wikipedia_airport_html(link=url, verbose=verbose)
+            ad_map = fetch_wikipedia_airlines_destinations(link=url, html_content=html_content, verbose=verbose)
+        else:
+            ad_map = ad_map_wikitext
+            
+        # Passenger data
+        airlines = sorted(ad_map['passenger'].keys())
+        destinations = sorted({
+            (d["name"], d["wikipedia_url"]) if isinstance(d, dict) else d
+            for dests in ad_map['passenger'].values()
+            for d in dests
+        })
+        airlines_destinations = {
+            airline: sorted({d["name"] if isinstance(d, dict) else d for d in dests})
+            for airline, dests in ad_map['passenger'].items()
+        }
+        
+        # Cargo data
+        airlines_cargo = sorted(ad_map['cargo'].keys())
+        destinations_cargo = sorted({
+            (d["name"], d["wikipedia_url"]) if isinstance(d, dict) else d
+            for dests in ad_map['cargo'].values()
+            for d in dests
+        })
+        airlines_destinations_cargo = {
+            airline: sorted({d["name"] if isinstance(d, dict) else d for d in dests})
+            for airline, dests in ad_map['cargo'].items()
+        }
 
         # Map destinations
         if url_map is None:
             url_map = build_url_to_codes_map(verbose=False)
         
         # Resolve any unknown Wikipedia URLs (redirects)
-        unresolved = [d[1] for d in destinations if len(d) >= 2 and d[1] not in url_map]
+        all_dests = destinations + destinations_cargo
+        unresolved = [d[1] for d in all_dests if len(d) >= 2 and d[1] not in url_map]
         if unresolved:
             headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
             for i in range(0, len(unresolved), 50):
@@ -293,10 +328,15 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
                     pass
 
         mapped_destinations = format_destinations_list(destinations, airlines_destinations, url_map)
+        mapped_destinations_cargo = format_destinations_list(destinations_cargo, airlines_destinations_cargo, url_map)
                 
         if len(mapped_destinations) == 0:
             airlines_destinations = {}
             airlines = []
+            
+        if len(mapped_destinations_cargo) == 0:
+            airlines_destinations_cargo = {}
+            airlines_cargo = []
             
         # Update the dictionary
         from datetime import datetime, timezone
@@ -305,6 +345,12 @@ def refresh_airport_file(fpath: str, refresh_all_data: bool = False, local_only:
         data["airlines_destinations"] = airlines_destinations
         data["number_airlines"] = len(airlines)
         data["outdegree"] = len(mapped_destinations)
+        
+        data["airlines_cargo"] = airlines_cargo
+        data["destinations_cargo"] = mapped_destinations_cargo
+        data["airlines_destinations_cargo"] = airlines_destinations_cargo
+        data["number_airlines_cargo"] = len(airlines_cargo)
+        data["outdegree_cargo"] = len(mapped_destinations_cargo)
         data["date-time-parse"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
         if dt_wikidata:
             data["date-time-wikidata"] = dt_wikidata
@@ -381,8 +427,9 @@ def refresh_airports(target: Union[str, list[str]] = "all", refresh_all_data: bo
     
     success_count = 0
     total_files = len(files_to_refresh)
+    start_time = time.time()
     for idx, fpath in enumerate(files_to_refresh, 1):
-        if refresh_airport_file(fpath, refresh_all_data=refresh_all_data, local_only=local_only, verbose=verbose, file_idx=idx, total_files=total_files, url_map=global_url_map):
+        if refresh_airport_file(fpath, refresh_all_data=refresh_all_data, local_only=local_only, verbose=verbose, file_idx=idx, total_files=total_files, url_map=global_url_map, start_time=start_time):
             success_count += 1
             
     print(f"\nRefresh complete. Successfully updated {success_count}/{len(files_to_refresh)} files.")

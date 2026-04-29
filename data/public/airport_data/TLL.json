@@ -14,13 +14,11 @@
   "admin1_name": "Harju",
   "admin2_name": "Tallinna linn",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tallinn_Airport",
-  "outdegree": 67,
-  "number_airlines": 26,
+  "outdegree": 62,
+  "number_airlines": 23,
   "airlines": [
-    "ASL Airlines Belgium",
     "Air Montenegro",
     "Corendon Airlines",
-    "Diamond Sky",
     "Eurowings",
     "Finnair",
     "Freebird Airlines",
@@ -40,7 +38,6 @@
     "Swiss International Air Lines",
     "Transavia",
     "Turkish Airlines",
-    "UPS Airlines",
     "Wizz Air",
     "airBaltic"
   ],
@@ -103,7 +100,6 @@
         "EDDB"
       ],
       "airlines": [
-        "ASL Airlines Belgium",
         "Ryanair"
       ]
     },
@@ -399,17 +395,6 @@
       ]
     },
     {
-      "city": "Katowice",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_International_Airport",
-      "codes": [
-        "KTW",
-        "EPKT"
-      ],
-      "airlines": [
-        "ASL Airlines Belgium"
-      ]
-    },
-    {
       "city": "Kittilä",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kittilä_Airport",
       "codes": [
@@ -439,7 +424,6 @@
         "EEKE"
       ],
       "airlines": [
-        "Diamond Sky",
         "NyxAir"
       ]
     },
@@ -588,17 +572,6 @@
       ]
     },
     {
-      "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "codes": [
-        "CDG",
-        "LFPG"
-      ],
-      "airlines": [
-        "UPS Airlines"
-      ]
-    },
-    {
       "city": "Paris–Orly",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
       "codes": [
@@ -621,17 +594,6 @@
       ]
     },
     {
-      "city": "Pärnu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pärnu_Airport",
-      "codes": [
-        "EPU",
-        "EEPU"
-      ],
-      "airlines": [
-        "Diamond Sky"
-      ]
-    },
-    {
       "city": "Rhodes",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
       "codes": [
@@ -644,17 +606,6 @@
       ]
     },
     {
-      "city": "Riga",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
-      "codes": [
-        "RIX",
-        "EVRA"
-      ],
-      "airlines": [
-        "Diamond Sky"
-      ]
-    },
-    {
       "city": "Rome–Fiumicino",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
       "codes": [
@@ -663,17 +614,6 @@
       ],
       "airlines": [
         "Wizz Air"
-      ]
-    },
-    {
-      "city": "Ruhnu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
-      "codes": [
-        "iata code not found",
-        "EERU"
-      ],
-      "airlines": [
-        "Diamond Sky"
       ]
     },
     {
@@ -929,7 +869,95 @@
       "Venice",
       "Vilnius",
       "Warsaw–Chopin"
-    ],
+    ]
+  },
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "ASL Airlines Belgium",
+    "Diamond Sky",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB"
+      ],
+      "airlines": [
+        "ASL Airlines Belgium"
+      ]
+    },
+    {
+      "city": "Katowice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_International_Airport",
+      "codes": [
+        "KTW",
+        "EPKT"
+      ],
+      "airlines": [
+        "ASL Airlines Belgium"
+      ]
+    },
+    {
+      "city": "Kuressaare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuressaare_Airport",
+      "codes": [
+        "URE",
+        "EEKE"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Pärnu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pärnu_Airport",
+      "codes": [
+        "EPU",
+        "EEPU"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    },
+    {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    },
+    {
+      "city": "Ruhnu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruhnu_Airfield",
+      "codes": [
+        "iata code not found",
+        "EERU"
+      ],
+      "airlines": [
+        "Diamond Sky"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "ASL Airlines Belgium": [
       "Berlin",
       "Katowice"
@@ -944,6 +972,6 @@
       "Paris–Charles de Gaulle"
     ]
   },
-  "date-time-parse": "2026-04-28T22:09:06Z",
+  "date-time-parse": "2026-04-29T05:00:30Z",
   "date-time-wikidata": "2026-04-27T21:33:10Z"
 }

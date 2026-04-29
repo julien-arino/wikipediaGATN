@@ -19,25 +19,25 @@
     "American Airlines",
     "Cape Air",
     "Delta Air Lines",
-    "Fly The Whale (page does not exist)",
+    "Fly The Whale",
     "JetBlue",
-    "Sky High Aviation Services",
+    "Sky High",
     "Spirit Airlines"
   ],
   "destinations": [
     {
-      "city": "Antonio Rivera Rodríguez Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodr%C3%ADguez_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
-        "VQS",
-        "TJVQ"
+        "ATL",
+        "KATL"
       ],
       "airlines": [
-        "Cape Air"
+        "Delta Air Lines"
       ]
     },
     {
-      "city": "Charlotte/Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte/Douglas_International_Airport",
       "codes": [
         "CLT",
@@ -48,29 +48,18 @@
       ]
     },
     {
-      "city": "Cyril E. King Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
-        "STT",
-        "TIST"
+        "ORD",
+        "KORD"
       ],
       "airlines": [
-        "Fly The Whale (page does not exist)"
+        "American Airlines"
       ]
     },
     {
-      "city": "Cyril E. King International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_International_Airport",
-      "codes": [
-        "STT",
-        "TIST"
-      ],
-      "airlines": [
-        "Cape Air"
-      ]
-    },
-    {
-      "city": "Fort Lauderdale-Hollywood International Airport",
+      "city": "Fort Lauderdale",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
       "codes": [
         "FLL",
@@ -81,42 +70,7 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Las Americas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Americas_International_Airport",
-      "codes": [
-        "SDQ",
-        "MDSD"
-      ],
-      "airlines": [
-        "Sky High Aviation Services"
-      ]
-    },
-    {
-      "city": "Luis Muñoz Marín International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn_International_Airport",
-      "codes": [
-        "SJU",
-        "TJSJ"
-      ],
-      "airlines": [
-        "Cape Air",
-        "Fly The Whale (page does not exist)",
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Miami International Airport",
+      "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
         "MIA",
@@ -127,18 +81,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Airlines"
-      ]
-    },
-    {
-      "city": "Vance W. Amory International Airport",
+      "city": "Nevis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vance_W._Amory_International_Airport",
       "codes": [
         "NEV",
@@ -147,37 +90,124 @@
       "airlines": [
         "Cape Air"
       ]
+    },
+    {
+      "city": "Saint Thomas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_Airport",
+      "codes": [
+        "STT",
+        "TIST"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Fly The Whale"
+      ]
+    },
+    {
+      "city": "Saint Thomas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_E._King_International_Airport",
+      "codes": [
+        "STT",
+        "TIST"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Fly The Whale"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Cape Air",
+        "Fly The Whale",
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Santo Domingo–Las Américas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Americas_International_Airport",
+      "codes": [
+        "SDQ",
+        "MDSD"
+      ],
+      "airlines": [
+        "Sky High"
+      ]
+    },
+    {
+      "city": "Vieques",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonio_Rivera_Rodríguez_Airport",
+      "codes": [
+        "VQS",
+        "TJVQ"
+      ],
+      "airlines": [
+        "Cape Air"
+      ]
     }
   ],
   "airlines_destinations": {
     "American Airlines": [
-      "Charlotte/Douglas International Airport",
-      "Miami International Airport",
-      "O'Hare International Airport"
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Miami"
     ],
     "Cape Air": [
-      "Antonio Rivera Rodríguez Airport",
-      "Cyril E. King International Airport",
-      "Luis Muñoz Marín International Airport",
-      "Vance W. Amory International Airport"
+      "Nevis",
+      "Saint Thomas",
+      "San Juan",
+      "Vieques"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
-    "Fly The Whale (page does not exist)": [
-      "Cyril E. King Airport",
-      "Luis Muñoz Marín International Airport"
+    "Fly The Whale": [
+      "Saint Thomas",
+      "San Juan"
     ],
     "JetBlue": [
-      "Luis Muñoz Marín International Airport"
+      "San Juan"
     ],
-    "Sky High Aviation Services": [
-      "Las Americas International Airport"
+    "Sky High": [
+      "Santo Domingo–Las Américas"
     ],
     "Spirit Airlines": [
-      "Fort Lauderdale-Hollywood International Airport"
+      "Fort Lauderdale"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:55Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "DHL Aviation",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ"
+      ],
+      "airlines": [
+        "DHL Aviation",
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "DHL Aviation": [
+      "San Juan"
+    ],
+    "FedEx Feeder": [
+      "San Juan"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:59:52Z",
   "date-time-wikidata": "2026-03-06T05:52:02Z"
 }

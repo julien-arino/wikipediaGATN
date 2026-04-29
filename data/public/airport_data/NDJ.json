@@ -27,7 +27,19 @@
   ],
   "destinations": [
     {
-      "city": "Addis Ababa Bole International Airport",
+      "city": "Abuja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "codes": [
+        "ABV",
+        "DNAA"
+      ],
+      "airlines": [
+        "ASKY Airlines",
+        "Air France"
+      ]
+    },
+    {
+      "city": "Addis Ababa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
       "codes": [
         "ADD",
@@ -38,7 +50,7 @@
       ]
     },
     {
-      "city": "Cairo International Airport",
+      "city": "Cairo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
       "codes": [
         "CAI",
@@ -49,29 +61,18 @@
       ]
     },
     {
-      "city": "Charles de Gaulle Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
       "codes": [
-        "CDG",
-        "LFPG"
+        "CMN",
+        "GMMN"
       ],
       "airlines": [
-        "Air France"
+        "Royal Air Maroc"
       ]
     },
     {
-      "city": "Diori Hamani International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
-      "codes": [
-        "NIM",
-        "DRRN"
-      ],
-      "airlines": [
-        "Turkish Airlines"
-      ]
-    },
-    {
-      "city": "Douala International Airport",
+      "city": "Douala",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Douala_International_Airport",
       "codes": [
         "DLA",
@@ -84,7 +85,7 @@
       ]
     },
     {
-      "city": "Istanbul Airport",
+      "city": "Istanbul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
       "codes": [
         "IST",
@@ -95,8 +96,8 @@
       ]
     },
     {
-      "city": "Lomé–Tokoin Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lom%C3%A9%E2%80%93Tokoin_Airport",
+      "city": "Lomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_Airport",
       "codes": [
         "LFW",
         "DXXX"
@@ -106,31 +107,30 @@
       ]
     },
     {
-      "city": "Mohammed V International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "city": "Niamey",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
       "codes": [
-        "CMN",
-        "GMMN"
+        "NIM",
+        "DRRN"
       ],
       "airlines": [
-        "Royal Air Maroc"
+        "Turkish Airlines"
       ]
     },
     {
-      "city": "Nnamdi Azikiwe International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
       "codes": [
-        "ABV",
-        "DNAA"
+        "CDG",
+        "LFPG"
       ],
       "airlines": [
-        "ASKY Airlines",
         "Air France"
       ]
     },
     {
-      "city": "Yaoundé Nsimalen International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaound%C3%A9_Nsimalen_International_Airport",
+      "city": "Yaoundé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaoundé_Nsimalen_International_Airport",
       "codes": [
         "NSI",
         "FKYS"
@@ -143,36 +143,113 @@
   ],
   "airlines_destinations": {
     "Air Côte d'Ivoire": [
-      "Douala International Airport"
+      "Douala"
     ],
     "Air France": [
-      "Charles de Gaulle Airport",
-      "Nnamdi Azikiwe International Airport"
+      "Abuja",
+      "Paris–Charles de Gaulle"
     ],
     "ASKY Airlines": [
-      "Douala International Airport",
-      "Lomé–Tokoin Airport",
-      "Nnamdi Azikiwe International Airport",
-      "Yaoundé Nsimalen International Airport"
+      "Abuja",
+      "Douala",
+      "Lomé",
+      "Yaoundé"
     ],
     "Camair-Co": [
-      "Douala International Airport",
-      "Yaoundé Nsimalen International Airport"
+      "Douala",
+      "Yaoundé"
     ],
     "Egyptair": [
-      "Cairo International Airport"
+      "Cairo"
     ],
     "Ethiopian Airlines": [
-      "Addis Ababa Bole International Airport"
+      "Addis Ababa"
     ],
     "Royal Air Maroc": [
-      "Mohammed V International Airport"
+      "Casablanca"
     ],
     "Turkish Airlines": [
-      "Diori Hamani International Airport",
-      "Istanbul Airport"
+      "Istanbul",
+      "Niamey"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:56Z",
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Cargolux",
+    "EgyptAir Cargo",
+    "Saudia Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "EgyptAir Cargo"
+      ]
+    },
+    {
+      "city": "Dubai-Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Cargolux": [
+      "Luxembourg"
+    ],
+    "EgyptAir Cargo": [
+      "Cairo"
+    ],
+    "Saudia Cargo": [
+      "Dubai-Al Maktoum",
+      "Jeddah",
+      "Sharjah"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:51Z",
   "date-time-wikidata": "2026-03-30T04:00:37Z"
 }

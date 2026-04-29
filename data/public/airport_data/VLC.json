@@ -14,8 +14,8 @@
   "admin1_name": "Valencia",
   "admin2_name": "Provincia de Valencia",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
-  "outdegree": 93,
-  "number_airlines": 37,
+  "outdegree": 92,
+  "number_airlines": 35,
   "airlines": [
     "Aegean Airlines",
     "Air Algérie",
@@ -43,12 +43,10 @@
     "Ryanair",
     "Scandinavian Airlines",
     "Smartwings",
-    "Swiftair",
     "Swiss International Air Lines",
     "TAP Air Portugal",
     "Transavia",
     "Turkish Airlines",
-    "UPS Airlines",
     "Volotea",
     "Vueling",
     "Wizz Air",
@@ -364,8 +362,7 @@
         "EDDK"
       ],
       "airlines": [
-        "Eurowings",
-        "UPS Airlines"
+        "Eurowings"
       ]
     },
     {
@@ -557,7 +554,6 @@
       ],
       "airlines": [
         "Iberia",
-        "Swiftair",
         "Vueling"
       ]
     },
@@ -725,19 +721,6 @@
     },
     {
       "city": "Madrid",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
-      "codes": [
-        "MAD",
-        "LEMD"
-      ],
-      "airlines": [
-        "Air Europa",
-        "Iberia",
-        "Swiftair"
-      ]
-    },
-    {
-      "city": "Madrid",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
       "codes": [
         "MAD",
@@ -745,8 +728,7 @@
       ],
       "airlines": [
         "Air Europa",
-        "Iberia",
-        "Swiftair"
+        "Iberia"
       ]
     },
     {
@@ -1322,7 +1304,50 @@
       "Tirana",
       "Venice",
       "Warsaw–Chopin"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Swiftair",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Ibiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
+      "codes": [
+        "IBZ",
+        "LEIB"
+      ],
+      "airlines": [
+        "Swiftair"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid_Airport",
+      "codes": [
+        "MAD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Swiftair"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Swiftair": [
       "Ibiza",
       "Madrid"
@@ -1331,6 +1356,6 @@
       "Cologne/Bonn"
     ]
   },
-  "date-time-parse": "2026-04-28T22:20:02Z",
+  "date-time-parse": "2026-04-29T05:01:26Z",
   "date-time-wikidata": "2026-04-20T04:21:40Z"
 }

@@ -14,12 +14,11 @@
   "admin1_name": "Zulia",
   "admin2_name": "Municipio San Francisco",
   "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
-  "outdegree": 9,
-  "number_airlines": 10,
+  "outdegree": 8,
+  "number_airlines": 9,
   "airlines": [
     "Aerolíneas Estelar",
     "Aeropostal",
-    "Aerosucre",
     "Avior Airlines",
     "Conviasa",
     "Copa Airlines",
@@ -29,17 +28,6 @@
     "Venezolana"
   ],
   "destinations": [
-    {
-      "city": "Bogotá",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
-      "codes": [
-        "BOG",
-        "SKBO"
-      ],
-      "airlines": [
-        "Aerosucre"
-      ]
-    },
     {
       "city": "Caracas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
@@ -170,11 +158,31 @@
     "Venezolana": [
       "Caracas",
       "Porlamar"
-    ],
+    ]
+  },
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Aerosucre"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO"
+      ],
+      "airlines": [
+        "Aerosucre"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Aerosucre": [
       "Bogotá"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:16Z",
+  "date-time-parse": "2026-04-29T04:55:47Z",
   "date-time-wikidata": "2026-04-23T04:30:30Z"
 }

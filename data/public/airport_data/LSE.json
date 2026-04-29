@@ -14,61 +14,67 @@
   "admin1_name": "Wisconsin",
   "admin2_name": "La Crosse County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/La_Crosse_Regional_Airport",
-  "outdegree": 3,
-  "number_airlines": 3,
+  "outdegree": 2,
+  "number_airlines": 2,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
-    "United Express"
+    "Chicago–O'Hare"
   ],
   "destinations": [
     {
-      "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago%E2%80%93O%27Hare",
+      "city": "American Eagle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/American_Eagle_(airline_brand)",
       "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
+        "iata code not found",
+        "icao code not found"
       ],
       "airlines": [
         "Allegiant Air"
       ]
     },
     {
-      "city": "Orlando Sanford International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "city": "United Express",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/United_Express",
       "codes": [
-        "SFB",
-        "KSFB"
+        "iata code not found",
+        "icao code not found"
       ],
       "airlines": [
-        "Allegiant Air"
+        "Chicago–O'Hare"
       ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Mesa Gateway Airport",
-      "Orlando Sanford International Airport"
+      "American Eagle"
     ],
-    "American Eagle (airline brand)": [
-      "Chicago–O'Hare"
-    ],
-    "United Express": [
-      "Chicago–O'Hare"
+    "Chicago–O'Hare": [
+      "United Express"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:40Z",
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "UPS Airlines": [
+      "Minneapolis/St. Paul"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:55:31Z",
   "date-time-wikidata": "2026-04-22T04:44:07Z"
 }

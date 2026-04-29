@@ -14,8 +14,8 @@
   "admin1_name": "Rhone-Alpes",
   "admin2_name": "Departement du Rhone",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
-  "outdegree": 121,
-  "number_airlines": 48,
+  "outdegree": 120,
+  "number_airlines": 46,
   "airlines": [
     "AJet",
     "ASL Airlines France",
@@ -37,7 +37,6 @@
     "Corsair International",
     "Croatia Airlines",
     "Emirates",
-    "Emirates SkyCargo",
     "Ethiopian Airlines",
     "Eurowings",
     "FlyOne",
@@ -60,7 +59,6 @@
     "Tunisair",
     "Turkish Airlines",
     "Twin Jet",
-    "UPS Airlines",
     "Volotea",
     "Vueling",
     "Wizz Air",
@@ -123,6 +121,7 @@
         "DAAG"
       ],
       "airlines": [
+        "ASL Airlines France",
         "Air Algérie",
         "Transavia"
       ]
@@ -475,17 +474,6 @@
       ]
     },
     {
-      "city": "Cologne/Bonn",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
-      "codes": [
-        "CGN",
-        "EDDK"
-      ],
-      "airlines": [
-        "UPS Airlines"
-      ]
-    },
-    {
       "city": "Constantine",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mohamed_Boudiaf_International_Airport",
       "codes": [
@@ -563,7 +551,6 @@
         "OMDW"
       ],
       "airlines": [
-        "Emirates SkyCargo",
         "Transavia"
       ]
     },
@@ -1129,17 +1116,6 @@
       ]
     },
     {
-      "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "codes": [
-        "CDG",
-        "LFPG"
-      ],
-      "airlines": [
-        "ASL Airlines France"
-      ]
-    },
-    {
       "city": "Pau",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pau_Pyrénées_Airport",
       "codes": [
@@ -1183,6 +1159,17 @@
       ],
       "airlines": [
         "Volotea"
+      ]
+    },
+    {
+      "city": "Pristina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pristina_International_Airport",
+      "codes": [
+        "PRN",
+        "BKPR"
+      ],
+      "airlines": [
+        "ASL Airlines France"
       ]
     },
     {
@@ -1530,7 +1517,8 @@
       "Istanbul–Sabiha Gökçen"
     ],
     "ASL Airlines France": [
-      "Paris–Charles de Gaulle"
+      "Algiers",
+      "Pristina"
     ],
     "Austrian Airlines": [
       "Vienna"
@@ -1732,6 +1720,53 @@
       "Skopje",
       "Sofia",
       "Tirana"
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "ASL Airlines France",
+    "Emirates SkyCargo",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG"
+      ],
+      "airlines": [
+        "ASL Airlines France"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "ASL Airlines France": [
+      "Paris–Charles de Gaulle"
     ],
     "Emirates SkyCargo": [
       "Dubai–Al Maktoum"
@@ -1740,6 +1775,6 @@
       "Cologne/Bonn"
     ]
   },
-  "date-time-parse": "2026-04-28T22:12:10Z",
+  "date-time-parse": "2026-04-29T04:55:41Z",
   "date-time-wikidata": "2026-04-25T07:46:37Z"
 }

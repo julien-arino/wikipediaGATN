@@ -18,25 +18,36 @@
   "number_airlines": 5,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas/Fort Worth International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -47,7 +58,7 @@
       ]
     },
     {
-      "city": "McCarran International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/McCarran_International_Airport",
       "codes": [
         "LAS",
@@ -58,7 +69,31 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Phoenix/Mesa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
       "codes": [
         "AZA",
@@ -67,60 +102,72 @@
       "airlines": [
         "Allegiant Air"
       ]
-    },
-    {
-      "city": "Minneapolis-Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
-      "codes": [
-        "MSP",
-        "KMSP"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "codes": [
-        "MSP",
-        "KMSP"
-      ],
-      "airlines": [
-        "Delta Connection"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
     }
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "McCarran International Airport",
-      "Mesa Gateway Airport"
+      "Las Vegas",
+      "Phoenix/Mesa"
     ],
-    "American Eagle (airline brand)": [
-      "Dallas/Fort Worth International Airport",
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth"
     ],
     "Delta Air Lines": [
-      "Minneapolis-Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "Delta Connection": [
-      "Minneapolis–Saint Paul International Airport"
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "Denver International Airport"
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:05Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Alpine Air Express",
+    "Encore Air Cargo",
+    "FedEx Feeder"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Fargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hector_International_Airport",
+      "codes": [
+        "FAR",
+        "KFAR"
+      ],
+      "airlines": [
+        "Alpine Air Express",
+        "Encore Air Cargo",
+        "FedEx Feeder"
+      ]
+    },
+    {
+      "city": "Sioux Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sioux_Falls_Regional_Airport",
+      "codes": [
+        "FSD",
+        "KFSD"
+      ],
+      "airlines": [
+        "Encore Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Alpine Air Express": [
+      "Fargo"
+    ],
+    "Encore Air Cargo": [
+      "Fargo",
+      "Sioux Falls"
+    ],
+    "FedEx Feeder": [
+      "Fargo"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:48:01Z",
   "date-time-wikidata": "2026-01-11T16:10:34Z"
 }

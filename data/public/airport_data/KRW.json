@@ -13,14 +13,63 @@
   "admin1_code": "TM-B",
   "admin1_name": "Balkan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Türkmenbaşy_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 3,
+  "outdegree": 3,
+  "number_airlines": 2,
   "airlines": [
     "Belavia",
-    "Fly Pro",
     "Turkmenistan Airlines"
   ],
   "destinations": [
+    {
+      "city": "Aşgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saparmyrat_Türkmenbaşy_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Minsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minsk_National_Airport",
+      "codes": [
+        "MSQ",
+        "UMMS"
+      ],
+      "airlines": [
+        "Belavia"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Belavia": [
+      "Minsk"
+    ],
+    "Turkmenistan Airlines": [
+      "Aşgabat",
+      "Istanbul"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Fly Pro",
+    "Turkmenistan Airlines"
+  ],
+  "destinations_cargo": [
     {
       "city": "Ashgabat",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_Airport",
@@ -55,17 +104,6 @@
       ]
     },
     {
-      "city": "Minsk",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minsk_National_Airport",
-      "codes": [
-        "MSQ",
-        "UMMS"
-      ],
-      "airlines": [
-        "Belavia"
-      ]
-    },
-    {
       "city": "Zaragoza",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zaragoza_Airport",
       "codes": [
@@ -77,10 +115,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Belavia": [
-      "Minsk"
-    ],
+  "airlines_destinations_cargo": {
     "Turkmenistan Airlines": [
       "Ashgabat",
       "Daşoguz",
@@ -90,6 +125,6 @@
       "Zaragoza"
     ]
   },
-  "date-time-parse": "2026-04-28T22:17:06Z",
+  "date-time-parse": "2026-04-29T04:54:37Z",
   "date-time-wikidata": "2026-03-21T14:33:18Z"
 }

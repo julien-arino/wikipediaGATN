@@ -17,13 +17,25 @@
   "outdegree": 3,
   "number_airlines": 3,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Detroit Metropolitan Wayne County Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Detroit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Wayne_County_Airport",
       "codes": [
         "DTW",
@@ -34,7 +46,7 @@
       ]
     },
     {
-      "city": "Minneapolis/Saint Paul International Airport",
+      "city": "Minneapolis/St. Paul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis/Saint_Paul_International_Airport",
       "codes": [
         "MSP",
@@ -43,32 +55,73 @@
       "airlines": [
         "Delta Connection"
       ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Chicago–O'Hare"
     ],
     "Delta Connection": [
-      "Detroit Metropolitan Wayne County Airport",
-      "Minneapolis/Saint Paul International Airport"
+      "Detroit",
+      "Minneapolis/St. Paul"
     ],
     "United Express": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:30Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Ameriflight",
+    "FedEx Feeder",
+    "PACC Air"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Appleton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Appleton_International_Airport",
+      "codes": [
+        "ATW",
+        "KATW"
+      ],
+      "airlines": [
+        "PACC Air"
+      ]
+    },
+    {
+      "city": "Lansing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capital_Region_International_Airport",
+      "codes": [
+        "LAN",
+        "KLAN"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "Milwaukee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milwaukee_Mitchell_International_Airport",
+      "codes": [
+        "MKE",
+        "KMKE"
+      ],
+      "airlines": [
+        "FedEx Feeder"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Lansing"
+    ],
+    "FedEx Feeder": [
+      "Milwaukee"
+    ],
+    "PACC Air": [
+      "Appleton"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:56:26Z",
   "date-time-wikidata": "2026-04-22T22:56:44Z"
 }

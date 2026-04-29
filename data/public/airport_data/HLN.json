@@ -23,7 +23,7 @@
   ],
   "destinations": [
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -45,8 +45,8 @@
       ]
     },
     {
-      "city": "Seattle–Tacoma International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle%E2%80%93Tacoma_International_Airport",
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA"
@@ -58,15 +58,62 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Seattle–Tacoma International Airport"
+      "Seattle/Tacoma"
     ],
     "Delta Connection": [
-      "Salt Lake City International Airport"
+      "Salt Lake City"
     ],
     "United Express": [
-      "Denver International Airport"
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:15:49Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Alpine Air Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Billings",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Billings_Logan_International_Airport",
+      "codes": [
+        "BIL",
+        "KBIL"
+      ],
+      "airlines": [
+        "Alpine Air Express"
+      ]
+    },
+    {
+      "city": "Butte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bert_Mooney_Airport",
+      "codes": [
+        "BTM",
+        "KBTM"
+      ],
+      "airlines": [
+        "Alpine Air Express"
+      ]
+    },
+    {
+      "city": "Kalispell",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glacier_Park_International_Airport",
+      "codes": [
+        "FCA",
+        "KGPI"
+      ],
+      "airlines": [
+        "Alpine Air Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Alpine Air Express": [
+      "Billings",
+      "Butte",
+      "Kalispell"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:51:44Z",
   "date-time-wikidata": "2026-03-19T16:49:58Z"
 }

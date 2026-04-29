@@ -13,8 +13,8 @@
   "admin1_code": "",
   "admin1_name": "Tripoli",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport",
-  "outdegree": 27,
-  "number_airlines": 22,
+  "outdegree": 26,
+  "number_airlines": 18,
   "airlines": [
     "Afriqiyah Airways",
     "Air Cairo",
@@ -23,21 +23,17 @@
     "Buraq Air",
     "Crown Airlines",
     "Egyptair",
-    "Egyptair Cargo",
     "Fly Cham",
     "Fly Oya",
     "Ghadames Air Transport",
     "Global Air",
     "Libyan Airlines",
     "Libyan Wings",
-    "MNG Airlines",
     "MedSky Airways",
     "Royal Air Maroc",
     "Royal Jordanian",
     "Tunisair",
-    "Turkish Airlines",
-    "Turkish Cargo",
-    "ULS Airlines Cargo"
+    "Turkish Airlines"
   ],
   "destinations": [
     {
@@ -130,7 +126,6 @@
         "Berniq Airways",
         "Crown Airlines",
         "Egyptair",
-        "Egyptair Cargo",
         "Fly Oya",
         "Libyan Airlines"
       ]
@@ -205,11 +200,8 @@
         "Ghadames Air Transport",
         "Libyan Airlines",
         "Libyan Wings",
-        "MNG Airlines",
         "MedSky Airways",
-        "Turkish Airlines",
-        "Turkish Cargo",
-        "ULS Airlines Cargo"
+        "Turkish Airlines"
       ]
     },
     {
@@ -270,17 +262,6 @@
       "airlines": [
         "Fly Oya",
         "Libyan Airlines"
-      ]
-    },
-    {
-      "city": "Ostend",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostend–Bruges_International_Airport",
-      "codes": [
-        "OST",
-        "EBOS"
-      ],
-      "airlines": [
-        "Egyptair Cargo"
       ]
     },
     {
@@ -486,7 +467,54 @@
     ],
     "Turkish Airlines": [
       "Istanbul"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 4,
+  "airlines_cargo": [
+    "Egyptair Cargo",
+    "MNG Airlines",
+    "Turkish Cargo",
+    "ULS Airlines Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM"
+      ],
+      "airlines": [
+        "MNG Airlines",
+        "Turkish Cargo",
+        "ULS Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Ostend",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostend–Bruges_International_Airport",
+      "codes": [
+        "OST",
+        "EBOS"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Egyptair Cargo": [
       "Cairo",
       "Ostend"
@@ -501,6 +529,6 @@
       "Istanbul"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:20Z",
+  "date-time-parse": "2026-04-29T04:56:10Z",
   "date-time-wikidata": "2026-04-28T16:58:02Z"
 }

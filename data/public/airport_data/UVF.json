@@ -13,16 +13,29 @@
   "admin1_code": "",
   "admin1_name": "LC",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Hewanorra_International_Airport",
-  "outdegree": 8,
-  "number_airlines": 5,
+  "outdegree": 13,
+  "number_airlines": 7,
   "airlines": [
     "Air Canada Rouge",
-    "Air Cargo Carriers",
+    "American Airlines",
     "British Airways",
+    "Delta Air Lines",
     "JetBlue",
+    "United Airlines",
     "WestJet"
   ],
   "destinations": [
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
     {
       "city": "Boston",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
@@ -35,14 +48,25 @@
       ]
     },
     {
-      "city": "Dominica–Douglas-Charles",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
-        "DOM",
-        "TDPD"
+        "CLT",
+        "KCLT"
       ],
       "airlines": [
-        "Air Cargo Carriers"
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Airlines"
       ]
     },
     {
@@ -79,6 +103,17 @@
       ]
     },
     {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
       "city": "New York–JFK",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
       "codes": [
@@ -86,7 +121,30 @@
         "KJFK"
       ],
       "airlines": [
+        "American Airlines",
         "JetBlue"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Airlines"
       ]
     },
     {
@@ -117,23 +175,83 @@
     "Air Canada Rouge": [
       "Toronto–Pearson"
     ],
+    "American Airlines": [
+      "Charlotte",
+      "Miami",
+      "New York–JFK",
+      "Philadelphia"
+    ],
     "British Airways": [
       "Georgetown–Cheddi Jagan",
       "Grenada",
       "London–Gatwick",
       "Tobago"
     ],
+    "Delta Air Lines": [
+      "Atlanta"
+    ],
     "JetBlue": [
       "Boston",
       "New York–JFK"
     ],
+    "United Airlines": [
+      "Chicago–O'Hare",
+      "Newark"
+    ],
     "WestJet": [
       "Toronto–Pearson"
-    ],
-    "Air Cargo Carriers": [
-      "Dominica–Douglas-Charles"
     ]
   },
-  "date-time-parse": "2026-04-28T22:19:56Z",
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Air Cargo Carriers",
+    "Amerijet International"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Dominica–Douglas-Charles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
+      "codes": [
+        "DOM",
+        "TDPD"
+      ],
+      "airlines": [
+        "Air Cargo Carriers"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "Amerijet International"
+      ]
+    },
+    {
+      "city": "Port of Spain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
+      "codes": [
+        "POS",
+        "TTPP"
+      ],
+      "airlines": [
+        "Amerijet International"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Air Cargo Carriers": [
+      "Dominica–Douglas-Charles"
+    ],
+    "Amerijet International": [
+      "Miami",
+      "Port of Spain"
+    ]
+  },
+  "date-time-parse": "2026-04-29T05:01:15Z",
   "date-time-wikidata": "2026-04-11T16:08:05Z"
 }

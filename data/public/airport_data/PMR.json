@@ -15,12 +15,10 @@
   "admin2_name": "Palmerston North City",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Palmerston_North_Airport",
   "outdegree": 4,
-  "number_airlines": 4,
+  "number_airlines": 2,
   "airlines": [
     "Air New Zealand",
-    "Originair",
-    "Parcelair",
-    "Texel Air Australasia"
+    "Originair"
   ],
   "destinations": [
     {
@@ -31,9 +29,7 @@
         "NZAA"
       ],
       "airlines": [
-        "Air New Zealand",
-        "Parcelair",
-        "Texel Air Australasia"
+        "Air New Zealand"
       ]
     },
     {
@@ -56,9 +52,7 @@
       ],
       "airlines": [
         "Air New Zealand",
-        "Originair",
-        "Parcelair",
-        "Texel Air Australasia"
+        "Originair"
       ]
     },
     {
@@ -82,7 +76,41 @@
       "Blenheim",
       "Christchurch",
       "Nelson"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Parcelair",
+    "Texel Air Australasia"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Auckland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
+      "codes": [
+        "AKL",
+        "NZAA"
+      ],
+      "airlines": [
+        "Parcelair",
+        "Texel Air Australasia"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_International_Airport",
+      "codes": [
+        "CHC",
+        "NZCH"
+      ],
+      "airlines": [
+        "Parcelair",
+        "Texel Air Australasia"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Parcelair": [
       "Auckland",
       "Christchurch"
@@ -92,6 +120,6 @@
       "Christchurch"
     ]
   },
-  "date-time-parse": "2026-04-28T22:18:27Z",
+  "date-time-parse": "2026-04-29T04:58:04Z",
   "date-time-wikidata": "2025-10-20T00:01:32Z"
 }

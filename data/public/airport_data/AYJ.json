@@ -19,12 +19,12 @@
   "airlines": [
     "Air India Express",
     "Akasa Air",
-    "Alliance Air (India)",
+    "Alliance Air",
     "IndiGo"
   ],
   "destinations": [
     {
-      "city": "Ahmedabad Airport",
+      "city": "Ahmedabad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmedabad_Airport",
       "codes": [
         "AMD",
@@ -35,54 +35,7 @@
       ]
     },
     {
-      "city": "Chhatrapati Shivaji Maharaj International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
-      "codes": [
-        "BOM",
-        "VABB"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Dehradun Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dehradun_Airport",
-      "codes": [
-        "DED",
-        "VIDN"
-      ],
-      "airlines": [
-        "Alliance Air (India)"
-      ]
-    },
-    {
-      "city": "Hisar Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hisar_Airport",
-      "codes": [
-        "HSS",
-        "VIHR"
-      ],
-      "airlines": [
-        "Alliance Air (India)"
-      ]
-    },
-    {
-      "city": "Indira Gandhi International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "codes": [
-        "DEL",
-        "VIDP"
-      ],
-      "airlines": [
-        "Air India Express",
-        "Akasa Air",
-        "Alliance Air (India)",
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Kempegowda International Airport",
+      "city": "Bengaluru",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
       "codes": [
         "BLR",
@@ -94,7 +47,43 @@
       ]
     },
     {
-      "city": "Rajiv Gandhi International Airport",
+      "city": "Dehradun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dehradun_Airport",
+      "codes": [
+        "DED",
+        "VIDN"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hisar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hisar_Airport",
+      "codes": [
+        "HSS",
+        "VIHR"
+      ],
+      "airlines": [
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Hyderabad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
       "codes": [
         "HYD",
@@ -103,29 +92,45 @@
       "airlines": [
         "IndiGo"
       ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
     }
   ],
   "airlines_destinations": {
     "Air India Express": [
-      "Indira Gandhi International Airport",
-      "Kempegowda International Airport"
+      "Bengaluru",
+      "Delhi"
     ],
     "Akasa Air": [
-      "Indira Gandhi International Airport"
+      "Delhi"
     ],
-    "Alliance Air (India)": [
-      "Dehradun Airport",
-      "Hisar Airport",
-      "Indira Gandhi International Airport"
+    "Alliance Air": [
+      "Dehradun",
+      "Delhi",
+      "Hisar"
     ],
     "IndiGo": [
-      "Ahmedabad Airport",
-      "Chhatrapati Shivaji Maharaj International Airport",
-      "Indira Gandhi International Airport",
-      "Kempegowda International Airport",
-      "Rajiv Gandhi International Airport"
+      "Ahmedabad",
+      "Bengaluru",
+      "Delhi",
+      "Hyderabad",
+      "Mumbai"
     ]
   },
-  "date-time-parse": "2026-04-28T22:03:42Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:47:31Z",
   "date-time-wikidata": "2026-03-27T13:28:21Z"
 }

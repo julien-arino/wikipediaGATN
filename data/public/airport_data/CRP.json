@@ -17,25 +17,25 @@
   "outdegree": 4,
   "number_airlines": 4,
   "airlines": [
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Frontier Airlines",
     "Southwest Airlines",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -46,18 +46,7 @@
       ]
     },
     {
-      "city": "George Bush Intercontinental Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
-      "codes": [
-        "IAH",
-        "KIAH"
-      ],
-      "airlines": [
-        "United Express"
-      ]
-    },
-    {
-      "city": "William P. Hobby Airport",
+      "city": "Houston–Hobby",
       "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
       "codes": [
         "HOU",
@@ -66,22 +55,68 @@
       "airlines": [
         "Southwest Airlines"
       ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
     }
   ],
   "airlines_destinations": {
-    "American Eagle (airline brand)": [
-      "Dallas Fort Worth International Airport"
+    "American Eagle": [
+      "Dallas/Fort Worth"
     ],
     "Frontier Airlines": [
-      "Denver International Airport"
+      "Denver"
     ],
     "Southwest Airlines": [
-      "William P. Hobby Airport"
+      "Houston–Hobby"
     ],
     "United Express": [
-      "George Bush Intercontinental Airport"
+      "Houston–Intercontinental"
     ]
   },
-  "date-time-parse": "2026-04-28T22:04:56Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Ameriflight"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Midland/Odessa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midland_International_Air_and_Space_Port",
+      "codes": [
+        "MAF",
+        "KMAF"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    },
+    {
+      "city": "San Antonio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Antonio_International_Airport",
+      "codes": [
+        "SAT",
+        "KSAT"
+      ],
+      "airlines": [
+        "Ameriflight"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ameriflight": [
+      "Midland/Odessa",
+      "San Antonio"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:49:26Z",
   "date-time-wikidata": "2025-12-08T04:33:06Z"
 }

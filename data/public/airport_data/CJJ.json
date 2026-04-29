@@ -13,8 +13,8 @@
   "admin1_code": "KR-43",
   "admin1_name": "Chungcheongbuk-do",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cheongju_International_Airport",
-  "outdegree": 23,
-  "number_airlines": 10,
+  "outdegree": 22,
+  "number_airlines": 9,
   "airlines": [
     "Aero K",
     "Asiana Airlines",
@@ -22,7 +22,6 @@
     "Jeju Air",
     "Jin Air",
     "Korean Air",
-    "Korean Air Cargo",
     "Loong Air",
     "Sichuan Airlines",
     "T'way Air"
@@ -213,17 +212,6 @@
       ]
     },
     {
-      "city": "Seoul–Incheon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "codes": [
-        "ICN",
-        "RKSI"
-      ],
-      "airlines": [
-        "Korean Air Cargo"
-      ]
-    },
-    {
       "city": "Shanghai–Pudong",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
       "codes": [
@@ -231,8 +219,7 @@
         "ZSPD"
       ],
       "airlines": [
-        "Eastar Jet",
-        "Korean Air Cargo"
+        "Eastar Jet"
       ]
     },
     {
@@ -345,12 +332,43 @@
       "Nha Trang",
       "Osaka–Kansai",
       "Yanji"
-    ],
+    ]
+  },
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "Korean Air Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD"
+      ],
+      "airlines": [
+        "Korean Air Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Korean Air Cargo": [
       "Seoul–Incheon",
       "Shanghai–Pudong"
     ]
   },
-  "date-time-parse": "2026-04-28T22:14:56Z",
+  "date-time-parse": "2026-04-29T04:49:10Z",
   "date-time-wikidata": "2026-03-02T12:23:50Z"
 }

@@ -13,15 +13,13 @@
   "admin1_code": "JP-40",
   "admin1_name": "Fukuoka",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kitakyushu_Airport",
-  "outdegree": 7,
-  "number_airlines": 6,
+  "outdegree": 4,
+  "number_airlines": 4,
   "airlines": [
     "Aero K",
     "Japan Airlines",
     "Jin Air",
-    "Korean Air Cargo",
-    "StarFlyer",
-    "Yamato Transport"
+    "StarFlyer"
   ],
   "destinations": [
     {
@@ -35,6 +33,63 @@
         "Aero K"
       ]
     },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI"
+      ],
+      "airlines": [
+        "Jin Air"
+      ]
+    },
+    {
+      "city": "Taipei–Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP"
+      ],
+      "airlines": [
+        "StarFlyer"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT"
+      ],
+      "airlines": [
+        "Japan Airlines",
+        "StarFlyer"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aero K": [
+      "Cheongju"
+    ],
+    "Japan Airlines": [
+      "Tokyo–Haneda"
+    ],
+    "Jin Air": [
+      "Seoul–Incheon"
+    ],
+    "StarFlyer": [
+      "Taipei–Taoyuan",
+      "Tokyo–Haneda"
+    ]
+  },
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 2,
+  "airlines_cargo": [
+    "Korean Air Cargo",
+    "Yamato Transport"
+  ],
+  "destinations_cargo": [
     {
       "city": "Los Angeles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
@@ -65,31 +120,7 @@
         "RKSI"
       ],
       "airlines": [
-        "Jin Air",
         "Korean Air Cargo"
-      ]
-    },
-    {
-      "city": "Taipei–Taoyuan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
-      "codes": [
-        "TPE",
-        "RCTP"
-      ],
-      "airlines": [
-        "StarFlyer"
-      ]
-    },
-    {
-      "city": "Tokyo–Haneda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
-      "codes": [
-        "HND",
-        "RJTT"
-      ],
-      "airlines": [
-        "Japan Airlines",
-        "StarFlyer"
       ]
     },
     {
@@ -104,20 +135,7 @@
       ]
     }
   ],
-  "airlines_destinations": {
-    "Aero K": [
-      "Cheongju"
-    ],
-    "Japan Airlines": [
-      "Tokyo–Haneda"
-    ],
-    "Jin Air": [
-      "Seoul–Incheon"
-    ],
-    "StarFlyer": [
-      "Taipei–Taoyuan",
-      "Tokyo–Haneda"
-    ],
+  "airlines_destinations_cargo": {
     "Korean Air Cargo": [
       "Los Angeles",
       "Seoul–Incheon"
@@ -127,6 +145,6 @@
       "Tokyo–Narita"
     ]
   },
-  "date-time-parse": "2026-04-28T22:11:54Z",
+  "date-time-parse": "2026-04-29T04:54:24Z",
   "date-time-wikidata": "2026-02-26T21:59:48Z"
 }

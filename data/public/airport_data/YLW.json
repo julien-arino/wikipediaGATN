@@ -14,7 +14,7 @@
   "admin1_name": "British Columbia",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kelowna_International_Airport",
   "outdegree": 19,
-  "number_airlines": 16,
+  "number_airlines": 13,
   "airlines": [
     "Air Canada",
     "Air Canada Express",
@@ -22,14 +22,11 @@
     "Air North",
     "Alaska Airlines",
     "Canadian North",
-    "Carson Air",
     "Central Mountain Air",
     "Flair Airlines",
-    "KF Cargo",
     "North Cariboo Air",
     "Pacific Coastal Airlines",
     "Porter Airlines",
-    "SkyLink Express",
     "WestJet",
     "WestJet Encore"
   ],
@@ -43,7 +40,6 @@
       ],
       "airlines": [
         "Air Canada Express",
-        "Carson Air",
         "Flair Airlines",
         "WestJet",
         "WestJet Encore"
@@ -124,10 +120,7 @@
         "CYKA"
       ],
       "airlines": [
-        "Canadian North",
-        "Carson Air",
-        "KF Cargo",
-        "SkyLink Express"
+        "Canadian North"
       ]
     },
     {
@@ -232,12 +225,9 @@
         "Air Canada Rouge",
         "Air North",
         "Canadian North",
-        "Carson Air",
         "Central Mountain Air",
         "Flair Airlines",
-        "KF Cargo",
         "North Cariboo Air",
-        "SkyLink Express",
         "WestJet"
       ]
     },
@@ -324,7 +314,55 @@
     "WestJet Encore": [
       "Calgary",
       "Edmonton"
-    ],
+    ]
+  },
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Carson Air",
+    "KF Cargo",
+    "SkyLink Express"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "Carson Air"
+      ]
+    },
+    {
+      "city": "Kamloops",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kamloops_Airport",
+      "codes": [
+        "YKA",
+        "CYKA"
+      ],
+      "airlines": [
+        "Carson Air",
+        "KF Cargo",
+        "SkyLink Express"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Carson Air",
+        "KF Cargo",
+        "SkyLink Express"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
     "Carson Air": [
       "Calgary",
       "Kamloops",
@@ -339,6 +377,6 @@
       "Vancouver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:20:21Z",
+  "date-time-parse": "2026-04-29T05:02:12Z",
   "date-time-wikidata": "2026-04-14T17:09:40Z"
 }

@@ -18,34 +18,46 @@
   "number_airlines": 3,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "United Express"
   ],
   "destinations": [
     {
-      "city": "Charlotte Douglas International Airport",
+      "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Dallas Fort Worth International Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Eagle",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW"
       ],
       "airlines": [
-        "American Eagle (airline brand)"
+        "American Eagle"
       ]
     },
     {
-      "city": "Denver International Airport",
+      "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
         "DEN",
@@ -57,8 +69,8 @@
       ]
     },
     {
-      "city": "Destin–Fort Walton Beach Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin%E2%80%93Fort_Walton_Beach_Airport",
+      "city": "Destin/Fort Walton Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin–Fort_Walton_Beach_Airport",
       "codes": [
         "VPS",
         "KVPS"
@@ -68,7 +80,7 @@
       ]
     },
     {
-      "city": "Fort Lauderdale-Hollywood International Airport",
+      "city": "Fort Lauderdale",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale-Hollywood_International_Airport",
       "codes": [
         "FLL",
@@ -79,7 +91,7 @@
       ]
     },
     {
-      "city": "Harry Reid International Airport",
+      "city": "Las Vegas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
       "codes": [
         "LAS",
@@ -90,18 +102,7 @@
       ]
     },
     {
-      "city": "Mesa Gateway Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
-      "codes": [
-        "AZA",
-        "KIWA"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Nashville International Airport",
+      "city": "Nashville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
       "codes": [
         "BNA",
@@ -112,19 +113,7 @@
       ]
     },
     {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
-      "codes": [
-        "ORD",
-        "KORD"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)",
-        "United Express"
-      ]
-    },
-    {
-      "city": "Orlando Sanford International Airport",
+      "city": "Orlando/Sanford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
       "codes": [
         "SFB",
@@ -135,7 +124,18 @@
       ]
     },
     {
-      "city": "Punta Gorda Airport (Florida)",
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Punta Gorda (FL)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
       "codes": [
         "PGD",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "city": "Sarasota-Bradenton International Airport",
+      "city": "Sarasota",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota-Bradenton_International_Airport",
       "codes": [
         "SRQ",
@@ -157,8 +157,8 @@
       ]
     },
     {
-      "city": "St. Pete–Clearwater International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete%E2%80%93Clearwater_International_Airport",
+      "city": "St. Petersburg/Clearwater",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St._Pete–Clearwater_International_Airport",
       "codes": [
         "PIE",
         "KPIE"
@@ -170,27 +170,62 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Denver International Airport",
-      "Destin–Fort Walton Beach Airport",
-      "Fort Lauderdale-Hollywood International Airport",
-      "Harry Reid International Airport",
-      "Mesa Gateway Airport",
-      "Nashville International Airport",
-      "Orlando Sanford International Airport",
-      "Punta Gorda Airport (Florida)",
-      "Sarasota-Bradenton International Airport",
-      "St. Pete–Clearwater International Airport"
+      "Denver",
+      "Destin/Fort Walton Beach",
+      "Fort Lauderdale",
+      "Las Vegas",
+      "Nashville",
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "Punta Gorda (FL)",
+      "Sarasota",
+      "St. Petersburg/Clearwater"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport",
-      "Dallas Fort Worth International Airport",
-      "O'Hare International Airport"
+    "American Eagle": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth"
     ],
     "United Express": [
-      "Denver International Airport",
-      "O'Hare International Airport"
+      "Chicago–O'Hare",
+      "Denver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:08:04Z",
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Chicago/Rockford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Rockford_International_Airport",
+      "codes": [
+        "RFD",
+        "KRFD"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Louisville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
+      "codes": [
+        "SDF",
+        "KSDF"
+      ],
+      "airlines": [
+        "UPS Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "UPS Airlines": [
+      "Chicago/Rockford",
+      "Louisville"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:57:55Z",
   "date-time-wikidata": "2026-04-14T20:03:37Z"
 }

@@ -18,79 +18,13 @@
   "number_airlines": 4,
   "airlines": [
     "Allegiant Air",
-    "American Eagle (airline brand)",
+    "American Eagle",
     "Delta Air Lines",
     "TUI Airways"
   ],
   "destinations": [
     {
-      "city": "Belfast International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
-      "codes": [
-        "BFS",
-        "EGAA"
-      ],
-      "airlines": [
-        "TUI Airways"
-      ]
-    },
-    {
-      "city": "Charlotte Douglas International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT"
-      ],
-      "airlines": [
-        "American Eagle (airline brand)"
-      ]
-    },
-    {
-      "city": "Cincinnati/Northern Kentucky International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
-      "codes": [
-        "CVG",
-        "KCVG"
-      ],
-      "airlines": [
-        "Allegiant Air"
-      ]
-    },
-    {
-      "city": "Gatwick Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
-      "codes": [
-        "LGW",
-        "EGKK"
-      ],
-      "airlines": [
-        "TUI Airways"
-      ]
-    },
-    {
-      "city": "Glasgow Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
-      "codes": [
-        "GLA",
-        "EGPF"
-      ],
-      "airlines": [
-        "TUI Airways"
-      ]
-    },
-    {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Lehigh Valley International Airport",
+      "city": "Allentown",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lehigh_Valley_International_Airport",
       "codes": [
         "ABE",
@@ -101,7 +35,73 @@
       ]
     },
     {
-      "city": "Manchester Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Belfast–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
+      "codes": [
+        "BFS",
+        "EGAA"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Glasgow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK"
+      ],
+      "airlines": [
+        "TUI Airways"
+      ]
+    },
+    {
+      "city": "Manchester (UK)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
       "codes": [
         "MAN",
@@ -112,7 +112,7 @@
       ]
     },
     {
-      "city": "Newcastle International Airport",
+      "city": "Newcastle upon Tyne",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newcastle_International_Airport",
       "codes": [
         "NCL",
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "city": "Pittsburgh International Airport",
+      "city": "Pittsburgh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
       "codes": [
         "PIT",
@@ -136,24 +136,29 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
-      "Cincinnati/Northern Kentucky International Airport",
-      "Lehigh Valley International Airport",
-      "Pittsburgh International Airport"
+      "Allentown",
+      "Cincinnati",
+      "Pittsburgh"
     ],
-    "American Eagle (airline brand)": [
-      "Charlotte Douglas International Airport"
+    "American Eagle": [
+      "Charlotte"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport"
+      "Atlanta"
     ],
     "TUI Airways": [
-      "Belfast International Airport",
-      "Gatwick Airport",
-      "Glasgow Airport",
-      "Manchester Airport",
-      "Newcastle International Airport"
+      "Belfast–International",
+      "Glasgow",
+      "London–Gatwick",
+      "Manchester (UK)",
+      "Newcastle upon Tyne"
     ]
   },
-  "date-time-parse": "2026-04-28T22:07:26Z",
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-04-29T04:56:14Z",
   "date-time-wikidata": "2026-04-22T04:55:12Z"
 }

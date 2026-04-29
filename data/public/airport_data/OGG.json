@@ -17,7 +17,7 @@
   "outdegree": 8,
   "number_airlines": 5,
   "airlines": [
-    "Aero (American airline)",
+    "Aero",
     "American Airlines",
     "Delta Air Lines",
     "Southwest Airlines",
@@ -25,7 +25,18 @@
   ],
   "destinations": [
     {
-      "city": "Calgary International Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Calgary",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
       "codes": [
         "YYC",
@@ -36,30 +47,8 @@
       ]
     },
     {
-      "city": "Hartsfield–Jackson Atlanta International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield%E2%80%93Jackson_Atlanta_International_Airport",
-      "codes": [
-        "ATL",
-        "KATL"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Minneapolis–Saint Paul International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis%E2%80%93Saint_Paul_International_Airport",
-      "codes": [
-        "MSP",
-        "KMSP"
-      ],
-      "airlines": [
-        "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "O'Hare International Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O%27Hare_International_Airport",
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
       "codes": [
         "ORD",
         "KORD"
@@ -69,7 +58,29 @@
       ]
     },
     {
-      "city": "Salt Lake City International Airport",
+      "city": "Los Angeles–Van Nuys",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
+      "codes": [
+        "VNY",
+        "KVNY"
+      ],
+      "airlines": [
+        "Aero"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
         "SLC",
@@ -80,7 +91,7 @@
       ]
     },
     {
-      "city": "San Diego International Airport",
+      "city": "San Diego",
       "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
       "codes": [
         "SAN",
@@ -91,18 +102,7 @@
       ]
     },
     {
-      "city": "Van Nuys Airport",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Nuys_Airport",
-      "codes": [
-        "VNY",
-        "KVNY"
-      ],
-      "airlines": [
-        "Aero (American airline)"
-      ]
-    },
-    {
-      "city": "Vancouver International Airport",
+      "city": "Vancouver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
       "codes": [
         "YVR",
@@ -114,25 +114,120 @@
     }
   ],
   "airlines_destinations": {
-    "Aero (American airline)": [
-      "Van Nuys Airport"
+    "Aero": [
+      "Los Angeles–Van Nuys"
     ],
     "American Airlines": [
-      "O'Hare International Airport"
+      "Chicago–O'Hare"
     ],
     "Delta Air Lines": [
-      "Hartsfield–Jackson Atlanta International Airport",
-      "Minneapolis–Saint Paul International Airport",
-      "Salt Lake City International Airport"
+      "Atlanta",
+      "Minneapolis/St. Paul",
+      "Salt Lake City"
     ],
     "Southwest Airlines": [
-      "San Diego International Airport"
+      "San Diego"
     ],
     "WestJet": [
-      "Calgary International Airport",
-      "Vancouver International Airport"
+      "Calgary",
+      "Vancouver"
     ]
   },
-  "date-time-parse": "2026-04-28T22:16:47Z",
+  "outdegree_cargo": 5,
+  "number_airlines_cargo": 5,
+  "airlines_cargo": [
+    "Aloha Air Cargo",
+    "Atlas Air",
+    "Kamaka Air",
+    "Transair",
+    "UPS Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Hilo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hilo_International_Airport",
+      "codes": [
+        "ITO",
+        "PHTO"
+      ],
+      "airlines": [
+        "Aloha Air Cargo",
+        "Transair"
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Aloha Air Cargo",
+        "Kamaka Air",
+        "Transair"
+      ]
+    },
+    {
+      "city": "Kailua-Kona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kona_International_Airport",
+      "codes": [
+        "KOA",
+        "PHKO"
+      ],
+      "airlines": [
+        "Aloha Air Cargo",
+        "Atlas Air",
+        "UPS Airlines"
+      ]
+    },
+    {
+      "city": "Lihue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lihue_Airport",
+      "codes": [
+        "LIH",
+        "PHLI"
+      ],
+      "airlines": [
+        "Aloha Air Cargo"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT"
+      ],
+      "airlines": [
+        "Atlas Air",
+        "UPS Airlines"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Aloha Air Cargo": [
+      "Hilo",
+      "Honolulu",
+      "Kailua-Kona",
+      "Lihue"
+    ],
+    "Atlas Air": [
+      "Kailua-Kona",
+      "Ontario"
+    ],
+    "Kamaka Air": [
+      "Honolulu"
+    ],
+    "Transair": [
+      "Hilo",
+      "Honolulu"
+    ],
+    "UPS Airlines": [
+      "Kailua-Kona",
+      "Ontario"
+    ]
+  },
+  "date-time-parse": "2026-04-29T04:57:16Z",
   "date-time-wikidata": "2026-04-28T05:15:33Z"
 }

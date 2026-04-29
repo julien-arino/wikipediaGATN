@@ -63,10 +63,12 @@ dependencies = [
 
     # NLP (model must be downloaded separately – see note above)
     "spacy>=3.5",
+    "python-dateutil>=2.8",
 
     # Geo / country data
     "geopy>=2.3",
     "pycountry>=22.3",
+    "pycountry-convert>=0.7",
 
     # Numerical / data
     "numpy>=1.24",

@@ -1,6 +1,7 @@
 {
   "iata": "PZU",
   "icao": "HSPN",
+  "gps": "HSPN",
   "city-served": "Port Sudan",
   "city-served-wikipedia": "[[Port Sudan]], [[Sudan]]",
   "location": "Port Sudan",
@@ -30,6 +31,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
       "codes": [
         "ADD",
+        "HAAB",
         "HAAB"
       ],
       "airlines": [
@@ -41,6 +43,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
       "codes": [
         "CAI",
+        "HECA",
         "HECA"
       ],
       "airlines": [
@@ -53,6 +56,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
       "codes": [
         "IST",
+        "LTFM",
         "LTFM"
       ],
       "airlines": [
@@ -64,6 +68,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
       "codes": [
         "JED",
+        "OEJN",
         "OEJN"
       ],
       "airlines": [
@@ -75,6 +80,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Juba_International_Airport",
       "codes": [
         "JUB",
+        "HJJJ",
         "HJJJ"
       ],
       "airlines": [
@@ -86,6 +92,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Muscat_International_Airport",
       "codes": [
         "MCT",
+        "OOMS",
         "OOMS"
       ],
       "airlines": [
@@ -98,16 +105,56 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
       "codes": [
         "RUH",
+        "OERK",
         "OERK"
       ],
       "airlines": [
         "Sudan Airways"
       ]
+    },
+    {
+      "city": "Dongola",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongola_Airport",
+      "codes": [
+        "DOG",
+        "HSDN",
+        "HSDN"
+      ],
+      "airlines": [
+        "Tarco Aviation"
+      ]
+    },
+    {
+      "city": "[[Khartoum]], Sudan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khartoum_International_Airport",
+      "codes": [
+        "KRT",
+        "HSSK",
+        "HSSK"
+      ],
+      "airlines": [
+        "Badr Airlines",
+        "Nova Airways",
+        "Sudan Airways"
+      ]
+    },
+    {
+      "city": "Kassala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kassala_Airport",
+      "codes": [
+        "KSL",
+        "HSKA",
+        "HSKA"
+      ],
+      "airlines": [
+        "Tarco Aviation"
+      ]
     }
   ],
   "airlines_destinations": {
     "Badr Airlines": [
-      "Juba"
+      "Juba",
+      "[[Khartoum]], Sudan"
     ],
     "Egyptair": [
       "Cairo"
@@ -121,13 +168,19 @@
     "Sudan Airways": [
       "Cairo",
       "Jeddah",
-      "Riyadh"
+      "Riyadh",
+      "[[Khartoum]], Sudan"
     ],
     "Tarco Aviation": [
+      "Dongola",
+      "Kassala",
       "Muscat"
     ],
     "Turkish Airlines": [
       "Istanbul"
+    ],
+    "Nova Airways": [
+      "[[Khartoum]], Sudan"
     ]
   },
   "outdegree_cargo": 0,

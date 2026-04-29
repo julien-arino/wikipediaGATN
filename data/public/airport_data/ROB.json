@@ -1,6 +1,7 @@
 {
   "iata": "ROB",
   "icao": "GLRB",
+  "gps": "GLRB",
   "city-served": "Monrovia",
   "city-served-wikipedia": "[[Monrovia]], Liberia",
   "location": "Kakata",
@@ -31,6 +32,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
       "codes": [
         "ABJ",
+        "DIAP",
         "DIAP"
       ],
       "airlines": [
@@ -43,7 +45,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
         "iata code not found",
-        "icao code not found"
+        "icao code not found",
+        "gps code not found"
       ],
       "airlines": [
         "ASKY Airlines",
@@ -57,6 +60,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
       "codes": [
         "ADD",
+        "HAAB",
         "HAAB"
       ],
       "airlines": [
@@ -68,6 +72,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Banjul_International_Airport",
       "codes": [
         "BJL",
+        "GBYD",
         "GBYD"
       ],
       "airlines": [
@@ -79,6 +84,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
       "codes": [
         "BRU",
+        "EBBR",
         "EBBR"
       ],
       "airlines": [
@@ -90,6 +96,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
       "codes": [
         "CMN",
+        "GMMN",
         "GMMN"
       ],
       "airlines": [
@@ -101,6 +108,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ahmed_Sékou_Touré_International_Airport",
       "codes": [
         "CKY",
+        "GUCY",
         "GUCY"
       ],
       "airlines": [
@@ -112,6 +120,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Freetown_International_Airport",
       "codes": [
         "FNA",
+        "GFLL",
         "GFLL"
       ],
       "airlines": [
@@ -124,6 +133,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lungi_International_Airport",
       "codes": [
         "FNA",
+        "GFLL",
         "GFLL"
       ],
       "airlines": [
@@ -136,6 +146,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
       "codes": [
         "LOS",
+        "DNMM",
         "DNMM"
       ],
       "airlines": [
@@ -147,6 +158,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
       "codes": [
         "LFW",
+        "DXXX",
         "DXXX"
       ],
       "airlines": [
@@ -158,9 +170,23 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
       "codes": [
         "NBO",
+        "HKJK",
         "HKJK"
       ],
       "airlines": [
+        "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Unknown City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotoka_International_Airport",
+      "codes": [
+        null,
+        null,
+        "DGAA"
+      ],
+      "airlines": [
+        "Air Peace",
         "Kenya Airways"
       ]
     }
@@ -172,7 +198,8 @@
     ],
     "Air Peace": [
       "Accra",
-      "Lagos"
+      "Lagos",
+      "Unknown City"
     ],
     "ASKY Airlines": [
       "Abidjan",
@@ -190,7 +217,8 @@
     ],
     "Kenya Airways": [
       "Accra",
-      "Nairobi–Jomo Kenyatta"
+      "Nairobi–Jomo Kenyatta",
+      "Unknown City"
     ],
     "Royal Air Maroc": [
       "Casablanca"

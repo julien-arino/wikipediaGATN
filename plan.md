@@ -1,0 +1,1 @@
+We need to revise `scrape_missing_airports.py` to ensure that airports discovered naturally as destinations of other missing airports are assigned the correct BFS level (e.g., Level 1) rather than all being forced to Level 0 simply because they appear in the CSV.

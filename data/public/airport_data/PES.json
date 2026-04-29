@@ -1,6 +1,7 @@
 {
   "iata": "PES",
   "icao": "ULPB",
+  "gps": "ULPB",
   "city-served": "Petrozavodsk",
   "city-served-wikipedia": "[[Petrozavodsk]]",
   "location": "Besovets",
@@ -11,7 +12,7 @@
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
   "admin1_code": "RU-KR",
-  "admin1_name": "Kareliya, Respublika",
+  "admin1_name": "Karelija, Respublika",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Besovets_Airport",
   "outdegree": 13,
   "number_airlines": 3,
@@ -26,6 +27,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Khrabrovo_Airport",
       "codes": [
         "KGD",
+        "UMKK",
         "UMKK"
       ],
       "airlines": [
@@ -37,6 +39,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
       "codes": [
         "KZN",
+        "UWKD",
         "UWKD"
       ],
       "airlines": [
@@ -48,6 +51,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
       "codes": [
         "MCX",
+        "URML",
         "URML"
       ],
       "airlines": [
@@ -59,6 +63,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
       "codes": [
         "MRV",
+        "URMM",
         "URMM"
       ],
       "airlines": [
@@ -70,6 +75,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Minsk_National_Airport",
       "codes": [
         "MSQ",
+        "UMMS",
         "UMMS"
       ],
       "airlines": [
@@ -81,6 +87,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
       "codes": [
         "DME",
+        "UUDD",
         "UUDD"
       ],
       "airlines": [
@@ -92,6 +99,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
       "codes": [
         "SVO",
+        "UUEE",
         "UUEE"
       ],
       "airlines": [
@@ -103,6 +111,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
       "codes": [
         "VKO",
+        "UUWW",
         "UUWW"
       ],
       "airlines": [
@@ -114,6 +123,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Murmansk_Airport",
       "codes": [
         "MMK",
+        "ULMM",
         "ULMM"
       ],
       "airlines": [
@@ -125,7 +135,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
       "codes": [
         "PEE",
-        "USPP"
+        "USPP",
+        "gps code not found"
       ],
       "airlines": [
         "UVT Aero"
@@ -136,7 +147,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_Airport",
       "codes": [
         "iata code not found",
-        "icao code not found"
+        "icao code not found",
+        "gps code not found"
       ],
       "airlines": [
         "UVT Aero"
@@ -147,6 +159,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
       "codes": [
         "AER",
+        "URSS",
         "URSS"
       ],
       "airlines": [
@@ -158,10 +171,23 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
       "codes": [
         "SVX",
+        "USSS",
         "USSS"
       ],
       "airlines": [
         "Severstal Air Company"
+      ]
+    },
+    {
+      "city": "[[Samara, Russia| Samara]], [[Russia]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_International_Airport",
+      "codes": [
+        null,
+        null,
+        "UWWW"
+      ],
+      "airlines": [
+        "UVT Aero"
       ]
     }
   ],
@@ -183,7 +209,8 @@
       "Kazan",
       "Murmansk",
       "Perm",
-      "Samara"
+      "Samara",
+      "[[Samara, Russia| Samara]], [[Russia]]"
     ]
   },
   "outdegree_cargo": 0,

@@ -11,20 +11,17 @@ import json
 import logging
 import os
 import re
-import shutil
 import time
 import urllib.parse
 import warnings
 
 import pycountry
 import pycountry_convert as pc
-import requests
 import reverse_geocoder as rg
 from geopy.geocoders import Nominatim
 
 from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 from .airport_level_functions import (
-    parse_iso3166_2,
     format_airport_json,
     build_url_to_codes_map,
     infer_missing_geographic_data,
@@ -79,7 +76,7 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
     airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
     
     if use_new_data:
-        scan_dir = TEMP_RESULTS_DIR
+        scan_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     else:
         scan_dir = airport_data_dir
         
@@ -273,16 +270,17 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
     This function **modifies the filesystem** by deleting files.  Run it after
     Wikipedia scraping is complete and before any processing steps.
     """
-    if not os.path.isdir(TEMP_RESULTS_DIR):
+    target_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
+    if not os.path.isdir(target_dir):
         raise FileNotFoundError(
-            f"Temporary results directory not found: {TEMP_RESULTS_DIR}\n"
+            f"Temporary results directory not found: {target_dir}\n"
             "Run the Wikipedia scraping step first."
         )
 
     pattern = re.compile(r"^([A-Z]{3})\.(\d+)\.json$")
     files_by_iata: dict = {}
 
-    for fname in os.listdir(TEMP_RESULTS_DIR):
+    for fname in os.listdir(target_dir):
         m = pattern.match(fname)
         if m:
             iata  = m.group(1)
@@ -298,7 +296,7 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
         to_remove = [fname for _, fname in files[1:]]    # keep files[0]
 
         for fname in to_remove:
-            fpath = os.path.join(TEMP_RESULTS_DIR, fname)
+            fpath = os.path.join(target_dir, fname)
             try:
                 os.remove(fpath)
                 removed += 1

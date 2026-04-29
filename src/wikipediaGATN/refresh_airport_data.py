@@ -1,27 +1,20 @@
-import csv
 import json
 import os
 import requests
 import time
-import traceback
-import warnings
 import urllib.parse
-from typing import Union, Optional
+from typing import Union
 
 from dateutil import parser as dt_parser
 
-from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+from .paths import PUBLIC_DATA_DIR
 from .airport_level_functions import (
     fetch_wikipedia_airport_wikitext,
     fetch_wikipedia_airport_html,
     parse_wikitext_airlines_destinations,
-    parse_fallback_nlp_airlines_destinations,
     fetch_wikipedia_airlines_destinations,
     fetch_wikipedia_airport_info,
-    fetch_wikipedia_airlines,
-    fetch_wikipedia_destinations,
     format_airport_json,
-    parse_iso3166_2,
     build_url_to_codes_map,
     format_destinations_list,
     infer_missing_geographic_data,

@@ -1,6 +1,7 @@
 {
   "iata": "SBZ",
   "icao": "LRSB",
+  "gps": "LRSB",
   "city-served": "Sibiu",
   "city-served-wikipedia": "[[Sibiu]], [[Romania]]",
   "location": "Sura Mica",
@@ -28,6 +29,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
       "codes": [
         "BGY",
+        "LIME",
         "LIME"
       ],
       "airlines": [
@@ -39,6 +41,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Birmingham_Airport",
       "codes": [
         "BHX",
+        "EGBB",
         "EGBB"
       ],
       "airlines": [
@@ -50,6 +53,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
       "codes": [
         "DTM",
+        "EDLW",
         "EDLW"
       ],
       "airlines": [
@@ -61,7 +65,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hahn_Airport",
       "codes": [
         "iata code not found",
-        "icao code not found"
+        "icao code not found",
+        "gps code not found"
       ],
       "airlines": [
         "Wizz Air"
@@ -72,6 +77,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
       "codes": [
         "HER",
+        "LGIR",
         "LGIR"
       ],
       "airlines": [
@@ -83,6 +89,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Karlsruhe/Baden-Baden_Airport",
       "codes": [
         "FKB",
+        "EDSB",
         "EDSB"
       ],
       "airlines": [
@@ -94,6 +101,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Larnaca_International_Airport",
       "codes": [
         "LCA",
+        "LCLK",
         "LCLK"
       ],
       "airlines": [
@@ -105,7 +113,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
       "codes": [
         "MAD",
-        "LEMD"
+        "LEMD",
+        "gps code not found"
       ],
       "airlines": [
         "Wizz Air"
@@ -116,6 +125,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
       "codes": [
         "FMM",
+        "EDJA",
         "EDJA"
       ],
       "airlines": [
@@ -127,6 +137,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nuremberg_Airport",
       "codes": [
         "NUE",
+        "EDDN",
         "EDDN"
       ],
       "airlines": [
@@ -138,6 +149,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
       "codes": [
         "RHO",
+        "LGRP",
         "LGRP"
       ],
       "airlines": [
@@ -149,6 +161,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
       "codes": [
         "FCO",
+        "LIRF",
         "LIRF"
       ],
       "airlines": [
@@ -160,10 +173,23 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
       "codes": [
         "VIE",
+        "LOWW",
         "LOWW"
       ],
       "airlines": [
         "Austrian Airlines"
+      ]
+    },
+    {
+      "city": "Unknown City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt-Hahn_Airport",
+      "codes": [
+        null,
+        null,
+        "EDFH"
+      ],
+      "airlines": [
+        "Wizz Air"
       ]
     }
   ],
@@ -187,7 +213,8 @@
       "Madrid",
       "Memmingen",
       "Nuremberg",
-      "Rome–Fiumicino"
+      "Rome–Fiumicino",
+      "Unknown City"
     ]
   },
   "outdegree_cargo": 0,

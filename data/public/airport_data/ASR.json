@@ -1,6 +1,7 @@
 {
   "iata": "ASR",
   "icao": "LTAU",
+  "gps": "LTAU",
   "city-served": "Kayseri",
   "city-served-wikipedia": "[[Kayseri]], [[Turkey]]",
   "location": "Kocasinan",
@@ -31,6 +32,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
       "codes": [
         "AMS",
+        "EHAM",
         "EHAM"
       ],
       "airlines": [
@@ -43,6 +45,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
       "codes": [
         "AYT",
+        "LTAI",
         "LTAI"
       ],
       "airlines": [
@@ -55,6 +58,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel_Mulhouse_Freiburg",
       "codes": [
         "BSL",
+        "LFSB",
         "LFSB"
       ],
       "airlines": [
@@ -66,6 +70,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
       "codes": [
         "BER",
+        "EDDB",
         "EDDB"
       ],
       "airlines": [
@@ -77,6 +82,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
       "codes": [
         "BRU",
+        "EBBR",
         "EBBR"
       ],
       "airlines": [
@@ -89,6 +95,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
       "codes": [
         "CGN",
+        "EDDK",
         "EDDK"
       ],
       "airlines": [
@@ -102,6 +109,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
       "codes": [
         "DUS",
+        "EDDL",
         "EDDL"
       ],
       "airlines": [
@@ -115,7 +123,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ercan_Airport",
       "codes": [
         "ECN",
-        "LCEN"
+        "LCEN",
+        "gps code not found"
       ],
       "airlines": [
         "Pegasus Airlines"
@@ -126,6 +135,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
       "codes": [
         "FRA",
+        "EDDF",
         "EDDF"
       ],
       "airlines": [
@@ -137,6 +147,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hannover_Airport",
       "codes": [
         "HAJ",
+        "EDDV",
         "EDDV"
       ],
       "airlines": [
@@ -148,6 +159,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
       "codes": [
         "IST",
+        "LTFM",
         "LTFM"
       ],
       "airlines": [
@@ -159,7 +171,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_Airport",
       "codes": [
         "SAW",
-        "LTFJ"
+        "LTFJ",
+        "gps code not found"
       ],
       "airlines": [
         "AJet",
@@ -171,6 +184,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Adnan_Menderes_Airport",
       "codes": [
         "ADB",
+        "LTBJ",
         "LTBJ"
       ],
       "airlines": [
@@ -183,6 +197,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
       "codes": [
         "ADB",
+        "LTBJ",
         "LTBJ"
       ],
       "airlines": [
@@ -195,6 +210,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
       "codes": [
         "STN",
+        "EGSS",
         "EGSS"
       ],
       "airlines": [
@@ -206,6 +222,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
       "codes": [
         "MUC",
+        "EDDM",
         "EDDM"
       ],
       "airlines": [
@@ -218,6 +235,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
       "codes": [
         "PRG",
+        "LKPR",
         "LKPR"
       ],
       "airlines": [
@@ -229,6 +247,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
       "codes": [
         "RTM",
+        "EHRD",
         "EHRD"
       ],
       "airlines": [
@@ -241,6 +260,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stuttgart_Airport",
       "codes": [
         "STR",
+        "EDDS",
         "EDDS"
       ],
       "airlines": [
@@ -254,10 +274,35 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
       "codes": [
         "VIE",
+        "LOWW",
         "LOWW"
       ],
       "airlines": [
         "SunExpress"
+      ]
+    },
+    {
+      "city": "[[Kharkiv]], [[Ukraine]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kharkiv_International_Airport",
+      "codes": [
+        "HRK",
+        "UKHH",
+        "UKHH"
+      ],
+      "airlines": [
+        "Ukraine International Airlines"
+      ]
+    },
+    {
+      "city": "[[Boryspil]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boryspil_International_Airport",
+      "codes": [
+        "KBP",
+        "UKBB",
+        "UKBB"
+      ],
+      "airlines": [
+        "Ukraine International Airlines"
       ]
     }
   ],
@@ -309,6 +354,10 @@
     ],
     "Turkish Airlines": [
       "Istanbul"
+    ],
+    "Ukraine International Airlines": [
+      "[[Boryspil]]",
+      "[[Kharkiv]], [[Ukraine]]"
     ]
   },
   "outdegree_cargo": 0,

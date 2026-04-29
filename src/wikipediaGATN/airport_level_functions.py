@@ -101,7 +101,7 @@ def format_airport_json(data: dict) -> dict:
     Enforce a strict ordering of JSON keys for airport data output.
     """
     key_order = [
-        "iata", "icao", "city-served", "city-served-wikipedia", "location",
+        "iata", "icao", "gps", "city-served", "city-served-wikipedia", "location",
         "lat", "lon", "altitude", "continent",
         "country_alpha3", "country_name",
         "admin1_code", "admin1_name", "admin2_name",
@@ -816,7 +816,7 @@ def save_airport_info(
         m         = re.search(r'/wiki/([^/#?]+)', wiki_url)
         iata_code = f"wiki_{m.group(1)}" if m else "unknown"
 
-    output_dir  = TEMP_RESULTS_DIR
+    output_dir  = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{iata_code}.{level}.json")
 
@@ -1394,6 +1394,18 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
     
     url_to_codes = {}
     
+    # Hardcoded manual overrides for known edge cases where Wikipedia and ourairports disagree
+    # without any redirect linking them.
+    MANUAL_OVERRIDES = {
+        "https://en.wikipedia.org/wiki/Obuasi_Airport": {
+            "iata": "iata code not found",
+            "icao": "icao code not found",
+            "gps": "GH-0006"
+        }
+    }
+    for url, codes in MANUAL_OVERRIDES.items():
+        url_to_codes[urllib.parse.unquote(url)] = codes
+    
     csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
     if os.path.exists(csv_path):
         with open(csv_path, "r", encoding="utf-8") as f:
@@ -1406,7 +1418,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
         with open(manual_path, "r", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 if row.get("url") and row.get("iata"):
-                    url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": row["iata"], "icao": "icao code not found"}
+                    url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": row["iata"], "icao": "icao code not found", "gps": "gps code not found"}
                     
     airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
     if os.path.exists(airport_data_dir):
@@ -1419,28 +1431,59 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                     if url:
                         url_to_codes[url] = {
                             "iata": data.get("iata") or "iata code not found",
-                            "icao": data.get("icao") or "icao code not found"
+                            "icao": data.get("icao") or "icao code not found",
+                            "gps": data.get("gps") or "gps code not found"
                         }
             except Exception:
                 pass
                 
-    # Also load from TEMP_RESULTS_DIR JSON files (from recent scrapes)
-    if os.path.exists(TEMP_RESULTS_DIR):
-        for fname in os.listdir(TEMP_RESULTS_DIR):
-            if not fname.endswith(".json"): continue
-            try:
-                with open(os.path.join(TEMP_RESULTS_DIR, fname), "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    url = urllib.parse.unquote(data.get("wikipedia_url")) if data.get("wikipedia_url") else None
-                    if url:
-                        url_to_codes[url] = {
-                            "iata": data.get("iata") or "iata code not found",
-                            "icao": data.get("icao") or "icao code not found"
-                        }
-            except Exception:
-                pass
+    # Also load from TEMP_RESULTS_DIR subdirectories JSON files (from recent scrapes)
+    for subdir in ["airports_rooted_sweep", "missing_from_ourairports"]:
+        dir_path = os.path.join(TEMP_RESULTS_DIR, subdir)
+        if os.path.exists(dir_path):
+            for fname in os.listdir(dir_path):
+                if not fname.endswith(".json"): continue
+                try:
+                    with open(os.path.join(dir_path, fname), "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                        url = urllib.parse.unquote(data.get("wikipedia_url")) if data.get("wikipedia_url") else None
+                        if url:
+                            if url not in url_to_codes:
+                                url_to_codes[url] = {
+                                    "iata": data.get("iata") or "iata code not found",
+                                    "icao": data.get("icao") or "icao code not found",
+                                    "gps": data.get("gps") or "gps code not found"
+                                }
+                            else:
+                                if data.get("iata"): url_to_codes[url]["iata"] = data["iata"]
+                                if data.get("icao"): url_to_codes[url]["icao"] = data["icao"]
+                                if data.get("gps"): url_to_codes[url]["gps"] = data["gps"]
+                except Exception:
+                    pass
 
+    # We only resolve redirects for URLs found in the JSON/manual files, NOT the massive ourairports.csv cache
     urls_to_resolve = list(url_to_codes.keys())
+    
+    # Now load from ourairports.csv so they don't get sent to Wikipedia API
+    try:
+        from .airport_level_functions import _load_ourairports_data
+        ourairports_data = _load_ourairports_data()
+        for url, data in ourairports_data.items():
+            if url:
+                parsed_url = urllib.parse.unquote(url)
+                if parsed_url not in url_to_codes:
+                    gps_code = data.get("gps_code")
+                    if not gps_code and not data.get("iata_code") and not data.get("icao_code"):
+                        gps_code = data.get("ident")
+                        
+                    url_to_codes[parsed_url] = {
+                        "iata": data.get("iata_code") or "iata code not found",
+                        "icao": data.get("icao_code") or "icao code not found",
+                        "gps": gps_code or "gps code not found"
+                    }
+    except Exception as e:
+        if verbose: print(f"Error loading ourairports data: {e}")
+        
     canonical_map = {}
     
     headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
@@ -1478,32 +1521,76 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
     """
     Format a list of destinations into a strict schema of dictionaries.
     Looks up IATA/ICAO codes using url_to_codes map.
+    Deduplicates destinations that resolve to the same canonical URL or airport code.
     """
     import urllib.parse
-    mapped_destinations = []
+    mapped_dict = {}
     
     for dest in raw_destinations:
         if isinstance(dest, dict):
-            mapped_destinations.append(dest)
-        elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
-            city, d_url = dest[0], dest[1]
-            codes = url_to_codes.get(urllib.parse.unquote(d_url), {"iata": "iata code not found", "icao": "icao code not found"})
+            # Already formatted, use url as key
+            d_url = dest.get("wikipedia_url")
+            if d_url:
+                if d_url in mapped_dict:
+                    mapped_dict[d_url]["airlines"] = sorted(list(set(mapped_dict[d_url].get("airlines", []) + dest.get("airlines", []))))
+                else:
+                    mapped_dict[d_url] = dest
+            continue
             
+        elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
+            city, d_url = dest[0], urllib.parse.unquote(dest[1])
+            canonical_url = d_url
+            
+            codes = url_to_codes.get(d_url)
+            if not codes:
+                # Fallback: query Wikipedia API to see if this is a redirect to a known URL
+                try:
+                    import requests
+                    headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
+                    title = urllib.parse.unquote(d_url.split('/wiki/')[-1])
+                    r = requests.get(f'https://en.wikipedia.org/w/api.php?action=query&titles={title}&redirects=1&format=json', headers=headers, timeout=5)
+                    if r.status_code == 200:
+                        res_json = r.json()
+                        if 'query' in res_json and 'redirects' in res_json['query']:
+                            # It's a redirect, get the target
+                            target_title = res_json['query']['redirects'][0]['to']
+                            target_url = urllib.parse.unquote(f"https://en.wikipedia.org/wiki/{target_title.replace(' ', '_')}")
+                            canonical_url = target_url
+                            if target_url in url_to_codes:
+                                codes = url_to_codes[target_url]
+                                # Cache it for next time
+                                url_to_codes[d_url] = codes
+                except Exception:
+                    pass
+                    
+            if not codes:
+                codes = {"iata": "iata code not found", "icao": "icao code not found", "gps": "gps code not found"}
+                
             op_airlines = []
             for al_name, cities in airlines_destinations_map.items():
                 if city in cities:
                     op_airlines.append(al_name)
                     
-            mapped_destinations.append({
-                "city": city,
-                "wikipedia_url": d_url,
-                "codes": [codes["iata"], codes["icao"]],
-                "airlines": sorted(op_airlines)
-            })
-        else:
-            mapped_destinations.append(dest)
-            
-    return mapped_destinations
+            # Determine merge key
+            merge_key = canonical_url
+            if codes.get("iata", "iata code not found") != "iata code not found":
+                merge_key = codes["iata"]
+            elif codes.get("icao", "icao code not found") != "icao code not found":
+                merge_key = codes["icao"]
+            elif codes.get("gps", "gps code not found") != "gps code not found":
+                merge_key = codes["gps"]
+                
+            if merge_key in mapped_dict:
+                mapped_dict[merge_key]["airlines"] = sorted(list(set(mapped_dict[merge_key]["airlines"] + op_airlines)))
+            else:
+                mapped_dict[merge_key] = {
+                    "city": city,
+                    "wikipedia_url": canonical_url,
+                    "codes": [codes.get("iata", "iata code not found"), codes.get("icao", "icao code not found"), codes.get("gps", "gps code not found")],
+                    "airlines": sorted(list(set(op_airlines)))
+                }
+                
+    return list(mapped_dict.values())
 
 _OURAIRPORTS_CACHE = None
 
@@ -1540,7 +1627,7 @@ def _load_ourairports_data():
                 wiki = row.get("wikipedia_link", "").strip()
                 if iata: cache[iata] = row
                 if icao: cache[icao] = row
-                if iata and wiki: cache[wiki] = row
+                if wiki: cache[wiki] = row
     except Exception as e:
         print(f"Warning: Failed to parse OurAirports dataset: {e}")
         
@@ -1555,7 +1642,6 @@ def infer_missing_geographic_data(data: dict) -> dict:
     """
     import pycountry_convert as pc
     import pycountry
-    import urllib.parse
     from geopy.geocoders import Nominatim
     
     geolocator = Nominatim(user_agent="wikipediaGATN")
@@ -1569,8 +1655,13 @@ def infer_missing_geographic_data(data: dict) -> dict:
         oa_row = oa_cache[data["iata"]]
     elif data.get("icao") and data.get("icao") in oa_cache:
         oa_row = oa_cache[data["icao"]]
-        
+    elif data.get("wikipedia_url") and data.get("wikipedia_url") in oa_cache:
+        oa_row = oa_cache[data["wikipedia_url"]]
     if oa_row:
+        # Add gps code if available
+        if oa_row.get("gps_code"):
+            data["gps"] = oa_row["gps_code"].strip()
+            
         # Backfill coordinates if missing
         if not data.get("lat") or not data.get("lon"):
             if oa_row.get("latitude_deg") and oa_row.get("longitude_deg"):
@@ -1737,6 +1828,9 @@ def compare_airports_with_ourairports(output_csv: str = None) -> str:
         reader = csv.DictReader(f)
         for row in reader:
             if row.get("type") == "closed":
+                continue
+                
+            if row.get("scheduled_service") != "yes":
                 continue
                 
             wiki_link = row.get("wikipedia_link", "").strip()

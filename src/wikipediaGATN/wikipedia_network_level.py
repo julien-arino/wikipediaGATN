@@ -123,7 +123,7 @@ def clean_output_directory(levels=None, verbose: bool = False) -> int:
     int
         Total number of JSON files removed.
     """
-    output_dir = TEMP_RESULTS_DIR
+    output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     if not os.path.isdir(output_dir):
         if verbose:
             print("TEMP_RESULTS_DIR does not exist — nothing to clean.")
@@ -189,7 +189,7 @@ def get_connections_level_N(
     int
         Number of new destination files written.
     """
-    output_dir = TEMP_RESULTS_DIR
+    output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     os.makedirs(output_dir, exist_ok=True)
 
     pat        = _level_pattern(from_length)
@@ -229,16 +229,19 @@ def get_connections_level_N(
                 print(f"  {origin_iata} -> {dest_name}: fetching...")
 
             dest_info = fetch_wikipedia_airport_info(dest_url, verbose=verbose)
-            dest_iata = dest_info.get('iata') or dest_info.get('icao')
+            dest_iata = dest_info.get('iata') or dest_info.get('icao') or dest_info.get('gps')
 
             if not dest_iata:
                 if verbose:
-                    print(f"  {dest_name} has no IATA/ICAO code (likely not an airport), skipping.")
+                    print(f"  {dest_name} has no IATA/ICAO/GPS code (likely not an airport), skipping.")
                 processed_urls.add(dest_url)
                 continue
 
-            # Check if this IATA was already processed at any level (e.g. via a different URL alias)
-            existing_files = [f for f in os.listdir(output_dir) if f.startswith(f"{dest_iata}.")]
+            # Check if ANY of the available codes was already processed at any level
+            existing_files = []
+            for c in [dest_info.get('iata'), dest_info.get('icao'), dest_info.get('gps')]:
+                if c:
+                    existing_files.extend([f for f in os.listdir(output_dir) if f.startswith(f"{c}.")])
 
             if not existing_files:
                 save_airport_info(dest_info, level=from_length + 1, verbose=verbose, iata_from=origin_iata)
@@ -268,7 +271,7 @@ def check_processed_list(verbose: bool = False) -> None:
     verbose : bool, optional
         Print summary counts.  Default: False.
     """
-    output_dir      = TEMP_RESULTS_DIR
+    output_dir      = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     csv_path        = os.path.join(output_dir, "processed_locations.csv")
     failed_csv_path = os.path.join(output_dir, "failed_lookups.csv")
 
@@ -400,7 +403,7 @@ def iterate_search_until_empty(
                       UserWarning, stacklevel=2)
         return
 
-    output_dir = TEMP_RESULTS_DIR
+    output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     k = 0
     while True:
         if verbose:
@@ -432,7 +435,7 @@ def continue_existing_search_one_step(delay: float = 1.0, verbose: bool = False)
     verbose : bool, optional
         Print progress.  Default: False.
     """
-    output_dir = TEMP_RESULTS_DIR
+    output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     if not os.path.isdir(output_dir):
         warnings.warn(f"TEMP_RESULTS_DIR does not exist: {output_dir}",
                       UserWarning, stacklevel=2)
@@ -471,7 +474,7 @@ def continue_existing_search_until_empty(delay: float = 1.0, verbose: bool = Fal
     Assumes the current highest level is already complete.  If it is not,
     use :func:`continue_existing_search_one_step` first.
     """
-    output_dir = TEMP_RESULTS_DIR
+    output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     if not os.path.isdir(output_dir):
         warnings.warn(f"TEMP_RESULTS_DIR does not exist: {output_dir}",
                       UserWarning, stacklevel=2)

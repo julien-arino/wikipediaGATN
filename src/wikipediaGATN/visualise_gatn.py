@@ -25,9 +25,7 @@ from pathlib import Path
 import json
 
 import networkx as nx
-import pandas as pd
 import plotly.graph_objects as go
-from scipy.sparse import load_npz
 
 from .paths import PUBLIC_DATA_DIR
 

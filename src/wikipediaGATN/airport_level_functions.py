@@ -1593,15 +1593,61 @@ def infer_missing_geographic_data(data: dict) -> dict:
                     # Fix country
                     if not data.get("country_alpha3") and match.get("cc"):
                         c = pycountry.countries.get(alpha_2=match.get("cc"))
-                        if c:
+                if c:
                             data["country_alpha3"] = c.alpha_3
                             data["country_name"] = c.name
             except Exception:
                 pass
+
+    # Extract explicit text for validation and corrections
+    loc_text = str(data.get("location", "")) + " " + str(data.get("city-served-wikipedia", ""))
+    
+    # Apply user-defined geographic correction rule for the US-Canada border
+    if data.get("country_alpha3") == "USA":
+        force_canada = False
+        
+        # Rule 1: Anything north of 49 degrees that is not in Alaska is in Canada.
+        if data.get("admin1_code") != "US-AK":
+            try:
+                if float(data.get("lat", 0)) > 49.0:
+                    force_canada = True
+            except (ValueError, TypeError):
+                pass
+                
+        # Rule 2: Generalized validation check against Wikipedia city-served string
+        if data.get("city-served-wikipedia"):
+            import mwparserfromhell
+            try:
+                wikicode = mwparserfromhell.parse(data["city-served-wikipedia"])
+                links = [link.title.strip_code().strip() for link in wikicode.filter_wikilinks()]
+                
+                for link in links:
+                    matches = [s for s in pycountry.subdivisions if s.name.lower() == link.lower()]
+                    unique_countries = list(set([s.country_code for s in matches]))
+                    
+                    if len(unique_countries) == 1:
+                        sub_country = unique_countries[0]
+                        if sub_country != "US":
+                            force_canada = True
+                            c_new = pycountry.countries.get(alpha_2=sub_country)
+                            if c_new:
+                                data["country_alpha3"] = c_new.alpha_3
+                                data["country_name"] = c_new.name
+                            break
+            except Exception:
+                pass
+                
+        if force_canada:
+            if data.get("country_alpha3") == "USA":
+                data["country_alpha3"] = "CAN"
+                data["country_name"] = "Canada"
+            # Clear incorrect US state/county info
+            data["admin1_code"] = None
+            data["admin1_name"] = None
+            data["admin2_name"] = None
                 
     # If the reverse geocoder got it wrong because of a border (e.g. FZNI in Uganda instead of DRC)
     # we can try to extract the explicit country name from the location text if it contradicts the geocoder.
-    loc_text = str(data.get("location", "")) + " " + str(data.get("city-served-wikipedia", ""))
     if loc_text.strip() != "None None":
         # Handle common Wikipedia name discrepancies
         custom_country_map = {

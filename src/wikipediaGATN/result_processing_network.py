@@ -123,7 +123,7 @@ def _run_pipeline() -> None:
     # Step 2 ----------------------------------------------------------------
     print(f"\n{'=' * 70}")
     print("[STEP 2] Creating initial outbound connections list…")
-    connections_csv, unmapped_csv = create_outbound_connections_list(
+    connections_csv, connections_cargo_csv, unmapped_csv = create_outbound_connections_list(
         verbose=True,
         export_unmapped=True,
     )
@@ -152,7 +152,7 @@ def _run_pipeline() -> None:
             # Step 6 --------------------------------------------------------
             print(f"\n{'=' * 70}")
             print("[STEP 6] Re-running connections with enriched public JSON data…")
-            connections_csv, unmapped_csv = create_outbound_connections_list(
+            connections_csv, connections_cargo_csv, unmapped_csv = create_outbound_connections_list(
                 verbose=True,
                 export_unmapped=True,
             )
@@ -172,15 +172,24 @@ def _run_pipeline() -> None:
     print(f"\n{'=' * 70}")
     print("[STEP 7] Creating adjacency matrix and network graphs (directed)…")
     matrix_npz, nodes_txt = create_outbound_adjacency_matrix(
-        symmetric=False,
         verbose=True,
+        is_cargo=False,
+    )
+
+    print(f"\n{'=' * 70}")
+    print("[STEP 8] Creating adjacency matrix and network graphs for CARGO (directed)…")
+    matrix_cargo_npz, nodes_cargo_txt = create_outbound_adjacency_matrix(
+        verbose=True,
+        is_cargo=True,
     )
 
     print(f"\n{'=' * 70}")
     print("✓ PIPELINE COMPLETE")
     print(f"{'=' * 70}")
-    print(f"\n  Connections CSV   : {connections_csv}")
-    print(f"  Matrix (directed) : {matrix_npz}")
+    print(f"\n  Connections CSV (Pax)     : {connections_csv}")
+    print(f"  Connections CSV (Cargo)   : {connections_cargo_csv}")
+    print(f"  Matrix (Pax directed)     : {matrix_npz}")
+    print(f"  Matrix (Cargo directed)   : {matrix_cargo_npz}")
 
 
 if __name__ == "__main__":

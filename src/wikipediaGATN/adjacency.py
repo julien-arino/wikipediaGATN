@@ -29,6 +29,7 @@ def create_outbound_adjacency_matrix(
     export_csv: bool = False,
     export_networks: bool = True,
     verbose: bool = False,
+    is_cargo: bool = False,
 ) -> tuple:
     """
     Create a sparse adjacency matrix of outbound airport connections.
@@ -99,7 +100,8 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     # Load outbound connection data
     # ------------------------------------------------------------------
-    input_file = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.csv")
+    filename = "global-air-cargo-network.csv" if is_cargo else "global-air-transportation-network.csv"
+    input_file = os.path.join(PUBLIC_DATA_DIR, filename)
 
     if not os.path.exists(input_file):
         raise FileNotFoundError(
@@ -128,8 +130,8 @@ def create_outbound_adjacency_matrix(
 
     if df.empty:
         raise ValueError(
-            "No valid airport records found after filtering.  "
-            "Check global-air-transportation-network.csv for correct IATA codes."
+            f"No valid airport records found after filtering.  "
+            f"Check {filename} for correct IATA codes."
         )
 
     # ------------------------------------------------------------------
@@ -154,7 +156,7 @@ def create_outbound_adjacency_matrix(
     iata_codes = sorted(all_origins | all_dest_tokens)
 
     if not iata_codes:
-        raise ValueError("No valid IATA codes found in global-air-transportation-network.csv.")
+        raise ValueError(f"No valid IATA codes found in {filename}.")
 
     iata_to_idx: dict = {code: i for i, code in enumerate(iata_codes)}
 
@@ -227,8 +229,8 @@ def create_outbound_adjacency_matrix(
     # Verify no stray values > 1 survived (sanity check)
     if matrix.nnz > 0 and matrix.data.max() > 1:  # pragma: no cover
         warnings.warn(
-            "Adjacency matrix contains entries > 1 after deduplication. "
-            "Check global-air-transportation-network.csv for duplicate rows.",
+            f"Adjacency matrix contains entries > 1 after deduplication. "
+            f"Check {filename} for duplicate rows.",
             UserWarning,
             stacklevel=2,
         )
@@ -239,9 +241,10 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
 
-    output_matrix = os.path.join(PUBLIC_DATA_DIR, "adjacency_matrix.npz")
-    output_nodes  = os.path.join(PUBLIC_DATA_DIR, "nodes.txt")
-    output_csv    = os.path.join(PUBLIC_DATA_DIR, "adjacency_matrix.csv")
+    suffix = "_cargo" if is_cargo else ""
+    output_matrix = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}.npz")
+    output_nodes  = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}.txt")
+    output_csv    = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}.csv")
 
     # ------------------------------------------------------------------
     # Save outputs
@@ -289,15 +292,16 @@ def create_outbound_adjacency_matrix(
                     except (json.JSONDecodeError, OSError):
                         pass
             
-            output_graphml = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.graphml")
+            base_name = "global-air-cargo-network" if is_cargo else "global-air-transportation-network"
+            output_graphml = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.graphml")
             nx.write_graphml(G, output_graphml)
             if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
             
-            output_gexf = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.gexf")
+            output_gexf = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.gexf")
             nx.write_gexf(G, output_gexf)
             if verbose: print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
 
-            output_dot = os.path.join(PUBLIC_DATA_DIR, "global-air-transportation-network.dot")
+            output_dot = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.dot")
             nx.drawing.nx_pydot.write_dot(G, output_dot)
             if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
             

@@ -24,6 +24,7 @@ def test_fetch_wikipedia_airport_link_url(mock_get):
     }
     mock_get.return_value = mock_response
 
+@mock.patch("wikipediaGATN.airport_level_functions._SESSION.get")
 def test_fetch_wikipedia_airport_link(mock_get):
     url = "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport"
 

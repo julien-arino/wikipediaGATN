@@ -26,6 +26,7 @@ def _is_valid_code(code: str) -> bool:
 
 
 def create_outbound_adjacency_matrix(
+    symmetric: bool = False,
     export_csv: bool = False,
     export_networks: bool = True,
     verbose: bool = False,
@@ -41,6 +42,9 @@ def create_outbound_adjacency_matrix(
 
     Parameters
     ----------
+    symmetric : bool, optional
+        If True, the matrix is made symmetric (A -> B implies B -> A).
+        Default is False.
     export_csv : bool, optional
         If True, also writes a dense ``adjacency_matrix[_sym].csv`` alongside
         the ``.npz`` file.  This file can be very large for global-scale
@@ -226,6 +230,13 @@ def create_outbound_adjacency_matrix(
     data = np.ones(len(rows_arr), dtype=np.uint8)
     matrix = csr_matrix((data, (rows_arr, cols_arr)), shape=(n, n))
 
+    if symmetric:
+        if verbose:
+            print("Symmetrising matrix (A->B implies B->A)...")
+        # matrix + matrix.T handles symmetry; clipping back to 1 ensures it remains binary
+        matrix = matrix + matrix.T
+        matrix.data[:] = 1
+
     # Verify no stray values > 1 survived (sanity check)
     if matrix.nnz > 0 and matrix.data.max() > 1:  # pragma: no cover
         warnings.warn(
@@ -242,9 +253,10 @@ def create_outbound_adjacency_matrix(
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
 
     suffix = "_cargo" if is_cargo else ""
-    output_matrix = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}.npz")
-    output_nodes  = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}.txt")
-    output_csv    = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}.csv")
+    sym_suffix = "_sym" if symmetric else ""
+    output_matrix = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.npz")
+    output_nodes  = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}{sym_suffix}.txt")
+    output_csv    = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.csv")
 
     # ------------------------------------------------------------------
     # Save outputs

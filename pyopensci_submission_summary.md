@@ -7,21 +7,21 @@ pyOpenSci checks for the presence of several community and documentation files i
 
 - [x] **`README.md`**: Present. It contains a clear explanation of what the package does and instructions for installation/use.
 - [x] **`LICENSE`**: Present (GPLv3). An OSI-approved license is required.
-- [ ] **`CONTRIBUTING.md`**: **Missing**. You need a file that details how to install the package for development and how to contribute to it.
-- [ ] **`CODE_OF_CONDUCT.md`**: **Missing**. You need a code of conduct for the project. pyOpenSci recommends adopting standard ones like the Contributor Covenant.
+- [x] **`CONTRIBUTING.md`**: Present. It details how to install the package for development and how to contribute to it.
+- [x] **`CODE_OF_CONDUCT.md`**: Present. The project has adopted the Contributor Covenant.
 
 ## 2. Documentation
 pyOpenSci requires sufficient online documentation so reviewers can evaluate the package's function and scope *without installing it*.
 
-- [ ] **Online Documentation Site**: **Missing**. While `pyproject.toml` lists Sphinx dependencies, there is no `docs/` folder or hosted documentation site (e.g., ReadTheDocs or GitHub Pages).
+- [x] **Online Documentation Site**: Configured via GitHub Pages. Documentation source is in the `docs/` folder.
 - **Required Documentation Components**:
-  - [ ] **User-facing documentation**: Overview of how to install and start using the package.
-  - [ ] **Quickstart Tutorials**: Short examples of how to use the package and what it can do.
-  - [ ] **API Documentation**: Detailed documentation for your code's functions, classes, methods, and attributes. Ensure docstrings are written using a standard format (e.g., numpydoc, Google, or Sphinx) and rendered online.
+  - [x] **User-facing documentation**: Overview of how to install and start using the package.
+  - [x] **Quickstart Tutorials**: Short examples of how to use the package and what it can do.
+  - [x] **API Documentation**: Detailed documentation for your code's functions, classes, methods, and attributes.
 
 ## 3. Automated Tests & Continuous Integration (CI)
 - [x] **Automated Tests**: The project has a test suite using `pytest` located in the `tests/` directory.
-- [ ] **Continuous Integration (CI)**: **Missing**. The repository must use a CI service (like GitHub Actions) to automatically run tests on new commits. Currently, the `.github/` folder does not exist.
+- [x] **Continuous Integration (CI)**: Configured via GitHub Actions. Tests run automatically on push and pull request.
 
 ## 4. Installation & Distribution
 - [x] **Standard Import**: The package can be imported into a standard Python environment (`import wikipediaGATN`).

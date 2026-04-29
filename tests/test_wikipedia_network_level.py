@@ -6,12 +6,6 @@ import csv
 import json
 import os
 import re
-import sys
-from unittest.mock import MagicMock
-
-
-import warnings
-from pathlib import Path
 from unittest.mock import patch, call
 
 import pytest
@@ -36,13 +30,15 @@ from wikipediaGATN.wikipedia_network_level import (
 @pytest.fixture()
 def tmp_results_dir(tmp_path, monkeypatch):
     """
-    Create a tmp_results/ directory, monkeypatch TEMP_RESULTS_DIR,
-    and return the path.
+    Create a tmp_results/airports_rooted_sweep directory,
+    monkeypatch TEMP_RESULTS_DIR, and return the path.
     """
     tmp_results = tmp_path / "tmp_results"
     tmp_results.mkdir()
+    sweep_dir = tmp_results / "airports_rooted_sweep"
+    sweep_dir.mkdir()
     monkeypatch.setattr("wikipediaGATN.wikipedia_network_level.TEMP_RESULTS_DIR", tmp_results)
-    return tmp_results
+    return sweep_dir
 
 
 # ---------------------------------------------------------------------------
@@ -107,9 +103,9 @@ class TestReadProcessedUrls:
         csv_path = tmp_results_dir / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url"])
-            writer.writerow(["YWG", "https://en.wikipedia.org/wiki/Winnipeg_Airport"])
-            writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson"])
+            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["YWG", "https://en.wikipedia.org/wiki/Winnipeg_Airport", ""])
+            writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""])
 
         urls = _read_processed_urls(tmp_results_dir)
         assert len(urls) == 2
@@ -120,8 +116,8 @@ class TestReadProcessedUrls:
         csv_path = tmp_results_dir / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url"])
-            writer.writerow(["YWG", ""])
+            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["YWG", "", ""])
 
         assert _read_processed_urls(tmp_results_dir) == set()
 
@@ -191,11 +187,11 @@ class TestCheckProcessedList:
         csv_path = tmp_results_dir / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url"])
-            writer.writerow(["YYZ", "url1"])
-            writer.writerow(["YWG", "url2"])
-            writer.writerow(["YWG", "url2"]) # duplicate
-            writer.writerow(["AMS", "url3"])
+            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["YYZ", "url1", ""])
+            writer.writerow(["YWG", "url2", ""])
+            writer.writerow(["YWG", "url2", ""]) # duplicate
+            writer.writerow(["AMS", "url3", ""])
 
         check_processed_list()
 
@@ -214,9 +210,9 @@ class TestCheckProcessedList:
         failed_path = tmp_results_dir / "failed_lookups.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url"])
-            writer.writerow(["None", "fail_url1"])
-            writer.writerow(["YWG", "ok_url1"])
+            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["None", "fail_url1", ""])
+            writer.writerow(["YWG", "ok_url1", ""])
 
         check_processed_list()
 
@@ -264,7 +260,7 @@ class TestGetConnectionsLevelN:
             json.dump(origin_data, fh)
 
         # Mock dependencies
-        with patch("wikipediaGATN.wikipedia_network_level.extract_airport_information") as mock_extract, \
+        with patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info") as mock_extract, \
              patch("wikipediaGATN.wikipedia_network_level.save_airport_info") as mock_save, \
              patch("time.sleep"):  # skip sleep
 
@@ -282,8 +278,8 @@ class TestGetConnectionsLevelN:
         # Setup processed_locations.csv
         with open(tmp_results_dir / "processed_locations.csv", "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url"])
-            writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson"])
+            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""])
 
         # Setup source file at level 0
         origin_data = {
@@ -293,7 +289,7 @@ class TestGetConnectionsLevelN:
         with open(tmp_results_dir / "YWG.0.json", "w", encoding="utf-8") as fh:
             json.dump(origin_data, fh)
 
-        with patch("wikipediaGATN.wikipedia_network_level.extract_airport_information") as mock_extract, \
+        with patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info") as mock_extract, \
              patch("time.sleep"):
 
             written = get_connections_level_N(from_length=0)
@@ -327,8 +323,8 @@ class TestGetConnectionsLevelN:
 
 class TestHighLevelIteration:
 
-    @patch("wikipediaGATN.wikipedia_network_level.get_wikipedia_airport_page_link")
-    @patch("wikipediaGATN.wikipedia_network_level.extract_airport_information")
+    @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_link")
+    @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.save_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.get_connections_level_N")
     def test_iterate_search_until_distance_N(self, mock_get_conn, mock_save, mock_extract, mock_get_link):
@@ -345,8 +341,8 @@ class TestHighLevelIteration:
         mock_get_conn.assert_has_calls([call(from_length=0, delay=1.0, verbose=False),
                                         call(from_length=1, delay=1.0, verbose=False)])
 
-    @patch("wikipediaGATN.wikipedia_network_level.get_wikipedia_airport_page_link")
-    @patch("wikipediaGATN.wikipedia_network_level.extract_airport_information")
+    @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_link")
+    @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.save_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.get_connections_level_N")
     def test_iterate_search_until_empty(self, mock_get_conn, mock_save, mock_extract, mock_get_link, tmp_results_dir):

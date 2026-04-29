@@ -1,68 +1,73 @@
 import json
 import os
-import sys
-from pathlib import Path
-from unittest.mock import MagicMock
-
-
+import csv
 import pytest
+import warnings
+from pathlib import Path
 from wikipediaGATN.result_processing_airports import export_all_airport_data
 
 @pytest.fixture()
 def data_dirs(tmp_path, monkeypatch):
     """
-    Create tmp_results/ and public/ sub-directories, monkeypatch both
-    module-level path constants, and return (tmp_results, public).
+    Create tmp_results/airports_rooted_sweep and public/airport_data sub-directories,
+    monkeypatch both module-level path constants, and return (tmp_results_sweep, public_airport_data).
     """
     tmp_results = tmp_path / "tmp_results"
-    public      = tmp_path / "public"
     tmp_results.mkdir()
+    sweep_dir = tmp_results / "airports_rooted_sweep"
+    sweep_dir.mkdir()
+    
+    public = tmp_path / "public"
     public.mkdir()
+    airport_data = public / "airport_data"
+    airport_data.mkdir()
+    
     monkeypatch.setattr("wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR", tmp_results)
     monkeypatch.setattr("wikipediaGATN.result_processing_airports.PUBLIC_DATA_DIR",  public)
-    return tmp_results, public
+    
+    return sweep_dir, airport_data
 
 def test_export_all_airport_data_invalid_json(data_dirs):
     """
     Test that invalid JSON files are skipped with a warning, while valid ones are processed.
     """
-    tmp_results, public = data_dirs
+    sweep_dir, airport_data = data_dirs
 
-    # Create a valid JSON file
+    # Create a valid JSON file in the sweep dir
     valid_data = {
         "iata": "YWG",
         "name": "Winnipeg Richardson International Airport",
         "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
         "destinations": []
     }
-    (tmp_results / "YWG.0.json").write_text(json.dumps(valid_data), encoding="utf-8")
+    (sweep_dir / "YWG.0.json").write_text(json.dumps(valid_data), encoding="utf-8")
 
-    # Create an invalid JSON file
-    (tmp_results / "ABC.0.json").write_text("{invalid json}", encoding="utf-8")
+    # Create an invalid JSON file in the sweep dir
+    (sweep_dir / "ABC.0.json").write_text("{invalid json}", encoding="utf-8")
 
     # We expect a UserWarning when processing ABC.0.json
-    import warnings
-    with pytest.warns(UserWarning, match="Skipping ABC.0.json: invalid JSON"):
-        output_csv = export_all_airport_data(verbose=True)
+    # The actual message contains "cannot read/parse — Expecting value"
+    with pytest.warns(UserWarning, match="Skipping ABC.0.json: cannot read/parse"):
+        output_csv = export_all_airport_data(use_new_data=True, verbose=True)
 
     # Verify output CSV exists
     assert os.path.exists(output_csv)
 
-    # Since we mocked pandas, export_all_airport_data uses csv.DictWriter which is fine.
-    # Let's check the content of the CSV
+    # Check the content of the CSV
     with open(output_csv, "r", encoding="utf-8") as f:
-        lines = f.readlines()
+        reader = csv.DictReader(f)
+        rows = list(reader)
 
-    # Header + 1 valid row
-    assert len(lines) == 2
-    assert "YWG" in lines[1]
-    assert "ABC" not in lines[1]
+    # 1 valid row
+    assert len(rows) == 1
+    assert rows[0]["iata"] == "YWG"
 
 def test_export_all_airport_data_missing_dir(tmp_path, monkeypatch):
-    """Test FileNotFoundError when TEMP_RESULTS_DIR is missing."""
+    """Test FileNotFoundError when the scan directory is missing."""
     monkeypatch.setattr(
         "wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR",
         tmp_path / "nonexistent"
     )
+    # use_new_data=True will look for nonexistent/airports_rooted_sweep
     with pytest.raises(FileNotFoundError):
-        export_all_airport_data()
+        export_all_airport_data(use_new_data=True)

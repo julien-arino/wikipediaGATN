@@ -251,7 +251,7 @@ def extract_iata_from_unmapped_destinations(
     ----------
     csv_path : str, optional
         Path to ``unmapped_destinations.csv``.  Defaults to
-        ``data/public/unmapped_destinations.csv``.
+        ``data/tmp_results/unmapped_destinations.csv``.
     batch_size : int, optional
         After every *batch_size* HTTP requests a longer pause is inserted to
         be polite to Wikipedia's servers.  Default: 50.
@@ -280,7 +280,7 @@ def extract_iata_from_unmapped_destinations(
     >>> print(f"Extracted {result['successful']} new IATA codes")
     """
     if csv_path is None:
-        csv_path = os.path.join(PUBLIC_DATA_DIR, "unmapped_destinations.csv")
+        csv_path = os.path.join(TEMP_RESULTS_DIR, "unmapped_destinations.csv")
 
     if not os.path.exists(csv_path):
         raise FileNotFoundError(
@@ -430,7 +430,7 @@ def create_manual_mapping_from_scraped_data(
     ----------
     unmapped_csv : str, optional
         Path to ``unmapped_destinations.csv``.
-        Defaults to ``data/public/unmapped_destinations.csv``.
+        Defaults to ``data/tmp_results/unmapped_destinations.csv``.
     output_csv : str, optional
         Destination path for ``manual_airport_mapping.csv``.
         Defaults to ``data/tmp_results/manual_airport_mapping.csv``.
@@ -458,7 +458,7 @@ def create_manual_mapping_from_scraped_data(
         )
 
     if unmapped_csv is None:
-        unmapped_csv = os.path.join(PUBLIC_DATA_DIR, "unmapped_destinations.csv")
+        unmapped_csv = os.path.join(TEMP_RESULTS_DIR, "unmapped_destinations.csv")
 
     if output_csv is None:
         output_csv = os.path.join(TEMP_RESULTS_DIR, "manual_airport_mapping.csv")

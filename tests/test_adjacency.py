@@ -107,8 +107,8 @@ class TestDirectedMatrix:
         matrix_path, nodes_path = create_outbound_adjacency_matrix(
             symmetric=False, verbose=False
         )
-        assert matrix_path.endswith("adjacency_matrix.npz")
-        assert nodes_path.endswith("nodes.txt")
+        assert matrix_path.endswith("adjacency_matrix_pax.npz")
+        assert nodes_path.endswith("nodes_pax.txt")
 
     def test_matrix_shape_matches_node_count(self, public_dir):
         """Matrix is square with side equal to the number of unique airports."""
@@ -235,8 +235,8 @@ class TestSymmetricMatrix:
         matrix_path, nodes_path = create_outbound_adjacency_matrix(
             symmetric=True, verbose=False
         )
-        assert matrix_path.endswith("adjacency_matrix_sym.npz")
-        assert nodes_path.endswith("nodes_sym.txt")
+        assert matrix_path.endswith("adjacency_matrix_pax_sym.npz")
+        assert nodes_path.endswith("nodes_pax_sym.txt")
 
     def test_symmetric_adds_reverse_edge(self, public_dir):
         """A->B listed once yields both A->B and B->A in symmetric mode."""
@@ -287,7 +287,7 @@ class TestCsvExport:
             {"origin": "YWG", "nb_outlinks": 1, "outlinks": "YYZ"},
         ])
         create_outbound_adjacency_matrix(symmetric=False, verbose=False)
-        assert not (public_dir / "adjacency_matrix.csv").exists()
+        assert not (public_dir / "adjacency_matrix_pax.csv").exists()
 
     def test_csv_written_when_requested(self, public_dir):
         """Dense CSV IS written when ``export_csv=True``."""
@@ -297,7 +297,7 @@ class TestCsvExport:
         create_outbound_adjacency_matrix(
             symmetric=False, export_csv=True, verbose=False
         )
-        assert (public_dir / "adjacency_matrix.csv").exists()
+        assert (public_dir / "adjacency_matrix_pax.csv").exists()
 
     def test_csv_has_iata_row_and_column_labels(self, public_dir):
         """Dense CSV uses IATA codes as both row index and column headers."""
@@ -307,6 +307,6 @@ class TestCsvExport:
         create_outbound_adjacency_matrix(
             symmetric=False, export_csv=True, verbose=False
         )
-        df = pd.read_csv(public_dir / "adjacency_matrix.csv", index_col=0)
+        df = pd.read_csv(public_dir / "adjacency_matrix_pax.csv", index_col=0)
         assert "YWG" in df.index
         assert "YYZ" in df.columns

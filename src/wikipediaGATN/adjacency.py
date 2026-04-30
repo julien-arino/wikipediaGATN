@@ -265,7 +265,7 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     os.makedirs(PUBLIC_DATA_DIR, exist_ok=True)
 
-    suffix = "_cargo" if is_cargo else ""
+    suffix = "_cargo" if is_cargo else "_pax"
     sym_suffix = "_sym" if symmetric else ""
     output_matrix = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.npz")
     output_nodes  = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}{sym_suffix}.txt")
@@ -307,9 +307,11 @@ def create_outbound_adjacency_matrix(
                     try:
                         with open(json_file, 'r', encoding='utf-8') as f:
                             data = json.load(f)
-                            for num_key in ('lat', 'lon', 'altitude', 'outdegree', 'number_airlines'):
+                            num_keys = ('lat', 'lon', 'altitude', 'outdegree_cargo', 'number_airlines_cargo') if is_cargo else ('lat', 'lon', 'altitude', 'outdegree', 'number_airlines')
+                            for num_key in num_keys:
                                 if data.get(num_key) is not None:
-                                    try: G.nodes[node][num_key] = float(data[num_key])
+                                    export_key = num_key.replace("_cargo", "")
+                                    try: G.nodes[node][export_key] = float(data[num_key])
                                     except ValueError: pass
                             for str_key in ('name', 'city-served', 'country_alpha3', 'country_name', 'admin1_code', 'admin1_name', 'continent', 'wikipedia_url'):
                                 if data.get(str_key):

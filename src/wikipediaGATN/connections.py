@@ -84,8 +84,11 @@ def create_outbound_connections_list(
             origin_iata = data.get("icao")
         
         if not origin_iata or origin_iata == "icao code not found":
+            origin_iata = data.get("gps")
+            
+        if not origin_iata or origin_iata == "gps code not found":
             if verbose:
-                print(f"  ⚠  No origin IATA or ICAO code found in {fname} — skipping")
+                print(f"  ⚠  No origin IATA, ICAO, or GPS code found in {fname} — skipping")
             continue
 
         destinations = data.get("destinations", [])
@@ -102,11 +105,13 @@ def create_outbound_connections_list(
                     codes = dest.get("codes", [])
                     dest_iata = codes[0] if len(codes) > 0 else None
                     dest_icao = codes[1] if len(codes) > 1 else None
+                    dest_gps = codes[2] if len(codes) > 2 else None
                 elif isinstance(dest, list) and len(dest) >= 2:
                     # Old array format
                     dest_url = dest[1]
                     dest_iata = dest[2] if len(dest) > 2 else None
                     dest_icao = dest[3] if len(dest) > 3 else None
+                    dest_gps = dest[4] if len(dest) > 4 else None
                 else:
                     continue
                     
@@ -114,6 +119,8 @@ def create_outbound_connections_list(
                     link_set.add(dest_iata)
                 elif dest_icao and dest_icao != "icao code not found":
                     link_set.add(dest_icao)
+                elif dest_gps and dest_gps != "gps code not found":
+                    link_set.add(dest_gps)
                 elif dest_url:
                     unmapped_destinations[dest_url] += 1
 

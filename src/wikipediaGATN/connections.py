@@ -130,10 +130,12 @@ def create_outbound_connections_list(
         airport_connections[origin_iata] = {
             "origin": origin_iata,
             "outlinks": outlinks,
+            "nb_airlines": data.get("number_airlines", 0) or 0,
         }
         airport_connections_cargo[origin_iata] = {
             "origin": origin_iata,
             "outlinks": outlinks_cargo,
+            "nb_airlines": data.get("number_airlines_cargo", 0) or 0,
         }
 
         if verbose:
@@ -163,7 +165,7 @@ def create_outbound_connections_list(
         with open(csv_path, "w", encoding="utf-8", newline="") as csvfile:
             writer = csv.DictWriter(
                 csvfile,
-                fieldnames=["origin", "nb_outlinks", "outlinks"],
+                fieldnames=["origin", "nb_outlinks", "outlinks", "nb_airlines"],
                 quoting=csv.QUOTE_ALL,
             )
             writer.writeheader()
@@ -173,6 +175,7 @@ def create_outbound_connections_list(
                     "origin": row["origin"],
                     "nb_outlinks": len(outlinks_sorted),
                     "outlinks": " ".join(outlinks_sorted),
+                    "nb_airlines": row.get("nb_airlines", 0),
                 }
                 writer.writerow(csv_row)
 

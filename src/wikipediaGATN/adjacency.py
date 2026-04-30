@@ -148,11 +148,17 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     # Build sorted list of all unique airports
     # ------------------------------------------------------------------
-    all_origins = set(df["origin"].str.strip())
+    # Only consider airports that actually have outbound edges or operating airlines
+    has_outlinks = df["outlinks"].notna() & (df["outlinks"].str.strip() != "")
+    if "nb_airlines" in df.columns:
+        df_active = df[has_outlinks | (df["nb_airlines"] > 0)]
+    else:
+        df_active = df[has_outlinks]
+    all_origins = set(df_active["origin"].str.strip())
 
     # Vectorised extraction of all destination tokens
     all_dest_tokens: set = set()
-    for outlinks_str in df["outlinks"].fillna(""):
+    for outlinks_str in df_active["outlinks"]:
         for token in str(outlinks_str).split():
             token = token.strip()
             if _is_valid_code(token):
@@ -186,7 +192,7 @@ def create_outbound_adjacency_matrix(
     skipped_self_loops = 0
     skipped_unknown_dest = 0
 
-    for _, row in df.iterrows():
+    for _, row in df_active.iterrows():
         origin = row["origin"].strip()
         origin_idx = iata_to_idx[origin]  # always present after filter above
 

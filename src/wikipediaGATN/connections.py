@@ -87,8 +87,11 @@ def create_outbound_connections_list(
             origin_iata = data.get("gps")
             
         if not origin_iata or origin_iata == "gps code not found":
+            origin_iata = fname.replace(".json", "")
+
+        if not origin_iata:
             if verbose:
-                print(f"  ⚠  No origin IATA, ICAO, or GPS code found in {fname} — skipping")
+                print(f"  ⚠  No origin IATA, ICAO, GPS, or Ident code found in {fname} — skipping")
             continue
 
         destinations = data.get("destinations", [])

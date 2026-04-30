@@ -2,11 +2,11 @@
 
 ## Overview
 
-`wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo.
+`wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo. 
 
 ## Data
 
-The data is available in the [`data/public/`](https://github.com/julien-arino/wikipediaGATN/tree/main/data/public) directory. See ``data/public/README.md`` for a detailed description of the files.
+The collected data is available in the [`data/public/`](https://github.com/julien-arino/wikipediaGATN/tree/main/data/public) directory. See ``data/public/README.md`` for a detailed description of the files.
 
 ## Package pipeline
 
@@ -16,9 +16,10 @@ The package handles the full pipeline:
 2. **Parsing** — extraction of IATA/ICAO codes, geographic coordinates, and route tables from Wikipedia infoboxes and HTML tables, supplemented by the authoritative [OurAirports](https://ourairports.com/) database for metadata.
 3. **IATA recovery** — resolution of destination URLs that lack an obvious code, prioritizing offline lookups in the [OurAirports](https://ourairports.com/) database before falling back to Wikipedia scraping.
 4. **Export** — sparse adjacency matrices (`.npz`), node lists, airport metadata CSVs ready for network analysis, and interactive Plotly visualisations (`.html`).
-5. **Updates** — on demand maintenance of the network through incremental scraping and synchronization with upstream [OurAirports](https://ourairports.com/) metadata changes, keeping the graphs up to date.
+5. **Updates** — on demand maintenance of the network through incremental scraping and synchronization with upstream [OurAirports](https://ourairports.com/) metadata changes, keeping the graphs up to date. Updates are easy to perform as GitHub actions (see .github/workflows/refresh_data.yml).
 
-The resulting networks can be used for empirical studies of air-travel connectivity, epidemic-spread modelling and transportation network analysis. They also provide great examples in courses about graphs/networks, data science and computational social science.
+The resulting networks can be used for empirical studies of air-travel connectivity, epidemic-spread modelling and transportation network analysis, among other things. 
+They also provide great examples in courses about graphs/networks, data science and computational social science.
 
 ## Setting up
 
@@ -69,12 +70,13 @@ python -m spacy download en_core_web_sm
 
 ## Example use
 
-The following builds a network for all airports reachable within two hops of
-Winnipeg (YWG) and exports it as a sparse adjacency matrix:
+Some scripts are provided as examples in the `scripts/` directory, which comprise instructions to carry out all steps of the pipeline..
+
+For function example, the following builds a network for all airports reachable within two hops of Winnipeg (YWG) and exports it as a sparse adjacency matrix:
 
 ```python
 from wikipediaGATN.wikipedia_network_level import iterate_search_until_distance_N
-from wikipediaGATN.result_processing import (
+from wikipediaGATN import (
     create_outbound_connections_list,
     run_two_pass_iata_extraction,
     create_outbound_adjacency_matrix,

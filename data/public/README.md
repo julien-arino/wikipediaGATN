@@ -2,9 +2,9 @@
 
 This directory contains the assembled data. Airports were extracted on 2026-04-29, while connections were checked on 2026-04-30.
 
-## Directory Structure
+## Raw airport data
 
-* **`airport_data/`**: Subdirectory containing the raw JSON files for all individually extracted airports.
+* **`airport_data/`**: Subdirectory containing the JSON files for all individually extracted airports.
 
 ## Network Datasets
 

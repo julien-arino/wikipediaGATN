@@ -31,6 +31,11 @@ def data_dirs(tmp_path, monkeypatch):
     airport_data = public / "airport_data"
     airport_data.mkdir()
     monkeypatch.setattr("wikipediaGATN.connections.PUBLIC_DATA_DIR", public)
+
+    tmp_results = tmp_path / "tmp_results"
+    tmp_results.mkdir()
+    monkeypatch.setattr("wikipediaGATN.connections.TEMP_RESULTS_DIR", tmp_results)
+
     return public
 
 

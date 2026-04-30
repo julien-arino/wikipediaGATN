@@ -14,7 +14,7 @@ import os
 import warnings
 from collections import Counter
 
-from .paths import PUBLIC_DATA_DIR
+from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 
 logger = logging.getLogger(__name__)
 
@@ -183,7 +183,7 @@ def create_outbound_connections_list(
     # ------------------------------------------------------------------
     unmapped_csv = None
     if export_unmapped and unmapped_destinations:
-        unmapped_csv = os.path.join(PUBLIC_DATA_DIR, "unmapped_destinations.csv")
+        unmapped_csv = os.path.join(TEMP_RESULTS_DIR, "unmapped_destinations.csv")
 
         unmapped_list = sorted(
             ({"url": url, "count": count, "iata": "", "name": "", "source": "to_be_scraped"}

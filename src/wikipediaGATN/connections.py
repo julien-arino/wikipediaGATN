@@ -183,6 +183,7 @@ def create_outbound_connections_list(
     # ------------------------------------------------------------------
     unmapped_csv = None
     if export_unmapped and unmapped_destinations:
+        os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
         unmapped_csv = os.path.join(TEMP_RESULTS_DIR, "unmapped_destinations.csv")
 
         unmapped_list = sorted(

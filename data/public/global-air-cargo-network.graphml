@@ -629,7 +629,7 @@
     <node id="ADD">
       <data key="d0">8.977778</data>
       <data key="d1">38.799444</data>
-      <data key="d3">56.0</data>
+      <data key="d3">53.0</data>
       <data key="d4">17.0</data>
       <data key="d5">Addis Ababa</data>
       <data key="d6">ETH</data>
@@ -52629,6 +52629,16 @@
       <data key="d10">Asia</data>
       <data key="d11">https://en.wikipedia.org/wiki/Man_Maya_Airport</data>
     </node>
+    <node id="VNO">
+      <data key="d0">54.636944</data>
+      <data key="d1">25.287778</data>
+      <data key="d2">197.0</data>
+      <data key="d3">65.0</data>
+      <data key="d4">24.0</data>
+      <data key="d6">LTU</data>
+      <data key="d7">Lithuania</data>
+      <data key="d11">https://en.wikipedia.org/wiki/Vilnius_Airport</data>
+    </node>
     <node id="VNRR">
       <data key="d0">29.522222</data>
       <data key="d1">82.146944</data>
@@ -55711,7 +55721,7 @@
       <data key="d0">44.879722</data>
       <data key="d1">-63.510278</data>
       <data key="d2">145.39</data>
-      <data key="d3">51.0</data>
+      <data key="d3">50.0</data>
       <data key="d4">17.0</data>
       <data key="d5">Halifax Regional Municipality</data>
       <data key="d6">CAN</data>
@@ -58802,6 +58812,9 @@
     <edge source="ADD" target="DEL">
       <data key="d12">1</data>
     </edge>
+    <edge source="ADD" target="DGAA">
+      <data key="d12">1</data>
+    </edge>
     <edge source="ADD" target="DWC">
       <data key="d12">1</data>
     </edge>
@@ -58836,9 +58849,6 @@
       <data key="d12">1</data>
     </edge>
     <edge source="ADD" target="KGL">
-      <data key="d12">1</data>
-    </edge>
-    <edge source="ADD" target="KRT">
       <data key="d12">1</data>
     </edge>
     <edge source="ADD" target="LGG">
@@ -73877,6 +73887,15 @@
     <edge source="VLI" target="BNE">
       <data key="d12">1</data>
     </edge>
+    <edge source="VNO" target="IST">
+      <data key="d12">1</data>
+    </edge>
+    <edge source="VNO" target="LEJ">
+      <data key="d12">1</data>
+    </edge>
+    <edge source="VNO" target="RIX">
+      <data key="d12">1</data>
+    </edge>
     <edge source="WDH" target="ADD">
       <data key="d12">1</data>
     </edge>
@@ -74169,9 +74188,6 @@
       <data key="d12">1</data>
     </edge>
     <edge source="YHZ" target="CSX">
-      <data key="d12">1</data>
-    </edge>
-    <edge source="YHZ" target="EDFH">
       <data key="d12">1</data>
     </edge>
     <edge source="YHZ" target="EHU">

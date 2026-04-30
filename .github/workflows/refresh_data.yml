@@ -32,6 +32,10 @@ jobs:
         run: |
           # Uses the refresh script that skips already up-to-date wiki pages
           python -m wikipediaGATN.refresh_airport_data --target all
+          # Rebuilds the global connection lists, adjacency matrices, and graph files
+          python -m wikipediaGATN.result_processing_network
+          # Updates the interactive HTML visualisations for all generated networks
+          python -m wikipediaGATN.visualise_gatn
 
       - name: Check for changes
         id: git-check

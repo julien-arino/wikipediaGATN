@@ -2,13 +2,12 @@
   "iata": "AZO",
   "icao": "KAZO",
   "gps": "KAZO",
-  "city-served": "Kalamazoo",
-  "city-served-wikipedia": "[[Kalamazoo, Michigan|Kalamazoo]] / [[Battle Creek, Michigan|Battle Creek]], Michigan",
-  "location": "Portage",
+  "city-served": "Kalamazoo / Battle Creek",
+  "city-served-wikipedia": "Kalamazoo / Battle Creek",
+  "location": null,
   "lat": "42.235000",
   "lon": "-85.551944",
   "altitude": "266",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-MI",
@@ -60,11 +59,28 @@
       "Chicago–O'Hare"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-30T14:35:07Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Downtown Cleveland]], [[Ohio]], U.S.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cleveland_Burke_Lakefront_Airport",
+      "codes": [
+        "BKL",
+        "KBKL",
+        "KBKL"
+      ],
+      "airlines": [
+        "Central Air Southwest"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Central Air Southwest": [
+      "[[Downtown Cleveland]], [[Ohio]], U.S."
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:27:12Z",
   "date-time-wikidata": "2026-04-30T12:28:16Z"
 }

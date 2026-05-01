@@ -3,24 +3,35 @@
   "icao": "KILG",
   "gps": "KILG",
   "city-served": "Wilmington",
-  "city-served-wikipedia": "[[Wilmington, Delaware]]",
+  "city-served-wikipedia": "[[Unincorporated area|unincorporated]] New Castle County",
   "location": "unincorporated New Castle County",
   "lat": "39.678611",
   "lon": "-75.606667",
   "altitude": "24.38",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-DE",
   "admin1_name": "Delaware",
   "admin2_name": "New Castle County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Wilmington_Airport_(Delaware)",
-  "outdegree": 4,
+  "outdegree": 11,
   "number_airlines": 1,
   "airlines": [
     "Avelo Airlines"
   ],
   "destinations": [
+    {
+      "city": "Daytona Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daytona_Beach_International_Airport",
+      "codes": [
+        "DAB",
+        "KDAB",
+        "KDAB"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
     {
       "city": "Fort Lauderdale",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
@@ -40,6 +51,18 @@
         "RSW",
         "KRSW",
         "KRSW"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Lakeland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
+      "codes": [
+        "LAL",
+        "KLAL",
+        "KLAL"
       ],
       "airlines": [
         "Avelo Airlines"
@@ -68,14 +91,81 @@
       "airlines": [
         "Avelo Airlines"
       ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
+      "codes": [
+        "SRQ",
+        "KSRQ",
+        "KSRQ"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Tampa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "West Palm Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Beach_International_Airport",
+      "codes": [
+        "PBI",
+        "KPBI",
+        "KPBI"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
+    },
+    {
+      "city": "Wilmington (NC)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wilmington_International_Airport",
+      "codes": [
+        "ILM",
+        "KILM",
+        "KILM"
+      ],
+      "airlines": [
+        "Avelo Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
     "Avelo Airlines": [
+      "Daytona Beach",
       "Fort Lauderdale",
       "Fort Myers",
+      "Lakeland",
       "Myrtle Beach",
-      "Orlando"
+      "Orlando",
+      "San Juan",
+      "Sarasota",
+      "Tampa",
+      "West Palm Beach",
+      "Wilmington (NC)"
     ]
   },
   "outdegree_cargo": 0,
@@ -83,6 +173,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:52:56Z",
+  "date-time-parse": "2026-05-01T01:23:32Z",
   "date-time-wikidata": "2026-04-27T01:34:38Z"
 }

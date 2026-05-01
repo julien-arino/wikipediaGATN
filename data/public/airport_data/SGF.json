@@ -2,20 +2,19 @@
   "iata": "SGF",
   "icao": "KSGF",
   "gps": "KSGF",
-  "city-served": "Springfield",
-  "city-served-wikipedia": "[[Springfield, Missouri|Springfield]] / [[Branson, Missouri|Branson]], [[Missouri]]",
-  "location": "Willard",
-  "lat": "37.2429838",
-  "lon": "-93.3889141",
+  "city-served": "Springfield / Branson",
+  "city-served-wikipedia": "Springfield / Branson",
+  "location": null,
+  "lat": "37.245047",
+  "lon": "-93.388596",
   "altitude": "386",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-MO",
   "admin1_name": "Missouri",
   "admin2_name": "Greene County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Springfield–Branson_National_Airport",
-  "outdegree": 7,
+  "outdegree": 15,
   "number_airlines": 4,
   "airlines": [
     "Allegiant Air",
@@ -30,7 +29,7 @@
       "codes": [
         "ATL",
         "KATL",
-        "KATL"
+        "gps code not found"
       ],
       "airlines": [
         "Delta Air Lines"
@@ -42,7 +41,7 @@
       "codes": [
         "CLT",
         "KCLT",
-        "KCLT"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle"
@@ -54,11 +53,47 @@
       "codes": [
         "ORD",
         "KORD",
-        "KORD"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle",
         "United Express"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW",
+        "gps code not found"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN",
+        "gps code not found"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Destin/Fort Walton Beach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Destin–Fort_Walton_Beach_Airport",
+      "codes": [
+        "VPS",
+        "KVPS",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Allegiant Air"
       ]
     },
     {
@@ -67,10 +102,22 @@
       "codes": [
         "GUF",
         "KJKA",
-        "KJKA"
+        "gps code not found"
       ],
       "airlines": [
         "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH",
+        "gps code not found"
+      ],
+      "airlines": [
+        "United Express"
       ]
     },
     {
@@ -79,7 +126,31 @@
       "codes": [
         "LAS",
         "KLAS",
-        "KLAS"
+        "gps code not found"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA",
+        "gps code not found"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Orlando/Sanford",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_Sanford_International_Airport",
+      "codes": [
+        "SFB",
+        "KSFB",
+        "gps code not found"
       ],
       "airlines": [
         "Allegiant Air"
@@ -91,10 +162,34 @@
       "codes": [
         "PHX",
         "KPHX",
-        "KPHX"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle"
+      ]
+    },
+    {
+      "city": "Phoenix/Mesa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
+      "codes": [
+        "AZA",
+        "KIWA",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Punta Gorda (FL)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Florida)",
+      "codes": [
+        "PGD",
+        "KPGD",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Allegiant Air"
       ]
     },
     {
@@ -103,7 +198,7 @@
       "codes": [
         "PIE",
         "KPIE",
-        "KPIE"
+        "gps code not found"
       ],
       "airlines": [
         "Allegiant Air"
@@ -112,20 +207,28 @@
   ],
   "airlines_destinations": {
     "Allegiant Air": [
+      "Destin/Fort Walton Beach",
       "Gulf Shores",
       "Las Vegas",
+      "Orlando/Sanford",
+      "Phoenix/Mesa",
+      "Punta Gorda (FL)",
       "St. Petersburg/Clearwater"
     ],
     "American Eagle": [
       "Charlotte",
       "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Miami",
       "Phoenix-Sky Harbor"
     ],
     "Delta Air Lines": [
       "Atlanta"
     ],
     "United Express": [
-      "Chicago–O'Hare"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental"
     ]
   },
   "outdegree_cargo": 0,
@@ -133,6 +236,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:59:17Z",
+  "date-time-parse": "2026-05-01T01:22:23Z",
   "date-time-wikidata": "2026-03-17T23:54:56Z"
 }

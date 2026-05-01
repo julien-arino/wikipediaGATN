@@ -3,18 +3,18 @@
   "icao": "MZPG",
   "gps": "MZPG",
   "city-served": "Punta Gorda",
-  "city-served-wikipedia": "[[Punta Gorda, Belize]]",
-  "location": "Punta Gorda",
+  "city-served-wikipedia": "Punta Gorda",
+  "location": null,
   "lat": "16.102222",
   "lon": "-88.808333",
   "altitude": "2.13",
-  "continent": "North America",
   "country_alpha3": "BLZ",
   "country_name": "Belize",
   "admin1_code": "BZ-TOL",
   "admin1_name": "Toledo",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Gorda_Airport_(Belize)",
-  "outdegree": 2,
+  "outdegree": 3,
   "number_airlines": 2,
   "airlines": [
     "Maya Island Air",
@@ -27,7 +27,7 @@
       "codes": [
         "BZE",
         "MZBZ",
-        "MZBZ"
+        "gps code not found"
       ],
       "airlines": [
         "Tropic Air"
@@ -39,16 +39,29 @@
       "codes": [
         "PLJ",
         "MZPL",
-        "MZPL"
+        "gps code not found"
       ],
       "airlines": [
         "Maya Island Air",
         "Tropic Air"
       ]
+    },
+    {
+      "city": "Big Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Big_Creek_Airport_(Belize)",
+      "codes": [
+        "BGK",
+        "MZBG",
+        "MZBG"
+      ],
+      "airlines": [
+        "Maya Island Air"
+      ]
     }
   ],
   "airlines_destinations": {
     "Maya Island Air": [
+      "Big Creek",
       "Placencia"
     ],
     "Tropic Air": [
@@ -61,6 +74,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:58:05Z",
+  "date-time-parse": "2026-05-01T01:53:24Z",
   "date-time-wikidata": "2026-03-18T15:05:00Z"
 }

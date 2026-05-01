@@ -3,19 +3,18 @@
   "icao": "KTUS",
   "gps": "KTUS",
   "city-served": "Tucson",
-  "city-served-wikipedia": "[[Tucson, Arizona]]",
-  "location": "Summit",
+  "city-served-wikipedia": "Tucson",
+  "location": null,
   "lat": "32.116111",
   "lon": "-110.941111",
   "altitude": "805.59",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-AZ",
   "admin1_name": "Arizona",
   "admin2_name": "Pima County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tucson_International_Airport",
-  "outdegree": 17,
+  "outdegree": 18,
   "number_airlines": 10,
   "airlines": [
     "Alaska Airlines",
@@ -36,7 +35,7 @@
       "codes": [
         "ATL",
         "KATL",
-        "KATL"
+        "gps code not found"
       ],
       "airlines": [
         "Delta Air Lines"
@@ -48,7 +47,7 @@
       "codes": [
         "MDW",
         "KMDW",
-        "KMDW"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
@@ -60,7 +59,7 @@
       "codes": [
         "ORD",
         "KORD",
-        "KORD"
+        "gps code not found"
       ],
       "airlines": [
         "American Airlines",
@@ -71,19 +70,6 @@
     {
       "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas/Fort_Worth_International_Airport",
-      "codes": [
-        "DFW",
-        "KDFW",
-        "gps code not found"
-      ],
-      "airlines": [
-        "American Airlines",
-        "Frontier Airlines"
-      ]
-    },
-    {
-      "city": "Dallas/Fort Worth",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
       "codes": [
         "DFW",
         "KDFW",
@@ -100,7 +86,7 @@
       "codes": [
         "DAL",
         "KDAL",
-        "KDAL"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
@@ -112,11 +98,13 @@
       "codes": [
         "DEN",
         "KDEN",
-        "KDEN"
+        "gps code not found"
       ],
       "airlines": [
         "Frontier Airlines",
-        "United Airlines"
+        "Southwest Airlines",
+        "United Airlines",
+        "United Express"
       ]
     },
     {
@@ -125,7 +113,7 @@
       "codes": [
         "HOU",
         "KHOU",
-        "KHOU"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
@@ -137,10 +125,11 @@
       "codes": [
         "IAH",
         "KIAH",
-        "KIAH"
+        "gps code not found"
       ],
       "airlines": [
-        "United Airlines"
+        "United Airlines",
+        "United Express"
       ]
     },
     {
@@ -149,7 +138,7 @@
       "codes": [
         "LAS",
         "KLAS",
-        "KLAS"
+        "gps code not found"
       ],
       "airlines": [
         "Frontier Airlines",
@@ -162,7 +151,7 @@
       "codes": [
         "LAX",
         "KLAX",
-        "KLAX"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle",
@@ -176,11 +165,23 @@
       "codes": [
         "MSP",
         "KMSP",
-        "KMSP"
+        "gps code not found"
       ],
       "airlines": [
         "Delta Air Lines",
         "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "Orange County",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Wayne_Airport",
+      "codes": [
+        "SNA",
+        "KSNA",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Alaska Airlines"
       ]
     },
     {
@@ -189,7 +190,7 @@
       "codes": [
         "PHX",
         "KPHX",
-        "KPHX"
+        "gps code not found"
       ],
       "airlines": [
         "American Airlines",
@@ -203,7 +204,7 @@
       "codes": [
         "PDX",
         "KPDX",
-        "KPDX"
+        "gps code not found"
       ],
       "airlines": [
         "Alaska Airlines"
@@ -215,7 +216,7 @@
       "codes": [
         "SLC",
         "KSLC",
-        "KSLC"
+        "gps code not found"
       ],
       "airlines": [
         "Delta Connection",
@@ -228,10 +229,22 @@
       "codes": [
         "SAN",
         "KSAN",
-        "KSAN"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO",
+        "gps code not found"
+      ],
+      "airlines": [
+        "United Express"
       ]
     },
     {
@@ -240,7 +253,7 @@
       "codes": [
         "SEA",
         "KSEA",
-        "KSEA"
+        "gps code not found"
       ],
       "airlines": [
         "Alaska Airlines",
@@ -251,6 +264,7 @@
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
+      "Orange County",
       "Portland (OR)",
       "Seattle/Tacoma"
     ],
@@ -282,6 +296,7 @@
     "Southwest Airlines": [
       "Chicago–Midway",
       "Dallas–Love",
+      "Denver",
       "Houston–Hobby",
       "Las Vegas",
       "Los Angeles",
@@ -297,7 +312,10 @@
       "Houston–Intercontinental"
     ],
     "United Express": [
-      "Chicago–O'Hare"
+      "Chicago–O'Hare",
+      "Denver",
+      "Houston–Intercontinental",
+      "San Francisco"
     ]
   },
   "outdegree_cargo": 0,
@@ -305,6 +323,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T05:00:51Z",
+  "date-time-parse": "2026-05-01T01:22:33Z",
   "date-time-wikidata": "2026-04-28T17:47:41Z"
 }

@@ -3,18 +3,18 @@
   "icao": "WIHH",
   "gps": "WIHH",
   "city-served": "Jakarta metropolitan area",
-  "city-served-wikipedia": "[[Jakarta metropolitan area]]",
+  "city-served-wikipedia": "[[East Jakarta]], [[Jakarta]], Indonesia",
   "location": "East Jakarta",
   "lat": "-6.266389",
   "lon": "106.891111",
   "altitude": "25",
-  "continent": "Asia",
   "country_alpha3": "IDN",
   "country_name": "Indonesia",
   "admin1_code": "ID-JK",
   "admin1_name": "Jakarta Raya",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Halim_Perdanakusuma_International_Airport",
-  "outdegree": 10,
+  "outdegree": 14,
   "number_airlines": 5,
   "airlines": [
     "Batik Air",
@@ -82,6 +82,7 @@
         "WARA"
       ],
       "airlines": [
+        "Batik Air",
         "Citilink"
       ]
     },
@@ -98,6 +99,18 @@
       ]
     },
     {
+      "city": "Padang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minangkabau_International_Airport",
+      "codes": [
+        "PDG",
+        "WIEE",
+        "WIEE"
+      ],
+      "airlines": [
+        "Citilink"
+      ]
+    },
+    {
       "city": "Pagar Alam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Atung_Bungsu_Airport",
       "codes": [
@@ -107,6 +120,18 @@
       ],
       "airlines": [
         "Citilink"
+      ]
+    },
+    {
+      "city": "Palembang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Mahmud_Badaruddin_II_International_Airport",
+      "codes": [
+        "PLM",
+        "WIPP",
+        "WIPP"
+      ],
+      "airlines": [
+        "Batik Air"
       ]
     },
     {
@@ -134,6 +159,31 @@
       ]
     },
     {
+      "city": "Surabaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juanda_International_Airport",
+      "codes": [
+        "SUB",
+        "WARR",
+        "WARR"
+      ],
+      "airlines": [
+        "Batik Air",
+        "Citilink"
+      ]
+    },
+    {
+      "city": "Way Kanan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatot_Subroto_Airport",
+      "codes": [
+        "WTX",
+        "WIPO",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Citilink"
+      ]
+    },
+    {
       "city": "Yogyakarta–Adisucipto",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Adisutjipto_Airport",
       "codes": [
@@ -149,13 +199,19 @@
   ],
   "airlines_destinations": {
     "Batik Air": [
-      "Denpasar"
+      "Denpasar",
+      "Malang",
+      "Palembang",
+      "Surabaya"
     ],
     "Citilink": [
       "Denpasar",
       "Malang",
+      "Padang",
       "Pagar Alam",
       "Pekanbaru",
+      "Surabaya",
+      "Way Kanan",
       "Yogyakarta–Adisucipto"
     ],
     "FlyJaya": [
@@ -176,6 +232,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:51:44Z",
-  "date-time-wikidata": "2026-04-27T23:04:34Z"
+  "date-time-parse": "2026-05-01T02:36:07Z",
+  "date-time-wikidata": "2026-04-30T17:26:07Z"
 }

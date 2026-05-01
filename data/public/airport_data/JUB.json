@@ -3,18 +3,18 @@
   "icao": "HJJJ",
   "gps": "HJJJ",
   "city-served": "Juba",
-  "city-served-wikipedia": "[[Juba]]",
+  "city-served-wikipedia": "[[Juba]], [[South Sudan]]",
   "location": "Juba",
   "lat": "4.871944",
   "lon": "31.601111",
   "altitude": "460.55",
-  "continent": "Africa",
   "country_alpha3": "SSD",
   "country_name": "South Sudan",
   "admin1_code": "SS-EC",
   "admin1_name": "Central Equatoria",
-  "wikipedia_url": "https://en.wikipedia.org/wiki/Juba_International_Airport",
-  "outdegree": 6,
+  "admin2_name": null,
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Juba_Airport",
+  "outdegree": 7,
   "number_airlines": 6,
   "airlines": [
     "Egyptair",
@@ -96,6 +96,22 @@
       "airlines": [
         "Tarco Aviation"
       ]
+    },
+    {
+      "city": "[[Khartoum]], Sudan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khartoum_International_Airport",
+      "codes": [
+        "KRT",
+        "HSSK",
+        "HSSK"
+      ],
+      "airlines": [
+        "Badr Airlines",
+        "Kenya Airways",
+        "Nova Airways",
+        "Sudan Airways",
+        "Tarco Aviation"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -109,20 +125,48 @@
       "Dubai–International"
     ],
     "Kenya Airways": [
-      "Nairobi–Jomo Kenyatta"
+      "Nairobi–Jomo Kenyatta",
+      "[[Khartoum]], Sudan"
     ],
     "Tarco Aviation": [
-      "Port Sudan"
+      "Port Sudan",
+      "[[Khartoum]], Sudan"
     ],
     "Turkish Airlines": [
       "Istanbul"
+    ],
+    "Badr Airlines": [
+      "[[Khartoum]], Sudan"
+    ],
+    "Nova Airways": [
+      "[[Khartoum]], Sudan"
+    ],
+    "Sudan Airways": [
+      "[[Khartoum]], Sudan"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-30T01:56:04Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Ethiopian Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Ethiopian Cargo": [
+      "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]"
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:33:51Z",
   "date-time-wikidata": "2026-04-29T06:42:00Z"
 }

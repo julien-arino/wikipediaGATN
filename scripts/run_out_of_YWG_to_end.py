@@ -1,5 +1,8 @@
 """
 Test script that performs a complete, clean-slate network crawl starting from YWG (Winnipeg) until exhaustion.
+
+Usage:
+    PYTHONPATH=src venv/bin/python scripts/run_out_of_YWG_to_end.py
 """
 
 from wikipediaGATN.wikipedia_network_level import (

@@ -3,19 +3,18 @@
   "icao": "LIMP",
   "gps": "LIMP",
   "city-served": "Parma",
-  "city-served-wikipedia": "[[Parma]], [[Emilia-Romagna]], Italy",
-  "location": "Baganzola",
+  "city-served-wikipedia": "Parma",
+  "location": null,
   "lat": "44.822222",
   "lon": "10.295278",
   "altitude": "49",
-  "continent": "Europe",
   "country_alpha3": "ITA",
   "country_name": "Italy",
   "admin1_code": "IT-45",
   "admin1_name": "Emilia-Romagna",
   "admin2_name": "Provincia di Parma",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Parma_Airport",
-  "outdegree": 3,
+  "outdegree": 6,
   "number_airlines": 2,
   "airlines": [
     "FlyOne",
@@ -28,7 +27,7 @@
       "codes": [
         "CAG",
         "LIEE",
-        "LIEE"
+        "gps code not found"
       ],
       "airlines": [
         "Ryanair"
@@ -40,10 +39,22 @@
       "codes": [
         "RMO",
         "LUKK",
-        "LUKK"
+        "gps code not found"
       ],
       "airlines": [
         "FlyOne"
+      ]
+    },
+    {
+      "city": "London–Stansted",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "codes": [
+        "STN",
+        "EGSS",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Ryanair"
       ]
     },
     {
@@ -57,6 +68,30 @@
       "airlines": [
         "Ryanair"
       ]
+    },
+    {
+      "city": "Reggio Calabria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reggio_Calabria_Airport",
+      "codes": [
+        "REG",
+        "LICR",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Tirana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirana_International_Airport_Nënë_Tereza",
+      "codes": [
+        "TIA",
+        "LATI",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -65,7 +100,10 @@
     ],
     "Ryanair": [
       "Cagliari",
-      "Palermo"
+      "London–Stansted",
+      "Palermo",
+      "Reggio Calabria",
+      "Tirana"
     ]
   },
   "outdegree_cargo": 0,
@@ -73,6 +111,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:58:03Z",
+  "date-time-parse": "2026-05-01T02:16:38Z",
   "date-time-wikidata": "2026-04-22T04:52:47Z"
 }

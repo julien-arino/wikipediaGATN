@@ -100,12 +100,19 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
     rows = []
     skipped = 0
+    total_files = len(valid_files)
 
     os.makedirs(airport_data_dir, exist_ok=True)
     
     geolocator = Nominatim(user_agent="wikipediaGATN/1.0")
 
-    for fname, identifier in valid_files:
+    if verbose:
+        print(f"Processing {total_files} files from {scan_dir}...")
+
+    for i, (fname, identifier) in enumerate(valid_files):
+        if verbose and ((i + 1) % 100 == 0 or i + 1 == total_files):
+            print(f"[{i + 1}/{total_files}] Processing {identifier}...")
+
         fpath = os.path.join(scan_dir, fname)
         try:
             with open(fpath, "r", encoding="utf-8") as fh:

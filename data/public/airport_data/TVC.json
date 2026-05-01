@@ -3,12 +3,11 @@
   "icao": "KTVC",
   "gps": "KTVC",
   "city-served": "Traverse City",
-  "city-served-wikipedia": "[[Traverse City, Michigan]]",
-  "location": "Traverse City",
+  "city-served-wikipedia": "Traverse City",
+  "location": null,
   "lat": "44.741667",
   "lon": "-85.582222",
   "altitude": "190",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-MI",
@@ -43,13 +42,15 @@
     },
     {
       "city": "Boston",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Logan_International_Airport",
       "codes": [
         "BOS",
         "KBOS",
-        "KBOS"
+        "gps code not found"
       ],
       "airlines": [
+        "American Eagle",
+        "Delta Connection",
         "JetBlue"
       ]
     },
@@ -59,7 +60,7 @@
       "codes": [
         "CLT",
         "KCLT",
-        "KCLT"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle"
@@ -71,7 +72,7 @@
       "codes": [
         "ORD",
         "KORD",
-        "KORD"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle",
@@ -85,7 +86,7 @@
       "codes": [
         "DFW",
         "KDFW",
-        "KDFW"
+        "gps code not found"
       ],
       "airlines": [
         "American Airlines",
@@ -98,7 +99,7 @@
       "codes": [
         "DEN",
         "KDEN",
-        "KDEN"
+        "gps code not found"
       ],
       "airlines": [
         "United Airlines"
@@ -110,7 +111,7 @@
       "codes": [
         "DTW",
         "KDTW",
-        "KDTW"
+        "gps code not found"
       ],
       "airlines": [
         "Delta Air Lines",
@@ -123,28 +124,27 @@
       "codes": [
         "FLL",
         "KFLL",
-        "KFLL"
+        "gps code not found"
       ],
       "airlines": [
         "Allegiant Air"
       ]
     },
     {
-      "city": "Minneapolis/St. Paul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
-        "MSP",
-        "KMSP",
-        "KMSP"
+        "IAH",
+        "KIAH",
+        "gps code not found"
       ],
       "airlines": [
-        "Delta Connection",
-        "Sun Country Airlines"
+        "United Express"
       ]
     },
     {
       "city": "Minneapolis/St. Paul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-St._Paul_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP",
@@ -157,13 +157,14 @@
     },
     {
       "city": "New York–LaGuardia",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Laguardia_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
       "codes": [
         "LGA",
         "KLGA",
         "gps code not found"
       ],
       "airlines": [
+        "American Eagle",
         "Delta Connection"
       ]
     },
@@ -173,7 +174,7 @@
       "codes": [
         "EWR",
         "KEWR",
-        "KEWR"
+        "gps code not found"
       ],
       "airlines": [
         "United Express"
@@ -185,7 +186,7 @@
       "codes": [
         "SFB",
         "KSFB",
-        "KSFB"
+        "gps code not found"
       ],
       "airlines": [
         "Allegiant Air"
@@ -197,7 +198,7 @@
       "codes": [
         "PHL",
         "KPHL",
-        "KPHL"
+        "gps code not found"
       ],
       "airlines": [
         "American Eagle"
@@ -205,7 +206,7 @@
     },
     {
       "city": "Phoenix/Mesa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix-Mesa_Gateway_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesa_Gateway_Airport",
       "codes": [
         "AZA",
         "KIWA",
@@ -221,7 +222,7 @@
       "codes": [
         "PGD",
         "KPGD",
-        "KPGD"
+        "gps code not found"
       ],
       "airlines": [
         "Allegiant Air"
@@ -233,7 +234,7 @@
       "codes": [
         "PIE",
         "KPIE",
-        "gps code not found"
+        "KPIE"
       ],
       "airlines": [
         "Allegiant Air"
@@ -264,9 +265,11 @@
       "Dallas/Fort Worth"
     ],
     "American Eagle": [
+      "Boston",
       "Charlotte",
       "Chicago–O'Hare",
       "Dallas/Fort Worth",
+      "New York–LaGuardia",
       "Philadelphia",
       "Washington–National"
     ],
@@ -275,6 +278,7 @@
       "Detroit"
     ],
     "Delta Connection": [
+      "Boston",
       "Detroit",
       "Minneapolis/St. Paul",
       "New York–LaGuardia"
@@ -291,6 +295,7 @@
     ],
     "United Express": [
       "Chicago–O'Hare",
+      "Houston–Intercontinental",
       "Newark"
     ]
   },
@@ -299,6 +304,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T05:00:52Z",
+  "date-time-parse": "2026-05-01T01:22:31Z",
   "date-time-wikidata": "2026-04-14T16:02:18Z"
 }

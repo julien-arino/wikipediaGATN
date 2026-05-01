@@ -3,19 +3,18 @@
   "icao": "DFFD",
   "gps": "DFFD",
   "city-served": "Ouagadougou",
-  "city-served-wikipedia": "[[Ouagadougou]]",
+  "city-served-wikipedia": "[[Ouagadougou]], [[Burkina Faso]]",
   "location": "Ouagadougou",
   "lat": "12.353056",
   "lon": "-1.512222",
   "altitude": "316",
-  "continent": "Africa",
   "country_alpha3": "BFA",
   "country_name": "Burkina Faso",
   "admin1_code": "FR-CVL",
   "admin1_name": "Centre-Val de Loire",
   "admin2_name": "Kadiogo Province",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ouagadougou_Airport",
-  "outdegree": 21,
+  "outdegree": 18,
   "number_airlines": 14,
   "airlines": [
     "ASKY Airlines",
@@ -40,7 +39,7 @@
       "codes": [
         "ABJ",
         "DIAP",
-        "DIAP"
+        "gps code not found"
       ],
       "airlines": [
         "Air Côte d'Ivoire",
@@ -51,7 +50,7 @@
       "city": "Accra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
-        "iata code not found",
+        "ACC",
         "icao code not found",
         "gps code not found"
       ],
@@ -78,7 +77,7 @@
       "codes": [
         "ALG",
         "DAAG",
-        "DAAG"
+        "gps code not found"
       ],
       "airlines": [
         "Air Algérie"
@@ -98,25 +97,12 @@
       ]
     },
     {
-      "city": "Bamako",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Modibo_Keita_International_Airport",
-      "codes": [
-        "BKO",
-        "GABS",
-        "GABS"
-      ],
-      "airlines": [
-        "ASKY Airlines",
-        "Air Burkina"
-      ]
-    },
-    {
       "city": "Bobo-Dioulasso",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bobo_Dioulasso_Airport",
       "codes": [
         "BOY",
         "DFOO",
-        "DFOO"
+        "gps code not found"
       ],
       "airlines": [
         "Air Burkina",
@@ -129,7 +115,7 @@
       "codes": [
         "BRU",
         "EBBR",
-        "EBBR"
+        "gps code not found"
       ],
       "airlines": [
         "Brussels Airlines"
@@ -141,7 +127,7 @@
       "codes": [
         "CAI",
         "HECA",
-        "HECA"
+        "gps code not found"
       ],
       "airlines": [
         "Air Cairo"
@@ -153,7 +139,7 @@
       "codes": [
         "CMN",
         "GMMN",
-        "GMMN"
+        "gps code not found"
       ],
       "airlines": [
         "Royal Air Maroc"
@@ -165,21 +151,7 @@
       "codes": [
         "CKY",
         "GUCY",
-        "GUCY"
-      ],
-      "airlines": [
-        "ASKY Airlines",
-        "Ethiopian Airlines",
-        "Turkish Airlines"
-      ]
-    },
-    {
-      "city": "Conakry",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Conakry_International_Airport",
-      "codes": [
-        "CKY",
-        "GUCY",
-        "GUCY"
+        "gps code not found"
       ],
       "airlines": [
         "ASKY Airlines",
@@ -193,7 +165,7 @@
       "codes": [
         "COO",
         "DBBB",
-        "DBBB"
+        "gps code not found"
       ],
       "airlines": [
         "Air Burkina"
@@ -205,7 +177,7 @@
       "codes": [
         "DSS",
         "GOBD",
-        "GOBD"
+        "gps code not found"
       ],
       "airlines": [
         "Air Burkina",
@@ -231,7 +203,7 @@
       "codes": [
         "IST",
         "LTFM",
-        "LTFM"
+        "gps code not found"
       ],
       "airlines": [
         "Turkish Airlines"
@@ -256,7 +228,7 @@
       "codes": [
         "NIM",
         "DRRN",
-        "DRRN"
+        "gps code not found"
       ],
       "airlines": [
         "ASKY Airlines",
@@ -284,30 +256,16 @@
       "codes": [
         "TUN",
         "DTTA",
-        "gps code not found"
+        "DTTA"
       ],
       "airlines": [
         "Tunisair"
-      ]
-    },
-    {
-      "city": "Unknown City",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotoka_International_Airport",
-      "codes": [
-        null,
-        null,
-        "DGAA"
-      ],
-      "airlines": [
-        "Africa World Airlines",
-        "Air Burkina"
       ]
     }
   ],
   "airlines_destinations": {
     "Africa World Airlines": [
-      "Accra",
-      "Unknown City"
+      "Accra"
     ],
     "Air Algérie": [
       "Algiers"
@@ -319,8 +277,7 @@
       "Cotonou",
       "Dakar–Diass",
       "Lomé",
-      "Niamey",
-      "Unknown City"
+      "Niamey"
     ],
     "Air Cairo": [
       "Cairo",
@@ -367,11 +324,28 @@
       "Istanbul"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:57:37Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Magma Aviation": [
+      "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]"
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:34:26Z",
   "date-time-wikidata": "2026-04-07T17:34:50Z"
 }

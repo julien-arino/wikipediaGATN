@@ -3,18 +3,18 @@
   "icao": "LRBC",
   "gps": "LRBC",
   "city-served": "Bacău",
-  "city-served-wikipedia": "[[Bacău]], [[Romania]]",
-  "location": "Ungureni",
+  "city-served-wikipedia": "Bacău",
+  "location": null,
   "lat": "46.521944",
   "lon": "26.910278",
   "altitude": "185",
-  "continent": "Europe",
   "country_alpha3": "ROU",
   "country_name": "Romania",
   "admin1_code": "RO-BC",
   "admin1_name": "Bacău",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/George_Enescu_International_Airport",
-  "outdegree": 9,
+  "outdegree": 13,
   "number_airlines": 3,
   "airlines": [
     "Aeroitalia",
@@ -23,12 +23,48 @@
   ],
   "destinations": [
     {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL",
+        "LEBL"
+      ],
+      "airlines": [
+        "Dan Air"
+      ]
+    },
+    {
+      "city": "Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
+      "codes": [
+        "BVA",
+        "LFOB",
+        "LFOB"
+      ],
+      "airlines": [
+        "Dan Air"
+      ]
+    },
+    {
       "city": "Bergamo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
       "codes": [
         "BGY",
         "LIME",
         "LIME"
+      ],
+      "airlines": [
+        "Dan Air"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE",
+        "LIPE"
       ],
       "airlines": [
         "Dan Air"
@@ -64,7 +100,7 @@
       "codes": [
         "LCA",
         "LCLK",
-        "gps code not found"
+        "LCLK"
       ],
       "airlines": [
         "Dan Air"
@@ -76,9 +112,10 @@
       "codes": [
         "LTN",
         "EGGW",
-        "gps code not found"
+        "EGGW"
       ],
       "airlines": [
+        "Dan Air",
         "Wizz Air"
       ]
     },
@@ -88,7 +125,7 @@
       "codes": [
         "MAD",
         "LEMD",
-        "gps code not found"
+        "LEMD"
       ],
       "airlines": [
         "Dan Air"
@@ -120,6 +157,18 @@
       ]
     },
     {
+      "city": "Turin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turin_Airport",
+      "codes": [
+        "TRN",
+        "LIMF",
+        "LIMF"
+      ],
+      "airlines": [
+        "Dan Air"
+      ]
+    },
+    {
       "city": "Valencia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
       "codes": [
@@ -137,12 +186,17 @@
       "Rome–Fiumicino"
     ],
     "Dan Air": [
+      "Barcelona",
+      "Beauvais",
       "Bergamo",
+      "Bologna",
       "Brussels",
       "Dublin",
       "Larnaca",
+      "London–Luton",
       "Madrid",
       "Treviso",
+      "Turin",
       "Valencia"
     ],
     "Wizz Air": [
@@ -155,6 +209,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:47:38Z",
+  "date-time-parse": "2026-05-01T01:45:28Z",
   "date-time-wikidata": "2026-04-22T15:17:58Z"
 }

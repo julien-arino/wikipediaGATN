@@ -2,20 +2,19 @@
   "iata": "BUF",
   "icao": "KBUF",
   "gps": "KBUF",
-  "city-served": "Buffalo–Niagara Falls metropolitan area",
-  "city-served-wikipedia": "[[Buffalo–Niagara Falls metropolitan area]]<br>[[Golden Horseshoe]]",
+  "city-served": "Buffalo–Niagara Falls metropolitan areaGolden Horseshoe",
+  "city-served-wikipedia": "4200 Genesee Street<br />[[Cheektowaga (town), New York|Cheektowaga]], [[New York (state)|New York]], U.S.",
   "location": "4200 Genesee StreetCheektowaga",
   "lat": "42.940556",
   "lon": "-78.732222",
   "altitude": "222",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-NY",
   "admin1_name": "New York",
   "admin2_name": "Erie County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Buffalo_Niagara_International_Airport",
-  "outdegree": 25,
+  "outdegree": 30,
   "number_airlines": 10,
   "airlines": [
     "American Airlines",
@@ -120,6 +119,18 @@
       ]
     },
     {
+      "city": "Dallas–Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
       "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
       "codes": [
@@ -168,7 +179,9 @@
         "KRSW"
       ],
       "airlines": [
-        "JetBlue"
+        "Frontier Airlines",
+        "JetBlue",
+        "Southwest Airlines"
       ]
     },
     {
@@ -216,6 +229,7 @@
         "KMSP"
       ],
       "airlines": [
+        "Delta Air Lines",
         "Sun Country Airlines"
       ]
     },
@@ -253,6 +267,7 @@
         "KLGA"
       ],
       "airlines": [
+        "American Eagle",
         "Delta Connection"
       ]
     },
@@ -320,6 +335,43 @@
       ]
     },
     {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ",
+        "TJSJ"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Sarasota",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarasota–Bradenton_International_Airport",
+      "codes": [
+        "SRQ",
+        "KSRQ",
+        "KSRQ"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Tampa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "codes": [
+        "TPA",
+        "KTPA",
+        "KTPA"
+      ],
+      "airlines": [
+        "Frontier Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
       "city": "Washington–Dulles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
       "codes": [
@@ -329,6 +381,18 @@
       ],
       "airlines": [
         "United Express"
+      ]
+    },
+    {
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle"
       ]
     },
     {
@@ -355,11 +419,14 @@
       "Boston",
       "Chicago–O'Hare",
       "Miami",
-      "Philadelphia"
+      "New York–LaGuardia",
+      "Philadelphia",
+      "Washington–National"
     ],
     "Delta Air Lines": [
       "Atlanta",
-      "Detroit"
+      "Detroit",
+      "Minneapolis/St. Paul"
     ],
     "Delta Connection": [
       "Detroit",
@@ -369,8 +436,10 @@
     "Frontier Airlines": [
       "Atlanta",
       "Denver",
+      "Fort Myers",
       "Orlando",
-      "Raleigh/Durham"
+      "Raleigh/Durham",
+      "Tampa"
     ],
     "JetBlue": [
       "Boston",
@@ -379,17 +448,22 @@
       "Los Angeles",
       "New York–JFK",
       "Orlando",
+      "San Juan",
       "West Palm Beach"
     ],
     "Southwest Airlines": [
       "Baltimore",
       "Chicago–Midway",
+      "Dallas–Love",
       "Denver",
       "Fort Lauderdale",
+      "Fort Myers",
       "Las Vegas",
       "Nashville",
       "Orlando",
       "Phoenix–Sky Harbor",
+      "Sarasota",
+      "Tampa",
       "West Palm Beach"
     ],
     "Sun Country Airlines": [
@@ -406,7 +480,7 @@
       "Washington–Dulles"
     ]
   },
-  "outdegree_cargo": 11,
+  "outdegree_cargo": 12,
   "number_airlines_cargo": 3,
   "airlines_cargo": [
     "Ameriflight",
@@ -546,6 +620,18 @@
         "FedEx Express",
         "UPS Airlines"
       ]
+    },
+    {
+      "city": "[[Bedford, Massachusetts|Bedford]], [[Massachusetts]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanscom_Field",
+      "codes": [
+        "BED",
+        "KBED",
+        "KBED"
+      ],
+      "airlines": [
+        "AirNet"
+      ]
     }
   ],
   "airlines_destinations_cargo": {
@@ -566,8 +652,11 @@
       "Philadelphia",
       "Raleigh/Durham",
       "Syracuse"
+    ],
+    "AirNet": [
+      "[[Bedford, Massachusetts|Bedford]], [[Massachusetts]]"
     ]
   },
-  "date-time-parse": "2026-04-30T14:35:08Z",
+  "date-time-parse": "2026-05-01T01:20:08Z",
   "date-time-wikidata": "2026-04-30T05:18:13Z"
 }

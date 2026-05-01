@@ -8,13 +8,13 @@
   "lat": "22.461111",
   "lon": "-78.328611",
   "altitude": "4",
-  "continent": "North America",
   "country_alpha3": "CUB",
   "country_name": "Cuba",
   "admin1_code": "CU-08",
   "admin1_name": "Ciego de Ávila",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Jardines_del_Rey_Airport",
-  "outdegree": 7,
+  "outdegree": 9,
   "number_airlines": 3,
   "airlines": [
     "Aerogaviota",
@@ -85,6 +85,18 @@
       ]
     },
     {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
       "city": "Québec City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Québec_City_Jean_Lesage_International_Airport",
       "codes": [
@@ -93,6 +105,7 @@
         "CYQB"
       ],
       "airlines": [
+        "Air Transat",
         "WestJet"
       ]
     },
@@ -108,6 +121,18 @@
         "Air Transat",
         "WestJet"
       ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -117,6 +142,7 @@
     "Air Transat": [
       "Halifax",
       "Montréal–Trudeau",
+      "Québec City",
       "Toronto–Pearson"
     ],
     "WestJet": [
@@ -124,8 +150,10 @@
       "Halifax",
       "London (ON)",
       "Montréal–Trudeau",
+      "Ottawa",
       "Québec City",
-      "Toronto–Pearson"
+      "Toronto–Pearson",
+      "Winnipeg"
     ]
   },
   "outdegree_cargo": 0,
@@ -133,6 +161,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:48:52Z",
+  "date-time-parse": "2026-05-01T01:29:05Z",
   "date-time-wikidata": "2026-04-26T22:55:19Z"
 }

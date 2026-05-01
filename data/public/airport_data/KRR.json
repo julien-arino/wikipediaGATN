@@ -3,18 +3,18 @@
   "icao": "URKK",
   "gps": "URKK",
   "city-served": "Krasnodar",
-  "city-served-wikipedia": "[[Krasnodar]]",
+  "city-served-wikipedia": "[[Krasnodar]], [[Russia]]",
   "location": "Krasnodar",
   "lat": "45.034722",
   "lon": "39.170556",
   "altitude": "36",
-  "continent": "Europe",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
   "admin1_code": "RU-KDA",
-  "admin1_name": "Krasnodarskiy kray",
+  "admin1_name": "Krasnodarskij kraj",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnodar_International_Airport",
-  "outdegree": 25,
+  "outdegree": 31,
   "number_airlines": 22,
   "airlines": [
     "Aeroflot",
@@ -107,6 +107,18 @@
       ]
     },
     {
+      "city": "Hurghada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hurghada_International_Airport",
+      "codes": [
+        "HRG",
+        "HEGN",
+        "HEGN"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
       "city": "Istanbul",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
       "codes": [
@@ -115,7 +127,9 @@
         "LTFM"
       ],
       "airlines": [
-        "Pobeda"
+        "Aeroflot",
+        "Pobeda",
+        "azimuth"
       ]
     },
     {
@@ -127,7 +141,46 @@
         "UWKD"
       ],
       "airlines": [
-        "Nordwind Airlines"
+        "Aeroflot",
+        "Nordwind Airlines",
+        "Pobeda"
+      ]
+    },
+    {
+      "city": "Krasnoyarsk–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
+      "codes": [
+        "KJA",
+        "UNKL",
+        "UNKL"
+      ],
+      "airlines": [
+        "Aeroflot"
+      ]
+    },
+    {
+      "city": "Makhachkala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uytash_Airport",
+      "codes": [
+        "MCX",
+        "URML",
+        "URML"
+      ],
+      "airlines": [
+        "Red Wings Airlines",
+        "azimuth"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM",
+        "URMM"
+      ],
+      "airlines": [
+        "azimuth"
       ]
     },
     {
@@ -139,7 +192,8 @@
         "UUDD"
       ],
       "airlines": [
-        "S7 Airlines"
+        "S7 Airlines",
+        "Ural Airlines"
       ]
     },
     {
@@ -151,6 +205,7 @@
         "UUEE"
       ],
       "airlines": [
+        "Aeroflot",
         "Smartavia"
       ]
     },
@@ -163,6 +218,7 @@
         "UUWW"
       ],
       "airlines": [
+        "Pobeda",
         "Utair"
       ]
     },
@@ -205,6 +261,18 @@
       ]
     },
     {
+      "city": "Perm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bolshoye_Savino_Airport",
+      "codes": [
+        "PEE",
+        "USPP",
+        "USPP"
+      ],
+      "airlines": [
+        "azimuth"
+      ]
+    },
+    {
       "city": "Phuket",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
       "codes": [
@@ -225,8 +293,10 @@
         "ULLI"
       ],
       "airlines": [
+        "Aeroflot",
         "Pobeda",
-        "Rossiya Airlines"
+        "Rossiya Airlines",
+        "Smartavia"
       ]
     },
     {
@@ -282,6 +352,19 @@
       ]
     },
     {
+      "city": "Tashkent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
+      "codes": [
+        "TAS",
+        "UZTT",
+        "UZTT"
+      ],
+      "airlines": [
+        "Uzbekistan Airways",
+        "azimuth"
+      ]
+    },
+    {
       "city": "Tbilisi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tbilisi_International_Airport",
       "codes": [
@@ -290,7 +373,8 @@
         "UGTB"
       ],
       "airlines": [
-        "Red Wings Airlines"
+        "Red Wings Airlines",
+        "azimuth"
       ]
     },
     {
@@ -314,7 +398,8 @@
         "UWUU"
       ],
       "airlines": [
-        "Aeroflot"
+        "Aeroflot",
+        "Utair"
       ]
     },
     {
@@ -337,7 +422,7 @@
       "codes": [
         "EVN",
         "UDYZ",
-        "gps code not found"
+        "UDYZ"
       ],
       "airlines": [
         "Aeroflot",
@@ -362,7 +447,13 @@
     "Aeroflot": [
       "Antalya",
       "Dubai–Al Maktoum",
+      "Hurghada",
+      "Istanbul",
+      "Kazan",
+      "Krasnoyarsk–International",
+      "Moscow–Sheremetyevo",
       "Novosibirsk",
+      "Saint Petersburg",
       "Sharm El Sheikh",
       "Ufa",
       "Yekaterinburg",
@@ -374,8 +465,14 @@
     "azimuth": [
       "Antalya",
       "Dubai–Al Maktoum",
+      "Istanbul",
+      "Makhachkala",
+      "Mineralnye Vody",
+      "Perm",
       "Samarqand",
       "Sochi",
+      "Tashkent",
+      "Tbilisi",
       "Tel Aviv",
       "Yerevan"
     ],
@@ -406,6 +503,8 @@
     ],
     "Pobeda": [
       "Istanbul",
+      "Kazan",
+      "Moscow–Vnukovo",
       "Saint Petersburg",
       "Yekaterinburg"
     ],
@@ -414,6 +513,7 @@
     ],
     "Red Wings Airlines": [
       "Batumi",
+      "Makhachkala",
       "Sharm El Sheikh",
       "Tbilisi"
     ],
@@ -428,21 +528,25 @@
       "Şymkent"
     ],
     "Smartavia": [
-      "Moscow–Sheremetyevo"
+      "Moscow–Sheremetyevo",
+      "Saint Petersburg"
     ],
     "Southwind Airlines": [
       "Antalya"
     ],
     "Ural Airlines": [
       "Chelyabinsk",
+      "Moscow–Domodedovo",
       "Yekaterinburg"
     ],
     "Utair": [
       "Moscow–Vnukovo",
-      "Surgut"
+      "Surgut",
+      "Ufa"
     ],
     "Uzbekistan Airways": [
-      "Namangan"
+      "Namangan",
+      "Tashkent"
     ]
   },
   "outdegree_cargo": 0,
@@ -450,6 +554,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:54:36Z",
-  "date-time-wikidata": "2026-04-25T02:21:59Z"
+  "date-time-parse": "2026-05-01T02:01:57Z",
+  "date-time-wikidata": "2026-04-30T21:04:41Z"
 }

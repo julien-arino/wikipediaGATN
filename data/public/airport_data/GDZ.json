@@ -8,22 +8,36 @@
   "lat": "44.572500",
   "lon": "38.009444",
   "altitude": "39.93",
-  "continent": "Europe",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
   "admin1_code": "RU-KDA",
-  "admin1_name": "Krasnodarskiy kray",
+  "admin1_name": "Krasnodarskij kraj",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Gelendzhik_Airport",
-  "outdegree": 6,
-  "number_airlines": 5,
+  "outdegree": 12,
+  "number_airlines": 7,
   "airlines": [
     "Aeroflot",
     "Nordstar Airlines",
+    "Red Wings Airlines",
     "Rossiya Airlines",
+    "Smartavia",
     "Ural Airlines",
     "Utair"
   ],
   "destinations": [
+    {
+      "city": "Kazan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
+      "codes": [
+        "KZN",
+        "UWKD",
+        "UWKD"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
     {
       "city": "Krasnoyarsk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Krasnoyarsk_International_Airport",
@@ -83,6 +97,55 @@
       ],
       "airlines": [
         "Rossiya Airlines",
+        "Smartavia",
+        "Utair"
+      ]
+    },
+    {
+      "city": "Samara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_Airport",
+      "codes": [
+        "KUF",
+        "icao code not found",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
+    },
+    {
+      "city": "Surgut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Farman_Salmanov_Surgut_Airport",
+      "codes": [
+        "SGC",
+        "USRR",
+        "USRR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Tyumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roshchino_Airport",
+      "codes": [
+        "TJM",
+        "USTR",
+        "USTR"
+      ],
+      "airlines": [
+        "Utair"
+      ]
+    },
+    {
+      "city": "Ufa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ufa_International_Airport",
+      "codes": [
+        "UFA",
+        "UWUU",
+        "UWUU"
+      ],
+      "airlines": [
         "Utair"
       ]
     },
@@ -97,6 +160,18 @@
       "airlines": [
         "Ural Airlines"
       ]
+    },
+    {
+      "city": "[[Samara, Russia| Samara]], [[Russia]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kurumoch_International_Airport",
+      "codes": [
+        null,
+        null,
+        "UWWW"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -107,7 +182,15 @@
       "Krasnoyarsk",
       "Moscow-Domodedovo"
     ],
+    "Red Wings Airlines": [
+      "Kazan",
+      "Samara",
+      "[[Samara, Russia| Samara]], [[Russia]]"
+    ],
     "Rossiya Airlines": [
+      "Saint Petersburg"
+    ],
+    "Smartavia": [
       "Saint Petersburg"
     ],
     "Ural Airlines": [
@@ -116,7 +199,10 @@
     ],
     "Utair": [
       "Moscow–Vnukovo",
-      "Saint Petersburg"
+      "Saint Petersburg",
+      "Surgut",
+      "Tyumen",
+      "Ufa"
     ]
   },
   "outdegree_cargo": 0,
@@ -124,6 +210,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-30T01:55:58Z",
-  "date-time-wikidata": "2026-04-29T21:17:48Z"
+  "date-time-parse": "2026-05-01T02:35:39Z",
+  "date-time-wikidata": "2026-04-30T18:10:05Z"
 }

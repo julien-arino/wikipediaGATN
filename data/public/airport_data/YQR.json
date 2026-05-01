@@ -3,18 +3,18 @@
   "icao": "CYQR",
   "gps": "CYQR",
   "city-served": "Regina",
-  "city-served-wikipedia": "[[Regina, Saskatchewan|Regina]], [[Saskatchewan]]",
-  "location": "Regina",
+  "city-served-wikipedia": "Regina",
+  "location": null,
   "lat": "50.432222",
   "lon": "-104.666111",
   "altitude": "577.6",
-  "continent": "North America",
   "country_alpha3": "CAN",
   "country_name": "Canada",
   "admin1_code": "CA-SK",
   "admin1_name": "Saskatchewan",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Regina_International_Airport",
-  "outdegree": 7,
+  "outdegree": 15,
   "number_airlines": 5,
   "airlines": [
     "Air Canada",
@@ -30,11 +30,23 @@
       "codes": [
         "YYC",
         "CYYC",
-        "CYYC"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet",
         "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN",
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet"
       ]
     },
     {
@@ -43,10 +55,34 @@
       "codes": [
         "DEN",
         "KDEN",
-        "KDEN"
+        "gps code not found"
       ],
       "airlines": [
         "United Express"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG",
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Halifax",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Stanfield_International_Airport",
+      "codes": [
+        "YHZ",
+        "CYHZ",
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet"
       ]
     },
     {
@@ -55,7 +91,7 @@
       "codes": [
         "YLW",
         "CYLW",
-        "CYLW"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet Encore"
@@ -67,7 +103,55 @@
       "codes": [
         "LAS",
         "KLAS",
-        "KLAS"
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP",
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet Encore"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Air Canada Express"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX",
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Puerto Vallarta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licenciado_Gustavo_Díaz_Ordaz_International_Airport",
+      "codes": [
+        "PVR",
+        "MMPR",
+        "gps code not found"
       ],
       "airlines": [
         "WestJet"
@@ -79,7 +163,7 @@
       "codes": [
         "YXE",
         "CYXE",
-        "CYXE"
+        "gps code not found"
       ],
       "airlines": [
         "Air Canada Express"
@@ -91,10 +175,11 @@
       "codes": [
         "YYZ",
         "CYYZ",
-        "CYYZ"
+        "gps code not found"
       ],
       "airlines": [
-        "Air Canada"
+        "Air Canada",
+        "WestJet"
       ]
     },
     {
@@ -103,11 +188,24 @@
       "codes": [
         "YVR",
         "CYVR",
-        "CYVR"
+        "gps code not found"
       ],
       "airlines": [
         "Air Canada",
-        "Air Canada Express"
+        "Air Canada Express",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG",
+        "gps code not found"
+      ],
+      "airlines": [
+        "WestJet Encore"
       ]
     }
   ],
@@ -117,6 +215,7 @@
       "Vancouver"
     ],
     "Air Canada Express": [
+      "Montréal–Trudeau",
       "Saskatoon",
       "Vancouver"
     ],
@@ -125,11 +224,20 @@
     ],
     "WestJet": [
       "Calgary",
-      "Las Vegas"
+      "Cancún",
+      "Halifax",
+      "Las Vegas",
+      "Phoenix–Sky Harbor",
+      "Puerto Vallarta",
+      "Toronto–Pearson",
+      "Vancouver"
     ],
     "WestJet Encore": [
       "Calgary",
-      "Kelowna"
+      "Edmonton",
+      "Kelowna",
+      "Minneapolis/St. Paul",
+      "Winnipeg"
     ]
   },
   "outdegree_cargo": 2,
@@ -145,7 +253,7 @@
       "codes": [
         "YXE",
         "CYXE",
-        "CYXE"
+        "gps code not found"
       ],
       "airlines": [
         "Cargojet Airways",
@@ -158,7 +266,7 @@
       "codes": [
         "YWG",
         "CYWG",
-        "CYWG"
+        "gps code not found"
       ],
       "airlines": [
         "Cargojet Airways",
@@ -176,6 +284,6 @@
       "Winnipeg"
     ]
   },
-  "date-time-parse": "2026-04-29T05:02:18Z",
+  "date-time-parse": "2026-05-01T01:16:33Z",
   "date-time-wikidata": "2026-01-19T00:07:09Z"
 }

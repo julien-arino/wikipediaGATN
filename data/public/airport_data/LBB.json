@@ -3,19 +3,18 @@
   "icao": "KLBB",
   "gps": "KLBB",
   "city-served": "Lubbock",
-  "city-served-wikipedia": "[[Lubbock, Texas]]",
+  "city-served-wikipedia": "5401 N. Martin Luther King Blvd., Lubbock, TX 79403",
   "location": "5401 N. Martin Luther King Blvd.",
   "lat": "33.663611",
   "lon": "-101.820556",
   "altitude": "1000.35",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-TX",
   "admin1_name": "Texas",
   "admin2_name": "Lubbock County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lubbock_Preston_Smith_International_Airport",
-  "outdegree": 7,
+  "outdegree": 8,
   "number_airlines": 4,
   "airlines": [
     "American Airlines",
@@ -30,7 +29,7 @@
       "codes": [
         "AUS",
         "KAUS",
-        "KAUS"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
@@ -42,7 +41,7 @@
       "codes": [
         "DFW",
         "KDFW",
-        "gps code not found"
+        "KDFW"
       ],
       "airlines": [
         "American Airlines",
@@ -55,7 +54,7 @@
       "codes": [
         "DAL",
         "KDAL",
-        "KDAL"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
@@ -67,9 +66,10 @@
       "codes": [
         "DEN",
         "KDEN",
-        "KDEN"
+        "gps code not found"
       ],
       "airlines": [
+        "Southwest Airlines",
         "United Express"
       ]
     },
@@ -79,7 +79,7 @@
       "codes": [
         "HOU",
         "KHOU",
-        "KHOU"
+        "gps code not found"
       ],
       "airlines": [
         "Southwest Airlines"
@@ -91,7 +91,7 @@
       "codes": [
         "IAH",
         "KIAH",
-        "KIAH"
+        "gps code not found"
       ],
       "airlines": [
         "United Express"
@@ -108,6 +108,18 @@
       "airlines": [
         "Southwest Airlines"
       ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX",
+        "gps code not found"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -115,11 +127,13 @@
       "Dallas/Fort Worth"
     ],
     "American Eagle": [
-      "Dallas/Fort Worth"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "Southwest Airlines": [
       "Austin",
       "Dallas–Love",
+      "Denver",
       "Houston–Hobby",
       "Las Vegas"
     ],
@@ -143,7 +157,7 @@
       "codes": [
         "ABI",
         "KABI",
-        "KABI"
+        "gps code not found"
       ],
       "airlines": [
         "FedEx Feeder"
@@ -155,7 +169,7 @@
       "codes": [
         "DFW",
         "KDFW",
-        "gps code not found"
+        "KDFW"
       ],
       "airlines": [
         "Ameriflight"
@@ -167,7 +181,7 @@
       "codes": [
         "AFW",
         "KAFW",
-        "gps code not found"
+        "KAFW"
       ],
       "airlines": [
         "FedEx Feeder"
@@ -179,7 +193,7 @@
       "codes": [
         "SDF",
         "KSDF",
-        "gps code not found"
+        "KSDF"
       ],
       "airlines": [
         "UPS Airlines"
@@ -191,7 +205,7 @@
       "codes": [
         "MEM",
         "KMEM",
-        "KMEM"
+        "gps code not found"
       ],
       "airlines": [
         "FedEx Express"
@@ -203,7 +217,7 @@
       "codes": [
         "MAF",
         "KMAF",
-        "gps code not found"
+        "KMAF"
       ],
       "airlines": [
         "FedEx Feeder"
@@ -226,6 +240,6 @@
       "Louisville"
     ]
   },
-  "date-time-parse": "2026-04-29T04:54:58Z",
+  "date-time-parse": "2026-05-01T01:21:17Z",
   "date-time-wikidata": "2026-04-25T06:19:47Z"
 }

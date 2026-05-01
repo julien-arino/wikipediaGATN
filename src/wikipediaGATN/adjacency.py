@@ -189,6 +189,7 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     rows_list: list = []
     cols_list: list = []
+    weights_list: list = []
     skipped_self_loops = 0
     skipped_unknown_dest = 0
 
@@ -197,10 +198,15 @@ def create_outbound_adjacency_matrix(
         origin_idx = iata_to_idx[origin]  # always present after filter above
 
         outlinks_str = str(row["outlinks"]) if pd.notna(row["outlinks"]) else ""
+        weights_str = str(row["weights"]) if "weights" in row and pd.notna(row["weights"]) else ""
+        
         if not outlinks_str.strip():
             continue
 
-        for dest in outlinks_str.split():
+        dests = outlinks_str.split()
+        weights = weights_str.split()
+        
+        for i, dest in enumerate(dests):
             dest = dest.strip()
             if not _is_valid_code(dest):
                 continue  # already warned during token collection
@@ -214,9 +220,16 @@ def create_outbound_adjacency_matrix(
             if dest_idx == origin_idx:
                 skipped_self_loops += 1
                 continue
+            
+            # Get weight (number of airlines)
+            try:
+                weight = int(weights[i]) if i < len(weights) else 1
+            except (ValueError, IndexError):
+                weight = 1
 
             rows_list.append(origin_idx)
             cols_list.append(dest_idx)
+            weights_list.append(weight)
 
     if verbose:
         print(f"Raw directed edges collected: {len(rows_list)}")
@@ -226,39 +239,44 @@ def create_outbound_adjacency_matrix(
             print(f"  Unknown destinations skipped: {skipped_unknown_dest}")
 
     # ------------------------------------------------------------------
-    # Deduplicate edges
-    # ------------------------------------------------------------------
-    # Always deduplicate: csr_matrix *sums* duplicate (row, col) pairs, which
-    # would produce values > 1 for any duplicated edges in the CSV.
-    if rows_list:
-        unique_edges = list(set(zip(rows_list, cols_list)))
-        rows_arr, cols_arr = zip(*unique_edges)
-    else:
-        rows_arr, cols_arr = [], []
-
-    # ------------------------------------------------------------------
     # Create sparse matrix
     # ------------------------------------------------------------------
+    # Note: csr_matrix((data, (rows, cols))) will SUM values for duplicate (row, col) pairs.
+    # Since we might have duplicates if the CSV is messy, we'll keep the first one or sum?
+    # Given the previous deduplication, let's ensure we have unique edges if we want simple weights.
+    # But if we want weights to be exactly what's in the CSV, we should ensure unique edges here.
+    
+    if rows_list:
+        # Deduplicate: if (origin, dest) appears twice, we take the max weight.
+        edge_to_weight = {}
+        for r, c, w in zip(rows_list, cols_list, weights_list):
+            if (r, c) not in edge_to_weight or w > edge_to_weight[(r, c)]:
+                edge_to_weight[(r, c)] = w
+        
+        unique_rows = []
+        unique_cols = []
+        unique_weights = []
+        for (r, c), w in edge_to_weight.items():
+            unique_rows.append(r)
+            unique_cols.append(c)
+            unique_weights.append(w)
+            
+        rows_arr = np.array(unique_rows)
+        cols_arr = np.array(unique_cols)
+        data = np.array(unique_weights, dtype=np.uint16)
+    else:
+        rows_arr, cols_arr, data = [], [], []
+
     n = len(iata_codes)
-    data = np.ones(len(rows_arr), dtype=np.uint8)
     matrix = csr_matrix((data, (rows_arr, cols_arr)), shape=(n, n))
 
     if symmetric:
         if verbose:
             print("Symmetrising matrix (A->B implies B->A)...")
-        # matrix + matrix.T handles symmetry; clipping back to 1 ensures it remains binary
-        matrix = matrix + matrix.T
-        matrix.data[:] = 1
-
-    # Verify no stray values > 1 survived (sanity check)
-    if matrix.nnz > 0 and matrix.data.max() > 1:  # pragma: no cover
-        warnings.warn(
-            f"Adjacency matrix contains entries > 1 after deduplication. "
-            f"Check {filename} for duplicate rows.",
-            UserWarning,
-            stacklevel=2,
-        )
-        matrix.data[:] = 1
+        # For symmetric weighted, we take the maximum weight in both directions?
+        # A+A.T sums them, which might not be what we want if both exist.
+        # Let's use max(A, A.T)
+        matrix = matrix.maximum(matrix.T)
 
     # ------------------------------------------------------------------
     # Define output filenames
@@ -297,7 +315,8 @@ def create_outbound_adjacency_matrix(
     if export_networks:
         try:
             import networkx as nx
-            G = nx.from_scipy_sparse_array(matrix, create_using=nx.DiGraph)
+            # nx.from_scipy_sparse_array creates weighted edges if edge values are > 1
+            G = nx.from_scipy_sparse_array(matrix, create_using=nx.DiGraph, edge_attribute='weight')
             mapping = {i: code for i, code in enumerate(iata_codes)}
             G = nx.relabel_nodes(G, mapping)
             

@@ -3,19 +3,18 @@
   "icao": "KGTF",
   "gps": "KGTF",
   "city-served": "Great Falls",
-  "city-served-wikipedia": "[[Great Falls, Montana]]",
-  "location": "Great Falls",
+  "city-served-wikipedia": "Great Falls",
+  "location": null,
   "lat": "47.482778",
   "lon": "-111.370556",
   "altitude": "1121.66",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "BG-12",
   "admin1_name": "Montana",
   "admin2_name": "Cascade County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Falls_International_Airport",
-  "outdegree": 5,
+  "outdegree": 6,
   "number_airlines": 5,
   "airlines": [
     "Alaska Airlines",
@@ -25,6 +24,18 @@
     "United Express"
   ],
   "destinations": [
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD",
+        "KORD"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
     {
       "city": "Denver",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
@@ -102,6 +113,7 @@
       "Denver"
     ],
     "United Express": [
+      "Chicago–O'Hare",
       "Denver"
     ]
   },
@@ -110,6 +122,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:51:20Z",
+  "date-time-parse": "2026-05-01T01:20:48Z",
   "date-time-wikidata": "2026-04-11T17:35:34Z"
 }

@@ -3,19 +3,18 @@
   "icao": "KILM",
   "gps": "KILM",
   "city-served": "Wilmington",
-  "city-served-wikipedia": "[[Wilmington, North Carolina]]",
+  "city-served-wikipedia": "[[Wrightsboro, North Carolina]]",
   "location": "Wrightsboro",
   "lat": "34.270556",
   "lon": "-77.902500",
   "altitude": "10",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-NC",
   "admin1_name": "North Carolina",
   "admin2_name": "New Hanover County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Wilmington_International_Airport",
-  "outdegree": 23,
+  "outdegree": 25,
   "number_airlines": 9,
   "airlines": [
     "American Airlines",
@@ -72,22 +71,10 @@
       "codes": [
         "BOS",
         "KBOS",
-        "gps code not found"
-      ],
-      "airlines": [
-        "Delta Connection",
-        "JetBlue"
-      ]
-    },
-    {
-      "city": "Boston",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
-      "codes": [
-        "BOS",
-        "KBOS",
         "KBOS"
       ],
       "airlines": [
+        "American Eagle",
         "Delta Connection",
         "JetBlue"
       ]
@@ -95,19 +82,6 @@
     {
       "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte/Douglas_International_Airport",
-      "codes": [
-        "CLT",
-        "KCLT",
-        "gps code not found"
-      ],
-      "airlines": [
-        "American Airlines",
-        "American Eagle"
-      ]
-    },
-    {
-      "city": "Charlotte",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT",
@@ -127,6 +101,7 @@
         "KORD"
       ],
       "airlines": [
+        "American Eagle",
         "United Express"
       ]
     },
@@ -136,10 +111,11 @@
       "codes": [
         "DFW",
         "KDFW",
-        "gps code not found"
+        "KDFW"
       ],
       "airlines": [
-        "American Airlines"
+        "American Airlines",
+        "American Eagle"
       ]
     },
     {
@@ -167,6 +143,18 @@
       ]
     },
     {
+      "city": "Fort Myers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southwest_Florida_International_Airport",
+      "codes": [
+        "RSW",
+        "KRSW",
+        "KRSW"
+      ],
+      "airlines": [
+        "Breeze Airways"
+      ]
+    },
+    {
       "city": "Hartford",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
       "codes": [
@@ -188,6 +176,19 @@
       ],
       "airlines": [
         "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle"
       ]
     },
     {
@@ -236,6 +237,7 @@
         "KLGA"
       ],
       "airlines": [
+        "American Eagle",
         "Delta Connection"
       ]
     },
@@ -261,6 +263,18 @@
       ],
       "airlines": [
         "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Eagle"
       ]
     },
     {
@@ -296,7 +310,20 @@
         "KTPA"
       ],
       "airlines": [
+        "Avelo Airlines",
         "Breeze Airways"
+      ]
+    },
+    {
+      "city": "Washington–National",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "codes": [
+        "DCA",
+        "KDCA",
+        "KDCA"
+      ],
+      "airlines": [
+        "American Eagle"
       ]
     },
     {
@@ -315,21 +342,31 @@
   "airlines_destinations": {
     "American Airlines": [
       "Charlotte",
-      "Dallas/Fort Worth"
+      "Dallas/Fort Worth",
+      "Miami"
     ],
     "American Eagle": [
-      "Charlotte"
+      "Boston",
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Miami",
+      "New York–LaGuardia",
+      "Philadelphia",
+      "Washington–National"
     ],
     "Avelo Airlines": [
       "Baltimore",
       "Nashville",
       "New Haven",
       "Rochester (NY)",
+      "Tampa",
       "Wilmington (DE)"
     ],
     "Breeze Airways": [
       "Akron/Canton",
       "Fort Lauderdale",
+      "Fort Myers",
       "Hartford",
       "Long Island/Islip",
       "Orlando",
@@ -362,6 +399,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:52:56Z",
+  "date-time-parse": "2026-05-01T01:22:42Z",
   "date-time-wikidata": "2026-04-14T02:29:45Z"
 }

@@ -3,19 +3,18 @@
   "icao": "FKKD",
   "gps": "FKKD",
   "city-served": "Douala",
-  "city-served-wikipedia": "[[Douala]], Cameroon",
-  "location": "Douala",
+  "city-served-wikipedia": "Douala",
+  "location": null,
   "lat": "4.005833",
   "lon": "9.719444",
   "altitude": "10",
-  "continent": "Africa",
   "country_alpha3": "CMR",
   "country_name": "Cameroon",
   "admin1_code": "BJ-LI",
   "admin1_name": "Littoral",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Douala_International_Airport",
-  "outdegree": 16,
+  "outdegree": 21,
   "number_airlines": 12,
   "airlines": [
     "ASKY Airlines",
@@ -153,6 +152,18 @@
       ]
     },
     {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN",
+        "OEJN"
+      ],
+      "airlines": [
+        "Camair-Co"
+      ]
+    },
+    {
       "city": "Kigali",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kigali_International_Airport",
       "codes": [
@@ -185,7 +196,8 @@
         "FOOL"
       ],
       "airlines": [
-        "Afrijet"
+        "Afrijet",
+        "Camair-Co"
       ]
     },
     {
@@ -194,7 +206,7 @@
       "codes": [
         "LFW",
         "DXXX",
-        "gps code not found"
+        "DXXX"
       ],
       "airlines": [
         "ASKY Airlines"
@@ -214,6 +226,18 @@
       ]
     },
     {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA",
+        "OEMA"
+      ],
+      "airlines": [
+        "Camair-Co"
+      ]
+    },
+    {
       "city": "Nairobi–Jomo Kenyatta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
       "codes": [
@@ -223,6 +247,42 @@
       ],
       "airlines": [
         "Kenya Airways"
+      ]
+    },
+    {
+      "city": "Ngaoundéré",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngaoundéré_Airport",
+      "codes": [
+        "NGE",
+        "FKKN",
+        "FKKN"
+      ],
+      "airlines": [
+        "Camair-Co"
+      ]
+    },
+    {
+      "city": "Pointe-Noire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe_Noire_Airport",
+      "codes": [
+        "PNR",
+        "FCPP",
+        "FCPP"
+      ],
+      "airlines": [
+        "Camair-Co"
+      ]
+    },
+    {
+      "city": "Yaoundé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaoundé_Nsimalen_International_Airport",
+      "codes": [
+        "NSI",
+        "FKYS",
+        "FKYS"
+      ],
+      "airlines": [
+        "Camair-Co"
       ]
     }
   ],
@@ -248,7 +308,13 @@
       "Bafoussam",
       "Bangui",
       "Brazzaville",
-      "Cotonou"
+      "Cotonou",
+      "Jeddah",
+      "Libreville",
+      "Medina",
+      "Ngaoundéré",
+      "Pointe-Noire",
+      "Yaoundé"
     ],
     "Cronos Airlines": [
       "Malabo"
@@ -269,11 +335,28 @@
       "Kigali"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:49:56Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Magma Aviation": [
+      "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]"
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:33:26Z",
   "date-time-wikidata": "2026-03-30T12:50:17Z"
 }

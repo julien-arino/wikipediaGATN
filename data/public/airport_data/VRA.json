@@ -2,17 +2,17 @@
   "iata": "VRA",
   "icao": "MUVR",
   "gps": "MUVR",
-  "city-served": "Varadero",
-  "city-served-wikipedia": "[[Varadero]] and [[Matanzas]]",
+  "city-served": "Varadero and Matanzas",
+  "city-served-wikipedia": "5&nbsp;km from [[Carbonera (Matanzas)|Carbonera]]",
   "location": "5 km from Carbonera",
   "lat": "23.034444",
   "lon": "-81.435278",
   "altitude": "64",
-  "continent": "North America",
   "country_alpha3": "CUB",
   "country_name": "Cuba",
   "admin1_code": "CU-04",
   "admin1_name": "Matanzas",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Gualberto_Gómez_Airport",
   "outdegree": 7,
   "number_airlines": 3,
@@ -28,7 +28,7 @@
       "codes": [
         "YYC",
         "CYYC",
-        "CYYC"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet"
@@ -40,7 +40,7 @@
       "codes": [
         "YHZ",
         "CYHZ",
-        "CYHZ"
+        "gps code not found"
       ],
       "airlines": [
         "Air Transat"
@@ -52,7 +52,7 @@
       "codes": [
         "MIA",
         "KMIA",
-        "KMIA"
+        "gps code not found"
       ],
       "airlines": [
         "American Airlines"
@@ -64,10 +64,11 @@
       "codes": [
         "YQM",
         "CYQM",
-        "CYQM"
+        "gps code not found"
       ],
       "airlines": [
-        "Air Transat"
+        "Air Transat",
+        "WestJet"
       ]
     },
     {
@@ -79,19 +80,8 @@
         "gps code not found"
       ],
       "airlines": [
+        "Air Transat",
         "WestJet"
-      ]
-    },
-    {
-      "city": "Montréal–Trudeau",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
-      "codes": [
-        "YUL",
-        "CYUL",
-        "CYUL"
-      ],
-      "airlines": [
-        "Air Transat"
       ]
     },
     {
@@ -100,10 +90,24 @@
       "codes": [
         "YQB",
         "CYQB",
-        "CYQB"
+        "gps code not found"
       ],
       "airlines": [
-        "Air Transat"
+        "Air Transat",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Air Transat",
+        "WestJet"
       ]
     }
   ],
@@ -112,14 +116,18 @@
       "Halifax",
       "Moncton",
       "Montréal–Trudeau",
-      "Québec City"
+      "Québec City",
+      "Toronto–Pearson"
     ],
     "American Airlines": [
       "Miami"
     ],
     "WestJet": [
       "Calgary",
-      "Montreal–Trudeau"
+      "Moncton",
+      "Montreal–Trudeau",
+      "Québec City",
+      "Toronto–Pearson"
     ]
   },
   "outdegree_cargo": 0,
@@ -127,6 +135,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T05:01:30Z",
+  "date-time-parse": "2026-05-01T01:29:20Z",
   "date-time-wikidata": "2026-04-26T23:02:42Z"
 }

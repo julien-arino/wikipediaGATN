@@ -3,24 +3,35 @@
   "icao": "LFMK",
   "gps": "LFMK",
   "city-served": "Carcassonne",
-  "city-served-wikipedia": "[[Carcassonne]], France",
-  "location": "Pennautier",
+  "city-served-wikipedia": "Carcassonne",
+  "location": null,
   "lat": "43.215833",
   "lon": "2.308611",
   "altitude": "132.28",
-  "continent": "Europe",
   "country_alpha3": "FRA",
   "country_name": "France",
   "admin1_code": "FR-OCC",
   "admin1_name": "Occitanie",
   "admin2_name": "Departement de l'Aude",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Carcassonne_Airport",
-  "outdegree": 4,
+  "outdegree": 10,
   "number_airlines": 1,
   "airlines": [
     "Ryanair"
   ],
   "destinations": [
+    {
+      "city": "Bournemouth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bournemouth_Airport",
+      "codes": [
+        "BOH",
+        "EGHH",
+        "EGHH"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
     {
       "city": "Brussels–Charleroi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
@@ -39,7 +50,31 @@
       "codes": [
         "CAG",
         "LIEE",
-        "gps code not found"
+        "LIEE"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Cork",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cork_Airport",
+      "codes": [
+        "ORK",
+        "EICK",
+        "EICK"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW",
+        "EIDW"
       ],
       "airlines": [
         "Ryanair"
@@ -68,14 +103,56 @@
       "airlines": [
         "Ryanair"
       ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC",
+        "EGCC"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR",
+        "LPPR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Tangier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
+      "codes": [
+        "TNG",
+        "GMTT",
+        "GMTT"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
     }
   ],
   "airlines_destinations": {
     "Ryanair": [
+      "Bournemouth",
       "Brussels–Charleroi",
       "Cagliari",
+      "Cork",
+      "Dublin",
       "East Midlands",
-      "London–Stansted"
+      "London–Stansted",
+      "Manchester",
+      "Porto",
+      "Tangier"
     ]
   },
   "outdegree_cargo": 0,
@@ -83,6 +160,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:48:52Z",
+  "date-time-parse": "2026-05-01T02:01:22Z",
   "date-time-wikidata": "2026-02-02T23:12:51Z"
 }

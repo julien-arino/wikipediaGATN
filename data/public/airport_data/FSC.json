@@ -3,19 +3,18 @@
   "icao": "LFKF",
   "gps": "LFKF",
   "city-served": "Figari",
-  "city-served-wikipedia": "[[Figari]]",
+  "city-served-wikipedia": "[[Porto-Vecchio]], [[Corsica]], [[France]]",
   "location": "Porto-Vecchio",
   "lat": "41.502222",
   "lon": "9.096667",
   "altitude": "27",
-  "continent": "Europe",
   "country_alpha3": "FRA",
   "country_name": "France",
   "admin1_code": "FR-COR",
-  "admin1_name": "Corsica",
+  "admin1_name": null,
   "admin2_name": "Departement de la Corse-du-Sud",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Figari–Sud_Corse_Airport",
-  "outdegree": 19,
+  "outdegree": 23,
   "number_airlines": 10,
   "airlines": [
     "Air Corsica",
@@ -76,6 +75,7 @@
         "EBCI"
       ],
       "airlines": [
+        "Air Corsica",
         "Ryanair"
       ]
     },
@@ -116,6 +116,18 @@
       ]
     },
     {
+      "city": "London–Gatwick",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "codes": [
+        "LGW",
+        "EGKK",
+        "EGKK"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
       "city": "London–Heathrow",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
       "codes": [
@@ -148,6 +160,7 @@
         "LFLL"
       ],
       "airlines": [
+        "Air Corsica",
         "EasyJet",
         "Volotea"
       ]
@@ -162,6 +175,18 @@
       ],
       "airlines": [
         "Air Corsica"
+      ]
+    },
+    {
+      "city": "Milan–Linate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "codes": [
+        "LIN",
+        "LIML",
+        "LIML"
+      ],
+      "airlines": [
+        "EasyJet"
       ]
     },
     {
@@ -191,6 +216,30 @@
       ]
     },
     {
+      "city": "Olbia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olbia_Costa_Smeralda_Airport",
+      "codes": [
+        "OLB",
+        "LIEO",
+        "LIEO"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Paris-Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG",
+        "LFPG"
+      ],
+      "airlines": [
+        "EasyJet"
+      ]
+    },
+    {
       "city": "Paris–Orly",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
       "codes": [
@@ -199,6 +248,7 @@
         "LFPO"
       ],
       "airlines": [
+        "Air Corsica",
         "Air France"
       ]
     },
@@ -220,7 +270,7 @@
       "codes": [
         "SXB",
         "LFST",
-        "gps code not found"
+        "LFST"
       ],
       "airlines": [
         "Volotea"
@@ -244,7 +294,7 @@
       "codes": [
         "TLS",
         "LFBO",
-        "gps code not found"
+        "LFBO"
       ],
       "airlines": [
         "Air Corsica"
@@ -265,8 +315,12 @@
   ],
   "airlines_destinations": {
     "Air Corsica": [
+      "Charleroi",
+      "Lyon",
       "Marseille",
       "Nice",
+      "Olbia",
+      "Paris–Orly",
       "Toulon",
       "Toulouse"
     ],
@@ -283,8 +337,11 @@
       "Basel/Mulhouse",
       "Bordeaux",
       "Geneva",
+      "London–Gatwick",
       "Lyon",
-      "Nantes"
+      "Milan–Linate",
+      "Nantes",
+      "Paris-Charles de Gaulle"
     ],
     "Edelweiss Air": [
       "Zürich"
@@ -313,6 +370,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:50:54Z",
+  "date-time-parse": "2026-05-01T01:50:04Z",
   "date-time-wikidata": "2026-03-21T08:05:54Z"
 }

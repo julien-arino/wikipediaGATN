@@ -3,18 +3,18 @@
   "icao": "BGGH",
   "gps": "BGGH",
   "city-served": "Nuuk",
-  "city-served-wikipedia": "[[Nuuk]], Greenland",
-  "location": "Nuuk",
+  "city-served-wikipedia": "Nuuk",
+  "location": null,
   "lat": "64.190833",
   "lon": "-51.678056",
   "altitude": "86.26",
-  "continent": "North America",
   "country_alpha3": "GRL",
   "country_name": "Greenland",
   "admin1_code": "GL-SE",
-  "admin1_name": "GL",
+  "admin1_name": null,
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nuuk_Airport",
-  "outdegree": 11,
+  "outdegree": 14,
   "number_airlines": 4,
   "airlines": [
     "Air Greenland",
@@ -23,6 +23,18 @@
     "United Airlines"
   ],
   "destinations": [
+    {
+      "city": "Aalborg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aalborg_Airport",
+      "codes": [
+        "AAL",
+        "EKYT",
+        "EKYT"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
     {
       "city": "Aasiaat",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aasiaat_Airport",
@@ -109,6 +121,18 @@
       ]
     },
     {
+      "city": "Maniitsoq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maniitsoq_Airport",
+      "codes": [
+        "JSU",
+        "BGMQ",
+        "BGMQ"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
       "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
@@ -127,6 +151,18 @@
         "JFR",
         "BGPT",
         "BGPT"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Qaqortoq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qaqortoq_Airport",
+      "codes": [
+        "JJU",
+        "BGQO",
+        "BGQO"
       ],
       "airlines": [
         "Air Greenland"
@@ -160,6 +196,7 @@
   ],
   "airlines_destinations": {
     "Air Greenland": [
+      "Aalborg",
       "Aasiaat",
       "Billund",
       "Copenhagen",
@@ -167,7 +204,9 @@
       "Iqaluit",
       "Kangerlussuaq",
       "Kulusuk",
+      "Maniitsoq",
       "Paamiut",
+      "Qaqortoq",
       "Reykjavík–Keflavík",
       "Sisimiut"
     ],
@@ -186,6 +225,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:51:13Z",
+  "date-time-parse": "2026-05-01T01:24:37Z",
   "date-time-wikidata": "2026-04-23T01:02:44Z"
 }

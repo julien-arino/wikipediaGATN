@@ -3,18 +3,18 @@
   "icao": "CYYJ",
   "gps": "CYYJ",
   "city-served": "Victoria",
-  "city-served-wikipedia": "[[Victoria, British Columbia]]",
+  "city-served-wikipedia": "[[North Saanich|North Saanich, British Columbia]]",
   "location": "North Saanich",
   "lat": "48.647222",
   "lon": "-123.425833",
   "altitude": "19.51",
-  "continent": "North America",
   "country_alpha3": "CAN",
   "country_name": "Canada",
   "admin1_code": "CA-BC",
   "admin1_name": "British Columbia",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_International_Airport",
-  "outdegree": 16,
+  "outdegree": 17,
   "number_airlines": 11,
   "airlines": [
     "Air Canada",
@@ -36,7 +36,7 @@
       "codes": [
         "YYC",
         "CYYC",
-        "CYYC"
+        "gps code not found"
       ],
       "airlines": [
         "Flair Airlines",
@@ -50,7 +50,7 @@
       "codes": [
         "CUN",
         "MMUN",
-        "MMUN"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet"
@@ -62,11 +62,12 @@
       "codes": [
         "YEG",
         "CYEG",
-        "CYEG"
+        "gps code not found"
       ],
       "airlines": [
         "Flair Airlines",
-        "WestJet"
+        "WestJet",
+        "WestJet Encore"
       ]
     },
     {
@@ -75,7 +76,7 @@
       "codes": [
         "FRD",
         "KFHR",
-        "KFHR"
+        "gps code not found"
       ],
       "airlines": [
         "Kenmore Air"
@@ -87,7 +88,7 @@
       "codes": [
         "YKA",
         "CYKA",
-        "CYKA"
+        "gps code not found"
       ],
       "airlines": [
         "Pacific Coastal Airlines"
@@ -99,10 +100,11 @@
       "codes": [
         "YLW",
         "CYLW",
-        "CYLW"
+        "gps code not found"
       ],
       "airlines": [
-        "Pacific Coastal Airlines"
+        "Pacific Coastal Airlines",
+        "WestJet Encore"
       ]
     },
     {
@@ -123,7 +125,7 @@
       "codes": [
         "YOW",
         "CYOW",
-        "CYOW"
+        "gps code not found"
       ],
       "airlines": [
         "Porter Airlines"
@@ -135,7 +137,7 @@
       "codes": [
         "YXS",
         "CYXS",
-        "CYXS"
+        "gps code not found"
       ],
       "airlines": [
         "Pacific Coastal Airlines"
@@ -147,7 +149,7 @@
       "codes": [
         "PVR",
         "MMPR",
-        "MMPR"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet"
@@ -159,7 +161,7 @@
       "codes": [
         "SJD",
         "MMSD",
-        "MMSD"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet"
@@ -171,7 +173,7 @@
       "codes": [
         "SEA",
         "KSEA",
-        "KSEA"
+        "gps code not found"
       ],
       "airlines": [
         "Alaska Airlines"
@@ -183,7 +185,7 @@
       "codes": [
         "YYZ",
         "CYYZ",
-        "CYYZ"
+        "gps code not found"
       ],
       "airlines": [
         "Air Canada",
@@ -197,7 +199,7 @@
       "codes": [
         "YVR",
         "CYVR",
-        "CYVR"
+        "gps code not found"
       ],
       "airlines": [
         "Air Canada Express",
@@ -213,7 +215,7 @@
       "codes": [
         "YXY",
         "CYXY",
-        "CYXY"
+        "gps code not found"
       ],
       "airlines": [
         "Air North"
@@ -225,10 +227,24 @@
       "codes": [
         "YWG",
         "CYWG",
-        "CYWG"
+        "gps code not found"
       ],
       "airlines": [
         "WestJet"
+      ]
+    },
+    {
+      "city": "[[Pitt Meadows]], [[British Columbia]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pitt_Meadows_Airport",
+      "codes": [
+        null,
+        "CYPK",
+        "CYPK"
+      ],
+      "airlines": [
+        "BC Air",
+        "Canadian Flight Centre",
+        "Harbour Air"
       ]
     }
   ],
@@ -252,7 +268,8 @@
       "Edmonton"
     ],
     "Harbour Air": [
-      "Vancouver"
+      "Vancouver",
+      "[[Pitt Meadows]], [[British Columbia]]"
     ],
     "Kenmore Air": [
       "Friday Harbor"
@@ -278,7 +295,15 @@
     ],
     "WestJet Encore": [
       "Calgary",
+      "Edmonton",
+      "Kelowna",
       "Vancouver"
+    ],
+    "BC Air": [
+      "[[Pitt Meadows]], [[British Columbia]]"
+    ],
+    "Canadian Flight Centre": [
+      "[[Pitt Meadows]], [[British Columbia]]"
     ]
   },
   "outdegree_cargo": 0,
@@ -286,6 +311,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T05:02:33Z",
+  "date-time-parse": "2026-05-01T01:16:48Z",
   "date-time-wikidata": "2026-03-09T14:18:13Z"
 }

@@ -3,18 +3,18 @@
   "icao": "TAPA",
   "gps": "TAPA",
   "city-served": "St. John's",
-  "city-served-wikipedia": "[[St. John's, Antigua and Barbuda]]",
+  "city-served-wikipedia": "[[Osbourn]], Antigua and Barbuda",
   "location": "Osbourn",
   "lat": "17.136667",
   "lon": "-61.793056",
   "altitude": "18.9",
-  "continent": "North America",
   "country_alpha3": "ATG",
   "country_name": "Antigua and Barbuda",
   "admin1_code": "AG-03",
   "admin1_name": "Saint George",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/V._C._Bird_International_Airport",
-  "outdegree": 38,
+  "outdegree": 37,
   "number_airlines": 25,
   "airlines": [
     "Air Canada Rouge",
@@ -48,7 +48,7 @@
       "city": "Accra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
-        "iata code not found",
+        "ACC",
         "icao code not found",
         "gps code not found"
       ],
@@ -113,21 +113,6 @@
       ]
     },
     {
-      "city": "Barbuda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Burton–Nibbs_International_Airport",
-      "codes": [
-        "BBQ",
-        "TAPB",
-        "TAPB"
-      ],
-      "airlines": [
-        "BMN Air",
-        "CalvinAir Helicopters",
-        "FlyMontserrat",
-        "Liat Air"
-      ]
-    },
-    {
       "city": "Cartagena de Indias",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rafael_Núñez_International_Airport",
       "codes": [
@@ -153,25 +138,12 @@
       ]
     },
     {
-      "city": "Castries",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F._L._Charles_Airport",
-      "codes": [
-        "SLU",
-        "TLPC",
-        "TLPC"
-      ],
-      "airlines": [
-        "Liat Air",
-        "Sunrise Airways"
-      ]
-    },
-    {
       "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte/Douglas_International_Airport",
       "codes": [
         "CLT",
         "KCLT",
-        "gps code not found"
+        "KCLT"
       ],
       "airlines": [
         "American Airlines"
@@ -192,11 +164,11 @@
     },
     {
       "city": "Dominica–Douglas-Charles",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas-Charles_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Douglas–Charles_Airport",
       "codes": [
         "DOM",
         "TDPD",
-        "gps code not found"
+        "TDPD"
       ],
       "airlines": [
         "Caribbean Airlines",
@@ -250,7 +222,8 @@
         "TGPY"
       ],
       "airlines": [
-        "Liat Air"
+        "Liat Air",
+        "Sunrise Airways"
       ]
     },
     {
@@ -297,7 +270,7 @@
       "codes": [
         "LHR",
         "EGLL",
-        "gps code not found"
+        "EGLL"
       ],
       "airlines": [
         "Virgin Atlantic"
@@ -329,11 +302,11 @@
     },
     {
       "city": "Montego Bay",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montego_Bay_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sangster_International_Airport",
       "codes": [
         "MBJ",
         "MKJS",
-        "gps code not found"
+        "MKJS"
       ],
       "airlines": [
         "Liat Air"
@@ -394,6 +367,18 @@
       ]
     },
     {
+      "city": "Pointe-à-Pitre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pointe-à-Pitre_International_Airport",
+      "codes": [
+        "PTP",
+        "TFFR",
+        "TFFR"
+      ],
+      "airlines": [
+        "Sunrise Airways"
+      ]
+    },
+    {
       "city": "Port of Spain",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Piarco_International_Airport",
       "codes": [
@@ -404,6 +389,18 @@
       "airlines": [
         "Caribbean Airlines",
         "Liat Air"
+      ]
+    },
+    {
+      "city": "Port-au-Prince",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toussaint_Louverture_International_Airport",
+      "codes": [
+        "PAP",
+        "MTPP",
+        "MTPP"
+      ],
+      "airlines": [
+        "Sunrise Airways"
       ]
     },
     {
@@ -476,14 +473,15 @@
     },
     {
       "city": "Santo Domingo–Las Americas",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Americas_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Las_Américas_International_Airport",
       "codes": [
         "SDQ",
         "MDSD",
-        "gps code not found"
+        "MDSD"
       ],
       "airlines": [
-        "Sky High"
+        "Sky High",
+        "Sunrise Airways"
       ]
     },
     {
@@ -496,6 +494,7 @@
       ],
       "airlines": [
         "Liat Air",
+        "Sunrise Airways",
         "Winair"
       ]
     },
@@ -527,18 +526,6 @@
         "VI Airlink",
         "Winair"
       ]
-    },
-    {
-      "city": "Unknown City",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotoka_International_Airport",
-      "codes": [
-        null,
-        null,
-        "DGAA"
-      ],
-      "airlines": [
-        "Air Peace"
-      ]
     }
   ],
   "airlines_destinations": {
@@ -548,8 +535,7 @@
     "Air Peace": [
       "Accra",
       "Barbados",
-      "Lagos",
-      "Unknown City"
+      "Lagos"
     ],
     "American Airlines": [
       "Charlotte",
@@ -633,8 +619,13 @@
       "Castries",
       "Dominica–Douglas-Charles",
       "Fort-de-France",
+      "Grenada",
+      "Pointe-à-Pitre",
+      "Port-au-Prince",
       "Saint Kitts",
       "Saint Vincent–Argyle",
+      "Santo Domingo–Las Americas",
+      "Sint Maarten",
       "Tortola"
     ],
     "SVG Air": [
@@ -670,6 +661,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:47:12Z",
+  "date-time-parse": "2026-05-01T01:32:18Z",
   "date-time-wikidata": "2026-03-17T10:11:35Z"
 }

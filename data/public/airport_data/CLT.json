@@ -3,12 +3,11 @@
   "icao": "KCLT",
   "gps": "KCLT",
   "city-served": "Charlotte metropolitan area",
-  "city-served-wikipedia": "[[Charlotte metropolitan area]]",
+  "city-served-wikipedia": "5501 Josh Birmingham Parkway<br />[[Charlotte, North Carolina]], U.S.",
   "location": "5501 Josh Birmingham ParkwayCharlotte",
   "lat": "35.213889",
   "lon": "-80.943056",
   "altitude": "228",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-NC",
@@ -617,6 +616,7 @@
       ],
       "airlines": [
         "American Airlines",
+        "Frontier Airlines",
         "Southwest Airlines",
         "United Airlines"
       ]
@@ -656,7 +656,8 @@
       ],
       "airlines": [
         "American Airlines",
-        "Delta Air Lines"
+        "Delta Air Lines",
+        "Frontier Airlines"
       ]
     },
     {
@@ -754,6 +755,7 @@
       ],
       "airlines": [
         "American Airlines",
+        "Frontier Airlines",
         "Spirit Airlines"
       ]
     },
@@ -1110,6 +1112,7 @@
         "KTYS"
       ],
       "airlines": [
+        "American Airlines",
         "American Eagle"
       ]
     },
@@ -1182,6 +1185,7 @@
         "KLIT"
       ],
       "airlines": [
+        "American Airlines",
         "American Eagle"
       ]
     },
@@ -1253,7 +1257,7 @@
       "codes": [
         "MAD",
         "LEMD",
-        "gps code not found"
+        "LEMD"
       ],
       "airlines": [
         "American Airlines"
@@ -1268,6 +1272,7 @@
         "KMHT"
       ],
       "airlines": [
+        "American Airlines",
         "American Eagle"
       ]
     },
@@ -1342,6 +1347,7 @@
       ],
       "airlines": [
         "American Airlines",
+        "Frontier Airlines",
         "Spirit Airlines"
       ]
     },
@@ -1619,7 +1625,7 @@
       "codes": [
         "OKC",
         "KOKC",
-        "gps code not found"
+        "KOKC"
       ],
       "airlines": [
         "American Airlines",
@@ -1686,6 +1692,18 @@
       ],
       "airlines": [
         "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Palm Springs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
+      "codes": [
+        "PSP",
+        "KPSP",
+        "KPSP"
+      ],
+      "airlines": [
+        "American Airlines"
       ]
     },
     {
@@ -1818,7 +1836,7 @@
       "codes": [
         "PVD",
         "KPVD",
-        "gps code not found"
+        "KPVD"
       ],
       "airlines": [
         "American Airlines",
@@ -2051,19 +2069,6 @@
         "SJU",
         "TJSJ",
         "TJSJ"
-      ],
-      "airlines": [
-        "American Airlines",
-        "Frontier Airlines"
-      ]
-    },
-    {
-      "city": "San Juan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Juan_Luis_Munoz_Marin_International_Airport",
-      "codes": [
-        "SJU",
-        "TJSJ",
-        "gps code not found"
       ],
       "airlines": [
         "American Airlines",
@@ -2506,13 +2511,16 @@
       "Jacksonville (FL)",
       "Kansas City",
       "Key West",
+      "Knoxville",
       "Las Vegas",
       "Liberia (CR)",
+      "Little Rock",
       "London–Heathrow",
       "Los Angeles",
       "Louisville",
       "Madison",
       "Madrid",
+      "Manchester (NH)",
       "Memphis",
       "Mexico City–Benito Juárez",
       "Miami",
@@ -2533,6 +2541,7 @@
       "Ontario",
       "Orange County",
       "Orlando",
+      "Palm Springs",
       "Panama City (FL)",
       "Paris–Charles de Gaulle",
       "Pensacola",
@@ -2704,7 +2713,11 @@
       "Cancún",
       "Chicago–O'Hare",
       "Dallas/Fort Worth",
+      "Denver",
+      "Detroit",
+      "Fort Lauderdale",
       "Houston–Intercontinental",
+      "Miami",
       "New York–LaGuardia",
       "Orlando",
       "Philadelphia",
@@ -2753,11 +2766,28 @@
       "[[Fort Worth, Texas|Fort Worth]], [[Texas]]"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:49:16Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Middle River, Maryland]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_State_Airport",
+      "codes": [
+        "MTN",
+        "KMTN",
+        "KMTN"
+      ],
+      "airlines": [
+        "AirNet"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "AirNet": [
+      "[[Middle River, Maryland]]"
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:17:17Z",
   "date-time-wikidata": "2026-04-26T06:45:06Z"
 }

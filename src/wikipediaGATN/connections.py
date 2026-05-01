@@ -97,10 +97,10 @@ def create_outbound_connections_list(
         destinations = data.get("destinations", [])
         destinations_cargo = data.get("destinations_cargo", [])
         
-        outlinks = set()
-        outlinks_cargo = set()
+        outlinks_weighted = Counter()
+        outlinks_cargo_weighted = Counter()
 
-        for dest_list, link_set in [(destinations, outlinks), (destinations_cargo, outlinks_cargo)]:
+        for dest_list, link_weighted_counter in [(destinations, outlinks_weighted), (destinations_cargo, outlinks_cargo_weighted)]:
             for dest in dest_list:
                 if isinstance(dest, dict):
                     # New dictionary format
@@ -109,37 +109,46 @@ def create_outbound_connections_list(
                     dest_iata = codes[0] if len(codes) > 0 else None
                     dest_icao = codes[1] if len(codes) > 1 else None
                     dest_gps = codes[2] if len(codes) > 2 else None
+                    airline_count = len(dest.get("airlines", []))
                 elif isinstance(dest, list) and len(dest) >= 2:
                     # Old array format
                     dest_url = dest[1]
                     dest_iata = dest[2] if len(dest) > 2 else None
                     dest_icao = dest[3] if len(dest) > 3 else None
                     dest_gps = dest[4] if len(dest) > 4 else None
+                    airline_count = 1 # Fallback for old format
                 else:
                     continue
                     
+                target_code = None
                 if dest_iata and dest_iata != "iata code not found":
-                    link_set.add(dest_iata)
+                    target_code = dest_iata
                 elif dest_icao and dest_icao != "icao code not found":
-                    link_set.add(dest_icao)
+                    target_code = dest_icao
                 elif dest_gps and dest_gps != "gps code not found":
-                    link_set.add(dest_gps)
+                    target_code = dest_gps
                 elif dest_url:
                     unmapped_destinations[dest_url] += 1
+                
+                if target_code:
+                    # In case the same destination appears multiple times (rare but possible),
+                    # we take the maximum airline count or sum them?
+                    # Usually it's just one entry per destination.
+                    link_weighted_counter[target_code] = max(link_weighted_counter[target_code], airline_count)
 
         airport_connections[origin_iata] = {
             "origin": origin_iata,
-            "outlinks": outlinks,
+            "outlinks_weighted": outlinks_weighted,
             "nb_airlines": data.get("number_airlines", 0) or 0,
         }
         airport_connections_cargo[origin_iata] = {
             "origin": origin_iata,
-            "outlinks": outlinks_cargo,
+            "outlinks_weighted": outlinks_cargo_weighted,
             "nb_airlines": data.get("number_airlines_cargo", 0) or 0,
         }
 
         if verbose:
-            print(f"  {origin_iata}: {len(outlinks)} connections")
+            print(f"  {origin_iata}: {len(outlinks_weighted)} connections")
 
     # ------------------------------------------------------------------
     # Report unmapped destinations
@@ -165,23 +174,25 @@ def create_outbound_connections_list(
         with open(csv_path, "w", encoding="utf-8", newline="") as csvfile:
             writer = csv.DictWriter(
                 csvfile,
-                fieldnames=["origin", "nb_outlinks", "outlinks", "nb_airlines"],
+                fieldnames=["origin", "nb_outlinks", "outlinks", "weights", "nb_airlines"],
                 quoting=csv.QUOTE_ALL,
             )
             writer.writeheader()
             for row in conn_list:
-                outlinks_sorted = sorted(row["outlinks"])
+                outlinks_sorted = sorted(row["outlinks_weighted"].keys())
+                weights = [str(row["outlinks_weighted"][code]) for code in outlinks_sorted]
                 csv_row = {
                     "origin": row["origin"],
                     "nb_outlinks": len(outlinks_sorted),
                     "outlinks": " ".join(outlinks_sorted),
+                    "weights": " ".join(weights),
                     "nb_airlines": row.get("nb_airlines", 0),
                 }
                 writer.writerow(csv_row)
 
     if verbose:
-        total = sum(len(c["outlinks"]) for c in connections)
-        total_cargo = sum(len(c["outlinks"]) for c in connections_cargo)
+        total = sum(len(c["outlinks_weighted"]) for c in connections)
+        total_cargo = sum(len(c["outlinks_weighted"]) for c in connections_cargo)
         print(f"\n{'=' * 70}")
         print(" CONNECTIONS EXPORT COMPLETE")
         print(f"{'=' * 70}")

@@ -3,19 +3,18 @@
   "icao": "LFKB",
   "gps": "LFKB",
   "city-served": "Bastia",
-  "city-served-wikipedia": "[[Bastia]]",
+  "city-served-wikipedia": "[[Lucciana]], [[Corsica]], [[France]]",
   "location": "Lucciana",
   "lat": "42.550000",
   "lon": "9.484722",
   "altitude": "8",
-  "continent": "Europe",
   "country_alpha3": "FRA",
   "country_name": "France",
   "admin1_code": "FR-COR",
   "admin1_name": "Haute-Corse",
   "admin2_name": "Departement de la Haute-Corse",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bastia_–_Poretta_Airport",
-  "outdegree": 35,
+  "outdegree": 38,
   "number_airlines": 11,
   "airlines": [
     "Air Corsica",
@@ -69,11 +68,11 @@
     },
     {
       "city": "Biarritz",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Biarritz_–_Anglet_–_Bayonne_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biarritz_Pays_Basque_Airport",
       "codes": [
         "BIQ",
         "LFBZ",
-        "gps code not found"
+        "LFBZ"
       ],
       "airlines": [
         "Transavia"
@@ -107,14 +106,26 @@
     },
     {
       "city": "Caen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Caen_Carpiquet_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caen–Carpiquet_Airport",
       "codes": [
         "CFR",
         "LFRK",
-        "gps code not found"
+        "LFRK"
       ],
       "airlines": [
         "Volotea"
+      ]
+    },
+    {
+      "city": "Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI",
+        "EBCI"
+      ],
+      "airlines": [
+        "Air Corsica"
       ]
     },
     {
@@ -143,11 +154,11 @@
     },
     {
       "city": "Dole",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dole-Jura_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dole–Jura_Airport",
       "codes": [
         "DLE",
         "LFGJ",
-        "gps code not found"
+        "LFGJ"
       ],
       "airlines": [
         "Air Corsica"
@@ -369,6 +380,7 @@
         "LFPO"
       ],
       "airlines": [
+        "Air Corsica",
         "Air France"
       ]
     },
@@ -382,6 +394,30 @@
       ],
       "airlines": [
         "Air Corsica"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF",
+        "LIRF"
+      ],
+      "airlines": [
+        "Air Corsica"
+      ]
+    },
+    {
+      "city": "Rotterdam/The Hague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+      "codes": [
+        "RTM",
+        "EHRD",
+        "EHRD"
+      ],
+      "airlines": [
+        "Transavia"
       ]
     },
     {
@@ -402,7 +438,7 @@
       "codes": [
         "SXB",
         "LFST",
-        "gps code not found"
+        "LFST"
       ],
       "airlines": [
         "Volotea"
@@ -426,7 +462,7 @@
       "codes": [
         "TLN",
         "LFTH",
-        "gps code not found"
+        "LFTH"
       ],
       "airlines": [
         "Air Corsica"
@@ -434,11 +470,11 @@
     },
     {
       "city": "Toulouse",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse_–_Blagnac_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
       "codes": [
         "TLS",
         "LFBO",
-        "gps code not found"
+        "LFBO"
       ],
       "airlines": [
         "Volotea"
@@ -459,11 +495,14 @@
   ],
   "airlines_destinations": {
     "Air Corsica": [
+      "Charleroi",
       "Dole",
       "Lyon",
       "Marseille",
       "Nice",
+      "Paris–Orly",
       "Rennes",
+      "Rome–Fiumicino",
       "Toulon"
     ],
     "Air France": [
@@ -507,7 +546,8 @@
       "Gothenburg",
       "Lyon",
       "Montpellier",
-      "Oujda"
+      "Oujda",
+      "Rotterdam/The Hague"
     ],
     "Volotea": [
       "Beauvais",
@@ -526,6 +566,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:47:58Z",
+  "date-time-parse": "2026-05-01T01:42:21Z",
   "date-time-wikidata": "2026-03-21T06:34:27Z"
 }

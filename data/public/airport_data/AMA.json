@@ -3,19 +3,18 @@
   "icao": "KAMA",
   "gps": "KAMA",
   "city-served": "Amarillo",
-  "city-served-wikipedia": "[[Amarillo, Texas]]",
-  "location": "Amarillo",
+  "city-served-wikipedia": "Amarillo",
+  "location": null,
   "lat": "35.219444",
   "lon": "-101.705833",
   "altitude": "1,099.4",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-TX",
   "admin1_name": "Texas",
   "admin2_name": "Potter County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Rick_Husband_Amarillo_International_Airport",
-  "outdegree": 4,
+  "outdegree": 7,
   "number_airlines": 4,
   "airlines": [
     "American Airlines",
@@ -42,11 +41,23 @@
       "codes": [
         "DFW",
         "KDFW",
-        "gps code not found"
+        "KDFW"
       ],
       "airlines": [
         "American Airlines",
         "American Eagle"
+      ]
+    },
+    {
+      "city": "Dallas–Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "Southwest Airlines"
       ]
     },
     {
@@ -62,6 +73,18 @@
       ]
     },
     {
+      "city": "Houston–Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
       "city": "Houston–Intercontinental",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
       "codes": [
@@ -71,6 +94,18 @@
       ],
       "airlines": [
         "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
       ]
     }
   ],
@@ -82,7 +117,10 @@
       "Dallas/Fort Worth"
     ],
     "Southwest Airlines": [
-      "Austin"
+      "Austin",
+      "Dallas–Love",
+      "Houston–Hobby",
+      "Las Vegas"
     ],
     "United Express": [
       "Denver",
@@ -94,6 +132,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:47:08Z",
+  "date-time-parse": "2026-05-01T01:19:56Z",
   "date-time-wikidata": "2026-02-05T10:00:50Z"
 }

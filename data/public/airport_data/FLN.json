@@ -3,19 +3,18 @@
   "icao": "SBFL",
   "gps": "SBFL",
   "city-served": "Florianópolis",
-  "city-served-wikipedia": "[[Florianópolis]]",
-  "location": "Carianos",
+  "city-served-wikipedia": "Florianópolis",
+  "location": null,
   "lat": "-27.670278",
   "lon": "-48.552500",
   "altitude": "5",
-  "continent": "South America",
   "country_alpha3": "BRA",
   "country_name": "Brazil",
   "admin1_code": "BR-SC",
   "admin1_name": "Santa Catarina",
   "admin2_name": "Florianopolis",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
-  "outdegree": 29,
+  "outdegree": 30,
   "number_airlines": 13,
   "airlines": [
     "Aerolíneas Argentinas",
@@ -224,6 +223,18 @@
       ]
     },
     {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME",
+        "SAME"
+      ],
+      "airlines": [
+        "Sky Airline"
+      ]
+    },
+    {
       "city": "Montevideo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
       "codes": [
@@ -295,7 +306,8 @@
         "SAAR"
       ],
       "airlines": [
-        "Aerolíneas Argentinas"
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas"
       ]
     },
     {
@@ -367,11 +379,23 @@
       "codes": [
         "GRU",
         "SBGR",
-        "gps code not found"
+        "SBGR"
       ],
       "airlines": [
         "Gol Linhas Aéreas",
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Tucumán",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teniente_General_Benjamín_Matienzo_International_Airport",
+      "codes": [
+        "TUC",
+        "SANT",
+        "SANT"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
       ]
     },
     {
@@ -385,18 +409,6 @@
       "airlines": [
         "Azul Brazilian Airlines"
       ]
-    },
-    {
-      "city": "Santa Maria",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Maria_Airport_(Rio_Grande_do_Sul)",
-      "codes": [
-        "RIA",
-        "SBSM",
-        "SBSM"
-      ],
-      "airlines": [
-        "Azul Brazilian Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
@@ -404,7 +416,8 @@
       "Buenos Aires–Aeroparque",
       "Córdoba (AR)",
       "Rosario",
-      "Salta"
+      "Salta",
+      "Tucumán"
     ],
     "Azul Brazilian Airlines": [
       "Belo Horizonte–Confins",
@@ -416,7 +429,6 @@
       "Goiânia",
       "Montevideo",
       "Pelotas",
-      "Santa Maria",
       "Santo Ângelo",
       "Uruguaiana"
     ],
@@ -437,6 +449,7 @@
       "Córdoba (AR)",
       "Porto Alegre",
       "Rio de Janeiro–Galeão",
+      "Rosario",
       "Salvador da Bahia",
       "São Paulo–Congonhas",
       "São Paulo–Guarulhos"
@@ -463,6 +476,7 @@
     ],
     "Sky Airline": [
       "Córdoba (AR)",
+      "Mendoza",
       "Santiago de Chile"
     ],
     "Sky Airline Peru": [
@@ -510,7 +524,7 @@
       "codes": [
         "GRU",
         "SBGR",
-        "gps code not found"
+        "SBGR"
       ],
       "airlines": [
         "Total Linhas Aéreas"
@@ -526,6 +540,6 @@
       "São Paulo-Guarulhos"
     ]
   },
-  "date-time-parse": "2026-04-29T04:50:45Z",
+  "date-time-parse": "2026-05-01T01:52:28Z",
   "date-time-wikidata": "2026-04-11T23:57:49Z"
 }

@@ -54,24 +54,20 @@ __all__ = [
 # Internal helpers
 # ---------------------------------------------------------------------------
 
-# Matches both IATA-style (e.g. YWG.2.json) and wiki-prefixed filenames.
-_FNAME_RE = re.compile(r"^(?:[A-Z]{3}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
+# Matches both IATA/ICAO-style (e.g. YWG.2.json, BGKL.6.json) and wiki-prefixed filenames.
+_FNAME_RE = re.compile(r"^(?:[A-Z0-9\-]{3,10}|wiki_[A-Za-z0-9_]+|unknown)\.\d+\.json$")
 
 
 def _level_pattern(level: int) -> re.Pattern:
     """Return a compiled regex matching airport JSON files at *level*."""
-    return re.compile(r"^(?:[A-Z]{3}|wiki_[A-Za-z0-9_]+)\." + re.escape(str(level)) + r"\.json$")
+    return re.compile(r"^(?:[A-Z0-9\-]{3,10}|wiki_[A-Za-z0-9_]+|unknown)\." + re.escape(str(level)) + r"\.json$")
 
 
 def _find_max_level(output_dir: str) -> int:
     """
     Return the highest BFS level present in *output_dir*, or ``-1`` if none.
-
-    Only IATA-style filenames (``[A-Z]{3}.<N>.json``) are considered when
-    determining the frontier level — ``wiki_*`` files may appear at any
-    level but are not used to drive the expansion loop.
     """
-    pattern  = re.compile(r"^[A-Z]{3}\.(\d+)\.json$")
+    pattern  = re.compile(r"^[A-Z0-9\-]{3,10}\.(\d+)\.json$")
     max_level = -1
     for fname in os.listdir(output_dir):
         m = pattern.match(fname)
@@ -88,7 +84,7 @@ def _read_processed_urls(output_dir: str) -> set:
 
     Uses :mod:`csv` so URLs containing commas are handled correctly.
     """
-    csv_path = os.path.join(output_dir, "processed_locations.csv")
+    csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
     urls: set = set()
     if not os.path.exists(csv_path):
         return urls
@@ -149,7 +145,7 @@ def clean_output_directory(levels=None, verbose: bool = False) -> int:
                         warnings.warn(f"Could not remove {fname}: {exc}", UserWarning, stacklevel=2)
                     break
 
-    csv_path = os.path.join(output_dir, "processed_locations.csv")
+    csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
     if os.path.exists(csv_path):
         try:
             os.remove(csv_path)
@@ -273,8 +269,8 @@ def check_processed_list(verbose: bool = False) -> None:
         Print summary counts.  Default: False.
     """
     output_dir      = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
-    csv_path        = os.path.join(output_dir, "processed_locations.csv")
-    failed_csv_path = os.path.join(output_dir, "failed_lookups.csv")
+    csv_path        = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
+    failed_csv_path = os.path.join(TEMP_RESULTS_DIR, "failed_lookups.csv")
 
     if not os.path.exists(csv_path):
         if verbose:
@@ -285,15 +281,17 @@ def check_processed_list(verbose: bool = False) -> None:
     entries: list = []
     with open(csv_path, "r", encoding="utf-8", newline="") as fh:
         reader = csv.DictReader(fh)
-        if reader.fieldnames not in (["iata", "url"], ["iata", "url", "iata_from"]):
+        if reader.fieldnames not in (["iata", "url"], ["iata", "url", "iata_from"], ["iata_icao_gps", "url", "iata_icao_gps_from"]):
             if verbose:
                 print("processed_locations.csv is empty or has unexpected headers.")
             return
         for row in reader:
-            entries.append((row.get("iata", "").strip(), row.get("url", "").strip(), row.get("iata_from", "").strip()))
+            col1 = row.get("iata_icao_gps", row.get("iata", "")).strip()
+            col3 = row.get("iata_icao_gps_from", row.get("iata_from", "")).strip()
+            entries.append((col1, row.get("url", "").strip(), col3))
 
     failed_entries = sorted(
-        [(iata, url, iata_from) for iata, url, iata_from in entries if iata == "None"],
+        [(code, url, code_from) for code, url, code_from in entries if code in ("None", "", "unknown")],
         key=lambda x: x[1],
     )
 
@@ -301,7 +299,7 @@ def check_processed_list(verbose: bool = False) -> None:
     if failed_entries:
         with open(failed_csv_path, "w", encoding="utf-8", newline="") as fh:
             writer = csv.writer(fh, quoting=csv.QUOTE_ALL)
-            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerows(failed_entries)
         if verbose:
             print(f"Exported {len(failed_entries)} failed lookups to {failed_csv_path}")
@@ -311,16 +309,16 @@ def check_processed_list(verbose: bool = False) -> None:
     # Deduplicate valid entries by URL, then sort.
     seen_urls: set = set()
     unique_entries = []
-    for iata, url, iata_from in entries:
-        if iata != "None" and url not in seen_urls:
-            unique_entries.append((iata, url, iata_from))
+    for code, url, code_from in entries:
+        if code not in ("None", "", "unknown") and url not in seen_urls:
+            unique_entries.append((code, url, code_from))
             seen_urls.add(url)
     cleaned_entries = sorted(unique_entries, key=lambda x: (x[0], x[1]))
 
     # Write cleaned file using csv module.
     with open(csv_path, "w", encoding="utf-8", newline="") as fh:
         writer = csv.writer(fh, quoting=csv.QUOTE_ALL)
-        writer.writerow(["iata", "url", "iata_from"])
+        writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
         writer.writerows(cleaned_entries)
 
     if verbose:

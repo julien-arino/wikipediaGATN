@@ -3,19 +3,18 @@
   "icao": "KBOI",
   "gps": "KBOI",
   "city-served": "Treasure Valley",
-  "city-served-wikipedia": "[[Treasure Valley]]",
-  "location": "Boise",
+  "city-served-wikipedia": "Treasure Valley",
+  "location": null,
   "lat": "43.564444",
   "lon": "-116.222778",
   "altitude": "875",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-ID",
   "admin1_name": "Idaho",
   "admin2_name": "Ada County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
-  "outdegree": 20,
+  "outdegree": 28,
   "number_airlines": 11,
   "airlines": [
     "Alaska Airlines",
@@ -31,6 +30,18 @@
     "United Express"
   ],
   "destinations": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
     {
       "city": "Atlanta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
@@ -64,7 +75,8 @@
         "KBUR"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "Southwest Airlines"
       ]
     },
     {
@@ -88,6 +100,7 @@
         "KORD"
       ],
       "airlines": [
+        "American Airlines",
         "American Eagle",
         "United Airlines",
         "United Express"
@@ -141,7 +154,8 @@
         "KLAS"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "Southwest Airlines"
       ]
     },
     {
@@ -153,6 +167,7 @@
         "KLAX"
       ],
       "airlines": [
+        "Alaska Airlines",
         "Delta Connection",
         "United Express"
       ]
@@ -166,19 +181,32 @@
         "KMSP"
       ],
       "airlines": [
-        "Delta Air Lines"
+        "Delta Air Lines",
+        "Sun Country"
       ]
     },
     {
-      "city": "Minneapolis/St.Paul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-St.Paul_International_Airport",
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
       "codes": [
-        "MSP",
-        "KMSP",
-        "gps code not found"
+        "OAK",
+        "KOAK",
+        "KOAK"
       ],
       "airlines": [
-        "Sun Country"
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Ontario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
+      "codes": [
+        "ONT",
+        "KONT",
+        "KONT"
+      ],
+      "airlines": [
+        "Alaska Airlines"
       ]
     },
     {
@@ -229,7 +257,32 @@
       "airlines": [
         "Alaska Airlines",
         "American Airlines",
-        "American Eagle"
+        "American Eagle",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Pullman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pullman–Moscow_Regional_Airport",
+      "codes": [
+        "PUW",
+        "KPUW",
+        "KPUW"
+      ],
+      "airlines": [
+        "Alaska Airlines"
       ]
     },
     {
@@ -241,7 +294,21 @@
         "KSMF"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
       ]
     },
     {
@@ -253,7 +320,8 @@
         "KSAN"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "Southwest Airlines"
       ]
     },
     {
@@ -271,35 +339,82 @@
       ]
     },
     {
+      "city": "San Jose (CA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
+      "codes": [
+        "SJC",
+        "KSJC",
+        "KSJC"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
       "city": "Seattle/Tacoma",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle-Tacoma_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
       "codes": [
         "SEA",
         "KSEA",
-        "gps code not found"
+        "KSEA"
       ],
       "airlines": [
+        "Alaska Airlines",
         "Delta Connection"
+      ]
+    },
+    {
+      "city": "Spokane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spokane_International_Airport",
+      "codes": [
+        "GEG",
+        "KGEG",
+        "KGEG"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "McCall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McCall_Municipal_Airport",
+      "codes": [
+        "MYL",
+        "KMYL",
+        "KMYL"
+      ],
+      "airlines": [
+        "Gem Air"
       ]
     }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
+      "Anchorage",
       "Bozeman",
       "Burbank",
       "Las Vegas",
+      "Los Angeles",
+      "Ontario",
       "Orange County",
       "Palm Springs",
       "Phoenix–Sky Harbor",
+      "Portland (OR)",
+      "Pullman",
       "Sacramento",
       "San Diego",
-      "San Francisco"
+      "San Francisco",
+      "San Jose (CA)",
+      "Seattle/Tacoma",
+      "Spokane"
     ],
     "Allegiant Air": [
       "Orange County",
       "Phoenix/Mesa"
     ],
     "American Airlines": [
+      "Chicago–O'Hare",
       "Dallas/Fort Worth",
       "Phoenix–Sky Harbor"
     ],
@@ -309,19 +424,28 @@
     ],
     "Delta Air Lines": [
       "Atlanta",
-      "Minneapolis/St. Paul"
+      "Minneapolis/St. Paul",
+      "Salt Lake City"
     ],
     "Delta Connection": [
       "Los Angeles",
+      "Salt Lake City",
       "Seattle/Tacoma"
     ],
     "Frontier Airlines": [
       "Denver"
     ],
     "Southwest Airlines": [
+      "Burbank",
       "Chicago–Midway",
       "Dallas–Love",
-      "Denver"
+      "Denver",
+      "Las Vegas",
+      "Oakland",
+      "Phoenix–Sky Harbor",
+      "Sacramento",
+      "San Diego",
+      "San Jose (CA)"
     ],
     "Sun Country": [
       "Minneapolis/St.Paul"
@@ -336,6 +460,9 @@
       "Denver",
       "Los Angeles",
       "San Francisco"
+    ],
+    "Gem Air": [
+      "McCall"
     ]
   },
   "outdegree_cargo": 0,
@@ -343,6 +470,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:48:19Z",
+  "date-time-parse": "2026-05-01T01:20:06Z",
   "date-time-wikidata": "2026-04-24T17:57:02Z"
 }

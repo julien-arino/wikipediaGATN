@@ -3,16 +3,16 @@
   "icao": "USRO",
   "gps": "USRO",
   "city-served": "Noyabrsk",
-  "city-served-wikipedia": "[[Noyabrsk]], [[Russia]]",
-  "location": "Noyabrsk",
+  "city-served-wikipedia": "Noyabrsk",
+  "location": null,
   "lat": "63.183333",
   "lon": "75.270000",
   "altitude": "136",
-  "continent": "Europe",
   "country_alpha3": "RUS",
   "country_name": "Russian Federation",
   "admin1_code": "RU-YAN",
-  "admin1_name": "Yamalo-Nenetskiy avtonomnyy okrug",
+  "admin1_name": "Jamalo-Neneckij avtonomnyj okrug",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Noyabrsk_Airport",
   "outdegree": 12,
   "number_airlines": 9,
@@ -34,7 +34,7 @@
       "codes": [
         "UUA",
         "UWKB",
-        "UWKB"
+        "gps code not found"
       ],
       "airlines": [
         "UVT Aero"
@@ -46,7 +46,7 @@
       "codes": [
         "KZN",
         "UWKD",
-        "UWKD"
+        "gps code not found"
       ],
       "airlines": [
         "UVT Aero"
@@ -58,10 +58,22 @@
       "codes": [
         "KJA",
         "UNKL",
-        "UNKL"
+        "gps code not found"
       ],
       "airlines": [
         "NordStar"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Yamal Airlines"
       ]
     },
     {
@@ -70,7 +82,7 @@
       "codes": [
         "DME",
         "UUDD",
-        "UUDD"
+        "gps code not found"
       ],
       "airlines": [
         "Ural Airlines",
@@ -83,7 +95,7 @@
       "codes": [
         "VKO",
         "UUWW",
-        "UUWW"
+        "gps code not found"
       ],
       "airlines": [
         "Utair"
@@ -95,7 +107,7 @@
       "codes": [
         "OVB",
         "UNNT",
-        "UNNT"
+        "gps code not found"
       ],
       "airlines": [
         "S7 Airlines",
@@ -108,20 +120,7 @@
       "codes": [
         "OMS",
         "UNOO",
-        "UNOO"
-      ],
-      "airlines": [
-        "KrasAvia",
-        "Yamal Airlines"
-      ]
-    },
-    {
-      "city": "Omsk",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Omsk_Tsentralny_Airport",
-      "codes": [
-        "OMS",
-        "UNOO",
-        "UNOO"
+        "gps code not found"
       ],
       "airlines": [
         "KrasAvia",
@@ -134,7 +133,7 @@
       "codes": [
         "SLY",
         "USDD",
-        "USDD"
+        "gps code not found"
       ],
       "airlines": [
         "Yamal Airlines"
@@ -142,14 +141,15 @@
     },
     {
       "city": "Sochi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
       "codes": [
         "AER",
         "URSS",
-        "URSS"
+        "gps code not found"
       ],
       "airlines": [
-        "Utair"
+        "Utair",
+        "Yamal Airlines"
       ]
     },
     {
@@ -158,23 +158,25 @@
       "codes": [
         "UFA",
         "UWUU",
-        "UWUU"
+        "gps code not found"
       ],
       "airlines": [
-        "Ural Airlines"
+        "Ural Airlines",
+        "Yamal Airlines"
       ]
     },
     {
       "city": "Yekaterinburg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_Airport",
       "codes": [
         "SVX",
         "USSS",
-        "USSS"
+        "gps code not found"
       ],
       "airlines": [
         "Red Wings Airlines",
-        "RusLine"
+        "RusLine",
+        "Yamal Airlines"
       ]
     }
   ],
@@ -208,9 +210,13 @@
       "Kazan"
     ],
     "Yamal Airlines": [
+      "Mineralnye Vody",
       "Moscow–Domodedovo",
       "Omsk",
-      "Salekhard"
+      "Salekhard",
+      "Sochi",
+      "Ufa",
+      "Yekaterinburg"
     ]
   },
   "outdegree_cargo": 0,
@@ -218,6 +224,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:57:00Z",
+  "date-time-parse": "2026-05-01T02:22:49Z",
   "date-time-wikidata": "2025-11-03T17:44:49Z"
 }

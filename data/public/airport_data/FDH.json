@@ -3,19 +3,18 @@
   "icao": "EDNY",
   "gps": "EDNY",
   "city-served": "Friedrichshafen",
-  "city-served-wikipedia": "[[Friedrichshafen]], [[Germany]]<br />[[Lake Constance]]<br />[[Liechtenstein]]",
-  "location": "Friedrichshafen",
+  "city-served-wikipedia": "Friedrichshafen",
+  "location": null,
   "lat": "47.671389",
   "lon": "9.511389",
   "altitude": "414",
-  "continent": "Europe",
   "country_alpha3": "DEU",
   "country_name": "Germany",
   "admin1_code": "DE-BW",
   "admin1_name": "Baden-Württemberg",
   "admin2_name": "Tuebingen Region",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Friedrichshafen_Airport",
-  "outdegree": 16,
+  "outdegree": 18,
   "number_airlines": 14,
   "airlines": [
     "Aegean Airlines",
@@ -58,6 +57,18 @@
         "Air Anka",
         "Corendon Airlines",
         "Freebird Airlines"
+      ]
+    },
+    {
+      "city": "Belfast-International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_International_Airport",
+      "codes": [
+        "BFS",
+        "EGAA",
+        "EGAA"
+      ],
+      "airlines": [
+        "easyJet"
       ]
     },
     {
@@ -123,11 +134,11 @@
     },
     {
       "city": "Elba",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Elba_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_di_Campo_Airport",
       "codes": [
         "EBA",
         "LIRJ",
-        "gps code not found"
+        "LIRJ"
       ],
       "airlines": [
         "MHS Aviation"
@@ -147,7 +158,7 @@
     },
     {
       "city": "Heraklion",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraklion_Airport",
       "codes": [
         "HER",
         "LGIR",
@@ -155,7 +166,8 @@
       ],
       "airlines": [
         "Aegean Airlines",
-        "Condor"
+        "Condor",
+        "Freebird Airlines"
       ]
     },
     {
@@ -221,6 +233,18 @@
       ]
     },
     {
+      "city": "Rhodes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes_International_Airport",
+      "codes": [
+        "RHO",
+        "LGRP",
+        "LGRP"
+      ],
+      "airlines": [
+        "Aegean Airlines"
+      ]
+    },
+    {
       "city": "Skopje",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Skopje_International_Airport",
       "codes": [
@@ -253,7 +277,8 @@
       "Preveza/Lefkada"
     ],
     "Aegean Airlines": [
-      "Heraklion"
+      "Heraklion",
+      "Rhodes"
     ],
     "Condor": [
       "Heraklion",
@@ -264,10 +289,12 @@
       "Hurghada"
     ],
     "easyJet": [
+      "Belfast-International",
       "London-Gatwick"
     ],
     "Freebird Airlines": [
-      "Antalya"
+      "Antalya",
+      "Heraklion"
     ],
     "MHS Aviation": [
       "Elba",
@@ -290,6 +317,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:50:41Z",
+  "date-time-parse": "2026-05-01T01:37:40Z",
   "date-time-wikidata": "2026-04-02T11:48:31Z"
 }

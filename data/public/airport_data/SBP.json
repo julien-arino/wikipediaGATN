@@ -8,14 +8,13 @@
   "lat": "35.236944",
   "lon": "-120.641944",
   "altitude": "64.5",
-  "continent": "North America",
   "country_alpha3": "USA",
   "country_name": "United States",
   "admin1_code": "US-CA",
   "admin1_name": "California",
   "admin2_name": "San Luis Obispo County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/San_Luis_Obispo_County_Regional_Airport",
-  "outdegree": 6,
+  "outdegree": 9,
   "number_airlines": 5,
   "airlines": [
     "Alaska Airlines",
@@ -31,7 +30,7 @@
       "codes": [
         "DFW",
         "KDFW",
-        "gps code not found"
+        "KDFW"
       ],
       "airlines": [
         "American Airlines"
@@ -43,11 +42,23 @@
       "codes": [
         "DEN",
         "KDEN",
-        "KDEN"
+        "gps code not found"
       ],
       "airlines": [
         "United Airlines",
         "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Alaska Airlines"
       ]
     },
     {
@@ -56,7 +67,7 @@
       "codes": [
         "LAX",
         "KLAX",
-        "KLAX"
+        "gps code not found"
       ],
       "airlines": [
         "United Express"
@@ -68,9 +79,10 @@
       "codes": [
         "PHX",
         "KPHX",
-        "KPHX"
+        "gps code not found"
       ],
       "airlines": [
+        "American Airlines",
         "American Eagle"
       ]
     },
@@ -80,7 +92,19 @@
       "codes": [
         "PDX",
         "KPDX",
-        "KPDX"
+        "gps code not found"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "San Diego",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN",
+        "gps code not found"
       ],
       "airlines": [
         "Alaska Airlines"
@@ -92,19 +116,35 @@
       "codes": [
         "SFO",
         "KSFO",
-        "KSFO"
+        "gps code not found"
       ],
       "airlines": [
         "United Express"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Alaska Airlines"
       ]
     }
   ],
   "airlines_destinations": {
     "Alaska Airlines": [
-      "Portland (OR)"
+      "Las Vegas",
+      "Portland (OR)",
+      "San Diego",
+      "Seattle/Tacoma"
     ],
     "American Airlines": [
-      "Dallas/Fort Worth"
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
     ],
     "American Eagle": [
       "Phoenix–Sky Harbor"
@@ -131,7 +171,7 @@
       "codes": [
         "BUR",
         "KBUR",
-        "KBUR"
+        "gps code not found"
       ],
       "airlines": [
         "Ameriflight"
@@ -143,7 +183,7 @@
       "codes": [
         "ONT",
         "KONT",
-        "KONT"
+        "gps code not found"
       ],
       "airlines": [
         "FedEx Feeder"
@@ -155,7 +195,7 @@
       "codes": [
         "SBA",
         "KSBA",
-        "KSBA"
+        "gps code not found"
       ],
       "airlines": [
         "Ameriflight"
@@ -171,6 +211,6 @@
       "Ontario"
     ]
   },
-  "date-time-parse": "2026-04-29T04:59:03Z",
+  "date-time-parse": "2026-05-01T01:22:10Z",
   "date-time-wikidata": "2026-03-30T15:28:35Z"
 }

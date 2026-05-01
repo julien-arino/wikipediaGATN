@@ -97,26 +97,26 @@ class TestFindMaxLevel:
 class TestReadProcessedUrls:
 
     def test_missing_file_returns_empty_set(self, tmp_results_dir):
-        assert _read_processed_urls(tmp_results_dir) == set()
+        assert _read_processed_urls(tmp_results_dir.parent) == set()
 
     def test_reads_urls_from_csv(self, tmp_results_dir):
-        csv_path = tmp_results_dir / "processed_locations.csv"
+        csv_path = tmp_results_dir.parent / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerow(["YWG", "https://en.wikipedia.org/wiki/Winnipeg_Airport", ""])
             writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""])
 
-        urls = _read_processed_urls(tmp_results_dir)
+        urls = _read_processed_urls(tmp_results_dir.parent)
         assert len(urls) == 2
         assert "https://en.wikipedia.org/wiki/Winnipeg_Airport" in urls
         assert "https://en.wikipedia.org/wiki/Toronto_Pearson" in urls
 
     def test_handles_empty_url_column(self, tmp_results_dir):
-        csv_path = tmp_results_dir / "processed_locations.csv"
+        csv_path = tmp_results_dir.parent / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerow(["YWG", "", ""])
 
         assert _read_processed_urls(tmp_results_dir) == set()
@@ -131,13 +131,13 @@ class TestCleanOutputDirectory:
     def test_removes_all_json_files_when_levels_is_none(self, tmp_results_dir):
         (tmp_results_dir / "YWG.0.json").touch()
         (tmp_results_dir / "YYZ.1.json").touch()
-        (tmp_results_dir / "processed_locations.csv").touch()
+        (tmp_results_dir.parent / "processed_locations.csv").touch()
 
         removed = clean_output_directory(levels=None)
         assert removed == 2
         assert not (tmp_results_dir / "YWG.0.json").exists()
         assert not (tmp_results_dir / "YYZ.1.json").exists()
-        assert not (tmp_results_dir / "processed_locations.csv").exists()
+        assert not (tmp_results_dir.parent / "processed_locations.csv").exists()
 
     def test_removes_only_specified_levels(self, tmp_results_dir):
         (tmp_results_dir / "YWG.0.json").touch()
@@ -163,7 +163,7 @@ class TestCleanOutputDirectory:
                 clean_output_directory()
 
     def test_warns_on_os_error_during_csv_removal(self, tmp_results_dir):
-        (tmp_results_dir / "processed_locations.csv").touch()
+        (tmp_results_dir.parent / "processed_locations.csv").touch()
 
         # We need to be careful with patch side_effect here.
         # os.remove is called for JSONs then for CSV.
@@ -184,10 +184,10 @@ class TestCleanOutputDirectory:
 class TestCheckProcessedList:
 
     def test_deduplicates_urls_and_sorts_entries(self, tmp_results_dir):
-        csv_path = tmp_results_dir / "processed_locations.csv"
+        csv_path = tmp_results_dir.parent / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerow(["YYZ", "url1", ""])
             writer.writerow(["YWG", "url2", ""])
             writer.writerow(["YWG", "url2", ""]) # duplicate
@@ -201,16 +201,16 @@ class TestCheckProcessedList:
 
         assert len(rows) == 3
         # Sorted by (iata, url): AMS, YWG, YYZ
-        assert rows[0]["iata"] == "AMS"
-        assert rows[1]["iata"] == "YWG"
-        assert rows[2]["iata"] == "YYZ"
+        assert rows[0]["iata_icao_gps"] == "AMS"
+        assert rows[1]["iata_icao_gps"] == "YWG"
+        assert rows[2]["iata_icao_gps"] == "YYZ"
 
     def test_exports_none_iata_to_failed_lookups(self, tmp_results_dir):
-        csv_path = tmp_results_dir / "processed_locations.csv"
-        failed_path = tmp_results_dir / "failed_lookups.csv"
+        csv_path = tmp_results_dir.parent / "processed_locations.csv"
+        failed_path = tmp_results_dir.parent / "failed_lookups.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerow(["None", "fail_url1", ""])
             writer.writerow(["YWG", "ok_url1", ""])
 
@@ -220,9 +220,10 @@ class TestCheckProcessedList:
         with open(csv_path, "r", encoding="utf-8") as fh:
             rows = list(csv.DictReader(fh))
         assert len(rows) == 1
-        assert rows[0]["iata"] == "YWG"
+        assert rows[0]["iata_icao_gps"] == "YWG"
+        assert rows[0]["url"] == "ok_url1"
 
-        # Check failed file
+        # Check failed lookups file
         with open(failed_path, "r", encoding="utf-8") as fh:
             rows = list(csv.DictReader(fh))
         assert len(rows) == 1
@@ -231,10 +232,10 @@ class TestCheckProcessedList:
     def test_missing_file_handled_gracefully(self, tmp_results_dir):
         # No processed_locations.csv
         check_processed_list()
-        assert not (tmp_results_dir / "failed_lookups.csv").exists()
+        assert not (tmp_results_dir.parent / "failed_lookups.csv").exists()
 
     def test_unexpected_headers_warned_if_verbose(self, tmp_results_dir, capsys):
-        csv_path = tmp_results_dir / "processed_locations.csv"
+        csv_path = tmp_results_dir.parent / "processed_locations.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
             writer.writerow(["bad", "header"])
@@ -276,9 +277,9 @@ class TestGetConnectionsLevelN:
 
     def test_skips_already_processed_urls(self, tmp_results_dir):
         # Setup processed_locations.csv
-        with open(tmp_results_dir / "processed_locations.csv", "w", newline="", encoding="utf-8") as fh:
+        with open(tmp_results_dir.parent / "processed_locations.csv", "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
-            writer.writerow(["iata", "url", "iata_from"])
+            writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""])
 
         # Setup source file at level 0

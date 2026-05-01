@@ -3,23 +3,47 @@
   "icao": "UMBB",
   "gps": "UMBB",
   "city-served": "Brest",
-  "city-served-wikipedia": "[[Brest, Belarus|Brest]]",
+  "city-served-wikipedia": "[[Brest, Belarus|Brest]], [[Brest Region ]], [[Belarus]]",
   "location": "Brest",
   "lat": "52.108333",
   "lon": "23.898056",
   "altitude": "143",
-  "continent": "Europe",
   "country_alpha3": "BLR",
   "country_name": "Belarus",
   "admin1_code": "BY-BR",
   "admin1_name": "Bresckaja voblasć",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Brest_Airport",
-  "outdegree": 3,
+  "outdegree": 5,
   "number_airlines": 1,
   "airlines": [
     "Belavia"
   ],
   "destinations": [
+    {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI",
+        "LTAI"
+      ],
+      "airlines": [
+        "Belavia"
+      ]
+    },
+    {
+      "city": "El Alamein",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Alamein_International_Airport",
+      "codes": [
+        "DBB",
+        "HEAL",
+        "HEAL"
+      ],
+      "airlines": [
+        "Belavia"
+      ]
+    },
     {
       "city": "Moscow–Sheremetyevo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
@@ -59,6 +83,8 @@
   ],
   "airlines_destinations": {
     "Belavia": [
+      "Antalya",
+      "El Alamein",
       "Moscow–Sheremetyevo",
       "Saint Petersburg",
       "Sharm El Sheikh"
@@ -69,6 +95,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:48:26Z",
+  "date-time-parse": "2026-05-01T02:00:54Z",
   "date-time-wikidata": "2026-04-27T20:31:46Z"
 }

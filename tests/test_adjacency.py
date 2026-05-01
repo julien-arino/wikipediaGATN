@@ -148,8 +148,8 @@ class TestDirectedMatrix:
         assert matrix[a, b] == 1, "A->B should be 1"
         assert matrix[b, a] == 0, "B->A should be 0 in directed mode"
 
-    def test_all_values_binary(self, public_dir):
-        """No matrix entry exceeds 1 (no duplicate-row summing)."""
+    def test_default_weights_are_one(self, public_dir):
+        """No weights column in CSV defaults to weight 1."""
         _write_connections(public_dir, [
             {"origin": "YWG", "nb_outlinks": 3, "outlinks": "YYZ YVR YYC"},
             {"origin": "YYZ", "nb_outlinks": 1, "outlinks": "YWG"},
@@ -158,6 +158,26 @@ class TestDirectedMatrix:
             symmetric=False, verbose=False
         )
         assert load_npz(matrix_path).data.max() == 1
+
+    def test_weighted_edges(self, public_dir):
+        """Matrix entries reflect the weights in the CSV."""
+        df = pd.DataFrame([
+            {"origin": "YWG", "nb_outlinks": 2, "outlinks": "YYZ YYC", "weights": "5 3"},
+        ])
+        df.to_csv(public_dir / "global-air-pax-network.csv", index=False)
+        
+        matrix_path, nodes_path = create_outbound_adjacency_matrix(
+            symmetric=False, verbose=False
+        )
+        matrix = load_npz(matrix_path)
+        nodes = _load_nodes(nodes_path)
+        
+        iwg = nodes.index("YWG")
+        iyz = nodes.index("YYZ")
+        iyc = nodes.index("YYC")
+        
+        assert matrix[iwg, iyz] == 5
+        assert matrix[iwg, iyc] == 3
 
     def test_self_loops_excluded(self, public_dir):
         """An airport listed as its own destination produces no self-loop."""

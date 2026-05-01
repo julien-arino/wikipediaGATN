@@ -3,18 +3,18 @@
   "icao": "RJAH",
   "gps": "RJAH",
   "city-served": "Mito",
-  "city-served-wikipedia": "[[Mito, Ibaraki|Mito]], Japan",
+  "city-served-wikipedia": "[[Omitama|Omitama, Ibaraki]], [[Japan]]",
   "location": "Omitama",
   "lat": "36.181667",
   "lon": "140.414722",
   "altitude": "32.61",
-  "continent": "Asia",
   "country_alpha3": "JPN",
   "country_name": "Japan",
   "admin1_code": "JP-08",
   "admin1_name": "Ibaraki",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ibaraki_Airport",
-  "outdegree": 4,
+  "outdegree": 6,
   "number_airlines": 2,
   "airlines": [
     "Aero K",
@@ -58,6 +58,18 @@
       ]
     },
     {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH",
+        "ROAH"
+      ],
+      "airlines": [
+        "Skymark Airlines"
+      ]
+    },
+    {
       "city": "Sapporo–Chitose",
       "wikipedia_url": "https://en.wikipedia.org/wiki/New_Chitose_Airport",
       "codes": [
@@ -68,15 +80,29 @@
       "airlines": [
         "Skymark Airlines"
       ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI",
+        "RKSI"
+      ],
+      "airlines": [
+        "Aero K"
+      ]
     }
   ],
   "airlines_destinations": {
     "Aero K": [
-      "Cheongju"
+      "Cheongju",
+      "Seoul–Incheon"
     ],
     "Skymark Airlines": [
       "Fukuoka",
       "Kobe",
+      "Naha",
       "Sapporo–Chitose"
     ]
   },
@@ -85,6 +111,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:52:29Z",
+  "date-time-parse": "2026-05-01T01:58:44Z",
   "date-time-wikidata": "2026-03-23T21:08:25Z"
 }

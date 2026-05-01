@@ -15,15 +15,20 @@ These scripts are used to drive the core Breadth-First Search (BFS) network craw
 These scripts are part of the pipeline to resolve destinations that lack metadata or are missing from the `OurAirports` database:
 
 * **`scrape_missing_airports.py`**: Orchestrates the scraping of airports that were listed as destinations but were missing from the offline OurAirports database.
+* **`identify_active_missing_airports.py`**: Compares `OurAirports.csv` with the internal database to find missing airports that have active flight sections on Wikipedia.
 * **`fill_missing_destinations.py`**: Fills missing IATA/ICAO/GPS codes for destinations in the temporary directory by matching their Wikipedia URLs against the global URL map.
-* **`merge_missing_airports.py`**: Merges JSON data from successfully scraped missing airports (in `tmp_results`) back into the main `public/airport_data` repository.
+* **`copy_scraped_missing_airports_to_public_data_with_postprocessing.py`**: Merges JSON data from successfully scraped missing airports (in `tmp_results`) back into the main `public/airport_data` repository.
 * **`relevel_missing_airports.py`**: Adjusts the BFS sweep distance levels for missing airports that were just resolved, assigning them the correct level relative to their parent seeds.
 
 ## Data Consolidation and Formatting
 
 Scripts for consolidating extracted data into the final network formats and maintaining JSON consistency:
 
-* **`output_information_all_airports.py`**: Orchestrates the deduplication of scraped IATA files and exports the consolidated `airports_information.csv`.
+* **`copy_rooted_sweep_to_public_data_with_postprocessing.py`**: Orchestrates the deduplication of scraped IATA files and exports the consolidated `airports_information.csv`.
+* **`generate_network_files.py`**: Orchestrates the full GATN generation pipeline, rebuilding connection lists, adjacency matrices, and graph files.
+* **`generate_visualisations.py`**: Generates interactive Plotly visualisations (geographic, globe, and graph layouts) for both the Passenger and Cargo networks.
+* **`generate_run_summary.py`**: Generates a run summary report detailing crawler sweep metrics and network refresh timestamps.
+* **`postprocess_public_data.py`**: Refreshes the public airport data in-place by updating geographic metadata, resolving destination links, and regenerating `airports_information.csv`.
 * **`fix_destinations_codes.py`**: Updates destination code lists across public JSONs by looking up their Wikipedia URLs in the global URL map, fixing missing or changed IATA/ICAO codes.
 * **`reorder_json_keys.py`**: Utility script to re-format all public airport JSON files, ensuring their keys are ordered consistently according to the canonical schema.
 * **`sync_json_counts.py`**: Utility script that recalculates the `number_airlines`, `outdegree`, `number_airlines_cargo`, and `outdegree_cargo` properties for all public JSON files.

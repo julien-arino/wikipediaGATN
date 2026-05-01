@@ -8,14 +8,14 @@
   "lat": "12.501389",
   "lon": "-70.015278",
   "altitude": "18.29",
-  "continent": "North America",
   "country_alpha3": "ABW",
   "country_name": "Aruba",
   "admin1_code": "AW-U-A",
-  "admin1_name": "AW",
+  "admin1_name": null,
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Beatrix_International_Airport",
-  "outdegree": 35,
-  "number_airlines": 29,
+  "outdegree": 37,
+  "number_airlines": 30,
   "airlines": [
     "Aerolíneas Argentinas",
     "Air Canada",
@@ -35,6 +35,7 @@
     "KLM",
     "LATAM Colombia",
     "LATAM Perú",
+    "Porter Airlines",
     "Sky High",
     "Southwest Airlines",
     "Spirit Airlines",
@@ -76,7 +77,7 @@
     },
     {
       "city": "Baltimore",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore–Washington_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore/Washington_International_Airport",
       "codes": [
         "BWI",
         "KBWI",
@@ -275,6 +276,18 @@
       ]
     },
     {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME",
+        "SAME"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
       "city": "Miami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
       "codes": [
@@ -301,7 +314,7 @@
     },
     {
       "city": "Montréal–Trudeau",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal-Trudeau_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
       "codes": [
         "YUL",
         "CYUL",
@@ -360,6 +373,18 @@
       ],
       "airlines": [
         "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Ottawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+      "codes": [
+        "YOW",
+        "CYOW",
+        "CYOW"
+      ],
+      "airlines": [
+        "Porter Airlines"
       ]
     },
     {
@@ -469,6 +494,7 @@
       ],
       "airlines": [
         "Air Canada Rouge",
+        "Porter Airlines",
         "WestJet"
       ]
     },
@@ -488,7 +514,8 @@
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
       "Buenos Aires–Ezeiza",
-      "Córdoba (AR)"
+      "Córdoba (AR)",
+      "Mendoza"
     ],
     "Air Canada": [
       "Montréal–Trudeau"
@@ -553,6 +580,10 @@
     "LATAM Perú": [
       "Lima"
     ],
+    "Porter Airlines": [
+      "Ottawa",
+      "Toronto–Pearson"
+    ],
     "Sky High": [
       "Santo Domingo–Las Américas"
     ],
@@ -601,6 +632,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-30T14:35:06Z",
-  "date-time-wikidata": "2026-04-30T09:12:06Z"
+  "date-time-parse": "2026-05-01T01:22:47Z",
+  "date-time-wikidata": "2026-04-30T22:17:42Z"
 }

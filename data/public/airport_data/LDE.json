@@ -8,20 +8,31 @@
   "lat": "43.185000",
   "lon": "-0.001944",
   "altitude": "384",
-  "continent": "Europe",
   "country_alpha3": "FRA",
   "country_name": "France",
   "admin1_code": "FR-OCC",
   "admin1_name": "Occitanie",
   "admin2_name": "Departement des Hautes-Pyrenees",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tarbes–Lourdes–Pyrénées_Airport",
-  "outdegree": 9,
+  "outdegree": 13,
   "number_airlines": 2,
   "airlines": [
     "Ryanair",
     "Volotea"
   ],
   "destinations": [
+    {
+      "city": "Brussels-Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charleroi_Airport",
+      "codes": [
+        "CRL",
+        "EBCI",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
     {
       "city": "Catania",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Catania_Airport",
@@ -35,12 +46,36 @@
       ]
     },
     {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Kraków",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kraków_John_Paul_II_International_Airport",
+      "codes": [
+        "KRK",
+        "EPKK",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
       "city": "Lisbon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
       "codes": [
         "LIS",
         "LPPT",
-        "LPPT"
+        "gps code not found"
       ],
       "airlines": [
         "Volotea"
@@ -52,7 +87,7 @@
       "codes": [
         "STN",
         "EGSS",
-        "EGSS"
+        "gps code not found"
       ],
       "airlines": [
         "Ryanair"
@@ -76,7 +111,7 @@
       "codes": [
         "BGY",
         "LIME",
-        "LIME"
+        "gps code not found"
       ],
       "airlines": [
         "Ryanair"
@@ -88,7 +123,7 @@
       "codes": [
         "NAP",
         "LIRN",
-        "LIRN"
+        "gps code not found"
       ],
       "airlines": [
         "Volotea"
@@ -112,10 +147,22 @@
       "codes": [
         "ORY",
         "LFPO",
-        "LFPO"
+        "gps code not found"
       ],
       "airlines": [
         "Volotea"
+      ]
+    },
+    {
+      "city": "Rome–Ciampino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciampino–G._B._Pastine_International_Airport",
+      "codes": [
+        "CIA",
+        "LIRA",
+        "LIRA"
+      ],
+      "airlines": [
+        "Ryanair"
       ]
     },
     {
@@ -124,7 +171,7 @@
       "codes": [
         "FCO",
         "LIRF",
-        "LIRF"
+        "gps code not found"
       ],
       "airlines": [
         "Volotea"
@@ -133,9 +180,13 @@
   ],
   "airlines_destinations": {
     "Ryanair": [
+      "Brussels-Charleroi",
+      "Dublin",
+      "Kraków",
       "London–Stansted",
       "Malta",
-      "Milan-Bergamo"
+      "Milan-Bergamo",
+      "Rome–Ciampino"
     ],
     "Volotea": [
       "Catania",
@@ -151,6 +202,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:55:02Z",
+  "date-time-parse": "2026-05-01T01:58:26Z",
   "date-time-wikidata": "2026-04-27T21:54:59Z"
 }

@@ -3,19 +3,18 @@
   "icao": "EGPO",
   "gps": "EGPO",
   "city-served": "Stornoway",
-  "city-served-wikipedia": "[[Stornoway]], [[Outer Hebrides]]",
+  "city-served-wikipedia": "[[Isle of Lewis]], Scotland",
   "location": "Isle of Lewis",
   "lat": "58.215556",
   "lon": "-6.331111",
   "altitude": "8",
-  "continent": "Europe",
   "country_alpha3": "GBR",
   "country_name": "United Kingdom",
   "admin1_code": "GB-SCT",
   "admin1_name": "Scotland",
   "admin2_name": "Eilean Siar",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Stornoway_Airport",
-  "outdegree": 4,
+  "outdegree": 6,
   "number_airlines": 2,
   "airlines": [
     "Hebridean Air Services",
@@ -28,7 +27,7 @@
       "codes": [
         "BEB",
         "EGPL",
-        "EGPL"
+        "gps code not found"
       ],
       "airlines": [
         "Hebridean Air Services"
@@ -40,7 +39,7 @@
       "codes": [
         "EDI",
         "EGPH",
-        "EGPH"
+        "gps code not found"
       ],
       "airlines": [
         "Loganair"
@@ -52,7 +51,7 @@
       "codes": [
         "GLA",
         "EGPF",
-        "EGPF"
+        "gps code not found"
       ],
       "airlines": [
         "Loganair"
@@ -64,7 +63,31 @@
       "codes": [
         "INV",
         "EGPE",
-        "EGPE"
+        "gps code not found"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Southampton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southampton_Airport",
+      "codes": [
+        "SOU",
+        "EGHI",
+        "gps code not found"
       ],
       "airlines": [
         "Loganair"
@@ -78,10 +101,12 @@
     "Loganair": [
       "Edinburgh",
       "Glasgow",
-      "Inverness"
+      "Inverness",
+      "Manchester",
+      "Southampton"
     ]
   },
-  "outdegree_cargo": 1,
+  "outdegree_cargo": 2,
   "number_airlines_cargo": 1,
   "airlines_cargo": [
     "Loganair"
@@ -93,7 +118,19 @@
       "codes": [
         "BEB",
         "EGPL",
-        "EGPL"
+        "gps code not found"
+      ],
+      "airlines": [
+        "Loganair"
+      ]
+    },
+    {
+      "city": "Glasgow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glasgow_Airport",
+      "codes": [
+        "GLA",
+        "EGPF",
+        "gps code not found"
       ],
       "airlines": [
         "Loganair"
@@ -102,9 +139,10 @@
   ],
   "airlines_destinations_cargo": {
     "Loganair": [
-      "Benbecula"
+      "Benbecula",
+      "Glasgow"
     ]
   },
-  "date-time-parse": "2026-04-29T05:00:04Z",
+  "date-time-parse": "2026-05-01T02:02:22Z",
   "date-time-wikidata": "2025-11-02T21:44:01Z"
 }

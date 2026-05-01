@@ -3,18 +3,18 @@
   "icao": "DNAA",
   "gps": "DNAA",
   "city-served": "Abuja",
-  "city-served-wikipedia": "[[Abuja]]",
-  "location": "Madala",
+  "city-served-wikipedia": "Abuja",
+  "location": null,
   "lat": "9.006667",
   "lon": "7.263056",
   "altitude": "342.29",
-  "continent": "Africa",
   "country_alpha3": "NGA",
   "country_name": "Nigeria",
   "admin1_code": "NG-FC",
   "admin1_name": "Abuja Federal Capital Territory",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nnamdi_Azikiwe_International_Airport",
-  "outdegree": 16,
+  "outdegree": 21,
   "number_airlines": 12,
   "airlines": [
     "ASKY Airlines",
@@ -35,7 +35,7 @@
       "city": "Accra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
-        "iata code not found",
+        "ACC",
         "icao code not found",
         "gps code not found"
       ],
@@ -49,7 +49,7 @@
       "codes": [
         "ADD",
         "HAAB",
-        "gps code not found"
+        "HAAB"
       ],
       "airlines": [
         "Ethiopian Airlines"
@@ -157,7 +157,7 @@
       "codes": [
         "LFW",
         "DXXX",
-        "gps code not found"
+        "DXXX"
       ],
       "airlines": [
         "ASKY Airlines"
@@ -212,15 +212,91 @@
       ]
     },
     {
-      "city": "Unknown City",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotoka_International_Airport",
+      "city": "Bauchi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bauchi_State_Airport",
       "codes": [
-        null,
-        null,
-        "DGAA"
+        "BCU",
+        "DNBC",
+        "DNBC"
       ],
       "airlines": [
-        "Africa World Airlines"
+        "Aero Contractors",
+        "Arik Air",
+        "Max Air",
+        "Overland Airways",
+        "ValueJet"
+      ]
+    },
+    {
+      "city": "Katsina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katsina_Airport",
+      "codes": [
+        "DKA",
+        "DNKT",
+        "DNKT"
+      ],
+      "airlines": [
+        "Max Air",
+        "Rano Air",
+        "United Nigeria Airlines"
+      ]
+    },
+    {
+      "city": "Gombe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gombe_Lawanti_International_Airport",
+      "codes": [
+        "GMO",
+        "DNGO",
+        "DNGO"
+      ],
+      "airlines": [
+        "Air Peace",
+        "Arik Air",
+        "Azman Air",
+        "Overland Airways"
+      ]
+    },
+    {
+      "city": "Maiduguri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maiduguri_International_Airport",
+      "codes": [
+        "MIU",
+        "DNMA",
+        "DNMA"
+      ],
+      "airlines": [
+        "Azman Air",
+        "Max Air"
+      ]
+    },
+    {
+      "city": "Sokoto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sadiq_Abubakar_III_International_Airport",
+      "codes": [
+        "SKO",
+        "DNSO",
+        "DNSO"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Arik Air",
+        "Max Air"
+      ]
+    },
+    {
+      "city": "[[Jimeta]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yola_Airport",
+      "codes": [
+        "YOL",
+        "DNYO",
+        "DNYO"
+      ],
+      "airlines": [
+        "Aero Contractors",
+        "Air Peace",
+        "Arik Air",
+        "Max Air",
+        "ValueJet"
       ]
     }
   ],
@@ -232,10 +308,12 @@
       "Paris–Charles de Gaulle"
     ],
     "Air Peace": [
+      "Gombe",
       "Ibadan",
       "London–Gatwick",
       "London–Heathrow",
-      "Niamey"
+      "Niamey",
+      "[[Jimeta]]"
     ],
     "ASKY Airlines": [
       "Lomé"
@@ -262,17 +340,65 @@
       "Entebbe"
     ],
     "United Nigeria Airlines": [
-      "Accra"
+      "Accra",
+      "Katsina"
     ],
-    "Africa World Airlines": [
-      "Unknown City"
+    "Aero Contractors": [
+      "Bauchi",
+      "Sokoto",
+      "[[Jimeta]]"
+    ],
+    "Arik Air": [
+      "Bauchi",
+      "Gombe",
+      "Sokoto",
+      "[[Jimeta]]"
+    ],
+    "Max Air": [
+      "Bauchi",
+      "Katsina",
+      "Maiduguri",
+      "Sokoto",
+      "[[Jimeta]]"
+    ],
+    "Overland Airways": [
+      "Bauchi",
+      "Gombe"
+    ],
+    "ValueJet": [
+      "Bauchi",
+      "[[Jimeta]]"
+    ],
+    "Rano Air": [
+      "Katsina"
+    ],
+    "Azman Air": [
+      "Gombe",
+      "Maiduguri"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:46:44Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Magma Aviation": [
+      "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]"
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:32:55Z",
   "date-time-wikidata": "2026-04-25T20:33:13Z"
 }

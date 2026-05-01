@@ -3,18 +3,18 @@
   "icao": "UGMS",
   "gps": "UGMS",
   "city-served": "Mestia",
-  "city-served-wikipedia": "[[Mestia]], [[Svaneti]], Georgia",
-  "location": "Mest'ia",
+  "city-served-wikipedia": "Mestia",
+  "location": null,
   "lat": "43.058333",
   "lon": "42.750556",
   "altitude": "1456.33",
-  "continent": "Asia",
   "country_alpha3": "GEO",
   "country_name": "Georgia",
   "admin1_code": "GE-SZ",
   "admin1_name": "Samegrelo-Zemo Svaneti",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Tamar_Airport",
-  "outdegree": 1,
+  "outdegree": 2,
   "number_airlines": 1,
   "airlines": [
     "Vanilla Sky Airlines"
@@ -26,7 +26,19 @@
       "codes": [
         "KUT",
         "UGKO",
-        "UGKO"
+        "gps code not found"
+      ],
+      "airlines": [
+        "Vanilla Sky Airlines"
+      ]
+    },
+    {
+      "city": "Natakhtari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Natakhtari_Airfield",
+      "codes": [
+        "iata code not found",
+        "UGSA",
+        "gps code not found"
       ],
       "airlines": [
         "Vanilla Sky Airlines"
@@ -35,7 +47,8 @@
   ],
   "airlines_destinations": {
     "Vanilla Sky Airlines": [
-      "Kutaisi"
+      "Kutaisi",
+      "Natakhtari"
     ]
   },
   "outdegree_cargo": 0,
@@ -43,6 +56,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T05:01:00Z",
+  "date-time-parse": "2026-05-01T02:43:46Z",
   "date-time-wikidata": "2025-08-10T01:50:42Z"
 }

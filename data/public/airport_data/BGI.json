@@ -3,18 +3,18 @@
   "icao": "TBPB",
   "gps": "TBPB",
   "city-served": "Barbados",
-  "city-served-wikipedia": "[[Barbados]]",
+  "city-served-wikipedia": "[[Seawell, Barbados|Seawell]], [[Christ Church, Barbados|Christ Church]]",
   "location": "Seawell",
   "lat": "13.074722",
   "lon": "-59.492500",
   "altitude": "52",
-  "continent": "North America",
   "country_alpha3": "BRB",
   "country_name": "Barbados",
   "admin1_code": "BB-01",
   "admin1_name": "Christ Church",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Grantley_Adams_International_Airport",
-  "outdegree": 46,
+  "outdegree": 43,
   "number_airlines": 24,
   "airlines": [
     "Aer Lingus",
@@ -147,22 +147,6 @@
       ]
     },
     {
-      "city": "Castries",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_F_L_Charles_Airport",
-      "codes": [
-        "SLU",
-        "TLPC",
-        "gps code not found"
-      ],
-      "airlines": [
-        "Caribbean Airlines",
-        "InterCaribbean Airways",
-        "Liat Air",
-        "Sunrise Airways",
-        "Winair"
-      ]
-    },
-    {
       "city": "Charlotte",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
       "codes": [
@@ -222,7 +206,8 @@
       ],
       "airlines": [
         "Caribbean Airlines",
-        "Sunrise Airways"
+        "Sunrise Airways",
+        "Winair"
       ]
     },
     {
@@ -238,7 +223,7 @@
       ]
     },
     {
-      "city": "Georgetown-Cheddi Jagan",
+      "city": "Georgetown-Cheddi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cheddi_Jagan_International_Airport",
       "codes": [
         "GEO",
@@ -247,6 +232,7 @@
       ],
       "airlines": [
         "British Airways",
+        "InterCaribbean Airways",
         "Liat Air"
       ]
     },
@@ -396,19 +382,6 @@
       "codes": [
         "YUL",
         "CYUL",
-        "gps code not found"
-      ],
-      "airlines": [
-        "Air Canada",
-        "Air Transat"
-      ]
-    },
-    {
-      "city": "Montréal–Trudeau",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
-      "codes": [
-        "YUL",
-        "CYUL",
         "CYUL"
       ],
       "airlines": [
@@ -426,6 +399,7 @@
       ],
       "airlines": [
         "American Airlines",
+        "Delta Air Lines",
         "JetBlue"
       ]
     },
@@ -515,6 +489,18 @@
       ]
     },
     {
+      "city": "Providenciales",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Providenciales_International_Airport",
+      "codes": [
+        "PLS",
+        "MBPV",
+        "MBPV"
+      ],
+      "airlines": [
+        "InterCaribbean Airways"
+      ]
+    },
+    {
       "city": "St. Kitts",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_L._Bradshaw_International_Airport",
       "codes": [
@@ -523,7 +509,8 @@
         "TKPK"
       ],
       "airlines": [
-        "Caribbean Airlines"
+        "Caribbean Airlines",
+        "Winair"
       ]
     },
     {
@@ -536,6 +523,7 @@
       ],
       "airlines": [
         "Caribbean Airlines",
+        "InterCaribbean Airways",
         "Winair"
       ]
     },
@@ -549,6 +537,7 @@
       ],
       "airlines": [
         "Caribbean Airlines",
+        "InterCaribbean Airways",
         "Virgin Atlantic"
       ]
     },
@@ -559,19 +548,6 @@
         "TAB",
         "TTCP",
         "TTCP"
-      ],
-      "airlines": [
-        "British Airways",
-        "Caribbean Airlines"
-      ]
-    },
-    {
-      "city": "Tobago",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Arthur_Napoleon_Raymond_Robinson_International_Airport",
-      "codes": [
-        "TAB",
-        "TTCP",
-        "gps code not found"
       ],
       "airlines": [
         "British Airways",
@@ -600,7 +576,8 @@
         "TUPJ"
       ],
       "airlines": [
-        "InterCaribbean Airways"
+        "InterCaribbean Airways",
+        "Winair"
       ]
     },
     {
@@ -609,22 +586,10 @@
       "codes": [
         "IAD",
         "KIAD",
-        "gps code not found"
+        "KIAD"
       ],
       "airlines": [
         "United Airlines"
-      ]
-    },
-    {
-      "city": "Unknown City",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotoka_International_Airport",
-      "codes": [
-        null,
-        null,
-        "DGAA"
-      ],
-      "airlines": [
-        "Air Peace"
       ]
     }
   ],
@@ -640,8 +605,7 @@
       "Halifax"
     ],
     "Air Peace": [
-      "Lagos",
-      "Unknown City"
+      "Lagos"
     ],
     "Air Transat": [
       "Montréal–Trudeau"
@@ -683,14 +647,19 @@
       "Panama City–Tocumen"
     ],
     "Delta Air Lines": [
-      "Atlanta"
+      "Atlanta",
+      "New York–JFK"
     ],
     "InterCaribbean Airways": [
       "Antigua",
       "Castries",
+      "Georgetown-Cheddi",
       "Georgetown–Ogle",
       "Kingston–Norman Manley",
       "Port of Spain",
+      "Providenciales",
+      "St. Maarten",
+      "St. Vincent–Argyle",
       "Tortola"
     ],
     "JetBlue": [
@@ -725,7 +694,7 @@
       "Birmingham",
       "Glasgow",
       "London–Gatwick",
-      "Manchester (UK)",
+      "Manchester",
       "Newcastle upon Tyne"
     ],
     "United Airlines": [
@@ -744,7 +713,10 @@
     "Winair": [
       "Castries",
       "Dominica–Douglas-Charles",
-      "St. Maarten"
+      "Fort-de-France",
+      "St. Kitts",
+      "St. Maarten",
+      "Tortola"
     ]
   },
   "outdegree_cargo": 0,
@@ -752,6 +724,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:47:51Z",
-  "date-time-wikidata": "2026-04-28T04:09:21Z"
+  "date-time-parse": "2026-05-01T01:29:03Z",
+  "date-time-wikidata": "2026-04-30T18:01:49Z"
 }

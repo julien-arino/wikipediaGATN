@@ -3,19 +3,18 @@
   "icao": "LYNI",
   "gps": "LYNI",
   "city-served": "Niš",
-  "city-served-wikipedia": "[[Niš]]",
+  "city-served-wikipedia": "[[Medoševac (Niš)|Medoševac]] and [[Popovac (Niš)|Popovac]], Serbia",
   "location": "Medoševac and Popovac",
   "lat": "43.337222",
   "lon": "21.853611",
   "altitude": "198.12",
-  "continent": "Europe",
   "country_alpha3": "SRB",
   "country_name": "Serbia",
   "admin1_code": "RS-20",
   "admin1_name": "Nišavski okrug",
   "admin2_name": "Nisavski Okrug",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Niš_Constantine_the_Great_Airport",
-  "outdegree": 16,
+  "outdegree": 18,
   "number_airlines": 4,
   "airlines": [
     "Air Serbia",
@@ -25,12 +24,36 @@
   ],
   "destinations": [
     {
+      "city": "Antalya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
+      "codes": [
+        "AYT",
+        "LTAI",
+        "LTAI"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV",
+        "LGAV"
+      ],
+      "airlines": [
+        "Air Serbia"
+      ]
+    },
+    {
       "city": "Basel/Mulhouse",
       "wikipedia_url": "https://en.wikipedia.org/wiki/EuroAirport_Basel-Mulhouse-Freiburg",
       "codes": [
         "BSL",
         "LFSB",
-        "gps code not found"
+        "LFSB"
       ],
       "airlines": [
         "Wizz Air"
@@ -61,6 +84,18 @@
       ]
     },
     {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR",
+        "LGKR"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
       "city": "Dortmund",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dortmund_Airport",
       "codes": [
@@ -76,9 +111,9 @@
       "city": "Hahn",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found",
-        "gps code not found"
+        "HHN",
+        "EDFH",
+        "EDFH"
       ],
       "airlines": [
         "Air Serbia"
@@ -102,7 +137,7 @@
       "codes": [
         "LJU",
         "LJLJ",
-        "gps code not found"
+        "LJLJ"
       ],
       "airlines": [
         "Air Serbia"
@@ -198,37 +233,27 @@
       "codes": [
         "ZRH",
         "LSZH",
-        "gps code not found"
+        "LSZH"
       ],
       "airlines": [
         "Swiss International Air Lines"
-      ]
-    },
-    {
-      "city": "Unknown City",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt-Hahn_Airport",
-      "codes": [
-        null,
-        null,
-        "EDFH"
-      ],
-      "airlines": [
-        "Air Serbia"
       ]
     }
   ],
   "airlines_destinations": {
     "Air Serbia": [
+      "Antalya",
+      "Athens",
       "Belgrade",
       "Cologne/Bonn",
       "Hahn",
       "Istanbul",
       "Ljubljana",
       "Monastir",
-      "Tivat",
-      "Unknown City"
+      "Tivat"
     ],
     "Ryanair": [
+      "Corfu",
       "Malta",
       "Stockholm–Arlanda",
       "Vienna"
@@ -267,6 +292,6 @@
       "Ürümqi"
     ]
   },
-  "date-time-parse": "2026-04-29T04:53:01Z",
+  "date-time-parse": "2026-05-01T01:42:45Z",
   "date-time-wikidata": "2026-04-16T07:12:54Z"
 }

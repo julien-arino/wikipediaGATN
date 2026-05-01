@@ -8,13 +8,13 @@
   "lat": "13.481667",
   "lon": "2.170278",
   "altitude": "223",
-  "continent": "Africa",
   "country_alpha3": "NER",
   "country_name": "Niger",
   "admin1_code": "NE-8",
   "admin1_name": "Niamey",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Diori_Hamani_International_Airport",
-  "outdegree": 17,
+  "outdegree": 16,
   "number_airlines": 13,
   "airlines": [
     "ASKY Airlines",
@@ -38,20 +38,7 @@
       "codes": [
         "ABJ",
         "DIAP",
-        "DIAP"
-      ],
-      "airlines": [
-        "Air Côte d'Ivoire",
-        "Tunisair"
-      ]
-    },
-    {
-      "city": "Abidjan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Port_Bouet_Airport",
-      "codes": [
-        "ABJ",
-        "DIAP",
-        "DIAP"
+        "gps code not found"
       ],
       "airlines": [
         "Air Côte d'Ivoire",
@@ -76,7 +63,7 @@
       "codes": [
         "ALG",
         "DAAG",
-        "DAAG"
+        "gps code not found"
       ],
       "airlines": [
         "Air Algérie"
@@ -88,7 +75,7 @@
       "codes": [
         "BKO",
         "GABS",
-        "GABS"
+        "gps code not found"
       ],
       "airlines": [
         "Air Senegal",
@@ -101,7 +88,7 @@
       "codes": [
         "CMN",
         "GMMN",
-        "GMMN"
+        "gps code not found"
       ],
       "airlines": [
         "Royal Air Maroc"
@@ -113,7 +100,7 @@
       "codes": [
         "COO",
         "DBBB",
-        "DBBB"
+        "gps code not found"
       ],
       "airlines": [
         "ASKY Airlines"
@@ -125,7 +112,7 @@
       "codes": [
         "DSS",
         "GOBD",
-        "GOBD"
+        "gps code not found"
       ],
       "airlines": [
         "Air Senegal"
@@ -137,7 +124,7 @@
       "codes": [
         "GAQ",
         "GAGO",
-        "GAGO"
+        "gps code not found"
       ],
       "airlines": [
         "Sky Mali"
@@ -149,7 +136,7 @@
       "codes": [
         "IST",
         "LTFM",
-        "LTFM"
+        "gps code not found"
       ],
       "airlines": [
         "Turkish Airlines"
@@ -157,7 +144,7 @@
     },
     {
       "city": "Lomé",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lomé–Tokoin_International_Airport",
       "codes": [
         "LFW",
         "DXXX",
@@ -173,7 +160,7 @@
       "codes": [
         "NDJ",
         "FTTJ",
-        "FTTJ"
+        "gps code not found"
       ],
       "airlines": [
         "Turkish Airlines"
@@ -185,22 +172,7 @@
       "codes": [
         "OUA",
         "DFFD",
-        "DFFD"
-      ],
-      "airlines": [
-        "ASKY Airlines",
-        "Air Burkina",
-        "Air Côte d'Ivoire",
-        "Ethiopian Airlines"
-      ]
-    },
-    {
-      "city": "Ouagadougou",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Sankara_International_Airport_Ouagadougou",
-      "codes": [
-        "OUA",
-        "DFFD",
-        "DFFD"
+        "gps code not found"
       ],
       "airlines": [
         "ASKY Airlines",
@@ -215,7 +187,7 @@
       "codes": [
         "CDG",
         "LFPG",
-        "LFPG"
+        "gps code not found"
       ],
       "airlines": [
         "Air France"
@@ -227,7 +199,7 @@
       "codes": [
         "MJI",
         "HLLM",
-        "HLLM"
+        "gps code not found"
       ],
       "airlines": [
         "Fly Oya",
@@ -240,10 +212,22 @@
       "codes": [
         "TUN",
         "DTTA",
-        "gps code not found"
+        "DTTA"
       ],
       "airlines": [
         "Tunisair"
+      ]
+    },
+    {
+      "city": "[[Zinder]], [[Niger]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zinder_Airport",
+      "codes": [
+        "ZND",
+        "DRZR",
+        "DRZR"
+      ],
+      "airlines": [
+        "Niger Airlines"
       ]
     }
   ],
@@ -294,13 +278,33 @@
     "Turkish Airlines": [
       "Istanbul",
       "N'Djamena"
+    ],
+    "Niger Airlines": [
+      "[[Zinder]], [[Niger]]"
     ]
   },
-  "outdegree_cargo": 0,
+  "outdegree_cargo": 1,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:56:55Z",
+  "destinations_cargo": [
+    {
+      "city": "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Magma Aviation": [
+      "[[Grâce-Hollogne]], [[Liège Province]], [[Wallonia]], [[Belgium]]"
+    ]
+  },
+  "date-time-parse": "2026-05-01T01:34:24Z",
   "date-time-wikidata": "2026-04-07T23:08:31Z"
 }

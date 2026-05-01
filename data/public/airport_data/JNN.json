@@ -3,18 +3,18 @@
   "icao": "BGNN",
   "gps": "BGNN",
   "city-served": "Nanortalik",
-  "city-served-wikipedia": "[[Nanortalik]], [[Greenland]]",
-  "location": "Nanortalik",
+  "city-served-wikipedia": "Nanortalik",
+  "location": null,
   "lat": "60.140000",
   "lon": "-45.231667",
   "altitude": "5.18",
-  "continent": "North America",
   "country_alpha3": "GRL",
   "country_name": "Greenland",
   "admin1_code": "GL-KU",
   "admin1_name": "Kommune Kujalleq",
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nanortalik_Heliport",
-  "outdegree": 6,
+  "outdegree": 8,
   "number_airlines": 2,
   "airlines": [
     "Air Greenland",
@@ -92,12 +92,38 @@
       "airlines": [
         "Air Greenland (settlement flights)"
       ]
+    },
+    {
+      "city": "Eqalugaarsuit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eqalugaarsuit_Heliport",
+      "codes": [
+        "QFG",
+        "BGET",
+        "BGET"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
+    },
+    {
+      "city": "Saarloq",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saarloq_Heliport",
+      "codes": [
+        "QOQ",
+        "BGSO",
+        "BGSO"
+      ],
+      "airlines": [
+        "Air Greenland"
+      ]
     }
   ],
   "airlines_destinations": {
     "Air Greenland": [
       "Alluitsup Paa",
-      "Qaqortoq"
+      "Eqalugaarsuit",
+      "Qaqortoq",
+      "Saarloq"
     ],
     "Air Greenland (settlement flights)": [
       "Aappilattoq",
@@ -111,6 +137,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T04:53:50Z",
+  "date-time-parse": "2026-05-01T02:08:00Z",
   "date-time-wikidata": "2026-04-16T17:05:13Z"
 }

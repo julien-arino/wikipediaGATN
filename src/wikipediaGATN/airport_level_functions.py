@@ -823,6 +823,8 @@ def save_airport_info(
     if not iata_code:
         iata_code = airport_info.get('icao')
     if not iata_code:
+        iata_code = airport_info.get('gps')
+    if not iata_code:
         wiki_url  = airport_info.get('wikipedia_url', '')
         m         = re.search(r'/wiki/([^/#?]+)', wiki_url)
         iata_code = f"wiki_{m.group(1)}" if m else "unknown"
@@ -848,7 +850,7 @@ def save_airport_info(
     if save_progress:
         _record_progress(
             output_dir,
-            airport_info.get('iata', ''),
+            iata_code,
             airport_info.get('wikipedia_url', ''),
             iata_from,
         )
@@ -859,18 +861,19 @@ def save_airport_info(
     return iata_code
 
 
-def _record_progress(output_dir: str, iata: str, url: str, iata_from: str = "") -> None:
-    """Append an (iata, url, iata_from) row to processed_locations.csv if not already present."""
-    csv_path   = os.path.join(output_dir, "processed_locations.csv")
-    fieldnames = ["iata", "url", "iata_from"]
+def _record_progress(output_dir: str, iata_icao_gps: str, url: str, iata_icao_gps_from: str = "") -> None:
+    """Append an (iata_icao_gps, url, iata_icao_gps_from) row to processed_locations.csv if not already present."""
+    csv_path   = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
+    fieldnames = ["iata_icao_gps", "url", "iata_icao_gps_from"]
 
     existing: set = set()
     if os.path.exists(csv_path):
         with open(csv_path, "r", encoding="utf-8", newline="") as fh:
             for row in csv.DictReader(fh):
-                existing.add((row.get("iata", ""), row.get("url", "")))
+                col1 = row.get("iata_icao_gps", row.get("iata", ""))
+                existing.add((col1, row.get("url", "")))
 
-    if (iata, url) in existing:
+    if (iata_icao_gps, url) in existing:
         return
 
     write_header = not os.path.exists(csv_path)
@@ -878,7 +881,7 @@ def _record_progress(output_dir: str, iata: str, url: str, iata_from: str = "") 
         writer = csv.DictWriter(fh, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         if write_header:
             writer.writeheader()
-        writer.writerow({"iata": iata, "url": url, "iata_from": iata_from})
+        writer.writerow({"iata_icao_gps": iata_icao_gps, "url": url, "iata_icao_gps_from": iata_icao_gps_from})
 
 
 # ---------------------------------------------------------------------------
@@ -1070,8 +1073,7 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
     # Strip HTML comments that may obscure parameter definitions on the same line
     infobox_text = re.sub(r'<!--.*?-->', '', infobox_text, flags=re.DOTALL)
     # Strip citations (which can span multiple lines) before line-by-line parsing
-    infobox_text = re.sub(r'<ref.*?</ref>', '', infobox_text, flags=re.DOTALL | re.IGNORECASE)
-    infobox_text = re.sub(r'<ref[^>]*/>', '', infobox_text, flags=re.IGNORECASE)
+    infobox_text = re.sub(r'<ref[^>]*/>|<ref[^>]*>.*?</ref>', '', infobox_text, flags=re.DOTALL | re.IGNORECASE)
 
     for line in infobox_text.split('\n'):
         line_stripped = line.strip()
@@ -1198,7 +1200,7 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
 
             # Resolve airline name
             airline_wikicode = mwparserfromhell.parse(
-                re.sub(r'<ref.*?</ref>', '', airline_raw, flags=re.DOTALL).strip()
+                re.sub(r'<ref[^>]*/>|<ref[^>]*>.*?</ref>', '', airline_raw, flags=re.DOTALL | re.IGNORECASE).strip()
             )
             wikilinks = airline_wikicode.filter_wikilinks()
             if wikilinks:
@@ -1215,7 +1217,7 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
                 continue
 
             # Resolve destinations — only accept wikilinks
-            dests_raw = re.sub(r'<ref.*?</ref>', '', dests_raw, flags=re.DOTALL).strip()
+            dests_raw = re.sub(r'<ref[^>]*/>|<ref[^>]*>.*?</ref>', '', dests_raw, flags=re.DOTALL | re.IGNORECASE).strip()
             dest_wikicode = mwparserfromhell.parse(dests_raw)
             dest_objs = [
                 {
@@ -1403,6 +1405,9 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
     import urllib.parse
     import requests
     
+    if verbose:
+        print("Building global URL-to-IATA/ICAO map...")
+        
     url_to_codes = {}
     
     # Hardcoded manual overrides for known edge cases where Wikipedia and ourairports disagree
@@ -1421,8 +1426,9 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
     if os.path.exists(csv_path):
         with open(csv_path, "r", encoding="utf-8") as f:
             for row in csv.DictReader(f):
-                if row.get("url") and row.get("iata"):
-                    url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": row["iata"], "icao": "icao code not found"}
+                code = row.get("iata_icao_gps", row.get("iata"))
+                if row.get("url") and code:
+                    url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": code, "icao": "icao code not found"}
 
     manual_path = os.path.join(TEMP_RESULTS_DIR, "manual_airport_mapping.csv")
     if os.path.exists(manual_path):

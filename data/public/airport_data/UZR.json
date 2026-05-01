@@ -3,18 +3,18 @@
   "icao": "UASU",
   "gps": "UASU",
   "city-served": "Ürjar",
-  "city-served-wikipedia": "[[Ürjar]], [[Kazakhstan]]",
-  "location": "Urzhar",
+  "city-served-wikipedia": "Ürjar",
+  "location": null,
   "lat": "47.092222",
   "lon": "81.657500",
   "altitude": "504",
-  "continent": "Asia",
   "country_alpha3": "KAZ",
   "country_name": "Kazakhstan",
   "admin1_code": "KZ-ABA",
-  "admin1_name": "KZ",
+  "admin1_name": null,
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ürjar_Airport",
-  "outdegree": 1,
+  "outdegree": 2,
   "number_airlines": 1,
   "airlines": [
     "SCAT Airlines"
@@ -26,7 +26,19 @@
       "codes": [
         "ALA",
         "UAAA",
-        "UAAA"
+        "gps code not found"
+      ],
+      "airlines": [
+        "SCAT Airlines"
+      ]
+    },
+    {
+      "city": "Astana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
+      "codes": [
+        "NQZ",
+        "UACC",
+        "gps code not found"
       ],
       "airlines": [
         "SCAT Airlines"
@@ -35,7 +47,8 @@
   ],
   "airlines_destinations": {
     "SCAT Airlines": [
-      "Almaty"
+      "Almaty",
+      "Astana"
     ]
   },
   "outdegree_cargo": 0,
@@ -43,6 +56,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-04-29T05:01:16Z",
+  "date-time-parse": "2026-05-01T02:24:41Z",
   "date-time-wikidata": "2025-06-03T03:19:35Z"
 }

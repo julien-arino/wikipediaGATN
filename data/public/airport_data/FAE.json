@@ -8,13 +8,13 @@
   "lat": "62.063611",
   "lon": "-7.277222",
   "altitude": "85.34",
-  "continent": "Europe",
   "country_alpha3": "FRO",
   "country_name": "Faroe Islands",
   "admin1_code": "FO-U-A",
-  "admin1_name": "FO",
+  "admin1_name": null,
+  "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Vágar_Airport",
-  "outdegree": 17,
+  "outdegree": 22,
   "number_airlines": 5,
   "airlines": [
     "Atlantic Airways",
@@ -24,6 +24,30 @@
     "Widerøe"
   ],
   "destinations": [
+    {
+      "city": "Aalborg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aalborg_Airport",
+      "codes": [
+        "AAL",
+        "EKYT",
+        "EKYT"
+      ],
+      "airlines": [
+        "Atlantic Airways"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL",
+        "LEBL"
+      ],
+      "airlines": [
+        "Atlantic Airways"
+      ]
+    },
     {
       "city": "Bergen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bergen_Airport",
@@ -74,6 +98,18 @@
       ]
     },
     {
+      "city": "Edinburgh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
+      "codes": [
+        "EDI",
+        "EGPH",
+        "EGPH"
+      ],
+      "airlines": [
+        "Atlantic Airways"
+      ]
+    },
+    {
       "city": "Froðba",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Froðba",
       "codes": [
@@ -83,6 +119,18 @@
       ],
       "airlines": [
         "Atlantic Airways Helicopter"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP",
+        "GCLP"
+      ],
+      "airlines": [
+        "Atlantic Airways"
       ]
     },
     {
@@ -155,6 +203,18 @@
       ],
       "airlines": [
         "Atlantic Airways Helicopter"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM",
+        "ENGM"
+      ],
+      "airlines": [
+        "Atlantic Airways"
       ]
     },
     {
@@ -233,9 +293,14 @@
   ],
   "airlines_destinations": {
     "Atlantic Airways": [
+      "Aalborg",
+      "Barcelona",
       "Billund",
       "Copenhagen",
+      "Edinburgh",
+      "Gran Canaria",
       "London–Gatwick",
+      "Oslo",
       "Palma de Mallorca",
       "Paris–Charles de Gaulle",
       "Reykjavík–Keflavík"
@@ -312,6 +377,6 @@
       "Liege"
     ]
   },
-  "date-time-parse": "2026-04-29T04:50:38Z",
+  "date-time-parse": "2026-05-01T01:24:56Z",
   "date-time-wikidata": "2026-01-16T07:40:54Z"
 }

@@ -14,10 +14,13 @@
   "admin1_name": "Negros Oriental",
   "admin2_name": "Province of Negros Oriental",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sibulan_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 4,
+  "number_airlines": 4,
   "airlines": [
-    "Cebu Pacific"
+    "Cebgo",
+    "Cebu Pacific",
+    "PAL Express",
+    "Royhle Air Way Charter Inc."
   ],
   "destinations": [
     {
@@ -29,13 +32,62 @@
         "RPVM"
       ],
       "airlines": [
+        "Cebgo",
         "Cebu Pacific"
+      ]
+    },
+    {
+      "city": "Dipolog",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dipolog_Airport",
+      "codes": [
+        "DPL",
+        "RPMG",
+        "RPMG"
+      ],
+      "airlines": [
+        "Royhle Air Way Charter Inc."
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    },
+    {
+      "city": "Siquijor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siquijor_Airport",
+      "codes": [
+        "IQR",
+        "RPVZ",
+        "RPVZ"
+      ],
+      "airlines": [
+        "Royhle Air Way Charter Inc."
       ]
     }
   ],
   "airlines_destinations": {
-    "Cebu Pacific": [
+    "Cebgo": [
       "Cebu"
+    ],
+    "Cebu Pacific": [
+      "Cebu",
+      "Manila"
+    ],
+    "PAL Express": [
+      "Manila"
+    ],
+    "Royhle Air Way Charter Inc.": [
+      "Dipolog",
+      "Siquijor"
     ]
   },
   "outdegree_cargo": 0,
@@ -43,6 +95,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T02:10:24Z",
-  "date-time-wikidata": "2026-04-22T07:03:26Z"
+  "date-time-parse": "2026-05-10T00:32:56Z",
+  "date-time-wikidata": "2026-05-05T01:37:32Z"
 }

@@ -14,8 +14,8 @@
   "admin1_name": "Al Qāhirah",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
-  "outdegree": 125,
-  "number_airlines": 50,
+  "outdegree": 123,
+  "number_airlines": 52,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -43,7 +43,9 @@
     "Hainan Airlines",
     "ITA Airways",
     "Iberia Express",
+    "Jazeera Airways",
     "Jordan Aviation",
+    "Kuwait Airways",
     "LOT Polish Airlines",
     "Libyan Airlines",
     "Lufthansa",
@@ -139,8 +141,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
         "ACC",
-        "icao code not found",
-        "gps code not found"
+        "DGAA",
+        "DGAA"
       ],
       "airlines": [
         "Egyptair"
@@ -317,7 +319,7 @@
     },
     {
       "city": "Barcelona",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona_El_Prat_Airport",
       "codes": [
         "BCN",
         "LEBL",
@@ -617,7 +619,7 @@
     },
     {
       "city": "Düsseldorf",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dusseldorf_International_Airport",
       "codes": [
         "DUS",
         "EDDL",
@@ -792,7 +794,7 @@
     },
     {
       "city": "Jizan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdullah_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdullah_bin_Abdulaziz_Airport",
       "codes": [
         "GIZ",
         "OEGN",
@@ -876,13 +878,15 @@
         "Air Arabia",
         "Air Cairo",
         "Egyptair",
+        "Jazeera Airways",
+        "Kuwait Airways",
         "Nesma Airlines",
         "Nile Air"
       ]
     },
     {
       "city": "Lagos",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Muhammed_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Murtala_Mohammed_International_Airport",
       "codes": [
         "LOS",
         "DNMM",
@@ -1007,7 +1011,7 @@
     },
     {
       "city": "Medina",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_Bin_Abdulaziz_International_Airport",
       "codes": [
         "MED",
         "OEMA",
@@ -1634,33 +1638,6 @@
       "airlines": [
         "SCAT Airlines"
       ]
-    },
-    {
-      "city": "[[Boryspil]]",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Boryspil_International_Airport",
-      "codes": [
-        "KBP",
-        "UKBB",
-        "UKBB"
-      ],
-      "airlines": [
-        "Ukraine International Airlines"
-      ]
-    },
-    {
-      "city": "[[Khartoum]], Sudan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Khartoum_International_Airport",
-      "codes": [
-        "KRT",
-        "HSSK",
-        "HSSK"
-      ],
-      "airlines": [
-        "Badr Airlines",
-        "Egyptair",
-        "Sudan Airways",
-        "Tarco Aviation"
-      ]
     }
   ],
   "airlines_destinations": {
@@ -1831,8 +1808,7 @@
       "Venice",
       "Vienna",
       "Washington–Dulles",
-      "Zürich",
-      "[[Khartoum]], Sudan"
+      "Zürich"
     ],
     "Emirates": [
       "Dubai–International"
@@ -1872,8 +1848,14 @@
     "ITA Airways": [
       "Rome–Fiumicino"
     ],
+    "Jazeera Airways": [
+      "Kuwait City"
+    ],
     "Jordan Aviation": [
       "Amman–Queen Alia"
+    ],
+    "Kuwait Airways": [
+      "Kuwait City"
     ],
     "Libyan Airlines": [
       "Tripoli–Mitiga"
@@ -1945,8 +1927,7 @@
       "Chengdu–Tianfu"
     ],
     "Sudan Airways": [
-      "Port Sudan",
-      "[[Khartoum]], Sudan"
+      "Port Sudan"
     ],
     "Smartwings": [
       "Prague"
@@ -1978,18 +1959,9 @@
     ],
     "Yemenia": [
       "Mukhalla"
-    ],
-    "Ukraine International Airlines": [
-      "[[Boryspil]]"
-    ],
-    "Badr Airlines": [
-      "[[Khartoum]], Sudan"
-    ],
-    "Tarco Aviation": [
-      "[[Khartoum]], Sudan"
     ]
   },
-  "outdegree_cargo": 27,
+  "outdegree_cargo": 26,
   "number_airlines_cargo": 9,
   "airlines_cargo": [
     "Cargolux",
@@ -2008,8 +1980,8 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
         "ACC",
-        "icao code not found",
-        "gps code not found"
+        "DGAA",
+        "DGAA"
       ],
       "airlines": [
         "Egyptair Cargo"
@@ -2165,7 +2137,7 @@
     },
     {
       "city": "Kano",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Mallam_Aminu_Kano_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kano_Airport",
       "codes": [
         "KAN",
         "DNKN",
@@ -2318,18 +2290,6 @@
       "airlines": [
         "Egyptair Cargo"
       ]
-    },
-    {
-      "city": "[[Khartoum]], Sudan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Khartoum_International_Airport",
-      "codes": [
-        "KRT",
-        "HSSK",
-        "HSSK"
-      ],
-      "airlines": [
-        "EgyptAir Cargo"
-      ]
     }
   ],
   "airlines_destinations_cargo": {
@@ -2380,11 +2340,8 @@
     ],
     "Turkish Cargo": [
       "Istanbul"
-    ],
-    "EgyptAir Cargo": [
-      "[[Khartoum]], Sudan"
     ]
   },
-  "date-time-parse": "2026-05-01T01:26:41Z",
-  "date-time-wikidata": "2026-04-30T02:11:11Z"
+  "date-time-parse": "2026-05-10T00:32:18Z",
+  "date-time-wikidata": "2026-05-06T22:22:31Z"
 }

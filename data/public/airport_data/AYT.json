@@ -14,7 +14,7 @@
   "admin1_name": "Antalya",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Antalya_Airport",
-  "outdegree": 166,
+  "outdegree": 168,
   "number_airlines": 54,
   "airlines": [
     "AJet",
@@ -226,6 +226,18 @@
         "Air Astana",
         "SCAT Airlines",
         "Southwind Airlines"
+      ]
+    },
+    {
+      "city": "Astrakhan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narimanovo_Airport",
+      "codes": [
+        "ASF",
+        "URWA",
+        "URWA"
+      ],
+      "airlines": [
+        "Tailwind Airlines"
       ]
     },
     {
@@ -920,14 +932,14 @@
     },
     {
       "city": "Grozny",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kadyrov_Grozny_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grozny_Airport",
       "codes": [
         "GRV",
         "URMG",
         "URMG"
       ],
       "airlines": [
-        "Aeroflot",
+        "Tailwind Airlines",
         "Utair"
       ]
     },
@@ -1113,6 +1125,7 @@
         "Azur Air",
         "IrAero",
         "Southwind Airlines",
+        "Tailwind Airlines",
         "azimuth"
       ]
     },
@@ -1393,6 +1406,19 @@
       ]
     },
     {
+      "city": "Moscow-Sheremetyevo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
+      "codes": [
+        "SVO",
+        "UUEE",
+        "UUEE"
+      ],
+      "airlines": [
+        "Aeroflot",
+        "Southwind Airlines"
+      ]
+    },
+    {
       "city": "Moscow-Vnukovo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
       "codes": [
@@ -1426,18 +1452,6 @@
       ],
       "airlines": [
         "S7 Airlines"
-      ]
-    },
-    {
-      "city": "Moscow–Sheremetyevo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheremetyevo_International_Airport",
-      "codes": [
-        "SVO",
-        "UUEE",
-        "UUEE"
-      ],
-      "airlines": [
-        "Southwind Airlines"
       ]
     },
     {
@@ -1656,6 +1670,7 @@
         "USPP"
       ],
       "airlines": [
+        "Aeroflot",
         "Southwind Airlines"
       ]
     },
@@ -1908,7 +1923,8 @@
         "UWSG"
       ],
       "airlines": [
-        "Southwind Airlines"
+        "Southwind Airlines",
+        "Tailwind Airlines"
       ]
     },
     {
@@ -2008,14 +2024,27 @@
     },
     {
       "city": "Surgut",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Surgut_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Farman_Salmanov_Surgut_Airport",
       "codes": [
         "SGC",
         "USRR",
         "USRR"
       ],
       "airlines": [
+        "Azur Air",
         "Utair"
+      ]
+    },
+    {
+      "city": "Syktyvkar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syktyvkar_Airport",
+      "codes": [
+        "SCW",
+        "UUYY",
+        "UUYY"
+      ],
+      "airlines": [
+        "Azur Air"
       ]
     },
     {
@@ -2235,8 +2264,9 @@
   ],
   "airlines_destinations": {
     "Aeroflot": [
-      "Grozny",
-      "Krasnodar"
+      "Krasnodar",
+      "Moscow-Sheremetyevo",
+      "Perm"
     ],
     "Air Anka": [
       "Düsseldorf",
@@ -2267,7 +2297,9 @@
       "Krasnodar"
     ],
     "Azur Air": [
-      "Krasnodar"
+      "Krasnodar",
+      "Surgut",
+      "Syktyvkar"
     ],
     "Belavia": [
       "Brest",
@@ -2620,6 +2652,10 @@
       "Geneva"
     ],
     "Tailwind Airlines": [
+      "Astrakhan",
+      "Grozny",
+      "Krasnodar",
+      "Saratov",
       "Weeze"
     ],
     "Transavia": [
@@ -2681,6 +2717,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-03T00:30:25Z",
-  "date-time-wikidata": "2026-05-02T10:50:41Z"
+  "date-time-parse": "2026-05-10T00:31:35Z",
+  "date-time-wikidata": "2026-05-07T08:10:48Z"
 }

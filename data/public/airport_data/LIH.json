@@ -14,21 +14,128 @@
   "admin1_name": "Hawaii",
   "admin2_name": "Kauai County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lihue_Airport",
-  "outdegree": 4,
-  "number_airlines": 3,
+  "outdegree": 15,
+  "number_airlines": 7,
   "airlines": [
     "Alaska Airlines",
+    "American Airlines",
+    "Delta Air Lines",
     "Hawaiian Airlines",
+    "Southwest Airlines",
+    "United Airlines",
     "WestJet"
   ],
   "destinations": [
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Hawaiian Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Kahului",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kahului_Airport",
+      "codes": [
+        "OGG",
+        "PHOG",
+        "PHOG"
+      ],
+      "airlines": [
+        "Hawaiian Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Kailua-Kona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kona_International_Airport",
+      "codes": [
+        "KOA",
+        "PHKO",
+        "PHKO"
+      ],
+      "airlines": [
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Delta Air Lines",
+        "Hawaiian Airlines",
+        "Southwest Airlines",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_Bay_Oakland_Airport",
+      "codes": [
+        "OAK",
+        "KOAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Hawaiian Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
     {
       "city": "Portland (OR)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
       "codes": [
         "PDX",
         "KPDX",
-        "gps code not found"
+        "KPDX"
       ],
       "airlines": [
         "Alaska Airlines"
@@ -40,10 +147,22 @@
       "codes": [
         "SMF",
         "KSMF",
-        "gps code not found"
+        "KSMF"
       ],
       "airlines": [
         "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "San Diego",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Diego_International_Airport",
+      "codes": [
+        "SAN",
+        "KSAN",
+        "KSAN"
+      ],
+      "airlines": [
+        "Alaska Airlines"
       ]
     },
     {
@@ -52,10 +171,37 @@
       "codes": [
         "SFO",
         "KSFO",
-        "gps code not found"
+        "KSFO"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "San Jose (CA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
+      "codes": [
+        "SJC",
+        "KSJC",
+        "KSJC"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Hawaiian Airlines"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Delta Air Lines"
       ]
     },
     {
@@ -64,7 +210,7 @@
       "codes": [
         "YVR",
         "CYVR",
-        "gps code not found"
+        "CYVR"
       ],
       "airlines": [
         "WestJet"
@@ -74,10 +220,39 @@
   "airlines_destinations": {
     "Alaska Airlines": [
       "Portland (OR)",
-      "San Francisco"
+      "San Diego",
+      "San Francisco",
+      "San Jose (CA)",
+      "Seattle/Tacoma"
+    ],
+    "American Airlines": [
+      "Los Angeles",
+      "Phoenix–Sky Harbor"
+    ],
+    "Delta Air Lines": [
+      "Los Angeles",
+      "Seattle/Tacoma"
     ],
     "Hawaiian Airlines": [
-      "Sacramento"
+      "Honolulu",
+      "Kahului",
+      "Kailua-Kona",
+      "Los Angeles",
+      "Oakland",
+      "Sacramento",
+      "San Jose (CA)"
+    ],
+    "Southwest Airlines": [
+      "Honolulu",
+      "Kahului",
+      "Las Vegas",
+      "Los Angeles",
+      "Oakland"
+    ],
+    "United Airlines": [
+      "Denver",
+      "Los Angeles",
+      "San Francisco"
     ],
     "WestJet": [
       "Vancouver"
@@ -88,6 +263,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T01:21:12Z",
-  "date-time-wikidata": "2026-04-27T05:56:37Z"
+  "date-time-parse": "2026-05-10T00:34:46Z",
+  "date-time-wikidata": "2026-05-09T08:27:43Z"
 }

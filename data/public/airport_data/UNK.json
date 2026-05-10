@@ -14,20 +14,33 @@
   "admin1_name": "Alaska",
   "admin2_name": "Bethel Census Area",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Unalakleet_Airport",
-  "outdegree": 5,
-  "number_airlines": 2,
+  "outdegree": 6,
+  "number_airlines": 3,
   "airlines": [
+    "Aleutian Airways",
     "Bering Air",
     "Ryan Air"
   ],
   "destinations": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Aleutian Airways"
+      ]
+    },
     {
       "city": "Koyuk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Koyuk_Alfred_Adams_Airport",
       "codes": [
         "KKA",
         "PAKK",
-        "gps code not found"
+        "PAKK"
       ],
       "airlines": [
         "Bering Air",
@@ -40,7 +53,7 @@
       "codes": [
         "OME",
         "PAOM",
-        "gps code not found"
+        "PAOM"
       ],
       "airlines": [
         "Bering Air"
@@ -52,7 +65,7 @@
       "codes": [
         "SKK",
         "PFSH",
-        "gps code not found"
+        "PFSH"
       ],
       "airlines": [
         "Bering Air",
@@ -65,7 +78,7 @@
       "codes": [
         "SMK",
         "PAMK",
-        "gps code not found"
+        "PAMK"
       ],
       "airlines": [
         "Bering Air",
@@ -78,7 +91,7 @@
       "codes": [
         "WBB",
         "icao code not found",
-        "gps code not found"
+        "WBB"
       ],
       "airlines": [
         "Bering Air",
@@ -87,6 +100,9 @@
     }
   ],
   "airlines_destinations": {
+    "Aleutian Airways": [
+      "Anchorage"
+    ],
     "Bering Air": [
       "Koyuk",
       "Nome",
@@ -114,7 +130,7 @@
       "codes": [
         "ANC",
         "PANC",
-        "gps code not found"
+        "PANC"
       ],
       "airlines": [
         "Everts Air Cargo",
@@ -130,6 +146,6 @@
       "Anchorage"
     ]
   },
-  "date-time-parse": "2026-05-01T02:48:22Z",
-  "date-time-wikidata": "2025-10-28T16:04:56Z"
+  "date-time-parse": "2026-05-10T00:36:58Z",
+  "date-time-wikidata": "2026-05-09T23:59:11Z"
 }

@@ -14,10 +14,11 @@
   "admin1_name": "Western",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Banjul_International_Airport",
-  "outdegree": 18,
-  "number_airlines": 15,
+  "outdegree": 19,
+  "number_airlines": 16,
   "airlines": [
     "ASKY Airlines",
+    "Air Peace",
     "Air Senegal",
     "Air Sierra Leone",
     "Brussels Airlines",
@@ -35,12 +36,24 @@
   ],
   "destinations": [
     {
+      "city": "Abidjan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Félix-Houphouët-Boigny_International_Airport",
+      "codes": [
+        "ABJ",
+        "DIAP",
+        "DIAP"
+      ],
+      "airlines": [
+        "Air Peace"
+      ]
+    },
+    {
       "city": "Accra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
       "codes": [
         "ACC",
-        "icao code not found",
-        "gps code not found"
+        "DGAA",
+        "DGAA"
       ],
       "airlines": [
         "ASKY Airlines"
@@ -129,6 +142,7 @@
         "GOBD"
       ],
       "airlines": [
+        "Air Peace",
         "Air Senegal",
         "Brussels Airlines",
         "Transair"
@@ -180,6 +194,7 @@
         "DNMM"
       ],
       "airlines": [
+        "Air Peace",
         "ValueJet"
       ]
     },
@@ -258,6 +273,11 @@
     }
   ],
   "airlines_destinations": {
+    "Air Peace": [
+      "Abidjan",
+      "Dakar–Diass",
+      "Lagos"
+    ],
     "Air Sierra Leone": [
       "London–Gatwick"
     ],
@@ -318,6 +338,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T01:39:53Z",
-  "date-time-wikidata": "2026-04-28T20:00:36Z"
+  "date-time-parse": "2026-05-10T00:31:49Z",
+  "date-time-wikidata": "2026-05-04T20:20:51Z"
 }

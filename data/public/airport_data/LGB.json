@@ -14,9 +14,10 @@
   "admin1_name": "California",
   "admin2_name": "Los Angeles County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Long_Beach_Airport",
-  "outdegree": 3,
-  "number_airlines": 3,
+  "outdegree": 4,
+  "number_airlines": 4,
   "airlines": [
+    "Alaska Airlines",
     "Delta Air Lines",
     "Delta Connection",
     "Hawaiian Airlines"
@@ -28,7 +29,7 @@
       "codes": [
         "HNL",
         "PHNL",
-        "gps code not found"
+        "PHNL"
       ],
       "airlines": [
         "Hawaiian Airlines"
@@ -40,7 +41,7 @@
       "codes": [
         "OGG",
         "PHOG",
-        "gps code not found"
+        "PHOG"
       ],
       "airlines": [
         "Hawaiian Airlines"
@@ -52,15 +53,30 @@
       "codes": [
         "SLC",
         "KSLC",
-        "gps code not found"
+        "KSLC"
       ],
       "airlines": [
         "Delta Air Lines",
         "Delta Connection"
       ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
+    "Alaska Airlines": [
+      "Seattle/Tacoma"
+    ],
     "Delta Air Lines": [
       "Salt Lake City"
     ],
@@ -97,7 +113,7 @@
       "codes": [
         "SDF",
         "KSDF",
-        "gps code not found"
+        "KSDF"
       ],
       "airlines": [
         "UPS Airlines"
@@ -112,6 +128,6 @@
       "Louisville"
     ]
   },
-  "date-time-parse": "2026-05-01T01:21:16Z",
-  "date-time-wikidata": "2026-04-28T05:59:38Z"
+  "date-time-parse": "2026-05-10T00:34:37Z",
+  "date-time-wikidata": "2026-05-08T07:55:31Z"
 }

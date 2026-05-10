@@ -14,19 +14,20 @@
   "admin1_name": "Daşoguz",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Daşoguz_International_Airport",
-  "outdegree": 4,
-  "number_airlines": 1,
+  "outdegree": 5,
+  "number_airlines": 2,
   "airlines": [
+    "Red Wings Airlines",
     "Turkmenistan Airlines"
   ],
   "destinations": [
     {
-      "city": "Ashgabat",
+      "city": "Aşgabat",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ashgabat_International_Airport",
       "codes": [
         "ASB",
         "UTAA",
-        "gps code not found"
+        "UTAA"
       ],
       "airlines": [
         "Turkmenistan Airlines"
@@ -38,7 +39,7 @@
       "codes": [
         "BKN",
         "UTAN",
-        "gps code not found"
+        "UTAN"
       ],
       "airlines": [
         "Turkmenistan Airlines"
@@ -50,10 +51,22 @@
       "codes": [
         "MYP",
         "UTAM",
-        "gps code not found"
+        "UTAM"
       ],
       "airlines": [
         "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Moscow-Zhukovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
+      "codes": [
+        "ZIA",
+        "UUBW",
+        "UUBW"
+      ],
+      "airlines": [
+        "Red Wings Airlines"
       ]
     },
     {
@@ -70,8 +83,11 @@
     }
   ],
   "airlines_destinations": {
+    "Red Wings Airlines": [
+      "Moscow-Zhukovsky"
+    ],
     "Turkmenistan Airlines": [
-      "Ashgabat",
+      "Aşgabat",
       "Balkanabat",
       "Mary",
       "Türkmenabat"
@@ -89,7 +105,7 @@
       "codes": [
         "ASB",
         "UTAA",
-        "gps code not found"
+        "UTAA"
       ],
       "airlines": [
         "Turkmenistan Airlines"
@@ -101,7 +117,7 @@
       "codes": [
         "BKK",
         "VTBS",
-        "gps code not found"
+        "VTBS"
       ],
       "airlines": [
         "Turkmenistan Airlines"
@@ -113,7 +129,7 @@
       "codes": [
         "MYP",
         "UTAM",
-        "gps code not found"
+        "UTAM"
       ],
       "airlines": [
         "Turkmenistan Airlines"
@@ -140,6 +156,6 @@
       "Türkmenbaşy"
     ]
   },
-  "date-time-parse": "2026-05-01T02:25:20Z",
-  "date-time-wikidata": "2026-03-05T00:15:45Z"
+  "date-time-parse": "2026-05-10T00:36:45Z",
+  "date-time-wikidata": "2026-05-03T18:52:54Z"
 }

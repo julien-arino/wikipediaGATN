@@ -14,10 +14,11 @@
   "admin1_name": "Schleswig-Holstein",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sylt_Airport",
-  "outdegree": 8,
-  "number_airlines": 6,
+  "outdegree": 9,
+  "number_airlines": 7,
   "airlines": [
     "Austrian Airlines",
+    "Avanti Air",
     "Eurowings",
     "Lufthansa",
     "Luxair",
@@ -25,6 +26,18 @@
     "Swiss International Air Lines"
   ],
   "destinations": [
+    {
+      "city": "Berlin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+      "codes": [
+        "BER",
+        "EDDB",
+        "EDDB"
+      ],
+      "airlines": [
+        "Avanti Air"
+      ]
+    },
     {
       "city": "Düsseldorf",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
@@ -123,6 +136,9 @@
     }
   ],
   "airlines_destinations": {
+    "Avanti Air": [
+      "Berlin"
+    ],
     "Austrian Airlines": [
       "Vienna"
     ],
@@ -149,6 +165,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T02:01:41Z",
-  "date-time-wikidata": "2026-03-11T09:35:51Z"
+  "date-time-parse": "2026-05-24T00:38:16Z",
+  "date-time-wikidata": "2026-05-20T19:19:42Z"
 }

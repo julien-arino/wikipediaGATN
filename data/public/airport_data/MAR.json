@@ -14,12 +14,13 @@
   "admin1_name": "Zulia",
   "admin2_name": "Municipio San Francisco",
   "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chinita_International_Airport",
-  "outdegree": 8,
-  "number_airlines": 10,
+  "outdegree": 10,
+  "number_airlines": 11,
   "airlines": [
     "Aerolíneas Estelar",
     "Aeropostal",
     "Aeroregional",
+    "American Eagle",
     "Avior Airlines",
     "Conviasa",
     "Copa Airlines",
@@ -29,6 +30,18 @@
     "Venezolana"
   ],
   "destinations": [
+    {
+      "city": "Barcelona (VE)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/General_José_Antonio_Anzoátegui_International_Airport",
+      "codes": [
+        "BLA",
+        "SVBC",
+        "SVBC"
+      ],
+      "airlines": [
+        "Conviasa"
+      ]
+    },
     {
       "city": "Caracas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
@@ -68,6 +81,18 @@
       ],
       "airlines": [
         "Conviasa"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Eagle"
       ]
     },
     {
@@ -128,6 +153,7 @@
         "SVVA"
       ],
       "airlines": [
+        "Conviasa",
         "Turpial Airlines"
       ]
     }
@@ -143,14 +169,19 @@
       "Caracas",
       "Santa Bárbara del Zulia"
     ],
+    "American Eagle": [
+      "Miami"
+    ],
     "Avior Airlines": [
       "Caracas"
     ],
     "Conviasa": [
+      "Barcelona (VE)",
       "Caracas",
       "Ciudad Guayana",
       "Maturín",
-      "Porlamar"
+      "Porlamar",
+      "Valencia (VE)"
     ],
     "Copa Airlines": [
       "Panama City–Tocumen"
@@ -192,6 +223,6 @@
       "Bogotá"
     ]
   },
-  "date-time-parse": "2026-05-17T00:37:01Z",
-  "date-time-wikidata": "2026-05-14T08:46:25Z"
+  "date-time-parse": "2026-05-24T00:40:06Z",
+  "date-time-wikidata": "2026-05-18T20:26:56Z"
 }

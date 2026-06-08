@@ -203,6 +203,8 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
             "wikipedia_url": new_data.get("wikipedia_url", ""),
             "outdegree":     new_data.get("outdegree", 0),
             "outdegree_cargo": new_data.get("outdegree_cargo", 0),
+            "number_airlines": new_data.get("number_airlines", 0),
+            "number_airlines_cargo": new_data.get("number_airlines_cargo", 0),
         })
 
         # Apply formatting constraints
@@ -219,7 +221,8 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
         fieldnames = [
             "iata", "icao", "latitude", "longitude",
-            "name", "wikipedia_url", "outdegree", "outdegree_cargo"
+            "name", "wikipedia_url", "outdegree", "outdegree_cargo",
+            "number_airlines", "number_airlines_cargo"
         ]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()

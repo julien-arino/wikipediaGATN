@@ -66,7 +66,8 @@ class TestExportAllAirportData:
         """airports_information.csv contains the required column headers."""
         export_all_airport_data(verbose=False)
         expected = {"iata", "icao", "latitude", "longitude",
-                    "name", "wikipedia_url", "outdegree"}
+                    "name", "wikipedia_url", "outdegree", "outdegree_cargo",
+                    "number_airlines", "number_airlines_cargo"}
         csv_path = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
         with open(csv_path, encoding="utf-8") as fh:
             headers = set(next(csv.reader(fh)))

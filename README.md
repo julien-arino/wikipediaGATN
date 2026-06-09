@@ -1,5 +1,10 @@
 # wikipediaGATN
 
+[![Tests](https://github.com/julien-arino/wikipediaGATN/actions/workflows/tests.yml/badge.svg)](https://github.com/julien-arino/wikipediaGATN/actions/workflows/tests.yml)
+[![Docs](https://github.com/julien-arino/wikipediaGATN/actions/workflows/docs.yml/badge.svg)](https://github.com/julien-arino/wikipediaGATN/actions/workflows/docs.yml)
+[![PyPI version](https://img.shields.io/pypi/v/wikipediaGATN.svg)](https://pypi.org/project/wikipediaGATN/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 ## Overview
 
 `wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo. 
@@ -21,16 +26,35 @@ The package handles the full pipeline:
 The resulting networks can be used for empirical studies of air-travel connectivity, epidemic-spread modelling and transportation network analysis, among other things. 
 They also provide great examples in courses about graphs/networks, data science and computational social science.
 
-## Setting up
+## Installation
 
-If using a virtual environment
+### From PyPI (Recommended)
+
+To install the latest stable version directly from PyPI:
+
 ```bash
-source /path/to/venv/bin/activate
+pip install wikipediaGATN
 ```
 
-If running before deploying the package, you need to run stuff from the top directory in the repo. Set
+### From Source
 
+For development or to access the latest changes, clone the repository and install it:
+
+```bash
+git clone https://github.com/julien-arino/wikipediaGATN.git
+cd wikipediaGATN
+pip install .
 ```
+
+If you wish to contribute, install in editable mode with development dependencies:
+
+```bash
+pip install -e ".[dev]"
+```
+
+If running from the source repository before deploying the package, set:
+
+```bash
 export PYTHONPATH=src
 ```
 
@@ -77,6 +101,7 @@ For function example, the following builds a network for all airports reachable 
 ```python
 from wikipediaGATN.wikipedia_network_level import iterate_search_until_distance_N
 from wikipediaGATN import (
+    export_all_airport_data,
     create_outbound_connections_list,
     run_two_pass_iata_extraction,
     create_outbound_adjacency_matrix,
@@ -85,19 +110,25 @@ from wikipediaGATN import (
 # 1. Crawl Wikipedia — save one JSON file per airport to data/tmp_results/
 iterate_search_until_distance_N("YWG", dist=2, delay=0.5, verbose=True)
 
-# 2. Build connections CSV (maps destination URLs to IATA codes)
-connections_csv, unmapped_csv = create_outbound_connections_list(
+# 2. Process and export crawled airport data (creates public/airport_data/ and airports_information.csv)
+export_all_airport_data(use_new_data=True, verbose=True)
+
+# 3. Build connections CSV (maps destination URLs to IATA codes)
+connections_csv, cargo_csv, unmapped_csv = create_outbound_connections_list(
     verbose=True, export_unmapped=True
 )
 
-# 3. Recover IATA codes for any destinations that could not be mapped automatically
+# 4. Recover IATA codes for any destinations that could not be mapped automatically
 #    (scrapes Wikipedia; allow ~15 minutes for a large unmapped set)
 run_two_pass_iata_extraction(batch_size=50, delay=0.5, verbose=True)
 
-# 4. Re-run connections with the enriched mapping
+# 5. Re-export airport data to apply the recovered manual mappings
+export_all_airport_data(use_new_data=True, verbose=True)
+
+# 6. Re-run connections with the enriched mapping
 create_outbound_connections_list(verbose=True)
 
-# 5. Export sparse adjacency matrices to data/public/
+# 7. Export sparse adjacency matrices to data/public/
 matrix_npz, nodes_txt = create_outbound_adjacency_matrix(symmetric=False, verbose=True)
 matrix_sym_npz, nodes_sym_txt = create_outbound_adjacency_matrix(symmetric=True, verbose=True)
 ```

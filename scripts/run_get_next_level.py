@@ -2,12 +2,11 @@
 Automatically determines the current maximum BFS level in tmp_results and triggers a crawl for the next level.
 """
 
-import os
 from wikipediaGATN.wikipedia_network_level import (
-    get_connections_level_N,
-    check_processed_list,
+    TEMP_RESULTS_DIR,
     _find_max_level,
-    TEMP_RESULTS_DIR
+    check_processed_list,
+    get_connections_level_N,
 )
 
 if __name__ == "__main__":

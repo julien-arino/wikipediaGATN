@@ -2,10 +2,11 @@
 Tests for :mod:`wikipediaGATN.airport_level_functions`.
 """
 
+from unittest.mock import Mock, patch
+
 import pytest
 import requests
-import warnings
-from unittest.mock import Mock, patch
+
 from wikipediaGATN.airport_level_functions import fetch_wikipedia_airport_html
 
 # Correct patch target for the shared session in the module

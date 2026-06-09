@@ -2,10 +2,10 @@
 Merges JSON data from successfully scraped missing airports (in tmp_results) back into the main public/airport_data repository, including symmetrisation of connections.
 """
 
-import os
 import json
-import shutil
+import os
 import re
+import shutil
 
 TMP_RESULTS_DIR = "data/tmp_results/missing_from_ourairports"
 PUBLIC_DATA_DIR = "data/public/airport_data"

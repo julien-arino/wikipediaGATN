@@ -2,11 +2,12 @@
 Utility script to re-format all public airport JSON files, ensuring their keys are ordered consistently according to the canonical schema.
 """
 
-import os
 import json
+import os
 
-from wikipediaGATN.paths import PUBLIC_DATA_DIR
 from wikipediaGATN.airport_level_functions import format_airport_json
+from wikipediaGATN.paths import PUBLIC_DATA_DIR
+
 
 def reorder():
     d = os.path.join(PUBLIC_DATA_DIR, "airport_data")

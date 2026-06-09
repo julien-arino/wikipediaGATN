@@ -4,9 +4,11 @@ Generates a run summary report detailing crawler sweep metrics and network refre
 
 import os
 import re
-from datetime import datetime, timezone
 from collections import defaultdict
+from datetime import datetime, timezone
+
 from wikipediaGATN.paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+
 
 def format_utc(ts: float) -> str:
     """Format a timestamp to UTC ISO 8601 string ending with Z."""

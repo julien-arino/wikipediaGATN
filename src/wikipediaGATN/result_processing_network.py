@@ -151,7 +151,7 @@ def _run_pipeline() -> None:
             print(f"\n{'=' * 70}")
             print("[STEP 5] Re-exporting airport metadata with enriched mappings…")
             export_all_airport_data(verbose=True)
-            
+
             # Step 6 --------------------------------------------------------
             print(f"\n{'=' * 70}")
             print("[STEP 6] Re-running connections with enriched public JSON data…")

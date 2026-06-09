@@ -2,6 +2,7 @@ import re
 import timeit
 from urllib.parse import unquote
 
+
 def _extract_airport_name_from_url_original(url: str):
     if not url:
         return None

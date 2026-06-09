@@ -37,13 +37,13 @@ Helper / Fallback functions:
 """
 
 import csv
-from datetime import datetime, timezone
 import json
+import logging
 import os
 import re
-import logging
 import urllib.parse
 import warnings
+from datetime import datetime, timezone
 
 import mwparserfromhell
 import pycountry
@@ -123,19 +123,19 @@ def format_airport_json(data: dict) -> dict:
         "airlines_cargo", "destinations_cargo", "airlines_destinations_cargo",
         "date-time-parse", "date-time-wikidata"
     ]
-    
+
     formatted = {}
-    
+
     # 1. Insert known keys in the specified order
     for k in key_order:
         if k in data:
             formatted[k] = data[k]
-            
+
     # 2. Append any extra keys that might exist (to prevent data loss)
     for k, v in data.items():
         if k not in formatted:
             formatted[k] = v
-            
+
     return formatted
 # ---------------------------------------------------------------------------
 # Wikipedia page lookup
@@ -557,18 +557,18 @@ def fetch_wikipedia_airlines_destinations(
         header_text = header.get_text(strip=True).lower()
         if 'airlines' not in header_text or 'destination' not in header_text:
             continue
-            
+
         header_level = header.name
         for tbl in header.find_all_next('table'):
             classes = tbl.get('class', [])
             if any('ambox' in c or 'box' in c for c in classes):
                 continue
-                
+
             # Check if we left the section
             prev_level_header = tbl.find_previous(header_level)
             if prev_level_header and prev_level_header.get_text(strip=True) != header.get_text(strip=True):
                 break
-                
+
             prev_header = tbl.find_previous(['h2', 'h3', 'h4'])
             is_cargo = prev_header and 'cargo' in prev_header.get_text(strip=True).lower()
             target_dict = result["cargo"] if is_cargo else result["passenger"]
@@ -712,7 +712,7 @@ def fetch_wikipedia_airport_info(
 
     iata_raw = infobox.get('IATA')
     iata_clean = re.search(r'[A-Za-z]{3}', str(iata_raw)).group(0).upper() if iata_raw and re.search(r'[A-Za-z]{3}', str(iata_raw)) else None
-    
+
     icao_raw = infobox.get('ICAO')
     icao_clean = re.search(r'[A-Za-z]{4}', str(icao_raw)).group(0).upper() if icao_raw and re.search(r'[A-Za-z]{4}', str(icao_raw)) else None
 
@@ -741,7 +741,7 @@ def fetch_wikipedia_airport_info(
     }
 
     ad_map_wikitext = parse_wikitext_airlines_destinations(wikitext)
-    
+
     # Intelligent HTML Fallback
     # If wikitext found no passenger airlines but did find cargo, it likely missed a wikitable
     html_content = None
@@ -772,7 +772,7 @@ def fetch_wikipedia_airport_info(
         airline: sorted({d["name"] if isinstance(d, dict) else d for d in dests})
         for airline, dests in ad_map['passenger'].items()
     }
-    
+
     # Cargo data
     info['airlines_cargo'] = sorted(ad_map['cargo'].keys())
     info['destinations_cargo'] = sorted({
@@ -1094,14 +1094,14 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
             coord_m = re.search(r'\{\{[Cc]oord\|(.*?)\}\}', value)
             if coord_m:
                 inner = coord_m.group(1)
-                
+
                 region_m = re.search(r'region:([A-Za-z0-9\-]+)', inner)
                 if region_m:
                     region = region_m.group(1)
-                    
-                args = [arg.strip() for arg in inner.split('|') 
+
+                args = [arg.strip() for arg in inner.split('|')
                         if '=' not in arg and 'region:' not in arg.lower() and arg.strip()]
-                
+
                 try:
                     lat, lon = None, None
                     if len(args) >= 8:
@@ -1115,7 +1115,7 @@ def parse_infobox_from_wikitext(wikitext: str, verbose: bool = False) -> dict:
                         lon = float(args[2]) * (1 if args[3].upper() == "E" else -1)
                     elif len(args) >= 2:
                         lat, lon = float(args[0]), float(args[1])
-                        
+
                     if lat is not None and lon is not None:
                         infobox_data['lat'] = f"{lat:.6f}"
                         infobox_data['lon'] = f"{lon:.6f}"
@@ -1168,7 +1168,7 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
         t_name = template.name.lower().strip().replace("-", " ")
         if not (t_name.startswith("airport dest list") or t_name.startswith("airport destination list")):
             continue
-            
+
         # Find the closest preceding heading
         is_cargo = False
         try:
@@ -1182,18 +1182,18 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
                     break
         except ValueError:
             pass # Template not found in top-level nodes, assume passenger
-            
+
         target_dict = result["cargo"] if is_cargo else result["passenger"]
 
         positional = [p for p in template.params if str(p.name).strip().isdigit()]
         positional.sort(key=lambda p: int(str(p.name).strip()))
-        
+
         step = 2
         if template.has("3rdcoltitle"): step += 1
         if template.has("4thcoltitle"): step += 1
         if template.has("5thcoltitle"): step += 1
         if template.has("6thcoltitle"): step += 1
-        
+
         for i in range(0, len(positional) - (step - 1), step):
             airline_raw = str(positional[i].value)
             dests_raw = str(positional[i+1].value)
@@ -1331,10 +1331,10 @@ def parse_iso3166_2(region_code: str):
                     'admin1_code':      f"{country.alpha_2}-{subdivision.upper()}",
                     'admin1_name':      s.name if s else None,
                 }
-                
+
         # Exact string match fallback for things like "Pennsylvania"
         region_code_lower = region_code.strip().lower()
-        
+
         # Legacy name map for common outdated geocoder names (e.g., French pre-2016 regions)
         legacy_names = {
             "aquitaine": "FR-NAQ",
@@ -1368,7 +1368,7 @@ def parse_iso3166_2(region_code: str):
                 'admin1_code':      f"{country_code.upper()}-{subdivision.upper()}",
                 'admin1_name':      s.name if s else None,
             }
-            
+
         # Short strings like "US" or "CA" should not be treated as subdivisions
         if len(region_code_lower) > 2:
             for s in pycountry.subdivisions:
@@ -1398,18 +1398,20 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
     Builds a mapping from Wikipedia URL to IATA/ICAO codes.
     Loads from local JSONs, manual overrides, and processes redirects via Wikipedia API.
     """
-    from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+    import csv
     import json
     import os
-    import csv
     import urllib.parse
+
     import requests
-    
+
+    from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+
     if verbose:
         print("Building global URL-to-IATA/ICAO map...")
-        
+
     url_to_codes = {}
-    
+
     # Hardcoded manual overrides for known edge cases where Wikipedia and ourairports disagree
     # without any redirect linking them.
     MANUAL_OVERRIDES = {
@@ -1421,7 +1423,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
     }
     for url, codes in MANUAL_OVERRIDES.items():
         url_to_codes[urllib.parse.unquote(url)] = codes
-    
+
     csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
     if os.path.exists(csv_path):
         with open(csv_path, "r", encoding="utf-8") as f:
@@ -1436,7 +1438,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
             for row in csv.DictReader(f):
                 if row.get("url") and row.get("iata"):
                     url_to_codes[urllib.parse.unquote(row["url"])] = {"iata": row["iata"], "icao": "icao code not found", "gps": "gps code not found"}
-                    
+
     airport_data_dir = os.path.join(PUBLIC_DATA_DIR, "airport_data")
     if os.path.exists(airport_data_dir):
         for fname in os.listdir(airport_data_dir):
@@ -1453,7 +1455,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                         }
             except Exception:
                 pass
-                
+
     # Also load from TEMP_RESULTS_DIR subdirectories JSON files (from recent scrapes)
     for subdir in ["airports_rooted_sweep", "missing_from_ourairports"]:
         dir_path = os.path.join(TEMP_RESULTS_DIR, subdir)
@@ -1480,7 +1482,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
 
     # We only resolve redirects for URLs found in the JSON/manual files, NOT the massive ourairports.csv cache
     urls_to_resolve = list(url_to_codes.keys())
-    
+
     # Now load from ourairports.csv so they don't get sent to Wikipedia API
     try:
         from .airport_level_functions import _load_ourairports_data
@@ -1492,7 +1494,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                     gps_code = data.get("gps_code")
                     if not gps_code and not data.get("iata_code") and not data.get("icao_code"):
                         gps_code = data.get("ident")
-                        
+
                     url_to_codes[parsed_url] = {
                         "iata": data.get("iata_code") or "iata code not found",
                         "icao": data.get("icao_code") or "icao code not found",
@@ -1500,9 +1502,9 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                     }
     except Exception as e:
         if verbose: print(f"Error loading ourairports data: {e}")
-        
+
     canonical_map = {}
-    
+
     headers = {'User-Agent': 'wikipediaGATN/1.0 (julien.arino@example.com)'}
     for i in range(0, len(urls_to_resolve), 50):
         chunk = urls_to_resolve[i:i+50]
@@ -1522,7 +1524,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                             for orig, norm in list(title_to_canonical.items()):
                                 if norm == rd['from']:
                                     title_to_canonical[orig] = rd['to']
-                    
+
                     for orig_url, orig_title in zip(chunk, titles):
                         canonical_title = title_to_canonical.get(orig_title, orig_title)
                         canonical_url = urllib.parse.unquote(f"https://en.wikipedia.org/wiki/{canonical_title.replace(' ', '_')}")
@@ -1530,7 +1532,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                             canonical_map[canonical_url] = url_to_codes[orig_url]
         except Exception as e:
             if verbose: print(f"Wikipedia API error resolving canonicals: {e}")
-            
+
     url_to_codes.update(canonical_map)
     return url_to_codes
 
@@ -1542,7 +1544,7 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
     """
     import urllib.parse
     mapped_dict = {}
-    
+
     for dest in raw_destinations:
         if isinstance(dest, dict):
             # Already formatted, use url as key
@@ -1553,11 +1555,11 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
                 else:
                     mapped_dict[d_url] = dest
             continue
-            
+
         elif isinstance(dest, (list, tuple)) and len(dest) >= 2:
             city, d_url = dest[0], urllib.parse.unquote(dest[1])
             canonical_url = d_url
-            
+
             codes = url_to_codes.get(d_url)
             if not codes:
                 # Fallback: query Wikipedia API to see if this is a redirect to a known URL
@@ -1579,15 +1581,15 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
                                 url_to_codes[d_url] = codes
                 except Exception:
                     pass
-                    
+
             if not codes:
                 codes = {"iata": "iata code not found", "icao": "icao code not found", "gps": "gps code not found"}
-                
+
             op_airlines = []
             for al_name, cities in airlines_destinations_map.items():
                 if city in cities:
                     op_airlines.append(al_name)
-                    
+
             # Determine merge key
             merge_key = canonical_url
             if codes.get("iata", "iata code not found") != "iata code not found":
@@ -1596,7 +1598,7 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
                 merge_key = codes["icao"]
             elif codes.get("gps", "gps code not found") != "gps code not found":
                 merge_key = codes["gps"]
-                
+
             if merge_key in mapped_dict:
                 mapped_dict[merge_key]["airlines"] = sorted(list(set(mapped_dict[merge_key]["airlines"] + op_airlines)))
             else:
@@ -1606,7 +1608,7 @@ def format_destinations_list(raw_destinations: list, airlines_destinations_map: 
                     "codes": [codes.get("iata", "iata code not found"), codes.get("icao", "icao code not found"), codes.get("gps", "gps code not found")],
                     "airlines": sorted(list(set(op_airlines)))
                 }
-                
+
     return list(mapped_dict.values())
 
 _OURAIRPORTS_CACHE = None
@@ -1615,12 +1617,14 @@ def _load_ourairports_data():
     global _OURAIRPORTS_CACHE
     if _OURAIRPORTS_CACHE is not None:
         return _OURAIRPORTS_CACHE
-        
-    import os
+
     import csv
+    import os
+
     import requests
+
     from .paths import PUBLIC_DATA_DIR
-    
+
     ourairports_path = os.path.join(PUBLIC_DATA_DIR, "ourairports.csv")
     if not os.path.exists(ourairports_path):
         url = "https://davidmegginson.github.io/ourairports-data/airports.csv"
@@ -1634,7 +1638,7 @@ def _load_ourairports_data():
             print(f"Warning: Failed to download OurAirports dataset: {e}")
             _OURAIRPORTS_CACHE = {}
             return _OURAIRPORTS_CACHE
-            
+
     cache = {}
     try:
         with open(ourairports_path, "r", encoding="utf-8") as f:
@@ -1647,7 +1651,7 @@ def _load_ourairports_data():
                 if wiki: cache[wiki] = row
     except Exception as e:
         print(f"Warning: Failed to parse OurAirports dataset: {e}")
-        
+
     _OURAIRPORTS_CACHE = cache
     return _OURAIRPORTS_CACHE
 
@@ -1657,12 +1661,12 @@ def infer_missing_geographic_data(data: dict) -> dict:
     using the geopy and reverse_geocoder fallbacks.
     Returns the mutated data dictionary.
     """
-    import pycountry_convert as pc
     import pycountry
+    import pycountry_convert as pc
     from geopy.geocoders import Nominatim
-    
+
     geolocator = Nominatim(user_agent="wikipediaGATN")
-    
+
     # -------------------------------------------------------------------------
     # Priority 1: OurAirports Database
     # -------------------------------------------------------------------------
@@ -1678,20 +1682,20 @@ def infer_missing_geographic_data(data: dict) -> dict:
         # Add gps code if available
         if oa_row.get("gps_code"):
             data["gps"] = oa_row["gps_code"].strip()
-            
+
         # Backfill coordinates if missing
         if not data.get("lat") or not data.get("lon"):
             if oa_row.get("latitude_deg") and oa_row.get("longitude_deg"):
                 data["lat"] = str(oa_row["latitude_deg"])
                 data["lon"] = str(oa_row["longitude_deg"])
-                
+
         # Resolve authoritative country and region
         if oa_row.get("iso_country"):
             c = pycountry.countries.get(alpha_2=oa_row["iso_country"])
             if c:
                 data["country_alpha3"] = c.alpha_3
                 data["country_name"] = c.name
-                
+
         if oa_row.get("iso_region"):
             data["admin1_code"] = oa_row["iso_region"]
             try:
@@ -1700,17 +1704,17 @@ def infer_missing_geographic_data(data: dict) -> dict:
                     data["admin1_name"] = s.name
             except Exception:
                 pass
-                
+
     # -------------------------------------------------------------------------
     # Priority 2: Fallback processing and Geopy
     # -------------------------------------------------------------------------
-    
+
     # Fallback for city-served
     if not data.get("city-served") and data.get("location"):
         data["city-served"] = data.get("location")
     if not data.get("city-served-wikipedia") and data.get("location"):
         data["city-served-wikipedia"] = data.get("location")
-        
+
     # Simplify city-served and location (strip wikitext and grab the first part before a comma)
     import mwparserfromhell
     for key in ["city-served", "location"]:
@@ -1724,7 +1728,7 @@ def infer_missing_geographic_data(data: dict) -> dict:
                 data[key] = clean_text
             except Exception:
                 pass
-        
+
     # Clean up dirty legacy admin codes
     if data.get("admin1_code"):
         if len(str(data.get("admin1_code"))) > 6:
@@ -1738,7 +1742,7 @@ def infer_missing_geographic_data(data: dict) -> dict:
                     data["admin1_code"] = f"{c.alpha_2}-{data['admin1_code']}"
             except Exception:
                 pass
-                
+
         # Resolve admin1_name if it was erroneously set to the code (e.g., US-WI)
         if data.get("admin1_code") and data.get("admin1_name") == data.get("admin1_code"):
             try:
@@ -1747,7 +1751,7 @@ def infer_missing_geographic_data(data: dict) -> dict:
                     data["admin1_name"] = s.name
             except Exception:
                 pass
-    
+
     # Fill in lat/lon if missing but we have an ISO region or location (only if OurAirports failed)
     if not data.get("lat") or not data.get("lon"):
         query = data.get("admin1_name") or data.get("location")
@@ -1796,7 +1800,7 @@ def infer_missing_geographic_data(data: dict) -> dict:
                 data["continent"] = pc.map_continent_code_to_continent_name(cont_code)
         except Exception:
             pass
-            
+
     return data
 
 def compare_airports_with_ourairports(output_csv: str = None) -> str:
@@ -1809,74 +1813,75 @@ def compare_airports_with_ourairports(output_csv: str = None) -> str:
     2. It must have a wikipedia_link
     3. It must not be present in airports_information.csv
     """
-    import os
     import csv
+    import os
+
     from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
-    
+
     if output_csv is None:
         os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
         output_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports.csv")
-        
+
     airports_info_path = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
     ourairports_path = os.path.join(PUBLIC_DATA_DIR, "ourairports.csv")
-    
+
     if not os.path.exists(airports_info_path):
         raise FileNotFoundError(f"{airports_info_path} does not exist.")
     if not os.path.exists(ourairports_path):
         raise FileNotFoundError(f"{ourairports_path} does not exist.")
-        
+
     known_iatas = set()
     known_icaos = set()
     known_wikis = set()
-    
+
     with open(airports_info_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row.get("iata"): known_iatas.add(row["iata"].strip().upper())
             if row.get("icao"): known_icaos.add(row["icao"].strip().upper())
-            if row.get("wikipedia_url"): 
+            if row.get("wikipedia_url"):
                 wiki = row["wikipedia_url"].strip()
                 known_wikis.add(wiki)
                 known_wikis.add(wiki.split("wikipedia.org/")[-1])
-                
+
     missing_airports = []
-    
+
     with open(ourairports_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row.get("type") == "closed":
                 continue
-                
+
             if row.get("scheduled_service") != "yes":
                 continue
-                
+
             wiki_link = row.get("wikipedia_link", "").strip()
             if not wiki_link:
                 continue
-                
+
             iata = row.get("iata_code", "").strip().upper()
             icao = row.get("icao_code", "").strip().upper()
             wiki_end = wiki_link.split("wikipedia.org/")[-1]
-            
+
             # Check if we already picked it up
             if (iata and iata in known_iatas) or \
                (icao and icao in known_icaos) or \
                (wiki_link in known_wikis) or \
                (wiki_end in known_wikis):
                 continue
-                
+
             missing_airports.append(row)
-            
+
     if missing_airports:
         with open(output_csv, "w", encoding="utf-8", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=missing_airports[0].keys())
             writer.writeheader()
             writer.writerows(missing_airports)
-            
+
     print(f"Found {len(missing_airports)} missing airports with wikipedia links.")
     if missing_airports:
         print(f"Exported to {output_csv}")
-        
+
     return output_csv
 
 def find_active_missing_airports(input_csv: str = None, output_csv: str = None, max_workers: int = 5) -> str:
@@ -1885,39 +1890,41 @@ def find_active_missing_airports(input_csv: str = None, output_csv: str = None, 
     Wikipedia page for each airport. If the page contains an 'Airlines and destinations'
     or 'Cargo' section, it is saved to a new active CSV.
     """
-    import os
     import csv
-    import requests
+    import os
     from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    import requests
+
     from .paths import TEMP_RESULTS_DIR
-    
+
     if input_csv is None:
         input_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports.csv")
     if output_csv is None:
         os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
         output_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports_active.csv")
-        
+
     if not os.path.exists(input_csv):
         raise FileNotFoundError(f"{input_csv} does not exist. Run compare_airports_with_ourairports() first.")
-        
+
     with open(input_csv, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         airports = list(reader)
         fieldnames = reader.fieldnames
-        
+
     if not airports:
         print("Input CSV is empty.")
         return output_csv
-        
+
     print(f"Checking {len(airports)} Wikipedia pages for active flight sections...")
-    
+
     active_airports = []
-    
+
     def check_active(airport):
         url = airport.get("wikipedia_link", "").strip()
         if not url:
             return None
-            
+
         try:
             headers = {"User-Agent": "wikipediaGATN/0.1.0 (Global Air Transportation Networks research; julien.arino@umanitoba.ca)"}
             res = requests.get(url, headers=headers, timeout=10)
@@ -1931,7 +1938,7 @@ def find_active_missing_airports(input_csv: str = None, output_csv: str = None, 
 
     processed = 0
     total = len(airports)
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(check_active, a): a for a in airports}
         for future in as_completed(futures):
@@ -1939,17 +1946,17 @@ def find_active_missing_airports(input_csv: str = None, output_csv: str = None, 
             result = future.result()
             if result:
                 active_airports.append(result)
-                
+
             if processed % 100 == 0 or processed == total:
                 print(f"Processed {processed}/{total} pages. Found {len(active_airports)} active so far...", end="\\r", flush=True)
-                
+
     print(f"\\nFound {len(active_airports)} active missing airports out of {total} total.")
-    
+
     if active_airports:
         with open(output_csv, "w", encoding="utf-8", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(active_airports)
         print(f"Exported active airports to {output_csv}")
-        
+
     return output_csv

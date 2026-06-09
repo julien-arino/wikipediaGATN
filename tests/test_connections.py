@@ -7,7 +7,6 @@ use real temp-directory fixtures populated with minimal JSON files, and
 directory is touched.
 """
 
-import csv
 import json
 import os
 from pathlib import Path

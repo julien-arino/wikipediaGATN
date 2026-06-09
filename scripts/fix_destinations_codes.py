@@ -2,11 +2,13 @@
 Updates destination code lists across public JSONs by looking up their Wikipedia URLs in the global URL map, fixing missing or changed IATA/ICAO codes.
 """
 
-import os
 import json
+import os
 import urllib.parse
-from wikipediaGATN.paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+
 from wikipediaGATN.airport_level_functions import build_url_to_codes_map
+from wikipediaGATN.paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+
 
 def fix():
     print("Building global URL map...")

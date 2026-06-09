@@ -21,9 +21,9 @@ Three layout strategies are supported:
    is strongly preferred for publication figures.
 """
 
+import json
 import warnings
 from pathlib import Path
-import json
 
 import networkx as nx
 import plotly.graph_objects as go
@@ -170,7 +170,7 @@ def visualize_graph_plotly(
         node_x.append(x)
         node_y.append(y)
         node_degree_val = G.out_degree(node)
-        
+
         # Build rich tooltip
         airport_name = "Unknown Airport"
         if 'wikipedia_url' in data:
@@ -182,19 +182,19 @@ def visualize_graph_plotly(
             airport_name = f"{data['city_served']} Airport"
 
         text_lines = [f"<b>{node}</b> - {airport_name}"]
-        
+
         location = []
         if 'city_served' in data: location.append(data['city_served'])
         if 'admin1_name' in data: location.append(data['admin1_name'])
         if 'country_name' in data: location.append(data['country_name'])
         if location:
             text_lines.append(", ".join(location))
-            
+
         stats = [f"Outdegree: {node_degree_val}"]
         if 'number_airlines' in data:
             stats.append(f"Airlines: {int(float(data['number_airlines']))}")
         text_lines.append(" | ".join(stats))
-        
+
         node_text.append("<br>".join(text_lines))
         node_degree.append(node_degree_val)
 
@@ -249,7 +249,7 @@ def visualize_graph_plotly(
         hovermode="closest",
         margin=dict(b=20, l=5, r=5, t=50),
     )
-    
+
     if layout == "globe":
         fig_layout.geo = dict(
             projection_type="orthographic",
@@ -282,15 +282,15 @@ def visualize_graph_plotly(
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    
+
     # --- Custom JavaScript Injection for click-to-highlight ---
     node_list = list(G.nodes())
     node_idx = {n: i for i, n in enumerate(node_list)}
     adj = {i: [node_idx[v] for v in G.neighbors(n)] for i, n in enumerate(node_list)}
     coords = {i: [float(c) for c in pos[n]] for i, n in enumerate(node_list)}
-    
+
     coord_keys = "['lon', 'lat']" if layout == "globe" else "['x', 'y']"
-    
+
     # We use plot_id as a placeholder. Plotly replaces {plot_id} when rendering the HTML.
     custom_js = f"""
     const adj = {json.dumps(adj)};
@@ -345,12 +345,12 @@ def visualise_all_networks(verbose: bool = False):
     Generate visualizations for all generated networks.
     """
     layouts = ["geographic", "globe", "spring"]
-    
+
     pax_graphml = PUBLIC_DATA_DIR / "global-air-pax-network.graphml"
     if pax_graphml.exists():
         for l in layouts:
             visualize_graph_plotly(input_path=pax_graphml, layout=l, verbose=verbose)
-        
+
     cargo_graphml = PUBLIC_DATA_DIR / "global-air-cargo-network.graphml"
     if cargo_graphml.exists():
         for l in layouts:

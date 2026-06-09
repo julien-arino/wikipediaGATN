@@ -2,11 +2,11 @@
 Test script that crawls exactly one level out from YWG (Winnipeg), explicitly verifying handling of known tricky URLs like MSP and YUL.
 """
 
-import json
 
 from wikipediaGATN.wikipedia_airport_level import (
     get_wikipedia_airport_page_link,
 )
+
 from wikipediaGATN.wikipedia_network_level import (
     clean_output_directory,
     iterate_search_until_distance_N,

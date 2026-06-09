@@ -10,6 +10,7 @@ Welcome to the documentation for `wikipediaGATN`!
 
 self
 installation
+quickstart
 usage
 api
 ```

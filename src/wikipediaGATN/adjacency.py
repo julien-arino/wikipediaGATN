@@ -199,13 +199,13 @@ def create_outbound_adjacency_matrix(
 
         outlinks_str = str(row["outlinks"]) if pd.notna(row["outlinks"]) else ""
         weights_str = str(row["weights"]) if "weights" in row and pd.notna(row["weights"]) else ""
-        
+
         if not outlinks_str.strip():
             continue
 
         dests = outlinks_str.split()
         weights = weights_str.split()
-        
+
         for i, dest in enumerate(dests):
             dest = dest.strip()
             if not _is_valid_code(dest):
@@ -220,7 +220,7 @@ def create_outbound_adjacency_matrix(
             if dest_idx == origin_idx:
                 skipped_self_loops += 1
                 continue
-            
+
             # Get weight (number of airlines)
             try:
                 weight = int(weights[i]) if i < len(weights) else 1
@@ -245,14 +245,14 @@ def create_outbound_adjacency_matrix(
     # Since we might have duplicates if the CSV is messy, we'll keep the first one or sum?
     # Given the previous deduplication, let's ensure we have unique edges if we want simple weights.
     # But if we want weights to be exactly what's in the CSV, we should ensure unique edges here.
-    
+
     if rows_list:
         # Deduplicate: if (origin, dest) appears twice, we take the max weight.
         edge_to_weight = {}
         for r, c, w in zip(rows_list, cols_list, weights_list):
             if (r, c) not in edge_to_weight or w > edge_to_weight[(r, c)]:
                 edge_to_weight[(r, c)] = w
-        
+
         unique_rows = []
         unique_cols = []
         unique_weights = []
@@ -260,7 +260,7 @@ def create_outbound_adjacency_matrix(
             unique_rows.append(r)
             unique_cols.append(c)
             unique_weights.append(w)
-            
+
         rows_arr = np.array(unique_rows)
         cols_arr = np.array(unique_cols)
         data = np.array(unique_weights, dtype=np.uint16)
@@ -319,7 +319,7 @@ def create_outbound_adjacency_matrix(
             G = nx.from_scipy_sparse_array(matrix, create_using=nx.DiGraph, edge_attribute='weight')
             mapping = {i: code for i, code in enumerate(iata_codes)}
             G = nx.relabel_nodes(G, mapping)
-            
+
             for node in G.nodes():
                 json_file = os.path.join(PUBLIC_DATA_DIR, "airport_data", f"{node}.json")
                 if os.path.exists(json_file):
@@ -337,12 +337,12 @@ def create_outbound_adjacency_matrix(
                                     G.nodes[node][str_key.replace('-', '_')] = str(data[str_key])
                     except (json.JSONDecodeError, OSError):
                         pass
-            
+
             base_name = "global-air-cargo-network" if is_cargo else "global-air-pax-network"
             output_graphml = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.graphml")
             nx.write_graphml(G, output_graphml)
             if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
-            
+
             output_gexf = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.gexf")
             nx.write_gexf(G, output_gexf)
             if verbose: print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
@@ -350,7 +350,7 @@ def create_outbound_adjacency_matrix(
             output_dot = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.dot")
             nx.drawing.nx_pydot.write_dot(G, output_dot)
             if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
-            
+
         except ImportError as e:
             warnings.warn(f"Could not export network formats: {e}", UserWarning)
 

@@ -66,6 +66,7 @@ requires-python = ">=3.10"
 # This step is documented in the README.
 # ---------------------------------------------------------------------------
 dependencies = [
+    "click>=8.0",
     # HTTP + HTML parsing
     "requests>=2.28",
     "beautifulsoup4>=4.12",
@@ -166,8 +167,25 @@ exclude_lines = [
 [tool.ruff]
 line-length = 88
 target-version = "py310"
+exclude = [
+    ".git",
+    ".github",
+    ".pytest_cache",
+    ".venv",
+    "venv",
+    "scratch",
+]
+
+[tool.ruff.lint]
 select = ["E", "F", "W", "I"]   # pycodestyle + pyflakes + isort
-ignore = ["E501"]               # handled by formatter
+ignore = [
+    "E501",  # handled by formatter
+    "E701",  # multiple statements on one line (colon)
+    "E741",  # ambiguous variable name
+    "F841",  # local variable assigned to but never used
+    "W291",  # trailing whitespace
+    "W293",  # blank line contains whitespace
+]
 
 # ---------------------------------------------------------------------------
 # Black (formatter)
@@ -175,3 +193,42 @@ ignore = ["E501"]               # handled by formatter
 [tool.black]
 line-length    = 88
 target-version = ["py310", "py311", "py312"]
+
+# ---------------------------------------------------------------------------
+# Hatch Environments Configuration
+# ---------------------------------------------------------------------------
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "responses>=0.23",
+    "black>=23.0",
+    "ruff>=0.1",
+    "mypy>=1.5",
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+lint = [
+    "ruff check {args:.}",
+    "black --check {args:.}",
+]
+typecheck = "mypy {args:src}"
+format = [
+    "black {args:.}",
+    "ruff check --fix {args:.}",
+]
+
+# ---------------------------------------------------------------------------
+# Mypy (type checker)
+# ---------------------------------------------------------------------------
+[tool.mypy]
+ignore_missing_imports = true
+disable_error_code = [
+    "assignment",
+    "union-attr",
+    "var-annotated",
+    "arg-type",
+    "index",
+]
+

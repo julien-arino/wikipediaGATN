@@ -4,23 +4,21 @@ Tests for :mod:`wikipediaGATN.wikipedia_network_level`.
 
 import csv
 import json
-import os
-import re
-from unittest.mock import patch, call
+from unittest.mock import call, patch
 
 import pytest
 
 from wikipediaGATN.wikipedia_network_level import (
-    _level_pattern,
     _find_max_level,
+    _level_pattern,
     _read_processed_urls,
-    clean_output_directory,
-    get_connections_level_N,
     check_processed_list,
-    iterate_search_until_distance_N,
-    iterate_search_until_empty,
+    clean_output_directory,
     continue_existing_search_one_step,
     continue_existing_search_until_empty,
+    get_connections_level_N,
+    iterate_search_until_distance_N,
+    iterate_search_until_empty,
 )
 
 # ---------------------------------------------------------------------------

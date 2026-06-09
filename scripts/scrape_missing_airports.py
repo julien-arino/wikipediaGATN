@@ -2,22 +2,23 @@
 Orchestrates the scraping of airports that were listed as destinations but were missing from the offline OurAirports database.
 """
 
-import os
 import csv
 import json
+import os
 import shutil
-import urllib.parse
 import time
+import urllib.parse
 from collections import deque
 
-from wikipediaGATN.paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 from wikipediaGATN.airport_level_functions import (
-    fetch_wikipedia_airport_info,
     build_url_to_codes_map,
-    format_destinations_list,
+    fetch_wikipedia_airport_info,
     format_airport_json,
-    infer_missing_geographic_data
+    format_destinations_list,
+    infer_missing_geographic_data,
 )
+from wikipediaGATN.paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+
 
 def scrape_missing_airports():
     input_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports_active.csv")
@@ -166,7 +167,7 @@ def scrape_missing_airports():
         
             if level == 0:
                 if not has_valid_dests and not has_valid_cargo_dests and not has_cargo_airlines:
-                    print(f"  -> Skipping: No valid destinations or cargo operations.")
+                    print("  -> Skipping: No valid destinations or cargo operations.")
                     continue
                 
             # Try to infer geographics

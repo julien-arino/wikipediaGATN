@@ -2,13 +2,14 @@
 Adjusts the BFS sweep distance levels for missing airports that were just resolved, assigning them the correct level relative to their parent seeds.
 """
 
-import os
-import json
-import urllib.parse
 import csv
+import json
+import os
+import urllib.parse
 from collections import deque
 
 from wikipediaGATN.paths import TEMP_RESULTS_DIR
+
 
 def run_relevel():
     input_csv = os.path.join(TEMP_RESULTS_DIR, "missing_from_ourairports_active.csv")

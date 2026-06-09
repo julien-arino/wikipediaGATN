@@ -33,12 +33,12 @@ import re
 import time
 import warnings
 
-from .paths import TEMP_RESULTS_DIR
 from .airport_level_functions import (
     fetch_wikipedia_airport_info,
     fetch_wikipedia_airport_link,
     save_airport_info,
 )
+from .paths import TEMP_RESULTS_DIR
 
 __all__ = [
     "clean_output_directory",

@@ -2,9 +2,9 @@
 Utility script that recalculates the number_airlines, outdegree, number_airlines_cargo, and outdegree_cargo properties for all public JSON files.
 """
 
-import os
-import json
 import glob
+import json
+import os
 import sys
 
 # Ensure we can import wikipediaGATN

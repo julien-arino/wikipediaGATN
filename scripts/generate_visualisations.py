@@ -6,9 +6,10 @@ for both the Passenger and Cargo networks, saving them as HTML
 files in the public data directory.
 """
 
-import subprocess
 import os
+import subprocess
 import sys
+
 
 def run_visualisation():
     print("Generating interactive network visualisations...")

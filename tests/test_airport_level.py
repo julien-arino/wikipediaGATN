@@ -1,14 +1,9 @@
-import pytest
 import unittest.mock as mock
-import warnings
 
-# This must be here since other tests expect requests.exceptions.RequestException and other things to not be mocked initially. We mock it manually only for this file.
-try:
-    import requests
-except ImportError:
-    pass
+import pytest
 
 import wikipediaGATN.airport_level_functions as wal
+
 
 @mock.patch("wikipediaGATN.airport_level_functions._SESSION.get")
 def test_fetch_wikipedia_airport_link_url(mock_get):

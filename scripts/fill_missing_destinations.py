@@ -2,11 +2,13 @@
 Fills missing IATA/ICAO/GPS codes for destinations in the temporary directory by matching their Wikipedia URLs against the global URL map.
 """
 
-import os
 import json
+import os
 import urllib.parse
-from wikipediaGATN.paths import TEMP_RESULTS_DIR
+
 from wikipediaGATN.airport_level_functions import build_url_to_codes_map
+from wikipediaGATN.paths import TEMP_RESULTS_DIR
+
 
 def fill_destinations():
     print("Building global URL map...")

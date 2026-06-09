@@ -82,10 +82,10 @@ def create_outbound_connections_list(
         origin_iata = data.get("iata")
         if not origin_iata or origin_iata == "iata code not found":
             origin_iata = data.get("icao")
-        
+
         if not origin_iata or origin_iata == "icao code not found":
             origin_iata = data.get("gps")
-            
+
         if not origin_iata or origin_iata == "gps code not found":
             origin_iata = fname.replace(".json", "")
 
@@ -96,7 +96,7 @@ def create_outbound_connections_list(
 
         destinations = data.get("destinations", [])
         destinations_cargo = data.get("destinations_cargo", [])
-        
+
         outlinks_weighted = Counter()
         outlinks_cargo_weighted = Counter()
 
@@ -119,7 +119,7 @@ def create_outbound_connections_list(
                     airline_count = 1 # Fallback for old format
                 else:
                     continue
-                    
+
                 target_code = None
                 if dest_iata and dest_iata != "iata code not found":
                     target_code = dest_iata
@@ -129,7 +129,7 @@ def create_outbound_connections_list(
                     target_code = dest_gps
                 elif dest_url:
                     unmapped_destinations[dest_url] += 1
-                
+
                 if target_code:
                     # In case the same destination appears multiple times (rare but possible),
                     # we take the maximum airline count or sum them?

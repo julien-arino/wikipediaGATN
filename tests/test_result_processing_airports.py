@@ -1,10 +1,11 @@
+import csv
 import json
 import os
-import csv
+
 import pytest
-import warnings
-from pathlib import Path
+
 from wikipediaGATN.result_processing_airports import export_all_airport_data
+
 
 @pytest.fixture()
 def data_dirs(tmp_path, monkeypatch):

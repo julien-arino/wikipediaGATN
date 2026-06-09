@@ -40,11 +40,13 @@ REPO_ROOT:  Path = _THIS_FILE.parent.parent.parent  # …/src/wikipediaGATN → 
 # ---------------------------------------------------------------------------
 _env_override = os.environ.get("WIKIPEDIAGATN_DATA_DIR")
 
-DATA_DIR: Path = (
-    Path(_env_override).resolve()
-    if _env_override
-    else REPO_ROOT / "data"
-)
+DATA_DIR: Path
+if _env_override:
+    DATA_DIR = Path(_env_override).resolve()
+elif (REPO_ROOT / "data").exists():
+    DATA_DIR = REPO_ROOT / "data"
+else:
+    DATA_DIR = Path.cwd() / "data"
 
 # ---------------------------------------------------------------------------
 # Subdirectories

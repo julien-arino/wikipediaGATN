@@ -13,4 +13,6 @@ if __name__ == "__main__":
     # Start clean
     clean_output_directory(verbose=True)
     # Find all airports within a distance of 2 from YWG
-    iterate_search_until_distance_N(seed_iata=test_IATA, dist=2, delay=0.33, verbose=True)
+    iterate_search_until_distance_N(
+        seed_iata=test_IATA, dist=2, delay=0.33, verbose=True
+    )

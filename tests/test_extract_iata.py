@@ -32,6 +32,7 @@ _REQUESTS_GET = "wikipediaGATN.extract_iata_from_wikipedia.requests.get"
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def _make_response(html_bytes: bytes) -> Mock:
     """Return a mock response that returns *html_bytes* and does not raise."""
     r = Mock()
@@ -53,6 +54,7 @@ def _write_unmapped_csv(path, rows):
 # ---------------------------------------------------------------------------
 # _extract_iata_from_wikipedia_page
 # ---------------------------------------------------------------------------
+
 
 class TestExtractIataFromWikipediaPage:
 
@@ -100,7 +102,9 @@ class TestExtractIataFromWikipediaPage:
         r = Mock()
         r.raise_for_status.side_effect = requests.exceptions.HTTPError("404")
         mock_get.return_value = r
-        result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/missing")
+        result = _extract_iata_from_wikipedia_page(
+            "https://en.wikipedia.org/wiki/missing"
+        )
         assert result["iata"] is None
         assert result["error"] is not None
 
@@ -120,9 +124,7 @@ class TestExtractIataFromWikipediaPage:
     @patch(_REQUESTS_GET)
     def test_four_letter_token_not_accepted_as_iata(self, mock_get):
         """IATA codes must be exactly 3 letters — 4-letter tokens are rejected."""
-        mock_get.return_value = _make_response(
-            b"<p>(IATA: LONG)</p>"
-        )
+        mock_get.return_value = _make_response(b"<p>(IATA: LONG)</p>")
         result = _extract_iata_from_wikipedia_page("https://en.wikipedia.org/wiki/A")
         assert result["iata"] != "LONG"
 
@@ -155,6 +157,7 @@ class TestExtractIataFromWikipediaPage:
 # extract_iata_from_unmapped_destinations
 # ---------------------------------------------------------------------------
 
+
 class TestExtractIataFromUnmappedDestinations:
 
     def test_raises_when_csv_missing(self):
@@ -171,25 +174,30 @@ class TestExtractIataFromUnmappedDestinations:
         result = extract_iata_from_unmapped_destinations(
             csv_path=str(csv_path), delay=0.0, verbose=False
         )
-        assert result["total"]      == 0
+        assert result["total"] == 0
         assert result["successful"] == 0
-        assert result["skipped"]    == 0
-        assert result["failed"]     == 0
+        assert result["skipped"] == 0
+        assert result["failed"] == 0
 
     def test_existing_iata_counted_as_skipped(self, tmp_path):
         """A row that already has an IATA code is counted as skipped, not fetched."""
         csv_path = tmp_path / "unmapped.csv"
-        _write_unmapped_csv(csv_path, [{
-            "url":    "https://en.wikipedia.org/wiki/Toronto",
-            "count":  "10",
-            "iata":   "YYZ",
-            "name":   "Toronto Pearson",
-            "source": "manual",
-        }])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://en.wikipedia.org/wiki/Toronto",
+                    "count": "10",
+                    "iata": "YYZ",
+                    "name": "Toronto Pearson",
+                    "source": "manual",
+                }
+            ],
+        )
         result = extract_iata_from_unmapped_destinations(
             csv_path=str(csv_path), delay=0.0, verbose=False
         )
-        assert result["total"]   == 1
+        assert result["total"] == 1
         assert result["skipped"] == 1
         assert result["successful"] == 0
 
@@ -200,36 +208,46 @@ class TestExtractIataFromUnmappedDestinations:
             b"<p>Airport (IATA: YYZ, ICAO: CYYZ)</p>"
         )
         csv_path = tmp_path / "unmapped.csv"
-        _write_unmapped_csv(csv_path, [{
-            "url":    "https://en.wikipedia.org/wiki/Toronto_Pearson",
-            "count":  "5",
-            "iata":   "",
-            "name":   "",
-            "source": "to_be_scraped",
-        }])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://en.wikipedia.org/wiki/Toronto_Pearson",
+                    "count": "5",
+                    "iata": "",
+                    "name": "",
+                    "source": "to_be_scraped",
+                }
+            ],
+        )
         result = extract_iata_from_unmapped_destinations(
             csv_path=str(csv_path), delay=0.0, verbose=False
         )
-        assert result["total"]      == 1
+        assert result["total"] == 1
         assert result["successful"] == 1
-        assert result["skipped"]    == 0
+        assert result["skipped"] == 0
 
     @patch(_REQUESTS_GET)
     def test_failed_extraction_increments_failed(self, mock_get, tmp_path):
         """A row without IATA where the page has no code increments ``failed``."""
         mock_get.return_value = _make_response(b"<p>No code here.</p>")
         csv_path = tmp_path / "unmapped.csv"
-        _write_unmapped_csv(csv_path, [{
-            "url":    "https://en.wikipedia.org/wiki/SomeOtherPage",
-            "count":  "1",
-            "iata":   "",
-            "name":   "",
-            "source": "to_be_scraped",
-        }])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://en.wikipedia.org/wiki/SomeOtherPage",
+                    "count": "1",
+                    "iata": "",
+                    "name": "",
+                    "source": "to_be_scraped",
+                }
+            ],
+        )
         result = extract_iata_from_unmapped_destinations(
             csv_path=str(csv_path), delay=0.0, verbose=False
         )
-        assert result["total"]  == 1
+        assert result["total"] == 1
         assert result["failed"] == 1
 
     def test_return_dict_has_expected_keys(self, tmp_path):
@@ -246,6 +264,7 @@ class TestExtractIataFromUnmappedDestinations:
 # ---------------------------------------------------------------------------
 # create_manual_mapping_from_scraped_data
 # ---------------------------------------------------------------------------
+
 
 class TestCreateManualMappingFromScrapedData:
 
@@ -270,15 +289,20 @@ class TestCreateManualMappingFromScrapedData:
 
     def test_high_confidence_entry_included(self, tmp_path):
         """Entry with conf >= threshold is written to the output file."""
-        csv_path   = tmp_path / "unmapped.csv"
+        csv_path = tmp_path / "unmapped.csv"
         output_csv = tmp_path / "mapping.csv"
-        _write_unmapped_csv(csv_path, [{
-            "url":    "https://example.com/1",
-            "count":  "1",
-            "iata":   "YYZ",
-            "name":   "Toronto Pearson",
-            "source": "scraped (conf: 0.95)",
-        }])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://example.com/1",
+                    "count": "1",
+                    "iata": "YYZ",
+                    "name": "Toronto Pearson",
+                    "source": "scraped (conf: 0.95)",
+                }
+            ],
+        )
         count = create_manual_mapping_from_scraped_data(
             unmapped_csv=str(csv_path),
             output_csv=str(output_csv),
@@ -293,14 +317,27 @@ class TestCreateManualMappingFromScrapedData:
 
     def test_low_confidence_entry_excluded(self, tmp_path):
         """Entry with conf < threshold is NOT written."""
-        csv_path   = tmp_path / "unmapped.csv"
+        csv_path = tmp_path / "unmapped.csv"
         output_csv = tmp_path / "mapping.csv"
-        _write_unmapped_csv(csv_path, [
-            {"url": "https://example.com/1", "count": "1", "iata": "YYZ",
-             "name": "Toronto", "source": "scraped (conf: 0.95)"},   # pass
-            {"url": "https://example.com/2", "count": "1", "iata": "ABC",
-             "name": "Unknown", "source": "scraped (conf: 0.50)"},   # fail
-        ])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://example.com/1",
+                    "count": "1",
+                    "iata": "YYZ",
+                    "name": "Toronto",
+                    "source": "scraped (conf: 0.95)",
+                },  # pass
+                {
+                    "url": "https://example.com/2",
+                    "count": "1",
+                    "iata": "ABC",
+                    "name": "Unknown",
+                    "source": "scraped (conf: 0.50)",
+                },  # fail
+            ],
+        )
         count = create_manual_mapping_from_scraped_data(
             unmapped_csv=str(csv_path),
             output_csv=str(output_csv),
@@ -311,15 +348,20 @@ class TestCreateManualMappingFromScrapedData:
 
     def test_empty_iata_skipped(self, tmp_path):
         """Rows with an empty IATA value are not written."""
-        csv_path   = tmp_path / "unmapped.csv"
+        csv_path = tmp_path / "unmapped.csv"
         output_csv = tmp_path / "mapping.csv"
-        _write_unmapped_csv(csv_path, [{
-            "url":    "https://example.com/1",
-            "count":  "1",
-            "iata":   "",
-            "name":   "Unknown",
-            "source": "failed",
-        }])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://example.com/1",
+                    "count": "1",
+                    "iata": "",
+                    "name": "Unknown",
+                    "source": "failed",
+                }
+            ],
+        )
         count = create_manual_mapping_from_scraped_data(
             unmapped_csv=str(csv_path),
             output_csv=str(output_csv),
@@ -329,14 +371,21 @@ class TestCreateManualMappingFromScrapedData:
 
     def test_multiple_valid_entries(self, tmp_path):
         """All entries above threshold are written."""
-        csv_path   = tmp_path / "unmapped.csv"
+        csv_path = tmp_path / "unmapped.csv"
         output_csv = tmp_path / "mapping.csv"
-        _write_unmapped_csv(csv_path, [
-            {"url": f"https://example.com/{i}", "count": str(i),
-             "iata": code, "name": f"Airport {i}",
-             "source": "scraped (conf: 0.95)"}
-            for i, code in enumerate(["YYZ", "YUL", "YVR"], 1)
-        ])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": f"https://example.com/{i}",
+                    "count": str(i),
+                    "iata": code,
+                    "name": f"Airport {i}",
+                    "source": "scraped (conf: 0.95)",
+                }
+                for i, code in enumerate(["YYZ", "YUL", "YVR"], 1)
+            ],
+        )
         count = create_manual_mapping_from_scraped_data(
             unmapped_csv=str(csv_path),
             output_csv=str(output_csv),
@@ -346,12 +395,20 @@ class TestCreateManualMappingFromScrapedData:
 
     def test_output_csv_fieldnames(self, tmp_path):
         """Output CSV has exactly the expected column headers."""
-        csv_path   = tmp_path / "unmapped.csv"
+        csv_path = tmp_path / "unmapped.csv"
         output_csv = tmp_path / "mapping.csv"
-        _write_unmapped_csv(csv_path, [{
-            "url": "https://example.com/1", "count": "1",
-            "iata": "YYZ", "name": "Toronto", "source": "scraped (conf: 0.95)",
-        }])
+        _write_unmapped_csv(
+            csv_path,
+            [
+                {
+                    "url": "https://example.com/1",
+                    "count": "1",
+                    "iata": "YYZ",
+                    "name": "Toronto",
+                    "source": "scraped (conf: 0.95)",
+                }
+            ],
+        )
         create_manual_mapping_from_scraped_data(
             unmapped_csv=str(csv_path),
             output_csv=str(output_csv),

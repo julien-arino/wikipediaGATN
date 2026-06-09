@@ -12,6 +12,7 @@ from wikipediaGATN.airport_level_functions import fetch_wikipedia_airport_html
 # Correct patch target for the shared session in the module
 _SESSION_GET = "wikipediaGATN.airport_level_functions._SESSION.get"
 
+
 class TestFetchWikipediaAirportHtml:
     """Test suite for fetch_wikipedia_airport_html function."""
 
@@ -20,9 +21,7 @@ class TestFetchWikipediaAirportHtml:
         """Verify successful HTML retrieval from Wikipedia API."""
         mock_response = Mock()
         mock_response.json.return_value = {
-            "parse": {
-                "text": "<html><body>Airport content</body></html>"
-            }
+            "parse": {"text": "<html><body>Airport content</body></html>"}
         }
         mock_response.raise_for_status = Mock()
         mock_get.return_value = mock_response
@@ -34,10 +33,13 @@ class TestFetchWikipediaAirportHtml:
         mock_get.assert_called_once()
         # Verify params
         args, kwargs = mock_get.call_args
-        params = kwargs.get('params', {})
-        assert params.get('page') == "Winnipeg James Armstrong Richardson International Airport"
-        assert params.get('action') == "parse"
-        assert params.get('prop') == "text"
+        params = kwargs.get("params", {})
+        assert (
+            params.get("page")
+            == "Winnipeg James Armstrong Richardson International Airport"
+        )
+        assert params.get("action") == "parse"
+        assert params.get("prop") == "text"
 
     @patch(_SESSION_GET)
     def test_get_html_verbose(self, mock_get, capsys):

@@ -3,9 +3,9 @@ Network-level BFS crawling of airport Wikipedia pages.
 
 This module drives the breadth-first expansion of the airport network.
 Starting from a seed IATA code, it iteratively fetches each airport's
-destinations (both passenger and cargo), saves the results as 
-``<CODE>.<level>.json`` files in ``TEMP_RESULTS_DIR/airports_rooted_sweep``, 
-and tracks progress in ``processed_locations.csv`` so that interrupted runs 
+destinations (both passenger and cargo), saves the results as
+``<CODE>.<level>.json`` files in ``TEMP_RESULTS_DIR/airports_rooted_sweep``,
+and tracks progress in ``processed_locations.csv`` so that interrupted runs
 can be resumed.
 
 Typical usage::
@@ -60,14 +60,18 @@ _FNAME_RE = re.compile(r"^(?:[A-Z0-9\-]{3,10}|wiki_[A-Za-z0-9_]+|unknown)\.\d+\.
 
 def _level_pattern(level: int) -> re.Pattern:
     """Return a compiled regex matching airport JSON files at *level*."""
-    return re.compile(r"^(?:[A-Z0-9\-]{3,10}|wiki_[A-Za-z0-9_]+|unknown)\." + re.escape(str(level)) + r"\.json$")
+    return re.compile(
+        r"^(?:[A-Z0-9\-]{3,10}|wiki_[A-Za-z0-9_]+|unknown)\."
+        + re.escape(str(level))
+        + r"\.json$"
+    )
 
 
 def _find_max_level(output_dir: str) -> int:
     """
     Return the highest BFS level present in *output_dir*, or ``-1`` if none.
     """
-    pattern  = re.compile(r"^[A-Z0-9\-]{3,10}\.(\d+)\.json$")
+    pattern = re.compile(r"^[A-Z0-9\-]{3,10}\.(\d+)\.json$")
     max_level = -1
     for fname in os.listdir(output_dir):
         m = pattern.match(fname)
@@ -99,6 +103,7 @@ def _read_processed_urls(output_dir: str) -> set:
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
+
 
 def clean_output_directory(levels=None, verbose: bool = False) -> int:
     """
@@ -134,7 +139,9 @@ def clean_output_directory(levels=None, verbose: bool = False) -> int:
                     os.remove(os.path.join(output_dir, fname))
                     removed += 1
                 except OSError as exc:
-                    warnings.warn(f"Could not remove {fname}: {exc}", UserWarning, stacklevel=2)
+                    warnings.warn(
+                        f"Could not remove {fname}: {exc}", UserWarning, stacklevel=2
+                    )
         else:
             for lvl in levels:
                 if fname.endswith(f".{lvl}.json") and _FNAME_RE.match(fname):
@@ -142,7 +149,11 @@ def clean_output_directory(levels=None, verbose: bool = False) -> int:
                         os.remove(os.path.join(output_dir, fname))
                         removed += 1
                     except OSError as exc:
-                        warnings.warn(f"Could not remove {fname}: {exc}", UserWarning, stacklevel=2)
+                        warnings.warn(
+                            f"Could not remove {fname}: {exc}",
+                            UserWarning,
+                            stacklevel=2,
+                        )
                     break
 
     csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
@@ -152,8 +163,11 @@ def clean_output_directory(levels=None, verbose: bool = False) -> int:
             if verbose:
                 print("Removed processed_locations.csv.")
         except OSError as exc:
-            warnings.warn(f"Could not remove processed_locations.csv: {exc}",
-                          UserWarning, stacklevel=2)
+            warnings.warn(
+                f"Could not remove processed_locations.csv: {exc}",
+                UserWarning,
+                stacklevel=2,
+            )
 
     if verbose:
         print(f"Removed {removed} JSON file(s) from {output_dir}")
@@ -169,7 +183,7 @@ def get_connections_level_N(
     Expand the airport network by one BFS level.
 
     For every airport file at level *from_length* (``<CODE>.<from_length>.json``),
-    fetch each listed destination (both passenger and cargo) that has not yet 
+    fetch each listed destination (both passenger and cargo) that has not yet
     been processed and save its data as ``<CODE>.<from_length+1>.json``.
 
     Parameters
@@ -189,7 +203,7 @@ def get_connections_level_N(
     output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     os.makedirs(output_dir, exist_ok=True)
 
-    pat        = _level_pattern(from_length)
+    pat = _level_pattern(from_length)
     json_files = sorted(f for f in os.listdir(output_dir) if pat.match(f))
 
     processed_urls = _read_processed_urls(output_dir)
@@ -204,7 +218,7 @@ def get_connections_level_N(
             warnings.warn(f"Skipping {json_file}: {exc}", UserWarning, stacklevel=2)
             continue
 
-        origin_iata  = airport_info.get('iata', 'UNKNOWN')
+        origin_iata = airport_info.get("iata", "UNKNOWN")
         destinations = airport_info.get("destinations", [])
 
         for dest_entry in destinations:
@@ -212,40 +226,60 @@ def get_connections_level_N(
             if not isinstance(dest_entry, (list, tuple)) or len(dest_entry) < 2:
                 warnings.warn(
                     f"Malformed destination entry in {json_file}: {dest_entry!r}",
-                    UserWarning, stacklevel=2,
+                    UserWarning,
+                    stacklevel=2,
                 )
                 continue
             dest_name, dest_url = dest_entry[0], dest_entry[1]
 
             if dest_url in processed_urls:
                 if verbose:
-                    print(f"  {origin_iata} -> {dest_name}: already processed, skipping")
+                    print(
+                        f"  {origin_iata} -> {dest_name}: already processed, skipping"
+                    )
                 continue
 
             if verbose:
                 print(f"  {origin_iata} -> {dest_name}: fetching...")
 
             dest_info = fetch_wikipedia_airport_info(dest_url, verbose=verbose)
-            dest_iata = dest_info.get('iata') or dest_info.get('icao') or dest_info.get('gps')
+            dest_iata = (
+                dest_info.get("iata") or dest_info.get("icao") or dest_info.get("gps")
+            )
 
             if not dest_iata:
                 if verbose:
-                    print(f"  {dest_name} has no IATA/ICAO/GPS code (likely not an airport), skipping.")
+                    print(
+                        f"  {dest_name} has no IATA/ICAO/GPS code (likely not an airport), skipping."
+                    )
                 processed_urls.add(dest_url)
                 continue
 
             # Check if ANY of the available codes was already processed at any level
             existing_files = []
-            for c in [dest_info.get('iata'), dest_info.get('icao'), dest_info.get('gps')]:
+            for c in [
+                dest_info.get("iata"),
+                dest_info.get("icao"),
+                dest_info.get("gps"),
+            ]:
                 if c:
-                    existing_files.extend([f for f in os.listdir(output_dir) if f.startswith(f"{c}.")])
+                    existing_files.extend(
+                        [f for f in os.listdir(output_dir) if f.startswith(f"{c}.")]
+                    )
 
             if not existing_files:
-                save_airport_info(dest_info, level=from_length + 1, verbose=verbose, iata_from=origin_iata)
+                save_airport_info(
+                    dest_info,
+                    level=from_length + 1,
+                    verbose=verbose,
+                    iata_from=origin_iata,
+                )
                 written += 1
             else:
                 if verbose:
-                    print(f"  {dest_iata} already processed at a different level, skipping save.")
+                    print(
+                        f"  {dest_iata} already processed at a different level, skipping save."
+                    )
 
             processed_urls.add(dest_url)
             time.sleep(delay)
@@ -268,8 +302,8 @@ def check_processed_list(verbose: bool = False) -> None:
     verbose : bool, optional
         Print summary counts.  Default: False.
     """
-    output_dir      = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
-    csv_path        = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
+    output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
+    csv_path = os.path.join(TEMP_RESULTS_DIR, "processed_locations.csv")
     failed_csv_path = os.path.join(TEMP_RESULTS_DIR, "failed_lookups.csv")
 
     if not os.path.exists(csv_path):
@@ -281,7 +315,11 @@ def check_processed_list(verbose: bool = False) -> None:
     entries: list = []
     with open(csv_path, "r", encoding="utf-8", newline="") as fh:
         reader = csv.DictReader(fh)
-        if reader.fieldnames not in (["iata", "url"], ["iata", "url", "iata_from"], ["iata_icao_gps", "url", "iata_icao_gps_from"]):
+        if reader.fieldnames not in (
+            ["iata", "url"],
+            ["iata", "url", "iata_from"],
+            ["iata_icao_gps", "url", "iata_icao_gps_from"],
+        ):
             if verbose:
                 print("processed_locations.csv is empty or has unexpected headers.")
             return
@@ -291,7 +329,11 @@ def check_processed_list(verbose: bool = False) -> None:
             entries.append((col1, row.get("url", "").strip(), col3))
 
     failed_entries = sorted(
-        [(code, url, code_from) for code, url, code_from in entries if code in ("None", "", "unknown")],
+        [
+            (code, url, code_from)
+            for code, url, code_from in entries
+            if code in ("None", "", "unknown")
+        ],
         key=lambda x: x[1],
     )
 
@@ -322,7 +364,9 @@ def check_processed_list(verbose: bool = False) -> None:
         writer.writerows(cleaned_entries)
 
     if verbose:
-        print(f"Cleaned processed_locations.csv: {len(cleaned_entries)} unique entries.")
+        print(
+            f"Cleaned processed_locations.csv: {len(cleaned_entries)} unique entries."
+        )
 
 
 def iterate_search_until_distance_N(
@@ -348,16 +392,22 @@ def iterate_search_until_distance_N(
     """
     link = fetch_wikipedia_airport_link(seed_iata, verbose=verbose)
     if not link:
-        warnings.warn(f"Could not find Wikipedia page for {seed_iata!r}.",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            f"Could not find Wikipedia page for {seed_iata!r}.",
+            UserWarning,
+            stacklevel=2,
+        )
         return
 
     airport_details = fetch_wikipedia_airport_info(link, verbose=verbose)
     save_airport_info(airport_details, level=0, verbose=verbose)
 
     if not airport_details.get("destinations"):
-        warnings.warn(f"No destinations found for {seed_iata!r}. Stopping after seed.",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            f"No destinations found for {seed_iata!r}. Stopping after seed.",
+            UserWarning,
+            stacklevel=2,
+        )
         return
 
     for k in range(dist):
@@ -390,16 +440,22 @@ def iterate_search_until_empty(
     """
     link = fetch_wikipedia_airport_link(seed_iata, verbose=verbose)
     if not link:
-        warnings.warn(f"Could not find Wikipedia page for {seed_iata!r}.",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            f"Could not find Wikipedia page for {seed_iata!r}.",
+            UserWarning,
+            stacklevel=2,
+        )
         return
 
     airport_details = fetch_wikipedia_airport_info(link, verbose=verbose)
     save_airport_info(airport_details, level=0, verbose=verbose)
 
     if not airport_details.get("destinations"):
-        warnings.warn(f"No destinations found for {seed_iata!r}. Stopping after seed.",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            f"No destinations found for {seed_iata!r}. Stopping after seed.",
+            UserWarning,
+            stacklevel=2,
+        )
         return
 
     output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
@@ -407,10 +463,10 @@ def iterate_search_until_empty(
     while True:
         if verbose:
             print(f"\nExpanding connections at distance {k + 1}...")
-        pat    = _level_pattern(k + 1)
+        pat = _level_pattern(k + 1)
         before = {f for f in os.listdir(output_dir) if pat.match(f)}
         get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
-        after    = {f for f in os.listdir(output_dir) if pat.match(f)}
+        after = {f for f in os.listdir(output_dir) if pat.match(f)}
         new_files = after - before
         if not new_files:
             if verbose:
@@ -419,7 +475,9 @@ def iterate_search_until_empty(
         k += 1
 
 
-def continue_existing_search_one_step(delay: float = 1.0, verbose: bool = False) -> None:
+def continue_existing_search_one_step(
+    delay: float = 1.0, verbose: bool = False
+) -> None:
     """
     Resume a partially-complete crawl by processing one additional BFS step.
 
@@ -436,14 +494,18 @@ def continue_existing_search_one_step(delay: float = 1.0, verbose: bool = False)
     """
     output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     if not os.path.isdir(output_dir):
-        warnings.warn(f"TEMP_RESULTS_DIR does not exist: {output_dir}",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            f"TEMP_RESULTS_DIR does not exist: {output_dir}", UserWarning, stacklevel=2
+        )
         return
 
     max_level = _find_max_level(output_dir)
     if max_level == -1:
-        warnings.warn("No valid airport connection files found in TEMP_RESULTS_DIR.",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            "No valid airport connection files found in TEMP_RESULTS_DIR.",
+            UserWarning,
+            stacklevel=2,
+        )
         return
 
     # Guard against max_level == 0, which would pass from_length=-1.
@@ -454,7 +516,9 @@ def continue_existing_search_one_step(delay: float = 1.0, verbose: bool = False)
     get_connections_level_N(from_length=from_length, delay=delay, verbose=verbose)
 
 
-def continue_existing_search_until_empty(delay: float = 1.0, verbose: bool = False) -> None:
+def continue_existing_search_until_empty(
+    delay: float = 1.0, verbose: bool = False
+) -> None:
     """
     Resume a partially-complete crawl and run to completion.
 
@@ -475,24 +539,28 @@ def continue_existing_search_until_empty(delay: float = 1.0, verbose: bool = Fal
     """
     output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     if not os.path.isdir(output_dir):
-        warnings.warn(f"TEMP_RESULTS_DIR does not exist: {output_dir}",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            f"TEMP_RESULTS_DIR does not exist: {output_dir}", UserWarning, stacklevel=2
+        )
         return
 
     max_level = _find_max_level(output_dir)
     if max_level == -1:
-        warnings.warn("No valid airport connection files found in TEMP_RESULTS_DIR.",
-                      UserWarning, stacklevel=2)
+        warnings.warn(
+            "No valid airport connection files found in TEMP_RESULTS_DIR.",
+            UserWarning,
+            stacklevel=2,
+        )
         return
 
     k = max_level
     while True:
         if verbose:
             print(f"Continuing search from level {k} to level {k + 1}...")
-        pat       = _level_pattern(k + 1)
-        before    = {f for f in os.listdir(output_dir) if pat.match(f)}
+        pat = _level_pattern(k + 1)
+        before = {f for f in os.listdir(output_dir) if pat.match(f)}
         get_connections_level_N(from_length=k, delay=delay, verbose=verbose)
-        after     = {f for f in os.listdir(output_dir) if pat.match(f)}
+        after = {f for f in os.listdir(output_dir) if pat.match(f)}
         new_files = after - before
         if not new_files:
             if verbose:

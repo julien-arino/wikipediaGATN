@@ -6,9 +6,9 @@ and writes an interactive Plotly HTML graph.
 
 Three layout strategies are supported:
 
-* **Geographic** (default): nodes are placed at their real-world 
+* **Geographic** (default): nodes are placed at their real-world
   longitude/latitude on a flat map.
-* **Globe**: nodes are placed at their real-world longitude/latitude 
+* **Globe**: nodes are placed at their real-world longitude/latitude
   on a 3D globe.
 * **Spring** (fallback): force-directed layout via
   :func:`networkx.spring_layout`.  Slow for large graphs (> 500 nodes) and
@@ -100,8 +100,9 @@ def visualize_graph_plotly(
     G = nx.read_graphml(graphml_path)
 
     if verbose:
-        print(f"Graph: {G.number_of_nodes():,} nodes, "
-              f"{G.number_of_edges():,} edges")
+        print(
+            f"Graph: {G.number_of_nodes():,} nodes, " f"{G.number_of_edges():,} edges"
+        )
 
     # ------------------------------------------------------------------
     # Node layout
@@ -112,8 +113,8 @@ def visualize_graph_plotly(
         pos = {}
         missing_nodes = []
         for node, data in G.nodes(data=True):
-            if 'lon' in data and 'lat' in data:
-                pos[node] = (float(data['lon']), float(data['lat']))
+            if "lon" in data and "lat" in data:
+                pos[node] = (float(data["lon"]), float(data["lat"]))
             else:
                 missing_nodes.append(node)
 
@@ -122,15 +123,18 @@ def visualize_graph_plotly(
             if verbose:
                 print(f"Dropped {len(missing_nodes)} nodes with missing coordinates.")
         if verbose:
-            print(f"Using geographic layout "
-                  f"({len(pos):,}/{G.number_of_nodes() + len(missing_nodes):,} nodes with coords)")
+            print(
+                f"Using geographic layout "
+                f"({len(pos):,}/{G.number_of_nodes() + len(missing_nodes):,} nodes with coords)"
+            )
 
     if pos is None:
         if G.number_of_nodes() > 500:
             warnings.warn(
                 f"Spring layout on {G.number_of_nodes():,} nodes may be very slow. "
                 "Consider using geographic=True or a subgraph.",
-                UserWarning, stacklevel=2,
+                UserWarning,
+                stacklevel=2,
             )
         if verbose:
             print(f"Computing spring layout (seed={seed})…")
@@ -150,14 +154,16 @@ def visualize_graph_plotly(
 
     if layout == "globe":
         edge_trace = go.Scattergeo(
-            lon=edge_x, lat=edge_y,
+            lon=edge_x,
+            lat=edge_y,
             mode="lines",
             line=dict(width=0.4, color="#aaa"),
             hoverinfo="none",
         )
     else:
         edge_trace = go.Scatter(
-            x=edge_x, y=edge_y,
+            x=edge_x,
+            y=edge_y,
             mode="lines",
             line=dict(width=0.4, color="#aaa"),
             hoverinfo="none",
@@ -173,25 +179,29 @@ def visualize_graph_plotly(
 
         # Build rich tooltip
         airport_name = "Unknown Airport"
-        if 'wikipedia_url' in data:
-            airport_name = data['wikipedia_url'].split('/')[-1].replace('_', ' ')
+        if "wikipedia_url" in data:
+            airport_name = data["wikipedia_url"].split("/")[-1].replace("_", " ")
             # Decode URL encoded characters (e.g. %27 -> ')
             import urllib.parse
+
             airport_name = urllib.parse.unquote(airport_name)
-        elif 'city_served' in data:
+        elif "city_served" in data:
             airport_name = f"{data['city_served']} Airport"
 
         text_lines = [f"<b>{node}</b> - {airport_name}"]
 
         location = []
-        if 'city_served' in data: location.append(data['city_served'])
-        if 'admin1_name' in data: location.append(data['admin1_name'])
-        if 'country_name' in data: location.append(data['country_name'])
+        if "city_served" in data:
+            location.append(data["city_served"])
+        if "admin1_name" in data:
+            location.append(data["admin1_name"])
+        if "country_name" in data:
+            location.append(data["country_name"])
         if location:
             text_lines.append(", ".join(location))
 
         stats = [f"Outdegree: {node_degree_val}"]
-        if 'number_airlines' in data:
+        if "number_airlines" in data:
             stats.append(f"Airlines: {int(float(data['number_airlines']))}")
         text_lines.append(" | ".join(stats))
 
@@ -200,7 +210,8 @@ def visualize_graph_plotly(
 
     if layout == "globe":
         node_trace = go.Scattergeo(
-            lon=node_x, lat=node_y,
+            lon=node_x,
+            lat=node_y,
             mode="markers",
             hovertext=node_text,
             hoverinfo="text",
@@ -219,8 +230,9 @@ def visualize_graph_plotly(
         )
     else:
         node_trace = go.Scatter(
-            x=node_x, y=node_y,
-            mode="markers",          # text labels off by default — too cluttered at scale
+            x=node_x,
+            y=node_y,
+            mode="markers",  # text labels off by default — too cluttered at scale
             hovertext=node_text,
             hoverinfo="text",
             marker=dict(
@@ -257,18 +269,38 @@ def visualize_graph_plotly(
             landcolor="rgb(243, 243, 243)",
             countrycolor="rgb(204, 204, 204)",
             showocean=True,
-            oceancolor="rgba(10, 20, 30, 0.1)"
+            oceancolor="rgba(10, 20, 30, 0.1)",
         )
     else:
         fig_layout.xaxis = dict(showgrid=False, zeroline=False, showticklabels=False)
         fig_layout.yaxis = dict(showgrid=False, zeroline=False, showticklabels=False)
 
     if layout == "globe":
-        hl_edge = go.Scattergeo(lon=[], lat=[], mode="lines", line=dict(width=2, color="red"), hoverinfo="none")
-        hl_node = go.Scattergeo(lon=[], lat=[], mode="markers", marker=dict(color="red", size=8), hoverinfo="none")
+        hl_edge = go.Scattergeo(
+            lon=[],
+            lat=[],
+            mode="lines",
+            line=dict(width=2, color="red"),
+            hoverinfo="none",
+        )
+        hl_node = go.Scattergeo(
+            lon=[],
+            lat=[],
+            mode="markers",
+            marker=dict(color="red", size=8),
+            hoverinfo="none",
+        )
     else:
-        hl_edge = go.Scatter(x=[], y=[], mode="lines", line=dict(width=2, color="red"), hoverinfo="none")
-        hl_node = go.Scatter(x=[], y=[], mode="markers", marker=dict(color="red", size=8), hoverinfo="none")
+        hl_edge = go.Scatter(
+            x=[], y=[], mode="lines", line=dict(width=2, color="red"), hoverinfo="none"
+        )
+        hl_node = go.Scatter(
+            x=[],
+            y=[],
+            mode="markers",
+            marker=dict(color="red", size=8),
+            hoverinfo="none",
+        )
 
     fig = go.Figure(
         data=[edge_trace, node_trace, hl_edge, hl_node],
@@ -278,7 +310,6 @@ def visualize_graph_plotly(
     # ------------------------------------------------------------------
     # Save
     # ------------------------------------------------------------------
-
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -340,6 +371,7 @@ def visualize_graph_plotly(
 
     return str(output_path.resolve())
 
+
 def visualise_all_networks(verbose: bool = False):
     """
     Generate visualizations for all generated networks.
@@ -355,6 +387,7 @@ def visualise_all_networks(verbose: bool = False):
     if cargo_graphml.exists():
         for l in layouts:
             visualize_graph_plotly(input_path=cargo_graphml, layout=l, verbose=verbose)
+
 
 if __name__ == "__main__":
     visualise_all_networks(verbose=True)

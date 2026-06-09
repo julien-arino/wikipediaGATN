@@ -25,6 +25,7 @@ from wikipediaGATN.wikipedia_network_level import (
 # Fixtures
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture()
 def tmp_results_dir(tmp_path, monkeypatch):
     """
@@ -35,13 +36,16 @@ def tmp_results_dir(tmp_path, monkeypatch):
     tmp_results.mkdir()
     sweep_dir = tmp_results / "airports_rooted_sweep"
     sweep_dir.mkdir()
-    monkeypatch.setattr("wikipediaGATN.wikipedia_network_level.TEMP_RESULTS_DIR", tmp_results)
+    monkeypatch.setattr(
+        "wikipediaGATN.wikipedia_network_level.TEMP_RESULTS_DIR", tmp_results
+    )
     return sweep_dir
 
 
 # ---------------------------------------------------------------------------
 # _level_pattern
 # ---------------------------------------------------------------------------
+
 
 class TestLevelPattern:
 
@@ -64,6 +68,7 @@ class TestLevelPattern:
 # ---------------------------------------------------------------------------
 # _find_max_level
 # ---------------------------------------------------------------------------
+
 
 class TestFindMaxLevel:
 
@@ -92,6 +97,7 @@ class TestFindMaxLevel:
 # _read_processed_urls
 # ---------------------------------------------------------------------------
 
+
 class TestReadProcessedUrls:
 
     def test_missing_file_returns_empty_set(self, tmp_results_dir):
@@ -102,8 +108,12 @@ class TestReadProcessedUrls:
         with open(csv_path, "w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
             writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
-            writer.writerow(["YWG", "https://en.wikipedia.org/wiki/Winnipeg_Airport", ""])
-            writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""])
+            writer.writerow(
+                ["YWG", "https://en.wikipedia.org/wiki/Winnipeg_Airport", ""]
+            )
+            writer.writerow(
+                ["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""]
+            )
 
         urls = _read_processed_urls(tmp_results_dir.parent)
         assert len(urls) == 2
@@ -123,6 +133,7 @@ class TestReadProcessedUrls:
 # ---------------------------------------------------------------------------
 # clean_output_directory
 # ---------------------------------------------------------------------------
+
 
 class TestCleanOutputDirectory:
 
@@ -150,7 +161,9 @@ class TestCleanOutputDirectory:
 
     def test_handles_nonexistent_directory(self, tmp_path, monkeypatch):
         nonexistent = tmp_path / "not_here"
-        monkeypatch.setattr("wikipediaGATN.wikipedia_network_level.TEMP_RESULTS_DIR", nonexistent)
+        monkeypatch.setattr(
+            "wikipediaGATN.wikipedia_network_level.TEMP_RESULTS_DIR", nonexistent
+        )
         assert clean_output_directory() == 0
 
     def test_warns_on_os_error_during_json_removal(self, tmp_results_dir):
@@ -171,13 +184,16 @@ class TestCleanOutputDirectory:
             # For others, do nothing or original
 
         with patch("os.remove", side_effect=mocked_remove):
-            with pytest.warns(UserWarning, match="Could not remove processed_locations.csv"):
+            with pytest.warns(
+                UserWarning, match="Could not remove processed_locations.csv"
+            ):
                 clean_output_directory()
 
 
 # ---------------------------------------------------------------------------
 # check_processed_list
 # ---------------------------------------------------------------------------
+
 
 class TestCheckProcessedList:
 
@@ -188,7 +204,7 @@ class TestCheckProcessedList:
             writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
             writer.writerow(["YYZ", "url1", ""])
             writer.writerow(["YWG", "url2", ""])
-            writer.writerow(["YWG", "url2", ""]) # duplicate
+            writer.writerow(["YWG", "url2", ""])  # duplicate
             writer.writerow(["AMS", "url3", ""])
 
         check_processed_list()
@@ -247,49 +263,75 @@ class TestCheckProcessedList:
 # get_connections_level_N
 # ---------------------------------------------------------------------------
 
+
 class TestGetConnectionsLevelN:
 
-    def test_processes_files_at_correct_level_and_fetches_destinations(self, tmp_results_dir):
+    def test_processes_files_at_correct_level_and_fetches_destinations(
+        self, tmp_results_dir
+    ):
         # Setup source file at level 0
         origin_data = {
             "iata": "YWG",
-            "destinations": [["Toronto", "https://en.wikipedia.org/wiki/Toronto_Pearson"]]
+            "destinations": [
+                ["Toronto", "https://en.wikipedia.org/wiki/Toronto_Pearson"]
+            ],
         }
         with open(tmp_results_dir / "YWG.0.json", "w", encoding="utf-8") as fh:
             json.dump(origin_data, fh)
 
         # Mock dependencies
-        with patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info") as mock_extract, \
-             patch("wikipediaGATN.wikipedia_network_level.save_airport_info") as mock_save, \
-             patch("time.sleep"):  # skip sleep
+        with (
+            patch(
+                "wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info"
+            ) as mock_extract,
+            patch(
+                "wikipediaGATN.wikipedia_network_level.save_airport_info"
+            ) as mock_save,
+            patch("time.sleep"),
+        ):  # skip sleep
 
             mock_extract.return_value = {"iata": "YYZ", "name": "Toronto Pearson"}
 
             written = get_connections_level_N(from_length=0)
 
             assert written == 1
-            mock_extract.assert_called_once_with("https://en.wikipedia.org/wiki/Toronto_Pearson", verbose=False)
+            mock_extract.assert_called_once_with(
+                "https://en.wikipedia.org/wiki/Toronto_Pearson", verbose=False
+            )
             mock_save.assert_called_once()
             # arg 0 to save_airport_info is dest_info, arg level should be 1
             assert mock_save.call_args[1]["level"] == 1
 
     def test_skips_already_processed_urls(self, tmp_results_dir):
         # Setup processed_locations.csv
-        with open(tmp_results_dir.parent / "processed_locations.csv", "w", newline="", encoding="utf-8") as fh:
+        with open(
+            tmp_results_dir.parent / "processed_locations.csv",
+            "w",
+            newline="",
+            encoding="utf-8",
+        ) as fh:
             writer = csv.writer(fh)
             writer.writerow(["iata_icao_gps", "url", "iata_icao_gps_from"])
-            writer.writerow(["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""])
+            writer.writerow(
+                ["YYZ", "https://en.wikipedia.org/wiki/Toronto_Pearson", ""]
+            )
 
         # Setup source file at level 0
         origin_data = {
             "iata": "YWG",
-            "destinations": [["Toronto", "https://en.wikipedia.org/wiki/Toronto_Pearson"]]
+            "destinations": [
+                ["Toronto", "https://en.wikipedia.org/wiki/Toronto_Pearson"]
+            ],
         }
         with open(tmp_results_dir / "YWG.0.json", "w", encoding="utf-8") as fh:
             json.dump(origin_data, fh)
 
-        with patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info") as mock_extract, \
-             patch("time.sleep"):
+        with (
+            patch(
+                "wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info"
+            ) as mock_extract,
+            patch("time.sleep"),
+        ):
 
             written = get_connections_level_N(from_length=0)
             assert written == 0
@@ -306,7 +348,7 @@ class TestGetConnectionsLevelN:
     def test_handles_malformed_destination_entry(self, tmp_results_dir):
         origin_data = {
             "iata": "YWG",
-            "destinations": ["invalid"] # should be list of [name, url]
+            "destinations": ["invalid"],  # should be list of [name, url]
         }
         with open(tmp_results_dir / "YWG.0.json", "w", encoding="utf-8") as fh:
             json.dump(origin_data, fh)
@@ -320,33 +362,50 @@ class TestGetConnectionsLevelN:
 # High-level iteration functions
 # ---------------------------------------------------------------------------
 
+
 class TestHighLevelIteration:
 
     @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_link")
     @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.save_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.get_connections_level_N")
-    def test_iterate_search_until_distance_N(self, mock_get_conn, mock_save, mock_extract, mock_get_link):
+    def test_iterate_search_until_distance_N(
+        self, mock_get_conn, mock_save, mock_extract, mock_get_link
+    ):
         mock_get_link.return_value = "link"
-        mock_extract.return_value = {"iata": "YWG", "destinations": [["Toronto", "link2"]]}
+        mock_extract.return_value = {
+            "iata": "YWG",
+            "destinations": [["Toronto", "link2"]],
+        }
 
         iterate_search_until_distance_N("YWG", dist=2)
 
         mock_get_link.assert_called_once_with("YWG", verbose=False)
         mock_extract.assert_called_once_with("link", verbose=False)
-        mock_save.assert_called_once_with(mock_extract.return_value, level=0, verbose=False)
+        mock_save.assert_called_once_with(
+            mock_extract.return_value, level=0, verbose=False
+        )
         # Should be called twice for dist=2
         assert mock_get_conn.call_count == 2
-        mock_get_conn.assert_has_calls([call(from_length=0, delay=1.0, verbose=False),
-                                        call(from_length=1, delay=1.0, verbose=False)])
+        mock_get_conn.assert_has_calls(
+            [
+                call(from_length=0, delay=1.0, verbose=False),
+                call(from_length=1, delay=1.0, verbose=False),
+            ]
+        )
 
     @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_link")
     @patch("wikipediaGATN.wikipedia_network_level.fetch_wikipedia_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.save_airport_info")
     @patch("wikipediaGATN.wikipedia_network_level.get_connections_level_N")
-    def test_iterate_search_until_empty(self, mock_get_conn, mock_save, mock_extract, mock_get_link, tmp_results_dir):
+    def test_iterate_search_until_empty(
+        self, mock_get_conn, mock_save, mock_extract, mock_get_link, tmp_results_dir
+    ):
         mock_get_link.return_value = "link"
-        mock_extract.return_value = {"iata": "YWG", "destinations": [["Toronto", "link2"]]}
+        mock_extract.return_value = {
+            "iata": "YWG",
+            "destinations": [["Toronto", "link2"]],
+        }
 
         # We need to simulate the while True loop stopping.
         # It stops when no new files are found at level k+1.
@@ -364,7 +423,7 @@ class TestHighLevelIteration:
 
     @patch("wikipediaGATN.wikipedia_network_level.get_connections_level_N")
     def test_continue_existing_search_one_step(self, mock_get_conn, tmp_results_dir):
-        (tmp_results_dir / "YWG.2.json").touch() # max_level = 2
+        (tmp_results_dir / "YWG.2.json").touch()  # max_level = 2
 
         continue_existing_search_one_step()
 
@@ -373,10 +432,11 @@ class TestHighLevelIteration:
 
     @patch("wikipediaGATN.wikipedia_network_level.get_connections_level_N")
     def test_continue_existing_search_until_empty(self, mock_get_conn, tmp_results_dir):
-        (tmp_results_dir / "YWG.1.json").touch() # max_level = 1
+        (tmp_results_dir / "YWG.1.json").touch()  # max_level = 1
 
         # Similar to until_empty, simulate no new files after one call
         iterate_search_until_empty_call_count = 0
+
         def side_effect(from_length, **kwargs):
             return 0
 

@@ -28,6 +28,7 @@ from wikipediaGATN.result_processing_airports import (
 # Module-level skip: all tests in this file require real scraped data.
 # ---------------------------------------------------------------------------
 
+
 def _count_json_files() -> int:
     if not os.path.isdir(TEMP_RESULTS_DIR):
         return 0
@@ -54,6 +55,7 @@ def require_scraped_data():
 # Tests
 # ---------------------------------------------------------------------------
 
+
 class TestExportAllAirportData:
 
     def test_creates_airports_information_csv(self):
@@ -65,14 +67,22 @@ class TestExportAllAirportData:
     def test_airports_csv_has_expected_columns(self):
         """airports_information.csv contains the required column headers."""
         export_all_airport_data(verbose=False)
-        expected = {"iata", "icao", "latitude", "longitude",
-                    "name", "wikipedia_url", "outdegree", "outdegree_cargo",
-                    "number_airlines", "number_airlines_cargo"}
+        expected = {
+            "iata",
+            "icao",
+            "latitude",
+            "longitude",
+            "name",
+            "wikipedia_url",
+            "outdegree",
+            "outdegree_cargo",
+            "number_airlines",
+            "number_airlines_cargo",
+        }
         csv_path = os.path.join(PUBLIC_DATA_DIR, "airports_information.csv")
         with open(csv_path, encoding="utf-8") as fh:
             headers = set(next(csv.reader(fh)))
-        assert expected.issubset(headers), \
-            f"Missing columns: {expected - headers}"
+        assert expected.issubset(headers), f"Missing columns: {expected - headers}"
 
     def test_airports_csv_non_empty(self):
         """airports_information.csv has at least one data row."""
@@ -111,8 +121,9 @@ class TestCheckDuplicatedIataCodes:
         """Running a second time finds no additional duplicates."""
         check_duplicated_iata_codes(verbose=False)
         second_pass = check_duplicated_iata_codes(verbose=False)
-        assert second_pass == 0, \
-            f"Second dedup pass still found {second_pass} duplicate(s)"
+        assert (
+            second_pass == 0
+        ), f"Second dedup pass still found {second_pass} duplicate(s)"
 
 
 class TestCreateOutboundConnectionsList:
@@ -123,8 +134,7 @@ class TestCreateOutboundConnectionsList:
         connections_csv, _ = create_outbound_connections_list(
             verbose=False, export_unmapped=True
         )
-        assert os.path.exists(connections_csv), \
-            f"Expected {connections_csv} to exist"
+        assert os.path.exists(connections_csv), f"Expected {connections_csv} to exist"
 
     def test_connections_csv_has_expected_columns(self):
         """global-air-pax-network.csv has origin, nb_outlinks, outlinks columns."""
@@ -158,6 +168,7 @@ class TestCreateOutboundConnectionsList:
     def test_origin_codes_are_valid_iata(self):
         """All origin codes in global-air-pax-network.csv are 3 uppercase letters."""
         import re
+
         _IATA = re.compile(r"^[A-Z]{3}$")
         export_all_airport_data(verbose=False)
         create_outbound_connections_list(verbose=False)
@@ -165,5 +176,6 @@ class TestCreateOutboundConnectionsList:
         with open(csv_path, encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
                 origin = row.get("origin", "").strip()
-                assert _IATA.match(origin), \
-                    f"Invalid origin IATA in connections CSV: {origin!r}"
+                assert _IATA.match(
+                    origin
+                ), f"Invalid origin IATA in connections CSV: {origin!r}"

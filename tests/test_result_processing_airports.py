@@ -17,16 +17,21 @@ def data_dirs(tmp_path, monkeypatch):
     tmp_results.mkdir()
     sweep_dir = tmp_results / "airports_rooted_sweep"
     sweep_dir.mkdir()
-    
+
     public = tmp_path / "public"
     public.mkdir()
     airport_data = public / "airport_data"
     airport_data.mkdir()
-    
-    monkeypatch.setattr("wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR", tmp_results)
-    monkeypatch.setattr("wikipediaGATN.result_processing_airports.PUBLIC_DATA_DIR",  public)
-    
+
+    monkeypatch.setattr(
+        "wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR", tmp_results
+    )
+    monkeypatch.setattr(
+        "wikipediaGATN.result_processing_airports.PUBLIC_DATA_DIR", public
+    )
+
     return sweep_dir, airport_data
+
 
 def test_export_all_airport_data_invalid_json(data_dirs):
     """
@@ -39,7 +44,7 @@ def test_export_all_airport_data_invalid_json(data_dirs):
         "iata": "YWG",
         "name": "Winnipeg Richardson International Airport",
         "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
-        "destinations": []
+        "destinations": [],
     }
     (sweep_dir / "YWG.0.json").write_text(json.dumps(valid_data), encoding="utf-8")
 
@@ -63,11 +68,12 @@ def test_export_all_airport_data_invalid_json(data_dirs):
     assert len(rows) == 1
     assert rows[0]["iata"] == "YWG"
 
+
 def test_export_all_airport_data_missing_dir(tmp_path, monkeypatch):
     """Test FileNotFoundError when the scan directory is missing."""
     monkeypatch.setattr(
         "wikipediaGATN.result_processing_airports.TEMP_RESULTS_DIR",
-        tmp_path / "nonexistent"
+        tmp_path / "nonexistent",
     )
     # use_new_data=True will look for nonexistent/airports_rooted_sweep
     with pytest.raises(FileNotFoundError):

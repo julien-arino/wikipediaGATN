@@ -34,7 +34,6 @@ if __name__ == "__main__":
         airport_details = convert_sets_to_lists(airport_details)  # <-- Add this line
         print(json.dumps(airport_details, indent=2, ensure_ascii=False))
 
-
     # Go the wikitext way
     if test_link:
         wikitext = get_wikipedia_airport_page_wikitext(test_link, verbose=False)
@@ -46,7 +45,9 @@ if __name__ == "__main__":
         print(json.dumps(infobox, indent=2, ensure_ascii=False))
 
         # Get airlines and destinations from wikitext
-        airlines_dest = extract_airlines_destinations_from_wikitext(wikitext, verbose=False)
+        airlines_dest = extract_airlines_destinations_from_wikitext(
+            wikitext, verbose=False
+        )
         print("\n\nAirlines and destinations from wikitext:")
         print(json.dumps(airlines_dest, indent=2, ensure_ascii=False))
         airlines = extract_airlines_from_airlines_dest_dict(airlines_dest)
@@ -54,5 +55,5 @@ if __name__ == "__main__":
         print("\nAirlines from wikitext:")
         print(json.dumps(airlines, indent=2, ensure_ascii=False))
         print("\nDestinations from wikitext:")
-        dests  = convert_sets_to_lists(dests)
+        dests = convert_sets_to_lists(dests)
         print(json.dumps(dests, indent=2, ensure_ascii=False))

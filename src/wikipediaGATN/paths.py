@@ -33,7 +33,7 @@ from pathlib import Path
 # walk up to the repository root.
 # ---------------------------------------------------------------------------
 _THIS_FILE: Path = Path(__file__).resolve()
-REPO_ROOT:  Path = _THIS_FILE.parent.parent.parent  # …/src/wikipediaGATN → src → repo
+REPO_ROOT: Path = _THIS_FILE.parent.parent.parent  # …/src/wikipediaGATN → src → repo
 
 # ---------------------------------------------------------------------------
 # Data root — can be overridden via environment variable for testing.

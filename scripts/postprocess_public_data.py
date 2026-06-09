@@ -1,9 +1,9 @@
 """
-Refreshes the public airport data in-place. 
+Refreshes the public airport data in-place.
 
-This script scans the existing JSON files in 'data/public/airport_data', 
-applies metadata improvements (geographic inference, link resolution, etc.), 
-and regenerates the master 'airports_information.csv'. 
+This script scans the existing JSON files in 'data/public/airport_data',
+applies metadata improvements (geographic inference, link resolution, etc.),
+and regenerates the master 'airports_information.csv'.
 
 It does NOT copy data from the temporary sweep directory.
 """

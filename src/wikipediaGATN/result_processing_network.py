@@ -1,9 +1,9 @@
 """
 Orchestration functions for GATN (Global Air Transportation Networks) generation.
 
-This module provides the complete pipeline to extract network structures from 
-the parsed airport data. It drives the multi-pass IATA code recovery workflow, 
-generates outbound connection lists, builds sparse adjacency matrices, and 
+This module provides the complete pipeline to extract network structures from
+the parsed airport data. It drives the multi-pass IATA code recovery workflow,
+generates outbound connection lists, builds sparse adjacency matrices, and
 exports rich network graphs for both the Passenger (Pax) and Cargo networks.
 """
 
@@ -25,6 +25,7 @@ logger = logging.getLogger(__name__)
 # TWO-PASS WORKFLOW
 ###############################################################################
 
+
 def run_two_pass_iata_extraction(
     batch_size: int = 50,
     delay: float = 0.5,
@@ -37,7 +38,7 @@ def run_two_pass_iata_extraction(
     has already been run and ``unmapped_destinations.csv`` exists.
 
     Pass 2
-        Attempts instantaneous offline OurAirports lookup for unmapped URLs, 
+        Attempts instantaneous offline OurAirports lookup for unmapped URLs,
         falling back to fetching the Wikipedia page to extract the IATA code.
     Pass 3
         Filters successful extractions by confidence and writes
@@ -89,7 +90,7 @@ def run_two_pass_iata_extraction(
 
     return {
         "extraction_result": extraction_result,
-        "mapping_count":     mapping_count,
+        "mapping_count": mapping_count,
     }
 
 
@@ -101,6 +102,7 @@ __all__ = [
 ###############################################################################
 # Command-line entry point
 ###############################################################################
+
 
 def _run_pipeline() -> None:
     # Complete pipeline for GATN generation with two-pass IATA extraction.
@@ -126,9 +128,11 @@ def _run_pipeline() -> None:
     # Step 2 ----------------------------------------------------------------
     print(f"\n{'=' * 70}")
     print("[STEP 2] Creating initial outbound connections list…")
-    connections_csv, connections_cargo_csv, unmapped_csv = create_outbound_connections_list(
-        verbose=True,
-        export_unmapped=True,
+    connections_csv, connections_cargo_csv, unmapped_csv = (
+        create_outbound_connections_list(
+            verbose=True,
+            export_unmapped=True,
+        )
     )
 
     # Steps 3–4 -------------------------------------------------------------
@@ -142,7 +146,7 @@ def _run_pipeline() -> None:
             delay=0.5,
             verbose=True,
         )
-        extraction    = two_pass["extraction_result"]
+        extraction = two_pass["extraction_result"]
 
         # Proceed to re-run whenever there was anything to process at all —
         # even if all codes were already resolved from a prior run.
@@ -155,9 +159,11 @@ def _run_pipeline() -> None:
             # Step 6 --------------------------------------------------------
             print(f"\n{'=' * 70}")
             print("[STEP 6] Re-running connections with enriched public JSON data…")
-            connections_csv, connections_cargo_csv, unmapped_csv = create_outbound_connections_list(
-                verbose=True,
-                export_unmapped=True,
+            connections_csv, connections_cargo_csv, unmapped_csv = (
+                create_outbound_connections_list(
+                    verbose=True,
+                    export_unmapped=True,
+                )
             )
         else:
             print("\n⚠️  unmapped_destinations.csv is empty — skipping re-run.")

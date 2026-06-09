@@ -39,6 +39,7 @@ _FNAME_RE = re.compile(r"^([A-Z]{3,4}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
 # AIRPORT DATA EXTRACTION
 ###############################################################################
 
+
 def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -> str:
     """
     Extract metadata from all airport JSON files and write to CSV.
@@ -46,13 +47,13 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
     Scans every ``<IATA>.<distance>.json`` and ``wiki_*.<distance>.json`` file
     in ``PUBLIC_DATA_DIR/airport_data`` (or ``TEMP_RESULTS_DIR`` if use_new_data is True)
     and collects airport metadata into a single ``airports_information.csv``.
-    During the process, it performs offline geographic inference and destination 
+    During the process, it performs offline geographic inference and destination
     URL mapping.
 
     Parameters
     ----------
     use_new_data : bool, optional
-        If True, reads from ``TEMP_RESULTS_DIR/airports_rooted_sweep``. 
+        If True, reads from ``TEMP_RESULTS_DIR/airports_rooted_sweep``.
         Default: False (reads from ``PUBLIC_DATA_DIR/airport_data``).
     verbose : bool, optional
         If True, prints per-file status and a final summary.  Default: False.
@@ -69,7 +70,7 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
     Notes
     -----
-    * ``outdegree`` and ``outdegree_cargo`` represent the number of verified 
+    * ``outdegree`` and ``outdegree_cargo`` represent the number of verified
       destinations listed for each airport in the JSON file.
     * Fields absent from the JSON file are written as empty strings.
     * Run this function before
@@ -118,7 +119,11 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
             with open(fpath, "r", encoding="utf-8") as fh:
                 data = json.load(fh)
         except (json.JSONDecodeError, OSError) as exc:
-            warnings.warn(f"Skipping {fname}: cannot read/parse — {exc}", UserWarning, stacklevel=2)
+            warnings.warn(
+                f"Skipping {fname}: cannot read/parse — {exc}",
+                UserWarning,
+                stacklevel=2,
+            )
             skipped += 1
             continue
 
@@ -134,7 +139,7 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
         city_served_wiki = ""
         if city_served and "[[" in city_served:
             city_served_wiki = city_served
-            text_match = re.search(r'\[\[(?:[^|\]]*\|)?([^\]]+)\]\]', city_served)
+            text_match = re.search(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", city_served)
             if text_match:
                 city_served = text_match.group(1)
         else:
@@ -164,15 +169,23 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
                     new_data["outdegree"] = len(data.get("destinations", []))
 
                 ad_map = data.get("airlines_destinations", {})
-                v = format_destinations_list(data.get("destinations", []), ad_map, url_to_codes)
+                v = format_destinations_list(
+                    data.get("destinations", []), ad_map, url_to_codes
+                )
 
             if k == "destinations_cargo":
                 if "number_airlines_cargo" not in new_data:
-                    new_data["number_airlines_cargo"] = len(data.get("airlines_cargo", []))
-                    new_data["outdegree_cargo"] = len(data.get("destinations_cargo", []))
+                    new_data["number_airlines_cargo"] = len(
+                        data.get("airlines_cargo", [])
+                    )
+                    new_data["outdegree_cargo"] = len(
+                        data.get("destinations_cargo", [])
+                    )
 
                 ad_map_c = data.get("airlines_destinations_cargo", {})
-                v = format_destinations_list(data.get("destinations_cargo", []), ad_map_c, url_to_codes)
+                v = format_destinations_list(
+                    data.get("destinations_cargo", []), ad_map_c, url_to_codes
+                )
 
             new_data[k] = v
 
@@ -194,18 +207,20 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
         # --- END VALIDATION & CONSOLIDATION ---
 
-        rows.append({
-            "iata":          new_data.get("iata",         ""),
-            "icao":          new_data.get("icao",         ""),
-            "latitude":      new_data.get("lat") or new_data.get("latitude", ""),
-            "longitude":     new_data.get("lon") or new_data.get("longitude", ""),
-            "name":          new_data.get("name") or new_data.get("serves", ""),
-            "wikipedia_url": new_data.get("wikipedia_url", ""),
-            "outdegree":     new_data.get("outdegree", 0),
-            "outdegree_cargo": new_data.get("outdegree_cargo", 0),
-            "number_airlines": new_data.get("number_airlines", 0),
-            "number_airlines_cargo": new_data.get("number_airlines_cargo", 0),
-        })
+        rows.append(
+            {
+                "iata": new_data.get("iata", ""),
+                "icao": new_data.get("icao", ""),
+                "latitude": new_data.get("lat") or new_data.get("latitude", ""),
+                "longitude": new_data.get("lon") or new_data.get("longitude", ""),
+                "name": new_data.get("name") or new_data.get("serves", ""),
+                "wikipedia_url": new_data.get("wikipedia_url", ""),
+                "outdegree": new_data.get("outdegree", 0),
+                "outdegree_cargo": new_data.get("outdegree_cargo", 0),
+                "number_airlines": new_data.get("number_airlines", 0),
+                "number_airlines_cargo": new_data.get("number_airlines_cargo", 0),
+            }
+        )
 
         # Apply formatting constraints
         new_data = format_airport_json(new_data)
@@ -220,9 +235,16 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
         fieldnames = [
-            "iata", "icao", "latitude", "longitude",
-            "name", "wikipedia_url", "outdegree", "outdegree_cargo",
-            "number_airlines", "number_airlines_cargo"
+            "iata",
+            "icao",
+            "latitude",
+            "longitude",
+            "name",
+            "wikipedia_url",
+            "outdegree",
+            "outdegree_cargo",
+            "number_airlines",
+            "number_airlines_cargo",
         ]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
@@ -240,7 +262,11 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
             content = f.read()
 
         if "extracted on" in content:
-            content = re.sub(r"\(extracted on \d{4}-\d{2}-\d{2}\)", f"(extracted on {today_str})", content)
+            content = re.sub(
+                r"\(extracted on \d{4}-\d{2}-\d{2}\)",
+                f"(extracted on {today_str})",
+                content,
+            )
         else:
             content = content.rstrip() + f"\n\nData extracted on {today_str}.\n"
 
@@ -253,6 +279,7 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 ###############################################################################
 # DEDUPLICATION
 ###############################################################################
+
 
 def check_duplicated_iata_codes(verbose: bool = False) -> int:
     """
@@ -296,7 +323,7 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
     for fname in os.listdir(target_dir):
         m = pattern.match(fname)
         if m:
-            iata  = m.group(1)
+            iata = m.group(1)
             level = int(m.group(2))
             files_by_iata.setdefault(iata, []).append((level, fname))
 
@@ -305,8 +332,8 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
         if len(files) <= 1:
             continue
 
-        files.sort()                                      # ascending by level
-        to_remove = [fname for _, fname in files[1:]]    # keep files[0]
+        files.sort()  # ascending by level
+        to_remove = [fname for _, fname in files[1:]]  # keep files[0]
 
         for fname in to_remove:
             fpath = os.path.join(target_dir, fname)
@@ -318,7 +345,8 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
             except OSError as exc:
                 warnings.warn(
                     f"Could not remove {fname}: {exc}",
-                    UserWarning, stacklevel=2,
+                    UserWarning,
+                    stacklevel=2,
                 )
 
     if verbose:
@@ -378,17 +406,26 @@ def identify_missing_airport_data(verbose: bool = False) -> str:
         is_missing_country = country is None or country == ""
 
         if is_missing_latlon or is_missing_country:
-            missing_records.append({
-                "iata": data.get("iata", ""),
-                "icao": data.get("icao", ""),
-                "name": data.get("name") or data.get("city-served", ""),
-                "missing_latlon": is_missing_latlon,
-                "missing_country": is_missing_country,
-                "wikipedia_url": data.get("wikipedia_url", "")
-            })
+            missing_records.append(
+                {
+                    "iata": data.get("iata", ""),
+                    "icao": data.get("icao", ""),
+                    "name": data.get("name") or data.get("city-served", ""),
+                    "missing_latlon": is_missing_latlon,
+                    "missing_country": is_missing_country,
+                    "wikipedia_url": data.get("wikipedia_url", ""),
+                }
+            )
 
     with open(output_csv, "w", encoding="utf-8", newline="") as csvfile:
-        fieldnames = ["iata", "icao", "name", "missing_latlon", "missing_country", "wikipedia_url"]
+        fieldnames = [
+            "iata",
+            "icao",
+            "name",
+            "missing_latlon",
+            "missing_country",
+            "wikipedia_url",
+        ]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(missing_records)
@@ -403,16 +440,16 @@ def identify_missing_airport_data(verbose: bool = False) -> str:
 def enrich_missing_airport_data(verbose: bool = False) -> int:
     """
     Attempt a second round of geocoding for airports with missing data.
-    
+
     Reads data/tmp_results/missing_airport_data.csv, attempts multiple
     queries with Geopy to find lat/lon, and reverse geocodes to find the country.
     Updates the JSON files in data/public/airport_data in place.
-    
+
     Parameters
     ----------
     verbose : bool, optional
         If True, prints progress and success/failure for each missing airport.
-        
+
     Returns
     -------
     int
@@ -441,17 +478,21 @@ def enrich_missing_airport_data(verbose: bool = False) -> int:
         json_path = os.path.join(airport_data_dir, f"{iata}.json")
         # Fallback to checking by identifier if iata is missing or different
         if not os.path.isfile(json_path) and row.get("wikipedia_url"):
-             identifier = urllib.parse.unquote(row.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
-             # try iata, try identifier... Wait, in result_processing_airports the filenames are exactly `identifier`.
-             # The scraper makes files like `<IATA>.json` generally.
-             pass # just try iata for now, it's safer
+            identifier = urllib.parse.unquote(
+                row.get("wikipedia_url", "").split("/")[-1].replace("_", " ")
+            )
+            # try iata, try identifier... Wait, in result_processing_airports the filenames are exactly `identifier`.
+            # The scraper makes files like `<IATA>.json` generally.
+            pass  # just try iata for now, it's safer
 
         if not os.path.isfile(json_path):
             # Sometimes the identifier is not the IATA code if it's missing.
             # Let's search the directory for a matching wikipedia_url
             for fname in os.listdir(airport_data_dir):
                 if fname.endswith(".json"):
-                    with open(os.path.join(airport_data_dir, fname), "r", encoding="utf-8") as jf:
+                    with open(
+                        os.path.join(airport_data_dir, fname), "r", encoding="utf-8"
+                    ) as jf:
                         try:
                             d = json.load(jf)
                             if d.get("wikipedia_url") == row.get("wikipedia_url"):
@@ -462,7 +503,10 @@ def enrich_missing_airport_data(verbose: bool = False) -> int:
                             pass
 
         if not os.path.isfile(json_path):
-            if verbose: print(f"Could not find JSON file for {row.get('iata')} or {row.get('wikipedia_url')}")
+            if verbose:
+                print(
+                    f"Could not find JSON file for {row.get('iata')} or {row.get('wikipedia_url')}"
+                )
             continue
 
         with open(json_path, "r", encoding="utf-8") as jf:
@@ -477,26 +521,36 @@ def enrich_missing_airport_data(verbose: bool = False) -> int:
         # 1. Dig out Lat/Lon if missing
         if not lat or not lon:
             queries = []
-            if data.get("iata"): queries.append(f'{data.get("iata")} airport')
-            if data.get("name"): queries.append(f'{data.get("name")} airport')
+            if data.get("iata"):
+                queries.append(f'{data.get("iata")} airport')
+            if data.get("name"):
+                queries.append(f'{data.get("name")} airport')
 
             # Wikipedia title
-            title = urllib.parse.unquote(data.get("wikipedia_url", "").split("/")[-1].replace("_", " "))
-            if title: queries.append(title)
+            title = urllib.parse.unquote(
+                data.get("wikipedia_url", "").split("/")[-1].replace("_", " ")
+            )
+            if title:
+                queries.append(title)
 
-            if data.get("city-served"): queries.append(f'{data.get("city-served")} airport')
-            if data.get("location"): queries.append(data.get("location"))
-            if data.get("icao"): queries.append(f'{data.get("icao")} airport')
+            if data.get("city-served"):
+                queries.append(f'{data.get("city-served")} airport')
+            if data.get("location"):
+                queries.append(data.get("location"))
+            if data.get("icao"):
+                queries.append(f'{data.get("icao")} airport')
 
             for query in queries:
-                if not query.strip(): continue
+                if not query.strip():
+                    continue
                 try:
-                    time.sleep(1.5) # Be nice to Nominatim (max 1 req/s)
+                    time.sleep(1.5)  # Be nice to Nominatim (max 1 req/s)
                     loc = geolocator.geocode(query, timeout=5)
                     if loc:
                         lat, lon = str(loc.latitude), str(loc.longitude)
                         data["lat"], data["lon"] = lat, lon
-                        if verbose: print(f"[{iata}] Found coordinates via query: '{query}'")
+                        if verbose:
+                            print(f"[{iata}] Found coordinates via query: '{query}'")
                         break
                 except Exception:
                     pass
@@ -516,17 +570,25 @@ def enrich_missing_airport_data(verbose: bool = False) -> int:
                         if country_obj:
                             data["country_alpha3"] = country_obj.alpha_3
                             data["country_name"] = country_obj.name
-                            if not data.get("location"): data["location"] = loc_info.get("name")
-                            if not data.get("region"): data["region"] = loc_info.get("admin1")
-                            if not data.get("subdivision_code"): data["subdivision_code"] = loc_info.get("admin2")
+                            if not data.get("location"):
+                                data["location"] = loc_info.get("name")
+                            if not data.get("region"):
+                                data["region"] = loc_info.get("admin1")
+                            if not data.get("subdivision_code"):
+                                data["subdivision_code"] = loc_info.get("admin2")
 
                             # Add continent
                             try:
                                 continent_code = pc.country_alpha2_to_continent_code(cc)
-                                data["continent"] = pc.convert_continent_code_to_continent_name(continent_code)
+                                data["continent"] = (
+                                    pc.convert_continent_code_to_continent_name(
+                                        continent_code
+                                    )
+                                )
                             except Exception:
                                 pass
-                            if verbose: print(f"[{iata}] Found country: {country_obj.name}")
+                            if verbose:
+                                print(f"[{iata}] Found country: {country_obj.name}")
             except Exception:
                 pass
 
@@ -558,9 +620,16 @@ __all__ = [
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="Compile airport JSONs into airports_information.csv")
+
+    parser = argparse.ArgumentParser(
+        description="Compile airport JSONs into airports_information.csv"
+    )
     parser.add_argument("--quiet", action="store_true", help="Suppress verbose output")
-    parser.add_argument("--use-new-data", action="store_true", help="Read from TEMP_RESULTS_DIR instead of public data")
+    parser.add_argument(
+        "--use-new-data",
+        action="store_true",
+        help="Read from TEMP_RESULTS_DIR instead of public data",
+    )
     args = parser.parse_args()
 
     export_all_airport_data(use_new_data=args.use_new_data, verbose=not args.quiet)

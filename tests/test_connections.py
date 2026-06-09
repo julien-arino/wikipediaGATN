@@ -19,6 +19,7 @@ from wikipediaGATN.connections import create_outbound_connections_list
 # Fixtures
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture()
 def data_dirs(tmp_path, monkeypatch):
     """
@@ -53,6 +54,7 @@ def _write_airport_json(public: Path, iata: str, destinations: list = None) -> P
 # ---------------------------------------------------------------------------
 # create_outbound_connections_list
 # ---------------------------------------------------------------------------
+
 
 class TestCreateOutboundConnectionsList:
 
@@ -99,7 +101,7 @@ class TestCreateOutboundConnectionsList:
             {
                 "name": "Toronto Pearson",
                 "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-                "codes": ["YYZ", "CYYZ"]
+                "codes": ["YYZ", "CYYZ"],
             }
         ]
         _write_airport_json(public, "YWG", destinations=destinations)
@@ -125,7 +127,7 @@ class TestCreateOutboundConnectionsList:
             {
                 "name": "Unknown Airport",
                 "wikipedia_url": "https://en.wikipedia.org/wiki/Nowhere",
-                "codes": []
+                "codes": [],
             }
         ]
         _write_airport_json(public, "YWG", destinations=destinations)
@@ -139,7 +141,9 @@ class TestCreateOutboundConnectionsList:
     def test_corrupt_json_skipped_without_crash(self, data_dirs):
         """A corrupt JSON file is skipped with a warning; valid files still processed."""
         public = data_dirs
-        (public / "airport_data" / "BAD.json").write_text("{not valid json}", encoding="utf-8")
+        (public / "airport_data" / "BAD.json").write_text(
+            "{not valid json}", encoding="utf-8"
+        )
         _write_airport_json(public, "YWG", destinations=[])
         # Should not raise
         csv_path, _, _ = create_outbound_connections_list(verbose=False)

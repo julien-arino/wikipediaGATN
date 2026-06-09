@@ -1,9 +1,9 @@
 """
 Extract IATA codes from unmapped destination URLs.
 
-This module resolves destination airports by first performing a fast, offline 
-lookup against the authoritative OurAirports database. If the airport is not 
-found, it falls back to fetching the Wikipedia page and extracting the IATA code 
+This module resolves destination airports by first performing a fast, offline
+lookup against the authoritative OurAirports database. If the airport is not
+found, it falls back to fetching the Wikipedia page and extracting the IATA code
 using pattern matching (e.g. ``(IATA: XXX, ICAO: YYYY)``).
 
 Typical workflow
@@ -48,33 +48,56 @@ _PAT_IATA_STANDARD = re.compile(r"\(IATA:\s*([A-Z]{3})\s*[,)]", re.IGNORECASE)
 _PAT_IATA_PAREN = re.compile(r"IATA:\s*([A-Z]{3})\)", re.IGNORECASE)
 
 #: Pattern 3 – generic code mention (lowest confidence)
-_PAT_IATA_GENERIC = re.compile(r"(?:IATA|Code)[:\s]+([A-Z]{3})(?:\s|,|\))", re.IGNORECASE)
+_PAT_IATA_GENERIC = re.compile(
+    r"(?:IATA|Code)[:\s]+([A-Z]{3})(?:\s|,|\))", re.IGNORECASE
+)
 
 #: ICAO codes are always 4 uppercase letters
 _PAT_ICAO = re.compile(r"ICAO:\s*([A-Z]{4})", re.IGNORECASE)
 
 #: Common English trigrams that could be mistaken for IATA codes by pattern 3.
 #: This list is intentionally conservative — extend it rather than shrink it.
-_COMMON_WORD_TRIGRAMS = frozenset({
-    "THE", "FOR", "AND", "USE", "SEE", "NOT", "ARE", "NEW", "AIR",
-    "NAV", "FAA", "ICA", "ATC", "VFR", "IFR", "GPS", "UTC", "GMT",
-})
+_COMMON_WORD_TRIGRAMS = frozenset(
+    {
+        "THE",
+        "FOR",
+        "AND",
+        "USE",
+        "SEE",
+        "NOT",
+        "ARE",
+        "NEW",
+        "AIR",
+        "NAV",
+        "FAA",
+        "ICA",
+        "ATC",
+        "VFR",
+        "IFR",
+        "GPS",
+        "UTC",
+        "GMT",
+    }
+)
 
 #: Paragraph-text substrings that indicate disambiguation or redirect pages —
 #: these should be skipped.  Note: "for the" is intentionally excluded because
 #: it appears in many legitimate airport descriptions.
-_SKIP_PHRASES = frozenset({
-    "redirect",
-    "not to be confused",
-    "for other uses",
-    "may refer to",
-    "disambiguation",
-})
+_SKIP_PHRASES = frozenset(
+    {
+        "redirect",
+        "not to be confused",
+        "for other uses",
+        "may refer to",
+        "disambiguation",
+    }
+)
 
 
 # ---------------------------------------------------------------------------
 # Private helpers
 # ---------------------------------------------------------------------------
+
 
 def _is_safe_wikipedia_url(url: str) -> bool:
     """
@@ -125,11 +148,11 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
         * ``'error'``          – human-readable error description, or ``None``.
     """
     result = {
-        "iata":           None,
-        "icao":           None,
-        "confidence":     0.0,
+        "iata": None,
+        "icao": None,
+        "confidence": 0.0,
         "extracted_text": None,
-        "error":          None,
+        "error": None,
     }
 
     if not _is_safe_wikipedia_url(url):
@@ -152,9 +175,9 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
         return result
 
     try:
-        soup       = BeautifulSoup(response.content, "html.parser")
+        soup = BeautifulSoup(response.content, "html.parser")
         paragraphs = soup.find_all("p")
-        examined   = 0
+        examined = 0
 
         for para in paragraphs:
             text = para.get_text(separator=" ", strip=True)
@@ -174,8 +197,8 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
             m = _PAT_IATA_STANDARD.search(text)
             if m:
                 iata = m.group(1).upper()
-                result["iata"]           = iata
-                result["confidence"]     = 0.95
+                result["iata"] = iata
+                result["confidence"] = 0.95
                 result["extracted_text"] = text[:200]
                 icao_m = _PAT_ICAO.search(text)
                 if icao_m:
@@ -188,8 +211,8 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
             m = _PAT_IATA_PAREN.search(text)
             if m:
                 iata = m.group(1).upper()
-                result["iata"]           = iata
-                result["confidence"]     = 0.90
+                result["iata"] = iata
+                result["confidence"] = 0.90
                 result["extracted_text"] = text[:200]
                 if verbose:
                     print(f"    [P2] Found {iata} in: {text[:100]}…")
@@ -201,8 +224,8 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
                 if m:
                     iata = m.group(1).upper()
                     if iata not in _COMMON_WORD_TRIGRAMS:
-                        result["iata"]           = iata
-                        result["confidence"]     = 0.70
+                        result["iata"] = iata
+                        result["confidence"] = 0.70
                         result["extracted_text"] = text[:200]
                         if verbose:
                             print(f"    [P3] Found {iata} in: {text[:100]}…")
@@ -229,6 +252,7 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
 # Public API
 # ---------------------------------------------------------------------------
 
+
 def extract_iata_from_unmapped_destinations(
     csv_path: str = None,
     batch_size: int = 50,
@@ -239,9 +263,9 @@ def extract_iata_from_unmapped_destinations(
     Extract IATA codes from Wikipedia pages for unmapped destinations.
 
     Reads ``unmapped_destinations.csv`` and attempts to resolve each URL.
-    It prioritizes an instantaneous offline lookup against the OurAirports 
+    It prioritizes an instantaneous offline lookup against the OurAirports
     database, falling back to Wikipedia web scraping only if the URL is not found.
-    Results are written back to the same file atomically (write to a temp file 
+    Results are written back to the same file atomically (write to a temp file
     then rename).
 
     Rows that already have an IATA code are skipped and reported separately
@@ -294,15 +318,21 @@ def extract_iata_from_unmapped_destinations(
     with open(csv_path, "r", encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh))
 
-    total      = len(rows)
-    successful = 0   # new codes extracted in this run
-    skipped    = 0   # rows that already had a code
-    failed     = 0
+    total = len(rows)
+    successful = 0  # new codes extracted in this run
+    skipped = 0  # rows that already had a code
+    failed = 0
 
     if total == 0:
         if verbose:
             print("CSV is empty — nothing to do.")
-        return {"total": 0, "successful": 0, "skipped": 0, "failed": 0, "csv_path": csv_path}
+        return {
+            "total": 0,
+            "successful": 0,
+            "skipped": 0,
+            "failed": 0,
+            "csv_path": csv_path,
+        }
 
     if verbose:
         print(f"Found {total:,} rows\n")
@@ -322,11 +352,14 @@ def extract_iata_from_unmapped_destinations(
 
         # ---- Offline Fast-Path: Check OurAirports Database First --------
         from .airport_level_functions import _load_ourairports_data
+
         oa_cache = _load_ourairports_data()
 
         # OurAirports has some http links and some https links, so we'll match by end of path
         url_end = url.split("wikipedia.org/")[-1]
-        oa_match = next((row for wiki, row in oa_cache.items() if wiki.endswith(url_end)), None)
+        oa_match = next(
+            (row for wiki, row in oa_cache.items() if wiki.endswith(url_end)), None
+        )
 
         if oa_match and oa_match.get("iata_code"):
             row["iata"] = oa_match["iata_code"]
@@ -340,16 +373,16 @@ def extract_iata_from_unmapped_destinations(
         result = _extract_iata_from_wikipedia_page(url, verbose=verbose)
 
         if result["iata"]:
-            row["iata"]   = result["iata"]
+            row["iata"] = result["iata"]
             # Store confidence as a 0–1 float string so downstream parsing
             # can compare directly against numeric thresholds.
             row["source"] = f"scraped (conf: {result['confidence']:.2f})"
-            successful   += 1
+            successful += 1
             if verbose:
                 print(f"    → {result['iata']} (conf: {result['confidence']:.0%})\n")
         else:
             row["source"] = f"failed ({result.get('error', 'unknown')})"
-            failed       += 1
+            failed += 1
             if verbose:
                 print(f"    → failed: {result.get('error', 'unknown')}\n")
 
@@ -403,11 +436,11 @@ def extract_iata_from_unmapped_destinations(
         print("   rerun create_outbound_connections_list() for better coverage.")
 
     return {
-        "total":      total,
+        "total": total,
         "successful": successful,
-        "skipped":    skipped,
-        "failed":     failed,
-        "csv_path":   csv_path,
+        "skipped": skipped,
+        "failed": failed,
+        "csv_path": csv_path,
     }
 
 
@@ -453,9 +486,7 @@ def create_manual_mapping_from_scraped_data(
         If *min_confidence* is outside [0, 1].
     """
     if not 0.0 <= min_confidence <= 1.0:
-        raise ValueError(
-            f"min_confidence must be in [0, 1], got {min_confidence!r}"
-        )
+        raise ValueError(f"min_confidence must be in [0, 1], got {min_confidence!r}")
 
     if unmapped_csv is None:
         unmapped_csv = os.path.join(TEMP_RESULTS_DIR, "unmapped_destinations.csv")
@@ -495,12 +526,14 @@ def create_manual_mapping_from_scraped_data(
             except (ValueError, AttributeError):
                 pass  # If unparseable, include the entry rather than drop it
 
-        manual_mappings.append({
-            "url":    row.get("url", ""),
-            "iata":   iata,
-            "name":   row.get("name", ""),
-            "source": "web_scraped",
-        })
+        manual_mappings.append(
+            {
+                "url": row.get("url", ""),
+                "iata": iata,
+                "name": row.get("name", ""),
+                "source": "web_scraped",
+            }
+        )
 
     os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
     with open(output_csv, "w", encoding="utf-8", newline="") as fh:

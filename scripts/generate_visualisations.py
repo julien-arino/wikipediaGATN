@@ -1,8 +1,8 @@
 """
 Generates interactive Plotly visualisations for the GATN networks.
 
-This script creates geographic, globe, and graph-theoretic layouts 
-for both the Passenger and Cargo networks, saving them as HTML 
+This script creates geographic, globe, and graph-theoretic layouts
+for both the Passenger and Cargo networks, saving them as HTML
 files in the public data directory.
 """
 
@@ -23,12 +23,13 @@ def run_visualisation():
 
     # Use the current python executable
     cmd = [sys.executable, "-m", "wikipediaGATN.visualise_gatn"]
-    
+
     try:
         result = subprocess.run(cmd, env=env, check=True)
         print("\nVisualisation generation complete.")
     except subprocess.CalledProcessError as e:
         print(f"\nError during visualisation: {e}")
+
 
 if __name__ == "__main__":
     run_visualisation()

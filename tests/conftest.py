@@ -22,7 +22,6 @@ modules monkeypatch the module-level ``PUBLIC_DATA_DIR`` and
 """
 
 
-
 def pytest_configure(config):
     """Register custom markers to avoid PytestUnknownMarkWarning."""
     config.addinivalue_line(

@@ -2,8 +2,8 @@
 Generate adjacency matrices and network graphs from airport connections.
 
 This module processes outbound connection data to build structural representations
-of the airport networks (both passenger and cargo). It outputs highly efficient 
-sparse matrix formats (.npz) alongside node lists, as well as rich graph-theoretic 
+of the airport networks (both passenger and cargo). It outputs highly efficient
+sparse matrix formats (.npz) alongside node lists, as well as rich graph-theoretic
 network exports (GraphML, GEXF, DOT) annotated with airport metadata.
 """
 
@@ -37,7 +37,7 @@ def create_outbound_adjacency_matrix(
     """
     Create a sparse adjacency matrix of outbound airport connections.
 
-    Reads airport connections from ``global-air-pax-network.csv`` (or 
+    Reads airport connections from ``global-air-pax-network.csv`` (or
     ``global-air-cargo-network.csv`` if ``is_cargo`` is True) and creates a
     sparse adjacency matrix where each airport is a node and edges represent
     direct outbound connections. Can optionally create a symmetric matrix to
@@ -49,12 +49,12 @@ def create_outbound_adjacency_matrix(
         If True, the matrix is made symmetric (A -> B implies B -> A).
         Default is False.
     export_csv : bool, optional
-        If True, also writes a dense ``adjacency_matrix[_cargo][_sym].csv`` 
+        If True, also writes a dense ``adjacency_matrix[_cargo][_sym].csv``
         alongside the ``.npz`` file.  This file can be very large for global-scale
         networks (≥ 4 000 nodes → > 100 MB), so it is **off by default** and
         intended only for small-scale inspection.  Default is False.
     export_networks : bool, optional
-        If True, exports the network as GraphML, GEXF, and DOT formats with 
+        If True, exports the network as GraphML, GEXF, and DOT formats with
         rich node attributes. Default is True.
     verbose : bool, optional
         If True, prints status messages about processing.  Default is False.
@@ -111,7 +111,9 @@ def create_outbound_adjacency_matrix(
     # ------------------------------------------------------------------
     # Load outbound connection data
     # ------------------------------------------------------------------
-    filename = "global-air-cargo-network.csv" if is_cargo else "global-air-pax-network.csv"
+    filename = (
+        "global-air-cargo-network.csv" if is_cargo else "global-air-pax-network.csv"
+    )
     input_file = os.path.join(PUBLIC_DATA_DIR, filename)
 
     if not os.path.exists(input_file):
@@ -135,9 +137,7 @@ def create_outbound_adjacency_matrix(
     df = df[df["origin"].apply(lambda x: _is_valid_code(str(x).strip()))]
 
     if len(df) < n_before and verbose:
-        print(
-            f"Dropped {n_before - len(df)} rows with missing/malformed origin codes"
-        )
+        print(f"Dropped {n_before - len(df)} rows with missing/malformed origin codes")
 
     if df.empty:
         raise ValueError(
@@ -198,7 +198,9 @@ def create_outbound_adjacency_matrix(
         origin_idx = iata_to_idx[origin]  # always present after filter above
 
         outlinks_str = str(row["outlinks"]) if pd.notna(row["outlinks"]) else ""
-        weights_str = str(row["weights"]) if "weights" in row and pd.notna(row["weights"]) else ""
+        weights_str = (
+            str(row["weights"]) if "weights" in row and pd.notna(row["weights"]) else ""
+        )
 
         if not outlinks_str.strip():
             continue
@@ -285,9 +287,13 @@ def create_outbound_adjacency_matrix(
 
     suffix = "_cargo" if is_cargo else "_pax"
     sym_suffix = "_sym" if symmetric else ""
-    output_matrix = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.npz")
-    output_nodes  = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}{sym_suffix}.txt")
-    output_csv    = os.path.join(PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.csv")
+    output_matrix = os.path.join(
+        PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.npz"
+    )
+    output_nodes = os.path.join(PUBLIC_DATA_DIR, f"nodes{suffix}{sym_suffix}.txt")
+    output_csv = os.path.join(
+        PUBLIC_DATA_DIR, f"adjacency_matrix{suffix}{sym_suffix}.csv"
+    )
 
     # ------------------------------------------------------------------
     # Save outputs
@@ -315,41 +321,80 @@ def create_outbound_adjacency_matrix(
     if export_networks:
         try:
             import networkx as nx
+
             # nx.from_scipy_sparse_array creates weighted edges if edge values are > 1
-            G = nx.from_scipy_sparse_array(matrix, create_using=nx.DiGraph, edge_attribute='weight')
+            G = nx.from_scipy_sparse_array(
+                matrix, create_using=nx.DiGraph, edge_attribute="weight"
+            )
             mapping = {i: code for i, code in enumerate(iata_codes)}
             G = nx.relabel_nodes(G, mapping)
 
             for node in G.nodes():
-                json_file = os.path.join(PUBLIC_DATA_DIR, "airport_data", f"{node}.json")
+                json_file = os.path.join(
+                    PUBLIC_DATA_DIR, "airport_data", f"{node}.json"
+                )
                 if os.path.exists(json_file):
                     try:
-                        with open(json_file, 'r', encoding='utf-8') as f:
+                        with open(json_file, "r", encoding="utf-8") as f:
                             data = json.load(f)
-                            num_keys = ('lat', 'lon', 'altitude', 'outdegree_cargo', 'number_airlines_cargo') if is_cargo else ('lat', 'lon', 'altitude', 'outdegree', 'number_airlines')
+                            num_keys = (
+                                (
+                                    "lat",
+                                    "lon",
+                                    "altitude",
+                                    "outdegree_cargo",
+                                    "number_airlines_cargo",
+                                )
+                                if is_cargo
+                                else (
+                                    "lat",
+                                    "lon",
+                                    "altitude",
+                                    "outdegree",
+                                    "number_airlines",
+                                )
+                            )
                             for num_key in num_keys:
                                 if data.get(num_key) is not None:
                                     export_key = num_key.replace("_cargo", "")
-                                    try: G.nodes[node][export_key] = float(data[num_key])
-                                    except ValueError: pass
-                            for str_key in ('name', 'city-served', 'country_alpha3', 'country_name', 'admin1_code', 'admin1_name', 'continent', 'wikipedia_url'):
+                                    try:
+                                        G.nodes[node][export_key] = float(data[num_key])
+                                    except ValueError:
+                                        pass
+                            for str_key in (
+                                "name",
+                                "city-served",
+                                "country_alpha3",
+                                "country_name",
+                                "admin1_code",
+                                "admin1_name",
+                                "continent",
+                                "wikipedia_url",
+                            ):
                                 if data.get(str_key):
-                                    G.nodes[node][str_key.replace('-', '_')] = str(data[str_key])
+                                    G.nodes[node][str_key.replace("-", "_")] = str(
+                                        data[str_key]
+                                    )
                     except (json.JSONDecodeError, OSError):
                         pass
 
-            base_name = "global-air-cargo-network" if is_cargo else "global-air-pax-network"
+            base_name = (
+                "global-air-cargo-network" if is_cargo else "global-air-pax-network"
+            )
             output_graphml = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.graphml")
             nx.write_graphml(G, output_graphml)
-            if verbose: print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
+            if verbose:
+                print(f"Saved GraphML      : {os.path.abspath(output_graphml)}")
 
             output_gexf = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.gexf")
             nx.write_gexf(G, output_gexf)
-            if verbose: print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
+            if verbose:
+                print(f"Saved GEXF network : {os.path.abspath(output_gexf)}")
 
             output_dot = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.dot")
             nx.drawing.nx_pydot.write_dot(G, output_dot)
-            if verbose: print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
+            if verbose:
+                print(f"Saved DOT network  : {os.path.abspath(output_dot)}")
 
         except ImportError as e:
             warnings.warn(f"Could not export network formats: {e}", UserWarning)

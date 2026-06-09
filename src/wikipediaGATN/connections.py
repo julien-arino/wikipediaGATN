@@ -2,8 +2,8 @@
 Generate outbound airport connections list from public JSON data.
 
 This module parses augmented JSON files from the public airport_data directory
-and creates CSV files listing outbound passenger and cargo connections for each 
-airport. It exports unmapped destination URLs to a separate CSV for later 
+and creates CSV files listing outbound passenger and cargo connections for each
+airport. It exports unmapped destination URLs to a separate CSV for later
 processing via web scraping.
 """
 
@@ -18,6 +18,7 @@ from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
 
 logger = logging.getLogger(__name__)
 
+
 def create_outbound_connections_list(
     verbose: bool = False,
     export_unmapped: bool = True,
@@ -26,7 +27,7 @@ def create_outbound_connections_list(
     Parse JSON files in ``PUBLIC_DATA_DIR/airport_data`` and write connection CSVs.
 
     Reads every ``<IATA>.json`` file, extracts the pre-mapped destination IATA codes,
-    and writes the results to ``global-air-pax-network.csv`` and 
+    and writes the results to ``global-air-pax-network.csv`` and
     ``global-air-cargo-network.csv``.
 
     Optionally exports a third CSV listing destination URLs that could not be
@@ -76,7 +77,9 @@ def create_outbound_connections_list(
             with open(fpath, "r", encoding="utf-8") as fh:
                 data = json.load(fh)
         except (json.JSONDecodeError, OSError) as exc:
-            warnings.warn(f"Skipping {fname}: cannot read — {exc}", UserWarning, stacklevel=2)
+            warnings.warn(
+                f"Skipping {fname}: cannot read — {exc}", UserWarning, stacklevel=2
+            )
             continue
 
         origin_iata = data.get("iata")
@@ -91,7 +94,9 @@ def create_outbound_connections_list(
 
         if not origin_iata:
             if verbose:
-                print(f"  ⚠  No origin IATA, ICAO, GPS, or Ident code found in {fname} — skipping")
+                print(
+                    f"  ⚠  No origin IATA, ICAO, GPS, or Ident code found in {fname} — skipping"
+                )
             continue
 
         destinations = data.get("destinations", [])
@@ -100,7 +105,10 @@ def create_outbound_connections_list(
         outlinks_weighted = Counter()
         outlinks_cargo_weighted = Counter()
 
-        for dest_list, link_weighted_counter in [(destinations, outlinks_weighted), (destinations_cargo, outlinks_cargo_weighted)]:
+        for dest_list, link_weighted_counter in [
+            (destinations, outlinks_weighted),
+            (destinations_cargo, outlinks_cargo_weighted),
+        ]:
             for dest in dest_list:
                 if isinstance(dest, dict):
                     # New dictionary format
@@ -116,7 +124,7 @@ def create_outbound_connections_list(
                     dest_iata = dest[2] if len(dest) > 2 else None
                     dest_icao = dest[3] if len(dest) > 3 else None
                     dest_gps = dest[4] if len(dest) > 4 else None
-                    airline_count = 1 # Fallback for old format
+                    airline_count = 1  # Fallback for old format
                 else:
                     continue
 
@@ -134,7 +142,9 @@ def create_outbound_connections_list(
                     # In case the same destination appears multiple times (rare but possible),
                     # we take the maximum airline count or sum them?
                     # Usually it's just one entry per destination.
-                    link_weighted_counter[target_code] = max(link_weighted_counter[target_code], airline_count)
+                    link_weighted_counter[target_code] = max(
+                        link_weighted_counter[target_code], airline_count
+                    )
 
         airport_connections[origin_iata] = {
             "origin": origin_iata,
@@ -154,8 +164,10 @@ def create_outbound_connections_list(
     # Report unmapped destinations
     # ------------------------------------------------------------------
     if unmapped_destinations and verbose:
-        print(f"\n⚠️  {len(unmapped_destinations):,} unmapped destination URLs "
-              f"({sum(unmapped_destinations.values()):,} total occurrences)")
+        print(
+            f"\n⚠️  {len(unmapped_destinations):,} unmapped destination URLs "
+            f"({sum(unmapped_destinations.values()):,} total occurrences)"
+        )
         print("   Top 10 unmapped:")
         for url, count in unmapped_destinations.most_common(10):
             print(f"     {count:>4}x  {url}")
@@ -168,19 +180,32 @@ def create_outbound_connections_list(
     output_cargo_csv = os.path.join(PUBLIC_DATA_DIR, "global-air-cargo-network.csv")
 
     connections = sorted(airport_connections.values(), key=lambda x: x["origin"])
-    connections_cargo = sorted(airport_connections_cargo.values(), key=lambda x: x["origin"])
+    connections_cargo = sorted(
+        airport_connections_cargo.values(), key=lambda x: x["origin"]
+    )
 
-    for csv_path, conn_list in [(output_csv, connections), (output_cargo_csv, connections_cargo)]:
+    for csv_path, conn_list in [
+        (output_csv, connections),
+        (output_cargo_csv, connections_cargo),
+    ]:
         with open(csv_path, "w", encoding="utf-8", newline="") as csvfile:
             writer = csv.DictWriter(
                 csvfile,
-                fieldnames=["origin", "nb_outlinks", "outlinks", "weights", "nb_airlines"],
+                fieldnames=[
+                    "origin",
+                    "nb_outlinks",
+                    "outlinks",
+                    "weights",
+                    "nb_airlines",
+                ],
                 quoting=csv.QUOTE_ALL,
             )
             writer.writeheader()
             for row in conn_list:
                 outlinks_sorted = sorted(row["outlinks_weighted"].keys())
-                weights = [str(row["outlinks_weighted"][code]) for code in outlinks_sorted]
+                weights = [
+                    str(row["outlinks_weighted"][code]) for code in outlinks_sorted
+                ]
                 csv_row = {
                     "origin": row["origin"],
                     "nb_outlinks": len(outlinks_sorted),
@@ -211,14 +236,24 @@ def create_outbound_connections_list(
         unmapped_csv = os.path.join(TEMP_RESULTS_DIR, "unmapped_destinations.csv")
 
         unmapped_list = sorted(
-            ({"url": url, "count": count, "iata": "", "name": "", "source": "to_be_scraped"}
-             for url, count in unmapped_destinations.items()),
+            (
+                {
+                    "url": url,
+                    "count": count,
+                    "iata": "",
+                    "name": "",
+                    "source": "to_be_scraped",
+                }
+                for url, count in unmapped_destinations.items()
+            ),
             key=lambda x: x["count"],
             reverse=True,
         )
 
         with open(unmapped_csv, "w", encoding="utf-8", newline="") as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=["url", "count", "iata", "name", "source"])
+            writer = csv.DictWriter(
+                csvfile, fieldnames=["url", "count", "iata", "name", "source"]
+            )
             writer.writeheader()
             writer.writerows(unmapped_list)
 
@@ -228,7 +263,11 @@ def create_outbound_connections_list(
             print(f"{'=' * 70}")
             print(f"Output   : {os.path.abspath(unmapped_csv)}")
             print(f"Unique unmapped URLs     : {len(unmapped_destinations):,}")
-            print(f"Total unmapped occurrences: {sum(unmapped_destinations.values()):,}")
-            print("\n💡 Next step: run extract_iata_from_wikipedia() to resolve these URLs.")
+            print(
+                f"Total unmapped occurrences: {sum(unmapped_destinations.values()):,}"
+            )
+            print(
+                "\n💡 Next step: run extract_iata_from_wikipedia() to resolve these URLs."
+            )
 
     return output_csv, output_cargo_csv, unmapped_csv

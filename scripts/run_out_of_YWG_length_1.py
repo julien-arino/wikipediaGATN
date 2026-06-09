@@ -2,7 +2,6 @@
 Test script that crawls exactly one level out from YWG (Winnipeg), explicitly verifying handling of known tricky URLs like MSP and YUL.
 """
 
-
 from wikipediaGATN.wikipedia_airport_level import (
     get_wikipedia_airport_page_link,
 )
@@ -24,5 +23,6 @@ if __name__ == "__main__":
 
     # Now run for a distance of 1
     print("Running for a distance of 1...")
-    iterate_search_until_distance_N(seed_iata=test_IATA, dist=1, delay=0.5, verbose=verbose)
-
+    iterate_search_until_distance_N(
+        seed_iata=test_IATA, dist=1, delay=0.5, verbose=verbose
+    )

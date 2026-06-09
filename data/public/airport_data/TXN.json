@@ -15,15 +15,14 @@
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Huangshan_Tunxi_International_Airport",
   "outdegree": 10,
-  "number_airlines": 7,
+  "number_airlines": 6,
   "airlines": [
+    "9 Air",
     "Air China",
     "Batik Air Malaysia",
     "Beijing Capital Airlines",
-    "China Southern Airlines",
     "Fuzhou Airlines",
-    "Greater Bay Airlines",
-    "Jin Air"
+    "West Air"
   ],
   "destinations": [
     {
@@ -39,15 +38,39 @@
       ]
     },
     {
-      "city": "Busan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
       "codes": [
-        "PUS",
-        "RKPK",
-        "RKPK"
+        "CKG",
+        "ZUCK",
+        "ZUCK"
       ],
       "airlines": [
-        "Beijing Capital Airlines"
+        "West Air"
+      ]
+    },
+    {
+      "city": "Dalian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport",
+      "codes": [
+        "DLC",
+        "ZYTL",
+        "ZYTL"
+      ],
+      "airlines": [
+        "West Air"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG",
+        "ZGGG"
+      ],
+      "airlines": [
+        "9 Air"
       ]
     },
     {
@@ -60,18 +83,6 @@
       ],
       "airlines": [
         "Fuzhou Airlines"
-      ]
-    },
-    {
-      "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
-      "codes": [
-        "HKG",
-        "VHHH",
-        "VHHH"
-      ],
-      "airlines": [
-        "Greater Bay Airlines"
       ]
     },
     {
@@ -99,27 +110,15 @@
       ]
     },
     {
-      "city": "Seoul–Incheon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "city": "Shenyang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport",
       "codes": [
-        "ICN",
-        "RKSI",
-        "RKSI"
+        "SHE",
+        "ZYTX",
+        "ZYTX"
       ],
       "airlines": [
-        "Jin Air"
-      ]
-    },
-    {
-      "city": "Shenzhen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "codes": [
-        "SZX",
-        "ZGSZ",
-        "ZGSZ"
-      ],
-      "airlines": [
-        "China Southern Airlines"
+        "9 Air"
       ]
     },
     {
@@ -148,6 +147,10 @@
     }
   ],
   "airlines_destinations": {
+    "9 Air": [
+      "Guangzhou",
+      "Shenyang"
+    ],
     "Air China": [
       "Beijing–Capital"
     ],
@@ -155,22 +158,16 @@
       "Kuala Lumpur–International"
     ],
     "Beijing Capital Airlines": [
-      "Busan",
       "Xi'an",
       "Xiamen"
-    ],
-    "China Southern Airlines": [
-      "Shenzhen"
     ],
     "Fuzhou Airlines": [
       "Harbin",
       "Sanya"
     ],
-    "Greater Bay Airlines": [
-      "Hong Kong"
-    ],
-    "Jin Air": [
-      "Seoul–Incheon"
+    "West Air": [
+      "Chongqing",
+      "Dalian"
     ]
   },
   "outdegree_cargo": 0,
@@ -178,6 +175,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-17T00:39:07Z",
-  "date-time-wikidata": "2026-05-11T08:11:12Z"
+  "date-time-parse": "2026-06-09T20:56:29Z",
+  "date-time-wikidata": "2026-06-04T21:11:05Z"
 }

@@ -15,14 +15,25 @@
   "admin2_name": "Gorod Nal'chik",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nalchik_Airport",
   "outdegree": 6,
-  "number_airlines": 4,
+  "number_airlines": 3,
   "airlines": [
-    "Azimuth",
     "Jazeera Airways",
     "Pobeda",
     "UVT Aero"
   ],
   "destinations": [
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN",
+        "OEJN"
+      ],
+      "airlines": [
+        "Jazeera Airways"
+      ]
+    },
     {
       "city": "Kazan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kazan_International_Airport",
@@ -33,18 +44,6 @@
       ],
       "airlines": [
         "UVT Aero"
-      ]
-    },
-    {
-      "city": "Kuwait",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait_International_Airport",
-      "codes": [
-        "KWI",
-        "OKKK",
-        "OKKK"
-      ],
-      "airlines": [
-        "Jazeera Airways"
       ]
     },
     {
@@ -85,24 +84,20 @@
     },
     {
       "city": "Sochi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Adler-Sochi_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sochi_International_Airport",
       "codes": [
         "AER",
         "URSS",
         "URSS"
       ],
       "airlines": [
-        "Azimuth",
         "UVT Aero"
       ]
     }
   ],
   "airlines_destinations": {
-    "Azimuth": [
-      "Sochi"
-    ],
     "Jazeera Airways": [
-      "Kuwait"
+      "Jeddah"
     ],
     "Pobeda": [
       "Moscow–Sheremetyevo",
@@ -119,6 +114,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-10T00:35:20Z",
-  "date-time-wikidata": "2026-05-04T17:18:40Z"
+  "date-time-parse": "2026-06-09T20:53:46Z",
+  "date-time-wikidata": "2026-06-02T08:27:55Z"
 }

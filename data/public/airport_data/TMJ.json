@@ -14,9 +14,10 @@
   "admin1_name": "Surxondaryo",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Termez_Airport",
-  "outdegree": 4,
-  "number_airlines": 5,
+  "outdegree": 5,
+  "number_airlines": 6,
   "airlines": [
+    "Flykhiva",
     "Pobeda",
     "Qanot Sharq",
     "Silk Avia",
@@ -25,12 +26,24 @@
   ],
   "destinations": [
     {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_International_Airport",
+      "codes": [
+        "IST",
+        "LTFM",
+        "LTFM"
+      ],
+      "airlines": [
+        "Flykhiva"
+      ]
+    },
+    {
       "city": "Moscow–Vnukovo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
       "codes": [
         "VKO",
         "UUWW",
-        "gps code not found"
+        "UUWW"
       ],
       "airlines": [
         "Pobeda",
@@ -43,7 +56,7 @@
       "codes": [
         "LED",
         "ULLI",
-        "gps code not found"
+        "ULLI"
       ],
       "airlines": [
         "Qanot Sharq",
@@ -56,7 +69,7 @@
       "codes": [
         "AER",
         "URSS",
-        "gps code not found"
+        "URSS"
       ],
       "airlines": [
         "azimuth"
@@ -68,7 +81,7 @@
       "codes": [
         "TAS",
         "UZTT",
-        "gps code not found"
+        "UZTT"
       ],
       "airlines": [
         "Silk Avia",
@@ -79,6 +92,9 @@
   "airlines_destinations": {
     "azimuth": [
       "Sochi"
+    ],
+    "Flykhiva": [
+      "Istanbul"
     ],
     "Pobeda": [
       "Moscow–Vnukovo"
@@ -100,6 +116,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T02:44:23Z",
-  "date-time-wikidata": "2026-04-08T21:50:37Z"
+  "date-time-parse": "2026-06-09T20:56:15Z",
+  "date-time-wikidata": "2026-05-29T22:40:35Z"
 }

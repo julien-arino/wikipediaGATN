@@ -14,7 +14,7 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
-  "outdegree": 69,
+  "outdegree": 68,
   "number_airlines": 26,
   "airlines": [
     "AJet",
@@ -228,7 +228,8 @@
       ],
       "airlines": [
         "Air Astana",
-        "SCAT Airlines"
+        "SCAT Airlines",
+        "VietJet Air"
       ]
     },
     {
@@ -866,19 +867,6 @@
       ]
     },
     {
-      "city": "Ürjar",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Urzhar_Airport",
-      "codes": [
-        "UZR",
-        "UASU",
-        "UASU"
-      ],
-      "airlines": [
-        "Qazaq Air",
-        "SCAT Airlines"
-      ]
-    },
-    {
       "city": "Ürümqi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Tianshan_International_Airport",
       "codes": [
@@ -1026,7 +1014,6 @@
       "Taldyqorğan",
       "Türkıstan",
       "Öskemen",
-      "Ürjar",
       "Üşaral",
       "Şymkent"
     ],
@@ -1065,7 +1052,6 @@
       "Taraz",
       "Ulaanbaatar",
       "Öskemen",
-      "Ürjar",
       "Üşaral",
       "Şymkent"
     ],
@@ -1083,16 +1069,55 @@
       "Tashkent"
     ],
     "VietJet Air": [
+      "Da Nang",
       "Nha Trang",
       "Phu Quoc"
     ]
   },
-  "outdegree_cargo": 1,
-  "number_airlines_cargo": 1,
+  "outdegree_cargo": 4,
+  "number_airlines_cargo": 3,
   "airlines_cargo": [
-    "My Freighter"
+    "Cargolux",
+    "My Freighter",
+    "Sichuan Airlines"
   ],
   "destinations_cargo": [
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP",
+        "LHBP"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Findel_Airport",
+      "codes": [
+        "LUX",
+        "ELLX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
     {
       "city": "Tashkent",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Islam_Karimov_Tashkent_International_Airport",
@@ -1107,10 +1132,17 @@
     }
   ],
   "airlines_destinations_cargo": {
+    "Cargolux": [
+      "Luxembourg"
+    ],
     "My Freighter": [
       "Tashkent"
+    ],
+    "Sichuan Airlines": [
+      "Budapest",
+      "Chengdu"
     ]
   },
-  "date-time-parse": "2026-05-24T00:40:51Z",
-  "date-time-wikidata": "2026-05-21T13:40:39Z"
+  "date-time-parse": "2026-06-09T20:54:00Z",
+  "date-time-wikidata": "2026-06-03T10:46:44Z"
 }

@@ -14,21 +14,34 @@
   "admin1_name": "Saha, Respublika",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Chulman_Neryungri_Airport",
-  "outdegree": 6,
-  "number_airlines": 3,
+  "outdegree": 8,
+  "number_airlines": 4,
   "airlines": [
     "Aurora",
+    "Iraero",
     "S7 Airlines",
     "Yakutia Airlines"
   ],
   "destinations": [
+    {
+      "city": "Blagoveshchensk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ignatyevo_Airport",
+      "codes": [
+        "BQS",
+        "UHBB",
+        "UHBB"
+      ],
+      "airlines": [
+        "Iraero"
+      ]
+    },
     {
       "city": "Irkutsk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
       "codes": [
         "IKT",
         "UIII",
-        "gps code not found"
+        "UIII"
       ],
       "airlines": [
         "S7 Airlines",
@@ -41,7 +54,7 @@
       "codes": [
         "KHV",
         "UHHH",
-        "gps code not found"
+        "UHHH"
       ],
       "airlines": [
         "Aurora",
@@ -54,7 +67,7 @@
       "codes": [
         "DME",
         "UUDD",
-        "gps code not found"
+        "UUDD"
       ],
       "airlines": [
         "S7 Airlines"
@@ -66,7 +79,7 @@
       "codes": [
         "VKO",
         "UUWW",
-        "gps code not found"
+        "UUWW"
       ],
       "airlines": [
         "Yakutia Airlines"
@@ -78,11 +91,23 @@
       "codes": [
         "OVB",
         "UNNT",
-        "gps code not found"
+        "UNNT"
       ],
       "airlines": [
         "S7 Airlines",
         "Yakutia Airlines"
+      ]
+    },
+    {
+      "city": "Vladivostok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vladivostok_International_Airport",
+      "codes": [
+        "VVO",
+        "UHWW",
+        "UHWW"
+      ],
+      "airlines": [
+        "Iraero"
       ]
     },
     {
@@ -91,7 +116,7 @@
       "codes": [
         "YKS",
         "UEEE",
-        "gps code not found"
+        "UEEE"
       ],
       "airlines": [
         "Yakutia Airlines"
@@ -101,6 +126,10 @@
   "airlines_destinations": {
     "Aurora": [
       "Khabarovsk"
+    ],
+    "Iraero": [
+      "Blagoveshchensk",
+      "Vladivostok"
     ],
     "S7 Airlines": [
       "Irkutsk",
@@ -120,6 +149,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T02:35:42Z",
-  "date-time-wikidata": "2025-11-06T21:22:18Z"
+  "date-time-parse": "2026-06-09T20:53:53Z",
+  "date-time-wikidata": "2026-06-01T08:51:10Z"
 }

@@ -1056,14 +1056,27 @@
       "Dhaka"
     ]
   },
-  "outdegree_cargo": 6,
-  "number_airlines_cargo": 3,
+  "outdegree_cargo": 9,
+  "number_airlines_cargo": 4,
   "airlines_cargo": [
+    "Blue Dart Aviation",
     "IndiGo CarGo",
     "Qatar Airways Cargo",
     "YTO Cargo Airlines"
   ],
   "destinations_cargo": [
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP",
+        "VIDP"
+      ],
+      "airlines": [
+        "Blue Dart Aviation"
+      ]
+    },
     {
       "city": "Dhaka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hazrat_Shahjalal_International_Airport",
@@ -1101,6 +1114,18 @@
       ]
     },
     {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guwahati_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT",
+        "VEGT"
+      ],
+      "airlines": [
+        "Blue Dart Aviation"
+      ]
+    },
+    {
       "city": "Hangzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
       "codes": [
@@ -1135,9 +1160,26 @@
       "airlines": [
         "IndiGo CarGo"
       ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB",
+        "VABB"
+      ],
+      "airlines": [
+        "Blue Dart Aviation"
+      ]
     }
   ],
   "airlines_destinations_cargo": {
+    "Blue Dart Aviation": [
+      "Delhi",
+      "Guwahati",
+      "Mumbai"
+    ],
     "IndiGo CarGo": [
       "Dhaka",
       "Ezhou",
@@ -1151,6 +1193,6 @@
       "Hangzhou"
     ]
   },
-  "date-time-parse": "2026-05-24T00:36:26Z",
-  "date-time-wikidata": "2026-05-19T14:10:22Z"
+  "date-time-parse": "2026-06-09T20:48:34Z",
+  "date-time-wikidata": "2026-06-05T13:08:41Z"
 }

@@ -14,14 +14,16 @@
   "admin1_name": "Sarawak",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-  "outdegree": 8,
-  "number_airlines": 7,
+  "outdegree": 19,
+  "number_airlines": 9,
   "airlines": [
     "9 Air",
     "AirAsia",
+    "AirBorneo",
     "Batik Air Malaysia",
     "Firefly",
     "Indonesia AirAsia",
+    "Malaysia Airlines",
     "Royal Brunei Airlines",
     "Scoot"
   ],
@@ -36,6 +38,18 @@
       ],
       "airlines": [
         "Royal Brunei Airlines"
+      ]
+    },
+    {
+      "city": "Bintulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bintulu_Airport",
+      "codes": [
+        "BTU",
+        "WBGB",
+        "WBGB"
+      ],
+      "airlines": [
+        "AirAsia"
       ]
     },
     {
@@ -75,6 +89,42 @@
       ]
     },
     {
+      "city": "Johor Bahru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senai_International_Airport",
+      "codes": [
+        "JHB",
+        "WMKJ",
+        "WMKJ"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kota Bharu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Ismail_Petra_Airport",
+      "codes": [
+        "KBR",
+        "WMKC",
+        "WMKC"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Kota Kinabalu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport",
+      "codes": [
+        "BKI",
+        "WBKK",
+        "WBKK"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
       "city": "Kuala Lumpur–International",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
       "codes": [
@@ -83,7 +133,69 @@
         "WMKK"
       ],
       "airlines": [
-        "Firefly"
+        "AirAsia",
+        "Firefly",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur–Subang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultan_Azlan_Shah_Airport",
+      "codes": [
+        "IPH",
+        "WMKI",
+        "WMKI"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Limbang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Limbang_Airport",
+      "codes": [
+        "LMN",
+        "WBGJ",
+        "WBGJ"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Miri",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miri_Airport",
+      "codes": [
+        "MYY",
+        "WBGR",
+        "WBGR"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
+      "city": "Mukah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mukah_Airport",
+      "codes": [
+        "MKM",
+        "WBGK",
+        "WBGK"
+      ],
+      "airlines": [
+        "AirBorneo"
+      ]
+    },
+    {
+      "city": "Mulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mulu_Airport",
+      "codes": [
+        "MZV",
+        "WBMU",
+        "WBMU"
+      ],
+      "airlines": [
+        "AirBorneo"
       ]
     },
     {
@@ -111,6 +223,18 @@
       ]
     },
     {
+      "city": "Sibu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sibu_Airport",
+      "codes": [
+        "SBW",
+        "WBGS",
+        "WBGS"
+      ],
+      "airlines": [
+        "AirAsia"
+      ]
+    },
+    {
       "city": "Singapore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Changi_Airport",
       "codes": [
@@ -119,7 +243,20 @@
         "WSSS"
       ],
       "airlines": [
+        "AirAsia",
         "Scoot"
+      ]
+    },
+    {
+      "city": "Tanjung Manis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tanjung_Manis_Airport",
+      "codes": [
+        "TGC",
+        "WBTM",
+        "WBTM"
+      ],
+      "airlines": [
+        "AirBorneo"
       ]
     }
   ],
@@ -128,17 +265,35 @@
       "Haikou"
     ],
     "AirAsia": [
+      "Bintulu",
+      "Johor Bahru",
+      "Kota Bharu",
+      "Kota Kinabalu",
+      "Kuala Lumpur–International",
+      "Miri",
       "Penang",
-      "Pontianak"
+      "Pontianak",
+      "Sibu",
+      "Singapore"
+    ],
+    "AirBorneo": [
+      "Limbang",
+      "Mukah",
+      "Mulu",
+      "Tanjung Manis"
     ],
     "Batik Air Malaysia": [
-      "Guangzhou"
+      "Guangzhou",
+      "Kuala Lumpur–Subang"
     ],
     "Firefly": [
       "Kuala Lumpur–International"
     ],
     "Indonesia AirAsia": [
       "Jakarta–Soekarno-Hatta"
+    ],
+    "Malaysia Airlines": [
+      "Kuala Lumpur–International"
     ],
     "Royal Brunei Airlines": [
       "Bandar Seri Begawan"
@@ -152,6 +307,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-24T00:39:10Z",
-  "date-time-wikidata": "2026-05-23T21:19:42Z"
+  "date-time-parse": "2026-06-09T20:51:51Z",
+  "date-time-wikidata": "2026-06-07T10:50:25Z"
 }

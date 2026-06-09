@@ -14,17 +14,18 @@
   "admin1_name": "Catalunya [Cataluña]",
   "admin2_name": "Provincia de Girona",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Girona–Costa_Brava_Airport",
-  "outdegree": 49,
-  "number_airlines": 8,
+  "outdegree": 47,
+  "number_airlines": 9,
   "airlines": [
+    "Air Arabia",
     "Enter Air",
     "Jet2.com",
-    "Luxair",
     "Ryanair",
     "Smartwings",
     "TUI Airways",
     "TUI fly Belgium",
-    "Transavia"
+    "Transavia",
+    "Wizz Air"
   ],
   "destinations": [
     {
@@ -152,15 +153,15 @@
       ]
     },
     {
-      "city": "Bucharest–Băneasa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Băneasa_Aurel_Vlaicu_International_Airport",
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Airport",
       "codes": [
-        "BBU",
-        "LRBS",
-        "LRBS"
+        "BUD",
+        "LHBP",
+        "LHBP"
       ],
       "airlines": [
-        "Ryanair"
+        "Wizz Air"
       ]
     },
     {
@@ -213,18 +214,6 @@
       ]
     },
     {
-      "city": "Edinburgh",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Edinburgh_Airport",
-      "codes": [
-        "EDI",
-        "EGPH",
-        "EGPH"
-      ],
-      "airlines": [
-        "Jet2.com"
-      ]
-    },
-    {
       "city": "Eindhoven",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eindhoven_Airport",
       "codes": [
@@ -267,6 +256,18 @@
         "HHN",
         "EDFH",
         "EDFH"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
+      "city": "Helsinki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
+      "codes": [
+        "HEL",
+        "EFHK",
+        "EFHK"
       ],
       "airlines": [
         "Ryanair"
@@ -343,20 +344,7 @@
         "EGKK"
       ],
       "airlines": [
-        "Jet2.com",
         "TUI Airways"
-      ]
-    },
-    {
-      "city": "London–Luton",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Luton_Airport",
-      "codes": [
-        "LTN",
-        "EGGW",
-        "EGGW"
-      ],
-      "airlines": [
-        "Jet2.com"
       ]
     },
     {
@@ -373,27 +361,15 @@
       ]
     },
     {
-      "city": "Lublin",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lublin_Airport",
+      "city": "Maastricht",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Aachen_Airport",
       "codes": [
-        "LUZ",
-        "EPLB",
-        "EPLB"
+        "MST",
+        "EHBK",
+        "EHBK"
       ],
       "airlines": [
         "Ryanair"
-      ]
-    },
-    {
-      "city": "Luxembourg",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
-      "codes": [
-        "LUX",
-        "ELLX",
-        "ELLX"
-      ],
-      "airlines": [
-        "Luxair"
       ]
     },
     {
@@ -453,18 +429,6 @@
         "NUE",
         "EDDN",
         "EDDN"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
-      "city": "Ostrava",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leoš_Janáček_Airport_Ostrava",
-      "codes": [
-        "OSR",
-        "LKMT",
-        "LKMT"
       ],
       "airlines": [
         "Ryanair"
@@ -544,6 +508,18 @@
       ]
     },
     {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA",
+        "EVRA"
+      ],
+      "airlines": [
+        "Ryanair"
+      ]
+    },
+    {
       "city": "Rotterdam/The Hague",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
       "codes": [
@@ -556,18 +532,6 @@
       ]
     },
     {
-      "city": "Sarajevo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarajevo_International_Airport",
-      "codes": [
-        "SJJ",
-        "LQSA",
-        "LQSA"
-      ],
-      "airlines": [
-        "Ryanair"
-      ]
-    },
-    {
       "city": "Shannon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shannon_Airport",
       "codes": [
@@ -577,6 +541,18 @@
       ],
       "airlines": [
         "Ryanair"
+      ]
+    },
+    {
+      "city": "Tangier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangier_Ibn_Battouta_Airport",
+      "codes": [
+        "TNG",
+        "GMTT",
+        "GMTT"
+      ],
+      "airlines": [
+        "Air Arabia"
       ]
     },
     {
@@ -629,6 +605,9 @@
     }
   ],
   "airlines_destinations": {
+    "Air Arabia": [
+      "Tangier"
+    ],
     "Enter Air": [
       "Gdańsk",
       "Katowice",
@@ -638,17 +617,11 @@
       "Birmingham",
       "Bristol",
       "East Midlands",
-      "Edinburgh",
       "Glasgow",
       "Leeds/Bradford",
-      "London–Gatwick",
-      "London–Luton",
       "London–Stansted",
       "Manchester",
       "Newcastle upon Tyne"
-    ],
-    "Luxair": [
-      "Luxembourg"
     ],
     "Ryanair": [
       "Aalborg",
@@ -660,30 +633,29 @@
       "Bournemouth",
       "Bristol",
       "Brussels",
-      "Bucharest–Băneasa",
       "Charleroi",
       "Cork",
       "Dublin",
       "East Midlands",
       "Eindhoven",
       "Hahn",
+      "Helsinki",
       "Karlsruhe/Baden-Baden",
       "Knock",
       "Kraków",
       "Leeds/Bradford",
       "London–Stansted",
-      "Lublin",
+      "Maastricht",
       "Manchester",
       "Marrakesh",
       "Memmingen",
       "Nuremberg",
-      "Ostrava",
       "Paderborn/Lippstadt",
       "Pardubice",
       "Pescara",
       "Pisa",
       "Poznań",
-      "Sarajevo",
+      "Riga",
       "Shannon",
       "Weeze",
       "Wrocław",
@@ -705,6 +677,9 @@
     ],
     "TUI fly Belgium": [
       "Brussels"
+    ],
+    "Wizz Air": [
+      "Budapest"
     ]
   },
   "outdegree_cargo": 0,
@@ -712,6 +687,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-24T00:38:14Z",
-  "date-time-wikidata": "2026-05-20T23:45:43Z"
+  "date-time-parse": "2026-06-09T20:50:40Z",
+  "date-time-wikidata": "2026-05-29T17:53:41Z"
 }

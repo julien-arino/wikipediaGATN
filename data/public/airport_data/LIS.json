@@ -14,8 +14,8 @@
   "admin1_name": "Lisboa",
   "admin2_name": "Loures",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
-  "outdegree": 72,
-  "number_airlines": 40,
+  "outdegree": 133,
+  "number_airlines": 51,
   "airlines": [
     "Aegean Airlines",
     "Air Algérie",
@@ -26,9 +26,14 @@
     "Air Transat",
     "American Airlines",
     "Azores Airlines",
+    "Azul Linhas Aéreas",
     "Beijing Capital Airlines",
     "British Airways",
     "Brussels Airlines",
+    "Cabo Verde Airlines",
+    "Delta Air Lines",
+    "Emirates",
+    "Etihad Airways",
     "Eurowings",
     "Finnair",
     "Gol Linhas Aéreas",
@@ -36,19 +41,24 @@
     "Iberojet",
     "Icelandair",
     "KLM",
+    "Korean Air",
     "LATAM Brasil",
     "Lufthansa",
     "Luxair",
     "Neos",
+    "Norwegian Air Shuttle",
     "Nouvelair",
     "Pegasus Airlines",
     "Qatar Airways",
     "Ryanair",
+    "STP Airways",
     "Scandinavian Airlines",
+    "Sky Express",
     "Smartwings",
     "TAP Air Portugal",
     "Transavia",
     "Tunisair",
+    "Turkish Airlines",
     "United Airlines",
     "Volotea",
     "Vueling",
@@ -56,9 +66,34 @@
     "Wizz Air",
     "World2Fly",
     "airBaltic",
-    "easyJet"
+    "easyJet",
+    "euroAtlantic Airways"
   ],
   "destinations": [
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA",
+        "OMAA"
+      ],
+      "airlines": [
+        "Etihad Airways"
+      ]
+    },
+    {
+      "city": "Accra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotoka_International_Airport",
+      "codes": [
+        "ACC",
+        "DGAA",
+        "DGAA"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
     {
       "city": "Algiers",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
@@ -72,6 +107,18 @@
       ]
     },
     {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Airport",
+      "codes": [
+        "ALC",
+        "LEAL",
+        "LEAL"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Amsterdam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
       "codes": [
@@ -80,7 +127,8 @@
         "EHAM"
       ],
       "airlines": [
-        "KLM"
+        "KLM",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -105,8 +153,33 @@
       ],
       "airlines": [
         "Aegean Airlines",
+        "Sky Express",
         "TAP Air Portugal",
         "easyJet"
+      ]
+    },
+    {
+      "city": "Banjul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Banjul_International_Airport",
+      "codes": [
+        "BJL",
+        "GBYD",
+        "GBYD"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL",
+        "LEBL"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -134,6 +207,30 @@
       ]
     },
     {
+      "city": "Belo Horizonte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF",
+        "SBCF"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE",
+        "SBBE"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Berlin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
       "codes": [
@@ -142,7 +239,82 @@
         "EDDB"
       ],
       "airlines": [
-        "Eurowings"
+        "Eurowings",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Bilbao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
+      "codes": [
+        "BIO",
+        "LEBB",
+        "LEBB"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Bissau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osvaldo_Vieira_International_Airport",
+      "codes": [
+        "OXB",
+        "GGOV",
+        "GGOV"
+      ],
+      "airlines": [
+        "TAP Air Portugal",
+        "euroAtlantic Airways"
+      ]
+    },
+    {
+      "city": "Boa Vista (CV)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aristides_Pereira_International_Airport",
+      "codes": [
+        "BVC",
+        "GVBA",
+        "GVBA"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Bologna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bologna_Guglielmo_Marconi_Airport",
+      "codes": [
+        "BLQ",
+        "LIPE",
+        "LIPE"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Boston",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Logan_International_Airport",
+      "codes": [
+        "BOS",
+        "KBOS",
+        "KBOS"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR",
+        "SBBR"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -154,7 +326,20 @@
         "EBBR"
       ],
       "airlines": [
-        "Brussels Airlines"
+        "Brussels Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Linhas Aéreas"
       ]
     },
     {
@@ -164,6 +349,30 @@
         "CCS",
         "SVMI",
         "SVMI"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Casablanca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mohammed_V_International_Airport",
+      "codes": [
+        "CMN",
+        "GMMN",
+        "GMMN"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD",
+        "KORD"
       ],
       "airlines": [
         "TAP Air Portugal"
@@ -202,7 +411,9 @@
         "EKCH"
       ],
       "airlines": [
-        "Scandinavian Airlines"
+        "Norwegian Air Shuttle",
+        "Scandinavian Airlines",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -226,7 +437,8 @@
         "GOBD"
       ],
       "airlines": [
-        "Smartwings"
+        "Smartwings",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -254,6 +466,30 @@
       ]
     },
     {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Dublin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dublin_Airport",
+      "codes": [
+        "DUB",
+        "EIDW",
+        "EIDW"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Düsseldorf",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Düsseldorf_Airport",
       "codes": [
@@ -262,7 +498,32 @@
         "EDDL"
       ],
       "airlines": [
-        "Eurowings"
+        "Eurowings",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Faro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faro_Airport",
+      "codes": [
+        "FAO",
+        "LPFR",
+        "LPFR"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Florence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Florence_Airport,_Peretola",
+      "codes": [
+        "FLR",
+        "LIRQ",
+        "LIRQ"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -286,7 +547,8 @@
         "SBFZ"
       ],
       "airlines": [
-        "LATAM Brasil"
+        "LATAM Brasil",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -298,7 +560,8 @@
         "EDDF"
       ],
       "airlines": [
-        "Lufthansa"
+        "Lufthansa",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -310,7 +573,20 @@
         "LPMA"
       ],
       "airlines": [
-        "Ryanair"
+        "Ryanair",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Geneva",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Airport",
+      "codes": [
+        "GVA",
+        "LSGG",
+        "LSGG"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -323,6 +599,18 @@
       ],
       "airlines": [
         "easyJet"
+      ]
+    },
+    {
+      "city": "Gran Canaria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gran_Canaria_Airport",
+      "codes": [
+        "LPA",
+        "GCLP",
+        "GCLP"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -346,7 +634,20 @@
         "EDDH"
       ],
       "airlines": [
-        "Eurowings"
+        "Eurowings",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
       ]
     },
     {
@@ -374,6 +675,18 @@
       ]
     },
     {
+      "city": "Horta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horta_Airport",
+      "codes": [
+        "HOR",
+        "LPHR",
+        "LPHR"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
       "city": "Ibiza",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ibiza_Airport",
       "codes": [
@@ -382,7 +695,20 @@
         "LEIB"
       ],
       "airlines": [
+        "TAP Air Portugal",
         "Vueling"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
       ]
     },
     {
@@ -418,7 +744,20 @@
         "EGLL"
       ],
       "airlines": [
-        "British Airways"
+        "British Airways",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -454,7 +793,20 @@
         "ELLX"
       ],
       "airlines": [
-        "Luxair"
+        "Luxair",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL",
+        "LFLL"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -478,7 +830,8 @@
         "LEMD"
       ],
       "airlines": [
-        "Air Europa"
+        "Air Europa",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -488,6 +841,54 @@
         "MAO",
         "SBEG",
         "SBEG"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Manchester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manchester_Airport",
+      "codes": [
+        "MAN",
+        "EGCC",
+        "EGCC"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Maputo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maputo_International_Airport",
+      "codes": [
+        "MPM",
+        "FQMA",
+        "FQMA"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Marrakesh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marrakesh_Menara_Airport",
+      "codes": [
+        "RAK",
+        "GMMX",
+        "GMMX"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille_Provence_Airport",
+      "codes": [
+        "MRS",
+        "LFML",
+        "LFML"
       ],
       "airlines": [
         "TAP Air Portugal"
@@ -518,6 +919,18 @@
       ]
     },
     {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Milan–Linate",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Linate_Airport",
       "codes": [
@@ -527,6 +940,18 @@
       ],
       "airlines": [
         "easyJet"
+      ]
+    },
+    {
+      "city": "Milan–Malpensa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "codes": [
+        "MXP",
+        "LIMC",
+        "LIMC"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -551,7 +976,8 @@
       ],
       "airlines": [
         "Air Canada",
-        "Air Transat"
+        "Air Transat",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -564,6 +990,18 @@
       ],
       "airlines": [
         "Lufthansa",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG",
+        "LEMG"
+      ],
+      "airlines": [
         "TAP Air Portugal"
       ]
     },
@@ -592,6 +1030,43 @@
       ]
     },
     {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN",
+        "LIRN"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Natal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Natal_International_Airport",
+      "codes": [
+        "NAT",
+        "SBSG",
+        "SBSG"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Newark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
       "codes": [
@@ -600,6 +1075,7 @@
         "KEWR"
       ],
       "airlines": [
+        "TAP Air Portugal",
         "United Airlines"
       ]
     },
@@ -613,6 +1089,18 @@
       ],
       "airlines": [
         "easyJet"
+      ]
+    },
+    {
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN",
+        "LFMN"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -637,6 +1125,19 @@
       ],
       "airlines": [
         "World2Fly"
+      ]
+    },
+    {
+      "city": "Oslo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo_Airport,_Gardermoen",
+      "codes": [
+        "OSL",
+        "ENGM",
+        "ENGM"
+      ],
+      "airlines": [
+        "Norwegian Air Shuttle",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -685,6 +1186,7 @@
         "LFPO"
       ],
       "airlines": [
+        "TAP Air Portugal",
         "Transavia"
       ]
     },
@@ -698,6 +1200,43 @@
       ],
       "airlines": [
         "American Airlines"
+      ]
+    },
+    {
+      "city": "Pico",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pico_Airport",
+      "codes": [
+        "PIX",
+        "LPPI",
+        "LPPI"
+      ],
+      "airlines": [
+        "Azores Airlines"
+      ]
+    },
+    {
+      "city": "Ponta Delgada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/João_Paulo_II_Airport",
+      "codes": [
+        "PDL",
+        "LPPD",
+        "LPPD"
+      ],
+      "airlines": [
+        "Azores Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Sá_Carneiro_Airport",
+      "codes": [
+        "OPO",
+        "LPPR",
+        "LPPR"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -726,6 +1265,31 @@
       ]
     },
     {
+      "city": "Prague",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Václav_Havel_Airport_Prague",
+      "codes": [
+        "PRG",
+        "LKPR",
+        "LKPR"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Praia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_International_Airport",
+      "codes": [
+        "RAI",
+        "GVNP",
+        "GVNP"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Punta Cana",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punta_Cana_International_Airport",
       "codes": [
@@ -735,6 +1299,18 @@
       ],
       "airlines": [
         "World2Fly"
+      ]
+    },
+    {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF",
+        "SBRF"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -750,6 +1326,18 @@
       ]
     },
     {
+      "city": "Riga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riga_International_Airport",
+      "codes": [
+        "RIX",
+        "EVRA",
+        "EVRA"
+      ],
+      "airlines": [
+        "airBaltic"
+      ]
+    },
+    {
       "city": "Rio de Janeiro–Galeão",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
       "codes": [
@@ -758,7 +1346,8 @@
         "SBGL"
       ],
       "airlines": [
-        "Gol Linhas Aéreas"
+        "Gol Linhas Aéreas",
+        "TAP Air Portugal"
       ]
     },
     {
@@ -770,6 +1359,7 @@
         "LIRF"
       ],
       "airlines": [
+        "TAP Air Portugal",
         "Wizz Air"
       ]
     },
@@ -782,7 +1372,9 @@
         "GVAC"
       ],
       "airlines": [
+        "Cabo Verde Airlines",
         "Iberojet",
+        "TAP Air Portugal",
         "easyJet"
       ]
     },
@@ -795,7 +1387,20 @@
         "SBSV"
       ],
       "airlines": [
-        "Hi Fly"
+        "Hi Fly",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -805,6 +1410,30 @@
         "SMA",
         "LPAZ",
         "LPAZ"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI",
+        "RKSI"
+      ],
+      "airlines": [
+        "Korean Air"
+      ]
+    },
+    {
+      "city": "Seville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seville_Airport",
+      "codes": [
+        "SVQ",
+        "LEZL",
+        "LEZL"
       ],
       "airlines": [
         "TAP Air Portugal"
@@ -835,6 +1464,45 @@
       ]
     },
     {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR",
+        "SBGR"
+      ],
+      "airlines": [
+        "LATAM Brasil",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "São Tomé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Tomé_International_Airport",
+      "codes": [
+        "TMS",
+        "FPST",
+        "FPST"
+      ],
+      "airlines": [
+        "STP Airways",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "São Vicente",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cesária_Évora_Airport",
+      "codes": [
+        "VXE",
+        "GVSV",
+        "GVSV"
+      ],
+      "airlines": [
+        "Cabo Verde Airlines",
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Tel Aviv",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
       "codes": [
@@ -844,6 +1512,31 @@
       ],
       "airlines": [
         "Neos",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Tenerife–South",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_South_Airport",
+      "codes": [
+        "TFS",
+        "GCTS",
+        "GCTS"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Terceira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lajes_Airport",
+      "codes": [
+        "TER",
+        "LPLA",
+        "LPLA"
+      ],
+      "airlines": [
+        "Azores Airlines",
         "TAP Air Portugal"
       ]
     },
@@ -869,7 +1562,20 @@
       ],
       "airlines": [
         "Air Canada",
-        "Air Transat"
+        "Air Transat",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Toulouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
+      "codes": [
+        "TLS",
+        "LFBO",
+        "LFBO"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
       ]
     },
     {
@@ -897,6 +1603,42 @@
       ]
     },
     {
+      "city": "Valencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
+      "codes": [
+        "VLC",
+        "LEVC",
+        "LEVC"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Venice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
+      "codes": [
+        "VCE",
+        "LIPZ",
+        "LIPZ"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Vienna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_International_Airport",
+      "codes": [
+        "VIE",
+        "LOWW",
+        "LOWW"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
       "city": "Vilnius",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vilnius_Airport",
       "codes": [
@@ -909,6 +1651,19 @@
       ]
     },
     {
+      "city": "Warsaw–Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "codes": [
+        "WAW",
+        "EPWA",
+        "EPWA"
+      ],
+      "airlines": [
+        "TAP Air Portugal",
+        "Wizz Air"
+      ]
+    },
+    {
       "city": "Washington–Dulles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
       "codes": [
@@ -917,6 +1672,7 @@
         "KIAD"
       ],
       "airlines": [
+        "TAP Air Portugal",
         "United Airlines"
       ]
     },
@@ -930,6 +1686,30 @@
       ],
       "airlines": [
         "Hi Fly"
+      ]
+    },
+    {
+      "city": "Zurich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
+      "codes": [
+        "ZRH",
+        "LSZH",
+        "LSZH"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "İzmir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İzmir_Adnan_Menderes_Airport",
+      "codes": [
+        "ADB",
+        "LTBJ",
+        "LTBJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
       ]
     }
   ],
@@ -958,22 +1738,40 @@
       "Toronto–Pearson"
     ],
     "airBaltic": [
+      "Riga",
       "Vilnius"
     ],
     "American Airlines": [
       "Philadelphia"
     ],
     "Azores Airlines": [
-      "Nador"
+      "Horta",
+      "Nador",
+      "Pico",
+      "Ponta Delgada",
+      "Terceira"
+    ],
+    "Azul Linhas Aéreas": [
+      "Campinas"
     ],
     "Beijing Capital Airlines": [
-      "Beijing–Daxing"
+      "Beijing–Daxing",
+      "Hangzhou"
     ],
     "British Airways": [
       "London–Heathrow"
     ],
     "Brussels Airlines": [
       "Brussels"
+    ],
+    "Cabo Verde Airlines": [
+      "Praia",
+      "Sal",
+      "São Vicente"
+    ],
+    "Delta Air Lines": [
+      "Boston",
+      "New York–JFK"
     ],
     "easyJet": [
       "Athens",
@@ -984,6 +1782,15 @@
       "Palermo",
       "Sal",
       "Tirana"
+    ],
+    "Emirates": [
+      "Dubai–International"
+    ],
+    "Etihad Airways": [
+      "Abu Dhabi"
+    ],
+    "euroAtlantic Airways": [
+      "Bissau"
     ],
     "Eurowings": [
       "Berlin",
@@ -1013,8 +1820,12 @@
     "KLM": [
       "Amsterdam"
     ],
+    "Korean Air": [
+      "Seoul–Incheon"
+    ],
     "LATAM Brasil": [
-      "Fortaleza"
+      "Fortaleza",
+      "São Paulo–Guarulhos"
     ],
     "Lufthansa": [
       "Frankfurt",
@@ -1026,11 +1837,16 @@
     "Neos": [
       "Tel Aviv"
     ],
+    "Norwegian Air Shuttle": [
+      "Copenhagen",
+      "Oslo"
+    ],
     "Nouvelair": [
       "Djerba"
     ],
     "Pegasus Airlines": [
-      "Ankara"
+      "Ankara",
+      "İzmir"
     ],
     "Qatar Airways": [
       "Doha"
@@ -1043,27 +1859,107 @@
     "Scandinavian Airlines": [
       "Copenhagen"
     ],
+    "Sky Express": [
+      "Athens"
+    ],
     "Smartwings": [
       "Dakar–Diass",
       "Porto Santo"
     ],
+    "STP Airways": [
+      "São Tomé"
+    ],
     "TAP Air Portugal": [
+      "Accra",
+      "Alicante",
+      "Amsterdam",
       "Athens",
+      "Banjul",
+      "Barcelona",
+      "Belo Horizonte",
+      "Belém",
+      "Berlin",
+      "Bilbao",
+      "Bissau",
+      "Boa Vista (CV)",
+      "Bologna",
+      "Boston",
+      "Brasília",
+      "Brussels",
       "Caracas",
+      "Casablanca",
+      "Chicago–O'Hare",
+      "Copenhagen",
       "Curitiba",
+      "Dakar–Diass",
+      "Dublin",
+      "Düsseldorf",
+      "Faro",
+      "Florence",
       "Florianópolis",
+      "Fortaleza",
+      "Frankfurt",
+      "Funchal",
+      "Geneva",
+      "Gran Canaria",
+      "Hamburg",
+      "Ibiza",
+      "London–Heathrow",
+      "Los Angeles",
       "Luanda–Agostinho Neto",
+      "Luxembourg",
+      "Lyon",
       "Maceió",
+      "Madrid",
       "Manaus",
+      "Manchester",
+      "Maputo",
+      "Marrakesh",
+      "Marseille",
       "Menorca",
+      "Miami",
+      "Milan–Malpensa",
+      "Montréal–Trudeau",
       "Munich",
+      "Málaga",
+      "Naples",
+      "Natal",
+      "New York–JFK",
+      "Newark",
+      "Nice",
       "Orlando",
+      "Oslo",
       "Palma de Mallorca",
+      "Paris–Orly",
+      "Ponta Delgada",
+      "Porto",
       "Porto Alegre",
       "Porto Santo",
+      "Prague",
+      "Praia",
+      "Recife",
+      "Rio de Janeiro–Galeão",
+      "Rome–Fiumicino",
+      "Sal",
+      "Salvador da Bahia",
+      "San Francisco",
       "Santa Maria",
+      "Seville",
       "São Luís",
-      "Tel Aviv"
+      "São Paulo–Guarulhos",
+      "São Tomé",
+      "São Vicente",
+      "Tel Aviv",
+      "Tenerife–South",
+      "Terceira",
+      "Toronto–Pearson",
+      "Toulouse",
+      "Valencia",
+      "Venice",
+      "Vienna",
+      "Warsaw–Chopin",
+      "Washington–Dulles",
+      "Zurich"
     ],
     "Transavia": [
       "Paris–Orly"
@@ -1071,6 +1967,9 @@
     "Tunisair": [
       "Monastir",
       "Tunis"
+    ],
+    "Turkish Airlines": [
+      "Istanbul"
     ],
     "United Airlines": [
       "Newark",
@@ -1089,7 +1988,8 @@
     ],
     "Wizz Air": [
       "Cluj-Napoca",
-      "Rome–Fiumicino"
+      "Rome–Fiumicino",
+      "Warsaw–Chopin"
     ],
     "World2Fly": [
       "Orlando/Sanford",
@@ -1101,6 +2001,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-24T00:39:53Z",
-  "date-time-wikidata": "2026-05-23T19:16:42Z"
+  "date-time-parse": "2026-06-09T20:52:45Z",
+  "date-time-wikidata": "2026-06-05T18:52:27Z"
 }

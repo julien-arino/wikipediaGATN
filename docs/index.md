@@ -12,6 +12,7 @@ self
 installation
 quickstart
 usage
+maintenance
 api
 ```
 

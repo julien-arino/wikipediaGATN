@@ -30,7 +30,7 @@ with open('data/public/nodes_pax.txt', 'r') as f:
     iata_codes = [line.strip() for line in f]
 
 # 2. Load the sparse adjacency matrix
-matrix = scipy.sparse.load_npz('data/public/outbound_adjacency_pax.npz')
+matrix = scipy.sparse.load_npz('data/public/adjacency_matrix_pax.npz')
 
 # 3. Create a NetworkX directed graph
 G = nx.from_scipy_sparse_array(matrix, create_using=nx.DiGraph)

@@ -1,8 +1,16 @@
 # Installation
 
-## Standard Installation
+## From PyPI (Recommended)
 
-Currently, `wikipediaGATN` can be installed from source.
+To install the latest stable version directly from PyPI:
+
+```bash
+pip install wikipediaGATN
+```
+
+## From Source
+
+For development or to access the latest changes, clone the repository and install it:
 
 ```bash
 git clone https://github.com/julien-arino/wikipediaGATN.git

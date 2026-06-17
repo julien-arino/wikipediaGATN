@@ -110,7 +110,7 @@ def check_needs_refresh(file_paths: list[str], verbose: bool = False) -> list[st
         chunk = titles[i : i + 50]
         titles_str = "|".join(chunk)
 
-        params = {
+        params: dict[str, str | int] = {
             "action": "query",
             "format": "json",
             "prop": "revisions",

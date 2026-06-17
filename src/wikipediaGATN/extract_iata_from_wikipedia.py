@@ -19,13 +19,13 @@ import os
 import re
 import time
 import warnings
+from typing import Optional
 from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
 from .paths import TEMP_RESULTS_DIR
-from typing import Optional
 
 # ---------------------------------------------------------------------------
 # Package-level constants

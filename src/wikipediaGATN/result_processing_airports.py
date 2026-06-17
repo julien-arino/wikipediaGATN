@@ -144,9 +144,9 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
                 city_served = text_match.group(1)
         else:
             if "city-served" in data and data.get("city-served"):
-                city_served_wiki = data.get("city-served")
+                city_served_wiki = str(data.get("city-served"))
             elif city_served:
-                city_served_wiki = city_served
+                city_served_wiki = str(city_served)
 
         new_data = {}
         for k, v in data.items():

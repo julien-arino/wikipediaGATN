@@ -250,7 +250,7 @@ def create_outbound_adjacency_matrix(
 
     if rows_list:
         # Deduplicate: if (origin, dest) appears twice, we take the max weight.
-        edge_to_weight = {}
+        edge_to_weight: dict[tuple[int, int], int] = {}
         for r, c, w in zip(rows_list, cols_list, weights_list):
             if (r, c) not in edge_to_weight or w > edge_to_weight[(r, c)]:
                 edge_to_weight[(r, c)] = w
@@ -267,7 +267,9 @@ def create_outbound_adjacency_matrix(
         cols_arr = np.array(unique_cols)
         data = np.array(unique_weights, dtype=np.uint16)
     else:
-        rows_arr, cols_arr, data = [], [], []
+        rows_arr = np.array([])
+        cols_arr = np.array([])
+        data = np.array([], dtype=np.uint16)
 
     n = len(iata_codes)
     matrix = csr_matrix((data, (rows_arr, cols_arr)), shape=(n, n))

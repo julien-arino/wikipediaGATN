@@ -52,6 +52,7 @@ from bs4 import BeautifulSoup
 from geopy.point import Point
 
 from .paths import TEMP_RESULTS_DIR
+from typing import Optional, Any
 
 logger = logging.getLogger(__name__)
 
@@ -99,7 +100,7 @@ _SESSION.headers.update(_HEADERS)
 try:
     import spacy as _spacy
 
-    _NLP = _spacy.load("en_core_web_sm")
+    _NLP: Any = _spacy.load("en_core_web_sm")
 except (ImportError, OSError):
     _NLP = None
 
@@ -646,8 +647,8 @@ def fetch_wikipedia_airlines_destinations(
                 # Column headers not found — scan each cell for keywords
                 for row in tbl.find_all("tr")[1:]:
                     cells = row.find_all(["td", "th"])
-                    airline_names: set = set()
-                    dest_names: set = set()
+                    airline_names_set: set = set()
+                    dest_names_set: set = set()
                     for cell in cells:
                         cell_text = cell.get_text(" ", strip=True)
                         if re.search(r"airline", cell_text, re.I):
@@ -662,7 +663,7 @@ def fetch_wikipedia_airlines_destinations(
                                         "/wiki/Portal:",
                                     )
                                 ):
-                                    airline_names.add(a.get("title"))
+                                    airline_names_set.add(a.get("title"))
                         if re.search(r"destination", cell_text, re.I):
                             for a in cell.find_all("a"):
                                 if a.get("title") and not a.get("href", "").startswith(
@@ -675,9 +676,9 @@ def fetch_wikipedia_airlines_destinations(
                                         "/wiki/Portal:",
                                     )
                                 ):
-                                    dest_names.add(a.get("title"))
-                    for airline in airline_names:
-                        target_dict.setdefault(airline, set()).update(dest_names)
+                                    dest_names_set.add(a.get("title"))
+                    for airline in airline_names_set:
+                        target_dict.setdefault(airline, set()).update(dest_names_set)
             else:
                 for row in tbl.find_all("tr")[1:]:
                     cells = row.find_all(["td", "th"])
@@ -826,18 +827,12 @@ def fetch_wikipedia_airport_info(
         }
 
     iata_raw = infobox.get("IATA")
-    iata_clean = (
-        re.search(r"[A-Za-z]{3}", str(iata_raw)).group(0).upper()
-        if iata_raw and re.search(r"[A-Za-z]{3}", str(iata_raw))
-        else None
-    )
+    iata_match = re.search(r"[A-Za-z]{3}", str(iata_raw)) if iata_raw else None
+    iata_clean = iata_match.group(0).upper() if iata_match else None
 
     icao_raw = infobox.get("ICAO")
-    icao_clean = (
-        re.search(r"[A-Za-z]{4}", str(icao_raw)).group(0).upper()
-        if icao_raw and re.search(r"[A-Za-z]{4}", str(icao_raw))
-        else None
-    )
+    icao_match = re.search(r"[A-Za-z]{4}", str(icao_raw)) if icao_raw else None
+    icao_clean = icao_match.group(0).upper() if icao_match else None
 
     info: dict = {
         "iata": iata_clean,
@@ -1643,13 +1638,13 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                     os.path.join(airport_data_dir, fname), "r", encoding="utf-8"
                 ) as f:
                     data = json.load(f)
-                    url = (
+                    url_str: str | None = (
                         urllib.parse.unquote(data.get("wikipedia_url"))
                         if data.get("wikipedia_url")
                         else None
                     )
-                    if url:
-                        url_to_codes[url] = {
+                    if url_str:
+                        url_to_codes[url_str] = {
                             "iata": data.get("iata") or "iata code not found",
                             "icao": data.get("icao") or "icao code not found",
                             "gps": data.get("gps") or "gps code not found",
@@ -1669,25 +1664,25 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
                         os.path.join(dir_path, fname), "r", encoding="utf-8"
                     ) as f:
                         data = json.load(f)
-                        url = (
+                        url_str2: str | None = (
                             urllib.parse.unquote(data.get("wikipedia_url"))
                             if data.get("wikipedia_url")
                             else None
                         )
-                        if url:
-                            if url not in url_to_codes:
-                                url_to_codes[url] = {
+                        if url_str2:
+                            if url_str2 not in url_to_codes:
+                                url_to_codes[url_str2] = {
                                     "iata": data.get("iata") or "iata code not found",
                                     "icao": data.get("icao") or "icao code not found",
                                     "gps": data.get("gps") or "gps code not found",
                                 }
                             else:
                                 if data.get("iata"):
-                                    url_to_codes[url]["iata"] = data["iata"]
+                                    url_to_codes[url_str2]["iata"] = data["iata"]
                                 if data.get("icao"):
-                                    url_to_codes[url]["icao"] = data["icao"]
+                                    url_to_codes[url_str2]["icao"] = data["icao"]
                                 if data.get("gps"):
-                                    url_to_codes[url]["gps"] = data["gps"]
+                                    url_to_codes[url_str2]["gps"] = data["gps"]
                 except Exception:
                     pass
 
@@ -1771,7 +1766,7 @@ def format_destinations_list(
     """
     import urllib.parse
 
-    mapped_dict = {}
+    mapped_dict: dict[str, dict] = {}
 
     for dest in raw_destinations:
         if isinstance(dest, dict):
@@ -2077,7 +2072,7 @@ def infer_missing_geographic_data(data: dict) -> dict:
     return data
 
 
-def compare_airports_with_ourairports(output_csv: str = None) -> str:
+def compare_airports_with_ourairports(output_csv: Optional[str] = None) -> str:
     """
     Compares airports in airports_information.csv with ourairports.csv and
     generates a CSV of airports in ourairports.csv that we have not picked up.
@@ -2164,7 +2159,7 @@ def compare_airports_with_ourairports(output_csv: str = None) -> str:
 
 
 def find_active_missing_airports(
-    input_csv: str = None, output_csv: str = None, max_workers: int = 5
+    input_csv: Optional[str] = None, output_csv: Optional[str] = None, max_workers: int = 5
 ) -> str:
     """
     Takes the CSV generated by compare_airports_with_ourairports and checks the
@@ -2252,7 +2247,7 @@ def find_active_missing_airports(
 
     if active_airports:
         with open(output_csv, "w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer = csv.DictWriter(f, fieldnames=fieldnames or [])
             writer.writeheader()
             writer.writerows(active_airports)
         print(f"Exported active airports to {output_csv}")

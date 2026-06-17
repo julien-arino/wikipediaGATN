@@ -62,7 +62,7 @@ def create_outbound_connections_list(
 
     airport_connections: dict = {}
     airport_connections_cargo: dict = {}
-    unmapped_destinations = Counter()
+    unmapped_destinations: Counter[str] = Counter()
 
     if verbose:
         print("Processing public airport JSON files...")
@@ -102,8 +102,8 @@ def create_outbound_connections_list(
         destinations = data.get("destinations", [])
         destinations_cargo = data.get("destinations_cargo", [])
 
-        outlinks_weighted = Counter()
-        outlinks_cargo_weighted = Counter()
+        outlinks_weighted: Counter[str] = Counter()
+        outlinks_cargo_weighted: Counter[str] = Counter()
 
         for dest_list, link_weighted_counter in [
             (destinations, outlinks_weighted),
@@ -246,7 +246,7 @@ def create_outbound_connections_list(
                 }
                 for url, count in unmapped_destinations.items()
             ),
-            key=lambda x: x["count"],
+            key=lambda x: int(str(x["count"])),
             reverse=True,
         )
 

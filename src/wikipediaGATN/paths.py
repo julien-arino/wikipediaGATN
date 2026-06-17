@@ -43,7 +43,7 @@ _env_override = os.environ.get("WIKIPEDIAGATN_DATA_DIR")
 DATA_DIR: Path
 if _env_override:
     DATA_DIR = Path(_env_override).resolve()
-elif (REPO_ROOT / "data").exists():
+elif (REPO_ROOT / "pyproject.toml").exists() and (REPO_ROOT / "data").exists():
     DATA_DIR = REPO_ROOT / "data"
 else:
     DATA_DIR = Path.cwd() / "data"

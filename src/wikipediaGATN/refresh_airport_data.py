@@ -19,7 +19,7 @@ import json
 import os
 import time
 import urllib.parse
-from typing import Union
+from typing import Optional, Union
 
 import requests
 from dateutil import parser as dt_parser
@@ -178,10 +178,10 @@ def refresh_airport_file(
     refresh_all_data: bool = False,
     local_only: bool = False,
     verbose: bool = False,
-    file_idx: int = None,
-    total_files: int = None,
-    url_map: dict = None,
-    start_time: float = None,
+    file_idx: Optional[int] = None,
+    total_files: Optional[int] = None,
+    url_map: Optional[dict] = None,
+    start_time: Optional[float] = None,
 ) -> bool:
     """
     Refresh a single airport JSON file.

@@ -25,6 +25,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from .paths import TEMP_RESULTS_DIR
+from typing import Optional
 
 # ---------------------------------------------------------------------------
 # Package-level constants
@@ -147,7 +148,7 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
           code was found, or ``None``.
         * ``'error'``          – human-readable error description, or ``None``.
     """
-    result = {
+    result: dict[str, str | float | None] = {
         "iata": None,
         "icao": None,
         "confidence": 0.0,
@@ -254,7 +255,7 @@ def _extract_iata_from_wikipedia_page(url: str, verbose: bool = False) -> dict:
 
 
 def extract_iata_from_unmapped_destinations(
-    csv_path: str = None,
+    csv_path: Optional[str] = None,
     batch_size: int = 50,
     delay: float = 0.5,
     verbose: bool = False,
@@ -445,8 +446,8 @@ def extract_iata_from_unmapped_destinations(
 
 
 def create_manual_mapping_from_scraped_data(
-    unmapped_csv: str = None,
-    output_csv: str = None,
+    unmapped_csv: Optional[str] = None,
+    output_csv: Optional[str] = None,
     min_confidence: float = 0.70,
     verbose: bool = False,
 ) -> int:

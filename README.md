@@ -18,7 +18,7 @@ The collected data is available in the [`data/public/`](https://github.com/julie
 
 The global network data in `data/public/` is automatically updated weekly via GitHub Actions. **You do not need to run your own crawl to use this data.** You can clone this repository (or download the `data/` folder) and immediately load the provided sparse matrices to perform graph analysis.
 
-For more details on available files and advanced analysis examples, see the [Quickstart Tutorials](https://wikipediaGATN.readthedocs.io/en/latest/quickstart.html).
+For more details on available files and advanced analysis examples, see the [Quickstart Tutorials](https://julien-arino.github.io/wikipediaGATN/quickstart.html).
 
 Here is an end-to-end example showing how to load the passenger network from the pre-built `.npz` file and analyze it with `networkx`:
 

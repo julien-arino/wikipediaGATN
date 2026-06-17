@@ -213,12 +213,12 @@ def fetch_wikipedia_airport_link(identifier: str, verbose: bool = False):
     if verbose:
         print(f"Searching Wikipedia for: {search_term!r}")
 
-    params = {
+    params: dict[str, str | int] = {
         "action": "query",
         "format": "json",
         "list": "search",
         "srsearch": search_term,
-        "formatversion": "2",
+        "formatversion": 2,
     }
     try:
         response = _SESSION.get(_API_URL, params=params, timeout=15)
@@ -280,12 +280,12 @@ def fetch_wikipedia_airport_html(link: str, verbose: bool = False):
     if verbose:
         print(f"Fetching HTML for {page_title!r}...")
 
-    params = {
+    params: dict[str, str | int] = {
         "action": "parse",
         "page": page_title,
         "prop": "text",
         "format": "json",
-        "formatversion": "2",
+        "formatversion": 2,
         "redirects": 1,
     }
     try:
@@ -333,7 +333,7 @@ def fetch_wikipedia_airport_wikitext(link: str, verbose: bool = False):
     if verbose:
         print(f"Fetching wikitext for {page_title!r}...")
 
-    params = {
+    params: dict[str, str | int] = {
         "action": "query",
         "format": "json",
         "prop": "revisions",

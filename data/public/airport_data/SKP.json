@@ -14,8 +14,8 @@
   "admin1_name": "Petrovec",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Skopje_International_Airport",
-  "outdegree": 51,
-  "number_airlines": 14,
+  "outdegree": 52,
+  "number_airlines": 15,
   "airlines": [
     "AJet",
     "Aegean Airlines",
@@ -24,6 +24,7 @@
     "Chair Airlines",
     "Croatia Airlines",
     "Edelweiss Air",
+    "Freebird Airlines",
     "LOT Polish Airlines",
     "Norwegian Air Shuttle",
     "Pegasus Airlines",
@@ -78,6 +79,7 @@
         "LTAI"
       ],
       "airlines": [
+        "Freebird Airlines",
         "Pegasus Airlines",
         "SunExpress"
       ]
@@ -131,18 +133,6 @@
       ]
     },
     {
-      "city": "Beauvais",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
-      "codes": [
-        "BVA",
-        "LFOB",
-        "LFOB"
-      ],
-      "airlines": [
-        "Wizz Air"
-      ]
-    },
-    {
       "city": "Belgrade",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
       "codes": [
@@ -152,18 +142,6 @@
       ],
       "airlines": [
         "Air Serbia"
-      ]
-    },
-    {
-      "city": "Bergamo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "codes": [
-        "BGY",
-        "LIME",
-        "LIME"
-      ],
-      "airlines": [
-        "Wizz Air"
       ]
     },
     {
@@ -215,24 +193,24 @@
       ]
     },
     {
-      "city": "Budapest",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "city": "Brussels-Charleroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
       "codes": [
-        "BUD",
-        "LHBP",
-        "LHBP"
+        "CRL",
+        "EBCI",
+        "EBCI"
       ],
       "airlines": [
         "Wizz Air"
       ]
     },
     {
-      "city": "Charleroi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_South_Charleroi_Airport",
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
       "codes": [
-        "CRL",
-        "EBCI",
-        "EBCI"
+        "BUD",
+        "LHBP",
+        "LHBP"
       ],
       "airlines": [
         "Wizz Air"
@@ -275,6 +253,18 @@
       ]
     },
     {
+      "city": "Frankfurt-Hahn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
+      "codes": [
+        "HHN",
+        "EDFH",
+        "EDFH"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
       "city": "Friedrichshafen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Friedrichshafen_Airport",
       "codes": [
@@ -305,18 +295,6 @@
         "GOT",
         "ESGG",
         "ESGG"
-      ],
-      "airlines": [
-        "Wizz Air"
-      ]
-    },
-    {
-      "city": "Hahn",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt–Hahn_Airport",
-      "codes": [
-        "HHN",
-        "EDFH",
-        "EDFH"
       ],
       "airlines": [
         "Wizz Air"
@@ -444,12 +422,36 @@
       ]
     },
     {
+      "city": "Medina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Abdulaziz_International_Airport",
+      "codes": [
+        "MED",
+        "OEMA",
+        "OEMA"
+      ],
+      "airlines": [
+        "Freebird Airlines"
+      ]
+    },
+    {
       "city": "Memmingen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Memmingen_Airport",
       "codes": [
         "FMM",
         "EDJA",
         "EDJA"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Milan-Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME",
+        "LIME"
       ],
       "airlines": [
         "Wizz Air"
@@ -488,7 +490,8 @@
         "ENGM"
       ],
       "airlines": [
-        "Norwegian Air Shuttle"
+        "Norwegian Air Shuttle",
+        "Wizz Air"
       ]
     },
     {
@@ -498,6 +501,18 @@
         "PMO",
         "LICJ",
         "LICJ"
+      ],
+      "airlines": [
+        "Wizz Air"
+      ]
+    },
+    {
+      "city": "Paris-Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
+      "codes": [
+        "BVA",
+        "LFOB",
+        "LFOB"
       ],
       "airlines": [
         "Wizz Air"
@@ -576,7 +591,7 @@
       ]
     },
     {
-      "city": "Treviso",
+      "city": "Venice-Treviso",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Treviso_Airport",
       "codes": [
         "TSF",
@@ -679,6 +694,10 @@
     "Edelweiss Air": [
       "Zürich"
     ],
+    "Freebird Airlines": [
+      "Antalya",
+      "Medina"
+    ],
     "LOT Polish Airlines": [
       "Warsaw–Chopin"
     ],
@@ -702,19 +721,17 @@
       "Barcelona",
       "Bari",
       "Basel/Mulhouse",
-      "Beauvais",
-      "Bergamo",
       "Berlin",
       "Bologna",
       "Bratislava",
+      "Brussels-Charleroi",
       "Budapest",
-      "Charleroi",
       "Cologne/Bonn",
       "Dortmund",
       "Eindhoven",
+      "Frankfurt-Hahn",
       "Friedrichshafen",
       "Gothenburg",
-      "Hahn",
       "Hamburg",
       "Karlsruhe/Baden-Baden",
       "Larnaca",
@@ -724,15 +741,18 @@
       "Malmö",
       "Malta",
       "Memmingen",
+      "Milan-Bergamo",
       "Naples",
       "Nuremberg",
+      "Oslo",
       "Palermo",
+      "Paris-Beauvais",
       "Prague",
       "Rome-Fiumicino",
       "Sandefjord",
       "Stockholm–Arlanda",
       "Stuttgart",
-      "Treviso"
+      "Venice-Treviso"
     ]
   },
   "outdegree_cargo": 1,
@@ -759,6 +779,6 @@
       "Leipzig/Halle"
     ]
   },
-  "date-time-parse": "2026-06-09T20:55:53Z",
-  "date-time-wikidata": "2026-06-02T01:38:17Z"
+  "date-time-parse": "2026-06-21T00:47:27Z",
+  "date-time-wikidata": "2026-06-15T23:34:59Z"
 }

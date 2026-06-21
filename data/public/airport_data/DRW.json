@@ -14,7 +14,7 @@
   "admin1_name": "Northern Territory",
   "admin2_name": "Darwin",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin_International_Airport",
-  "outdegree": 11,
+  "outdegree": 22,
   "number_airlines": 9,
   "airlines": [
     "Aero Dili",
@@ -28,6 +28,19 @@
     "Virgin Australia"
   ],
   "destinations": [
+    {
+      "city": "Adelaide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelaide_Airport",
+      "codes": [
+        "ADL",
+        "YPAD",
+        "YPAD"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas"
+      ]
+    },
     {
       "city": "Alice Springs",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alice_Springs_Airport",
@@ -62,6 +75,7 @@
         "YBBN"
       ],
       "airlines": [
+        "Jetstar",
         "Qantas",
         "Virgin Australia"
       ]
@@ -75,6 +89,7 @@
         "YBCS"
       ],
       "airlines": [
+        "Airnorth",
         "QantasLink"
       ]
     },
@@ -91,6 +106,18 @@
       ]
     },
     {
+      "city": "Denpasar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport",
+      "codes": [
+        "DPS",
+        "WADD",
+        "WADD"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
       "city": "Dili",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Nicolau_Lobato_International_Airport",
       "codes": [
@@ -100,7 +127,20 @@
       ],
       "airlines": [
         "Aero Dili",
+        "Airnorth",
         "QantasLink"
+      ]
+    },
+    {
+      "city": "Elcho Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elcho_Island_Airport",
+      "codes": [
+        "ELC",
+        "YELD",
+        "YELD"
+      ],
+      "airlines": [
+        "Airnorth"
       ]
     },
     {
@@ -116,6 +156,30 @@
       ]
     },
     {
+      "city": "Gove",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gove_Airport",
+      "codes": [
+        "GOV",
+        "YPGV",
+        "YPGV"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Groote Eylandt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Groote_Eylandt_Airport",
+      "codes": [
+        "GTE",
+        "YGTE",
+        "YGTE"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
       "city": "Guangzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
       "codes": [
@@ -125,6 +189,57 @@
       ],
       "airlines": [
         "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Katherine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/RAAF_Base_Tindal",
+      "codes": [
+        "KTR",
+        "YPTN",
+        "YPTN"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Kununurra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Kimberley_Regional_Airport",
+      "codes": [
+        "KNX",
+        "YPKU",
+        "YPKU"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Perth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Perth_Airport",
+      "codes": [
+        "PER",
+        "YPPH",
+        "YPPH"
+      ],
+      "airlines": [
+        "Qantas",
+        "Virgin Australia"
       ]
     },
     {
@@ -149,8 +264,33 @@
         "YSSY"
       ],
       "airlines": [
+        "Jetstar",
         "Qantas",
         "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Tennant Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tennant_Creek_Airport",
+      "codes": [
+        "TCA",
+        "YTNK",
+        "YTNK"
+      ],
+      "airlines": [
+        "Airnorth"
+      ]
+    },
+    {
+      "city": "Townsville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Townsville_Airport",
+      "codes": [
+        "TSV",
+        "YBTL",
+        "YBTL"
+      ],
+      "airlines": [
+        "Airnorth"
       ]
     },
     {
@@ -172,7 +312,16 @@
     ],
     "Airnorth": [
       "Alice Springs",
-      "Biak"
+      "Biak",
+      "Cairns",
+      "Dili",
+      "Elcho Island",
+      "Gove",
+      "Groote Eylandt",
+      "Katherine",
+      "Kununurra",
+      "Tennant Creek",
+      "Townsville"
     ],
     "China Southern Airlines": [
       "Guangzhou"
@@ -181,10 +330,18 @@
       "Warruwi"
     ],
     "Jetstar": [
-      "Gold Coast"
+      "Adelaide",
+      "Brisbane",
+      "Denpasar",
+      "Gold Coast",
+      "Melbourne",
+      "Sydney"
     ],
     "Qantas": [
+      "Adelaide",
       "Brisbane",
+      "Melbourne",
+      "Perth",
       "Singapore",
       "Sydney"
     ],
@@ -199,6 +356,8 @@
     ],
     "Virgin Australia": [
       "Brisbane",
+      "Melbourne",
+      "Perth",
       "Sydney"
     ]
   },
@@ -207,6 +366,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-06-09T20:49:41Z",
-  "date-time-wikidata": "2026-06-03T11:38:30Z"
+  "date-time-parse": "2026-06-21T00:43:35Z",
+  "date-time-wikidata": "2026-06-17T11:38:23Z"
 }

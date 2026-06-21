@@ -14,8 +14,8 @@
   "admin1_name": "Punjab",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Allama_Iqbal_International_Airport",
-  "outdegree": 22,
-  "number_airlines": 19,
+  "outdegree": 24,
+  "number_airlines": 22,
   "airlines": [
     "Aero Nomad Airlines",
     "AirSial",
@@ -23,6 +23,8 @@
     "Azerbaijan Airlines",
     "Centrum Air",
     "China Southern Airlines",
+    "Emirates",
+    "Etihad",
     "FitsAir",
     "Fly Baghdad",
     "Fly Jinnah",
@@ -32,12 +34,26 @@
     "Iraqi Airways",
     "Kish Air",
     "Pakistan International Airlines",
+    "Qatar Airways",
     "SalamAir",
     "Thai Airways International",
     "Turkish Airlines",
     "Uzbekistan Airways"
   ],
   "destinations": [
+    {
+      "city": "Abu Dhabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zayed_International_Airport",
+      "codes": [
+        "AUH",
+        "OMAA",
+        "OMAA"
+      ],
+      "airlines": [
+        "AirSial",
+        "Etihad"
+      ]
+    },
     {
       "city": "Baghdad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad_International_Airport",
@@ -122,11 +138,25 @@
         "OEDF"
       ],
       "airlines": [
-        "Airblue"
+        "Airblue",
+        "Fly Jinnah",
+        "Pakistan International Airlines"
       ]
     },
     {
-      "city": "Dubai–International",
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ]
+    },
+    {
+      "city": "Dubai",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
       "codes": [
         "DXB",
@@ -134,6 +164,8 @@
         "OMDB"
       ],
       "airlines": [
+        "AirSial",
+        "Emirates",
         "Fly Jinnah"
       ]
     },
@@ -296,7 +328,8 @@
         "OPSD"
       ],
       "airlines": [
-        "Airblue"
+        "Airblue",
+        "Pakistan International Airlines"
       ]
     },
     {
@@ -323,6 +356,8 @@
       "Skardu"
     ],
     "AirSial": [
+      "Abu Dhabi",
+      "Dubai",
       "Jeddah",
       "Riyadh"
     ],
@@ -335,6 +370,12 @@
     "China Southern Airlines": [
       "Guangzhou"
     ],
+    "Emirates": [
+      "Dubai"
+    ],
+    "Etihad": [
+      "Abu Dhabi"
+    ],
     "Flyadeal": [
       "Riyadh"
     ],
@@ -346,6 +387,7 @@
     ],
     "Fly Jinnah": [
       "Bahrain",
+      "Dammam",
       "Dubai–International",
       "Islamabad",
       "Muscat",
@@ -367,10 +409,15 @@
     "Pakistan International Airlines": [
       "Bahrain",
       "Baku",
+      "Dammam",
       "Karachi",
       "London–Heathrow",
       "Manchester",
-      "Muscat"
+      "Muscat",
+      "Skardu"
+    ],
+    "Qatar Airways": [
+      "Doha"
     ],
     "SalamAir": [
       "Muscat"
@@ -441,6 +488,6 @@
       "Lanzhou"
     ]
   },
-  "date-time-parse": "2026-06-14T00:43:50Z",
-  "date-time-wikidata": "2026-06-11T02:00:07Z"
+  "date-time-parse": "2026-06-21T00:45:25Z",
+  "date-time-wikidata": "2026-06-20T11:06:50Z"
 }

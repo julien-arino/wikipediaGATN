@@ -14,17 +14,21 @@
   "admin1_name": "Western",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bandaranaike_International_Airport",
-  "outdegree": 29,
-  "number_airlines": 26,
+  "outdegree": 36,
+  "number_airlines": 33,
   "airlines": [
     "Air Arabia",
     "Air Arabia Abu Dhabi",
     "Air Astana",
     "Air China",
+    "Air Seychelles",
+    "AirAsia",
     "Batik Air Malaysia",
     "Beijing Capital Airlines",
     "British Airways",
     "Cathay Pacific",
+    "China Eastern Airlines",
+    "Chongqing Airlines",
     "Edelweiss Air",
     "Emirates",
     "Enter Air",
@@ -37,11 +41,14 @@
     "Jazeera Airways",
     "Jetstar",
     "Kuwait Airways",
+    "Malaysia Airlines",
+    "Qatar Airways",
     "Singapore Airlines",
     "Smartwings Poland",
     "SriLankan Airlines",
     "Thai AirAsia",
     "Thai Airways International",
+    "Turkish Airlines",
     "VietJet Air"
   ],
   "destinations": [
@@ -155,6 +162,18 @@
       ]
     },
     {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Chongqing Airlines"
+      ]
+    },
+    {
       "city": "Delhi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
       "codes": [
@@ -176,6 +195,18 @@
       ],
       "airlines": [
         "FitsAir"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways"
       ]
     },
     {
@@ -228,6 +259,18 @@
       ]
     },
     {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Airlines"
+      ]
+    },
+    {
       "city": "Katowice",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Katowice_Airport",
       "codes": [
@@ -241,14 +284,29 @@
     },
     {
       "city": "Kuala Lumpur–International",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
       "codes": [
         "KUL",
         "WMKK",
         "WMKK"
       ],
       "airlines": [
-        "Batik Air Malaysia"
+        "AirAsia",
+        "Batik Air Malaysia",
+        "FitsAir",
+        "Malaysia Airlines"
+      ]
+    },
+    {
+      "city": "Kunming",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP",
+        "ZPPP"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
       ]
     },
     {
@@ -286,6 +344,31 @@
       ],
       "airlines": [
         "British Airways"
+      ]
+    },
+    {
+      "city": "Mahé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seychelles_International_Airport",
+      "codes": [
+        "SEZ",
+        "FSIA",
+        "FSIA"
+      ],
+      "airlines": [
+        "Air Seychelles"
+      ]
+    },
+    {
+      "city": "Malé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM",
+        "VRMM"
+      ],
+      "airlines": [
+        "Chongqing Airlines",
+        "FitsAir"
       ]
     },
     {
@@ -346,6 +429,18 @@
       ],
       "airlines": [
         "French Bee"
+      ]
+    },
+    {
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
+      "codes": [
+        "PVG",
+        "ZSPD",
+        "ZSPD"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
       ]
     },
     {
@@ -410,6 +505,12 @@
     "Air China": [
       "Chengdu–Tianfu"
     ],
+    "Air Seychelles": [
+      "Mahé"
+    ],
+    "AirAsia": [
+      "Kuala Lumpur–International"
+    ],
     "Batik Air Malaysia": [
       "Kuala Lumpur–International"
     ],
@@ -421,6 +522,14 @@
     ],
     "Cathay Pacific": [
       "Hong Kong"
+    ],
+    "China Eastern Airlines": [
+      "Kunming",
+      "Shanghai–Pudong"
+    ],
+    "Chongqing Airlines": [
+      "Chongqing",
+      "Malé"
     ],
     "Edelweiss Air": [
       "Zurich"
@@ -437,7 +546,9 @@
     "FitsAir": [
       "Ahmedabad",
       "Dhaka",
-      "Lahore"
+      "Kuala Lumpur–International",
+      "Lahore",
+      "Malé"
     ],
     "Flydubai": [
       "Dubai–International"
@@ -463,6 +574,12 @@
     "Kuwait Airways": [
       "Kuwait City"
     ],
+    "Malaysia Airlines": [
+      "Kuala Lumpur–International"
+    ],
+    "Qatar Airways": [
+      "Doha"
+    ],
     "Singapore Airlines": [
       "Singapore"
     ],
@@ -478,6 +595,9 @@
     ],
     "Thai Airways International": [
       "Bangkok–Suvarnabhumi"
+    ],
+    "Turkish Airlines": [
+      "Istanbul"
     ],
     "VietJet Air": [
       "Ho Chi Minh City"
@@ -523,6 +643,6 @@
       "Bengaluru"
     ]
   },
-  "date-time-parse": "2026-06-21T00:43:13Z",
-  "date-time-wikidata": "2026-06-20T17:35:35Z"
+  "date-time-parse": "2026-06-28T00:39:02Z",
+  "date-time-wikidata": "2026-06-27T09:45:14Z"
 }

@@ -14,14 +14,12 @@
   "admin1_name": null,
   "admin2_name": "Dehradun",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Dehradun_Airport",
-  "outdegree": 16,
-  "number_airlines": 5,
+  "outdegree": 8,
+  "number_airlines": 3,
   "airlines": [
-    "Air India",
     "Air India Express",
     "Alliance Air",
-    "IndiGo",
-    "SpiceJet"
+    "IndiGo"
   ],
   "destinations": [
     {
@@ -33,114 +31,11 @@
         "VAAH"
       ],
       "airlines": [
-        "Air India Express",
-        "IndiGo",
-        "SpiceJet"
+        "Air India Express"
       ]
     },
     {
-      "city": "Amritsar",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sri_Guru_Ram_Das_Ji_International_Airport",
-      "codes": [
-        "ATQ",
-        "VIAR",
-        "VIAR"
-      ],
-      "airlines": [
-        "Alliance Air"
-      ]
-    },
-    {
-      "city": "Bengaluru",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
-      "codes": [
-        "BLR",
-        "VOBL",
-        "VOBL"
-      ],
-      "airlines": [
-        "Air India Express",
-        "IndiGo",
-        "SpiceJet"
-      ]
-    },
-    {
-      "city": "Delhi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
-      "codes": [
-        "DEL",
-        "VIDP",
-        "VIDP"
-      ],
-      "airlines": [
-        "Air India",
-        "Alliance Air",
-        "IndiGo",
-        "SpiceJet"
-      ]
-    },
-    {
-      "city": "Hyderabad",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
-      "codes": [
-        "HYD",
-        "VOHS",
-        "VOHS"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Jaipur",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaipur_International_Airport",
-      "codes": [
-        "JAI",
-        "VIJP",
-        "VIJP"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Kolkata",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
-      "codes": [
-        "CCU",
-        "VECC",
-        "VECC"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Kullu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kullu–Manali_Airport",
-      "codes": [
-        "KUU",
-        "VIBR",
-        "VIBR"
-      ],
-      "airlines": [
-        "Alliance Air"
-      ]
-    },
-    {
-      "city": "Lucknow",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaudhary_Charan_Singh_Airport",
-      "codes": [
-        "LKO",
-        "VILK",
-        "VILK"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
-      "city": "Mumbai",
+      "city": "Mumbai-Shivaji",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
       "codes": [
         "BOM",
@@ -148,10 +43,7 @@
         "VABB"
       ],
       "airlines": [
-        "Air India",
-        "Air India Express",
-        "IndiGo",
-        "SpiceJet"
+        "Air India Express"
       ]
     },
     {
@@ -161,6 +53,18 @@
         "NMI",
         "VANM",
         "VANM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Noida",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noida_Airport",
+      "codes": [
+        "DXN",
+        "VIND",
+        "VIND"
       ],
       "airlines": [
         "IndiGo"
@@ -191,18 +95,6 @@
       ]
     },
     {
-      "city": "Pune",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
-      "codes": [
-        "PNQ",
-        "VAPO",
-        "VAPO"
-      ],
-      "airlines": [
-        "IndiGo"
-      ]
-    },
-    {
       "city": "Srinagar",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Srinagar_Airport",
       "codes": [
@@ -228,41 +120,19 @@
     }
   ],
   "airlines_destinations": {
-    "Air India": [
-      "Delhi",
-      "Mumbai"
-    ],
     "Air India Express": [
       "Ahmedabad",
-      "Bengaluru",
-      "Mumbai"
+      "Mumbai-Shivaji"
     ],
     "Alliance Air": [
-      "Amritsar",
-      "Delhi",
-      "Kullu",
       "Pantnagar",
       "Pithoragarh",
       "Varanasi"
     ],
     "IndiGo": [
-      "Ahmedabad",
-      "Bengaluru",
-      "Delhi",
-      "Hyderabad",
-      "Jaipur",
-      "Kolkata",
-      "Lucknow",
-      "Mumbai",
       "Navi Mumbai",
-      "Pune",
+      "Noida",
       "Srinagar"
-    ],
-    "SpiceJet": [
-      "Ahmedabad",
-      "Bengaluru",
-      "Delhi",
-      "Mumbai"
     ]
   },
   "outdegree_cargo": 0,
@@ -270,6 +140,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-06-21T00:43:19Z",
-  "date-time-wikidata": "2026-06-20T11:44:59Z"
+  "date-time-parse": "2026-07-05T00:34:16Z",
+  "date-time-wikidata": "2026-07-01T10:12:40Z"
 }

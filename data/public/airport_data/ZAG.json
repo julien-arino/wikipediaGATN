@@ -14,10 +14,11 @@
   "admin1_name": "Zagrebačka županija",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
-  "outdegree": 64,
-  "number_airlines": 19,
+  "outdegree": 65,
+  "number_airlines": 21,
   "airlines": [
     "Aegean Airlines",
+    "Air China",
     "Air France",
     "Air Serbia",
     "Air Transat",
@@ -34,6 +35,7 @@
     "Ryanair",
     "Sundor",
     "T'way Air",
+    "Trade Air",
     "Turkish Airlines",
     "flydubai"
   ],
@@ -113,6 +115,18 @@
       ]
     },
     {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing–Capital",
+      "codes": [
+        "PEK",
+        "ZBAA",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
       "city": "Belgrade",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
       "codes": [
@@ -149,18 +163,6 @@
       ]
     },
     {
-      "city": "Brač",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Brač_Airport",
-      "codes": [
-        "BWK",
-        "LDSB",
-        "LDSB"
-      ],
-      "airlines": [
-        "Croatia Airlines"
-      ]
-    },
-    {
       "city": "Brussels",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
       "codes": [
@@ -170,6 +172,18 @@
       ],
       "airlines": [
         "Croatia Airlines"
+      ]
+    },
+    {
+      "city": "Bucharest–Otopeni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bucharest_Henri_Coandă_International_Airport",
+      "codes": [
+        "OTP",
+        "LROP",
+        "LROP"
+      ],
+      "airlines": [
+        "Air China"
       ]
     },
     {
@@ -343,7 +357,7 @@
     },
     {
       "city": "Istanbul–Sabiha Gökçen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul–Sabiha_Gökçen",
       "codes": [
         "SAW",
         "LTFJ",
@@ -391,7 +405,7 @@
     },
     {
       "city": "London–Heathrow",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Heathrow",
       "codes": [
         "LHR",
         "EGLL",
@@ -404,7 +418,7 @@
     },
     {
       "city": "London–Stansted",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/London_Stansted_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Stansted",
       "codes": [
         "STN",
         "EGSS",
@@ -537,6 +551,18 @@
       ]
     },
     {
+      "city": "Osijek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Osijek_Airport",
+      "codes": [
+        "OSI",
+        "LDOS",
+        "LDOS"
+      ],
+      "airlines": [
+        "Trade Air"
+      ]
+    },
+    {
       "city": "Palermo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo_Airport",
       "codes": [
@@ -574,7 +600,7 @@
     },
     {
       "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
       "codes": [
         "CDG",
         "LFPG",
@@ -611,7 +637,7 @@
     },
     {
       "city": "Rome–Fiumicino",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci–Fiumicino_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome–Fiumicino",
       "codes": [
         "FCO",
         "LIRF",
@@ -684,7 +710,7 @@
     },
     {
       "city": "Stockholm–Arlanda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Arlanda_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm–Arlanda",
       "codes": [
         "ARN",
         "ESSA",
@@ -733,7 +759,7 @@
     },
     {
       "city": "Toronto–Pearson",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto–Pearson",
       "codes": [
         "YYZ",
         "CYYZ",
@@ -758,7 +784,7 @@
     },
     {
       "city": "Warsaw–Chopin",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw–Chopin",
       "codes": [
         "WAW",
         "EPWA",
@@ -803,23 +829,15 @@
       "airlines": [
         "Croatia Airlines"
       ]
-    },
-    {
-      "city": "Zurich",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Zürich_Airport",
-      "codes": [
-        "ZRH",
-        "LSZH",
-        "LSZH"
-      ],
-      "airlines": [
-        "Croatia Airlines"
-      ]
     }
   ],
   "airlines_destinations": {
     "Aegean Airlines": [
       "Athens"
+    ],
+    "Air China": [
+      "Beijing–Capital",
+      "Bucharest–Otopeni"
     ],
     "Air France": [
       "Paris–Charles de Gaulle"
@@ -841,7 +859,6 @@
       "Athens",
       "Barcelona",
       "Berlin",
-      "Brač",
       "Brussels",
       "Copenhagen",
       "Dubrovnik",
@@ -862,8 +879,7 @@
       "Stockholm–Arlanda",
       "Tel Aviv",
       "Vienna",
-      "Zadar",
-      "Zurich"
+      "Zadar"
     ],
     "Eurowings": [
       "Cologne/Bonn",
@@ -927,29 +943,19 @@
     "T'way Air": [
       "Seoul–Incheon"
     ],
+    "Trade Air": [
+      "Osijek"
+    ],
     "Turkish Airlines": [
       "Istanbul"
     ]
   },
-  "outdegree_cargo": 3,
-  "number_airlines_cargo": 2,
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
   "airlines_cargo": [
-    "DHL Aviation",
-    "MNG Airlines"
+    "DHL Aviation"
   ],
   "destinations_cargo": [
-    {
-      "city": "Istanbul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
-      "codes": [
-        "IST",
-        "LTFM",
-        "LTFM"
-      ],
-      "airlines": [
-        "MNG Airlines"
-      ]
-    },
     {
       "city": "Leipzig/Halle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
@@ -961,29 +967,13 @@
       "airlines": [
         "DHL Aviation"
       ]
-    },
-    {
-      "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
-      "codes": [
-        "CDG",
-        "LFPG",
-        "LFPG"
-      ],
-      "airlines": [
-        "MNG Airlines"
-      ]
     }
   ],
   "airlines_destinations_cargo": {
     "DHL Aviation": [
       "Leipzig/Halle"
-    ],
-    "MNG Airlines": [
-      "Istanbul",
-      "Paris–Charles de Gaulle"
     ]
   },
-  "date-time-parse": "2026-06-28T00:46:00Z",
-  "date-time-wikidata": "2026-06-21T21:23:08Z"
+  "date-time-parse": "2026-07-05T00:40:31Z",
+  "date-time-wikidata": "2026-07-04T22:29:05Z"
 }

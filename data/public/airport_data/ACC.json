@@ -14,8 +14,8 @@
   "admin1_name": "Greater Accra",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Accra_International_Airport",
-  "outdegree": 32,
-  "number_airlines": 25,
+  "outdegree": 38,
+  "number_airlines": 28,
   "airlines": [
     "ASKY",
     "Africa World Airlines",
@@ -35,10 +35,13 @@
     "Ibom Air",
     "KLM",
     "Kenya Airways",
+    "Middle East Airlines",
     "Passion Air",
     "Qatar Airways",
     "Royal Air Maroc",
     "RwandAir",
+    "South African Airways",
+    "TAP Portugal",
     "Turkish Airlines",
     "United Airlines",
     "United Nigeria Airlines"
@@ -53,8 +56,9 @@
         "DIAP"
       ],
       "airlines": [
-        "ASKY",
-        "Air Côte d'Ivoire"
+        "Air Côte d'Ivoire",
+        "Emirates",
+        "South African Airways"
       ]
     },
     {
@@ -78,7 +82,9 @@
         "DNAA"
       ],
       "airlines": [
-        "Africa World Airlines"
+        "Africa World Airlines",
+        "Ibom Air",
+        "United Nigeria Airlines"
       ]
     },
     {
@@ -115,6 +121,30 @@
       ],
       "airlines": [
         "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Banjul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Banjul_International_Airport",
+      "codes": [
+        "BJL",
+        "GBYD",
+        "GBYD"
+      ],
+      "airlines": [
+        "ASKY"
+      ]
+    },
+    {
+      "city": "Beirut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rafik_Hariri_International_Airport",
+      "codes": [
+        "BEY",
+        "OLBA",
+        "OLBA"
+      ],
+      "airlines": [
+        "Middle East Airlines"
       ]
     },
     {
@@ -203,13 +233,15 @@
     },
     {
       "city": "Freetown",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lungi_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Freetown_International_Airport",
       "codes": [
         "FNA",
         "GFLL",
         "GFLL"
       ],
       "airlines": [
+        "ASKY",
+        "Air Peace",
         "Kenya Airways"
       ]
     },
@@ -223,6 +255,18 @@
       ],
       "airlines": [
         "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Johannesburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR",
+        "FAOR"
+      ],
+      "airlines": [
+        "South African Airways"
       ]
     },
     {
@@ -259,11 +303,22 @@
         "DNMM"
       ],
       "airlines": [
-        "ASKY",
         "Africa World Airlines",
         "Air Peace",
         "Ibom Air",
         "United Nigeria Airlines"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT",
+        "LPPT"
+      ],
+      "airlines": [
+        "TAP Portugal"
       ]
     },
     {
@@ -303,7 +358,7 @@
       ]
     },
     {
-      "city": "Monrovia",
+      "city": "Monrovia–Roberts",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Roberts_International_Airport",
       "codes": [
         "ROB",
@@ -311,9 +366,9 @@
         "GLRB"
       ],
       "airlines": [
+        "ASKY",
         "Air Peace",
-        "Kenya Airways",
-        "Turkish Airlines"
+        "Kenya Airways"
       ]
     },
     {
@@ -378,6 +433,18 @@
       ]
     },
     {
+      "city": "Sao Tome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sao_Tome_International_Airport",
+      "codes": [
+        "TMS",
+        "FPST",
+        "FPST"
+      ],
+      "airlines": [
+        "TAP Portugal"
+      ]
+    },
+    {
       "city": "Sunyani",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sunyani_Airport",
       "codes": [
@@ -413,6 +480,18 @@
       "airlines": [
         "Africa World Airlines",
         "Passion Air"
+      ]
+    },
+    {
+      "city": "Uyo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victor_Attah_International_Airport",
+      "codes": [
+        "QUO",
+        "DNAI",
+        "DNAI"
+      ],
+      "airlines": [
+        "Ibom Air"
       ]
     },
     {
@@ -457,6 +536,7 @@
       "Abidjan"
     ],
     "Air Peace": [
+      "Freetown",
       "Lagos",
       "Monrovia–Roberts"
     ],
@@ -464,9 +544,10 @@
       "Dar es Salaam"
     ],
     "ASKY": [
-      "Abidjan",
-      "Lagos",
-      "Lomé"
+      "Banjul",
+      "Freetown",
+      "Lomé",
+      "Monrovia–Roberts"
     ],
     "British Airways": [
       "London–Gatwick",
@@ -489,13 +570,16 @@
       "Cairo"
     ],
     "Emirates": [
+      "Abidjan",
       "Dubai–International"
     ],
     "Gianair": [
       "Obuasi"
     ],
     "Ibom Air": [
-      "Lagos"
+      "Abuja",
+      "Lagos",
+      "Uyo"
     ],
     "ITA Airways": [
       "Rome–Fiumicino"
@@ -507,6 +591,9 @@
     ],
     "KLM": [
       "Amsterdam"
+    ],
+    "Middle East Airlines": [
+      "Beirut"
     ],
     "Passion Air": [
       "Kumasi",
@@ -524,14 +611,22 @@
     "RwandAir": [
       "Kigali"
     ],
+    "South African Airways": [
+      "Abidjan",
+      "Johannesburg"
+    ],
+    "TAP Portugal": [
+      "Lisbon",
+      "Sao Tome"
+    ],
     "Turkish Airlines": [
-      "Istanbul",
-      "Monrovia"
+      "Istanbul"
     ],
     "United Airlines": [
       "Washington–Dulles"
     ],
     "United Nigeria Airlines": [
+      "Abuja",
       "Lagos"
     ]
   },
@@ -540,6 +635,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-06-28T00:37:20Z",
-  "date-time-wikidata": "2026-06-26T19:49:54Z"
+  "date-time-parse": "2026-07-05T00:32:25Z",
+  "date-time-wikidata": "2026-07-03T17:18:19Z"
 }

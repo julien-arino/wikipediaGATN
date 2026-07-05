@@ -14,14 +14,15 @@
   "admin1_name": "Tasmania",
   "admin2_name": "Clarence",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Hobart_Airport",
-  "outdegree": 5,
-  "number_airlines": 5,
+  "outdegree": 9,
+  "number_airlines": 6,
   "airlines": [
     "Air New Zealand",
     "Jetstar",
     "Link Airways",
     "Qantas",
-    "QantasLink"
+    "QantasLink",
+    "Virgin Australia"
   ],
   "destinations": [
     {
@@ -33,7 +34,8 @@
         "YPAD"
       ],
       "airlines": [
-        "Jetstar"
+        "Jetstar",
+        "Virgin Australia"
       ]
     },
     {
@@ -49,6 +51,20 @@
       ]
     },
     {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN",
+        "YBBN"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
+      ]
+    },
+    {
       "city": "Canberra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Canberra_Airport",
       "codes": [
@@ -57,7 +73,34 @@
         "YSCB"
       ],
       "airlines": [
-        "Link Airways"
+        "Link Airways",
+        "Qantas"
+      ]
+    },
+    {
+      "city": "Gold Coast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Coast_Airport",
+      "codes": [
+        "OOL",
+        "YBCG",
+        "YBCG"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
+      "city": "Melbourne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melbourne_Airport",
+      "codes": [
+        "MEL",
+        "YMML",
+        "YMML"
+      ],
+      "airlines": [
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
       ]
     },
     {
@@ -81,8 +124,22 @@
         "YPPH"
       ],
       "airlines": [
+        "QantasLink",
+        "Virgin Australia"
+      ]
+    },
+    {
+      "city": "Sydney",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar",
         "Qantas",
-        "QantasLink"
+        "Virgin Australia"
       ]
     }
   ],
@@ -92,16 +149,30 @@
     ],
     "Jetstar": [
       "Adelaide",
-      "Newcastle"
+      "Brisbane",
+      "Gold Coast",
+      "Melbourne",
+      "Newcastle",
+      "Sydney"
     ],
     "Link Airways": [
       "Canberra"
     ],
     "Qantas": [
-      "Perth"
+      "Brisbane",
+      "Canberra",
+      "Melbourne",
+      "Sydney"
     ],
     "QantasLink": [
       "Perth"
+    ],
+    "Virgin Australia": [
+      "Adelaide",
+      "Brisbane",
+      "Melbourne",
+      "Perth",
+      "Sydney"
     ]
   },
   "outdegree_cargo": 1,
@@ -128,6 +199,6 @@
       "Hong Kong"
     ]
   },
-  "date-time-parse": "2026-06-28T00:40:37Z",
-  "date-time-wikidata": "2026-06-26T06:28:01Z"
+  "date-time-parse": "2026-07-05T00:35:27Z",
+  "date-time-wikidata": "2026-07-01T10:40:56Z"
 }

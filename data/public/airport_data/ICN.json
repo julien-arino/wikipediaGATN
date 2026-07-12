@@ -14,8 +14,8 @@
   "admin1_name": "Incheon-gwangyeoksi",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-  "outdegree": 140,
-  "number_airlines": 65,
+  "outdegree": 145,
+  "number_airlines": 68,
   "airlines": [
     "9 Air",
     "Aero K",
@@ -44,6 +44,7 @@
     "EVA Air",
     "Eastar Jet",
     "El Al",
+    "Ethiopian Airlines",
     "Finnair",
     "Garuda Indonesia",
     "Greater Bay Airlines",
@@ -58,6 +59,7 @@
     "Lao Airlines",
     "Malaysia Airlines",
     "Parata Air",
+    "Peach",
     "Philippine Airlines",
     "Qanot Sharq",
     "Royal Brunei Airlines",
@@ -81,9 +83,22 @@
     "VietJet Air",
     "Virgin Atlantic",
     "WestJet",
-    "XiamenAir"
+    "XiamenAir",
+    "Zipair Tokyo"
   ],
   "destinations": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
     {
       "city": "Almaty",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
@@ -121,6 +136,18 @@
       ]
     },
     {
+      "city": "Ashgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aşgabat_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
       "city": "Astana",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev_International_Airport",
       "codes": [
@@ -145,15 +172,15 @@
       ]
     },
     {
-      "city": "Aşgabat",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Aşgabat_International_Airport",
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
       "codes": [
-        "ASB",
-        "UTAA",
-        "UTAA"
+        "ATL",
+        "KATL",
+        "KATL"
       ],
       "airlines": [
-        "Turkmenistan Airlines"
+        "Delta Air Lines"
       ]
     },
     {
@@ -413,7 +440,7 @@
       ]
     },
     {
-      "city": "Dallas",
+      "city": "Dallas/Fort Worth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_Airport",
       "codes": [
         "DFW",
@@ -435,6 +462,18 @@
       "airlines": [
         "Jeju Air",
         "Korean Air"
+      ]
+    },
+    {
+      "city": "Detroit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Detroit_Metropolitan_Airport",
+      "codes": [
+        "DTW",
+        "KDTW",
+        "KDTW"
+      ],
+      "airlines": [
+        "Delta Air Lines"
       ]
     },
     {
@@ -687,7 +726,8 @@
         "PHNL"
       ],
       "airlines": [
-        "Air Premia"
+        "Air Premia",
+        "Korean Air"
       ]
     },
     {
@@ -933,6 +973,18 @@
       ]
     },
     {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Air Premia"
+      ]
+    },
+    {
       "city": "Macau",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
       "codes": [
@@ -1087,7 +1139,9 @@
         "ROAH"
       ],
       "airlines": [
+        "Asiana Airlines",
         "Eastar Jet",
+        "Korean Air",
         "T'way Air"
       ]
     },
@@ -1191,7 +1245,8 @@
       "airlines": [
         "Aero K",
         "Eastar Jet",
-        "Parata Air"
+        "Parata Air",
+        "Peach"
       ]
     },
     {
@@ -1320,7 +1375,8 @@
         "KSFO"
       ],
       "airlines": [
-        "Air Premia"
+        "Air Premia",
+        "United Airlines"
       ]
     },
     {
@@ -1359,7 +1415,10 @@
         "KSEA"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "Asiana Airlines",
+        "Delta Air Lines",
+        "Korean Air"
       ]
     },
     {
@@ -1622,8 +1681,23 @@
       ],
       "airlines": [
         "Aero K",
+        "Air Premia",
         "Asiana Airlines",
         "Eastar Jet",
+        "Korean Air",
+        "Zipair Tokyo"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
         "Korean Air"
       ]
     },
@@ -1650,6 +1724,8 @@
         "CYVR"
       ],
       "airlines": [
+        "Air Canada",
+        "Korean Air",
         "T'way Air"
       ]
     },
@@ -1899,7 +1975,9 @@
       "Nha Trang"
     ],
     "Air Canada": [
-      "Montréal–Trudeau"
+      "Montréal–Trudeau",
+      "Toronto–Pearson",
+      "Vancouver"
     ],
     "Air China": [
       "Beijing–Daxing",
@@ -1915,8 +1993,10 @@
       "Dhaka",
       "Hong Kong",
       "Honolulu",
+      "Los Angeles",
       "Newark",
       "San Francisco",
+      "Tokyo–Narita",
       "Washington–Dulles"
     ],
     "Air Seoul": [
@@ -1931,11 +2011,11 @@
     "AirAsia X": [
       "Kuala Lumpur–International"
     ],
-    "American Airlines": [
-      "Dallas"
-    ],
     "Alaska Airlines": [
       "Seattle/Tacoma"
+    ],
+    "American Airlines": [
+      "Dallas/Fort Worth"
     ],
     "Asiana Airlines": [
       "Beijing–Capital",
@@ -1952,9 +2032,11 @@
       "Kota Kinabalu",
       "Milan–Malpensa",
       "Miyazaki",
+      "Naha",
       "Phuket",
       "Prague",
       "Saipan",
+      "Seattle/Tacoma",
       "Sendai",
       "Shanghai–Pudong",
       "Siem Reap",
@@ -2000,8 +2082,11 @@
       "Ordos"
     ],
     "Delta Air Lines": [
+      "Atlanta",
+      "Detroit",
       "Minneapolis/St. Paul",
-      "Salt Lake City"
+      "Salt Lake City",
+      "Seattle/Tacoma"
     ],
     "Eastar Jet": [
       "Almaty",
@@ -2026,6 +2111,9 @@
     ],
     "El Al": [
       "Tel Aviv"
+    ],
+    "Ethiopian Airlines": [
+      "Addis Ababa"
     ],
     "EVA Air": [
       "Kaohsiung",
@@ -2100,6 +2188,7 @@
       "Dubai–International",
       "Fuzhou",
       "Hefei",
+      "Honolulu",
       "Jakarta–Soekarno-Hatta",
       "Kagoshima",
       "Kathmandu",
@@ -2114,18 +2203,22 @@
       "Madrid",
       "Mudanjiang",
       "Nagasaki",
+      "Naha",
       "Nanjing",
       "Niigata",
       "Okayama",
       "Phnom Penh",
       "Phu Quoc",
       "Qingdao",
+      "Seattle/Tacoma",
       "Shanghai–Pudong",
       "Shenzhen",
       "Singapore",
       "Taichung",
       "Tokyo–Haneda",
       "Tokyo–Narita",
+      "Toronto–Pearson",
+      "Vancouver",
       "Wuhan",
       "Xiamen",
       "Yanji",
@@ -2148,6 +2241,9 @@
       "Hanoi",
       "Osaka–Kansai",
       "Sapporo–Chitose"
+    ],
+    "Peach": [
+      "Osaka–Kansai"
     ],
     "Philippine Airlines": [
       "Clark",
@@ -2226,10 +2322,11 @@
       "Taipei–Taoyuan"
     ],
     "Turkmenistan Airlines": [
-      "Aşgabat"
+      "Ashgabat"
     ],
     "United Airlines": [
-      "Newark"
+      "Newark",
+      "San Francisco"
     ],
     "VietJet Air": [
       "Da Nang",
@@ -2245,6 +2342,9 @@
     ],
     "XiamenAir": [
       "Fuzhou"
+    ],
+    "Zipair Tokyo": [
+      "Tokyo–Narita"
     ]
   },
   "outdegree_cargo": 24,
@@ -2596,6 +2696,6 @@
       "Ashgabat"
     ]
   },
-  "date-time-parse": "2026-07-05T00:35:51Z",
-  "date-time-wikidata": "2026-07-03T06:56:03Z"
+  "date-time-parse": "2026-07-12T02:09:23Z",
+  "date-time-wikidata": "2026-07-11T09:27:39Z"
 }

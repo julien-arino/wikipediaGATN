@@ -15,13 +15,12 @@
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
   "outdegree": 19,
-  "number_airlines": 9,
+  "number_airlines": 8,
   "airlines": [
     "9 Air",
     "AirAsia",
     "AirBorneo",
     "Batik Air Malaysia",
-    "Firefly",
     "Indonesia AirAsia",
     "Malaysia Airlines",
     "Royal Brunei Airlines",
@@ -134,8 +133,8 @@
       ],
       "airlines": [
         "AirAsia",
+        "AirBorneo",
         "Batik Air Malaysia",
-        "Firefly",
         "Malaysia Airlines"
       ]
     },
@@ -233,6 +232,7 @@
       ],
       "airlines": [
         "AirAsia",
+        "AirBorneo",
         "Scoot"
       ]
     },
@@ -278,18 +278,17 @@
       "Singapore"
     ],
     "AirBorneo": [
+      "Kuala Lumpur–International",
       "Limbang",
       "Mukah",
       "Mulu",
+      "Singapore",
       "Tanjung Manis"
     ],
     "Batik Air Malaysia": [
       "Guangzhou",
       "Kuala Lumpur–International",
       "Zhangjiajie"
-    ],
-    "Firefly": [
-      "Kuala Lumpur–International"
     ],
     "Indonesia AirAsia": [
       "Jakarta–Soekarno-Hatta"
@@ -304,11 +303,30 @@
       "Singapore"
     ]
   },
-  "outdegree_cargo": 0,
-  "number_airlines_cargo": 0,
-  "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-05T00:36:20Z",
-  "date-time-wikidata": "2026-06-30T20:17:07Z"
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "MASkargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Kuala Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
+      "codes": [
+        "KUL",
+        "WMKK",
+        "WMKK"
+      ],
+      "airlines": [
+        "MASkargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "MASkargo": [
+      "Kuala Lumpur–International"
+    ]
+  },
+  "date-time-parse": "2026-07-19T02:04:56Z",
+  "date-time-wikidata": "2026-07-14T21:27:41Z"
 }

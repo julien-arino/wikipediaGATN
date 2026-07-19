@@ -14,11 +14,965 @@
   "admin1_name": "Rio de Janeiro",
   "admin2_name": "Duque De Caxias",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
+  "outdegree": 60,
+  "number_airlines": 27,
+  "airlines": [
+    "Aerolíneas Argentinas",
+    "Air Canada",
+    "Air France",
+    "Air Transat",
+    "American Airlines",
+    "Avianca",
+    "Azul Brazilian Airlines",
+    "Boliviana de Aviación",
+    "British Airways",
+    "Copa Airlines",
+    "Delta Air Lines",
+    "Emirates",
+    "Flybondi",
+    "Gol Linhas Aéreas",
+    "ITA Airways",
+    "Iberia",
+    "JetSmart Argentina",
+    "JetSmart Chile",
+    "KLM",
+    "LATAM Brasil",
+    "LATAM Chile",
+    "LATAM Perú",
+    "Lufthansa",
+    "Paranair",
+    "Sky Airline",
+    "TAP Air Portugal",
+    "United Airlines"
+  ],
+  "destinations": [
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
+      ]
+    },
+    {
+      "city": "Aracaju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Maria_Airport_(Sergipe)",
+      "codes": [
+        "AJU",
+        "SBAR",
+        "SBAR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Asunción",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silvio_Pettirossi_International_Airport",
+      "codes": [
+        "ASU",
+        "SGAS",
+        "SGAS"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina",
+        "Paranair"
+      ]
+    },
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Belém",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belém/Val-de-Cans_International_Airport",
+      "codes": [
+        "BEL",
+        "SBBE",
+        "SBBE"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avianca"
+      ]
+    },
+    {
+      "city": "Brasília",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brasília_International_Airport",
+      "codes": [
+        "BSB",
+        "SBBR",
+        "SBBR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Aeroparque",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
+      "codes": [
+        "AEP",
+        "SABE",
+        "SABE"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Buenos Aires–Ezeiza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezeiza_International_Airport",
+      "codes": [
+        "EZE",
+        "SAEZ",
+        "SAEZ"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "British Airways",
+        "Emirates",
+        "Flybondi",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Campinas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
+      "codes": [
+        "VCP",
+        "SBKP",
+        "SBKP"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Campo Grande",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Campo_Grande_International_Airport",
+      "codes": [
+        "CGR",
+        "SBCG",
+        "SBCG"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Caxias do Sul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caxias_do_Sul_Airport",
+      "codes": [
+        "CXJ",
+        "SBCX",
+        "SBCX"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Cuiabá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Rondon_International_Airport",
+      "codes": [
+        "CGB",
+        "SBCY",
+        "SBCY"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Curitiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
+      "codes": [
+        "CWB",
+        "SBCT",
+        "SBCT"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO",
+        "SACO"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL",
+        "SBFL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Fortaleza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fortaleza_Airport",
+      "codes": [
+        "FOR",
+        "SBFZ",
+        "SBFZ"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Foz do Iguaçu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Foz_do_Iguaçu_International_Airport",
+      "codes": [
+        "IGU",
+        "SBFI",
+        "SBFI"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF",
+        "EDDF"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ]
+    },
+    {
+      "city": "Goiânia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Goiânia_International_Airport",
+      "codes": [
+        "GYN",
+        "SBGO",
+        "SBGO"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Ilhéus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ilhéus_Jorge_Amado_Airport",
+      "codes": [
+        "IOS",
+        "SBIL",
+        "SBIL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "João Pessoa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Presidente_Castro_Pinto_International_Airport",
+      "codes": [
+        "JPA",
+        "SBJP",
+        "SBJP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Lima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jorge_Chávez_International_Airport",
+      "codes": [
+        "LIM",
+        "SPJC",
+        "SPJC"
+      ],
+      "airlines": [
+        "LATAM Perú"
+      ]
+    },
+    {
+      "city": "Lisbon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lisbon_Airport",
+      "codes": [
+        "LIS",
+        "LPPT",
+        "LPPT"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "London–Heathrow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "codes": [
+        "LHR",
+        "EGLL",
+        "EGLL"
+      ],
+      "airlines": [
+        "British Airways"
+      ]
+    },
+    {
+      "city": "Macapá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macapá_International_Airport",
+      "codes": [
+        "MCP",
+        "SBMQ",
+        "SBMQ"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Maceió",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zumbi_dos_Palmares_International_Airport",
+      "codes": [
+        "MCZ",
+        "SBMO",
+        "SBMO"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Iberia"
+      ]
+    },
+    {
+      "city": "Manaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Gomes_International_Airport",
+      "codes": [
+        "MAO",
+        "SBEG",
+        "SBEG"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME",
+        "SAME"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina"
+      ]
+    },
+    {
+      "city": "Miami",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
+      "codes": [
+        "MIA",
+        "KMIA",
+        "KMIA"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Montevideo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
+      "codes": [
+        "MVD",
+        "SUMU",
+        "SUMU"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "JetSmart Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Natal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Natal_International_Airport",
+      "codes": [
+        "NAT",
+        "SBSG",
+        "SBSG"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Navegantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navegantes_Airport",
+      "codes": [
+        "NVT",
+        "SBNF",
+        "SBNF"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Delta Air Lines",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG",
+        "LFPG"
+      ],
+      "airlines": [
+        "Air France"
+      ]
+    },
+    {
+      "city": "Porto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
+      "codes": [
+        "OPO",
+        "LPPR",
+        "LPPR"
+      ],
+      "airlines": [
+        "TAP Air Portugal"
+      ]
+    },
+    {
+      "city": "Porto Alegre",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salgado_Filho_Porto_Alegre_International_Airport",
+      "codes": [
+        "POA",
+        "SBPA",
+        "SBPA"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Porto Seguro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Seguro_Airport",
+      "codes": [
+        "BPS",
+        "SBPS",
+        "SBPS"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Recife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes_International_Airport",
+      "codes": [
+        "REC",
+        "SBRF",
+        "SBRF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines",
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "codes": [
+        "FCO",
+        "LIRF",
+        "LIRF"
+      ],
+      "airlines": [
+        "ITA Airways"
+      ]
+    },
+    {
+      "city": "Rosario",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
+      "codes": [
+        "ROS",
+        "SAAR",
+        "SAAR"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Salta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
+      "codes": [
+        "SLA",
+        "SASA",
+        "SASA"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Salvador da Bahia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
+      "codes": [
+        "SSA",
+        "SBSV",
+        "SBSV"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Santa Cruz de la Sierra–Viru Viru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viru_Viru_International_Airport",
+      "codes": [
+        "VVI",
+        "SLVR",
+        "SLVR"
+      ],
+      "airlines": [
+        "Boliviana de Aviación"
+      ]
+    },
+    {
+      "city": "Santiago de Chile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arturo_Merino_Benítez_International_Airport",
+      "codes": [
+        "SCL",
+        "SCEL",
+        "SCEL"
+      ],
+      "airlines": [
+        "JetSmart Chile",
+        "LATAM Chile",
+        "Sky Airline"
+      ]
+    },
+    {
+      "city": "São José dos Campos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_José_dos_Campos_Airport",
+      "codes": [
+        "SJK",
+        "SBSJ",
+        "SBSJ"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Luís",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marechal_Cunha_Machado_International_Airport",
+      "codes": [
+        "SLZ",
+        "SBSL",
+        "SBSL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "São Paulo–Congonhas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
+      "codes": [
+        "CGH",
+        "SBSP",
+        "SBSP"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "São Paulo–Guarulhos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
+      "codes": [
+        "GRU",
+        "SBGR",
+        "SBGR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Teresina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teresina_Airport",
+      "codes": [
+        "THE",
+        "SBTE",
+        "SBTE"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Air Transat"
+      ]
+    },
+    {
+      "city": "Uberlândia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uberlândia_Airport",
+      "codes": [
+        "UDI",
+        "SBUL",
+        "SBUL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Vitória",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eurico_de_Aguiar_Salles_Airport",
+      "codes": [
+        "VIX",
+        "SBVT",
+        "SBVT"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Aerolíneas Argentinas": [
+      "Buenos Aires–Aeroparque",
+      "Buenos Aires–Ezeiza",
+      "Córdoba (AR)",
+      "Mendoza",
+      "Rosario"
+    ],
+    "Air Canada": [
+      "Toronto–Pearson"
+    ],
+    "Air France": [
+      "Paris–Charles de Gaulle"
+    ],
+    "Air Transat": [
+      "Montréal–Trudeau",
+      "Toronto–Pearson"
+    ],
+    "American Airlines": [
+      "Dallas/Fort Worth",
+      "Miami",
+      "New York–JFK"
+    ],
+    "Avianca": [
+      "Bogotá"
+    ],
+    "Azul Brazilian Airlines": [
+      "Belo Horizonte–Confins",
+      "Campinas",
+      "Curitiba",
+      "Porto Alegre",
+      "Recife"
+    ],
+    "Boliviana de Aviación": [
+      "Santa Cruz de la Sierra–Viru Viru"
+    ],
+    "British Airways": [
+      "Buenos Aires–Ezeiza",
+      "London–Heathrow"
+    ],
+    "Copa Airlines": [
+      "Panama City–Tocumen"
+    ],
+    "Delta Air Lines": [
+      "Atlanta",
+      "New York–JFK"
+    ],
+    "Emirates": [
+      "Buenos Aires–Ezeiza",
+      "Dubai–International"
+    ],
+    "Flybondi": [
+      "Buenos Aires–Aeroparque",
+      "Buenos Aires–Ezeiza",
+      "Córdoba (AR)"
+    ],
+    "Gol Linhas Aéreas": [
+      "Aracaju",
+      "Asunción",
+      "Belo Horizonte–Confins",
+      "Belém",
+      "Brasília",
+      "Buenos Aires–Aeroparque",
+      "Buenos Aires–Ezeiza",
+      "Campinas",
+      "Campo Grande",
+      "Caxias do Sul",
+      "Cuiabá",
+      "Curitiba",
+      "Córdoba (AR)",
+      "Florianópolis",
+      "Fortaleza",
+      "Foz do Iguaçu",
+      "Goiânia",
+      "Ilhéus",
+      "João Pessoa",
+      "Lisbon",
+      "Macapá",
+      "Maceió",
+      "Manaus",
+      "Mendoza",
+      "Montevideo",
+      "Natal",
+      "Navegantes",
+      "New York–JFK",
+      "Porto Alegre",
+      "Porto Seguro",
+      "Recife",
+      "Rosario",
+      "Salta",
+      "Salvador da Bahia",
+      "São José dos Campos",
+      "São Luís",
+      "São Paulo–Congonhas",
+      "São Paulo–Guarulhos",
+      "Teresina",
+      "Uberlândia",
+      "Vitória"
+    ],
+    "Iberia": [
+      "Madrid"
+    ],
+    "ITA Airways": [
+      "Rome–Fiumicino"
+    ],
+    "JetSmart Argentina": [
+      "Asunción",
+      "Buenos Aires–Aeroparque",
+      "Buenos Aires–Ezeiza",
+      "Córdoba (AR)",
+      "Mendoza"
+    ],
+    "JetSmart Chile": [
+      "Montevideo",
+      "Santiago de Chile"
+    ],
+    "KLM": [
+      "Amsterdam"
+    ],
+    "LATAM Brasil": [
+      "Brasília",
+      "Buenos Aires–Aeroparque",
+      "Buenos Aires–Ezeiza",
+      "Curitiba",
+      "Florianópolis",
+      "Fortaleza",
+      "Foz do Iguaçu",
+      "João Pessoa",
+      "Manaus",
+      "Porto Alegre",
+      "Porto Seguro",
+      "Recife",
+      "Salvador da Bahia",
+      "São Luís",
+      "São Paulo–Guarulhos",
+      "Vitória"
+    ],
+    "LATAM Chile": [
+      "Santiago de Chile"
+    ],
+    "LATAM Perú": [
+      "Lima"
+    ],
+    "Lufthansa": [
+      "Frankfurt"
+    ],
+    "Paranair": [
+      "Asunción"
+    ],
+    "Sky Airline": [
+      "Montevideo",
+      "Santiago de Chile"
+    ],
+    "TAP Air Portugal": [
+      "Lisbon",
+      "Porto"
+    ],
+    "United Airlines": [
+      "Houston–Intercontinental"
+    ]
+  },
   "outdegree_cargo": 19,
   "number_airlines_cargo": 9,
   "airlines_cargo": [
@@ -317,6 +1271,6 @@
       "São Paulo–Guarulhos"
     ]
   },
-  "date-time-parse": "2026-07-12T02:08:31Z",
-  "date-time-wikidata": "2026-07-12T00:42:45Z"
+  "date-time-parse": "2026-07-19T02:03:09Z",
+  "date-time-wikidata": "2026-07-18T19:06:01Z"
 }

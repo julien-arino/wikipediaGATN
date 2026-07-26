@@ -14,12 +14,26 @@
   "admin1_name": "Albay",
   "admin2_name": "Province of Albay",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bicol_International_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 3,
+  "number_airlines": 3,
   "airlines": [
-    "Cebgo"
+    "Cebgo",
+    "Cebu Pacific",
+    "PAL Express"
   ],
   "destinations": [
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo"
+      ]
+    },
     {
       "city": "Iloilo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Iloilo_International_Airport",
@@ -31,11 +45,31 @@
       "airlines": [
         "Cebgo"
       ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
     }
   ],
   "airlines_destinations": {
     "Cebgo": [
+      "Cebu",
       "Iloilo"
+    ],
+    "Cebu Pacific": [
+      "Manila"
+    ],
+    "PAL Express": [
+      "Manila"
     ]
   },
   "outdegree_cargo": 0,
@@ -43,6 +77,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:06:55Z",
-  "date-time-wikidata": "2026-07-07T16:04:22Z"
+  "date-time-parse": "2026-07-26T02:06:53Z",
+  "date-time-wikidata": "2026-07-20T10:04:39Z"
 }

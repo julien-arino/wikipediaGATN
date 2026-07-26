@@ -14,22 +14,33 @@
   "admin1_name": "Amapá",
   "admin2_name": "Macapa",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Macapá_International_Airport",
-  "outdegree": 5,
-  "number_airlines": 4,
+  "outdegree": 6,
+  "number_airlines": 3,
   "airlines": [
     "Azul Brazilian Airlines",
     "Gol Linhas Aéreas",
-    "LATAM Brasil",
-    "Omni Táxi Aéreo"
+    "LATAM Brasil"
   ],
   "destinations": [
     {
+      "city": "Belo Horizonte–Confins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belo_Horizonte_International_Airport",
+      "codes": [
+        "CNF",
+        "SBCF",
+        "SBCF"
+      ],
+      "airlines": [
+        "Azul Brazilian Airlines"
+      ]
+    },
+    {
       "city": "Belém",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Val_de_Cans_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belém/Val-de-Cans_International_Airport",
       "codes": [
         "BEL",
         "SBBE",
-        "gps code not found"
+        "SBBE"
       ],
       "airlines": [
         "Azul Brazilian Airlines",
@@ -43,7 +54,7 @@
       "codes": [
         "BSB",
         "SBBR",
-        "gps code not found"
+        "SBBR"
       ],
       "airlines": [
         "LATAM Brasil"
@@ -55,11 +66,10 @@
       "codes": [
         "OYK",
         "SBOI",
-        "gps code not found"
+        "SBOI"
       ],
       "airlines": [
-        "Azul Brazilian Airlines",
-        "Omni Táxi Aéreo"
+        "Azul Brazilian Airlines"
       ]
     },
     {
@@ -68,7 +78,7 @@
       "codes": [
         "GIG",
         "SBGL",
-        "gps code not found"
+        "SBGL"
       ],
       "airlines": [
         "Gol Linhas Aéreas"
@@ -80,7 +90,7 @@
       "codes": [
         "GRU",
         "SBGR",
-        "gps code not found"
+        "SBGR"
       ],
       "airlines": [
         "LATAM Brasil"
@@ -89,6 +99,7 @@
   ],
   "airlines_destinations": {
     "Azul Brazilian Airlines": [
+      "Belo Horizonte–Confins",
       "Belém",
       "Oiapoque"
     ],
@@ -100,9 +111,6 @@
       "Belém",
       "Brasília",
       "São Paulo–Guarulhos"
-    ],
-    "Omni Táxi Aéreo": [
-      "Oiapoque"
     ]
   },
   "outdegree_cargo": 0,
@@ -110,6 +118,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T01:46:28Z",
-  "date-time-wikidata": "2026-02-28T10:45:09Z"
+  "date-time-parse": "2026-07-26T02:10:25Z",
+  "date-time-wikidata": "2026-07-22T22:00:45Z"
 }

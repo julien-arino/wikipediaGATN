@@ -14,15 +14,63 @@
   "admin1_name": "California",
   "admin2_name": "Los Angeles County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Long_Beach_Airport",
-  "outdegree": 4,
+  "outdegree": 17,
   "number_airlines": 4,
   "airlines": [
     "Alaska Airlines",
-    "Delta Air Lines",
     "Delta Connection",
-    "Hawaiian Airlines"
+    "Hawaiian Airlines",
+    "Southwest Airlines"
   ],
   "destinations": [
+    {
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Bozeman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bozeman_Yellowstone_International_Airport",
+      "codes": [
+        "BZN",
+        "KBZN",
+        "KBZN"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Chicago-Midway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Dallas-Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
     {
       "city": "Honolulu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
@@ -32,7 +80,20 @@
         "PHNL"
       ],
       "airlines": [
-        "Hawaiian Airlines"
+        "Hawaiian Airlines",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Houston-Hobby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_P._Hobby_Airport",
+      "codes": [
+        "HOU",
+        "KHOU",
+        "KHOU"
+      ],
+      "airlines": [
+        "Southwest Airlines"
       ]
     },
     {
@@ -48,6 +109,90 @@
       ]
     },
     {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Nashville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nashville_International_Airport",
+      "codes": [
+        "BNA",
+        "KBNA",
+        "KBNA"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Reno",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reno/Tahoe_International_Airport",
+      "codes": [
+        "RNO",
+        "KRNO",
+        "KRNO"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Sacramento",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
       "city": "Salt Lake City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
       "codes": [
@@ -56,20 +201,33 @@
         "KSLC"
       ],
       "airlines": [
-        "Delta Air Lines",
-        "Delta Connection"
+        "Delta Connection",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "San Jose (CA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
+      "codes": [
+        "SJC",
+        "KSJC",
+        "KSJC"
+      ],
+      "airlines": [
+        "Southwest Airlines"
       ]
     },
     {
       "city": "Seattle/Tacoma",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle/Tacoma",
       "codes": [
         "SEA",
         "KSEA",
         "KSEA"
       ],
       "airlines": [
-        "Alaska Airlines"
+        "Alaska Airlines",
+        "Southwest Airlines"
       ]
     }
   ],
@@ -77,57 +235,37 @@
     "Alaska Airlines": [
       "Seattle/Tacoma"
     ],
-    "Delta Air Lines": [
-      "Salt Lake City"
-    ],
     "Delta Connection": [
       "Salt Lake City"
     ],
     "Hawaiian Airlines": [
       "Honolulu",
       "Kahului"
-    ]
-  },
-  "outdegree_cargo": 2,
-  "number_airlines_cargo": 2,
-  "airlines_cargo": [
-    "FedEx Express",
-    "UPS Airlines"
-  ],
-  "destinations_cargo": [
-    {
-      "city": "Fort Worth/Alliance",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Perot_Field_Fort_Worth_Alliance_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found",
-        "gps code not found"
-      ],
-      "airlines": [
-        "FedEx Express"
-      ]
-    },
-    {
-      "city": "Louisville",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisville_Muhammad_Ali_International_Airport",
-      "codes": [
-        "SDF",
-        "KSDF",
-        "KSDF"
-      ],
-      "airlines": [
-        "UPS Airlines"
-      ]
-    }
-  ],
-  "airlines_destinations_cargo": {
-    "FedEx Express": [
-      "Fort Worth/Alliance"
     ],
-    "UPS Airlines": [
-      "Louisville"
+    "Southwest Airlines": [
+      "Austin",
+      "Bozeman",
+      "Chicago-Midway",
+      "Dallas-Love",
+      "Honolulu",
+      "Houston-Hobby",
+      "Las Vegas",
+      "Nashville",
+      "Oakland",
+      "Phoenix",
+      "Portland (OR)",
+      "Reno",
+      "Sacramento",
+      "Salt Lake City",
+      "San Jose (CA)",
+      "Seattle/Tacoma"
     ]
   },
-  "date-time-parse": "2026-06-21T00:45:20Z",
-  "date-time-wikidata": "2026-06-18T01:38:12Z"
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-07-26T02:09:23Z",
+  "date-time-wikidata": "2026-07-23T19:07:33Z"
 }

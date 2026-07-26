@@ -14,8 +14,8 @@
   "admin1_name": "Lombardia",
   "admin2_name": "Provincia di Varese",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-  "outdegree": 217,
-  "number_airlines": 87,
+  "outdegree": 216,
+  "number_airlines": 88,
   "airlines": [
     "Aegean Airlines",
     "Aer Lingus",
@@ -36,6 +36,7 @@
     "Animawings",
     "Arkia",
     "Asiana Airlines",
+    "Atlantic Airways",
     "Azerbaijan Airlines",
     "BeOnd",
     "British Airways",
@@ -277,18 +278,6 @@
       ],
       "airlines": [
         "Delta Air Lines"
-      ]
-    },
-    {
-      "city": "Atyrau",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Atyrau_Airport",
-      "codes": [
-        "GUW",
-        "UATG",
-        "UATG"
-      ],
-      "airlines": [
-        "Neos"
       ]
     },
     {
@@ -623,18 +612,6 @@
       ]
     },
     {
-      "city": "Calvi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Calvi_–_Sainte-Catherine_Airport",
-      "codes": [
-        "CLY",
-        "LFKC",
-        "LFKC"
-      ],
-      "airlines": [
-        "Air Corsica"
-      ]
-    },
-    {
       "city": "Cancún",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
       "codes": [
@@ -780,7 +757,8 @@
         "LICB"
       ],
       "airlines": [
-        "Neos"
+        "Neos",
+        "Wizz Air"
       ]
     },
     {
@@ -1375,7 +1353,7 @@
     },
     {
       "city": "Lamezia Terme",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lamezia_Terme_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lamezia_Terme_Airport",
       "codes": [
         "SUF",
         "LICA",
@@ -1384,6 +1362,7 @@
       "airlines": [
         "Neos",
         "Ryanair",
+        "Wizz Air",
         "easyJet"
       ]
     },
@@ -1409,7 +1388,6 @@
         "GCRR"
       ],
       "airlines": [
-        "Neos",
         "Ryanair",
         "easyJet"
       ]
@@ -2288,7 +2266,6 @@
         "LGSR"
       ],
       "airlines": [
-        "Neos",
         "Ryanair",
         "easyJet"
       ]
@@ -2727,6 +2704,18 @@
       ]
     },
     {
+      "city": "Vágar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vágar_Airport",
+      "codes": [
+        "FAE",
+        "EKVG",
+        "EKVG"
+      ],
+      "airlines": [
+        "Atlantic Airways"
+      ]
+    },
+    {
       "city": "Warsaw–Chopin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Chopin_Airport",
       "codes": [
@@ -2881,7 +2870,6 @@
       "Shanghai–Pudong"
     ],
     "Air Corsica": [
-      "Calvi",
       "Figari"
     ],
     "Air Dolomiti": [
@@ -2922,6 +2910,9 @@
     ],
     "Asiana Airlines": [
       "Seoul–Incheon"
+    ],
+    "Atlantic Airways": [
+      "Vágar"
     ],
     "Azerbaijan Airlines": [
       "Baku"
@@ -3125,7 +3116,6 @@
     ],
     "Neos": [
       "Almaty",
-      "Atyrau",
       "Boa Vista",
       "Brindisi",
       "Cagliari",
@@ -3149,7 +3139,6 @@
       "Kos",
       "La Romana",
       "Lamezia Terme",
-      "Lanzarote",
       "Larnaca",
       "Luxor",
       "Malé",
@@ -3175,7 +3164,6 @@
       "Sal",
       "Salalah",
       "Samos",
-      "Santorini",
       "Sharm El Sheikh",
       "Skiathos",
       "Tel Aviv",
@@ -3342,6 +3330,7 @@
       "Catania",
       "Chișinău",
       "Cluj-Napoca",
+      "Comiso",
       "Corfu",
       "Dortmund",
       "Gdańsk",
@@ -3352,6 +3341,7 @@
       "Jeddah",
       "Kraków",
       "Kutaisi",
+      "Lamezia Terme",
       "Lampedusa",
       "Larnaca",
       "London–Luton",
@@ -3384,11 +3374,596 @@
       "Zaragoza"
     ]
   },
-  "outdegree_cargo": 0,
-  "number_airlines_cargo": 0,
-  "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-05T00:37:49Z",
-  "date-time-wikidata": "2026-07-01T09:36:01Z"
+  "outdegree_cargo": 39,
+  "number_airlines_cargo": 19,
+  "airlines_cargo": [
+    "Amazon Air",
+    "Asiana Cargo",
+    "Atlas Air",
+    "Cargolux",
+    "Cathay Cargo",
+    "DHL Aviation",
+    "Egyptair Cargo",
+    "Emirates SkyCargo",
+    "Ethiopian Airlines Cargo",
+    "Geosky",
+    "Korean Air Cargo",
+    "Lufthansa Cargo",
+    "MSC Air Cargo",
+    "Nippon Cargo Airlines",
+    "Qatar Airways Cargo",
+    "Saudia Cargo",
+    "Silk Way West Airlines",
+    "Turkish Cargo",
+    "Turkmenistan Airlines"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines Cargo"
+      ]
+    },
+    {
+      "city": "Almaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
+      "codes": [
+        "ALA",
+        "UAAA",
+        "UAAA"
+      ],
+      "airlines": [
+        "Asiana Cargo"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM",
+        "EHAM"
+      ],
+      "airlines": [
+        "Atlas Air",
+        "Emirates SkyCargo",
+        "Nippon Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Ancona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marche_Airport",
+      "codes": [
+        "AOI",
+        "LIPY",
+        "LIPY"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ashgabat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aşgabat_International_Airport",
+      "codes": [
+        "ASB",
+        "UTAA",
+        "UTAA"
+      ],
+      "airlines": [
+        "Turkmenistan Airlines"
+      ]
+    },
+    {
+      "city": "Athens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens_International_Airport",
+      "codes": [
+        "ATH",
+        "LGAV",
+        "LGAV"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Bahrain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bahrain_International_Airport",
+      "codes": [
+        "BAH",
+        "OBBI",
+        "OBBI"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Baku",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heydar_Aliyev_International_Airport",
+      "codes": [
+        "GYD",
+        "UBBB",
+        "UBBB"
+      ],
+      "airlines": [
+        "Silk Way West Airlines"
+      ]
+    },
+    {
+      "city": "Barcelona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Josep_Tarradellas_Barcelona–El_Prat_Airport",
+      "codes": [
+        "BCN",
+        "LEBL",
+        "LEBL"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Brussels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brussels_Airport",
+      "codes": [
+        "BRU",
+        "EBBR",
+        "EBBR"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Budapest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Budapest_Ferenc_Liszt_International_Airport",
+      "codes": [
+        "BUD",
+        "LHBP",
+        "LHBP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cagliari",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "codes": [
+        "CAG",
+        "LIEE",
+        "LIEE"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    },
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA",
+        "HECA"
+      ],
+      "airlines": [
+        "Egyptair Cargo"
+      ]
+    },
+    {
+      "city": "Catania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Catania–Fontanarossa_Airport",
+      "codes": [
+        "CTA",
+        "LICC",
+        "LICC"
+      ],
+      "airlines": [
+        "Amazon Air"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Cincinnati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
+      "codes": [
+        "CVG",
+        "KCVG",
+        "KCVG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Cologne/Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cologne_Bonn_Airport",
+      "codes": [
+        "CGN",
+        "EDDK",
+        "EDDK"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Dubai–Al Maktoum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW",
+        "OMDW"
+      ],
+      "airlines": [
+        "Emirates SkyCargo"
+      ]
+    },
+    {
+      "city": "East Midlands",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Midlands_Airport",
+      "codes": [
+        "EMA",
+        "EGNX",
+        "EGNX"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Ezhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ezhou_Huahu_Airport",
+      "codes": [
+        "EHU",
+        "ZHEC",
+        "ZHEC"
+      ],
+      "airlines": [
+        "Geosky"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF",
+        "EDDF"
+      ],
+      "airlines": [
+        "Cathay Cargo",
+        "Lufthansa Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH",
+        "VHHH"
+      ],
+      "airlines": [
+        "Cathay Cargo"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Jeddah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Abdulaziz_International_Airport",
+      "codes": [
+        "JED",
+        "OEJN",
+        "OEJN"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    },
+    {
+      "city": "Leipzig/Halle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
+      "codes": [
+        "LEJ",
+        "EDDP",
+        "EDDP"
+      ],
+      "airlines": [
+        "Amazon Air",
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Luxembourg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luxembourg_Airport",
+      "codes": [
+        "LUX",
+        "ELLX",
+        "ELLX"
+      ],
+      "airlines": [
+        "Cargolux"
+      ]
+    },
+    {
+      "city": "Munich",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
+      "codes": [
+        "MUC",
+        "EDDM",
+        "EDDM"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
+      ]
+    },
+    {
+      "city": "Naples",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples_International_Airport",
+      "codes": [
+        "NAP",
+        "LIRN",
+        "LIRN"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Paris–Charles de Gaulle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "codes": [
+        "CDG",
+        "LFPG",
+        "LFPG"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Pisa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_International_Airport",
+      "codes": [
+        "PSA",
+        "LIRP",
+        "LIRP"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Riyadh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Khalid_International_Airport",
+      "codes": [
+        "RUH",
+        "OERK",
+        "OERK"
+      ],
+      "airlines": [
+        "Saudia Cargo"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ",
+        "TJSJ"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Seoul–Incheon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
+      "codes": [
+        "ICN",
+        "RKSI",
+        "RKSI"
+      ],
+      "airlines": [
+        "Asiana Cargo",
+        "Atlas Air",
+        "DHL Aviation",
+        "Korean Air Cargo"
+      ]
+    },
+    {
+      "city": "Thessaloniki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
+      "codes": [
+        "SKG",
+        "LGTS",
+        "LGTS"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Tokyo–Narita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "codes": [
+        "NRT",
+        "RJAA",
+        "RJAA"
+      ],
+      "airlines": [
+        "Atlas Air",
+        "MSC Air Cargo",
+        "Nippon Cargo Airlines"
+      ]
+    },
+    {
+      "city": "Vitoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vitoria_Airport",
+      "codes": [
+        "VIT",
+        "LEVT",
+        "LEVT"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    },
+    {
+      "city": "Zagreb",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zagreb_Airport",
+      "codes": [
+        "ZAG",
+        "LDZA",
+        "LDZA"
+      ],
+      "airlines": [
+        "DHL Aviation"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Amazon Air": [
+      "Cagliari",
+      "Catania",
+      "Leipzig/Halle"
+    ],
+    "Asiana Cargo": [
+      "Almaty",
+      "Seoul–Incheon"
+    ],
+    "Atlas Air": [
+      "Amsterdam",
+      "Chicago–O'Hare",
+      "Liège",
+      "San Juan",
+      "Seoul–Incheon",
+      "Tokyo–Narita"
+    ],
+    "Cargolux": [
+      "Luxembourg"
+    ],
+    "Cathay Cargo": [
+      "Frankfurt",
+      "Hong Kong"
+    ],
+    "DHL Aviation": [
+      "Ancona",
+      "Athens",
+      "Bahrain",
+      "Barcelona",
+      "Brussels",
+      "Budapest",
+      "Cincinnati",
+      "Cologne/Bonn",
+      "East Midlands",
+      "Leipzig/Halle",
+      "Naples",
+      "Paris–Charles de Gaulle",
+      "Pisa",
+      "Seoul–Incheon",
+      "Thessaloniki",
+      "Vitoria",
+      "Zagreb"
+    ],
+    "Egyptair Cargo": [
+      "Cairo"
+    ],
+    "Emirates SkyCargo": [
+      "Amsterdam",
+      "Dubai–Al Maktoum"
+    ],
+    "Ethiopian Airlines Cargo": [
+      "Addis Ababa"
+    ],
+    "Geosky": [
+      "Ezhou"
+    ],
+    "Korean Air Cargo": [
+      "Seoul–Incheon"
+    ],
+    "Lufthansa Cargo": [
+      "Frankfurt"
+    ],
+    "MSC Air Cargo": [
+      "Tokyo–Narita"
+    ],
+    "Nippon Cargo Airlines": [
+      "Amsterdam",
+      "Tokyo–Narita"
+    ],
+    "Qatar Airways Cargo": [
+      "Doha",
+      "Munich"
+    ],
+    "Saudia Cargo": [
+      "Jeddah",
+      "Riyadh"
+    ],
+    "Silk Way West Airlines": [
+      "Baku"
+    ],
+    "Turkish Cargo": [
+      "Istanbul"
+    ],
+    "Turkmenistan Airlines": [
+      "Ashgabat"
+    ]
+  },
+  "date-time-parse": "2026-07-26T02:11:23Z",
+  "date-time-wikidata": "2026-07-25T11:05:03Z"
 }

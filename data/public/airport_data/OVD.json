@@ -14,8 +14,8 @@
   "admin1_name": "Asturias",
   "admin2_name": "Province of Asturias",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Asturias_Airport",
-  "outdegree": 30,
-  "number_airlines": 8,
+  "outdegree": 31,
+  "number_airlines": 9,
   "airlines": [
     "Aer Lingus",
     "Air Europa",
@@ -24,7 +24,8 @@
     "KLM",
     "Lufthansa",
     "Volotea",
-    "Vueling"
+    "Vueling",
+    "Wizz Air"
   ],
   "destinations": [
     {
@@ -62,18 +63,6 @@
       "airlines": [
         "Volotea",
         "Vueling"
-      ]
-    },
-    {
-      "city": "Bergamo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
-      "codes": [
-        "BGY",
-        "LIME",
-        "LIME"
-      ],
-      "airlines": [
-        "Volotea"
       ]
     },
     {
@@ -162,7 +151,7 @@
       ]
     },
     {
-      "city": "Granada",
+      "city": "Granada–Jaen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Federico_García_Lorca_Granada_Airport",
       "codes": [
         "GRX",
@@ -180,6 +169,18 @@
         "IBZ",
         "LEIB",
         "LEIB"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Jerez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerez_Airport",
+      "codes": [
+        "XRY",
+        "LEJR",
+        "LEJR"
       ],
       "airlines": [
         "Volotea"
@@ -211,7 +212,7 @@
     },
     {
       "city": "London–Gatwick",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Gatwick",
       "codes": [
         "LGW",
         "EGKK",
@@ -219,6 +220,18 @@
       ],
       "airlines": [
         "Vueling"
+      ]
+    },
+    {
+      "city": "London–Luton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Luton",
+      "codes": [
+        "LTN",
+        "EGGW",
+        "EGGW"
+      ],
+      "airlines": [
+        "Wizz Air"
       ]
     },
     {
@@ -232,7 +245,8 @@
       "airlines": [
         "Air Europa",
         "Iberia",
-        "Volotea"
+        "Volotea",
+        "Wizz Air"
       ]
     },
     {
@@ -254,6 +268,18 @@
         "MAH",
         "LEMH",
         "LEMH"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Milan–Bergamo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Bergamo_Airport",
+      "codes": [
+        "BGY",
+        "LIME",
+        "LIME"
       ],
       "airlines": [
         "Volotea"
@@ -292,14 +318,13 @@
         "LEPA"
       ],
       "airlines": [
-        "Iberia",
         "Volotea",
         "Vueling"
       ]
     },
     {
-      "city": "Paris-Orly",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "city": "Paris–Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Orly_Airport",
       "codes": [
         "ORY",
         "LFPO",
@@ -322,8 +347,8 @@
       ]
     },
     {
-      "city": "Rome-Fiumicino",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome_Fiumicino_Airport",
+      "city": "Rome–Fiumicino",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome–Fiumicino",
       "codes": [
         "FCO",
         "LIRF",
@@ -379,19 +404,8 @@
         "LEVC"
       ],
       "airlines": [
-        "Volotea"
-      ]
-    },
-    {
-      "city": "Venice",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-      "codes": [
-        "VCE",
-        "LIPZ",
-        "LIPZ"
-      ],
-      "airlines": [
-        "Volotea"
+        "Volotea",
+        "Wizz Air"
       ]
     }
   ],
@@ -408,8 +422,7 @@
     ],
     "Iberia": [
       "Madrid",
-      "Melilla",
-      "Palma de Mallorca"
+      "Melilla"
     ],
     "KLM": [
       "Amsterdam"
@@ -420,34 +433,39 @@
     "Volotea": [
       "Alicante",
       "Barcelona",
-      "Bergamo",
       "Brussels",
       "Castellón",
       "Florence",
       "Fuerteventura",
       "Gran Canaria",
-      "Granada",
+      "Granada–Jaen",
       "Ibiza",
+      "Jerez",
       "Lanzarote",
       "Lisbon",
       "Madrid",
       "Menorca",
+      "Milan–Bergamo",
       "Murcia",
       "Málaga",
       "Palma de Mallorca",
-      "Paris-Orly",
+      "Paris–Orly",
       "Porto",
-      "Rome-Fiumicino",
+      "Rome–Fiumicino",
       "Seville",
       "Tenerife–South",
-      "Valencia",
-      "Venice"
+      "Valencia"
     ],
     "Vueling": [
       "Barcelona",
       "London–Gatwick",
       "Palma de Mallorca",
       "Tenerife–North"
+    ],
+    "Wizz Air": [
+      "London–Luton",
+      "Madrid",
+      "Valencia"
     ]
   },
   "outdegree_cargo": 0,
@@ -455,6 +473,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-06-21T00:46:36Z",
-  "date-time-wikidata": "2026-06-14T12:04:45Z"
+  "date-time-parse": "2026-08-02T02:10:46Z",
+  "date-time-wikidata": "2026-07-28T12:07:14Z"
 }

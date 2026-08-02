@@ -14,10 +14,11 @@
   "admin1_name": "Rio de Janeiro",
   "admin2_name": "Cabo Frio",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cabo_Frio_International_Airport",
-  "outdegree": 3,
-  "number_airlines": 2,
+  "outdegree": 4,
+  "number_airlines": 3,
   "airlines": [
     "Aerolíneas Argentinas",
+    "Andes Líneas Aéreas",
     "Azul Brazilian Airlines"
   ],
   "destinations": [
@@ -46,6 +47,18 @@
       ]
     },
     {
+      "city": "Córdoba (AR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ingeniero_Aeronáutico_Ambrosio_L.V._Taravella_International_Airport",
+      "codes": [
+        "COR",
+        "SACO",
+        "SACO"
+      ],
+      "airlines": [
+        "Andes Líneas Aéreas"
+      ]
+    },
+    {
       "city": "Rosario",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rosario_–_Islas_Malvinas_International_Airport",
       "codes": [
@@ -63,47 +76,18 @@
       "Buenos Aires–Aeroparque",
       "Rosario"
     ],
+    "Andes Líneas Aéreas": [
+      "Córdoba (AR)"
+    ],
     "Azul Brazilian Airlines": [
       "Belo Horizonte–Confins"
     ]
   },
-  "outdegree_cargo": 2,
-  "number_airlines_cargo": 1,
-  "airlines_cargo": [
-    "LATAM Cargo Brasil"
-  ],
-  "destinations_cargo": [
-    {
-      "city": "Campinas",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Viracopos_International_Airport",
-      "codes": [
-        "VCP",
-        "SBKP",
-        "SBKP"
-      ],
-      "airlines": [
-        "LATAM Cargo Brasil"
-      ]
-    },
-    {
-      "city": "Miami",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Miami_International_Airport",
-      "codes": [
-        "MIA",
-        "KMIA",
-        "KMIA"
-      ],
-      "airlines": [
-        "LATAM Cargo Brasil"
-      ]
-    }
-  ],
-  "airlines_destinations_cargo": {
-    "LATAM Cargo Brasil": [
-      "Campinas",
-      "Miami"
-    ]
-  },
-  "date-time-parse": "2026-07-12T02:05:14Z",
-  "date-time-wikidata": "2026-07-07T16:30:48Z"
+  "outdegree_cargo": 0,
+  "number_airlines_cargo": 0,
+  "airlines_cargo": [],
+  "destinations_cargo": [],
+  "airlines_destinations_cargo": {},
+  "date-time-parse": "2026-08-02T02:05:09Z",
+  "date-time-wikidata": "2026-07-28T19:13:15Z"
 }

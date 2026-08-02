@@ -14,7 +14,7 @@
   "admin1_name": "São Paulo",
   "admin2_name": "Guarulhos",
   "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo/Guarulhos_International_Airport",
-  "outdegree": 79,
+  "outdegree": 86,
   "number_airlines": 34,
   "airlines": [
     "Aerolíneas Argentinas",
@@ -76,6 +76,31 @@
       "airlines": [
         "KLM",
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Aracaju",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Santa_Maria_Airport_(Sergipe)",
+      "codes": [
+        "AJU",
+        "SBAR",
+        "SBAR"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Aruba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Beatrix_International_Airport",
+      "codes": [
+        "AUA",
+        "TNCA",
+        "TNCA"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
       ]
     },
     {
@@ -148,6 +173,7 @@
         "SBBE"
       ],
       "airlines": [
+        "Gol Linhas Aéreas",
         "LATAM Brasil"
       ]
     },
@@ -456,7 +482,8 @@
         "SBFI"
       ],
       "airlines": [
-        "Gol Linhas Aéreas"
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
       ]
     },
     {
@@ -532,6 +559,19 @@
       "airlines": [
         "LATAM Brasil",
         "South African Airways"
+      ]
+    },
+    {
+      "city": "Juazeiro do Norte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Juazeiro_do_Norte_Airport",
+      "codes": [
+        "JDO",
+        "SBJU",
+        "SBJU"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
       ]
     },
     {
@@ -646,6 +686,18 @@
       "airlines": [
         "Gol Linhas Aéreas",
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Mendoza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governor_Francisco_Gabrielli_International_Airport",
+      "codes": [
+        "MDZ",
+        "SAME",
+        "SAME"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
       ]
     },
     {
@@ -798,6 +850,19 @@
       ]
     },
     {
+      "city": "Petrolina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petrolina_Airport",
+      "codes": [
+        "PNZ",
+        "SBPL",
+        "SBPL"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas",
+        "LATAM Brasil"
+      ]
+    },
+    {
       "city": "Porto",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Airport",
       "codes": [
@@ -819,6 +884,18 @@
       ],
       "airlines": [
         "Azul Brazilian Airlines",
+        "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Porto Velho",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Governador_Jorge_Teixeira_de_Oliveira_International_Airport",
+      "codes": [
+        "PVH",
+        "SBPV",
+        "SBPV"
+      ],
+      "airlines": [
         "LATAM Brasil"
       ]
     },
@@ -910,6 +987,18 @@
       ],
       "airlines": [
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Salta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martín_Miguel_de_Güemes_International_Airport",
+      "codes": [
+        "SLA",
+        "SASA",
+        "SASA"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
       ]
     },
     {
@@ -1042,7 +1131,9 @@
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
       "Buenos Aires–Aeroparque",
+      "Mendoza",
       "Punta del Este",
+      "Salta",
       "San Carlos de Bariloche"
     ],
     "Aeroméxico": [
@@ -1101,15 +1192,20 @@
       "Buenos Aires–Ezeiza"
     ],
     "Gol Linhas Aéreas": [
+      "Aracaju",
+      "Aruba",
       "Asunción",
+      "Belém",
       "Caracas",
       "Cascavel",
       "El Calafate",
       "Fernando de Noronha",
       "Foz do Iguaçu",
       "Jericoacoara",
+      "Juazeiro do Norte",
       "Manaus",
       "Palmas",
+      "Petrolina",
       "Punta Cana",
       "Punta del Este",
       "Rio de Janeiro–Galeão",
@@ -1129,6 +1225,7 @@
     ],
     "LATAM Brasil": [
       "Amsterdam",
+      "Aracaju",
       "Barcelona",
       "Belém",
       "Boa Vista",
@@ -1145,10 +1242,12 @@
       "Córdoba (AR)",
       "Dourados",
       "Fernando de Noronha",
+      "Foz do Iguaçu",
       "Frankfurt",
       "Jaguaruna",
       "Jericoacoara",
       "Johannesburg–O. R. Tambo",
+      "Juazeiro do Norte",
       "Juiz de Fora",
       "Lisbon",
       "London–Heathrow",
@@ -1163,7 +1262,9 @@
       "Palmas",
       "Paris–Charles de Gaulle",
       "Pelotas",
+      "Petrolina",
       "Porto Alegre",
+      "Porto Velho",
       "Punta Cana",
       "Rio Branco",
       "Rio de Janeiro–Galeão",
@@ -1380,6 +1481,6 @@
       "Manaus"
     ]
   },
-  "date-time-parse": "2026-07-26T02:07:44Z",
-  "date-time-wikidata": "2026-07-24T22:26:14Z"
+  "date-time-parse": "2026-08-02T02:06:53Z",
+  "date-time-wikidata": "2026-07-31T10:27:40Z"
 }

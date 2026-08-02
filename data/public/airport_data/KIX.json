@@ -14,13 +14,14 @@
   "admin1_name": "Kanagawa",
   "admin2_name": "Kawasaki-shi",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kansai_International_Airport",
-  "outdegree": 39,
-  "number_airlines": 36,
+  "outdegree": 44,
+  "number_airlines": 43,
   "airlines": [
     "Air Busan",
     "Air Canada",
     "Air Seoul",
     "AirAsia",
+    "All Nippon Airways",
     "Asiana Airlines",
     "Batik Air Malaysia",
     "Cathay Pacific",
@@ -32,6 +33,8 @@
     "Etihad Airways",
     "Greater Bay Airlines",
     "HK Express",
+    "Hainan Airlines",
+    "Hawaiian Airlines",
     "Japan Airlines",
     "Jetstar",
     "Jetstar Japan",
@@ -39,11 +42,15 @@
     "Korean Air",
     "Loong Air",
     "Lufthansa",
+    "Malaysia Airlines",
+    "Parata Air",
     "Peach",
+    "Philippine Airlines",
     "Qatar Airways",
     "Scoot",
     "Shenzhen Airlines",
     "Singapore Airlines",
+    "Spring Airlines",
     "Starlux Airlines",
     "Thai AirAsia X",
     "Thai Airways International",
@@ -88,9 +95,23 @@
         "VTBS"
       ],
       "airlines": [
+        "Japan Airlines",
         "Peach",
         "Thai Airways International",
         "Thai VietJet Air"
+      ]
+    },
+    {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA",
+        "ZBAA"
+      ],
+      "airlines": [
+        "All Nippon Airways",
+        "Hainan Airlines"
       ]
     },
     {
@@ -106,6 +127,18 @@
       ]
     },
     {
+      "city": "Cairns",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairns_Airport",
+      "codes": [
+        "CNS",
+        "YBCS",
+        "YBCS"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
       "city": "Cebu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
       "codes": [
@@ -114,7 +147,8 @@
         "RPVM"
       ],
       "airlines": [
-        "Cebu Pacific"
+        "Cebu Pacific",
+        "Philippine Airlines"
       ]
     },
     {
@@ -227,6 +261,7 @@
         "PHNL"
       ],
       "airlines": [
+        "Hawaiian Airlines",
         "Japan Airlines"
       ]
     },
@@ -271,14 +306,15 @@
     },
     {
       "city": "Kuala Lumpur–International",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
       "codes": [
         "KUL",
         "WMKK",
         "WMKK"
       ],
       "airlines": [
-        "AirAsia"
+        "AirAsia",
+        "Malaysia Airlines"
       ]
     },
     {
@@ -327,6 +363,19 @@
       ],
       "airlines": [
         "Japan Airlines"
+      ]
+    },
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Jetstar Japan",
+        "Philippine Airlines"
       ]
     },
     {
@@ -441,6 +490,7 @@
         "Asiana Airlines",
         "Eastar Jet",
         "Korean Air",
+        "Parata Air",
         "Peach"
       ]
     },
@@ -453,7 +503,10 @@
         "ZSPD"
       ],
       "airlines": [
-        "Peach"
+        "All Nippon Airways",
+        "Japan Airlines",
+        "Peach",
+        "Spring Airlines"
       ]
     },
     {
@@ -483,6 +536,18 @@
       ]
     },
     {
+      "city": "Sydney–Kingsford Smith",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Airport",
+      "codes": [
+        "SYD",
+        "YSSY",
+        "YSSY"
+      ],
+      "airlines": [
+        "Jetstar"
+      ]
+    },
+    {
       "city": "Taipei–Taoyuan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Taipei–Taoyuan",
       "codes": [
@@ -494,10 +559,23 @@
         "Cathay Pacific",
         "China Airlines",
         "EVA Air",
+        "Jetstar Japan",
         "Peach",
         "Starlux Airlines",
         "Thai VietJet Air",
         "Tigerair Taiwan"
+      ]
+    },
+    {
+      "city": "Tokyo–Haneda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haneda_Airport",
+      "codes": [
+        "HND",
+        "RJTT",
+        "RJTT"
+      ],
+      "airlines": [
+        "All Nippon Airways"
       ]
     },
     {
@@ -563,6 +641,11 @@
     "AirAsia": [
       "Kuala Lumpur–International"
     ],
+    "All Nippon Airways": [
+      "Beijing–Capital",
+      "Shanghai–Pudong",
+      "Tokyo–Haneda"
+    ],
     "Asiana Airlines": [
       "Seoul–Gimpo",
       "Seoul–Incheon"
@@ -597,20 +680,32 @@
     "Greater Bay Airlines": [
       "Hong Kong"
     ],
+    "Hainan Airlines": [
+      "Beijing–Capital"
+    ],
+    "Hawaiian Airlines": [
+      "Honolulu"
+    ],
     "HK Express": [
       "Hong Kong"
     ],
     "Japan Airlines": [
+      "Bangkok–Suvarnabhumi",
       "Honolulu",
-      "Los Angeles"
+      "Los Angeles",
+      "Shanghai–Pudong"
     ],
     "Jetstar": [
-      "Brisbane"
+      "Brisbane",
+      "Cairns",
+      "Sydney–Kingsford Smith"
     ],
     "Jetstar Japan": [
       "Kumamoto",
       "Kōchi",
-      "Shimojishima"
+      "Manila",
+      "Shimojishima",
+      "Taipei–Taoyuan"
     ],
     "Juneyao Air": [
       "Nanjing",
@@ -625,6 +720,12 @@
     ],
     "Lufthansa": [
       "Munich"
+    ],
+    "Malaysia Airlines": [
+      "Kuala Lumpur–International"
+    ],
+    "Parata Air": [
+      "Seoul–Incheon"
     ],
     "Peach": [
       "Bangkok–Suvarnabhumi",
@@ -642,6 +743,10 @@
       "Taipei–Taoyuan",
       "Tokyo–Narita"
     ],
+    "Philippine Airlines": [
+      "Cebu",
+      "Manila"
+    ],
     "Qatar Airways": [
       "Doha"
     ],
@@ -653,6 +758,9 @@
     ],
     "Singapore Airlines": [
       "Singapore"
+    ],
+    "Spring Airlines": [
+      "Shanghai–Pudong"
     ],
     "Starlux Airlines": [
       "Taipei–Taoyuan"
@@ -692,6 +800,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-26T02:08:46Z",
-  "date-time-wikidata": "2026-07-20T02:08:37Z"
+  "date-time-parse": "2026-08-02T02:08:02Z",
+  "date-time-wikidata": "2026-07-29T02:29:30Z"
 }

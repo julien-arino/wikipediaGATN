@@ -14,12 +14,26 @@
   "admin1_name": "Stockholms län [SE-01]",
   "admin2_name": "Stockholms Kommun",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Bromma_Airport",
-  "outdegree": 2,
-  "number_airlines": 1,
+  "outdegree": 4,
+  "number_airlines": 3,
   "airlines": [
-    "NyxAir"
+    "BrommaFLyg",
+    "Skåne Aviation",
+    "VästFlyg"
   ],
   "destinations": [
+    {
+      "city": "Malmö",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malmö_Airport",
+      "codes": [
+        "MMX",
+        "ESMS",
+        "ESMS"
+      ],
+      "airlines": [
+        "Skåne Aviation"
+      ]
+    },
     {
       "city": "Trollhättan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Trollhättan–Vänersborg_Airport",
@@ -29,7 +43,19 @@
         "ESGT"
       ],
       "airlines": [
-        "NyxAir"
+        "VästFlyg"
+      ]
+    },
+    {
+      "city": "Visby",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visby_Airport",
+      "codes": [
+        "VBY",
+        "ESSV",
+        "ESSV"
+      ],
+      "airlines": [
+        "BrommaFLyg"
       ]
     },
     {
@@ -41,12 +67,18 @@
         "ESMX"
       ],
       "airlines": [
-        "NyxAir"
+        "VästFlyg"
       ]
     }
   ],
   "airlines_destinations": {
-    "NyxAir": [
+    "BrommaFLyg": [
+      "Visby"
+    ],
+    "Skåne Aviation": [
+      "Malmö"
+    ],
+    "VästFlyg": [
       "Trollhättan",
       "Växjö"
     ]
@@ -56,6 +88,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:04:03Z",
-  "date-time-wikidata": "2026-07-07T22:41:26Z"
+  "date-time-parse": "2026-08-02T02:04:31Z",
+  "date-time-wikidata": "2026-07-28T08:52:04Z"
 }

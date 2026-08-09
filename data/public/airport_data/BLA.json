@@ -14,16 +14,31 @@
   "admin1_name": "Anzoátegui",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/General_José_Antonio_Anzoátegui_International_Airport",
-  "outdegree": 3,
-  "number_airlines": 5,
+  "outdegree": 5,
+  "number_airlines": 6,
   "airlines": [
     "Avior Airlines",
     "Conviasa",
     "Copa Airlines",
     "LASER Airlines",
+    "LATAM Colombia",
     "RUTACA Airlines"
   ],
   "destinations": [
+    {
+      "city": "Bogotá",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Dorado_International_Airport",
+      "codes": [
+        "BOG",
+        "SKBO",
+        "SKBO"
+      ],
+      "airlines": [
+        "Avior Airlines",
+        "LASER Airlines",
+        "LATAM Colombia"
+      ]
+    },
     {
       "city": "Caracas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Simón_Bolívar_International_Airport_(Venezuela)",
@@ -36,6 +51,18 @@
         "Avior Airlines",
         "LASER Airlines",
         "RUTACA Airlines"
+      ]
+    },
+    {
+      "city": "Medellín–JMC",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/José_María_Córdova_International_Airport",
+      "codes": [
+        "MDE",
+        "SKRG",
+        "SKRG"
+      ],
+      "airlines": [
+        "Avior Airlines"
       ]
     },
     {
@@ -68,13 +95,19 @@
       "Panama city"
     ],
     "Avior Airlines": [
-      "Caracas"
+      "Bogotá",
+      "Caracas",
+      "Medellín–JMC"
     ],
     "Conviasa": [
       "Porlamar"
     ],
     "LASER Airlines": [
+      "Bogotá",
       "Caracas"
+    ],
+    "LATAM Colombia": [
+      "Bogotá"
     ],
     "RUTACA Airlines": [
       "Caracas"
@@ -85,6 +118,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:03:56Z",
-  "date-time-wikidata": "2026-07-07T18:00:26Z"
+  "date-time-parse": "2026-08-09T01:08:47Z",
+  "date-time-wikidata": "2026-08-02T11:17:07Z"
 }

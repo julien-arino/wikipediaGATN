@@ -15,10 +15,12 @@
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Izhevsk_Airport",
   "outdegree": 11,
-  "number_airlines": 5,
+  "number_airlines": 7,
   "airlines": [
+    "Aeroflot",
     "Ikar",
     "Izhavia",
+    "Pobeda",
     "Red Wings Airlines",
     "Rossiya Airlines",
     "S7 Airlines"
@@ -45,7 +47,9 @@
         "UMKK"
       ],
       "airlines": [
-        "Izhavia"
+        "Ikar",
+        "Izhavia",
+        "S7 Airlines"
       ]
     },
     {
@@ -73,7 +77,7 @@
       ]
     },
     {
-      "city": "Moscow–Domodedovo",
+      "city": "Moscow-Domodedovo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Domodedovo_Airport",
       "codes": [
         "DME",
@@ -81,7 +85,8 @@
         "UUDD"
       ],
       "airlines": [
-        "Izhavia"
+        "Izhavia",
+        "S7 Airlines"
       ]
     },
     {
@@ -93,6 +98,7 @@
         "UUEE"
       ],
       "airlines": [
+        "Aeroflot",
         "Rossiya Airlines"
       ]
     },
@@ -117,7 +123,9 @@
         "ULLI"
       ],
       "airlines": [
-        "Izhavia"
+        "Ikar",
+        "Izhavia",
+        "Pobeda"
       ]
     },
     {
@@ -129,7 +137,9 @@
         "URSS"
       ],
       "airlines": [
-        "Izhavia"
+        "Aeroflot",
+        "Izhavia",
+        "Rossiya Airlines"
       ]
     },
     {
@@ -159,8 +169,14 @@
     }
   ],
   "airlines_destinations": {
+    "Aeroflot": [
+      "Moscow–Sheremetyevo",
+      "Sochi"
+    ],
     "Ikar": [
-      "Makhachkala"
+      "Kaliningrad",
+      "Makhachkala",
+      "Saint Petersburg"
     ],
     "Izhavia": [
       "Irkutsk",
@@ -172,13 +188,19 @@
       "Surgut",
       "Yekaterinburg"
     ],
+    "Pobeda": [
+      "Saint Petersburg"
+    ],
     "Red Wings Airlines": [
       "Yekaterinburg"
     ],
     "Rossiya Airlines": [
-      "Moscow–Sheremetyevo"
+      "Moscow–Sheremetyevo",
+      "Sochi"
     ],
     "S7 Airlines": [
+      "Kaliningrad",
+      "Moscow-Domodedovo",
       "Novosibirsk"
     ]
   },
@@ -187,6 +209,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-19T02:04:05Z",
-  "date-time-wikidata": "2026-07-15T07:50:37Z"
+  "date-time-parse": "2026-08-09T01:11:00Z",
+  "date-time-wikidata": "2026-08-04T07:08:58Z"
 }

@@ -14,9 +14,10 @@
   "admin1_name": "Guatemala",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/La_Aurora_International_Airport",
-  "outdegree": 17,
-  "number_airlines": 12,
+  "outdegree": 20,
+  "number_airlines": 14,
   "airlines": [
+    "Aeroméxico",
     "Air Canada",
     "Alaska Airlines",
     "American Airlines",
@@ -28,6 +29,7 @@
     "Frontier Airlines",
     "JetBlue",
     "United Airlines",
+    "Volaris",
     "Wingo"
   ],
   "destinations": [
@@ -82,6 +84,18 @@
       ]
     },
     {
+      "city": "Cancún",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cancún_International_Airport",
+      "codes": [
+        "CUN",
+        "MMUN",
+        "MMUN"
+      ],
+      "airlines": [
+        "Volaris"
+      ]
+    },
+    {
       "city": "Chicago–O'Hare",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–O'Hare",
       "codes": [
@@ -117,6 +131,18 @@
       ],
       "airlines": [
         "JetBlue"
+      ]
+    },
+    {
+      "city": "Guadalajara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guadalajara_International_Airport",
+      "codes": [
+        "GDL",
+        "MMGL",
+        "MMGL"
+      ],
+      "airlines": [
+        "Volaris"
       ]
     },
     {
@@ -156,6 +182,19 @@
       ],
       "airlines": [
         "Wingo"
+      ]
+    },
+    {
+      "city": "Mexico City–Benito Juárez",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
+      "codes": [
+        "MEX",
+        "MMMX",
+        "MMMX"
+      ],
+      "airlines": [
+        "Aeroméxico",
+        "Volaris"
       ]
     },
     {
@@ -245,6 +284,9 @@
     }
   ],
   "airlines_destinations": {
+    "Aeroméxico": [
+      "Mexico City–Benito Juárez"
+    ],
     "Air Canada": [
       "Montréal–Trudeau"
     ],
@@ -290,6 +332,11 @@
       "Newark",
       "Washington–Dulles"
     ],
+    "Volaris": [
+      "Cancún",
+      "Guadalajara",
+      "Mexico City–Benito Juárez"
+    ],
     "Wingo": [
       "Bogotá",
       "Medellín–JMC"
@@ -300,6 +347,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-08-02T02:06:54Z",
-  "date-time-wikidata": "2026-07-29T05:02:09Z"
+  "date-time-parse": "2026-08-09T01:10:33Z",
+  "date-time-wikidata": "2026-08-08T13:34:21Z"
 }

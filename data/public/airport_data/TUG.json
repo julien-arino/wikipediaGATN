@@ -14,16 +14,40 @@
   "admin1_name": "Cagayan",
   "admin2_name": "Province of Cagayan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Tuguegarao_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
+  "outdegree": 1,
+  "number_airlines": 2,
+  "airlines": [
+    "Cebu Pacific",
+    "PAL Express"
+  ],
+  "destinations": [
+    {
+      "city": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
+      "codes": [
+        "MNL",
+        "RPLL",
+        "RPLL"
+      ],
+      "airlines": [
+        "Cebu Pacific",
+        "PAL Express"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Cebu Pacific": [
+      "Manila"
+    ],
+    "PAL Express": [
+      "Manila"
+    ]
+  },
   "outdegree_cargo": 0,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-06-09T20:56:27Z",
-  "date-time-wikidata": "2026-06-05T09:05:49Z"
+  "date-time-parse": "2026-08-09T01:15:46Z",
+  "date-time-wikidata": "2026-07-29T04:32:15Z"
 }

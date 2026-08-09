@@ -15,7 +15,7 @@
   "admin2_name": "Boone County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cincinnati/Northern_Kentucky_International_Airport",
   "outdegree": 57,
-  "number_airlines": 15,
+  "number_airlines": 14,
   "airlines": [
     "Air Canada Express",
     "Alaska Airlines",
@@ -28,7 +28,6 @@
     "Delta Connection",
     "Frontier Airlines",
     "Southwest Airlines",
-    "Sun Country Airlines",
     "United Airlines",
     "United Express",
     "Viva"
@@ -129,7 +128,7 @@
     },
     {
       "city": "Chicago–Midway",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–Midway",
       "codes": [
         "MDW",
         "KMDW",
@@ -141,7 +140,7 @@
     },
     {
       "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–O'Hare",
       "codes": [
         "ORD",
         "KORD",
@@ -203,6 +202,7 @@
         "KDTW"
       ],
       "airlines": [
+        "Delta Air Lines",
         "Delta Connection"
       ]
     },
@@ -271,7 +271,7 @@
     },
     {
       "city": "Houston–Intercontinental",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houston–Intercontinental",
       "codes": [
         "IAH",
         "KIAH",
@@ -322,7 +322,7 @@
     },
     {
       "city": "London–Heathrow",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Heathrow",
       "codes": [
         "LHR",
         "EGLL",
@@ -372,7 +372,7 @@
     },
     {
       "city": "Minneapolis/St. Paul",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis-Saint_Paul_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
       "codes": [
         "MSP",
         "KMSP",
@@ -380,13 +380,12 @@
       ],
       "airlines": [
         "Delta Air Lines",
-        "Delta Connection",
-        "Sun Country Airlines"
+        "Delta Connection"
       ]
     },
     {
       "city": "Montréal–Trudeau",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau",
       "codes": [
         "YUL",
         "CYUL",
@@ -434,7 +433,7 @@
     },
     {
       "city": "New York–JFK",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_York–JFK",
       "codes": [
         "JFK",
         "KJFK",
@@ -447,7 +446,7 @@
     },
     {
       "city": "New York–LaGuardia",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/LaGuardia_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_York–LaGuardia",
       "codes": [
         "LGA",
         "KLGA",
@@ -511,7 +510,7 @@
     },
     {
       "city": "Paris–Charles de Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris–Charles_de_Gaulle",
       "codes": [
         "CDG",
         "LFPG",
@@ -640,7 +639,8 @@
         "KSFO"
       ],
       "airlines": [
-        "Breeze Airways"
+        "Breeze Airways",
+        "United Airlines"
       ]
     },
     {
@@ -669,7 +669,7 @@
     },
     {
       "city": "Seattle/Tacoma",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle/Tacoma",
       "codes": [
         "SEA",
         "KSEA",
@@ -707,7 +707,7 @@
     },
     {
       "city": "Toronto–Pearson",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto–Pearson",
       "codes": [
         "YYZ",
         "CYYZ",
@@ -719,7 +719,7 @@
     },
     {
       "city": "Washington–Dulles",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Washington–Dulles",
       "codes": [
         "IAD",
         "KIAD",
@@ -731,7 +731,7 @@
     },
     {
       "city": "Washington–National",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan_Washington_National_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Washington–National",
       "codes": [
         "DCA",
         "KDCA",
@@ -818,6 +818,7 @@
     "Delta Air Lines": [
       "Atlanta",
       "Cancún",
+      "Detroit",
       "Fort Lauderdale",
       "Fort Myers",
       "Las Vegas",
@@ -862,13 +863,11 @@
       "Orlando",
       "Phoenix–Sky Harbor"
     ],
-    "Sun Country Airlines": [
-      "Minneapolis/St. Paul"
-    ],
     "United Airlines": [
       "Chicago–O'Hare",
       "Denver",
-      "Houston–Intercontinental"
+      "Houston–Intercontinental",
+      "San Francisco"
     ],
     "United Express": [
       "Chicago–O'Hare",
@@ -880,53 +879,14 @@
       "Cancún"
     ]
   },
-  "outdegree_cargo": 82,
-  "number_airlines_cargo": 6,
+  "outdegree_cargo": 68,
+  "number_airlines_cargo": 3,
   "airlines_cargo": [
-    "AeroLogic",
     "Amazon Air",
-    "Castle Aviation",
     "DHL Aviation",
-    "FedEx Express",
     "Silk Way West Airlines"
   ],
   "destinations_cargo": [
-    {
-      "city": "Akron/Canton",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Akron–Canton_Airport",
-      "codes": [
-        "CAK",
-        "KCAK",
-        "KCAK"
-      ],
-      "airlines": [
-        "Castle Aviation"
-      ]
-    },
-    {
-      "city": "Albuquerque",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Albuquerque_International_Sunport",
-      "codes": [
-        "ABQ",
-        "KABQ",
-        "KABQ"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
-    },
-    {
-      "city": "Allentown/Bethlehem",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lehigh_Valley_International_Airport",
-      "codes": [
-        "ABE",
-        "KABE",
-        "KABE"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
-    },
     {
       "city": "Anchorage",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
@@ -961,7 +921,6 @@
         "KAUS"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -974,7 +933,6 @@
         "OBBI"
       ],
       "airlines": [
-        "AeroLogic",
         "DHL Aviation"
       ]
     },
@@ -1004,7 +962,7 @@
     },
     {
       "city": "Bangkok–Suvarnabhumi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangkok–Suvarnabhumi",
       "codes": [
         "BKK",
         "VTBS",
@@ -1024,18 +982,6 @@
       ],
       "airlines": [
         "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Boise",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
-      "codes": [
-        "BOI",
-        "KBOI",
-        "KBOI"
-      ],
-      "airlines": [
-        "Amazon Air"
       ]
     },
     {
@@ -1087,27 +1033,14 @@
       ]
     },
     {
-      "city": "Chicago/Rockford",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Rockford_International_Airport",
-      "codes": [
-        "RFD",
-        "KRFD",
-        "KRFD"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
-    },
-    {
       "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_O'Hare_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–O'Hare",
       "codes": [
         "ORD",
         "KORD",
         "KORD"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1132,7 +1065,6 @@
         "KDEN"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1173,30 +1105,6 @@
       ]
     },
     {
-      "city": "Fort Worth/Alliance",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Worth_Alliance_Airport",
-      "codes": [
-        "AFW",
-        "KAFW",
-        "KAFW"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
-    },
-    {
-      "city": "Frankfurt",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_International_Airport",
-      "codes": [
-        "FRA",
-        "EDDF",
-        "EDDF"
-      ],
-      "airlines": [
-        "AeroLogic"
-      ]
-    },
-    {
       "city": "Greensboro",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Piedmont_Triad_International_Airport",
       "codes": [
@@ -1229,7 +1137,6 @@
         "CYHM"
       ],
       "airlines": [
-        "Castle Aviation",
         "DHL Aviation"
       ]
     },
@@ -1243,18 +1150,6 @@
       ],
       "airlines": [
         "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Hartford",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bradley_International_Airport",
-      "codes": [
-        "BDL",
-        "KBDL",
-        "KBDL"
-      ],
-      "airlines": [
-        "Amazon Air"
       ]
     },
     {
@@ -1284,7 +1179,7 @@
     },
     {
       "city": "Houston–Intercontinental",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houston–Intercontinental",
       "codes": [
         "IAH",
         "KIAH",
@@ -1293,18 +1188,6 @@
       "airlines": [
         "Amazon Air",
         "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Indianapolis–South Greenwood",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Indy_South_Greenwood_Airport",
-      "codes": [
-        "iata code not found",
-        "icao code not found",
-        "KHFY"
-      ],
-      "airlines": [
-        "Castle Aviation"
       ]
     },
     {
@@ -1320,18 +1203,6 @@
       ]
     },
     {
-      "city": "Lakeland (FL)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lakeland_Linder_International_Airport",
-      "codes": [
-        "LAL",
-        "KLAL",
-        "KLAL"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
-    },
-    {
       "city": "Leipzig/Halle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leipzig/Halle_Airport",
       "codes": [
@@ -1340,13 +1211,12 @@
         "EDDP"
       ],
       "airlines": [
-        "AeroLogic",
         "DHL Aviation"
       ]
     },
     {
       "city": "London–Heathrow",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Heathrow_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Heathrow",
       "codes": [
         "LHR",
         "EGLL",
@@ -1365,7 +1235,6 @@
         "KLAX"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1402,8 +1271,7 @@
         "KMEM"
       ],
       "airlines": [
-        "DHL Aviation",
-        "FedEx Express"
+        "DHL Aviation"
       ]
     },
     {
@@ -1427,13 +1295,12 @@
         "KMIA"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
     {
       "city": "Milan–Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa",
       "codes": [
         "MXP",
         "LIMC",
@@ -1464,7 +1331,6 @@
         "KMSP"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1518,14 +1384,13 @@
     },
     {
       "city": "New York–JFK",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_York–JFK",
       "codes": [
         "JFK",
         "KJFK",
         "KJFK"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1551,18 +1416,6 @@
       ],
       "airlines": [
         "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Ontario",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ontario_International_Airport",
-      "codes": [
-        "ONT",
-        "KONT",
-        "KONT"
-      ],
-      "airlines": [
-        "Amazon Air"
       ]
     },
     {
@@ -1610,20 +1463,7 @@
         "KPHX"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Portland (OR)",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
-      "codes": [
-        "PDX",
-        "KPDX",
-        "KPDX"
-      ],
-      "airlines": [
-        "Amazon Air"
       ]
     },
     {
@@ -1731,7 +1571,6 @@
         "KSFO"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1773,14 +1612,13 @@
     },
     {
       "city": "Seattle/Tacoma",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle/Tacoma",
       "codes": [
         "SEA",
         "KSEA",
         "KSEA"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
       ]
     },
@@ -1793,7 +1631,6 @@
         "RKSI"
       ],
       "airlines": [
-        "AeroLogic",
         "DHL Aviation",
         "Silk Way West Airlines"
       ]
@@ -1807,20 +1644,7 @@
         "KSTL"
       ],
       "airlines": [
-        "Amazon Air",
         "DHL Aviation"
-      ]
-    },
-    {
-      "city": "Stockton",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockton_Metropolitan_Airport",
-      "codes": [
-        "SCK",
-        "KSCK",
-        "KSCK"
-      ],
-      "airlines": [
-        "Amazon Air"
       ]
     },
     {
@@ -1836,20 +1660,8 @@
       ]
     },
     {
-      "city": "Tampa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
-      "codes": [
-        "TPA",
-        "KTPA",
-        "KTPA"
-      ],
-      "airlines": [
-        "Amazon Air"
-      ]
-    },
-    {
       "city": "Tokyo–Narita",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Narita_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo–Narita",
       "codes": [
         "NRT",
         "RJAA",
@@ -1897,43 +1709,10 @@
     }
   ],
   "airlines_destinations_cargo": {
-    "AeroLogic": [
-      "Bahrain",
-      "Frankfurt",
-      "Leipzig/Halle",
-      "Seoul–Incheon"
-    ],
     "Amazon Air": [
-      "Albuquerque",
-      "Allentown/Bethlehem",
-      "Austin",
-      "Boise",
-      "Chicago/Rockford",
-      "Chicago–O'Hare",
-      "Denver",
-      "Fort Worth/Alliance",
-      "Hartford",
       "Houston–Intercontinental",
-      "Lakeland (FL)",
-      "Los Angeles",
       "Manchester (NH)",
-      "Miami",
-      "Minneapolis/St. Paul",
-      "New York–JFK",
-      "Ontario",
-      "Phoenix–Sky Harbor",
-      "Portland (OR)",
-      "San Bernardino",
-      "San Francisco",
-      "Seattle/Tacoma",
-      "St. Louis",
-      "Stockton",
-      "Tampa"
-    ],
-    "Castle Aviation": [
-      "Akron/Canton",
-      "Hamilton (ON)",
-      "Indianapolis–South Greenwood"
+      "San Bernardino"
     ],
     "DHL Aviation": [
       "Anchorage",
@@ -2000,9 +1779,6 @@
       "Vancouver",
       "Winnipeg"
     ],
-    "FedEx Express": [
-      "Memphis"
-    ],
     "Silk Way West Airlines": [
       "Anchorage",
       "Baku",
@@ -2012,6 +1788,6 @@
       "Seoul–Incheon"
     ]
   },
-  "date-time-parse": "2026-07-19T02:01:35Z",
-  "date-time-wikidata": "2026-07-17T19:59:06Z"
+  "date-time-parse": "2026-08-09T01:09:35Z",
+  "date-time-wikidata": "2026-08-08T20:52:08Z"
 }

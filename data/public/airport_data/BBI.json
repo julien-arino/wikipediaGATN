@@ -14,24 +14,40 @@
   "admin1_name": "Odisha",
   "admin2_name": "Khordha",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Biju_Patnaik_Airport",
-  "outdegree": 7,
-  "number_airlines": 4,
+  "outdegree": 18,
+  "number_airlines": 6,
   "airlines": [
+    "Air India",
     "Air India Express",
+    "Akasa Air",
     "IndiGo",
     "IndiaOne Air",
     "Star Air"
   ],
   "destinations": [
     {
-      "city": "Bangkok–Suvarnabhumi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangkok–Suvarnabhumi",
+      "city": "Ahmedabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sardar_Vallabhbhai_Patel_International_Airport",
       "codes": [
-        "BKK",
-        "VTBS",
-        "VTBS"
+        "AMD",
+        "VAAH",
+        "VAAH"
       ],
       "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kempegowda_International_Airport",
+      "codes": [
+        "BLR",
+        "VOBL",
+        "VOBL"
+      ],
+      "airlines": [
+        "Air India Express",
+        "Akasa Air",
         "IndiGo"
       ]
     },
@@ -48,12 +64,74 @@
       ]
     },
     {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Guwahati",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
+      "codes": [
+        "GAU",
+        "VEGT",
+        "VEGT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS",
+        "VOHS"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
       "city": "Jamshedpur",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sonari_Airport",
       "codes": [
         "IXW",
         "VEJS",
         "VEJS"
+      ],
+      "airlines": [
+        "IndiaOne Air"
+      ]
+    },
+    {
+      "city": "Jeypore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeypore_Airport",
+      "codes": [
+        "PYB",
+        "VEJP",
+        "VEJP"
       ],
       "airlines": [
         "IndiaOne Air"
@@ -72,24 +150,73 @@
       ]
     },
     {
-      "city": "Kochi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cochin_International_Airport",
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
       "codes": [
-        "COK",
-        "VOCI",
-        "VOCI"
+        "CCU",
+        "VECC",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Mumbai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "codes": [
+        "BOM",
+        "VABB",
+        "VABB"
+      ],
+      "airlines": [
+        "Air India Express",
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Patna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jay_Prakash_Narayan_Airport",
+      "codes": [
+        "PAT",
+        "VEPT",
+        "VEPT"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Pune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pune_Airport",
+      "codes": [
+        "PNQ",
+        "VAPO",
+        "VAPO"
       ],
       "airlines": [
         "Air India Express"
       ]
     },
     {
-      "city": "Mumbai-Shivaji",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport",
+      "city": "Raipur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Airport",
       "codes": [
-        "BOM",
-        "VABB",
-        "VABB"
+        "RPR",
+        "VERP",
+        "VERP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Ranchi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Birsa_Munda_Airport",
+      "codes": [
+        "IXR",
+        "VERC",
+        "VERC"
       ],
       "airlines": [
         "IndiGo"
@@ -106,20 +233,52 @@
       "airlines": [
         "IndiaOne Air"
       ]
+    },
+    {
+      "city": "Varanasi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "codes": [
+        "VNS",
+        "VEBN",
+        "VEBN"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
     }
   ],
   "airlines_destinations": {
+    "Air India": [
+      "Delhi"
+    ],
     "Air India Express": [
-      "Kochi"
+      "Bengaluru",
+      "Delhi",
+      "Mumbai",
+      "Pune"
+    ],
+    "Akasa Air": [
+      "Bengaluru"
     ],
     "IndiaOne Air": [
       "Bhawanipatna",
       "Jamshedpur",
+      "Jeypore",
       "Rourkela"
     ],
     "IndiGo": [
-      "Bangkok–Suvarnabhumi",
-      "Mumbai-Shivaji"
+      "Ahmedabad",
+      "Bengaluru",
+      "Chennai",
+      "Delhi",
+      "Guwahati",
+      "Hyderabad",
+      "Kolkata",
+      "Mumbai",
+      "Patna",
+      "Raipur",
+      "Ranchi",
+      "Varanasi"
     ],
     "Star Air": [
       "Jharsuguda"
@@ -130,6 +289,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-19T01:59:55Z",
-  "date-time-wikidata": "2026-07-16T00:32:11Z"
+  "date-time-parse": "2026-08-09T01:08:36Z",
+  "date-time-wikidata": "2026-08-04T18:49:13Z"
 }

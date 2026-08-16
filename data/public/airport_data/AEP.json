@@ -14,14 +14,15 @@
   "admin1_name": "Ciudad Autónoma de Buenos Aires",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Aeroparque_Jorge_Newbery",
-  "outdegree": 12,
-  "number_airlines": 5,
+  "outdegree": 18,
+  "number_airlines": 6,
   "airlines": [
     "Aerolíneas Argentinas",
     "Flybondi",
     "Gol Linhas Aéreas",
     "JetSmart Argentina",
-    "LATAM Brasil"
+    "LATAM Brasil",
+    "Paranair"
   ],
   "destinations": [
     {
@@ -33,7 +34,10 @@
         "SGAS"
       ],
       "airlines": [
-        "Flybondi"
+        "Aerolíneas Argentinas",
+        "Flybondi",
+        "JetSmart Argentina",
+        "Paranair"
       ]
     },
     {
@@ -74,6 +78,55 @@
       ]
     },
     {
+      "city": "Curitiba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport",
+      "codes": [
+        "CWB",
+        "SBCT",
+        "SBCT"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL",
+        "SBFL"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Fortaleza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fortaleza_Airport",
+      "codes": [
+        "FOR",
+        "SBFZ",
+        "SBFZ"
+      ],
+      "airlines": [
+        "Gol Linhas Aéreas"
+      ]
+    },
+    {
+      "city": "Montevideo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carrasco_International_Airport",
+      "codes": [
+        "MVD",
+        "SUMU",
+        "SUMU"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
+      ]
+    },
+    {
       "city": "Natal",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Greater_Natal_International_Airport",
       "codes": [
@@ -82,6 +135,7 @@
         "SBSG"
       ],
       "airlines": [
+        "Gol Linhas Aéreas",
         "JetSmart Argentina"
       ]
     },
@@ -94,8 +148,21 @@
         "SBPA"
       ],
       "airlines": [
+        "Aerolíneas Argentinas",
         "Gol Linhas Aéreas",
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Porto Seguro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Porto_Seguro_Airport",
+      "codes": [
+        "BPS",
+        "SBPS",
+        "SBPS"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas"
       ]
     },
     {
@@ -107,18 +174,20 @@
         "SULS"
       ],
       "airlines": [
+        "Aerolíneas Argentinas",
         "Gol Linhas Aéreas"
       ]
     },
     {
       "city": "Recife",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Recife/Guararapes_International_Airport",
       "codes": [
         "REC",
         "SBRF",
         "SBRF"
       ],
       "airlines": [
+        "Gol Linhas Aéreas",
         "JetSmart Argentina"
       ]
     },
@@ -136,14 +205,30 @@
     },
     {
       "city": "Rio de Janeiro–Galeão",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro–Galeão",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro/Galeão_International_Airport",
       "codes": [
         "GIG",
         "SBGL",
         "SBGL"
       ],
       "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas",
+        "JetSmart Argentina",
         "LATAM Brasil"
+      ]
+    },
+    {
+      "city": "Salvador da Bahia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvador_Bahia_Airport",
+      "codes": [
+        "SSA",
+        "SBSV",
+        "SBSV"
+      ],
+      "airlines": [
+        "Aerolíneas Argentinas",
+        "Gol Linhas Aéreas"
       ]
     },
     {
@@ -174,8 +259,17 @@
   ],
   "airlines_destinations": {
     "Aerolíneas Argentinas": [
+      "Asunción",
       "Brasília",
       "Cabo Frio",
+      "Curitiba",
+      "Florianópolis",
+      "Montevideo",
+      "Porto Alegre",
+      "Porto Seguro",
+      "Punta del Este",
+      "Rio de Janeiro–Galeão",
+      "Salvador da Bahia",
       "São Paulo–Guarulhos"
     ],
     "Flybondi": [
@@ -184,19 +278,30 @@
     "Gol Linhas Aéreas": [
       "Belo Horizonte–Confins",
       "Brasília",
+      "Florianópolis",
+      "Fortaleza",
+      "Natal",
       "Porto Alegre",
-      "Punta del Este"
+      "Punta del Este",
+      "Recife",
+      "Rio de Janeiro–Galeão",
+      "Salvador da Bahia"
     ],
     "JetSmart Argentina": [
+      "Asunción",
       "Natal",
       "Recife",
       "Resistencia",
+      "Rio de Janeiro–Galeão",
       "Trelew"
     ],
     "LATAM Brasil": [
       "Porto Alegre",
       "Rio de Janeiro–Galeão",
       "São Paulo–Guarulhos"
+    ],
+    "Paranair": [
+      "Asunción"
     ]
   },
   "outdegree_cargo": 0,
@@ -204,6 +309,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-08-02T02:03:41Z",
-  "date-time-wikidata": "2026-07-27T19:43:08Z"
+  "date-time-parse": "2026-08-16T00:52:53Z",
+  "date-time-wikidata": "2026-08-15T21:01:26Z"
 }

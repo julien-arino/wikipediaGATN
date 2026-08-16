@@ -14,16 +14,19 @@
   "admin1_name": "Gansu Sheng",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Dunhuang_Mogao_International_Airport",
-  "outdegree": 23,
-  "number_airlines": 8,
+  "outdegree": 24,
+  "number_airlines": 11,
   "airlines": [
+    "Air Chang'an",
     "Air China",
     "Batik Air Malaysia",
     "China Eastern Airlines",
     "China Express Airlines",
+    "Fuzhou Airlines",
     "Greater Bay Airlines",
+    "Hainan Airlines",
+    "Juneyao Air",
     "Sichuan Airlines",
-    "Spring Airlines",
     "Tianjin Airlines"
   ],
   "destinations": [
@@ -77,6 +80,30 @@
       ]
     },
     {
+      "city": "Fuzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
+      "codes": [
+        "FOC",
+        "ZSFZ",
+        "ZSFZ"
+      ],
+      "airlines": [
+        "Fuzhou Airlines"
+      ]
+    },
+    {
+      "city": "Guangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
+      "codes": [
+        "CAN",
+        "ZGGG",
+        "ZGGG"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ]
+    },
+    {
       "city": "Hami",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hami_Yizhou_Airport",
       "codes": [
@@ -97,6 +124,7 @@
         "ZSHC"
       ],
       "airlines": [
+        "Air China",
         "Sichuan Airlines"
       ]
     },
@@ -196,8 +224,7 @@
         "Air China",
         "China Eastern Airlines",
         "China Express Airlines",
-        "Sichuan Airlines",
-        "Spring Airlines"
+        "Sichuan Airlines"
       ]
     },
     {
@@ -213,18 +240,6 @@
       ]
     },
     {
-      "city": "Nanjing",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport",
-      "codes": [
-        "NKG",
-        "ZSNJ",
-        "ZSNJ"
-      ],
-      "airlines": [
-        "China Eastern Airlines"
-      ]
-    },
-    {
       "city": "Qingyang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Qingyang_Airport",
       "codes": [
@@ -237,15 +252,16 @@
       ]
     },
     {
-      "city": "Shanghai–Hongqiao",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport",
+      "city": "Shanghai–Pudong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
       "codes": [
-        "SHA",
-        "ZSSS",
-        "ZSSS"
+        "PVG",
+        "ZSPD",
+        "ZSPD"
       ],
       "airlines": [
-        "Spring Airlines"
+        "China Eastern Airlines",
+        "Juneyao Air"
       ]
     },
     {
@@ -281,7 +297,9 @@
         "ZLXY"
       ],
       "airlines": [
-        "China Eastern Airlines"
+        "Air Chang'an",
+        "China Eastern Airlines",
+        "Fuzhou Airlines"
       ]
     },
     {
@@ -311,8 +329,12 @@
     }
   ],
   "airlines_destinations": {
+    "Air Chang'an": [
+      "Xi'an"
+    ],
     "Air China": [
       "Beijing–Capital",
+      "Hangzhou",
       "Lanzhou",
       "Wuhan"
     ],
@@ -324,7 +346,7 @@
       "Hefei",
       "Huatugou",
       "Lanzhou",
-      "Nanjing",
+      "Shanghai–Pudong",
       "Xi'an",
       "Xining"
     ],
@@ -338,8 +360,18 @@
       "Qingyang",
       "Zhangye"
     ],
+    "Fuzhou Airlines": [
+      "Fuzhou",
+      "Xi'an"
+    ],
     "Greater Bay Airlines": [
       "Hong Kong"
+    ],
+    "Hainan Airlines": [
+      "Guangzhou"
+    ],
+    "Juneyao Air": [
+      "Shanghai–Pudong"
     ],
     "Sichuan Airlines": [
       "Chengdu–Tianfu",
@@ -347,10 +379,6 @@
       "Kunming",
       "Lanzhou",
       "Xining"
-    ],
-    "Spring Airlines": [
-      "Lanzhou",
-      "Shanghai–Hongqiao"
     ],
     "Tianjin Airlines": [
       "Chongqing",
@@ -362,6 +390,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:06:49Z",
-  "date-time-wikidata": "2026-07-10T17:16:31Z"
+  "date-time-parse": "2026-08-16T00:54:36Z",
+  "date-time-wikidata": "2026-08-10T18:46:57Z"
 }

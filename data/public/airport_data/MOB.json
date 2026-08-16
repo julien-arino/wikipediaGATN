@@ -14,15 +14,67 @@
   "admin1_name": "Alabama",
   "admin2_name": "Mobile County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Mobile_Regional_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 5,
+  "number_airlines": 4,
   "airlines": [
+    "American Eagle",
+    "Delta Air Lines",
+    "Delta Connection",
     "United Express"
   ],
   "destinations": [
     {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield-Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
       "city": "Washington–Dulles",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
       "codes": [
         "IAD",
         "KIAD",
@@ -34,7 +86,18 @@
     }
   ],
   "airlines_destinations": {
+    "American Eagle": [
+      "Charlotte",
+      "Dallas/Fort Worth"
+    ],
+    "Delta Air Lines": [
+      "Atlanta"
+    ],
+    "Delta Connection": [
+      "Atlanta"
+    ],
     "United Express": [
+      "Houston–Intercontinental",
       "Washington–Dulles"
     ]
   },
@@ -43,6 +106,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-26T02:11:02Z",
-  "date-time-wikidata": "2026-07-06T11:19:06Z"
+  "date-time-parse": "2026-08-16T00:57:25Z",
+  "date-time-wikidata": "2026-08-15T12:21:29Z"
 }

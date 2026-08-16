@@ -14,14 +14,17 @@
   "admin1_name": "Gansu Sheng",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Longnan_Chengxian_Airport",
-  "outdegree": 10,
-  "number_airlines": 6,
+  "outdegree": 15,
+  "number_airlines": 9,
   "airlines": [
-    "Air Guilin",
+    "China Eastern Airlines",
     "China Express Airlines",
+    "Fuzhou Airlines",
+    "Hainan Airlines",
     "Hebei Airlines",
     "Juneyao Air",
     "Shandong Airlines",
+    "Suparna Airlines",
     "Urumqi Air"
   ],
   "destinations": [
@@ -70,7 +73,7 @@
         "ZJHK"
       ],
       "airlines": [
-        "Air Guilin"
+        "Hainan Airlines"
       ]
     },
     {
@@ -94,9 +97,22 @@
         "ZLLL"
       ],
       "airlines": [
-        "Air Guilin",
+        "China Eastern Airlines",
         "China Express Airlines",
+        "Hainan Airlines",
         "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Nanchang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanchang_Changbei_International_Airport",
+      "codes": [
+        "KHN",
+        "ZSCN",
+        "ZSCN"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
       ]
     },
     {
@@ -124,6 +140,30 @@
       ]
     },
     {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Suparna Airlines"
+      ]
+    },
+    {
+      "city": "Turpan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turpan_Jiaohe_Airport",
+      "codes": [
+        "TLQ",
+        "ZWTP",
+        "ZWTL"
+      ],
+      "airlines": [
+        "Suparna Airlines"
+      ]
+    },
+    {
       "city": "Urumqi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ürümqi_Diwopu_International_Airport",
       "codes": [
@@ -146,15 +186,47 @@
       "airlines": [
         "Shandong Airlines"
       ]
+    },
+    {
+      "city": "Xiamen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
+      "codes": [
+        "XMN",
+        "ZSAM",
+        "ZSAM"
+      ],
+      "airlines": [
+        "Fuzhou Airlines"
+      ]
+    },
+    {
+      "city": "Xining",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xining_Caojiapu_International_Airport",
+      "codes": [
+        "XNN",
+        "ZLXN",
+        "ZLXN"
+      ],
+      "airlines": [
+        "Fuzhou Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
-    "Air Guilin": [
-      "Haikou",
-      "Lanzhou"
+    "China Eastern Airlines": [
+      "Lanzhou",
+      "Nanchang"
     ],
     "China Express Airlines": [
       "Dunhuang",
+      "Lanzhou"
+    ],
+    "Fuzhou Airlines": [
+      "Xiamen",
+      "Xining"
+    ],
+    "Hainan Airlines": [
+      "Haikou",
       "Lanzhou"
     ],
     "Hebei Airlines": [
@@ -169,6 +241,10 @@
       "Qingdao",
       "Xi'an"
     ],
+    "Suparna Airlines": [
+      "Shenzhen",
+      "Turpan"
+    ],
     "Urumqi Air": [
       "Hangzhou",
       "Urumqi"
@@ -179,6 +255,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-26T02:09:47Z",
-  "date-time-wikidata": "2026-07-07T19:38:55Z"
+  "date-time-parse": "2026-08-16T00:56:51Z",
+  "date-time-wikidata": "2026-08-15T06:15:57Z"
 }

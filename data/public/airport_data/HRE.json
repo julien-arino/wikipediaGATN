@@ -14,11 +14,9 @@
   "admin1_name": "Harare",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Gabriel_Mugabe_International_Airport",
-  "outdegree": 19,
-  "number_airlines": 19,
+  "outdegree": 15,
+  "number_airlines": 14,
   "airlines": [
-    "Air Botswana",
-    "Air Tanzania",
     "Air Zimbabwe",
     "Airlink",
     "CemAir",
@@ -29,13 +27,10 @@
     "Fastjet Zimbabwe",
     "FlySafair",
     "Kenya Airways",
-    "Malawi Airlines",
     "Qatar Airways",
     "RwandAir",
     "South African Airways",
-    "TAAG Angola Airlines",
-    "Uganda Airlines",
-    "Zambia Airways"
+    "Uganda Airlines"
   ],
   "destinations": [
     {
@@ -63,19 +58,6 @@
       ]
     },
     {
-      "city": "Bulawayo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Joshua_Mqabuko_Nkomo_International_Airport",
-      "codes": [
-        "BUQ",
-        "FVJN",
-        "FVJN"
-      ],
-      "airlines": [
-        "Air Zimbabwe",
-        "Fastjet Zimbabwe"
-      ]
-    },
-    {
       "city": "Cape Town",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town_International_Airport",
       "codes": [
@@ -96,7 +78,6 @@
         "HTDA"
       ],
       "airlines": [
-        "Air Tanzania",
         "Air Zimbabwe"
       ]
     },
@@ -149,15 +130,15 @@
       ]
     },
     {
-      "city": "Gaborone",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_Seretse_Khama_International_Airport",
+      "city": "Johannesburg–Lanseria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanseria_International_Airport",
       "codes": [
-        "GBE",
-        "FBSK",
-        "FBSK"
+        "HLA",
+        "FALA",
+        "FALA"
       ],
       "airlines": [
-        "Air Botswana"
+        "Airlink"
       ]
     },
     {
@@ -169,10 +150,7 @@
         "FAOR"
       ],
       "airlines": [
-        "Air Zimbabwe",
-        "Airlink",
         "CemAir",
-        "Fastjet Zimbabwe",
         "FlySafair",
         "South African Airways"
       ]
@@ -190,20 +168,8 @@
       ]
     },
     {
-      "city": "Lilongwe",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lilongwe_International_Airport",
-      "codes": [
-        "LLW",
-        "FWKI",
-        "FWKI"
-      ],
-      "airlines": [
-        "Malawi Airlines"
-      ]
-    },
-    {
       "city": "London–Gatwick",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Gatwick_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London–Gatwick",
       "codes": [
         "LGW",
         "EGKK",
@@ -211,18 +177,6 @@
       ],
       "airlines": [
         "Air Zimbabwe"
-      ]
-    },
-    {
-      "city": "Luanda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatro_de_Fevereiro_Airport",
-      "codes": [
-        "LAD",
-        "FNLU",
-        "FNLU"
-      ],
-      "airlines": [
-        "TAAG Angola Airlines"
       ]
     },
     {
@@ -235,9 +189,7 @@
       ],
       "airlines": [
         "Fastjet Zimbabwe",
-        "Kenya Airways",
-        "Malawi Airlines",
-        "Zambia Airways"
+        "Kenya Airways"
       ]
     },
     {
@@ -263,38 +215,17 @@
       "airlines": [
         "Kenya Airways"
       ]
-    },
-    {
-      "city": "Victoria Falls",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_Falls_Airport",
-      "codes": [
-        "VFA",
-        "FVFA",
-        "FVFA"
-      ],
-      "airlines": [
-        "Air Zimbabwe"
-      ]
     }
   ],
   "airlines_destinations": {
-    "Air Botswana": [
-      "Gaborone"
-    ],
-    "Air Tanzania": [
-      "Dar es Salaam"
-    ],
     "Air Zimbabwe": [
-      "Bulawayo",
       "Dar es Salaam",
-      "Johannesburg–O. R. Tambo",
-      "London–Gatwick",
-      "Victoria Falls"
+      "London–Gatwick"
     ],
     "Airlink": [
       "Cape Town",
       "Durban",
-      "Johannesburg–O. R. Tambo"
+      "Johannesburg–Lanseria"
     ],
     "CemAir": [
       "Johannesburg–O. R. Tambo"
@@ -312,8 +243,6 @@
       "Abu Dhabi"
     ],
     "Fastjet Zimbabwe": [
-      "Bulawayo",
-      "Johannesburg–O. R. Tambo",
       "Lusaka"
     ],
     "FlySafair": [
@@ -322,10 +251,6 @@
     "Kenya Airways": [
       "Lusaka",
       "Nairobi–Jomo Kenyatta"
-    ],
-    "Malawi Airlines": [
-      "Lilongwe",
-      "Lusaka"
     ],
     "Qatar Airways": [
       "Doha"
@@ -336,48 +261,16 @@
     "South African Airways": [
       "Johannesburg–O. R. Tambo"
     ],
-    "TAAG Angola Airlines": [
-      "Luanda"
-    ],
     "Uganda Airlines": [
       "Entebbe"
-    ],
-    "Zambia Airways": [
-      "Lusaka"
     ]
   },
-  "outdegree_cargo": 3,
-  "number_airlines_cargo": 3,
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
   "airlines_cargo": [
-    "Astral Aviation",
-    "BidAir Cargo",
-    "Martinair Cargo"
+    "Astral Aviation"
   ],
   "destinations_cargo": [
-    {
-      "city": "Amsterdam",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Schiphol_Airport",
-      "codes": [
-        "AMS",
-        "EHAM",
-        "EHAM"
-      ],
-      "airlines": [
-        "Martinair Cargo"
-      ]
-    },
-    {
-      "city": "Johannesburg-O.R. Tambo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Johannesburg_International_Airport",
-      "codes": [
-        "JNB",
-        "FAOR",
-        "FAOR"
-      ],
-      "airlines": [
-        "BidAir Cargo"
-      ]
-    },
     {
       "city": "Nairobi–Jomo Kenyatta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jomo_Kenyatta_International_Airport",
@@ -394,14 +287,8 @@
   "airlines_destinations_cargo": {
     "Astral Aviation": [
       "Nairobi–Jomo Kenyatta"
-    ],
-    "BidAir Cargo": [
-      "Johannesburg-O.R. Tambo"
-    ],
-    "Martinair Cargo": [
-      "Amsterdam"
     ]
   },
-  "date-time-parse": "2026-07-19T02:03:48Z",
-  "date-time-wikidata": "2026-07-13T16:26:23Z"
+  "date-time-parse": "2026-08-16T00:55:37Z",
+  "date-time-wikidata": "2026-08-15T12:16:37Z"
 }

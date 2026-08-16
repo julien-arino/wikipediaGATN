@@ -14,7 +14,7 @@
   "admin1_name": "Shandong Sheng",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
-  "outdegree": 74,
+  "outdegree": 79,
   "number_airlines": 30,
   "airlines": [
     "Beijing Capital Airlines",
@@ -44,9 +44,9 @@
     "Suparna Airlines",
     "T'way Air",
     "Tianjin Airlines",
-    "Tibet Airlines",
     "West Air",
-    "XiamenAir"
+    "XiamenAir",
+    "Xizang Airlines"
   ],
   "destinations": [
     {
@@ -120,7 +120,7 @@
         "ZUUU"
       ],
       "airlines": [
-        "Tibet Airlines"
+        "Xizang Airlines"
       ]
     },
     {
@@ -244,7 +244,8 @@
         "ZGGG"
       ],
       "airlines": [
-        "Hainan Airlines"
+        "Hainan Airlines",
+        "Shandong Airlines"
       ]
     },
     {
@@ -281,6 +282,18 @@
       ],
       "airlines": [
         "Fuzhou Airlines"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
       ]
     },
     {
@@ -433,6 +446,7 @@
         "ZPPP"
       ],
       "airlines": [
+        "China Eastern Airlines",
         "Donghai Airlines",
         "Ruili Airlines"
       ]
@@ -458,7 +472,7 @@
         "ZULS"
       ],
       "airlines": [
-        "Tibet Airlines"
+        "Xizang Airlines"
       ]
     },
     {
@@ -647,6 +661,19 @@
       ]
     },
     {
+      "city": "Quanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
+      "codes": [
+        "JJN",
+        "ZSQZ",
+        "ZSQZ"
+      ],
+      "airlines": [
+        "Qingdao Airlines",
+        "XiamenAir"
+      ]
+    },
+    {
       "city": "Quzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Quzhou_Airport",
       "codes": [
@@ -656,6 +683,18 @@
       ],
       "airlines": [
         "China Express Airlines"
+      ]
+    },
+    {
+      "city": "Sanming",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sanming_Shaxian_Airport",
+      "codes": [
+        "SQJ",
+        "ZSSM",
+        "ZSSM"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
       ]
     },
     {
@@ -758,6 +797,18 @@
       ]
     },
     {
+      "city": "Taichung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taichung_Airport",
+      "codes": [
+        "RMQ",
+        "RCMQ",
+        "RCMQ"
+      ],
+      "airlines": [
+        "Shandong Airlines"
+      ]
+    },
+    {
       "city": "Taiyuan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
       "codes": [
@@ -796,6 +847,18 @@
       ]
     },
     {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Beijing Capital Airlines"
+      ]
+    },
+    {
       "city": "Wenzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wenzhou_Longwan_International_Airport",
       "codes": [
@@ -818,7 +881,7 @@
         "ZSWA"
       ],
       "airlines": [
-        "Tibet Airlines"
+        "Xizang Airlines"
       ]
     },
     {
@@ -971,9 +1034,11 @@
     "Beijing Capital Airlines": [
       "Changchun",
       "Enshi",
+      "Hangzhou",
       "Jingzhou",
       "London–Gatwick",
-      "Moscow–Sheremetyevo"
+      "Moscow–Sheremetyevo",
+      "Vancouver"
     ],
     "Cathay Pacific": [
       "Hong Kong"
@@ -985,9 +1050,11 @@
       "Hohhot",
       "Huizhou",
       "Jieyang",
+      "Kunming",
       "Mudanjiang",
       "Nanning",
       "Qiqihar",
+      "Sanming",
       "Wenzhou",
       "Xining"
     ],
@@ -1068,6 +1135,7 @@
       "Nagoya–Centrair",
       "Nanchang",
       "Penang",
+      "Quanzhou",
       "Shanghai–Pudong",
       "Shizuoka",
       "Taizhou",
@@ -1084,6 +1152,7 @@
     ],
     "Shandong Airlines": [
       "Fuzhou",
+      "Guangzhou",
       "Guilin",
       "Hanoi",
       "Ho Chi Minh City",
@@ -1091,9 +1160,10 @@
       "Kuala Lumpur–International",
       "Nanning",
       "Shiyan",
+      "Taichung",
       "Wuyishan",
       "Zhangjiajie",
-      "Zhuhai Jinwan Airport"
+      "Zhuhai"
     ],
     "Sichuan Airlines": [
       "Chengdu–Tianfu"
@@ -1105,19 +1175,14 @@
     "Suparna Airlines": [
       "Shanghai–Pudong"
     ],
+    "T'way Air": [
+      "Seoul–Incheon"
+    ],
     "Tianjin Airlines": [
       "Chizhou",
       "Haikou",
       "Wenzhou",
       "Yulin (Shaanxi)"
-    ],
-    "Tibet Airlines": [
-      "Chengdu–Shuangliu",
-      "Lhasa",
-      "Wuhu"
-    ],
-    "T'way Air": [
-      "Seoul–Incheon"
     ],
     "West Air": [
       "Harbin"
@@ -1129,7 +1194,13 @@
       "Mudanjiang",
       "Osaka–Kansai",
       "Phnom Penh",
+      "Quanzhou",
       "Zhuhai"
+    ],
+    "Xizang Airlines": [
+      "Chengdu–Shuangliu",
+      "Lhasa",
+      "Wuhu"
     ]
   },
   "outdegree_cargo": 2,
@@ -1172,6 +1243,6 @@
       "Liège"
     ]
   },
-  "date-time-parse": "2026-06-28T00:45:06Z",
-  "date-time-wikidata": "2026-06-25T13:13:22Z"
+  "date-time-parse": "2026-08-16T00:59:21Z",
+  "date-time-wikidata": "2026-08-15T16:00:54Z"
 }

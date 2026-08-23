@@ -588,11 +588,11 @@
     },
     {
       "city": "Visakhapatnam",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Visakhapatnam_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alluri_Sitarama_Raju_International_Airport",
       "codes": [
-        "VTZ",
-        "VOVZ",
-        "VOVZ"
+        "iata code not found",
+        "icao code not found",
+        "gps code not found"
       ],
       "airlines": [
         "IndiGo"
@@ -666,11 +666,62 @@
       "Visakhapatnam"
     ]
   },
-  "outdegree_cargo": 0,
-  "number_airlines_cargo": 0,
-  "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-08-16T00:57:35Z",
-  "date-time-wikidata": "2026-08-13T04:50:52Z"
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
+  "airlines_cargo": [
+    "Afcom Cargo",
+    "Hong Kong Air Cargo",
+    "IndiGo CarGo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Dubai-World Central",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Maktoum_International_Airport",
+      "codes": [
+        "DWC",
+        "OMDW",
+        "OMDW"
+      ],
+      "airlines": [
+        "Afcom Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH",
+        "VHHH"
+      ],
+      "airlines": [
+        "Hong Kong Air Cargo"
+      ]
+    },
+    {
+      "city": "Sharjah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharjah_International_Airport",
+      "codes": [
+        "SHJ",
+        "OMSJ",
+        "OMSJ"
+      ],
+      "airlines": [
+        "IndiGo CarGo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "Afcom Cargo": [
+      "Dubai-World Central"
+    ],
+    "Hong Kong Air Cargo": [
+      "Hong Kong"
+    ],
+    "IndiGo CarGo": [
+      "Sharjah"
+    ]
+  },
+  "date-time-parse": "2026-08-23T00:59:43Z",
+  "date-time-wikidata": "2026-08-20T06:54:37Z"
 }

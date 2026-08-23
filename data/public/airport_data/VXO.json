@@ -14,14 +14,15 @@
   "admin1_name": "Kronobergs län [SE-07]",
   "admin2_name": "Vaxjo Kommun",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Växjö-Kronoberg_Airport",
-  "outdegree": 8,
-  "number_airlines": 5,
+  "outdegree": 9,
+  "number_airlines": 6,
   "airlines": [
+    "GP Aviation",
     "Norwegian Air Shuttle",
-    "NyxAir",
     "Ryanair",
     "Sunclass Airlines",
-    "TUI fly Nordic"
+    "TUI fly Nordic",
+    "VästFlyg"
   ],
   "destinations": [
     {
@@ -30,7 +31,7 @@
       "codes": [
         "ALC",
         "LEAL",
-        "gps code not found"
+        "LEAL"
       ],
       "airlines": [
         "Norwegian Air Shuttle",
@@ -43,7 +44,7 @@
       "codes": [
         "GDN",
         "EPGD",
-        "gps code not found"
+        "EPGD"
       ],
       "airlines": [
         "Ryanair"
@@ -55,7 +56,7 @@
       "codes": [
         "LPA",
         "GCLP",
-        "gps code not found"
+        "GCLP"
       ],
       "airlines": [
         "TUI fly Nordic"
@@ -67,7 +68,7 @@
       "codes": [
         "LCA",
         "LCLK",
-        "gps code not found"
+        "LCLK"
       ],
       "airlines": [
         "Sunclass Airlines"
@@ -79,7 +80,7 @@
       "codes": [
         "AGP",
         "LEMG",
-        "gps code not found"
+        "LEMG"
       ],
       "airlines": [
         "Norwegian Air Shuttle"
@@ -91,10 +92,22 @@
       "codes": [
         "PMI",
         "LEPA",
-        "gps code not found"
+        "LEPA"
       ],
       "airlines": [
         "Norwegian Air Shuttle"
+      ]
+    },
+    {
+      "city": "Pristina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pristina_International_Airport",
+      "codes": [
+        "PRN",
+        "BKPR",
+        "BKPR"
+      ],
+      "airlines": [
+        "GP Aviation"
       ]
     },
     {
@@ -103,7 +116,7 @@
       "codes": [
         "RHO",
         "LGRP",
-        "gps code not found"
+        "LGRP"
       ],
       "airlines": [
         "Sunclass Airlines"
@@ -115,21 +128,21 @@
       "codes": [
         "BMA",
         "ESSB",
-        "gps code not found"
+        "ESSB"
       ],
       "airlines": [
-        "NyxAir"
+        "VästFlyg"
       ]
     }
   ],
   "airlines_destinations": {
+    "GP Aviation": [
+      "Pristina"
+    ],
     "Norwegian Air Shuttle": [
       "Alicante",
       "Málaga",
       "Palma de Mallorca"
-    ],
-    "NyxAir": [
-      "Stockholm–Bromma"
     ],
     "Ryanair": [
       "Alicante",
@@ -141,6 +154,9 @@
     ],
     "TUI fly Nordic": [
       "Gran Canaria"
+    ],
+    "VästFlyg": [
+      "Stockholm–Bromma"
     ]
   },
   "outdegree_cargo": 0,
@@ -148,6 +164,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-01T01:36:34Z",
-  "date-time-wikidata": "2026-02-05T07:36:21Z"
+  "date-time-parse": "2026-08-23T01:02:10Z",
+  "date-time-wikidata": "2026-08-13T07:58:10Z"
 }

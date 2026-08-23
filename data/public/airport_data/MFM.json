@@ -14,9 +14,11 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
-  "outdegree": 37,
-  "number_airlines": 18,
+  "outdegree": 42,
+  "number_airlines": 23,
   "airlines": [
+    "Air Busan",
+    "Air China",
     "Air Macau",
     "AirAsia",
     "Cambodia Airways",
@@ -29,7 +31,10 @@
     "Korean Air",
     "Philippines AirAsia",
     "Scoot",
+    "Shanghai Airlines",
+    "Shenzhen Airlines",
     "Sky Angkor Airlines",
+    "Spring Airlines",
     "Starlux Airlines",
     "Thai AirAsia",
     "Thai Lion Air",
@@ -83,7 +88,20 @@
         "ZBAD"
       ],
       "airlines": [
+        "China Eastern Airlines",
         "China Southern Airlines"
+      ]
+    },
+    {
+      "city": "Busan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gimhae_International_Airport",
+      "codes": [
+        "PUS",
+        "RKPK",
+        "RKPK"
+      ],
+      "airlines": [
+        "Air Busan"
       ]
     },
     {
@@ -96,6 +114,18 @@
       ],
       "airlines": [
         "Philippines AirAsia"
+      ]
+    },
+    {
+      "city": "Changzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changzhou_Benniu_International_Airport",
+      "codes": [
+        "CZX",
+        "ZSCG",
+        "ZSCG"
+      ],
+      "airlines": [
+        "Air Macau"
       ]
     },
     {
@@ -156,7 +186,8 @@
         "ZSFZ"
       ],
       "airlines": [
-        "Air Macau"
+        "Air Macau",
+        "XiamenAir"
       ]
     },
     {
@@ -192,7 +223,8 @@
         "ZSHC"
       ],
       "airlines": [
-        "Air Macau"
+        "Air Macau",
+        "XiamenAir"
       ]
     },
     {
@@ -291,6 +323,20 @@
         "ZSNJ"
       ],
       "airlines": [
+        "Air Macau",
+        "China Eastern Airlines",
+        "Shenzhen Airlines"
+      ]
+    },
+    {
+      "city": "Nanning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport",
+      "codes": [
+        "NNG",
+        "ZGNN",
+        "ZGNN"
+      ],
+      "airlines": [
         "Air Macau"
       ]
     },
@@ -331,6 +377,18 @@
       ]
     },
     {
+      "city": "Qingdao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
+      "codes": [
+        "TAO",
+        "ZSQD",
+        "ZSQD"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
       "city": "Quanzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
       "codes": [
@@ -365,7 +423,9 @@
         "ZSSS"
       ],
       "airlines": [
-        "Air Macau"
+        "Air Macau",
+        "China Eastern Airlines",
+        "Shanghai Airlines"
       ]
     },
     {
@@ -377,19 +437,10 @@
         "ZSPD"
       ],
       "airlines": [
-        "Air Macau"
-      ]
-    },
-    {
-      "city": "Sihanoukville",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Sihanouk_International_Airport",
-      "codes": [
-        "KOS",
-        "VDSV",
-        "VDSV"
-      ],
-      "airlines": [
-        "Sky Angkor Airlines"
+        "Air Macau",
+        "China Eastern Airlines",
+        "Shanghai Airlines",
+        "Spring Airlines"
       ]
     },
     {
@@ -433,18 +484,6 @@
       ]
     },
     {
-      "city": "Taiyuan",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Taiyuan_Wusu_International_Airport",
-      "codes": [
-        "TYN",
-        "ZBYN",
-        "ZBYN"
-      ],
-      "airlines": [
-        "China Eastern Airlines"
-      ]
-    },
-    {
       "city": "Tawau",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tawau_Airport",
       "codes": [
@@ -481,6 +520,43 @@
       ]
     },
     {
+      "city": "Wenzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wenzhou_Longwan_International_Airport",
+      "codes": [
+        "WNZ",
+        "ZSWZ",
+        "ZSWZ"
+      ],
+      "airlines": [
+        "Air Macau"
+      ]
+    },
+    {
+      "city": "Wuhan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
+      "codes": [
+        "WUH",
+        "ZHHH",
+        "ZHHH"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
+      "city": "Wuxi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuxi_Shuofang_Airport",
+      "codes": [
+        "WUX",
+        "ZSWX",
+        "ZSWX"
+      ],
+      "airlines": [
+        "China Eastern Airlines",
+        "Shenzhen Airlines"
+      ]
+    },
+    {
       "city": "Xiamen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport",
       "codes": [
@@ -489,14 +565,22 @@
         "ZSAM"
       ],
       "airlines": [
-        "Air Macau"
+        "Air Macau",
+        "XiamenAir"
       ]
     }
   ],
   "airlines_destinations": {
+    "Air Busan": [
+      "Busan"
+    ],
+    "Air China": [
+      "Wuhan"
+    ],
     "Air Macau": [
       "Bangkok–Suvarnabhumi",
       "Beijing–Capital",
+      "Changzhou",
       "Chengdu–Tianfu",
       "Chongqing",
       "Da Nang",
@@ -510,8 +594,10 @@
       "Kuala Lumpur–International",
       "Manila",
       "Nanjing",
+      "Nanning",
       "Ningbo",
       "Osaka–Kansai",
+      "Qingdao",
       "Seoul–Incheon",
       "Shanghai–Hongqiao",
       "Shanghai–Pudong",
@@ -519,6 +605,7 @@
       "Taichung",
       "Taipei–Taoyuan",
       "Tokyo–Narita",
+      "Wenzhou",
       "Xiamen"
     ],
     "AirAsia": [
@@ -532,9 +619,13 @@
       "Manila"
     ],
     "China Eastern Airlines": [
+      "Beijing–Daxing",
       "Hefei",
       "Nanchang",
-      "Taiyuan"
+      "Nanjing",
+      "Shanghai–Hongqiao",
+      "Shanghai–Pudong",
+      "Wuxi"
     ],
     "China Southern Airlines": [
       "Beijing–Daxing"
@@ -558,9 +649,19 @@
     "Scoot": [
       "Singapore"
     ],
+    "Shanghai Airlines": [
+      "Shanghai–Hongqiao",
+      "Shanghai–Pudong"
+    ],
+    "Shenzhen Airlines": [
+      "Nanjing",
+      "Wuxi"
+    ],
     "Sky Angkor Airlines": [
-      "Phnom Penh",
-      "Sihanoukville"
+      "Phnom Penh"
+    ],
+    "Spring Airlines": [
+      "Shanghai–Pudong"
     ],
     "Starlux Airlines": [
       "Taichung",
@@ -576,7 +677,10 @@
       "Chongqing"
     ],
     "XiamenAir": [
-      "Quanzhou"
+      "Fuzhou",
+      "Hangzhou",
+      "Quanzhou",
+      "Xiamen"
     ]
   },
   "outdegree_cargo": 1,
@@ -603,6 +707,6 @@
       "Madrid"
     ]
   },
-  "date-time-parse": "2026-08-09T01:12:17Z",
-  "date-time-wikidata": "2026-08-08T03:49:01Z"
+  "date-time-parse": "2026-08-23T00:59:13Z",
+  "date-time-wikidata": "2026-08-19T20:17:31Z"
 }

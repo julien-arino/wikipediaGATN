@@ -1736,22 +1736,34 @@
       "Xiamen"
     ]
   },
-  "outdegree_cargo": 18,
+  "outdegree_cargo": 21,
   "number_airlines_cargo": 11,
   "airlines_cargo": [
     "ASL Airlines Australia",
     "Atlas Air",
+    "Auckland",
+    "Brisbane",
     "Cathay Cargo",
     "China Southern Cargo",
     "Emirates SkyCargo",
     "FedEx Express",
     "MASkargo",
-    "Qantas Freight",
-    "Singapore Airlines Cargo",
-    "Team Global Express",
-    "UPS Airlines"
+    "Perth",
+    "Qantas Freight"
   ],
   "destinations_cargo": [
+    {
+      "city": "Anchorage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
+      "codes": [
+        "ANC",
+        "PANC",
+        "PANC"
+      ],
+      "airlines": [
+        "Qantas Freight"
+      ]
+    },
     {
       "city": "Auckland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
@@ -1763,20 +1775,8 @@
       "airlines": [
         "ASL Airlines Australia",
         "Atlas Air",
-        "Qantas Freight",
-        "Singapore Airlines Cargo"
-      ]
-    },
-    {
-      "city": "Avalon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Avalon_Airport",
-      "codes": [
-        "AVV",
-        "YMAV",
-        "YMAV"
-      ],
-      "airlines": [
-        "Atlas Air"
+        "FedEx Express",
+        "Qantas Freight"
       ]
     },
     {
@@ -1801,8 +1801,7 @@
         "YBBN"
       ],
       "airlines": [
-        "Qantas Freight",
-        "Team Global Express"
+        "Qantas Freight"
       ]
     },
     {
@@ -1893,8 +1892,7 @@
       "airlines": [
         "Atlas Air",
         "FedEx Express",
-        "Qantas Freight",
-        "UPS Airlines"
+        "Qantas Freight"
       ]
     },
     {
@@ -1919,6 +1917,18 @@
       ],
       "airlines": [
         "MASkargo"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "Qantas Freight"
       ]
     },
     {
@@ -1948,18 +1958,6 @@
       ]
     },
     {
-      "city": "Seoul–Incheon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "codes": [
-        "ICN",
-        "RKSI",
-        "RKSI"
-      ],
-      "airlines": [
-        "UPS Airlines"
-      ]
-    },
-    {
       "city": "Shanghai–Pudong",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport",
       "codes": [
@@ -1968,9 +1966,7 @@
         "ZSPD"
       ],
       "airlines": [
-        "Atlas Air",
-        "Qantas Freight",
-        "UPS Airlines"
+        "Atlas Air"
       ]
     },
     {
@@ -1982,9 +1978,43 @@
         "WSSS"
       ],
       "airlines": [
-        "FedEx Express",
-        "Singapore Airlines Cargo",
-        "UPS Airlines"
+        "FedEx Express"
+      ]
+    },
+    {
+      "city": "Singapore Airlines Cargo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Airlines_Cargo",
+      "codes": [
+        "iata code not found",
+        "icao code not found",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Perth"
+      ]
+    },
+    {
+      "city": "Team Global Express",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toll_Group",
+      "codes": [
+        "iata code not found",
+        "icao code not found",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Auckland"
+      ]
+    },
+    {
+      "city": "UPS Airlines",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/UPS_Airlines",
+      "codes": [
+        "iata code not found",
+        "icao code not found",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Brisbane"
       ]
     }
   ],
@@ -1995,7 +2025,6 @@
     ],
     "Atlas Air": [
       "Auckland",
-      "Avalon",
       "Bangkok–Suvarnabhumi",
       "Chongqing",
       "Honolulu",
@@ -2013,6 +2042,7 @@
       "Hong Kong"
     ],
     "FedEx Express": [
+      "Auckland",
       "Guangzhou",
       "Honolulu",
       "Oakland",
@@ -2022,6 +2052,7 @@
       "Kuala Lumpur–International"
     ],
     "Qantas Freight": [
+      "Anchorage",
       "Auckland",
       "Bangkok–Suvarnabhumi",
       "Brisbane",
@@ -2032,23 +2063,19 @@
       "Hong Kong",
       "Honolulu",
       "Jakarta–Soekarno–Hatta",
-      "Melbourne",
-      "Shanghai–Pudong"
+      "Los Angeles",
+      "Melbourne"
     ],
-    "Singapore Airlines Cargo": [
-      "Auckland",
-      "Singapore"
+    "Perth": [
+      "Singapore Airlines Cargo"
     ],
-    "Team Global Express": [
-      "Brisbane"
+    "Auckland": [
+      "Team Global Express"
     ],
-    "UPS Airlines": [
-      "Honolulu",
-      "Seoul–Incheon",
-      "Shanghai–Pudong",
-      "Singapore"
+    "Brisbane": [
+      "UPS Airlines"
     ]
   },
-  "date-time-parse": "2026-08-16T00:59:19Z",
-  "date-time-wikidata": "2026-08-15T04:39:03Z"
+  "date-time-parse": "2026-08-23T01:01:33Z",
+  "date-time-wikidata": "2026-08-22T09:26:20Z"
 }

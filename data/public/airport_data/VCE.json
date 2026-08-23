@@ -14,21 +14,21 @@
   "admin1_name": "Veneto",
   "admin2_name": "Provincia di Venezia",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Venice_Marco_Polo_Airport",
-  "outdegree": 97,
-  "number_airlines": 51,
+  "outdegree": 103,
+  "number_airlines": 55,
   "airlines": [
     "Aegean Airlines",
     "Aer Lingus",
     "Air Arabia",
     "Air Cairo",
     "Air Canada",
+    "Air China",
     "Air Dolomiti",
     "Air Europa",
     "Air France",
     "Air Serbia",
     "Air Transat",
     "American Airlines",
-    "Asiana Airlines",
     "Austrian Airlines",
     "British Airways",
     "Brussels Airlines",
@@ -37,6 +37,7 @@
     "Cyprus Airways",
     "Delta Air Lines",
     "Egyptair",
+    "El Al",
     "Emirates",
     "Eurowings",
     "Finnair",
@@ -45,11 +46,13 @@
     "Iberia",
     "Icelandair",
     "Jet2.com",
+    "Jettime",
     "KLM",
     "LOT Polish Airlines",
     "Lufthansa",
     "Luxair",
     "Norwegian Air Shuttle",
+    "Pegasus Airlines",
     "Qatar Airways",
     "Royal Air Maroc",
     "Ryanair",
@@ -60,6 +63,7 @@
     "Swiss International Air Lines",
     "TAP Air Portugal",
     "Transavia",
+    "Tunisair",
     "Turkish Airlines",
     "Twin Jet",
     "United Airlines",
@@ -187,6 +191,18 @@
       ]
     },
     {
+      "city": "Beijing–Capital",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
+      "codes": [
+        "PEK",
+        "ZBAA",
+        "ZBAA"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
       "city": "Belgrade",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
       "codes": [
@@ -302,14 +318,15 @@
     },
     {
       "city": "Cagliari",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Elmas_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cagliari_Airport",
       "codes": [
         "CAG",
         "LIEE",
         "LIEE"
       ],
       "airlines": [
-        "Volotea"
+        "Volotea",
+        "Wizz Air"
       ]
     },
     {
@@ -386,6 +403,18 @@
       "airlines": [
         "Norwegian Air Shuttle",
         "Scandinavian Airlines"
+      ]
+    },
+    {
+      "city": "Corfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corfu_International_Airport",
+      "codes": [
+        "CFU",
+        "LGKR",
+        "LGKR"
+      ],
+      "airlines": [
+        "Volotea"
       ]
     },
     {
@@ -521,7 +550,20 @@
       ],
       "airlines": [
         "Finnair",
+        "Jettime",
         "Ryanair"
+      ]
+    },
+    {
+      "city": "Istabul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sabiha_Gökçen_International_Airport",
+      "codes": [
+        "SAW",
+        "LTFJ",
+        "LTFJ"
+      ],
+      "airlines": [
+        "Pegasus Airlines"
       ]
     },
     {
@@ -558,6 +600,18 @@
       ],
       "airlines": [
         "Saudia"
+      ]
+    },
+    {
+      "city": "Karpathos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karpathos_Island_National_Airport",
+      "codes": [
+        "AOK",
+        "LGKP",
+        "LGKP"
+      ],
+      "airlines": [
+        "Volotea"
       ]
     },
     {
@@ -1046,18 +1100,6 @@
       ]
     },
     {
-      "city": "Seoul–Incheon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "codes": [
-        "ICN",
-        "RKSI",
-        "RKSI"
-      ],
-      "airlines": [
-        "Asiana Airlines"
-      ]
-    },
-    {
       "city": "Seville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seville_Airport",
       "codes": [
@@ -1093,6 +1135,18 @@
       "airlines": [
         "Air Cairo",
         "Wizz Air"
+      ]
+    },
+    {
+      "city": "Skiathos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skiathos_International_Airport",
+      "codes": [
+        "JSI",
+        "LGSK",
+        "LGSK"
+      ],
+      "airlines": [
+        "Volotea"
       ]
     },
     {
@@ -1152,6 +1206,7 @@
         "LLBG"
       ],
       "airlines": [
+        "El Al",
         "Wizz Air"
       ]
     },
@@ -1202,6 +1257,18 @@
       ],
       "airlines": [
         "Ryanair"
+      ]
+    },
+    {
+      "city": "Tunis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tunis–Carthage_International_Airport",
+      "codes": [
+        "TUN",
+        "DTTA",
+        "DTTA"
+      ],
+      "airlines": [
+        "Tunisair"
       ]
     },
     {
@@ -1267,6 +1334,18 @@
       ]
     },
     {
+      "city": "Zakynthos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zakynthos_International_Airport",
+      "codes": [
+        "ZTH",
+        "LGZA",
+        "LGZA"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
       "city": "Zürich",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zurich_Airport",
       "codes": [
@@ -1296,6 +1375,9 @@
       "Montréal–Trudeau",
       "Toronto–Pearson"
     ],
+    "Air China": [
+      "Beijing–Capital"
+    ],
     "Air Dolomiti": [
       "Munich"
     ],
@@ -1317,9 +1399,6 @@
     "American Airlines": [
       "Dallas/Fort Worth",
       "Philadelphia"
-    ],
-    "Asiana Airlines": [
-      "Seoul–Incheon"
     ],
     "Austrian Airlines": [
       "Vienna"
@@ -1360,6 +1439,9 @@
     "Egyptair": [
       "Cairo"
     ],
+    "El Al": [
+      "Tel Aviv"
+    ],
     "Emirates": [
       "Dubai–International"
     ],
@@ -1388,6 +1470,9 @@
       "Birmingham",
       "Manchester"
     ],
+    "Jettime": [
+      "Helsinki"
+    ],
     "KLM": [
       "Amsterdam"
     ],
@@ -1404,6 +1489,9 @@
       "Copenhagen",
       "Oslo",
       "Stockholm–Arlanda"
+    ],
+    "Pegasus Airlines": [
+      "Istabul"
     ],
     "Qatar Airways": [
       "Doha"
@@ -1463,6 +1551,9 @@
     "Transavia": [
       "Paris-Orly"
     ],
+    "Tunisair": [
+      "Tunis"
+    ],
     "Turkish Airlines": [
       "Istanbul"
     ],
@@ -1479,6 +1570,8 @@
       "Bilbao",
       "Bordeaux",
       "Cagliari",
+      "Corfu",
+      "Karpathos",
       "Lampedusa",
       "Lyon",
       "Marseille",
@@ -1489,7 +1582,9 @@
       "Pantelleria",
       "Rhodes",
       "Santorini",
-      "Toulouse"
+      "Skiathos",
+      "Toulouse",
+      "Zakynthos"
     ],
     "Vueling": [
       "Barcelona",
@@ -1503,6 +1598,7 @@
       "Bilbao",
       "Bordeaux",
       "Budapest",
+      "Cagliari",
       "Catania",
       "Chișinău",
       "Kraków",
@@ -1529,6 +1625,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-05T00:39:58Z",
-  "date-time-wikidata": "2026-07-02T13:09:44Z"
+  "date-time-parse": "2026-08-23T01:01:52Z",
+  "date-time-wikidata": "2026-08-22T20:24:46Z"
 }

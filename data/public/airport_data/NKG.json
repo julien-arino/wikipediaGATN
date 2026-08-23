@@ -19,12 +19,25 @@
   "airlines": [],
   "destinations": [],
   "airlines_destinations": {},
-  "outdegree_cargo": 1,
-  "number_airlines_cargo": 1,
+  "outdegree_cargo": 2,
+  "number_airlines_cargo": 2,
   "airlines_cargo": [
+    "Royal Air Philippines",
     "Suparna Airlines"
   ],
   "destinations_cargo": [
+    {
+      "city": "Clark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_Airport",
+      "codes": [
+        "CRK",
+        "RPLC",
+        "RPLC"
+      ],
+      "airlines": [
+        "Royal Air Philippines"
+      ]
+    },
     {
       "city": "Moscow–Zhukovsky",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zhukovsky_International_Airport",
@@ -39,10 +52,13 @@
     }
   ],
   "airlines_destinations_cargo": {
+    "Royal Air Philippines": [
+      "Clark"
+    ],
     "Suparna Airlines": [
       "Moscow–Zhukovsky"
     ]
   },
-  "date-time-parse": "2026-08-09T01:12:37Z",
-  "date-time-wikidata": "2026-08-04T16:37:18Z"
+  "date-time-parse": "2026-08-23T00:59:42Z",
+  "date-time-wikidata": "2026-08-22T11:28:37Z"
 }

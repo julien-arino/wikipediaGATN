@@ -14,7 +14,7 @@
   "admin1_name": "Farg‘ona",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Fergana_International_Airport",
-  "outdegree": 11,
+  "outdegree": 14,
   "number_airlines": 8,
   "airlines": [
     "Centrum Air",
@@ -27,6 +27,18 @@
     "Uzbekistan Airways"
   ],
   "destinations": [
+    {
+      "city": "Bukhara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bukhara_International_Airport",
+      "codes": [
+        "BHK",
+        "UZSB",
+        "UZSB"
+      ],
+      "airlines": [
+        "Silk Avia"
+      ]
+    },
     {
       "city": "Irkutsk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/International_Airport_Irkutsk",
@@ -104,6 +116,18 @@
       ]
     },
     {
+      "city": "Navoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Navoi_International_Airport",
+      "codes": [
+        "NVI",
+        "UZSA",
+        "UZSA"
+      ],
+      "airlines": [
+        "Silk Avia"
+      ]
+    },
+    {
       "city": "Novosibirsk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tolmachevo_Airport",
       "codes": [
@@ -161,14 +185,28 @@
         "UZTT"
       ],
       "airlines": [
+        "Centrum Air",
         "Silk Avia",
         "Uzbekistan Airways"
+      ]
+    },
+    {
+      "city": "Urgench",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Urgench_International_Airport",
+      "codes": [
+        "UGC",
+        "UZNU",
+        "UTNU"
+      ],
+      "airlines": [
+        "Silk Avia"
       ]
     }
   ],
   "airlines_destinations": {
     "Centrum Air": [
-      "Istanbul"
+      "Istanbul",
+      "Tashkent"
     ],
     "Qanot Sharq": [
       "Moscow–Domodedovo"
@@ -178,8 +216,11 @@
       "Novosibirsk"
     ],
     "Silk Avia": [
+      "Bukhara",
+      "Navoi",
       "Samarqand",
-      "Tashkent"
+      "Tashkent",
+      "Urgench"
     ],
     "Turkish Airlines": [
       "Istanbul"
@@ -206,6 +247,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:07:51Z",
-  "date-time-wikidata": "2026-07-11T20:16:09Z"
+  "date-time-parse": "2026-08-23T00:56:37Z",
+  "date-time-wikidata": "2026-08-17T13:43:31Z"
 }

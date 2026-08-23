@@ -14,12 +14,14 @@
   "admin1_name": "Gotlands län [SE-09]",
   "admin2_name": "Gotland",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Visby_Airport",
-  "outdegree": 3,
-  "number_airlines": 3,
+  "outdegree": 6,
+  "number_airlines": 5,
   "airlines": [
+    "BrommaFLyg",
     "Finnair",
     "Norwegian Air Shuttle",
-    "Scandinavian Airlines"
+    "Scandinavian Airlines",
+    "Västflyg"
   ],
   "destinations": [
     {
@@ -35,6 +37,18 @@
       ]
     },
     {
+      "city": "Gothenburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gothenburg_Landvetter_Airport",
+      "codes": [
+        "GOT",
+        "ESGG",
+        "ESGG"
+      ],
+      "airlines": [
+        "BrommaFLyg"
+      ]
+    },
+    {
       "city": "Helsinki",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Helsinki_Airport",
       "codes": [
@@ -44,6 +58,18 @@
       ],
       "airlines": [
         "Finnair"
+      ]
+    },
+    {
+      "city": "Stockholm Bromma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm_Bromma_Airport",
+      "codes": [
+        "BMA",
+        "ESSB",
+        "ESSB"
+      ],
+      "airlines": [
+        "BrommaFLyg"
       ]
     },
     {
@@ -58,9 +84,25 @@
         "Norwegian Air Shuttle",
         "Scandinavian Airlines"
       ]
+    },
+    {
+      "city": "Trollhätten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trollhättan–Vänersborg_Airport",
+      "codes": [
+        "THN",
+        "ESGT",
+        "ESGT"
+      ],
+      "airlines": [
+        "Västflyg"
+      ]
     }
   ],
   "airlines_destinations": {
+    "BrommaFLyg": [
+      "Gothenburg",
+      "Stockholm Bromma"
+    ],
     "Finnair": [
       "Helsinki"
     ],
@@ -70,6 +112,9 @@
     "Scandinavian Airlines": [
       "Copenhagen",
       "Stockholm–Arlanda"
+    ],
+    "Västflyg": [
+      "Trollhätten"
     ]
   },
   "outdegree_cargo": 1,
@@ -96,6 +141,6 @@
       "Stockholm–Arlanda"
     ]
   },
-  "date-time-parse": "2026-06-28T00:45:29Z",
-  "date-time-wikidata": "2026-06-22T14:13:39Z"
+  "date-time-parse": "2026-08-23T01:01:51Z",
+  "date-time-wikidata": "2026-08-11T03:25:41Z"
 }

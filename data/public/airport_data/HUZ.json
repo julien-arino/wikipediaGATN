@@ -14,8 +14,8 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Huizhou_Pingtan_Airport",
-  "outdegree": 35,
-  "number_airlines": 12,
+  "outdegree": 34,
+  "number_airlines": 13,
   "airlines": [
     "Air Chang'an",
     "Air China",
@@ -26,6 +26,7 @@
     "GX Airlines",
     "Juneyao Air",
     "Kunming Airlines",
+    "Ruili Airlines",
     "Shenzhen Airlines",
     "Sichuan Airlines",
     "Tianjin Airlines"
@@ -56,12 +57,24 @@
       ]
     },
     {
-      "city": "Changde",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Changde_Taohuayuan_Airport",
+      "city": "Changchun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport",
       "codes": [
-        "CGD",
-        "ZGCD",
-        "ZGCD"
+        "CGQ",
+        "ZYCC",
+        "ZYCC"
+      ],
+      "airlines": [
+        "Juneyao Air"
+      ]
+    },
+    {
+      "city": "Changsha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport",
+      "codes": [
+        "CSX",
+        "ZGHA",
+        "ZGHA"
       ],
       "airlines": [
         "Tianjin Airlines"
@@ -92,6 +105,7 @@
         "ZUCK"
       ],
       "airlines": [
+        "China Eastern Airlines",
         "Chongqing Airlines"
       ]
     },
@@ -178,20 +192,7 @@
         "ZPPP"
       ],
       "airlines": [
-        "China Eastern Airlines",
         "Kunming Airlines"
-      ]
-    },
-    {
-      "city": "Liupanshui",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Liupanshui_Yuezhao_Airport",
-      "codes": [
-        "LPF",
-        "ZUPS",
-        "ZUPS"
-      ],
-      "airlines": [
-        "Tianjin Airlines"
       ]
     },
     {
@@ -207,15 +208,15 @@
       ]
     },
     {
-      "city": "Nanchong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanchong_Gaoping_Airport",
+      "city": "Mangshi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dehong_Mangshi_International_Airport",
       "codes": [
-        "NAO",
-        "ZUNC",
-        "ZUNC"
+        "LUM",
+        "ZPMS",
+        "ZPMS"
       ],
       "airlines": [
-        "Chongqing Airlines"
+        "Ruili Airlines"
       ]
     },
     {
@@ -227,20 +228,7 @@
         "ZSNJ"
       ],
       "airlines": [
-        "Juneyao Air",
-        "Shenzhen Airlines"
-      ]
-    },
-    {
-      "city": "Ningbo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
-      "codes": [
-        "NGB",
-        "ZSNB",
-        "ZSNB"
-      ],
-      "airlines": [
-        "China Eastern Airlines"
+        "Juneyao Air"
       ]
     },
     {
@@ -265,7 +253,6 @@
       ],
       "airlines": [
         "Air China",
-        "China Eastern Airlines",
         "China United Airlines",
         "Juneyao Air"
       ]
@@ -279,7 +266,7 @@
         "ZYTX"
       ],
       "airlines": [
-        "Juneyao Air"
+        "Shenzhen Airlines"
       ]
     },
     {
@@ -353,7 +340,8 @@
       "airlines": [
         "Air China",
         "China Eastern Airlines",
-        "China Southern Airlines"
+        "China Southern Airlines",
+        "Shenzhen Airlines"
       ]
     },
     {
@@ -396,24 +384,24 @@
       ]
     },
     {
-      "city": "Xingyi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Xingyi_Wanfenglin_Airport",
-      "codes": [
-        "ACX",
-        "ZUYI",
-        "ZUYI"
-      ],
-      "airlines": [
-        "Tianjin Airlines"
-      ]
-    },
-    {
       "city": "Yancheng",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Yancheng_Nanyang_International_Airport",
       "codes": [
         "YNZ",
         "ZSYN",
         "ZSYN"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
+      "city": "Yantai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport",
+      "codes": [
+        "YNT",
+        "ZSYT",
+        "ZSYT"
       ],
       "airlines": [
         "Tianjin Airlines"
@@ -444,6 +432,18 @@
       ]
     },
     {
+      "city": "Zhangjiajie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhangjiajie_Hehua_International_Airport",
+      "codes": [
+        "DYG",
+        "ZGDY",
+        "ZGDY"
+      ],
+      "airlines": [
+        "GX Airlines"
+      ]
+    },
+    {
       "city": "Zhengzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
       "codes": [
@@ -453,18 +453,6 @@
       ],
       "airlines": [
         "Shenzhen Airlines",
-        "Tianjin Airlines"
-      ]
-    },
-    {
-      "city": "Zunyi–Maotai",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Zunyi_Maotai_Airport",
-      "codes": [
-        "WMT",
-        "ZUMT",
-        "ZUMT"
-      ],
-      "airlines": [
         "Tianjin Airlines"
       ]
     }
@@ -481,11 +469,9 @@
     ],
     "China Eastern Airlines": [
       "Chengdu–Tianfu",
+      "Chongqing",
       "Hefei",
-      "Kunming",
-      "Ningbo",
       "Qingdao",
-      "Shanghai–Pudong",
       "Wuhan"
     ],
     "China Southern Airlines": [
@@ -497,28 +483,32 @@
       "Shanghai–Pudong"
     ],
     "Chongqing Airlines": [
-      "Chongqing",
-      "Nanchong"
+      "Chongqing"
     ],
     "GX Airlines": [
-      "Jinan"
+      "Jinan",
+      "Zhangjiajie"
     ],
     "Juneyao Air": [
+      "Changchun",
       "Guiyang",
       "Haikou",
       "Hangzhou",
       "Harbin",
       "Nanjing",
       "Shanghai–Pudong",
-      "Shenyang",
       "Wuxi",
       "Xi'an"
     ],
     "Kunming Airlines": [
       "Kunming"
     ],
+    "Ruili Airlines": [
+      "Mangshi"
+    ],
     "Shenzhen Airlines": [
-      "Nanjing",
+      "Shenyang",
+      "Wuhan",
       "Wuxi",
       "Xi'an",
       "Zhengzhou"
@@ -527,11 +517,10 @@
       "Chengdu–Tianfu"
     ],
     "Tianjin Airlines": [
-      "Changde",
+      "Changsha",
       "Chengdu–Tianfu",
       "Guiyang",
       "Haikou",
-      "Liupanshui",
       "Luzhou",
       "Shijiazhuang",
       "Shiyan",
@@ -539,12 +528,11 @@
       "Urumqi",
       "Wanzhou",
       "Xiangxi",
-      "Xingyi",
       "Yancheng",
+      "Yantai",
       "Yichang",
       "Yinchuan",
-      "Zhengzhou",
-      "Zunyi–Maotai"
+      "Zhengzhou"
     ]
   },
   "outdegree_cargo": 1,
@@ -571,6 +559,6 @@
       "Jiaxing"
     ]
   },
-  "date-time-parse": "2026-07-19T02:03:50Z",
-  "date-time-wikidata": "2026-07-12T16:37:32Z"
+  "date-time-parse": "2026-08-23T00:57:16Z",
+  "date-time-wikidata": "2026-08-21T06:59:01Z"
 }

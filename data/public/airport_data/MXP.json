@@ -14,7 +14,7 @@
   "admin1_name": "Lombardia",
   "admin2_name": "Provincia di Varese",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-  "outdegree": 218,
+  "outdegree": 219,
   "number_airlines": 90,
   "airlines": [
     "Aegean Airlines",
@@ -66,6 +66,7 @@
     "Icelandair",
     "Israir",
     "JetBlue",
+    "Jettime",
     "Juneyao Air",
     "Korean Air",
     "Kuwait Airways",
@@ -83,7 +84,6 @@
     "Oman Air",
     "Qanot Sharq",
     "Qatar Airways",
-    "Red Sea Airlines",
     "Royal Air Maroc",
     "Royal Jordanian",
     "Ryanair",
@@ -345,18 +345,6 @@
       "airlines": [
         "Ryanair",
         "easyJet"
-      ]
-    },
-    {
-      "city": "Beauvais",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
-      "codes": [
-        "BVA",
-        "LFOB",
-        "LFOB"
-      ],
-      "airlines": [
-        "Ryanair"
       ]
     },
     {
@@ -774,6 +762,8 @@
         "EKCH"
       ],
       "airlines": [
+        "Jettime",
+        "Neos",
         "Scandinavian Airlines"
       ]
     },
@@ -1078,6 +1068,7 @@
       ],
       "airlines": [
         "Eurowings",
+        "Neos",
         "easyJet"
       ]
     },
@@ -1534,8 +1525,7 @@
         "LMML"
       ],
       "airlines": [
-        "Ryanair",
-        "easyJet"
+        "Ryanair"
       ]
     },
     {
@@ -1630,7 +1620,7 @@
       ]
     },
     {
-      "city": "Mexico City-Benito Juárez",
+      "city": "Mexico City–Benito Juárez",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mexico_City_International_Airport",
       "codes": [
         "MEX",
@@ -1925,6 +1915,18 @@
         "Ryanair",
         "Wizz Air",
         "easyJet"
+      ]
+    },
+    {
+      "city": "Paris Beauvais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauvais–Tillé_Airport",
+      "codes": [
+        "BVA",
+        "LFOB",
+        "LFOB"
+      ],
+      "airlines": [
+        "Ryanair"
       ]
     },
     {
@@ -2349,7 +2351,6 @@
       "airlines": [
         "Air Cairo",
         "Neos",
-        "Red Sea Airlines",
         "Wizz Air",
         "easyJet"
       ]
@@ -2608,18 +2609,6 @@
       ]
     },
     {
-      "city": "Toronto–Pearson",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
-      "codes": [
-        "YYZ",
-        "CYYZ",
-        "CYYZ"
-      ],
-      "airlines": [
-        "Air Canada"
-      ]
-    },
-    {
       "city": "Toulouse",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Toulouse–Blagnac_Airport",
       "codes": [
@@ -2709,6 +2698,18 @@
       ]
     },
     {
+      "city": "Verona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona_Villafranca_Airport",
+      "codes": [
+        "VRN",
+        "LIPX",
+        "LIPX"
+      ],
+      "airlines": [
+        "Neos"
+      ]
+    },
+    {
       "city": "Vienna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vienna_Airport",
       "codes": [
@@ -2767,6 +2768,18 @@
       ],
       "airlines": [
         "Ryanair"
+      ]
+    },
+    {
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Airlines"
       ]
     },
     {
@@ -2881,7 +2894,7 @@
       "Salerno"
     ],
     "Aeromexico": [
-      "Mexico City-Benito Juárez"
+      "Mexico City–Benito Juárez"
     ],
     "Air Algérie": [
       "Algiers"
@@ -2892,8 +2905,7 @@
       "Sharm El Sheikh"
     ],
     "Air Canada": [
-      "Montréal–Trudeau",
-      "Toronto–Pearson"
+      "Montréal–Trudeau"
     ],
     "Air China": [
       "Beijing–Capital",
@@ -3019,7 +3031,6 @@
       "London–Gatwick",
       "London–Luton",
       "Luxor",
-      "Malta",
       "Manchester",
       "Marrakesh",
       "Marsa Alam",
@@ -3086,15 +3097,15 @@
     "Finnair": [
       "Helsinki"
     ],
+    "Fly2Galicia": [
+      "Santiago de Compostela"
+    ],
     "Flynas": [
       "Riyadh"
     ],
     "FlyOne": [
       "Chișinău",
       "Yerevan"
-    ],
-    "Fly2Galicia": [
-      "Santiago de Compostela"
     ],
     "Gulf Air": [
       "Bahrain",
@@ -3117,6 +3128,9 @@
     ],
     "JetBlue": [
       "Boston"
+    ],
+    "Jettime": [
+      "Copenhagen"
     ],
     "Juneyao Air": [
       "Zhengzhou"
@@ -3160,12 +3174,14 @@
       "Catania",
       "Chania",
       "Comiso",
+      "Copenhagen",
       "Corfu",
       "Dakar–Diass",
       "Djerba",
       "Enfidha",
       "Fuerteventura",
       "Gran Canaria",
+      "Hamburg",
       "Havana",
       "Heraklion",
       "Ibiza",
@@ -3204,6 +3220,7 @@
       "Tel Aviv",
       "Tenerife–South",
       "Tromsø",
+      "Verona",
       "Zanzibar"
     ],
     "Nesma Airlines": [
@@ -3228,9 +3245,6 @@
     "Qatar Airways": [
       "Doha"
     ],
-    "Red Sea Airlines": [
-      "Sharm El Sheikh"
-    ],
     "Royal Air Maroc": [
       "Casablanca"
     ],
@@ -3244,7 +3258,6 @@
       "Athens",
       "Barcelona",
       "Bari",
-      "Beauvais",
       "Berlin",
       "Bratislava",
       "Brindisi",
@@ -3275,6 +3288,7 @@
       "Naples",
       "Palermo",
       "Palma de Mallorca",
+      "Paris Beauvais",
       "Pescara",
       "Plovdiv",
       "Porto",
@@ -3340,7 +3354,8 @@
     ],
     "United Airlines": [
       "Chicago-O'Hare",
-      "Newark"
+      "Newark",
+      "Washington–Dulles"
     ],
     "Uzbekistan Airways": [
       "Tashkent",
@@ -3412,7 +3427,7 @@
       "Zaragoza"
     ]
   },
-  "outdegree_cargo": 40,
+  "outdegree_cargo": 39,
   "number_airlines_cargo": 19,
   "airlines_cargo": [
     "Amazon Air",
@@ -3476,7 +3491,7 @@
     },
     {
       "city": "Ancona",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ancona_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marche_Airport",
       "codes": [
         "AOI",
         "LIPY",
@@ -3687,8 +3702,7 @@
         "ZHEC"
       ],
       "airlines": [
-        "Geosky",
-        "MSC Air Cargo"
+        "Geosky"
       ]
     },
     {
@@ -3706,15 +3720,14 @@
     },
     {
       "city": "Hong Kong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
       "codes": [
         "HKG",
         "VHHH",
         "VHHH"
       ],
       "airlines": [
-        "Cathay Cargo",
-        "MSC Air Cargo"
+        "Cathay Cargo"
       ]
     },
     {
@@ -3866,18 +3879,6 @@
       ]
     },
     {
-      "city": "Shanghai-Pudong",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shanghai_Pudong_Airport",
-      "codes": [
-        "PVG",
-        "ZSPD",
-        "ZSPD"
-      ],
-      "airlines": [
-        "MSC Air Cargo"
-      ]
-    },
-    {
       "city": "Thessaloniki",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki_Airport",
       "codes": [
@@ -3899,6 +3900,7 @@
       ],
       "airlines": [
         "Atlas Air",
+        "MSC Air Cargo",
         "Nippon Cargo Airlines"
       ]
     },
@@ -3991,9 +3993,7 @@
       "Frankfurt"
     ],
     "MSC Air Cargo": [
-      "Ezhou",
-      "Hong Kong",
-      "Shanghai-Pudong"
+      "Tokyo–Narita"
     ],
     "Nippon Cargo Airlines": [
       "Amsterdam",
@@ -4017,6 +4017,6 @@
       "Ashgabat"
     ]
   },
-  "date-time-parse": "2026-08-23T00:59:36Z",
-  "date-time-wikidata": "2026-08-22T17:36:25Z"
+  "date-time-parse": "2026-08-30T02:57:22Z",
+  "date-time-wikidata": "2026-08-27T15:11:44Z"
 }

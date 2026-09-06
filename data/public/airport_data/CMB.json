@@ -990,9 +990,11 @@
       "Ho Chi Minh City"
     ]
   },
-  "outdegree_cargo": 2,
-  "number_airlines_cargo": 2,
+  "outdegree_cargo": 7,
+  "number_airlines_cargo": 4,
   "airlines_cargo": [
+    "Afcom Cargo",
+    "Magma Aviation",
     "SF Airlines",
     "Turkish Cargo"
   ],
@@ -1010,6 +1012,55 @@
       ]
     },
     {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_International_Airport",
+      "codes": [
+        "MAA",
+        "VOMM",
+        "VOMM"
+      ],
+      "airlines": [
+        "Afcom Cargo",
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH",
+        "VHHH"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Johannesburg–O. R. Tambo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O._R._Tambo_International_Airport",
+      "codes": [
+        "JNB",
+        "FAOR",
+        "FAOR"
+      ],
+      "airlines": [
+        "Magma Aviation"
+      ]
+    },
+    {
       "city": "Kunming",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
       "codes": [
@@ -1020,16 +1071,38 @@
       "airlines": [
         "SF Airlines"
       ]
+    },
+    {
+      "city": "Malé",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Velana_International_Airport",
+      "codes": [
+        "MLE",
+        "VRMM",
+        "VRMM"
+      ],
+      "airlines": [
+        "Afcom Cargo"
+      ]
     }
   ],
   "airlines_destinations_cargo": {
+    "Afcom Cargo": [
+      "Chennai",
+      "Malé"
+    ],
+    "Magma Aviation": [
+      "Hong Kong",
+      "Johannesburg–O. R. Tambo"
+    ],
     "SF Airlines": [
       "Kunming"
     ],
     "Turkish Cargo": [
-      "Bengaluru"
+      "Bengaluru",
+      "Chennai",
+      "Istanbul"
     ]
   },
-  "date-time-parse": "2026-08-30T02:53:11Z",
-  "date-time-wikidata": "2026-08-28T16:06:47Z"
+  "date-time-parse": "2026-09-06T02:16:44Z",
+  "date-time-wikidata": "2026-09-01T04:34:49Z"
 }

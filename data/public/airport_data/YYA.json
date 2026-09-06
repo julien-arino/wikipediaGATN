@@ -14,17 +14,31 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Yueyang_Sanhe_Airport",
-  "outdegree": 10,
-  "number_airlines": 6,
+  "outdegree": 15,
+  "number_airlines": 8,
   "airlines": [
     "Beijing Capital Airlines",
     "Chengdu Airlines",
+    "China United Airlines",
     "Colorful Guizhou Airlines",
     "Donghai Airlines",
     "Hainan Airlines",
+    "Tianjin Air Cargo",
     "Tianjin Airlines"
   ],
   "destinations": [
+    {
+      "city": "Bangkok-Suvarnabhumi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS",
+        "VTBS"
+      ],
+      "airlines": [
+        "Tianjin Air Cargo"
+      ]
+    },
     {
       "city": "Beijing–Capital",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
@@ -35,6 +49,18 @@
       ],
       "airlines": [
         "Hainan Airlines"
+      ]
+    },
+    {
+      "city": "Beijing–Daxing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport",
+      "codes": [
+        "PKX",
+        "ZBAD",
+        "ZBAD"
+      ],
+      "airlines": [
+        "China United Airlines"
       ]
     },
     {
@@ -63,6 +89,18 @@
       ]
     },
     {
+      "city": "Dhaka",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hazrat_Shahjalal_Airport",
+      "codes": [
+        "DAC",
+        "VGHS",
+        "VGHS"
+      ],
+      "airlines": [
+        "Tianjin Air Cargo"
+      ]
+    },
+    {
       "city": "Fuzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport",
       "codes": [
@@ -88,6 +126,18 @@
       ]
     },
     {
+      "city": "Hanoi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_Airport",
+      "codes": [
+        "HAN",
+        "VVNB",
+        "VVNB"
+      ],
+      "airlines": [
+        "Tianjin Air Cargo"
+      ]
+    },
+    {
       "city": "Ningbo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport",
       "codes": [
@@ -97,6 +147,18 @@
       ],
       "airlines": [
         "Colorful Guizhou Airlines"
+      ]
+    },
+    {
+      "city": "Quanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport",
+      "codes": [
+        "JJN",
+        "ZSQZ",
+        "ZSQZ"
+      ],
+      "airlines": [
+        "China United Airlines"
       ]
     },
     {
@@ -158,6 +220,10 @@
       "Chengdu–Tianfu",
       "Shanghai–Pudong"
     ],
+    "China United Airlines": [
+      "Beijing–Daxing",
+      "Quanzhou"
+    ],
     "Colorful Guizhou Airlines": [
       "Chongqing",
       "Ningbo"
@@ -174,6 +240,11 @@
       "Xi'an",
       "Xiamen",
       "Yulin (Shaanxi)"
+    ],
+    "Tianjin Air Cargo": [
+      "Bangkok-Suvarnabhumi",
+      "Dhaka",
+      "Hanoi"
     ]
   },
   "outdegree_cargo": 0,
@@ -181,6 +252,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-05-24T00:43:30Z",
-  "date-time-wikidata": "2026-05-21T18:08:05Z"
+  "date-time-parse": "2026-09-06T02:22:56Z",
+  "date-time-wikidata": "2026-09-04T09:04:37Z"
 }

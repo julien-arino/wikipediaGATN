@@ -14,9 +14,10 @@
   "admin1_name": "Lambayeque",
   "admin2_name": "Provincia de Chiclayo",
   "wikipedia_url": "https://en.wikipedia.org/wiki/FAP_Captain_José_Abelardo_Quiñones_González_International_Airport",
-  "outdegree": 4,
-  "number_airlines": 5,
+  "outdegree": 6,
+  "number_airlines": 6,
   "airlines": [
+    "Aeroregional",
     "Copa Airlines",
     "JetSmart Perú",
     "LATAM Perú",
@@ -24,6 +25,18 @@
     "Star Perú"
   ],
   "destinations": [
+    {
+      "city": "Cuenca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Lamar_International_Airport",
+      "codes": [
+        "CUE",
+        "SECU",
+        "SECU"
+      ],
+      "airlines": [
+        "Aeroregional"
+      ]
+    },
     {
       "city": "Iquitos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Coronel_FAP_Francisco_Secada_Vignetta_International_Airport",
@@ -64,6 +77,18 @@
       ]
     },
     {
+      "city": "Quito",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariscal_Sucre_International_Airport",
+      "codes": [
+        "UIO",
+        "SEQM",
+        "SEQM"
+      ],
+      "airlines": [
+        "LATAM Perú"
+      ]
+    },
+    {
       "city": "Tarapoto",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cadete_FAP_Guillermo_del_Castillo_Paredes_Airport",
       "codes": [
@@ -77,6 +102,9 @@
     }
   ],
   "airlines_destinations": {
+    "Aeroregional": [
+      "Cuenca"
+    ],
     "Copa Airlines": [
       "Panama City–Tocumen"
     ],
@@ -84,7 +112,8 @@
       "Lima"
     ],
     "LATAM Perú": [
-      "Lima"
+      "Lima",
+      "Quito"
     ],
     "Sky Airline Peru": [
       "Lima"
@@ -100,6 +129,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:05:29Z",
-  "date-time-wikidata": "2026-07-07T17:43:40Z"
+  "date-time-parse": "2026-09-13T02:28:47Z",
+  "date-time-wikidata": "2026-09-09T13:55:34Z"
 }

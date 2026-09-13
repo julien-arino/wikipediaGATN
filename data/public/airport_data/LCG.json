@@ -14,16 +14,29 @@
   "admin1_name": "Galicia [Galicia]",
   "admin2_name": "Provincia da Coruna",
   "wikipedia_url": "https://en.wikipedia.org/wiki/A_Coruña_Airport",
-  "outdegree": 6,
-  "number_airlines": 5,
+  "outdegree": 11,
+  "number_airlines": 6,
   "airlines": [
     "Air Europa",
     "Binter Canarias",
     "Iberia",
+    "Volotea",
     "Vueling",
     "easyJet"
   ],
   "destinations": [
+    {
+      "city": "Alicante",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alicante–Elche_Miguel_Hernández_Airport",
+      "codes": [
+        "ALC",
+        "LEAL",
+        "LEAL"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
     {
       "city": "Barcelona",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Barcelona–El_Prat_Airport",
@@ -34,6 +47,18 @@
       ],
       "airlines": [
         "Vueling"
+      ]
+    },
+    {
+      "city": "Bilbao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_Airport",
+      "codes": [
+        "BIO",
+        "LEBB",
+        "LEBB"
+      ],
+      "airlines": [
+        "Volotea"
       ]
     },
     {
@@ -75,7 +100,7 @@
     },
     {
       "city": "Milan–Malpensa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan–Malpensa",
       "codes": [
         "MXP",
         "LIMC",
@@ -83,6 +108,30 @@
       ],
       "airlines": [
         "easyJet"
+      ]
+    },
+    {
+      "city": "Málaga",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Málaga_Airport",
+      "codes": [
+        "AGP",
+        "LEMG",
+        "LEMG"
+      ],
+      "airlines": [
+        "Volotea"
+      ]
+    },
+    {
+      "city": "Seville",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Pablo_Airport",
+      "codes": [
+        "SVQ",
+        "LEZL",
+        "LEZL"
+      ],
+      "airlines": [
+        "Volotea"
       ]
     },
     {
@@ -96,6 +145,18 @@
       "airlines": [
         "Binter Canarias",
         "Vueling"
+      ]
+    },
+    {
+      "city": "Valencia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valencia_Airport",
+      "codes": [
+        "VLC",
+        "LEVC",
+        "LEVC"
+      ],
+      "airlines": [
+        "Volotea"
       ]
     }
   ],
@@ -114,6 +175,13 @@
     "Iberia": [
       "Madrid"
     ],
+    "Volotea": [
+      "Alicante",
+      "Bilbao",
+      "Málaga",
+      "Seville",
+      "Valencia"
+    ],
     "Vueling": [
       "Barcelona",
       "Tenerife–North"
@@ -124,6 +192,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-08-23T00:58:25Z",
-  "date-time-wikidata": "2026-08-16T09:25:15Z"
+  "date-time-parse": "2026-09-13T02:31:21Z",
+  "date-time-wikidata": "2026-09-12T20:08:50Z"
 }

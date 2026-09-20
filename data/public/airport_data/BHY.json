@@ -14,24 +14,25 @@
   "admin1_name": "Guangxi Zhuangzu Zizhiqu",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Beihai_Fucheng_Airport",
-  "outdegree": 25,
-  "number_airlines": 15,
+  "outdegree": 28,
+  "number_airlines": 16,
   "airlines": [
     "Air Chang'an",
     "Air China",
+    "Air Travel",
     "Chengdu Airlines",
     "China Eastern Airlines",
     "China Express Airlines",
     "China Southern Airlines",
     "China United Airlines",
+    "Hainan Airlines",
     "Jiangxi Air",
-    "Qingdao Airlines",
     "Sichuan Airlines",
     "Spring Airlines",
     "Tianjin Airlines",
-    "Tibet Airlines",
     "West Air",
-    "XiamenAir"
+    "XiamenAir",
+    "Xizang Airlines"
   ],
   "destinations": [
     {
@@ -55,6 +56,8 @@
         "ZBAD"
       ],
       "airlines": [
+        "Air China",
+        "China Eastern Airlines",
         "China United Airlines"
       ]
     },
@@ -67,7 +70,7 @@
         "ZGHA"
       ],
       "airlines": [
-        "Qingdao Airlines"
+        "Air Travel"
       ]
     },
     {
@@ -79,7 +82,9 @@
         "ZUUU"
       ],
       "airlines": [
-        "Tibet Airlines"
+        "Air China",
+        "Chengdu Airlines",
+        "Xizang Airlines"
       ]
     },
     {
@@ -93,7 +98,7 @@
       "airlines": [
         "Air China",
         "Chengdu Airlines",
-        "Qingdao Airlines",
+        "Jiangxi Air",
         "Sichuan Airlines"
       ]
     },
@@ -172,27 +177,15 @@
       ]
     },
     {
-      "city": "Lhasa",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Lhasa_Gonggar_International_Airport",
+      "city": "Lanzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lanzhou_Zhongchuan_International_Airport",
       "codes": [
-        "LXA",
-        "ZULS",
-        "ZULS"
+        "LHW",
+        "ZLLL",
+        "ZLLL"
       ],
       "airlines": [
-        "Tibet Airlines"
-      ]
-    },
-    {
-      "city": "Nanchang",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanchang_Changbei_International_Airport",
-      "codes": [
-        "KHN",
-        "ZSCN",
-        "ZSCN"
-      ],
-      "airlines": [
-        "Jiangxi Air"
+        "Hainan Airlines"
       ]
     },
     {
@@ -204,7 +197,7 @@
         "ZUNC"
       ],
       "airlines": [
-        "Tibet Airlines"
+        "Hainan Airlines"
       ]
     },
     {
@@ -240,8 +233,7 @@
         "ZYTX"
       ],
       "airlines": [
-        "Chengdu Airlines",
-        "Spring Airlines"
+        "Chengdu Airlines"
       ]
     },
     {
@@ -269,6 +261,18 @@
       ]
     },
     {
+      "city": "Tianjin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport",
+      "codes": [
+        "TSN",
+        "ZBTJ",
+        "ZBTJ"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
       "city": "Tongren",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tongren_Fenghuang_Airport",
       "codes": [
@@ -281,6 +285,18 @@
       ]
     },
     {
+      "city": "Urumqi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Urumqi_Tianshan_International_Airport",
+      "codes": [
+        "URC",
+        "ZWWW",
+        "ZWWW"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
       "city": "Wuhan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport",
       "codes": [
@@ -290,7 +306,8 @@
       ],
       "airlines": [
         "Chengdu Airlines",
-        "China Eastern Airlines"
+        "China Eastern Airlines",
+        "Tianjin Airlines"
       ]
     },
     {
@@ -303,8 +320,7 @@
       ],
       "airlines": [
         "Air Chang'an",
-        "Sichuan Airlines",
-        "Tianjin Airlines"
+        "Sichuan Airlines"
       ]
     },
     {
@@ -320,6 +336,18 @@
       ]
     },
     {
+      "city": "Yibin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yibin_Wuliangye_Airport",
+      "codes": [
+        "YBP",
+        "ZUYB",
+        "ZUYB"
+      ],
+      "airlines": [
+        "Sichuan Airlines"
+      ]
+    },
+    {
       "city": "Yichang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Yichang_Sanxia_Airport",
       "codes": [
@@ -332,6 +360,18 @@
       ]
     },
     {
+      "city": "Yulin (Shaanxi)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yulin_Yuyang_Airport",
+      "codes": [
+        "UYN",
+        "ZLYL",
+        "ZLYL"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
+    },
+    {
       "city": "Zhengzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport",
       "codes": [
@@ -340,26 +380,31 @@
         "ZHCC"
       ],
       "airlines": [
-        "Air Chang'an",
         "West Air"
       ]
     }
   ],
   "airlines_destinations": {
     "Air Chang'an": [
-      "Xi'an",
-      "Zhengzhou"
+      "Xi'an"
     ],
     "Air China": [
       "Beijing–Capital",
+      "Beijing–Daxing",
+      "Chengdu–Shuangliu",
       "Chengdu–Tianfu"
     ],
+    "Air Travel": [
+      "Changsha"
+    ],
     "Chengdu Airlines": [
+      "Chengdu–Shuangliu",
       "Chengdu–Tianfu",
       "Shenyang",
       "Wuhan"
     ],
     "China Eastern Airlines": [
+      "Beijing–Daxing",
       "Nanjing",
       "Shanghai–Pudong",
       "Taiyuan",
@@ -377,31 +422,29 @@
     "China United Airlines": [
       "Beijing–Daxing"
     ],
-    "Jiangxi Air": [
-      "Nanchang"
+    "Hainan Airlines": [
+      "Lanzhou",
+      "Nanchong"
     ],
-    "Qingdao Airlines": [
-      "Changsha",
+    "Jiangxi Air": [
       "Chengdu–Tianfu"
     ],
     "Sichuan Airlines": [
       "Chengdu–Tianfu",
       "Chongqing",
       "Harbin",
-      "Xi'an"
+      "Tianjin",
+      "Urumqi",
+      "Xi'an",
+      "Yibin"
     ],
     "Spring Airlines": [
       "Dalian",
-      "Shenyang",
       "Shijiazhuang"
     ],
     "Tianjin Airlines": [
-      "Xi'an"
-    ],
-    "Tibet Airlines": [
-      "Chengdu–Shuangliu",
-      "Lhasa",
-      "Nanchong"
+      "Wuhan",
+      "Yulin (Shaanxi)"
     ],
     "West Air": [
       "Chongqing",
@@ -410,6 +453,9 @@
     "XiamenAir": [
       "Fuzhou",
       "Hangzhou"
+    ],
+    "Xizang Airlines": [
+      "Chengdu–Shuangliu"
     ]
   },
   "outdegree_cargo": 0,
@@ -417,6 +463,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-08-23T00:54:41Z",
-  "date-time-wikidata": "2026-08-18T16:39:51Z"
+  "date-time-parse": "2026-09-20T02:44:33Z",
+  "date-time-wikidata": "2026-09-14T08:51:18Z"
 }

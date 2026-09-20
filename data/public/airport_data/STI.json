@@ -14,11 +14,125 @@
   "admin1_name": "Santiago",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cibao_International_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
+  "outdegree": 7,
+  "number_airlines": 6,
+  "airlines": [
+    "Air Europa",
+    "American Airlines",
+    "Copa Airlines",
+    "Delta Airlines",
+    "Frontier Airlines",
+    "JetBlue"
+  ],
+  "destinations": [
+    {
+      "city": "Fort Lauderdale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fort_Lauderdale–Hollywood_International_Airport",
+      "codes": [
+        "FLL",
+        "KFLL",
+        "KFLL"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Madrid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrid–Barajas_Airport",
+      "codes": [
+        "MAD",
+        "LEMD",
+        "LEMD"
+      ],
+      "airlines": [
+        "Air Europa"
+      ]
+    },
+    {
+      "city": "New York-JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Delta Airlines"
+      ]
+    },
+    {
+      "city": "Orlando",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_International_Airport",
+      "codes": [
+        "MCO",
+        "KMCO",
+        "KMCO"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    },
+    {
+      "city": "Panama City–Tocumen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tocumen_International_Airport",
+      "codes": [
+        "PTY",
+        "MPTO",
+        "MPTO"
+      ],
+      "airlines": [
+        "Copa Airlines"
+      ]
+    },
+    {
+      "city": "Philadelphia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_International_Airport",
+      "codes": [
+        "PHL",
+        "KPHL",
+        "KPHL"
+      ],
+      "airlines": [
+        "American Airlines",
+        "Frontier Airlines"
+      ]
+    },
+    {
+      "city": "San Juan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luis_Muñoz_Marín_International_Airport",
+      "codes": [
+        "SJU",
+        "TJSJ",
+        "TJSJ"
+      ],
+      "airlines": [
+        "JetBlue"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Europa": [
+      "Madrid"
+    ],
+    "American Airlines": [
+      "Philadelphia"
+    ],
+    "Copa Airlines": [
+      "Panama City–Tocumen"
+    ],
+    "Delta Airlines": [
+      "New York-JFK"
+    ],
+    "Frontier Airlines": [
+      "Philadelphia"
+    ],
+    "JetBlue": [
+      "Fort Lauderdale",
+      "Orlando",
+      "San Juan"
+    ]
+  },
   "outdegree_cargo": 2,
   "number_airlines_cargo": 1,
   "airlines_cargo": [
@@ -56,6 +170,6 @@
       "Puerto Plata"
     ]
   },
-  "date-time-parse": "2026-09-13T02:33:57Z",
-  "date-time-wikidata": "2026-09-09T19:07:43Z"
+  "date-time-parse": "2026-09-20T02:49:45Z",
+  "date-time-wikidata": "2026-09-14T08:24:01Z"
 }

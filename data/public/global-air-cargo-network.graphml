@@ -263,8 +263,8 @@
       <data key="d0">43.355278</data>
       <data key="d1">77.044722</data>
       <data key="d2">681.0</data>
-      <data key="d3">9.0</data>
-      <data key="d4">4.0</data>
+      <data key="d3">10.0</data>
+      <data key="d4">5.0</data>
       <data key="d5">Almaty</data>
       <data key="d6">KAZ</data>
       <data key="d7">Kazakhstan</data>
@@ -2576,6 +2576,19 @@
       <data key="d10">https://en.wikipedia.org/wiki/Douglas–Charles_Airport</data>
     </node>
     <node id="DPA" />
+    <node id="DPS">
+      <data key="d0">-8.748056</data>
+      <data key="d1">115.1675</data>
+      <data key="d2">4.0</data>
+      <data key="d3">3.0</data>
+      <data key="d4">1.0</data>
+      <data key="d5">Bali</data>
+      <data key="d6">IDN</data>
+      <data key="d7">Indonesia</data>
+      <data key="d8">ID-BA</data>
+      <data key="d9">Bali</data>
+      <data key="d10">https://en.wikipedia.org/wiki/Ngurah_Rai_International_Airport</data>
+    </node>
     <node id="DRO">
       <data key="d0">37.151389</data>
       <data key="d1">-107.753889</data>
@@ -9582,8 +9595,8 @@
       <data key="d0">-5.061667</data>
       <data key="d1">119.554167</data>
       <data key="d2">14.0</data>
-      <data key="d3">4.0</data>
-      <data key="d4">2.0</data>
+      <data key="d3">0.0</data>
+      <data key="d4">0.0</data>
       <data key="d5">Makassar</data>
       <data key="d6">IDN</data>
       <data key="d7">Indonesia</data>
@@ -10135,8 +10148,8 @@
       <data key="d0">53.31</data>
       <data key="d1">-113.579444</data>
       <data key="d2">723.29</data>
-      <data key="d3">12.0</data>
-      <data key="d4">7.0</data>
+      <data key="d3">8.0</data>
+      <data key="d4">4.0</data>
       <data key="d5">Edmonton Metropolitan Region</data>
       <data key="d6">CAN</data>
       <data key="d7">Canada</data>
@@ -11055,6 +11068,9 @@
       <data key="d11">1</data>
     </edge>
     <edge source="ALA" target="DOH">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="ALA" target="DXB">
       <data key="d11">1</data>
     </edge>
     <edge source="ALA" target="GYD">
@@ -12896,11 +12912,11 @@
     <edge source="CGK" target="PKU">
       <data key="d11">1</data>
     </edge>
-    <edge source="CGK" target="PVG">
-      <data key="d11">1</data>
-    </edge>
     <edge source="CGK" target="SGN">
       <data key="d11">2</data>
+    </edge>
+    <edge source="CGK" target="SHA">
+      <data key="d11">1</data>
     </edge>
     <edge source="CGK" target="SIN">
       <data key="d11">5</data>
@@ -14162,6 +14178,15 @@
     <edge source="DOM" target="UVF">
       <data key="d11">1</data>
     </edge>
+    <edge source="DPS" target="HKG">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="DPS" target="NRT">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="DPS" target="SYD">
+      <data key="d11">1</data>
+    </edge>
     <edge source="DRO" target="ABQ">
       <data key="d11">1</data>
     </edge>
@@ -15165,7 +15190,7 @@
       <data key="d11">1</data>
     </edge>
     <edge source="GIG" target="LIM">
-      <data key="d11">1</data>
+      <data key="d11">2</data>
     </edge>
     <edge source="GIG" target="LUX">
       <data key="d11">1</data>
@@ -15183,7 +15208,7 @@
       <data key="d11">1</data>
     </edge>
     <edge source="GIG" target="SCL">
-      <data key="d11">2</data>
+      <data key="d11">1</data>
     </edge>
     <edge source="GIG" target="UIO">
       <data key="d11">1</data>
@@ -23717,18 +23742,6 @@
     <edge source="UNK" target="ANC">
       <data key="d11">2</data>
     </edge>
-    <edge source="UPG" target="CGK">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="UPG" target="HKG">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="UPG" target="SIN">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="UPG" target="SUB">
-      <data key="d11">1</data>
-    </edge>
     <edge source="URC" target="ADD">
       <data key="d11">1</data>
     </edge>
@@ -24059,35 +24072,23 @@
     <edge source="YCO" target="YZF">
       <data key="d11">1</data>
     </edge>
-    <edge source="YEG" target="ANC">
-      <data key="d11">1</data>
-    </edge>
     <edge source="YEG" target="CVG">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="YEG" target="ICN">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="YEG" target="LAX">
       <data key="d11">1</data>
     </edge>
     <edge source="YEG" target="MEM">
       <data key="d11">1</data>
     </edge>
     <edge source="YEG" target="YHM">
-      <data key="d11">2</data>
-    </edge>
-    <edge source="YEG" target="YMX">
       <data key="d11">1</data>
     </edge>
     <edge source="YEG" target="YVR">
-      <data key="d11">2</data>
+      <data key="d11">1</data>
     </edge>
     <edge source="YEG" target="YWG">
       <data key="d11">2</data>
     </edge>
     <edge source="YEG" target="YYC">
-      <data key="d11">4</data>
+      <data key="d11">2</data>
     </edge>
     <edge source="YEG" target="YYZ">
       <data key="d11">1</data>

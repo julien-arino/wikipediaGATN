@@ -100,7 +100,7 @@
     },
     {
       "city": "Chicago–O'Hare",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago–O'Hare",
       "codes": [
         "ORD",
         "KORD",
@@ -245,7 +245,7 @@
     },
     {
       "city": "Houston–Intercontinental",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houston–Intercontinental",
       "codes": [
         "IAH",
         "KIAH",
@@ -307,7 +307,7 @@
     },
     {
       "city": "Kitchener/Waterloo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Region_of_Waterloo_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kitchener/Waterloo",
       "codes": [
         "YKF",
         "CYKF",
@@ -405,7 +405,7 @@
     },
     {
       "city": "Montréal–Trudeau",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau",
       "codes": [
         "YUL",
         "CYUL",
@@ -579,7 +579,7 @@
     },
     {
       "city": "Seattle/Tacoma",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle/Tacoma",
       "codes": [
         "SEA",
         "KSEA",
@@ -615,7 +615,7 @@
     },
     {
       "city": "Toronto–Pearson",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto–Pearson",
       "codes": [
         "YYZ",
         "CYYZ",
@@ -639,7 +639,6 @@
       "airlines": [
         "Air Canada",
         "Air Canada Express",
-        "Air Canada Rouge",
         "Flair Airlines",
         "WestJet"
       ]
@@ -691,6 +690,7 @@
         "CYZF"
       ],
       "airlines": [
+        "Air Canada",
         "Air Canada Express",
         "Air North",
         "Air Tindi",
@@ -703,7 +703,8 @@
     "Air Canada": [
       "Montréal–Trudeau",
       "Toronto–Pearson",
-      "Vancouver"
+      "Vancouver",
+      "Yellowknife"
     ],
     "Air Canada Express": [
       "Calgary",
@@ -713,8 +714,7 @@
     ],
     "Air Canada Rouge": [
       "Cancún",
-      "Montego Bay",
-      "Vancouver"
+      "Montego Bay"
     ],
     "Air North": [
       "Calgary",
@@ -811,30 +811,15 @@
       "Yellowknife"
     ]
   },
-  "outdegree_cargo": 12,
-  "number_airlines_cargo": 7,
+  "outdegree_cargo": 8,
+  "number_airlines_cargo": 4,
   "airlines_cargo": [
-    "Amazon Air",
     "Buffalo Airways",
     "Cargojet",
-    "DHL Aviation",
     "FedEx Express",
-    "FedEx Feeder",
-    "Korean Air Cargo"
+    "FedEx Feeder"
   ],
   "destinations_cargo": [
-    {
-      "city": "Anchorage",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Stevens_Anchorage_International_Airport",
-      "codes": [
-        "ANC",
-        "PANC",
-        "PANC"
-      ],
-      "airlines": [
-        "Korean Air Cargo"
-      ]
-    },
     {
       "city": "Calgary",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
@@ -844,9 +829,7 @@
         "CYYC"
       ],
       "airlines": [
-        "Amazon Air",
         "Cargojet",
-        "DHL Aviation",
         "FedEx Feeder"
       ]
     },
@@ -871,20 +854,7 @@
         "CYHM"
       ],
       "airlines": [
-        "Amazon Air",
         "Cargojet"
-      ]
-    },
-    {
-      "city": "Los Angeles",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
-      "codes": [
-        "LAX",
-        "KLAX",
-        "KLAX"
-      ],
-      "airlines": [
-        "Korean Air Cargo"
       ]
     },
     {
@@ -900,32 +870,8 @@
       ]
     },
     {
-      "city": "Montréal–Mirabel",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Mirabel_International_Airport",
-      "codes": [
-        "YMX",
-        "CYMX",
-        "CYMX"
-      ],
-      "airlines": [
-        "Cargojet"
-      ]
-    },
-    {
-      "city": "Seoul–Incheon",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Incheon_International_Airport",
-      "codes": [
-        "ICN",
-        "RKSI",
-        "RKSI"
-      ],
-      "airlines": [
-        "Korean Air Cargo"
-      ]
-    },
-    {
       "city": "Toronto–Pearson",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto–Pearson",
       "codes": [
         "YYZ",
         "CYYZ",
@@ -944,7 +890,6 @@
         "CYVR"
       ],
       "airlines": [
-        "Amazon Air",
         "Cargojet"
       ]
     },
@@ -975,11 +920,6 @@
     }
   ],
   "airlines_destinations_cargo": {
-    "Amazon Air": [
-      "Calgary",
-      "Hamilton (ON)",
-      "Vancouver"
-    ],
     "Buffalo Airways": [
       "Yellowknife"
     ],
@@ -987,12 +927,8 @@
       "Calgary",
       "Cincinnati",
       "Hamilton (ON)",
-      "Montréal–Mirabel",
       "Vancouver",
       "Winnipeg"
-    ],
-    "DHL Aviation": [
-      "Calgary"
     ],
     "FedEx Express": [
       "Memphis",
@@ -1001,13 +937,8 @@
     ],
     "FedEx Feeder": [
       "Calgary"
-    ],
-    "Korean Air Cargo": [
-      "Anchorage",
-      "Los Angeles",
-      "Seoul–Incheon"
     ]
   },
-  "date-time-parse": "2026-09-13T02:34:42Z",
-  "date-time-wikidata": "2026-09-11T22:26:20Z"
+  "date-time-parse": "2026-09-20T02:50:25Z",
+  "date-time-wikidata": "2026-09-19T16:19:54Z"
 }

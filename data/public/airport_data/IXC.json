@@ -14,10 +14,12 @@
   "admin1_name": "Chandīgarh",
   "admin2_name": "Chandigarh",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Chandigarh_Airport",
-  "outdegree": 11,
-  "number_airlines": 2,
+  "outdegree": 16,
+  "number_airlines": 4,
   "airlines": [
+    "Air India",
     "Air India Express",
+    "Alliance Air",
     "IndiGo"
   ],
   "destinations": [
@@ -58,6 +60,32 @@
       ]
     },
     {
+      "city": "Chennai",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chennai_Airport",
+      "codes": [
+        "MAA",
+        "VOMM",
+        "VOMM"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Airport",
+      "codes": [
+        "DEL",
+        "VIDP",
+        "VIDP"
+      ],
+      "airlines": [
+        "Air India",
+        "Alliance Air",
+        "IndiGo"
+      ]
+    },
+    {
       "city": "Dharamshala",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kangra_Airport",
       "codes": [
@@ -79,6 +107,18 @@
       ],
       "airlines": [
         "IndiGo"
+      ]
+    },
+    {
+      "city": "Hisar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hisar_Airport",
+      "codes": [
+        "HSS",
+        "VIHR",
+        "VIHR"
+      ],
+      "airlines": [
+        "Alliance Air"
       ]
     },
     {
@@ -112,6 +152,30 @@
         "IXJ",
         "VIJU",
         "VIJU"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Leh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leh_Airport",
+      "codes": [
+        "IXL",
+        "VILH",
+        "VILH"
+      ],
+      "airlines": [
+        "Air India"
+      ]
+    },
+    {
+      "city": "Lucknow",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lucknow_Airport",
+      "codes": [
+        "LKO",
+        "VILK",
+        "VILK"
       ],
       "airlines": [
         "IndiGo"
@@ -155,18 +219,29 @@
     }
   ],
   "airlines_destinations": {
+    "Air India": [
+      "Delhi",
+      "Leh"
+    ],
     "Air India Express": [
       "Bengaluru",
       "Pune"
     ],
+    "Alliance Air": [
+      "Delhi",
+      "Hisar"
+    ],
     "IndiGo": [
       "Abu Dhabi",
       "Ahmedabad",
+      "Chennai",
+      "Delhi",
       "Dharamshala",
       "Dubai–International",
       "Indore",
       "Jaipur",
       "Jammu",
+      "Lucknow",
       "Noida",
       "Srinagar"
     ]
@@ -176,6 +251,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-13T02:30:37Z",
-  "date-time-wikidata": "2026-09-10T21:26:20Z"
+  "date-time-parse": "2026-09-27T02:57:16Z",
+  "date-time-wikidata": "2026-09-25T13:08:29Z"
 }

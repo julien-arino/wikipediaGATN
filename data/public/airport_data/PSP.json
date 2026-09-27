@@ -14,16 +14,521 @@
   "admin1_name": "California",
   "admin2_name": "Riverside County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Springs_International_Airport",
-  "outdegree": 0,
-  "number_airlines": 0,
-  "airlines": [],
-  "destinations": [],
-  "airlines_destinations": {},
+  "outdegree": 33,
+  "number_airlines": 15,
+  "airlines": [
+    "Air Canada",
+    "Air Canada Rouge",
+    "Alaska Airlines",
+    "Allegiant Air",
+    "American Airlines",
+    "American Eagle",
+    "Delta Air Lines",
+    "Delta Connection",
+    "Flair Airlines",
+    "Porter Airlines",
+    "Southwest Airlines",
+    "Sun Country Airlines",
+    "United Airlines",
+    "United Express",
+    "WestJet"
+  ],
+  "destinations": [
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Austin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Austin–Bergstrom_International_Airport",
+      "codes": [
+        "AUS",
+        "KAUS",
+        "KAUS"
+      ],
+      "airlines": [
+        "Delta Connection",
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Bellingham",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bellingham_International_Airport",
+      "codes": [
+        "BLI",
+        "KBLI",
+        "KBLI"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Boise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boise_Airport",
+      "codes": [
+        "BOI",
+        "KBOI",
+        "KBOI"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Calgary",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Calgary_International_Airport",
+      "codes": [
+        "YYC",
+        "CYYC",
+        "CYYC"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Charlotte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlotte_Douglas_International_Airport",
+      "codes": [
+        "CLT",
+        "KCLT",
+        "KCLT"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–Midway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Midway_International_Airport",
+      "codes": [
+        "MDW",
+        "KMDW",
+        "KMDW"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD",
+        "KORD"
+      ],
+      "airlines": [
+        "American Airlines",
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Dallas/Fort Worth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Fort_Worth_International_Airport",
+      "codes": [
+        "DFW",
+        "KDFW",
+        "KDFW"
+      ],
+      "airlines": [
+        "American Airlines"
+      ]
+    },
+    {
+      "city": "Dallas–Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dallas_Love_Field",
+      "codes": [
+        "DAL",
+        "KDAL",
+        "KDAL"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Denver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
+      "codes": [
+        "DEN",
+        "KDEN",
+        "KDEN"
+      ],
+      "airlines": [
+        "Southwest Airlines",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "Des Moines",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Des_Moines_International_Airport",
+      "codes": [
+        "DSM",
+        "KDSM",
+        "KDSM"
+      ],
+      "airlines": [
+        "Allegiant Air"
+      ]
+    },
+    {
+      "city": "Edmonton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edmonton_International_Airport",
+      "codes": [
+        "YEG",
+        "CYEG",
+        "CYEG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Everett",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paine_Field",
+      "codes": [
+        "PAE",
+        "KPAE",
+        "KPAE"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Houston–Intercontinental",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Bush_Intercontinental_Airport",
+      "codes": [
+        "IAH",
+        "KIAH",
+        "KIAH"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Las Vegas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Reid_International_Airport",
+      "codes": [
+        "LAS",
+        "KLAS",
+        "KLAS"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX",
+        "KLAX"
+      ],
+      "airlines": [
+        "United Express"
+      ]
+    },
+    {
+      "city": "Minneapolis/St. Paul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minneapolis–Saint_Paul_International_Airport",
+      "codes": [
+        "MSP",
+        "KMSP",
+        "KMSP"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Sun Country Airlines"
+      ]
+    },
+    {
+      "city": "New York–JFK",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport",
+      "codes": [
+        "JFK",
+        "KJFK",
+        "KJFK"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Newark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Newark_Liberty_International_Airport",
+      "codes": [
+        "EWR",
+        "KEWR",
+        "KEWR"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Oakland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oakland_San_Francisco_Bay_Airport",
+      "codes": [
+        "OAK",
+        "KOAK",
+        "KOAK"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Phoenix–Sky Harbor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
+      "codes": [
+        "PHX",
+        "KPHX",
+        "KPHX"
+      ],
+      "airlines": [
+        "American Airlines",
+        "American Eagle"
+      ]
+    },
+    {
+      "city": "Portland (OR)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portland_International_Airport",
+      "codes": [
+        "PDX",
+        "KPDX",
+        "KPDX"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Sacramento",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sacramento_International_Airport",
+      "codes": [
+        "SMF",
+        "KSMF",
+        "KSMF"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Salt Lake City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_Lake_City_International_Airport",
+      "codes": [
+        "SLC",
+        "KSLC",
+        "KSLC"
+      ],
+      "airlines": [
+        "Delta Air Lines",
+        "Delta Connection"
+      ]
+    },
+    {
+      "city": "San Francisco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco_International_Airport",
+      "codes": [
+        "SFO",
+        "KSFO",
+        "KSFO"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "United Airlines",
+        "United Express"
+      ]
+    },
+    {
+      "city": "San Jose (CA)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/San_Jose_International_Airport",
+      "codes": [
+        "SJC",
+        "KSJC",
+        "KSJC"
+      ],
+      "airlines": [
+        "Southwest Airlines"
+      ]
+    },
+    {
+      "city": "Santa Rosa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_M._Schulz–Sonoma_County_Airport",
+      "codes": [
+        "STS",
+        "KSTS",
+        "KSTS"
+      ],
+      "airlines": [
+        "Alaska Airlines"
+      ]
+    },
+    {
+      "city": "Seattle/Tacoma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seattle–Tacoma_International_Airport",
+      "codes": [
+        "SEA",
+        "KSEA",
+        "KSEA"
+      ],
+      "airlines": [
+        "Alaska Airlines",
+        "Delta Air Lines"
+      ]
+    },
+    {
+      "city": "Toronto–Pearson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toronto_Pearson_International_Airport",
+      "codes": [
+        "YYZ",
+        "CYYZ",
+        "CYYZ"
+      ],
+      "airlines": [
+        "Air Canada Rouge",
+        "Porter Airlines"
+      ]
+    },
+    {
+      "city": "Vancouver",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vancouver_International_Airport",
+      "codes": [
+        "YVR",
+        "CYVR",
+        "CYVR"
+      ],
+      "airlines": [
+        "Air Canada",
+        "Flair Airlines",
+        "WestJet"
+      ]
+    },
+    {
+      "city": "Washington–Dulles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dulles_International_Airport",
+      "codes": [
+        "IAD",
+        "KIAD",
+        "KIAD"
+      ],
+      "airlines": [
+        "United Airlines"
+      ]
+    },
+    {
+      "city": "Winnipeg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winnipeg_James_Armstrong_Richardson_International_Airport",
+      "codes": [
+        "YWG",
+        "CYWG",
+        "CYWG"
+      ],
+      "airlines": [
+        "WestJet"
+      ]
+    }
+  ],
+  "airlines_destinations": {
+    "Air Canada": [
+      "Vancouver"
+    ],
+    "Air Canada Rouge": [
+      "Toronto–Pearson"
+    ],
+    "Alaska Airlines": [
+      "Boise",
+      "Everett",
+      "New York–JFK",
+      "Portland (OR)",
+      "San Francisco",
+      "Santa Rosa",
+      "Seattle/Tacoma"
+    ],
+    "Allegiant Air": [
+      "Bellingham",
+      "Des Moines"
+    ],
+    "American Airlines": [
+      "Charlotte",
+      "Chicago–O'Hare",
+      "Dallas/Fort Worth",
+      "Phoenix–Sky Harbor"
+    ],
+    "American Eagle": [
+      "Phoenix–Sky Harbor"
+    ],
+    "Delta Air Lines": [
+      "Atlanta",
+      "Minneapolis/St. Paul",
+      "New York–JFK",
+      "Salt Lake City",
+      "Seattle/Tacoma"
+    ],
+    "Delta Connection": [
+      "Austin",
+      "Salt Lake City"
+    ],
+    "Flair Airlines": [
+      "Vancouver"
+    ],
+    "Porter Airlines": [
+      "Toronto–Pearson"
+    ],
+    "Southwest Airlines": [
+      "Austin",
+      "Chicago–Midway",
+      "Dallas–Love",
+      "Denver",
+      "Las Vegas",
+      "Oakland",
+      "Sacramento",
+      "San Jose (CA)"
+    ],
+    "Sun Country Airlines": [
+      "Minneapolis/St. Paul"
+    ],
+    "United Airlines": [
+      "Chicago–O'Hare",
+      "Denver",
+      "Newark",
+      "San Francisco",
+      "Washington–Dulles"
+    ],
+    "United Express": [
+      "Denver",
+      "Houston–Intercontinental",
+      "Los Angeles",
+      "San Francisco"
+    ],
+    "WestJet": [
+      "Calgary",
+      "Edmonton",
+      "Vancouver",
+      "Winnipeg"
+    ]
+  },
   "outdegree_cargo": 0,
   "number_airlines_cargo": 0,
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-20T02:49:07Z",
-  "date-time-wikidata": "2026-09-18T01:17:55Z"
+  "date-time-parse": "2026-09-27T02:59:07Z",
+  "date-time-wikidata": "2026-09-23T05:30:54Z"
 }

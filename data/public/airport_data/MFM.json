@@ -15,12 +15,13 @@
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
   "outdegree": 42,
-  "number_airlines": 23,
+  "number_airlines": 26,
   "airlines": [
     "Air Busan",
     "Air China",
     "Air Macau",
     "AirAsia",
+    "Bamboo Airways",
     "Cambodia Airways",
     "Cebu Pacific",
     "China Eastern Airlines",
@@ -38,10 +39,26 @@
     "Starlux Airlines",
     "Thai AirAsia",
     "Thai Lion Air",
+    "Thai VietJet Air",
+    "Vietravel Airlines",
     "West Air",
     "XiamenAir"
   ],
   "destinations": [
+    {
+      "city": "Bangkok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS",
+        "VTBS"
+      ],
+      "airlines": [
+        "Air Macau",
+        "AirAsia",
+        "Thai VietJet Air"
+      ]
+    },
     {
       "city": "Bangkok–Don Mueang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bangkok–Don_Mueang",
@@ -53,18 +70,6 @@
       "airlines": [
         "Thai AirAsia",
         "Thai Lion Air"
-      ]
-    },
-    {
-      "city": "Bangkok–Suvarnabhumi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "codes": [
-        "BKK",
-        "VTBS",
-        "VTBS"
-      ],
-      "airlines": [
-        "Air Macau"
       ]
     },
     {
@@ -162,7 +167,9 @@
         "VVDN"
       ],
       "airlines": [
-        "Air Macau"
+        "Air Macau",
+        "Bamboo Airways",
+        "Vietravel Airlines"
       ]
     },
     {
@@ -236,7 +243,8 @@
         "VVNB"
       ],
       "airlines": [
-        "Air Macau"
+        "Air Macau",
+        "Vietravel Airlines"
       ]
     },
     {
@@ -299,6 +307,7 @@
       ],
       "airlines": [
         "Air Macau",
+        "AirAsia",
         "Cebu Pacific"
       ]
     },
@@ -609,8 +618,13 @@
       "Xiamen"
     ],
     "AirAsia": [
+      "Bangkok",
       "Kuala Lumpur–International",
+      "Manila",
       "Tawau"
+    ],
+    "Bamboo Airways": [
+      "Da Nang"
     ],
     "Cambodia Airways": [
       "Vladivostok"
@@ -673,6 +687,13 @@
     "Thai Lion Air": [
       "Bangkok–Don Mueang"
     ],
+    "Thai VietJet Air": [
+      "Bangkok"
+    ],
+    "Vietravel Airlines": [
+      "Da Nang",
+      "Hanoi"
+    ],
     "West Air": [
       "Chongqing"
     ],
@@ -707,6 +728,6 @@
       "Madrid"
     ]
   },
-  "date-time-parse": "2026-08-30T02:57:02Z",
-  "date-time-wikidata": "2026-08-25T14:11:19Z"
+  "date-time-parse": "2026-10-04T03:44:47Z",
+  "date-time-wikidata": "2026-10-03T10:23:26Z"
 }

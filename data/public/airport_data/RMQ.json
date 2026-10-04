@@ -14,12 +14,15 @@
   "admin1_name": "Taichung",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Taichung_International_Airport",
-  "outdegree": 12,
-  "number_airlines": 6,
+  "outdegree": 14,
+  "number_airlines": 9,
   "airlines": [
+    "Air Macau",
     "China Airlines",
     "China Eastern Airlines",
+    "HK Express",
     "Jin Air",
+    "Loong Air",
     "Shandong Airlines",
     "Starlux Airlines",
     "Tigerair Taiwan"
@@ -39,15 +42,40 @@
       ]
     },
     {
-      "city": "Chengdu–Tianfu",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu–Tianfu",
+      "city": "Chengdu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
       "codes": [
         "TFU",
         "ZUTF",
         "ZUTF"
       ],
       "airlines": [
-        "China Eastern Airlines"
+        "China Eastern Airlines",
+        "Loong Air"
+      ]
+    },
+    {
+      "city": "Hong Kong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
+      "codes": [
+        "HKG",
+        "VHHH",
+        "VHHH"
+      ],
+      "airlines": [
+        "HK Express"
+      ]
+    },
+    {
+      "city": "Kitakyushu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kitakyushu_Airport",
+      "codes": [
+        "KKJ",
+        "RJFR",
+        "RJFR"
+      ],
+      "airlines": [
+        "China Airlines"
       ]
     },
     {
@@ -83,6 +111,7 @@
         "VMMC"
       ],
       "airlines": [
+        "Air Macau",
         "Starlux Airlines"
       ]
     },
@@ -174,15 +203,25 @@
     }
   ],
   "airlines_destinations": {
+    "Air Macau": [
+      "Macau"
+    ],
     "China Airlines": [
+      "Kitakyushu",
       "Naha"
     ],
     "China Eastern Airlines": [
       "Chengdu–Tianfu"
     ],
+    "HK Express": [
+      "Hong Kong"
+    ],
     "Jin Air": [
       "Busan",
       "Seoul–Incheon"
+    ],
+    "Loong Air": [
+      "Chengdu"
     ],
     "Starlux Airlines": [
       "Busan",
@@ -207,6 +246,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-20T02:49:16Z",
-  "date-time-wikidata": "2026-09-13T17:58:40Z"
+  "date-time-parse": "2026-10-04T03:45:52Z",
+  "date-time-wikidata": "2026-09-29T11:52:43Z"
 }

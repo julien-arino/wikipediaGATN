@@ -14,13 +14,14 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
-  "outdegree": 46,
-  "number_airlines": 38,
+  "outdegree": 48,
+  "number_airlines": 42,
   "airlines": [
     "Aero K",
     "Air Astana",
     "Air Busan",
     "Air Cambodia",
+    "Air Macau",
     "Air Premia",
     "Air Seoul",
     "AirAsia",
@@ -36,6 +37,8 @@
     "HK Express",
     "Hai Au Aviation",
     "Hong Kong Airlines",
+    "Jeju Air",
+    "Jin Air",
     "Korean Air",
     "Lao Airlines",
     "Malaysia Airlines",
@@ -54,7 +57,8 @@
     "Tigerair Taiwan",
     "Trinity Airways",
     "VietJet Air",
-    "Vietnam Airlines"
+    "Vietnam Airlines",
+    "Vietravel Airlines"
   ],
   "destinations": [
     {
@@ -95,6 +99,22 @@
       ]
     },
     {
+      "city": "Bangkok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
+      "codes": [
+        "BKK",
+        "VTBS",
+        "VTBS"
+      ],
+      "airlines": [
+        "AirAsia",
+        "Emirates",
+        "Thai Airways International",
+        "Thai VietJet Air",
+        "Vietnam Airlines"
+      ]
+    },
+    {
       "city": "Bangkok–Don Mueang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport",
       "codes": [
@@ -104,21 +124,6 @@
       ],
       "airlines": [
         "Thai AirAsia"
-      ]
-    },
-    {
-      "city": "Bangkok–Suvarnabhumi",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport",
-      "codes": [
-        "BKK",
-        "VTBS",
-        "VTBS"
-      ],
-      "airlines": [
-        "Emirates",
-        "Thai Airways International",
-        "Thai VietJet Air",
-        "Vietnam Airlines"
       ]
     },
     {
@@ -144,6 +149,7 @@
       "airlines": [
         "Air Busan",
         "Asiana Airlines",
+        "Jin Air",
         "Korean Air",
         "VietJet Air"
       ]
@@ -196,6 +202,18 @@
       "airlines": [
         "VietJet Air",
         "Vietnam Airlines"
+      ]
+    },
+    {
+      "city": "Daegu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daegu_International_Airport",
+      "codes": [
+        "TAE",
+        "RKTN",
+        "RKTN"
+      ],
+      "airlines": [
+        "Trinity Airways"
       ]
     },
     {
@@ -255,7 +273,8 @@
         "VVCI"
       ],
       "airlines": [
-        "VietJet Air"
+        "VietJet Air",
+        "Vietnam Airlines"
       ]
     },
     {
@@ -270,7 +289,8 @@
         "Bamboo Airways",
         "Sun PhuQuoc Airways",
         "VietJet Air",
-        "Vietnam Airlines"
+        "Vietnam Airlines",
+        "Vietravel Airlines"
       ]
     },
     {
@@ -285,7 +305,8 @@
         "Bamboo Airways",
         "Sun PhuQuoc Airways",
         "VietJet Air",
-        "Vietnam Airlines"
+        "Vietnam Airlines",
+        "Vietravel Airlines"
       ]
     },
     {
@@ -377,6 +398,19 @@
       ]
     },
     {
+      "city": "Macau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macau_International_Airport",
+      "codes": [
+        "MFM",
+        "VMMC",
+        "VMMC"
+      ],
+      "airlines": [
+        "Air Macau",
+        "Bamboo Airways"
+      ]
+    },
+    {
       "city": "Manila",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ninoy_Aquino_International_Airport",
       "codes": [
@@ -385,6 +419,7 @@
         "RPLL"
       ],
       "airlines": [
+        "AirAsia",
         "Cebu Pacific",
         "Philippine Airlines",
         "Philippines AirAsia",
@@ -494,6 +529,8 @@
         "Air Seoul",
         "Asiana Airlines",
         "Eastar Jet",
+        "Jeju Air",
+        "Jin Air",
         "Korean Air",
         "Trinity Airways",
         "VietJet Air",
@@ -666,6 +703,9 @@
     "Air Cambodia": [
       "Siem Reap"
     ],
+    "Air Macau": [
+      "Macau"
+    ],
     "Air Premia": [
       "Seoul–Incheon"
     ],
@@ -673,7 +713,9 @@
       "Seoul–Incheon"
     ],
     "AirAsia": [
-      "Kuala Lumpur–International"
+      "Bangkok",
+      "Kuala Lumpur–International",
+      "Manila"
     ],
     "Asiana Airlines": [
       "Busan",
@@ -681,7 +723,8 @@
     ],
     "Bamboo Airways": [
       "Hanoi",
-      "Ho Chi Minh City"
+      "Ho Chi Minh City",
+      "Macau"
     ],
     "Batik Air Malaysia": [
       "Kuala Lumpur–International"
@@ -714,6 +757,13 @@
     ],
     "Hong Kong Airlines": [
       "Hong Kong"
+    ],
+    "Jeju Air": [
+      "Seoul–Incheon"
+    ],
+    "Jin Air": [
+      "Busan",
+      "Seoul–Incheon"
     ],
     "Korean Air": [
       "Busan",
@@ -769,6 +819,7 @@
     ],
     "Trinity Airways": [
       "Cheongju",
+      "Daegu",
       "Seoul–Incheon"
     ],
     "VietJet Air": [
@@ -806,6 +857,7 @@
       "Chengdu–Tianfu",
       "Da Lat",
       "Ha Long",
+      "Hai Phong",
       "Hanoi",
       "Ho Chi Minh City",
       "Nha Trang",
@@ -816,6 +868,10 @@
       "Singapore",
       "Thanh Hoa",
       "Tokyo–Narita"
+    ],
+    "Vietravel Airlines": [
+      "Hanoi",
+      "Ho Chi Minh City"
     ]
   },
   "outdegree_cargo": 0,
@@ -823,6 +879,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-20T02:45:25Z",
-  "date-time-wikidata": "2026-09-20T00:41:01Z"
+  "date-time-parse": "2026-10-04T03:41:37Z",
+  "date-time-wikidata": "2026-10-02T09:16:46Z"
 }

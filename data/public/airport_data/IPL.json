@@ -14,9 +14,10 @@
   "admin1_name": "California",
   "admin2_name": "Imperial County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Imperial_County_Airport",
-  "outdegree": 2,
-  "number_airlines": 1,
+  "outdegree": 4,
+  "number_airlines": 2,
   "airlines": [
+    "Advanced Air",
     "Southern Airways Express"
   ],
   "destinations": [
@@ -33,6 +34,18 @@
       ]
     },
     {
+      "city": "Los Angeles/Hawthorne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawthorne_Municipal_Airport_(California)",
+      "codes": [
+        "HHR",
+        "KHHR",
+        "KHHR"
+      ],
+      "airlines": [
+        "Advanced Air"
+      ]
+    },
+    {
       "city": "Phoenix–Sky Harbor",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport",
       "codes": [
@@ -41,11 +54,29 @@
         "KPHX"
       ],
       "airlines": [
+        "Advanced Air",
         "Southern Airways Express"
+      ]
+    },
+    {
+      "city": "San Diego/Carlsbad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/McClellan–Palomar_Airport",
+      "codes": [
+        "CLD",
+        "KCRQ",
+        "KCRQ"
+      ],
+      "airlines": [
+        "Advanced Air"
       ]
     }
   ],
   "airlines_destinations": {
+    "Advanced Air": [
+      "Los Angeles/Hawthorne",
+      "Phoenix–Sky Harbor",
+      "San Diego/Carlsbad"
+    ],
     "Southern Airways Express": [
       "Los Angeles",
       "Phoenix–Sky Harbor"
@@ -91,6 +122,6 @@
       "San Diego"
     ]
   },
-  "date-time-parse": "2026-09-27T02:57:12Z",
-  "date-time-wikidata": "2026-09-23T20:55:56Z"
+  "date-time-parse": "2026-10-11T03:17:03Z",
+  "date-time-wikidata": "2026-10-06T08:06:30Z"
 }

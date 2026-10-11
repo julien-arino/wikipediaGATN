@@ -14,9 +14,10 @@
   "admin1_name": "Shandong Sheng",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Qingdao_Jiaodong_International_Airport",
-  "outdegree": 80,
-  "number_airlines": 30,
+  "outdegree": 81,
+  "number_airlines": 31,
   "airlines": [
+    "Air Guilin",
     "Beijing Capital Airlines",
     "Cathay Pacific",
     "Chengdu Airlines",
@@ -258,6 +259,7 @@
         "ZGKL"
       ],
       "airlines": [
+        "Air Guilin",
         "Shandong Airlines"
       ]
     },
@@ -283,6 +285,18 @@
       ],
       "airlines": [
         "Fuzhou Airlines"
+      ]
+    },
+    {
+      "city": "Hangzhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport",
+      "codes": [
+        "HGH",
+        "ZSHC",
+        "ZSHC"
+      ],
+      "airlines": [
+        "Shandong Airlines"
       ]
     },
     {
@@ -322,7 +336,8 @@
       ],
       "airlines": [
         "China Eastern Airlines",
-        "Qingdao Airlines"
+        "Qingdao Airlines",
+        "Shandong Airlines"
       ]
     },
     {
@@ -1047,6 +1062,9 @@
     }
   ],
   "airlines_destinations": {
+    "Air Guilin": [
+      "Guilin"
+    ],
     "Beijing Capital Airlines": [
       "Changchun",
       "Enshi",
@@ -1171,7 +1189,9 @@
       "Fuzhou",
       "Guangzhou",
       "Guilin",
+      "Hangzhou",
       "Hanoi",
+      "Hefei",
       "Ho Chi Minh City",
       "Hong Kong",
       "Kuala Lumpur–International",
@@ -1224,13 +1244,26 @@
       "Wuhu"
     ]
   },
-  "outdegree_cargo": 2,
-  "number_airlines_cargo": 2,
+  "outdegree_cargo": 3,
+  "number_airlines_cargo": 3,
   "airlines_cargo": [
     "ANA Cargo",
-    "SF Airlines"
+    "SF Airlines",
+    "Shandong Airlines Cargo"
   ],
   "destinations_cargo": [
+    {
+      "city": "Hefei",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xinqiao_Airport",
+      "codes": [
+        "HFE",
+        "ZSOF",
+        "ZSOF"
+      ],
+      "airlines": [
+        "Shandong Airlines Cargo"
+      ]
+    },
     {
       "city": "Liège",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
@@ -1262,8 +1295,11 @@
     ],
     "SF Airlines": [
       "Liège"
+    ],
+    "Shandong Airlines Cargo": [
+      "Hefei"
     ]
   },
-  "date-time-parse": "2026-09-13T02:34:11Z",
-  "date-time-wikidata": "2026-09-12T13:51:05Z"
+  "date-time-parse": "2026-10-11T03:19:33Z",
+  "date-time-wikidata": "2026-10-07T17:58:04Z"
 }

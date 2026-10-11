@@ -14,10 +14,11 @@
   "admin1_name": "Okinawa",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Yoron_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 2,
+  "number_airlines": 2,
   "airlines": [
-    "Japan Air Commuter"
+    "Japan Air Commuter",
+    "Ryukyu Air Commuter"
   ],
   "destinations": [
     {
@@ -31,11 +32,28 @@
       "airlines": [
         "Japan Air Commuter"
       ]
+    },
+    {
+      "city": "Naha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naha_Airport",
+      "codes": [
+        "OKA",
+        "ROAH",
+        "ROAH"
+      ],
+      "airlines": [
+        "Japan Air Commuter",
+        "Ryukyu Air Commuter"
+      ]
     }
   ],
   "airlines_destinations": {
     "Japan Air Commuter": [
-      "Kagoshima"
+      "Kagoshima",
+      "Naha"
+    ],
+    "Ryukyu Air Commuter": [
+      "Naha"
     ]
   },
   "outdegree_cargo": 0,
@@ -43,6 +61,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-08-02T02:12:27Z",
-  "date-time-wikidata": "2026-07-07T23:53:42Z"
+  "date-time-parse": "2026-10-11T03:18:54Z",
+  "date-time-wikidata": "2026-10-04T10:17:49Z"
 }

@@ -14,12 +14,37 @@
   "admin1_name": "Santa Catarina",
   "admin2_name": "Correia Pinto",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Planalto_Serrano_Regional_Airport",
-  "outdegree": 1,
-  "number_airlines": 1,
+  "outdegree": 3,
+  "number_airlines": 2,
   "airlines": [
+    "Azul Conecta",
     "Gol Linhas Aéreas"
   ],
   "destinations": [
+    {
+      "city": "Florianópolis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercílio_Luz_International_Airport",
+      "codes": [
+        "FLN",
+        "SBFL",
+        "SBFL"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
+    {
+      "city": "São Miguel do Oeste",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/São_Miguel_do_Oeste_Airport",
+      "codes": [
+        "SQX",
+        "SSOE",
+        "SSOE"
+      ],
+      "airlines": [
+        "Azul Conecta"
+      ]
+    },
     {
       "city": "São Paulo–Congonhas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/São_Paulo–Congonhas_Airport",
@@ -34,6 +59,10 @@
     }
   ],
   "airlines_destinations": {
+    "Azul Conecta": [
+      "Florianópolis",
+      "São Miguel do Oeste"
+    ],
     "Gol Linhas Aéreas": [
       "São Paulo–Congonhas"
     ]
@@ -43,6 +72,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-12T02:07:23Z",
-  "date-time-wikidata": "2026-07-07T21:28:59Z"
+  "date-time-parse": "2026-10-11T03:16:19Z",
+  "date-time-wikidata": "2026-10-07T22:18:17Z"
 }

@@ -14,13 +14,26 @@
   "admin1_name": "Nāgāland",
   "admin2_name": "Dimapur",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Dimapur_Airport",
-  "outdegree": 2,
-  "number_airlines": 2,
+  "outdegree": 5,
+  "number_airlines": 3,
   "airlines": [
     "Air India Express",
-    "Imphal"
+    "Alliance Air",
+    "IndiGo"
   ],
   "destinations": [
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP",
+        "VIDP"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
     {
       "city": "Guwahati",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lokpriya_Gopinath_Bordoloi_International_Airport",
@@ -30,19 +43,44 @@
         "VEGT"
       ],
       "airlines": [
-        "Air India Express"
+        "Air India Express",
+        "IndiGo"
       ]
     },
     {
-      "city": "IndiGo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/IndiGo",
+      "city": "Imphal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imphal_Airport",
       "codes": [
-        "iata code not found",
-        "icao code not found",
-        "gps code not found"
+        "IMF",
+        "VEIM",
+        "VEIM"
       ],
       "airlines": [
-        "Imphal"
+        "Alliance Air"
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Netaji_Subhas_Chandra_Bose_International_Airport",
+      "codes": [
+        "CCU",
+        "VECC",
+        "VECC"
+      ],
+      "airlines": [
+        "IndiGo"
+      ]
+    },
+    {
+      "city": "Shillong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shillong_Airport",
+      "codes": [
+        "SHL",
+        "VEBI",
+        "VEBI"
+      ],
+      "airlines": [
+        "Alliance Air"
       ]
     }
   ],
@@ -50,8 +88,14 @@
     "Air India Express": [
       "Guwahati"
     ],
-    "Imphal": [
-      "IndiGo"
+    "Alliance Air": [
+      "Imphal",
+      "Shillong"
+    ],
+    "IndiGo": [
+      "Delhi",
+      "Guwahati",
+      "Kolkata"
     ]
   },
   "outdegree_cargo": 0,
@@ -59,6 +103,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-26T02:06:49Z",
-  "date-time-wikidata": "2026-07-22T12:06:24Z"
+  "date-time-parse": "2026-10-11T03:15:56Z",
+  "date-time-wikidata": "2026-10-11T01:33:33Z"
 }

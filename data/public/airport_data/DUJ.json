@@ -14,12 +14,37 @@
   "admin1_name": "Pennsylvania",
   "admin2_name": "Jefferson County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/DuBois_Regional_Airport",
-  "outdegree": 2,
-  "number_airlines": 1,
+  "outdegree": 4,
+  "number_airlines": 2,
   "airlines": [
+    "Contour Airlines",
     "Southern Airways Express"
   ],
   "destinations": [
+    {
+      "city": "Atlanta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hartsfield–Jackson_Atlanta_International_Airport",
+      "codes": [
+        "ATL",
+        "KATL",
+        "KATL"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    },
+    {
+      "city": "Chicago–O'Hare",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O'Hare_International_Airport",
+      "codes": [
+        "ORD",
+        "KORD",
+        "KORD"
+      ],
+      "airlines": [
+        "Contour Airlines"
+      ]
+    },
     {
       "city": "Pittsburgh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
@@ -46,6 +71,10 @@
     }
   ],
   "airlines_destinations": {
+    "Contour Airlines": [
+      "Atlanta",
+      "Chicago–O'Hare"
+    ],
     "Southern Airways Express": [
       "Pittsburgh",
       "Washington–Dulles"
@@ -56,6 +85,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-06T02:17:27Z",
-  "date-time-wikidata": "2026-09-03T12:07:32Z"
+  "date-time-parse": "2026-10-18T02:28:01Z",
+  "date-time-wikidata": "2026-10-14T14:30:23Z"
 }

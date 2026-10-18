@@ -727,19 +727,30 @@
       "Visakhapatnam"
     ]
   },
-  "outdegree_cargo": 10,
-  "number_airlines_cargo": 10,
+  "outdegree_cargo": 21,
+  "number_airlines_cargo": 21,
   "airlines_cargo": [
+    "ASL Airlines Belgium",
+    "AeroLogic",
     "Afcom Cargo",
+    "AirMaster Cargo",
+    "Atlas Air",
     "Cathay Cargo",
+    "Challenge Airlines",
+    "Fly Pro",
     "Hong Kong Air Cargo",
     "IndiGo CarGo",
     "JDL Airlines",
+    "Lufthansa Cargo",
     "MNG Airlines",
     "Maximus Air",
     "National Airlines",
+    "Qatar Airways Cargo",
+    "SF Airlines",
+    "Sichuan Airlines Cargo",
     "Silk Way West Airlines",
-    "Suparna Airlines Cargo"
+    "Suparna Airlines Cargo",
+    "Turkish Cargo"
   ],
   "destinations_cargo": [
     {
@@ -767,6 +778,42 @@
       ]
     },
     {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA",
+        "HECA"
+      ],
+      "airlines": [
+        "AirMaster Cargo"
+      ]
+    },
+    {
+      "city": "Chengdu-Shuangliu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport",
+      "codes": [
+        "CTU",
+        "ZUUU",
+        "ZUUU"
+      ],
+      "airlines": [
+        "SF Airlines"
+      ]
+    },
+    {
+      "city": "Chengdu-Tianfu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengdu_Tianfu_International_Airport",
+      "codes": [
+        "TFU",
+        "ZUTF",
+        "ZUTF"
+      ],
+      "airlines": [
+        "Sichuan Airlines Cargo"
+      ]
+    },
+    {
       "city": "Chongqing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
       "codes": [
@@ -787,7 +834,32 @@
         "OEDF"
       ],
       "airlines": [
+        "Fly Pro",
         "Maximus Air"
+      ]
+    },
+    {
+      "city": "Delhi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indira_Gandhi_International_Airport",
+      "codes": [
+        "DEL",
+        "VIDP",
+        "VIDP"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Doha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport",
+      "codes": [
+        "DOH",
+        "OTHH",
+        "OTHH"
+      ],
+      "airlines": [
+        "Qatar Airways Cargo"
       ]
     },
     {
@@ -799,7 +871,21 @@
         "OMDW"
       ],
       "airlines": [
-        "Afcom Cargo"
+        "Afcom Cargo",
+        "Fly Pro"
+      ]
+    },
+    {
+      "city": "Frankfurt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankfurt_Airport",
+      "codes": [
+        "FRA",
+        "EDDF",
+        "EDDF"
+      ],
+      "airlines": [
+        "AeroLogic",
+        "Lufthansa Cargo"
       ]
     },
     {
@@ -823,9 +909,47 @@
         "VHHH"
       ],
       "airlines": [
+        "ASL Airlines Belgium",
         "Cathay Cargo",
         "Hong Kong Air Cargo",
         "MNG Airlines"
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rajiv_Gandhi_International_Airport",
+      "codes": [
+        "HYD",
+        "VOHS",
+        "VOHS"
+      ],
+      "airlines": [
+        "AeroLogic"
+      ]
+    },
+    {
+      "city": "Istanbul",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Istanbul_Airport",
+      "codes": [
+        "IST",
+        "LTFM",
+        "LTFM"
+      ],
+      "airlines": [
+        "Turkish Cargo"
+      ]
+    },
+    {
+      "city": "Liège",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liège_Airport",
+      "codes": [
+        "LGG",
+        "EBLG",
+        "EBLG"
+      ],
+      "airlines": [
+        "ASL Airlines Belgium",
+        "Atlas Air"
       ]
     },
     {
@@ -864,14 +988,61 @@
         "IndiGo CarGo",
         "MNG Airlines"
       ]
+    },
+    {
+      "city": "Taipei-Taoyuan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoyuan_International_Airport",
+      "codes": [
+        "TPE",
+        "RCTP",
+        "RCTP"
+      ],
+      "airlines": [
+        "Atlas Air"
+      ]
+    },
+    {
+      "city": "Tel Aviv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ben_Gurion_Airport",
+      "codes": [
+        "TLV",
+        "LLBG",
+        "LLBG"
+      ],
+      "airlines": [
+        "Challenge Airlines"
+      ]
     }
   ],
   "airlines_destinations_cargo": {
+    "AeroLogic": [
+      "Delhi",
+      "Frankfurt",
+      "Hyderabad"
+    ],
     "Afcom Cargo": [
       "Dubai-World Central"
     ],
+    "AirMaster Cargo": [
+      "Cairo"
+    ],
+    "ASL Airlines Belgium": [
+      "Hong Kong",
+      "Liège"
+    ],
+    "Atlas Air": [
+      "Liège",
+      "Taipei-Taoyuan"
+    ],
     "Cathay Cargo": [
       "Hong Kong"
+    ],
+    "Challenge Airlines": [
+      "Tel Aviv"
+    ],
+    "Fly Pro": [
+      "Dammam",
+      "Dubai-World Central"
     ],
     "Hong Kong Air Cargo": [
       "Hong Kong"
@@ -881,6 +1052,9 @@
     ],
     "JDL Airlines": [
       "Chongqing"
+    ],
+    "Lufthansa Cargo": [
+      "Frankfurt"
     ],
     "Maximus Air": [
       "Abu Dhabi",
@@ -893,14 +1067,26 @@
     "National Airlines": [
       "Frankfurt-Hahn"
     ],
+    "Qatar Airways Cargo": [
+      "Doha"
+    ],
+    "SF Airlines": [
+      "Chengdu-Shuangliu"
+    ],
+    "Sichuan Airlines Cargo": [
+      "Chengdu-Tianfu"
+    ],
     "Silk Way West Airlines": [
       "Baku"
     ],
     "Suparna Airlines Cargo": [
       "Nanjing",
       "Shanghai-Pudong"
+    ],
+    "Turkish Cargo": [
+      "Istanbul"
     ]
   },
-  "date-time-parse": "2026-10-11T03:18:17Z",
-  "date-time-wikidata": "2026-10-09T09:10:38Z"
+  "date-time-parse": "2026-10-18T02:30:38Z",
+  "date-time-wikidata": "2026-10-14T17:14:40Z"
 }

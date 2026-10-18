@@ -14,12 +14,12 @@
   "admin1_name": "Al Janūbī",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Ramon_Airport",
-  "outdegree": 3,
+  "outdegree": 2,
   "number_airlines": 3,
   "airlines": [
-    "Air Haifa",
     "Arkia",
-    "Israir"
+    "Israir",
+    "airHaifa"
   ],
   "destinations": [
     {
@@ -31,19 +31,7 @@
         "LLHA"
       ],
       "airlines": [
-        "Air Haifa"
-      ]
-    },
-    {
-      "city": "Paris-Charles De Gaulle",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_De_Gaulle_Airport",
-      "codes": [
-        "CDG",
-        "LFPG",
-        "LFPG"
-      ],
-      "airlines": [
-        "Arkia"
+        "airHaifa"
       ]
     },
     {
@@ -56,16 +44,17 @@
       ],
       "airlines": [
         "Arkia",
-        "Israir"
+        "Israir",
+        "airHaifa"
       ]
     }
   ],
   "airlines_destinations": {
-    "Air Haifa": [
-      "Haifa"
+    "airHaifa": [
+      "Haifa",
+      "Tel Aviv"
     ],
     "Arkia": [
-      "Paris-Charles De Gaulle",
       "Tel Aviv"
     ],
     "Israir": [
@@ -77,6 +66,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-06T02:17:43Z",
-  "date-time-wikidata": "2026-09-02T08:03:36Z"
+  "date-time-parse": "2026-10-18T02:28:26Z",
+  "date-time-wikidata": "2026-10-13T01:20:08Z"
 }

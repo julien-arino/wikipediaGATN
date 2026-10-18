@@ -14,13 +14,28 @@
   "admin1_name": "Surigao del Norte",
   "admin2_name": "Province of Surigao del Sur",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Sayak_Airport",
-  "outdegree": 1,
-  "number_airlines": 2,
+  "outdegree": 3,
+  "number_airlines": 3,
   "airlines": [
     "Cebgo",
-    "PAL Express"
+    "PAL Express",
+    "Sunlight Air"
   ],
   "destinations": [
+    {
+      "city": "Cebu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mactan–Cebu_International_Airport",
+      "codes": [
+        "CEB",
+        "RPVM",
+        "RPVM"
+      ],
+      "airlines": [
+        "Cebgo",
+        "PAL Express",
+        "Sunlight Air"
+      ]
+    },
     {
       "city": "Clark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Clark_International_Airport",
@@ -31,15 +46,33 @@
       ],
       "airlines": [
         "Cebgo",
-        "PAL Express"
+        "Sunlight Air"
+      ]
+    },
+    {
+      "city": "Davao",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Bangoy_International_Airport",
+      "codes": [
+        "DVO",
+        "RPMD",
+        "RPMD"
+      ],
+      "airlines": [
+        "Cebgo"
       ]
     }
   ],
   "airlines_destinations": {
     "Cebgo": [
-      "Clark"
+      "Cebu",
+      "Clark",
+      "Davao"
     ],
     "PAL Express": [
+      "Cebu"
+    ],
+    "Sunlight Air": [
+      "Cebu",
       "Clark"
     ]
   },
@@ -48,6 +81,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-07-26T02:08:10Z",
-  "date-time-wikidata": "2026-07-21T15:30:37Z"
+  "date-time-parse": "2026-10-18T02:29:11Z",
+  "date-time-wikidata": "2026-10-14T10:48:34Z"
 }

@@ -2166,8 +2166,8 @@
       <data key="d0">15.185833</data>
       <data key="d1">120.559722</data>
       <data key="d2">148.0</data>
-      <data key="d3">16.0</data>
-      <data key="d4">7.0</data>
+      <data key="d3">21.0</data>
+      <data key="d4">8.0</data>
       <data key="d5">Metro Clark</data>
       <data key="d6">PHL</data>
       <data key="d7">Philippines</data>
@@ -3174,8 +3174,8 @@
       <data key="d0">40.6925</data>
       <data key="d1">-74.168611</data>
       <data key="d2">5.0</data>
-      <data key="d3">16.0</data>
-      <data key="d4">6.0</data>
+      <data key="d3">15.0</data>
+      <data key="d4">5.0</data>
       <data key="d5">Newark and Elizabeth</data>
       <data key="d6">USA</data>
       <data key="d7">United States</data>
@@ -6759,8 +6759,8 @@
       <data key="d0">18.991944</data>
       <data key="d1">73.061667</data>
       <data key="d2">8.0</data>
-      <data key="d3">10.0</data>
-      <data key="d4">10.0</data>
+      <data key="d3">21.0</data>
+      <data key="d4">21.0</data>
       <data key="d5">Mumbai Metropolitan Region</data>
       <data key="d6">IND</data>
       <data key="d7">India</data>
@@ -9816,8 +9816,8 @@
       <data key="d0">-23.006944</data>
       <data key="d1">-47.134444</data>
       <data key="d2">661.0</data>
-      <data key="d3">8.0</data>
-      <data key="d4">5.0</data>
+      <data key="d3">9.0</data>
+      <data key="d4">6.0</data>
       <data key="d5">Campinas</data>
       <data key="d6">BRA</data>
       <data key="d7">Brazil</data>
@@ -13807,7 +13807,13 @@
     <edge source="CPT" target="PLZ">
       <data key="d11">1</data>
     </edge>
+    <edge source="CRK" target="BLR">
+      <data key="d11">1</data>
+    </edge>
     <edge source="CRK" target="CAN">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="CRK" target="CGN">
       <data key="d11">1</data>
     </edge>
     <edge source="CRK" target="CGO">
@@ -13826,16 +13832,16 @@
       <data key="d11">1</data>
     </edge>
     <edge source="CRK" target="HKG">
-      <data key="d11">1</data>
+      <data key="d11">2</data>
     </edge>
     <edge source="CRK" target="ICN">
-      <data key="d11">1</data>
+      <data key="d11">2</data>
     </edge>
     <edge source="CRK" target="JJN">
       <data key="d11">1</data>
     </edge>
     <edge source="CRK" target="KIX">
-      <data key="d11">1</data>
+      <data key="d11">2</data>
     </edge>
     <edge source="CRK" target="NKG">
       <data key="d11">1</data>
@@ -13843,11 +13849,20 @@
     <edge source="CRK" target="NNG">
       <data key="d11">1</data>
     </edge>
-    <edge source="CRK" target="SIN">
+    <edge source="CRK" target="NRT">
       <data key="d11">1</data>
     </edge>
-    <edge source="CRK" target="SZX">
+    <edge source="CRK" target="PVG">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="CRK" target="SIN">
       <data key="d11">2</data>
+    </edge>
+    <edge source="CRK" target="SZX">
+      <data key="d11">3</data>
+    </edge>
+    <edge source="CRK" target="TPE">
+      <data key="d11">1</data>
     </edge>
     <edge source="CRK" target="YIW">
       <data key="d11">1</data>
@@ -14873,9 +14888,6 @@
       <data key="d11">1</data>
     </edge>
     <edge source="EWR" target="ANC">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="EWR" target="BDA">
       <data key="d11">1</data>
     </edge>
     <edge source="EWR" target="BOS">
@@ -20446,14 +20458,29 @@
     <edge source="NMI" target="AUH">
       <data key="d11">1</data>
     </edge>
+    <edge source="NMI" target="CAI">
+      <data key="d11">1</data>
+    </edge>
     <edge source="NMI" target="CKG">
       <data key="d11">1</data>
     </edge>
+    <edge source="NMI" target="CTU">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="NMI" target="DEL">
+      <data key="d11">1</data>
+    </edge>
     <edge source="NMI" target="DMM">
+      <data key="d11">2</data>
+    </edge>
+    <edge source="NMI" target="DOH">
       <data key="d11">1</data>
     </edge>
     <edge source="NMI" target="DWC">
-      <data key="d11">1</data>
+      <data key="d11">2</data>
+    </edge>
+    <edge source="NMI" target="FRA">
+      <data key="d11">2</data>
     </edge>
     <edge source="NMI" target="GYD">
       <data key="d11">1</data>
@@ -20462,7 +20489,16 @@
       <data key="d11">1</data>
     </edge>
     <edge source="NMI" target="HKG">
-      <data key="d11">3</data>
+      <data key="d11">4</data>
+    </edge>
+    <edge source="NMI" target="HYD">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="NMI" target="IST">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="NMI" target="LGG">
+      <data key="d11">2</data>
     </edge>
     <edge source="NMI" target="NKG">
       <data key="d11">1</data>
@@ -20472,6 +20508,15 @@
     </edge>
     <edge source="NMI" target="SHJ">
       <data key="d11">2</data>
+    </edge>
+    <edge source="NMI" target="TFU">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="NMI" target="TLV">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="NMI" target="TPE">
+      <data key="d11">1</data>
     </edge>
     <edge source="NNG" target="BKK">
       <data key="d11">2</data>
@@ -23972,6 +24017,9 @@
       <data key="d11">2</data>
     </edge>
     <edge source="VCP" target="GDL">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="VCP" target="GIG">
       <data key="d11">1</data>
     </edge>
     <edge source="VCP" target="HKG">

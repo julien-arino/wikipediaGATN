@@ -14,15 +14,17 @@
   "admin1_name": "Buxoro",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Bukhara_International_Airport",
-  "outdegree": 9,
-  "number_airlines": 7,
+  "outdegree": 11,
+  "number_airlines": 9,
   "airlines": [
     "Aeroflot",
     "Centrum Air",
     "Qanot Sharq",
+    "Red Wings",
     "SCAT Airlines",
     "Silk Avia",
     "Turkish Airlines",
+    "Utair",
     "Uzbekistan Airways"
   ],
   "destinations": [
@@ -36,6 +38,19 @@
       ],
       "airlines": [
         "Turkish Airlines"
+      ]
+    },
+    {
+      "city": "Moscow-Vnukovo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vnukovo_International_Airport",
+      "codes": [
+        "VKO",
+        "UUWW",
+        "UUWW"
+      ],
+      "airlines": [
+        "Utair",
+        "Uzbekistan Airways"
       ]
     },
     {
@@ -63,12 +78,12 @@
       ]
     },
     {
-      "city": "Moscow–Vnukovo",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow–Vnukovo",
+      "city": "Saint Petersburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulkovo_Airport",
       "codes": [
-        "VKO",
-        "UUWW",
-        "UUWW"
+        "LED",
+        "ULLI",
+        "ULLI"
       ],
       "airlines": [
         "Uzbekistan Airways"
@@ -95,7 +110,9 @@
         "UZTT"
       ],
       "airlines": [
-        "Centrum Air"
+        "Centrum Air",
+        "Silk Avia",
+        "Uzbekistan Airways"
       ]
     },
     {
@@ -134,6 +151,18 @@
       "airlines": [
         "Centrum Air"
       ]
+    },
+    {
+      "city": "Yekaterinburg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koltsovo_International_Airport",
+      "codes": [
+        "SVX",
+        "USSS",
+        "USSS"
+      ],
+      "airlines": [
+        "Red Wings"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -149,17 +178,26 @@
     "Qanot Sharq": [
       "Moscow–Domodedovo"
     ],
+    "Red Wings": [
+      "Yekaterinburg"
+    ],
     "SCAT Airlines": [
       "Türkistan"
     ],
     "Silk Avia": [
+      "Tashkent",
       "Urgench"
     ],
     "Turkish Airlines": [
       "Istanbul"
     ],
+    "Utair": [
+      "Moscow-Vnukovo"
+    ],
     "Uzbekistan Airways": [
-      "Moscow–Vnukovo"
+      "Moscow–Vnukovo",
+      "Saint Petersburg",
+      "Tashkent"
     ]
   },
   "outdegree_cargo": 0,
@@ -167,6 +205,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-10-11T03:15:03Z",
-  "date-time-wikidata": "2026-10-06T14:48:56Z"
+  "date-time-parse": "2026-10-18T02:26:56Z",
+  "date-time-wikidata": "2026-10-17T09:03:23Z"
 }

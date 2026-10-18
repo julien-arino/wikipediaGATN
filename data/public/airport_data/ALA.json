@@ -14,8 +14,8 @@
   "admin1_name": "Almaty oblysy",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
-  "outdegree": 94,
-  "number_airlines": 45,
+  "outdegree": 95,
+  "number_airlines": 47,
   "airlines": [
     "AJet",
     "Aeroflot",
@@ -26,6 +26,7 @@
     "AirAsia X",
     "Asiana Airlines",
     "Asman Airlines",
+    "Azerbaijan Airlines",
     "Azimuth",
     "Belavia",
     "Cathay Pacific",
@@ -61,7 +62,8 @@
     "Turkish Airlines",
     "UVT Aero",
     "Uzbekistan Airways",
-    "VietJet Air"
+    "VietJet Air",
+    "VietJet Qazaqstan"
   ],
   "destinations": [
     {
@@ -140,7 +142,8 @@
       "airlines": [
         "Air Astana",
         "FlyArystan",
-        "SCAT Airlines"
+        "SCAT Airlines",
+        "VietJet Qazaqstan"
       ]
     },
     {
@@ -166,7 +169,8 @@
         "UBBB"
       ],
       "airlines": [
-        "Air Astana"
+        "Air Astana",
+        "Azerbaijan Airlines"
       ]
     },
     {
@@ -528,7 +532,19 @@
       ]
     },
     {
-      "city": "Kuala Lumpur–International",
+      "city": "Kostanay",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kostanay_Airport",
+      "codes": [
+        "KSN",
+        "UAUU",
+        "UAUU"
+      ],
+      "airlines": [
+        "FlyArystan"
+      ]
+    },
+    {
+      "city": "Kuala Lumpur",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport",
       "codes": [
         "KUL",
@@ -536,6 +552,7 @@
         "WMKK"
       ],
       "airlines": [
+        "Air Arabia",
         "AirAsia X"
       ]
     },
@@ -561,6 +578,19 @@
       ],
       "airlines": [
         "Jazeera Airways"
+      ]
+    },
+    {
+      "city": "Kyzylorda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kyzylorda_Airport",
+      "codes": [
+        "KZO",
+        "UAOO",
+        "UAOO"
+      ],
+      "airlines": [
+        "Air Astana",
+        "FlyArystan"
       ]
     },
     {
@@ -645,6 +675,18 @@
       ],
       "airlines": [
         "Neos"
+      ]
+    },
+    {
+      "city": "Mineralnye Vody",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mineralnye_Vody_Airport",
+      "codes": [
+        "MRV",
+        "URMM",
+        "URMM"
+      ],
+      "airlines": [
+        "Azimuth"
       ]
     },
     {
@@ -818,6 +860,7 @@
         "VVPQ"
       ],
       "airlines": [
+        "Air Astana",
         "SCAT Airlines"
       ]
     },
@@ -868,33 +911,7 @@
         "UAKK"
       ],
       "airlines": [
-        "FlyArystan",
-        "SCAT Airlines"
-      ]
-    },
-    {
-      "city": "Qostanai",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kostanay_Airport",
-      "codes": [
-        "KSN",
-        "UAUU",
-        "UAUU"
-      ],
-      "airlines": [
-        "FlyArystan",
-        "SCAT Airlines"
-      ]
-    },
-    {
-      "city": "Qyzylorda",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kyzylorda_Airport",
-      "codes": [
-        "KZO",
-        "UAOO",
-        "UAOO"
-      ],
-      "airlines": [
-        "Air Astana"
+        "FlyArystan"
       ]
     },
     {
@@ -954,8 +971,7 @@
         "UASS"
       ],
       "airlines": [
-        "FlyArystan",
-        "SCAT Airlines"
+        "FlyArystan"
       ]
     },
     {
@@ -1243,6 +1259,7 @@
     ],
     "Air Arabia": [
       "Abu Dhabi",
+      "Kuala Lumpur",
       "Sharjah"
     ],
     "Air Astana": [
@@ -1272,6 +1289,7 @@
       "Nha Trang",
       "Oral",
       "Osh",
+      "Phu Quoc",
       "Phuket",
       "Podgorica",
       "Qyzylorda",
@@ -1305,7 +1323,11 @@
     "Asman Airlines": [
       "Issyk-Kul"
     ],
+    "Azerbaijan Airlines": [
+      "Baku"
+    ],
     "Azimuth": [
+      "Mineralnye Vody",
       "Sochi"
     ],
     "Belavia": [
@@ -1341,7 +1363,9 @@
       "Gazipaşa/Alanya",
       "Goa-Manohar",
       "Issyk-Kul",
+      "Kostanay",
       "Kutaisi",
+      "Kyzylorda",
       "Oral",
       "Pavlodar",
       "Qarağandy",
@@ -1430,10 +1454,7 @@
       "Petropavl",
       "Phu Quoc",
       "Phuket",
-      "Qarağandy",
-      "Qostanai",
       "Sanya",
-      "Semey",
       "Taraz",
       "Türkıstan",
       "Öskemen",
@@ -1462,6 +1483,9 @@
       "Da Nang",
       "Hanoi",
       "Prague"
+    ],
+    "VietJet Qazaqstan": [
+      "Astana"
     ],
     "UVT Aero": [
       "Orenburg"
@@ -1622,6 +1646,6 @@
       "Hong Kong"
     ]
   },
-  "date-time-parse": "2026-10-11T03:14:40Z",
-  "date-time-wikidata": "2026-10-10T21:20:12Z"
+  "date-time-parse": "2026-10-18T02:26:32Z",
+  "date-time-wikidata": "2026-10-17T04:26:16Z"
 }

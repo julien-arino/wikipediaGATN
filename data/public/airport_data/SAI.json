@@ -14,8 +14,8 @@
   "admin1_name": "Siem Reab",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Siem_Reap–Angkor_International_Airport",
-  "outdegree": 13,
-  "number_airlines": 11,
+  "outdegree": 14,
+  "number_airlines": 12,
   "airlines": [
     "Air Cambodia",
     "AirAsia Cambodia",
@@ -23,6 +23,7 @@
     "Cambodia Airways",
     "Emirates",
     "IndiGo",
+    "Lao Airlines",
     "Singapore Airlines",
     "Thai AirAsia",
     "Thai Airways International",
@@ -40,6 +41,7 @@
       ],
       "airlines": [
         "Bangkok Airways",
+        "Cambodia Airways",
         "Emirates",
         "Thai Airways International"
       ]
@@ -57,6 +59,30 @@
       ]
     },
     {
+      "city": "Da Nang International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Da_Nang_International_Airport",
+      "codes": [
+        "DAD",
+        "VVDN",
+        "VVDN"
+      ],
+      "airlines": [
+        "Air Cambodia"
+      ]
+    },
+    {
+      "city": "Dubai International Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
+      ]
+    },
+    {
       "city": "Hanoi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Noi_Bai_International_Airport",
       "codes": [
@@ -67,6 +93,18 @@
       "airlines": [
         "VietJet Air",
         "Vietnam Airlines"
+      ]
+    },
+    {
+      "city": "Ho Chi Minh",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+      "codes": [
+        "iata code not found",
+        "icao code not found",
+        "gps code not found"
+      ],
+      "airlines": [
+        "Air Cambodia"
       ]
     },
     {
@@ -118,6 +156,18 @@
       ]
     },
     {
+      "city": "Pakse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pakse_International_Airport",
+      "codes": [
+        "PKZ",
+        "VLPS",
+        "VLPS"
+      ],
+      "airlines": [
+        "Lao Airlines"
+      ]
+    },
+    {
       "city": "Phnom Penh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Techo_International_Airport_(Cambodia)",
       "codes": [
@@ -131,42 +181,6 @@
       ]
     },
     {
-      "city": "Phu Quoc",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Phu_Quoc_International_Airport",
-      "codes": [
-        "PQC",
-        "VVPQ",
-        "VVPQ"
-      ],
-      "airlines": [
-        "AirAsia Cambodia"
-      ]
-    },
-    {
-      "city": "Phuket",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Phuket_International_Airport",
-      "codes": [
-        "HKT",
-        "VTSP",
-        "VTSP"
-      ],
-      "airlines": [
-        "Thai AirAsia"
-      ]
-    },
-    {
-      "city": "Shenzhen",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
-      "codes": [
-        "SZX",
-        "ZGSZ",
-        "ZGSZ"
-      ],
-      "airlines": [
-        "Air Cambodia"
-      ]
-    },
-    {
       "city": "Sihanoukville",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sihanouk_International_Airport",
       "codes": [
@@ -175,8 +189,7 @@
         "VDSV"
       ],
       "airlines": [
-        "Air Cambodia",
-        "Cambodia Airways"
+        "Air Cambodia"
       ]
     },
     {
@@ -194,23 +207,24 @@
   ],
   "airlines_destinations": {
     "AirAsia Cambodia": [
-      "Kuala Lumpur–International",
-      "Phu Quoc"
+      "Kuala Lumpur–International"
     ],
     "Air Cambodia": [
+      "Da Nang International Airport",
+      "Ho Chi Minh",
       "Phnom Penh",
-      "Shenzhen",
       "Sihanoukville"
     ],
     "Bangkok Airways": [
       "Bangkok–Suvarnabhumi"
     ],
     "Cambodia Airways": [
-      "Phnom Penh",
-      "Sihanoukville"
+      "Bangkok Suvarnabhumi",
+      "Phnom Penh"
     ],
     "Emirates": [
-      "Bangkok–Suvarnabhumi"
+      "Bangkok Suvarnabhumi",
+      "Dubai International Airport"
     ],
     "IndiGo": [
       "Kolkata"
@@ -219,8 +233,7 @@
       "Singapore"
     ],
     "Thai AirAsia": [
-      "Bangkok–Don Mueang",
-      "Phuket"
+      "Bangkok–Don Mueang"
     ],
     "Thai Airways International": [
       "Bangkok Suvarnabhumi"
@@ -232,6 +245,9 @@
       "Hanoi",
       "Ho Chi Minh City",
       "Luang Prabang"
+    ],
+    "Lao Airlines": [
+      "Pakse"
     ]
   },
   "outdegree_cargo": 0,
@@ -239,6 +255,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-10-11T03:18:57Z",
-  "date-time-wikidata": "2026-10-07T19:09:29Z"
+  "date-time-parse": "2026-10-18T02:31:16Z",
+  "date-time-wikidata": "2026-10-17T09:55:13Z"
 }

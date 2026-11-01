@@ -14,15 +14,17 @@
   "admin1_name": "Western",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nadi_International_Airport",
-  "outdegree": 19,
-  "number_airlines": 6,
+  "outdegree": 27,
+  "number_airlines": 8,
   "airlines": [
     "Air New Zealand",
     "Air Niugini",
     "Fiji Airways",
     "Jetstar",
     "Pacific Island Air",
-    "Qantas"
+    "Qantas",
+    "Solomon Airlines",
+    "Virgin Australia"
   ],
   "destinations": [
     {
@@ -38,6 +40,18 @@
       ]
     },
     {
+      "city": "Apia–Faleolo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faleolo_International_Airport",
+      "codes": [
+        "APW",
+        "NSFA",
+        "NSFA"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
       "city": "Auckland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Auckland_Airport",
       "codes": [
@@ -46,7 +60,21 @@
         "NZAA"
       ],
       "airlines": [
-        "Air New Zealand"
+        "Air New Zealand",
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Brisbane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brisbane_Airport",
+      "codes": [
+        "BNE",
+        "YBBN",
+        "YBBN"
+      ],
+      "airlines": [
+        "Fiji Airways",
+        "Virgin Australia"
       ]
     },
     {
@@ -68,6 +96,18 @@
         "CBR",
         "YSCB",
         "YSCB"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Christchurch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christchurch_Airport",
+      "codes": [
+        "CHC",
+        "NZCH",
+        "NZCH"
       ],
       "airlines": [
         "Fiji Airways"
@@ -110,12 +150,49 @@
       ]
     },
     {
+      "city": "Honiara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honiara_International_Airport",
+      "codes": [
+        "HIR",
+        "AGGH",
+        "AGGH"
+      ],
+      "airlines": [
+        "Fiji Airways",
+        "Solomon Airlines"
+      ]
+    },
+    {
+      "city": "Honolulu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_K._Inouye_International_Airport",
+      "codes": [
+        "HNL",
+        "PHNL",
+        "PHNL"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
       "city": "Kiritimati",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cassidy_International_Airport",
       "codes": [
         "CXI",
         "PLCH",
         "PLCH"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Los Angeles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_International_Airport",
+      "codes": [
+        "LAX",
+        "KLAX",
+        "KLAX"
       ],
       "airlines": [
         "Fiji Airways"
@@ -142,7 +219,9 @@
         "YMML"
       ],
       "airlines": [
-        "Jetstar"
+        "Fiji Airways",
+        "Jetstar",
+        "Virgin Australia"
       ]
     },
     {
@@ -202,7 +281,10 @@
         "YSSY"
       ],
       "airlines": [
-        "Qantas"
+        "Fiji Airways",
+        "Jetstar",
+        "Qantas",
+        "Virgin Australia"
       ]
     },
     {
@@ -212,6 +294,18 @@
         "WSI",
         "YSWS",
         "YSWS"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
+    },
+    {
+      "city": "Tarawa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bonriki_International_Airport",
+      "codes": [
+        "TRW",
+        "NGTA",
+        "NGTA"
       ],
       "airlines": [
         "Fiji Airways"
@@ -252,6 +346,18 @@
       "airlines": [
         "Fiji Airways"
       ]
+    },
+    {
+      "city": "Wellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wellington_Airport",
+      "codes": [
+        "WLG",
+        "NZWN",
+        "NZWN"
+      ],
+      "airlines": [
+        "Fiji Airways"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -263,27 +369,47 @@
     ],
     "Fiji Airways": [
       "Adelaide",
+      "Apia–Faleolo",
+      "Auckland",
+      "Brisbane",
       "Cairns",
       "Canberra",
+      "Christchurch",
       "Funafuti",
       "Gold Coast",
       "Hong Kong",
+      "Honiara",
+      "Honolulu",
       "Kiritimati",
+      "Los Angeles",
+      "Melbourne",
       "Nouméa",
       "San Francisco",
       "Singapore",
+      "Sydney–Kingsford Smith",
       "Sydney–Western",
+      "Tarawa",
       "Tokyo-Narita",
       "Vancouver",
-      "Vavaʻu"
+      "Vavaʻu",
+      "Wellington"
     ],
     "Jetstar": [
-      "Melbourne"
+      "Melbourne",
+      "Sydney–Kingsford Smith"
     ],
     "Pacific Island Air": [
       "Mana Island"
     ],
     "Qantas": [
+      "Sydney–Kingsford Smith"
+    ],
+    "Solomon Airlines": [
+      "Honiara"
+    ],
+    "Virgin Australia": [
+      "Brisbane",
+      "Melbourne",
       "Sydney–Kingsford Smith"
     ]
   },
@@ -292,6 +418,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-10-18T02:30:33Z",
-  "date-time-wikidata": "2026-10-16T21:34:17Z"
+  "date-time-parse": "2026-11-01T03:45:11Z",
+  "date-time-wikidata": "2026-10-28T02:39:23Z"
 }

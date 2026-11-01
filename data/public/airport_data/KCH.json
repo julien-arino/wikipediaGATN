@@ -14,14 +14,17 @@
   "admin1_name": "Sarawak",
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Kuching_International_Airport",
-  "outdegree": 19,
-  "number_airlines": 8,
+  "outdegree": 24,
+  "number_airlines": 11,
   "airlines": [
+    "9 Air",
     "Air Changan",
     "AirAsia",
     "AirBorneo",
     "Batik Air Malaysia",
+    "Firefly",
     "Indonesia AirAsia",
+    "Loong Air",
     "Malaysia Airlines",
     "Royal Brunei Airlines",
     "Scoot"
@@ -52,6 +55,18 @@
       ]
     },
     {
+      "city": "Chongqing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport",
+      "codes": [
+        "CKG",
+        "ZUCK",
+        "ZUCK"
+      ],
+      "airlines": [
+        "Firefly"
+      ]
+    },
+    {
       "city": "Guangzhou",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport",
       "codes": [
@@ -64,6 +79,30 @@
       ]
     },
     {
+      "city": "Guiyang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guiyang_Longdongbao_International_Airport",
+      "codes": [
+        "KWE",
+        "ZUGY",
+        "ZUGY"
+      ],
+      "airlines": [
+        "9 Air"
+      ]
+    },
+    {
+      "city": "Haikou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport",
+      "codes": [
+        "HAK",
+        "ZJHK",
+        "ZJHK"
+      ],
+      "airlines": [
+        "9 Air"
+      ]
+    },
+    {
       "city": "Jakarta–Soekarno-Hatta",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Soekarno–Hatta_International_Airport",
       "codes": [
@@ -72,6 +111,8 @@
         "WIII"
       ],
       "airlines": [
+        "AirAsia",
+        "AirBorneo",
         "Indonesia AirAsia"
       ]
     },
@@ -123,6 +164,7 @@
         "AirAsia",
         "AirBorneo",
         "Batik Air Malaysia",
+        "Firefly",
         "Malaysia Airlines"
       ]
     },
@@ -133,6 +175,18 @@
         "SZB",
         "WMSA",
         "WMSA"
+      ],
+      "airlines": [
+        "Batik Air Malaysia"
+      ]
+    },
+    {
+      "city": "Kunming",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport",
+      "codes": [
+        "KMG",
+        "ZPPP",
+        "ZPPP"
       ],
       "airlines": [
         "Batik Air Malaysia"
@@ -211,6 +265,18 @@
       ]
     },
     {
+      "city": "Shenzhen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport",
+      "codes": [
+        "SZX",
+        "ZGSZ",
+        "ZGSZ"
+      ],
+      "airlines": [
+        "Loong Air"
+      ]
+    },
+    {
       "city": "Sibu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sibu_Airport",
       "codes": [
@@ -262,8 +328,16 @@
     }
   ],
   "airlines_destinations": {
+    "9 Air": [
+      "Guiyang",
+      "Haikou"
+    ],
+    "Air Changan": [
+      "Yichang"
+    ],
     "AirAsia": [
       "Bintulu",
+      "Jakarta–Soekarno-Hatta",
       "Johor Bahru",
       "Kota Bharu",
       "Kota Kinabalu",
@@ -275,6 +349,7 @@
       "Singapore"
     ],
     "AirBorneo": [
+      "Jakarta–Soekarno-Hatta",
       "Kuala Lumpur–International",
       "Limbang",
       "Mukah",
@@ -282,16 +357,21 @@
       "Singapore",
       "Tanjung Manis"
     ],
-    "Air Changan": [
-      "Yichang"
-    ],
     "Batik Air Malaysia": [
       "Guangzhou",
       "Kuala Lumpur–International",
-      "Kuala Lumpur–Subang"
+      "Kuala Lumpur–Subang",
+      "Kunming"
+    ],
+    "Firefly": [
+      "Chongqing",
+      "Kuala Lumpur–International"
     ],
     "Indonesia AirAsia": [
       "Jakarta–Soekarno-Hatta"
+    ],
+    "Loong Air": [
+      "Shenzhen"
     ],
     "Malaysia Airlines": [
       "Kuala Lumpur–International"
@@ -327,6 +407,6 @@
       "Kuala Lumpur–International"
     ]
   },
-  "date-time-parse": "2026-10-04T03:43:51Z",
-  "date-time-wikidata": "2026-09-29T05:23:13Z"
+  "date-time-parse": "2026-11-01T03:43:33Z",
+  "date-time-wikidata": "2026-10-31T11:09:36Z"
 }

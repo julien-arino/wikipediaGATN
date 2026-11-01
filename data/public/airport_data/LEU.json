@@ -14,12 +14,25 @@
   "admin1_name": "Catalunya [Cataluña]",
   "admin2_name": "Provincia de Lleida",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Andorra–La_Seu_d'Urgell_Airport",
-  "outdegree": 2,
-  "number_airlines": 1,
+  "outdegree": 6,
+  "number_airlines": 2,
   "airlines": [
+    "Chalair Aviation",
     "Iberia"
   ],
   "destinations": [
+    {
+      "city": "Lyon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyon–Saint-Exupéry_Airport",
+      "codes": [
+        "LYS",
+        "LFLL",
+        "LFLL"
+      ],
+      "airlines": [
+        "Chalair Aviation"
+      ]
+    },
     {
       "city": "Madrid",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Adolfo_Suárez_Madrid–Barajas_Airport",
@@ -29,7 +42,32 @@
         "LEMD"
       ],
       "airlines": [
+        "Chalair Aviation",
         "Iberia"
+      ]
+    },
+    {
+      "city": "Nantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nantes_Atlantique_Airport",
+      "codes": [
+        "NTE",
+        "LFRS",
+        "LFRS"
+      ],
+      "airlines": [
+        "Chalair Aviation"
+      ]
+    },
+    {
+      "city": "Nice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nice_Côte_d'Azur_Airport",
+      "codes": [
+        "NCE",
+        "LFMN",
+        "LFMN"
+      ],
+      "airlines": [
+        "Chalair Aviation"
       ]
     },
     {
@@ -41,11 +79,32 @@
         "LEPA"
       ],
       "airlines": [
+        "Chalair Aviation",
         "Iberia"
+      ]
+    },
+    {
+      "city": "Paris Orly",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orly_Airport",
+      "codes": [
+        "ORY",
+        "LFPO",
+        "LFPO"
+      ],
+      "airlines": [
+        "Chalair Aviation"
       ]
     }
   ],
   "airlines_destinations": {
+    "Chalair Aviation": [
+      "Lyon",
+      "Madrid",
+      "Nantes",
+      "Nice",
+      "Palma de Mallorca",
+      "Paris Orly"
+    ],
     "Iberia": [
       "Madrid",
       "Palma de Mallorca"
@@ -56,6 +115,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-09-27T02:57:53Z",
-  "date-time-wikidata": "2026-09-20T09:08:22Z"
+  "date-time-parse": "2026-11-01T03:44:02Z",
+  "date-time-wikidata": "2026-10-23T12:32:56Z"
 }

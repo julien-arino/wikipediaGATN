@@ -14,12 +14,24 @@
   "admin1_name": "Washington",
   "admin2_name": "Spokane County",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Felts_Field",
-  "outdegree": 1,
+  "outdegree": 2,
   "number_airlines": 1,
   "airlines": [
     "SeaPort Airlines"
   ],
   "destinations": [
+    {
+      "city": "Olympia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olympia_Regional_Airport",
+      "codes": [
+        "iata code not found",
+        "icao code not found",
+        "gps code not found"
+      ],
+      "airlines": [
+        "SeaPort Airlines"
+      ]
+    },
     {
       "city": "Seattle–Boeing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_Field",
@@ -35,6 +47,7 @@
   ],
   "airlines_destinations": {
     "SeaPort Airlines": [
+      "Olympia",
       "Seattle–Boeing"
     ]
   },
@@ -75,6 +88,6 @@
       "Seattle–Boeing"
     ]
   },
-  "date-time-parse": "2026-08-30T02:58:46Z",
-  "date-time-wikidata": "2026-08-25T16:41:07Z"
+  "date-time-parse": "2026-11-08T03:50:26Z",
+  "date-time-wikidata": "2026-11-06T20:46:26Z"
 }

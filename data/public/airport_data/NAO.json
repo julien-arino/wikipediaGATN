@@ -14,14 +14,16 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Nanchong_Gaoping_Airport",
-  "outdegree": 19,
-  "number_airlines": 8,
+  "outdegree": 21,
+  "number_airlines": 10,
   "airlines": [
     "Air China",
     "China Eastern Airlines",
     "China Southern Airlines",
+    "Chongqing Airlines",
     "GX Airlines",
     "Hainan Airlines",
+    "Tianjin Airlines",
     "Urumqi Air",
     "XiamenAir",
     "Xizang Airlines"
@@ -88,14 +90,28 @@
       ]
     },
     {
+      "city": "Huizhou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huizhou_Pingtan_Airport",
+      "codes": [
+        "HUZ",
+        "ZGHZ",
+        "ZGHZ"
+      ],
+      "airlines": [
+        "Chongqing Airlines",
+        "Tianjin Airlines"
+      ]
+    },
+    {
       "city": "Jieyang",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Jieyang_Chaoshan_International_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jieyang_Airport",
       "codes": [
         "SWA",
         "ZGOW",
         "ZGOW"
       ],
       "airlines": [
+        "Urumqi Air",
         "Xizang Airlines"
       ]
     },
@@ -254,6 +270,18 @@
       "airlines": [
         "Xizang Airlines"
       ]
+    },
+    {
+      "city": "Yulin (Shaanxi)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yulin_Yuyang_Airport",
+      "codes": [
+        "UYN",
+        "ZLYL",
+        "ZLYL"
+      ],
+      "airlines": [
+        "Tianjin Airlines"
+      ]
     }
   ],
   "airlines_destinations": {
@@ -269,6 +297,9 @@
       "Guangzhou",
       "Shenzhen"
     ],
+    "Chongqing Airlines": [
+      "Huizhou"
+    ],
     "GX Airlines": [
       "Qingdao"
     ],
@@ -276,7 +307,12 @@
       "Beihai",
       "Lanzhou"
     ],
+    "Tianjin Airlines": [
+      "Huizhou",
+      "Yulin (Shaanxi)"
+    ],
     "Urumqi Air": [
+      "Jieyang",
       "Nanjing",
       "Urumqi"
     ],
@@ -298,6 +334,6 @@
   "airlines_cargo": [],
   "destinations_cargo": [],
   "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-10-18T02:30:33Z",
-  "date-time-wikidata": "2026-10-13T17:02:33Z"
+  "date-time-parse": "2026-11-08T03:49:13Z",
+  "date-time-wikidata": "2026-11-08T01:13:07Z"
 }

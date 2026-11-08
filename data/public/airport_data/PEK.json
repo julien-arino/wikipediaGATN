@@ -14,9 +14,10 @@
   "admin1_name": null,
   "admin2_name": null,
   "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Capital_International_Airport",
-  "outdegree": 111,
-  "number_airlines": 31,
+  "outdegree": 116,
+  "number_airlines": 38,
   "airlines": [
+    "Air Algérie",
     "Air Canada",
     "Air China",
     "Air France",
@@ -29,12 +30,18 @@
     "China Eastern Airlines",
     "Dalian Airlines",
     "EVA Air",
+    "Egyptair",
+    "Emirates",
+    "Ethiopian Airlines",
     "Grand China Air",
     "Hainan Airlines",
     "Hong Kong Airlines",
     "Iraqi Airways",
     "Japan Airlines",
+    "KLM",
     "Korean Air",
+    "Lufthansa",
+    "MIAT Mongolian Airlines",
     "Pakistan International Airlines",
     "Philippine Airlines",
     "Shandong Airlines",
@@ -63,6 +70,30 @@
       ]
     },
     {
+      "city": "Addis Ababa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Addis_Ababa_Bole_International_Airport",
+      "codes": [
+        "ADD",
+        "HAAB",
+        "HAAB"
+      ],
+      "airlines": [
+        "Ethiopian Airlines"
+      ]
+    },
+    {
+      "city": "Algiers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houari_Boumediene_Airport",
+      "codes": [
+        "ALG",
+        "DAAG",
+        "DAAG"
+      ],
+      "airlines": [
+        "Air Algérie"
+      ]
+    },
+    {
       "city": "Almaty",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Almaty_International_Airport",
       "codes": [
@@ -84,6 +115,18 @@
       ],
       "airlines": [
         "Hainan Airlines"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
       ]
     },
     {
@@ -288,7 +331,8 @@
         "HECA"
       ],
       "airlines": [
-        "Air China"
+        "Air China",
+        "Egyptair"
       ]
     },
     {
@@ -374,6 +418,18 @@
       ],
       "airlines": [
         "Air China"
+      ]
+    },
+    {
+      "city": "Dubai–International",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_International_Airport",
+      "codes": [
+        "DXB",
+        "OMDB",
+        "OMDB"
+      ],
+      "airlines": [
+        "Emirates"
       ]
     },
     {
@@ -815,6 +871,18 @@
       ]
     },
     {
+      "city": "Montréal–Trudeau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Montréal–Trudeau_International_Airport",
+      "codes": [
+        "YUL",
+        "CYUL",
+        "CYUL"
+      ],
+      "airlines": [
+        "Air China"
+      ]
+    },
+    {
       "city": "Munich",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Airport",
       "codes": [
@@ -823,7 +891,8 @@
         "EDDM"
       ],
       "airlines": [
-        "Air China"
+        "Air China",
+        "Lufthansa"
       ]
     },
     {
@@ -1209,14 +1278,15 @@
     },
     {
       "city": "Ulaanbaatar",
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Ulaanbaatar_Airport",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chinggis_Khaan_International_Airport",
       "codes": [
         "UBN",
         "ZMCK",
         "ZMCK"
       ],
       "airlines": [
-        "Air China"
+        "Air China",
+        "MIAT Mongolian Airlines"
       ]
     },
     {
@@ -1228,7 +1298,8 @@
         "CYVR"
       ],
       "airlines": [
-        "Air Canada"
+        "Air Canada",
+        "Air China"
       ]
     },
     {
@@ -1403,6 +1474,9 @@
     }
   ],
   "airlines_destinations": {
+    "Air Algérie": [
+      "Algiers"
+    ],
     "Air Canada": [
       "Vancouver"
     ],
@@ -1445,6 +1519,7 @@
       "Liuzhou",
       "London–Gatwick",
       "Melbourne",
+      "Montréal–Trudeau",
       "Munich",
       "Nanning",
       "Phuket",
@@ -1460,6 +1535,7 @@
       "Tongliao",
       "Toronto–Pearson",
       "Ulaanbaatar",
+      "Vancouver",
       "Venice",
       "Vladivostok",
       "Washington–Dulles",
@@ -1497,6 +1573,15 @@
       "Dalian",
       "Xi'an",
       "Xiamen"
+    ],
+    "Egyptair": [
+      "Cairo"
+    ],
+    "Emirates": [
+      "Dubai–International"
+    ],
+    "Ethiopian Airlines": [
+      "Addis Ababa"
     ],
     "EVA Air": [
       "Taipei–Taoyuan"
@@ -1542,11 +1627,20 @@
     "Japan Airlines": [
       "Tokyo–Haneda"
     ],
+    "KLM": [
+      "Amsterdam"
+    ],
     "Korean Air": [
       "Busan",
       "Jeju",
       "Seoul–Gimpo",
       "Seoul–Incheon"
+    ],
+    "Lufthansa": [
+      "Munich"
+    ],
+    "MIAT Mongolian Airlines": [
+      "Ulaanbaatar"
     ],
     "Pakistan International Airlines": [
       "Islamabad"
@@ -1665,6 +1759,6 @@
       "Paris–Charles de Gaulle"
     ]
   },
-  "date-time-parse": "2026-11-01T03:45:46Z",
-  "date-time-wikidata": "2026-10-30T18:23:09Z"
+  "date-time-parse": "2026-11-08T03:49:45Z",
+  "date-time-wikidata": "2026-11-06T22:27:17Z"
 }

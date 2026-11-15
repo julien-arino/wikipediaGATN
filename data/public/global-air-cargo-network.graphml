@@ -1611,7 +1611,7 @@
       <data key="d0">30.121944</data>
       <data key="d1">31.405556</data>
       <data key="d2">116.0</data>
-      <data key="d3">26.0</data>
+      <data key="d3">27.0</data>
       <data key="d4">9.0</data>
       <data key="d5">Greater Cairo</data>
       <data key="d6">EGY</data>
@@ -2394,6 +2394,19 @@
       <data key="d8">BR-PR</data>
       <data key="d9">Paraná</data>
       <data key="d10">https://en.wikipedia.org/wiki/Afonso_Pena_International_Airport</data>
+    </node>
+    <node id="CWL">
+      <data key="d0">51.396667</data>
+      <data key="d1">-3.343333</data>
+      <data key="d2">67.06</data>
+      <data key="d3">1.0</data>
+      <data key="d4">1.0</data>
+      <data key="d5">Cardiff</data>
+      <data key="d6">GBR</data>
+      <data key="d7">United Kingdom</data>
+      <data key="d8">GB-WLS</data>
+      <data key="d9">Wales [Cymru GB-CYM]</data>
+      <data key="d10">https://en.wikipedia.org/wiki/Cardiff_Airport</data>
     </node>
     <node id="CXB">
       <data key="d0">21.451944</data>
@@ -3213,8 +3226,8 @@
       <data key="d0">40.6925</data>
       <data key="d1">-74.168611</data>
       <data key="d2">5.0</data>
-      <data key="d3">16.0</data>
-      <data key="d4">6.0</data>
+      <data key="d3">15.0</data>
+      <data key="d4">5.0</data>
       <data key="d5">Newark and Elizabeth</data>
       <data key="d6">USA</data>
       <data key="d7">United States</data>
@@ -3991,8 +4004,8 @@
       <data key="d0">-42.836667</data>
       <data key="d1">147.51</data>
       <data key="d2">3.96</data>
-      <data key="d3">2.0</data>
-      <data key="d4">1.0</data>
+      <data key="d3">4.0</data>
+      <data key="d4">3.0</data>
       <data key="d5">Hobart</data>
       <data key="d6">AUS</data>
       <data key="d7">Australia</data>
@@ -8397,7 +8410,7 @@
       <data key="d0">17.904444</data>
       <data key="d1">-62.843889</data>
       <data key="d2">14.63</data>
-      <data key="d3">14.0</data>
+      <data key="d3">13.0</data>
       <data key="d4">1.0</data>
       <data key="d5">Saint Barthélemy</data>
       <data key="d6">BLM</data>
@@ -9959,8 +9972,8 @@
       <data key="d0">-23.006944</data>
       <data key="d1">-47.134444</data>
       <data key="d2">661.0</data>
-      <data key="d3">9.0</data>
-      <data key="d4">6.0</data>
+      <data key="d3">10.0</data>
+      <data key="d4">7.0</data>
       <data key="d5">Campinas</data>
       <data key="d6">BRA</data>
       <data key="d7">Brazil</data>
@@ -10814,6 +10827,19 @@
       <data key="d8">CA-NT</data>
       <data key="d9">Northwest Territories</data>
       <data key="d10">https://en.wikipedia.org/wiki/Déline_Airport</data>
+    </node>
+    <node id="YWKS">
+      <data key="d0">-66.690833</data>
+      <data key="d1">111.523611</data>
+      <data key="d2">770.84</data>
+      <data key="d3">0.0</data>
+      <data key="d4">0.0</data>
+      <data key="d5">Australian Antarctic Territory</data>
+      <data key="d6">ATA</data>
+      <data key="d7">Antarctica</data>
+      <data key="d8">AU-WA</data>
+      <data key="d9">Western Australia</data>
+      <data key="d10">https://en.wikipedia.org/wiki/Wilkins_Runway</data>
     </node>
     <node id="YWL">
       <data key="d0">52.183333</data>
@@ -12872,6 +12898,9 @@
     <edge source="CAI" target="CGN">
       <data key="d11">1</data>
     </edge>
+    <edge source="CAI" target="CWL">
+      <data key="d11">1</data>
+    </edge>
     <edge source="CAI" target="DMM">
       <data key="d11">1</data>
     </edge>
@@ -14399,6 +14428,9 @@
     <edge source="CWB" target="VCP">
       <data key="d11">2</data>
     </edge>
+    <edge source="CWL" target="CAI">
+      <data key="d11">1</data>
+    </edge>
     <edge source="DAC" target="CAN">
       <data key="d11">1</data>
     </edge>
@@ -15093,9 +15125,6 @@
       <data key="d11">1</data>
     </edge>
     <edge source="EWR" target="ANC">
-      <data key="d11">1</data>
-    </edge>
-    <edge source="EWR" target="BDA">
       <data key="d11">1</data>
     </edge>
     <edge source="EWR" target="BOS">
@@ -16079,10 +16108,16 @@
     <edge source="HAN" target="WUH">
       <data key="d11">1</data>
     </edge>
+    <edge source="HBA" target="HKG">
+      <data key="d11">1</data>
+    </edge>
     <edge source="HBA" target="LST">
       <data key="d11">1</data>
     </edge>
     <edge source="HBA" target="MEL">
+      <data key="d11">1</data>
+    </edge>
+    <edge source="HBA" target="YWKS">
       <data key="d11">1</data>
     </edge>
     <edge source="HEL" target="BUD">

@@ -14,9 +14,11 @@
   "admin1_name": "Wales [Cymru GB-CYM]",
   "admin2_name": "Vale of Glamorgan",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cardiff_Airport",
-  "outdegree": 31,
-  "number_airlines": 4,
+  "outdegree": 33,
+  "number_airlines": 6,
   "airlines": [
+    "Aer Lingus",
+    "KLM",
     "Norse Atlantic Airways",
     "Ryanair",
     "TUI Airways",
@@ -34,6 +36,18 @@
       "airlines": [
         "Ryanair",
         "TUI Airways"
+      ]
+    },
+    {
+      "city": "Amsterdam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+      "codes": [
+        "AMS",
+        "EHAM",
+        "EHAM"
+      ],
+      "airlines": [
+        "KLM"
       ]
     },
     {
@@ -58,6 +72,18 @@
       ],
       "airlines": [
         "Norse Atlantic Airways"
+      ]
+    },
+    {
+      "city": "Belfast–City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belfast_City_Airport",
+      "codes": [
+        "BHD",
+        "EGAC",
+        "EGAC"
+      ],
+      "airlines": [
+        "Aer Lingus"
       ]
     },
     {
@@ -117,6 +143,7 @@
         "EIDW"
       ],
       "airlines": [
+        "Aer Lingus",
         "Ryanair"
       ]
     },
@@ -401,6 +428,13 @@
     }
   ],
   "airlines_destinations": {
+    "Aer Lingus": [
+      "Belfast–City",
+      "Dublin"
+    ],
+    "KLM": [
+      "Amsterdam"
+    ],
     "Norse Atlantic Airways": [
       "Barbados"
     ],
@@ -445,11 +479,30 @@
       "Toronto–Pearson"
     ]
   },
-  "outdegree_cargo": 0,
-  "number_airlines_cargo": 0,
-  "airlines_cargo": [],
-  "destinations_cargo": [],
-  "airlines_destinations_cargo": {},
-  "date-time-parse": "2026-11-08T03:45:32Z",
-  "date-time-wikidata": "2026-11-07T05:22:44Z"
+  "outdegree_cargo": 1,
+  "number_airlines_cargo": 1,
+  "airlines_cargo": [
+    "EgyptAir Cargo"
+  ],
+  "destinations_cargo": [
+    {
+      "city": "Cairo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cairo_International_Airport",
+      "codes": [
+        "CAI",
+        "HECA",
+        "HECA"
+      ],
+      "airlines": [
+        "EgyptAir Cargo"
+      ]
+    }
+  ],
+  "airlines_destinations_cargo": {
+    "EgyptAir Cargo": [
+      "Cairo"
+    ]
+  },
+  "date-time-parse": "2026-11-15T04:08:56Z",
+  "date-time-wikidata": "2026-11-14T21:03:44Z"
 }

@@ -27,13 +27,18 @@ from .airport_level_functions import (
     format_destinations_list,
     infer_missing_geographic_data,
 )
-from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+from .paths import (
+    PUBLIC_DATA_DIR,
+    TEMP_RESULTS_DIR,
+    escape_reserved_code,
+    unescape_reserved_code,
+)
 
 logger = logging.getLogger(__name__)
 
 # Matches both IATA-style (e.g. YWG.0.json) and wiki-prefixed
 # (e.g. wiki_Winnipeg.1.json) filenames produced by the scraper.
-_FNAME_RE = re.compile(r"^([A-Z]{3,4}|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
+_FNAME_RE = re.compile(r"^([A-Z]{3,4}_?|wiki_[A-Za-z0-9_]+)\.\d+\.json$")
 
 
 ###############################################################################
@@ -96,9 +101,9 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
     for fname in sorted(os.listdir(scan_dir)):
         m = _FNAME_RE.match(fname)
         if m:
-            valid_files.append((fname, m.group(1)))
+            valid_files.append((fname, unescape_reserved_code(m.group(1))))
         elif fname.endswith(".json"):
-            valid_files.append((fname, fname[:-5]))
+            valid_files.append((fname, unescape_reserved_code(fname[:-5])))
 
     rows = []
     skipped = 0
@@ -226,8 +231,10 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
         # Apply formatting constraints
         new_data = format_airport_json(new_data)
 
-        # Save to public/airport_data
-        public_json_path = os.path.join(airport_data_dir, f"{identifier}.json")
+        # Save to public/airport_data (escape Windows-reserved codes on disk)
+        public_json_path = os.path.join(
+            airport_data_dir, f"{escape_reserved_code(identifier)}.json"
+        )
         with open(public_json_path, "w", encoding="utf-8") as out_fh:
             json.dump(new_data, out_fh, indent=2, ensure_ascii=False)
 
@@ -318,13 +325,13 @@ def check_duplicated_iata_codes(verbose: bool = False) -> int:
             "Run the Wikipedia scraping step first."
         )
 
-    pattern = re.compile(r"^([A-Z]{3})\.(\d+)\.json$")
+    pattern = re.compile(r"^([A-Z]{3}_?)\.(\d+)\.json$")
     files_by_iata: dict = {}
 
     for fname in os.listdir(target_dir):
         m = pattern.match(fname)
         if m:
-            iata = m.group(1)
+            iata = unescape_reserved_code(m.group(1))
             level = int(m.group(2))
             files_by_iata.setdefault(iata, []).append((level, fname))
 
@@ -476,7 +483,7 @@ def enrich_missing_airport_data(verbose: bool = False) -> int:
         if not iata:
             continue
 
-        json_path = os.path.join(airport_data_dir, f"{iata}.json")
+        json_path = os.path.join(airport_data_dir, f"{escape_reserved_code(iata)}.json")
         # Fallback to checking by identifier if iata is missing or different
         if not os.path.isfile(json_path) and row.get("wikipedia_url"):
             identifier = urllib.parse.unquote(
@@ -498,7 +505,7 @@ def enrich_missing_airport_data(verbose: bool = False) -> int:
                             d = json.load(jf)
                             if d.get("wikipedia_url") == row.get("wikipedia_url"):
                                 json_path = os.path.join(airport_data_dir, fname)
-                                iata = fname.replace(".json", "")
+                                iata = unescape_reserved_code(fname[:-5])
                                 break
                         except Exception:
                             pass

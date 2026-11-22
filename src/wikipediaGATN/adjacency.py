@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix, save_npz
 
-from .paths import PUBLIC_DATA_DIR
+from .paths import PUBLIC_DATA_DIR, escape_reserved_code
 
 # Pre-compiled pattern for validating IATA or ICAO codes (3 or 4 uppercase letters)
 _CODE_RE = re.compile(r"^[A-Z]{3,4}$")
@@ -333,7 +333,9 @@ def create_outbound_adjacency_matrix(
 
             for node in G.nodes():
                 json_file = os.path.join(
-                    PUBLIC_DATA_DIR, "airport_data", f"{node}.json"
+                    PUBLIC_DATA_DIR,
+                    "airport_data",
+                    f"{escape_reserved_code(node)}.json",
                 )
                 if os.path.exists(json_file):
                     try:

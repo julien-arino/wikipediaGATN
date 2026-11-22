@@ -82,6 +82,53 @@ TEMP_RESULTS_DIR: Path = DATA_DIR / "tmp_results"
 PUBLIC_DATA_DIR: Path = DATA_DIR / "public"
 
 # ---------------------------------------------------------------------------
+# Windows-reserved filename handling
+# ---------------------------------------------------------------------------
+# A handful of real airport codes (e.g. AUX = Araguaína, NUL = Nulato,
+# PRN = Pristina) collide with Windows reserved device names.  A file whose
+# base name — the part before the first dot — is one of these cannot be created
+# or checked out on Windows (``git clone`` fails with "invalid path").  We store
+# such codes with a trailing underscore on disk (``AUX`` -> ``AUX_.json``) and
+# strip it again when recovering the code, so the in-memory code is always the
+# real one.  Matching is case-insensitive and ignores any extension.
+
+#: Windows reserved device names (without extension), upper-cased.
+_WINDOWS_RESERVED_NAMES = (
+    {"CON", "PRN", "AUX", "NUL"}
+    | {f"COM{i}" for i in range(1, 10)}
+    | {f"LPT{i}" for i in range(1, 10)}
+)
+
+
+def is_reserved_code(code: str) -> bool:
+    """Return True if ``code`` collides with a Windows reserved device name."""
+    return code.upper() in _WINDOWS_RESERVED_NAMES
+
+
+def escape_reserved_code(code: str) -> str:
+    """Return a filesystem-safe stem for ``code``.
+
+    Appends a single underscore to Windows reserved device names (``AUX`` ->
+    ``AUX_``); all other codes are returned unchanged.  Inverse of
+    :func:`unescape_reserved_code`.
+    """
+    return f"{code}_" if is_reserved_code(code) else code
+
+
+def unescape_reserved_code(stem: str) -> str:
+    """Recover an airport code from an on-disk stem.
+
+    Strips the trailing underscore added by :func:`escape_reserved_code` when,
+    and only when, the remaining stem is a Windows reserved device name.  A
+    ``.json`` (or other) extension, if present, is ignored and preserved-free:
+    pass the stem without extension.
+    """
+    if stem.endswith("_") and is_reserved_code(stem[:-1]):
+        return stem[:-1]
+    return stem
+
+
+# ---------------------------------------------------------------------------
 # Public surface
 # ---------------------------------------------------------------------------
 __all__ = [
@@ -89,4 +136,7 @@ __all__ = [
     "DATA_DIR",
     "TEMP_RESULTS_DIR",
     "PUBLIC_DATA_DIR",
+    "is_reserved_code",
+    "escape_reserved_code",
+    "unescape_reserved_code",
 ]

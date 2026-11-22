@@ -3,12 +3,17 @@
 [![Tests](https://github.com/julien-arino/wikipediaGATN/actions/workflows/tests.yml/badge.svg)](https://github.com/julien-arino/wikipediaGATN/actions/workflows/tests.yml)
 [![Docs](https://github.com/julien-arino/wikipediaGATN/actions/workflows/docs.yml/badge.svg)](https://github.com/julien-arino/wikipediaGATN/actions/workflows/docs.yml)
 [![PyPI version](https://img.shields.io/pypi/v/wikipediaGATN.svg)](https://pypi.org/project/wikipediaGATN/)
+[![Python versions](https://img.shields.io/pypi/pyversions/wikipediaGATN.svg)](https://pypi.org/project/wikipediaGATN/)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Overview
 
 `wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo. 
+
+### Why build the network from Wikipedia?
+
+Comprehensive commercial datasets of the GATN exist (IATA, OAG, and similar providers), but they are often prohibitively priced and cannot be redistributed. `wikipediaGATN` seeks a middle ground: it does not attempt to capture flight *volumes*, but it reconstructs the *structure* of the network — which airports are connected to which — entirely from publicly available Wikipedia data, and ships the result under an open licence. This makes it suitable for empirical studies of air-travel connectivity, epidemic-spread modelling, and teaching graph/network analysis, where an open, reproducible snapshot of the network structure is more valuable than paid access to traffic figures. The trade-off is that coverage and accuracy depend on the quality of each airport's Wikipedia page (see the limitations noted in the documentation).
 
 ## Data
 
@@ -181,4 +186,28 @@ To resume after an interruption:
 ```python
 from wikipediaGATN.wikipedia_network_level import continue_existing_search_until_empty
 continue_existing_search_until_empty(delay=0.5, verbose=True)
+```
+
+## Documentation
+
+Full documentation, including the API reference and quickstart tutorials, is available at
+<https://julien-arino.github.io/wikipediaGATN/>.
+
+## Contributing
+
+Contributions are welcome. Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to set up a
+development environment, run the tests, and open a pull request, and
+[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) for the standards we expect of participants.
+
+## Citation
+
+If you use `wikipediaGATN` in your research, please cite it. Citation metadata is provided in
+[`CITATION.cff`](CITATION.cff); GitHub renders a ready-to-use citation from that file via the
+"Cite this repository" button on the repository page.
+
+## License
+
+`wikipediaGATN` is released under the GNU General Public License v3.0 or later; see
+[`LICENSE`](LICENSE). Note that data under `data/public/` is derived from Wikipedia and OurAirports
+and is subject to those sources' own terms — see [`data/public/README.md`](data/public/README.md).
 

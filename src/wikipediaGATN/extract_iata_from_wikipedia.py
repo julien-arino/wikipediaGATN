@@ -25,6 +25,7 @@ from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 
+from ._meta import USER_AGENT
 from .paths import TEMP_RESULTS_DIR
 
 # ---------------------------------------------------------------------------
@@ -32,12 +33,9 @@ from .paths import TEMP_RESULTS_DIR
 # ---------------------------------------------------------------------------
 
 #: Wikipedia API bot policy requires a meaningful User-Agent that includes
-#: the package name, version, and a contact address.
-_USER_AGENT = (
-    "wikipediaGATN/0.1.0 "
-    "(Global Air Transportation Networks research; "
-    "julien.arino@umanitoba.ca)"
-)
+#: the package name, version, and a contact address.  Sourced from the shared
+#: constant so the version and contact never drift between modules.
+_USER_AGENT = USER_AGENT
 
 # Compiled regex patterns used by _extract_iata_from_wikipedia_page.
 # Compiled once at module load rather than on every function call.
@@ -367,7 +365,7 @@ def extract_iata_from_unmapped_destinations(
             row["source"] = "ourairports_db (conf: 1.00)"
             successful += 1
             if verbose:
-                print(f"    → {row['iata']} (offline from OurAirports)\n")
+                print(f"    -> {row['iata']} (offline from OurAirports)\n")
             continue
 
         # ---- Fallback: Web Scrape Wikipedia Page ------------------------
@@ -380,12 +378,12 @@ def extract_iata_from_unmapped_destinations(
             row["source"] = f"scraped (conf: {result['confidence']:.2f})"
             successful += 1
             if verbose:
-                print(f"    → {result['iata']} (conf: {result['confidence']:.0%})\n")
+                print(f"    -> {result['iata']} (conf: {result['confidence']:.0%})\n")
         else:
             row["source"] = f"failed ({result.get('error', 'unknown')})"
             failed += 1
             if verbose:
-                print(f"    → failed: {result.get('error', 'unknown')}\n")
+                print(f"    -> failed: {result.get('error', 'unknown')}\n")
 
         # ---- Polite delay -----------------------------------------------
         # Longer pause every batch_size requests; skip the extra sleep after
@@ -433,7 +431,7 @@ def extract_iata_from_unmapped_destinations(
             rate = successful / (successful + failed) * 100
             print(f"Success rate (new) : {rate:.1f}%")
         print(f"Updated CSV        : {os.path.abspath(csv_path)}")
-        print("\n💡 Next: run create_manual_mapping_from_scraped_data() then")
+        print("\n[tip] Next: run create_manual_mapping_from_scraped_data() then")
         print("   rerun create_outbound_connections_list() for better coverage.")
 
     return {

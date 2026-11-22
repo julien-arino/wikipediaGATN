@@ -24,6 +24,7 @@ from typing import Optional, Union
 import requests
 from dateutil import parser as dt_parser
 
+from ._meta import USER_AGENT
 from .airport_level_functions import (
     _API_URL,
     _SESSION,
@@ -159,7 +160,7 @@ def check_needs_refresh(file_paths: list[str], verbose: bool = False) -> list[st
                         to_refresh.append(local_info["path"])
                         if verbose:
                             print(
-                                f"  ↻ {orig_title} needs refresh (remote {remote_dt} > local {local_info['local_dt']})"
+                                f"  [refresh] {orig_title} needs refresh (remote {remote_dt} > local {local_info['local_dt']})"
                             )
 
         except Exception as exc:
@@ -241,12 +242,12 @@ def refresh_airport_file(
         with open(fpath, "r", encoding="utf-8") as f:
             data = json.load(f)
     except Exception as exc:
-        print(f"  ✗ Failed to load {fpath}: {exc}")
+        print(f"  [x] Failed to load {fpath}: {exc}")
         return False
 
     url = data.get("wikipedia_url")
     if not url:
-        print(f"  ✗ No wikipedia_url found in {fpath}. Cannot refresh.")
+        print(f"  [x] No wikipedia_url found in {fpath}. Cannot refresh.")
         return False
 
     if local_only:
@@ -345,7 +346,7 @@ def refresh_airport_file(
         )
 
         if not wikitext:
-            print(f"  ✗ Failed to fetch wikitext for {url}")
+            print(f"  [x] Failed to fetch wikitext for {url}")
             return False
 
         ad_map_wikitext = parse_wikitext_airlines_destinations(wikitext)
@@ -405,7 +406,7 @@ def refresh_airport_file(
         all_dests = destinations + destinations_cargo
         unresolved = [d[1] for d in all_dests if len(d) >= 2 and d[1] not in url_map]
         if unresolved:
-            headers = {"User-Agent": "wikipediaGATN/1.0 (julien.arino@example.com)"}
+            headers = {"User-Agent": USER_AGENT}
             for i in range(0, len(unresolved), 50):
                 chunk = unresolved[i : i + 50]
                 titles = [
@@ -489,7 +490,7 @@ def refresh_airport_file(
     with open(fpath, "w", encoding="utf-8") as out_fh:
         json.dump(data, out_fh, indent=2, ensure_ascii=False)
 
-    print(f"  ✓ Refreshed {data.get('iata', os.path.basename(fpath))}")
+    print(f"  [ok] Refreshed {data.get('iata', os.path.basename(fpath))}")
     return True
 
 
@@ -556,7 +557,7 @@ def refresh_airports(
         files_to_refresh = check_needs_refresh(files_to_check, verbose=verbose)
 
     if not files_to_refresh:
-        print("✓ All files are up to date! No refreshing needed.")
+        print("[ok] All files are up to date! No refreshing needed.")
         return
 
     if verbose:

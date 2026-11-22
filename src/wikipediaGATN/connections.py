@@ -95,7 +95,7 @@ def create_outbound_connections_list(
         if not origin_iata:
             if verbose:
                 print(
-                    f"  ⚠  No origin IATA, ICAO, GPS, or Ident code found in {fname} — skipping"
+                    f"  [warning] No origin IATA, ICAO, GPS, or Ident code found in {fname} - skipping"
                 )
             continue
 
@@ -165,7 +165,7 @@ def create_outbound_connections_list(
     # ------------------------------------------------------------------
     if unmapped_destinations and verbose:
         print(
-            f"\n⚠️  {len(unmapped_destinations):,} unmapped destination URLs "
+            f"\n[warning] {len(unmapped_destinations):,} unmapped destination URLs "
             f"({sum(unmapped_destinations.values()):,} total occurrences)"
         )
         print("   Top 10 unmapped:")
@@ -267,7 +267,7 @@ def create_outbound_connections_list(
                 f"Total unmapped occurrences: {sum(unmapped_destinations.values()):,}"
             )
             print(
-                "\n💡 Next step: run extract_iata_from_wikipedia() to resolve these URLs."
+                "\n[tip] Next step: run extract_iata_from_wikipedia() to resolve these URLs."
             )
 
     return output_csv, output_cargo_csv, unmapped_csv

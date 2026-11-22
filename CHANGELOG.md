@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Dropped end-of-life Python 3.10 (EOL 2026-10-01) and added 3.13 and 3.14.
+  `requires-python` is now `>=3.11`; the classifiers, CI test matrix, weekly
+  refresh workflow, and ruff/black target versions were updated to match.
+
 ### Fixed
 - Consolidated every Wikipedia/Wikimedia request behind a single shared
   `User-Agent` with a real contact address and the actual package version,

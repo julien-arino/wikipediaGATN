@@ -42,16 +42,18 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 
 # Minimum supported Python version.  Keep this in sync with the classifiers
 # above, the CI test matrix, and the ruff/black target-version settings below.
-requires-python = ">=3.10"
+# 3.10 reached end of life on 2026-10-01 and is intentionally dropped.
+requires-python = ">=3.11"
 
 # ---------------------------------------------------------------------------
 # Runtime dependencies
@@ -157,7 +159,7 @@ exclude_lines = [
 # ---------------------------------------------------------------------------
 [tool.ruff]
 line-length = 88
-target-version = "py310"
+target-version = "py311"
 exclude = [
     ".git",
     ".github",
@@ -183,7 +185,7 @@ ignore = [
 # ---------------------------------------------------------------------------
 [tool.black]
 line-length    = 88
-target-version = ["py310", "py311", "py312"]
+target-version = ["py311", "py312", "py313"]
 
 # ---------------------------------------------------------------------------
 # Hatch Environments Configuration

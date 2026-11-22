@@ -52,6 +52,7 @@ import requests
 from bs4 import BeautifulSoup
 from geopy.point import Point
 
+from ._meta import USER_AGENT
 from .paths import TEMP_RESULTS_DIR
 
 logger = logging.getLogger(__name__)
@@ -83,12 +84,7 @@ _API_URL = "https://en.wikipedia.org/w/api.php"
 
 # Wikipedia's bot policy requires a descriptive User-Agent with a contact
 # address so they can reach out if the bot misbehaves.
-_HEADERS = {
-    "User-Agent": (
-        "wikipediaGATN/1.0 (https://github.com/julien-arino; julien.arino@umanitoba.ca) "
-        "python-requests"
-    )
-}
+_HEADERS = {"User-Agent": USER_AGENT}
 
 # Shared session — reuses TCP connections across all requests in a pipeline run.
 _SESSION = requests.Session()
@@ -1717,7 +1713,7 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
 
     canonical_map = {}
 
-    headers = {"User-Agent": "wikipediaGATN/1.0 (julien.arino@example.com)"}
+    headers = {"User-Agent": USER_AGENT}
     for i in range(0, len(urls_to_resolve), 50):
         chunk = urls_to_resolve[i : i + 50]
         titles = [urllib.parse.unquote(url.split("/wiki/")[-1]) for url in chunk]
@@ -1796,9 +1792,7 @@ def format_destinations_list(
                 try:
                     import requests
 
-                    headers = {
-                        "User-Agent": "wikipediaGATN/1.0 (julien.arino@example.com)"
-                    }
+                    headers = {"User-Agent": USER_AGENT}
                     title = urllib.parse.unquote(d_url.split("/wiki/")[-1])
                     r = requests.get(
                         f"https://en.wikipedia.org/w/api.php?action=query&titles={title}&redirects=1&format=json",
@@ -1883,6 +1877,9 @@ def _load_ourairports_data():
             print(f"Downloading OurAirports dataset from {url}...")
             r = requests.get(url, timeout=30)
             r.raise_for_status()
+            # Ensure the destination directory exists before writing — on a
+            # fresh data folder PUBLIC_DATA_DIR may not have been created yet.
+            os.makedirs(os.path.dirname(ourairports_path), exist_ok=True)
             with open(ourairports_path, "w", encoding="utf-8") as f:
                 f.write(r.text)
         except Exception as e:
@@ -2208,9 +2205,7 @@ def find_active_missing_airports(
             return None
 
         try:
-            headers = {
-                "User-Agent": "wikipediaGATN/0.1.0 (Global Air Transportation Networks research; julien.arino@umanitoba.ca)"
-            }
+            headers = {"User-Agent": USER_AGENT}
             res = requests.get(url, headers=headers, timeout=10)
             res.raise_for_status()
             html = res.text.lower()

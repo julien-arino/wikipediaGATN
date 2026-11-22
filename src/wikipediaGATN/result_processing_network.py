@@ -166,14 +166,14 @@ def _run_pipeline() -> None:
                 )
             )
         else:
-            print("\n⚠️  unmapped_destinations.csv is empty — skipping re-run.")
+            print("\n[warning]  unmapped_destinations.csv is empty — skipping re-run.")
             print("    This is expected if all destinations were already resolved.")
 
     except Exception:  # noqa: BLE001
         # Print the full traceback so the user knows exactly what went wrong,
         # then fall through to still produce the adjacency matrices from
         # whatever connections data is already on disk.
-        print("\n✗ Two-pass extraction failed — see traceback below.")
+        print("\n[x] Two-pass extraction failed — see traceback below.")
         traceback.print_exc()
         print("\nContinuing with existing connections data…")
 
@@ -193,7 +193,7 @@ def _run_pipeline() -> None:
     )
 
     print(f"\n{'=' * 70}")
-    print("✓ PIPELINE COMPLETE")
+    print("[ok] PIPELINE COMPLETE")
     print(f"{'=' * 70}")
     print(f"\n  Connections CSV (Pax)     : {connections_csv}")
     print(f"  Connections CSV (Cargo)   : {connections_cargo_csv}")

@@ -13,7 +13,8 @@ The package provides tools to:
 For more information, see: https://github.com/julien-arino/wikipediaGATN
 """
 
-__version__ = "0.1.1"
+from ._meta import __version__ as __version__
+
 __author__ = "Julien Arino and Adriana-Stefania Ciupeanu"
 __author_email__ = "julien.arino@umanitoba.ca, Adriana-Stefania.Ciupeanu@umanitoba.ca"
 __license__ = "GPLv3"

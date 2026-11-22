@@ -42,17 +42,18 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 
-# Minimum Python version.  f-strings and dataclasses were added in 3.7;
-# 3.8 is the lowest version still receiving security fixes at time of
-# initial release, so we require it here.
-requires-python = ">=3.10"
+# Minimum supported Python version.  Keep this in sync with the classifiers
+# above, the CI test matrix, and the ruff/black target-version settings below.
+# 3.10 reached end of life on 2026-10-01 and is intentionally dropped.
+requires-python = ">=3.11"
 
 # ---------------------------------------------------------------------------
 # Runtime dependencies
@@ -66,7 +67,6 @@ requires-python = ">=3.10"
 # This step is documented in the README.
 # ---------------------------------------------------------------------------
 dependencies = [
-    "click>=8.0",
     # HTTP + HTML parsing
     "requests>=2.28",
     "beautifulsoup4>=4.12",
@@ -129,13 +129,6 @@ Repository    = "https://github.com/julien-arino/wikipediaGATN"
 "Bug Tracker" = "https://github.com/julien-arino/wikipediaGATN/issues"
 
 # ---------------------------------------------------------------------------
-# Package discovery
-# ---------------------------------------------------------------------------
-[tool.setuptools.packages.find]
-where   = ["src"]   # look for packages under src/
-include = ["wikipediaGATN*"]
-
-# ---------------------------------------------------------------------------
 # Pytest configuration
 # ---------------------------------------------------------------------------
 [tool.pytest.ini_options]
@@ -166,7 +159,7 @@ exclude_lines = [
 # ---------------------------------------------------------------------------
 [tool.ruff]
 line-length = 88
-target-version = "py310"
+target-version = "py311"
 exclude = [
     ".git",
     ".github",
@@ -192,7 +185,7 @@ ignore = [
 # ---------------------------------------------------------------------------
 [tool.black]
 line-length    = 88
-target-version = ["py310", "py311", "py312"]
+target-version = ["py311", "py312", "py313"]
 
 # ---------------------------------------------------------------------------
 # Hatch Environments Configuration

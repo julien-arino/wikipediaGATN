@@ -20,6 +20,7 @@ import pycountry_convert as pc
 import reverse_geocoder as rg
 from geopy.geocoders import Nominatim
 
+from ._meta import USER_AGENT
 from .airport_level_functions import (
     build_url_to_codes_map,
     format_airport_json,
@@ -105,7 +106,7 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
     os.makedirs(airport_data_dir, exist_ok=True)
 
-    geolocator = Nominatim(user_agent="wikipediaGATN/1.0")
+    geolocator = Nominatim(user_agent=USER_AGENT)
 
     if verbose:
         print(f"Processing {total_files} files from {scan_dir}...")

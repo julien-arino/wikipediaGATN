@@ -14,7 +14,7 @@ import os
 import warnings
 from collections import Counter
 
-from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR
+from .paths import PUBLIC_DATA_DIR, TEMP_RESULTS_DIR, unescape_reserved_code
 
 logger = logging.getLogger(__name__)
 
@@ -90,7 +90,9 @@ def create_outbound_connections_list(
             origin_iata = data.get("gps")
 
         if not origin_iata or origin_iata == "gps code not found":
-            origin_iata = fname.replace(".json", "")
+            origin_iata = unescape_reserved_code(
+                fname[:-5] if fname.endswith(".json") else fname
+            )
 
         if not origin_iata:
             if verbose:

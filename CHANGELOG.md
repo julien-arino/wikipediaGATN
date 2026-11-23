@@ -13,6 +13,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   refresh workflow, and ruff/black target versions were updated to match.
 
 ### Fixed
+- Windows: airport codes that collide with reserved device names (AUX, NUL, PRN,
+  and the CON/COM#/LPT# family) are now stored with a trailing underscore on disk
+  (`AUX.json` -> `AUX_.json`) and un-escaped when read, so `git clone` and a full
+  crawl both work on Windows. The three affected files (Araguaína, Nulato,
+  Pristina) were renamed, preserving the data. Removed a stray `MagicMock` test
+  artefact that a test had written into `data/public`.
+
+### Tests
+- The integration tests for the pipeline (`export_all_airport_data`,
+  `check_duplicated_iata_codes`, `create_outbound_connections_list`) now run
+  offline against a small committed fixture dataset via the new
+  `isolated_data_dir` fixture, instead of requiring a prior live crawl and
+  writing into the real `data/public`. They are no longer `network`-marked or
+  skipped in CI, which raises coverage of the pipeline modules. Added
+  `tests/test_paths.py` for the reserved-code escaping helpers.
+
 - Consolidated every Wikipedia/Wikimedia request behind a single shared
   `User-Agent` with a real contact address and the actual package version,
   replacing the placeholder `julien.arino@example.com` and stale-version strings.

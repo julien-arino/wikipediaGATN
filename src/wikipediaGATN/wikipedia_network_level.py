@@ -55,7 +55,9 @@ __all__ = [
 # ---------------------------------------------------------------------------
 
 # Matches both IATA/ICAO-style (e.g. YWG.2.json, BGKL.6.json) and wiki-prefixed filenames.
-_FNAME_RE = re.compile(r"^(?:[A-Z0-9\-]{3,10}|wiki_[A-Za-z0-9_]+|unknown)\.\d+\.json$")
+_FNAME_RE = re.compile(
+    r"^(?:[A-Z0-9\-]{3,10}_?|wiki_[A-Za-z0-9_]+|unknown)\.\d+\.json$"
+)
 
 
 def _level_pattern(level: int) -> re.Pattern:

@@ -53,7 +53,7 @@ from bs4 import BeautifulSoup
 from geopy.point import Point
 
 from ._meta import USER_AGENT
-from .paths import TEMP_RESULTS_DIR
+from .paths import TEMP_RESULTS_DIR, escape_reserved_code
 
 logger = logging.getLogger(__name__)
 
@@ -951,7 +951,11 @@ def save_airport_info(
 
     output_dir = os.path.join(TEMP_RESULTS_DIR, "airports_rooted_sweep")
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{iata_code}.{level}.json")
+    # Escape Windows-reserved codes (AUX, NUL, PRN, ...) so the crawl does not
+    # produce files that are invalid on Windows (e.g. AUX.2.json).
+    output_path = os.path.join(
+        output_dir, f"{escape_reserved_code(iata_code)}.{level}.json"
+    )
 
     # Sort destinations on a copy so we do not mutate the caller's dict.
     info_to_save = dict(airport_info)

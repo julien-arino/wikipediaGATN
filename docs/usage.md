@@ -1,5 +1,33 @@
 # Usage
 
+## Interpreting the networks
+
+What the nodes and edges mean, so results are not misread:
+
+- **Nodes** are airports, keyed by 3-letter **IATA** code where one exists and
+  4-letter **ICAO** code otherwise (about 90 of the ~4,360 passenger nodes).
+  Each exported graph node carries a ``code_type`` attribute (``"IATA"`` or
+  ``"ICAO"``).
+- **Edge weights are airline counts**, not 0/1 flags: an edge A → B is weighted
+  by the number of distinct airlines reported to fly A → B (roughly 1–25 pax,
+  1–19 cargo). **Summing a node's row is therefore not its out-degree** — use
+  the number of non-zero entries for out-degree.
+- **Seasonal / future routes** carry a ``seasonal`` edge attribute (``1`` =
+  seasonal-only or not-yet-started, ``0`` = year-round), mirrored by a
+  ``seasonal`` column in the network CSVs.
+- **Unreliable airline data:** airports whose routes were recovered via the NLP
+  fallback do not publish airline counts (edge weight 1, ``nb_airlines`` 0) and
+  are marked ``airlines_reliable = False`` on the passenger graph nodes.
+- **Directed vs symmetric:** the default graphs are directed. A ``symmetric``
+  build (files suffixed ``_sym``) adds the reverse of each edge, taking the
+  **maximum** of the two directional weights (``max(A, Aᵀ)``), not the sum.
+- **Cargo coverage is partial:** the crawl follows passenger destination links,
+  so the cargo graph is smaller and less complete (~46% of its edges are
+  bidirectional, vs ~89% for passenger). Treat it as indicative.
+
+See [Network structure and semantics in the README](https://github.com/julien-arino/wikipediaGATN#network-structure-and-semantics)
+for the fuller discussion.
+
 ## Using Pre-built Data & Network Analysis
 
 The global network data in `data/public/` is automatically updated weekly via GitHub Actions. **You do not need to run your own crawl to use this data.** You can clone this repository (or download the `data/` folder) and immediately load the provided sparse matrices to perform graph analysis.

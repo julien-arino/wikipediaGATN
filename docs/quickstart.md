@@ -57,7 +57,13 @@ for iata, degree in out_degrees[:5]:
 
 ## Tutorial 2: Loading & Analyzing Pre-built Global Network Data
 
-`wikipediaGATN` includes pre-built global air transportation networks under `data/public/`. You do not need to scrape Wikipedia yourself if you want to analyze the global graphs. 
+`wikipediaGATN` ships pre-built global air transportation networks **inside the
+installed package**, so you do not need to scrape Wikipedia yourself to analyse
+the global graphs. After a plain `pip install wikipediaGATN`,
+`PUBLIC_DATA_DIR` automatically resolves to the bundled data; from a source
+checkout it points at `data/public/` instead. Either way the code below is
+unchanged. (See [Installation](installation.md#bundled-network-data) for exactly
+what is bundled.)
 
 Here are three different ways to load the pre-built passenger (pax) network data.
 

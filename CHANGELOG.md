@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- The PyPI wheel now **bundles the pre-built global networks** (passenger and
+  cargo `.graphml`/`.gexf`/`.dot`/`.csv`, the `.npz` adjacency matrices,
+  `nodes_*.txt`, and `airports_information.csv`), mapped into the package via
+  hatch `force-include` with no duplication in the source tree. `PUBLIC_DATA_DIR`
+  gains a fourth resolution tier that falls back to this bundled copy when no
+  local `data/public` exists, so `pip install wikipediaGATN` can read the
+  published networks without a prior crawl or checkout — fixing the
+  `FileNotFoundError` reviewers hit in quickstart Tutorial 2. The interactive
+  Plotly HTML and `ourairports.csv` are intentionally not bundled, keeping the
+  wheel at ~2.4 MB (the graph files compress well). The bundled snapshot is
+  read-only; set `WIKIPEDIAGATN_DATA_DIR` to a writable directory to run a crawl.
+
 ### Changed
 - Dropped end-of-life Python 3.10 (EOL 2026-10-01) and added 3.13 and 3.14.
   `requires-python` is now `>=3.11`; the classifiers, CI test matrix, weekly

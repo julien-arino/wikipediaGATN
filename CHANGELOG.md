@@ -21,6 +21,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   read-only; set `WIKIPEDIAGATN_DATA_DIR` to a writable directory to run a crawl.
 
 ### Changed
+- The weekly data refresh no longer pushes straight to `main`. It now snapshots
+  the committed data, rebuilds the networks, **validates** the result against
+  that baseline with the new `scripts/validate_refresh.py` guardrail, and only
+  then opens (or updates) a pull request with the refreshed data — so a scrape
+  regression is caught and reviewed instead of silently corrupting the published
+  networks. The guardrail fails the run if a network loses more than 10% of its
+  nodes or 15% of its routes, if any top-25 hub loses all or more than half of
+  its outbound routes, or if the count of airports with no outbound routes
+  spikes. The pull-request step is dormant until a `REFRESH_DATA_PAT` repository
+  secret is configured (a PAT is required because PRs opened with the default
+  token do not trigger CI); see [Data Maintenance](docs/maintenance.md).
 - Dropped end-of-life Python 3.10 (EOL 2026-10-01) and added 3.13 and 3.14.
   `requires-python` is now `>=3.11`; the classifiers, CI test matrix, weekly
   refresh workflow, and ruff/black target versions were updated to match.
@@ -50,6 +61,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `check_needs_refresh` with the Wikipedia API mocked. This roughly doubles
   coverage of `airport_level_functions.py` (29% -> 56%), takes
   `refresh_airport_data.py` from 0% to 23%, and raises total coverage to 53%.
+- Added `tests/test_validate_refresh.py` covering the weekly-refresh guardrail:
+  the pure node/edge/hub/zero-out-degree comparison logic and the CSV IO layer.
 
 - Consolidated every Wikipedia/Wikimedia request behind a single shared
   `User-Agent` with a real contact address and the actual package version,

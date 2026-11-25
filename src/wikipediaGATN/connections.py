@@ -113,10 +113,14 @@ def create_outbound_connections_list(
 
         outlinks_weighted: Counter[str] = Counter()
         outlinks_cargo_weighted: Counter[str] = Counter()
+        # Per-edge seasonality: a code maps to True only while every route to it
+        # seen so far is seasonal; one year-round route flips it to False.
+        seasonal_pax: dict[str, bool] = {}
+        seasonal_cargo: dict[str, bool] = {}
 
-        for dest_list, link_weighted_counter in [
-            (destinations, outlinks_weighted),
-            (destinations_cargo, outlinks_cargo_weighted),
+        for dest_list, link_weighted_counter, seasonal_tracker in [
+            (destinations, outlinks_weighted, seasonal_pax),
+            (destinations_cargo, outlinks_cargo_weighted, seasonal_cargo),
         ]:
             for dest in dest_list:
                 if isinstance(dest, dict):
@@ -127,6 +131,7 @@ def create_outbound_connections_list(
                     dest_icao = codes[1] if len(codes) > 1 else None
                     dest_gps = codes[2] if len(codes) > 2 else None
                     airline_count = len(dest.get("airlines", []))
+                    dest_seasonal = bool(dest.get("seasonal"))
                 elif isinstance(dest, list) and len(dest) >= 2:
                     # Old array format
                     dest_url = dest[1]
@@ -134,6 +139,7 @@ def create_outbound_connections_list(
                     dest_icao = dest[3] if len(dest) > 3 else None
                     dest_gps = dest[4] if len(dest) > 4 else None
                     airline_count = 1  # Fallback for old format
+                    dest_seasonal = False
                 else:
                     continue
 
@@ -158,10 +164,17 @@ def create_outbound_connections_list(
                     link_weighted_counter[target_code] = max(
                         link_weighted_counter[target_code], airline_count
                     )
+                    if target_code in seasonal_tracker:
+                        seasonal_tracker[target_code] = (
+                            seasonal_tracker[target_code] and dest_seasonal
+                        )
+                    else:
+                        seasonal_tracker[target_code] = dest_seasonal
 
         airport_connections[origin_iata] = {
             "origin": origin_iata,
             "outlinks_weighted": outlinks_weighted,
+            "seasonal_map": seasonal_pax,
             # Do not publish the airport-level airline count for fallback-sourced
             # data; it is an inflated artefact of the NLP pairing.
             "nb_airlines": 0 if is_fallback else (data.get("number_airlines", 0) or 0),
@@ -169,6 +182,7 @@ def create_outbound_connections_list(
         airport_connections_cargo[origin_iata] = {
             "origin": origin_iata,
             "outlinks_weighted": outlinks_cargo_weighted,
+            "seasonal_map": seasonal_cargo,
             "nb_airlines": data.get("number_airlines_cargo", 0) or 0,
         }
 
@@ -212,6 +226,7 @@ def create_outbound_connections_list(
                     "outlinks",
                     "weights",
                     "nb_airlines",
+                    "seasonal",
                 ],
                 quoting=csv.QUOTE_ALL,
             )
@@ -221,12 +236,18 @@ def create_outbound_connections_list(
                 weights = [
                     str(row["outlinks_weighted"][code]) for code in outlinks_sorted
                 ]
+                seasonal_map = row.get("seasonal_map", {})
+                # 0/1 per edge, aligned to the sorted outlinks: 1 = seasonal-only.
+                seasonal_flags = [
+                    "1" if seasonal_map.get(code) else "0" for code in outlinks_sorted
+                ]
                 csv_row = {
                     "origin": row["origin"],
                     "nb_outlinks": len(outlinks_sorted),
                     "outlinks": " ".join(outlinks_sorted),
                     "weights": " ".join(weights),
                     "nb_airlines": row.get("nb_airlines", 0),
+                    "seasonal": " ".join(seasonal_flags),
                 }
                 writer.writerow(csv_row)
 

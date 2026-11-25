@@ -176,7 +176,10 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
                 ad_map = data.get("airlines_destinations", {})
                 v = format_destinations_list(
-                    data.get("destinations", []), ad_map, url_to_codes
+                    data.get("destinations", []),
+                    ad_map,
+                    url_to_codes,
+                    seasonal_names=set(data.get("seasonal_destinations", []) or []),
                 )
 
             if k == "destinations_cargo":
@@ -190,7 +193,10 @@ def export_all_airport_data(use_new_data: bool = False, verbose: bool = False) -
 
                 ad_map_c = data.get("airlines_destinations_cargo", {})
                 v = format_destinations_list(
-                    data.get("destinations_cargo", []), ad_map_c, url_to_codes
+                    data.get("destinations_cargo", []),
+                    ad_map_c,
+                    url_to_codes,
+                    seasonal_names=set(data.get("seasonal_destinations", []) or []),
                 )
 
             new_data[k] = v

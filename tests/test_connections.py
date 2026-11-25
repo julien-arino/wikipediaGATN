@@ -185,6 +185,38 @@ class TestCreateOutboundConnectionsList:
         assert row["weights"] == "1"
         assert row["nb_airlines"] == "0"
 
+    def test_seasonal_flag_emitted_in_csv(self, data_dirs):
+        """A destination marked seasonal gets a 1 in the aligned seasonal column."""
+        public = data_dirs
+        data = {
+            "iata": "YWG",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/YWG",
+            "destinations": [
+                {
+                    "name": "Toronto",
+                    "wikipedia_url": "https://en.wikipedia.org/wiki/T",
+                    "codes": ["YYZ", "CYYZ"],
+                    "airlines": ["A"],
+                    "seasonal": True,
+                },
+                {
+                    "name": "Vancouver",
+                    "wikipedia_url": "https://en.wikipedia.org/wiki/V",
+                    "codes": ["YVR", "CYVR"],
+                    "airlines": ["A"],
+                    "seasonal": False,
+                },
+            ],
+        }
+        (public / "airport_data" / "YWG.json").write_text(
+            json.dumps(data), encoding="utf-8"
+        )
+        csv_path, _, _ = create_outbound_connections_list(verbose=False)
+        row = self._row_for(csv_path, "YWG")
+        flags = dict(zip(row["outlinks"].split(), row["seasonal"].split()))
+        assert flags["YYZ"] == "1"
+        assert flags["YVR"] == "0"
+
     def test_corrupt_json_skipped_without_crash(self, data_dirs):
         """A corrupt JSON file is skipped with a warning; valid files still processed."""
         public = data_dirs

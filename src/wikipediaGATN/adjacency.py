@@ -106,6 +106,12 @@ def create_outbound_adjacency_matrix(
     codes for airports that lack an IATA code; each exported graph node carries a
     ``code_type`` attribute (``"IATA"`` or ``"ICAO"``) recording which it is.
 
+    Each exported graph edge carries a ``seasonal`` attribute (``1`` for a
+    seasonal-only or not-yet-started route, ``0`` for a year-round one), read
+    from the ``seasonal`` column of the connections CSV when present.
+    Seasonality is directional; reverse edges added when symmetrising default to
+    ``0``.
+
     When ``symmetric=True``, if an edge A → B exists but B → A does not, both
     directions are added, and each symmetric entry takes the **maximum** of the
     two directional weights (``max(A, A.T)``), not their sum.  This is useful
@@ -208,6 +214,8 @@ def create_outbound_adjacency_matrix(
     rows_list: list = []
     cols_list: list = []
     weights_list: list = []
+    # Directed (origin, dest) code pairs whose route is seasonal-only.
+    seasonal_edges: set = set()
     skipped_self_loops = 0
     skipped_unknown_dest = 0
 
@@ -219,12 +227,18 @@ def create_outbound_adjacency_matrix(
         weights_str = (
             str(row["weights"]) if "weights" in row and pd.notna(row["weights"]) else ""
         )
+        seasonal_str = (
+            str(row["seasonal"])
+            if "seasonal" in row and pd.notna(row["seasonal"])
+            else ""
+        )
 
         if not outlinks_str.strip():
             continue
 
         dests = outlinks_str.split()
         weights = weights_str.split()
+        seasonal_flags = seasonal_str.split()
 
         for i, dest in enumerate(dests):
             dest = dest.strip()
@@ -250,6 +264,9 @@ def create_outbound_adjacency_matrix(
             rows_list.append(origin_idx)
             cols_list.append(dest_idx)
             weights_list.append(weight)
+
+            if i < len(seasonal_flags) and seasonal_flags[i] == "1":
+                seasonal_edges.add((origin, dest))
 
     if verbose:
         print(f"Raw directed edges collected: {len(rows_list)}")
@@ -410,6 +427,12 @@ def create_outbound_adjacency_matrix(
                                 )
                     except (json.JSONDecodeError, OSError):
                         pass
+
+            # Seasonal edge attribute: 1 for a seasonal-only / not-yet-started
+            # route, 0 for a year-round one.  Seasonality is directional; any
+            # reverse edges added when symmetrising default to 0.
+            for u, v in G.edges():
+                G[u][v]["seasonal"] = 1 if (u, v) in seasonal_edges else 0
 
             base_name = (
                 "global-air-cargo-network" if is_cargo else "global-air-pax-network"

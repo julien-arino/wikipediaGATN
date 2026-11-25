@@ -441,6 +441,39 @@ class TestNetworkExports:
         assert G.nodes["AAA"]["airlines_reliable"] is False
         assert G.nodes["BBB"]["airlines_reliable"] is True
 
+    def test_seasonal_edge_attribute(self, public_dir):
+        """The ``seasonal`` column becomes a per-edge ``seasonal`` graph attribute."""
+        import networkx as nx
+
+        csv_path = public_dir / "global-air-pax-network.csv"
+        pd.DataFrame(
+            [
+                {
+                    "origin": "AAA",
+                    "nb_outlinks": 2,
+                    "outlinks": "BBB CCC",
+                    "weights": "1 1",
+                    "seasonal": "1 0",
+                }
+            ]
+        ).to_csv(csv_path, index=False)
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False)
+        G = nx.read_graphml(public_dir / "global-air-pax-network.graphml")
+        assert G["AAA"]["BBB"]["seasonal"] == 1
+        assert G["AAA"]["CCC"]["seasonal"] == 0
+
+    def test_seasonal_column_absent_defaults_to_zero(self, public_dir):
+        """With no seasonal column, every edge is year-round (seasonal=0)."""
+        import networkx as nx
+
+        _write_connections(
+            public_dir,
+            [{"origin": "AAA", "nb_outlinks": 1, "outlinks": "BBB"}],
+        )
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False)
+        G = nx.read_graphml(public_dir / "global-air-pax-network.graphml")
+        assert G["AAA"]["BBB"]["seasonal"] == 0
+
     def test_airlines_reliable_absent_from_cargo_graph(self, public_dir):
         """The reliability flag is passenger-only (cargo is never fallback)."""
         import json

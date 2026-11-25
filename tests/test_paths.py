@@ -1,8 +1,13 @@
-"""Tests for Windows-reserved filename escaping in :mod:`wikipediaGATN.paths`."""
+"""Tests for path helpers in :mod:`wikipediaGATN.paths`.
+
+Covers the Windows-reserved filename escaping and the ``PUBLIC_DATA_DIR``
+fallback to the wheel-bundled network data.
+"""
 
 import pytest
 
 from wikipediaGATN.paths import (
+    _resolve_public_dir,
     escape_reserved_code,
     is_reserved_code,
     unescape_reserved_code,
@@ -46,3 +51,26 @@ def test_unescape_only_strips_reserved_underscore():
     assert unescape_reserved_code("wiki_") == "wiki_"
     # But a reserved name plus underscore is unescaped.
     assert unescape_reserved_code("AUX_") == "AUX"
+
+
+class TestResolvePublicDir:
+    """The fourth resolution tier: fall back to wheel-bundled data."""
+
+    def test_prefers_existing_local_public(self, tmp_path):
+        # A real local data/public wins, even when bundled data is available.
+        local_public = tmp_path / "public"
+        local_public.mkdir()
+        bundled = tmp_path / "bundled_public"
+        bundled.mkdir()
+        assert _resolve_public_dir(tmp_path, bundled) == local_public
+
+    def test_falls_back_to_bundled_when_local_missing(self, tmp_path):
+        # No local data/public -> use the bundled directory.
+        bundled = tmp_path / "bundled_public"
+        bundled.mkdir()
+        assert _resolve_public_dir(tmp_path, bundled) == bundled
+
+    def test_returns_local_when_no_bundled(self, tmp_path):
+        # No local dir and no bundled data -> the (non-existent) local path,
+        # preserving the historical default rather than raising.
+        assert _resolve_public_dir(tmp_path, None) == tmp_path / "public"

@@ -22,6 +22,21 @@ directory.  This is primarily useful for testing::
 When the variable is set, ``DATA_DIR``, ``TEMP_RESULTS_DIR``, and
 ``PUBLIC_DATA_DIR`` all resolve relative to the override root instead of the
 repository root.
+
+Resolution order
+----------------
+``DATA_DIR`` (the writable root for scraper output and exports) is resolved as:
+
+1. ``WIKIPEDIAGATN_DATA_DIR`` if set;
+2. ``<repo_root>/data`` when running from a source checkout;
+3. ``<cwd>/data`` otherwise.
+
+``PUBLIC_DATA_DIR`` normally sits at ``DATA_DIR/public``.  When that directory
+does not exist — the typical case for a plain ``pip install`` with no local
+crawl — it falls back to the **pre-built network data bundled inside the
+installed wheel** (``wikipediaGATN/_data/public``), so reading the published
+networks works out of the box.  This fallback is read-only: to run your own
+crawl, point ``WIKIPEDIAGATN_DATA_DIR`` at a writable directory.
 """
 
 import os
@@ -56,6 +71,25 @@ def _find_repo_root(start_path: Path) -> Optional[Path]:
 
 REPO_ROOT: Optional[Path] = _find_repo_root(_THIS_FILE)
 
+
+def _packaged_public_dir() -> Optional[Path]:
+    """Locate pre-built network data bundled inside the installed package.
+
+    Returns the ``wikipediaGATN/_data/public`` directory shipped in the wheel
+    (via hatch ``force-include``; see ``pyproject.toml``), or ``None`` when the
+    package carries no bundled data — e.g. an editable/source install, where
+    the repository ``data/`` directory is used instead.
+    """
+    try:
+        from importlib.resources import files
+
+        public = files("wikipediaGATN").joinpath("_data", "public")
+        public_path = Path(str(public))
+    except (ModuleNotFoundError, TypeError, ValueError, NotImplementedError):
+        return None
+    return public_path if public_path.is_dir() else None
+
+
 # ---------------------------------------------------------------------------
 # Data root — can be overridden via environment variable for testing.
 # ---------------------------------------------------------------------------
@@ -78,8 +112,25 @@ else:
 #: Temporary directory for raw JSON files produced by the Wikipedia scraper.
 TEMP_RESULTS_DIR: Path = DATA_DIR / "tmp_results"
 
-#: Directory for processed, public-facing outputs (CSVs, sparse matrices, network graphs).
-PUBLIC_DATA_DIR: Path = DATA_DIR / "public"
+
+def _resolve_public_dir(data_dir: Path, bundled: Optional[Path]) -> Path:
+    """Choose the public-data directory.
+
+    Prefer ``data_dir/public``; fall back to the wheel-bundled ``bundled``
+    directory only when the local one does not exist.  Kept as a small pure
+    function so the fallback is directly testable.
+    """
+    local = data_dir / "public"
+    if not local.exists() and bundled is not None:
+        return bundled
+    return local
+
+
+#: Directory for processed, public-facing outputs (CSVs, sparse matrices, network
+#: graphs).  Falls back to the data bundled inside the installed wheel when no
+#: local ``public`` directory exists, so a plain ``pip install`` can read the
+#: pre-built networks without a prior crawl (see module docstring).
+PUBLIC_DATA_DIR: Path = _resolve_public_dir(DATA_DIR, _packaged_public_dir())
 
 # ---------------------------------------------------------------------------
 # Windows-reserved filename handling

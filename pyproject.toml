@@ -8,6 +8,31 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/wikipediaGATN"]
 
+# Bundle the pre-built global network files inside the wheel so that a plain
+# `pip install wikipediaGATN` can read the published networks without a prior
+# crawl or repository checkout (see docs/installation.md and the fourth
+# resolution tier in src/wikipediaGATN/paths.py).  The files live once in
+# data/public/; force-include maps them into the package as wikipediaGATN/_data
+# at build time, so there is no duplication in the source tree.
+#
+# Deliberately NOT bundled: the Plotly *.html visualisations (tens of MB each)
+# and ourairports.csv (downloadable at runtime).  Keys are source paths; values
+# are the destination paths inside the wheel.
+[tool.hatch.build.targets.wheel.force-include]
+"data/public/global-air-pax-network.graphml"   = "wikipediaGATN/_data/public/global-air-pax-network.graphml"
+"data/public/global-air-pax-network.gexf"       = "wikipediaGATN/_data/public/global-air-pax-network.gexf"
+"data/public/global-air-pax-network.dot"        = "wikipediaGATN/_data/public/global-air-pax-network.dot"
+"data/public/global-air-pax-network.csv"        = "wikipediaGATN/_data/public/global-air-pax-network.csv"
+"data/public/global-air-cargo-network.graphml"  = "wikipediaGATN/_data/public/global-air-cargo-network.graphml"
+"data/public/global-air-cargo-network.gexf"     = "wikipediaGATN/_data/public/global-air-cargo-network.gexf"
+"data/public/global-air-cargo-network.dot"      = "wikipediaGATN/_data/public/global-air-cargo-network.dot"
+"data/public/global-air-cargo-network.csv"      = "wikipediaGATN/_data/public/global-air-cargo-network.csv"
+"data/public/adjacency_matrix_pax.npz"          = "wikipediaGATN/_data/public/adjacency_matrix_pax.npz"
+"data/public/adjacency_matrix_cargo.npz"        = "wikipediaGATN/_data/public/adjacency_matrix_cargo.npz"
+"data/public/nodes_pax.txt"                     = "wikipediaGATN/_data/public/nodes_pax.txt"
+"data/public/nodes_cargo.txt"                   = "wikipediaGATN/_data/public/nodes_cargo.txt"
+"data/public/airports_information.csv"          = "wikipediaGATN/_data/public/airports_information.csv"
+
 [tool.hatch.build.targets.sdist]
 include = [
     "/src",

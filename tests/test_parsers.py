@@ -196,6 +196,36 @@ class TestFetchWikipediaAirlinesDestinations:
         result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
         assert result["passenger"]
 
+    def test_table_data_not_flagged_as_fallback(self):
+        # Data parsed from a real table is reliable: nlp_fallback stays False.
+        soup = BeautifulSoup(AIRLINES_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["nlp_fallback"] is False
+
+    def test_nlp_fallback_flagged_when_used(self, monkeypatch):
+        # A page with an "Airlines and destinations" section but no table falls
+        # back to the NLP path; when that yields pairs the result is flagged.
+        monkeypatch.setattr(
+            alf,
+            "parse_fallback_nlp_airlines_destinations",
+            lambda *a, **k: {("Acme Air", "Springfield")},
+        )
+        soup = BeautifulSoup(PROSE_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["nlp_fallback"] is True
+        assert result["passenger"].get("Acme Air") == {"Springfield"}
+
+    def test_empty_nlp_fallback_not_flagged(self, monkeypatch):
+        # If the fallback finds nothing, the (empty) result stays "reliable".
+        monkeypatch.setattr(
+            alf,
+            "parse_fallback_nlp_airlines_destinations",
+            lambda *a, **k: set(),
+        )
+        soup = BeautifulSoup(PROSE_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["nlp_fallback"] is False
+
 
 class TestFallbackFetchWikipediaAirportInfo:
     def test_regex_extracts_codes_and_coords(self):

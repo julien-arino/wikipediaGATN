@@ -349,6 +349,121 @@ class TestSymmetricMatrix:
 
 
 # ---------------------------------------------------------------------------
+# Network graph exports (GraphML / GEXF / DOT)
+# ---------------------------------------------------------------------------
+
+
+class TestNetworkExports:
+
+    def test_directed_network_files_unsuffixed(self, public_dir):
+        """Directed build writes the unsuffixed graph files."""
+        _write_connections(
+            public_dir,
+            [{"origin": "YWG", "nb_outlinks": 1, "outlinks": "YYZ"}],
+        )
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False)
+        assert (public_dir / "global-air-pax-network.graphml").exists()
+        assert (public_dir / "global-air-pax-network.gexf").exists()
+        assert (public_dir / "global-air-pax-network.dot").exists()
+
+    def test_symmetric_network_files_get_sym_suffix(self, public_dir):
+        """Symmetric build writes ``_sym`` graph files for every format."""
+        _write_connections(
+            public_dir,
+            [{"origin": "YWG", "nb_outlinks": 1, "outlinks": "YYZ"}],
+        )
+        create_outbound_adjacency_matrix(symmetric=True, verbose=False)
+        assert (public_dir / "global-air-pax-network_sym.graphml").exists()
+        assert (public_dir / "global-air-pax-network_sym.gexf").exists()
+        assert (public_dir / "global-air-pax-network_sym.dot").exists()
+
+    def test_symmetric_does_not_overwrite_directed_graphs(self, public_dir):
+        """A symmetric build must not clobber the directed graph files.
+
+        Regression test: the ``_sym`` suffix used to be applied only to the
+        ``.npz``/``.txt`` outputs, so the symmetric network export overwrote the
+        directed ``.graphml``/``.gexf``/``.dot`` in place.
+        """
+        import networkx as nx
+
+        _write_connections(
+            public_dir,
+            [{"origin": "AAA", "nb_outlinks": 1, "outlinks": "BBB"}],
+        )
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False)
+        create_outbound_adjacency_matrix(symmetric=True, verbose=False)
+
+        directed = nx.read_graphml(public_dir / "global-air-pax-network.graphml")
+        symmetric = nx.read_graphml(public_dir / "global-air-pax-network_sym.graphml")
+        # The directed graph still has the single directed edge; the symmetric
+        # one has both directions.
+        assert directed.number_of_edges() == 1
+        assert symmetric.number_of_edges() == 2
+
+    def test_node_code_type_attribute(self, public_dir):
+        """Each exported node carries a ``code_type`` of IATA (3) or ICAO (4)."""
+        import networkx as nx
+
+        _write_connections(
+            public_dir,
+            [{"origin": "YWG", "nb_outlinks": 1, "outlinks": "CYAL"}],
+        )
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False)
+        G = nx.read_graphml(public_dir / "global-air-pax-network.graphml")
+        assert G.nodes["YWG"]["code_type"] == "IATA"
+        assert G.nodes["CYAL"]["code_type"] == "ICAO"
+
+    def test_airlines_reliable_node_attribute(self, public_dir):
+        """Nodes flagged ``airlines_nlp_fallback`` export ``airlines_reliable=False``."""
+        import json
+
+        import networkx as nx
+
+        _write_connections(
+            public_dir,
+            [
+                {"origin": "AAA", "nb_outlinks": 1, "outlinks": "BBB"},
+                {"origin": "BBB", "nb_outlinks": 1, "outlinks": "AAA"},
+            ],
+        )
+        airport_data = public_dir / "airport_data"
+        airport_data.mkdir()
+        (airport_data / "AAA.json").write_text(
+            json.dumps({"iata": "AAA", "airlines_nlp_fallback": True}),
+            encoding="utf-8",
+        )
+        (airport_data / "BBB.json").write_text(
+            json.dumps({"iata": "BBB", "airlines_nlp_fallback": False}),
+            encoding="utf-8",
+        )
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False)
+        G = nx.read_graphml(public_dir / "global-air-pax-network.graphml")
+        assert G.nodes["AAA"]["airlines_reliable"] is False
+        assert G.nodes["BBB"]["airlines_reliable"] is True
+
+    def test_airlines_reliable_absent_from_cargo_graph(self, public_dir):
+        """The reliability flag is passenger-only (cargo is never fallback)."""
+        import json
+
+        import networkx as nx
+
+        csv_path = public_dir / "global-air-cargo-network.csv"
+        pd.DataFrame(
+            [{"origin": "AAA", "nb_outlinks": 1, "outlinks": "BBB"}],
+            columns=["origin", "nb_outlinks", "outlinks"],
+        ).to_csv(csv_path, index=False)
+        airport_data = public_dir / "airport_data"
+        airport_data.mkdir()
+        (airport_data / "AAA.json").write_text(
+            json.dumps({"iata": "AAA", "airlines_nlp_fallback": True}),
+            encoding="utf-8",
+        )
+        create_outbound_adjacency_matrix(symmetric=False, verbose=False, is_cargo=True)
+        G = nx.read_graphml(public_dir / "global-air-cargo-network.graphml")
+        assert "airlines_reliable" not in G.nodes["AAA"]
+
+
+# ---------------------------------------------------------------------------
 # CSV export
 # ---------------------------------------------------------------------------
 

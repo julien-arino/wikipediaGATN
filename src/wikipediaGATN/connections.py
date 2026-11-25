@@ -104,6 +104,13 @@ def create_outbound_connections_list(
         destinations = data.get("destinations", [])
         destinations_cargo = data.get("destinations_cargo", [])
 
+        # When the airline/destination data came from the NLP fallback, its
+        # airline counts are unreliable (every detected organisation is paired
+        # with every place), so we do not publish them: fallback passenger edges
+        # get weight 1 (presence only) and the airport's nb_airlines is dropped.
+        # The fallback only ever populates passenger data, so cargo is unaffected.
+        is_fallback = bool(data.get("airlines_nlp_fallback"))
+
         outlinks_weighted: Counter[str] = Counter()
         outlinks_cargo_weighted: Counter[str] = Counter()
 
@@ -130,6 +137,10 @@ def create_outbound_connections_list(
                 else:
                     continue
 
+                # Suppress unreliable fallback-derived passenger airline counts.
+                if is_fallback and link_weighted_counter is outlinks_weighted:
+                    airline_count = 1
+
                 target_code = None
                 if dest_iata and dest_iata != "iata code not found":
                     target_code = dest_iata
@@ -151,7 +162,9 @@ def create_outbound_connections_list(
         airport_connections[origin_iata] = {
             "origin": origin_iata,
             "outlinks_weighted": outlinks_weighted,
-            "nb_airlines": data.get("number_airlines", 0) or 0,
+            # Do not publish the airport-level airline count for fallback-sourced
+            # data; it is an inflated artefact of the NLP pairing.
+            "nb_airlines": 0 if is_fallback else (data.get("number_airlines", 0) or 0),
         }
         airport_connections_cargo[origin_iata] = {
             "origin": origin_iata,

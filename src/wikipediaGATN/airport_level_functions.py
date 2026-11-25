@@ -604,7 +604,11 @@ def fetch_wikipedia_airlines_destinations(
             return {}
         soup = BeautifulSoup(html_content, "html.parser")
 
-    result: dict = {"passenger": {}, "cargo": {}}
+    # ``nlp_fallback`` records whether the airline/destination data below came
+    # from the unreliable spaCy NLP fallback (which pairs every organisation it
+    # finds with every place, inflating airline counts) rather than a parsed
+    # destination table.  Callers use it to avoid publishing those counts.
+    result: dict = {"passenger": {}, "cargo": {}, "nlp_fallback": False}
 
     for header in soup.find_all(["h2", "h3", "h4"]):
         header_text = header.get_text(strip=True).lower()
@@ -726,6 +730,10 @@ def fetch_wikipedia_airlines_destinations(
             html_content, verbose=verbose, soup=soup
         ):
             result["passenger"].setdefault(org, set()).add(gpe)
+        # Mark the data as fallback-sourced only if the fallback actually
+        # produced something; an empty result stays "reliable" (just empty).
+        if result["passenger"]:
+            result["nlp_fallback"] = True
 
     return result
 
@@ -875,6 +883,10 @@ def fetch_wikipedia_airport_info(
         )
     else:
         ad_map = ad_map_wikitext
+
+    # Record whether the airline/destination data came from the NLP fallback,
+    # so downstream steps can avoid publishing its (unreliable) airline counts.
+    info["airlines_nlp_fallback"] = bool(ad_map.get("nlp_fallback"))
 
     # Passenger data
     info["airlines"] = sorted(ad_map["passenger"].keys())

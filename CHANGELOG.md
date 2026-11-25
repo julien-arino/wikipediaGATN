@@ -8,6 +8,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Graph semantics** (model clarifications raised in review):
+  - Exported graph **nodes** now carry a `code_type` attribute (`IATA` or
+    `ICAO`), since a minority of nodes are 4-letter ICAO codes for airports with
+    no IATA code.
+  - Exported graph **edges** now carry a `seasonal` attribute (`1` for a
+    seasonal-only or not-yet-started route, `0` for a year-round one), parsed
+    from the Wikipedia airline/destination tables and `{{Airport-dest-list}}`
+    wikitext and threaded through a new `seasonal` column in the network CSVs.
+  - Passenger graph nodes carry an `airlines_reliable` attribute; airports whose
+    airline/destination data came from the unreliable spaCy **NLP fallback** no
+    longer publish their inflated airline counts (fallback passenger edges get
+    weight 1 and the airport's `nb_airlines` is dropped). Provenance is tracked
+    from the scraper through the airport JSON (`airlines_nlp_fallback`).
+  - The `symmetric` adjacency build now writes the `_sym` suffix on the
+    `.graphml`/`.gexf`/`.dot` files too (previously only `.npz`/`.txt`), so a
+    symmetric build no longer overwrites the directed graph files in place.
+
+  These take effect on the next data rebuild/refresh; the currently published
+  data is unchanged until then.
 - The PyPI wheel now **bundles the pre-built global networks** (passenger and
   cargo `.graphml`/`.gexf`/`.dot`/`.csv`, the `.npz` adjacency matrices,
   `nodes_*.txt`, and `airports_information.csv`), mapped into the package via

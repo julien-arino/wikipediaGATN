@@ -28,6 +28,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   writing into the real `data/public`. They are no longer `network`-marked or
   skipped in CI, which raises coverage of the pipeline modules. Added
   `tests/test_paths.py` for the reserved-code escaping helpers.
+- Added offline unit tests for the Wikipedia **parsers** — the code that does
+  the actual extraction — against small committed wikitext/HTML fixtures
+  (`tests/fixtures/wikitext`, `tests/fixtures/html`): `test_parsers.py` covers
+  infobox/airline/destination parsing from wikitext and HTML (passenger and
+  cargo, coordinate and ISO-3166-2 resolution, the maintenance-box skip and the
+  table-less fallbacks), and `test_refresh_airport_data.py` covers
+  `check_needs_refresh` with the Wikipedia API mocked. This roughly doubles
+  coverage of `airport_level_functions.py` (29% -> 56%), takes
+  `refresh_airport_data.py` from 0% to 23%, and raises total coverage to 53%.
 
 - Consolidated every Wikipedia/Wikimedia request behind a single shared
   `User-Agent` with a real contact address and the actual package version,

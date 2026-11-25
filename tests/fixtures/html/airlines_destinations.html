@@ -1,0 +1,55 @@
+<!--
+  Compact fixture modelled on the "Airlines and destinations" section of a real
+  English Wikipedia airport article.  Only the markup the parser inspects is
+  kept: the section heading, a maintenance (ambox) table that must be skipped,
+  the passenger wikitable, a Cargo sub-section, and a cargo wikitable.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Test Winnipeg International Airport</title></head>
+<body>
+<h1>Test Winnipeg International Airport</h1>
+<p>Lead paragraph that the parser ignores.</p>
+
+<h2>Airlines and destinations</h2>
+
+<table class="ambox ambox-content">
+  <tr><th>This fixture section should be skipped by the parser.</th></tr>
+</table>
+
+<table class="wikitable toccolours">
+  <tr>
+    <th>Airlines</th>
+    <th>Destinations</th>
+  </tr>
+  <tr>
+    <td><a href="/wiki/WestJet" title="WestJet">WestJet</a></td>
+    <td>
+      <a href="/wiki/Calgary_International_Airport" title="Calgary International Airport">Calgary</a>,
+      <a href="/wiki/Toronto_Pearson_International_Airport" title="Toronto Pearson International Airport">Toronto</a>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="/wiki/Air_Canada" title="Air Canada">Air Canada</a></td>
+    <td>
+      <a href="/wiki/Vancouver_International_Airport" title="Vancouver International Airport">Vancouver</a>
+    </td>
+  </tr>
+</table>
+
+<h3>Cargo</h3>
+<table class="wikitable">
+  <tr>
+    <th>Airlines</th>
+    <th>Destinations</th>
+  </tr>
+  <tr>
+    <td><a href="/wiki/FedEx_Express" title="FedEx Express">FedEx Express</a></td>
+    <td>
+      <a href="/wiki/Memphis_International_Airport" title="Memphis International Airport">Memphis</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

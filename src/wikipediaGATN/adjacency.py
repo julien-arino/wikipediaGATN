@@ -70,32 +70,56 @@ def create_outbound_adjacency_matrix(
         - ``output_matrix`` – path to the sparse matrix file (``.npz``).
         - ``output_nodes``  – path to the node-list file (``.txt``).
 
+    Edge weights
+    ------------
+    An edge A → B is **weighted by the number of distinct airlines** reported to
+    operate that route (observed range roughly 1–25 for passenger, 1–19 for
+    cargo), **not** a 0/1 presence flag.  A missing edge is absent (stored as 0
+    in the sparse matrix); a present edge stores its airline count.  Because the
+    weight is an airline count, **summing a node's row is not its out-degree** —
+    use the number of non-zero entries in the row for out-degree, and the row
+    sum only when you specifically want total airline-route multiplicity.
+
     Output files
     ------------
     Base matrix files:
-    * ``adjacency_matrix[_cargo][_sym].npz``  – sparse adjacency matrix
-      (1 = connection exists, 0 otherwise).
-    * ``nodes[_cargo][_sym].txt``             – sorted list of IATA codes.
-    * ``adjacency_matrix[_cargo][_sym].csv``  – dense matrix with IATA labels
+    * ``adjacency_matrix[_cargo][_sym].npz``  – sparse adjacency matrix whose
+      non-zero entries are airline counts (see **Edge weights** above).
+    * ``nodes[_cargo][_sym].txt``             – sorted list of airport codes.
+    * ``adjacency_matrix[_cargo][_sym].csv``  – dense matrix with code labels
       *(only written when* ``export_csv=True`` *)*.
 
-    Network files *(when* ``export_networks=True`` *)*:
-    * ``global-air-[pax|cargo]-network.graphml``
-    * ``global-air-[pax|cargo]-network.gexf``
-    * ``global-air-[pax|cargo]-network.dot``
+    Network files *(when* ``export_networks=True`` *)*.  The ``_sym`` suffix is
+    applied to **every** format so a symmetric build never overwrites the
+    directed graphs:
+    * ``global-air-[pax|cargo]-network[_sym].graphml``
+    * ``global-air-[pax|cargo]-network[_sym].gexf``
+    * ``global-air-[pax|cargo]-network[_sym].dot``
 
     Notes
     -----
     The matrix is stored in CSR (Compressed Sparse Row) format for efficient
     storage and computation.  The node list ensures row/column indices match
-    the IATA codes in alphabetical order.
+    the airport codes in alphabetical order.
+
+    Node codes are mostly 3-letter IATA codes, but a minority are 4-letter ICAO
+    codes for airports that lack an IATA code; each exported graph node carries a
+    ``code_type`` attribute (``"IATA"`` or ``"ICAO"``) recording which it is.
+
+    Each exported graph edge carries a ``seasonal`` attribute (``1`` for a
+    seasonal-only or not-yet-started route, ``0`` for a year-round one), read
+    from the ``seasonal`` column of the connections CSV when present.
+    Seasonality is directional; reverse edges added when symmetrising default to
+    ``0``.
 
     When ``symmetric=True``, if an edge A → B exists but B → A does not, both
-    directions are added.  This is useful when working with data that under-
-    reports small-airport outbound routes.
+    directions are added, and each symmetric entry takes the **maximum** of the
+    two directional weights (``max(A, A.T)``), not their sum.  This is useful
+    when working with data that under-reports small-airport outbound routes;
+    prefer the directed build when edge directionality matters.
 
-    Malformed IATA tokens (not matching ``[A-Z]{3,4}``) and self-loops are
-    silently skipped with a warning.
+    Malformed airport-code tokens (not matching ``[A-Z]{3,4}``) and self-loops
+    are silently skipped with a warning.
 
     Examples
     --------
@@ -190,6 +214,8 @@ def create_outbound_adjacency_matrix(
     rows_list: list = []
     cols_list: list = []
     weights_list: list = []
+    # Directed (origin, dest) code pairs whose route is seasonal-only.
+    seasonal_edges: set = set()
     skipped_self_loops = 0
     skipped_unknown_dest = 0
 
@@ -201,12 +227,18 @@ def create_outbound_adjacency_matrix(
         weights_str = (
             str(row["weights"]) if "weights" in row and pd.notna(row["weights"]) else ""
         )
+        seasonal_str = (
+            str(row["seasonal"])
+            if "seasonal" in row and pd.notna(row["seasonal"])
+            else ""
+        )
 
         if not outlinks_str.strip():
             continue
 
         dests = outlinks_str.split()
         weights = weights_str.split()
+        seasonal_flags = seasonal_str.split()
 
         for i, dest in enumerate(dests):
             dest = dest.strip()
@@ -232,6 +264,9 @@ def create_outbound_adjacency_matrix(
             rows_list.append(origin_idx)
             cols_list.append(dest_idx)
             weights_list.append(weight)
+
+            if i < len(seasonal_flags) and seasonal_flags[i] == "1":
+                seasonal_edges.add((origin, dest))
 
     if verbose:
         print(f"Raw directed edges collected: {len(rows_list)}")
@@ -332,6 +367,10 @@ def create_outbound_adjacency_matrix(
             G = nx.relabel_nodes(G, mapping)
 
             for node in G.nodes():
+                # Record whether the node's code is a 3-letter IATA code or a
+                # 4-letter ICAO code (used for airports that have no IATA code).
+                G.nodes[node]["code_type"] = "ICAO" if len(str(node)) == 4 else "IATA"
+
                 json_file = os.path.join(
                     PUBLIC_DATA_DIR,
                     "airport_data",
@@ -379,12 +418,28 @@ def create_outbound_adjacency_matrix(
                                     G.nodes[node][str_key.replace("-", "_")] = str(
                                         data[str_key]
                                     )
+                            # Flag airports whose airline/destination data came
+                            # from the unreliable NLP fallback.  Only meaningful
+                            # for the passenger network (cargo is never fallback).
+                            if not is_cargo:
+                                G.nodes[node]["airlines_reliable"] = not bool(
+                                    data.get("airlines_nlp_fallback")
+                                )
                     except (json.JSONDecodeError, OSError):
                         pass
+
+            # Seasonal edge attribute: 1 for a seasonal-only / not-yet-started
+            # route, 0 for a year-round one.  Seasonality is directional; any
+            # reverse edges added when symmetrising default to 0.
+            for u, v in G.edges():
+                G[u][v]["seasonal"] = 1 if (u, v) in seasonal_edges else 0
 
             base_name = (
                 "global-air-cargo-network" if is_cargo else "global-air-pax-network"
             )
+            # Keep the symmetric graphs in their own files so a symmetric build
+            # never overwrites the directed ``.graphml``/``.gexf``/``.dot``.
+            base_name = f"{base_name}{sym_suffix}"
             output_graphml = os.path.join(PUBLIC_DATA_DIR, f"{base_name}.graphml")
             nx.write_graphml(G, output_graphml)
             if verbose:

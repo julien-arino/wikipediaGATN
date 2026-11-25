@@ -565,6 +565,61 @@ def fetch_wikipedia_destinations(
     return destinations
 
 
+# Markers that indicate a route is seasonal-only or has not started yet, used to
+# flag such edges rather than treating them as ordinary year-round routes.
+_SEASONAL_RE = re.compile(
+    r"(?i)(?:\bseasonal\b|\bbegins?\b|\bresum\w*|\bcommenc\w*"
+    r"|will\s+(?:begin|resume|start)|\bstarting\b|\bstarts\s+\d|\bfuture\b)"
+)
+
+
+def _anchor_tail_is_seasonal(anchor) -> bool:
+    """Return True if the inline text after a destination ``<a>`` marks it seasonal.
+
+    Wikipedia airline/destination cells annotate a route in the text that
+    follows its link, e.g. ``<a>Cancún</a> (seasonal)``.  We read the siblings
+    after the anchor up to the next link or line break — i.e. the annotation
+    scoped to this one destination — and test it for a seasonal/future marker.
+    """
+    parts: list = []
+    for sib in anchor.next_siblings:
+        name = getattr(sib, "name", None)
+        if name in ("a", "br"):
+            break
+        parts.append(sib if name is None else sib.get_text(" ", strip=True))
+    tail = " ".join(str(p) for p in parts)
+    # Scope to before the next comma (the next destination in the list).
+    tail = tail.split(",", 1)[0]
+    return bool(_SEASONAL_RE.search(tail))
+
+
+def _seasonal_names_from_wikicode(dest_wikicode) -> set:
+    """Return the set of wikilink destination names marked seasonal in wikitext.
+
+    Mirrors :func:`_anchor_tail_is_seasonal` for ``{{Airport-dest-list}}``
+    wikitext: for each destination wikilink, the text up to the next wikilink
+    (and before the next comma) is tested for a seasonal/future marker.
+    """
+    seasonal: set = set()
+    nodes = dest_wikicode.nodes
+    for j, node in enumerate(nodes):
+        if isinstance(node, mwparserfromhell.nodes.wikilink.Wikilink):
+            name = (
+                node.text.strip_code().strip()
+                if node.text
+                else node.title.strip_code().strip()
+            )
+            tail_parts: list = []
+            for nxt in nodes[j + 1 :]:
+                if isinstance(nxt, mwparserfromhell.nodes.wikilink.Wikilink):
+                    break
+                tail_parts.append(str(nxt))
+            tail = "".join(tail_parts).split(",", 1)[0]
+            if name and _SEASONAL_RE.search(tail):
+                seasonal.add(name)
+    return seasonal
+
+
 def fetch_wikipedia_airlines_destinations(
     identifier: str = "YWG",
     link=None,
@@ -604,7 +659,18 @@ def fetch_wikipedia_airlines_destinations(
             return {}
         soup = BeautifulSoup(html_content, "html.parser")
 
-    result: dict = {"passenger": {}, "cargo": {}}
+    # ``nlp_fallback`` records whether the airline/destination data below came
+    # from the unreliable spaCy NLP fallback (which pairs every organisation it
+    # finds with every place, inflating airline counts) rather than a parsed
+    # destination table.  Callers use it to avoid publishing those counts.
+    # ``seasonal`` collects destination names annotated as seasonal-only or
+    # not-yet-started, so downstream steps can flag those edges.
+    result: dict = {
+        "passenger": {},
+        "cargo": {},
+        "nlp_fallback": False,
+        "seasonal": set(),
+    }
 
     for header in soup.find_all(["h2", "h3", "h4"]):
         header_text = header.get_text(strip=True).lower()
@@ -695,8 +761,8 @@ def fetch_wikipedia_airlines_destinations(
                             )
                         )
                     ]
-                    dest_names = [
-                        a.get("title")
+                    dest_anchors = [
+                        a
                         for a in cells[dest_idx].find_all("a")
                         if a.get("title")
                         and not a.get("href", "").startswith(
@@ -710,6 +776,10 @@ def fetch_wikipedia_airlines_destinations(
                             )
                         )
                     ]
+                    dest_names = [a.get("title") for a in dest_anchors]
+                    for a in dest_anchors:
+                        if _anchor_tail_is_seasonal(a):
+                            result["seasonal"].add(a.get("title"))
                     for airline in airline_names:
                         target_dict.setdefault(airline, set()).update(dest_names)
         break
@@ -726,6 +796,10 @@ def fetch_wikipedia_airlines_destinations(
             html_content, verbose=verbose, soup=soup
         ):
             result["passenger"].setdefault(org, set()).add(gpe)
+        # Mark the data as fallback-sourced only if the fallback actually
+        # produced something; an empty result stays "reliable" (just empty).
+        if result["passenger"]:
+            result["nlp_fallback"] = True
 
     return result
 
@@ -865,6 +939,10 @@ def fetch_wikipedia_airport_info(
         )
         if ad_map_html["passenger"]:
             ad_map_wikitext["passenger"] = ad_map_html["passenger"]
+            # Carry the HTML pass's seasonal annotations across too.
+            ad_map_wikitext.setdefault("seasonal", set()).update(
+                ad_map_html.get("seasonal", set())
+            )
 
     if not ad_map_wikitext["passenger"] and not ad_map_wikitext["cargo"]:
         if not html_content:
@@ -875,6 +953,14 @@ def fetch_wikipedia_airport_info(
         )
     else:
         ad_map = ad_map_wikitext
+
+    # Record whether the airline/destination data came from the NLP fallback,
+    # so downstream steps can avoid publishing its (unreliable) airline counts.
+    info["airlines_nlp_fallback"] = bool(ad_map.get("nlp_fallback"))
+
+    # Names of destinations annotated as seasonal-only / not-yet-started, used
+    # to flag those edges downstream.
+    info["seasonal_destinations"] = sorted(ad_map.get("seasonal", set()))
 
     # Passenger data
     info["airlines"] = sorted(ad_map["passenger"].keys())
@@ -1320,7 +1406,7 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
         ``{"passenger": {airline_name: [{"name": str, "wikipedia_url": str}, ...], ...}, "cargo": {...}}``
     """
     wikicode = mwparserfromhell.parse(wikitext)
-    result: dict = {"passenger": {}, "cargo": {}}
+    result: dict = {"passenger": {}, "cargo": {}, "seasonal": set()}
 
     for template in wikicode.filter_templates():
         t_name = template.name.lower().strip().replace("-", " ")
@@ -1418,6 +1504,7 @@ def parse_wikitext_airlines_destinations(wikitext: str) -> dict:
                 target_dict[airline].extend(
                     [d for d in dest_objs if d["wikipedia_url"] not in existing_urls]
                 )
+                result["seasonal"].update(_seasonal_names_from_wikicode(dest_wikicode))
 
     return result
 
@@ -1757,15 +1844,23 @@ def build_url_to_codes_map(verbose: bool = False) -> dict:
 
 
 def format_destinations_list(
-    raw_destinations: list, airlines_destinations_map: dict, url_to_codes: dict
+    raw_destinations: list,
+    airlines_destinations_map: dict,
+    url_to_codes: dict,
+    seasonal_names: Optional[set] = None,
 ) -> list:
     """
     Format a list of destinations into a strict schema of dictionaries.
     Looks up IATA/ICAO codes using url_to_codes map.
     Deduplicates destinations that resolve to the same canonical URL or airport code.
+
+    When ``seasonal_names`` is given, each output destination gains a
+    ``seasonal`` boolean set True if its name is in that set (destinations
+    annotated as seasonal-only or not-yet-started on the Wikipedia page).
     """
     import urllib.parse
 
+    seasonal_names = seasonal_names or set()
     mapped_dict: dict[str, dict] = {}
 
     for dest in raw_destinations:
@@ -1855,6 +1950,13 @@ def format_destinations_list(
                     ],
                     "airlines": sorted(list(set(op_airlines))),
                 }
+
+    # Tag each destination as seasonal when its name was annotated as such.
+    for entry in mapped_dict.values():
+        entry["seasonal"] = bool(
+            seasonal_names
+            and (entry.get("name") or entry.get("city")) in seasonal_names
+        )
 
     return list(mapped_dict.values())
 

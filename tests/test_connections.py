@@ -138,6 +138,85 @@ class TestCreateOutboundConnectionsList:
         assert unmapped is not None
         assert os.path.exists(unmapped)
 
+    def _write_fallback_airport(self, public, iata, fallback):
+        """Write an airport JSON with a 3-airline destination and a fallback flag."""
+        data = {
+            "iata": iata,
+            "wikipedia_url": f"https://en.wikipedia.org/wiki/{iata}",
+            "number_airlines": 3,
+            "airlines_nlp_fallback": fallback,
+            "destinations": [
+                {
+                    "name": "Target",
+                    "wikipedia_url": "https://en.wikipedia.org/wiki/Target",
+                    "codes": ["YYZ", "CYYZ"],
+                    "airlines": ["A", "B", "C"],
+                }
+            ],
+        }
+        (public / "airport_data" / f"{iata}.json").write_text(
+            json.dumps(data), encoding="utf-8"
+        )
+
+    def _row_for(self, csv_path, origin):
+        import csv as _csv
+
+        with open(csv_path, encoding="utf-8") as fh:
+            for row in _csv.DictReader(fh):
+                if row["origin"] == origin:
+                    return row
+        return None
+
+    def test_reliable_airline_count_is_published(self, data_dirs):
+        """A normally-parsed airport keeps its airline-count weight and nb_airlines."""
+        public = data_dirs
+        self._write_fallback_airport(public, "YWG", fallback=False)
+        csv_path, _, _ = create_outbound_connections_list(verbose=False)
+        row = self._row_for(csv_path, "YWG")
+        assert row["weights"] == "3"
+        assert row["nb_airlines"] == "3"
+
+    def test_fallback_airline_count_is_suppressed(self, data_dirs):
+        """A fallback-sourced airport publishes weight 1 and nb_airlines 0."""
+        public = data_dirs
+        self._write_fallback_airport(public, "ZZZ", fallback=True)
+        csv_path, _, _ = create_outbound_connections_list(verbose=False)
+        row = self._row_for(csv_path, "ZZZ")
+        assert row["weights"] == "1"
+        assert row["nb_airlines"] == "0"
+
+    def test_seasonal_flag_emitted_in_csv(self, data_dirs):
+        """A destination marked seasonal gets a 1 in the aligned seasonal column."""
+        public = data_dirs
+        data = {
+            "iata": "YWG",
+            "wikipedia_url": "https://en.wikipedia.org/wiki/YWG",
+            "destinations": [
+                {
+                    "name": "Toronto",
+                    "wikipedia_url": "https://en.wikipedia.org/wiki/T",
+                    "codes": ["YYZ", "CYYZ"],
+                    "airlines": ["A"],
+                    "seasonal": True,
+                },
+                {
+                    "name": "Vancouver",
+                    "wikipedia_url": "https://en.wikipedia.org/wiki/V",
+                    "codes": ["YVR", "CYVR"],
+                    "airlines": ["A"],
+                    "seasonal": False,
+                },
+            ],
+        }
+        (public / "airport_data" / "YWG.json").write_text(
+            json.dumps(data), encoding="utf-8"
+        )
+        csv_path, _, _ = create_outbound_connections_list(verbose=False)
+        row = self._row_for(csv_path, "YWG")
+        flags = dict(zip(row["outlinks"].split(), row["seasonal"].split()))
+        assert flags["YYZ"] == "1"
+        assert flags["YVR"] == "0"
+
     def test_corrupt_json_skipped_without_crash(self, data_dirs):
         """A corrupt JSON file is skipped with a warning; valid files still processed."""
         public = data_dirs

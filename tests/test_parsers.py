@@ -196,6 +196,36 @@ class TestFetchWikipediaAirlinesDestinations:
         result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
         assert result["passenger"]
 
+    def test_table_data_not_flagged_as_fallback(self):
+        # Data parsed from a real table is reliable: nlp_fallback stays False.
+        soup = BeautifulSoup(AIRLINES_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["nlp_fallback"] is False
+
+    def test_nlp_fallback_flagged_when_used(self, monkeypatch):
+        # A page with an "Airlines and destinations" section but no table falls
+        # back to the NLP path; when that yields pairs the result is flagged.
+        monkeypatch.setattr(
+            alf,
+            "parse_fallback_nlp_airlines_destinations",
+            lambda *a, **k: {("Acme Air", "Springfield")},
+        )
+        soup = BeautifulSoup(PROSE_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["nlp_fallback"] is True
+        assert result["passenger"].get("Acme Air") == {"Springfield"}
+
+    def test_empty_nlp_fallback_not_flagged(self, monkeypatch):
+        # If the fallback finds nothing, the (empty) result stays "reliable".
+        monkeypatch.setattr(
+            alf,
+            "parse_fallback_nlp_airlines_destinations",
+            lambda *a, **k: set(),
+        )
+        soup = BeautifulSoup(PROSE_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["nlp_fallback"] is False
+
 
 class TestFallbackFetchWikipediaAirportInfo:
     def test_regex_extracts_codes_and_coords(self):
@@ -204,6 +234,55 @@ class TestFallbackFetchWikipediaAirportInfo:
         assert info["icao"] == "KTST"
         assert info["coordinates"] == "45.12, -93.45"
         assert info["serves"] == "Test Regional Airport"
+
+
+class TestSeasonality:
+    """Detection of seasonal-only / not-yet-started destinations."""
+
+    _SEASONAL_TABLE_HTML = (
+        "<h2>Airlines and destinations</h2>"
+        '<table class="wikitable"><tr><th>Airlines</th><th>Destinations</th></tr>'
+        "<tr>"
+        '<td><a href="/wiki/Air_Canada" title="Air Canada">Air Canada</a></td>'
+        "<td>"
+        '<a href="/wiki/Toronto" title="Toronto Pearson International Airport">Toronto</a>, '
+        '<a href="/wiki/Cancun" title="Cancún International Airport">Cancún</a> (seasonal)'
+        "</td></tr></table>"
+    )
+
+    def test_html_seasonal_destination_detected(self):
+        soup = BeautifulSoup(self._SEASONAL_TABLE_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert "Cancún International Airport" in result["seasonal"]
+        assert "Toronto Pearson International Airport" not in result["seasonal"]
+
+    def test_html_future_route_detected(self):
+        html = (
+            "<h2>Airlines and destinations</h2>"
+            '<table class="wikitable"><tr><th>Airline</th><th>Destinations</th></tr>'
+            '<tr><td><a href="/wiki/X" title="X Air">X Air</a></td>'
+            '<td><a href="/wiki/Belize" title="Belize City">Belize City</a> '
+            "(begins 1 December 2026)</td></tr></table>"
+        )
+        soup = BeautifulSoup(html, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert "Belize City" in result["seasonal"]
+
+    def test_wikitext_seasonal_destination_detected(self):
+        wikitext = (
+            "=== Airlines and destinations ===\n"
+            "{{Airport-dest-list\n"
+            "| Air Canada | [[Toronto]], [[Cancún]] ''(seasonal)''\n"
+            "}}\n"
+        )
+        result = alf.parse_wikitext_airlines_destinations(wikitext)
+        assert "Cancún" in result["seasonal"]
+        assert "Toronto" not in result["seasonal"]
+
+    def test_no_seasonal_marker_yields_empty_set(self):
+        soup = BeautifulSoup(AIRLINES_HTML, "html.parser")
+        result = alf.fetch_wikipedia_airlines_destinations(soup=soup)
+        assert result["seasonal"] == set()
 
 
 class TestNlpFallback:

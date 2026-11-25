@@ -9,7 +9,7 @@
 
 ## Overview
 
-`wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo. 
+`wikipediaGATN` scrapes Wikipedia airport pages to assemble the **Global Air Transportation Networks (GATN)**: two directed graphs in which each node is an airport (identified by its IATA code, or its 4-letter ICAO code where no IATA code exists) and each directed edge represents a scheduled route between two airports for passengers (pax) or cargo. The edge weight is the number of distinct airlines reported on that route — see [Network structure and semantics](#network-structure-and-semantics) for what the nodes, edges, weights, and attributes mean.
 
 ### Why build the network from Wikipedia?
 
@@ -18,6 +18,35 @@ Comprehensive commercial datasets of the GATN exist (IATA, OAG, and similar prov
 ## Data
 
 The collected data is available in the [`data/public/`](https://github.com/julien-arino/wikipediaGATN/tree/main/data/public) directory. See ``data/public/README.md`` for a detailed description of the files.
+
+**What ships on PyPI.** As of the current release the PyPI wheel **bundles the pre-built networks** (the `.graphml`/`.gexf`/`.dot`/`.csv` graphs, the `.npz` adjacency matrices, the node lists, and `airports_information.csv`), so `pip install wikipediaGATN` is enough to load and analyse the global graphs. What is **not** on PyPI: the full per-airport raw JSON crawl (`data/public/airport_data/`) and the interactive Plotly `*.html` visualisations — clone the repository for those. See [Installation → Bundled network data](https://julien-arino.github.io/wikipediaGATN/installation.html#bundled-network-data).
+
+## Network structure and semantics
+
+Before using the graphs it helps to know exactly what the nodes and edges mean.
+
+**Size (current snapshot).**
+
+| Network | Airports (nodes) | Routes (edges) | 4-letter ICAO nodes | Bidirectional edges |
+|---|---|---|---|---|
+| Passenger (`pax`) | ~4,360 | ~64,100 | ~90 | ~89% |
+| Cargo | ~920 | ~4,650 | ~5 | ~46% |
+
+Counts drift as Wikipedia is re-crawled; rebuild with the pipeline for exact current figures.
+
+**Nodes.** Each node is an airport, identified by its 3-letter **IATA** code where one exists and its 4-letter **ICAO** code otherwise (about 90 passenger nodes). Each exported graph node carries a `code_type` attribute (`"IATA"` or `"ICAO"`) so the two are distinguishable, alongside geographic metadata (lat/lon, city served, country, admin-1).
+
+**Edges and weights.** A directed edge A → B means at least one airline operates a scheduled A → B route. The edge **weight is the number of distinct airlines** reported on that route (roughly 1–25 for passenger, 1–19 for cargo), **not** a 0/1 presence flag. So **summing a node's row is not its out-degree**: use the count of non-zero entries for out-degree, and the row sum only when you specifically want total airline-route multiplicity.
+
+**Seasonal / future routes.** Routes annotated on Wikipedia as seasonal-only or not-yet-started are flagged with a `seasonal` edge attribute (`1` = seasonal/future, `0` = year-round) instead of being treated as ordinary edges; the network CSVs carry a matching `seasonal` column.
+
+**NLP-fallback reliability.** When an airport page has no parseable route table, the airline/destination data is recovered with an NLP fallback whose airline *names* are unreliable. Those airports do **not** publish airline counts (their edges get weight 1 and their `nb_airlines` is dropped), and their passenger graph nodes are marked `airlines_reliable = False`.
+
+**Directed vs symmetric.** The default graphs are **directed**. A `symmetric` build (files suffixed `_sym`) adds the reverse of every edge; where both A → B and B → A exist with different weights the symmetric weight is the **maximum** of the two (`max(A, Aᵀ)`), not the sum. Use the symmetric version for an undirected connectivity view that tolerates under-reporting of small airports' outbound routes.
+
+**Cargo coverage is partial.** The crawler follows *passenger* destination links, so the cargo network is a by-product: it is smaller and less complete than the passenger one (far fewer of its edges are bidirectional — ~46% vs ~89%), and some real cargo hubs may be missing or under-connected. Treat the cargo graph as indicative, not exhaustive.
+
+**Provenance and accuracy.** All structure is derived from Wikipedia (supplemented by OurAirports metadata), so coverage and accuracy track the quality of each airport's Wikipedia page.
 
 ## Using Pre-built Data & Network Analysis
 

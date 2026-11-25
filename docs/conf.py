@@ -36,3 +36,7 @@ source_suffix = {
     ".rst": "restructuredtext",
     ".md": "markdown",
 }
+
+# Generate anchors for headings (h1–h3) so cross-document links of the form
+# ``usage.md#interpreting-the-networks`` resolve.
+myst_heading_anchors = 3

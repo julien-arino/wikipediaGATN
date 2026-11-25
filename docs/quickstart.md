@@ -63,7 +63,9 @@ the global graphs. After a plain `pip install wikipediaGATN`,
 `PUBLIC_DATA_DIR` automatically resolves to the bundled data; from a source
 checkout it points at `data/public/` instead. Either way the code below is
 unchanged. (See [Installation](installation.md#bundled-network-data) for exactly
-what is bundled.)
+what is bundled, and [Usage → Interpreting the networks](usage.md#interpreting-the-networks)
+for what the nodes, edges, weights and attributes mean — in particular, edge
+weights are airline counts, so summing a row is **not** a node's out-degree.)
 
 Here are three different ways to load the pre-built passenger (pax) network data.
 

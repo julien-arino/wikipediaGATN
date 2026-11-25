@@ -82,6 +82,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   which failed for anyone without push access to the repository.
 
 ### Documentation
+- Added a **"Network structure and semantics"** section to the README and an
+  "Interpreting the networks" section to the usage docs, documenting what the
+  nodes, edges and weights mean: edge weights are **airline counts** (so summing
+  a row is not a node's out-degree), nodes may be IATA **or** ICAO codes
+  (`code_type`), the `seasonal` edge attribute and NLP-fallback
+  `airlines_reliable` flag, the directed-vs-symmetric `_sym` build and its
+  **max-weight** rule, and the **partial cargo** coverage. Added current
+  node/edge/ICAO/bidirectional counts and clarified what the PyPI wheel bundles
+  vs. what only lives in the repository.
+- Documented the `data/public/` edge-list CSV columns (including the new
+  `seasonal` column) and the graph node/edge attributes, replaced the stale
+  hard-coded extraction date, and added a **licensing & attribution** section
+  (Wikipedia CC BY-SA 4.0 + OurAirports public domain).
+- Enabled MyST heading anchors so in-page cross-document links resolve.
 - Added `CITATION.cff` and this changelog.
 
 ## [0.1.4]
